@@ -1,6 +1,6 @@
 # Homework 1: Code with AI
 
-The due date is Feb 13 at midnight. If you are using the late days, please note in the head of README.md that “I used XX late days this time, and I have XX days remaining”.
+The due date is Feb 17 at midnight. If you are using the late days, please note in the head of README.md that “I used XX late days this time, and I have XX days remaining”.
 
 The main purpose of this homework is to help you:
 
