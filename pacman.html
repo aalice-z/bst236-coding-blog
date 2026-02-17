@@ -220,11 +220,14 @@
 
         // Pacman
         let pacman = {
+            gridX: 12,
+            gridY: 17,
             x: 12,
             y: 17,
             direction: { x: 0, y: 0 },
             nextDirection: { x: 0, y: 0 },
-            mouthOpen: 0
+            mouthOpen: 0,
+            animFrame: 0
         };
 
         // Ghosts
@@ -312,11 +315,14 @@
             createMaze();
             initGhosts();
             pacman = {
-                x: 12,
-                y: 17,
+                gridX: 12,
+                gridY: 17,
+                x: 0,
+                y: 0,
                 direction: { x: 0, y: 0 },
                 nextDirection: { x: 0, y: 0 },
-                mouthOpen: 0
+                mouthOpen: 0,
+                animFrame: 0
             };
             game.gameRunning = true;
             game.score = 0;
@@ -378,21 +384,19 @@
                 ctx.font = '20px Arial';
                 ctx.fillText('🌹', rose.x * TILE_SIZE + 3, rose.y * TILE_SIZE + 20);
             }
-        }
+        }gridX * TILE_SIZE + TILE_SIZE / 2;
+            const centerY = pacman.gridY * TILE_SIZE + TILE_SIZE / 2;
+            const radius = TILE_SIZE / 2 - 4;
 
-        function drawPacman() {
-            const centerX = pacman.x * TILE_SIZE + TILE_SIZE / 2;
-            const centerY = pacman.y * TILE_SIZE + TILE_SIZE / 2;
-            const radius = TILE_SIZE / 2 - 2;
+            // Determine rotation based on direction
+            let rotation = 0;
+            if (pacman.direction.x === 1) rotation = 0;
+            else if (pacman.direction.x === -1) rotation = Math.PI;
+            else if (pacman.direction.y === 1) rotation = Math.PI / 2;
+            else if (pacman.direction.y === -1) rotation = Math.PI * 1.5;
 
-            // Determine mouth angle based on direction
-            let startAngle = 0.2;
-            let endAngle = Math.PI * 2 - 0.2;
-            
-            if (pacman.direction.x === 1) startAngle = 0.2;
-            else if (pacman.direction.x === -1) startAngle = Math.PI + 0.2;
-            else if (pacman.direction.y === 1) startAngle = Math.PI / 2 + 0.2;
-            else if (pacman.direction.y === -1) startAngle = Math.PI * 1.5 + 0.2;
+            // Animate mouth opening
+            const mouthAngle = Math.abs(Math.sin(pacman.animFrame * 0.2)) * 0.4;
 
             if (game.powerUpActive) {
                 ctx.fillStyle = '#FFD700'; // Gold when powered up
@@ -401,8 +405,11 @@
             }
 
             ctx.beginPath();
-            ctx.arc(centerX, centerY, radius, startAngle + pacman.mouthOpen, endAngle - pacman.mouthOpen);
+            ctx.arc(centerX, centerY, radius, rotation + mouthAngle, rotation + Math.PI * 2 - mouthAngle);
             ctx.lineTo(centerX, centerY);
+            ctx.fill();
+
+            pacman.animFrame++
             ctx.fill();
 
             pacman.mouthOpen = (pacman.mouthOpen + 0.1) % 0.3;
@@ -441,115 +448,136 @@
                 ctx.fillText('💕', heart.x * TILE_SIZE, heart.y * TILE_SIZE + 20);
             });
         }
-
-        function canMove(x, y) {
-            if (x < 0 || x >= GRID_SIZE || y < 0 || y >= GRID_SIZE) return false;
-            return maze[Math.floor(y)][Math.floor(x)] !== 1;
+gridX, gridY) {
+            if (gridX < 0 || gridX >= GRID_SIZE || gridY < 0 || gridY >= GRID_SIZE) {
+                return true; // Allow wrap-around
+            }
+            return maze[gridY][gridX] !== 1;
         }
 
         function movePacman() {
-            // Try to change direction
-            const nextX = pacman.x + pacman.nextDirection.x * 0.2;
-            const nextY = pacman.y + pacman.nextDirection.y * 0.2;
-            if (canMove(nextX, nextY)) {
-                pacman.direction = { ...pacman.nextDirection };
+            // Try to change direction if at grid center
+            if (pacman.x === 0 && pacman.y === 0) {
+                const nextGridX = pacman.gridX + pacman.nextDirection.x;
+                const nextGridY = pacman.gridY + pacman.nextDirection.y;
+                if (canMove(nextGridX, nextGridY)) {
+                    pacman.direction = { ...pacman.nextDirection };
+                }
             }
 
-            // Move in current direction
-            const newX = pacman.x + pacman.direction.x * 0.2;
-            const newY = pacman.y + pacman.direction.y * 0.2;
+            // Move towards next grid position
+            const speed = 0.15;
+            if (pacman.direction.x !== 0 || pacman.direction.y !== 0) {
+                pacman.x += pacman.direction.x * speed;
+                pacman.y += pacman.direction.y * speed;
 
-            if (canMove(newX, newY)) {
-                pacman.x = newX;
-                pacman.y = newY;
-            }
+                // Check if reached next grid cell
+                if (Math.abs(pacman.x) >= 1 || Math.abs(pacman.y) >= 1) {
+                    pacman.gridX += Math.sign(pacman.x);
+                    pacman.gridY += Math.sign(pacman.y);
+                    pacman.x = 0;
+                    pacman.y = 0;
 
-            // Wrap around
-            if (pacman.x < 0) pacman.x = GRID_SIZE - 1;
-            if (pacman.x >= GRID_SIZE) pacman.x = 0;
+                    // Wrap around
+                    if (pacman.gridX < 0) pacman.gridX = GRID_SIZE - 1;
+                    if (pacman.gridX >= GRID_SIZE) pacman.gridX = 0;
+                    if (pacman.gridY < 0) pacman.gridY = GRID_SIZE - 1;
+                    if (pacman.gridY >= GRID_SIZE) pacman.gridY = 0;
 
-            // Collect dots
-            const gridX = Math.floor(pacman.x);
-            const gridY = Math.floor(pacman.y);
-            const dotIndex = dots.findIndex(d => d.x === gridX && d.y === gridY);
-            if (dotIndex !== -1) {
-                dots.splice(dotIndex, 1);
-                game.score += 10;
-                updateDisplay();
-            }
+                    // Check if can continue in current direction
+                    const nextGridX = pacman.gridX + pacman.direction.x;
+                    const nextGridY = pacman.gridY + pacman.direction.y;
+                    if (!canMove(nextGridX, nextGridY)) {
+                        pacman.direction = { x: 0, y: 0 };
+                    }
 
-            // Collect rose
-            if (rose && Math.floor(pacman.x) === rose.x && Math.floor(pacman.y) === rose.y) {
-                rose = null;
-                game.powerUpActive = true;
-                game.powerUpTimer = game.powerUpDuration;
-                updateDisplay();
-            }
+                    // Collect dots
+                    const dotIndex = dots.findIndex(d => d.x === pacman.gridX && d.y === pacman.gridY);
+                    if (dotIndex !== -1) {
+                        dots.splice(dotIndex, 1);
+                        game.score += 10;
+                        updateDisplay();
+                    }
 
-            // Check win condition
-            if (dots.length === 0) {
-                game.level++;
-                createMaze();
-                pacman.x = 12;
-                pacman.y = 17;
-                initGhosts();
-                updateDisplay();
-            }
-        }
+                    // Collect rose
+                    if (rose && pacman.gridX === rose.x && pacman.gridY === rose.y) {
+                        rose = null;
+                        game.powerUpActive = true;
+                        game.powerUpTimer = game.powerUpDuration;
+                        updateDisplay();
+                    }
 
-        function moveGhosts() {
-            ghosts.forEach(ghost => {
-                // Simple AI: move towards pacman with some randomness
-                if (Math.random() < 0.05) {
-                    const directions = [
-                        { x: 1, y: 0 }, { x: -1, y: 0 },
-                        { x: 0, y: 1 }, { x: 0, y: -1 }
-                    ];
-                    const validDirs = directions.filter(dir => 
-                        canMove(ghost.x + dir.x * 0.15, ghost.y + dir.y * 0.15)
+                    // Check win condition
+                    if (dots.length === 0) {
+                        game.level++;
+                        createMaze();
+                        pacman.gridX = 12;
+                        pacman.gridY = 17;
+                        pacman.xMath.floor(ghost.x + dir.x), Math.floor(ghost.y + dir.y))
                     );
                     if (validDirs.length > 0) {
                         ghost.direction = validDirs[Math.floor(Math.random() * validDirs.length)];
                     }
                 }
 
-                const newX = ghost.x + ghost.direction.x * 0.15;
-                const newY = ghost.y + ghost.direction.y * 0.15;
+                const newX = ghost.x + ghost.direction.x * 0.1;
+                const newY = ghost.y + ghost.direction.y * 0.1;
 
-                if (canMove(newX, newY)) {
+                if (canMove(Math.floor(newX), Math.floor(newY))) {
                     ghost.x = newX;
                     ghost.y = newY;
                 }
 
                 // Check collision with pacman
                 const dist = Math.sqrt(
-                    Math.pow(ghost.x - pacman.x, 2) + 
-                    Math.pow(ghost.y - pacman.y, 2)
+                    Math.pow(ghost.x - pacman.gridX, 2) + 
+                    Math.pow(ghost.y - pacman.gridY, 2)
                 );
-                if (dist < 0.5) {
+                if (dist < 0.7) {
                     game.lives--;
                     updateDisplay();
                     if (game.lives <= 0) {
                         gameOver();
                     } else {
-                        pacman.x = 12;
-                        pacman.y = 17;
-                        initGhosts();
-                    }
-                }
-            });
-        }
+                        pacman.gridX = 12;
+                        pacman.gridY = 17;
+                        pacman.x = 0;
+                        pacman.y = 0+ ghost.direction.y * 0.15;
 
-        function updateHearts() {
-            // Shoot hearts when powered up
-            if (game.powerUpActive && pacman.direction.x !== 0 || pacman.direction.y !== 0) {
+                if (canMove(newX, newY)) {
+                    ghost.x = newX;
+                    ghost.y = newY;
+                }
+
+                // Check collision wit(pacman.direction.x !== 0 || pacman.direction.y !== 0)) {
                 if (Math.random() < 0.1) { // Shoot hearts frequently
                     hearts.push({
-                        x: pacman.x,
-                        y: pacman.y,
-                        dx: pacman.direction.x * 0.5,
-                        dy: pacman.direction.y * 0.5
+                        x: pacman.gridX,
+                        y: pacman.gridY,
+                        dx: pacman.direction.x * 0.4,
+                        dy: pacman.direction.y * 0.4
                     });
+                }
+            }
+
+            // Move hearts
+            hearts = hearts.filter(heart => {
+                heart.x += heart.dx;
+                heart.y += heart.dy;
+
+                // Check collision with walls
+                if (!canMove(Math.floor(heart.x), Math.floor(heart.y))) {
+                    return false;
+                }
+
+                // Check collision with ghosts
+                let hitGhost = false;
+                ghosts = ghosts.filter(ghost => {
+                    const dist = Math.sqrt(
+                        Math.pow(ghost.x - heart.x, 2) + 
+                        Math.pow(ghost.y - heart.y, 2)
+                    );
+                    if (dist < 0.7
                 }
             }
 
