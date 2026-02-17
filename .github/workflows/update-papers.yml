@@ -1,0 +1,74 @@
+name: Update arXiv Papers
+
+# Run daily at midnight UTC and allow manual triggering
+on:
+  schedule:
+    # Runs at 00:00 UTC every day (midnight)
+    - cron: '0 0 * * *'
+  
+  # Allow manual workflow dispatch from Actions tab
+  workflow_dispatch:
+
+# Set permissions for the GITHUB_TOKEN
+permissions:
+  contents: write
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for proper git operations
+          fetch-depth: 0
+      
+      # Step 2: Set up Python 3.11
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      # Step 4: Fetch latest papers from arXiv
+      - name: Fetch papers from arXiv
+        run: |
+          python fetch_papers.py "machine learning" "deep learning"
+      
+      # Step 5: Generate HTML page
+      - name: Generate papers.html
+        run: |
+          python generate_page.py
+      
+      # Step 6: Check if there are changes
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet papers.json papers.html || echo "changes=true" >> $GITHUB_OUTPUT
+      
+      # Step 7: Commit and push if there are changes
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add papers.json papers.html
+          git commit -m "🤖 Auto-update arXiv papers - $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+      
+      # Step 8: Log completion
+      - name: Workflow complete
+        run: |
+          if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+            echo "✅ Papers updated and pushed successfully!"
+          else
+            echo "ℹ️ No changes detected. Papers are up to date."
+          fi
