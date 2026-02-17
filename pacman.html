@@ -222,11 +222,10 @@
         let pacman = {
             gridX: 12,
             gridY: 17,
-            x: 12,
-            y: 17,
+            x: 0,
+            y: 0,
             direction: { x: 0, y: 0 },
             nextDirection: { x: 0, y: 0 },
-            mouthOpen: 0,
             animFrame: 0
         };
 
@@ -287,8 +286,7 @@
                     y: 10,
                     color: colors[i],
                     name: names[i],
-                    direction: { x: 0, y: 0 },
-                    scared: false
+                    direction: { x: 0, y: 0 }
                 });
             }
         }
@@ -321,7 +319,6 @@
                 y: 0,
                 direction: { x: 0, y: 0 },
                 nextDirection: { x: 0, y: 0 },
-                mouthOpen: 0,
                 animFrame: 0
             };
             game.gameRunning = true;
@@ -384,7 +381,10 @@
                 ctx.font = '20px Arial';
                 ctx.fillText('🌹', rose.x * TILE_SIZE + 3, rose.y * TILE_SIZE + 20);
             }
-        }gridX * TILE_SIZE + TILE_SIZE / 2;
+        }
+
+        function drawPacman() {
+            const centerX = pacman.gridX * TILE_SIZE + TILE_SIZE / 2;
             const centerY = pacman.gridY * TILE_SIZE + TILE_SIZE / 2;
             const radius = TILE_SIZE / 2 - 4;
 
@@ -409,10 +409,7 @@
             ctx.lineTo(centerX, centerY);
             ctx.fill();
 
-            pacman.animFrame++
-            ctx.fill();
-
-            pacman.mouthOpen = (pacman.mouthOpen + 0.1) % 0.3;
+            pacman.animFrame++;
         }
 
         function drawGhosts() {
@@ -448,7 +445,8 @@
                 ctx.fillText('💕', heart.x * TILE_SIZE, heart.y * TILE_SIZE + 20);
             });
         }
-gridX, gridY) {
+
+        function canMove(gridX, gridY) {
             if (gridX < 0 || gridX >= GRID_SIZE || gridY < 0 || gridY >= GRID_SIZE) {
                 return true; // Allow wrap-around
             }
@@ -513,7 +511,25 @@ gridX, gridY) {
                         createMaze();
                         pacman.gridX = 12;
                         pacman.gridY = 17;
-                        pacman.xMath.floor(ghost.x + dir.x), Math.floor(ghost.y + dir.y))
+                        pacman.x = 0;
+                        pacman.y = 0;
+                        initGhosts();
+                        updateDisplay();
+                    }
+                }
+            }
+        }
+
+        function moveGhosts() {
+            ghosts.forEach(ghost => {
+                // Simple AI: move towards pacman with some randomness
+                if (Math.random() < 0.05) {
+                    const directions = [
+                        { x: 1, y: 0 }, { x: -1, y: 0 },
+                        { x: 0, y: 1 }, { x: 0, y: -1 }
+                    ];
+                    const validDirs = directions.filter(dir => 
+                        canMove(Math.floor(ghost.x + dir.x), Math.floor(ghost.y + dir.y))
                     );
                     if (validDirs.length > 0) {
                         ghost.direction = validDirs[Math.floor(Math.random() * validDirs.length)];
@@ -542,14 +558,16 @@ gridX, gridY) {
                         pacman.gridX = 12;
                         pacman.gridY = 17;
                         pacman.x = 0;
-                        pacman.y = 0+ ghost.direction.y * 0.15;
-
-                if (canMove(newX, newY)) {
-                    ghost.x = newX;
-                    ghost.y = newY;
+                        pacman.y = 0;
+                        initGhosts();
+                    }
                 }
+            });
+        }
 
-                // Check collision wit(pacman.direction.x !== 0 || pacman.direction.y !== 0)) {
+        function updateHearts() {
+            // Shoot hearts when powered up
+            if (game.powerUpActive && (pacman.direction.x !== 0 || pacman.direction.y !== 0)) {
                 if (Math.random() < 0.1) { // Shoot hearts frequently
                     hearts.push({
                         x: pacman.gridX,
@@ -577,28 +595,7 @@ gridX, gridY) {
                         Math.pow(ghost.x - heart.x, 2) + 
                         Math.pow(ghost.y - heart.y, 2)
                     );
-                    if (dist < 0.7
-                }
-            }
-
-            // Move hearts
-            hearts = hearts.filter(heart => {
-                heart.x += heart.dx;
-                heart.y += heart.dy;
-
-                // Check collision with walls
-                if (!canMove(heart.x, heart.y)) {
-                    return false;
-                }
-
-                // Check collision with ghosts
-                let hitGhost = false;
-                ghosts = ghosts.filter(ghost => {
-                    const dist = Math.sqrt(
-                        Math.pow(ghost.x - heart.x, 2) + 
-                        Math.pow(ghost.y - heart.y, 2)
-                    );
-                    if (dist < 0.5) {
+                    if (dist < 0.7) {
                         hitGhost = true;
                         game.score += 200;
                         updateDisplay();
@@ -678,7 +675,7 @@ gridX, gridY) {
             }
         });
 
-        // Initial draw - initialize pacman first
+        // Initial draw
         pacman = {
             gridX: 12,
             gridY: 17,
@@ -686,7 +683,6 @@ gridX, gridY) {
             y: 0,
             direction: { x: 0, y: 0 },
             nextDirection: { x: 0, y: 0 },
-            mouthOpen: 0,
             animFrame: 0
         };
         createMaze();
