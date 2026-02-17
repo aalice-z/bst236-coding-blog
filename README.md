@@ -74,11 +74,11 @@ In your report (`README.md`), describe how you used Copilot CLI to build each co
 
 ---
 
-# 📝 Development Report: Building with AI Assistance
+# Report: Building with AI Assistance
 
 This section documents my journey using GitHub Copilot and AI coding assistants to complete all three problems. I had no prior experience with game development or GitHub Actions, so this was a learning experience in leveraging AI for unfamiliar tasks.
 
-## 🛠️ AI Tools Used
+## AI Tools Used
 - **GitHub Copilot Chat** (VS Code extension) - Primary coding assistant
 - **Agentic Programming Approach** - Breaking tasks into smaller, agent-friendly components
 
@@ -88,17 +88,17 @@ This section documents my journey using GitHub Copilot and AI coding assistants 
 
 ### Initial Prompt
 ```
-According to the problem 1 requirements in README, create the github website for my coding blog.
+According to the Problem 1 requirements in README, list out steps to create the github website for my coding blog.
 ```
 
-### What Worked Well ✅
+### What Worked Well
 - **Single Clear Prompt**: The AI understood the requirement and generated a complete homepage with:
   - Modern responsive design
   - Navigation structure ready for future pages
   - Professional styling with CSS variables
   - Project cards for the Pac-Man game and arXiv feed
 
-### Iterations Required 🔄
+### Iterations Required
 1. **Color Theme Adjustment**
    - **Prompt**: "I want pastel mint green and baby blue color theme"
    - **Result**: AI updated CSS variables to match the desired aesthetic
@@ -119,10 +119,10 @@ Start with a clear, requirement-based prompt. AI can generate complete, producti
 
 ### Initial Prompt
 ```
-Now, continue to problem 2, including the three key features described in README
+Now, continue to Problem 2, including the three key features described in README (provided context and listed the requirements)
 ```
 
-### What Worked Well ✅
+### What Worked Well
 - **Feature Implementation**: AI successfully created all three core features:
   - Classic maze-based Pac-Man mechanics
   - Rose power-ups with timed duration
@@ -130,7 +130,7 @@ Now, continue to problem 2, including the three key features described in README
 - **Game Loop Architecture**: Proper game loop with requestAnimationFrame
 - **Canvas Rendering**: Efficient 2D canvas drawing
 
-### Iterations Required 🔄
+### Iterations Required
 
 #### Iteration 1: Movement Issues
 - **Problem**: "This looks a bit weird. the pac man becomes a triangular piece when running, and is in between blue and black blocks and can go anywhere not blocked by anything"
@@ -186,7 +186,7 @@ However, expect multiple iterations for complex interactive systems. Each iterat
 
 #### Initial Prompt
 ```
-As a professional data background engineer, continue with problem 3, Plan how to build the auto-updating arXiv paper feed using Copilot CLI. Teach me how to use arXiv API to fetch the latest papers from arXiv.
+As a professional background data engineer, continue with Problem 3, Plan how to build the auto-updating arXiv paper feed using Copilot CLI. Teach me how to use arXiv API to fetch the latest papers from arXiv.
 ```
 
 **AI Response**: Comprehensive plan breaking the task into 4 agents:
@@ -208,7 +208,7 @@ Create a Python script fetch_papers.py that:
 6. Uses requests library for HTTP and xml.etree for parsing
 ```
 
-#### Result ✅
+#### Result 
 - **Generated**: Complete `fetch_papers.py` (185 lines)
 - **Features Included**:
   - Command-line argument parsing
@@ -233,7 +233,7 @@ Create a Python script generate_page.py that:
 6. Matches the style.css from the existing website
 ```
 
-#### Result ✅
+#### Result 
 - **Generated**: Complete `generate_page.py` (235 lines)
 - **Features Included**:
   - JSON parsing with error handling
@@ -261,7 +261,7 @@ Create .github/workflows/update-papers.yml that:
 9. Uses github-actions bot for commits
 ```
 
-#### Result ✅
+#### Result 
 - **Generated**: Complete workflow file (74 lines)
 - **Features Included**:
   - Cron schedule for daily runs
@@ -273,7 +273,7 @@ Create .github/workflows/update-papers.yml that:
   - Helpful logging messages
 - **Additional**: AI created detailed setup instructions (`GITHUB_ACTIONS_SETUP.md`)
 
-### What Worked Exceptionally Well ✅
+### What Worked Exceptionally Well 
 
 1. **Agentic Breakdown**: The AI naturally decomposed the problem into independent, testable components
 2. **Documentation Quality**: Each script had comprehensive docstrings and comments
@@ -285,7 +285,7 @@ Create .github/workflows/update-papers.yml that:
    - Smart defaults when no arguments provided
    - Responsive design breakpoints
 
-### Minimal Iterations Required 🔄
+### Minimal Iterations Required 
 
 **Question**: "Do I need dependencies file?"
 - AI clarified that `requirements.txt` was already created in Step 1
@@ -307,7 +307,7 @@ This approach resulted in:
 
 ---
 
-## 🎓 Overall Lessons Learned
+## Overall Lessons Learned
 
 ### What AI Excels At
 1. **Complete System Generation**: Given clear requirements, AI generates entire functional systems
@@ -323,7 +323,7 @@ This approach resulted in:
 
 ### Prompt Engineering Tips
 
-#### ✅ Effective Prompts
+#### Effective Prompts
 - Reference existing documentation (e.g., "according to README requirements")
 - Be specific about desired features (numbered lists work well)
 - Include technical constraints (Python version, libraries to use)
