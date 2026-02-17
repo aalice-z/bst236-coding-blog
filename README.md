@@ -78,6 +78,8 @@ In your report (`README.md`), describe how you used Copilot CLI to build each co
 
 This section documents my journey using GitHub Copilot and AI coding assistants to complete all three problems. I had no prior experience with game development or GitHub Actions, so this was a learning experience in leveraging AI for unfamiliar tasks.
 
+**Live Site**: [https://aalice-z.github.io/bst236-coding-blog/](https://aalice-z.github.io/bst236-coding-blog/)
+
 ## AI Tools Used
 - **GitHub Copilot Chat** (VS Code extension) - Primary coding assistant
 - **Agentic Programming Approach** - Breaking tasks into smaller, agent-friendly components
