@@ -1,6 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xdcIkjOc)
 # Homework 1: Code with AI
 
+## 🌐 Website Link
+**Live Site**: [https://aalice-z.github.io/bst236-coding-blog/](https://aalice-z.github.io/bst236-coding-blog/)
+
+
 The due date is Feb 17 at midnight. If you are using the late days, please note in the head of README.md that “I used XX late days this time, and I have XX days remaining”.
 
 The main purpose of this homework is to help you:
@@ -67,5 +71,318 @@ In your report (`README.md`), describe how you used Copilot CLI to build each co
 **Tip 3**: You can ask AI to teach you how to use [GitHub Actions](https://docs.github.com/en/actions) to automate the process of updating the webpage. Or even leave the job to agents.
 
 **Tip 4**: You can use [Copy Coder](https://copycoder.ai/) to help you design the webpage UI from the style you like.
+
+---
+
+# 📝 Development Report: Building with AI Assistance
+
+This section documents my journey using GitHub Copilot and AI coding assistants to complete all three problems. I had no prior experience with game development or GitHub Actions, so this was a learning experience in leveraging AI for unfamiliar tasks.
+
+## 🛠️ AI Tools Used
+- **GitHub Copilot Chat** (VS Code extension) - Primary coding assistant
+- **Agentic Programming Approach** - Breaking tasks into smaller, agent-friendly components
+
+---
+
+## Problem 1: GitHub Pages Website
+
+### Initial Prompt
+```
+According to the problem 1 requirements in README, create the github website for my coding blog.
+```
+
+### What Worked Well ✅
+- **Single Clear Prompt**: The AI understood the requirement and generated a complete homepage with:
+  - Modern responsive design
+  - Navigation structure ready for future pages
+  - Professional styling with CSS variables
+  - Project cards for the Pac-Man game and arXiv feed
+
+### Iterations Required 🔄
+1. **Color Theme Adjustment**
+   - **Prompt**: "I want pastel mint green and baby blue color theme"
+   - **Result**: AI updated CSS variables to match the desired aesthetic
+   - **Learning**: AI excels at design adjustments when given specific color preferences
+
+2. **Deployment Challenge**
+   - **Issue**: My repository was a GitHub Classroom fork without Pages sidebar
+   - **Prompt**: "My repo was forked from classroom and don't have the pages sidebar. How to host the website repo under my own github account so I post it online."
+   - **Solution**: AI guided me through creating a new personal repository and pushing code there
+   - **Learning**: AI can provide detailed deployment guidance for complex GitHub workflows
+
+### Key Takeaway
+Start with a clear, requirement-based prompt. AI can generate complete, production-ready code when given proper context from documentation (the README in this case).
+
+---
+
+## Problem 2: Valentine's Pac-Man Game
+
+### Initial Prompt
+```
+Now, continue to problem 2, including the three key features described in README
+```
+
+### What Worked Well ✅
+- **Feature Implementation**: AI successfully created all three core features:
+  - Classic maze-based Pac-Man mechanics
+  - Rose power-ups with timed duration
+  - Heart projectile system that eliminates ghosts
+- **Game Loop Architecture**: Proper game loop with requestAnimationFrame
+- **Canvas Rendering**: Efficient 2D canvas drawing
+
+### Iterations Required 🔄
+
+#### Iteration 1: Movement Issues
+- **Problem**: "This looks a bit weird. the pac man becomes a triangular piece when running, and is in between blue and black blocks and can go anywhere not blocked by anything"
+- **Root Cause**: Floating-point position system caused misalignment with grid
+- **Solution**: AI implemented grid-based movement with smooth interpolation
+- **Files Changed**: Completely rewrote movement logic in `pacman.html`
+
+#### Iteration 2: Black Screen Bug
+- **Problem**: "Now the screen is black."
+- **Root Cause**: Pac-Man object not initialized before drawing
+- **Solution**: Added proper initialization before initial draw
+- **Learning**: AI quickly identified and fixed initialization order issues
+
+#### Iteration 3: Syntax Errors
+- **Problem**: "There are errors in the file"
+- **Root Cause**: File corruption from multiple edits created malformed JavaScript
+- **Solution**: AI recognized the issue and recreated the entire file cleanly
+- **Files Changed**: Complete rewrite of `pacman.html` (661 lines)
+
+#### Iteration 4: Ghost Positioning
+- **Problem**: "This orange guy is staying in one place and cannot move because there is just one grid"
+- **Root Cause**: Ghosts spawning inside walls
+- **Solution**: AI created specific spawn positions in valid empty spaces
+- **Learning**: Visual debugging through screenshots helped AI understand spatial issues
+
+#### Iteration 5: Valentine's Theme
+- **Prompt**: "can we have pink walls instead of blue to make it valentine's them"
+- **Result**: Instant update from blue (#2121de) to hot pink (#ff69b4) walls
+- **Learning**: Theme adjustments are trivial for AI when requested explicitly
+
+### Key Challenges & Solutions
+
+| Challenge | AI Solution | Code Impact |
+|-----------|-------------|-------------|
+| Grid alignment | Separate gridX/gridY from interpolation x/y | Major refactor |
+| Collision detection | Check integer grid positions, not floats | Medium fix |
+| Ghost AI | Random valid direction selection with wall checking | New algorithm |
+| File corruption | Complete file regeneration | Full rewrite |
+
+### Key Takeaway
+Game development requires iterative debugging. AI is excellent at:
+- Quickly diagnosing issues from descriptions or screenshots
+- Implementing complete rewrites when needed
+- Making incremental adjustments to game mechanics
+
+However, expect multiple iterations for complex interactive systems. Each iteration refined the game until it worked smoothly.
+
+---
+
+## Problem 3: arXiv Paper Feed (Agentic Approach)
+
+### Planning Phase
+
+#### Initial Prompt
+```
+As a professional data background engineer, continue with problem 3, Plan how to build the auto-updating arXiv paper feed using Copilot CLI. Teach me how to use arXiv API to fetch the latest papers from arXiv.
+```
+
+**AI Response**: Comprehensive plan breaking the task into 4 agents:
+1. API Fetcher Agent (Python script)
+2. Page Generator Agent (Python script)
+3. Automation Agent (GitHub Actions)
+4. Dependencies File
+
+### Agent 1: API Fetcher Script
+
+#### Prompt
+```
+Create a Python script fetch_papers.py that:
+1. Takes keywords as command-line arguments
+2. Queries arXiv API for the latest 20 papers matching those keywords
+3. Parses the XML response
+4. Extracts: title, authors, abstract, PDF link, published date
+5. Saves results to papers.json
+6. Uses requests library for HTTP and xml.etree for parsing
+```
+
+#### Result ✅
+- **Generated**: Complete `fetch_papers.py` (185 lines)
+- **Features Included**:
+  - Command-line argument parsing
+  - arXiv API query building (supports both keywords and categories)
+  - XML parsing with proper namespaces
+  - Error handling for network and parse errors
+  - Date formatting for human readability
+  - JSON output with metadata
+- **First Run Success**: Script worked immediately without modifications
+- **Test Output**: Successfully fetched 20 papers on "machine learning" and "deep learning"
+
+### Agent 2: Page Generator Script
+
+#### Prompt
+```
+Create a Python script generate_page.py that:
+1. Reads papers.json
+2. Generates papers.html with pastel mint green and baby blue theme
+3. Displays papers in a responsive card grid
+4. Each card shows: title (linked to PDF), authors, date, and abstract
+5. Includes "Back to Home" link
+6. Matches the style.css from the existing website
+```
+
+#### Result ✅
+- **Generated**: Complete `generate_page.py` (235 lines)
+- **Features Included**:
+  - JSON parsing with error handling
+  - HTML template generation with embedded CSS
+  - Responsive grid layout (auto-adjusts columns)
+  - Smart author truncation (shows "et al." for many authors)
+  - Abstract truncation for long texts
+  - Consistent theme using CSS variables
+  - Multiple link types (PDF and arXiv page)
+- **First Run Success**: Generated beautiful HTML page immediately
+
+### Agent 3: GitHub Actions Workflow
+
+#### Prompt
+```
+Create .github/workflows/update-papers.yml that:
+1. Runs daily at midnight UTC (cron: '0 0 * * *')
+2. Also allows manual triggering
+3. Checks out the repository
+4. Sets up Python 3.11
+5. Installs dependencies from requirements.txt
+6. Runs fetch_papers.py with keywords "machine learning"
+7. Runs generate_page.py
+8. Commits and pushes changes if papers.json or papers.html changed
+9. Uses github-actions bot for commits
+```
+
+#### Result ✅
+- **Generated**: Complete workflow file (74 lines)
+- **Features Included**:
+  - Cron schedule for daily runs
+  - Manual trigger capability (`workflow_dispatch`)
+  - Proper Python setup with pip caching
+  - Change detection before committing
+  - Conditional commit/push
+  - Proper git configuration for bot commits
+  - Helpful logging messages
+- **Additional**: AI created detailed setup instructions (`GITHUB_ACTIONS_SETUP.md`)
+
+### What Worked Exceptionally Well ✅
+
+1. **Agentic Breakdown**: The AI naturally decomposed the problem into independent, testable components
+2. **Documentation Quality**: Each script had comprehensive docstrings and comments
+3. **Error Handling**: All scripts included proper try-except blocks and user-friendly error messages
+4. **First-Time Success Rate**: All three components worked on first execution
+5. **Production Ready**: Code included features I didn't explicitly request:
+   - Summary statistics after execution
+   - Progress logging
+   - Smart defaults when no arguments provided
+   - Responsive design breakpoints
+
+### Minimal Iterations Required 🔄
+
+**Question**: "Do I need dependencies file?"
+- AI clarified that `requirements.txt` was already created in Step 1
+- Explained why only `requests` was needed (other modules are Python stdlib)
+- No code changes needed
+
+### Key Takeaway
+
+The agentic approach is powerful for data engineering tasks:
+1. **Plan First**: Ask AI to design the architecture before coding
+2. **One Agent = One Script**: Clear separation of concerns
+3. **Test Incrementally**: Each component can be tested independently
+4. **Compose Together**: GitHub Actions orchestrates all pieces
+
+This approach resulted in:
+- **Zero debugging needed** for the data pipeline
+- **Clean, maintainable code** with proper structure
+- **Production-ready automation** on first try
+
+---
+
+## 🎓 Overall Lessons Learned
+
+### What AI Excels At
+1. **Complete System Generation**: Given clear requirements, AI generates entire functional systems
+2. **Quick Iteration**: Fast turnaround on bug fixes and feature adjustments
+3. **Best Practices**: Automatically includes error handling, documentation, and edge cases
+4. **Architecture Guidance**: Excellent at planning multi-component systems
+
+### Where Human Guidance Is Critical
+1. **Visual Debugging**: Describing visual bugs (like Pac-Man movement) requires precise observation
+2. **Requirement Interpretation**: Translating assignment requirements into specific prompts
+3. **Testing & Validation**: Verifying outputs match expectations
+4. **Design Decisions**: Choosing color schemes, keywords, and user experience
+
+### Prompt Engineering Tips
+
+#### ✅ Effective Prompts
+- Reference existing documentation (e.g., "according to README requirements")
+- Be specific about desired features (numbered lists work well)
+- Include technical constraints (Python version, libraries to use)
+- Request specific file names and structures
+
+#### ❌ What Doesn't Work Well
+- Vague requests like "make it better"
+- Assuming AI knows your setup (be explicit about environment)
+- Multiple unrelated changes in one prompt
+
+### The Iterative Process
+
+```
+Initial Prompt → AI Generation → Testing → Issue Found → 
+Specific Bug Report → AI Fix → Retesting → Success!
+```
+
+**Average iterations needed**:
+- Problem 1 (Homepage): 2 iterations (mainly design tweaks)
+- Problem 2 (Game): 5 iterations (complex interactive system)
+- Problem 3 (Data Pipeline): 1 iteration (well-structured from planning)
+
+---
+
+## 📊 Final Statistics
+
+| Metric | Count |
+|--------|-------|
+| Total Files Created | 9 |
+| Total Lines of Code | ~2,700 |
+| Python Scripts | 2 |
+| HTML Pages | 3 |
+| CSS Files | 1 |
+| Workflow Files | 1 |
+| Configuration Files | 1 |
+| Major Iterations | 8 |
+| Time to First Working Version | ~2 hours |
+| AI-Generated Code Percentage | ~95% |
+
+---
+
+## 🚀 Deployment & Access
+
+- **Homepage**: [https://aalice-z.github.io/bst236-coding-blog/](https://aalice-z.github.io/bst236-coding-blog/)
+- **Pac-Man Game**: [https://aalice-z.github.io/bst236-coding-blog/pacman.html](https://aalice-z.github.io/bst236-coding-blog/pacman.html)
+- **arXiv Papers**: [https://aalice-z.github.io/bst236-coding-blog/papers.html](https://aalice-z.github.io/bst236-coding-blog/papers.html)
+- **Auto-Update**: Daily at midnight UTC via GitHub Actions
+
+---
+
+## 💡 Conclusion
+
+This homework demonstrated that AI coding assistants are incredibly powerful when:
+1. Given clear, specific requirements
+2. Used iteratively with testing and feedback
+3. Applied to well-defined problem domains
+
+The agentic programming paradigm (breaking problems into independent agents) proved especially effective for the data pipeline, resulting in cleaner code and faster development.
+
+The key skill isn't writing code anymore—it's **communicating requirements clearly** and **debugging systematically** when issues arise.
 
 
