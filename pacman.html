@@ -678,7 +678,17 @@ gridX, gridY) {
             }
         });
 
-        // Initial draw
+        // Initial draw - initialize pacman first
+        pacman = {
+            gridX: 12,
+            gridY: 17,
+            x: 0,
+            y: 0,
+            direction: { x: 0, y: 0 },
+            nextDirection: { x: 0, y: 0 },
+            mouthOpen: 0,
+            animFrame: 0
+        };
         createMaze();
         initGhosts();
         drawMaze();
