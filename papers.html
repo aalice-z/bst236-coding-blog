@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest arXiv Papers - My Coding Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .papers-container {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .papers-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .papers-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .papers-header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .papers-info {
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .papers-info p {
+            margin: 0.5rem 0;
+            color: var(--text-light);
+        }
+
+        .papers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .paper-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .paper-header {
+            margin-bottom: 1rem;
+        }
+
+        .paper-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .paper-title a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .paper-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .paper-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .paper-date {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .paper-id a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        .paper-id a:hover {
+            color: var(--primary-color);
+        }
+
+        .paper-authors {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: var(--bg-secondary);
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .authors-label {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .paper-abstract {
+            flex-grow: 1;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--text-light);
+        }
+
+        .paper-abstract p {
+            margin: 0;
+        }
+
+        .paper-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: auto;
+        }
+
+        .paper-link {
+            flex: 1;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .paper-link:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .pdf-link {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .arxiv-link {
+            background: var(--bg-secondary);
+            color: var(--text-color);
+            border: 2px solid var(--border-color);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 2rem auto;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background 0.3s;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .back-link-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .papers-grid {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+
+            .papers-header h1 {
+                font-size: 2rem;
+            }
+
+            .paper-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="papers-container">
+        <div class="container">
+            <div class="papers-header">
+                <h1>📚 Latest arXiv Papers</h1>
+                <p>Curated research papers on machine learning and deep learning</p>
+            </div>
+
+            <div class="papers-info">
+                <p><strong>20 papers</strong> • Last updated: February 17, 2026 at 04:08 PM</p>
+                <p>🔄 Automatically updated daily at midnight</p>
+            </div>
+
+            <div class="papers-grid">
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.15021v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Generalization from Low- to Moderate-Resolution Spectra with Neural Networks for Stellar Parameter Estimation: A Case Study with DESI
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 16, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.15021v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.15021v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Xiaosheng Zhao, Yuan-Sen Ting, Rosemary F. G. Wyse, et al. (8 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Cross-survey generalization is a critical challenge in stellar spectral analysis, particularly in cases such as transferring from low- to moderate-resolution surveys. We investigate this problem using pre-trained models, focusing on simple neural networks such as multilayer perceptrons (MLPs), wi...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.15021v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.15021v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14919v1.pdf" target="_blank" rel="noopener noreferrer">
+                        BHyGNN+: Unsupervised Representation Learning for Heterophilic Hypergraphs
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 16, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14919v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14919v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Tianyi Ma, Yiyue Qian, Zehong Wang, et al. (6 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Hypergraph Neural Networks (HyGNNs) have demonstrated remarkable success in modeling higher-order relationships among entities. However, their performance often degrades on heterophilic hypergraphs, where nodes connected by the same hyperedge tend to have dissimilar semantic representations or be...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14919v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14919v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14803v1.pdf" target="_blank" rel="noopener noreferrer">
+                        A physics inspired and efficient transform for optoacoustic systems
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 16, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14803v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14803v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Maria Rodriguez Saenz de Tejada, Alvaro Jimenez, Rodrigo Rojo, et al. (5 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Optoacoustic imaging technologies still rely on the Discrete Fourier Transform (DFT) as the preferred method for essential signal conditioning operations. The long-standing success of the DFT is largely due to the limited generalizability of data-driven alternatives (e.g., deep neural networks) a...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14803v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14803v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14663v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Pseudo-differential-enhanced physics-informed neural networks
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 16, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14663v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14663v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Andrew Gracyk
+            </div>
+            <div class="paper-abstract">
+                <p>We present pseudo-differential enhanced physics-informed neural networks (PINNs), an extension of gradient enhancement but in Fourier space. Gradient enhancement of PINNs dictates that the PDE residual is taken to a higher differential order than prescribed by the PDE, added to the objective as a...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14663v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14663v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14523v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Architectural Insights for Post-Tornado Damage Recognition
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 16, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14523v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14523v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Robinson Umeike, Thang Dao, Shane Crawford, et al. (11 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Rapid and accurate building damage assessment in the immediate aftermath of tornadoes is critical for coordinating life-saving search and rescue operations, optimizing emergency resource allocation, and accelerating community recovery. However, current automated methods struggle with the unique v...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14523v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14523v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14486v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Revisiting the Platonic Representation Hypothesis: An Aristotelian View
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 16, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14486v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14486v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Fabian Gröger, Shuo Wen, Maria Brbić
+            </div>
+            <div class="paper-abstract">
+                <p>The Platonic Representation Hypothesis suggests that representations from neural networks are converging to a common statistical model of reality. We show that the existing metrics used to measure representational similarity are confounded by network scale: increasing model depth or width can sys...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14486v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14486v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14100v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Character-aware Transformers Learn an Irregular Morphological Pattern Yet None Generalize Like Humans
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 15, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14100v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14100v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Akhilesh Kakolu Ramarao, Kevin Tang, Dinah Baer-Henney
+            </div>
+            <div class="paper-abstract">
+                <p>Whether neural networks can serve as cognitive models of morphological learning remains an open question. Recent work has shown that encoder-decoder models can acquire irregular patterns, but evidence that they generalize these patterns like humans is mixed. We investigate this using the Spanish ...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14100v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14100v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.14094v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Wireless Physical Neural Networks (WPNNs): Opportunities and Challenges
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 15, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.14094v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.14094v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Meng Hua, Itsik Bergel, Tolga Girici, et al. (5 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Wireless communication systems exhibit structural and functional similarities to neural networks: signals propagate through cascaded elements, interact with the environment, and undergo transformations. Building upon this perspective, we introduce a unified paradigm, termed \textit{wireless physi...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.14094v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.14094v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.13690v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Physics Aware Neural Networks: Denoising for Magnetic Navigation
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 14, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.13690v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.13690v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Aritra Das, Yashas Shende, Muskaan Chugh, et al. (6 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Magnetic-anomaly navigation, leveraging small-scale variations in the Earth's magnetic field, is a promising alternative when GPS is unavailable or compromised. Airborne systems face a key challenge in extracting geomagnetic field data: the aircraft itself induces magnetic noise. Although the cla...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.13690v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.13690v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.13550v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Out-of-Support Generalisation via Weight Space Sequence Modelling
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 14, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.13550v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.13550v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Roussel Desmond Nzoyem
+            </div>
+            <div class="paper-abstract">
+                <p>As breakthroughs in deep learning transform key industries, models are increasingly required to extrapolate on datapoints found outside the range of the training set, a challenge we coin as out-of-support (OoS) generalisation. However, neural networks frequently exhibit catastrophic failure on Oo...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.13550v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.13550v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.13536v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Robustness Verification of Binary Neural Networks: An Ising and Quantum-Inspired Framework
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 14, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.13536v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.13536v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Rahul Singh, Seyran Saeedi, Zheng Zhang
+            </div>
+            <div class="paper-abstract">
+                <p>Binary neural networks (BNNs) are increasingly deployed in edge computing applications due to their low hardware complexity and high energy efficiency. However, verifying the robustness of BNNs against input perturbations, including adversarial attacks, remains computationally challenging because...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.13536v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.13536v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.12998v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Variational study of the magnetization plateaus in the spin-1/2 kagome Heisenberg antiferromagnet: an approach from vision transformer neural quantum states
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 13, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.12998v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.12998v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Andreas Raikos, Sylvain Capponi, Fabien Alet
+            </div>
+            <div class="paper-abstract">
+                <p>We analyze the magnetization curve of the spin-1/2 kagome Heisenberg model in a magnetic field. Using state-of-the-art variational wavefunctions based on neural networks, we confirm the presence of robust magnetization plateaus at $m=1/3$, $5/9$ and $7/9$ of the saturation value, stabilized by a ...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.12998v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.12998v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.12798v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Can Neural Networks Provide Latent Embeddings for Telemetry-Aware Greedy Routing?
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 13, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.12798v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.12798v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Andreas Boltres, Niklas Freymuth, Gerhard Neumann
+            </div>
+            <div class="paper-abstract">
+                <p>Telemetry-Aware routing promises to increase efficacy and responsiveness to traffic surges in computer networks. Recent research leverages Machine Learning to deal with the complex dependency between network state and routing, but sacrifices explainability of routing decisions due to the black-bo...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.12798v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.12798v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.12595v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Michel Talagrand and the Rigorous Theory of Mean Field Spin Glasses
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 13, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.12595v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.12595v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Sourav Chatterjee
+            </div>
+            <div class="paper-abstract">
+                <p>Michel Talagrand played a decisive role in the transformation of mean field spin glass theory into a rigorous mathematical subject. This chapter offers a narrative account of that development. We begin with the physical origins of the Sherrington-Kirkpatrick (SK) model and the emergence of the TA...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.12595v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.12595v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.12390v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Rational Neural Networks have Expressivity Advantages
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 12, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.12390v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.12390v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Maosen Tang, Alex Townsend
+            </div>
+            <div class="paper-abstract">
+                <p>We study neural networks with trainable low-degree rational activation functions and show that they are more expressive and parameter-efficient than modern piecewise-linear and smooth activations such as ELU, LeakyReLU, LogSigmoid, PReLU, ReLU, SELU, CELU, Sigmoid, SiLU, Mish, Softplus, Tanh, Sof...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.12390v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.12390v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.12255v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Vision Transformer for Multi-Domain Phase Retrieval in Coherent Diffraction Imaging
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 12, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.12255v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.12255v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Jialun Liu, David Yang, Ian Robinson
+            </div>
+            <div class="paper-abstract">
+                <p>Bragg coherent diffraction imaging (BCDI) phase retrieval becomes rapidly difficult in the strong-phase regime, where a crystal contains distortions beyond half a lattice spacing. An important special case is the phase domain problem, where blocks of a crystal are displaced with sharp jumps at do...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.12255v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.12255v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.12251v1.pdf" target="_blank" rel="noopener noreferrer">
+                        A technical curriculum on language-oriented artificial intelligence in translation and specialised communication
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 12, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.12251v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.12251v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Ralph Krüger
+            </div>
+            <div class="paper-abstract">
+                <p>This paper presents a technical curriculum on language-oriented artificial intelligence (AI) in the language and translation (L&T) industry. The curriculum aims to foster domain-specific technical AI literacy among stakeholders in the fields of translation and specialised communication by exposin...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.12251v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.12251v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.11974v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Measurement of the singly Cabibbo-suppressed decay $Λ_c^+\to pη'$ with Deep Learning
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 12, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.11974v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.11974v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span>  BESIII Collaboration, M. Ablikim, M. N. Achasov, et al. (713 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Using $4.5$ fb$^{-1}$ of $e^+e^-$ collision data collected with the BESIII detector at center-of-mass energies from 4.600 to 4.699 GeV, we report a measurement of the singly Cabibbo-suppressed decay $Λ_c^+ \to pη'$ with the single-tag method. To effectively distinguish the signal from the large b...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.11974v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.11974v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.11648v1.pdf" target="_blank" rel="noopener noreferrer">
+                        Human-Like Gaze Behavior in Social Robots: A Deep Learning Approach Integrating Human and Non-Human Stimuli
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 12, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.11648v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.11648v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Faezeh Vahedi, Morteza Memari, Ramtin Tabatabaei, et al. (4 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>Nonverbal behaviors, particularly gaze direction, play a crucial role in enhancing effective communication in social interactions. As social robots increasingly participate in these interactions, they must adapt their gaze based on human activities and remain receptive to all cues, whether human-...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.11648v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.11648v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+
+        <div class="paper-card">
+            <div class="paper-header">
+                <h3 class="paper-title">
+                    <a href="http://arxiv.org/pdf/2602.11461v1.pdf" target="_blank" rel="noopener noreferrer">
+                        EM-Aware Physical Synthesis: Neural Inductor Modeling and Intelligent Placement & Routing for RF Circuits
+                    </a>
+                </h3>
+                <div class="paper-meta">
+                    <span class="paper-date">📅 February 12, 2026</span>
+                    <span class="paper-id">
+                        <a href="http://arxiv.org/abs/2602.11461v1" target="_blank" rel="noopener noreferrer">
+                            arXiv:2602.11461v1
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="paper-authors">
+                <span class="authors-label">👥 Authors:</span> Yilun Huang, Asal Mehradfar, Salman Avestimehr, et al. (4 authors)
+            </div>
+            <div class="paper-abstract">
+                <p>This paper presents an ML-driven framework for automated RF physical synthesis that transforms circuit netlists into manufacturable GDSII layouts. While recent ML approaches demonstrate success in topology selection and parameter optimization, they fail to produce manufacturable layouts due to ov...</p>
+            </div>
+            <div class="paper-links">
+                <a href="http://arxiv.org/pdf/2602.11461v1.pdf" class="paper-link pdf-link" target="_blank" rel="noopener noreferrer">
+                    📄 PDF
+                </a>
+                <a href="http://arxiv.org/abs/2602.11461v1" class="paper-link arxiv-link" target="_blank" rel="noopener noreferrer">
+                    🔗 arXiv Page
+                </a>
+            </div>
+        </div>
+    
+            </div>
+
+            <div class="back-link-container">
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
