@@ -331,7 +331,7 @@ This approach resulted in:
 - Include technical constraints (Python version, libraries to use)
 - Request specific file names and structures
 
-#### ❌ What Doesn't Work Well
+#### What Doesn't Work Well
 - Vague requests like "make it better"
 - Assuming AI knows your setup (be explicit about environment)
 - Multiple unrelated changes in one prompt
@@ -350,23 +350,6 @@ Specific Bug Report → AI Fix → Retesting → Success!
 
 ---
 
-## 📊 Final Statistics
-
-| Metric | Count |
-|--------|-------|
-| Total Files Created | 9 |
-| Total Lines of Code | ~2,700 |
-| Python Scripts | 2 |
-| HTML Pages | 3 |
-| CSS Files | 1 |
-| Workflow Files | 1 |
-| Configuration Files | 1 |
-| Major Iterations | 8 |
-| Time to First Working Version | ~2 hours |
-| AI-Generated Code Percentage | ~95% |
-
----
-
 ## 🚀 Deployment & Access
 
 - **Homepage**: [https://aalice-z.github.io/bst236-coding-blog/](https://aalice-z.github.io/bst236-coding-blog/)
@@ -376,7 +359,7 @@ Specific Bug Report → AI Fix → Retesting → Success!
 
 ---
 
-## 💡 Conclusion
+## Conclusion
 
 This homework demonstrated that AI coding assistants are incredibly powerful when:
 1. Given clear, specific requirements
