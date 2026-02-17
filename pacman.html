@@ -278,12 +278,18 @@
         function initGhosts() {
             const colors = ['#FF0000', '#FFB8FF', '#00FFFF', '#FFB852'];
             const names = ['Blinky', 'Pinky', 'Inky', 'Clyde'];
+            const positions = [
+                { x: 9, y: 9 },
+                { x: 11, y: 9 },
+                { x: 13, y: 9 },
+                { x: 10, y: 10 }
+            ];
             ghosts = [];
             
             for (let i = 0; i < 4; i++) {
                 ghosts.push({
-                    x: 11 + i,
-                    y: 10,
+                    x: positions[i].x,
+                    y: positions[i].y,
                     color: colors[i],
                     name: names[i],
                     direction: { x: 0, y: 0 }
@@ -607,9 +613,15 @@
                 // Respawn ghost if killed
                 if (ghosts.length < 4 && hitGhost) {
                     const colors = ['#FF0000', '#FFB8FF', '#00FFFF', '#FFB852'];
+                    const positions = [
+                        { x: 9, y: 9 },
+                        { x: 11, y: 9 },
+                        { x: 13, y: 9 },
+                        { x: 10, y: 10 }
+                    ];
                     ghosts.push({
-                        x: 12,
-                        y: 10,
+                        x: positions[ghosts.length].x,
+                        y: positions[ghosts.length].y,
                         color: colors[ghosts.length],
                         direction: { x: 0, y: 0 }
                     });
