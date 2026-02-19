@@ -1,7 +1,125 @@
 {
-  "last_updated": "2026-02-18T01:05:18.890607",
+  "last_updated": "2026-02-19T01:04:30.021930",
   "count": 20,
   "papers": [
+    {
+      "id": "2602.15830v1",
+      "title": "Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution",
+      "authors": [
+        "Christopher David Roberts"
+      ],
+      "abstract": "Fair scores reward ensemble forecast members that behave like samples from the same distribution as the verifying observations. They are therefore an attractive choice as loss functions to train data-driven ensemble forecasts or post-processing methods when large training ensembles are either unavailable or computationally prohibitive. The adjusted continuous ranked probability score (aCRPS) is fair and unbiased with respect to ensemble size, provided forecast members are exchangeable and interpretable as conditionally independent draws from an underlying predictive distribution. However, distribution-aware post-processing methods that introduce structural dependency between members can violate this assumption, rendering aCRPS unfair. We demonstrate this effect using two approaches designed to minimize the expected aCRPS of a finite ensemble: (1) a linear member-by-member calibration, which couples members through a common dependency on the sample ensemble mean, and (2) a deep-learning method, which couples members via transformer self-attention across the ensemble dimension. In both cases, the results are sensitive to ensemble size and apparent gains in aCRPS can correspond to systematic unreliability characterized by over-dispersion. We introduce trajectory transformers as a proof-of-concept that ensemble-size independence can be achieved. This approach is an adaptation of the Post-processing Ensembles with Transformers (PoET) framework and applies self-attention over lead time while preserving the conditional independence required by aCRPS. When applied to weekly mean $T_{2m}$ forecasts from the ECMWF subseasonal forecasting system, this approach successfully reduces systematic model biases whilst also improving or maintaining forecast reliability regardless of the ensemble size used in training (3 vs 9 members) or real-time forecasts (9 vs 100 members).",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T18:59:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15830v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15830v1"
+    },
+    {
+      "id": "2602.15637v1",
+      "title": "The Stationarity Bias: Stratified Stress-Testing for Time-Series Imputation in Regulated Dynamical Systems",
+      "authors": [
+        "Amirreza Dolatpour Fathkouhi",
+        "Alireza Namazi",
+        "Heman Shakeri"
+      ],
+      "abstract": "Time-series imputation benchmarks employ uniform random masking and shape-agnostic metrics (MSE, RMSE), implicitly weighting evaluation by regime prevalence. In systems with a dominant attractor -- homeostatic physiology, nominal industrial operation, stable network traffic -- this creates a systematic \\emph{Stationarity Bias}: simple methods appear superior because the benchmark predominantly samples the easy, low-entropy regime where they trivially succeed. We formalize this bias and propose a \\emph{Stratified Stress-Test} that partitions evaluation into Stationary and Transient regimes. Using Continuous Glucose Monitoring (CGM) as a testbed -- chosen for its rigorous ground-truth forcing functions (meals, insulin) that enable precise regime identification -- we establish three findings with broad implications:(i)~Stationary Efficiency: Linear interpolation achieves state-of-the-art reconstruction during stable intervals, confirming that complex architectures are computationally wasteful in low-entropy regimes.(ii)~Transient Fidelity: During critical transients (post-prandial peaks, hypoglycemic events), linear methods exhibit drastically degraded morphological fidelity (DTW), disproportionate to their RMSE -- a phenomenon we term the \\emph{RMSE Mirage}, where low pointwise error masks the destruction of signal shape.(iii)~Regime-Conditional Model Selection: Deep learning models preserve both pointwise accuracy and morphological integrity during transients, making them essential for safety-critical downstream tasks. We further derive empirical missingness distributions from clinical trials and impose them on complete training data, preventing models from exploiting unrealistically clean observations and encouraging robustness under real-world missingness. This framework generalizes to any regulated system where routine stationarity dominates critical transients.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T15:05:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15637v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15637v1"
+    },
+    {
+      "id": "2602.15602v1",
+      "title": "Certified Per-Instance Unlearning Using Individual Sensitivity Bounds",
+      "authors": [
+        "Hanna Benarroch",
+        "Jamal Atif",
+        "Olivier Cappé"
+      ],
+      "abstract": "Certified machine unlearning can be achieved via noise injection leading to differential privacy guarantees, where noise is calibrated to worst-case sensitivity. Such conservative calibration often results in performance degradation, limiting practical applicability. In this work, we investigate an alternative approach based on adaptive per-instance noise calibration tailored to the individual contribution of each data point to the learned solution. This raises the following challenge: how can one establish formal unlearning guarantees when the mechanism depends on the specific point to be removed? To define individual data point sensitivities in noisy gradient dynamics, we consider the use of per-instance differential privacy. For ridge regression trained via Langevin dynamics, we derive high-probability per-instance sensitivity bounds, yielding certified unlearning with substantially less noise injection. We corroborate our theoretical findings through experiments in linear settings and provide further empirical evidence on the relevance of the approach in deep learning settings.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T14:18:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15602v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15602v1"
+    },
+    {
+      "id": "2602.15552v1",
+      "title": "Latent Regularization in Generative Test Input Generation",
+      "authors": [
+        "Giorgi Merabishvili",
+        "Oliver Weißl",
+        "Andrea Stocco"
+      ],
+      "abstract": "This study investigates the impact of regularization of latent spaces through truncation on the quality of generated test inputs for deep learning classifiers. We evaluate this effect using style-based GANs, a state-of-the-art generative approach, and assess quality along three dimensions: validity, diversity, and fault detection. We evaluate our approach on the boundary testing of deep learning image classifiers across three datasets, MNIST, Fashion MNIST, and CIFAR-10. We compare two truncation strategies: latent code mixing with binary search optimization and random latent truncation for generative exploration. Our experiments show that the latent code-mixing approach yields a higher fault detection rate than random truncation, while also improving both diversity and validity.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T12:57:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15552v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15552v1"
+    },
+    {
+      "id": "2602.15484v1",
+      "title": "Bottleneck Transformer-Based Approach for Improved Automatic STOI Score Prediction",
+      "authors": [
+        " Amartyaveer",
+        "Murali Kadambi",
+        "Chandra Mohan Sharma",
+        "Anupam Mondal",
+        "Prasanta Kumar Ghosh"
+      ],
+      "abstract": "In this study, we have presented a novel approach to predict the Short-Time Objective Intelligibility (STOI) metric using a bottleneck transformer architecture. Traditional methods for calculating STOI typically requires clean reference speech, which limits their applicability in the real world. To address this, numerous deep learning-based nonintrusive speech assessment models have garnered significant interest. Many studies have achieved commendable performance, but there is room for further improvement. We propose the use of bottleneck transformer, incorporating convolution blocks for learning frame-level features and a multi-head self-attention (MHSA) layer to aggregate the information. These components enable the transformer to focus on the key aspects of the input data. Our model has shown higher correlation and lower mean squared error for both seen and unseen scenarios compared to the state-of-the-art model using self-supervised learning (SSL) and spectral features as inputs.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T10:46:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15484v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15484v1"
+    },
+    {
+      "id": "2602.15167v1",
+      "title": "Distributional Deep Learning for Super-Resolution of 4D Flow MRI under Domain Shift",
+      "authors": [
+        "Xiaoyi Wen",
+        "Fei Jiang"
+      ],
+      "abstract": "Super-resolution is widely used in medical imaging to enhance low-quality data, reducing scan time and improving abnormality detection. Conventional super-resolution approaches typically rely on paired datasets of downsampled and original high resolution images, training models to reconstruct high resolution images from their artificially degraded counterparts. However, in real-world clinical settings, low resolution data often arise from acquisition mechanisms that differ significantly from simple downsampling. As a result, these inputs may lie outside the domain of the training data, leading to poor model generalization due to domain shift. To address this limitation, we propose a distributional deep learning framework that improves model robustness and domain generalization. We develop this approch for enhancing the resolution of 4D Flow MRI (4DF). This is a novel imaging modality that captures hemodynamic flow velocity and clinically relevant metrics such as vessel wall stress. These metrics are critical for assessing aneurysm rupture risk. Our model is initially trained on high resolution computational fluid dynamics (CFD) simulations and their downsampled counterparts. It is then fine-tuned on a small, harmonized dataset of paired 4D Flow MRI and CFD samples. We derive the theoretical properties of our distributional estimators and demonstrate that our framework significantly outperforms traditional deep learning approaches through real data applications. This highlights the effectiveness of distributional learning in addressing domain shift and improving super-resolution performance in clinically realistic scenarios.",
+      "published": "February 16, 2026",
+      "published_raw": "2026-02-16T20:11:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15167v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15167v1"
+    },
+    {
+      "id": "2602.15141v1",
+      "title": "Mimicking the large-scale structure of the Local Universe. Synthetic pre-labelled galaxies in large-scale structures",
+      "authors": [
+        "M. Alcázar-Laynez",
+        "S. Duarte Puertas",
+        "S. Verley",
+        "G. Blázquez-Calero",
+        "A. Jiménez",
+        "A. Lorenzo-Gutiérrez",
+        "D. Espada",
+        "M. Argudo-Fernández",
+        "I. Pérez"
+      ],
+      "abstract": "Current observational and simulated large-scale structure (LSS) catalogues often lack consistency in assigning galaxies to specific structures, due to the absence of a universally accepted classification criterion. With the aim to generate synthetic empirical data for fine-tuning LSS classification algorithms, as well as to train machine learning (ML)/deep learning (DL) models for the same purpose, this work presents a purely geometrical simulation based on statistical spatial properties found in LSS surveys, using the spectroscopic main galaxy sample of the Sloan Digital Sky Survey (SDSS) catalogue up to a redshift of z~0.1 as a specific use case. A parallelism between the LSS and the Voronoi tessellation was utilised, in which the nodes, links, surfaces, and cells of the diagram correspond to clusters, filaments, walls, and voids, respectively. The simulation used random positions within voids as seeds for tessellating the 3D space. The resulting structures were randomly populated with galaxies that adhere to the statistical properties of their observational respective structures. As the galaxies were generated, they were tagged with their corresponding structure. In each simulation, six LSS mock catalogues were generated, following the statistical behaviour observed in the SDSS catalogue, depending on the structure they belong to. The Malmquist bias and the Fingers of God effect were simulated as well. We present a novel geometrical LSS simulator, where generated galaxies mimic the statistical properties of their observational belonging structure. The simulator was tuned to mimic the SDSS catalogue, although any other catalogue can be considered. With the generated catalogue, it is possible to adjust the LSS classification algorithms, train and test ML/DL models, and benchmark several LSS classification methods using this pre-labelled data to contrast their results and performance.",
+      "published": "February 16, 2026",
+      "published_raw": "2026-02-16T19:38:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15141v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15141v1"
+    },
+    {
+      "id": "2602.15128v1",
+      "title": "PolyNODE: Variable-dimension Neural ODEs on M-polyfolds",
+      "authors": [
+        "Per Åhag",
+        "Alexander Friedrich",
+        "Fredrik Ohlsson",
+        "Viktor Vigren Näslund"
+      ],
+      "abstract": "Neural ordinary differential equations (NODEs) are geometric deep learning models based on dynamical systems and flows generated by vector fields on manifolds. Despite numerous successful applications, particularly within the flow matching paradigm, all existing NODE models are fundamentally constrained to fixed-dimensional dynamics by the intrinsic nature of the manifold's dimension. In this paper, we extend NODEs to M-polyfolds (spaces that can simultaneously accommodate varying dimensions and a notion of differentiability) and introduce PolyNODEs, the first variable-dimensional flow-based model in geometric deep learning. As an example application, we construct explicit M-polyfolds featuring dimensional bottlenecks and PolyNODE autoencoders based on parametrised vector fields that traverse these bottlenecks. We demonstrate experimentally that our PolyNODE models can be trained to solve reconstruction tasks in these spaces, and that latent representations of the input can be extracted and used to solve downstream classification tasks. The code used in our experiments is publicly available at https://github.com/turbotage/PolyNODE .",
+      "published": "February 16, 2026",
+      "published_raw": "2026-02-16T19:11:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15128v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15128v1"
+    },
     {
       "id": "2602.14997v1",
       "title": "Spectral Convolution on Orbifolds for Geometric Deep Learning",
@@ -79,6 +197,18 @@
       "published_raw": "2026-02-16T15:24:56Z",
       "pdf_link": "http://arxiv.org/pdf/2602.14833v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.14833v1"
+    },
+    {
+      "id": "2602.15089v1",
+      "title": "Hybrid Feature Learning with Time Series Embeddings for Equipment Anomaly Prediction",
+      "authors": [
+        "Takato Yasuno"
+      ],
+      "abstract": "In predictive maintenance of equipment, deep learning-based time series anomaly detection has garnered significant attention; however, pure deep learning approaches often fail to achieve sufficient accuracy on real-world data. This study proposes a hybrid approach that integrates 64-dimensional time series embeddings from Granite TinyTimeMixer with 28-dimensional statistical features based on domain knowledge for HVAC equipment anomaly prediction tasks. Specifically, we combine time series embeddings extracted from a Granite TinyTimeMixer encoder fine-tuned with LoRA (Low-Rank Adaptation) and 28 types of statistical features including trend, volatility, and drawdown indicators, which are then learned using a LightGBM gradient boosting classifier. In experiments using 64 equipment units and 51,564 samples, we achieved Precision of 91--95\\% and ROC-AUC of 0.995 for anomaly prediction at 30-day, 60-day, and 90-day horizons. Furthermore, we achieved production-ready performance with a false positive rate of 1.1\\% or less and a detection rate of 88--94\\%, demonstrating the effectiveness of the system for predictive maintenance applications. This work demonstrates that practical anomaly detection systems can be realized by leveraging the complementary strengths between deep learning's representation learning capabilities and statistical feature engineering.",
+      "published": "February 16, 2026",
+      "published_raw": "2026-02-16T15:00:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15089v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15089v1"
     },
     {
       "id": "2602.14759v1",
@@ -166,143 +296,6 @@
       "published_raw": "2026-02-15T17:16:47Z",
       "pdf_link": "http://arxiv.org/pdf/2602.14239v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.14239v1"
-    },
-    {
-      "id": "2602.14208v1",
-      "title": "Fast Catch-Up, Late Switching: Optimal Batch Size Scheduling via Functional Scaling Laws",
-      "authors": [
-        "Jinbo Wang",
-        "Binghui Li",
-        "Zhanpeng Zhou",
-        "Mingze Wang",
-        "Yuxuan Sun",
-        "Jiaqi Zhang",
-        "Xunliang Cai",
-        "Lei Wu"
-      ],
-      "abstract": "Batch size scheduling (BSS) plays a critical role in large-scale deep learning training, influencing both optimization dynamics and computational efficiency. Yet, its theoretical foundations remain poorly understood. In this work, we show that the functional scaling law (FSL) framework introduced in Li et al. (2025a) provides a principled lens for analyzing BSS. Specifically, we characterize the optimal BSS under a fixed data budget and show that its structure depends sharply on task difficulty. For easy tasks, optimal schedules keep increasing batch size throughout. In contrast, for hard tasks, the optimal schedule maintains small batch sizes for most of training and switches to large batches only in a late stage. To explain the emergence of late switching, we uncover a dynamical mechanism -- the fast catch-up effect -- which also manifests in large language model (LLM) pretraining. After switching from small to large batches, the loss rapidly aligns with the constant large-batch trajectory. Using FSL, we show that this effect stems from rapid forgetting of accumulated gradient noise, with the catch-up speed determined by task difficulty. Crucially, this effect implies that large batches can be safely deferred to late training without sacrificing performance, while substantially reducing data consumption. Finally, extensive LLM pretraining experiments -- covering both Dense and MoE architectures with up to 1.1B parameters and 1T tokens -- validate our theoretical predictions. Across all settings, late-switch schedules consistently outperform constant-batch and early-switch baselines.",
-      "published": "February 15, 2026",
-      "published_raw": "2026-02-15T16:06:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14208v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14208v1"
-    },
-    {
-      "id": "2602.13930v1",
-      "title": "MamaDino: A Hybrid Vision Model for Breast Cancer 3-Year Risk Prediction",
-      "authors": [
-        "Ruggiero Santeramo",
-        "Igor Zubarev",
-        "Florian Jug"
-      ],
-      "abstract": "Breast cancer screening programmes increasingly seek to move from one-size-fits-all interval to risk-adapted and personalized strategies. Deep learning (DL) has enabled image-based risk models with stronger 1- to 5-year prediction than traditional clinical models, but leading systems (e.g., Mirai) typically use convolutional backbones, very high-resolution inputs (>1M pixels) and simple multi-view fusion, with limited explicit modelling of contralateral asymmetry. We hypothesised that combining complementary inductive biases (convolutional and transformer-based) with explicit contralateral asymmetry modelling would allow us to match state-of-the-art 3-year risk prediction performance even when operating on substantially lower-resolution mammograms, indicating that using less detailed images in a more structured way can recover state-of-the-art accuracy. We present MamaDino, a mammography-aware multi-view attentional DINO model. MamaDino fuses frozen self-supervised DINOv3 ViT-S features with a trainable CNN encoder at 512x512 resolution, and aggregates bilateral breast information via a BilateralMixer to output a 3-year breast cancer risk score. We train on 53,883 women from OPTIMAM (UK) and evaluate on matched 3-year case-control cohorts: an in-distribution test set from four screening sites and an external out-of-distribution cohort from an unseen site. At breast-level, MamaDino matches Mirai on both internal and external tests while using ~13x fewer input pixels. Adding the BilateralMixer improves discrimination to AUC 0.736 (vs 0.713) in-distribution and 0.677 (vs 0.666) out-of-distribution, with consistent performance across age, ethnicity, scanner, tumour type and grade. These findings demonstrate that explicit contralateral modelling and complementary inductive biases enable predictions that match Mirai, despite operating on substantially lower-resolution mammograms.",
-      "published": "February 14, 2026",
-      "published_raw": "2026-02-14T23:56:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13930v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13930v1"
-    },
-    {
-      "id": "2602.13690v1",
-      "title": "Physics Aware Neural Networks: Denoising for Magnetic Navigation",
-      "authors": [
-        "Aritra Das",
-        "Yashas Shende",
-        "Muskaan Chugh",
-        "Reva Laxmi Chauhan",
-        "Arghya Pathak",
-        "Debayan Gupta"
-      ],
-      "abstract": "Magnetic-anomaly navigation, leveraging small-scale variations in the Earth's magnetic field, is a promising alternative when GPS is unavailable or compromised. Airborne systems face a key challenge in extracting geomagnetic field data: the aircraft itself induces magnetic noise. Although the classical Tolles-Lawson model addresses this, it inadequately handles stochastically corrupted magnetic data required for navigation. To address stochastic noise, we propose a framework based on two physics-based constraints: divergence-free vector field and E(3)-equivariance. These ensure the learned magnetic field obeys Maxwell's equations and that outputs transform correctly with sensor position/orientation. The divergence-free constraint is implemented by training a neural network to output a vector potential $A$, with the magnetic field defined as its curl. For E(3)-equivariance, we use tensor products of geometric tensors representable via spherical harmonics with known rotational transformations. Enforcing physical consistency and restricting the admissible function space acts as an implicit regularizer that improves spatio-temporal performance. We present ablation studies evaluating each constraint alone and jointly across CNNs, MLPs, Liquid Time Constant models, and Contiformers. Continuous-time dynamics and long-term memory are critical for modelling magnetic time series; the Contiformer architecture, which provides both, outperforms state-of-the-art methods. To mitigate data scarcity, we generate synthetic datasets using the World Magnetic Model (WMM) with time-series conditional GANs, producing realistic, temporally consistent magnetic sequences across varied trajectories and environments. Experiments show that embedding these constraints significantly improves predictive accuracy and physical plausibility, outperforming classical and unconstrained deep learning approaches.",
-      "published": "February 14, 2026",
-      "published_raw": "2026-02-14T09:23:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13690v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13690v1"
-    },
-    {
-      "id": "2602.13634v1",
-      "title": "Optimization-Free Graph Embedding via Distributional Kernel for Community Detection",
-      "authors": [
-        "Shuaibin Song",
-        "Kai Ming Ting",
-        "Kaifeng Zhang",
-        "Tianrun Liang"
-      ],
-      "abstract": "Neighborhood Aggregation Strategy (NAS) is a widely used approach in graph embedding, underpinning both Graph Neural Networks (GNNs) and Weisfeiler-Lehman (WL) methods. However, NAS-based methods are identified to be prone to over-smoothing-the loss of node distinguishability with increased iterations-thereby limiting their effectiveness. This paper identifies two characteristics in a network, i.e., the distributions of nodes and node degrees that are critical for expressive representation but have been overlooked in existing methods. We show that these overlooked characteristics contribute significantly to over-smoothing of NAS-methods. To address this, we propose a novel weighted distribution-aware kernel that embeds nodes while taking their distributional characteristics into consideration. Our method has three distinguishing features: (1) it is the first method to explicitly incorporate both distributional characteristics; (2) it requires no optimization; and (3) it effectively mitigates the adverse effects of over-smoothing, allowing WL to preserve node distinguishability and expressiveness even after many iterations of embedding. Experiments demonstrate that our method achieves superior community detection performance via spectral clustering, outperforming existing graph embedding methods, including deep learning methods, on standard benchmarks.",
-      "published": "February 14, 2026",
-      "published_raw": "2026-02-14T06:56:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13634v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13634v1"
-    },
-    {
-      "id": "2602.13601v1",
-      "title": "Resolving Cryogenic and Hypersonic Rarefied Flows via Deep Learning-Accelerated Lennard-Jones DSMC",
-      "authors": [
-        "Ahmad Shoja Sani",
-        "Ehsan Roohi",
-        "Stefan Stefanov"
-      ],
-      "abstract": "Integrating a physically realistic Lennard Jones LJ potential into Direct Simulation Monte Carlo DSMC has long been hindered by the high cost of evaluating detailed scattering dynamics. We present a high-fidelity, machine-learning-accelerated framework that bridges rigorous molecular physics and large-scale kinetic simulation, implemented within Bird standard DSMC algorithm suite. Two challenges are solved incorporating LJ consistent properties into DSMC total cross-section formulation, and replacing the expensive particle scattering step with a surrogate model. First, we develop a universal Variable Effective Diameter model via local viscosity matching, capturing attractive repulsive interactions over a wide temperature range an advance over traditional models restricted to narrow thermal bands. Second, we employ a Deep Operator Network as a fast, accurate substitute for the LJ scattering integral, enabling efficient high-precision collisions. The resulting framework exposes physical effects often missed by standard models and is validated on three canonical problems: shock waves in helium and argon, supersonic Couette flow with cryogenic walls, and hypersonic cylinder flow at two Mach numbers. In the argon shock case, we show that while the Variable Hard Sphere VHS model fails to match the experimental density profile, its velocity distribution function closely follows the LJ prediction. In low temperature supersonic Couette flow, the LJ model predicts smaller shear stress than VHS, underscoring the dominant influence of long-range attractive forces in cryogenic shear layers.",
-      "published": "February 14, 2026",
-      "published_raw": "2026-02-14T04:47:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13601v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13601v1"
-    },
-    {
-      "id": "2602.13550v1",
-      "title": "Out-of-Support Generalisation via Weight Space Sequence Modelling",
-      "authors": [
-        "Roussel Desmond Nzoyem"
-      ],
-      "abstract": "As breakthroughs in deep learning transform key industries, models are increasingly required to extrapolate on datapoints found outside the range of the training set, a challenge we coin as out-of-support (OoS) generalisation. However, neural networks frequently exhibit catastrophic failure on OoS samples, yielding unrealistic but overconfident predictions. We address this challenge by reformulating the OoS generalisation problem as a sequence modelling task in the weight space, wherein the training set is partitioned into concentric shells corresponding to discrete sequential steps. Our WeightCaster framework yields plausible, interpretable, and uncertainty-aware predictions without necessitating explicit inductive biases, all the while maintaining high computational efficiency. Emprical validation on a synthetic cosine dataset and real-world air quality sensor readings demonstrates performance competitive or superior to the state-of-the-art. By enhancing reliability beyond in-distribution scenarios, these results hold significant implications for the wider adoption of artificial intelligence in safety-critical applications.",
-      "published": "February 14, 2026",
-      "published_raw": "2026-02-14T01:51:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13550v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13550v1"
-    },
-    {
-      "id": "2602.13455v1",
-      "title": "Using Machine Learning to Enhance the Detection of Obfuscated Abusive Words in Swahili: A Focus on Child Safety",
-      "authors": [
-        "Phyllis Nabangi",
-        "Abdul-Jalil Zakaria",
-        "Jema David Ndibwile"
-      ],
-      "abstract": "The rise of digital technology has dramatically increased the potential for cyberbullying and online abuse, necessitating enhanced measures for detection and prevention, especially among children. This study focuses on detecting abusive obfuscated language in Swahili, a low-resource language that poses unique challenges due to its limited linguistic resources and technological support. Swahili is chosen due to its popularity and being the most widely spoken language in Africa, with over 16 million native speakers and upwards of 100 million speakers in total, spanning regions in East Africa and some parts of the Middle East. We employed machine learning models including Support Vector Machines (SVM), Logistic Regression, and Decision Trees, optimized through rigorous parameter tuning and techniques like Synthetic Minority Over-sampling Technique (SMOTE) to handle data imbalance. Our analysis revealed that, while these models perform well in high-dimensional textual data, our dataset's small size and imbalance limit our findings' generalizability. Precision, recall, and F1 scores were thoroughly analyzed, highlighting the nuanced performance of each model in detecting obfuscated language. This research contributes to the broader discourse on ensuring safer online environments for children, advocating for expanded datasets and advanced machine-learning techniques to improve the effectiveness of cyberbullying detection systems. Future work will focus on enhancing data robustness, exploring transfer learning, and integrating multimodal data to create more comprehensive and culturally sensitive detection mechanisms.",
-      "published": "February 13, 2026",
-      "published_raw": "2026-02-13T21:02:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13455v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13455v1"
-    },
-    {
-      "id": "2602.13416v1",
-      "title": "High-Resolution Climate Projections Using Diffusion-Based Downscaling of a Lightweight Climate Emulator",
-      "authors": [
-        "Haiwen Guan",
-        "Moein Darman",
-        "Dibyajyoti Chakraborty",
-        "Troy Arcomano",
-        "Ashesh Chattopadhyay",
-        "Romit Maulik"
-      ],
-      "abstract": "The proliferation of data-driven models in weather and climate sciences has marked a significant paradigm shift, with advanced models demonstrating exceptional skill in medium-range forecasting. However, these models are often limited by long-term instabilities, climatological drift, and substantial computational costs during training and inference, restricting their broader application for climate studies. Addressing these limitations, Guan et al. (2024) introduced LUCIE, a lightweight, physically consistent climate emulator utilizing a Spherical Fourier Neural Operator (SFNO) architecture. This model is able to reproduce accurate long-term statistics including climatological mean and seasonal variability. However, LUCIE's native resolution (~300 km) is inadequate for detailed regional impact assessments. To overcome this limitation, we introduce a deep learning-based downscaling framework, leveraging probabilistic diffusion-based generative models with conditional and posterior sampling frameworks. These models downscale coarse LUCIE outputs to 25 km resolution. They are trained on approximately 14,000 ERA5 timesteps spanning 2000-2009 and evaluated on LUCIE predictions from 2010 to 2020. Model performance is assessed through diverse metrics, including latitude-averaged RMSE, power spectrum, probability density functions and First Empirical Orthogonal Function of the zonal wind. We observe that the proposed approach is able to preserve the coarse-grained dynamics from LUCIE while generating fine-scaled climatological statistics at ~28km resolution.",
-      "published": "February 13, 2026",
-      "published_raw": "2026-02-13T19:36:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13416v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13416v1"
-    },
-    {
-      "id": "2602.13087v1",
-      "title": "EXCODER: EXplainable Classification Of DiscretE time series Representations",
-      "authors": [
-        "Yannik Hahn",
-        "Antonin Königsfeld",
-        "Hasan Tercan",
-        "Tobias Meisen"
-      ],
-      "abstract": "Deep learning has significantly improved time series classification, yet the lack of explainability in these models remains a major challenge. While Explainable AI (XAI) techniques aim to make model decisions more transparent, their effectiveness is often hindered by the high dimensionality and noise present in raw time series data. In this work, we investigate whether transforming time series into discrete latent representations-using methods such as Vector Quantized Variational Autoencoders (VQ-VAE) and Discrete Variational Autoencoders (DVAE)-not only preserves but enhances explainability by reducing redundancy and focusing on the most informative patterns. We show that applying XAI methods to these compressed representations leads to concise and structured explanations that maintain faithfulness without sacrificing classification performance. Additionally, we propose Similar Subsequence Accuracy (SSA), a novel metric that quantitatively assesses the alignment between XAI-identified salient subsequences and the label distribution in the training data. SSA provides a systematic way to validate whether the features highlighted by XAI methods are truly representative of the learned classification patterns. Our findings demonstrate that discrete latent representations not only retain the essential characteristics needed for classification but also offer a pathway to more compact, interpretable, and computationally efficient explanations in time series analysis.",
-      "published": "February 13, 2026",
-      "published_raw": "2026-02-13T16:47:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.13087v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.13087v1"
     }
   ]
 }
