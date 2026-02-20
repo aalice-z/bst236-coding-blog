@@ -1,7 +1,216 @@
 {
-  "last_updated": "2026-02-19T01:04:30.021930",
+  "last_updated": "2026-02-20T01:00:22.808815",
   "count": 20,
   "papers": [
+    {
+      "id": "2602.16696v1",
+      "title": "Parameter-free representations outperform single-cell foundation models on downstream benchmarks",
+      "authors": [
+        "Huan Souza",
+        "Pankaj Mehta"
+      ],
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) data exhibit strong and reproducible statistical structure. This has motivated the development of large-scale foundation models, such as TranscriptFormer, that use transformer-based architectures to learn a generative model for gene expression by embedding genes into a latent vector space. These embeddings have been used to obtain state-of-the-art (SOTA) performance on downstream tasks such as cell-type classification, disease-state prediction, and cross-species learning. Here, we ask whether similar performance can be achieved without utilizing computationally intensive deep learning-based representations. Using simple, interpretable pipelines that rely on careful normalization and linear methods, we obtain SOTA or near SOTA performance across multiple benchmarks commonly used to evaluate single-cell foundation models, including outperforming foundation models on out-of-distribution tasks involving novel cell types and organisms absent from the training data. Our findings highlight the need for rigorous benchmarking and suggest that the biology of cell identity can be captured by simple linear representations of single cell gene expression data.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T18:42:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16696v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16696v1"
+    },
+    {
+      "id": "2602.16548v1",
+      "title": "RIDER: 3D RNA Inverse Design with Reinforcement Learning-Guided Diffusion",
+      "authors": [
+        "Tianmeng Hu",
+        "Yongzheng Cui",
+        "Biao Luo",
+        "Ke Li"
+      ],
+      "abstract": "The inverse design of RNA three-dimensional (3D) structures is crucial for engineering functional RNAs in synthetic biology and therapeutics. While recent deep learning approaches have advanced this field, they are typically optimized and evaluated using native sequence recovery, which is a limited surrogate for structural fidelity, since different sequences can fold into similar 3D structures and high recovery does not necessarily indicate correct folding. To address this limitation, we propose RIDER, an RNA Inverse DEsign framework with Reinforcement learning that directly optimizes for 3D structural similarity. First, we develop and pre-train a GNN-based generative diffusion model conditioned on the target 3D structure, achieving a 9% improvement in native sequence recovery over state-of-the-art methods. Then, we fine-tune the model with an improved policy gradient algorithm using four task-specific reward functions based on 3D self-consistency metrics. Experimental results show that RIDER improves structural similarity by over 100% across all metrics and discovers designs that are distinct from native sequences.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T15:52:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16548v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16548v1"
+    },
+    {
+      "id": "2602.16507v1",
+      "title": "Small molecule retrieval from tandem mass spectrometry: what are we optimizing for?",
+      "authors": [
+        "Gaetan De Waele",
+        "Marek Wydmuch",
+        "Krzysztof Dembczyński",
+        "Wojciech Kotłowski",
+        "Willem Waegeman"
+      ],
+      "abstract": "One of the central challenges in the computational analysis of liquid chromatography-tandem mass spectrometry (LC-MS/MS) data is to identify the compounds underlying the output spectra. In recent years, this problem is increasingly tackled using deep learning methods. A common strategy involves predicting a molecular fingerprint vector from an input mass spectrum, which is then used to search for matches in a chemical compound database. While various loss functions are employed in training these predictive models, their impact on model performance remains poorly understood. In this study, we investigate commonly used loss functions, deriving novel regret bounds that characterize when Bayes-optimal decisions for these objectives must diverge. Our results reveal a fundamental trade-off between the two objectives of (1) fingerprint similarity and (2) molecular retrieval. Optimizing for more accurate fingerprint predictions typically worsens retrieval results, and vice versa. Our theoretical analysis shows this trade-off depends on the similarity structure of candidate sets, providing guidance for loss function and fingerprint selection.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T14:48:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16507v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16507v1"
+    },
+    {
+      "id": "2602.16468v1",
+      "title": "HPMixer: Hierarchical Patching for Multivariate Time Series Forecasting",
+      "authors": [
+        "Jung Min Choi",
+        "Vijaya Krishna Yalavarthi",
+        "Lars Schmidt-Thieme"
+      ],
+      "abstract": "In long-term multivariate time series forecasting, effectively capturing both periodic patterns and residual dynamics is essential. To address this within standard deep learning benchmark settings, we propose the Hierarchical Patching Mixer (HPMixer), which models periodicity and residuals in a decoupled yet complementary manner. The periodic component utilizes a learnable cycle module [7] enhanced with a nonlinear channel-wise MLP for greater expressiveness. The residual component is processed through a Learnable Stationary Wavelet Transform (LSWT) to extract stable, shift-invariant frequency-domain representations. Subsequently, a channel-mixing encoder models explicit inter-channel dependencies, while a two-level non-overlapping hierarchical patching mechanism captures coarse- and fine-scale residual variations. By integrating decoupled periodicity modeling with structured, multi-scale residual learning, HPMixer provides an effective framework. Extensive experiments on standard multivariate benchmarks demonstrate that HPMixer achieves competitive or state-of-the-art performance compared to recent baselines.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T13:59:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16468v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16468v1"
+    },
+    {
+      "id": "2602.16264v1",
+      "title": "Prediction of Major Solar Flares Using Interpretable Class-dependent Reward Framework with Active Region Magnetograms and Domain Knowledge",
+      "authors": [
+        "Zixian Wu",
+        "Xuebao Li",
+        "Yanfang Zheng",
+        "Rui Wang",
+        "Shunhuang Zhang",
+        "Jinfang Wei",
+        "Yongshang Lv",
+        "Liang Dong",
+        "Zamri Zainal Abidin",
+        "Noraisyah Mohamed Shah",
+        "Hongwei Ye",
+        "Pengchao Yan",
+        "Xuefeng Li",
+        "Xiaojia Ji",
+        "Xusheng Huang",
+        "Xiaotian Wang",
+        "Honglei Jin"
+      ],
+      "abstract": "In this work, we develop, for the first time, a supervised classification framework with class-dependent rewards (CDR) to predict $\\geq$MM flares within 24 hr. We construct multiple datasets, covering knowledge-informed features and line-of sight (LOS) magnetograms. We also apply three deep learning models (CNN, CNN-BiLSTM, and Transformer) and three CDR counterparts (CDR-CNN, CDR-CNN-BiLSTM, and CDR-Transformer). First, we analyze the importance of LOS magnetic field parameters with the Transformer, then compare its performance using LOS-only, vector-only, and combined magnetic field parameters. Second, we compare flare prediction performance based on CDR models versus deep learning counterparts. Third, we perform sensitivity analysis on reward engineering for CDR models. Fourth, we use the SHAP method for model interpretability. Finally, we conduct performance comparison between our models and NASA/CCMC. The main findings are: (1)Among LOS feature combinations, R_VALUE and AREA_ACR consistently yield the best results. (2)Transformer achieves better performance with combined LOS and vector magnetic field data than with either alone. (3)Models using knowledge-informed features outperform those using magnetograms. (4)While CNN and CNN-BiLSTM outperform their CDR counterparts on magnetograms, CDR-Transformer is slightly superior to its deep learning counterpart when using knowledge-informed features. Among all models, CDR-Transformer achieves the best performance. (5)The predictive performance of the CDR models is not overly sensitive to the reward choices.(6)Through SHAP analysis, the CDR model tends to regard TOTUSJH as more important, while the Transformer tends to prioritize R_VALUE more.(7)Under identical prediction time and active region (AR) number, the CDR-Transformer shows superior predictive capabilities compared to NASA/CCMC.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T08:30:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16264v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16264v1"
+    },
+    {
+      "id": "2602.16256v1",
+      "title": "Color-based Emotion Representation for Speech Emotion Recognition",
+      "authors": [
+        "Ryotaro Nagase",
+        "Ryoichi Takashima",
+        "Yoichi Yamashita"
+      ],
+      "abstract": "Speech emotion recognition (SER) has traditionally relied on categorical or dimensional labels. However, this technique is limited in representing both the diversity and interpretability of emotions. To overcome this limitation, we focus on color attributes, such as hue, saturation, and value, to represent emotions as continuous and interpretable scores. We annotated an emotional speech corpus with color attributes via crowdsourcing and analyzed them. Moreover, we built regression models for color attributes in SER using machine learning and deep learning, and explored the multitask learning of color attribute regression and emotion classification. As a result, we demonstrated the relationship between color attributes and emotions in speech, and successfully developed color attribute regression models for SER. We also showed that multitask learning improved the performance of each task.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T08:11:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16256v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16256v1"
+    },
+    {
+      "id": "2602.16224v1",
+      "title": "Amortized Predictability-aware Training Framework for Time Series Forecasting and Classification",
+      "authors": [
+        "Xu Zhang",
+        "Peng Wang",
+        "Yichen Li",
+        "Wei Wang"
+      ],
+      "abstract": "Time series data are prone to noise in various domains, and training samples may contain low-predictability patterns that deviate from the normal data distribution, leading to training instability or convergence to poor local minima. Therefore, mitigating the adverse effects of low-predictability samples is crucial for time series analysis tasks such as time series forecasting (TSF) and time series classification (TSC). While many deep learning models have achieved promising performance, few consider how to identify and penalize low-predictability samples to improve model performance from the training perspective. To fill this gap, we propose a general Amortized Predictability-aware Training Framework (APTF) for both TSF and TSC. APTF introduces two key designs that enable the model to focus on high-predictability samples while still learning appropriately from low-predictability ones: (i) a Hierarchical Predictability-aware Loss (HPL) that dynamically identifies low-predictability samples and progressively expands their loss penalty as training evolves, and (ii) an amortization model that mitigates predictability estimation errors caused by model bias, further enhancing HPL's effectiveness. The code is available at https://github.com/Meteor-Stars/APTF.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T06:59:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16224v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16224v1"
+    },
+    {
+      "id": "2602.16216v1",
+      "title": "UCTECG-Net: Uncertainty-aware Convolution Transformer ECG Network for Arrhythmia Detection",
+      "authors": [
+        "Hamzeh Asgharnezhad",
+        "Pegah Tabarisaadi",
+        "Abbas Khosravi",
+        "Roohallah Alizadehsani",
+        "U. Rajendra Acharya"
+      ],
+      "abstract": "Deep learning has improved automated electrocardiogram (ECG) classification, but limited insight into prediction reliability hinders its use in safety-critical settings. This paper proposes UCTECG-Net, an uncertainty-aware hybrid architecture that combines one-dimensional convolutions and Transformer encoders to process raw ECG signals and their spectrograms jointly. Evaluated on the MIT-BIH Arrhythmia and PTB Diagnostic datasets, UCTECG-Net outperforms LSTM, CNN1D, and Transformer baselines in terms of accuracy, precision, recall and F1 score, achieving up to 98.58% accuracy on MIT-BIH and 99.14% on PTB. To assess predictive reliability, we integrate three uncertainty quantification methods (Monte Carlo Dropout, Deep Ensembles, and Ensemble Monte Carlo Dropout) into all models and analyze their behavior using an uncertainty-aware confusion matrix and derived metrics. The results show that UCTECG-Net, particularly with Ensemble or EMCD, provides more reliable and better-aligned uncertainty estimates than competing architectures, offering a stronger basis for risk-aware ECG decision support.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T06:39:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16216v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16216v1"
+    },
+    {
+      "id": "2602.16204v1",
+      "title": "Linked Data Classification using Neurochaos Learning",
+      "authors": [
+        "Pooja Honna",
+        "Ayush Patravali",
+        "Nithin Nagaraj",
+        "Nanjangud C. Narendra"
+      ],
+      "abstract": "Neurochaos Learning (NL) has shown promise in recent times over traditional deep learning due to its two key features: ability to learn from small sized training samples, and low compute requirements. In prior work, NL has been implemented and extensively tested on separable and time series data, and demonstrated its superior performance on both classification and regression tasks. In this paper, we investigate the next step in NL, viz., applying NL to linked data, in particular, data that is represented in the form of knowledge graphs. We integrate linked data into NL by implementing node aggregation on knowledge graphs, and then feeding the aggregated node features to the simplest NL architecture: ChaosNet. We demonstrate the results of our implementation on homophilic graph datasets as well as heterophilic graph datasets of verying heterophily. We show better efficacy of our approach on homophilic graphs than on heterophilic graphs. While doing so, we also present our analysis of the results, as well as suggestions for future work.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T05:55:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16204v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16204v1"
+    },
+    {
+      "id": "2602.16101v1",
+      "title": "Axle Sensor Fusion for Online Continual Wheel Fault Detection in Wayside Railway Monitoring",
+      "authors": [
+        "Afonso Lourenço",
+        "Francisca Osório",
+        "Diogo Risca",
+        "Goreti Marreiros"
+      ],
+      "abstract": "Reliable and cost-effective maintenance is essential for railway safety, particularly at the wheel-rail interface, which is prone to wear and failure. Predictive maintenance frameworks increasingly leverage sensor-generated time-series data, yet traditional methods require manual feature engineering, and deep learning models often degrade in online settings with evolving operational patterns. This work presents a semantic-aware, label-efficient continual learning framework for railway fault diagnostics. Accelerometer signals are encoded via a Variational AutoEncoder into latent representations capturing the normal operational structure in a fully unsupervised manner. Importantly, semantic metadata, including axle counts, wheel indexes, and strain-based deformations, is extracted via AI-driven peak detection on fiber Bragg grating sensors (resistant to electromagnetic interference) and fused with the VAE embeddings, enhancing anomaly detection under unknown operational conditions. A lightweight gradient boosting supervised classifier stabilizes anomaly scoring with minimal labels, while a replay-based continual learning strategy enables adaptation to evolving domains without catastrophic forgetting. Experiments show the model detects minor imperfections due to flats and polygonization, while adapting to evolving operational conditions, such as changes in train type, speed, load, and track profiles, captured using a single accelerometer and strain gauge in wayside monitoring.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T00:14:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16101v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16101v1"
+    },
+    {
+      "id": "2602.16000v1",
+      "title": "Imaging-Derived Coronary Fractional Flow Reserve: Advances in Physics-Based, Machine-Learning, and Physics-Informed Methods",
+      "authors": [
+        "Tanxin Zhu",
+        "Emran Hossen",
+        "Chen Zhao",
+        "Michele Esposito",
+        "Jiguang Sun",
+        "Weihua Zhou"
+      ],
+      "abstract": "Purpose of Review Imaging derived fractional flow reserve (FFR) is rapidly evolving beyond conventional computational fluid dynamics (CFD) based pipelines toward machine learning (ML), deep learning (DL), and physics informed approaches that enable fast, wire free, and scalable functional assessment of coronary stenosis. This review synthesizes recent advances in CT and angiography based FFR, with particular emphasis on emerging physics informed neural networks and neural operators (PINNs and PINOs) and key considerations for their clinical translation. Recent Findings ML/DL approaches have markedly improved automation and computational speed, enabling prediction of pressure and FFR from anatomical descriptors or angiographic contrast dynamics. However, their real-world performance and generalizability can remain variable and sensitive to domain shift, due to multi-center heterogeneity, interpretability challenges, and differences in acquisition protocols and image quality. Physics informed learning introduces conservation structure and boundary condition consistency into model training, improving generalizability and reducing dependence on dense supervision while maintaining rapid inference. Recent evaluation trends increasingly highlight deployment oriented metrics, including calibration, uncertainty quantification, and quality control gatekeeping, as essential for safe clinical use. Summary The field is converging toward imaging derived FFR methods that are faster, more automated, and more reliable. While ML/DL offers substantial efficiency gains, physics informed frameworks such as PINNs and PINOs may provide a more robust balance between speed and physical consistency. Prospective multi center validation and standardized evaluation will be critical to support broad and safe clinical adoption.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T20:46:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16000v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16000v1"
+    },
+    {
+      "id": "2602.15961v1",
+      "title": "R$^2$Energy: A Large-Scale Benchmark for Robust Renewable Energy Forecasting under Diverse and Extreme Conditions",
+      "authors": [
+        "Zhi Sheng",
+        "Yuan Yuan",
+        "Guozhen Zhang",
+        "Yong Li"
+      ],
+      "abstract": "The rapid expansion of renewable energy, particularly wind and solar power, has made reliable forecasting critical for power system operations. While recent deep learning models have achieved strong average accuracy, the increasing frequency and intensity of climate-driven extreme weather events pose severe threats to grid stability and operational security. Consequently, developing robust forecasting models that can withstand volatile conditions has become a paramount challenge. In this paper, we present R$^2$Energy, a large-scale benchmark for NWP-assisted renewable energy forecasting. It comprises over 10.7 million high-fidelity hourly records from 902 wind and solar stations across four provinces in China, providing the diverse meteorological conditions necessary to capture the wide-ranging variability of renewable generation. We further establish a standardized, leakage-free forecasting paradigm that grants all models identical access to future Numerical Weather Prediction (NWP) signals, enabling fair and reproducible comparison across state-of-the-art representative forecasting architectures. Beyond aggregate accuracy, we incorporate regime-wise evaluation with expert-aligned extreme weather annotations, uncovering a critical ``robustness gap'' typically obscured by average metrics. This gap reveals a stark robustness-complexity trade-off: under extreme conditions, a model's reliability is driven by its meteorological integration strategy rather than its architectural complexity. R$^2$Energy provides a principled foundation for evaluating and developing forecasting models for safety-critical power system applications.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T19:22:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15961v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15961v1"
+    },
+    {
+      "id": "2602.15930v1",
+      "title": "A targeted machine learning approach for detecting diffuse radio emission with Astronomaly: Protege",
+      "authors": [
+        "Verlon Etsebeth",
+        "Michelle Lochner",
+        "Konstantinos Kolokythas",
+        "Kenda Knowles",
+        "Emma Tolley"
+      ],
+      "abstract": "Diffuse radio emission in galaxy clusters, such as radio halos, relics, and mini halos, is a key tracer of non-thermal processes, turbulence, and magnetic fields within the intra-cluster medium. However, their low surface brightness, as well as contamination from compact sources and imaging artefacts, makes their detection challenging. The sheer volume of data from instruments such as the Square Kilometre Array will render traditional manual-inspection based detection methods infeasible. This paper introduces a novel machine learning approach that uses active learning to rapidly identify diffuse emission candidates from a small, optimally-selected subset of data. We apply the self-supervised deep learning algorithm Bootstrap Your Own Latent to extract features from source cutouts in the MeerKAT Galaxy Cluster Legacy Survey (MGCLS). We then pass these features through the Astronomaly: Protege anomaly detection framework to identify the final candidates. Using a human-labelled set, we evaluate our pipeline on high-resolution (~7''), convolved (15''), and combined-feature MGCLS datasets. Interestingly, the high-resolution features identify diffuse sources more efficiently than the convolved resolution, which are in turn outperformed by the combined features. Of the top 100 sources ranked by Protege, 99% exhibit diffuse characteristics, with 55% confirmed as cluster-related emission. Our work shows that Protege can identify diffuse emission with minimal human labelling effort, offering a powerful, scalable tool capable of detecting both known and novel diffuse radio sources.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T19:00:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15930v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15930v1"
+    },
     {
       "id": "2602.15830v1",
       "title": "Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution",
@@ -13,6 +222,34 @@
       "published_raw": "2026-02-17T18:59:55Z",
       "pdf_link": "http://arxiv.org/pdf/2602.15830v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.15830v1"
+    },
+    {
+      "id": "2602.15926v1",
+      "title": "A Study on Real-time Object Detection using Deep Learning",
+      "authors": [
+        "Ankita Bose",
+        "Jayasravani Bhumireddy",
+        "Naveen N"
+      ],
+      "abstract": "Object detection has compelling applications over a range of domains, including human-computer interfaces, security and video surveillance, navigation and road traffic monitoring, transportation systems, industrial automation healthcare, the world of Augmented Reality (AR) and Virtual Reality (VR), environment monitoring and activity identification. Applications of real time object detection in all these areas provide dynamic analysis of the visual information that helps in immediate decision making. Furthermore, advanced deep learning algorithms leverage the progress in the field of object detection providing more accurate and efficient solutions. There are some outstanding deep learning algorithms for object detection which includes, Faster R CNN(Region-based Convolutional Neural Network),Mask R-CNN, Cascade R-CNN, YOLO (You Only Look Once), SSD (Single Shot Multibox Detector), RetinaNet etc. This article goes into great detail on how deep learning algorithms are used to enhance real time object recognition. It provides information on the different object detection models available, open benchmark datasets, and studies on the use of object detection models in a range of applications. Additionally, controlled studies are provided to compare various strategies and produce some illuminating findings. Last but not least, a number of encouraging challenges and approaches are offered as suggestions for further investigation in both relevant deep learning approaches and object recognition.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T18:12:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15926v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15926v1"
+    },
+    {
+      "id": "2602.15923v1",
+      "title": "A fully differentiable framework for training proxy Exchange Correlation Functionals for periodic systems",
+      "authors": [
+        "Rakshit Kumar Singh",
+        "Aryan Amit Barsainyan",
+        "Bharath Ramsundar"
+      ],
+      "abstract": "Density Functional Theory (DFT) is widely used for first-principles simulations in chemistry and materials science, but its computational cost remains a key limitation for large systems. Motivated by recent advances in ML-based exchange-correlation (XC) functionals, this paper introduces a differentiable framework that integrates machine learning models into density functional theory (DFT) for solids and other periodic systems. The framework defines a clean API for neural network models that can act as drop in replacements for conventional exchange-correlation (XC) functionals and enables gradients to flow through the full self-consistent DFT workflow. The framework is implemented in Python using a PyTorch backend, making it fully differentiable and easy to use with standard deep learning tools. We integrate the implementation with the DeepChem library to promote the reuse of established models and to lower the barrier for experimentation. In initial benchmarks against established electronic structure packages (GPAW and PySCF), our models achieve relative errors on the order of 5-10%.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T16:13:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.15923v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.15923v1"
     },
     {
       "id": "2602.15637v1",
@@ -71,231 +308,6 @@
       "published_raw": "2026-02-17T10:46:54Z",
       "pdf_link": "http://arxiv.org/pdf/2602.15484v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.15484v1"
-    },
-    {
-      "id": "2602.15167v1",
-      "title": "Distributional Deep Learning for Super-Resolution of 4D Flow MRI under Domain Shift",
-      "authors": [
-        "Xiaoyi Wen",
-        "Fei Jiang"
-      ],
-      "abstract": "Super-resolution is widely used in medical imaging to enhance low-quality data, reducing scan time and improving abnormality detection. Conventional super-resolution approaches typically rely on paired datasets of downsampled and original high resolution images, training models to reconstruct high resolution images from their artificially degraded counterparts. However, in real-world clinical settings, low resolution data often arise from acquisition mechanisms that differ significantly from simple downsampling. As a result, these inputs may lie outside the domain of the training data, leading to poor model generalization due to domain shift. To address this limitation, we propose a distributional deep learning framework that improves model robustness and domain generalization. We develop this approch for enhancing the resolution of 4D Flow MRI (4DF). This is a novel imaging modality that captures hemodynamic flow velocity and clinically relevant metrics such as vessel wall stress. These metrics are critical for assessing aneurysm rupture risk. Our model is initially trained on high resolution computational fluid dynamics (CFD) simulations and their downsampled counterparts. It is then fine-tuned on a small, harmonized dataset of paired 4D Flow MRI and CFD samples. We derive the theoretical properties of our distributional estimators and demonstrate that our framework significantly outperforms traditional deep learning approaches through real data applications. This highlights the effectiveness of distributional learning in addressing domain shift and improving super-resolution performance in clinically realistic scenarios.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T20:11:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15167v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15167v1"
-    },
-    {
-      "id": "2602.15141v1",
-      "title": "Mimicking the large-scale structure of the Local Universe. Synthetic pre-labelled galaxies in large-scale structures",
-      "authors": [
-        "M. Alcázar-Laynez",
-        "S. Duarte Puertas",
-        "S. Verley",
-        "G. Blázquez-Calero",
-        "A. Jiménez",
-        "A. Lorenzo-Gutiérrez",
-        "D. Espada",
-        "M. Argudo-Fernández",
-        "I. Pérez"
-      ],
-      "abstract": "Current observational and simulated large-scale structure (LSS) catalogues often lack consistency in assigning galaxies to specific structures, due to the absence of a universally accepted classification criterion. With the aim to generate synthetic empirical data for fine-tuning LSS classification algorithms, as well as to train machine learning (ML)/deep learning (DL) models for the same purpose, this work presents a purely geometrical simulation based on statistical spatial properties found in LSS surveys, using the spectroscopic main galaxy sample of the Sloan Digital Sky Survey (SDSS) catalogue up to a redshift of z~0.1 as a specific use case. A parallelism between the LSS and the Voronoi tessellation was utilised, in which the nodes, links, surfaces, and cells of the diagram correspond to clusters, filaments, walls, and voids, respectively. The simulation used random positions within voids as seeds for tessellating the 3D space. The resulting structures were randomly populated with galaxies that adhere to the statistical properties of their observational respective structures. As the galaxies were generated, they were tagged with their corresponding structure. In each simulation, six LSS mock catalogues were generated, following the statistical behaviour observed in the SDSS catalogue, depending on the structure they belong to. The Malmquist bias and the Fingers of God effect were simulated as well. We present a novel geometrical LSS simulator, where generated galaxies mimic the statistical properties of their observational belonging structure. The simulator was tuned to mimic the SDSS catalogue, although any other catalogue can be considered. With the generated catalogue, it is possible to adjust the LSS classification algorithms, train and test ML/DL models, and benchmark several LSS classification methods using this pre-labelled data to contrast their results and performance.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T19:38:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15141v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15141v1"
-    },
-    {
-      "id": "2602.15128v1",
-      "title": "PolyNODE: Variable-dimension Neural ODEs on M-polyfolds",
-      "authors": [
-        "Per Åhag",
-        "Alexander Friedrich",
-        "Fredrik Ohlsson",
-        "Viktor Vigren Näslund"
-      ],
-      "abstract": "Neural ordinary differential equations (NODEs) are geometric deep learning models based on dynamical systems and flows generated by vector fields on manifolds. Despite numerous successful applications, particularly within the flow matching paradigm, all existing NODE models are fundamentally constrained to fixed-dimensional dynamics by the intrinsic nature of the manifold's dimension. In this paper, we extend NODEs to M-polyfolds (spaces that can simultaneously accommodate varying dimensions and a notion of differentiability) and introduce PolyNODEs, the first variable-dimensional flow-based model in geometric deep learning. As an example application, we construct explicit M-polyfolds featuring dimensional bottlenecks and PolyNODE autoencoders based on parametrised vector fields that traverse these bottlenecks. We demonstrate experimentally that our PolyNODE models can be trained to solve reconstruction tasks in these spaces, and that latent representations of the input can be extracted and used to solve downstream classification tasks. The code used in our experiments is publicly available at https://github.com/turbotage/PolyNODE .",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T19:11:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15128v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15128v1"
-    },
-    {
-      "id": "2602.14997v1",
-      "title": "Spectral Convolution on Orbifolds for Geometric Deep Learning",
-      "authors": [
-        "Tim Mangliers",
-        "Bernhard Mössner",
-        "Benjamin Himpel"
-      ],
-      "abstract": "Geometric deep learning (GDL) deals with supervised learning on data domains that go beyond Euclidean structure, such as data with graph or manifold structure. Due to the demand that arises from application-related data, there is a need to identify further topological and geometric structures with which these use cases can be made accessible to machine learning. There are various techniques, such as spectral convolution, that form the basic building blocks for some convolutional neural network-like architectures on non-Euclidean data. In this paper, the concept of spectral convolution on orbifolds is introduced. This provides a building block for making learning on orbifold structured data accessible using GDL. The theory discussed is illustrated using an example from music theory.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T18:28:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14997v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14997v1"
-    },
-    {
-      "id": "2602.14939v1",
-      "title": "Fault Detection in Electrical Distribution System using Autoencoders",
-      "authors": [
-        "Sidharthenee Nayak",
-        "Victor Sam Moses Babu",
-        "Chandrashekhar Narayan Bhende",
-        "Pratyush Chakraborty",
-        "Mayukha Pal"
-      ],
-      "abstract": "In recent times, there has been considerable interest in fault detection within electrical power systems, garnering attention from both academic researchers and industry professionals. Despite the development of numerous fault detection methods and their adaptations over the past decade, their practical application remains highly challenging. Given the probabilistic nature of fault occurrences and parameters, certain decision-making tasks could be approached from a probabilistic standpoint. Protective systems are tasked with the detection, classification, and localization of faulty voltage and current line magnitudes, culminating in the activation of circuit breakers to isolate the faulty line. An essential aspect of designing effective fault detection systems lies in obtaining reliable data for training and testing, which is often scarce. Leveraging deep learning techniques, particularly the powerful capabilities of pattern classifiers in learning, generalizing, and parallel processing, offers promising avenues for intelligent fault detection. To address this, our paper proposes an anomaly-based approach for fault detection in electrical power systems, employing deep autoencoders. Additionally, we utilize Convolutional Autoencoders (CAE) for dimensionality reduction, which, due to its fewer parameters, requires less training time compared to conventional autoencoders. The proposed method demonstrates superior performance and accuracy compared to alternative detection approaches by achieving an accuracy of 97.62% and 99.92% on simulated and publicly available datasets.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T17:21:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14939v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14939v1"
-    },
-    {
-      "id": "2602.14896v1",
-      "title": "Algorithmic Simplification of Neural Networks with Mosaic-of-Motifs",
-      "authors": [
-        "Pedram Bakhtiarifard",
-        "Tong Chen",
-        "Jonathan Wenshøj",
-        "Erik B Dam",
-        "Raghavendra Selvan"
-      ],
-      "abstract": "Large-scale deep learning models are well-suited for compression. Methods like pruning, quantization, and knowledge distillation have been used to achieve massive reductions in the number of model parameters, with marginal performance drops across a variety of architectures and tasks. This raises the central question: \\emph{Why are deep neural networks suited for compression?} In this work, we take up the perspective of algorithmic complexity to explain this behavior. We hypothesize that the parameters of trained models have more structure and, hence, exhibit lower algorithmic complexity compared to the weights at (random) initialization. Furthermore, that model compression methods harness this reduced algorithmic complexity to compress models. Although an unconstrained parameterization of model weights, $\\mathbf{w} \\in \\mathbb{R}^n$, can represent arbitrary weight assignments, the solutions found during training exhibit repeatability and structure, making them algorithmically simpler than a generic program. To this end, we formalize the Kolmogorov complexity of $\\mathbf{w}$ by $\\mathcal{K}(\\mathbf{w})$. We introduce a constrained parameterization $\\widehat{\\mathbf{w}}$, that partitions parameters into blocks of size $s$, and restricts each block to be selected from a set of $k$ reusable motifs, specified by a reuse pattern (or mosaic). The resulting method, $\\textit{Mosaic-of-Motifs}$ (MoMos), yields algorithmically simpler model parameterization compared to unconstrained models. Empirical evidence from multiple experiments shows that the algorithmic complexity of neural networks, measured using approximations to Kolmogorov complexity, can be reduced during training. This results in models that perform comparably with unconstrained models while being algorithmically simpler.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T16:30:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14896v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14896v1"
-    },
-    {
-      "id": "2602.14853v1",
-      "title": "BEACONS: Bounded-Error, Algebraically-Composable Neural Solvers for Partial Differential Equations",
-      "authors": [
-        "Jonathan Gorard",
-        "Ammar Hakim",
-        "James Juno"
-      ],
-      "abstract": "The traditional limitations of neural networks in reliably generalizing beyond the convex hulls of their training data present a significant problem for computational physics, in which one often wishes to solve PDEs in regimes far beyond anything which can be experimentally or analytically validated. In this paper, we show how it is possible to circumvent these limitations by constructing formally-verified neural network solvers for PDEs, with rigorous convergence, stability, and conservation properties, whose correctness can therefore be guaranteed even in extrapolatory regimes. By using the method of characteristics to predict the analytical properties of PDE solutions a priori (even in regions arbitrarily far from the training domain), we show how it is possible to construct rigorous extrapolatory bounds on the worst-case L^inf errors of shallow neural network approximations. Then, by decomposing PDE solutions into compositions of simpler functions, we show how it is possible to compose these shallow neural networks together to form deep architectures, based on ideas from compositional deep learning, in which the large L^inf errors in the approximations have been suppressed. The resulting framework, called BEACONS (Bounded-Error, Algebraically-COmposable Neural Solvers), comprises both an automatic code-generator for the neural solvers themselves, as well as a bespoke automated theorem-proving system for producing machine-checkable certificates of correctness. We apply the framework to a variety of linear and non-linear PDEs, including the linear advection and inviscid Burgers' equations, as well as the full compressible Euler equations, in both 1D and 2D, and illustrate how BEACONS architectures are able to extrapolate solutions far beyond the training data in a reliable and bounded way. Various advantages of the approach over the classical PINN approach are discussed.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T15:49:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14853v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14853v1"
-    },
-    {
-      "id": "2602.14833v1",
-      "title": "RF-GPT: Teaching AI to See the Wireless World",
-      "authors": [
-        "Hang Zou",
-        "Yu Tian",
-        "Bohao Wang",
-        "Lina Bariah",
-        "Samson Lasaulce",
-        "Chongwen Huang",
-        "Mérouane Debbah"
-      ],
-      "abstract": "Large language models (LLMs) and multimodal models have become powerful general-purpose reasoning systems. However, radio-frequency (RF) signals, which underpin wireless systems, are still not natively supported by these models. Existing LLM-based approaches for telecom focus mainly on text and structured data, while conventional RF deep-learning models are built separately for specific signal-processing tasks, highlighting a clear gap between RF perception and high-level reasoning. To bridge this gap, we introduce RF-GPT, a radio-frequency language model (RFLM) that utilizes the visual encoders of multimodal LLMs to process and understand RF spectrograms. In this framework, complex in-phase/quadrature (IQ) waveforms are mapped to time-frequency spectrograms and then passed to pretrained visual encoders. The resulting representations are injected as RF tokens into a decoder-only LLM, which generates RF-grounded answers, explanations, and structured outputs. To train RF-GPT, we perform supervised instruction fine-tuning of a pretrained multimodal LLM using a fully synthetic RF corpus. Standards-compliant waveform generators produce wideband scenes for six wireless technologies, from which we derive time-frequency spectrograms, exact configuration metadata, and dense captions. A text-only LLM then converts these captions into RF-grounded instruction-answer pairs, yielding roughly 12,000 RF scenes and 0.625 million instruction examples without any manual labeling. Across benchmarks for wideband modulation classification, overlap analysis, wireless-technology recognition, WLAN user counting, and 5G NR information extraction, RF-GPT achieves strong multi-task performance, whereas general-purpose VLMs with no RF grounding largely fail.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T15:24:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14833v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14833v1"
-    },
-    {
-      "id": "2602.15089v1",
-      "title": "Hybrid Feature Learning with Time Series Embeddings for Equipment Anomaly Prediction",
-      "authors": [
-        "Takato Yasuno"
-      ],
-      "abstract": "In predictive maintenance of equipment, deep learning-based time series anomaly detection has garnered significant attention; however, pure deep learning approaches often fail to achieve sufficient accuracy on real-world data. This study proposes a hybrid approach that integrates 64-dimensional time series embeddings from Granite TinyTimeMixer with 28-dimensional statistical features based on domain knowledge for HVAC equipment anomaly prediction tasks. Specifically, we combine time series embeddings extracted from a Granite TinyTimeMixer encoder fine-tuned with LoRA (Low-Rank Adaptation) and 28 types of statistical features including trend, volatility, and drawdown indicators, which are then learned using a LightGBM gradient boosting classifier. In experiments using 64 equipment units and 51,564 samples, we achieved Precision of 91--95\\% and ROC-AUC of 0.995 for anomaly prediction at 30-day, 60-day, and 90-day horizons. Furthermore, we achieved production-ready performance with a false positive rate of 1.1\\% or less and a detection rate of 88--94\\%, demonstrating the effectiveness of the system for predictive maintenance applications. This work demonstrates that practical anomaly detection systems can be realized by leveraging the complementary strengths between deep learning's representation learning capabilities and statistical feature engineering.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T15:00:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15089v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15089v1"
-    },
-    {
-      "id": "2602.14759v1",
-      "title": "Inner Loop Inference for Pretrained Transformers: Unlocking Latent Capabilities Without Training",
-      "authors": [
-        "Jonathan Lys",
-        "Vincent Gripon",
-        "Bastien Pasdeloup",
-        "Lukas Mauch",
-        "Fabien Cardinaux",
-        "Ghouthi Boukli Hacene"
-      ],
-      "abstract": "Deep Learning architectures, and in particular Transformers, are conventionally viewed as a composition of layers. These layers are actually often obtained as the sum of two contributions: a residual path that copies the input and the output of a Transformer block. As a consequence, the inner representations (i.e. the input of these blocks) can be interpreted as iterative refinement of a propagated latent representation. Under this lens, many works suggest that the inner space is shared across layers, meaning that tokens can be decoded at early stages. Mechanistic interpretability even goes further by conjecturing that some layers act as refinement layers. Following this path, we propose inference-time inner looping, which prolongs refinement in pretrained off-the-shelf language models by repeatedly re-applying a selected block range. Across multiple benchmarks, inner looping yields modest but consistent accuracy improvements. Analyses of the resulting latent trajectories suggest more stable state evolution and continued semantic refinement. Overall, our results suggest that additional refinement can be obtained through simple test-time looping, extending computation in frozen pretrained models.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T14:04:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14759v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14759v1"
-    },
-    {
-      "id": "2602.14701v1",
-      "title": "Unbiased Approximate Vector-Jacobian Products for Efficient Backpropagation",
-      "authors": [
-        "Killian Bakong",
-        "Laurent Massoulié",
-        "Edouard Oyallon",
-        "Kevin Scaman"
-      ],
-      "abstract": "In this work we introduce methods to reduce the computational and memory costs of training deep neural networks. Our approach consists in replacing exact vector-jacobian products by randomized, unbiased approximations thereof during backpropagation. We provide a theoretical analysis of the trade-off between the number of epochs needed to achieve a target precision and the cost reduction for each epoch. We then identify specific unbiased estimates of vector-jacobian products for which we establish desirable optimality properties of minimal variance under sparsity constraints. Finally we provide in-depth experiments on multi-layer perceptrons, BagNets and Visual Transfomers architectures. These validate our theoretical results, and confirm the potential of our proposed unbiased randomized backpropagation approach for reducing the cost of deep learning.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T12:40:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14701v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14701v1"
-    },
-    {
-      "id": "2602.14635v1",
-      "title": "Alignment Adapter to Improve the Performance of Compressed Deep Learning Models",
-      "authors": [
-        "Rohit Raj Rai",
-        "Abhishek Dhaka",
-        "Amit Awekar"
-      ],
-      "abstract": "Compressed Deep Learning (DL) models are essential for deployment in resource-constrained environments. But their performance often lags behind their large-scale counterparts. To bridge this gap, we propose Alignment Adapter (AlAd): a lightweight, sliding-window-based adapter. It aligns the token-level embeddings of a compressed model with those of the original large model. AlAd preserves local contextual semantics, enables flexible alignment across differing dimensionalities or architectures, and is entirely agnostic to the underlying compression method. AlAd can be deployed in two ways: as a plug-and-play module over a frozen compressed model, or by jointly fine-tuning AlAd with the compressed model for further performance gains. Through experiments on BERT-family models across three token-level NLP tasks, we demonstrate that AlAd significantly boosts the performance of compressed models with only marginal overhead in size and latency.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T10:53:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14635v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14635v1"
-    },
-    {
-      "id": "2602.14519v1",
-      "title": "DeepMTL2R: A Library for Deep Multi-task Learning to Rank",
-      "authors": [
-        "Chaosheng Dong",
-        "Peiyao Xiao",
-        "Yijia Wang",
-        "Kaiyi Ji"
-      ],
-      "abstract": "This paper presents DeepMTL2R, an open-source deep learning framework for Multi-task Learning to Rank (MTL2R), where multiple relevance criteria must be optimized simultaneously. DeepMTL2R integrates heterogeneous relevance signals into a unified, context-aware model by leveraging the self-attention mechanism of transformer architectures, enabling effective learning across diverse and potentially conflicting objectives. The framework includes 21 state-of-the-art multi-task learning algorithms and supports multi-objective optimization to identify Pareto-optimal ranking models. By capturing complex dependencies and long-range interactions among items and labels, DeepMTL2R provides a scalable and expressive solution for modern ranking systems and facilitates controlled comparisons across MTL strategies. We demonstrate its effectiveness on a publicly available dataset, report competitive performance, and visualize the resulting trade-offs among objectives. DeepMTL2R is available at \\href{https://github.com/amazon-science/DeepMTL2R}{https://github.com/amazon-science/DeepMTL2R}.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T07:11:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14519v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14519v1"
-    },
-    {
-      "id": "2602.14445v1",
-      "title": "Selective Synchronization Attention",
-      "authors": [
-        "Hasi Hays"
-      ],
-      "abstract": "The Transformer architecture has become the foundation of modern deep learning, yet its core self-attention mechanism suffers from quadratic computational complexity and lacks grounding in biological neural computation. We propose Selective Synchronization Attention (SSA), a novel attention mechanism that replaces the standard dot-product self-attention with a closed-form operator derived from the steady-state solution of the Kuramoto model of coupled oscillators. In SSA, each token is represented as an oscillator characterized by a learnable natural frequency and phase; the synchronization strength between token pairs, determined by a frequency-dependent coupling and phase-locking condition, serves as the attention weight. This formulation provides three key advantages: (i) natural sparsity arising from the phase-locking threshold, whereby tokens with incompatible frequencies automatically receive zero attention weight without explicit masking; (ii) unified positional-semantic encoding through the natural frequency spectrum, eliminating the need for separate positional encodings; and (iii) a single-pass, closed-form computation that avoids iterative ODE integration, with all components (coupling, order parameter, synchronization) derived from the oscillatory framework. We instantiate SSA within the Oscillatory Synchronization Network (OSN), a drop-in replacement for the Transformer block. Analysis of the synchronization matrices reveals non-uniform, head-diverse coupling patterns even at initialization, demonstrating a stronger architectural inductive bias than the approximately uniform attention produced by randomly initialized Transformers.",
-      "published": "February 16, 2026",
-      "published_raw": "2026-02-16T03:58:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14445v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14445v1"
-    },
-    {
-      "id": "2602.14239v1",
-      "title": "A Hybrid TGN-SEAL Model for Dynamic Graph Link Prediction",
-      "authors": [
-        "Nafiseh Sadat Sajadi",
-        "Behnam Bahrak",
-        "Mahdi Jafari Siavoshani"
-      ],
-      "abstract": "Predicting links in sparse, continuously evolving networks is a central challenge in network science. Conventional heuristic methods and deep learning models, including Graph Neural Networks (GNNs), are typically designed for static graphs and thus struggle to capture temporal dependencies. Snapshot-based techniques partially address this issue but often encounter data sparsity and class imbalance, particularly in networks with transient interactions such as telecommunication call detail records (CDRs). Temporal Graph Networks (TGNs) model dynamic graphs by updating node embeddings over time; however, their predictive accuracy under sparse conditions remains limited. In this study, we improve the TGN framework by extracting enclosing subgraphs around candidate links, enabling the model to jointly learn structural and temporal information. Experiments on a sparse CDR dataset show that our approach increases average precision by 2.6% over standard TGNs, demonstrating the advantages of integrating local topology for robust link prediction in dynamic networks.",
-      "published": "February 15, 2026",
-      "published_raw": "2026-02-15T17:16:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.14239v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.14239v1"
     }
   ]
 }
