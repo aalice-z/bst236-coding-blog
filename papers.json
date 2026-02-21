@@ -1,7 +1,103 @@
 {
-  "last_updated": "2026-02-20T01:00:22.808815",
+  "last_updated": "2026-02-21T00:58:58.209860",
   "count": 20,
   "papers": [
+    {
+      "id": "2602.17642v1",
+      "title": "A.R.I.S.: Automated Recycling Identification System for E-Waste Classification Using Deep Learning",
+      "authors": [
+        "Dhruv Talwar",
+        "Harsh Desai",
+        "Wendong Yin",
+        "Goutam Mohanty",
+        "Rafael Reveles"
+      ],
+      "abstract": "Traditional electronic recycling processes suffer from significant resource loss due to inadequate material separation and identification capabilities, limiting material recovery. We present A.R.I.S. (Automated Recycling Identification System), a low-cost, portable sorter for shredded e-waste that addresses this efficiency gap. The system employs a YOLOx model to classify metals, plastics, and circuit boards in real time, achieving low inference latency with high detection accuracy. Experimental evaluation yielded 90% overall precision, 82.2% mean average precision (mAP), and 84% sortation purity. By integrating deep learning with established sorting methods, A.R.I.S. enhances material recovery efficiency and lowers barriers to advanced recycling adoption. This work complements broader initiatives in extending product life cycles, supporting trade-in and recycling programs, and reducing environmental impact across the supply chain.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T18:54:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17642v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17642v1"
+    },
+    {
+      "id": "2602.17321v1",
+      "title": "The Sound of Death: Deep Learning Reveals Vascular Damage from Carotid Ultrasound",
+      "authors": [
+        "Christoph Balada",
+        "Aida Romano-Martinez",
+        "Payal Varshney",
+        "Vincent ten Cate",
+        "Katharina Geschke",
+        "Jonas Tesarz",
+        "Paul Claßen",
+        "Alexander K. Schuster",
+        "Dativa Tibyampansha",
+        "Karl-Patrik Kresoja",
+        "Philipp S. Wild",
+        "Sheraz Ahmed",
+        "Andreas Dengel"
+      ],
+      "abstract": "Cardiovascular diseases (CVDs) remain the leading cause of mortality worldwide, yet early risk detection is often limited by available diagnostics. Carotid ultrasound, a non-invasive and widely accessible modality, encodes rich structural and hemodynamic information that is largely untapped. Here, we present a machine learning (ML) framework that extracts clinically meaningful representations of vascular damage (VD) from carotid ultrasound videos, using hypertension as a weak proxy label. The model learns robust features that are biologically plausible, interpretable, and strongly associated with established cardiovascular risk factors, comorbidities, and laboratory measures. High VD stratifies individuals for myocardial infarction, cardiac death, and all-cause mortality, matching or outperforming conventional risk models such as SCORE2. Explainable AI analyses reveal that the model relies on vessel morphology and perivascular tissue characteristics, uncovering novel functional and anatomical signatures of vascular damage. This work demonstrates that routine carotid ultrasound contains far more prognostic information than previously recognized. Our approach provides a scalable, non-invasive, and cost-effective tool for population-wide cardiovascular risk assessment, enabling earlier and more personalized prevention strategies without reliance on laboratory tests or complex clinical inputs.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T12:37:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17321v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17321v1"
+    },
+    {
+      "id": "2602.17102v1",
+      "title": "Operationalization of Machine Learning with Serverless Architecture: An Industrial Operationalization of Machine Learning with Serverless Architecture: An Industrial Implementation for Harmonized System Code Prediction",
+      "authors": [
+        "Sai Vineeth Kandappareddigari",
+        "Santhoshkumar Jagadish",
+        "Gauri Verma",
+        "Ilhuicamina Contreras",
+        "Christopher Dignam",
+        "Anmol Srivastava",
+        "Benjamin Demers"
+      ],
+      "abstract": "This paper presents a serverless MLOps framework orchestrating the complete ML lifecycle from data ingestion, training, deployment, monitoring, and retraining to using event-driven pipelines and managed services. The architecture is model-agnostic, supporting diverse inference patterns through standardized interfaces, enabling rapid adaptation without infrastructure overhead. We demonstrate practical applicability through an industrial implementation for Harmonized System (HS) code prediction, a compliance-critical task where short, unstructured product descriptions are mapped to standardized codes used by customs authorities in global trade. Frequent updates and ambiguous descriptions make classification challenging, with errors causing shipment delays and financial losses. Our solution uses a custom text embedding encoder and multiple deep learning architectures, with Text-CNN achieving 98 percent accuracy on ground truth data. Beyond accuracy, the pipeline ensures reproducibility, auditability, and SLA adherence under variable loads via auto-scaling. A key feature is automated A/B testing, enabling dynamic model selection and safe promotion in production. Cost-efficiency drives model choice; while transformers may achieve similar accuracy, their long-term operational costs are significantly higher. Deterministic classification with predictable latency and explainability is prioritized, though the architecture remains extensible to transformer variants and LLM-based inference. The paper first introduces the deep learning architectures with simulations and model comparisons, then discusses industrialization through serverless architecture, demonstrating automated retraining, prediction, and validation of HS codes. This work provides a replicable blueprint for operationalizing ML using serverless architecture, enabling enterprises to scale while optimizing performance and economics.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T05:59:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17102v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17102v1"
+    },
+    {
+      "id": "2602.17085v1",
+      "title": "ComptonUNet: A Deep Learning Model for GRB Localization with Compton Cameras under Noisy and Low-Statistic Conditions",
+      "authors": [
+        "Shogo Sato",
+        "Kazuo Tanaka",
+        "Shojun Ogasawara",
+        "Kazuki Yamamoto",
+        "Kazuhiko Murasaki",
+        "Ryuichi Tanida",
+        "Jun Kataoka"
+      ],
+      "abstract": "Gamma-ray bursts (GRBs) are among the most energetic transient phenomena in the universe and serve as powerful probes for high-energy astrophysical processes. In particular, faint GRBs originating from a distant universe may provide unique insights into the early stages of star formation. However, detecting and localizing such weak sources remains challenging owing to low photon statistics and substantial background noise. Although recent machine learning models address individual aspects of these challenges, they often struggle to balance the trade-off between statistical robustness and noise suppression. Consequently, we propose ComptonUNet, a hybrid deep learning framework that jointly processes raw data and reconstructs images for robust GRB localization. ComptonUNet was designed to operate effectively under conditions of limited photon statistics and strong background contamination by combining the statistical efficiency of direct reconstruction models with the denoising capabilities of image-based architectures. We perform realistic simulations of GRB-like events embedded in background environments representative of low-Earth orbit missions to evaluate the performance of ComptonUNet. Our results demonstrate that ComptonUNet significantly outperforms existing approaches, achieving improved localization accuracy across a wide range of low-statistic and high-background scenarios.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T05:11:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17085v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17085v1"
+    },
+    {
+      "id": "2602.16908v1",
+      "title": "Multi-objective optimization and quantum hybridization of equivariant deep learning interatomic potentials on organic and inorganic compounds",
+      "authors": [
+        "G. Laskaris",
+        "D. Morozov",
+        "D. Tarpanov",
+        "A. Seth",
+        "J. Procelewska",
+        "G. Sai Gautam",
+        "A. Sagingalieva",
+        "R. Brasher",
+        "A. Melnikov"
+      ],
+      "abstract": "Allegro is a machine learning interatomic potential (MLIP) model designed to predict atomic properties in molecules using E(3) equivariant neural networks. When training this model, there tends to be a trade-off between accuracy and inference time. For this reason we apply multi-objective hyperparameter optimization to the two objectives. Additionally, we experiment with modified architectures by making variants of Allegro some by adding strictly classical multi-layer perceptron (MLP) layers and some by adding quantum-classical hybrid layers. We compare the results from QM9, rMD17-aspirin, rMD17-benzene and our own proprietary dataset consisting of copper and lithium atoms. As results, we have a list of variants that surpass the Allegro in accuracy and also results which demonstrate the trade-off with inference times.",
+      "published": "February 18, 2026",
+      "published_raw": "2026-02-18T21:48:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16908v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16908v1"
+    },
     {
       "id": "2602.16696v1",
       "title": "Parameter-free representations outperform single-cell foundation models on downstream benchmarks",
@@ -47,7 +143,7 @@
       "arxiv_link": "http://arxiv.org/abs/2602.16507v1"
     },
     {
-      "id": "2602.16468v1",
+      "id": "2602.16468v2",
       "title": "HPMixer: Hierarchical Patching for Multivariate Time Series Forecasting",
       "authors": [
         "Jung Min Choi",
@@ -57,8 +153,8 @@
       "abstract": "In long-term multivariate time series forecasting, effectively capturing both periodic patterns and residual dynamics is essential. To address this within standard deep learning benchmark settings, we propose the Hierarchical Patching Mixer (HPMixer), which models periodicity and residuals in a decoupled yet complementary manner. The periodic component utilizes a learnable cycle module [7] enhanced with a nonlinear channel-wise MLP for greater expressiveness. The residual component is processed through a Learnable Stationary Wavelet Transform (LSWT) to extract stable, shift-invariant frequency-domain representations. Subsequently, a channel-mixing encoder models explicit inter-channel dependencies, while a two-level non-overlapping hierarchical patching mechanism captures coarse- and fine-scale residual variations. By integrating decoupled periodicity modeling with structured, multi-scale residual learning, HPMixer provides an effective framework. Extensive experiments on standard multivariate benchmarks demonstrate that HPMixer achieves competitive or state-of-the-art performance compared to recent baselines.",
       "published": "February 18, 2026",
       "published_raw": "2026-02-18T13:59:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16468v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16468v1"
+      "pdf_link": "http://arxiv.org/pdf/2602.16468v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16468v2"
     },
     {
       "id": "2602.16264v1",
@@ -164,6 +260,21 @@
       "arxiv_link": "http://arxiv.org/abs/2602.16101v1"
     },
     {
+      "id": "2602.16740v1",
+      "title": "Quantifying LLM Attention-Head Stability: Implications for Circuit Universality",
+      "authors": [
+        "Karan Bali",
+        "Jack Stanley",
+        "Praneet Suresh",
+        "Danilo Bzdok"
+      ],
+      "abstract": "In mechanistic interpretability, recent work scrutinizes transformer \"circuits\" - sparse, mono or multi layer sub computations, that may reflect human understandable functions. Yet, these network circuits are rarely acid-tested for their stability across different instances of the same deep learning architecture. Without this, it remains unclear whether reported circuits emerge universally across labs or turn out to be idiosyncratic to a particular estimation instance, potentially limiting confidence in safety-critical settings. Here, we systematically study stability across-refits in increasingly complex transformer language models of various sizes. We quantify, layer by layer, how similarly attention heads learn representations across independently initialized training runs. Our rigorous experiments show that (1) middle-layer heads are the least stable yet the most representationally distinct; (2) deeper models exhibit stronger mid-depth divergence; (3) unstable heads in deeper layers become more functionally important than their peers from the same layer; (4) applying weight decay optimization substantially improves attention-head stability across random model initializations; and (5) the residual stream is comparatively stable. Our findings establish the cross-instance robustness of circuits as an essential yet underappreciated prerequisite for scalable oversight, drawing contours around possible white-box monitorability of AI systems.",
+      "published": "February 17, 2026",
+      "published_raw": "2026-02-17T23:30:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.16740v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.16740v1"
+    },
+    {
       "id": "2602.16000v1",
       "title": "Imaging-Derived Coronary Fractional Flow Reserve: Advances in Physics-Based, Machine-Learning, and Physics-Informed Methods",
       "authors": [
@@ -222,92 +333,6 @@
       "published_raw": "2026-02-17T18:59:55Z",
       "pdf_link": "http://arxiv.org/pdf/2602.15830v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.15830v1"
-    },
-    {
-      "id": "2602.15926v1",
-      "title": "A Study on Real-time Object Detection using Deep Learning",
-      "authors": [
-        "Ankita Bose",
-        "Jayasravani Bhumireddy",
-        "Naveen N"
-      ],
-      "abstract": "Object detection has compelling applications over a range of domains, including human-computer interfaces, security and video surveillance, navigation and road traffic monitoring, transportation systems, industrial automation healthcare, the world of Augmented Reality (AR) and Virtual Reality (VR), environment monitoring and activity identification. Applications of real time object detection in all these areas provide dynamic analysis of the visual information that helps in immediate decision making. Furthermore, advanced deep learning algorithms leverage the progress in the field of object detection providing more accurate and efficient solutions. There are some outstanding deep learning algorithms for object detection which includes, Faster R CNN(Region-based Convolutional Neural Network),Mask R-CNN, Cascade R-CNN, YOLO (You Only Look Once), SSD (Single Shot Multibox Detector), RetinaNet etc. This article goes into great detail on how deep learning algorithms are used to enhance real time object recognition. It provides information on the different object detection models available, open benchmark datasets, and studies on the use of object detection models in a range of applications. Additionally, controlled studies are provided to compare various strategies and produce some illuminating findings. Last but not least, a number of encouraging challenges and approaches are offered as suggestions for further investigation in both relevant deep learning approaches and object recognition.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T18:12:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15926v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15926v1"
-    },
-    {
-      "id": "2602.15923v1",
-      "title": "A fully differentiable framework for training proxy Exchange Correlation Functionals for periodic systems",
-      "authors": [
-        "Rakshit Kumar Singh",
-        "Aryan Amit Barsainyan",
-        "Bharath Ramsundar"
-      ],
-      "abstract": "Density Functional Theory (DFT) is widely used for first-principles simulations in chemistry and materials science, but its computational cost remains a key limitation for large systems. Motivated by recent advances in ML-based exchange-correlation (XC) functionals, this paper introduces a differentiable framework that integrates machine learning models into density functional theory (DFT) for solids and other periodic systems. The framework defines a clean API for neural network models that can act as drop in replacements for conventional exchange-correlation (XC) functionals and enables gradients to flow through the full self-consistent DFT workflow. The framework is implemented in Python using a PyTorch backend, making it fully differentiable and easy to use with standard deep learning tools. We integrate the implementation with the DeepChem library to promote the reuse of established models and to lower the barrier for experimentation. In initial benchmarks against established electronic structure packages (GPAW and PySCF), our models achieve relative errors on the order of 5-10%.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T16:13:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15923v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15923v1"
-    },
-    {
-      "id": "2602.15637v1",
-      "title": "The Stationarity Bias: Stratified Stress-Testing for Time-Series Imputation in Regulated Dynamical Systems",
-      "authors": [
-        "Amirreza Dolatpour Fathkouhi",
-        "Alireza Namazi",
-        "Heman Shakeri"
-      ],
-      "abstract": "Time-series imputation benchmarks employ uniform random masking and shape-agnostic metrics (MSE, RMSE), implicitly weighting evaluation by regime prevalence. In systems with a dominant attractor -- homeostatic physiology, nominal industrial operation, stable network traffic -- this creates a systematic \\emph{Stationarity Bias}: simple methods appear superior because the benchmark predominantly samples the easy, low-entropy regime where they trivially succeed. We formalize this bias and propose a \\emph{Stratified Stress-Test} that partitions evaluation into Stationary and Transient regimes. Using Continuous Glucose Monitoring (CGM) as a testbed -- chosen for its rigorous ground-truth forcing functions (meals, insulin) that enable precise regime identification -- we establish three findings with broad implications:(i)~Stationary Efficiency: Linear interpolation achieves state-of-the-art reconstruction during stable intervals, confirming that complex architectures are computationally wasteful in low-entropy regimes.(ii)~Transient Fidelity: During critical transients (post-prandial peaks, hypoglycemic events), linear methods exhibit drastically degraded morphological fidelity (DTW), disproportionate to their RMSE -- a phenomenon we term the \\emph{RMSE Mirage}, where low pointwise error masks the destruction of signal shape.(iii)~Regime-Conditional Model Selection: Deep learning models preserve both pointwise accuracy and morphological integrity during transients, making them essential for safety-critical downstream tasks. We further derive empirical missingness distributions from clinical trials and impose them on complete training data, preventing models from exploiting unrealistically clean observations and encouraging robustness under real-world missingness. This framework generalizes to any regulated system where routine stationarity dominates critical transients.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T15:05:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15637v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15637v1"
-    },
-    {
-      "id": "2602.15602v1",
-      "title": "Certified Per-Instance Unlearning Using Individual Sensitivity Bounds",
-      "authors": [
-        "Hanna Benarroch",
-        "Jamal Atif",
-        "Olivier Cappé"
-      ],
-      "abstract": "Certified machine unlearning can be achieved via noise injection leading to differential privacy guarantees, where noise is calibrated to worst-case sensitivity. Such conservative calibration often results in performance degradation, limiting practical applicability. In this work, we investigate an alternative approach based on adaptive per-instance noise calibration tailored to the individual contribution of each data point to the learned solution. This raises the following challenge: how can one establish formal unlearning guarantees when the mechanism depends on the specific point to be removed? To define individual data point sensitivities in noisy gradient dynamics, we consider the use of per-instance differential privacy. For ridge regression trained via Langevin dynamics, we derive high-probability per-instance sensitivity bounds, yielding certified unlearning with substantially less noise injection. We corroborate our theoretical findings through experiments in linear settings and provide further empirical evidence on the relevance of the approach in deep learning settings.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T14:18:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15602v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15602v1"
-    },
-    {
-      "id": "2602.15552v1",
-      "title": "Latent Regularization in Generative Test Input Generation",
-      "authors": [
-        "Giorgi Merabishvili",
-        "Oliver Weißl",
-        "Andrea Stocco"
-      ],
-      "abstract": "This study investigates the impact of regularization of latent spaces through truncation on the quality of generated test inputs for deep learning classifiers. We evaluate this effect using style-based GANs, a state-of-the-art generative approach, and assess quality along three dimensions: validity, diversity, and fault detection. We evaluate our approach on the boundary testing of deep learning image classifiers across three datasets, MNIST, Fashion MNIST, and CIFAR-10. We compare two truncation strategies: latent code mixing with binary search optimization and random latent truncation for generative exploration. Our experiments show that the latent code-mixing approach yields a higher fault detection rate than random truncation, while also improving both diversity and validity.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T12:57:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15552v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15552v1"
-    },
-    {
-      "id": "2602.15484v1",
-      "title": "Bottleneck Transformer-Based Approach for Improved Automatic STOI Score Prediction",
-      "authors": [
-        " Amartyaveer",
-        "Murali Kadambi",
-        "Chandra Mohan Sharma",
-        "Anupam Mondal",
-        "Prasanta Kumar Ghosh"
-      ],
-      "abstract": "In this study, we have presented a novel approach to predict the Short-Time Objective Intelligibility (STOI) metric using a bottleneck transformer architecture. Traditional methods for calculating STOI typically requires clean reference speech, which limits their applicability in the real world. To address this, numerous deep learning-based nonintrusive speech assessment models have garnered significant interest. Many studies have achieved commendable performance, but there is room for further improvement. We propose the use of bottleneck transformer, incorporating convolution blocks for learning frame-level features and a multi-head self-attention (MHSA) layer to aggregate the information. These components enable the transformer to focus on the key aspects of the input data. Our model has shown higher correlation and lower mean squared error for both seen and unseen scenarios compared to the state-of-the-art model using self-supervised learning (SSL) and spectral features as inputs.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T10:46:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15484v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15484v1"
     }
   ]
 }
