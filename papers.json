@@ -1,7 +1,181 @@
 {
-  "last_updated": "2026-02-23T01:03:22.498031",
+  "last_updated": "2026-02-24T01:01:10.307376",
   "count": 20,
   "papers": [
+    {
+      "id": "2602.18406v1",
+      "title": "Latent Equivariant Operators for Robust Object Recognition: Promise and Challenges",
+      "authors": [
+        "Minh Dinh",
+        "Stéphane Deny"
+      ],
+      "abstract": "Despite the successes of deep learning in computer vision, difficulties persist in recognizing objects that have undergone group-symmetric transformations rarely seen during training-for example objects seen in unusual poses, scales, positions, or combinations thereof. Equivariant neural networks are a solution to the problem of generalizing across symmetric transformations, but require knowledge of transformations a priori. An alternative family of architectures proposes to earn equivariant operators in a latent space from examples of symmetric transformations. Here, using simple datasets of rotated and translated noisy MNIST, we illustrate how such architectures can successfully be harnessed for out-of-distribution classification, thus overcoming the limitations of both traditional and equivariant networks. While conceptually enticing, we discuss challenges ahead on the path of scaling these architectures to more complex datasets.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T18:14:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.18406v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.18406v1"
+    },
+    {
+      "id": "2602.18308v1",
+      "title": "JPmHC Dynamical Isometry via Orthogonal Hyper-Connections",
+      "authors": [
+        "Biswa Sengupta",
+        "Jinhua Wang",
+        "Leo Brunswic"
+      ],
+      "abstract": "Recent advances in deep learning, exemplified by Hyper-Connections (HC), have expanded the residual connection paradigm by introducing wider residual streams and diverse connectivity patterns. While these innovations yield significant performance gains, they compromise the identity mapping property of residual connections, leading to training instability, limited scalability, and increased memory overhead. To address these challenges, we propose JPmHC (Jacobian-spectrum Preserving manifold-constrained Hyper-Connections), a framework that replaces identity skips with a trainable linear mixer acting on n parallel streams while explicitly controlling gradient conditioning. By constraining the mixer M on operator-norm-bounded manifolds (e.g., bistochastic, Stiefel, Grassmann), JPmHC prevents gradient pathologies and enhances stability. JPmHC introduces three key contributions: (i) a free-probability analysis that predicts Jacobian spectra for structured skips, providing actionable design rules for mixer selection; (ii) memory-efficient implicit differentiation for fixed-point projections, reducing activation memory and synchronization overhead; and (iii) a Stiefel-constrained mixer via Cayley transforms, ensuring orthogonality without post-hoc normalization. Empirical evaluations on ARC-AGI demonstrate that JPmHC achieves faster convergence, higher accuracy, and lower computational cost compared to bistochastic baselines. As a flexible and scalable extension of HC, JPmHC advances spectrum-aware, stable, and efficient deep learning, offering insights into topological architecture design and foundational model evolution.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T16:06:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.18308v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.18308v1"
+    },
+    {
+      "id": "2602.18248v1",
+      "title": "Neural-HSS: Hierarchical Semi-Separable Neural PDE Solver",
+      "authors": [
+        "Pietro Sittoni",
+        "Emanuele Zangrando",
+        "Angelo A. Casulli",
+        "Nicola Guglielmi",
+        "Francesco Tudisco"
+      ],
+      "abstract": "Deep learning-based methods have shown remarkable effectiveness in solving PDEs, largely due to their ability to enable fast simulations once trained. However, despite the availability of high-performance computing infrastructure, many critical applications remain constrained by the substantial computational costs associated with generating large-scale, high-quality datasets and training models. In this work, inspired by studies on the structure of Green's functions for elliptic PDEs, we introduce Neural-HSS, a parameter-efficient architecture built upon the Hierarchical Semi-Separable (HSS) matrix structure that is provably data-efficient for a broad class of PDEs. We theoretically analyze the proposed architecture, proving that it satisfies exactness properties even in very low-data regimes. We also investigate its connections with other architectural primitives, such as the Fourier neural operator layer and convolutional layers. We experimentally validate the data efficiency of Neural-HSS on the three-dimensional Poisson equation over a grid of two million points, demonstrating its superior ability to learn from data generated by elliptic PDEs in the low-data regime while outperforming baseline methods. Finally, we demonstrate its capability to learn from data arising from a broad class of PDEs in diverse domains, including electromagnetism, fluid dynamics, and biology.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T14:31:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.18248v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.18248v1"
+    },
+    {
+      "id": "2602.18146v1",
+      "title": "Stable Long-Horizon Spatiotemporal Prediction on Meshes Using Latent Multiscale Recurrent Graph Neural Networks",
+      "authors": [
+        "Lionel Salesses",
+        "Larbi Arbaoui",
+        "Tariq Benamara",
+        "Arnaud Francois",
+        "Caroline Sainvitu"
+      ],
+      "abstract": "Accurate long-horizon prediction of spatiotemporal fields on complex geometries is a fundamental challenge in scientific machine learning, with applications such as additive manufacturing where temperature histories govern defect formation and mechanical properties. High-fidelity simulations are accurate but computationally costly, and despite recent advances, machine learning methods remain challenged by long-horizon temperature and gradient prediction. We propose a deep learning framework for predicting full temperature histories directly on meshes, conditioned on geometry and process parameters, while maintaining stability over thousands of time steps and generalizing across heterogeneous geometries. The framework adopts a temporal multiscale architecture composed of two coupled models operating at complementary time scales. Both models rely on a latent recurrent graph neural network to capture spatiotemporal dynamics on meshes, while a variational graph autoencoder provides a compact latent representation that reduces memory usage and improves training stability. Experiments on simulated powder bed fusion data demonstrate accurate and temporally stable long-horizon predictions across diverse geometries, outperforming existing baseline. Although evaluated in two dimensions, the framework is general and extensible to physics-driven systems with multiscale dynamics and to three-dimensional geometries.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T11:22:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.18146v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.18146v1"
+    },
+    {
+      "id": "2602.18119v1",
+      "title": "RamanSeg: Interpretability-driven Deep Learning on Raman Spectra for Cancer Diagnosis",
+      "authors": [
+        "Chris Tomy",
+        "Mo Vali",
+        "David Pertzborn",
+        "Tammam Alamatouri",
+        "Anna Mühlig",
+        "Orlando Guntinas-Lichius",
+        "Anna Xylander",
+        "Eric Michele Fantuzzi",
+        "Matteo Negro",
+        "Francesco Crisafi",
+        "Pietro Lio",
+        "Tiago Azevedo"
+      ],
+      "abstract": "Histopathology, the current gold standard for cancer diagnosis, involves the manual examination of tissue samples after chemical staining, a time-consuming process requiring expert analysis. Raman spectroscopy is an alternative, stain-free method of extracting information from samples. Using nnU-Net, we trained a segmentation model on a novel dataset of spatial Raman spectra aligned with tumour annotations, achieving a mean foreground Dice score of 80.9%, surpassing previous work. Furthermore, we propose a novel, interpretable, prototype-based architecture called RamanSeg. RamanSeg classifies pixels based on discovered regions of the training set, generating a segmentation mask. Two variants of RamanSeg allow a trade-off between interpretability and performance: one with prototype projection and another projection-free version. The projection-free RamanSeg outperformed a U-Net baseline with a mean foreground Dice score of 67.3%, offering a meaningful improvement over a black-box training approach.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T10:18:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.18119v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.18119v1"
+    },
+    {
+      "id": "2602.18060v1",
+      "title": "Deepmechanics",
+      "authors": [
+        "Abhay Shinde",
+        "Aryan Amit Barsainyan",
+        "Jose Siguenza",
+        "Ankita Vaishnobi Bisoi",
+        "Rakshit Kr. Singh",
+        "Bharath Ramsundar"
+      ],
+      "abstract": "Physics-informed deep learning models have emerged as powerful tools for learning dynamical systems. These models directly encode physical principles into network architectures. However, systematic benchmarking of these approaches across diverse physical phenomena remains limited, particularly in conservative and dissipative systems. In addition, benchmarking that has been done thus far does not integrate out full trajectories to check stability. In this work, we benchmark three prominent physics-informed architectures such as Hamiltonian Neural Networks (HNN), Lagrangian Neural Networks (LNN), and Symplectic Recurrent Neural Networks (SRNN) using the DeepChem framework, an open-source scientific machine learning library. We evaluate these models on six dynamical systems spanning classical conservative mechanics (mass-spring system, simple pendulum, double pendulum, and three-body problem, spring-pendulum) and non-conservative systems with contact (bouncing ball). We evaluate models by computing error on predicted trajectories and evaluate error both quantitatively and qualitatively. We find that all benchmarked models struggle to maintain stability for chaotic or nonconservative systems. Our results suggest that more research is needed for physics-informed deep learning models to learn robust models of classical mechanical systems.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T08:27:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.18060v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.18060v1"
+    },
+    {
+      "id": "2602.17978v1",
+      "title": "Learning Optimal and Sample-Efficient Decision Policies with Guarantees",
+      "authors": [
+        "Daqian Shao"
+      ],
+      "abstract": "The paradigm of decision-making has been revolutionised by reinforcement learning and deep learning. Although this has led to significant progress in domains such as robotics, healthcare, and finance, the use of RL in practice is challenging, particularly when learning decision policies in high-stakes applications that may require guarantees. Traditional RL algorithms rely on a large number of online interactions with the environment, which is problematic in scenarios where online interactions are costly, dangerous, or infeasible. However, learning from offline datasets is hindered by the presence of hidden confounders. Such confounders can cause spurious correlations in the dataset and can mislead the agent into taking suboptimal or adversarial actions. Firstly, we address the problem of learning from offline datasets in the presence of hidden confounders. We work with instrumental variables (IVs) to identify the causal effect, which is an instance of a conditional moment restrictions (CMR) problem. Inspired by double/debiased machine learning, we derive a sample-efficient algorithm for solving CMR problems with convergence and optimality guarantees, which outperforms state-of-the-art algorithms. Secondly, we relax the conditions on the hidden confounders in the setting of (offline) imitation learning, and adapt our CMR estimator to derive an algorithm that can learn effective imitator policies with convergence rate guarantees. Finally, we consider the problem of learning high-level objectives expressed in linear temporal logic (LTL) and develop a provably optimal learning algorithm that improves sample efficiency over existing methods. Through evaluation on reinforcement learning benchmarks and synthetic and semi-synthetic datasets, we demonstrate the usefulness of the methods developed in this thesis in real-world decision making.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T04:24:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17978v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17978v1"
+    },
+    {
+      "id": "2602.17948v1",
+      "title": "A Geometric Probe of the Accuracy-Robustness Trade-off: Sharp Boundaries in Symmetry-Breaking Dimensional Expansion",
+      "authors": [
+        "Yu Bai",
+        "Zhe Wang",
+        "Jiarui Zhang",
+        "Dong-Xiao Zhang",
+        "Yinjun Gao",
+        "Jun-Jie Zhang"
+      ],
+      "abstract": "The trade-off between clean accuracy and adversarial robustness is a pervasive phenomenon in deep learning, yet its geometric origin remains elusive. In this work, we utilize Symmetry-Breaking Dimensional Expansion (SBDE) as a controlled probe to investigate the mechanism underlying this trade-off. SBDE expands input images by inserting constant-valued pixels, which breaks translational symmetry and consistently improves clean accuracy (e.g., from $90.47\\%$ to $95.63\\%$ on CIFAR-10 with ResNet-18) by reducing parameter degeneracy. However, this accuracy gain comes at the cost of reduced robustness against iterative white-box attacks. By employing a test-time \\emph{mask projection} that resets the inserted auxiliary pixels to their training values, we demonstrate that the vulnerability stems almost entirely from the inserted dimensions. The projection effectively neutralizes the attacks and restores robustness, revealing that the model achieves high accuracy by creating \\emph{sharp boundaries} (steep loss gradients) specifically along the auxiliary axes. Our findings provide a concrete geometric explanation for the accuracy-robustness paradox: the optimization landscape deepens the basin of attraction to improve accuracy but inevitably erects steep walls along the auxiliary degrees of freedom, creating a fragile sensitivity to off-manifold perturbations.",
+      "published": "February 20, 2026",
+      "published_raw": "2026-02-20T02:58:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17948v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17948v1"
+    },
+    {
+      "id": "2602.17865v1",
+      "title": "Financial time series augmentation using transformer based GAN architecture",
+      "authors": [
+        "Andrzej Podobiński",
+        "Jarosław A. Chudziak"
+      ],
+      "abstract": "Time-series forecasting is a critical task across many domains, from engineering to economics, where accurate predictions drive strategic decisions. However, applying advanced deep learning models in challenging, volatile domains like finance is difficult due to the inherent limitation and dynamic nature of financial time series data. This scarcity often results in sub-optimal model training and poor generalization. The fundamental challenge lies in determining how to reliably augment scarce financial time series data to enhance the predictive accuracy of deep learning forecasting models. Our main contribution is a demonstration of how Generative Adversarial Networks (GANs) can effectively serve as a data augmentation tool to overcome data scarcity in the financial domain. Specifically, we show that training a Long Short-Term Memory (LSTM) forecasting model on a dataset augmented with synthetic data generated by a transformer-based GAN (TTS-GAN) significantly improves the forecasting accuracy compared to using real data alone. We confirm these results across different financial time series (Bitcoin and S\\&P500 price data) and various forecasting horizons. Furthermore, we propose a novel, time series specific quality metric that combines Dynamic Time Warping (DTW) and a modified Deep Dataset Dissimilarity Measure (DeD-iMs) to reliably monitor the training progress and evaluate the quality of the generated data. These findings provide compelling evidence for the benefits of GAN-based data augmentation in enhancing financial predictive capabilities.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T22:02:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17865v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17865v1"
+    },
+    {
+      "id": "2602.17797v1",
+      "title": "Deep Learning for Dermatology: An Innovative Framework for Approaching Precise Skin Cancer Detection",
+      "authors": [
+        "Mohammad Tahmid Noor",
+        "B. M. Shahria Alam",
+        "Tasmiah Rahman Orpa",
+        "Shaila Afroz Anika",
+        "Mahjabin Tasnim Samiha",
+        "Fahad Ahammed"
+      ],
+      "abstract": "Skin cancer can be life-threatening if not diagnosed early, a prevalent yet preventable disease. Globally, skin cancer is perceived among the finest prevailing cancers and millions of people are diagnosed each year. For the allotment of benign and malignant skin spots, an area of critical importance in dermatological diagnostics, the application of two prominent deep learning models, VGG16 and DenseNet201 are investigated by this paper. We evaluate these CNN architectures for their efficacy in differentiating benign from malignant skin lesions leveraging enhancements in deep learning enforced to skin cancer spotting. Our objective is to assess model accuracy and computational efficiency, offering insights into how these models could assist in early detection, diagnosis, and streamlined workflows in dermatology. We used two deep learning methods DenseNet201 and VGG16 model on a binary class dataset containing 3297 images. The best result with an accuracy of 93.79% achieved by DenseNet201. All images were resized to 224x224 by rescaling. Although both models provide excellent accuracy, there is still some room for improvement. In future using new datasets, we tend to improve our work by achieving great accuracy.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T19:59:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17797v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17797v1"
+    },
+    {
+      "id": "2602.17772v1",
+      "title": "Sparse Bayesian Modeling of EEG Channel Interactions Improves P300 Brain-Computer Interface Performance",
+      "authors": [
+        "Guoxuan Ma",
+        "Yuan Zhong",
+        "Moyan Li",
+        "Yuxiao Nie",
+        "Jian Kang"
+      ],
+      "abstract": "Electroencephalography (EEG)-based P300 brain-computer interfaces (BCIs) enable communication without physical movement by detecting stimulus-evoked neural responses. Accurate and efficient decoding remains challenging due to high dimensionality, temporal dependence, and complex interactions across EEG channels. Most existing approaches treat channels independently or rely on black-box machine learning models, limiting interpretability and personalization. We propose a sparse Bayesian time-varying regression framework that explicitly models pairwise EEG channel interactions while performing automatic temporal feature selection. The model employs a relaxed-thresholded Gaussian process prior to induce structured sparsity in both channel-specific and interaction effects, enabling interpretable identification of task-relevant channels and channel pairs. Applied to a publicly available P300 speller dataset of 55 participants, the proposed method achieves a median character-level accuracy of 100\\% using all stimulus sequences and attains the highest overall decoding performance among competing statistical and deep learning approaches. Incorporating channel interactions yields subgroup-specific gains of up to 7\\% in character-level accuracy, particularly among participants who abstained from alcohol (up to 18\\% improvement). Importantly, the proposed method improves median BCI-Utility by approximately 10\\% at its optimal operating point, achieving peak throughput after only seven stimulus sequences. These results demonstrate that explicitly modeling structured EEG channel interactions within a principled Bayesian framework enhances predictive accuracy, improves user-centric throughput, and supports personalization in P300 BCI systems.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T19:03:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17772v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17772v1"
+    },
     {
       "id": "2602.17642v1",
       "title": "A.R.I.S.: Automated Recycling Identification System for E-Waste Classification Using Deep Learning",
@@ -17,6 +191,19 @@
       "published_raw": "2026-02-19T18:54:06Z",
       "pdf_link": "http://arxiv.org/pdf/2602.17642v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.17642v1"
+    },
+    {
+      "id": "2602.17747v1",
+      "title": "AgriVariant: Variant Effect Prediction using DeepChem-Variant for Precision Breeding in Rice",
+      "authors": [
+        "Ankita Vaishnobi Bisoi",
+        "Bharath Ramsundar"
+      ],
+      "abstract": "Predicting functional consequences of genetic variants in crop genes remains a critical bottleneck for precision breeding programs. We present AgriVariant, an end-to-end pipeline for variant-effect prediction in rice (Oryza sativa) that addresses the lack of crop-specific variant-interpretation tools and can be extended to any crop species with available reference genomes and gene annotations. Our approach integrates deep learning-based variant calling (DeepChem-Variant) with custom plant genomics annotation using RAP-DB gene models and database-independent deleteriousness scoring that combines the Grantham distance and the BLOSUM62 substitution matrix. We validate the pipeline through targeted mutations in stress-response genes (OsDREB2a, OsDREB1F, SKC1), demonstrating correct classification of stop-gained, missense, and synonymous variants with appropriate HIGH / MODERATE / LOW impact assignments. An exhaustive mutagenesis study of OsMT-3a analyzed all 1,509 possible single-nucleotide variants in 10 days, identifying 353 high-impact, 447 medium-impact, and 709 low-impact variants - an analysis that would have required 2-4 years using traditional wet-lab approaches. This computational framework enables breeders to prioritize variants for experimental validation across diverse crop species, reducing screening costs and accelerating development of climate-resilient crop varieties.",
+      "published": "February 19, 2026",
+      "published_raw": "2026-02-19T14:03:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.17747v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.17747v1"
     },
     {
       "id": "2602.17321v1",
@@ -141,198 +328,6 @@
       "published_raw": "2026-02-18T14:48:08Z",
       "pdf_link": "http://arxiv.org/pdf/2602.16507v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.16507v1"
-    },
-    {
-      "id": "2602.16468v2",
-      "title": "HPMixer: Hierarchical Patching for Multivariate Time Series Forecasting",
-      "authors": [
-        "Jung Min Choi",
-        "Vijaya Krishna Yalavarthi",
-        "Lars Schmidt-Thieme"
-      ],
-      "abstract": "In long-term multivariate time series forecasting, effectively capturing both periodic patterns and residual dynamics is essential. To address this within standard deep learning benchmark settings, we propose the Hierarchical Patching Mixer (HPMixer), which models periodicity and residuals in a decoupled yet complementary manner. The periodic component utilizes a learnable cycle module [7] enhanced with a nonlinear channel-wise MLP for greater expressiveness. The residual component is processed through a Learnable Stationary Wavelet Transform (LSWT) to extract stable, shift-invariant frequency-domain representations. Subsequently, a channel-mixing encoder models explicit inter-channel dependencies, while a two-level non-overlapping hierarchical patching mechanism captures coarse- and fine-scale residual variations. By integrating decoupled periodicity modeling with structured, multi-scale residual learning, HPMixer provides an effective framework. Extensive experiments on standard multivariate benchmarks demonstrate that HPMixer achieves competitive or state-of-the-art performance compared to recent baselines.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T13:59:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16468v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16468v2"
-    },
-    {
-      "id": "2602.16264v1",
-      "title": "Prediction of Major Solar Flares Using Interpretable Class-dependent Reward Framework with Active Region Magnetograms and Domain Knowledge",
-      "authors": [
-        "Zixian Wu",
-        "Xuebao Li",
-        "Yanfang Zheng",
-        "Rui Wang",
-        "Shunhuang Zhang",
-        "Jinfang Wei",
-        "Yongshang Lv",
-        "Liang Dong",
-        "Zamri Zainal Abidin",
-        "Noraisyah Mohamed Shah",
-        "Hongwei Ye",
-        "Pengchao Yan",
-        "Xuefeng Li",
-        "Xiaojia Ji",
-        "Xusheng Huang",
-        "Xiaotian Wang",
-        "Honglei Jin"
-      ],
-      "abstract": "In this work, we develop, for the first time, a supervised classification framework with class-dependent rewards (CDR) to predict $\\geq$MM flares within 24 hr. We construct multiple datasets, covering knowledge-informed features and line-of sight (LOS) magnetograms. We also apply three deep learning models (CNN, CNN-BiLSTM, and Transformer) and three CDR counterparts (CDR-CNN, CDR-CNN-BiLSTM, and CDR-Transformer). First, we analyze the importance of LOS magnetic field parameters with the Transformer, then compare its performance using LOS-only, vector-only, and combined magnetic field parameters. Second, we compare flare prediction performance based on CDR models versus deep learning counterparts. Third, we perform sensitivity analysis on reward engineering for CDR models. Fourth, we use the SHAP method for model interpretability. Finally, we conduct performance comparison between our models and NASA/CCMC. The main findings are: (1)Among LOS feature combinations, R_VALUE and AREA_ACR consistently yield the best results. (2)Transformer achieves better performance with combined LOS and vector magnetic field data than with either alone. (3)Models using knowledge-informed features outperform those using magnetograms. (4)While CNN and CNN-BiLSTM outperform their CDR counterparts on magnetograms, CDR-Transformer is slightly superior to its deep learning counterpart when using knowledge-informed features. Among all models, CDR-Transformer achieves the best performance. (5)The predictive performance of the CDR models is not overly sensitive to the reward choices.(6)Through SHAP analysis, the CDR model tends to regard TOTUSJH as more important, while the Transformer tends to prioritize R_VALUE more.(7)Under identical prediction time and active region (AR) number, the CDR-Transformer shows superior predictive capabilities compared to NASA/CCMC.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T08:30:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16264v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16264v1"
-    },
-    {
-      "id": "2602.16256v1",
-      "title": "Color-based Emotion Representation for Speech Emotion Recognition",
-      "authors": [
-        "Ryotaro Nagase",
-        "Ryoichi Takashima",
-        "Yoichi Yamashita"
-      ],
-      "abstract": "Speech emotion recognition (SER) has traditionally relied on categorical or dimensional labels. However, this technique is limited in representing both the diversity and interpretability of emotions. To overcome this limitation, we focus on color attributes, such as hue, saturation, and value, to represent emotions as continuous and interpretable scores. We annotated an emotional speech corpus with color attributes via crowdsourcing and analyzed them. Moreover, we built regression models for color attributes in SER using machine learning and deep learning, and explored the multitask learning of color attribute regression and emotion classification. As a result, we demonstrated the relationship between color attributes and emotions in speech, and successfully developed color attribute regression models for SER. We also showed that multitask learning improved the performance of each task.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T08:11:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16256v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16256v1"
-    },
-    {
-      "id": "2602.16224v1",
-      "title": "Amortized Predictability-aware Training Framework for Time Series Forecasting and Classification",
-      "authors": [
-        "Xu Zhang",
-        "Peng Wang",
-        "Yichen Li",
-        "Wei Wang"
-      ],
-      "abstract": "Time series data are prone to noise in various domains, and training samples may contain low-predictability patterns that deviate from the normal data distribution, leading to training instability or convergence to poor local minima. Therefore, mitigating the adverse effects of low-predictability samples is crucial for time series analysis tasks such as time series forecasting (TSF) and time series classification (TSC). While many deep learning models have achieved promising performance, few consider how to identify and penalize low-predictability samples to improve model performance from the training perspective. To fill this gap, we propose a general Amortized Predictability-aware Training Framework (APTF) for both TSF and TSC. APTF introduces two key designs that enable the model to focus on high-predictability samples while still learning appropriately from low-predictability ones: (i) a Hierarchical Predictability-aware Loss (HPL) that dynamically identifies low-predictability samples and progressively expands their loss penalty as training evolves, and (ii) an amortization model that mitigates predictability estimation errors caused by model bias, further enhancing HPL's effectiveness. The code is available at https://github.com/Meteor-Stars/APTF.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T06:59:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16224v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16224v1"
-    },
-    {
-      "id": "2602.16216v1",
-      "title": "UCTECG-Net: Uncertainty-aware Convolution Transformer ECG Network for Arrhythmia Detection",
-      "authors": [
-        "Hamzeh Asgharnezhad",
-        "Pegah Tabarisaadi",
-        "Abbas Khosravi",
-        "Roohallah Alizadehsani",
-        "U. Rajendra Acharya"
-      ],
-      "abstract": "Deep learning has improved automated electrocardiogram (ECG) classification, but limited insight into prediction reliability hinders its use in safety-critical settings. This paper proposes UCTECG-Net, an uncertainty-aware hybrid architecture that combines one-dimensional convolutions and Transformer encoders to process raw ECG signals and their spectrograms jointly. Evaluated on the MIT-BIH Arrhythmia and PTB Diagnostic datasets, UCTECG-Net outperforms LSTM, CNN1D, and Transformer baselines in terms of accuracy, precision, recall and F1 score, achieving up to 98.58% accuracy on MIT-BIH and 99.14% on PTB. To assess predictive reliability, we integrate three uncertainty quantification methods (Monte Carlo Dropout, Deep Ensembles, and Ensemble Monte Carlo Dropout) into all models and analyze their behavior using an uncertainty-aware confusion matrix and derived metrics. The results show that UCTECG-Net, particularly with Ensemble or EMCD, provides more reliable and better-aligned uncertainty estimates than competing architectures, offering a stronger basis for risk-aware ECG decision support.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T06:39:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16216v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16216v1"
-    },
-    {
-      "id": "2602.16204v1",
-      "title": "Linked Data Classification using Neurochaos Learning",
-      "authors": [
-        "Pooja Honna",
-        "Ayush Patravali",
-        "Nithin Nagaraj",
-        "Nanjangud C. Narendra"
-      ],
-      "abstract": "Neurochaos Learning (NL) has shown promise in recent times over traditional deep learning due to its two key features: ability to learn from small sized training samples, and low compute requirements. In prior work, NL has been implemented and extensively tested on separable and time series data, and demonstrated its superior performance on both classification and regression tasks. In this paper, we investigate the next step in NL, viz., applying NL to linked data, in particular, data that is represented in the form of knowledge graphs. We integrate linked data into NL by implementing node aggregation on knowledge graphs, and then feeding the aggregated node features to the simplest NL architecture: ChaosNet. We demonstrate the results of our implementation on homophilic graph datasets as well as heterophilic graph datasets of verying heterophily. We show better efficacy of our approach on homophilic graphs than on heterophilic graphs. While doing so, we also present our analysis of the results, as well as suggestions for future work.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T05:55:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16204v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16204v1"
-    },
-    {
-      "id": "2602.16101v1",
-      "title": "Axle Sensor Fusion for Online Continual Wheel Fault Detection in Wayside Railway Monitoring",
-      "authors": [
-        "Afonso Lourenço",
-        "Francisca Osório",
-        "Diogo Risca",
-        "Goreti Marreiros"
-      ],
-      "abstract": "Reliable and cost-effective maintenance is essential for railway safety, particularly at the wheel-rail interface, which is prone to wear and failure. Predictive maintenance frameworks increasingly leverage sensor-generated time-series data, yet traditional methods require manual feature engineering, and deep learning models often degrade in online settings with evolving operational patterns. This work presents a semantic-aware, label-efficient continual learning framework for railway fault diagnostics. Accelerometer signals are encoded via a Variational AutoEncoder into latent representations capturing the normal operational structure in a fully unsupervised manner. Importantly, semantic metadata, including axle counts, wheel indexes, and strain-based deformations, is extracted via AI-driven peak detection on fiber Bragg grating sensors (resistant to electromagnetic interference) and fused with the VAE embeddings, enhancing anomaly detection under unknown operational conditions. A lightweight gradient boosting supervised classifier stabilizes anomaly scoring with minimal labels, while a replay-based continual learning strategy enables adaptation to evolving domains without catastrophic forgetting. Experiments show the model detects minor imperfections due to flats and polygonization, while adapting to evolving operational conditions, such as changes in train type, speed, load, and track profiles, captured using a single accelerometer and strain gauge in wayside monitoring.",
-      "published": "February 18, 2026",
-      "published_raw": "2026-02-18T00:14:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16101v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16101v1"
-    },
-    {
-      "id": "2602.16740v1",
-      "title": "Quantifying LLM Attention-Head Stability: Implications for Circuit Universality",
-      "authors": [
-        "Karan Bali",
-        "Jack Stanley",
-        "Praneet Suresh",
-        "Danilo Bzdok"
-      ],
-      "abstract": "In mechanistic interpretability, recent work scrutinizes transformer \"circuits\" - sparse, mono or multi layer sub computations, that may reflect human understandable functions. Yet, these network circuits are rarely acid-tested for their stability across different instances of the same deep learning architecture. Without this, it remains unclear whether reported circuits emerge universally across labs or turn out to be idiosyncratic to a particular estimation instance, potentially limiting confidence in safety-critical settings. Here, we systematically study stability across-refits in increasingly complex transformer language models of various sizes. We quantify, layer by layer, how similarly attention heads learn representations across independently initialized training runs. Our rigorous experiments show that (1) middle-layer heads are the least stable yet the most representationally distinct; (2) deeper models exhibit stronger mid-depth divergence; (3) unstable heads in deeper layers become more functionally important than their peers from the same layer; (4) applying weight decay optimization substantially improves attention-head stability across random model initializations; and (5) the residual stream is comparatively stable. Our findings establish the cross-instance robustness of circuits as an essential yet underappreciated prerequisite for scalable oversight, drawing contours around possible white-box monitorability of AI systems.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T23:30:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16740v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16740v1"
-    },
-    {
-      "id": "2602.16000v1",
-      "title": "Imaging-Derived Coronary Fractional Flow Reserve: Advances in Physics-Based, Machine-Learning, and Physics-Informed Methods",
-      "authors": [
-        "Tanxin Zhu",
-        "Emran Hossen",
-        "Chen Zhao",
-        "Michele Esposito",
-        "Jiguang Sun",
-        "Weihua Zhou"
-      ],
-      "abstract": "Purpose of Review Imaging derived fractional flow reserve (FFR) is rapidly evolving beyond conventional computational fluid dynamics (CFD) based pipelines toward machine learning (ML), deep learning (DL), and physics informed approaches that enable fast, wire free, and scalable functional assessment of coronary stenosis. This review synthesizes recent advances in CT and angiography based FFR, with particular emphasis on emerging physics informed neural networks and neural operators (PINNs and PINOs) and key considerations for their clinical translation. Recent Findings ML/DL approaches have markedly improved automation and computational speed, enabling prediction of pressure and FFR from anatomical descriptors or angiographic contrast dynamics. However, their real-world performance and generalizability can remain variable and sensitive to domain shift, due to multi-center heterogeneity, interpretability challenges, and differences in acquisition protocols and image quality. Physics informed learning introduces conservation structure and boundary condition consistency into model training, improving generalizability and reducing dependence on dense supervision while maintaining rapid inference. Recent evaluation trends increasingly highlight deployment oriented metrics, including calibration, uncertainty quantification, and quality control gatekeeping, as essential for safe clinical use. Summary The field is converging toward imaging derived FFR methods that are faster, more automated, and more reliable. While ML/DL offers substantial efficiency gains, physics informed frameworks such as PINNs and PINOs may provide a more robust balance between speed and physical consistency. Prospective multi center validation and standardized evaluation will be critical to support broad and safe clinical adoption.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T20:46:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.16000v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.16000v1"
-    },
-    {
-      "id": "2602.15961v1",
-      "title": "R$^2$Energy: A Large-Scale Benchmark for Robust Renewable Energy Forecasting under Diverse and Extreme Conditions",
-      "authors": [
-        "Zhi Sheng",
-        "Yuan Yuan",
-        "Guozhen Zhang",
-        "Yong Li"
-      ],
-      "abstract": "The rapid expansion of renewable energy, particularly wind and solar power, has made reliable forecasting critical for power system operations. While recent deep learning models have achieved strong average accuracy, the increasing frequency and intensity of climate-driven extreme weather events pose severe threats to grid stability and operational security. Consequently, developing robust forecasting models that can withstand volatile conditions has become a paramount challenge. In this paper, we present R$^2$Energy, a large-scale benchmark for NWP-assisted renewable energy forecasting. It comprises over 10.7 million high-fidelity hourly records from 902 wind and solar stations across four provinces in China, providing the diverse meteorological conditions necessary to capture the wide-ranging variability of renewable generation. We further establish a standardized, leakage-free forecasting paradigm that grants all models identical access to future Numerical Weather Prediction (NWP) signals, enabling fair and reproducible comparison across state-of-the-art representative forecasting architectures. Beyond aggregate accuracy, we incorporate regime-wise evaluation with expert-aligned extreme weather annotations, uncovering a critical ``robustness gap'' typically obscured by average metrics. This gap reveals a stark robustness-complexity trade-off: under extreme conditions, a model's reliability is driven by its meteorological integration strategy rather than its architectural complexity. R$^2$Energy provides a principled foundation for evaluating and developing forecasting models for safety-critical power system applications.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T19:22:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15961v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15961v1"
-    },
-    {
-      "id": "2602.15930v1",
-      "title": "A targeted machine learning approach for detecting diffuse radio emission with Astronomaly: Protege",
-      "authors": [
-        "Verlon Etsebeth",
-        "Michelle Lochner",
-        "Konstantinos Kolokythas",
-        "Kenda Knowles",
-        "Emma Tolley"
-      ],
-      "abstract": "Diffuse radio emission in galaxy clusters, such as radio halos, relics, and mini halos, is a key tracer of non-thermal processes, turbulence, and magnetic fields within the intra-cluster medium. However, their low surface brightness, as well as contamination from compact sources and imaging artefacts, makes their detection challenging. The sheer volume of data from instruments such as the Square Kilometre Array will render traditional manual-inspection based detection methods infeasible. This paper introduces a novel machine learning approach that uses active learning to rapidly identify diffuse emission candidates from a small, optimally-selected subset of data. We apply the self-supervised deep learning algorithm Bootstrap Your Own Latent to extract features from source cutouts in the MeerKAT Galaxy Cluster Legacy Survey (MGCLS). We then pass these features through the Astronomaly: Protege anomaly detection framework to identify the final candidates. Using a human-labelled set, we evaluate our pipeline on high-resolution (~7''), convolved (15''), and combined-feature MGCLS datasets. Interestingly, the high-resolution features identify diffuse sources more efficiently than the convolved resolution, which are in turn outperformed by the combined features. Of the top 100 sources ranked by Protege, 99% exhibit diffuse characteristics, with 55% confirmed as cluster-related emission. Our work shows that Protege can identify diffuse emission with minimal human labelling effort, offering a powerful, scalable tool capable of detecting both known and novel diffuse radio sources.",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T19:00:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15930v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15930v1"
-    },
-    {
-      "id": "2602.15830v1",
-      "title": "Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution",
-      "authors": [
-        "Christopher David Roberts"
-      ],
-      "abstract": "Fair scores reward ensemble forecast members that behave like samples from the same distribution as the verifying observations. They are therefore an attractive choice as loss functions to train data-driven ensemble forecasts or post-processing methods when large training ensembles are either unavailable or computationally prohibitive. The adjusted continuous ranked probability score (aCRPS) is fair and unbiased with respect to ensemble size, provided forecast members are exchangeable and interpretable as conditionally independent draws from an underlying predictive distribution. However, distribution-aware post-processing methods that introduce structural dependency between members can violate this assumption, rendering aCRPS unfair. We demonstrate this effect using two approaches designed to minimize the expected aCRPS of a finite ensemble: (1) a linear member-by-member calibration, which couples members through a common dependency on the sample ensemble mean, and (2) a deep-learning method, which couples members via transformer self-attention across the ensemble dimension. In both cases, the results are sensitive to ensemble size and apparent gains in aCRPS can correspond to systematic unreliability characterized by over-dispersion. We introduce trajectory transformers as a proof-of-concept that ensemble-size independence can be achieved. This approach is an adaptation of the Post-processing Ensembles with Transformers (PoET) framework and applies self-attention over lead time while preserving the conditional independence required by aCRPS. When applied to weekly mean $T_{2m}$ forecasts from the ECMWF subseasonal forecasting system, this approach successfully reduces systematic model biases whilst also improving or maintaining forecast reliability regardless of the ensemble size used in training (3 vs 9 members) or real-time forecasts (9 vs 100 members).",
-      "published": "February 17, 2026",
-      "published_raw": "2026-02-17T18:59:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.15830v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.15830v1"
     }
   ]
 }
