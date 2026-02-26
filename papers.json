@@ -1,7 +1,179 @@
 {
-  "last_updated": "2026-02-25T01:06:44.828759",
+  "last_updated": "2026-02-26T01:00:13.257821",
   "count": 20,
   "papers": [
+    {
+      "id": "2602.21160v1",
+      "title": "Not Just How Much, But Where: Decomposing Epistemic Uncertainty into Per-Class Contributions",
+      "authors": [
+        "Mame Diarra Toure",
+        "David A. Stephens"
+      ],
+      "abstract": "In safety-critical classification, the cost of failure is often asymmetric, yet Bayesian deep learning summarises epistemic uncertainty with a single scalar, mutual information (MI), that cannot distinguish whether a model's ignorance involves a benign or safety-critical class. We decompose MI into a per-class vector $C_k(x)=σ_k^{2}/(2μ_k)$, with $μ_k{=}\\mathbb{E}[p_k]$ and $σ_k^2{=}\\mathrm{Var}[p_k]$ across posterior samples. The decomposition follows from a second-order Taylor expansion of the entropy; the $1/μ_k$ weighting corrects boundary suppression and makes $C_k$ comparable across rare and common classes. By construction $\\sum_k C_k \\approx \\mathrm{MI}$, and a companion skewness diagnostic flags inputs where the approximation degrades. After characterising the axiomatic properties of $C_k$, we validate it on three tasks: (i) selective prediction for diabetic retinopathy, where critical-class $C_k$ reduces selective risk by 34.7\\% over MI and 56.2\\% over variance baselines; (ii) out-of-distribution detection on clinical and image benchmarks, where $\\sum_k C_k$ achieves the highest AUROC and the per-class view exposes asymmetric shifts invisible to MI; and (iii) a controlled label-noise study in which $\\sum_k C_k$ shows less sensitivity to injected aleatoric noise than MI under end-to-end Bayesian training, while both metrics degrade under transfer learning. Across all tasks, the quality of the posterior approximation shapes uncertainty at least as strongly as the choice of metric, suggesting that how uncertainty is propagated through the network matters as much as how it is measured.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T18:05:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.21160v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.21160v1"
+    },
+    {
+      "id": "2602.21046v1",
+      "title": "PIME: Prototype-based Interpretable MCTS-Enhanced Brain Network Analysis for Disorder Diagnosis",
+      "authors": [
+        "Kunyu Zhang",
+        "Yanwu Yang",
+        "Jing Zhang",
+        "Xiangjie Shi",
+        "Shujian Yu"
+      ],
+      "abstract": "Recent deep learning methods for fMRI-based diagnosis have achieved promising accuracy by modeling functional connectivity networks. However, standard approaches often struggle with noisy interactions, and conventional post-hoc attribution methods may lack reliability, potentially highlighting dataset-specific artifacts. To address these challenges, we introduce PIME, an interpretable framework that bridges intrinsic interpretability with minimal-sufficient subgraph optimization by integrating prototype-based classification and consistency training with structural perturbations during learning. This encourages a structured latent space and enables Monte Carlo Tree Search (MCTS) under a prototype-consistent objective to extract compact minimal-sufficient explanatory subgraphs post-training. Experiments on three benchmark fMRI datasets demonstrate that PIME achieves state-of-the-art performance. Furthermore, by constraining the search space via learned prototypes, PIME identifies critical brain regions that are consistent with established neuroimaging findings. Stability analysis shows 90% reproducibility and consistent explanations across atlases.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T16:04:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.21046v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.21046v1"
+    },
+    {
+      "id": "2602.20947v1",
+      "title": "Estimation of Confidence Bounds in Binary Classification using Wilson Score Kernel Density Estimation",
+      "authors": [
+        "Thorbjørn Mosekjær Iversen",
+        "Zebin Duan",
+        "Frederik Hagelskjær"
+      ],
+      "abstract": "The performance and ease of use of deep learning-based binary classifiers have improved significantly in recent years. This has opened up the potential for automating critical inspection tasks, which have traditionally only been trusted to be done manually. However, the application of binary classifiers in critical operations depends on the estimation of reliable confidence bounds such that system performance can be ensured up to a given statistical significance. We present Wilson Score Kernel Density Classification, which is a novel kernel-based method for estimating confidence bounds in binary classification. The core of our method is the Wilson Score Kernel Density Estimator, which is a function estimator for estimating confidence bounds in Binomial experiments with conditionally varying success probabilities. Our method is evaluated in the context of selective classification on four different datasets, illustrating its use as a classification head of any feature extractor, including vision foundation models. Our proposed method shows similar performance to Gaussian Process Classification, but at a lower computational complexity.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T14:31:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20947v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20947v1"
+    },
+    {
+      "id": "2602.20744v1",
+      "title": "Voices of the Mountains: Deep Learning-Based Vocal Error Detection System for Kurdish Maqams",
+      "authors": [
+        "Darvan Shvan Khairaldeen",
+        "Hossein Hassani"
+      ],
+      "abstract": "Maqam, a singing type, is a significant component of Kurdish music. A maqam singer receives training in a traditional face-to-face or through self-training. Automatic Singing Assessment (ASA) uses machine learning (ML) to provide the accuracy of singing styles and can help learners to improve their performance through error detection. Currently, the available ASA tools follow Western music rules. The musical composition requires all notes to stay within their expected pitch range from start to finish. The system fails to detect micro-intervals and pitch bends, so it identifies Kurdish maqam singing as incorrect even though the singer performs according to traditional rules. Kurdish maqam requires recognizing performance errors within microtonal spaces, which is beyond Western equal temperament. This research is the first attempt to address the mentioned gap. While many error types happen during singing, our focus is on pitch, rhythm, and modal stability errors in the context of Bayati-Kurd. We collected 50 songs from 13 vocalists ( 2-3 hours) and annotated 221 error spans (150 fine pitch, 46 rhythm, 25 modal drift). The data was segmented into 15,199 overlapping windows and converted to log-mel spectrograms. We developed a two-headed CNN-BiLSTM with attention mode to decide whether a window contains an error and to classify it based on the chosen errors. Trained for 20 epochs with early stopping at epoch 10, the model reached a validation macro-F1 of 0.468. On the full 50-song evaluation at a 0.750 threshold, recall was 39.4% and precision 25.8% . Within detected windows, type macro-F1 was 0.387, with F1 of 0.492 (fine pitch), 0.536 (rhythm), and 0.133 (modal drift); modal drift recall was 8.0%. The better performance on common error types shows that the method works, while the poor modal-drift recall shows that more data and balancing are needed.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T10:17:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20744v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20744v1"
+    },
+    {
+      "id": "2602.20652v1",
+      "title": "DANCE: Doubly Adaptive Neighborhood Conformal Estimation",
+      "authors": [
+        "Brandon R. Feng",
+        "Brian J. Reich",
+        "Daniel Beaglehole",
+        "Xihaier Luo",
+        "David Keetae Park",
+        "Shinjae Yoo",
+        "Zhechao Huang",
+        "Xueyu Mao",
+        "Olcay Boz",
+        "Jungeum Kim"
+      ],
+      "abstract": "The recent developments of complex deep learning models have led to unprecedented ability to accurately predict across multiple data representation types. Conformal prediction for uncertainty quantification of these models has risen in popularity, providing adaptive, statistically-valid prediction sets. For classification tasks, conformal methods have typically focused on utilizing logit scores. For pre-trained models, however, this can result in inefficient, overly conservative set sizes when not calibrated towards the target task. We propose DANCE, a doubly locally adaptive nearest-neighbor based conformal algorithm combining two novel nonconformity scores directly using the data's embedded representation. DANCE first fits a task-adaptive kernel regression model from the embedding layer before using the learned kernel space to produce the final prediction sets for uncertainty quantification. We test against state-of-the-art local, task-adapted and zero-shot conformal baselines, demonstrating DANCE's superior blend of set size efficiency and robustness across various datasets.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T07:54:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20652v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20652v1"
+    },
+    {
+      "id": "2602.20651v1",
+      "title": "Sparse Bayesian Deep Functional Learning with Structured Region Selection",
+      "authors": [
+        "Xiaoxian Zhu",
+        "Yingmeng Li",
+        "Shuangge Ma",
+        "Mengyun Wu"
+      ],
+      "abstract": "In modern applications such as ECG monitoring, neuroimaging, wearable sensing, and industrial equipment diagnostics, complex and continuously structured data are ubiquitous, presenting both challenges and opportunities for functional data analysis. However, existing methods face a critical trade-off: conventional functional models are limited by linearity, whereas deep learning approaches lack interpretable region selection for sparse effects. To bridge these gaps, we propose a sparse Bayesian functional deep neural network (sBayFDNN). It learns adaptive functional embeddings through a deep Bayesian architecture to capture complex nonlinear relationships, while a structured prior enables interpretable, region-wise selection of influential domains with quantified uncertainty. Theoretically, we establish rigorous approximation error bounds, posterior consistency, and region selection consistency. These results provide the first theoretical guarantees for a Bayesian deep functional model, ensuring its reliability and statistical rigor. Empirically, comprehensive simulations and real-world studies confirm the effectiveness and superiority of sBayFDNN. Crucially, sBayFDNN excels in recognizing intricate dependencies for accurate predictions and more precisely identifies functionally meaningful regions, capabilities fundamentally beyond existing approaches.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T07:53:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20651v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20651v1"
+    },
+    {
+      "id": "2602.20646v1",
+      "title": "On the Convergence of Stochastic Gradient Descent with Perturbed Forward-Backward Passes",
+      "authors": [
+        "Boao Kong",
+        "Hengrui Zhang",
+        "Kun Yuan"
+      ],
+      "abstract": "We study stochastic gradient descent (SGD) for composite optimization problems with $N$ sequential operators subject to perturbations in both the forward and backward passes. Unlike classical analyses that treat gradient noise as additive and localized, perturbations to intermediate outputs and gradients cascade through the computational graph, compounding geometrically with the number of operators. We present the first comprehensive theoretical analysis of this setting. Specifically, we characterize how forward and backward perturbations propagate and amplify within a single gradient step, derive convergence guarantees for both general non-convex objectives and functions satisfying the Polyak--Łojasiewicz condition, and identify conditions under which perturbations do not deteriorate the asymptotic convergence order. As a byproduct, our analysis furnishes a theoretical explanation for the gradient spiking phenomenon widely observed in deep learning, precisely characterizing the conditions under which training recovers from spikes or diverges. Experiments on logistic regression with convex and non-convex regularization validate our theories, illustrating the predicted spike behavior and the asymmetric sensitivity to forward versus backward perturbations.",
+      "published": "February 24, 2026",
+      "published_raw": "2026-02-24T07:47:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20646v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20646v1"
+    },
+    {
+      "id": "2602.20324v1",
+      "title": "An artificial intelligence framework for end-to-end rare disease phenotyping from clinical notes using large language models",
+      "authors": [
+        "Cathy Shyr",
+        "Yan Hu",
+        "Rory J. Tinker",
+        "Thomas A. Cassini",
+        "Kevin W. Byram",
+        "Rizwan Hamid",
+        "Daniel V. Fabbri",
+        "Adam Wright",
+        "Josh F. Peterson",
+        "Lisa Bastarache",
+        "Hua Xu"
+      ],
+      "abstract": "Phenotyping is fundamental to rare disease diagnosis, but manual curation of structured phenotypes from clinical notes is labor-intensive and difficult to scale. Existing artificial intelligence approaches typically optimize individual components of phenotyping but do not operationalize the full clinical workflow of extracting features from clinical text, standardizing them to Human Phenotype Ontology (HPO) terms, and prioritizing diagnostically informative HPO terms. We developed RARE-PHENIX, an end-to-end AI framework for rare disease phenotyping that integrates large language model-based phenotype extraction, ontology-grounded standardization to HPO terms, and supervised ranking of diagnostically informative phenotypes. We trained RARE-PHENIX using data from 2,671 patients across 11 Undiagnosed Diseases Network clinical sites, and externally validated it on 16,357 real-world clinical notes from Vanderbilt University Medical Center. Using clinician-curated HPO terms as the gold standard, RARE-PHENIX consistently outperformed a state-of-the-art deep learning baseline (PhenoBERT) across ontology-based similarity and precision-recall-F1 metrics in end-to-end evaluation (i.e., ontology-based similarity of 0.70 vs. 0.58). Ablation analyses demonstrated performance improvements with the addition of each module in RARE-PHENIX (extraction, standardization, and prioritization), supporting the value of modeling the full clinical phenotyping workflow. By modeling phenotyping as a clinically aligned workflow rather than a single extraction task, RARE-PHENIX provides structured, ranked phenotypes that are more concordant with clinician curation and has the potential to support human-in-the-loop rare disease diagnosis in real-world settings.",
+      "published": "February 23, 2026",
+      "published_raw": "2026-02-23T20:20:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20324v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20324v1"
+    },
+    {
+      "id": "2602.20303v1",
+      "title": "Multilevel Determinants of Overweight and Obesity Among U.S. Children Aged 10-17: Comparative Evaluation of Statistical and Machine Learning Approaches Using the 2021 National Survey of Children's Health",
+      "authors": [
+        "Joyanta Jyoti Mondal"
+      ],
+      "abstract": "Background: Childhood and adolescent overweight and obesity remain major public health concerns in the United States and are shaped by behavioral, household, and community factors. Their joint predictive structure at the population level remains incompletely characterized. Objectives: The study aims to identify multilevel predictors of overweight and obesity among U.S. adolescents and compare the predictive performance, calibration, and subgroup equity of statistical, machine-learning, and deep-learning models. Data and Methods: We analyze 18,792 children aged 10-17 years from the 2021 National Survey of Children's Health. Overweight/obesity is defined using BMI categories. Predictors included diet, physical activity, sleep, parental stress, socioeconomic conditions, adverse experiences, and neighborhood characteristics. Models include logistic regression, random forest, gradient boosting, XGBoost, LightGBM, multilayer perceptron, and TabNet. Performance is evaluated using AUC, accuracy, precision, recall, F1 score, and Brier score. Results: Discrimination range from 0.66 to 0.79. Logistic regression, gradient boosting, and MLP showed the most stable balance of discrimination and calibration. Boosting and deep learning modestly improve recall and F1 score. No model was uniformly superior. Performance disparities across race and poverty groups persist across algorithms. Conclusion: Increased model complexity yields limited gains over logistic regression. Predictors consistently span behavioral, household, and neighborhood domains. Persistent subgroup disparities indicate the need for improved data quality and equity-focused surveillance rather than greater algorithmic complexity.",
+      "published": "February 23, 2026",
+      "published_raw": "2026-02-23T19:31:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20303v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20303v1"
+    },
+    {
+      "id": "2602.20289v1",
+      "title": "The Sim-to-Real Gap in MRS Quantification: A Systematic Deep Learning Validation for GABA",
+      "authors": [
+        "Zien Ma",
+        "S. M. Shermer",
+        "Oktay Karakuş",
+        "Frank C. Langbein"
+      ],
+      "abstract": "Magnetic resonance spectroscopy (MRS) is used to quantify metabolites in vivo and estimate biomarkers for conditions ranging from neurological disorders to cancers. Quantifying low-concentration metabolites such as GABA ($γ$-aminobutyric acid) is challenging due to low signal-to-noise ratio (SNR) and spectral overlap. We investigate and validate deep learning for quantifying complex, low-SNR, overlapping signals from MEGA-PRESS spectra, devise a convolutional neural network (CNN) and a Y-shaped autoencoder (YAE), and select the best models via Bayesian optimisation on 10,000 simulated spectra from slice-profile-aware MEGA-PRESS simulations. The selected models are trained on 100,000 simulated spectra. We validate their performance on 144 spectra from 112 experimental phantoms containing five metabolites of interest (GABA, Glu, Gln, NAA, Cr) with known ground truth concentrations across solution and gel series acquired at 3 T under varied bandwidths and implementations. These models are further assessed against the widely used LCModel quantification tool. On simulations, both models achieve near-perfect agreement (small MAEs; regression slopes $\\approx 1.00$, $R^2 \\approx 1.00$). On experimental phantom data, errors initially increased substantially. However, modelling variable linewidths in the training data significantly reduced this gap. The best augmented deep learning models achieved a mean MAE for GABA over all phantom spectra of 0.151 (YAE) and 0.160 (FCNN) in max-normalised relative concentrations, outperforming the conventional baseline LCModel (0.220). A sim-to-real gap remains, but physics-informed data augmentation substantially reduced it. Phantom ground truth is needed to judge whether a method will perform reliably on real data.",
+      "published": "February 23, 2026",
+      "published_raw": "2026-02-23T19:16:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20289v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20289v1"
+    },
+    {
+      "id": "2602.20271v1",
+      "title": "Uncertainty-Aware Delivery Delay Duration Prediction via Multi-Task Deep Learning",
+      "authors": [
+        "Stefan Faulkner",
+        "Reza Zandehshahvar",
+        "Vahid Eghbal Akhlaghi",
+        "Sebastien Ouellet",
+        "Carsten Jordan",
+        "Pascal Van Hentenryck"
+      ],
+      "abstract": "Accurate delivery delay prediction is critical for maintaining operational efficiency and customer satisfaction across modern supply chains. Yet the increasing complexity of logistics networks, spanning multimodal transportation, cross-country routing, and pronounced regional variability, makes this prediction task inherently challenging. This paper introduces a multi-task deep learning model for delivery delay duration prediction in the presence of significant imbalanced data, where delayed shipments are rare but operationally consequential. The model embeds high-dimensional shipment features with dedicated embedding layers for tabular data, and then uses a classification-then-regression strategy to predict the delivery delay duration for on-time and delayed shipments. Unlike sequential pipelines, this approach enables end-to-end training, improves the detection of delayed cases, and supports probabilistic forecasting for uncertainty-aware decision making. The proposed approach is evaluated on a large-scale real-world dataset from an industrial partner, comprising more than 10 million historical shipment records across four major source locations with distinct regional characteristics. The proposed model is compared with traditional machine learning methods. Experimental results show that the proposed method achieves a mean absolute error of 0.67-0.91 days for delayed-shipment predictions, outperforming single-step tree-based regression baselines by 41-64% and two-step classify-then-regress tree-based models by 15-35%. These gains demonstrate the effectiveness of the proposed model in operational delivery delay forecasting under highly imbalanced and heterogeneous conditions.",
+      "published": "February 23, 2026",
+      "published_raw": "2026-02-23T19:01:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2602.20271v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2602.20271v1"
+    },
     {
       "id": "2602.20001v1",
       "title": "FairFS: Addressing Deep Feature Selection Biases for Recommender System",
@@ -137,178 +309,6 @@
       "published_raw": "2026-02-23T05:48:17Z",
       "pdf_link": "http://arxiv.org/pdf/2602.19531v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2602.19531v1"
-    },
-    {
-      "id": "2602.19475v1",
-      "title": "Scale-PINN: Learning Efficient Physics-Informed Neural Networks Through Sequential Correction",
-      "authors": [
-        "Pao-Hsiung Chiu",
-        "Jian Cheng Wong",
-        "Chin Chun Ooi",
-        "Chang Wei",
-        "Yuchen Fan",
-        "Yew-Soon Ong"
-      ],
-      "abstract": "Physics-informed neural networks (PINNs) have emerged as a promising mesh-free paradigm for solving partial differential equations, yet adoption in science and engineering is limited by slow training and modest accuracy relative to modern numerical solvers. We introduce the Sequential Correction Algorithm for Learning Efficient PINN (Scale-PINN), a learning strategy that bridges modern physics-informed learning with numerical algorithms. Scale-PINN incorporates the iterative residual-correction principle, a cornerstone of numerical solvers, directly into the loss formulation, marking a paradigm shift in how PINN losses can be conceived and constructed. This integration enables Scale-PINN to achieve unprecedented convergence speed across PDE problems from different physics domain, including reducing training time on a challenging fluid-dynamics problem for state-of-the-art PINN from hours to sub-2 minutes while maintaining superior accuracy, and enabling application to representative problems in aerodynamics and urban science. By uniting the rigor of numerical methods with the flexibility of deep learning, Scale-PINN marks a significant leap toward the practical adoption of PINNs in science and engineering through scalable, physics-informed learning. Codes are available at https://github.com/chiuph/SCALE-PINN.",
-      "published": "February 23, 2026",
-      "published_raw": "2026-02-23T03:38:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.19475v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.19475v1"
-    },
-    {
-      "id": "2602.19444v1",
-      "title": "PIS: A Physics-Informed System for Accurate State Partitioning of $Aβ_{42}$ Protein Trajectories",
-      "authors": [
-        "Qianfeng Yu",
-        "Ningkang Peng",
-        "Yanhui Gu"
-      ],
-      "abstract": "Understanding the conformational evolution of $β$-amyloid ($Aβ$), particularly the $Aβ_{42}$ isoform, is fundamental to elucidating the pathogenic mechanisms underlying Alzheimer's disease. However, existing end-to-end deep learning models often struggle to capture subtle state transitions in protein trajectories due to a lack of explicit physical constraints. In this work, we introduce PIS, a Physics-Informed System designed for robust metastable state partitioning. By integrating pre-computed physical priors, such as the radius of gyration and solvent-accessible surface area, into the extraction of topological features, our model achieves superior performance on the $Aβ_{42}$ dataset. Furthermore, PIS provides an interactive platform that features dynamic monitoring of physical characteristics and multi-dimensional result validation. This system offers biological researchers a powerful set of analytical tools with physically grounded interpretability. A demonstration video of PIS is available on https://youtu.be/AJHGzUtRCg0.",
-      "published": "February 23, 2026",
-      "published_raw": "2026-02-23T02:27:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.19444v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.19444v1"
-    },
-    {
-      "id": "2602.19312v1",
-      "title": "Metasurfaces-Integrated Wireless Neural Networks for Lightweight Over-The-Air Edge Inference",
-      "authors": [
-        "Kyriakos Stylianopoulos",
-        "Mario Edoardo Pandolfo",
-        "Paolo Di Lorenzo",
-        "George C. Alexandropoulos"
-      ],
-      "abstract": "The upcoming sixth Generation (6G) of wireless networks envisions ultra-low latency and energy efficient Edge Inference (EI) for diverse Internet of Things (IoT) applications. However, traditional digital hardware for machine learning is power intensive, motivating the need for alternative computation paradigms. Over-The-Air (OTA) computation is regarded as an emerging transformative approach assigning the wireless channel to actively perform computational tasks. This article introduces the concept of Metasurfaces-Integrated Neural Networks (MINNs), a physical-layer-enabled deep learning framework that leverages programmable multi-layer metasurface structures and Multiple-Input Multiple-Output (MIMO) channels to realize computational layers in the wave propagation domain. The MINN system is conceptualized as three modules: Encoder, Channel (uncontrollable propagation features and metasurfaces), and Decoder. The first and last modules, realized respectively at the multi-antenna transmitter and receiver, consist of conventional digital or purposely designed analog Deep Neural Network (DNN) layers, and the metasurfaces responses of the Channel module are optimized alongside all modules as trainable weights. This architecture enables computation offloading into the end-to-end physical layer, flexibly among its constituent modules, achieving performance comparable to fully digital DNNs while significantly reducing power consumption. The training of the MINN framework, two representative variations, and performance results for indicative applications are presented, highlighting the potential of MINNs as a lightweight and sustainable solution for future EI-enabled wireless systems. The article is concluded with a list of open challenges and promising research directions.",
-      "published": "February 22, 2026",
-      "published_raw": "2026-02-22T19:23:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.19312v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.19312v1"
-    },
-    {
-      "id": "2602.19219v1",
-      "title": "Controlled Face Manipulation and Synthesis for Data Augmentation",
-      "authors": [
-        "Joris Kirchner",
-        "Amogh Gudi",
-        "Marian Bittner",
-        "Chirag Raman"
-      ],
-      "abstract": "Deep learning vision models excel with abundant supervision, but many applications face label scarcity and class imbalance. Controllable image editing can augment scarce labeled data, yet edits often introduce artifacts and entangle non-target attributes. We study this in facial expression analysis, targeting Action Unit (AU) manipulation where annotation is costly and AU co-activation drives entanglement. We present a facial manipulation method that operates in the semantic latent space of a pre-trained face generator (Diffusion Autoencoder). Using lightweight linear models, we reduce entanglement of semantic features via (i) dependency-aware conditioning that accounts for AU co-activation, and (ii) orthogonal projection that removes nuisance attribute directions (e.g., glasses), together with an expression neutralization step to enable absolute AU edit. We use these edits to balance AU occurrence by editing labeled faces and to diversify identities/demographics via controlled synthesis. Augmenting AU detector training with the generated data improves accuracy and yields more disentangled predictions with fewer co-activation shortcuts, outperforming alternative data-efficient training strategies and suggesting improvements similar to what would require substantially more labeled data in our learning-curve analysis. Compared to prior methods, our edits are stronger, produce fewer artifacts, and preserve identity better.",
-      "published": "February 22, 2026",
-      "published_raw": "2026-02-22T15:03:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.19219v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.19219v1"
-    },
-    {
-      "id": "2602.19113v1",
-      "title": "Learning from Complexity: Exploring Dynamic Sample Pruning of Spatio-Temporal Training",
-      "authors": [
-        "Wei Chen",
-        "Junle Chen",
-        "Yuqian Wu",
-        "Yuxuan Liang",
-        "Xiaofang Zhou"
-      ],
-      "abstract": "Spatio-temporal forecasting is fundamental to intelligent systems in transportation, climate science, and urban planning. However, training deep learning models on the massive, often redundant, datasets from these domains presents a significant computational bottleneck. Existing solutions typically focus on optimizing model architectures or optimizers, while overlooking the inherent inefficiency of the training data itself. This conventional approach of iterating over the entire static dataset each epoch wastes considerable resources on easy-to-learn or repetitive samples. In this paper, we explore a novel training-efficiency techniques, namely learning from complexity with dynamic sample pruning, ST-Prune, for spatio-temporal forecasting. Through dynamic sample pruning, we aim to intelligently identify the most informative samples based on the model's real-time learning state, thereby accelerating convergence and improving training efficiency. Extensive experiments conducted on real-world spatio-temporal datasets show that ST-Prune significantly accelerates the training speed while maintaining or even improving the model performance, and it also has scalability and universality.",
-      "published": "February 22, 2026",
-      "published_raw": "2026-02-22T10:11:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.19113v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.19113v1"
-    },
-    {
-      "id": "2602.18982v1",
-      "title": "Conditionally Site-Independent Neural Evolution of Antibody Sequences",
-      "authors": [
-        "Stephen Zhewen Lu",
-        "Aakarsh Vermani",
-        "Kohei Sanno",
-        "Jiarui Lu",
-        "Frederick A Matsen",
-        "Milind Jagota",
-        "Yun S. Song"
-      ],
-      "abstract": "Common deep learning approaches for antibody engineering focus on modeling the marginal distribution of sequences. By treating sequences as independent samples, however, these methods overlook affinity maturation as a rich and largely untapped source of information about the evolutionary process by which antibodies explore the underlying fitness landscape. In contrast, classical phylogenetic models explicitly represent evolutionary dynamics but lack the expressivity to capture complex epistatic interactions. We bridge this gap with CoSiNE, a continuous-time Markov chain parameterized by a deep neural network. Mathematically, we prove that CoSiNE provides a first-order approximation to the intractable sequential point mutation process, capturing epistatic effects with an error bound that is quadratic in branch length. Empirically, CoSiNE outperforms state-of-the-art language models in zero-shot variant effect prediction by explicitly disentangling selection from context-dependent somatic hypermutation. Finally, we introduce Guided Gillespie, a classifier-guided sampling scheme that steers CoSiNE at inference time, enabling efficient optimization of antibody binding affinity toward specific antigens.",
-      "published": "February 21, 2026",
-      "published_raw": "2026-02-21T23:23:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.18982v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.18982v1"
-    },
-    {
-      "id": "2602.18900v1",
-      "title": "PrivacyBench: Privacy Isn't Free in Hybrid Privacy-Preserving Vision Systems",
-      "authors": [
-        "Nnaemeka Obiefuna",
-        "Samuel Oyeneye",
-        "Similoluwa Odunaiya",
-        "Iremide Oyelaja",
-        "Steven Kolawole"
-      ],
-      "abstract": "Privacy preserving machine learning deployments in sensitive deep learning applications; from medical imaging to autonomous systems; increasingly require combining multiple techniques. Yet, practitioners lack systematic guidance to assess the synergistic and non-additive interactions of these hybrid configurations, relying instead on isolated technique analysis that misses critical system level interactions. We introduce PrivacyBench, a benchmarking framework that reveals striking failures in privacy technique combinations with severe deployment implications. Through systematic evaluation across ResNet18 and ViT models on medical datasets, we uncover that FL + DP combinations exhibit severe convergence failure, with accuracy dropping from 98% to 13% while compute costs and energy consumption substantially increase. In contrast, FL + SMPC maintains near-baseline performance with modest overhead. Our framework provides the first systematic platform for evaluating privacy-utility-cost trade-offs through automated YAML configuration, resource monitoring, and reproducible experimental protocols. PrivacyBench enables practitioners to identify problematic technique interactions before deployment, moving privacy-preserving computer vision from ad-hoc evaluation toward principled systems design. These findings demonstrate that privacy techniques cannot be composed arbitrarily and provide critical guidance for robust deployment in resource-constrained environments.",
-      "published": "February 21, 2026",
-      "published_raw": "2026-02-21T16:45:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.18900v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.18900v1"
-    },
-    {
-      "id": "2602.18857v1",
-      "title": "VariBASed: Variational Bayes-Adaptive Sequential Monte-Carlo Planning for Deep Reinforcement Learning",
-      "authors": [
-        "Joery A. de Vries",
-        "Jinke He",
-        "Yaniv Oren",
-        "Pascal R. van der Vaart",
-        "Mathijs M. de Weerdt",
-        "Matthijs T. J. Spaan"
-      ],
-      "abstract": "Optimally trading-off exploration and exploitation is the holy grail of reinforcement learning as it promises maximal data-efficiency for solving any task. Bayes-optimal agents achieve this, but obtaining the belief-state and performing planning are both typically intractable. Although deep learning methods can greatly help in scaling this computation, existing methods are still costly to train. To accelerate this, this paper proposes a variational framework for learning and planning in Bayes-adaptive Markov decision processes that coalesces variational belief learning, sequential Monte-Carlo planning, and meta-reinforcement learning. In a single-GPU setup, our new method VariBASeD exhibits favorable scaling to larger planning budgets, improving sample- and runtime-efficiency over prior methods.",
-      "published": "February 21, 2026",
-      "published_raw": "2026-02-21T14:41:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.18857v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.18857v1"
-    },
-    {
-      "id": "2602.18833v1",
-      "title": "CLAP Convolutional Lightweight Autoencoder for Plant Disease Classification",
-      "authors": [
-        "Asish Bera",
-        "Subhajit Roy",
-        "Sudiptendu Banerjee"
-      ],
-      "abstract": "Convolutional neural networks have remarkably progressed the performance of distinguishing plant diseases, severity grading, and nutrition deficiency prediction using leaf images. However, these tasks become more challenging in a realistic in-situ field condition. Often, a traditional machine learning model may fail to capture and interpret discriminative characteristics of plant health, growth and diseases due to subtle variations within leaf subcategories. A few deep learning methods have used additional preprocessing stages or network modules to address the problem, whereas several other methods have utilized pre-trained backbone CNNs, most of which are computationally intensive. Therefore, to address the challenge, we propose a lightweight autoencoder using separable convolutional layers in its encoder decoder blocks. A sigmoid gating is applied for refining the prowess of the encoders feature discriminability, which is improved further by the decoder. Finally, the feature maps of the encoder decoder are combined for rich feature representation before classification. The proposed Convolutional Lightweight Autoencoder for Plant disease classification, called CLAP, has been experimented on three public plant datasets consisting of cassava, tomato, maize, groundnut, grapes, etc. for determining plant health conditions. The CLAP has attained improved or competitive accuracies on the Integrated Plant Disease, Groundnut, and CCMT datasets balancing a tradeoff between the performance, and little computational cost requiring 5 million parameters. The training time is 20 milliseconds and inference time is 1 ms per image.",
-      "published": "February 21, 2026",
-      "published_raw": "2026-02-21T13:31:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.18833v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.18833v1"
-    },
-    {
-      "id": "2602.18744v1",
-      "title": "RadioGen3D: 3D Radio Map Generation via Adversarial Learning on Large-Scale Synthetic Data",
-      "authors": [
-        "Junshen Chen",
-        "Angzi Xu",
-        "Zezhong Zhang",
-        "Shiyao Zhang",
-        "Junting Chen",
-        "Shuguang Cui"
-      ],
-      "abstract": "Radio maps are essential for efficient radio resource management in future 6G and low-altitude networks. While deep learning (DL) techniques have emerged as an efficient alternative to conventional ray-tracing for radio map estimation (RME), most existing DL approaches are confined to 2D near-ground scenarios. They often fail to capture essential 3D signal propagation characteristics and antenna polarization effects, primarily due to the scarcity of 3D data and training challenges. To address these limitations, we present the RadioGen3D framework. First, we propose an efficient data synthesis method to generate high-quality 3D radio map data. By establishing a parametric target model that captures 2D ray-tracing and 3D channel fading characteristics, we derive realistic coefficient combinations from minimal real measurements, enabling the construction of a large-scale synthetic dataset, Radio3DMix. Utilizing this dataset, we propose a 3D model training scheme based on a conditional generative adversarial network (cGAN), yielding a 3D U-Net capable of accurate RME under diverse input feature combinations. Experimental results demonstrate that RadioGen3D surpasses all baselines in both estimation accuracy and speed. Furthermore, fine-tuning experiments verify its strong generalization capability via successful knowledge transfer.",
-      "published": "February 21, 2026",
-      "published_raw": "2026-02-21T07:50:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.18744v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.18744v1"
-    },
-    {
-      "id": "2602.18406v2",
-      "title": "Latent Equivariant Operators for Robust Object Recognition: Promise and Challenges",
-      "authors": [
-        "Minh Dinh",
-        "Stéphane Deny"
-      ],
-      "abstract": "Despite the successes of deep learning in computer vision, difficulties persist in recognizing objects that have undergone group-symmetric transformations rarely seen during training$\\unicode{x2013}$for example objects seen in unusual poses, scales, positions, or combinations thereof. Equivariant neural networks are a solution to the problem of generalizing across symmetric transformations, but require knowledge of transformations a priori. An alternative family of architectures proposes to learn equivariant operators in a latent space, from examples of symmetric transformations. Here, using simple datasets of rotated and translated noisy MNIST, we illustrate how such architectures can successfully be harnessed for out-of-distribution classification, thus overcoming the limitations of both traditional and equivariant networks. While conceptually enticing, we discuss challenges ahead on the path of scaling these architectures to more complex datasets.",
-      "published": "February 20, 2026",
-      "published_raw": "2026-02-20T18:14:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.18406v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.18406v2"
     }
   ]
 }
