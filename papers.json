@@ -1,7 +1,251 @@
 {
-  "last_updated": "2026-03-04T00:59:56.673817",
+  "last_updated": "2026-03-06T01:06:22.549775",
   "count": 20,
   "papers": [
+    {
+      "id": "2603.04340v1",
+      "title": "Balancing Fidelity, Utility, and Privacy in Synthetic Cardiac MRI Generation: A Comparative Study",
+      "authors": [
+        "Madhura Edirisooriya",
+        "Dasuni Kawya",
+        "Ishan Kumarasinghe",
+        "Isuri Devindi",
+        "Mary M. Maleckar",
+        "Roshan Ragel",
+        "Isuru Nawinne",
+        "Vajira Thambawita"
+      ],
+      "abstract": "Deep learning in cardiac MRI (CMR) is fundamentally constrained by both data scarcity and privacy regulations. This study systematically benchmarks three generative architectures: Denoising Diffusion Probabilistic Models (DDPM), Latent Diffusion Models (LDM), and Flow Matching (FM) for synthetic CMR generation. Utilizing a two-stage pipeline where anatomical masks condition image synthesis, we evaluate generated data across three critical axes: fidelity, utility, and privacy. Our results show that diffusion-based models, particularly DDPM, provide the most effective balance between downstream segmentation utility, image fidelity, and privacy preservation under limited-data conditions, while FM demonstrates promising privacy characteristics with slightly lower task-level performance. These findings quantify the trade-offs between cross-domain generalization and patient confidentiality, establishing a framework for safe and effective synthetic data augmentation in medical imaging.",
+      "published": "March 04, 2026",
+      "published_raw": "2026-03-04T17:59:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.04340v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.04340v1"
+    },
+    {
+      "id": "2603.04288v1",
+      "title": "A multi-center analysis of deep learning methods for video polyp detection and segmentation",
+      "authors": [
+        "Noha Ghatwary",
+        "Pedro Chavarias Solano",
+        "Mohamed Ramzy Ibrahim",
+        "Adrian Krenzer",
+        "Frank Puppe",
+        "Stefano Realdon",
+        "Renato Cannizzaro",
+        "Jiacheng Wang",
+        "Liansheng Wang",
+        "Thuy Nuong Tran",
+        "Lena Maier-Hein",
+        "Amine Yamlahi",
+        "Patrick Godau",
+        "Quan He",
+        "Qiming Wan",
+        "Mariia Kokshaikyna",
+        "Mariia Dobko",
+        "Haili Ye",
+        "Heng Li",
+        "Ragu B",
+        "Antony Raj",
+        "Hanaa Nagdy",
+        "Osama E Salem",
+        "James E. East",
+        "Dominique Lamarque",
+        "Thomas de Lange",
+        "Sharib Ali"
+      ],
+      "abstract": "Colonic polyps are well-recognized precursors to colorectal cancer (CRC), typically detected during colonoscopy. However, the variability in appearance, location, and size of these polyps complicates their detection and removal, leading to challenges in effective surveillance, intervention, and subsequently CRC prevention. The processes of colonoscopy surveillance and polyp removal are highly reliant on the expertise of gastroenterologists and occur within the complexities of the colonic structure. As a result, there is a high rate of missed detections and incomplete removal of colonic polyps, which can adversely impact patient outcomes. Recently, automated methods that use machine learning have been developed to enhance polyps detection and segmentation, thus helping clinical processes and reducing missed rates. These advancements highlight the potential for improving diagnostic accuracy in real-time applications, which ultimately facilitates more effective patient management. Furthermore, integrating sequence data and temporal information could significantly enhance the precision of these methods by capturing the dynamic nature of polyp growth and the changes that occur over time. To rigorously investigate these challenges, data scientists and experts gastroenterologists collaborated to compile a comprehensive dataset that spans multiple centers and diverse populations. This initiative aims to underscore the critical importance of incorporating sequence data and temporal information in the development of robust automated detection and segmentation methods. This study evaluates the applicability of deep learning techniques developed in real-time clinical colonoscopy tasks using sequence data, highlighting the critical role of temporal relationships between frames in improving diagnostic precision.",
+      "published": "March 04, 2026",
+      "published_raw": "2026-03-04T17:05:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.04288v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.04288v1"
+    },
+    {
+      "id": "2603.04134v1",
+      "title": "InstMeter: An Instruction-Level Method to Predict Energy and Latency of DL Model Inference on MCUs",
+      "authors": [
+        "Hao Liu",
+        "Qing Wang",
+        "Marco Zuniga"
+      ],
+      "abstract": "Deep learning (DL) models can now run on microcontrollers (MCUs). Through neural architecture search (NAS), we can search DL models that meet the constraints of MCUs. Among various constraints, energy and latency costs of the model inference are critical metrics. To predict them, existing research relies on coarse proxies such as multiply-accumulations (MACs) and model's input parameters, often resulting in inaccurate predictions or requiring extensive data collection. In this paper, we propose InstMeter, a predictor leveraging MCUs' clock cycles to accurately estimate the energy and latency of DL models. Clock cycles are fundamental metrics reflecting MCU operations, directly determining energy and latency costs. Furthermore, a unique property of our predictor is its strong linearity, allowing it to be simple and accurate. We thoroughly evaluate InstMeter under different scenarios, MCUs, and software settings. Compared with state-of-the-art studies, InstMeter can reduce the energy and latency prediction errors by $3\\times$ and $6.5\\times$, respectively, while requiring $100\\times$ and $10\\times$ less training data. In the NAS scenario, InstMeter can fully exploit the energy budget, identifying optimal DL models with higher inference accuracy. We also evaluate InstMeter's generalization performance through various experiments on three ARM MCUs (Cortex-M4, M7, M33) and one RISC-V-based MCU (ESP32-C3), different compilation options (-Os, -O2), GCC versions (v7.3, v10.3), application scenarios (keyword spotting, image recognition), dynamic voltage and frequency scaling, temperatures (21°C, 43°C), and software settings (TFLMv2.4, TFLMvCI). We will open our source codes and the MCU-specific benchmark datasets.",
+      "published": "March 04, 2026",
+      "published_raw": "2026-03-04T14:48:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.04134v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.04134v1"
+    },
+    {
+      "id": "2603.03981v1",
+      "title": "MLOps-Assisted Anomalous Reflector Metasurfaces Design Based on Red Hat OpenShift AI",
+      "authors": [
+        "Wael Elshennawy"
+      ],
+      "abstract": "The integration of artificial intelligence as a design tool for metasurfaces, and the implementation of a deep-learning model pose a challenge in the development of an automated solution due to high resources requirements. The presented work introduces a network-layer solution to configure such environment for end user objectives, and for an underlying physical-layer technology. An architecture is developed to design an anomalous reflector by employing the Redhat Openshift AI (RHOAI) technology to support an automated machine learning operations (MLOps) framework in smart radio environments. This entails the design of lossless impenetrable metasurfaces characterized by a scalar surface impedance for an optimal anomalous reflection, achieved by optimizing the number of the Floquet modes through the utilization of a local power conservation constraint qualified as a fitness function. The metasurfaces design process is implemented by using a conditional generative adversarial network (cGAN). An extended cGAN with a surrogate model assists in a high-quality freeform metasurfaces design, where it introduces a swift simulation tool for the metasurfaces design process and analysis of the far-field model. The paper focuses on the challenges of building such a system, and potential abstraction layers. The training accuracy value of the proposed model demonstrates the feasibility and benefits of deploying in containerized environment of Red Hat Openshift in comparison with other deployments of ResNet-50 reported in literature.",
+      "published": "March 04, 2026",
+      "published_raw": "2026-03-04T12:23:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.03981v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.03981v1"
+    },
+    {
+      "id": "2603.03725v1",
+      "title": "Why Do Unlearnable Examples Work: A Novel Perspective of Mutual Information",
+      "authors": [
+        "Yifan Zhu",
+        "Yibo Miao",
+        "Yinpeng Dong",
+        "Xiao-Shan Gao"
+      ],
+      "abstract": "The volume of freely scraped data on the Internet has driven the tremendous success of deep learning. Along with this comes the growing concern about data privacy and security. Numerous methods for generating unlearnable examples have been proposed to prevent data from being illicitly learned by unauthorized deep models by impeding generalization. However, the existing approaches primarily rely on empirical heuristics, making it challenging to enhance unlearnable examples with solid explanations. In this paper, we analyze and improve unlearnable examples from a novel perspective: mutual information reduction. We demonstrate that effective unlearnable examples always decrease mutual information between clean features and poisoned features, and when the network gets deeper, the unlearnability goes better together with lower mutual information. Further, we prove from a covariance reduction perspective that minimizing the conditional covariance of intra-class poisoned features reduces the mutual information between distributions. Based on the theoretical results, we propose a novel unlearnable method called Mutual Information Unlearnable Examples (MI-UE) that reduces covariance by maximizing the cosine similarity among intra-class features, thus impeding the generalization effectively. Extensive experiments demonstrate that our approach significantly outperforms the previous methods, even under defense mechanisms.",
+      "published": "March 04, 2026",
+      "published_raw": "2026-03-04T04:53:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.03725v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.03725v1"
+    },
+    {
+      "id": "2603.03673v1",
+      "title": "A Stein Identity for q-Gaussians with Bounded Support",
+      "authors": [
+        "Sophia Sklaviadis",
+        "Thomas Moellenhoff",
+        "Andre F. T. Martins",
+        "Mario A. T. Figueiredo",
+        "Mohammad Emtiyaz Khan"
+      ],
+      "abstract": "Stein's identity is a fundamental tool in machine learning with applications in generative models, stochastic optimization, and other problems involving gradients of expectations under Gaussian distributions. Less attention has been paid to problems with non-Gaussian expectations. Here, we consider the class of bounded-support $q$-Gaussians and derive a new Stein identity leading to gradient estimators which have nearly identical forms to the Gaussian ones, and which are similarly easy to implement. We do this by extending the previous results of Landsman, Vanduffel, and Yao (2013) to prove new Bonnet- and Price-type theorems for q-Gaussians. We also simplify their forms by using escort distributions. Our experiments show that bounded-support distributions can reduce the variance of gradient estimators, which can potentially be useful for Bayesian deep learning and sharpness-aware minimization. Overall, our work simplifies the application of Stein's identity for an important class of non-Gaussian distributions.",
+      "published": "March 04, 2026",
+      "published_raw": "2026-03-04T03:00:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.03673v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.03673v1"
+    },
+    {
+      "id": "2603.03227v1",
+      "title": "Coalgebras for categorical deep learning: Representability and universal approximation",
+      "authors": [
+        "Dragan Mašulović"
+      ],
+      "abstract": "Categorical deep learning (CDL) has recently emerged as a framework that leverages category theory to unify diverse neural architectures. While geometric deep learning (GDL) is grounded in the specific context of invariants of group actions, CDL aims to provide domain-independent abstractions for reasoning about models and their properties. In this paper, we contribute to this program by developing a coalgebraic foundation for equivariant representation in deep learning, as classical notions of group actions and equivariant maps are naturally generalized by the coalgebraic formalism. Our first main result demonstrates that, given an embedding of data sets formalized as a functor from SET to VECT, and given a notion of invariant behavior on data sets modeled by an endofunctor on SET, there is a corresponding endofunctor on VECT that is compatible with the embedding in the sense that this lifted functor recovers the analogous notion of invariant behavior on the embedded data. Building on this foundation, we then establish a universal approximation theorem for equivariant maps in this generalized setting. We show that continuous equivariant functions can be approximated within our coalgebraic framework for a broad class of symmetries. This work thus provides a categorical bridge between the abstract specification of invariant behavior and its concrete realization in neural architectures.",
+      "published": "March 03, 2026",
+      "published_raw": "2026-03-03T18:18:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.03227v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.03227v1"
+    },
+    {
+      "id": "2603.03135v1",
+      "title": "Torus embeddings",
+      "authors": [
+        "Dan Stowell"
+      ],
+      "abstract": "Many data representations are vectors of continuous values. In particular, deep learning embeddings are data-driven representations, typically either unconstrained in Euclidean space, or constrained to a hypersphere. These may also be translated into integer representations (quantised) for efficient large-scale use. However, the fundamental (and most efficient) numeric representation in the overwhelming majority of existing computers is integers with overflow -- and vectors of these integers do not correspond to either of these spaces, but instead to the topology of a (hyper)torus. This mismatch can lead to wasted representation capacity. Here we show that common deep learning frameworks can be adapted, quite simply, to create representations with inherent toroidal topology. We investigate two alternative strategies, demonstrating that a normalisation-based strategy leads to training with desirable stability and performance properties, comparable to a standard hyperspherical L2 normalisation. We also demonstrate that a torus embedding maintains desirable quantisation properties. The torus embedding does not outperform hypersphere embeddings in general, but is comparable, and opens the possibility to train deep embeddings which have an extremely simple pathway to efficient `TinyML' embedded implementation.",
+      "published": "March 03, 2026",
+      "published_raw": "2026-03-03T16:11:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.03135v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.03135v1"
+    },
+    {
+      "id": "2603.02794v1",
+      "title": "Differentiable Time-Varying IIR Filtering for Real-Time Speech Denoising",
+      "authors": [
+        "Riccardo Rota",
+        "Kiril Ratmanski",
+        "Jozef Coldenhoff",
+        "Milos Cernak"
+      ],
+      "abstract": "We present TVF (Time-Varying Filtering), a low-latency speech enhancement model with 1 million parameters. Combining the interpretability of Digital Signal Processing (DSP) with the adaptability of deep learning, TVF bridges the gap between traditional filtering and modern neural speech modeling. The model utilizes a lightweight neural network backbone to predict the coefficients of a differentiable 35-band IIR filter cascade in real time, allowing it to adapt dynamically to non-stationary noise. Unlike ``black-box'' deep learning approaches, TVF offers a completely interpretable processing chain, where spectral modifications are explicit and adjustable. We demonstrate the efficacy of this approach on a speech denoising task using the Valentini-Botinhao dataset and compare the results to a static DDSP approach and a fully deep-learning-based solution, showing that TVF achieves effective adaptation to changing noise conditions.",
+      "published": "March 03, 2026",
+      "published_raw": "2026-03-03T09:31:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02794v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02794v1"
+    },
+    {
+      "id": "2603.02753v1",
+      "title": "Deep learning-guided evolutionary optimization for protein design",
+      "authors": [
+        "Erik Hartman",
+        "Di Tang",
+        "Johan Malmström"
+      ],
+      "abstract": "Designing novel proteins with desired characteristics remains a significant challenge due to the large sequence space and the complexity of sequence-function relationships. Efficient exploration of this space to identify sequences that meet specific design criteria is crucial for advancing therapeutics and biotechnology. Here, we present BoGA (Bayesian Optimization Genetic Algorithm), a framework that combines evolutionary search with Bayesian optimization to efficiently navigate the sequence space. By integrating a genetic algorithm as a stochastic proposal generator within a surrogate modeling loop, BoGA prioritizes candidates based on prior evaluations and surrogate model predictions, enabling data-efficient optimization. We demonstrate the utility of BoGA through benchmarking on sequence and structure design tasks, followed by its application in designing peptide binders against pneumolysin, a key virulence factor of \\textit{Streptococcus pneumoniae}. BoGA accelerates the discovery of high-confidence binders, demonstrating the potential for efficient protein design across diverse objectives. The algorithm is implemented within the BoPep suite and is available under an MIT license at \\href{https://github.com/ErikHartman/bopep}{GitHub}.",
+      "published": "March 03, 2026",
+      "published_raw": "2026-03-03T08:53:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02753v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02753v1"
+    },
+    {
+      "id": "2603.02649v1",
+      "title": "HomeAdam: Adam and AdamW Algorithms Sometimes Go Home to Obtain Better Provable Generalization",
+      "authors": [
+        "Feihu Huang",
+        "Guanyi Zhang",
+        "Songcan Chen"
+      ],
+      "abstract": "Adam and AdamW are a class of default optimizers for training deep learning models in machine learning. These adaptive algorithms converge faster but generalize worse compared to SGD. In fact, their proved generalization error $O(\\frac{1}{\\sqrt{N}})$ also is larger than $O(\\frac{1}{N})$ of SGD, where $N$ denotes training sample size. Recently, although some variants of Adam have been proposed to improve its generalization, their improved generalizations are still unexplored in theory. To fill this gap, in the paper, we restudy generalization of Adam and AdamW via algorithmic stability, and first prove that Adam and AdamW without square-root (i.e., Adam(W)-srf) have a generalization error $O(\\frac{\\hatρ^{-2T}}{N})$, where $T$ denotes iteration number and $\\hatρ>0$ denotes the smallest element of second-order momentum plus a small positive number. To improve generalization, we propose a class of efficient clever Adam (i.e., HomeAdam(W)) algorithms via sometimes returning momentum-based SGD. Moreover, we prove that our HomeAdam(W) have a smaller generalization error $O(\\frac{1}{N})$ than $O(\\frac{\\hatρ^{-2T}}{N})$ of Adam(W)-srf, since $\\hatρ$ is generally very small. In particular, it is also smaller than the existing $O(\\frac{1}{\\sqrt{N}})$ of Adam(W). Meanwhile, we prove our HomeAdam(W) have a faster convergence rate of $O(\\frac{1}{T^{1/4}})$ than $O(\\frac{\\breveρ^{-1}}{T^{1/4}})$ of the Adam(W)-srf, where $\\breveρ\\leq\\hatρ$ also is very small. Extensive numerical experiments demonstrate efficiency of our HomeAdam(W) algorithms.",
+      "published": "March 03, 2026",
+      "published_raw": "2026-03-03T06:29:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02649v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02649v1"
+    },
+    {
+      "id": "2603.02616v1",
+      "title": "Detecting Structural Heart Disease from Electrocardiograms via a Generalized Additive Model of Interpretable Foundation-Model Predictors",
+      "authors": [
+        "Ya Zhou",
+        "Zhaohong Sun",
+        "Tianxiang Hao",
+        "Xiangjie Li"
+      ],
+      "abstract": "Structural heart disease (SHD) is a prevalent condition with many undiagnosed cases, and early detection is often limited by the high cost and accessibility constraints of echocardiography (ECHO). Recent studies show that artificial intelligence (AI)-based analysis of electrocardiograms (ECGs) can detect SHD, offering a scalable alternative. However, existing methods are fully black-box models, limiting interpretability and clinical adoption. To address these challenges, we propose an interpretable and effective framework that integrates clinically meaningful ECG foundation-model predictors within a generalized additive model, enabling transparent risk attribution while maintaining strong predictive performance. Using the EchoNext benchmark of over 80,000 ECG-ECHO pairs, the method demonstrates relative improvements of +0.98% in AUROC, +1.01% in AUPRC, and +1.41% in F1 score over the latest state-of-the-art deep-learning baseline, while achieving slightly better performance even with only 30% of the training data. Subgroup analyses confirm robust performance across heterogeneous populations, and the estimated entry-wise functions provide interpretable insights into the relationships between risks of traditional ECG diagnoses and SHD. This work illustrates a complementary paradigm between classical statistical modeling and modern AI, offering a pathway to interpretable, high-performing, and clinically actionable ECG-based SHD screening.",
+      "published": "March 03, 2026",
+      "published_raw": "2026-03-03T05:39:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02616v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02616v1"
+    },
+    {
+      "id": "2603.02475v1",
+      "title": "Large-Scale Dataset and Benchmark for Skin Tone Classification in the Wild",
+      "authors": [
+        "Vitor Pereira Matias",
+        "Márcus Vinícius Lobo Costa",
+        "João Batista Neto",
+        "Tiago Novello de Brito"
+      ],
+      "abstract": "Deep learning models often inherit biases from their training data. While fairness across gender and ethnicity is well-studied, fine-grained skin tone analysis remains a challenge due to the lack of granular, annotated datasets. Existing methods often rely on the medical 6-tone Fitzpatrick scale, which lacks visual representativeness, or use small, private datasets that prevent reproducibility, or often rely on classic computer vision pipelines, with a few using deep learning. They overlook issues like train-test leakage and dataset imbalance, and are limited by small or unavailable datasets. In this work, we present a comprehensive framework for skin tone fairness. First, we introduce the STW, a large-scale, open-access dataset comprising 42,313 images from 3,564 individuals, labeled using the 10-tone MST scale. Second, we benchmark both Classic Computer Vision (SkinToneCCV) and Deep Learning approaches, demonstrating that classic models provide near-random results, while deep learning reaches nearly annotator accuracy. Finally, we propose SkinToneNet, a fine-tuned ViT that achieves state-of-the-art generalization on out-of-domain data, which enables reliable fairness auditing of public datasets like CelebA and VGGFace2. This work provides state-of-the-art results in skin tone classification and fairness assessment. Code and data available soon",
+      "published": "March 02, 2026",
+      "published_raw": "2026-03-02T23:52:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02475v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02475v1"
+    },
+    {
+      "id": "2603.02465v1",
+      "title": "Deep Learning Based Wildfire Detection for Peatland Fires Using Transfer Learning",
+      "authors": [
+        "Emadeldeen Hamdan",
+        "Ahmad Faiz Tharima",
+        "Mohd Zahirasri Mohd Tohir",
+        "Dayang Nur Sakinah Musa",
+        "Erdem Koyuncu",
+        "Adam J. Watts",
+        "Ahmet Enis Cetin"
+      ],
+      "abstract": "Machine learning (ML)-based wildfire detection methods have been developed in recent years, primarily using deep learning (DL) models trained on large collections of wildfire images and videos. However, peatland fires exhibit distinct visual and physical characteristics -- such as smoldering combustion, low flame intensity, persistent smoke, and subsurface burning -- that limit the effectiveness of conventional wildfire detectors trained on open-flame forest fires. In this work, we present a transfer learning-based approach for peatland fire detection that leverages knowledge learned from general wildfire imagery and adapts it to the peatland fire domain. We initialize a DL-based peatland fire detector using pretrained weights from a conventional wildfire detection model and subsequently fine-tune the network using a dataset composed of Malaysian peatland images and videos. This strategy enables effective learning despite the limited availability of labeled peatland fire data. Experimental results demonstrate that transfer learning significantly improves detection accuracy and robustness compared to training from scratch, particularly under challenging conditions such as low-contrast smoke, partial occlusions, and variable illumination. The proposed approach provides a practical and scalable solution for early peatland fire detection and has the potential to support real-time monitoring systems for fire prevention and environmental protection.",
+      "published": "March 02, 2026",
+      "published_raw": "2026-03-02T23:14:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02465v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02465v1"
+    },
+    {
+      "id": "2603.02349v1",
+      "title": "Learning graph topology from metapopulation epidemic encoder-decoder",
+      "authors": [
+        "Xin Li",
+        "Jonathan Cohen",
+        "Shai Pilosof",
+        "Rami Puzis"
+      ],
+      "abstract": "Metapopulation epidemic models are a valuable tool for studying large-scale outbreaks. With the limited availability of epidemic tracing data, it is challenging to infer the essential constituents of these models, namely, the epidemic parameters and the relevant mobility network between subpopulations. Either one of these constituents can be estimated while assuming the other; however, the problem of their joint inference has not yet been solved. Here, we propose two encoder-decoder deep learning architectures that infer metapopulation mobility graphs from time-series data, with and without the assumption of epidemic model parameters. Evaluation across diverse random and empirical mobility networks shows that the proposed approach outperforms the state-of-the-art topology inference. Further, we show that topology inference improves dramatically with data on additional pathogens. Our study establishes a robust framework for simultaneously inferring epidemic parameters and topology, addressing a persistent gap in modeling disease propagation.",
+      "published": "March 02, 2026",
+      "published_raw": "2026-03-02T19:46:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.02349v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.02349v1"
+    },
     {
       "id": "2603.02181v1",
       "title": "Leveraging Model Soups to Classify Intangible Cultural Heritage Images from the Mekong Delta",
@@ -71,255 +315,6 @@
       "published_raw": "2026-03-02T11:19:32Z",
       "pdf_link": "http://arxiv.org/pdf/2603.01750v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2603.01750v1"
-    },
-    {
-      "id": "2603.01448v1",
-      "title": "SEAnet: A Deep Learning Architecture for Data Series Similarity Search",
-      "authors": [
-        "Qitong Wang",
-        "Themis Palpanas"
-      ],
-      "abstract": "A key operation for massive data series collection analysis is similarity search. According to recent studies, SAX-based indexes offer state-of-the-art performance for similarity search tasks. However, their performance lags under high-frequency, weakly correlated, excessively noisy, or other dataset-specific properties. In this work, we propose Deep Embedding Approximation (DEA), a novel family of data series summarization techniques based on deep neural networks. Moreover, we describe SEAnet, a novel architecture especially designed for learning DEA, that introduces the Sum of Squares preservation property into the deep network design. We further enhance SEAnet with SEAtrans encoder. Finally, we propose novel sampling strategies, SEAsam and SEAsamE, that allow SEAnet to effectively train on massive datasets. Comprehensive experiments on 7 diverse synthetic and real datasets verify the advantages of DEA learned using SEAnet in providing high-quality data series summarizations and similarity search results.",
-      "published": "March 02, 2026",
-      "published_raw": "2026-03-02T04:57:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.01448v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.01448v1"
-    },
-    {
-      "id": "2603.01137v1",
-      "title": "A Deep Learning Framework for Heat Demand Forecasting using Time-Frequency Representations of Decomposed Features",
-      "authors": [
-        "Adithya Ramachandran",
-        "Satyaki Chatterjee",
-        "Thorkil Flensmark B. Neergaard",
-        "Maximilian Oberndoerfer",
-        "Andreas Maier",
-        "Siming Bayer"
-      ],
-      "abstract": "District Heating Systems are essential infrastructure for delivering heat to consumers across a geographic region sustainably, yet efficient management relies on optimizing diverse energy sources, such as wood, gas, electricity, and solar, in response to fluctuating demand. Aligning supply with demand is critical not only for ensuring reliable heat distribution but also for minimizing carbon emissions and extending infrastructure lifespan through lower operating temperatures. However, accurate multi-step forecasting to support these goals remains challenging due to complex, non-linear usage patterns and external dependencies. In this work, we propose a novel deep learning framework for day-ahead heat demand prediction that leverages time-frequency representations of historical data. By applying Continuous Wavelet Transform to decomposed demand and external meteorological factors, our approach enables Convolutional Neural Networks to learn hierarchical temporal features that are often inaccessible to standard time domain models. We systematically evaluate this method against statistical baselines, state-of-the-art Transformers, and emerging foundation models using multi-year data from three distinct Danish districts, a Danish city, and a German city. The results show a significant advancement, reducing the Mean Absolute Error by 36% to 43% compared to the strongest baselines, achieving forecasting accuracy of up to 95% across annual test datasets. Qualitative and statistical analyses further confirm the accuracy and robustness by reliably tracking volatile demand peaks where others fail. This work contributes both a high-performance forecasting architecture and critical insights into optimal feature composition, offering a validated solution for modern energy applications.",
-      "published": "March 01, 2026",
-      "published_raw": "2026-03-01T14:40:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.01137v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.01137v1"
-    },
-    {
-      "id": "2603.01080v1",
-      "title": "Super-resolution of turbulent reacting flows on complex meshes using graph neural networks",
-      "authors": [
-        "Priyabrat Dash",
-        "Konduri Aditya",
-        "Christos E. Frouzakis",
-        "Mathis Bode"
-      ],
-      "abstract": "State-of-the-art deep learning models have been extensively utilized to reconstruct small-scale structures from coarse-grained data in turbulent flows. However, their application has predominantly been restricted to structured uniform meshes, limiting their applicability to data associated with complex geometries that are typically simulated on structured non-uniform or unstructured meshes. Machine learning (ML) models based on graph neural networks (GNNs), known for their ability to process unstructured data, offer a promising alternative. In this study, we leverage the inherent flexibility of GNNs featuring message passing layers to develop a methodology for reconstructing unresolved small-scale structures from low-resolution data on complex meshes. The accuracy of the proposed approach is demonstrated using two cases: a reacting channel flow on a structured non-uniform mesh, and a reacting hydrogen fueled internal combustion (IC) engine featuring an unstructured mesh. Evaluation of results based on visual agreement, statistical metrics, and cumulative error reduction indicates the effectiveness of the method in accurately reconstructing fine-scale features. Overall, this study provides a pathway for integrating data-driven small-scale reconstruction and subgrid-scale modeling to enhance the accuracy of coarse-grained simulations on complex meshes.",
-      "published": "March 01, 2026",
-      "published_raw": "2026-03-01T12:53:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.01080v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.01080v1"
-    },
-    {
-      "id": "2603.00854v1",
-      "title": "GeMi: A Graph-based, Multimodal Recommendation System for Narrative Scroll Paintings",
-      "authors": [
-        "Haimonti Dutta",
-        "Pruthvi Moluguri",
-        "Jin Dai",
-        "Saurabh Amarnath Mahindre"
-      ],
-      "abstract": "Recommendation Systems are effective in managing the ever-increasing amount of multimodal data available today and help users discover interesting new items. These systems can handle various media types such as images, text, audio, and video data, and this has made it possible to handle content-based recommendation utilizing features extracted from items while also incorporating user preferences. Graph Neural Network (GNN)-based recommendation systems are a special class of recommendation systems that can handle relationships between items and users, making them particularly attractive for content-based recommendations. Their popularity also stems from the fact that they use advanced machine learning techniques, such as deep learning on graph-structured data, to exploit user-to-item interactions. The nodes in the graph can access higher-order neighbor information along with state-of-the-art vision-language models for processing multimodal content, and there are well-designed algorithms for embedding, message passing, and propagation. In this work, we present the design of a GNN-based recommendation system on a novel data set collected from field research. Designed for an endangered performing art form, the recommendation system uses multimodal content (text and image data) to suggest similar paintings for viewing and purchase. To the best of our knowledge, there is no recommendation system designed for narrative scroll paintings -- our work therefore serves several purposes, including art conservation, a data storage system for endangered art objects, and a state-of-the-art recommendation system that leverages both the novel characteristics of the data and preferences of the user population interested in narrative scroll paintings.",
-      "published": "March 01, 2026",
-      "published_raw": "2026-03-01T00:54:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00854v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00854v1"
-    },
-    {
-      "id": "2603.00792v1",
-      "title": "Neural Latent Arbitrary Lagrangian-Eulerian Grids for Fluid-Solid Interaction",
-      "authors": [
-        "Shilong Tao",
-        "Zhe Feng",
-        "Shaohan Chen",
-        "Weichen Zhang",
-        "Zhanxing Zhu",
-        "Yunhuai Liu"
-      ],
-      "abstract": "Fluid-solid interaction (FSI) problems are fundamental in many scientific and engineering applications, yet effectively capturing the highly nonlinear two-way interactions remains a significant challenge. Most existing deep learning methods are limited to simplified one-way FSI scenarios, often assuming rigid and static solid to reduce complexity. Even in two-way setups, prevailing approaches struggle to capture dynamic, heterogeneous interactions due to the lack of cross-domain awareness. In this paper, we introduce \\textbf{Fisale}, a data-driven framework for handling complex two-way \\textbf{FSI} problems. It is inspired by classical numerical methods, namely the Arbitrary Lagrangian-Eulerian (\\textbf{ALE}) method and the partitioned coupling algorithm. Fisale explicitly models the coupling interface as a distinct component and leverages multiscale latent ALE grids to provide unified, geometry-aware embeddings across domains. A partitioned coupling module (PCM) further decomposes the problem into structured substeps, enabling progressive modeling of nonlinear interdependencies. Compared to existing models, Fisale introduces a more flexible framework that iteratively handles complex dynamics of solid, fluid and their coupling interface on a unified representation, and enables scalable learning of complex two-way FSI behaviors. Experimentally, Fisale excels in three reality-related challenging FSI scenarios, covering 2D, 3D and various tasks. The code is available at \\href{https://github.com/therontau0054/Fisale}.",
-      "published": "February 28, 2026",
-      "published_raw": "2026-02-28T19:23:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00792v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00792v1"
-    },
-    {
-      "id": "2603.00745v1",
-      "title": "Bi-cLSTM: Residual-Corrected Bidirectional LSTM for Aero-Engine RUL Estimation",
-      "authors": [
-        "Rafi Hassan Chowdhury",
-        "Nabil Daiyan",
-        "Faria Ahmed",
-        "Md Redwan Iqbal",
-        "Morsalin Sheikh"
-      ],
-      "abstract": "Accurate Remaining Useful Life (RUL) prediction is a key requirement for effective Prognostics and Health Management (PHM) in safety-critical systems such as aero-engines. Existing deep learning approaches, particularly LSTM-based models, often struggle to generalize across varying operating conditions and are sensitive to noise in multivariate sensor data. To address these challenges, we propose a novel Bidirectional Residual Corrected LSTM (Bi-cLSTM) model for robust RUL estimation. The proposed architecture combines bidirectional temporal modeling with an adaptive residual correction mechanism to iteratively refine sequence representations. In addition, we introduce a condition-aware preprocessing pipeline incorporating regime-based normalization, feature selection, and exponential smoothing to improve robustness under complex operating environments. Extensive experiments on all four subsets of the NASA C-MAPSS dataset demonstrate that the proposed Bi-cLSTM consistently outperforms LSTM-based baselines and achieves competitive state-of-the-art performance, particularly in challenging multi-condition scenarios. These results highlight the effectiveness of combining bidirectional temporal learning with residual correction for reliable RUL prediction.",
-      "published": "February 28, 2026",
-      "published_raw": "2026-02-28T17:44:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00745v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00745v1"
-    },
-    {
-      "id": "2603.00744v1",
-      "title": "ResGene-T: A Tensor-Based Residual Network Approach for Genomic Prediction",
-      "authors": [
-        "Kuldeep Pathak",
-        "Kapil Ahuja",
-        "Eric de Sturler"
-      ],
-      "abstract": "In this work, we propose a new deep learning model for Genomic Prediction (GP), which involves correlating genotypic data with phenotypic. The genotypes are typically fed as a sequence of characters to the 1D-Convolution Neural Network layer of the underlying deep learning model. Inspired by earlier work that represented genotype as a 2D-image for genotype-phenotype classification, we extend this idea to GP, which is a regression task. We use a ResNet-18 as the underlying architecture, and term this model as ResGene-2D. Although the 2D-image representation captures biological interactions well, it requires all the layers of the model to do so. This limits training efficiency. Thus, as seen in the earlier work that proposed a 2D-image representation, our ResGene-2D performs almost the same as other models (3% improvement). To overcome this, we propose a novel idea of converting the 2D-image into a 3D/ tensor and feed this to the ResNet-18 architecture, and term this model as ResGene-T. We evaluate our proposed models on three crop species having ten phenotypic traits and compare it with seven most popular models (two statistical, two machine learning, and three deep learning). ResGene-T performs the best among all these seven methods (gains from 14.51% to 41.51%).",
-      "published": "February 28, 2026",
-      "published_raw": "2026-02-28T17:43:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00744v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00744v1"
-    },
-    {
-      "id": "2603.00736v1",
-      "title": "Data-driven Synthesis of Magnetic Resonance Spectroscopy Data using a Variational Autoencoder",
-      "authors": [
-        "Dennis M. J. van de Sande",
-        "Julian P. Merkofer",
-        "Sina Amirrajab",
-        "Mitko Veta",
-        "Gerhard S. Drenthen",
-        "Jacobus F. A. Jansen",
-        "Marcel Breeuwer"
-      ],
-      "abstract": "The development of deep learning methods for magnetic resonance spectroscopy (MRS) is often hindered by limited availability of large, high-quality training datasets. While physics-based simulations are commonly used to mitigate this limitation, accurately modeling all in-vivo signal components remains challenging. In this work, we propose a data-driven framework for synthesizing in-vivo MRS data using a variational autoencoder (VAE) trained exclusively on measured single-voxel spectroscopy data. The model learns a low-dimensional latent representation of complex-valued spectra and enables generation of new samples through latent-space sampling and interpolation. The generative performance of the proposed approach is evaluated using a comprehensive set of complementary analyses, including reconstruction quality, feature-level similarity using low-dimensional embeddings, application-based signal quality metrics, and metabolite quantification agreement. The results demonstrate that the VAE accurately reconstructs dominant spectral patterns and generates synthetic spectra that occupy the same feature space as in-vivo data. In an example application targeting GABA-edited spectroscopy, augmenting limited subsets of transients with synthetic spectra improves signal quality metrics such as signal-to-noise ratio, linewidth, and shape scores. However, the results also reveal limitations of the generative approach, including under-representation of stochastic noise and reduced accuracy in absolute metabolite quantification, particularly for applications sensitive to concentration estimates. These findings highlight both potential and limitations of data-driven MRS synthesis. Beyond the proposed model, this study introduces a structured evaluation framework for generative MRS methods, emphasizing the importance of application-aware validation when synthetic data are used for downstream analysis.",
-      "published": "February 28, 2026",
-      "published_raw": "2026-02-28T16:52:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00736v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00736v1"
-    },
-    {
-      "id": "2603.00521v1",
-      "title": "Phys-Diff: A Physics-Inspired Latent Diffusion Model for Tropical Cyclone Forecasting",
-      "authors": [
-        "Lei Liu",
-        "Xiaoning Yu",
-        "Kang Chen",
-        "Jiahui Huang",
-        "Tengyuan Liu",
-        "Hongwei Zhao",
-        "Bin Li"
-      ],
-      "abstract": "Tropical cyclone (TC) forecasting is critical for disaster warning and emergency response. Deep learning methods address computational challenges but often neglect physical relationships between TC attributes, resulting in predictions lacking physical consistency. To address this, we propose Phys-Diff, a physics-inspired latent diffusion model that disentangles latent features into task-specific components (trajectory, pressure, wind speed) and employs cross-task attention to introduce prior physics-inspired inductive biases, thereby embedding physically consistent dependencies among TC attributes. Phys-Diff integrates multimodal data including historical cyclone attributes, ERA5 reanalysis data, and FengWu forecast fields via a Transformer encoder-decoder architecture, further enhancing forecasting performance. Experiments demonstrate state-of-the-art performance on global and regional datasets.",
-      "published": "February 28, 2026",
-      "published_raw": "2026-02-28T07:37:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00521v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00521v1"
-    },
-    {
-      "id": "2603.00453v1",
-      "title": "Neurosymbolic Learning for Advanced Persistent Threat Detection under Extreme Class Imbalance",
-      "authors": [
-        "Quhura Fathima",
-        "Neda Moghim",
-        "Mostafa Taghizade Firouzjaee",
-        "Christo K. Thomas",
-        "Ross Gore",
-        "Walid Saad"
-      ],
-      "abstract": "The growing deployment of Internet of Things (IoT) devices in smart cities and industrial environments increases vulnerability to stealthy, multi-stage advanced persistent threats (APTs) that exploit wireless communication. Detection is challenging due to severe class imbalance in network traffic, which limits the effectiveness of traditional deep learning approaches and their lack of explainability in classification decisions. To address these challenges, this paper proposes a neurosymbolic architecture that integrates an optimized BERT model with logic tensor networks (LTN) for explainable APT detection in wireless IoT networks. The proposed method addresses the challenges of mobile IoT environments through efficient feature encoding that transforms network flow data into BERT-compatible sequences while preserving temporal dependencies critical for APT stage identification. Severe class imbalance is mitigated using focal loss, hierarchical classification that separates normal traffic detection from attack categorization, and adaptive sampling strategies. Evaluation on the SCVIC-APT2021 dataset demonstrates an operationally viable binary classification F1 score of 95.27% with a false positive rate of 0.14%, and a 76.75% macro F1 score for multi-class attack categorization. Furthermore, a novel explainability analysis statistically validates the importance of distinct network features. These results demonstrate that neurosymbolic learning enables high-performance, interpretable, and operationally viable APT detection for IoT network monitoring architectures.",
-      "published": "February 28, 2026",
-      "published_raw": "2026-02-28T04:25:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00453v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00453v1"
-    },
-    {
-      "id": "2603.00368v1",
-      "title": "Deep Learning-Based Meat Freshness Detection with Segmentation and OOD-Aware Classification",
-      "authors": [
-        "Hutama Arif Bramantyo",
-        "Mukarram Ali Faridi",
-        "Rui Chen",
-        "Clarissa Harris",
-        "Yin Sun"
-      ],
-      "abstract": "In this study, we present a meat freshness classification framework from Red-Green-Blue (RGB) images that supports both packaged and unpackaged meat datasets. The system classifies four in-distribution (ID) meat classes and uses an out-of-distribution (OOD)-aware abstention mechanism that flags low-confidence samples as No Result. The pipeline combines U-Net-based segmentation with deep feature classifiers. Segmentation is used as a preprocessing step to isolate the meat region and reduce background, producing more consistent inputs for classification. The segmentation module achieved an Intersection over Union (IoU) of 75% and a Dice coefficient of 82%, producing standardized inputs for the classification stage. For classification, we benchmark five backbones: Residual Network-50 (ResNet-50), Vision Transformer-Base/16 (ViT-B/16), Swin Transformer-Tiny (Swin-T), EfficientNet-B0, and MobileNetV3-Small. We use nested 5x3 cross-validation (CV) for model selection and hyperparameter tuning. On the held-out ID test set, EfficientNet-B0 achieves the highest accuracy (98.10%), followed by ResNet-50 and MobileNetV3-Small (both 97.63%) and Swin-T (97.51%), while ViT-B/16 is lower (94.42%). We additionally evaluate OOD scoring and thresholding using standard OOD metrics and sensitivity analysis over the abstention threshold. Finally, we report on-device latency using TensorFlow Lite (TFLite) on a smartphone, highlighting practical accuracy-latency trade-offs for future deployment.",
-      "published": "February 27, 2026",
-      "published_raw": "2026-02-27T23:14:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00368v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00368v1"
-    },
-    {
-      "id": "2603.00359v1",
-      "title": "How Large Language Models Get Stuck: Early structure with persistent errors",
-      "authors": [
-        "Alokesh Manna",
-        "William Snyder",
-        "Whitney Tabor"
-      ],
-      "abstract": "Linguistic insights may help make Large Language Model (LLM) training more efficient. We trained Meta's OPT model on the 100M word BabyLM dataset, and evaluated it on the BLiMP benchmark, which consists of 67 classes, each defined by sentence pairs that differ in a targeted syntactic or semantic rule violation. We tested the model's preference for grammatical over ungrammatical sentences across training iterations and grammatical types. In nearly one-third of the BLiMP classes, OPT fails to consistently assign a higher likelihood to grammatical sentences, even after extensive training. When it fails, it often establishes a clear (erroneous) separation of the likelihoods at an early stage of processing and sustains this to the end of our training phase. We hypothesize that this mis-categorization is costly because it creates entrenched biases that must, eventually, be reversed in order for the model to perform well. We probe this phenomenon using a mixture of qualitative (based on linguistic theory and the theory of Deep Learning) and quantitative (based on numerical testing) assessments. Our qualitative assessments indicate that only some BLiMP tests are meaningful guides. We conclude by articulating a hypothesis, the Bigram Hypothesis, which claims that the learning process will exhibit erroneous entrenchment if bigram statistics bias the model toward wrong distinctions early in training, and we describe a method (in progress) of testing the hypothesis on appropriately selected BLiMP classes.",
-      "published": "February 27, 2026",
-      "published_raw": "2026-02-27T22:49:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00359v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00359v1"
-    },
-    {
-      "id": "2603.00355v1",
-      "title": "StethoLM: Audio Language Model for Cardiopulmonary Analysis Across Clinical Tasks",
-      "authors": [
-        "Yishan Wang",
-        "Tsai-Ning Wang",
-        "Mathias Funk",
-        "Aaqib Saeed"
-      ],
-      "abstract": "Listening to heart and lung sounds - auscultation - is one of the first and most fundamental steps in a clinical examination. Despite being fast and non-invasive, it demands years of experience to interpret subtle audio cues. Recent deep learning methods have made progress in automating cardiopulmonary sound analysis, yet most are restricted to simple classification and offer little clinical interpretability or decision support. We present StethoLM, the first audio-language model specialized for cardiopulmonary auscultation, capable of performing instruction-driven clinical tasks across the full spectrum of auscultation analysis. StethoLM integrates audio encoding with a medical language model backbone and is trained on StethoBench, a comprehensive benchmark comprising 77,027 instruction-response pairs synthesized from 16,125 labeled cardiopulmonary recordings spanning seven clinical task categories: binary classification, detection, reporting, reasoning, differential diagnosis, comparison, and location-based analysis. Through multi-stage training that combines supervised fine-tuning and direct preference optimization, StethoLM achieves substantial gains in performance and robustness on out-of-distribution data. Our work establishes a foundation for instruction-following AI systems in clinical auscultation.",
-      "published": "February 27, 2026",
-      "published_raw": "2026-02-27T22:39:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00355v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00355v1"
-    },
-    {
-      "id": "2603.00340v1",
-      "title": "Detecting Transportation Mode Using Dense Smartphone GPS Trajectories and Transformer Models",
-      "authors": [
-        "Yuandong Zhang",
-        "Othmane Echchabi",
-        "Tianshu Feng",
-        "Wenyi Zhang",
-        "Hsuai-Kai Liao",
-        "Charles Chang"
-      ],
-      "abstract": "Transportation mode detection is an important topic within GeoAI and transportation research. In this study, we introduce SpeedTransformer, a novel Transformer-based model that relies solely on speed inputs to infer transportation modes from dense smartphone GPS trajectories. In benchmark experiments, SpeedTransformer outperformed traditional deep learning models, such as the Long Short-Term Memory (LSTM) network. Moreover, the model demonstrated strong flexibility in transfer learning, achieving high accuracy across geographical regions after fine-tuning with small datasets. Finally, we deployed the model in a real-world experiment, where it consistently outperformed baseline models under complex built environments and high data uncertainty. These findings suggest that Transformer architectures, when combined with dense GPS trajectories, hold substantial potential for advancing transportation mode detection and broader mobility-related research.",
-      "published": "February 27, 2026",
-      "published_raw": "2026-02-27T22:20:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.00340v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.00340v1"
-    },
-    {
-      "id": "2602.24286v1",
-      "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
-      "authors": [
-        "Weinan Dai",
-        "Hanlin Wu",
-        "Qiying Yu",
-        "Huan-ang Gao",
-        "Jiahao Li",
-        "Chengquan Jiang",
-        "Weiqiang Lou",
-        "Yufan Song",
-        "Hongli Yu",
-        "Jiaze Chen",
-        "Wei-Ying Ma",
-        "Ya-Qin Zhang",
-        "Jingjing Liu",
-        "Mingxuan Wang",
-        "Xin Liu",
-        "Hao Zhou"
-      ],
-      "abstract": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
-      "published": "February 27, 2026",
-      "published_raw": "2026-02-27T18:58:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2602.24286v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2602.24286v1"
     }
   ]
 }
