@@ -1,7 +1,144 @@
 {
-  "last_updated": "2026-03-08T01:02:21.165605",
+  "last_updated": "2026-03-09T01:02:51.132532",
   "count": 20,
   "papers": [
+    {
+      "id": "2603.06361v1",
+      "title": "CLAIRE: Compressed Latent Autoencoder for Industrial Representation and Evaluation -- A Deep Learning Framework for Smart Manufacturing",
+      "authors": [
+        "Mohammadhossein Ghahramani",
+        "Mengchu Zhou"
+      ],
+      "abstract": "Accurate fault detection in high-dimensional industrial environments remains a major challenge due to the inherent complexity, noise, and redundancy in sensor data. This paper introduces CLAIRE, i.e., a hybrid end-to-end learning framework that integrates unsupervised deep representation learning with supervised classification for intelligent quality control in smart manufacturing systems. It employs an optimized deep autoencoder to transform raw input into a compact latent space, effectively capturing the intrinsic data structure while suppressing irrelevant or noisy features. The learned representations are then fed into a downstream classifier to perform binary fault prediction. Experimental results on a high-dimensional dataset demonstrate that CLAIRE significantly outperforms conventional classifiers trained directly on raw features. Moreover, the framework incorporates a post hoc phase, using a game-theory-based interpretability technique, to analyze the latent space and identify the most informative input features contributing to fault predictions. The proposed framework highlights the potential of integrating explainable AI with feature-aware regularization for robust fault detection. The modular and interpretable nature of the proposed framework makes it highly adaptable, offering promising applications in other domains characterized by complex, high-dimensional data, such as healthcare, finance, and environmental monitoring.",
+      "published": "March 06, 2026",
+      "published_raw": "2026-03-06T15:11:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.06361v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.06361v1"
+    },
+    {
+      "id": "2603.06338v1",
+      "title": "AI End-to-End Radiation Treatment Planning Under One Second",
+      "authors": [
+        "Simon Arberet",
+        "Riqiang Gao",
+        "Martin Kraus",
+        "Florin C. Ghesu",
+        "Wilko Verbakel",
+        "Mamadou Diallo",
+        "Anthony Magliari",
+        "Venkatesan Karuppusamy",
+        "Sushil Beriwal",
+        "REQUITE Consortium",
+        "Ali Kamen",
+        "Dorin Comaniciu"
+      ],
+      "abstract": "Artificial intelligence-based radiation therapy (RT) planning has the potential to reduce planning time and inter-planner variability, improving efficiency and consistency in clinical workflows. Most existing automated approaches rely on multiple dose evaluations and corrections, resulting in plan generation times of several minutes. We introduce AIRT (Artificial Intelligence-based Radiotherapy), an end-to-end deep-learning framework that directly infers deliverable treatment plans from CT images and structure contours. AIRT generates single-arc VMAT prostate plans, from imaging and anatomical inputs to leaf sequencing, in under one second on a single Nvidia A100 GPU. The framework includes a differentiable dose feedback, an adversarial fluence map shaping, and a plan generation augmentation to improve plan quality and robustness. The model was trained on more than 10,000 intact prostate cases. Non-inferiority to RapidPlan Eclipse was demonstrated across target coverage and OAR sparing metrics. Target homogeneity (HI = 0.10 $\\pm$ 0.01) and OAR sparing were similar to reference plans when evaluated using AcurosXB. These results represent a significant step toward ultra-fast standardized RT planning and a streamlined clinical workflow.",
+      "published": "March 06, 2026",
+      "published_raw": "2026-03-06T14:45:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.06338v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.06338v1"
+    },
+    {
+      "id": "2603.06276v1",
+      "title": "Story Point Estimation Using Large Language Models",
+      "authors": [
+        "Pranam Prakash Shetty",
+        "Adarsh Balakrishnan",
+        "Mengqiao Xu",
+        "Xiaoyin Xi",
+        "Zhe Yu"
+      ],
+      "abstract": "This study investigates the use of large language models (LLMs) for story point estimation. Story points are unitless, project-specific effort estimates that help developers on the scrum team forecast which product backlog items they plan to complete in a sprint. To facilitate this process, machine learning models, especially deep neural networks, have been applied to predict the story points based on the title and description of each item. However, such machine learning models require sufficient amounts of training data (with ground truth story points annotated by human developers) from the same software project to achieve decent prediction performance. This motivated us to explore whether LLMs are capable of (RQ1) predicting story points without training data or (RQ2) with only a few training data points. Our empirical results with four LLMs on 16 software projects show that, without any training data (zero-shot prompting), LLMs can predict story points better than supervised deep learning models trained on 80% of the data. The prediction performance of LLMs can be further improved with a few training examples (few-shot prompting). In addition, a recent study explored the use of comparative judgments (between a given pair of items which one requires more effort to implement) instead of directly annotating the story points to reduce the cognitive burden on developers. Therefore, this study also explores (RQ3) whether comparative judgments are easier to predict than story points for LLMs and (RQ4) whether comparative judgments can serve as few-shot examples for LLMs to improve their predictions of story points. Empirical results suggest that it is not easier for LLMs to predict comparative judgments than to directly estimate the story points, but comparative judgments can serve as few-shot examples to improve the LLMs' prediction performance as well as the human-annotated story points.",
+      "published": "March 06, 2026",
+      "published_raw": "2026-03-06T13:34:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.06276v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.06276v1"
+    },
+    {
+      "id": "2603.06120v1",
+      "title": "Dynamic Momentum Recalibration in Online Gradient Learning",
+      "authors": [
+        "Zhipeng Yao",
+        "Rui Yu",
+        "Guisong Chang",
+        "Ying Li",
+        "Yu Zhang",
+        "Dazhou Li"
+      ],
+      "abstract": "Stochastic Gradient Descent (SGD) and its momentum variants form the backbone of deep learning optimization, yet the underlying dynamics of their gradient behavior remain insufficiently understood. In this work, we reinterpret gradient updates through the lens of signal processing and reveal that fixed momentum coefficients inherently distort the balance between bias and variance, leading to skewed or suboptimal parameter updates. To address this, we propose SGDF (SGD with Filter), an optimizer inspired by the principles of Optimal Linear Filtering. SGDF computes an online, time-varying gain to dynamically refine gradient estimation by minimizing the mean-squared error, thereby achieving an optimal trade-off between noise suppression and signal preservation. Furthermore, our approach could extend to other optimizers, showcasing its broad applicability to optimization frameworks. Extensive experiments across diverse architectures and benchmarks demonstrate SGDF surpasses conventional momentum methods and achieves performance on par with or surpassing state-of-the-art optimizers.",
+      "published": "March 06, 2026",
+      "published_raw": "2026-03-06T10:23:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.06120v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.06120v1"
+    },
+    {
+      "id": "2603.05924v1",
+      "title": "Weak-SIGReg: Covariance Regularization for Stable Deep Learning",
+      "authors": [
+        "Habibullah Akbar"
+      ],
+      "abstract": "Modern neural network optimization relies heavily on architectural priorssuch as Batch Normalization and Residual connectionsto stabilize training dynamics. Without these, or in low-data regimes with aggressive augmentation, low-bias architectures like Vision Transformers (ViTs) often suffer from optimization collapse. This work adopts Sketched Isotropic Gaussian Regularization (SIGReg), recently introduced in the LeJEPA self-supervised framework, and repurposes it as a general optimization stabilizer for supervised learning. While the original formulation targets the full characteristic function, a computationally efficient variant is derived, Weak-SIGReg, which targets the covariance matrix via random sketching. Inspired by interacting particle systems, representation collapse is viewed as stochastic drift; SIGReg constrains the representation density towards an isotropic Gaussian, mitigating this drift. Empirically, SIGReg recovers the training of a ViT on CIFAR-100 from a collapsed 20.73\\% to 72.02\\% accuracy without architectural hacks and significantly improves the convergence of deep vanilla MLPs trained with pure SGD. Code is available at \\href{https://github.com/kreasof-ai/sigreg}{github.com/kreasof-ai/sigreg}.",
+      "published": "March 06, 2026",
+      "published_raw": "2026-03-06T05:32:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.05924v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.05924v1"
+    },
+    {
+      "id": "2603.05758v1",
+      "title": "Full Dynamic Range Sky-Modelling For Image Based Lighting",
+      "authors": [
+        "Ian J. Maquignaz"
+      ],
+      "abstract": "Accurate environment maps are a key component to modelling real-world outdoor scenes. They enable captivating visual arts, immersive virtual reality and a wide range of scientific and engineering applications. To alleviate the burden of physical-capture, physically-simulation and volumetric rendering, sky-models have been proposed as fast, flexible, and cost-saving alternatives. In recent years, sky-models have been extended through deep learning to be more comprehensive and inclusive of cloud formations, but recent work has demonstrated these models fall short in faithfully recreating accurate and photorealistic natural skies. Particularly at higher resolutions, DNN sky-models struggle to accurately model the 14EV+ class-imbalanced solar region, resulting in poor visual quality and scenes illuminated with skewed light transmission, shadows and tones. In this work, we propose Icarus, an all-weather sky-model capable of learning the exposure range of Full Dynamic Range (FDR) physically captured outdoor imagery. Our model allows conditional generation of environment maps with intuitive user-positioning of solar and cloud formations, and extends on current state-of-the-art to enable user-controlled texturing of atmospheric formations. Through our evaluation, we demonstrate Icarus is interchangeable with FDR physically captured outdoor imagery or parametric sky-models, and illuminates scenes with unprecedented accuracy, photorealism, lighting directionality (shadows), and tones in Image Based Lightning (IBL).",
+      "published": "March 05, 2026",
+      "published_raw": "2026-03-05T23:32:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.05758v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.05758v1"
+    },
+    {
+      "id": "2603.05655v1",
+      "title": "Latent space design of interatomic potentials",
+      "authors": [
+        "Susan R. Atlas"
+      ],
+      "abstract": "The advent of neural-network-based deep learning techniques has led to the emergence of increasingly sophisticated numerical interatomic potentials, including graph neural networks and large language-motivated foundation models. Parameterized to reproduce large, precomputed quantum mechanical training datasets for molecules and materials, models can be fine-tuned for greater accuracy on specific problems. Despite notable successes, machine learning (ML) models of potentials still face intrinsic challenges due to the combinatoric complexity of the underlying quantum chemical interactions, the existence of as-yet-undiscovered but potentially relevant bonding motifs absent from training datasets, and the need for post-prediction interpretability analysis. Drawing inspiration from autoencoder methods, we propose a constructive approach to interatomic potential design. In standard autoencoder architectures, a ML model self-organizes numerical training data in an unsupervised manner to discover underlying patterns and construct a compressed representation or latent space embedding model of the data, which is then used for prediction and inference. In the present work, we describe how latent space patterns and associated quantum embeddings can be constructed using first-principles methods based on theorems of density functional theory (DFT) and known, analytic constraints. This enables a parsimonious, physics-based representation of energies and densities, formally coupling the electronic and atomic length scales through the electron density, and linking ground, excited, and charge-transfer states of the interacting atoms. We describe the complete set of latent space components providing the foundation for a recently-proposed ensemble charge-transfer potential, and discuss opportunities for synergy in the design and explainability of contemporary machine-learned interatomic potentials.",
+      "published": "March 05, 2026",
+      "published_raw": "2026-03-05T20:10:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.05655v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.05655v1"
+    },
+    {
+      "id": "2603.05582v1",
+      "title": "Bias In, Bias Out? Finding Unbiased Subnetworks in Vanilla Models",
+      "authors": [
+        "Ivan Luiz De Moura Matos",
+        "Abdel Djalil Sad Saoud",
+        "Ekaterina Iakovleva",
+        "Vito Paolo Pastore",
+        "Enzo Tartaglione"
+      ],
+      "abstract": "The issue of algorithmic biases in deep learning has led to the development of various debiasing techniques, many of which perform complex training procedures or dataset manipulation. However, an intriguing question arises: is it possible to extract fair and bias-agnostic subnetworks from standard vanilla-trained models without relying on additional data, such as unbiased training set? In this work, we introduce Bias-Invariant Subnetwork Extraction (BISE), a learning strategy that identifies and isolates \"bias-free\" subnetworks that already exist within conventionally trained models, without retraining or finetuning the original parameters. Our approach demonstrates that such subnetworks can be extracted via pruning and can operate without modification, effectively relying less on biased features and maintaining robust performance. Our findings contribute towards efficient bias mitigation through structural adaptation of pre-trained neural networks via parameter removal, as opposed to costly strategies that are either data-centric or involve (re)training all model parameters. Extensive experiments on common benchmarks show the advantages of our approach in terms of the performance and computational efficiency of the resulting debiased model.",
+      "published": "March 05, 2026",
+      "published_raw": "2026-03-05T18:54:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.05582v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.05582v1"
+    },
+    {
+      "id": "2603.05577v1",
+      "title": "Koopman Regularized Deep Speech Disentanglement for Speaker Verification",
+      "authors": [
+        "Nikos Chazaridis",
+        "Mohammad Belal",
+        "Rafael Mestre",
+        "Timothy J. Norman",
+        "Christine Evers"
+      ],
+      "abstract": "Human speech contains both linguistic content and speaker dependent characteristics making speaker verification a key technology in identity critical applications. Modern deep learning speaker verification systems aim to learn speaker representations that are invariant to semantic content and nuisance factors such as ambient noise. However, many existing approaches depend on labelled data, textual supervision or large pretrained models as feature extractors, limiting scalability and practical deployment, raising sustainability concerns. We propose Deep Koopman Speech Disentanglement Autoencoder (DKSD-AE), a structured autoencoder that combines a novel multi-step Koopman operator learning module with instance normalization to disentangle speaker and content dynamics. Quantitative experiments across multiple datasets demonstrate that DKSD-AE achieves improved or competitive speaker verification performance compared to state-of-the-art baselines while maintaining high content EER, confirming effective disentanglement. These results are obtained with substantially fewer parameters and without textual supervision. Moreover, performance remains stable under increased evaluation scale, highlighting representation robustness and generalization. Our findings suggest that Koopman-based temporal modelling, when combined with instance normalization, provides an efficient and principled solution for speaker-focused representation learning.",
+      "published": "March 05, 2026",
+      "published_raw": "2026-03-05T17:30:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.05577v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.05577v1"
+    },
     {
       "id": "2603.05350v1",
       "title": "A Shift-Invariant Deep Learning Framework for Automated Analysis of XPS Spectra",
@@ -177,159 +314,6 @@
       "published_raw": "2026-03-04T23:29:44Z",
       "pdf_link": "http://arxiv.org/pdf/2603.04673v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2603.04673v1"
-    },
-    {
-      "id": "2603.04625v1",
-      "title": "K-Means as a Radial Basis function Network: a Variational and Gradient-based Equivalence",
-      "authors": [
-        "Felipe de Jesus Felix Arredondo",
-        "Alejandro Ucan-Puc",
-        "Carlos Astengo Noguez"
-      ],
-      "abstract": "This work establishes a rigorous variational and gradient-based equivalence between the classical K-Means algorithm and differentiable Radial Basis Function (RBF) neural networks with smooth responsibilities. By reparameterizing the K-Means objective and embedding its distortion functional into a smooth weighted loss, we prove that the RBF objective $Γ$-converges to the K-Means solution as the temperature parameter $σ$ vanishes. We further demonstrate that the gradient-based updates of the RBF centers recover the exact K-Means centroid update rule and induce identical training trajectories in the limit. To address the numerical instability of the Softmax transformation in the low-temperature regime, we propose the integration of Entmax-1.5, which ensures stable polynomial convergence while preserving the underlying Voronoi partition structure. These results bridge the conceptual gap between discrete partitioning and continuous optimization, enabling K-Means to be embedded directly into deep learning architectures for the joint optimization of representations and clusters. Empirical validation across diverse synthetic geometries confirms a monotone collapse of soft RBF centroids toward K-Means fixed points, providing a unified framework for end-to-end differentiable clustering.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T21:41:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04625v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04625v1"
-    },
-    {
-      "id": "2603.04562v1",
-      "title": "Fusion and Grouping Strategies in Deep Learning for Local Climate Zone Classification of Multimodal Remote Sensing Data",
-      "authors": [
-        "Ancymol Thomas",
-        "Jaya Sreevalsan-Nair"
-      ],
-      "abstract": "Local Climate Zones (LCZs) give a zoning map to study urban structures and land use and analyze the impact of urbanization on local climate. Multimodal remote sensing enables LCZ classification, for which data fusion is significant for improving accuracy owing to the data complexity. However, there is a gap in a comprehensive analysis of the fusion mechanisms used in their deep learning (DL) classifier architectures. This study analyzes different fusion strategies in the multi-class LCZ classification models for multimodal data and grouping strategies based on inherent data characteristics. The different models involving Convolutional Neural Networks (CNNs) include: (i) baseline hybrid fusion (FM1), (ii) with self- and cross-attention mechanisms (FM2), (iii) with the multi-scale Gaussian filtered images (FM3), and (iv) weighted decision-level fusion (FM4). Ablation experiments are conducted to study the pixel-, feature-, and decision-level fusion effects in the model performance. Grouping strategies include band grouping (BG) within the data modalities and label merging (LM) in the ground truth. Our analysis is exclusively done on the So2Sat LCZ42 dataset, which consists of Synthetic Aperture Radar (SAR) and Multispectral Imaging (MSI) image pairs. Our results show that FM1 consistently outperforms simple fusion methods. FM1 with BG and LM is found to be the most effective approach among all fusion strategies, giving an overall accuracy of 76.6\\%. Importantly, our study highlights the effect of these strategies in improving prediction accuracy for the underrepresented classes. Our code and processed datasets are available at https://github.com/GVCL/LCZC-MultiModalHybridFusion",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T19:47:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04562v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04562v1"
-    },
-    {
-      "id": "2603.04551v1",
-      "title": "Weather-Related Crash Risk Forecasting: A Deep Learning Approach for Heterogenous Spatiotemporal Data",
-      "authors": [
-        "Abimbola Ogungbire",
-        "Srinivas Pulugurtha"
-      ],
-      "abstract": "This study introduces a deep learning-based framework for forecasting weather-related traffic crash risk using heterogeneous spatiotemporal data. Given the complex, non-linear relationship between crash occurrence and factors such as road characteristics, and traffic conditions, we propose an ensemble of Convolutional Long Short-Term Memory (ConvLSTM) models trained over overlapping spatial grids. This approach captures both spatial dependencies and temporal dynamics while addressing spatial heterogeneity in crash patterns. North Carolina was selected as the study area due to its diverse weather conditions, with historical crash, weather, and traffic data aggregated at 5-mi by 5-mi grid resolution. The framework was evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and spatial cross-K analysis. Results show that the ensembled ConvLSTM significantly outperforms baseline models, including linear regression, ARIMA, and standard ConvLSTM, particularly in high-risk zones. The ensemble approach effectively combines the strengths of multiple ConvLSTM models, resulting in lower MSE and RMSE values across all regions, particularly when data from different crash risk zones are aggregated. Notably, the model performs exceptionally well in volatile high-risk areas (Cluster 1), achieving the lowest MSE and RMSE, while in stable low-risk areas (Cluster 2), it still improves upon simpler models but with slightly higher errors due to challenges in capturing subtle variations.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T19:35:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04551v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04551v1"
-    },
-    {
-      "id": "2603.04340v1",
-      "title": "Balancing Fidelity, Utility, and Privacy in Synthetic Cardiac MRI Generation: A Comparative Study",
-      "authors": [
-        "Madhura Edirisooriya",
-        "Dasuni Kawya",
-        "Ishan Kumarasinghe",
-        "Isuri Devindi",
-        "Mary M. Maleckar",
-        "Roshan Ragel",
-        "Isuru Nawinne",
-        "Vajira Thambawita"
-      ],
-      "abstract": "Deep learning in cardiac MRI (CMR) is fundamentally constrained by both data scarcity and privacy regulations. This study systematically benchmarks three generative architectures: Denoising Diffusion Probabilistic Models (DDPM), Latent Diffusion Models (LDM), and Flow Matching (FM) for synthetic CMR generation. Utilizing a two-stage pipeline where anatomical masks condition image synthesis, we evaluate generated data across three critical axes: fidelity, utility, and privacy. Our results show that diffusion-based models, particularly DDPM, provide the most effective balance between downstream segmentation utility, image fidelity, and privacy preservation under limited-data conditions, while FM demonstrates promising privacy characteristics with slightly lower task-level performance. These findings quantify the trade-offs between cross-domain generalization and patient confidentiality, establishing a framework for safe and effective synthetic data augmentation in medical imaging.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T17:59:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04340v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04340v1"
-    },
-    {
-      "id": "2603.04288v1",
-      "title": "A multi-center analysis of deep learning methods for video polyp detection and segmentation",
-      "authors": [
-        "Noha Ghatwary",
-        "Pedro Chavarias Solano",
-        "Mohamed Ramzy Ibrahim",
-        "Adrian Krenzer",
-        "Frank Puppe",
-        "Stefano Realdon",
-        "Renato Cannizzaro",
-        "Jiacheng Wang",
-        "Liansheng Wang",
-        "Thuy Nuong Tran",
-        "Lena Maier-Hein",
-        "Amine Yamlahi",
-        "Patrick Godau",
-        "Quan He",
-        "Qiming Wan",
-        "Mariia Kokshaikyna",
-        "Mariia Dobko",
-        "Haili Ye",
-        "Heng Li",
-        "Ragu B",
-        "Antony Raj",
-        "Hanaa Nagdy",
-        "Osama E Salem",
-        "James E. East",
-        "Dominique Lamarque",
-        "Thomas de Lange",
-        "Sharib Ali"
-      ],
-      "abstract": "Colonic polyps are well-recognized precursors to colorectal cancer (CRC), typically detected during colonoscopy. However, the variability in appearance, location, and size of these polyps complicates their detection and removal, leading to challenges in effective surveillance, intervention, and subsequently CRC prevention. The processes of colonoscopy surveillance and polyp removal are highly reliant on the expertise of gastroenterologists and occur within the complexities of the colonic structure. As a result, there is a high rate of missed detections and incomplete removal of colonic polyps, which can adversely impact patient outcomes. Recently, automated methods that use machine learning have been developed to enhance polyps detection and segmentation, thus helping clinical processes and reducing missed rates. These advancements highlight the potential for improving diagnostic accuracy in real-time applications, which ultimately facilitates more effective patient management. Furthermore, integrating sequence data and temporal information could significantly enhance the precision of these methods by capturing the dynamic nature of polyp growth and the changes that occur over time. To rigorously investigate these challenges, data scientists and experts gastroenterologists collaborated to compile a comprehensive dataset that spans multiple centers and diverse populations. This initiative aims to underscore the critical importance of incorporating sequence data and temporal information in the development of robust automated detection and segmentation methods. This study evaluates the applicability of deep learning techniques developed in real-time clinical colonoscopy tasks using sequence data, highlighting the critical role of temporal relationships between frames in improving diagnostic precision.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T17:05:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04288v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04288v1"
-    },
-    {
-      "id": "2603.04134v1",
-      "title": "InstMeter: An Instruction-Level Method to Predict Energy and Latency of DL Model Inference on MCUs",
-      "authors": [
-        "Hao Liu",
-        "Qing Wang",
-        "Marco Zuniga"
-      ],
-      "abstract": "Deep learning (DL) models can now run on microcontrollers (MCUs). Through neural architecture search (NAS), we can search DL models that meet the constraints of MCUs. Among various constraints, energy and latency costs of the model inference are critical metrics. To predict them, existing research relies on coarse proxies such as multiply-accumulations (MACs) and model's input parameters, often resulting in inaccurate predictions or requiring extensive data collection. In this paper, we propose InstMeter, a predictor leveraging MCUs' clock cycles to accurately estimate the energy and latency of DL models. Clock cycles are fundamental metrics reflecting MCU operations, directly determining energy and latency costs. Furthermore, a unique property of our predictor is its strong linearity, allowing it to be simple and accurate. We thoroughly evaluate InstMeter under different scenarios, MCUs, and software settings. Compared with state-of-the-art studies, InstMeter can reduce the energy and latency prediction errors by $3\\times$ and $6.5\\times$, respectively, while requiring $100\\times$ and $10\\times$ less training data. In the NAS scenario, InstMeter can fully exploit the energy budget, identifying optimal DL models with higher inference accuracy. We also evaluate InstMeter's generalization performance through various experiments on three ARM MCUs (Cortex-M4, M7, M33) and one RISC-V-based MCU (ESP32-C3), different compilation options (-Os, -O2), GCC versions (v7.3, v10.3), application scenarios (keyword spotting, image recognition), dynamic voltage and frequency scaling, temperatures (21°C, 43°C), and software settings (TFLMv2.4, TFLMvCI). We will open our source codes and the MCU-specific benchmark datasets.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T14:48:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04134v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04134v1"
-    },
-    {
-      "id": "2603.03981v1",
-      "title": "MLOps-Assisted Anomalous Reflector Metasurfaces Design Based on Red Hat OpenShift AI",
-      "authors": [
-        "Wael Elshennawy"
-      ],
-      "abstract": "The integration of artificial intelligence as a design tool for metasurfaces, and the implementation of a deep-learning model pose a challenge in the development of an automated solution due to high resources requirements. The presented work introduces a network-layer solution to configure such environment for end user objectives, and for an underlying physical-layer technology. An architecture is developed to design an anomalous reflector by employing the Redhat Openshift AI (RHOAI) technology to support an automated machine learning operations (MLOps) framework in smart radio environments. This entails the design of lossless impenetrable metasurfaces characterized by a scalar surface impedance for an optimal anomalous reflection, achieved by optimizing the number of the Floquet modes through the utilization of a local power conservation constraint qualified as a fitness function. The metasurfaces design process is implemented by using a conditional generative adversarial network (cGAN). An extended cGAN with a surrogate model assists in a high-quality freeform metasurfaces design, where it introduces a swift simulation tool for the metasurfaces design process and analysis of the far-field model. The paper focuses on the challenges of building such a system, and potential abstraction layers. The training accuracy value of the proposed model demonstrates the feasibility and benefits of deploying in containerized environment of Red Hat Openshift in comparison with other deployments of ResNet-50 reported in literature.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T12:23:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.03981v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.03981v1"
-    },
-    {
-      "id": "2603.04472v1",
-      "title": "Towards Explainable Deep Learning for Ship Trajectory Prediction in Inland Waterways",
-      "authors": [
-        "Tom Legel",
-        "Dirk Söffker",
-        "Roland Schätzle",
-        "Kathrin Donandt"
-      ],
-      "abstract": "Accurate predictions of ship trajectories in crowded environments are essential to ensure safety in inland waterways traffic. Recent advances in deep learning promise increased accuracy even for complex scenarios. While the challenge of ship-to-ship awareness is being addressed with growing success, the explainability of these models is often overlooked, potentially obscuring an inaccurate logic and undermining the confidence in their reliability. This study examines an LSTM-based vessel trajectory prediction model by incorporating trained ship domain parameters that provide insight into the attention-based fusion of the interacting vessels' hidden states. This approach has previously been explored in the field of maritime shipping, yet the variety and complexity of encounters in inland waterways allow for a more profound analysis of the model's interpretability. The prediction performance of the proposed model variants are evaluated using standard displacement error statistics. Additionally, the plausibility of the generated ship domain values is analyzed. With an final displacement error of around 40 meters in a 5-minute prediction horizon, the model performs comparably to similar studies. Though the ship-to-ship attention architecture enhances prediction accuracy, the weights assigned to vessels in encounters using the learnt ship domain values deviate from the expectation. The observed accuracy improvements are thus not entirely driven by a causal relationship between a predicted trajectory and the trajectories of nearby ships. This finding underscores the model's explanatory capabilities through its intrinsically interpretable design. Future work will focus on utilizing the architecture for counterfactual analysis and on the incorporation of more sophisticated attention mechanisms.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T07:01:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.04472v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.04472v1"
-    },
-    {
-      "id": "2603.03725v1",
-      "title": "Why Do Unlearnable Examples Work: A Novel Perspective of Mutual Information",
-      "authors": [
-        "Yifan Zhu",
-        "Yibo Miao",
-        "Yinpeng Dong",
-        "Xiao-Shan Gao"
-      ],
-      "abstract": "The volume of freely scraped data on the Internet has driven the tremendous success of deep learning. Along with this comes the growing concern about data privacy and security. Numerous methods for generating unlearnable examples have been proposed to prevent data from being illicitly learned by unauthorized deep models by impeding generalization. However, the existing approaches primarily rely on empirical heuristics, making it challenging to enhance unlearnable examples with solid explanations. In this paper, we analyze and improve unlearnable examples from a novel perspective: mutual information reduction. We demonstrate that effective unlearnable examples always decrease mutual information between clean features and poisoned features, and when the network gets deeper, the unlearnability goes better together with lower mutual information. Further, we prove from a covariance reduction perspective that minimizing the conditional covariance of intra-class poisoned features reduces the mutual information between distributions. Based on the theoretical results, we propose a novel unlearnable method called Mutual Information Unlearnable Examples (MI-UE) that reduces covariance by maximizing the cosine similarity among intra-class features, thus impeding the generalization effectively. Extensive experiments demonstrate that our approach significantly outperforms the previous methods, even under defense mechanisms.",
-      "published": "March 04, 2026",
-      "published_raw": "2026-03-04T04:53:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.03725v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.03725v1"
     }
   ]
 }
