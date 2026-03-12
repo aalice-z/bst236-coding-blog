@@ -1,7 +1,166 @@
 {
-  "last_updated": "2026-03-11T00:58:17.336329",
+  "last_updated": "2026-03-12T00:55:29.856861",
   "count": 20,
   "papers": [
+    {
+      "id": "2603.09952v1",
+      "title": "On the Width Scaling of Neural Optimizers Under Matrix Operator Norms I: Row/Column Normalization and Hyperparameter Transfer",
+      "authors": [
+        "Ruihan Xu",
+        "Jiajin Li",
+        "Yiping Lu"
+      ],
+      "abstract": "A central question in modern deep learning is how to design optimizers whose behavior remains stable as the network width $w$ increases. We address this question by interpreting several widely used neural-network optimizers, including \\textrm{AdamW} and \\textrm{Muon}, as instances of steepest descent under matrix operator norms. This perspective links optimizer geometry with the Lipschitz structure of the network forward map, and enables width-independent control of both Lipschitz and smoothness constants. However, steepest-descent rules induced by standard $p \\to q$ operator norms lack layerwise composability and therefore cannot provide width-independent bounds in deep architectures. We overcome this limitation by introducing a family of mean-normalized operator norms, denoted $\\pmean \\to \\qmean$, that admit layerwise composability, yield width-independent smoothness bounds, and give rise to practical optimizers such as \\emph{rescaled} \\textrm{AdamW}, row normalization, and column normalization. The resulting learning rate width-aware scaling rules recover $μ$P scaling~\\cite{yang2021tensor} as a special case and provide a principled mechanism for cross-width learning-rate transfer across a broad class of optimizers. We further show that \\textrm{Muon} can suffer an $\\mathcal{O}(\\sqrt{w})$ worst-case growth in the smoothness constant, whereas a new family of row-normalized optimizers we propose achieves width-independent smoothness guarantees. Based on the observations, we propose MOGA (Matrix Operator Geometry Aware), a width-aware optimizer based only on row/column-wise normalization that enables stable learning-rate transfer across model widths. Large-scale pre-training on GPT-2 and LLaMA shows that MOGA, especially with row normalization, is competitive with Muon while being notably faster in large-token and low-loss regimes.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T17:49:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09952v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09952v1"
+    },
+    {
+      "id": "2603.09685v1",
+      "title": "Automatic Cardiac Risk Management Classification using large-context Electronic Patients Health Records",
+      "authors": [
+        "Jacopo Vitale",
+        "David Della Morte",
+        "Luca Bacco",
+        "Mario Merone",
+        "Mark de Groot",
+        "Saskia Haitjema",
+        "Leandro Pecchia",
+        "Bram van Es"
+      ],
+      "abstract": "To overcome the limitations of manual administrative coding in geriatric Cardiovascular Risk Management, this study introduces an automated classification framework leveraging unstructured Electronic Health Records (EHRs). Using a dataset of 3,482 patients, we benchmarked three distinct modeling paradigms on longitudinal Dutch clinical narratives: classical machine learning baselines, specialized deep learning architectures optimized for large-context sequences, and general-purpose generative Large Language Models (LLMs) in a zero-shot setting. Additionally, we evaluated a late fusion strategy to integrate unstructured text with structured medication embeddings and anthropometric data. Our analysis reveals that the custom Transformer architecture outperforms both traditional methods and generative \\acs{llm}s, achieving the highest F1-scores and Matthews Correlation Coefficients. These findings underscore the critical role of specialized hierarchical attention mechanisms in capturing long-range dependencies within medical texts, presenting a robust, automated alternative to manual workflows for clinical risk stratification.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T13:55:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09685v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09685v1"
+    },
+    {
+      "id": "2603.09661v1",
+      "title": "FreqCycle: A Multi-Scale Time-Frequency Analysis Method for Time Series Forecasting",
+      "authors": [
+        "Boya Zhang",
+        "Shuaijie Yin",
+        "Huiwen Zhu",
+        "Xing He"
+      ],
+      "abstract": "Mining time-frequency features is critical for time series forecasting. Existing research has predominantly focused on modeling low-frequency patterns, where most time series energy is concentrated. The overlooking of mid to high frequency continues to limit further performance gains in deep learning models. We propose FreqCycle, a novel framework integrating: (i) a Filter-Enhanced Cycle Forecasting (FECF) module to extract low-frequency features by explicitly learning shared periodic patterns in the time domain, and (ii) a Segmented Frequency-domain Pattern Learning (SFPL) module to enhance mid to high frequency energy proportion via learnable filters and adaptive weighting. Furthermore, time series data often exhibit coupled multi-periodicity, such as intertwined weekly and daily cycles. To address coupled multi-periodicity as well as long lookback window challenges, we extend FreqCycle hierarchically into MFreqCycle, which decouples nested periodic features through cross-scale interactions. Extensive experiments on seven diverse domain benchmarks demonstrate that FreqCycle achieves state-of-the-art accuracy while maintaining faster inference speeds, striking an optimal balance between performance and efficiency.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T13:34:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09661v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09661v1"
+    },
+    {
+      "id": "2603.09581v1",
+      "title": "Towards Understanding Adam Convergence on Highly Degenerate Polynomials",
+      "authors": [
+        "Zhiwei Bai",
+        "Jiajie Zhao",
+        "Zhangchen Zhou",
+        "Zhi-Qin John Xu",
+        "Yaoyu Zhang"
+      ],
+      "abstract": "Adam is a widely used optimization algorithm in deep learning, yet the specific class of objective functions where it exhibits inherent advantages remains underexplored. Unlike prior studies requiring external schedulers and $β_2$ near 1 for convergence, this work investigates the \"natural\" auto-convergence properties of Adam. We identify a class of highly degenerate polynomials where Adam converges automatically without additional schedulers. Specifically, we derive theoretical conditions for local asymptotic stability on degenerate polynomials and demonstrate strong alignment between theoretical bounds and experimental results. We prove that Adam achieves local linear convergence on these degenerate functions, significantly outperforming the sub-linear convergence of Gradient Descent and Momentum. This acceleration stems from a decoupling mechanism between the second moment $v_t$ and squared gradient $g_t^2$, which exponentially amplifies the effective learning rate. Finally, we characterize Adam's hyperparameter phase diagram, identifying three distinct behavioral regimes: stable convergence, spikes, and SignGD-like oscillation.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T12:30:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09581v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09581v1"
+    },
+    {
+      "id": "2603.09386v1",
+      "title": "Deep Learning Search for Gravitational Waves from Compact Binary Coalescence",
+      "authors": [
+        "Lorenzo Mobilia",
+        "Tito Dal Canton",
+        "Gianluca Maria Guidi"
+      ],
+      "abstract": "Gravitational wave searches rely on a combination of methods, including matched filtering, coherent analyses, and more recent machine learning based pipelines. For compact binary coalescences, where signals originate from the relativistic dynamics of compact objects, matched filtering remains a central element, but its computational cost will increase substantially with the data volumes and parameter-space coverage required by next-generation interferometers such as the Einstein Telescope. Developing complementary strategies that reduce computational load while preserving detection performance is therefore essential. We investigate a hybrid approach that combines matched-filtering concepts with Convolutional Neural Networks, enabling efficient signal searches without relying on the usual $χ^2$ rejection test. Using simulated data sets that include injected signals in Gaussian noise, transient noise, and physical effects not represented in template bank, such as eccentricity, precession and higher-order modes, we show that the method achieves a detection efficiency comparable to a standard matched-filtering search while offering a more resource efficient pipeline. These results indicate that deep learning assisted searches can support sustainable gravitational-wave data analysis in future detector eras.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T08:58:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09386v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09386v1"
+    },
+    {
+      "id": "2603.09174v1",
+      "title": "Differentiable Stochastic Traffic Dynamics: Physics-Informed Generative Modelling in Transportation",
+      "authors": [
+        "Wuping Xin"
+      ],
+      "abstract": "Macroscopic traffic flow is stochastic, but the physics-informed deep learning methods currently used in transportation literature embed deterministic PDEs and produce point-valued outputs; the stochasticity of the governing dynamics plays no role in the learned representation. This work develops a framework in which the physics constraint itself is distributional and directly derived from stochastic traffic-flow dynamics. Starting from an Ito-type Lighthill-Whitham-Richards model with Brownian forcing, we derive a one-point forward equation for the marginal traffic density at each spatial location. The spatial coupling induced by the conservation law appears as an explicit conditional drift term, which makes the closure requirement transparent. Based on this formulation, we derive an equivalent deterministic Probability Flow ODE that is pointwise evaluable and differentiable once a closure is specified. Incorporating this as a physics constraint, we then propose a score network with an advection-closure module, trainable by denoising score matching together with a Fokker-Planck residual loss. The resulting model targets a data-conditioned density distribution, from which point estimates, credible intervals, and congestion-risk measures can be computed. The framework provides a basis for distributional traffic-state estimation and for stochastic fundamental-diagram analysis in a physics-informed generative setting.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T04:25:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09174v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09174v1"
+    },
+    {
+      "id": "2603.09165v1",
+      "title": "GIAT: A Geologically-Informed Attention Transformer for Lithology Identification",
+      "authors": [
+        "Jie Li",
+        "Qishun Yang",
+        "Nuo Li"
+      ],
+      "abstract": "Accurate lithology identification from well logs is crucial for subsurface resource evaluation. Although Transformer-based models excel at sequence modeling, their \"black-box\" nature and lack of geological guidance limit their performance and trustworthiness. To overcome these limitations, this letter proposes the Geologically-Informed Attention Transformer (GIAT), a novel framework that deeply fuses data-driven geological priors with the Transformer's attention mechanism. The core of GIAT is a new attention-biasing mechanism. We repurpose Category-Wise Sequence Correlation (CSC) filters to generate a geologically-informed relational matrix, which is injected into the self-attention calculation to explicitly guide the model toward geologically coherent patterns. On two challenging datasets, GIAT achieves state-of-the-art performance with an accuracy of up to 95.4%, significantly outperforming existing models. More importantly, GIAT demonstrates exceptional interpretation faithfulness under input perturbations and generates geologically coherent predictions. Our work presents a new paradigm for building more accurate, reliable, and interpretable deep learning models for geoscience applications.",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T04:02:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09165v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09165v1"
+    },
+    {
+      "id": "2603.09103v1",
+      "title": "Probabilistic Hysteresis Factor Prediction for Electric Vehicle Batteries with Graphite Anodes Containing Silicon",
+      "authors": [
+        "Runyao Yu",
+        "Viviana Kleine",
+        "Philipp Gromotka",
+        "Thomas Rudolf",
+        "Adrian Eisenmann",
+        "Gautham Ram Chandra Mouli",
+        "Peter Palensky",
+        "Jochen L. Cremer"
+      ],
+      "abstract": "Batteries with silicon-graphite-based anodes, which offer higher energy density and improved charging performance, introduce pronounced voltage hysteresis, making state-of-charge (SoC) estimation particularly challenging. Existing approaches to modeling hysteresis rely on exhaustive high-fidelity tests or focus on conventional graphite-based lithium-ion batteries, without considering uncertainty quantification or computational constraints. This work introduces a data-driven approach for probabilistic hysteresis factor prediction, with a particular emphasis on applications involving silicon-graphite anode-based batteries. A data harmonization framework is proposed to standardize heterogeneous driving cycles across varying operating conditions. Statistical learning and deep learning models are applied to assess performance in predicting the hysteresis factor with uncertainties while considering computational efficiency. Extensive experiments are conducted to evaluate the generalizability of the optimal model configuration in unseen vehicle models through retraining, zero-shot prediction, fine-tuning, and joint training. By addressing key challenges in SoC estimation, this research facilitates the adoption of advanced battery technologies. A summary page is available at: https://runyao-yu.github.io/Porsche_Hysteresis_Factor_Prediction/",
+      "published": "March 10, 2026",
+      "published_raw": "2026-03-10T02:27:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.09103v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.09103v1"
+    },
+    {
+      "id": "2603.08931v1",
+      "title": "Optimizing Reinforcement Learning Training over Digital Twin Enabled Multi-fidelity Networks",
+      "authors": [
+        "Hanzhi Yu",
+        "Hasan Farooq",
+        "Julien Forgeat",
+        "Shruti Bothe",
+        "Kristijonas Cyras",
+        "Md Moin Uddin Chowdhury",
+        "Mingzhe Chen"
+      ],
+      "abstract": "In this paper, we investigate a novel digital network twin (DNT) assisted deep learning (DL) model training framework. In particular, we consider a physical network where a base station (BS) uses several antennas to serve multiple mobile users, and a DNT that is a virtual representation of the physical network. The BS must adjust its antenna tilt angles to optimize the data rates of all users. Due to user mobility, the BS may not be able to accurately track network dynamics such as wireless channels and user mobilities. Hence, a reinforcement learning (RL) approach is used to dynamically adjust the antenna tilt angles. To train the RL, we can use data collected from the physical network and the DNT. The data collected from the physical network is more accurate but incurs more communication overhead compared to the data collected from the DNT. Therefore, it is necessary to determine the ratio of data collected from the physical network and the DNT to improve the training of the RL model. We formulate this problem as an optimization problem whose goal is to jointly optimize the tilt angle adjustment policy and the data collection strategy, aiming to maximize the data rates of all users while constraining the time delay introduced by collecting data from the physical network. To solve this problem, we propose a hierarchical RL framework that integrates robust adversarial loss and proximal policy optimization (PPO). Simulation results show that our proposed method reduces the physical network data collection delay by up to 28.01% and 1x compared to a hierarchical RL that uses vanilla PPO as the first level RL, and the baseline that uses robust-RL at the first level and selects the data collection ratio randomly.",
+      "published": "March 09, 2026",
+      "published_raw": "2026-03-09T20:59:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.08931v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.08931v1"
+    },
+    {
+      "id": "2603.08901v1",
+      "title": "NetDiffuser: Deceiving DNN-Based Network Attack Detection Systems with Diffusion-Generated Adversarial Traffic",
+      "authors": [
+        "Pratyay Kumar",
+        "Abu Saleh Md Tayeen",
+        "Satyajayant Misra",
+        "Huiping Cao",
+        "Jiefei Liu",
+        "Qixu Gong",
+        "Jayashree Harikumar"
+      ],
+      "abstract": "Deep learning (DL)-based Network Intrusion Detection System (NIDS) has demonstrated great promise in detecting malicious network traffic. However, they face significant security risks due to their vulnerability to adversarial examples (AEs). Most existing adversarial attacks maliciously perturb data to maximize misclassification errors. Among AEs, natural adversarial examples (NAEs) are particularly difficult to detect because they closely resemble real data, making them challenging for both humans and machine learning models to distinguish from legitimate inputs. Creating NAEs is crucial for testing and strengthening NIDS defenses. This paper proposes NetDiffuser1, a novel framework for generating NAEs capable of deceiving NIDS. NetDiffuser consists of two novel components. First, a new feature categorization algorithm is designed to identify relatively independent features in network traffic. Perturbing these features minimizes changes while preserving network flow validity. The second component is a novel application of diffusion models to inject semantically consistent perturbations for generating NAEs. NetDiffuser performance was extensively evaluated using three benchmark NIDS datasets across various model architectures and state-of-the-art adversarial detectors. Our experimental results show that NetDiffuser achieves up to a 29.93% higher attack success rate and reduces AE detection performance by at least 0.267 (in some cases up to 0.534) in the Area under the Receiver Operating Characteristic Curve (AUC-ROC) score compared to the baseline attacks.",
+      "published": "March 09, 2026",
+      "published_raw": "2026-03-09T20:13:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.08901v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.08901v1"
+    },
     {
       "id": "2603.08651v1",
       "title": "Group Entropies and Mirror Duality: A Class of Flexible Mirror Descent Updates for Machine Learning",
@@ -151,156 +310,6 @@
       "published_raw": "2026-03-09T02:39:51Z",
       "pdf_link": "http://arxiv.org/pdf/2603.07899v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2603.07899v1"
-    },
-    {
-      "id": "2603.07811v1",
-      "title": "Neural Precoding in Complex Projective Spaces",
-      "authors": [
-        "Zaid Abdullah",
-        "Merouane Debbah",
-        "Symeon Chatzinotas",
-        "Bjorn Ottersten"
-      ],
-      "abstract": "Deep-learning (DL)-based precoding in multi-user multiple-input single-output (MU-MISO) systems involves training DL models to map features derived from channel coefficients to labels derived from precoding weights. Traditionally, complex-valued channel and precoder coefficients are parameterized using either their real and imaginary components or their amplitude and phase. However, precoding performance depends on magnitudes of inner products between channel and precoding vectors, which are invariant to global phase rotations. Conventional representations fail to exploit this symmetry, leading to inefficient learning and degraded generalization. To address this, we propose a DL framework based on complex projective space (CPS) parameterizations of both the wireless channel and the weighted minimum mean squared error (WMMSE) precoder vectors. By removing the global phase redundancies inherent in conventional representations, the proposed framework enables the DL model to learn geometry-aligned and physically distinct channel-precoder mappings. Two CPS parameterizations based on real-valued embeddings and complex hyperspherical coordinates are investigated and benchmarked against two baseline methods. Simulation results demonstrate substantial improvements in sum-rate performance and generalization, with negligible increase in model complexity.",
-      "published": "March 08, 2026",
-      "published_raw": "2026-03-08T21:29:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.07811v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.07811v1"
-    },
-    {
-      "id": "2603.07413v1",
-      "title": "Machine Learning for the Internet of Underwater Things: From Fundamentals to Implementation",
-      "authors": [
-        "Kenechi Omeke",
-        "Attai Abubakar",
-        "Michael Mollel",
-        "Lei Zhang",
-        "Qammer H. Abbasi",
-        "Muhammad Ali Imran"
-      ],
-      "abstract": "The Internet of Underwater Things (IoUT) is becoming a critical infrastructure for ocean observation, marine resource management, and climate science. Its development is hindered by severe acoustic attenuation, propagation delays far exceeding those of terrestrial wireless systems, strict energy constraints, and dynamic topologies shaped by ocean currents. Machine learning (ML) has emerged as a key enabler for addressing these limitations, offering data driven mechanisms that enhance performance across all layers of underwater wireless sensor networks. This tutorial survey synthesises ML methodologies supervised, unsupervised, reinforcement, and deep learning specifically contextualised for underwater communication environments. It outlines the algorithmic principles of each paradigm and examines the conditions under which particular approaches deliver superior performance. A layer wise analysis highlights physical layer gains in localisation and channel estimation, MAC layer adaptations that improve channel utilisation, network layer routing strategies that extend operational lifetime, and transport layer mechanisms capable of reducing packet loss by up to 91 percent. At the application layer, ML enables substantial data compression and object detection accuracies reaching 92 percent. Drawing on 300 studies from 2012 to 2025, the survey documents energy efficiency gains of 7 to 29 times, throughput improvements over traditional protocols, and cross layer optimisation benefits of up to 42 percent. It also identifies persistent barriers, including limited datasets, computational constraints, and the gap between theoretical models and real world deployment. The survey concludes with emerging research directions and a technology roadmap supporting ML adoption in operational underwater networks.",
-      "published": "March 08, 2026",
-      "published_raw": "2026-03-08T01:54:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.07413v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.07413v1"
-    },
-    {
-      "id": "2603.07261v1",
-      "title": "Turning Time Series into Algebraic Equations: Symbolic Machine Learning for Interpretable Modeling of Chaotic Time Series",
-      "authors": [
-        "Madhurima Panja",
-        "Grace Younes",
-        "Tanujit Chakraborty"
-      ],
-      "abstract": "Chaotic time series are notoriously difficult to forecast. Small uncertainties in initial conditions amplify rapidly, while strong nonlinearities and regime dependent variability constrain predictability. Although modern deep learning often delivers strong short horizon accuracy, its black box nature limits scientific insight and practical trust in settings where understanding the underlying dynamics matters. To address this gap, we propose two complementary symbolic forecasters that learn explicit, interpretable algebraic equations from chaotic time series data. Symbolic Neural Forecaster (SyNF) adapts a neural network based equation learning architecture to the forecasting setting, enabling fully differentiable discovery of compact and interpretable algebraic relations. The Symbolic Tree Forecaster (SyTF) builds on evolutionary symbolic regression to search directly over equation structures under a principled accuracy complexity trade off. We evaluate both approaches in a rolling window nowcasting setting with one step ahead forecasting using several accuracy metrics and compare against a broad suite of baselines spanning classical statistical models, tree ensembles, and modern deep learning architectures. Numerical experiments cover a benchmark of 132 low dimensional chaotic attractors and two real world chaotic time series, namely weekly dengue incidence in San Juan and the Nino 3.4 sea surface temperature index. Across datasets, symbolic forecasters achieve competitive one step ahead accuracy while providing transparent equations that reveal salient aspects of the underlying dynamics.",
-      "published": "March 07, 2026",
-      "published_raw": "2026-03-07T15:35:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.07261v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.07261v1"
-    },
-    {
-      "id": "2603.07233v1",
-      "title": "Retrieval-Augmented Generation for Predicting Cellular Responses to Gene Perturbation",
-      "authors": [
-        "Andrea Giuseppe Di Francesco",
-        "Andrea Rubbi",
-        "Pietro Liò"
-      ],
-      "abstract": "Predicting how cells respond to genetic perturbations is fundamental to understanding gene function, disease mechanisms, and therapeutic development. While recent deep learning approaches have shown promise in modeling single-cell perturbation responses, they struggle to generalize across cell types and perturbation contexts due to limited contextual information during generation. We introduce PT-RAG (Perturbation-aware Two-stage Retrieval-Augmented Generation), a novel framework that extends Retrieval-Augmented Generation beyond traditional language-model applications to cellular biology. Unlike standard RAG systems designed for text retrieval with pre-trained LLMs, perturbation retrieval lacks established similarity metrics and requires learning what constitutes relevant context, making differentiable retrieval essential. PT-RAG addresses this through a two-stage pipeline: first, retrieving candidate perturbations $K$ using GenePT embeddings, then adaptively refining the selection through Gumbel-Softmax discrete sampling conditioned on both the cell state and the input perturbation. This cell-type-aware differentiable retrieval enables end-to-end optimization of the retrieval objective jointly with generation. On the Replogle-Nadig single-gene perturbation dataset, we demonstrate that PT-RAG outperforms both STATE and vanilla RAG under identical experimental conditions, with the strongest gains in distributional similarity metrics ($W_1$, $W_2$). Notably, vanilla RAG's dramatic failure is itself a key finding: it demonstrates that differentiable, cell-type-aware retrieval is essential in this domain, and that naive retrieval can actively harm performance. Our results establish retrieval-augmented generation as a promising paradigm for modelling cellular responses to gene perturbation. The code to reproduce our experiments is available at https://github.com/difra100/PT-RAG_ICLR.",
-      "published": "March 07, 2026",
-      "published_raw": "2026-03-07T14:31:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.07233v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.07233v1"
-    },
-    {
-      "id": "2603.07229v1",
-      "title": "A Hybrid LTR-based System via Social Context Embedding for Recommending Solutions of Software Bugs in Developer Communities",
-      "authors": [
-        "Fouzi Harrag",
-        "Mokdad Khemliche"
-      ],
-      "abstract": "Questions and Answering forums such as Stack Overflow play an important role in supporting software developers in finding answers to queries related to issues such as software errors and bugs. However, searching through a large set of candidate answers could be time consuming and may not lead to the best solution. In this research, the effectiveness of data mining models and machine learning techniques to solve this kind of problems is evaluated. We propose a recommender system to aid developers in finding solutions to their software bugs by carefully mining Stack Overflow. The proposed model leverages the knowledge available through crowdsourcing the Q&A available in Stack Overflow to recommend a solution to software bugs. We use deep learning techniques to construct the required Learning-to-Rank (LTR)-based model using the social context embedding the Stack Overflow features. Text mining, natural language processing and recommendation algorithms are used to extract, evaluate and recommend the best relevant bug solutions. Additionally, our model achieves nearly 78% correct solutions when recommending the 10 best answers for each question.",
-      "published": "March 07, 2026",
-      "published_raw": "2026-03-07T14:24:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.07229v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.07229v1"
-    },
-    {
-      "id": "2603.07122v1",
-      "title": "Combining Adam and its Inverse Counterpart to Enhance Generalization of Deep Learning Optimizers",
-      "authors": [
-        "Tao Shi",
-        "Liangming Chen",
-        "Long Jin",
-        "Mengchu Zhou"
-      ],
-      "abstract": "In the training of neural networks, adaptive moment estimation (Adam) typically converges fast but exhibits suboptimal generalization performance. A widely accepted explanation for its defect in generalization is that it often tends to converge to sharp minima. To enhance its ability to find flat minima, we propose its new variant named inverse Adam (InvAdam). The key improvement of InvAdam lies in its parameter update mechanism, which is opposite to that of Adam. Specifically, it computes element-wise multiplication of the first-order and second-order moments, while Adam computes the element-wise division of these two moments. This modification aims to increase the step size of the parameter update when the elements in the second-order moments are large and vice versa, which helps the parameter escape sharp minima and stay at flat ones. However, InvAdam's update mechanism may face challenges in convergence. To address this challenge, we propose dual Adam (DualAdam), which integrates the update mechanisms of both Adam and InvAdam, ensuring convergence while enhancing generalization performance. Additionally, we introduce the diffusion theory to mathematically demonstrate InvAdam's ability to escape sharp minima. Extensive experiments are conducted on image classification tasks and large language model (LLM) fine-tuning. The results validate that DualAdam outperforms Adam and its state-of-the-art variants in terms of generalization performance. The code is publicly available at https://github.com/LongJin-lab/DualAdam.",
-      "published": "March 07, 2026",
-      "published_raw": "2026-03-07T09:15:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.07122v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.07122v1"
-    },
-    {
-      "id": "2603.06894v1",
-      "title": "Learning From Design Procedure To Generate CAD Programs for Data Augmentation",
-      "authors": [
-        "Yan-Ying Chen",
-        "Dule Shu",
-        "Matthew Hong",
-        "Andrew Taber",
-        "Jonathan Li",
-        "Matthew Klenk"
-      ],
-      "abstract": "Large Language Models (LLMs) have demonstrated impressive capabilities in a wide range of code generation tasks. However, generating code for certain domains remains challenging. One such domain is Computer-Aided Design (CAD) program, where the goal is to produce scripted parametric models that define object geometry for precise design and manufacturing applications. A key challenge in LLM-based CAD program generation is the limited geometric complexity of generated shapes compared to those found in real-world industrial designs. This shortfall is in part due to the lack of diversity in the available CAD program training data. To address this, we propose a novel data augmentation paradigm that prompts an LLM to generate CAD programs conditioned on a reference surface program and a modeling procedure - an idea inspired by practices in industrial design. By varying the reference surface using a collection of organic shapes, our method enriches the geometric distribution of generated CAD models. In particular, it introduces edges and faces defined by spline-based curvature, which are typically missing or underrepresented in existing open-source CAD program datasets. Experiments show that our method produces CAD samples with significantly greater geometric diversity and a higher resemblance to industry-grade CAD designs in terms of the proportion of organic shape primitives. This enhancement makes our CAD data augmentation approach a useful tool for training LLMs and other deep learning models in CAD generation.",
-      "published": "March 06, 2026",
-      "published_raw": "2026-03-06T21:32:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.06894v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.06894v1"
-    },
-    {
-      "id": "2603.06804v1",
-      "title": "Identifying genes associated with phenotypes using machine and deep learning",
-      "authors": [
-        "Muhammad Muneeb",
-        "David B. Ascher",
-        "YooChan Myung"
-      ],
-      "abstract": "Identifying disease-associated genes enables the development of precision medicine and the understanding of biological processes. Genome-wide association studies (GWAS), gene expression data, biological pathway analysis, and protein network analysis are among the techniques used to identify causal genes. We propose a machine-learning (ML) and deep-learning (DL) pipeline to identify genes associated with a phenotype. The proposed pipeline consists of two interrelated processes. The first is classifying people into case/control based on the genotype data. The second is calculating feature importance to identify genes associated with a particular phenotype. We considered 30 phenotypes from the openSNP data for analysis, 21 ML algorithms, and 80 DL algorithms and variants. The best-performing ML and DL models, evaluated by the area under the curve (AUC), F1 score, and Matthews correlation coefficient (MCC), were used to identify important single-nucleotide polymorphisms (SNPs), and the identified SNPs were compared with the phenotype-associated SNPs from the GWAS Catalog. The mean per-phenotype gene identification ratio (GIR) was 0.84. These results suggest that SNPs selected by ML/DL algorithms that maximize classification performance can help prioritise phenotype-associated SNPs and genes, potentially supporting downstream studies aimed at understanding disease mechanisms and identifying candidate therapeutic targets.",
-      "published": "March 06, 2026",
-      "published_raw": "2026-03-06T19:13:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.06804v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.06804v1"
-    },
-    {
-      "id": "2603.06798v1",
-      "title": "NEST: Network- and Memory-Aware Device Placement For Distributed Deep Learning",
-      "authors": [
-        "Irene Wang",
-        "Vishnu Varma Venkata",
-        "Arvind Krishnamurthy",
-        "Divya Mahajan"
-      ],
-      "abstract": "The growing scale of deep learning demands distributed training frameworks that jointly reason about parallelism, memory, and network topology. Prior works often rely on heuristic or topology-agnostic search, handling communication and memory separately. Without per-device memory awareness, these methods typically ensure feasibility post hoc by sharding parameters and activations across many devices, increasing synchronization, inflating communication, and underutilizing compute-limiting scalability and efficiency on real datacenter networks. We present NEST, a network-, compute-, and memory-aware device placement framework that unifies model parallelism, topology modeling, and memory feasibility via structured dynamic programming. NEST's DP operates on operator graphs with tensor and expert parallel configurations, explicit allreduce latencies across hierarchical or arbitrary networks, and memory/compute profiles. By factoring parallelism across tensor, pipeline, data, and expert dimensions, NEST defines a principled search space for hybrid strategies while jointly optimizing co-location, network latency, and memory feasibility. Evaluations across diverse hardware and networks show NEST achieves up to 2.43 times higher throughput, better memory efficiency, and improved scalability over state-of-the-art baselines, providing a foundation for co-designing parallelization strategies and datacenter interconnects for next-generation AI infrastructure. The source code of NEST is available at: https://github.com/scai-tech/Nest",
-      "published": "March 06, 2026",
-      "published_raw": "2026-03-06T19:02:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.06798v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.06798v1"
-    },
-    {
-      "id": "2603.06768v1",
-      "title": "Benchmarking 80 binary phenotypes from the openSNP dataset using deep learning algorithms and polygenic risk score tools",
-      "authors": [
-        "Muhammad Muneeb",
-        "David B. Ascher",
-        "YooChan Myung",
-        "Samuel F. Feng",
-        "Andreas Henschel"
-      ],
-      "abstract": "Genotype-phenotype prediction plays a crucial role in identifying disease-causing single nucleotide polymorphisms and precision medicine. In this manuscript, we benchmark the performance of various machine/deep learning algorithms and polygenic risk score tools on 80 binary phenotypes extracted from the openSNP dataset. After cleaning and extraction, the genotype data for each phenotype is passed to PLINK for quality control, after which it is transformed separately for each of the considered tools/algorithms. To compute polygenic risk scores, we used the quality control measures for the test data and the genome-wide association studies summary statistic file, along with various combinations of clumping and pruning. For the machine learning algorithms, we used p-value thresholding on the training data to select the single nucleotide polymorphisms, and the resulting data was passed to the algorithm. Our results report the average 5-fold Area Under the Curve (AUC) for 29 machine learning algorithms, 80 deep learning algorithms, and 3 polygenic risk scores tools with 675 different clumping and pruning parameters. Machine learning outperformed for 44 phenotypes, while polygenic risk score tools excelled for 36 phenotypes. The results give us valuable insights into which techniques tend to perform better for certain phenotypes compared to more traditional polygenic risk scores tools.",
-      "published": "March 06, 2026",
-      "published_raw": "2026-03-06T16:36:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.06768v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.06768v1"
     }
   ]
 }
