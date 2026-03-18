@@ -1,314 +1,336 @@
 {
-  "last_updated": "2026-03-16T01:10:54.596828",
+  "last_updated": "2026-03-18T01:06:53.289989",
   "count": 20,
   "papers": [
     {
-      "id": "2603.13115v1",
-      "title": "ZO-SAM: Zero-Order Sharpness-Aware Minimization for Efficient Sparse Training",
+      "id": "2603.16376v1",
+      "title": "Prior-Informed Neural Network Initialization: A Spectral Approach for Function Parameterizing Architectures",
       "authors": [
-        "Jie Ji",
-        "Gen Li",
-        "Kaiyuan Deng",
-        "Fatemeh Afghah",
-        "Xiaolong Ma"
+        "David Orlando Salazar Torres",
+        "Diyar Altinses",
+        "Andreas Schwung"
       ],
-      "abstract": "Deep learning models, despite their impressive achievements, suffer from high computational costs and memory requirements, limiting their usability in resource-constrained environments. Sparse neural networks significantly alleviate these constraints by dramatically reducing parameter count and computational overhead. However, existing sparse training methods often experience chaotic and noisy gradient signals, severely hindering convergence and generalization performance, particularly at high sparsity levels. To tackle this critical challenge, we propose Zero-Order Sharpness-Aware Minimization (ZO-SAM), a novel optimization framework that strategically integrates zero-order optimization within the SAM approach. Unlike traditional SAM, ZO-SAM requires only a single backpropagation step during perturbation, selectively utilizing zero-order gradient estimations. This innovative approach reduces the backpropagation computational cost by half compared to conventional SAM, significantly lowering gradient variance and effectively eliminating associated computational overhead. By harnessing SAM's capacity for identifying flat minima, ZO-SAM stabilizes the training process and accelerates convergence. These efficiency gains are particularly important in sparse training scenarios, where computational cost is the primary bottleneck that limits the practicality of SAM. Moreover, models trained with ZO-SAM exhibit improved robustness under distribution shift, further broadening its practicality in real-world deployments.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T16:11:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.13115v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.13115v1"
+      "abstract": "Neural network architectures designed for function parameterization, such as the Bag-of-Functions (BoF) framework, bridge the gap between the expressivity of deep learning and the interpretability of classical signal processing. However, these models are inherently sensitive to parameter initialization, as traditional data-agnostic schemes fail to capture the structural properties of the target signals, often leading to suboptimal convergence. In this work, we propose a prior-informed design strategy that leverages the intrinsic spectral and temporal structure of the data to guide both network initialization and architectural configuration. A principled methodology is introduced that uses the Fast Fourier Transform to extract dominant seasonal priors, informing model depth and initial states, and a residual-based regression approach to parameterize trend components. Crucially, this structural alignment enables a substantial reduction in encoder dimensionality without compromising reconstruction fidelity. A supporting theoretical analysis provides guidance on trend estimation under finite-sample regimes. Extensive experiments on synthetic and real-world benchmarks demonstrate that embedding data-driven priors significantly accelerates convergence, reduces performance variability across trials, and improves computational efficiency. Overall, the proposed framework enables more compact and interpretable architectures while outperforming standard initialization baselines, without altering the core training procedure.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T11:08:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16376v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16376v1"
     },
     {
-      "id": "2603.13065v1",
-      "title": "L2GTX: From Local to Global Time Series Explanations",
+      "id": "2603.16351v1",
+      "title": "Automated identification of Ichneumonoidea wasps via YOLO-based deep learning: Integrating HiresCam for Explainable AI",
       "authors": [
-        "Ephrem Tibebe Mekonnen",
-        "Luca Longo",
-        "Lucas Rizzo",
-        "Pierpaolo Dondio"
+        "Joao Manoel Herrera Pinheiro",
+        "Gabriela Do Nascimento Herrera",
+        "Alvaro Doria Dos Santos",
+        "Luciana Bueno Dos Reis Fernandes",
+        "Ricardo V. Godoy",
+        "Eduardo A. B. Almeida",
+        "Helena Carolina Onody",
+        "Marcelo Andrade Da Costa Vieira",
+        "Angelica Maria Penteado-Dias",
+        "Marcelo Becker"
       ],
-      "abstract": "Deep learning models achieve high accuracy in time series classification, yet understanding their class-level decision behaviour remains challenging. Explanations for time series must respect temporal dependencies and identify patterns that recur across instances. Existing approaches face three limitations: model-agnostic XAI methods developed for images and tabular data do not readily extend to time series, global explanation synthesis for time series remains underexplored, and most existing global approaches are model-specific. We propose L2GTX, a model-agnostic framework that generates class-wise global explanations by aggregating local explanations from a representative set of instances. L2GTX extracts clusters of parameterised temporal event primitives, such as increasing or decreasing trends and local extrema, together with their importance scores from instance-level explanations produced by LOMATCE. These clusters are merged across instances to reduce redundancy, and an instance-cluster importance matrix is used to estimate global relevance. Under a user-defined instance selection budget, L2GTX selects representative instances that maximise coverage of influential clusters. Events from the selected instances are then aggregated into concise class-wise global explanations. Experiments on six benchmark time series datasets show that L2GTX produces compact and interpretable global explanations while maintaining stable global faithfulness measured as mean local surrogate fidelity.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T15:14:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.13065v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.13065v1"
+      "abstract": "Accurate taxonomic identification of parasitoid wasps within the superfamily Ichneumonoidea is essential for biodiversity assessment, ecological monitoring, and biological control programs. However, morphological similarity, small body size, and fine-grained interspecific variation make manual identification labor-intensive and expertise-dependent. This study proposes a deep learning-based framework for the automated identification of Ichneumonoidea wasps using a YOLO-based architecture integrated with High-Resolution Class Activation Mapping (HiResCAM) to enhance interpretability. The proposed system simultaneously identifies wasp families from high-resolution images. The dataset comprises 3556 high-resolution images of Hymenoptera specimens. The taxonomic distribution is primarily concentrated among the families Ichneumonidae (n = 786), Braconidae (n = 648), Apidae (n = 466), and Vespidae (n = 460). Extensive experiments were conducted using a curated dataset, with model performance evaluated through precision, recall, F1 score, and accuracy. The results demonstrate high accuracy of over 96 % and robust generalization across morphological variations. HiResCAM visualizations confirm that the model focuses on taxonomically relevant anatomical regions, such as wing venation, antennae segmentation, and metasomal structures, thereby validating the biological plausibility of the learned features. The integration of explainable AI techniques improves transparency and trustworthiness, making the system suitable for entomological research to accelerate biodiversity characterization in an under-described parasitoid superfamily.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T10:34:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16351v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16351v1"
     },
     {
-      "id": "2603.13035v1",
-      "title": "Association-Aware GNN for Precoder Learning in Cell-Free Systems",
+      "id": "2603.16350v1",
+      "title": "Explainable machine learning workflows for radio astronomical data processing",
       "authors": [
-        "Mingyu Deng",
-        "Shengqian Han"
+        "S. Yatawatta",
+        "A. Ahmadi",
+        "B. Asabere",
+        "M. Iacobelli",
+        "N. Peters",
+        "M. Veldhuis"
       ],
-      "abstract": "Deep learning has been widely recognized as a promising approach for optimizing multi-user multi-antenna precoders in traditional cellular systems. However, a critical distinction between cell-free and cellular systems lies in the flexibility of user equipment (UE)-access point (AP) associations. Consequently, the optimal precoder depends not only on channel state information but also on the dynamic UE-AP association status. In this paper, we propose an association-aware graph neural network (AAGNN) that explicitly incorporates association status into the precoding design. We leverage the permutation equivariance properties of the cell-free precoding policy to reduce the training complexity of AAGNN and employ an attention mechanism to enhance its generalization performance. Simulation results demonstrate that the proposed AAGNN outperforms baseline learning methods in both learning performance and generalization capabilities while maintaining low training and inference complexity.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T14:45:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.13035v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.13035v1"
+      "abstract": "Radio astronomy relies heavily on efficient and accurate processing pipelines to deliver science ready data. With the increasing data flow of modern radio telescopes, manual configuration of such data processing pipelines is infeasible. Machine learning (ML) is already emerging as a viable solution for automating data processing pipelines. However, almost all existing ML enabled pipelines are of black-box type, where the decisions made by the automating agents are not easily deciphered by astronomers. In order to improve the explainability of the ML aided data processing pipelines in radio astronomy, we propose the joint use of fuzzy rule based inference and deep learning. We consider one application in radio astronomy, i.e., calibration, to showcase the proposed approach of ML aided decision making using a Takagi-Sugeno-Kang (TSK) fuzzy system. We provide results based on simulations to illustrate the increased explainability of the proposed approach, not compromising on the quality or accuracy.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T10:34:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16350v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16350v1"
     },
     {
-      "id": "2603.12857v1",
-      "title": "Quantifying Perovskite Solar Cell Degradation via Machine Learning from Spatially Resolved Multimodal Luminescence Time Series",
+      "id": "2603.16330v1",
+      "title": "An Interpretable Machine Learning Framework for Non-Small Cell Lung Cancer Drug Response Analysis",
       "authors": [
-        "Giulio Barletta",
-        "Simon Ternes",
-        "Saif Ali",
-        "Zohair Abbas",
-        "Chiara Ostendi",
-        "Marialucia D'Addio",
-        "Erica Magliano",
-        "Pietro Asinari",
-        "Eliodoro Chiavazzo",
-        "Aldo Di Carlo"
+        "Ann Rachel",
+        "Pranav M Pawar",
+        "Mithun Mukharjee",
+        "Raja M",
+        "Tojo Mathew"
       ],
-      "abstract": "Perovskite solar cells (PSCs) have experienced a remarkable rise in power conversion efficiency (PCE) over the past 15 years, positioning them as a promising alternative or complement to silicon for large-scale photovoltaic deployment. However, beyond scalable fabrication, operational stability remains a major bottleneck for commercialization. Reliable and rapid methods to assess device health and degradation mechanisms - ideally compatible with field applications - are therefore essential. We present a deep-learning framework to estimate efficiency retention, $R_\\mathrm{PCE}=\\mathrm{PCE}_t/\\mathrm{PCE}_0$, directly from multimodal luminescence imaging acquired during device aging. Each training sample includes electroluminescence (EL), open-circuit photoluminescence (PLoc), and short-circuit photoluminescence (PLsc) images at an aged state, together with device-specific reference images at $t=0$. This design enables the model to learn spatially resolved degradation patterns relative to the pristine condition. The dataset was collected over 5-70 hours using an automated, in-house measurement platform. We introduce LumPerNet, a compact convolutional neural network that regresses $R_\\mathrm{PCE}$ from stacked multimodal image tensors, and benchmark it against an intensity-only multilayer perceptron baseline. Using a leakage-aware protocol with device-level hold-out testing and four-fold cross-validation, restricted to $R_\\mathrm{PCE}\\in[0.8,1.2]$, LumPerNet achieves substantially improved and more robust performance (MAE -23.4%, RMSE -25.6%, $R^2$ +0.417). Ablation studies highlight the importance of complementary physical contrast across modalities for generalization. Overall, this work establishes a reproducible pipeline linking automated luminescence imaging to electrical labels, enabling accelerated stability testing and non-invasive degradation monitoring in PSCs.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T10:03:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12857v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12857v1"
+      "abstract": "Lung cancer is a condition where there is abnormal growth of malignant cells that spread in an uncontrollable fashion in the lungs. Some common treatment strategies are surgery, chemotherapy, and radiation which aren't the best options due to the heterogeneous nature of cancer. In personalized medicine, treatments are tailored according to the individual's genetic information along with lifestyle aspects. In addition, AI-based deep learning methods can analyze large sets of data to find early signs of cancer, types of tumor, and prospects of treatment. The paper focuses on the development of personalized treatment plans using specific patient data focusing primarily on the genetic profile. Multi-Omics data from Genomics of Drug Sensitivity in Cancer have been used to build a predictive model along with machine learning techniques. The value of the target variable, LN-IC50, determines how sensitive or resistive a drug is. An XGBoost regressor is utilized to predict the drug response focusing on molecular and cellular features extracted from cancer datasets. Cross-validation and Randomized Search are performed for hyperparameter tuning to further optimize the model's predictive performance. For explanation purposes, SHAP (SHapley Additive exPlanations) was used. SHAP values measure each feature's impact on an individual prediction. Furthermore, interpreting feature relationships was performed using DeepSeek, a large language model trained to verify the biological validity of the features. Contextual explanations regarding the most important genes or pathways were provided by DeepSeek alongside the top SHAP value constituents, supporting the predictability of the model.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T10:01:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16330v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16330v1"
     },
     {
-      "id": "2603.12852v1",
-      "title": "Wear Classification of Abrasive Flap Wheels using a Hierarchical Deep Learning Approach",
+      "id": "2603.15987v1",
+      "title": "Determinism in the Undetermined: Deterministic Output in Charge-Conserving Continuous-Time Neuromorphic Systems with Temporal Stochasticity",
       "authors": [
-        "Falko Kähler",
-        "Maxim Wille",
-        "Ole Schmedemann",
-        "Thorsten Schüppstuhl"
+        "Jing Yan",
+        "Kang You",
+        "Zhezhi He",
+        "Yaoyu Zhang"
       ],
-      "abstract": "Abrasive flap wheels are common for finishing complex free-form surfaces due to their flexibility. However, this flexibility results in complex wear patterns such as concave/convex flap profiles or flap tears, which influence the grinding result. This paper proposes a novel, vision-based hierarchical classification framework to automate the wear condition monitoring of flap wheels. Unlike monolithic classification approaches, we decompose the problem into three logical levels: (1) state detection (new vs. worn), (2) wear type identification (rectangular, concave, convex) and flap tear detection, and (3) severity assessment (partial vs. complete deformation). A custom-built dataset of real flap wheel images was generated and a transfer learning approach with EfficientNetV2 architecture was used. The results demonstrate high robustness with classification accuracies ranging from 93.8% (flap tears) to 99.3% (concave severity). Furthermore, Gradient-weighted Class Activation Mapping (Grad-CAM) is utilized to validate that the models learn physically relevant features and examine false classifications. The proposed hierarchical method provides a basis for adaptive process control and wear consideration in automated flap wheel grinding.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T09:54:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12852v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12852v1"
+      "abstract": "Achieving deterministic computation results in asynchronous neuromorphic systems remains a fundamental challenge due to the inherent temporal stochasticity of continuous-time hardware. To address this, we develop a unified continuous-time framework for spiking neural networks (SNNs) that couples the Law of Charge Conservation with minimal neuron-level constraints. This integration ensures that the terminal state depends solely on the aggregate input charge, providing a unique cumulated output invariant to temporal stochasticity. We prove that this mapping is strictly invariant to spike timing in acyclic networks, whereas recurrent connectivity can introduce temporal sensitivity. Furthermore, we establish an exact representational correspondence between these charge-conserving SNNs and quantized artificial neural networks, bridging the gap between static deep learning and event-driven dynamics without approximation errors. These results establish a rigorous theoretical basis for designing continuous-time neuromorphic systems that harness the efficiency of asynchronous processing while maintaining algorithmic determinism.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T23:00:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15987v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15987v1"
     },
     {
-      "id": "2603.12808v1",
-      "title": "A Multi-task Large Reasoning Model for Molecular Science",
+      "id": "2603.15939v1",
+      "title": "Data-Local Autonomous LLM-Guided Neural Architecture Search for Multiclass Multimodal Time-Series Classification",
       "authors": [
-        "Pengfei Liu",
-        "Shuang Ge",
-        "Jun Tao",
-        "Zhixiang Ren"
+        "Emil Hardarson",
+        "Luka Biedebach",
+        "Ómar Bessi Ómarsson",
+        "Teitur Hrólfsson",
+        "Anna Sigridur Islind",
+        "María Óskarsdóttir"
       ],
-      "abstract": "Advancements in artificial intelligence for molecular science are necessitating a paradigm shift from purely data-driven predictions to knowledge-guided computational reasoning. Existing molecular models are predominantly proprietary, lacking general molecular intelligence and generalizability. This underscores the necessity for computational methods that can effectively integrate scientific logic with deep learning architectures. Here we introduce a multi-task large reasoning model designed to emulate the cognitive processes of molecular scientists through structured reasoning and reflection. Our approach incorporates multi-specialist modules to provide versatile molecular expertise and a chain-of-thought (CoT) framework enhanced by reinforcement learning infused with molecular knowledge, enabling structured and reflective reasoning. Systematic evaluations across 10 molecular tasks and 47 metrics demonstrate that our model achieves an average 50.3% improvement over the base architecture, outperforming over 20 state-of-the-art baselines, including ultra-large-parameter foundation models, despite using significantly fewer training data and computational resources. This validates that embedding explicit reasoning mechanisms enables high-efficiency learning, allowing smaller-scale models to surpass massive counterparts in both efficacy and interpretability. The practical utility of this computational framework was validated through a case study on the design of central nervous system (CNS) drug candidates, illustrating its capacity to bridge data-driven and knowledge-integrated approaches for intelligent molecular design.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T09:10:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12808v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12808v1"
+      "abstract": "Applying machine learning to sensitive time-series data is often bottlenecked by the iteration loop: Performance depends strongly on preprocessing and architecture, yet training often has to run on-premise under strict data-local constraints. This is a common problem in healthcare and other privacy-constrained domains (e.g., a hospital developing deep learning models on patient EEG). This bottleneck is particularly challenging in multimodal fusion, where sensor modalities must be individually preprocessed and then combined. LLM-guided neural architecture search (NAS) can automate this exploration, but most existing workflows assume cloud execution or access to data-derived artifacts that cannot be exposed. We present a novel data-local, LLM-guided search framework that handles candidate pipelines remotely while executing all training and evaluation locally under a fixed protocol. The controller observes only trial-level summaries, such as pipeline descriptors, metrics, learning-curve statistics, and failure logs, without ever accessing raw samples or intermediate feature representations. Our framework targets multiclass, multimodal learning via one-vs-rest binary experts per class and modality, a lightweight fusion MLP, and joint search over expert architectures and modality-specific preprocessing. We evaluate our method on two regimes: UEA30 (public multivariate time-series classification dataset) and SleepEDFx sleep staging (heterogeneous clinical modalities such as EEG, EOG, and EMG). The results show that the modular baseline model is strong, and the LLM-guided NAS further improves it. Notably, our method finds models that perform within published ranges across most benchmark datasets. Across both settings, our method reduces manual intervention by enabling unattended architecture search while keeping sensitive data on-premise.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T21:46:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15939v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15939v1"
     },
     {
-      "id": "2603.12762v1",
-      "title": "TerraFlow: Multimodal, Multitemporal Representation Learning for Earth Observation",
+      "id": "2603.15914v1",
+      "title": "The Agentic Researcher: A Practical Guide to AI-Assisted Research in Mathematics and Machine Learning",
       "authors": [
-        "Nazar Puriy",
-        "Johannes Jakubik",
-        "Benedikt Blumenstiel",
-        "Konrad Schindler"
+        "Max Zimmer",
+        "Nico Pelleriti",
+        "Christophe Roux",
+        "Sebastian Pokutta"
       ],
-      "abstract": "We propose TerraFlow, a novel approach to multimodal, multitemporal learning for Earth observation. TerraFlow builds on temporal training objectives that enable sequence-aware learning across space, time, and modality, while remaining robust to the variable-length inputs commonly encountered in real-world Earth observation data. Our experiments demonstrate superiority of TerraFlow over state-of-the-art foundation models for Earth observation across all temporal tasks of the GEO-Bench-2 benchmark. We additionally demonstrate that TerraFlow is able to make initial steps towards deep-learning based risk map prediction for natural disasters -- a task on which other state-of-the-art foundation models frequently collapse. TerraFlow outperforms state-of-the-art foundation models by up to 50% in F1 score and 24% in Brier score.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T08:04:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12762v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12762v1"
+      "abstract": "AI tools and agents are reshaping how researchers work, from proving theorems to training neural networks. Yet for many, it remains unclear how these tools fit into everyday research practice. This paper is a practical guide to AI-assisted research in mathematics and machine learning: We discuss how researchers can use modern AI systems productively, where these systems help most, and what kinds of guardrails are needed to use them responsibly. It is organized into three parts: (I) a five-level taxonomy of AI integration, (II) an open-source framework that, through a set of methodological rules formulated as agent prompts, turns CLI coding agents (e.g., Claude Code, Codex CLI, OpenCode) into autonomous research assistants, and (III) case studies from deep learning and mathematics. The framework runs inside a sandboxed container, works with any frontier LLM through existing CLI agents, is simple enough to install and use within minutes, and scales from personal-laptop prototyping to multi-node, multi-GPU experimentation across compute clusters. In practice, our longest autonomous session ran for over 20 hours, dispatching independent experiments across multiple nodes without human intervention. We stress that our framework is not intended to replace the researcher in the loop, but to augment them. Our code is publicly available at https://github.com/ZIB-IOL/The-Agentic-Researcher.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T21:02:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15914v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15914v1"
     },
     {
-      "id": "2603.12733v1",
-      "title": "On Using Machine Learning to Early Detect Catastrophic Failures in Marine Diesel Engines",
+      "id": "2603.15797v1",
+      "title": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoning",
       "authors": [
-        "Francesco Maione",
-        "Paolo Lino",
-        "Giuseppe Giannino",
-        "Guido Maione"
+        "Hao Wu",
+        "Yongheng Zhang",
+        "Yuan Gao",
+        "Fan Xu",
+        "Fan Zhang",
+        "Ruobing Xie",
+        "Ruijian Gou",
+        "Yuxuan Liang",
+        "Xiaomeng Huang",
+        "Xian Wu"
       ],
-      "abstract": "Catastrophic failures of marine engines imply severe loss of functionality and destroy or damage the systems irreversibly. Being sudden and often unpredictable events, they pose a severe threat to navigation, crew, and passengers. The abrupt nature makes early detection the only effective countermeasure. However, research has concentrated on modeling the gradual degradation of components, with limited attention to sudden and anomalous phenomena. This work proposes a new method for early detection of catastrophic failures. Based on real data from a failed engine, the approach evaluates the derivatives of the deviation between actual sensor readings and expected values of engine variables. Predictions are obtained by a Random Forest, which is the most suitable Machine Learning algorithm among the tested ones. Traditional methods focus on deviations of monitored signals, whereas the proposed approach employs the derivatives of the deviations to provide earlier indications of abnormal dynamics, and to alert that a rapid and dangerous event is breaking out within the system. The method allows the detection of anomalies before measurements reach critical thresholds and alarms are triggered, which is the common method in industry. Consequently, operators can be warned in advance and shut down the engine, then prevent damage and unexpected power loss. Moreover, they have the time to safely change the ship route and avoid potential obstacles. Simulation results conf irm the effectiveness of the proposed approach in anticipating occurrence of catastrophic failures. Validation on real-world data further reinforces the robustness and practical applicability of the method. It is worth noting that data acquisition to train the predictive algorithm is not a problem, since a Deep Learning-based data augmentation procedure is used.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T07:24:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12733v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12733v1"
+      "abstract": "Large Language Models (LLMs) have demonstrated exceptional logical reasoning capabilities but frequently struggle with the continuous spatiotemporal dynamics governed by Partial Differential Equations (PDEs), often resulting in non-physical hallucinations. Existing approaches typically resort to costly, domain-specific fine-tuning, which severely limits cross-domain generalization and interpretability. To bridge this gap, we propose OMNIFLOW, a neuro-symbolic architecture designed to ground frozen multimodal LLMs in fundamental physical laws without requiring domain-specific parameter updates. OMNIFLOW introduces a novel \\textit{Semantic-Symbolic Alignment} mechanism that projects high-dimensional flow tensors into topological linguistic descriptors, enabling the model to perceive physical structures rather than raw pixel values. Furthermore, we construct a Physics-Guided Chain-of-Thought (PG-CoT) workflow that orchestrates reasoning through dynamic constraint injection (e.g., mass conservation) and iterative reflexive verification. We evaluate OMNIFLOW on a comprehensive benchmark spanning microscopic turbulence, theoretical Navier-Stokes equations, and macroscopic global weather forecasting. Empirical results demonstrate that OMNIFLOW significantly outperforms traditional deep learning baselines in zero-shot generalization and few-shot adaptation tasks. Crucially, it offers transparent, physically consistent reasoning reports, marking a paradigm shift from black-box fitting to interpretable scientific reasoning.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T18:29:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15797v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15797v1"
     },
     {
-      "id": "2603.12635v1",
-      "title": "Adaptive Diffusion Posterior Sampling for Data and Model Fusion of Complex Nonlinear Dynamical Systems",
+      "id": "2603.15541v1",
+      "title": "Bridging Local and Global Knowledge: Cascaded Mixture-of-Experts Learning for Near-Shortest Path Routing",
       "authors": [
-        "Dibyajyoti Chakraborty",
-        "Hojin Kim",
-        "Romit Maulik"
+        "Yung-Fu Chen",
+        "Anish Arora"
       ],
-      "abstract": "High-fidelity numerical simulations of chaotic, high dimensional nonlinear dynamical systems are computationally expensive, necessitating the development of efficient surrogate models. Most surrogate models for such systems are deterministic, for example when neural operators are involved. However, deterministic models often fail to capture the intrinsic distributional uncertainty of chaotic systems. This work presents a surrogate modeling formulation that leverages generative machine learning, where a deep learning diffusion model is used to probabilistically forecast turbulent flows over long horizons. We introduce a multi-step autoregressive diffusion objective that significantly enhances long-rollout stability compared to standard single-step training. To handle complex, unstructured geometries, we utilize a multi-scale graph transformer architecture incorporating diffusion preconditioning and voxel-grid pooling. More importantly, our modeling framework provides a unified platform that also predicts spatiotemporally important locations for sensor placement, either via uncertainty estimates or through an error-estimation module. Finally, the observations of the ground truth state at these dynamically varying sensor locations are assimilated using diffusion posterior sampling requiring no retraining of the surrogate model. We present our methodology on two-dimensional homogeneous and isotropic turbulence and for a flow over a backwards-facing step, demonstrating its utility in forecasting, adaptive sensor placement, and data assimilation for high dimensional chaotic systems.",
-      "published": "March 13, 2026",
-      "published_raw": "2026-03-13T04:11:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12635v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12635v1"
+      "abstract": "While deep learning models that leverage local features have demonstrated significant potential for near-optimal routing in dense Euclidean graphs, they struggle to generalize well in sparse networks where topological irregularities require broader structural awareness. To address this limitation, we train a Cascaded Mixture of Experts (Ca-MoE) to solve the all-pairs near-shortest path (APNSP) routing problem. Our Ca-MoE is a modular two-tier architecture that supports the decision-making for forwarder selection with lower-tier experts relying on local features and upper-tier experts relying on global features. It performs adaptive inference wherein the upper-tier experts are triggered only when the lower-tier ones do not suffice to achieve adequate decision quality. Computational efficiency is thus achieved by escalating model capacity only when necessitated by topological complexity, and parameter redundancy is avoided. Furthermore, we incorporate an online meta-learning strategy that facilitates independent expert fine-tuning and utilizes a stability-focused update mechanism to prevent catastrophic forgetting as new graph environments are encountered. Experimental evaluations demonstrate that Ca-MoE routing improves accuracy by up to 29.1% in sparse networks compared to single-expert baselines and maintains performance within 1%-6% of the theoretical upper bound across diverse graph densities.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T17:06:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15541v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15541v1"
     },
     {
-      "id": "2603.12487v1",
-      "title": "Modal Logical Neural Networks for Financial AI",
+      "id": "2603.15526v1",
+      "title": "Building Trust in PINNs: Error Estimation through Finite Difference Methods",
       "authors": [
-        "Antonin Sulc"
+        "Aleksander Krasowski",
+        "René P. Klausen",
+        "Aycan Celik",
+        "Sebastian Lapuschkin",
+        "Wojciech Samek",
+        "Jonas Naujoks"
       ],
-      "abstract": "The financial industry faces a critical dichotomy in AI adoption: deep learning often delivers strong empirical performance, while symbolic logic offers interpretability and rule adherence expected in regulated settings. We use Modal Logical Neural Networks (MLNNs) as a bridge between these worlds, integrating Kripke semantics into neural architectures to enable differentiable reasoning about necessity, possibility, time, and knowledge. We illustrate MLNNs as a differentiable ``Logic Layer'' for finance by mapping core components, Necessity Neurons ($\\Box$) and Learnable Accessibility ($A_θ$), to regulatory guardrails, market stress testing, and collusion detection. Four case studies show how MLNN-style constraints can promote compliance in trading agents, help recover latent trust networks for market surveillance, encourage robustness under stress scenarios, and distinguish statistical belief from verified knowledge to help mitigate robo-advisory hallucinations.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T22:12:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12487v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12487v1"
+      "abstract": "Physics-informed neural networks (PINNs) constitute a flexible deep learning approach for solving partial differential equations (PDEs), which model phenomena ranging from heat conduction to quantum mechanical systems. Despite their flexibility, PINNs offer limited insight into how their predictions deviate from the true solution, hindering trust in their prediction quality. We propose a lightweight post-hoc method that addresses this gap by producing pointwise error estimates for PINN predictions, which offer a natural form of explanation for such models, identifying not just whether a prediction is wrong, but where and by how much. For linear partial differential equations, the error between a PINN approximation and the true solution satisfies the same differential operator as the original problem, but driven by the PINN's PDE residual as its source term. We solve this error equation numerically using finite difference methods requiring no knowledge of the true solution. Evaluated on several benchmark PDEs, our method yields accurate error maps at low computational cost, enabling targeted and interpretable validation of PINNs.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T16:51:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15526v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15526v1"
     },
     {
-      "id": "2603.12354v1",
-      "title": "Alternating Gradient Flow Utility: A Unified Metric for Structural Pruning and Dynamic Routing in Deep Networks",
+      "id": "2603.15522v1",
+      "title": "Quantum-Inspired Unitary Pooling for Multispectral Satellite Image Classification",
       "authors": [
-        "Tianhao Qian",
-        "Zhuoxuan Li",
-        "Jinde Cao",
-        "Xinli Shi",
-        "Hanjie Liu",
-        "Leszek Rutkowski"
+        "Georgios Maragkopoulos",
+        "Aikaterini Mandilara",
+        "Ralntion Komini",
+        "Dimitris Syvridis"
       ],
-      "abstract": "Efficient deep learning traditionally relies on static heuristics like weight magnitude or activation awareness (e.g., Wanda, RIA). While successful in unstructured settings, we observe a critical limitation when applying these metrics to the structural pruning of deep vision networks. These contemporary metrics suffer from a magnitude bias, failing to preserve critical functional pathways. To overcome this, we propose a decoupled kinetic paradigm inspired by Alternating Gradient Flow (AGF), utilizing an absolute feature-space Taylor expansion to accurately capture the network's structural \"kinetic utility\". First, we uncover a topological phase transition at extreme sparsity, where AGF successfully preserves baseline functionality and exhibits topological implicit regularization, avoiding the collapse seen in models trained from scratch. Second, transitioning to architectures without strict structural priors, we reveal a phenomenon of Sparsity Bottleneck in Vision Transformers (ViTs). Through a gradient-magnitude decoupling analysis, we discover that dynamic signals suffer from signal compression in converged models, rendering them suboptimal for real-time routing. Finally, driven by these empirical constraints, we design a hybrid routing framework that decouples AGF-guided offline structural search from online execution via zero-cost physical priors. We validate our paradigm on large-scale benchmarks: under a 75% compression stress test on ImageNet-1K, AGF effectively avoids the structural collapse where traditional metrics aggressively fall below random sampling. Furthermore, when systematically deployed for dynamic inference on ImageNet-100, our hybrid approach achieves Pareto-optimal efficiency. It reduces the usage of the heavy expert by approximately 50% (achieving an estimated overall cost of 0.92$\\times$) without sacrificing the full-model accuracy.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T18:19:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12354v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12354v1"
+      "abstract": "Multispectral satellite imagery poses significant challenges for deep learning models due to the high dimensionality of spectral data and the presence of structured correlations across channels. Recent work in quantum machine learning suggests that unitary evolutions and Hilbert-space embeddings can introduce useful inductive biases for learning. In this work, we show that several empirical advantages often attributed to quantum feature maps can be more precisely understood as consequences of geometric structure induced by unitary group actions and the associated quotient symmetries. Motivated by this observation, we introduce a fully classical pooling mechanism that maps latent features to complex projective space via a fixed-reference unitary action. This construction effectively collapses non-identifiable degrees of freedom, leading to a reduction in the dimensionality of the learned representations. Empirical results on multispectral satellite imagery show that incorporating this quantum-inspired pooling operation into a convolutional neural network improves optimization stability, accelerates convergence, and substantially reduces variance compared to standard pooling baselines. These results clarify the role of geometric structure in quantum-inspired architectures and demonstrate that their benefits can be reproduced through principled geometric inductive biases implemented entirely within classical deep learning models.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T16:47:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15522v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15522v1"
     },
     {
-      "id": "2603.12073v1",
-      "title": "A Multi-Label Temporal Convolutional Framework for Transcription Factor Binding Characterization",
+      "id": "2603.15506v1",
+      "title": "Seeking SOTA: Time-Series Forecasting Must Adopt Taxonomy-Specific Evaluation to Dispel Illusory Gains",
       "authors": [
-        "Pietro Demurtas",
-        "Ferdinando Zanchetta",
-        "Giovanni Perini",
-        "Rita Fioresi"
+        "Raeid Saqur",
+        "Christoph Bergmeir",
+        "Blanka Horvath",
+        "Daniel Schmidt",
+        "Frank Rudzicz",
+        "Terry Lyons"
       ],
-      "abstract": "Transcription factors (TFs) regulate gene expression through complex and co-operative mechanisms. While many TFs act together, the logic underlying TFs binding and their interactions is not fully understood yet. Most current approaches for TF binding site prediction focus on individual TFs and binary classification tasks, without a full analysis of the possible interactions among various TFs. In this paper we investigate DNA TF binding site recognition as a multi-label classification problem, achieving reliable predictions for multiple TFs on DNA sequences retrieved in public repositories. Our deep learning models are based on Temporal Convolutional Networks (TCNs), which are able to predict multiple TF binding profiles, capturing correlations among TFs andtheir cooperative regulatory mechanisms. Our results suggest that multi-label learning leading to reliable predictive performances can reveal biologically meaningful motifs and co-binding patterns consistent with known TF interactions, while also suggesting novel relationships and cooperation among TFs.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T15:42:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12073v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12073v1"
+      "abstract": "We argue that the current practice of evaluating AI/ML time-series forecasting models, predominantly on benchmarks characterized by strong, persistent periodicities and seasonalities, obscures real progress by overlooking the performance of efficient classical methods. We demonstrate that these \"standard\" datasets often exhibit dominant autocorrelation patterns and seasonal cycles that can be effectively captured by simpler linear or statistical models, rendering complex deep learning architectures frequently no more performant than their classical counterparts for these specific data characteristics, and raising questions as to whether any marginal improvements justify the significant increase in computational overhead and model complexity. We call on the community to (I) retire or substantially augment current benchmarks with datasets exhibiting a wider spectrum of non-stationarities, such as structural breaks, time-varying volatility, and concept drift, and less predictable dynamics drawn from diverse real-world domains, and (II) require every deep learning submission to include robust classical and simple baselines, appropriately chosen for the specific characteristics of the downstream tasks' time series. By doing so, we will help ensure that reported gains reflect genuine scientific methodological advances rather than artifacts of benchmark selection favoring models adept at learning repetitive patterns.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T16:34:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15506v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15506v1"
     },
     {
-      "id": "2603.12016v1",
-      "title": "Nyxus: A Next Generation Image Feature Extraction Library for the Big Data and AI Era",
+      "id": "2603.15440v1",
+      "title": "Music Genre Classification: A Comparative Analysis of Classical Machine Learning and Deep Learning Approaches",
       "authors": [
-        "Nicholas Schaub",
-        "Andriy Kharchenko",
-        "Hamdah Abbasi",
-        "Sameeul Samee",
-        "Hythem Sidky",
-        "Nathan Hotaling"
+        "Sachin Prajuli",
+        "Abhishek Karna",
+        "OmPrakash Dhakl"
       ],
-      "abstract": "Modern imaging instruments can produce terabytes to petabytes of data for a single experiment. The biggest barrier to processing big image datasets has been computational, where image analysis algorithms often lack the efficiency needed to process such large datasets or make tradeoffs in robustness and accuracy. Deep learning algorithms have vastly improved the accuracy of the first step in an analysis workflow (region segmentation), but the expansion of domain specific feature extraction libraries across scientific disciplines has made it difficult to compare the performance and accuracy of extracted features. To address these needs, we developed a novel feature extraction library called Nyxus. Nyxus is designed from the ground up for scalable out-of-core feature extraction for 2D and 3D image data and rigorously tested against established standards. The comprehensive feature set of Nyxus covers multiple biomedical domains including radiomics and cellular analysis, and is designed for computational scalability across CPUs and GPUs. Nyxus has been packaged to be accessible to users of various skill sets and needs: as a Python package for code developers, a command line tool, as a Napari plugin for low to no-code users or users that want to visualize results, and as an Open Container Initiative (OCI) compliant container that can be used in cloud or super-computing workflows aimed at processing large data sets. Further, Nyxus enables a new methodological approach to feature extraction allowing for programmatic tuning of many features sets for optimal computational efficiency or coverage for use in novel machine learning and deep learning applications.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T14:58:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12016v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12016v1"
+      "abstract": "Automatic music genre classification is a long-standing challenge in Music Information Retrieval (MIR); work on non-Western music traditions remains scarce. Nepali music encompasses culturally rich and acoustically diverse genres--from the call-and-response duets of Lok Dohori to the rhythmic poetry of Deuda and the distinctive melodies of Tamang Selo--that have not been addressed by existing classification systems. In this paper, we construct a novel dataset of approximately 8,000 labeled 30-second audio clips spanning eight Nepali music genres and conduct a systematic comparison of nine classification models across two paradigms. Five classical machine learning classifiers (Logistic Regression, SVM, KNN, Random Forest, and XGBoost) are trained on 51 hand-crafted audio features extracted via Librosa, while four deep learning architectures (CNN, RNN, parallel CNN-RNN, and sequential CNN followed by RNN) operate on Mel spectrograms of dimension 640 x 128. Our experiments reveal that the sequential Convolutional Recurrent Neural Network (CRNN)--in which convolutional layers feed into an LSTM--achieves the highest accuracy of 84%, substantially outperforming both the best classical models (Logistic Regression and XGBoost, both at 71%) and all other deep architectures. We provide per-class precision, recall, F1-score, confusion matrices, and ROC analysis for every model, and offer a culturally grounded interpretation of misclassification patterns that reflects genuine overlaps in Nepal's musical traditions.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T15:43:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15440v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15440v1"
     },
     {
-      "id": "2603.12012v1",
-      "title": "Deep Learning-Based Metamodeling of Nonlinear Stochastic Dynamic Systems under Parametric and Predictive Uncertainty",
+      "id": "2603.15411v1",
+      "title": "A Hybrid Modeling Framework for Crop Prediction Tasks via Dynamic Parameter Calibration and Multi-Task Learning",
       "authors": [
-        "Haimiti Atila",
-        "Seymour M. J. Spence"
+        "William Solow",
+        "Paola Pesantez-Cabrera",
+        "Markus Keller",
+        "Lav Khot",
+        "Sandhya Saisubramanian",
+        "Alan Fern"
       ],
-      "abstract": "Modeling high-dimensional, nonlinear dynamic structural systems under natural hazards presents formidable computational challenges, especially when simultaneously accounting for uncertainties in external loads and structural parameters. Studies have successfully incorporated uncertainties related to external loads from natural hazards, but few have simultaneously addressed loading and parameter uncertainties within structural systems while accounting for prediction uncertainty of neural networks. To address these gaps, three metamodeling frameworks were formulated, each coupling a feature-extraction module implemented through a multi-layer perceptron (MLP), a message-passing neural network (MPNN), or an autoencoder (AE) with a long short-term memory (LSTM) network using Monte Carlo dropout and a negative log-likelihood loss. The resulting architectures (MLP-LSTM, MPNN-LSTM, and AE-LSTM) were validated on two case studies: a multi-degree-of-freedom Bouc-Wen system and a 37-story fiber-discretized nonlinear steel moment-resisting frame, both subjected to stochastic seismic excitation and structural parameter uncertainty. All three approaches achieved low prediction errors: the MLP-LSTM yielded the most accurate results for the lower-dimensional Bouc-Wen system, whereas the MPNN-LSTM and AE-LSTM provided superior performance on the more complex steel-frame model. Moreover, a consistent correlation between predictive variance and actual error confirms the suitability of these frameworks for active-learning strategies and for assessing model confidence in structural response predictions.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T14:56:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12012v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12012v1"
+      "abstract": "Accurate prediction of crop states (e.g., phenology stages and cold hardiness) is essential for timely farm management decisions such as irrigation, fertilization, and canopy management to optimize crop yield and quality. While traditional biophysical models can be used for season-long predictions, they lack the precision required for site-specific management. Deep learning methods are a compelling alternative, but can produce biologically unrealistic predictions and require large-scale data. We propose a \\emph{hybrid modeling} approach that uses a neural network to parameterize a differentiable biophysical model and leverages multi-task learning for efficient data sharing across crop cultivars in data limited settings. By predicting the \\emph{parameters} of the biophysical model, our approach improves the prediction accuracy while preserving biological realism. Empirical evaluation using real-world and synthetic datasets demonstrates that our method improves prediction accuracy by 60\\% for phenology and 40\\% for cold hardiness compared to deployed biophysical models.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T15:21:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15411v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15411v1"
     },
     {
-      "id": "2603.11869v1",
-      "title": "On the Role of Reversible Instance Normalization",
+      "id": "2603.15363v1",
+      "title": "Deep learning and the rate of approximation by flows",
       "authors": [
-        "Gaspard Berthelier",
-        "Tahar Nabil",
-        "Etienne Le Naour",
-        "Richard Niamke",
-        "Samir Perlaza",
-        "Giovanni Neglia"
+        "Jingpu Cheng",
+        "Qianxiao Li",
+        "Ting Lin",
+        "Zuowei Shen"
       ],
-      "abstract": "Data normalization is a crucial component of deep learning models, yet its role in time series forecasting remains insufficiently understood. In this paper, we identify three central challenges for normalization in time series forecasting: temporal input distribution shift, spatial input distribution shift, and conditional output distribution shift. In this context, we revisit the widely used Reversible Instance Normalization (RevIN), by showing through ablation studies that several of its components are redundant or even detrimental. Based on these observations, we draw new perspectives to improve RevIN's robustness and generalization.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T12:40:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.11869v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.11869v1"
+      "abstract": "We investigate the dependence of the approximation capacity of deep residual networks on its depth in a continuous dynamical systems setting. This can be formulated as the general problem of quantifying the minimal time-horizon required to approximate a diffeomorphism by flows driven by a given family $\\mathcal F$ of vector fields. We show that this minimal time can be identified as a geodesic distance on a sub-Finsler manifold of diffeomorphisms, where the local geometry is characterised by a variational principle involving $\\mathcal F$. This connects the learning efficiency of target relationships to their compatibility with the learning architectural choice. Further, the results suggest that the key approximation mechanism in deep learning, namely the approximation of functions by composition or dynamics, differs in a fundamental way from linear approximation theory, where linear spaces and norm-based rate estimates are replaced by manifolds and geodesic distances.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T14:39:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15363v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15363v1"
     },
     {
-      "id": "2603.12305v1",
-      "title": "HCP-DCNet: A Hierarchical Causal Primitive Dynamic Composition Network for Self-Improving Causal Understanding",
+      "id": "2603.15079v1",
+      "title": "Interpretable Classification of Time Series Using Euler Characteristic Surfaces",
       "authors": [
-        "Ming Lei",
-        "Shufan Wu",
-        "Christophe Baehr"
+        "Salam Rabindrajit Luwang",
+        "Sushovan Majhi",
+        "Vishal Mandal",
+        "Atish J. Mitra",
+        "Md. Nurujjaman",
+        "Buddha Nath Sharma"
       ],
-      "abstract": "The ability to understand and reason about cause and effect -- encompassing interventions, counterfactuals, and underlying mechanisms -- is a cornerstone of robust artificial intelligence. While deep learning excels at pattern recognition, it fundamentally lacks a model of causality, making systems brittle under distribution shifts and unable to answer ``what-if'' questions. This paper introduces the \\emph{Hierarchical Causal Primitive Dynamic Composition Network (HCP-DCNet)}, a unified framework that bridges continuous physical dynamics with discrete symbolic causal inference. Departing from monolithic representations, HCP-DCNet decomposes causal scenes into reusable, typed \\emph{causal primitives} organized into four abstraction layers: physical, functional, event, and rule. A dual-channel routing network dynamically composes these primitives into task-specific, fully differentiable \\emph{Causal Execution Graphs (CEGs)}. Crucially, the system employs a \\emph{causal-intervention-driven meta-evolution} strategy, enabling autonomous self-improvement through a constrained Markov decision process. We establish rigorous theoretical guarantees, including type-safe composition, routing convergence, and universal approximation of causal dynamics. Extensive experiments across simulated physical and social environments demonstrate that HCP-DCNet significantly outperforms state-of-the-art baselines in causal discovery, counterfactual reasoning, and compositional generalization. This work provides a principled, scalable, and interpretable architecture for building AI systems with human-like causal abstraction and continual self-refinement capabilities.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T09:11:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12305v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12305v1"
+      "abstract": "Persistent homology (PH) -- the conventional method in topological data analysis -- is computationally expensive, requires further vectorization of its signatures before machine learning (ML) can be applied, and captures information along only the spatial axis. For time series data, we propose Euler Characteristic Surfaces (ECS) as an alternative topological signature based on the Euler characteristic ($χ$) -- a fundamental topological invariant. The ECS provides a computationally efficient, spatiotemporal, and inherently discretized feature representation that can serve as direct input to ML models. We prove a stability theorem guaranteeing that the ECS remains stable under small perturbations of the input time series. We first demonstrate that ECS effectively captures the nontrivial topological differences between the limit cycle and the strange attractor in the Rössler system. We then develop an ECS-based classification framework and apply it to five benchmark biomedical datasets (four ECG, one EEG) from the UCR/UEA archive. On $\\textit{ECG5000}$, our single-feature ECS classifier achieves $98\\%$ accuracy with $O(n+R\\cdot T)$ complexity, compared to $62\\%$ reported by a recent PH-based method. An AdaBoost extension raises accuracy to $98.6\\%$, matching the best deep learning results while retaining full interpretability. Strong results are also obtained on $\\textit{TwoLeadECG}$ ($94.1\\%$) and $\\textit{Epilepsy2}$ ($92.6\\%$).",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T10:33:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15079v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15079v1"
     },
     {
-      "id": "2603.12304v1",
-      "title": "A Geometrically-Grounded Drive for MDL-Based Optimization in Deep Learning",
+      "id": "2603.15055v1",
+      "title": "Spatio-temporal probabilistic forecast using MMAF-guided learning",
       "authors": [
-        "Ming Lei",
-        "Shufan Wu",
-        "Christophe Baehr"
+        "Leonardo Bardi",
+        "Imma Valentina Curato",
+        "Lorenzo Proietti"
       ],
-      "abstract": "This paper introduces a novel optimization framework that fundamentally integrates the Minimum Description Length (MDL) principle into the training dynamics of deep neural networks. Moving beyond its conventional role as a model selection criterion, we reformulate MDL as an active, adaptive driving force within the optimization process itself. The core of our method is a geometrically-grounded cognitive manifold whose evolution is governed by a \\textit{coupled Ricci flow}, enriched with a novel \\textit{MDL Drive} term derived from first principles. This drive, modulated by the task-loss gradient, creates a seamless harmony between data fidelity and model simplification, actively compressing the internal representation during training. We establish a comprehensive theoretical foundation, proving key properties including the monotonic decrease of description length (Theorem~\\ref{thm:convergence}), a finite number of topological phase transitions via a geometric surgery protocol (Theorems~\\ref{thm:surgery}, \\ref{thm:ultimate_fate}), and the emergence of universal critical behavior (Theorem~\\ref{thm:universality}). Furthermore, we provide a practical, computationally efficient algorithm with $O(N \\log N)$ per-iteration complexity (Theorem~\\ref{thm:complexity}), alongside guarantees for numerical stability (Theorem~\\ref{thm:stability}) and exponential convergence under convexity assumptions (Theorem~\\ref{thm:convergence_rate}). Empirical validation on synthetic regression and classification tasks confirms the theoretical predictions, demonstrating the algorithm's efficacy in achieving robust generalization and autonomous model simplification. This work provides a principled path toward more autonomous, generalizable, and interpretable AI systems by unifying geometric deep learning with information-theoretic principles.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T08:31:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12304v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12304v1"
+      "abstract": "We employ stochastic feed-forward neural networks with Gaussian-distributed weights to determine a probabilistic forecast for spatio-temporal raster datasets. The networks are trained using MMAF-guided learning, a generalized Bayesian methodology in which the observed data are preprocessed using an embedding designed to produce a low-dimensional representation that captures their dependence and causal structure. The design of the embedding is theory-guided by the assumption that a spatio-temporal Ornstein-Uhlenbeck process with finite second-order moments generates the observed data. The trained networks, in inference mode, are then used to generate ensemble forecasts by applying different initial conditions at different horizons. Experiments conducted on both synthetic and real data demonstrate that our forecasts remain calibrated across multiple time horizons. Moreover, we show that on such data, simple feed-forward architectures can achieve performance comparable to, and in some cases better than, convolutional or diffusion deep learning architectures used in probabilistic forecasting tasks.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T10:07:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15055v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15055v1"
     },
     {
-      "id": "2603.11475v1",
-      "title": "Deep Learning Network-Temporal Models For Traffic Prediction",
+      "id": "2603.15002v1",
+      "title": "MONET: Modeling and Optimization of neural NEtwork Training from Edge to Data Centers",
       "authors": [
-        "Yufeng Xin",
-        "Ethan Fan"
+        "Jérémy Morlier",
+        "Robin Geens",
+        "Stef Cuyckens",
+        "Arne Symons",
+        "Marian Verhelst",
+        "Vincent Gripon",
+        "Mathieu Léonardon"
       ],
-      "abstract": "Time series analysis is critical for emerging net- work intelligent control and management functions. However, existing statistical-based and shallow machine learning models have shown limited prediction capabilities on multivariate time series. The intricate topological interdependency and complex temporal patterns in network data demand new model approaches. In this paper, based on a systematic multivariate time series model study, we present two deep learning models aiming for learning both temporal patterns and network topological correlations at the same time: a customized network-temporal graph attention network (GAT) model and a fine-tuned multi-modal large language model (LLM) with a clustering overture. Both models are studied against an LSTM model that already outperforms the statistical methods. Through extensive training and performance studies on a real-world network dataset, the LLM-based model demonstrates superior overall prediction and generalization performance, while the GAT model shows its strength in reducing prediction variance across the time series and horizons. More detailed analysis also reveals important insights into correlation variability and prediction distribution discrepancies over time series and different prediction horizons.",
-      "published": "March 12, 2026",
-      "published_raw": "2026-03-12T02:56:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.11475v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.11475v1"
+      "abstract": "While hardware-software co-design has significantly improved the efficiency of neural network inference, modeling the training phase remains a critical yet underexplored challenge. Training workloads impose distinct constraints, particularly regarding memory footprint and backpropagation complexity, which existing inference-focused tools fail to capture. This paper introduces MONET, a framework designed to model the training of neural networks on heterogeneous dataflow accelerators. MONET builds upon Stream, an experimentally verified framework that that models the inference of neural networks on heterogeneous dataflow accelerators with layer fusion. Using MONET, we explore the design space of ResNet-18 and a small GPT-2, demonstrating the framework's capability to model training workflows and find better hardware architectures. We then further examine problems that become more complex in neural network training due to the larger design space, such as determining the best layer-fusion configuration. Additionally, we use our framework to find interesting trade-offs in activation checkpointing, with the help of a genetic algorithm. Our findings highlight the importance of a holistic approach to hardware-software co-design for scalable and efficient deep learning deployment.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T09:06:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.15002v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15002v1"
     },
     {
-      "id": "2603.11316v1",
-      "title": "MRI2Qmap: multi-parametric quantitative mapping with MRI-driven denoising priors",
+      "id": "2603.14917v1",
+      "title": "Spectrogram features for audio and speech analysis",
       "authors": [
-        "Mohammad Golbabaee",
-        "Matteo Cencini",
-        "Carolin Pirkl",
-        "Marion Menzel",
-        "Michela Tosetti",
-        "Bjoern Menze"
+        "Ian McLoughlin",
+        "Lam Pham",
+        "Yan Song",
+        "Xiaoxiao Miao",
+        "Huy Phan",
+        "Pengfei Cai",
+        "Qing Gu",
+        "Jiang Nan",
+        "Haoyu Song",
+        "Donny Soh"
       ],
-      "abstract": "Magnetic Resonance Fingerprinting (MRF) and other highly accelerated transient-state parameter mapping techniques enable simultaneous quantification of multiple tissue properties, but often suffer from aliasing artifacts due to compressed sampling. Incorporating spatial image priors can mitigate these artifacts, and deep learning has shown strong potential when large training datasets are available. However, extending this paradigm to MRF-type sequences remains challenging due to the scarcity of quantitative imaging data for training. Can this limitation be overcome by leveraging sources of training data from clinically-routine weighted MRI images? To this end, we introduce MRI2Qmap, a plug-and-play quantitative reconstruction framework that integrates the physical acquisition model with priors learned from deep denoising autoencoders pretrained on large multimodal weighted-MRI datasets. MRI2Qmap demonstrates that spatial-domain structural priors learned from independently acquired datasets of routine weighted-MRI images can be effectively used for quantitative MRI reconstruction. The proposed method is validated on highly accelerated 3D whole-brain MRF data from both in-vivo and simulated acquisitions, achieving competitive or superior performance relative to existing baselines without requiring ground-truth quantitative imaging data for training. By decoupling quantitative reconstruction from the need for ground-truth MRF training data, this framework points toward a scalable paradigm for quantitative MRI that can capitalize on the large and growing repositories of routine clinical MRI.",
-      "published": "March 11, 2026",
-      "published_raw": "2026-03-11T21:23:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.11316v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.11316v1"
+      "abstract": "Spectrogram-based representations have grown to dominate the feature space for deep learning audio analysis systems, and are often adopted for speech analysis also. Initially, the primary motivator for spectrogram-based representations was their ability to present sound as a two dimensional signal in the time-frequency plane, which not only provides an interpretable physical basis for analysing sound, but also unlocks the use of a wide range of machine learning techniques such as convolutional neural networks, that had been developed for image processing. A spectrogram is a matrix characterised by the resolution and span of its two dimensions, as well as by the representation and scaling of each element. Many possibilities for these three characteristics have been explored by researchers across numerous application areas, with different settings showing affinity for various tasks. This paper reviews the use of spectrogram-based representations and surveys the state-of-the-art to question how front-end feature representation choice allies with back-end classifier architecture for different tasks.",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T07:24:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.14917v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.14917v1"
     },
     {
-      "id": "2603.12296v1",
-      "title": "Synthetic Data Generation for Brain-Computer Interfaces: Overview, Benchmarking, and Future Directions",
+      "id": "2603.14870v1",
+      "title": "IgPose: A Generative Data-Augmented Pipeline for Robust Immunoglobulin-Antigen Binding Prediction",
       "authors": [
-        "Ziwei Wang",
-        "Zhentao He",
-        "Xingyi He",
-        "Hongbin Wang",
-        "Tianwang Jia",
-        "Jingwei Luo",
-        "Siyang Li",
-        "Xiaoqing Chen",
-        "Dongrui Wu"
+        "Tien-Cuong Bui",
+        "Injae Chung",
+        "Wonjun Lee",
+        "Junsu Ko",
+        "Juyong Lee"
       ],
-      "abstract": "Deep learning has achieved transformative performance across diverse domains, largely driven by the large-scale, high-quality training data. In contrast, the development of brain-computer interfaces (BCIs) is fundamentally constrained by the limited, heterogeneous, and privacy-sensitive neural recordings. Generating synthetic yet physiologically plausible brain signals has therefore emerged as a compelling way to mitigate data scarcity and enhance model capacity. This survey provides a comprehensive review of brain signal generation for BCIs, covering methodological taxonomies, benchmark experiments, evaluation metrics, and key applications. We systematically categorize existing generative algorithms into four types: knowledge-based, feature-based, model-based, and translation-based approaches. Furthermore, we benchmark existing brain signal generation approaches across four representative BCI paradigms to provide an objective performance comparison. Finally, we discuss the potentials and challenges of current generation approaches and prospect future research on accurate, data-efficient, and privacy-aware BCI systems. The benchmark codebase is publicized at https://github.com/wzwvv/DG4BCI.",
-      "published": "March 11, 2026",
-      "published_raw": "2026-03-11T20:36:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.12296v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.12296v1"
+      "abstract": "Predicting immunoglobulin-antigen (Ig-Ag) binding remains a significant challenge due to the paucity of experimentally-resolved complexes and the limited accuracy of de novo Ig structure prediction. We introduce IgPose, a generalizable framework for Ig-Ag pose identification and scoring, built on a generative data-augmentation pipeline. To mitigate data scarcity, we constructed the Structural Immunoglobulin Decoy Database (SIDD), a comprehensive repository of high-fidelity synthetic decoys. IgPose integrates equivariant graph neural networks, ESM-2 embeddings, and gated recurrent units to synergistically capture both geometric and evolutionary features. We implemented interface-focused k-hop sampling with biologically guided pooling to enhance generalization across diverse interfaces. The framework comprises two sub-networks--IgPoseClassifier for binding pose discrimination and IgPoseScore for DockQ score estimation--and achieves robust performance on curated internal test sets and the CASP-16 benchmark compared to physics and deep learning baselines. IgPose serves as a versatile computational tool for high-throughput antibody discovery pipelines by providing accurate pose filtering and ranking. IgPose is available on GitHub (https://github.com/arontier/igpose).",
+      "published": "March 16, 2026",
+      "published_raw": "2026-03-16T06:16:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.14870v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.14870v1"
     }
   ]
 }
