@@ -1,7 +1,182 @@
 {
-  "last_updated": "2026-03-18T01:06:53.289989",
+  "last_updated": "2026-03-19T01:05:56.663884",
   "count": 20,
   "papers": [
+    {
+      "id": "2603.17523v1",
+      "title": "Translation Invariance of Neural Operators for the FitzHugh-Nagumo Model",
+      "authors": [
+        "Luca Pellegrini"
+      ],
+      "abstract": "Neural Operators (NOs) are a powerful deep learning framework designed to learn the solution operator that arise from partial differential equations. This study investigates NOs ability to capture the stiff spatio-temporal dynamics of the FitzHugh-Nagumo model, which describes excitable cells. A key contribution of this work is evaluating the translation invariance using a novel training strategy. NOs are trained using an applied current with varying spatial locations and intensities at a fixed time, and the test set introduces a more challenging out-of-distribution scenario in which the applied current is translated in both time and space. This approach significantly reduces the computational cost of dataset generation. Moreover we benchmark seven NOs architectures: Convolutional Neural Operators (CNOs), Deep Operator Networks (DONs), DONs with CNN encoder (DONs-CNN), Proper Orthogonal Decomposition DONs (POD-DONs), Fourier Neural Operators (FNOs), Tucker Tensorized FNOs (TFNOs), Localized Neural Operators (LocalNOs). We evaluated these models based on training and test accuracy, efficiency, and inference speed. Our results reveal that CNOs performs well on translated test dynamics. However, they require higher training costs, though their performance on the training set is similar to that of the other considered architectures. In contrast, FNOs achieve the lowest training error, but have the highest inference time. Regarding the translated dynamics, FNOs and their variants provide less accurate predictions. Finally, DONs and their variants demonstrate high efficiency in both training and inference, however they do not generalize well to the test set. These findings highlight the current capabilities and limitations of NOs in capturing complex ionic model dynamics and provide a comprehensive benchmark including their application to scenarios involving translated dynamics.",
+      "published": "March 18, 2026",
+      "published_raw": "2026-03-18T09:28:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.17523v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.17523v1"
+    },
+    {
+      "id": "2603.17366v1",
+      "title": "Low-dimensional geometry learning for turbulence prediction in optimized stellarators",
+      "authors": [
+        "Xishuo Wei",
+        "Handi Huang",
+        "Haotian Chen",
+        "Hongxuan Zhu",
+        "Zhe Bai",
+        "Samuel Williams",
+        "Zhihong Lin"
+      ],
+      "abstract": "The optimized stellarator is an attractive concept for which the averaged particle radial drift is zero, and the single particle loss can be significantly reduced. But for the reactor design, global physics such as turbulent transport also need to be optimized besides the confined single particle orbit, or properties estimated using local estimations and heuristic formulations. The first-principle global transport code is too computationally expensive to integrate into the optimization process. The fast surrogate global transport model based on machine learning is a good alternative choice, but the amount of data required to train the surrogate model is numerous due to the high degree-of-freedom of the stellarator design. The work shows that the stellarator design with quasi-helically(QH) symmetric geometry is approximately distributed in a low dimensional latent space, which can be explicitly found by deep learning. This discovery makes it possible to generate global gyrokinetic simulation data for training surrogate models to directly optimize the stellarator geometry for turbulent transport, energetic particle instability, and MHD modes. Using the low dimensional latent space and data analysis methods, the relation between linear zonal residues and axis-excursion is found, providing a simple guide to optimize low turbulent transport QH stellarators.",
+      "published": "March 18, 2026",
+      "published_raw": "2026-03-18T05:14:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.17366v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.17366v1"
+    },
+    {
+      "id": "2603.17365v1",
+      "title": "Variational Kernel Design for Internal Noise: Gaussian Chaos Noise, Representation Compatibility, and Reliable Deep Learning",
+      "authors": [
+        "Ziran Liu"
+      ],
+      "abstract": "Internal noise in deep networks is usually inherited from heuristics such as dropout, hard masking, or additive perturbation. We ask two questions: what correlation geometry should internal noise have, and is the implemented perturbation compatible with the representations it acts on? We answer these questions through Variational Kernel Design (VKD), a framework in which a noise mechanism is specified by a law family, a correlation kernel, and an injection operator, and is derived from learning desiderata. In a solved spatial subfamily, a quadratic maximum-entropy principle over latent log-fields yields a Gaussian optimizer with precision given by the Dirichlet Laplacian, so the induced geometry is the Dirichlet Green kernel. Wick normalization then gives a canonical positive mean-one gate, Gaussian Chaos Noise (GCh). For the sample-wise gate used in practice, we prove exact Gaussian control of pairwise log-ratio deformation, margin-sensitive ranking stability, and an exact expected intrinsic roughness budget; hard binary masks instead induce singular or coherence-amplified distortions on positive coherent representations. On ImageNet and ImageNet-C, GCh consistently improves calibration and under shift also improves NLL at competitive accuracy.",
+      "published": "March 18, 2026",
+      "published_raw": "2026-03-18T05:12:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.17365v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.17365v1"
+    },
+    {
+      "id": "2603.17248v1",
+      "title": "Pathology-Aware Multi-View Contrastive Learning for Patient-Independent ECG Reconstruction",
+      "authors": [
+        "Youssef Youssef",
+        "Jitin Singla"
+      ],
+      "abstract": "Reconstructing a 12-lead electrocardiogram (ECG) from a reduced lead set is an ill-posed inverse problem due to anatomical variability. Standard deep learning methods often ignore underlying cardiac pathology losing vital morphology in precordial leads. We propose Pathology-Aware Multi-View Contrastive Learning, a framework that regularizes the latent space through a pathological manifold. Our architecture integrates high-fidelity time-domain waveforms with pathology-aware embeddings learned via supervised contrastive alignment. By maximizing mutual information between latent representations and clinical labels, the framework learns to filter anatomical \"nuisance\" variables. On the PTB-XL dataset, our method achieves approx. 76\\% reduction in RMSE compared to state-of-the-art model in patient-independent setting. Cross-dataset evaluation on the PTB Diagnostic Database confirms superior generalization, bridging the gap between hardware portability and diagnostic-grade reconstruction.",
+      "published": "March 18, 2026",
+      "published_raw": "2026-03-18T01:06:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.17248v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.17248v1"
+    },
+    {
+      "id": "2603.17219v1",
+      "title": "SA-CycleGAN-2.5D: Self-Attention CycleGAN with Tri-Planar Context for Multi-Site MRI Harmonization",
+      "authors": [
+        "Ishrith Gowda",
+        "Chunwei Liu"
+      ],
+      "abstract": "Multi-site neuroimaging analysis is fundamentally confounded by scanner-induced covariate shifts, where the marginal distribution of voxel intensities $P(\\mathbf{x})$ varies non-linearly across acquisition protocols while the conditional anatomy $P(\\mathbf{y}|\\mathbf{x})$ remains constant. This is particularly detrimental to radiomic reproducibility, where acquisition variance often exceeds biological pathology variance. Existing statistical harmonization methods (e.g., ComBat) operate in feature space, precluding spatial downstream tasks, while standard deep learning approaches are theoretically bounded by local effective receptive fields (ERF), failing to model the global intensity correlations characteristic of field-strength bias. We propose SA-CycleGAN-2.5D, a domain adaptation framework motivated by the $HΔH$-divergence bound of Ben-David et al., integrating three architectural innovations: (1) A 2.5D tri-planar manifold injection preserving through-plane gradients $\\nabla_z$ at $O(HW)$ complexity; (2) A U-ResNet generator with dense voxel-to-voxel self-attention, surpassing the $O(\\sqrt{L})$ receptive field limit of CNNs to model global scanner field biases; and (3) A spectrally-normalized discriminator constraining the Lipschitz constant ($K_D \\le 1$) for stable adversarial optimization. Evaluated on 654 glioma patients across two institutional domains (BraTS and UPenn-GBM), our method reduces Maximum Mean Discrepancy (MMD) by 99.1% ($1.729 \\to 0.015$) and degrades domain classifier accuracy to near-chance (59.7%). Ablation confirms that global attention is statistically essential (Cohen's $d = 1.32$, $p < 0.001$) for the harder heterogeneous-to-homogeneous translation direction. By bridging 2D efficiency and 3D consistency, our framework yields voxel-level harmonized images that preserve tumor pathophysiology, enabling reproducible multi-center radiomic analysis.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T23:49:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.17219v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.17219v1"
+    },
+    {
+      "id": "2603.17191v1",
+      "title": "Tabular LLMs for Interpretable Few-Shot Alzheimer's Disease Prediction with Multimodal Biomedical Data",
+      "authors": [
+        "Sophie Kearney",
+        "Shu Yang",
+        "Zixuan Wen",
+        "Weimin Lyu",
+        "Bojian Hou",
+        "Duy Duong-Tran",
+        "Tianlong Chen",
+        "Jason H. Moore",
+        "Marylyn D. Ritchie",
+        "Chao Chen",
+        "Li Shen"
+      ],
+      "abstract": "Accurate diagnosis of Alzheimer's disease (AD) requires handling tabular biomarker data, yet such data are often small and incomplete, where deep learning models frequently fail to outperform classical methods. Pretrained large language models (LLMs) offer few-shot generalization, structured reasoning, and interpretable outputs, providing a powerful paradigm shift for clinical prediction. We propose TAP-GPT Tabular Alzheimer's Prediction GPT, a domain-adapted tabular LLM framework built on TableGPT2 and fine-tuned for few-shot AD classification using tabular prompts rather than plain texts. We evaluate TAP-GPT across four ADNI-derived datasets, including QT-PAD biomarkers and region-level structural MRI, amyloid PET, and tau PET for binary AD classification. Across multimodal and unimodal settings, TAP-GPT improves upon its backbone models and outperforms traditional machine learning baselines in the few-shot setting while remaining competitive with state-of-the-art general-purpose LLMs. We show that feature selection mitigates degradation in high-dimensional inputs and that TAP-GPT maintains stable performance under simulated and real-world missingness without imputation. Additionally, TAP-GPT produces structured, modality-aware reasoning aligned with established AD biology and shows greater stability under self-reflection, supporting its use in iterative multi-agent systems. To our knowledge, this is the first systematic application of a tabular-specialized LLM to multimodal biomarker-based AD prediction, demonstrating that such pretrained models can effectively address structured clinical prediction tasks and laying the foundation for tabular LLM-driven multi-agent clinical decision-support systems. The source code is publicly available on GitHub: https://github.com/sophie-kearney/TAP-GPT.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T22:43:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.17191v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.17191v1"
+    },
+    {
+      "id": "2603.16757v1",
+      "title": "pADAM: A Plug-and-Play All-in-One Diffusion Architecture for Multi-Physics Learning",
+      "authors": [
+        "Amirhossein Mollaali",
+        "Bongseok Kim",
+        "Christian Moya",
+        "Guang Lin"
+      ],
+      "abstract": "Generalizing across disparate physical laws remains a fundamental challenge for artificial intelligence in science. Existing deep-learning solvers are largely confined to single-equation settings, limiting transfer across physical regimes and inference tasks. Here we introduce pADAM, a unified generative framework that learns a shared probabilistic prior across heterogeneous partial differential equation families. Through a learned joint distribution of system states and, where applicable, physical parameters, pADAM supports forward prediction and inverse inference within a single architecture without retraining. Across benchmarks ranging from scalar diffusion to nonlinear Navier--Stokes equations, pADAM achieves accurate inference even under sparse observations. Combined with conformal prediction, it also provides reliable uncertainty quantification with coverage guarantees. In addition, pADAM performs probabilistic model selection from only two sparse snapshots, identifying governing laws through its learned generative representation. These results highlight the potential of generative multi-physics modeling for unified and uncertainty-aware scientific inference.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T16:37:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16757v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16757v1"
+    },
+    {
+      "id": "2603.16725v1",
+      "title": "Machine Learning Reconstruction of High-Dimensional Electronic Structure from Angle-Resolved Photoemission Spectroscopy",
+      "authors": [
+        "Yu Zhang",
+        "Yong Zhong",
+        "Nhat Huy Tran",
+        "Shuyi Li",
+        "Kyuho Lee",
+        "Yonghun Lee",
+        "Tiffany C. Wang",
+        "Harold Y. Hwang",
+        "Zhi-Xun Shen",
+        "Chunjing Jia"
+      ],
+      "abstract": "The emergent behavior of quantum materials is governed by their electronic structure, which can be experimentally probed by photoemission spectroscopy techniques that generate a four-dimensional dataset of energy and momentum. However, the quantitative extraction of Hamiltonian parameters from these high-dimensional spectra remains a significant challenge, currently relying on labor-intensive, expert-dependent analysis rather than standardized workflows. Here, we introduce a deep learning framework based on implicit neural representations to accelerate the retrieval of Hamiltonian parameters in two types of transition-metal oxides: perovskite nickelates and manganites. Our approach outperforms traditional analytical fitting procedures, yielding superior agreement with experimental Fermi surface topologies and energy-momentum dispersions. This work highlights the potential of deep learning tools to bridge the gap between theory and experiment, paving the way for high-throughput, autonomous discovery pipelines in quantum materials.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T16:10:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16725v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16725v1"
+    },
+    {
+      "id": "2603.16569v1",
+      "title": "Deep Tabular Representation Corrector",
+      "authors": [
+        "Hangting Ye",
+        "Peng Wang",
+        "Wei Fan",
+        "Xiaozhuang Song",
+        "He Zhao",
+        "Dandan Gun",
+        "Yi Chang"
+      ],
+      "abstract": "Tabular data have been playing a mostly important role in diverse real-world fields, such as healthcare, engineering, finance, etc. The recent success of deep learning has fostered many deep networks (e.g., Transformer, ResNet) based tabular learning methods. Generally, existing deep tabular machine learning methods are along with the two paradigms, i.e., in-learning and pre-learning. In-learning methods need to train networks from scratch or impose extra constraints to regulate the representations which nonetheless train multiple tasks simultaneously and make learning more difficult, while pre-learning methods design several pretext tasks for pre-training and then conduct task-specific fine-tuning, which however need much extra training effort with prior knowledge. In this paper, we introduce a novel deep Tabular Representation Corrector, TRC, to enhance any trained deep tabular model's representations without altering its parameters in a model-agnostic manner. Specifically, targeting the representation shift and representation redundancy that hinder prediction, we propose two tasks, i.e., (i) Tabular Representation Re-estimation, that involves training a shift estimator to calculate the inherent shift of tabular representations to subsequently mitigate it, thereby re-estimating the representations and (ii) Tabular Space Mapping, that transforms the above re-estimated representations into a light-embedding vector space via a coordinate estimator while preserves crucial predictive information to minimize redundancy. The two tasks jointly enhance the representations of deep tabular models without touching on the original models thus enjoying high efficiency. Finally, we conduct extensive experiments on state-of-the-art deep tabular machine learning models coupled with TRC on various tabular benchmarks which have shown consistent superiority.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T14:26:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16569v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16569v1"
+    },
+    {
+      "id": "2603.16976v1",
+      "title": "Implementation of tangent linear and adjoint models for neural networks based on a compiler library tool",
+      "authors": [
+        "Sa Xiao",
+        "Hao Jing",
+        "Honglu Sun",
+        "Haoyu Li"
+      ],
+      "abstract": "This paper presents TorchNWP, a compilation library tool for the efficient coupling of artificial intelligence components and traditional numerical models. It aims to address the issues of poor cross-language compatibility, insufficient coupling flexibility, and low data transfer efficiency between operational numerical models developed in Fortran and Python-based deep learning frameworks. Based on LibTorch, it optimizes and designs a unified application-layer calling interface, converts deep learning models under the PyTorch framework into a static binary format, and provides C/C++ interfaces. Then, using hybrid Fortran/C/C++ programming, it enables the deployment of deep learning models within numerical models. Integrating TorchNWP into a numerical model only requires compiling it into a callable link library and linking it during the compilation and linking phase to generate the executable. On this basis, tangent linear and adjoint model based on neural networks are implemented at the C/C++ level, which can shield the internal structure of neural network models and simplify the construction process of four-dimensional variational data assimilation systems. Meanwhile, it supports deployment on heterogeneous platforms, is compatible with mainstream neural network models, and enables mapping of different parallel granularities and efficient parallel execution. Using this tool requires minimal code modifications to the original numerical model, thus reducing coupling costs. It can be efficiently integrated into numerical weather prediction models such as CMA-GFS and MCV, and has been applied to the coupling of deep learning-based physical parameterization schemes (e.g., radiation, non-orographic gravity wave drag) and the development of their tangent linear and adjoint models, significantly improving the accuracy and efficiency of numerical weather prediction.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T13:11:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16976v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16976v1"
+    },
+    {
+      "id": "2603.16973v1",
+      "title": "Hybrid Classical-Quantum Transfer Learning with Noisy Quantum Circuits",
+      "authors": [
+        "D. Martín-Pérez",
+        "F. Rodríguez-Díaz",
+        "D. Gutiérrez-Avilés",
+        "A. Troncoso",
+        "F. Martínez-Álvarez"
+      ],
+      "abstract": "Quantum transfer learning combines pretrained classical deep learning models with quantum circuits to reuse expressive feature representations while limiting the number of trainable parameters. In this work, we introduce a family of compact quantum transfer learning architectures that attach variational quantum classifiers to frozen convolutional backbones for image classification. We instantiate and evaluate several classical-quantum hybrid models implemented in PennyLane and Qiskit, and systematically compare them with a classical transfer-learning baseline across heterogeneous image datasets. To ensure a realistic assessment, we evaluate all approaches under both ideal simulation and noisy emulation using noise models calibrated from IBM quantum hardware specifications, as well as on real IBM quantum hardware. Experimental results show that the proposed quantum transfer learning architectures achieve competitive and, in several cases, superior accuracy while consistently reducing training time and energy consumption relative to the classical baseline. Among the evaluated approaches, PennyLane-based implementations provide the most favorable trade-off between accuracy and computational efficiency, suggesting that hybrid quantum transfer learning can offer practical benefits in realistic NISQ era settings when feature extraction remains classical.",
+      "published": "March 17, 2026",
+      "published_raw": "2026-03-17T12:28:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.16973v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.16973v1"
+    },
     {
       "id": "2603.16376v1",
       "title": "Prior-Informed Neural Network Initialization: A Spectral Approach for Function Parameterizing Architectures",
@@ -118,7 +293,7 @@
       "arxiv_link": "http://arxiv.org/abs/2603.15914v1"
     },
     {
-      "id": "2603.15797v1",
+      "id": "2603.15797v2",
       "title": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoning",
       "authors": [
         "Hao Wu",
@@ -135,8 +310,8 @@
       "abstract": "Large Language Models (LLMs) have demonstrated exceptional logical reasoning capabilities but frequently struggle with the continuous spatiotemporal dynamics governed by Partial Differential Equations (PDEs), often resulting in non-physical hallucinations. Existing approaches typically resort to costly, domain-specific fine-tuning, which severely limits cross-domain generalization and interpretability. To bridge this gap, we propose OMNIFLOW, a neuro-symbolic architecture designed to ground frozen multimodal LLMs in fundamental physical laws without requiring domain-specific parameter updates. OMNIFLOW introduces a novel \\textit{Semantic-Symbolic Alignment} mechanism that projects high-dimensional flow tensors into topological linguistic descriptors, enabling the model to perceive physical structures rather than raw pixel values. Furthermore, we construct a Physics-Guided Chain-of-Thought (PG-CoT) workflow that orchestrates reasoning through dynamic constraint injection (e.g., mass conservation) and iterative reflexive verification. We evaluate OMNIFLOW on a comprehensive benchmark spanning microscopic turbulence, theoretical Navier-Stokes equations, and macroscopic global weather forecasting. Empirical results demonstrate that OMNIFLOW significantly outperforms traditional deep learning baselines in zero-shot generalization and few-shot adaptation tasks. Crucially, it offers transparent, physically consistent reasoning reports, marking a paradigm shift from black-box fitting to interpretable scientific reasoning.",
       "published": "March 16, 2026",
       "published_raw": "2026-03-16T18:29:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15797v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15797v1"
+      "pdf_link": "http://arxiv.org/pdf/2603.15797v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.15797v2"
     },
     {
       "id": "2603.15541v1",
@@ -150,187 +325,6 @@
       "published_raw": "2026-03-16T17:06:34Z",
       "pdf_link": "http://arxiv.org/pdf/2603.15541v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2603.15541v1"
-    },
-    {
-      "id": "2603.15526v1",
-      "title": "Building Trust in PINNs: Error Estimation through Finite Difference Methods",
-      "authors": [
-        "Aleksander Krasowski",
-        "René P. Klausen",
-        "Aycan Celik",
-        "Sebastian Lapuschkin",
-        "Wojciech Samek",
-        "Jonas Naujoks"
-      ],
-      "abstract": "Physics-informed neural networks (PINNs) constitute a flexible deep learning approach for solving partial differential equations (PDEs), which model phenomena ranging from heat conduction to quantum mechanical systems. Despite their flexibility, PINNs offer limited insight into how their predictions deviate from the true solution, hindering trust in their prediction quality. We propose a lightweight post-hoc method that addresses this gap by producing pointwise error estimates for PINN predictions, which offer a natural form of explanation for such models, identifying not just whether a prediction is wrong, but where and by how much. For linear partial differential equations, the error between a PINN approximation and the true solution satisfies the same differential operator as the original problem, but driven by the PINN's PDE residual as its source term. We solve this error equation numerically using finite difference methods requiring no knowledge of the true solution. Evaluated on several benchmark PDEs, our method yields accurate error maps at low computational cost, enabling targeted and interpretable validation of PINNs.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T16:51:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15526v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15526v1"
-    },
-    {
-      "id": "2603.15522v1",
-      "title": "Quantum-Inspired Unitary Pooling for Multispectral Satellite Image Classification",
-      "authors": [
-        "Georgios Maragkopoulos",
-        "Aikaterini Mandilara",
-        "Ralntion Komini",
-        "Dimitris Syvridis"
-      ],
-      "abstract": "Multispectral satellite imagery poses significant challenges for deep learning models due to the high dimensionality of spectral data and the presence of structured correlations across channels. Recent work in quantum machine learning suggests that unitary evolutions and Hilbert-space embeddings can introduce useful inductive biases for learning. In this work, we show that several empirical advantages often attributed to quantum feature maps can be more precisely understood as consequences of geometric structure induced by unitary group actions and the associated quotient symmetries. Motivated by this observation, we introduce a fully classical pooling mechanism that maps latent features to complex projective space via a fixed-reference unitary action. This construction effectively collapses non-identifiable degrees of freedom, leading to a reduction in the dimensionality of the learned representations. Empirical results on multispectral satellite imagery show that incorporating this quantum-inspired pooling operation into a convolutional neural network improves optimization stability, accelerates convergence, and substantially reduces variance compared to standard pooling baselines. These results clarify the role of geometric structure in quantum-inspired architectures and demonstrate that their benefits can be reproduced through principled geometric inductive biases implemented entirely within classical deep learning models.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T16:47:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15522v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15522v1"
-    },
-    {
-      "id": "2603.15506v1",
-      "title": "Seeking SOTA: Time-Series Forecasting Must Adopt Taxonomy-Specific Evaluation to Dispel Illusory Gains",
-      "authors": [
-        "Raeid Saqur",
-        "Christoph Bergmeir",
-        "Blanka Horvath",
-        "Daniel Schmidt",
-        "Frank Rudzicz",
-        "Terry Lyons"
-      ],
-      "abstract": "We argue that the current practice of evaluating AI/ML time-series forecasting models, predominantly on benchmarks characterized by strong, persistent periodicities and seasonalities, obscures real progress by overlooking the performance of efficient classical methods. We demonstrate that these \"standard\" datasets often exhibit dominant autocorrelation patterns and seasonal cycles that can be effectively captured by simpler linear or statistical models, rendering complex deep learning architectures frequently no more performant than their classical counterparts for these specific data characteristics, and raising questions as to whether any marginal improvements justify the significant increase in computational overhead and model complexity. We call on the community to (I) retire or substantially augment current benchmarks with datasets exhibiting a wider spectrum of non-stationarities, such as structural breaks, time-varying volatility, and concept drift, and less predictable dynamics drawn from diverse real-world domains, and (II) require every deep learning submission to include robust classical and simple baselines, appropriately chosen for the specific characteristics of the downstream tasks' time series. By doing so, we will help ensure that reported gains reflect genuine scientific methodological advances rather than artifacts of benchmark selection favoring models adept at learning repetitive patterns.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T16:34:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15506v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15506v1"
-    },
-    {
-      "id": "2603.15440v1",
-      "title": "Music Genre Classification: A Comparative Analysis of Classical Machine Learning and Deep Learning Approaches",
-      "authors": [
-        "Sachin Prajuli",
-        "Abhishek Karna",
-        "OmPrakash Dhakl"
-      ],
-      "abstract": "Automatic music genre classification is a long-standing challenge in Music Information Retrieval (MIR); work on non-Western music traditions remains scarce. Nepali music encompasses culturally rich and acoustically diverse genres--from the call-and-response duets of Lok Dohori to the rhythmic poetry of Deuda and the distinctive melodies of Tamang Selo--that have not been addressed by existing classification systems. In this paper, we construct a novel dataset of approximately 8,000 labeled 30-second audio clips spanning eight Nepali music genres and conduct a systematic comparison of nine classification models across two paradigms. Five classical machine learning classifiers (Logistic Regression, SVM, KNN, Random Forest, and XGBoost) are trained on 51 hand-crafted audio features extracted via Librosa, while four deep learning architectures (CNN, RNN, parallel CNN-RNN, and sequential CNN followed by RNN) operate on Mel spectrograms of dimension 640 x 128. Our experiments reveal that the sequential Convolutional Recurrent Neural Network (CRNN)--in which convolutional layers feed into an LSTM--achieves the highest accuracy of 84%, substantially outperforming both the best classical models (Logistic Regression and XGBoost, both at 71%) and all other deep architectures. We provide per-class precision, recall, F1-score, confusion matrices, and ROC analysis for every model, and offer a culturally grounded interpretation of misclassification patterns that reflects genuine overlaps in Nepal's musical traditions.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T15:43:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15440v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15440v1"
-    },
-    {
-      "id": "2603.15411v1",
-      "title": "A Hybrid Modeling Framework for Crop Prediction Tasks via Dynamic Parameter Calibration and Multi-Task Learning",
-      "authors": [
-        "William Solow",
-        "Paola Pesantez-Cabrera",
-        "Markus Keller",
-        "Lav Khot",
-        "Sandhya Saisubramanian",
-        "Alan Fern"
-      ],
-      "abstract": "Accurate prediction of crop states (e.g., phenology stages and cold hardiness) is essential for timely farm management decisions such as irrigation, fertilization, and canopy management to optimize crop yield and quality. While traditional biophysical models can be used for season-long predictions, they lack the precision required for site-specific management. Deep learning methods are a compelling alternative, but can produce biologically unrealistic predictions and require large-scale data. We propose a \\emph{hybrid modeling} approach that uses a neural network to parameterize a differentiable biophysical model and leverages multi-task learning for efficient data sharing across crop cultivars in data limited settings. By predicting the \\emph{parameters} of the biophysical model, our approach improves the prediction accuracy while preserving biological realism. Empirical evaluation using real-world and synthetic datasets demonstrates that our method improves prediction accuracy by 60\\% for phenology and 40\\% for cold hardiness compared to deployed biophysical models.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T15:21:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15411v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15411v1"
-    },
-    {
-      "id": "2603.15363v1",
-      "title": "Deep learning and the rate of approximation by flows",
-      "authors": [
-        "Jingpu Cheng",
-        "Qianxiao Li",
-        "Ting Lin",
-        "Zuowei Shen"
-      ],
-      "abstract": "We investigate the dependence of the approximation capacity of deep residual networks on its depth in a continuous dynamical systems setting. This can be formulated as the general problem of quantifying the minimal time-horizon required to approximate a diffeomorphism by flows driven by a given family $\\mathcal F$ of vector fields. We show that this minimal time can be identified as a geodesic distance on a sub-Finsler manifold of diffeomorphisms, where the local geometry is characterised by a variational principle involving $\\mathcal F$. This connects the learning efficiency of target relationships to their compatibility with the learning architectural choice. Further, the results suggest that the key approximation mechanism in deep learning, namely the approximation of functions by composition or dynamics, differs in a fundamental way from linear approximation theory, where linear spaces and norm-based rate estimates are replaced by manifolds and geodesic distances.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T14:39:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15363v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15363v1"
-    },
-    {
-      "id": "2603.15079v1",
-      "title": "Interpretable Classification of Time Series Using Euler Characteristic Surfaces",
-      "authors": [
-        "Salam Rabindrajit Luwang",
-        "Sushovan Majhi",
-        "Vishal Mandal",
-        "Atish J. Mitra",
-        "Md. Nurujjaman",
-        "Buddha Nath Sharma"
-      ],
-      "abstract": "Persistent homology (PH) -- the conventional method in topological data analysis -- is computationally expensive, requires further vectorization of its signatures before machine learning (ML) can be applied, and captures information along only the spatial axis. For time series data, we propose Euler Characteristic Surfaces (ECS) as an alternative topological signature based on the Euler characteristic ($χ$) -- a fundamental topological invariant. The ECS provides a computationally efficient, spatiotemporal, and inherently discretized feature representation that can serve as direct input to ML models. We prove a stability theorem guaranteeing that the ECS remains stable under small perturbations of the input time series. We first demonstrate that ECS effectively captures the nontrivial topological differences between the limit cycle and the strange attractor in the Rössler system. We then develop an ECS-based classification framework and apply it to five benchmark biomedical datasets (four ECG, one EEG) from the UCR/UEA archive. On $\\textit{ECG5000}$, our single-feature ECS classifier achieves $98\\%$ accuracy with $O(n+R\\cdot T)$ complexity, compared to $62\\%$ reported by a recent PH-based method. An AdaBoost extension raises accuracy to $98.6\\%$, matching the best deep learning results while retaining full interpretability. Strong results are also obtained on $\\textit{TwoLeadECG}$ ($94.1\\%$) and $\\textit{Epilepsy2}$ ($92.6\\%$).",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T10:33:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15079v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15079v1"
-    },
-    {
-      "id": "2603.15055v1",
-      "title": "Spatio-temporal probabilistic forecast using MMAF-guided learning",
-      "authors": [
-        "Leonardo Bardi",
-        "Imma Valentina Curato",
-        "Lorenzo Proietti"
-      ],
-      "abstract": "We employ stochastic feed-forward neural networks with Gaussian-distributed weights to determine a probabilistic forecast for spatio-temporal raster datasets. The networks are trained using MMAF-guided learning, a generalized Bayesian methodology in which the observed data are preprocessed using an embedding designed to produce a low-dimensional representation that captures their dependence and causal structure. The design of the embedding is theory-guided by the assumption that a spatio-temporal Ornstein-Uhlenbeck process with finite second-order moments generates the observed data. The trained networks, in inference mode, are then used to generate ensemble forecasts by applying different initial conditions at different horizons. Experiments conducted on both synthetic and real data demonstrate that our forecasts remain calibrated across multiple time horizons. Moreover, we show that on such data, simple feed-forward architectures can achieve performance comparable to, and in some cases better than, convolutional or diffusion deep learning architectures used in probabilistic forecasting tasks.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T10:07:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15055v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15055v1"
-    },
-    {
-      "id": "2603.15002v1",
-      "title": "MONET: Modeling and Optimization of neural NEtwork Training from Edge to Data Centers",
-      "authors": [
-        "Jérémy Morlier",
-        "Robin Geens",
-        "Stef Cuyckens",
-        "Arne Symons",
-        "Marian Verhelst",
-        "Vincent Gripon",
-        "Mathieu Léonardon"
-      ],
-      "abstract": "While hardware-software co-design has significantly improved the efficiency of neural network inference, modeling the training phase remains a critical yet underexplored challenge. Training workloads impose distinct constraints, particularly regarding memory footprint and backpropagation complexity, which existing inference-focused tools fail to capture. This paper introduces MONET, a framework designed to model the training of neural networks on heterogeneous dataflow accelerators. MONET builds upon Stream, an experimentally verified framework that that models the inference of neural networks on heterogeneous dataflow accelerators with layer fusion. Using MONET, we explore the design space of ResNet-18 and a small GPT-2, demonstrating the framework's capability to model training workflows and find better hardware architectures. We then further examine problems that become more complex in neural network training due to the larger design space, such as determining the best layer-fusion configuration. Additionally, we use our framework to find interesting trade-offs in activation checkpointing, with the help of a genetic algorithm. Our findings highlight the importance of a holistic approach to hardware-software co-design for scalable and efficient deep learning deployment.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T09:06:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.15002v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.15002v1"
-    },
-    {
-      "id": "2603.14917v1",
-      "title": "Spectrogram features for audio and speech analysis",
-      "authors": [
-        "Ian McLoughlin",
-        "Lam Pham",
-        "Yan Song",
-        "Xiaoxiao Miao",
-        "Huy Phan",
-        "Pengfei Cai",
-        "Qing Gu",
-        "Jiang Nan",
-        "Haoyu Song",
-        "Donny Soh"
-      ],
-      "abstract": "Spectrogram-based representations have grown to dominate the feature space for deep learning audio analysis systems, and are often adopted for speech analysis also. Initially, the primary motivator for spectrogram-based representations was their ability to present sound as a two dimensional signal in the time-frequency plane, which not only provides an interpretable physical basis for analysing sound, but also unlocks the use of a wide range of machine learning techniques such as convolutional neural networks, that had been developed for image processing. A spectrogram is a matrix characterised by the resolution and span of its two dimensions, as well as by the representation and scaling of each element. Many possibilities for these three characteristics have been explored by researchers across numerous application areas, with different settings showing affinity for various tasks. This paper reviews the use of spectrogram-based representations and surveys the state-of-the-art to question how front-end feature representation choice allies with back-end classifier architecture for different tasks.",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T07:24:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.14917v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.14917v1"
-    },
-    {
-      "id": "2603.14870v1",
-      "title": "IgPose: A Generative Data-Augmented Pipeline for Robust Immunoglobulin-Antigen Binding Prediction",
-      "authors": [
-        "Tien-Cuong Bui",
-        "Injae Chung",
-        "Wonjun Lee",
-        "Junsu Ko",
-        "Juyong Lee"
-      ],
-      "abstract": "Predicting immunoglobulin-antigen (Ig-Ag) binding remains a significant challenge due to the paucity of experimentally-resolved complexes and the limited accuracy of de novo Ig structure prediction. We introduce IgPose, a generalizable framework for Ig-Ag pose identification and scoring, built on a generative data-augmentation pipeline. To mitigate data scarcity, we constructed the Structural Immunoglobulin Decoy Database (SIDD), a comprehensive repository of high-fidelity synthetic decoys. IgPose integrates equivariant graph neural networks, ESM-2 embeddings, and gated recurrent units to synergistically capture both geometric and evolutionary features. We implemented interface-focused k-hop sampling with biologically guided pooling to enhance generalization across diverse interfaces. The framework comprises two sub-networks--IgPoseClassifier for binding pose discrimination and IgPoseScore for DockQ score estimation--and achieves robust performance on curated internal test sets and the CASP-16 benchmark compared to physics and deep learning baselines. IgPose serves as a versatile computational tool for high-throughput antibody discovery pipelines by providing accurate pose filtering and ranking. IgPose is available on GitHub (https://github.com/arontier/igpose).",
-      "published": "March 16, 2026",
-      "published_raw": "2026-03-16T06:16:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.14870v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.14870v1"
     }
   ]
 }
