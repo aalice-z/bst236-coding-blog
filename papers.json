@@ -1,7 +1,114 @@
 {
-  "last_updated": "2026-03-21T00:58:32.762180",
+  "last_updated": "2026-03-23T01:07:24.750148",
   "count": 20,
   "papers": [
+    {
+      "id": "2603.20021v1",
+      "title": "ODySSeI: An Open-Source End-to-End Framework for Automated Detection, Segmentation, and Severity Estimation of Lesions in Invasive Coronary Angiography Images",
+      "authors": [
+        "Anand Choudhary",
+        "Xiaowu Sun",
+        "Thabo Mahendiran",
+        "Ortal Senouf",
+        "Denise Auberson",
+        "Bernard De Bruyne",
+        "Stephane Fournier",
+        "Olivier Muller",
+        "Emmanuel Abbé",
+        "Pascal Frossard",
+        "Dorina Thanou"
+      ],
+      "abstract": "Invasive Coronary Angiography (ICA) is the clinical gold standard for the assessment of coronary artery disease. However, its interpretation remains subjective and prone to intra- and inter-operator variability. In this work, we introduce ODySSeI: an Open-source end-to-end framework for automated Detection, Segmentation, and Severity estimation of lesions in ICA images. ODySSeI integrates deep learning-based lesion detection and lesion segmentation models trained using a novel Pyramidal Augmentation Scheme (PAS) to enhance robustness and real-time performance across diverse patient cohorts (2149 patients from Europe, North America, and Asia). Furthermore, we propose a quantitative coronary angiography-free Lesion Severity Estimation (LSE) technique that directly computes the Minimum Lumen Diameter (MLD) and diameter stenosis from the predicted lesion geometry. Extensive evaluation on both in-distribution and out-of-distribution clinical datasets demonstrates ODySSeI's strong generalizability. Our PAS yields large performance gains in highly complex tasks as compared to relatively simpler ones, notably, a 2.5-fold increase in lesion detection performance versus a 1-3\\% increase in lesion segmentation performance over their respective baselines. Our LSE technique achieves high accuracy, with predicted MLD values differing by only $\\pm$ 2-3 pixels from the corresponding ground truths. On average, ODySSeI processes a raw ICA image within only a few seconds on a CPU and in a fraction of a second on a GPU and is available as a plug-and-play web interface at swisscardia.epfl.ch. Overall, this work establishes ODySSeI as a comprehensive and open-source framework which supports automated, reproducible, and scalable ICA analysis for real-time clinical decision-making.",
+      "published": "March 20, 2026",
+      "published_raw": "2026-03-20T15:07:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.20021v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.20021v1"
+    },
+    {
+      "id": "2603.19994v1",
+      "title": "Evaluating Test-Time Adaptation For Facial Expression Recognition Under Natural Cross-Dataset Distribution Shifts",
+      "authors": [
+        "John Turnbull",
+        "Shivam Grover",
+        "Amin Jalali",
+        "Ali Etemad"
+      ],
+      "abstract": "Deep learning models often struggle under natural distribution shifts, a common challenge in real-world deployments. Test-Time Adaptation (TTA) addresses this by adapting models during inference without labeled source data. We present the first evaluation of TTA methods for FER under natural domain shifts, performing cross-dataset experiments with widely used FER datasets. This moves beyond synthetic corruptions to examine real-world shifts caused by differing collection protocols, annotation standards, and demographics. Results show TTA can boost FER performance under natural shifts by up to 11.34\\%. Entropy minimization methods such as TENT and SAR perform best when the target distribution is clean. In contrast, prototype adjustment methods like T3A excel under larger distributional distance scenarios. Finally, feature alignment methods such as SHOT deliver the largest gains when the target distribution is noisier than our source. Our cross-dataset analysis shows that TTA effectiveness is governed by the distributional distance and the severity of the natural shift across domains.",
+      "published": "March 20, 2026",
+      "published_raw": "2026-03-20T14:44:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.19994v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.19994v1"
+    },
+    {
+      "id": "2603.19972v1",
+      "title": "Model-Driven Learning-Based Physical Layer Authentication for Mobile Wi-Fi Devices",
+      "authors": [
+        "Yijia Guo",
+        "Junqing Zhang",
+        "Yao-Win Peter Hong",
+        "Stefano Tomasin"
+      ],
+      "abstract": "The rise of wireless technologies has made the Internet of Things (IoT) ubiquitous, but the broadcast nature of wireless communications exposes IoT to authentication risks. Physical layer authentication (PLA) offers a promising solution by leveraging unique characteristics of wireless channels. As a common approach in PLA, hypothesis testing yields a theoretically optimal Neyman-Pearson (NP) detector, but its reliance on channel statistics limits its practicality in real-world scenarios. In contrast, deep learning-based PLA approaches are practical but tend to be not optimal. To address these challenges, we proposed a learning-based PLA scheme driven by hypothesis testing and conducted extensive simulations and experimental evaluations using Wi-Fi. Specifically, we incorporated conditional statistical models into the hypothesis testing framework to derive a theoretically optimal NP detector. Building on this, we developed LiteNP-Net, a lightweight neural network driven by the NP detector. Simulation results demonstrated that LiteNP-Net could approach the performance of the NP detector even without prior knowledge of the channel statistics. To further assess its effectiveness in practical environments, we deployed an experimental testbed using Wi-Fi IoT development kits in various real-world scenarios. Experimental results demonstrated that the LiteNP-Net outperformed the conventional correlation-based method as well as state-of-the-art Siamese-based methods.",
+      "published": "March 20, 2026",
+      "published_raw": "2026-03-20T14:15:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.19972v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.19972v1"
+    },
+    {
+      "id": "2603.19852v1",
+      "title": "Failure Modes for Deep Learning-Based Online Mapping: How to Measure and Address Them",
+      "authors": [
+        "Michael Hubbertz",
+        "Qi Han",
+        "Tobias Meisen"
+      ],
+      "abstract": "Deep learning-based online mapping has emerged as a cornerstone of autonomous driving, yet these models frequently fail to generalize beyond familiar environments. We propose a framework to identify and measure the underlying failure modes by disentangling two effects: Memorization of input features and overfitting to known map geometries. We propose measures based on evaluation subsets that control for geographical proximity and geometric similarity between training and validation scenes. We introduce Fréchet distance-based reconstruction statistics that capture per-element shape fidelity without threshold tuning, and define complementary failure-mode scores: a localization overfitting score quantifying the performance drop when geographic cues disappear, and a map geometry overfitting score measuring degradation as scenes become geometrically novel. Beyond models, we analyze dataset biases and contribute map geometry-aware diagnostics: A minimum-spanning-tree (MST) diversity measure for training sets and a symmetric coverage measure to quantify geometric similarity between splits. Leveraging these, we formulate an MST-based sparsification strategy that reduces redundancy and improves balancing and performance while shrinking training size. Experiments on nuScenes and Argoverse 2 across multiple state-of-the-art models yield more trustworthy assessment of generalization and show that map geometry-diverse and balanced training sets lead to improved performance. Our results motivate failure-mode-aware protocols and map geometry-centric dataset design for deployable online mapping.",
+      "published": "March 20, 2026",
+      "published_raw": "2026-03-20T11:09:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.19852v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.19852v1"
+    },
+    {
+      "id": "2603.19760v1",
+      "title": "Physical Layer Message Prediction for 5G Radio Access Network Protocols",
+      "authors": [
+        "Jonathan Ebert",
+        "Peter Rost"
+      ],
+      "abstract": "Protocol reverse engineering stands as the cutting-edge approach in security research. This paper presents a framework capable of reverse engineering the communications within a mobile communication system. Our focus is on systems released by the 3GPP, with an emphasis on 5G NR. Our approach leverages the available context and syntax of the 5G standard to predict subsequent messages. This approach relies on a Transformer model and is trained based on an open-source 5G system implementation, emulating a base station and several user equipments. The prediction targets messages at the physical layer.",
+      "published": "March 20, 2026",
+      "published_raw": "2026-03-20T08:44:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.19760v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.19760v1"
+    },
+    {
+      "id": "2603.19497v1",
+      "title": "ICLAD: In-Context Learning for Unified Tabular Anomaly Detection Across Supervision Regimes",
+      "authors": [
+        "Jack Yi Wei",
+        "Narges Armanfard"
+      ],
+      "abstract": "Anomaly detection on tabular data is commonly studied under three supervision regimes, including one-class settings that assume access to anomaly-free training samples, fully unsupervised settings with unlabeled and potentially contaminated training data, and semi-supervised settings with limited anomaly labels. Existing deep learning approaches typically train dataset-specific models under the assumption of a single supervision regime, which limits their ability to leverage shared structures across anomaly detection tasks and to adapt to different supervision levels. We propose ICLAD, an in-context learning foundation model for tabular anomaly detection that generalizes across both datasets and supervision regimes. ICLAD is trained via meta-learning on synthetic tabular anomaly detection tasks, and at inference time, the model assigns anomaly scores by conditioning on the training set without updating model weights. Comprehensive experiments on 57 tabular datasets from ADBench show that our method achieves state-of-the-art performance across three supervision regimes, establishing a unified framework for tabular anomaly detection.",
+      "published": "March 19, 2026",
+      "published_raw": "2026-03-19T21:49:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.19497v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.19497v1"
+    },
+    {
+      "id": "2603.19463v1",
+      "title": "Deep Hilbert--Galerkin Methods for Infinite-Dimensional PDEs and Optimal Control",
+      "authors": [
+        "Samuel N. Cohen",
+        "Filippo de Feo",
+        "Jackson Hebner",
+        "Justin Sirignano"
+      ],
+      "abstract": "We develop deep learning-based approximation methods for fully nonlinear second-order PDEs on separable Hilbert spaces, such as HJB equations for infinite-dimensional control, by parameterizing solutions via Hilbert--Galerkin Neural Operators (HGNOs). We prove the first Universal Approximation Theorems (UATs) which are sufficiently powerful to address these problems, based on novel topologies for Hessian terms and corresponding novel continuity assumptions on the fully nonlinear operator. These topologies are non-sequential and non-metrizable, making the problem delicate. In particular, we prove UATs for functions on Hilbert spaces, together with their Fréchet derivatives up to second order, and for unbounded operators applied to the first derivative, ensuring that HGNOs are able to approximate all the PDE terms. For control problems, we further prove UATs for optimal feedback controls in terms of our approximating value function HGNO. We develop numerical training methods, which we call Deep Hilbert--Galerkin and Hilbert Actor-Critic (reinforcement learning) Methods, for these problems by minimizing the $L^2_μ(H)$-norm of the residual of the PDE on the whole Hilbert space, not just a projected PDE to finite dimensions. This is the first paper to propose such an approach. The models considered arise in many applied sciences, such as functional differential equations in physics and Kolmogorov and HJB PDEs related to controlled PDEs, SPDEs, path-dependent systems, partially observed stochastic systems, and mean-field SDEs. We numerically solve examples of Kolmogorov and HJB PDEs related to the optimal control of deterministic and stochastic heat and Burgers' equations, demonstrating the promise of our deep learning-based approach.",
+      "published": "March 19, 2026",
+      "published_raw": "2026-03-19T20:53:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.19463v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.19463v1"
+    },
     {
       "id": "2603.18985v1",
       "title": "Revisiting OmniAnomaly for Anomaly Detection: performance metrics and comparison with PCA-based models",
@@ -183,111 +290,6 @@
       "published_raw": "2026-03-18T09:41:01Z",
       "pdf_link": "http://arxiv.org/pdf/2603.17532v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2603.17532v1"
-    },
-    {
-      "id": "2603.17529v1",
-      "title": "AirDDE: Multifactor Neural Delay Differential Equations for Air Quality Forecasting",
-      "authors": [
-        "Binqing Wu",
-        "Zongjiang Shang",
-        "Shiyu Liu",
-        "Jianlong Huang",
-        "Jiahui Xu",
-        "Ling Chen"
-      ],
-      "abstract": "Accurate air quality forecasting is essential for public health and environmental sustainability, but remains challenging due to the complex pollutant dynamics. Existing deep learning methods often model pollutant dynamics as an instantaneous process, overlooking the intrinsic delays in pollutant propagation. Thus, we propose AirDDE, the first neural delay differential equation framework in this task that integrates delay modeling into a continuous-time pollutant evolution under physical guidance. Specifically, two novel components are introduced: (1) a memory-augmented attention module that retrieves globally and locally historical features, which can adaptively capture delay effects modulated by multifactor data; and (2) a physics-guided delay evolving function, grounded in the diffusion-advection equation, that models diffusion, delayed advection, and source/sink terms, which can capture delay-aware pollutant accumulation patterns with physical plausibility. Extensive experiments on three real-world datasets demonstrate that AirDDE achieves the state-of-the-art forecasting performance with an average MAE reduction of 8.79\\% over the best baselines. The code is available at https://github.com/w2obin/airdde-aaai.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T09:37:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.17529v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.17529v1"
-    },
-    {
-      "id": "2603.17523v1",
-      "title": "Translation Invariance of Neural Operators for the FitzHugh-Nagumo Model",
-      "authors": [
-        "Luca Pellegrini"
-      ],
-      "abstract": "Neural Operators (NOs) are a powerful deep learning framework designed to learn the solution operator that arise from partial differential equations. This study investigates NOs ability to capture the stiff spatio-temporal dynamics of the FitzHugh-Nagumo model, which describes excitable cells. A key contribution of this work is evaluating the translation invariance using a novel training strategy. NOs are trained using an applied current with varying spatial locations and intensities at a fixed time, and the test set introduces a more challenging out-of-distribution scenario in which the applied current is translated in both time and space. This approach significantly reduces the computational cost of dataset generation. Moreover we benchmark seven NOs architectures: Convolutional Neural Operators (CNOs), Deep Operator Networks (DONs), DONs with CNN encoder (DONs-CNN), Proper Orthogonal Decomposition DONs (POD-DONs), Fourier Neural Operators (FNOs), Tucker Tensorized FNOs (TFNOs), Localized Neural Operators (LocalNOs). We evaluated these models based on training and test accuracy, efficiency, and inference speed. Our results reveal that CNOs performs well on translated test dynamics. However, they require higher training costs, though their performance on the training set is similar to that of the other considered architectures. In contrast, FNOs achieve the lowest training error, but have the highest inference time. Regarding the translated dynamics, FNOs and their variants provide less accurate predictions. Finally, DONs and their variants demonstrate high efficiency in both training and inference, however they do not generalize well to the test set. These findings highlight the current capabilities and limitations of NOs in capturing complex ionic model dynamics and provide a comprehensive benchmark including their application to scenarios involving translated dynamics.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T09:28:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.17523v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.17523v1"
-    },
-    {
-      "id": "2603.18089v1",
-      "title": "CytoSyn: a Foundation Diffusion Model for Histopathology -- Tech Report",
-      "authors": [
-        "Thomas Duboudin",
-        "Xavier Fontaine",
-        "Etienne Andrier",
-        "Lionel Guillou",
-        "Alexandre Filiot",
-        "Thalyssa Baiocco-Rodrigues",
-        "Antoine Olivier",
-        "Alberto Romagnoni",
-        "John Klein",
-        "Jean-Baptiste Schiratti"
-      ],
-      "abstract": "Computational pathology has made significant progress in recent years, fueling advances in both fundamental disease understanding and clinically ready tools. This evolution is driven by the availability of large amounts of digitized slides and specialized deep learning methods and models. Multiple self-supervised foundation feature extractors have been developed, enabling downstream predictive applications from cell segmentation to tumor sub-typing and survival analysis. In contrast, generative foundation models designed specifically for histopathology remain scarce. Such models could address tasks that are beyond the capabilities of feature extractors, such as virtual staining. In this paper, we introduce CytoSyn, a state-of-the-art foundation latent diffusion model that enables the guided generation of highly realistic and diverse histopathology H&E-stained images, as shown in an extensive benchmark. We explored methodological improvements, training set scaling, sampling strategies and slide-level overfitting, culminating in the improved CytoSyn-v2, and compared our work to PixCell, a state-of-the-art model, in an in-depth manner. This comparison highlighted the strong sensitivity of both diffusion models and performance metrics to preprocessing-specific details such as JPEG compression. Our model has been trained on a dataset obtained from more than 10,000 TCGA diagnostic whole-slide images of 32 different cancer types. Despite being trained only on oncology slides, it maintains state-of-the-art performance generating inflammatory bowel disease images. To support the research community, we publicly release CytoSyn's weights, its training and validation datasets, and a sample of synthetic images in this repository: https://huggingface.co/Owkin-Bioptimus/CytoSyn.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T08:58:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18089v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18089v1"
-    },
-    {
-      "id": "2603.17366v1",
-      "title": "Low-dimensional geometry learning for turbulence prediction in optimized stellarators",
-      "authors": [
-        "Xishuo Wei",
-        "Handi Huang",
-        "Haotian Chen",
-        "Hongxuan Zhu",
-        "Zhe Bai",
-        "Samuel Williams",
-        "Zhihong Lin"
-      ],
-      "abstract": "The optimized stellarator is an attractive concept for which the averaged particle radial drift is zero, and the single particle loss can be significantly reduced. But for the reactor design, global physics such as turbulent transport also need to be optimized besides the confined single particle orbit, or properties estimated using local estimations and heuristic formulations. The first-principle global transport code is too computationally expensive to integrate into the optimization process. The fast surrogate global transport model based on machine learning is a good alternative choice, but the amount of data required to train the surrogate model is numerous due to the high degree-of-freedom of the stellarator design. The work shows that the stellarator design with quasi-helically(QH) symmetric geometry is approximately distributed in a low dimensional latent space, which can be explicitly found by deep learning. This discovery makes it possible to generate global gyrokinetic simulation data for training surrogate models to directly optimize the stellarator geometry for turbulent transport, energetic particle instability, and MHD modes. Using the low dimensional latent space and data analysis methods, the relation between linear zonal residues and axis-excursion is found, providing a simple guide to optimize low turbulent transport QH stellarators.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T05:14:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.17366v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.17366v1"
-    },
-    {
-      "id": "2603.17365v1",
-      "title": "Variational Kernel Design for Internal Noise: Gaussian Chaos Noise, Representation Compatibility, and Reliable Deep Learning",
-      "authors": [
-        "Ziran Liu"
-      ],
-      "abstract": "Internal noise in deep networks is usually inherited from heuristics such as dropout, hard masking, or additive perturbation. We ask two questions: what correlation geometry should internal noise have, and is the implemented perturbation compatible with the representations it acts on? We answer these questions through Variational Kernel Design (VKD), a framework in which a noise mechanism is specified by a law family, a correlation kernel, and an injection operator, and is derived from learning desiderata. In a solved spatial subfamily, a quadratic maximum-entropy principle over latent log-fields yields a Gaussian optimizer with precision given by the Dirichlet Laplacian, so the induced geometry is the Dirichlet Green kernel. Wick normalization then gives a canonical positive mean-one gate, Gaussian Chaos Noise (GCh). For the sample-wise gate used in practice, we prove exact Gaussian control of pairwise log-ratio deformation, margin-sensitive ranking stability, and an exact expected intrinsic roughness budget; hard binary masks instead induce singular or coherence-amplified distortions on positive coherent representations. On ImageNet and ImageNet-C, GCh consistently improves calibration and under shift also improves NLL at competitive accuracy.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T05:12:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.17365v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.17365v1"
-    },
-    {
-      "id": "2603.18066v1",
-      "title": "A Synthesizable RTL Implementation of Predictive Coding Networks",
-      "authors": [
-        "Timothy Oh"
-      ],
-      "abstract": "Backpropagation has enabled modern deep learning but is difficult to realize as an online, fully distributed hardware learning system due to global error propagation, phase separation, and heavy reliance on centralized memory. Predictive coding offers an alternative in which inference and learning arise from local prediction-error dynamics between adjacent layers. This paper presents a digital architecture that implements a discrete-time predictive coding update directly in hardware. Each neural core maintains its own activity, prediction error, and synaptic weights, and communicates only with adjacent layers through hardwired connections. Supervised learning and inference are supported via a uniform per-neuron clamping primitive that enforces boundary conditions while leaving the internal update schedule unchanged. The design is a deterministic, synthesizable RTL substrate built around a sequential MAC datapath and a fixed finite-state schedule. Rather than executing a task-specific instruction sequence inside the learning substrate, the system evolves under fixed local update rules, with task structure imposed through connectivity, parameters, and boundary conditions. The contribution of this work is not a new learning rule, but a complete synthesizable digital substrate that executes predictive-coding learning dynamics directly in hardware.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T03:07:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18066v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18066v1"
-    },
-    {
-      "id": "2603.17248v1",
-      "title": "Pathology-Aware Multi-View Contrastive Learning for Patient-Independent ECG Reconstruction",
-      "authors": [
-        "Youssef Youssef",
-        "Jitin Singla"
-      ],
-      "abstract": "Reconstructing a 12-lead electrocardiogram (ECG) from a reduced lead set is an ill-posed inverse problem due to anatomical variability. Standard deep learning methods often ignore underlying cardiac pathology losing vital morphology in precordial leads. We propose Pathology-Aware Multi-View Contrastive Learning, a framework that regularizes the latent space through a pathological manifold. Our architecture integrates high-fidelity time-domain waveforms with pathology-aware embeddings learned via supervised contrastive alignment. By maximizing mutual information between latent representations and clinical labels, the framework learns to filter anatomical \"nuisance\" variables. On the PTB-XL dataset, our method achieves approx. 76\\% reduction in RMSE compared to state-of-the-art model in patient-independent setting. Cross-dataset evaluation on the PTB Diagnostic Database confirms superior generalization, bridging the gap between hardware portability and diagnostic-grade reconstruction.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T01:06:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.17248v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.17248v1"
     }
   ]
 }
