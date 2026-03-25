@@ -1,295 +1,323 @@
 {
-  "last_updated": "2026-03-24T00:59:10.157181",
+  "last_updated": "2026-03-25T01:04:52.043849",
   "count": 20,
   "papers": [
     {
-      "id": "2603.20021v1",
-      "title": "ODySSeI: An Open-Source End-to-End Framework for Automated Detection, Segmentation, and Severity Estimation of Lesions in Invasive Coronary Angiography Images",
+      "id": "2603.23076v1",
+      "title": "MsFormer: Enabling Robust Predictive Maintenance Services for Industrial Devices",
       "authors": [
-        "Anand Choudhary",
-        "Xiaowu Sun",
-        "Thabo Mahendiran",
-        "Ortal Senouf",
-        "Denise Auberson",
-        "Bernard De Bruyne",
-        "Stephane Fournier",
-        "Olivier Muller",
-        "Emmanuel Abbé",
-        "Pascal Frossard",
-        "Dorina Thanou"
+        "Jiahui Zhou",
+        "Dan Li",
+        "Ruibing Jin",
+        "Jian Lou",
+        "Yanran Zhao",
+        "Zhenghua Chen",
+        "Zigui Jiang",
+        "See-Kiong Ng"
       ],
-      "abstract": "Invasive Coronary Angiography (ICA) is the clinical gold standard for the assessment of coronary artery disease. However, its interpretation remains subjective and prone to intra- and inter-operator variability. In this work, we introduce ODySSeI: an Open-source end-to-end framework for automated Detection, Segmentation, and Severity estimation of lesions in ICA images. ODySSeI integrates deep learning-based lesion detection and lesion segmentation models trained using a novel Pyramidal Augmentation Scheme (PAS) to enhance robustness and real-time performance across diverse patient cohorts (2149 patients from Europe, North America, and Asia). Furthermore, we propose a quantitative coronary angiography-free Lesion Severity Estimation (LSE) technique that directly computes the Minimum Lumen Diameter (MLD) and diameter stenosis from the predicted lesion geometry. Extensive evaluation on both in-distribution and out-of-distribution clinical datasets demonstrates ODySSeI's strong generalizability. Our PAS yields large performance gains in highly complex tasks as compared to relatively simpler ones, notably, a 2.5-fold increase in lesion detection performance versus a 1-3\\% increase in lesion segmentation performance over their respective baselines. Our LSE technique achieves high accuracy, with predicted MLD values differing by only $\\pm$ 2-3 pixels from the corresponding ground truths. On average, ODySSeI processes a raw ICA image within only a few seconds on a CPU and in a fraction of a second on a GPU and is available as a plug-and-play web interface at swisscardia.epfl.ch. Overall, this work establishes ODySSeI as a comprehensive and open-source framework which supports automated, reproducible, and scalable ICA analysis for real-time clinical decision-making.",
-      "published": "March 20, 2026",
-      "published_raw": "2026-03-20T15:07:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.20021v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.20021v1"
+      "abstract": "Providing reliable predictive maintenance is a critical industrial AI service essential for ensuring the high availability of manufacturing devices. Existing deep-learning methods present competitive results on such tasks but lack a general service-oriented framework to capture complex dependencies in industrial IoT sensor data. While Transformer-based models show strong sequence modeling capabilities, their direct deployment as robust AI services faces significant bottlenecks. Specifically, streaming sensor data collected in real-world service environments often exhibits multi-scale temporal correlations driven by machine working principles. Besides, the datasets available for training time-to-failure predictive services are typically limited in size. These issues pose significant challenges for directly applying existing models as robust predictive services. To address these challenges, we propose MsFormer, a lightweight Multi-scale Transformer designed as a unified AI service model for reliable industrial predictive maintenance. MsFormer incorporates a Multi-scale Sampling (MS) module and a tailored position encoding mechanism to capture sequential correlations across multi-streaming service data. Additionally, to accommodate data-scarce service environments, MsFormer adopts a lightweight attention mechanism with straightforward pooling operations instead of self-attention. Extensive experiments on real-world datasets demonstrate that the proposed framework achieves significant performance improvements over state-of-the-art methods. Furthermore, MsFormer outperforms across industrial devices and operating conditions, demonstrating strong generalizability while maintaining a highly reliable Quality of Service (QoS).",
+      "published": "March 24, 2026",
+      "published_raw": "2026-03-24T11:12:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.23076v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.23076v1"
     },
     {
-      "id": "2603.19994v1",
-      "title": "Evaluating Test-Time Adaptation For Facial Expression Recognition Under Natural Cross-Dataset Distribution Shifts",
+      "id": "2603.22675v1",
+      "title": "Vision-based Deep Learning Analysis of Unordered Biomedical Tabular Datasets via Optimal Spatial Cartography",
       "authors": [
-        "John Turnbull",
-        "Shivam Grover",
-        "Amin Jalali",
-        "Ali Etemad"
+        "Sakib Mostafa",
+        "Tarik Massoud",
+        "Maximilian Diehn",
+        "Lei Xing",
+        "Md Tauhidul Islam"
       ],
-      "abstract": "Deep learning models often struggle under natural distribution shifts, a common challenge in real-world deployments. Test-Time Adaptation (TTA) addresses this by adapting models during inference without labeled source data. We present the first evaluation of TTA methods for FER under natural domain shifts, performing cross-dataset experiments with widely used FER datasets. This moves beyond synthetic corruptions to examine real-world shifts caused by differing collection protocols, annotation standards, and demographics. Results show TTA can boost FER performance under natural shifts by up to 11.34\\%. Entropy minimization methods such as TENT and SAR perform best when the target distribution is clean. In contrast, prototype adjustment methods like T3A excel under larger distributional distance scenarios. Finally, feature alignment methods such as SHOT deliver the largest gains when the target distribution is noisier than our source. Our cross-dataset analysis shows that TTA effectiveness is governed by the distributional distance and the severity of the natural shift across domains.",
-      "published": "March 20, 2026",
-      "published_raw": "2026-03-20T14:44:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.19994v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.19994v1"
+      "abstract": "Tabular data are central to biomedical research, from liquid biopsy and bulk and single-cell transcriptomics to electronic health records and phenotypic profiling. Unlike images or sequences, however, tabular datasets lack intrinsic spatial organization: features are treated as unordered dimensions, and their relationships must be inferred implicitly by the model. This limits the ability of vision architectures to exploit local structure and higher-order feature interactions in non-spatial biomedical data. Here we introduce Dynamic Feature Mapping (Dynomap), an end-to-end deep learning framework that learns a task-optimized spatial topology of features directly from data. Dynomap jointly optimizes feature placement and prediction through a fully differentiable rendering mechanism, without relying on heuristics, predefined groupings, or external priors. By transforming high-dimensional tabular vectors into learned feature maps, Dynomap enables vision-based models to operate effectively on unordered biomedical inputs. Across multiple clinical and biological datasets, Dynomap consistently outperformed classical machine learning, modern deep tabular models, and existing vector-to-image approaches. In liquid biopsy data, Dynomap organized clinically relevant gene signatures into coherent spatial patterns and improved multiclass cancer subtype prediction accuracy by up to 18%. In a Parkinson disease voice dataset, it clustered disease-associated acoustic descriptors and improved accuracy by up to 8%. Similar gains and interpretable feature organization were observed in additional biomedical datasets. These results establish Dynomap as a general strategy for bridging tabular and vision-based deep learning and for uncovering structured, clinically relevant patterns in high-dimensional biomedical data.",
+      "published": "March 24, 2026",
+      "published_raw": "2026-03-24T00:49:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.22675v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.22675v1"
     },
     {
-      "id": "2603.19972v1",
-      "title": "Model-Driven Learning-Based Physical Layer Authentication for Mobile Wi-Fi Devices",
+      "id": "2603.22536v1",
+      "title": "MSP-Conversation: A Corpus for Naturalistic, Time-Continuous Emotion Recognition",
       "authors": [
-        "Yijia Guo",
-        "Junqing Zhang",
-        "Yao-Win Peter Hong",
-        "Stefano Tomasin"
+        "Luz Martinez-Lucas",
+        "Pravin Mote",
+        "Abinay Reddy Naini",
+        "Mohammed Abdelwahab",
+        "Carlos Busso"
       ],
-      "abstract": "The rise of wireless technologies has made the Internet of Things (IoT) ubiquitous, but the broadcast nature of wireless communications exposes IoT to authentication risks. Physical layer authentication (PLA) offers a promising solution by leveraging unique characteristics of wireless channels. As a common approach in PLA, hypothesis testing yields a theoretically optimal Neyman-Pearson (NP) detector, but its reliance on channel statistics limits its practicality in real-world scenarios. In contrast, deep learning-based PLA approaches are practical but tend to be not optimal. To address these challenges, we proposed a learning-based PLA scheme driven by hypothesis testing and conducted extensive simulations and experimental evaluations using Wi-Fi. Specifically, we incorporated conditional statistical models into the hypothesis testing framework to derive a theoretically optimal NP detector. Building on this, we developed LiteNP-Net, a lightweight neural network driven by the NP detector. Simulation results demonstrated that LiteNP-Net could approach the performance of the NP detector even without prior knowledge of the channel statistics. To further assess its effectiveness in practical environments, we deployed an experimental testbed using Wi-Fi IoT development kits in various real-world scenarios. Experimental results demonstrated that the LiteNP-Net outperformed the conventional correlation-based method as well as state-of-the-art Siamese-based methods.",
-      "published": "March 20, 2026",
-      "published_raw": "2026-03-20T14:15:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.19972v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.19972v1"
+      "abstract": "Affective computing aims to understand and model human emotions for computational systems. Within this field, speech emotion recognition (SER) focuses on predicting emotions conveyed through speech. While early SER systems relied on limited datasets and traditional machine learning models, recent deep learning approaches demand largescale, naturalistic emotional corpora. To address this need, we introduce the MSP-Conversation corpus: a dataset of more than 70 hours of conversational audio with time-continuous emotional annotations and detailed speaker diarizations. The time-continuous annotations capture the dynamic and contextdependent nature of emotional expression. The annotations in the corpus include fine-grained temporal traces of valence, arousal, and dominance. The audio data is sourced from publicly available podcasts and overlaps with a subset of the isolated speaking turns in the MSP-Podcast corpus to facilitate direct comparisons between annotation methods (i.e., in-context versus out-of-context annotations). The paper outlines the development of the corpus, annotation methodology, analyses of the annotations, and baseline SER experiments, establishing the MSP-Conversation corpus as a valuable resource for advancing research in dynamic SER in naturalistic settings.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T19:58:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.22536v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.22536v1"
     },
     {
-      "id": "2603.19852v1",
-      "title": "Failure Modes for Deep Learning-Based Online Mapping: How to Measure and Address Them",
+      "id": "2603.22518v1",
+      "title": "High Resolution Flood Extent Detection Using Deep Learning with Random Forest Derived Training Labels",
       "authors": [
-        "Michael Hubbertz",
-        "Qi Han",
-        "Tobias Meisen"
+        "Azizbek Nuriddinov",
+        "Ebrahim Ahmadisharaf",
+        "Mohammad Reza Alizadeh"
       ],
-      "abstract": "Deep learning-based online mapping has emerged as a cornerstone of autonomous driving, yet these models frequently fail to generalize beyond familiar environments. We propose a framework to identify and measure the underlying failure modes by disentangling two effects: Memorization of input features and overfitting to known map geometries. We propose measures based on evaluation subsets that control for geographical proximity and geometric similarity between training and validation scenes. We introduce Fréchet distance-based reconstruction statistics that capture per-element shape fidelity without threshold tuning, and define complementary failure-mode scores: a localization overfitting score quantifying the performance drop when geographic cues disappear, and a map geometry overfitting score measuring degradation as scenes become geometrically novel. Beyond models, we analyze dataset biases and contribute map geometry-aware diagnostics: A minimum-spanning-tree (MST) diversity measure for training sets and a symmetric coverage measure to quantify geometric similarity between splits. Leveraging these, we formulate an MST-based sparsification strategy that reduces redundancy and improves balancing and performance while shrinking training size. Experiments on nuScenes and Argoverse 2 across multiple state-of-the-art models yield more trustworthy assessment of generalization and show that map geometry-diverse and balanced training sets lead to improved performance. Our results motivate failure-mode-aware protocols and map geometry-centric dataset design for deployable online mapping.",
-      "published": "March 20, 2026",
-      "published_raw": "2026-03-20T11:09:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.19852v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.19852v1"
+      "abstract": "Validation of flood models, used to support risk mitigation strategies, remains challenging due to limited observations during extreme events. High-frequency, high-resolution optical imagery (~3 m), such as PlanetScope, offers new opportunities for flood mapping, although applications remain limited by cloud cover and the lack of labeled training data during disasters. To address this, we develop a flood mapping framework that integrates PlanetScope optical imagery with topographic features using machine learning (ML) and deep learning (DL) algorithms. A Random Forest model was applied to expert-annotated flood masks to generate training labels for DL models, U-Net. Two U-Net models with ResNet18 backbone were trained using optical imagery only (4 bands) and optical imagery combined with Height Above Nearest Drainage (HAND) and topographic slope (6 bands). Hurricane Ida (September 2021), which caused catastrophic flooding across the eastern United States, including the New York City metropolitan area, was used as an example to evaluate the framework. Results demonstrate that the U-Net model with topographic features achieved very close performance to the optical-only configuration (F1=0.92 and IoU=0.85 by both modeling scenarios), indicating that HAND and slope provide only marginal value to inundation extent detection. The proposed framework offers a scalable and label-efficient approach for mapping inundation extent that enables modeling under data-scarce flood scenarios.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T19:26:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.22518v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.22518v1"
     },
     {
-      "id": "2603.19760v1",
-      "title": "Physical Layer Message Prediction for 5G Radio Access Network Protocols",
+      "id": "2603.22053v1",
+      "title": "AnimalCLAP: Taxonomy-Aware Language-Audio Pretraining for Species Recognition and Trait Inference",
       "authors": [
-        "Jonathan Ebert",
-        "Peter Rost"
+        "Risa Shinoda",
+        "Kaede Shiohara",
+        "Nakamasa Inoue",
+        "Hiroaki Santo",
+        "Fumio Okura"
       ],
-      "abstract": "Protocol reverse engineering stands as the cutting-edge approach in security research. This paper presents a framework capable of reverse engineering the communications within a mobile communication system. Our focus is on systems released by the 3GPP, with an emphasis on 5G NR. Our approach leverages the available context and syntax of the 5G standard to predict subsequent messages. This approach relies on a Transformer model and is trained based on an open-source 5G system implementation, emulating a base station and several user equipments. The prediction targets messages at the physical layer.",
-      "published": "March 20, 2026",
-      "published_raw": "2026-03-20T08:44:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.19760v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.19760v1"
+      "abstract": "Animal vocalizations provide crucial insights for wildlife assessment, particularly in complex environments such as forests, aiding species identification and ecological monitoring. Recent advances in deep learning have enabled automatic species classification from their vocalizations. However, classifying species unseen during training remains challenging. To address this limitation, we introduce AnimalCLAP, a taxonomy-aware language-audio framework comprising a new dataset and model that incorporate hierarchical biological information. Specifically, our vocalization dataset consists of 4,225 hours of recordings covering 6,823 species, annotated with 22 ecological traits. The AnimalCLAP model is trained on this dataset to align audio and textual representations using taxonomic structures, improving the recognition of unseen species. We demonstrate that our proposed model effectively infers ecological and biological attributes of species directly from their vocalizations, achieving superior performance compared to CLAP. Our dataset, code, and models will be publicly available at https://dahlian00.github.io/AnimalCLAP_Page/.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T14:53:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.22053v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.22053v1"
     },
     {
-      "id": "2603.19497v1",
-      "title": "ICLAD: In-Context Learning for Unified Tabular Anomaly Detection Across Supervision Regimes",
+      "id": "2603.22006v1",
+      "title": "A plug-and-play approach with fast uncertainty quantification for weak lensing mass mapping",
       "authors": [
-        "Jack Yi Wei",
-        "Narges Armanfard"
+        "Hubert Leterme",
+        "Andreas Tersenov",
+        "Jalal Fadili",
+        "Jean-Luc Starck"
       ],
-      "abstract": "Anomaly detection on tabular data is commonly studied under three supervision regimes, including one-class settings that assume access to anomaly-free training samples, fully unsupervised settings with unlabeled and potentially contaminated training data, and semi-supervised settings with limited anomaly labels. Existing deep learning approaches typically train dataset-specific models under the assumption of a single supervision regime, which limits their ability to leverage shared structures across anomaly detection tasks and to adapt to different supervision levels. We propose ICLAD, an in-context learning foundation model for tabular anomaly detection that generalizes across both datasets and supervision regimes. ICLAD is trained via meta-learning on synthetic tabular anomaly detection tasks, and at inference time, the model assigns anomaly scores by conditioning on the training set without updating model weights. Comprehensive experiments on 57 tabular datasets from ADBench show that our method achieves state-of-the-art performance across three supervision regimes, establishing a unified framework for tabular anomaly detection.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T21:49:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.19497v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.19497v1"
+      "abstract": "Upcoming stage-IV surveys such as Euclid and Rubin will deliver vast amounts of high-precision data, opening new opportunities to constrain cosmological models with unprecedented accuracy. A key step in this process is the reconstruction of the dark matter distribution from noisy weak lensing shear measurements. Current deep learning-based mass mapping methods achieve high reconstruction accuracy, but either require retraining a model for each new observed sky region (limiting practicality) or rely on slow MCMC sampling. Efficient exploitation of future survey data therefore calls for a new method that is accurate, flexible, and fast at inference. In addition, uncertainty quantification with coverage guarantees is essential for reliable cosmological parameter estimation. We introduce PnPMass, a plug-and-play approach for weak lensing mass mapping. The algorithm produces point estimates by alternating between a gradient descent step with a carefully chosen data fidelity term, and a denoising step implemented with a single deep learning model trained on simulated data corrupted by Gaussian white noise. We also propose a fast, sampling-free uncertainty quantification scheme based on moment networks, with calibrated error bars obtained through conformal prediction to ensure coverage guarantees. Finally, we benchmark PnPMass against both model-driven and data-driven mass mapping techniques. PnPMass achieves performance close to that of state-of-the-art deep-learning methods while offering fast inference (converging in just a few iterations) and requiring only a single training phase, independently of the noise covariance of the observations. It therefore combines flexibility, efficiency, and reconstruction accuracy, while delivering tighter error bars than existing approaches, making it well suited for upcoming weak lensing surveys.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T14:12:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.22006v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.22006v1"
     },
     {
-      "id": "2603.19463v1",
-      "title": "Deep Hilbert--Galerkin Methods for Infinite-Dimensional PDEs and Optimal Control",
+      "id": "2603.21869v1",
+      "title": "NeuralFVM: Neural-physics-based Finite Volume Method for Turbulent Flows Using the $k$-$ω$ Model",
       "authors": [
-        "Samuel N. Cohen",
-        "Filippo de Feo",
-        "Jackson Hebner",
-        "Justin Sirignano"
+        "Tingkai Xue",
+        "Yu Jiao",
+        "Te Ba",
+        "Jingliang Wang",
+        "Juntao Yang",
+        "Simon See",
+        "Boyang Chen",
+        "Claire E. Heaney",
+        "Christopher C. Pain",
+        "Chang Wei Kang",
+        "Mohamed Arif Bin Mohamed",
+        "Hongying Li"
       ],
-      "abstract": "We develop deep learning-based approximation methods for fully nonlinear second-order PDEs on separable Hilbert spaces, such as HJB equations for infinite-dimensional control, by parameterizing solutions via Hilbert--Galerkin Neural Operators (HGNOs). We prove the first Universal Approximation Theorems (UATs) which are sufficiently powerful to address these problems, based on novel topologies for Hessian terms and corresponding novel continuity assumptions on the fully nonlinear operator. These topologies are non-sequential and non-metrizable, making the problem delicate. In particular, we prove UATs for functions on Hilbert spaces, together with their Fréchet derivatives up to second order, and for unbounded operators applied to the first derivative, ensuring that HGNOs are able to approximate all the PDE terms. For control problems, we further prove UATs for optimal feedback controls in terms of our approximating value function HGNO. We develop numerical training methods, which we call Deep Hilbert--Galerkin and Hilbert Actor-Critic (reinforcement learning) Methods, for these problems by minimizing the $L^2_μ(H)$-norm of the residual of the PDE on the whole Hilbert space, not just a projected PDE to finite dimensions. This is the first paper to propose such an approach. The models considered arise in many applied sciences, such as functional differential equations in physics and Kolmogorov and HJB PDEs related to controlled PDEs, SPDEs, path-dependent systems, partially observed stochastic systems, and mean-field SDEs. We numerically solve examples of Kolmogorov and HJB PDEs related to the optimal control of deterministic and stochastic heat and Burgers' equations, demonstrating the promise of our deep learning-based approach.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T20:53:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.19463v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.19463v1"
+      "abstract": "In this work, we develop a neural-physics solver based on finite volume method (FVM), namely NeuralFVM, for turbulent flows by implementing the standard $k$-$ω$ model designed for efficient Graphics Processing Unit (GPU) execution. The governing equations for fluid flow and heat transfer are reformulated as local tensor operations using convolution-based stencil operators, which enables compatibility with deep learning libraries while preserving the conservative properties of the FVM. A key challenge in implementing the turbulent model within such a framework is the treatment of the stiff destruction terms in the $k$ and $ω$ transport equations. To address this issue, an operator-splitting strategy is introduced in which the stiff destruction terms are handled semi-implicitly while the remaining terms are advanced explicitly. This formulation avoids global matrix assembly and allows the entire solver to be implemented using local tensor operations. In addition, the pressure-velocity coupling is solved using a convolution-based geometric multigrid algorithm embedded within a neural network architecture. The resulting NeuralFVM solver is validated through comparison with simulations conducted using the commercial CFD software ANSYS Fluent for several channel-flow configurations and an indoor airflow scenario. The results demonstrate close agreement in velocity, temperature, and turbulence quantities, confirming the accuracy of the proposed approach. The developed GPU framework achieves a speedup of around 19-46 times compared with its Central Processing Unit (CPU) counterpart under different meshes. Moreover, the proposed solver naturally integrates with machine learning workflows, providing a promising foundation for future data-driven turbulence modeling and optimization.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T12:02:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21869v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21869v1"
     },
     {
-      "id": "2603.18985v1",
-      "title": "Revisiting OmniAnomaly for Anomaly Detection: performance metrics and comparison with PCA-based models",
+      "id": "2603.21832v1",
+      "title": "Deriving Health Metrics from the Photoplethysmogram: Benchmarks and Insights from MIMIC-III-Ext-PPG",
       "authors": [
-        "Bruna Alves",
-        "Ana Martins",
-        "Armando J. Pinho",
-        "Sónia Gouveia"
+        "Mohammad Moulaeifard",
+        "Philip J. Aston",
+        "Peter H. Charlton",
+        "Nils Strodthoff"
       ],
-      "abstract": "Deep learning models have become the dominant approach for multivariate time series anomaly detection (MTSAD), often reporting substantial performance improvements over classical statistical methods. However, these gains are frequently evaluated under heterogeneous thresholding strategies and evaluation protocols, making fair comparisons difficult. This work revisits OmniAnomaly, a widely used stochastic recurrent model for MTSAD, and systematically compares it with a simple linear baseline based on Principal Component Analysis (PCA) on the Server Machine Dataset (SMD). Both methods are evaluated under identical thresholding and evaluation procedures, with experiments repeated across 100 runs for each of the 28 machines in the dataset. Performance is evaluated using Precision, Recall and F1-score at point-level, with and without point-adjustment, and under different aggregation strategies across machines and runs, with the corresponding standard deviations also reported. The results show large variability across machines and show that PCA can achieve performance comparable to OmniAnomaly, and even outperform it when point-adjustment is not applied. These findings question the added value of more complex architectures under current benchmarking practices and highlight the critical role of evaluation methodology in MTSAD research.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T14:54:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18985v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18985v1"
+      "abstract": "Photoplethysmography (PPG) is one of the most widely captured biosignals for clinical prediction tasks, yet PPG-based algorithms are typically trained on small-scale datasets of uncertain quality, which hinders meaningful algorithm comparisons. We present a comprehensive benchmark for PPG-based clinical prediction using the \\dbname~dataset, establishing baselines across the full spectrum of clinically relevant applications: multi-class heart rhythm classification, and regression of physiological parameters including respiratory rate (RR), heart rate (HR), and blood pressure (BP). Most notably, we provide the first comprehensive assessment of PPG for general arrhythmia detection beyond atrial fibrillation (AF) and atrial flutter (AFLT), with performance stratified by BP, HR, and demographic subgroups. Using established deep learning architectures, we achieved strong performance for AF detection (AUROC = 0.96) and accurate physiological parameter estimation (RR MAE: 2.97 bpm; HR MAE: 1.13 bpm; SBP/DBP MAE: 16.13/8.70 mmHg). Cross-dataset validation demonstrates excellent generalizability for AF detection (AUROC = 0.97), while clinical subgroup analysis reveals marked performance differences across subgroups by BP, HR, and demographic strata. These variations appear to reflect population-specific waveform differences rather than systematic bias in model behavior. This framework establishes the first integrated benchmark for multi-task PPG-based clinical prediction, demonstrating that PPG signals can effectively support multiple simultaneous monitoring tasks and providing essential baselines for future algorithm development.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T11:19:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21832v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21832v1"
     },
     {
-      "id": "2603.18941v1",
-      "title": "Unified Taxonomy for Multivariate Time Series Anomaly Detection using Deep Learning",
+      "id": "2603.21661v1",
+      "title": "Cross-Scenario Deraining Adaptation with Unpaired Data: Superpixel Structural Priors and Multi-Stage Pseudo-Rain Synthesis",
       "authors": [
-        "Bruna Alves",
-        "Armando J. Pinho",
-        "Sónia Gouveia"
+        "Kangbo Zhao",
+        "Miaoxin Guan",
+        "Xiang Chen",
+        "Yukai Shi",
+        "Jinshan Pan"
       ],
-      "abstract": "The topic of Multivariate Time Series Anomaly Detection (MTSAD) has grown rapidly over the past years, with a steady rise in publications and Deep Learning (DL) models becoming the dominant paradigm. To address the lack of systematization in the field, this study introduces a novel and unified taxonomy with eleven dimensions over three parts (Input, Output and Model) for the categorization of DL-based MTSAD methods. The dimensions were established in a two-fold approach. First, they derived from a comprehensive analysis of methodological studies. Second, insights from review papers were incorporated. Furthermore, the proposed taxonomy was validated using an additional set of recent publications, providing a clear overview of methodological trends in MTSAD. Results reveal a convergence toward Transformer-based and reconstruction and prediction models, setting the foundation for emerging adaptive and generative trends. Building on and complementing existing surveys, this unified taxonomy is designed to accommodate future developments, allowing for new categories or dimensions to be added as the field progresses. This work thus consolidates fragmented knowledge in the field and provides a reference point for future research in MTSAD.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T14:17:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18941v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18941v1"
+      "abstract": "Image deraining plays a pivotal role in low-level computer vision, serving as a prerequisite for robust outdoor surveillance and autonomous driving systems. While deep learning paradigms have achieved remarkable success in firmly aligned settings, they often suffer from severe performance degradation when generalized to unseen Out-of-Distribution (OOD) scenarios. This failure stems primarily from the significant domain discrepancy between synthetic training datasets and the complex physical dynamics of real-world rain. To address these challenges, this paper proposes a pioneering cross-scenario deraining adaptation framework. Diverging from conventional approaches, our method obviates the requirements for paired rainy observations in the target domain, leveraging exclusively rain-free background images. We design a Superpixel Generation (Sup-Gen) module to extract stable structural priors from the source domain using Simple Linear Iterative Clustering. Subsequently, a Resolution-adaptive Fusion strategy is introduced to align these source structures with target backgrounds through texture similarity, ensuring the synthesis of diverse and realistic pseudo-data. Finally, we implement a pseudo-label re-Synthesize mechanism that employs multi-stage noise generation to simulate realistic rain streaks. This framework functions as a versatile plug-and-play module capable of seamless integration into arbitrary deraining architectures. Extensive experiments on state-of-the-art models demonstrate that our approach yields remarkable PSNR gains of up to 32% to 59% in OOD domains while significantly accelerating training convergence.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T07:38:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21661v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21661v1"
     },
     {
-      "id": "2603.18925v1",
-      "title": "Improving moment tensor solutions under Earth structure uncertainty with simulation-based inference",
+      "id": "2603.21616v1",
+      "title": "Rateless DeepJSCC for Broadcast Channels: a Rate-Distortion-Complexity Tradeoff",
       "authors": [
-        "A. A. Saoulis",
-        "T. -S. Pham",
-        "A. M. G. Ferreira"
+        "Zijun Qin",
+        "Jingxuan Huang",
+        "Zesong Fei",
+        "Haichuan Ding",
+        "Yulin Shao",
+        "Xianhao Chen"
       ],
-      "abstract": "Bayesian inference represents a principled way to incorporate Earth structure uncertainty in full-waveform moment tensor inversions, but traditional approaches generally require significant approximations that risk biasing the resulting solutions. We introduce a robust method for handling theory errors using simulation-based inference (SBI), a machine learning approach that empirically models their impact on the observations. This framework retains the rigour of Bayesian inference while avoiding restrictive assumptions about the functional form of the uncertainties. We begin by demonstrating that the common Gaussian parametrisation of theory errors breaks down under minor ($1-3 \\%$) 1-D Earth model uncertainty. To address this issue, we develop two formalisms for utilising SBI to improve the quality of the moment tensor solutions: one using physics-based insights into the theory errors, and another utilising an end-to-end deep learning algorithm. We then compare the results of moment tensor inversion with the standard Gaussian approach and SBI, and demonstrate that Gaussian assumptions induce bias and significantly under-report moment tensor uncertainties. We also show that these effects are particularly problematic when inverting short period data and for shallow, isotropic events. On the other hand, SBI produces more reliable, better calibrated posteriors of the earthquake source mechanism. Finally, we successfully apply our methodology to two well studied moderate magnitude earthquakes: one from the 1997 Long Valley Caldera volcanic earthquake sequence, and the 2020 Zagreb earthquake.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T14:04:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18925v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18925v1"
+      "abstract": "In recent years, numerous data-intensive broadcasting applications have emerged at the wireless edge, calling for a flexible tradeoff between distortion, transmission rate, and processing complexity. While deep learning-based joint source-channel coding (DeepJSCC) has been identified as a potential solution to data-intensive communications, most of these schemes are confined to worst-case solutions, lack adaptive complexity, and are inefficient in broadcast settings. To overcome these limitations, this paper introduces nonlinear transform rateless source-channel coding (NTRSCC), a variable-length JSCC framework for broadcast channels based on rateless codes. In particular, we integrate learned source transformations with physical-layer LT codes, develop unequal protection schemes that exploit decoder side information, and devise approximations to enable end-to-end optimization of rateless parameters. Our framework enables heterogeneous receivers to adaptively adjust their received number of rateless symbols and decoding iterations in belief propagation, thereby achieving a controllable tradeoff between distortion, rate, and decoding complexity. Simulation results demonstrate that the proposed method enhances image broadcast quality under stringent communication and processing budgets over heterogeneous edge devices.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T06:25:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21616v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21616v1"
     },
     {
-      "id": "2603.18766v1",
-      "title": "Enhancing the Parameterization of Reservoir Properties for Data Assimilation Using Deep VAE-GAN",
+      "id": "2603.21596v1",
+      "title": "In-network Attack Detection with Federated Deep Learning in IoT Networks: Real Implementation and Analysis",
       "authors": [
-        "Marcio Augusto Sampaio",
-        "Paulo Henrique Ranazzi",
-        "Martin Julian Blunt"
+        "Devashish Chaudhary",
+        "Sutharshan Rajasegarar",
+        "Shiva Raj Pokhrel",
+        "Lei Pan",
+        "Ruby D"
       ],
-      "abstract": "Currently, the methods called Iterative Ensemble Smoothers, especially the method called Ensemble Smoother with Multiple Data Assimilation (ESMDA) can be considered state-of-the-art for history matching in petroleum reservoir simulation. However, this approach has two important limitations: the use of an ensemble with finite size to represent the distributions and the Gaussian assumption in parameter and data uncertainties. This latter is particularly important because many reservoir properties have non-Gaussian distributions. Parameterization involves mapping non-Gaussian parameters to a Gaussian field before the update and then mapping them back to the original domain to forward the ensemble through the reservoir simulator. A promising approach to perform parameterization is through deep learning models. Recent studies have shown that Generative Adversarial Networks (GAN) performed poorly concerning data assimilation, but generated more geologically plausible realizations of the reservoir, while the Variational Autoencoder (VAE) performed better than the GAN in data assimilation, but generated less geologically realistic models. This work is innovative in combining the strengths of both to implement a deep learning model called Variational Autoencoder Generative Adversarial Network (VAE-GAN) integrated with ESMDA. The methodology was applied in two case studies, one case being categorical and the other with continuous values of permeability. Our findings demonstrate that by applying the VAE-GAN model we can obtain high quality reservoir descriptions (just like GANs) and a good history matching on the production curves (just like VAEs) simultaneously.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T11:20:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18766v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18766v1"
+      "abstract": "The rapid expansion of the Internet of Things (IoT) and its integration with backbone networks have heightened the risk of security breaches. Traditional centralized approaches to anomaly detection, which require transferring large volumes of data to central servers, suffer from privacy, scalability, and latency limitations. This paper proposes a lightweight autoencoder-based anomaly detection framework designed for deployment on resource-constrained edge devices, enabling real-time detection while minimizing data transfer and preserving privacy. Federated learning is employed to train models collaboratively across distributed devices, where local training occurs on edge nodes and only model weights are aggregated at a central server. A real-world IoT testbed using Raspberry Pi sensor nodes was developed to collect normal and attack traffic data. The proposed federated anomaly detection system, implemented and evaluated on the testbed, demonstrates its effectiveness in accurately identifying network attacks. The communication overhead was reduced significantly while achieving comparable performance to the centralized method.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T05:46:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21596v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21596v1"
     },
     {
-      "id": "2603.18414v1",
-      "title": "Learning Entanglement Quasiprobability from Noisy and Incomplete Data",
+      "id": "2603.22365v1",
+      "title": "Q-AGNN: Quantum-Enhanced Attentive Graph Neural Network for Intrusion Detection",
       "authors": [
-        "Yu-Zhuo Li",
-        "Li-Chao Peng",
-        "Ke-Mi Xu"
+        "Devashish Chaudhary",
+        "Sutharshan Rajasegarar",
+        "Shiva Raj Pokhrel"
       ],
-      "abstract": "Negativities in quasiprobability distributions, a foundational concept originating in quantum optics, serve as a fundamental signature of quantum nonclassicality, with entanglement quasiprobabilities offering a necessary and sufficient criterion for entanglement. However, practical reconstruction of entanglement quasiprobabilities conventionally requires full quantum state tomography, severely limiting scalability. Here, we propose a deep-learning framework that reconstructs entanglement quasiprobabilities directly from incomplete local projective measurements, bypassing full state reconstruction. Using a residual neural network, partial measurement outcomes are mapped to high-fidelity entanglement quasiprobabilities. Numerical benchmarks up to three qubits show more than a $30\\times$ reduction in reconstruction error compared with state-of-the-art tomographic methods. Experimental validation on photonic entangled states demonstrates reconstruction and entanglement detection with substantially reduced measurement resources. Our results establish machine-learning-assisted reconstruction of entanglement quasiprobabilities as a scalable and practical tool for entanglement characterization in quantum optical systems.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T02:22:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18414v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18414v1"
+      "abstract": "With the rapid growth of interconnected devices, accurately detecting malicious activities in network traffic has become increasingly challenging. Most existing deep learning-based intrusion detection systems treat network flows as independent instances, thereby failing to exploit the relational dependencies inherent in network communications. To address this limitation, we propose Q-AGNN, a Quantum-Enhanced Attentive Graph Neural Network for intrusion detection, where network flows are modeled as nodes and edges represent similarity relationships. Q-AGNN leverages parameterized quantum circuits (PQCs) to encode multi-hop neighborhood information into a high-dimensional latent space, inducing a bounded quantum feature map that implements a second-order polynomial graph filter in a quantum-induced Hilbert space. An attention mechanism is subsequently applied to adaptively weight the quantum-enhanced embeddings, allowing the model to focus on the most influential nodes contributing to anomalous behavior. Extensive experiments conducted on four benchmark intrusion detection datasets demonstrate that Q-AGNN achieves competitive or superior detection performance compared to state-of-the-art graph-based methods, while consistently maintaining low false positive rates under hardware-calibrated noise conditions. Moreover, we also executed the Q-AGNN framework on actual IBM quantum hardware to demonstrate the practical operability of the proposed pipeline under real NISQ conditions. These results highlight the effectiveness of integrating quantum-enhanced representations with attention mechanisms for graph-based intrusion detection and underscore the potential of hybrid quantum-classical learning frameworks in cybersecurity applications.",
+      "published": "March 23, 2026",
+      "published_raw": "2026-03-23T05:07:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.22365v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.22365v1"
     },
     {
-      "id": "2603.18397v1",
-      "title": "FlowMS: Flow Matching for De Novo Structure Elucidation from Mass Spectra",
+      "id": "2603.21284v1",
+      "title": "Sonny: Breaking the Compute Wall in Medium-Range Weather Forecasting",
       "authors": [
-        "Jianan Nie",
-        "Peng Gao"
+        "Minjong Cheon"
       ],
-      "abstract": "Mass spectrometry (MS) stands as a cornerstone analytical technique for molecular identification, yet de novo structure elucidation from spectra remains challenging due to the combinatorial complexity of chemical space and the inherent ambiguity of spectral fragmentation patterns. Recent deep learning approaches, including autoregressive sequence models, scaffold-based methods, and graph diffusion models, have made progress. However, diffusion-based generation for this task remains computationally demanding. Meanwhile, discrete flow matching, which has shown strong performance for graph generation, has not yet been explored for spectrum-conditioned structure elucidation. In this work, we introduce FlowMS, the first discrete flow matching framework for spectrum-conditioned de novo molecular generation. FlowMS generates molecular graphs through iterative refinement in probability space, enforcing chemical formula constraints while conditioning on spectral embeddings from a pretrained formula transformer encoder. Notably, it achieves state-of-the-art performance on 5 out of 6 metrics on the NPLIB1 benchmark: 9.15% top-1 accuracy (9.7% relative improvement over DiffMS) and 7.96 top-10 MCES (4.2% improvement over MS-BART). We also visualize the generated molecules, which further demonstrate that FlowMS produces structurally plausible candidates closely resembling ground truth structures. These results establish discrete flow matching as a promising paradigm for mass spectrometry-based structure elucidation in metabolomics and natural product discovery.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T01:41:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18397v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18397v1"
+      "abstract": "Weather forecasting is a fundamental problem for protecting lives and infrastructure from high-impact atmospheric events. Recently, data-driven weather forecasting methods based on deep learning have demonstrated strong performance, often reaching accuracy levels competitive with operational numerical systems. However, many existing models rely on large-scale training regimes and compute-intensive architectures, which raises the practical barrier for academic groups with limited compute resources. Here we introduce Sonny, an efficient hierarchical transformer that achieves competitive medium-range forecasting performance while remaining feasible within reasonable compute budgets. At the core of Sonny is a two-stage StepsNet design: a narrow slow path first models large-scale atmospheric dynamics, and a subsequent full-width fast path integrates thermodynamic interactions. To stabilize medium-range rollout without an additional fine-tuning stage, we apply exponential moving average (EMA) during training. On WeatherBench2, Sonny yields robust medium-range forecast skill, remains competitive with operational baselines, and demonstrates clear advantages over FastNet, particularly at extended tropical lead times. In practice, Sonny can be trained to convergence on a single NVIDIA A40 GPU in approximately 5.5 days.",
+      "published": "March 22, 2026",
+      "published_raw": "2026-03-22T15:15:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21284v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21284v1"
     },
     {
-      "id": "2603.18387v1",
-      "title": "Mathematical Foundations of Deep Learning",
+      "id": "2603.21169v1",
+      "title": "Model Evolution Under Zeroth-Order Optimization: A Neural Tangent Kernel Perspective",
       "authors": [
-        "Xiaojing Ye"
+        "Chen Zhang",
+        "Yuxin Cheng",
+        "Chenchen Ding",
+        "Shuqi Wang",
+        "Jingreng Lei",
+        "Runsheng Yu",
+        "Yik-Chung WU",
+        "Ngai Wong"
       ],
-      "abstract": "This draft book offers a comprehensive and rigorous treatment of the mathematical principles underlying modern deep learning. The book spans core theoretical topics, from the approximation capabilities of deep neural networks, the theory and algorithms of optimal control and reinforcement learning integrated with deep learning techniques, to contemporary generative models that drive today's advances in artificial intelligence.",
-      "published": "March 19, 2026",
-      "published_raw": "2026-03-19T01:14:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18387v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18387v1"
+      "abstract": "Zeroth-order (ZO) optimization enables memory-efficient training of neural networks by estimating gradients via forward passes only, eliminating the need for backpropagation. However, the stochastic nature of gradient estimation significantly obscures the training dynamics, in contrast to the well-characterized behavior of first-order methods under Neural Tangent Kernel (NTK) theory. To address this, we introduce the Neural Zeroth-order Kernel (NZK) to describe model evolution in function space under ZO updates. For linear models, we prove that the expected NZK remains constant throughout training and depends explicitly on the first and second moments of the random perturbation directions. This invariance yields a closed-form expression for model evolution under squared loss. We further extend the analysis to linearized neural networks. Interpreting ZO updates as kernel gradient descent via NZK provides a novel perspective for potentially accelerating convergence. Extensive experiments across synthetic and real-world datasets (including MNIST, CIFAR-10, and Tiny ImageNet) validate our theoretical results and demonstrate acceleration when using a single shared random vector.",
+      "published": "March 22, 2026",
+      "published_raw": "2026-03-22T11:14:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21169v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21169v1"
     },
     {
-      "id": "2603.18328v1",
-      "title": "A Family of Adaptive Activation Functions for Mitigating Failure Modes in Physics-Informed Neural Networks",
+      "id": "2603.21039v1",
+      "title": "Benchmarking Scientific Machine Learning Models for Air Quality Data",
       "authors": [
-        "Krishna Murari"
+        "Khawja Imran Masud",
+        "Venkata Sai Rahul Unnam",
+        "Sahara Ali"
       ],
-      "abstract": "Physics-Informed Neural Networks(PINNs) are a powerful and flexible learning framework that has gained significant attention in recent years. It has demonstrated strong performance across a wide range of scientific and engineering problems. In parallel, wavelets have been extensively used as efficient computational tools due to their strong approximation capabilities. Motivated by the common failure modes observed in standard PINNs, this work introduces a novel family of adaptive wavelet-based activation functions. The proposed activation functions significantly improve training stability and expressive power by combining trainable wavelet functions with either trainable or fixed hyperbolic tangent and softplus functions. Five distinct activation functions are developed within the PINN framework and systematically evaluated across four representative classes of partial differential equations (PDEs). Comprehensive comparisons using bar plots demonstrate improved robustness and accuracy compared to traditional activation functions. Furthermore, the proposed approach is validated through direct comparisons with baseline PINNs, transformer-based architectures such as PINNsFormer, and other deep learning models, highlighting its effectiveness and generality.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T22:24:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18328v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18328v1"
+      "abstract": "Accurate air quality index (AQI) forecasting is essential for the protecting public health in rapidly growing urban regions, and the practical model evaluation and selection are often challenged by the lack of rigorous, region-specific benchmarking on standardized datasets. Physics-guided machine learning and deep learning models could be a good and effective solution to resolve such issues with more accurate and efficient AQI forecasting. This research study presents an explainable and comprehensive benchmark that enables a guideline and proposed physics-guided best model by benchmarking classical time-series, machine-learning, and deep-learning approaches for multi-horizon AQI forecasting in North Texas (Dallas County). Using publicly available U.S. Environmental Protection Agency (EPA) daily observations of air quality data from 2022 to 2024, we curate city-level time series for PM2.5 and O3 by aggregating station measurements and constructing lag-wise forecasting datasets for LAG in {1,7,14,30} days. For benchmarking the best model, linear regression (LR), SARIMAX, multilayer perceptrons (MLP), and LSTM networks are evaluated with the proposed physics-guided variants (MLP+Physics and LSTM+Physics) that incorporate the EPA breakpoint-based AQI formulation as a consistency constraint through a weighted loss. Experiments using chronological train-test splits and error metrics MAE, RMSE showed that deep-learning models outperform simpler baselines, while physics guidance improves stability and yields physically consistent pollutant with AQI relationships, with the largest benefits observed for short-horizon prediction and for PM2.5 and O3. Overall, the results provide a practical reference for selecting AQI forecasting models in North Texas and clarify when lightweight physics constraints meaningfully improve predictive performance across pollutants and forecast horizons.",
+      "published": "March 22, 2026",
+      "published_raw": "2026-03-22T03:31:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21039v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21039v1"
     },
     {
-      "id": "2603.18266v1",
-      "title": "Enactor: From Traffic Simulators to Surrogate World Models",
+      "id": "2603.21034v1",
+      "title": "Fuel Consumption Prediction: A Comparative Analysis of Machine Learning Paradigms",
       "authors": [
-        "Yash Ranjan",
-        "Rahul Sengupta",
-        "Anand Rangarajan",
-        "Sanjay Ranka"
+        "Ali Akram"
       ],
-      "abstract": "Traffic microsimulators are widely used to evaluate road network performance under various ``what-if\" conditions. However, the behavior models controlling the actions of the actors are overly simplistic and fails to capture realistic actor-actor interactions. Deep learning-based methods have been applied to model vehicles and pedestrians as ``agents\" responding to their surrounding ``environment\" (including lanes, signals, and neighboring agents). Although effective in learning actor-actor interaction, these approaches fail to generate physically consistent trajectories over long time periods, and they do not explicitly address the complex dynamics that arise at traffic intersections which is a critical location in urban networks. Inspired by the World Model paradigm, we have developed an actor centric generative model using transformer-based architecture that is able to capture the actor-actor interaction, at the same time understanding the geometry to the traffic intersection to generate physically grounded trajectories that are based on learned behavior. Moreover, we test the model in a live ``simulation-in-the-loop\" setting, where we generate the initial conditions of the actors using SUMO and then let the model control the dynamics of the actors. We let the simulation run for 40000 timesteps (4000 seconds), testing the performance of the model on long timerange and evaluating the trajectories on traffic engineering related metrics. Experimental results demonstrate that the proposed framework effectively captures complex actor-actor interactions and generates long-horizon, physically consistent trajectories, while requiring significantly fewer training samples than traditional agent-centric generative approaches. Our model is able to outperform the baseline in traffic related as well as aggregate metrics where our model beats the baseline by more than 10x on the KL-Divergence.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T20:38:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18266v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18266v1"
+      "abstract": "The automotive industry is under growing pressure to reduce its environmental impact, requiring accurate predictive modeling to support sustainable engineering design. This study examines the factors that determine vehicle fuel consumption from the seminal Motor Trend dataset, identifying the governing physical factors of efficiency through rigorous quantitative analysis. Methodologically, the research uses data sanitization, statistical outlier elimination, and in-depth Exploratory Data Analysis (EDA) to curb the occurrence of multicollinearity between powertrain features. A comparative analysis of machine learning paradigms including Multiple Linear Regression, Support Vector Machines (SVM), and Logistic Regression was carried out to assess predictive efficacy. Findings indicate that SVM Regression is most accurate on continuous prediction (R-squared = 0.889, RMSE = 0.326), and is effective in capturing the non-linear relationships between vehicle mass and engine displacement. In parallel, Logistic Regression proved superior for classification (Accuracy = 90.8%) and showed exceptional recall (0.957) when identifying low-efficiency vehicles. These results challenge the current trend toward black-box deep learning architectures for static physical datasets, providing validation of robust performance by interpretable and well-tuned classical models. The research finds that intrinsic vehicle efficiency is fundamentally determined by physical design parameters, weight and displacement, offering a data-driven framework for how manufacturers should focus on lightweighting and engine downsizing to achieve stringent global sustainability goals.",
+      "published": "March 22, 2026",
+      "published_raw": "2026-03-22T03:08:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.21034v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.21034v1"
     },
     {
-      "id": "2603.18225v1",
-      "title": "A Hybrid Conditional Diffusion-DeepONet Framework for High-Fidelity Stress Prediction in Hyperelastic Materials",
+      "id": "2603.20921v1",
+      "title": "Discriminative Representation Learning for Clinical Prediction",
       "authors": [
-        "Purna Vindhya Kota",
-        "Meer Mehran Rashid",
-        "Somdatta Goswami",
-        "Lori Graham-Brady"
+        "Yang Zhang",
+        "Li Fan",
+        "Samuel Lawrence",
+        "Shi Li"
       ],
-      "abstract": "Predicting stress fields in hyperelastic materials with complex microstructures remains challenging for traditional deep learning surrogates, which struggle to capture both sharp stress concentrations and the wide dynamic range of stress magnitudes. Convolutional architectures such as UNet tend to oversmooth high-frequency gradients, while neural operators like DeepONet exhibit spectral bias and underpredict localized extremes. Diffusion models can recover fine-scale structure but often introduce low-frequency amplitude drift, degrading physical scaling. To address these limitations, we propose a hybrid surrogate framework, cDDPM-DeepONet, that decouples stress morphology from magnitude. A conditional denoising diffusion probabilistic model (cDDPM), built on a UNet backbone, generates normalized von Mises stress fields conditioned on geometry and loading. In parallel, a modified DeepONet predicts global scaling parameters (minimum and maximum stress), enabling reconstruction of full-resolution physical stress maps. This separation allows the diffusion model to focus on spatial structure while the operator network corrects global amplitude, mitigating spectral and scaling biases. We evaluate the framework on nonlinear hyperelastic datasets with single and multiple polygonal voids. The proposed model consistently outperforms UNet, DeepONet, and standalone cDDPM baselines by one to two orders of magnitude. Spectral analysis shows strong agreement with finite element solutions across all wavenumbers, preserving both global behavior and localized stress concentrations.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T19:20:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18225v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18225v1"
+      "abstract": "Foundation models in healthcare have largely adopted self supervised pretraining objectives inherited from natural language processing and computer vision, emphasizing reconstruction and large scale representation learning prior to downstream adaptation. We revisit this paradigm in outcome centric clinical prediction settings and argue that, when high quality supervision is available, direct outcome alignment may provide a stronger inductive bias than generative pretraining. We propose a supervised deep learning framework that explicitly shapes representation geometry by maximizing inter class separation relative to within class variance, thereby concentrating model capacity along clinically meaningful axes. Across multiple longitudinal electronic health record tasks, including mortality and readmission prediction, our approach consistently outperforms masked, autoregressive, and contrastive pretraining baselines under matched model capacity. The proposed method improves discrimination, calibration, and sample efficiency, while simplifying the training pipeline to a single stage optimization. These findings suggest that in low entropy, outcome driven healthcare domains, supervision can act as the statistically optimal driver of representation learning, challenging the assumption that large scale self supervised pretraining is a prerequisite for strong clinical performance.",
+      "published": "March 21, 2026",
+      "published_raw": "2026-03-21T19:45:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.20921v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.20921v1"
     },
     {
-      "id": "2603.18107v1",
-      "title": "ARTEMIS: A Neuro Symbolic Framework for Economically Constrained Market Dynamics",
+      "id": "2603.20920v1",
+      "title": "Democratizing AI: A Comparative Study in Deep Learning Efficiency and Future Trends in Computational Processing",
       "authors": [
-        "Rahul D Ray"
+        "Lisan Al Amin",
+        "Md Ismail Hossain",
+        "Rupak Kumar Das",
+        "Mahbubul Islam",
+        "Saddam Mukta",
+        "Abdulaziz Tabbakh"
       ],
-      "abstract": "Deep learning models in quantitative finance often operate as black boxes, lacking interpretability and failing to incorporate fundamental economic principles such as no-arbitrage constraints. This paper introduces ARTEMIS (Arbitrage-free Representation Through Economic Models and Interpretable Symbolics), a novel neuro-symbolic framework combining a continuous-time Laplace Neural Operator encoder, a neural stochastic differential equation regularised by physics-informed losses, and a differentiable symbolic bottleneck that distils interpretable trading rules. The model enforces economic plausibility via two novel regularisation terms: a Feynman-Kac PDE residual penalising local no-arbitrage violations, and a market price of risk penalty bounding the instantaneous Sharpe ratio. We evaluate ARTEMIS against six strong baselines on four datasets: Jane Street, Optiver, Time-IMM, and DSLOB (a synthetic crash regime). Results demonstrate ARTEMIS achieves state-of-the-art directional accuracy, outperforming all baselines on DSLOB (64.96%) and Time-IMM (96.0%). A comprehensive ablation study confirms each component's contribution: removing the PDE loss reduces directional accuracy from 64.89% to 50.32%. Underperformance on Optiver is attributed to its long sequence length and volatility-focused target. By providing interpretable, economically grounded predictions, ARTEMIS bridges the gap between deep learning's power and the transparency demanded in quantitative finance.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T13:00:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18107v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18107v1"
+      "abstract": "The exponential growth in data has intensified the demand for computational power to train large-scale deep learning models. However, the rapid growth in model size and complexity raises concerns about equal and fair access to computational resources, particularly under increasing energy and infrastructure constraints. GPUs have emerged as essential for accelerating such workloads. This study benchmarks four deep learning models (Conv6, VGG16, ResNet18, CycleGAN) using TensorFlow and PyTorch on Intel Xeon CPUs and NVIDIA Tesla T4 GPUs. Our experiments demonstrate that, on average, GPU training achieves speedups ranging from 11x to 246x depending on model complexity, with lightweight models (Conv6) showing the highest acceleration (246x), mid-sized models (VGG16, ResNet18) achieving 51-116x speedups, and complex generative models (CycleGAN) reaching 11x improvements compared to CPU training. Additionally, in our PyTorch vs. TensorFlow comparison, we observed that TensorFlow's kernel-fusion optimizations reduce inference latency by approximately 15%. We also analyze GPU memory usage trends and projecting requirements through 2025 using polynomial regression. Our findings highlight that while GPUs are essential for sustaining AI's growth, democratized and shared access to GPU resources is critical for enabling research innovation across institutions with limited computational budgets.",
+      "published": "March 21, 2026",
+      "published_raw": "2026-03-21T19:29:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.20920v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.20920v1"
     },
     {
-      "id": "2603.18103v1",
-      "title": "STEP: Detecting Audio Backdoor Attacks via Stability-based Trigger Exposure Profiling",
+      "id": "2603.20908v1",
+      "title": "Bayesian Scattering: A Principled Baseline for Uncertainty on Image Data",
       "authors": [
-        "Kun Wang",
-        "Meng Chen",
-        "Junhao Wang",
-        "Yuli Wu",
-        "Li Lu",
-        "Chong Zhang",
-        "Peng Cheng",
-        "Jiaheng Zhang",
-        "Kui Ren"
+        "Bernardo Fichera",
+        "Zarko Ivkovic",
+        "Kjell Jorner",
+        "Philipp Hennig",
+        "Viacheslav Borovitskiy"
       ],
-      "abstract": "With the widespread deployment of deep-learning-based speech models in security-critical applications, backdoor attacks have emerged as a serious threat: an adversary who poisons a small fraction of training data can implant a hidden trigger that controls the model's output while preserving normal behavior on clean inputs. Existing inference-time defenses are not well suited to the audio domain, as they either rely on trigger over-robustness assumptions that fail on transformation-based and semantic triggers, or depend on properties specific to image or text modalities. In this paper, we propose STEP (Stability-based Trigger Exposure Profiling), a black-box, retraining-free backdoor detector that operates under hard-label-only access. Its core idea is to exploit a characteristic dual anomaly of backdoor triggers: anomalous label stability under semantic-breaking perturbations, and anomalous label fragility under semantic-preserving perturbations. STEP profiles each test sample with two complementary perturbation branches that target these two properties respectively, scores the resulting stability features with one-class anomaly detectors trained on benign references, and fuses the two scores via unsupervised weighting. Extensive experiments across seven backdoor attacks show that STEP achieves an average AUROC of 97.92% and EER of 4.54%, substantially outperforming state-of-the-art baselines, and generalizes across model architectures, speech tasks, an open-set verification scenario, and over-the-air physical-world settings.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T12:14:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.18103v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.18103v1"
+      "abstract": "Uncertainty quantification for image data is dominated by complex deep learning methods, yet the field lacks an interpretable, mathematically grounded baseline. We propose Bayesian scattering to fill this gap, serving as a first-step baseline akin to the role of Bayesian linear regression for tabular data. Our method couples the wavelet scattering transform-a deep, non-learned feature extractor-with a simple probabilistic head. Because scattering features are derived from geometric principles rather than learned, they avoid overfitting the training distribution. This helps provide sensible uncertainty estimates even under significant distribution shifts. We validate this on diverse tasks, including medical imaging under institution shift, wealth mapping under country-to-country shift, and Bayesian optimization of molecular properties. Our results suggest that Bayesian scattering is a solid baseline for complex uncertainty quantification methods.",
+      "published": "March 21, 2026",
+      "published_raw": "2026-03-21T18:43:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.20908v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.20908v1"
     },
     {
-      "id": "2603.17532v1",
-      "title": "Anisotropic Permeability Tensor Prediction from Porous Media Microstructure via Physics-Informed Progressive Transfer Learning with Hybrid CNN-Transformer",
+      "id": "2603.20631v1",
+      "title": "LassoFlexNet: Flexible Neural Architecture for Tabular Data",
       "authors": [
-        "Mohammad Nooraiepour"
+        "Kry Yik Chau Lui",
+        "Cheng Chi",
+        "Kishore Basu",
+        "Yanshuai Cao"
       ],
-      "abstract": "Accurate prediction of permeability tensors from pore-scale microstructure images is essential for subsurface flow modeling, yet direct numerical simulation requires hours per sample, fundamentally limiting large-scale uncertainty quantification and reservoir optimization workflows. A physics-informed deep learning framework is presented that resolves this bottleneck by combining a MaxViT hybrid CNN-Transformer architecture with progressive transfer learning and differentiable physical constraints. MaxViT's multi-axis attention mechanism simultaneously resolves grain-scale pore-throat geometry via block-local operations and REV-scale connectivity statistics through grid-global operations, providing the spatial hierarchy that permeability tensor prediction physically requires. Training on 20000 synthetic porous media samples spanning three orders of magnitude in permeability, a three-phase progressive curriculum advances from an ImageNet-pretrained baseline with D4-equivariant augmentation and tensor transformation, through component-weighted loss prioritizing off-diagonal coupling, to frozen-backbone transfer learning with porosity conditioning via Feature-wise Linear Modulation (FiLM). Onsager reciprocity and positive definiteness are enforced via differentiable penalty terms. On a held-out test set of 4000 samples, the framework achieves variance-weighted R2 = 0.9960 (R2_Kxx = 0.9967, R2_Kxy = 0.9758), a 33% reduction in unexplained variance over the supervised baseline. The results offer three transferable principles for physics-informed scientific machine learning: large-scale visual pretraining transfers effectively across domain boundaries; physical constraints are most robustly integrated as differentiable architectural components; and progressive training guided by diagnostic failure-mode analysis enables unambiguous attribution of performance gains across methodological stages.",
-      "published": "March 18, 2026",
-      "published_raw": "2026-03-18T09:41:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.17532v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.17532v1"
+      "abstract": "Despite their dominance in vision and language, deep neural networks often underperform relative to tree-based models on tabular data. To bridge this gap, we incorporate five key inductive biases into deep learning: robustness to irrelevant features, axis alignment, localized irregularities, feature heterogeneity, and training stability. We propose \\emph{LassoFlexNet}, an architecture that evaluates the linear and nonlinear marginal contribution of each input via Per-Feature Embeddings, and sparsely selects relevant variables using a Tied Group Lasso mechanism. Because these components introduce optimization challenges that destabilize standard proximal methods, we develop a \\emph{Sequential Hierarchical Proximal Adaptive Gradient optimizer with exponential moving averages (EMA)} to ensure stable convergence. Across $52$ datasets from three benchmarks, LassoFlexNet matches or outperforms leading tree-based models, achieving up to a $10$\\% relative gain, while maintaining Lasso-like interpretability. We substantiate these empirical results with ablation studies and theoretical proofs confirming the architecture's enhanced expressivity and structural breaking of undesired rotational invariance.",
+      "published": "March 21, 2026",
+      "published_raw": "2026-03-21T03:59:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.20631v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.20631v1"
     }
   ]
 }
