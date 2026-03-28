@@ -1,7 +1,257 @@
 {
-  "last_updated": "2026-03-26T01:10:12.348910",
+  "last_updated": "2026-03-28T01:04:15.647067",
   "count": 20,
   "papers": [
+    {
+      "id": "2603.25699v1",
+      "title": "Neural Network Conversion of Machine Learning Pipelines",
+      "authors": [
+        "Man-Ling Sung",
+        "Jan Silovsky",
+        "Man-Hung Siu",
+        "Herbert Gish",
+        "Chinnu Pittapally"
+      ],
+      "abstract": "Transfer learning and knowledge distillation has recently gained a lot of attention in the deep learning community. One transfer approach, the student-teacher learning, has been shown to successfully create ``small'' student neural networks that mimic the performance of a much bigger and more complex ``teacher'' networks. In this paper, we investigate an extension to this approach and transfer from a non-neural-based machine learning pipeline as teacher to a neural network (NN) student, which would allow for joint optimization of the various pipeline components and a single unified inference engine for multiple ML tasks. In particular, we explore replacing the random forest classifier by transfer learning to a student NN. We experimented with various NN topologies on 100 OpenML tasks in which random forest has been one of the best solutions. Our results show that for the majority of the tasks, the student NN can indeed mimic the teacher if one can select the right NN hyper-parameters. We also investigated the use of random forest for selecting the right NN hyper-parameters.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T17:46:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25699v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25699v1"
+    },
+    {
+      "id": "2603.25635v1",
+      "title": "Anchored-Branched Steady-state WInd Flow Transformer (AB-SWIFT): a metamodel for 3D atmospheric flow in urban environments",
+      "authors": [
+        "Armand de Villeroché",
+        "Rem-Sophia Mouradi",
+        "Vincent Le Guen",
+        "Sibo Cheng",
+        "Marc Bocquet",
+        "Alban Farchi",
+        "Patrick Armand",
+        "Patrick Massin"
+      ],
+      "abstract": "Air flow modeling at a local scale is essential for applications such as pollutant dispersion modeling or wind farm modeling. To circumvent costly Computational Fluid Dynamics (CFD) computations, deep learning surrogate models have recently emerged as promising alternatives. However, in the context of urban air flow, deep learning models struggle to adapt to the high variations of the urban geometry and to large mesh sizes. To tackle these challenges, we introduce Anchored Branched Steady-state WInd Flow Transformer (AB-SWIFT), a transformer-based model with an internal branched structure uniquely designed for atmospheric flow modeling. We train our model on a specially designed database of atmospheric simulations around randomised urban geometries and with a mixture of unstable, neutral, and stable atmospheric stratifications. Our model reaches the best accuracy on all predicted fields compared to state-of-the-art transformers and graph-based models. Our code and data is available at https://github.com/cerea-daml/abswift.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T16:46:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25635v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25635v1"
+    },
+    {
+      "id": "2603.25501v1",
+      "title": "An Experimental Comparison of the Most Popular Approaches to Fake News Detection",
+      "authors": [
+        "Pietro Dell'Oglio",
+        "Alessandro Bondielli",
+        "Francesco Marcelloni",
+        "Lucia C. Passaro"
+      ],
+      "abstract": "In recent years, fake news detection has received increasing attention in public debate and scientific research. Despite advances in detection techniques, the production and spread of false information have become more sophisticated, driven by Large Language Models (LLMs) and the amplification power of social media. We present a critical assessment of 12 representative fake news detection approaches, spanning traditional machine learning, deep learning, transformers, and specialized cross-domain architectures. We evaluate these methods on 10 publicly available datasets differing in genre, source, topic, and labeling rationale. We address text-only English fake news detection as a binary classification task by harmonizing labels into \"Real\" and \"Fake\" to ensure a consistent evaluation protocol. We acknowledge that label semantics vary across datasets and that harmonization inevitably removes such semantic nuances. Each dataset is treated as a distinct domain. We conduct in-domain, multi-domain and cross-domain experiments to simulate real-world scenarios involving domain shift and out-of-distribution data. Fine-tuned models perform well in-domain but struggle to generalize. Cross-domain architectures can reduce this gap but are data-hungry, while LLMs offer a promising alternative through zero- and few-shot learning. Given inherent dataset confounds and possible pre-training exposure, results should be interpreted as robustness evaluations within this English, text-only protocol.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T14:39:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25501v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25501v1"
+    },
+    {
+      "id": "2603.25476v1",
+      "title": "How Class Ontology and Data Scale Affect Audio Transfer Learning",
+      "authors": [
+        "Manuel Milling",
+        "Andreas Triantafyllopoulos",
+        "Alexander Gebhard",
+        "Simon Rampp",
+        "Björn W. Schuller"
+      ],
+      "abstract": "Transfer learning is a crucial concept within deep learning that allows artificial neural networks to benefit from a large pre-training data basis when confronted with a task of limited data. Despite its ubiquitous use and clear benefits, there are still many open questions regarding the inner workings of transfer learning and, in particular, regarding the understanding of when and how well it works. To that extent, we perform a rigorous study focusing on audio-to-audio transfer learning, in which we pre-train various model states on (ontology-based) subsets of AudioSet and fine-tune them on three computer audition tasks, namely acoustic scene recognition, bird activity recognition, and speech command recognition. We report that increasing the number of samples and classes in the pre-training data both have a positive impact on transfer learning. This is, however, generally surpassed by similarity between pre-training and the downstream task, which can lead the model to learn comparable features.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T14:18:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25476v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25476v1"
+    },
+    {
+      "id": "2603.25408v1",
+      "title": "Eclipsing binary classification with machine learning techniques",
+      "authors": [
+        "Bedri Keskin",
+        "Özgür Baştürk"
+      ],
+      "abstract": "We focus on the automated classification of eclipsing binary stars using deep learning methods to handle the vast data generated by large-scale photometric sky surveys. These surveys produce extensive datasets that are impractical for manual analysis. By using machine learning to classify eclipsing binary stars based on light curve morphology, this study aims to contribute to the efforts to efficiently process and accurately interpret massive data from projects Kepler, TESS and Gaia missions.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T13:03:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25408v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25408v1"
+    },
+    {
+      "id": "2603.25381v1",
+      "title": "Enabling ab initio geometry optimization of strongly correlated systems with transferable deep quantum Monte Carlo",
+      "authors": [
+        "P. Bernát Szabó",
+        "Zeno Schätzle",
+        "Frank Noé"
+      ],
+      "abstract": "A faithful description of chemical processes requires exploring extended regions of the molecular potential energy surface (PES), which remains challenging for strongly correlated systems. Transferable deep-learning variational Monte Carlo (VMC) offers a promising route by efficiently solving the electronic Schrödinger equation jointly across molecular geometries at consistently high accuracy, yet its stochastic nature renders direct exploration of molecular configuration space nontrivial. Here, we present a framework for highly accurate ab initio exploration of PESs that combines transferable deep-learning VMC with a cost-effective estimation of energies, forces, and Hessians. By continuously sampling nuclear configurations during VMC optimization of electronic wave functions, we obtain transferable descriptions that achieve zero-shot chemical accuracy within chemically relevant distributions of molecular geometries. Throughout the subsequent characterization of molecular configuration space, the PES is evaluated only sparsely, with local approximations constructed by estimating VMC energies and forces at sampled geometries and aggregating the resulting noisy data using Gaussian process regression. Our method enables accurate and efficient exploration of complex PES landscapes, including structure relaxation, transition-state searches, and minimum-energy pathways, for both ground and excited states. This opens the door to studying bond breaking, formation, and large structural rearrangements in systems with pronounced multi-reference character.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T12:31:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25381v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25381v1"
+    },
+    {
+      "id": "2603.25310v1",
+      "title": "On the Vulnerability of Deep Automatic Modulation Classifiers to Explainable Backdoor Threats",
+      "authors": [
+        "Younes Salmi",
+        "Hanna Bogucka"
+      ],
+      "abstract": "Deep learning (DL) has been widely studied for assisting applications of modern wireless communications. One of the applications is automatic modulation classification (AMC). However, DL models are found to be vulnerable to adversarial machine learning (AML) threats. One of the most persistent and stealthy threats is the backdoor (Trojan) attack. Nevertheless, most studied threats originate from other AI domains, such as computer vision (CV). Therefore, in this paper, a physical backdoor attack targeting the wireless signal before transmission is studied. The adversary is considered to be using explainable AI (XAI) to guide the placement of the trigger in the most vulnerable parts of the signal. Then, a class prototype combined with principal components is used to generate the trigger. The studied threat was found to be efficient in breaching multiple DL-based AMC models. The attack achieves high success rates for a wide range of SNR values and a small poisoning ratio.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T10:57:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25310v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25310v1"
+    },
+    {
+      "id": "2603.25304v1",
+      "title": "Physical Backdoor Attack Against Deep Learning-Based Modulation Classification",
+      "authors": [
+        "Younes Salmi",
+        "Hanna Bogucka"
+      ],
+      "abstract": "Deep Learning (DL) has become a key technology that assists radio frequency (RF) signal classification applications, such as modulation classification. However, the DL models are vulnerable to adversarial machine learning threats, such as data manipulation attacks. We study a physical backdoor (Trojan) attack that targets a DL-based modulation classifier. In contrast to digital backdoor attacks, where digital triggers are injected into the training dataset, we use power amplifier (PA) non-linear distortions to create physical triggers before the dataset is formed. During training, the adversary manipulates amplitudes of RF signals and changes their labels to a target modulation scheme, training a backdoored model. At inference, the adversary aims to keep the backdoor attack inactive such that the backdoored model maintains high accuracy on test signals. However, if they apply the same manipulation used during training on these test signals, the backdoor is activated, and the model misclassifies these signals. We demonstrate that our proposed attack achieves high attack success rates with few manipulated RD signals for different noise levels. Furthermore, we test the resilience of the proposed attack to multiple defense techniques, and the results show that these techniques fail to mitigate the attack.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T10:49:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25304v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25304v1"
+    },
+    {
+      "id": "2603.25229v1",
+      "title": "An Image Dataset of Common Skin Diseases of Bangladesh and Benchmarking Performance with Machine Learning Models",
+      "authors": [
+        "Sazzad Hossain",
+        "Saiful Islam",
+        "Muhammad Ibrahim",
+        "Md. Rasel Ahmed",
+        "Md Shuayb",
+        "Ahmedul Kabir"
+      ],
+      "abstract": "Skin diseases are a major public health concern worldwide, and their detection is often challenging without access to dermatological expertise. In countries like Bangladesh, which is highly populated, the number of qualified skin specialists and diagnostic instruments is insufficient to meet the demand. Due to the lack of proper detection and treatment of skin diseases, that may lead to severe health consequences including death. Common properties of skin diseases are, changing the color, texture, and pattern of skin and in this era of artificial intelligence and machine learning, we are able to detect skin diseases by using image processing and computer vision techniques. In response to this challenge, we develop a publicly available dataset focused on common skin disease detection using machine learning techniques. We focus on five prevalent skin diseases in Bangladesh: Contact Dermatitis, Vitiligo, Eczema, Scabies, and Tinea Ringworm. The dataset consists of 1612 images (of which, 250 are distinct while others are augmented), collected directly from patients at the outpatient department of Faridpur Medical College, Faridpur, Bangladesh. The data comprises of 302, 381, 301, 316, and 312 images of Dermatitis, Eczema, Scabies, Tinea Ringworm, and Vitiligo, respectively. Although the data are collected regionally, the selected diseases are common across many countries especially in South Asia, making the dataset potentially valuable for global applications in machine learning-based dermatology. We also apply several machine learning and deep learning models on the dataset and report classification performance. We expect that this research would garner attention from machine learning and deep learning researchers and practitioners working in the field of automated disease diagnosis.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T09:31:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25229v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25229v1"
+    },
+    {
+      "id": "2603.25186v1",
+      "title": "Knowledge-Guided Retrieval-Augmented Generation for Zero-Shot Psychiatric Data: Privacy Preserving Synthetic Data Generation",
+      "authors": [
+        "Adam Jakobsen",
+        "Sushant Gautam",
+        "Hugo Lewi Hammer",
+        "Susanne Olofsdotter",
+        "Miriam S Johanson",
+        "Pål Halvorsen",
+        "Vajira Thambawita"
+      ],
+      "abstract": "AI systems in healthcare research have shown potential to increase patient throughput and assist clinicians, yet progress is constrained by limited access to real patient data. To address this issue, we present a zero-shot, knowledge-guided framework for psychiatric tabular data in which large language models (LLMs) are steered via Retrieval-Augmented Generation using the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) and the International Classification of Diseases (ICD-10). We conducted experiments using different combinations of knowledge bases to generate privacy-preserving synthetic data. The resulting models were benchmarked against two state-of-the-art deep learning models for synthetic tabular data generation, namely CTGAN and TVAE, both of which rely on real data and therefore entail potential privacy risks. Evaluation was performed on six anxiety-related disorders: specific phobia, social anxiety disorder, agoraphobia, generalized anxiety disorder, separation anxiety disorder, and panic disorder. CTGAN typically achieves the best marginals and multivariate structure, while the knowledge-augmented LLM is competitive on pairwise structure and attains the lowest pairwise error in separation anxiety and social anxiety. An ablation study shows that clinical retrieval reliably improves univariate and pairwise fidelity over a no-retrieval LLM. Privacy analyses indicate that the real data-free LLM yields modest overlaps and a low average linkage risk comparable to CTGAN, whereas TVAE exhibits extensive duplication despite a low k-map score. Overall, grounding an LLM in clinical knowledge enables high-quality, privacy-preserving synthetic psychiatric data when real datasets are unavailable or cannot be shared.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T08:52:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.25186v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.25186v1"
+    },
+    {
+      "id": "2603.24933v1",
+      "title": "Decoding Market Emotions in Cryptocurrency Tweets via Predictive Statement Classification with Machine Learning and Transformers",
+      "authors": [
+        "Moein Shahiki Tash",
+        "Zahra Ahani",
+        "Mohim Tash",
+        "Mostafa Keikhay Farzaneh",
+        "Ari Y. Barrera-Animas",
+        "Olga Kolesnikova"
+      ],
+      "abstract": "The growing prominence of cryptocurrencies has triggered widespread public engagement and increased speculative activity, particularly on social media platforms. This study introduces a novel classification framework for identifying predictive statements in cryptocurrency-related tweets, focusing on five popular cryptocurrencies: Cardano, Matic, Binance, Ripple, and Fantom. The classification process is divided into two stages: Task 1 involves binary classification to distinguish between Predictive and Non-Predictive statements. Tweets identified as Predictive proceed to Task 2, where they are further categorized as Incremental, Decremental, or Neutral. To build a robust dataset, we combined manual and GPT-based annotation methods and utilized SenticNet to extract emotion features corresponding to each prediction category. To address class imbalance, GPT-generated paraphrasing was employed for data augmentation. We evaluated a wide range of machine learning, deep learning, and transformer-based models across both tasks. The results show that GPT-based balancing significantly enhanced model performance, with transformer models achieving the highest F1-score in Task 1, while traditional machine learning models performed best in Task 2. Furthermore, our emotion analysis revealed distinct emotional patterns associated with each prediction category across the different cryptocurrencies.",
+      "published": "March 26, 2026",
+      "published_raw": "2026-03-26T01:52:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.24933v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.24933v1"
+    },
+    {
+      "id": "2603.24790v1",
+      "title": "Local learning for stable backpropagation-free neural network training towards physical learning",
+      "authors": [
+        "Yaqi Guo",
+        "Fabian Braun",
+        "Bastiaan Ketelaar",
+        "Stephanie Tan",
+        "Richard Norte",
+        "Siddhant Kumar"
+      ],
+      "abstract": "While backpropagation and automatic differentiation have driven deep learning's success, the physical limits of chip manufacturing and rising environmental costs of deep learning motivate alternative learning paradigms such as physical neural networks. However, most existing physical neural networks still rely on digital computing for training, largely because backpropagation and automatic differentiation are difficult to realize in physical systems. We introduce FFzero, a forward-only learning framework enabling stable neural network training without backpropagation or automatic differentiation. FFzero combines layer-wise local learning, prototype-based representations, and directional-derivative-based optimization through forward evaluations only. We show that local learning is effective under forward-only optimization, where backpropagation fails. FFzero generalizes to multilayer perceptron and convolutional neural networks across classification and regression. Using a simulated photonic neural network as an example, we demonstrate that FFzero provides a viable path toward backpropagation-free in-situ physical learning.",
+      "published": "March 25, 2026",
+      "published_raw": "2026-03-25T20:06:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.24790v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.24790v1"
+    },
+    {
+      "id": "2603.24771v1",
+      "title": "Identifiable Deep Latent Variable Models for MNAR Data",
+      "authors": [
+        "Huiming Xie",
+        "Fei Xue",
+        "Xiao Wang"
+      ],
+      "abstract": "Missing data is a ubiquitous challenge in data analysis, often leading to biased and inaccurate results. Traditional imputation methods usually assume that the missingness mechanism is missing-at-random (MAR), where the missingness is independent of the missing values themselves. This assumption is frequently violated in real-world scenarios, prompted by recent advances in imputation methods using deep learning to address this challenge. However, these methods neglect the crucial issue of nonparametric identifiability in missing-not-at-random (MNAR) data, which can lead to biased and unreliable results. This paper seeks to bridge this gap by proposing a novel framework based on deep latent variable models for {MNAR data}. Building on the assumption of conditional no self-censoring {given} latent variables, we establish the identifiability of the data distribution. This crucial theoretical result guarantees the feasibility of our approach. To effectively estimate unknown parameters, we develop an efficient algorithm utilizing importance-weighted autoencoders. We demonstrate, both theoretically and empirically, that our estimation process accurately recovers the ground-truth joint distribution under specific regularity conditions. Extensive simulation studies and real-world data experiments showcase the advantages of our proposed method compared to various classical and state-of-the-art approaches to missing data imputation.",
+      "published": "March 25, 2026",
+      "published_raw": "2026-03-25T19:42:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.24771v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.24771v1"
+    },
+    {
+      "id": "2603.24654v1",
+      "title": "Spectral methods: crucial for machine learning, natural for quantum computers?",
+      "authors": [
+        "Vasilis Belis",
+        "Joseph Bowles",
+        "Rishabh Gupta",
+        "Evan Peters",
+        "Maria Schuld"
+      ],
+      "abstract": "This article presents an argument for why quantum computers could unlock new methods for machine learning. We argue that spectral methods, in particular those that learn, regularise, or otherwise manipulate the Fourier spectrum of a machine learning model, are often natural for quantum computers. For example, if a generative machine learning model is represented by a quantum state, the Quantum Fourier Transform allows us to manipulate the Fourier spectrum of the state using the entire toolbox of quantum routines, an operation that is usually prohibitive for classical models. At the same time, spectral methods are surprisingly fundamental to machine learning: A spectral bias has recently been hypothesised to be the core principle behind the success of deep learning; support vector machines have been known for decades to regularise in Fourier space, and convolutional neural nets build filters in the Fourier space of images. Could, then, quantum computing open fundamentally different, much more direct and resource-efficient ways to design the spectral properties of a model? We discuss this potential in detail here, hoping to stimulate a direction in quantum machine learning research that puts the question of ``why quantum?'' first.",
+      "published": "March 25, 2026",
+      "published_raw": "2026-03-25T18:00:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.24654v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.24654v1"
+    },
+    {
+      "id": "2603.24466v1",
+      "title": "Short-Term Turbulence Prediction for Seeing Using Machine Learning",
+      "authors": [
+        "Mary Joe Medlej",
+        "Rahul Srinivasan",
+        "Simon Prunet",
+        "Aziz Ziad",
+        "Christophe Giordano"
+      ],
+      "abstract": "Optical turbulence, driven by fluctuations of the atmospheric refractive index, poses a significant challenge to ground-based optical systems, as it distorts the propagation of light. This degradation affects both astronomical observations and free-space optical communications. While adaptive optics systems correct turbulence effects in real-time, their reactive nature limits their effectiveness under rapidly changing conditions, underscoring the need for predictive solutions. In this study, we address the problem of short-term turbulence forecasting by leveraging machine learning models to predict the atmospheric seeing parameter up to two hours in advance. We compare statistical and deep learning approaches, with a particular focus on probabilistic models that not only produce accurate forecasts but also quantify predictive uncertainty, crucial for robust decision-making in dynamic environments. Our evaluation includes Gaussian processes (GP) for statistical modeling, recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) as deterministic baselines, and our novel implementation of a normalizing flow for time series (FloTS) as a flexible probabilistic deep learning method. All models are trained exclusively on historical seeing data, allowing for a fair performance comparison. We show that FloTS achieves the best overall balance between predictive accuracy and well-calibrated uncertainty.",
+      "published": "March 25, 2026",
+      "published_raw": "2026-03-25T16:12:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.24466v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.24466v1"
+    },
+    {
+      "id": "2603.24382v1",
+      "title": "MolEvolve: LLM-Guided Evolutionary Search for Interpretable Molecular Optimization",
+      "authors": [
+        "Xiangsen Chen",
+        "Ruilong Wu",
+        "Yanyan Lan",
+        "Ting Ma",
+        "Yang Liu"
+      ],
+      "abstract": "Despite deep learning's success in chemistry, its impact is hindered by a lack of interpretability and an inability to resolve activity cliffs, where minor structural nuances trigger drastic property shifts. Current representation learning, bound by the similarity principle, often fails to capture these structural-activity discontinuities. To address this, we introduce MolEvolve, an evolutionary framework that reformulates molecular discovery as an autonomous, look-ahead planning problem. Unlike traditional methods that depend on human-engineered features or rigid prior knowledge, MolEvolve leverages a Large Language Model (LLM) to actively explore and evolve a library of executable chemical symbolic operations. By utilizing the LLM to cold start and an Monte Carlo Tree Search (MCTS) engine for test-time planning with external tools (e.g. RDKit), the system self-discovers optimal trajectories autonomously. This process evolves transparent reasoning chains that translate complex structural transformations into actionable, human-readable chemical insights. Experimental results demonstrate that MolEvolve's autonomous search not only evolves transparent, human-readable chemical insights, but also outperforms baselines in both property prediction and molecule optimization tasks.",
+      "published": "March 25, 2026",
+      "published_raw": "2026-03-25T15:01:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2603.24382v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2603.24382v1"
+    },
     {
       "id": "2603.24262v1",
       "title": "Forecasting with Guidance: Representation-Level Supervision for Time Series Forecasting",
@@ -61,261 +311,6 @@
       "published_raw": "2026-03-25T06:27:42Z",
       "pdf_link": "http://arxiv.org/pdf/2603.23984v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2603.23984v1"
-    },
-    {
-      "id": "2603.23977v1",
-      "title": "Kirchhoff-Inspired Neural Networks for Evolving High-Order Perception",
-      "authors": [
-        "Tongfei Chen",
-        "Jingying Yang",
-        "Linlin Yang",
-        "Jinhu Lü",
-        "David Doermann",
-        "Chunyu Xie",
-        "Long He",
-        "Tian Wang",
-        "Juan Zhang",
-        "Guodong Guo",
-        "Baochang Zhang"
-      ],
-      "abstract": "Deep learning architectures are fundamentally inspired by neuroscience, particularly the structure of the brain's sensory pathways, and have achieved remarkable success in learning informative data representations. Although these architectures mimic the communication mechanisms of biological neurons, their strategies for information encoding and transmission are fundamentally distinct. Biological systems depend on dynamic fluctuations in membrane potential; by contrast, conventional deep networks optimize weights and biases by adjusting the strengths of inter-neural connections, lacking a systematic mechanism to jointly characterize the interplay among signal intensity, coupling structure, and state evolution. To tackle this limitation, we propose the Kirchhoff-Inspired Neural Network (KINN), a state-variable-based network architecture constructed based on Kirchhoff's current law. KINN derives numerically stable state updates from fundamental ordinary differential equations, enabling the explicit decoupling and encoding of higher-order evolutionary components within a single layer while preserving physical consistency, interpretability, and end-to-end trainability. Extensive experiments on partial differential equation (PDE) solving and ImageNet image classification validate that KINN outperforms state-of-the-art existing methods.",
-      "published": "March 25, 2026",
-      "published_raw": "2026-03-25T06:17:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23977v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23977v1"
-    },
-    {
-      "id": "2603.23831v1",
-      "title": "Unveiling Hidden Convexity in Deep Learning: a Sparse Signal Processing Perspective",
-      "authors": [
-        "Emi Zeger",
-        "Mert Pilanci"
-      ],
-      "abstract": "Deep neural networks (DNNs), particularly those using Rectified Linear Unit (ReLU) activation functions, have achieved remarkable success across diverse machine learning tasks, including image recognition, audio processing, and language modeling. Despite this success, the non-convex nature of DNN loss functions complicates optimization and limits theoretical understanding. In this paper, we highlight how recently developed convex equivalences of ReLU NNs and their connections to sparse signal processing models can address the challenges of training and understanding NNs. Recent research has uncovered several hidden convexities in the loss landscapes of certain NN architectures, notably two-layer ReLU networks and other deeper or varied architectures. This paper seeks to provide an accessible and educational overview that bridges recent advances in the mathematics of deep learning with traditional signal processing, encouraging broader signal processing applications.",
-      "published": "March 25, 2026",
-      "published_raw": "2026-03-25T01:34:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23831v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23831v1"
-    },
-    {
-      "id": "2603.23785v1",
-      "title": "Retinal Disease Classification from Fundus Images using CNN Transfer Learning",
-      "authors": [
-        "Ali Akram"
-      ],
-      "abstract": "Retinal diseases remain among the leading preventable causes of visual impairment worldwide. Automated screening based on fundus image analysis has the potential to expand access to early detection, particularly in underserved populations. This paper presents a reproducible deep learning pipeline for binary retinal disease risk classification from publicly available fundus photographs. We implement and compare a baseline convolutional neural network with a transfer learning approach using a pretrained VGG16 backbone and evaluate generalization on held-out data. To address class imbalance, we apply class weighting and report standard classification metrics including accuracy, precision, recall, F1-score, confusion matrices, and ROC-AUC. The VGG16 transfer learning model achieves 90.8% test accuracy with a weighted F1-score of 0.90, substantially outperforming the baseline CNN (83.1% accuracy). Results indicate that transfer learning improves discrimination compared to a baseline CNN, while also revealing remaining challenges in sensitivity to minority disease cases. We discuss practical limitations related to dataset characteristics, class imbalance, and threshold selection, and provide guidance for reproducibility and future improvements for clinically reliable screening",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T23:40:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23785v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23785v1"
-    },
-    {
-      "id": "2603.23779v1",
-      "title": "Sentinel-2 for Crop Yield Estimation: A Systematic Review",
-      "authors": [
-        "Mohammadreza Narimani",
-        "Alireza Pourreza",
-        "Ali Moghimi",
-        "Parastoo Farajpoor"
-      ],
-      "abstract": "Accurate and timely crop yield estimation is critical for global food security, agricultural policy, and farm management. The Copernicus Sentinel-2 satellite constellation, with high spatial, temporal, and spectral resolution, has transformed agricultural monitoring by enabling field- and sub-field-scale analysis. This review synthesizes recent advances in Sentinel-2-based crop yield estimation. A key trend is the shift from regional models to high-resolution field-level assessments driven by three main approaches: (i) empirical models using vegetation indices combined with machine and deep learning methods such as Random Forest and Convolutional Neural Networks; (ii) integration of process-based crop growth models (e.g., WOFOST, SAFY) via data assimilation of Sentinel-2-derived variables like Leaf Area Index (LAI); and (iii) data fusion techniques combining Sentinel-2 optical data with Sentinel-1 SAR to mitigate cloud-related limitations. The review shows that machine learning, deep learning, and hybrid modeling frameworks can explain substantial within-field yield variability across crops and regions. However, performance remains constrained by limited ground-truth data, cloud-induced gaps, and challenges in model transferability across years and locations. Future directions include tighter integration of multi-modal data and improved in-season observations to support robust, operational decision-making in precision agriculture and sustainable intensification.",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T23:24:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23779v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23779v1"
-    },
-    {
-      "id": "2603.23496v1",
-      "title": "Estimating Flow Velocity and Vehicle Angle-of-Attack from Non-invasive Piezoelectric Structural Measurements Using Deep Learning",
-      "authors": [
-        "Chandler B. Smith",
-        "S. Hales Swift",
-        "Andrew Steyer",
-        "Ihab El-Kady"
-      ],
-      "abstract": "Accurate estimation of aerodynamic state variables such as freestream velocity and angle of attack (AoA) is important for aerodynamic load prediction, flight control, and model validation. This work presents a non-intrusive method for estimating vehicle velocity and AoA from structural vibration measurements rather than direct flow instrumentation such as pitot tubes. A dense array of piezoelectric sensors mounted on the interior skin of an aeroshell capture vibrations induced by turbulent boundary layer pressure fluctuations, and a convolutional neural network (CNN) is trained to invert these structural responses to recover velocity and AoA. Proof-of-concept is demonstrated through controlled experiments in Sandia's hypersonic wind tunnel spanning zero and nonzero AoA configurations, Mach~5 and Mach~8 conditions, and both constant and continuously varying tunnel operations. The CNN is trained and evaluated using data from 16 wind tunnel runs, with a temporally centered held-out interval within each run used to form training, validation, and test datasets and assess intra-run temporal generalization. Raw CNN predictions exhibit increased variance during continuously varying conditions; a short-window moving-median post-processing step suppresses this variance and improves robustness. After post-processing, the method achieves a mean velocity error relative to the low-pass filtered reference velocity below 2.27~m/s (0.21\\%) and a mean AoA error of $0.44^{\\circ} (8.25\\%)$ on held-out test data from the same experimental campaign, demonstrating feasibility of vibration-based velocity and AoA estimation in a controlled laboratory environment.",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T17:58:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23496v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23496v1"
-    },
-    {
-      "id": "2603.23302v1",
-      "title": "A Theory of Nonparametric Covariance Function Estimation for Discretely Observed Data",
-      "authors": [
-        "Yoshikazu Terada",
-        "Atsutomo Yara"
-      ],
-      "abstract": "We study nonparametric covariance function estimation for functional data observed with noise at discrete locations on a $d$-dimensional domain. Estimating the covariance function from discretely observed data is a challenging nonparametric problem, particularly in multidimensional settings, since the covariance function is defined on a product domain and thus suffers from the curse of dimensionality. This motivates the use of adaptive estimators, such as deep learning estimators. However, existing theoretical results are largely limited to estimators with explicit analytic representations, and the properties of general learning-based estimators remain poorly understood. We establish an oracle inequality for a broad class of learning-based estimators that applies to both sparse and dense observation regimes in a unified manner, and derive convergence rates for deep learning estimators over several classes of covariance functions. The resulting rates suggest that structural adaptation can mitigate the curse of dimensionality, similarly to classical nonparametric regression. We further compare the convergence rates of learning-based estimators with several existing procedures. For a one-dimensional smoothness class, deep learning estimators are suboptimal, whereas local linear smoothing estimators achieve a faster rate. For a structured function class, however, deep learning estimators attain the minimax rate up to polylogarithmic factors, whereas local linear smoothing estimators are suboptimal. These results reveal a distinctive adaptivity-variance trade-off in covariance function estimation.",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T15:04:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23302v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23302v1"
-    },
-    {
-      "id": "2603.23582v1",
-      "title": "AI Generalisation Gap In Comorbid Sleep Disorder Staging",
-      "authors": [
-        "Saswata Bose",
-        "Suvadeep Maiti",
-        "Shivam Kumar Sharma",
-        "Mythirayee S",
-        "Tapabrata Chakraborti",
-        "Srijitesh Rajendran",
-        "Raju S. Bapi"
-      ],
-      "abstract": "Accurate sleep staging is essential for diagnosing OSA and hypopnea in stroke patients. Although PSG is reliable, it is costly, labor-intensive, and manually scored. While deep learning enables automated EEG-based sleep staging in healthy subjects, our analysis shows poor generalization to clinical populations with disrupted sleep. Using Grad-CAM interpretations, we systematically demonstrate this limitation. We introduce iSLEEPS, a newly clinically annotated ischemic stroke dataset (to be publicly released), and evaluate a SE-ResNet plus bidirectional LSTM model for single-channel EEG sleep staging. As expected, cross-domain performance between healthy and diseased subjects is poor. Attention visualizations, supported by clinical expert feedback, show the model focuses on physiologically uninformative EEG regions in patient data. Statistical and computational analyses further confirm significant sleep architecture differences between healthy and ischemic stroke cohorts, highlighting the need for subject-aware or disease-specific models with clinical validation before deployment. A summary of the paper and the code is available at https://himalayansaswatabose.github.io/iSLEEPS_Explainability.github.io/",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T15:02:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23582v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23582v1"
-    },
-    {
-      "id": "2603.23265v1",
-      "title": "SynForceNet: A Force-Driven Global-Local Latent Representation Framework for Lithium-Ion Battery Fault Diagnosis",
-      "authors": [
-        "Rongxiu Chen",
-        "Yuting Su"
-      ],
-      "abstract": "Online safety fault diagnosis is essential for lithium-ion batteries in electric vehicles(EVs), particularly under complex and rare safety-critical conditions in real-world operation. In this work, we develop an online battery fault diagnosis network based on a deep anomaly detection framework combining kernel one-class classification and minimum-volume estimation. Mechanical constraints and spike-timing-dependent plasticity(STDP)-based dynamic representations are introduced to improve complex fault characterization and enable a more compact normal-state boundary. The proposed method is validated using 8.6 million valid data points collected from 20 EVs. Compared with several advanced baseline methods, it achieves average improvements of 7.59% in TPR, 27.92% in PPV, 18.28% in F1 score, and 23.68% in AUC. In addition, we analyze the spatial separation of fault representations before and after modeling, and further enhance framework robustness by learning the manifold structure in the latent space. The results also suggest the possible presence of shared causal structures across different fault types, highlighting the promise of integrating deep learning with physical constraints and neural dynamics for battery safety diagnosis.",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T14:27:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23265v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23265v1"
-    },
-    {
-      "id": "2603.23076v1",
-      "title": "MsFormer: Enabling Robust Predictive Maintenance Services for Industrial Devices",
-      "authors": [
-        "Jiahui Zhou",
-        "Dan Li",
-        "Ruibing Jin",
-        "Jian Lou",
-        "Yanran Zhao",
-        "Zhenghua Chen",
-        "Zigui Jiang",
-        "See-Kiong Ng"
-      ],
-      "abstract": "Providing reliable predictive maintenance is a critical industrial AI service essential for ensuring the high availability of manufacturing devices. Existing deep-learning methods present competitive results on such tasks but lack a general service-oriented framework to capture complex dependencies in industrial IoT sensor data. While Transformer-based models show strong sequence modeling capabilities, their direct deployment as robust AI services faces significant bottlenecks. Specifically, streaming sensor data collected in real-world service environments often exhibits multi-scale temporal correlations driven by machine working principles. Besides, the datasets available for training time-to-failure predictive services are typically limited in size. These issues pose significant challenges for directly applying existing models as robust predictive services. To address these challenges, we propose MsFormer, a lightweight Multi-scale Transformer designed as a unified AI service model for reliable industrial predictive maintenance. MsFormer incorporates a Multi-scale Sampling (MS) module and a tailored position encoding mechanism to capture sequential correlations across multi-streaming service data. Additionally, to accommodate data-scarce service environments, MsFormer adopts a lightweight attention mechanism with straightforward pooling operations instead of self-attention. Extensive experiments on real-world datasets demonstrate that the proposed framework achieves significant performance improvements over state-of-the-art methods. Furthermore, MsFormer outperforms across industrial devices and operating conditions, demonstrating strong generalizability while maintaining a highly reliable Quality of Service (QoS).",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T11:12:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.23076v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.23076v1"
-    },
-    {
-      "id": "2603.22675v1",
-      "title": "Vision-based Deep Learning Analysis of Unordered Biomedical Tabular Datasets via Optimal Spatial Cartography",
-      "authors": [
-        "Sakib Mostafa",
-        "Tarik Massoud",
-        "Maximilian Diehn",
-        "Lei Xing",
-        "Md Tauhidul Islam"
-      ],
-      "abstract": "Tabular data are central to biomedical research, from liquid biopsy and bulk and single-cell transcriptomics to electronic health records and phenotypic profiling. Unlike images or sequences, however, tabular datasets lack intrinsic spatial organization: features are treated as unordered dimensions, and their relationships must be inferred implicitly by the model. This limits the ability of vision architectures to exploit local structure and higher-order feature interactions in non-spatial biomedical data. Here we introduce Dynamic Feature Mapping (Dynomap), an end-to-end deep learning framework that learns a task-optimized spatial topology of features directly from data. Dynomap jointly optimizes feature placement and prediction through a fully differentiable rendering mechanism, without relying on heuristics, predefined groupings, or external priors. By transforming high-dimensional tabular vectors into learned feature maps, Dynomap enables vision-based models to operate effectively on unordered biomedical inputs. Across multiple clinical and biological datasets, Dynomap consistently outperformed classical machine learning, modern deep tabular models, and existing vector-to-image approaches. In liquid biopsy data, Dynomap organized clinically relevant gene signatures into coherent spatial patterns and improved multiclass cancer subtype prediction accuracy by up to 18%. In a Parkinson disease voice dataset, it clustered disease-associated acoustic descriptors and improved accuracy by up to 8%. Similar gains and interpretable feature organization were observed in additional biomedical datasets. These results establish Dynomap as a general strategy for bridging tabular and vision-based deep learning and for uncovering structured, clinically relevant patterns in high-dimensional biomedical data.",
-      "published": "March 24, 2026",
-      "published_raw": "2026-03-24T00:49:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.22675v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.22675v1"
-    },
-    {
-      "id": "2603.22536v1",
-      "title": "MSP-Conversation: A Corpus for Naturalistic, Time-Continuous Emotion Recognition",
-      "authors": [
-        "Luz Martinez-Lucas",
-        "Pravin Mote",
-        "Abinay Reddy Naini",
-        "Mohammed Abdelwahab",
-        "Carlos Busso"
-      ],
-      "abstract": "Affective computing aims to understand and model human emotions for computational systems. Within this field, speech emotion recognition (SER) focuses on predicting emotions conveyed through speech. While early SER systems relied on limited datasets and traditional machine learning models, recent deep learning approaches demand largescale, naturalistic emotional corpora. To address this need, we introduce the MSP-Conversation corpus: a dataset of more than 70 hours of conversational audio with time-continuous emotional annotations and detailed speaker diarizations. The time-continuous annotations capture the dynamic and contextdependent nature of emotional expression. The annotations in the corpus include fine-grained temporal traces of valence, arousal, and dominance. The audio data is sourced from publicly available podcasts and overlaps with a subset of the isolated speaking turns in the MSP-Podcast corpus to facilitate direct comparisons between annotation methods (i.e., in-context versus out-of-context annotations). The paper outlines the development of the corpus, annotation methodology, analyses of the annotations, and baseline SER experiments, establishing the MSP-Conversation corpus as a valuable resource for advancing research in dynamic SER in naturalistic settings.",
-      "published": "March 23, 2026",
-      "published_raw": "2026-03-23T19:58:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.22536v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.22536v1"
-    },
-    {
-      "id": "2603.22518v1",
-      "title": "High Resolution Flood Extent Detection Using Deep Learning with Random Forest Derived Training Labels",
-      "authors": [
-        "Azizbek Nuriddinov",
-        "Ebrahim Ahmadisharaf",
-        "Mohammad Reza Alizadeh"
-      ],
-      "abstract": "Validation of flood models, used to support risk mitigation strategies, remains challenging due to limited observations during extreme events. High-frequency, high-resolution optical imagery (~3 m), such as PlanetScope, offers new opportunities for flood mapping, although applications remain limited by cloud cover and the lack of labeled training data during disasters. To address this, we develop a flood mapping framework that integrates PlanetScope optical imagery with topographic features using machine learning (ML) and deep learning (DL) algorithms. A Random Forest model was applied to expert-annotated flood masks to generate training labels for DL models, U-Net. Two U-Net models with ResNet18 backbone were trained using optical imagery only (4 bands) and optical imagery combined with Height Above Nearest Drainage (HAND) and topographic slope (6 bands). Hurricane Ida (September 2021), which caused catastrophic flooding across the eastern United States, including the New York City metropolitan area, was used as an example to evaluate the framework. Results demonstrate that the U-Net model with topographic features achieved very close performance to the optical-only configuration (F1=0.92 and IoU=0.85 by both modeling scenarios), indicating that HAND and slope provide only marginal value to inundation extent detection. The proposed framework offers a scalable and label-efficient approach for mapping inundation extent that enables modeling under data-scarce flood scenarios.",
-      "published": "March 23, 2026",
-      "published_raw": "2026-03-23T19:26:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.22518v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.22518v1"
-    },
-    {
-      "id": "2603.22053v1",
-      "title": "AnimalCLAP: Taxonomy-Aware Language-Audio Pretraining for Species Recognition and Trait Inference",
-      "authors": [
-        "Risa Shinoda",
-        "Kaede Shiohara",
-        "Nakamasa Inoue",
-        "Hiroaki Santo",
-        "Fumio Okura"
-      ],
-      "abstract": "Animal vocalizations provide crucial insights for wildlife assessment, particularly in complex environments such as forests, aiding species identification and ecological monitoring. Recent advances in deep learning have enabled automatic species classification from their vocalizations. However, classifying species unseen during training remains challenging. To address this limitation, we introduce AnimalCLAP, a taxonomy-aware language-audio framework comprising a new dataset and model that incorporate hierarchical biological information. Specifically, our vocalization dataset consists of 4,225 hours of recordings covering 6,823 species, annotated with 22 ecological traits. The AnimalCLAP model is trained on this dataset to align audio and textual representations using taxonomic structures, improving the recognition of unseen species. We demonstrate that our proposed model effectively infers ecological and biological attributes of species directly from their vocalizations, achieving superior performance compared to CLAP. Our dataset, code, and models will be publicly available at https://dahlian00.github.io/AnimalCLAP_Page/.",
-      "published": "March 23, 2026",
-      "published_raw": "2026-03-23T14:53:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.22053v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.22053v1"
-    },
-    {
-      "id": "2603.22006v1",
-      "title": "A plug-and-play approach with fast uncertainty quantification for weak lensing mass mapping",
-      "authors": [
-        "Hubert Leterme",
-        "Andreas Tersenov",
-        "Jalal Fadili",
-        "Jean-Luc Starck"
-      ],
-      "abstract": "Upcoming stage-IV surveys such as Euclid and Rubin will deliver vast amounts of high-precision data, opening new opportunities to constrain cosmological models with unprecedented accuracy. A key step in this process is the reconstruction of the dark matter distribution from noisy weak lensing shear measurements. Current deep learning-based mass mapping methods achieve high reconstruction accuracy, but either require retraining a model for each new observed sky region (limiting practicality) or rely on slow MCMC sampling. Efficient exploitation of future survey data therefore calls for a new method that is accurate, flexible, and fast at inference. In addition, uncertainty quantification with coverage guarantees is essential for reliable cosmological parameter estimation. We introduce PnPMass, a plug-and-play approach for weak lensing mass mapping. The algorithm produces point estimates by alternating between a gradient descent step with a carefully chosen data fidelity term, and a denoising step implemented with a single deep learning model trained on simulated data corrupted by Gaussian white noise. We also propose a fast, sampling-free uncertainty quantification scheme based on moment networks, with calibrated error bars obtained through conformal prediction to ensure coverage guarantees. Finally, we benchmark PnPMass against both model-driven and data-driven mass mapping techniques. PnPMass achieves performance close to that of state-of-the-art deep-learning methods while offering fast inference (converging in just a few iterations) and requiring only a single training phase, independently of the noise covariance of the observations. It therefore combines flexibility, efficiency, and reconstruction accuracy, while delivering tighter error bars than existing approaches, making it well suited for upcoming weak lensing surveys.",
-      "published": "March 23, 2026",
-      "published_raw": "2026-03-23T14:12:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.22006v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.22006v1"
-    },
-    {
-      "id": "2603.21869v1",
-      "title": "NeuralFVM: Neural-physics-based Finite Volume Method for Turbulent Flows Using the $k$-$ω$ Model",
-      "authors": [
-        "Tingkai Xue",
-        "Yu Jiao",
-        "Te Ba",
-        "Jingliang Wang",
-        "Juntao Yang",
-        "Simon See",
-        "Boyang Chen",
-        "Claire E. Heaney",
-        "Christopher C. Pain",
-        "Chang Wei Kang",
-        "Mohamed Arif Bin Mohamed",
-        "Hongying Li"
-      ],
-      "abstract": "In this work, we develop a neural-physics solver based on finite volume method (FVM), namely NeuralFVM, for turbulent flows by implementing the standard $k$-$ω$ model designed for efficient Graphics Processing Unit (GPU) execution. The governing equations for fluid flow and heat transfer are reformulated as local tensor operations using convolution-based stencil operators, which enables compatibility with deep learning libraries while preserving the conservative properties of the FVM. A key challenge in implementing the turbulent model within such a framework is the treatment of the stiff destruction terms in the $k$ and $ω$ transport equations. To address this issue, an operator-splitting strategy is introduced in which the stiff destruction terms are handled semi-implicitly while the remaining terms are advanced explicitly. This formulation avoids global matrix assembly and allows the entire solver to be implemented using local tensor operations. In addition, the pressure-velocity coupling is solved using a convolution-based geometric multigrid algorithm embedded within a neural network architecture. The resulting NeuralFVM solver is validated through comparison with simulations conducted using the commercial CFD software ANSYS Fluent for several channel-flow configurations and an indoor airflow scenario. The results demonstrate close agreement in velocity, temperature, and turbulence quantities, confirming the accuracy of the proposed approach. The developed GPU framework achieves a speedup of around 19-46 times compared with its Central Processing Unit (CPU) counterpart under different meshes. Moreover, the proposed solver naturally integrates with machine learning workflows, providing a promising foundation for future data-driven turbulence modeling and optimization.",
-      "published": "March 23, 2026",
-      "published_raw": "2026-03-23T12:02:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.21869v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.21869v1"
-    },
-    {
-      "id": "2603.21832v1",
-      "title": "Deriving Health Metrics from the Photoplethysmogram: Benchmarks and Insights from MIMIC-III-Ext-PPG",
-      "authors": [
-        "Mohammad Moulaeifard",
-        "Philip J. Aston",
-        "Peter H. Charlton",
-        "Nils Strodthoff"
-      ],
-      "abstract": "Photoplethysmography (PPG) is one of the most widely captured biosignals for clinical prediction tasks, yet PPG-based algorithms are typically trained on small-scale datasets of uncertain quality, which hinders meaningful algorithm comparisons. We present a comprehensive benchmark for PPG-based clinical prediction using the \\dbname~dataset, establishing baselines across the full spectrum of clinically relevant applications: multi-class heart rhythm classification, and regression of physiological parameters including respiratory rate (RR), heart rate (HR), and blood pressure (BP). Most notably, we provide the first comprehensive assessment of PPG for general arrhythmia detection beyond atrial fibrillation (AF) and atrial flutter (AFLT), with performance stratified by BP, HR, and demographic subgroups. Using established deep learning architectures, we achieved strong performance for AF detection (AUROC = 0.96) and accurate physiological parameter estimation (RR MAE: 2.97 bpm; HR MAE: 1.13 bpm; SBP/DBP MAE: 16.13/8.70 mmHg). Cross-dataset validation demonstrates excellent generalizability for AF detection (AUROC = 0.97), while clinical subgroup analysis reveals marked performance differences across subgroups by BP, HR, and demographic strata. These variations appear to reflect population-specific waveform differences rather than systematic bias in model behavior. This framework establishes the first integrated benchmark for multi-task PPG-based clinical prediction, demonstrating that PPG signals can effectively support multiple simultaneous monitoring tasks and providing essential baselines for future algorithm development.",
-      "published": "March 23, 2026",
-      "published_raw": "2026-03-23T11:19:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2603.21832v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2603.21832v1"
     }
   ]
 }
