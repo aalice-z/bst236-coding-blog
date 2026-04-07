@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-04-06T01:14:16.989728",
+  "last_updated": "2026-04-07T01:12:06.142869",
   "count": 20,
   "papers": [
+    {
+      "id": "2604.04171v1",
+      "title": "A Model of Understanding in Deep Learning Systems",
+      "authors": [
+        "David Peter Wallis Freeborn"
+      ],
+      "abstract": "I propose a model of systematic understanding, suitable for machine learning systems. On this account, an agent understands a property of a target system when it contains an adequate internal model that tracks real regularities, is coupled to the target by stable bridge principles, and supports reliable prediction. I argue that contemporary deep learning systems often can and do achieve such understanding. However they generally fall short of the ideal of scientific understanding: the understanding is symbolically misaligned with the target system, not explicitly reductive, and only weakly unifying. I label this the Fractured Understanding Hypothesis.",
+      "published": "April 05, 2026",
+      "published_raw": "2026-04-05T16:27:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.04171v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.04171v1"
+    },
+    {
+      "id": "2604.04153v1",
+      "title": "Uncertainty-Aware Test-Time Adaptation for Cross-Region Spatio-Temporal Fusion of Land Surface Temperature",
+      "authors": [
+        "Sofiane Bouaziz",
+        "Adel Hafiane",
+        "Raphael Canals",
+        "Rachid Nedjai"
+      ],
+      "abstract": "Deep learning models have shown great promise in diverse remote sensing applications. However, they often struggle to generalize across geographic regions unseen during training due to domain shifts. Domain shifts occur when data distributions differ between the training region and new target regions, due to variations in land cover, climate, and environmental conditions. Test-time adaptation (TTA) has emerged as a solution to such shifts, but existing methods are primarily designed for classification and are not directly applicable to regression tasks. In this work, we address the regression task of spatio-temporal fusion (STF) for land surface temperature estimation. We propose an uncertainty-aware TTA framework that updates only the fusion module of a pre-trained STF model, guided by epistemic uncertainty, land use and land cover consistency, and bias correction, without requiring source data or labeled target samples. Experiments on four target regions with diverse climates, namely Rome in Italy, Cairo in Egypt, Madrid in Spain, and Montpellier in France, show consistent improvements in RMSE and MAE for a pre-trained model in Orléans, France. The average gains are 24.2% and 27.9%, respectively, even with limited unlabeled target data and only 10 TTA epochs.",
+      "published": "April 05, 2026",
+      "published_raw": "2026-04-05T15:33:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.04153v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.04153v1"
+    },
+    {
+      "id": "2604.04080v1",
+      "title": "Intelligent Traffic Monitoring with YOLOv11: A Case Study in Real-Time Vehicle Detection",
+      "authors": [
+        "Shkelqim Sherifi"
+      ],
+      "abstract": "Recent advancements in computer vision, driven by artificial intelligence, have significantly enhanced monitoring systems. One notable application is traffic monitoring, which leverages computer vision alongside deep learning-based object detection and counting. We present an offline, real-time traffic monitoring system that couples a pre-trained YOLOv11 detector with BoT-SORT/ByteTrack for multi-object tracking, implemented in PyTorch/OpenCV and wrapped in a Qt-based desktop UI. The CNN pipeline enables efficient vehicle detection and counting from video streams without cloud dependencies. Across diverse scenes, the system achieves (66.67-95.83%) counting accuracy. Class-wise detection yields high precision (cars: 0.97-1.00; trucks: 1.00) with strong recall (cars: 0.82-1.00; trucks: 0.70-1.00), resulting in F1 scores of (0.90-1.00 for cars and 0.82-1.00 for trucks). While adverse weather conditions may negatively impact this performance, results remain robust in typical conditions. By integrating lightweight models with an accessible, cloud-independent interface, this paper contributes to the modernization and development of future smart cities by showing the capacity of AI-driven traffic monitoring systems.",
+      "published": "April 05, 2026",
+      "published_raw": "2026-04-05T11:57:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.04080v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.04080v1"
+    },
     {
       "id": "2604.03203v1",
       "title": "PR3DICTR: A modular AI framework for medical 3D image-based detection and outcome prediction",
@@ -54,6 +93,22 @@
       "published_raw": "2026-04-03T16:13:16Z",
       "pdf_link": "http://arxiv.org/pdf/2604.03150v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2604.03150v1"
+    },
+    {
+      "id": "2604.03344v1",
+      "title": "Towards Intelligent Energy Security: A Unified Spatio-Temporal and Graph Learning Framework for Scalable Electricity Theft Detection in Smart Grids",
+      "authors": [
+        "AbdulQoyum A. Olowookere",
+        "Usman A. Oguntola",
+        "Ebenezer. Leke Odekanle",
+        "Maridiyah A. Madehin",
+        "Aisha A. Adesope"
+      ],
+      "abstract": "Electricity theft and non-technical losses (NTLs) remain critical challenges in modern smart grids, causing significant economic losses and compromising grid reliability. This study introduces the SmartGuard Energy Intelligence System (SGEIS), an integrated artificial intelligence framework for electricity theft detection and intelligent energy monitoring. The proposed system combines supervised machine learning, deep learning-based time-series modeling, Non-Intrusive Load Monitoring (NILM), and graph-based learning to capture both temporal and spatial consumption patterns. A comprehensive data processing pipeline is developed, incorporating feature engineering, multi-scale temporal analysis, and rule-based anomaly labeling. Deep learning models, including Long Short-Term Memory (LSTM), Temporal Convolutional Networks (TCN), and Autoencoders, are employed to detect abnormal usage patterns. In parallel, ensemble learning methods such as Random Forest, Gradient Boosting, XGBoost, and LightGBM are utilized for classification. To model grid topology and spatial dependencies, Graph Neural Networks (GNNs) are applied to identify correlated anomalies across interconnected nodes. The NILM module enhances interpretability by disaggregating appliance-level consumption from aggregate signals. Experimental results demonstrate strong performance, with Gradient Boosting achieving a ROC-AUC of 0.894, while graph-based models attain over 96% accuracy in identifying high-risk nodes. The hybrid framework improves detection robustness by integrating temporal, statistical, and spatial intelligence. Overall, SGEIS provides a scalable and practical solution for electricity theft detection, offering high accuracy, improved interpretability, and strong potential for real-world smart grid deployment.",
+      "published": "April 03, 2026",
+      "published_raw": "2026-04-03T09:57:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.03344v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.03344v1"
     },
     {
       "id": "2604.02904v1",
@@ -204,6 +259,21 @@
       "arxiv_link": "http://arxiv.org/abs/2604.01712v1"
     },
     {
+      "id": "2604.03321v1",
+      "title": "General Explicit Network (GEN): A novel deep learning architecture for solving partial differential equations",
+      "authors": [
+        "Genwei Ma",
+        "Ting Luo",
+        "Ping Yang",
+        "Xing Zhao"
+      ],
+      "abstract": "Machine learning, especially physics-informed neural networks (PINNs) and their neural network variants, has been widely used to solve problems involving partial differential equations (PDEs). The successful deployment of such methods beyond academic research remains limited. For example, PINN methods primarily consider discrete point-to-point fitting and fail to account for the potential properties of real solutions. The adoption of continuous activation functions in these approaches leads to local characteristics that align with the equation solutions while resulting in poor extensibility and robustness. A general explicit network (GEN) that implements point-to-function PDE solving is proposed in this paper. The \"function\" component can be constructed based on our prior knowledge of the original PDEs through corresponding basis functions for fitting. The experimental results demonstrate that this approach enables solutions with high robustness and strong extensibility to be obtained.",
+      "published": "April 02, 2026",
+      "published_raw": "2026-04-02T05:14:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.03321v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.03321v1"
+    },
+    {
       "id": "2604.01466v1",
       "title": "Efficient Equivariant Transformer for Self-Driving Agent Modeling",
       "authors": [
@@ -246,77 +316,6 @@
       "published_raw": "2026-04-01T20:57:27Z",
       "pdf_link": "http://arxiv.org/pdf/2604.01398v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2604.01398v1"
-    },
-    {
-      "id": "2604.01365v1",
-      "title": "VIANA: character Value-enhanced Intensity Assessment via domain-informed Neural Architecture",
-      "authors": [
-        "Luana P. Queiroz",
-        "Icaro S. C. Bernardes",
-        "Ana M. Ribeiro",
-        "Bernardo M. Aguilera-Mercado",
-        "Idelfonso B. R. Nogueira"
-      ],
-      "abstract": "Predicting the perceived intensity of odorants remains a fundamental challenge in sensory science due to the complex, non-linear behavior of their response, as well as the difficulty in correlating molecular structure with human perception. While traditional deep learning models, such as Graph Convolutional Networks (GCNs), excel at capturing molecular topology, they often fail to account for the biological and perceptual context of olfaction. This study introduces VIANA, a novel \"tri-pillar\" framework that integrates structural graph theory, character value embeddings, and phenomenological behavior. This methodology systematically evaluates knowledge transfer across three distinct domains: molecular structure via GCNs, semantic odor character values via Principal Odor Map (POM) embeddings, and biological dose-response logic via Hill's law. We demonstrate that knowledge transfer is not inherently positive; rather, a balance must be maintained in the volume of information provided to the model. While raw semantic data led to \"information overload\" in domain-informed models, applying Principal Component Analysis (PCA) to distill the 95% most impactful semantic variance yielded a superior \"signal distillation\" effect. Results indicate that the synthesis of these three knowledge transfer pillars significantly outperforms baseline structural models, with VIANA achieving a peak R^2 of 0.996 and a test Mean Squared Error (MSE) of 0.19. In this context, VIANA successfully captures the physical ceiling of saturation, the sensitivity of detection thresholds, and the nuance of odor character value expression, providing a domain grounded simulation of the human olfactory experience. This research provides a robust framework for digital olfaction, effectively bridging the gap between molecular informatics and sensory perception.",
-      "published": "April 01, 2026",
-      "published_raw": "2026-04-01T20:22:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.01365v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.01365v1"
-    },
-    {
-      "id": "2604.01337v1",
-      "title": "SECURE: Stable Early Collision Understanding via Robust Embeddings in Autonomous Driving",
-      "authors": [
-        "Wenjing Wang",
-        "Wenxuan Wang",
-        "Songning Lai"
-      ],
-      "abstract": "While deep learning has significantly advanced accident anticipation, the robustness of these safety-critical systems against real-world perturbations remains a major challenge. We reveal that state-of-the-art models like CRASH, despite their high performance, exhibit significant instability in predictions and latent representations when faced with minor input perturbations, posing serious reliability risks. To address this, we introduce SECURE - Stable Early Collision Understanding Robust Embeddings, a framework that formally defines and enforces model robustness. SECURE is founded on four key attributes: consistency and stability in both prediction space and latent feature space. We propose a principled training methodology that fine-tunes a baseline model using a multi-objective loss, which minimizes divergence from a reference model and penalizes sensitivity to adversarial perturbations. Experiments on DAD and CCD datasets demonstrate that our approach not only significantly enhances robustness against various perturbations but also improves performance on clean data, achieving new state-of-the-art results.",
-      "published": "April 01, 2026",
-      "published_raw": "2026-04-01T19:42:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.01337v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.01337v1"
-    },
-    {
-      "id": "2604.01264v1",
-      "title": "OkanNet: A Lightweight Deep Learning Architecture for Classification of Brain Tumor from MRI Images",
-      "authors": [
-        "Okan Uçar",
-        "Murat Kurt"
-      ],
-      "abstract": "Medical imaging techniques, especially Magnetic Resonance Imaging (MRI), are accepted as the gold standard in the diagnosis and treatment planning of neurological diseases. However, the manual analysis of MRI images is a time-consuming process for radiologists and is prone to human error due to fatigue. In this study, two different Deep Learning approaches were developed and analyzed comparatively for the automatic detection and classification of brain tumors (Glioma, Meningioma, Pituitary, and No Tumor). In the first approach, a custom Convolutional Neural Network (CNN) architecture named \"OkanNet\", which has a low computational cost and fast training time, was designed from scratch. In the second approach, the Transfer Learning method was applied using the 50-layer ResNet-50 [1] architecture, pre-trained on the ImageNet dataset. In experiments conducted on an extended dataset compiled by Masoud Nickparvar containing a total of $7,023$ MRI images, the Transfer Learning-based ResNet-50 model exhibited superior classification performance, achieving $96.49\\%$ Accuracy and $0.963$ Precision. In contrast, the custom OkanNet architecture reached an accuracy rate of $88.10\\%$; however, it proved to be a strong alternative for mobile and embedded systems with limited computational power by yielding results approximately $3.2$ times faster ($311$ seconds) than ResNet-50 in terms of training time. This study demonstrates the trade-off between model depth and computational efficiency in medical image analysis through experimental data.",
-      "published": "April 01, 2026",
-      "published_raw": "2026-04-01T13:29:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.01264v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.01264v1"
-    },
-    {
-      "id": "2604.00800v1",
-      "title": "MIRANDA: MId-feature RANk-adversarial Domain Adaptation toward climate change-robust ecological forecasting with deep learning",
-      "authors": [
-        "Yuchang Jiang",
-        "Jan Dirk Wegner",
-        "Vivien Sainte Fare Garnot"
-      ],
-      "abstract": "Plant phenology modelling aims to predict the timing of seasonal phases, such as leaf-out or flowering, from meteorological time series. Reliable predictions are crucial for anticipating ecosystem responses to climate change. While phenology modelling has traditionally relied on mechanistic approaches, deep learning methods have recently been proposed as flexible, data-driven alternatives with often superior performance. However, mechanistic models tend to outperform deep networks when data distribution shifts are induced by climate change. Domain Adaptation (DA) techniques could help address this limitation. Yet, unlike standard DA settings, climate change induces a temporal continuum of domains and involves both a covariate and label shift, with warmer records and earlier start of spring. To tackle this challenge, we introduce Mid-feature Rank-adversarial Domain Adaptation (MIRANDA). Whereas conventional adversarial methods enforce domain invariance on final latent representations, an approach that does not explicitly address label shift, we apply adversarial regularization to intermediate features. Moreover, instead of a binary domain-classification objective, we employ a rank-based objective that enforces year-invariance in the learned meteorological representations. On a country-scale dataset spanning 70 years and comprising 67,800 phenological observations of 5 tree species, we demonstrate that, unlike conventional DA approaches, MIRANDA improves robustness to climatic distribution shifts and narrows the performance gap with mechanistic models.",
-      "published": "April 01, 2026",
-      "published_raw": "2026-04-01T12:06:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.00800v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.00800v1"
-    },
-    {
-      "id": "2604.00352v1",
-      "title": "Deep Learning-Accelerated Surrogate Optimization for High-Dimensional Well Control in Stress-Sensitive Reservoirs",
-      "authors": [
-        "Mahammad Valiyev",
-        "Jodel Cornelio",
-        "Behnam Jafarpour"
-      ],
-      "abstract": "Production optimization in stress-sensitive unconventional reservoirs is governed by a nonlinear trade-off between pressure-driven flow and stress-induced degradation of fracture conductivity and matrix permeability. While higher drawdown improves short-term production, it accelerates permeability loss and reduces long-term recovery. Identifying optimal, time-varying control strategies requires repeated evaluations of fully coupled flow-geomechanics simulators, making conventional optimization computationally expensive. We propose a deep learning-based surrogate optimization framework for high-dimensional well control. Unlike prior approaches that rely on predefined control parameterizations or generic sampling, our method treats well control as a continuous, high-dimensional problem and introduces a problem-informed sampling strategy that aligns training data with trajectories encountered during optimization. A neural network proxy is trained to approximate the mapping between bottomhole pressure trajectories and cumulative production using data from a coupled flow-geomechanics model. The proxy is embedded within a constrained optimization workflow, enabling rapid evaluation of control strategies. Across multiple initializations, the surrogate achieves agreement with full-physics solutions within 2-5 percent, while reducing computational cost by up to three orders of magnitude. Discrepancies are mainly associated with trajectories near the boundary of the training distribution and local optimization effects. This framework shows that combining surrogate modeling with problem-informed sampling enables scalable and reliable optimization for high-dimensional, simulator-based problems, with broader applicability to PDE-constrained systems.",
-      "published": "April 01, 2026",
-      "published_raw": "2026-04-01T01:04:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.00352v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.00352v1"
     }
   ]
 }
