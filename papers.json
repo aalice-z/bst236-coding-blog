@@ -1,312 +1,318 @@
 {
-  "last_updated": "2026-04-12T01:17:18.814843",
+  "last_updated": "2026-04-18T01:11:23.884625",
   "count": 20,
   "papers": [
     {
-      "id": "2604.08469v1",
-      "title": "Persistence-Augmented Neural Networks",
+      "id": "2604.15297v1",
+      "title": "Benchmarking Optimizers for MLPs in Tabular Deep Learning",
       "authors": [
-        "Elena Xinyi Wang",
-        "Arnur Nigmetov",
-        "Dmitriy Morozov"
+        "Yury Gorishniy",
+        "Ivan Rubachev",
+        "Dmitrii Feoktistov",
+        "Artem Babenko"
       ],
-      "abstract": "Topological Data Analysis (TDA) provides tools to describe the shape of data, but integrating topological features into deep learning pipelines remains challenging, especially when preserving local geometric structure rather than summarizing it globally. We propose a persistence-based data augmentation framework that encodes local gradient flow regions and their hierarchical evolution using the Morse-Smale complex. This representation, compatible with both convolutional and graph neural networks, retains spatially localized topological information across multiple scales. Importantly, the augmentation procedure itself is efficient, with computational complexity $O(n \\log n)$, making it practical for large datasets. We evaluate our method on histopathology image classification and 3D porous material regression, where it consistently outperforms baselines and global TDA descriptors such as persistence images and landscapes. We also show that pruning the base level of the hierarchy reduces memory usage while maintaining competitive performance. These results highlight the potential of local, structured topological augmentation for scalable and interpretable learning across data modalities.",
-      "published": "April 09, 2026",
-      "published_raw": "2026-04-09T17:06:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.08469v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.08469v1"
+      "abstract": "MLP is a heavily used backbone in modern deep learning (DL) architectures for supervised learning on tabular data, and AdamW is the go-to optimizer used to train tabular DL models. Unlike architecture design, however, the choice of optimizer for tabular DL has not been examined systematically, despite new optimizers showing promise in other domains. To fill this gap, we benchmark \\Noptimizers optimizers on \\Ndatasets tabular datasets for training MLP-based models in the standard supervised learning setting under a shared experiment protocol. Our main finding is that the Muon optimizer consistently outperforms AdamW, and thus should be considered a strong and practical choice for practitioners and researchers, if the associated training efficiency overhead is affordable. Additionally, we find exponential moving average of model weights to be a simple yet effective technique that improves AdamW on vanilla MLPs, though its effect is less consistent across model variants.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T17:57:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.15297v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.15297v1"
     },
     {
-      "id": "2604.08366v1",
-      "title": "Scaling-Aware Data Selection for End-to-End Autonomous Driving Systems",
+      "id": "2604.15238v1",
+      "title": "A Nonlinear Separation Principle: Applications to Neural Networks, Control and Learning",
       "authors": [
-        "Tolga Dimlioglu",
-        "Nadine Chang",
-        "Maying Shen",
-        "Rafid Mahmood",
-        "Jose M. Alvarez"
+        "Anand Gokhale",
+        "Anton V. Proskurnikov",
+        "Yu Kawano",
+        "Francesco Bullo"
       ],
-      "abstract": "Large-scale deep learning models for physical AI applications depend on diverse training data collection efforts. These models and correspondingly, the training data, must address different evaluation criteria necessary for the models to be deployable in real-world environments. Data selection policies can guide the development of the training set, but current frameworks do not account for the ambiguity in how data points affect different metrics. In this work, we propose Mixture Optimization via Scaling-Aware Iterative Collection (MOSAIC), a general data selection framework that operates by: (i) partitioning the dataset into domains; (ii) fitting neural scaling laws from each data domain to the evaluation metrics; and (iii) optimizing a data mixture by iteratively adding data from domains that maximize the change in metrics. We apply MOSAIC to autonomous driving (AD), where an End-to-End (E2E) planner model is evaluated on the Extended Predictive Driver Model Score (EPDMS), an aggregate of driving rule compliance metrics. Here, MOSAIC outperforms a diverse set of baselines on EPDMS with up to 80\\% less data.",
-      "published": "April 09, 2026",
-      "published_raw": "2026-04-09T15:33:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.08366v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.08366v1"
+      "abstract": "This paper investigates continuous-time and discrete-time firing-rate and Hopfield recurrent neural networks (RNNs), with applications in nonlinear control design and implicit deep learning. First, we introduce a nonlinear separation principle that guarantees global exponential stability for the interconnection of a contracting state-feedback controller and a contracting observer, alongside parametric extensions for robustness and equilibrium tracking. Second, we derive sharp linear matrix inequality (LMI) conditions that guarantee the contractivity of both firing rate and Hopfield neural network architectures. We establish structural relationships among these certificates-demonstrating that continuous-time models with monotone non-decreasing activations maximize the admissible weight space, and extend these stability guarantees to interconnected systems and Graph RNNs. Third, we combine our separation principle and LMI framework to solve the output reference tracking problem for RNN-modeled plants. We provide LMI synthesis methods for feedback controllers and observers, and rigorously design a low-gain integral controller to eliminate steady-state error. Finally, we derive an exact, unconstrained algebraic parameterization of our contraction LMIs to design highly expressive implicit neural networks, achieving competitive accuracy and parameter efficiency on standard image classification benchmarks.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T17:12:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.15238v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.15238v1"
     },
     {
-      "id": "2604.08333v1",
-      "title": "Lost in the Hype: Revealing and Dissecting the Performance Degradation of Medical Multimodal Large Language Models in Image Classification",
+      "id": "2604.14883v1",
+      "title": "xFODE: An Explainable Fuzzy Additive ODE Framework for System Identification",
       "authors": [
-        "Xun Zhu",
-        "Fanbin Mo",
-        "Xi Chen",
-        "Kaili Zheng",
-        "Shaoshuai Yang",
-        "Yiming Shi",
-        "Jian Gao",
-        "Miao Li",
-        "Ji Wu"
+        "Ertugrul Kececi",
+        "Tufan Kumbasar"
       ],
-      "abstract": "The rise of multimodal large language models (MLLMs) has sparked an unprecedented wave of applications in the field of medical imaging analysis. However, as one of the earliest and most fundamental tasks integrated into this paradigm, medical image classification reveals a sobering reality: state-of-the-art medical MLLMs consistently underperform compared to traditional deep learning models, despite their overwhelming advantages in pre-training data and model parameters. This paradox prompts a critical rethinking: where exactly does the performance degradation originate? In this paper, we conduct extensive experiments on 14 open-source medical MLLMs across three representative image classification datasets. Moving beyond superficial performance benchmarking, we employ feature probing to track the information flow of visual features module-by-module and layer-by-layer throughout the entire MLLM pipeline, enabling explicit visualization of where and how classification signals are distorted, diluted, or overridden. As the first attempt to dissect classification performance degradation in medical MLLMs, our findings reveal four failure modes: 1) quality limitation in visual representation, 2) fidelity loss in connector projection, 3) comprehension deficit in LLM reasoning, and 4) misalignment of semantic mapping. Meanwhile, we introduce quantitative scores that characterize the healthiness of feature evolution, enabling principled comparisons across diverse MLLMs and datasets. Furthermore, we provide insightful discussions centered on the critical barriers that prevent current medical MLLMs from fulfilling their promised clinical potential. We hope that our work provokes rethinking within the community-highlighting that the road from high expectations to clinically deployable MLLMs remains long and winding.",
-      "published": "April 09, 2026",
-      "published_raw": "2026-04-09T15:07:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.08333v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.08333v1"
+      "abstract": "Recent advances in Deep Learning (DL) have strengthened data-driven System Identification (SysID), with Neural and Fuzzy Ordinary Differential Equation (NODE/FODE) models achieving high accuracy in nonlinear dynamic modeling. Yet, system states in these frameworks are often reconstructed without clear physical meaning, and input contributions to the state derivatives remain difficult to interpret. To address these limitations, we propose Explainable FODE (xFODE), an interpretable SysID framework with integrated DL-based training. In xFODE, we define states in an incremental form to provide them with physical meanings. We employ fuzzy additive models to approximate the state derivative, thereby enhancing interpretability per input. To provide further interpretability, Partitioning Strategies (PSs) are developed, enabling the training of fuzzy additive models with explainability. By structuring the antecedent space during training so that only two consecutive rules are activated for any given input, PSs not only yield lower complexity for local inference but also enhance the interpretability of the antecedent space. To train xFODE, we present a DL framework with parameterized membership function learning that supports end-to-end optimization. Across benchmark SysID datasets, xFODE matches the accuracy of NODE, FODE, and NLARX models while providing interpretable insights.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T11:19:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14883v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14883v1"
     },
     {
-      "id": "2604.07999v1",
-      "title": "Benchmarking Deep Learning for Future Liver Remnant Segmentation in Colorectal Liver Metastasis",
+      "id": "2604.14880v1",
+      "title": "xFODE+: Explainable Type-2 Fuzzy Additive ODEs for Uncertainty Quantification",
       "authors": [
-        "Anthony T. Wu",
-        "Arghavan Rezvani",
-        "Kela Liu",
-        "Roozbeh Houshyar",
-        "Pooya Khosravi",
-        "Whitney Li",
-        "Xiaohui Xie"
+        "Ertugrul Kececi",
+        "Tufan Kumbasar"
       ],
-      "abstract": "Accurate segmentation of the future liver remnant (FLR) is critical for surgical planning in colorectal liver metastases (CRLM) to prevent fatal post-hepatectomy liver failure. However, this segmentation task is technically challenging due to complex resection boundaries, convoluted hepatic vasculature and diffuse metastatic lesions. A primary bottleneck in developing automated AI tools has been the lack of high-fidelity, validated data. We address this gap by manually refining all 197 volumes from the public CRLM-CT-Seg dataset, creating the first open-source, validated benchmark for this task. We then establish the first segmentation baselines, comparing cascaded (Liver->CRLM->FLR) and end-to-end (E2E) strategies using nnU-Net, SwinUNETR, and STU-Net. We find a cascaded nnU-Net achieves the best final FLR segmentation Dice (0.767), while the pretrained STU-Net provides superior CRLM segmentation (0.620 Dice) and is significantly more robust to cascaded errors. This work provides the first validated benchmark and a reproducible framework to accelerate research in AI-assisted surgical planning.",
-      "published": "April 09, 2026",
-      "published_raw": "2026-04-09T09:05:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07999v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07999v1"
+      "abstract": "Recent advances in Deep Learning (DL) have boosted data-driven System Identification (SysID), but reliable use requires Uncertainty Quantification (UQ) alongside accurate predictions. Although UQ-capable models such as Fuzzy ODE (FODE) can produce Prediction Intervals (PIs), they offer limited interpretability. We introduce Explainable Type-2 Fuzzy Additive ODEs for UQ (xFODE+), an interpretable SysID model which produces PIs alongside point predictions while retaining physically meaningful incremental states. xFODE+ implements each fuzzy additive model with Interval Type-2 Fuzzy Logic Systems (IT2-FLSs) and constraints membership functions to the activation of two neighboring rules, limiting overlap and keeping inference locally transparent. The type-reduced sets produced by the IT2-FLSs are aggregated to construct the state update together with the PIs. The model is trained in a DL framework via a composite loss that jointly optimizes prediction accuracy and PI quality. Results on benchmark SysID datasets show that xFODE+ matches FODE in PI quality and achieves comparable accuracy, while providing interpretability.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T11:16:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14880v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14880v1"
     },
     {
-      "id": "2604.07904v1",
-      "title": "Kuramoto Oscillatory Phase Encoding: Neuro-inspired Synchronization for Improved Learning Efficiency",
+      "id": "2604.14739v1",
+      "title": "Assessing the Performance-Efficiency Trade-off of Foundation Models in Probabilistic Electricity Price Forecasting",
       "authors": [
-        "Mingqing Xiao",
-        "Yansen Wang",
-        "Dongqi Han",
-        "Caihua Shan",
-        "Dongsheng Li"
+        "Jan Niklas Lettner",
+        "Hadeer El Ashhab",
+        "Veit Hagenmeyer",
+        "Benjamin Schäfer"
       ],
-      "abstract": "Spatiotemporal neural dynamics and oscillatory synchronization are widely implicated in biological information processing and have been hypothesized to support flexible coordination such as feature binding. By contrast, most deep learning architectures represent and propagate information through activation values, neglecting the joint dynamics of rate and phase. In this work, we introduce Kuramoto oscillatory Phase Encoding (KoPE) as an additional, evolving phase state to Vision Transformers, incorporating a neuro-inspired synchronization mechanism to advance learning efficiency. We show that KoPE can improve training, parameter, and data efficiency of vision models through synchronization-enhanced structure learning. Moreover, KoPE benefits tasks requiring structured understanding, including semantic and panoptic segmentation, representation alignment with language, and few-shot abstract visual reasoning (ARC-AGI). Theoretical analysis and empirical verification further suggest that KoPE can accelerate attention concentration for learning efficiency. These results indicate that synchronization can serve as a scalable, neuro-inspired mechanism for advancing state-of-the-art neural network models.",
-      "published": "April 09, 2026",
-      "published_raw": "2026-04-09T07:19:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07904v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07904v1"
+      "abstract": "Large-scale renewable energy deployment introduces pronounced volatility into the electricity system, turning grid operation into a complex stochastic optimization problem. Accurate electricity price forecasting (EPF) is essential not only to support operational decisions, such as optimal bidding strategies and balancing power preparation, but also to reduce economic risk and improve market efficiency. Probabilistic forecasts are particularly valuable because they quantify uncertainty stemming from renewable intermittency, market coupling, and regulatory changes, enabling market participants to make informed decisions that minimize losses and optimize expected revenues. However, it remains an open question which models to employ to produce accurate forecasts. Should these be task-specific machine learning (ML) models or Time Series Foundation Models (TSFMs)? In this work, we compare four models for day-ahead probabilistic EPF (PEPF) in European bidding zones: a deterministic NHITS backbone with Quantile-Regression Averaging (NHITS+QRA) and a conditional Normalizing-Flow forecaster (NF) are compared with two TSFMs, namely Moirai and ChronosX. On the one hand, we find that TSFMs outperform task-specific deep learning models trained from scratch in terms of CRPS, Energy Score, and predictive interval calibration across market conditions. On the other hand, we find that well-configured task-specific models, particularly NHITS combined with QRA, achieve performance very close to TSFMs, and in some scenarios, such as when supplied with additional informative feature groups or adapted via few-shot learning from other European markets, they can even surpass TSFMs. Overall, our findings show that while TSFMs offer expressive modeling capabilities, conventional models remain highly competitive, emphasizing the need to weigh computational expense against marginal performance improvements in PEPF.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T07:53:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14739v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14739v1"
     },
     {
-      "id": "2604.07897v1",
-      "title": "Visual Perceptual to Conceptual First-Order Rule Learning Networks",
+      "id": "2604.14669v1",
+      "title": "Zeroth-Order Optimization at the Edge of Stability",
       "authors": [
-        "Kun Gao",
-        "Davide Soldà",
-        "Thomas Eiter",
-        "Katsumi Inoue"
+        "Minhak Song",
+        "Liang Zhang",
+        "Bingcong Li",
+        "Niao He",
+        "Michael Muehlebach",
+        "Sewoong Oh"
       ],
-      "abstract": "Learning rules plays a crucial role in deep learning, particularly in explainable artificial intelligence and enhancing the reasoning capabilities of large language models. While existing rule learning methods are primarily designed for symbolic data, learning rules from image data without supporting image labels and automatically inventing predicates remains a challenge. In this paper, we tackle these inductive rule learning problems from images with a framework called γILP, which provides a fully differentiable pipeline from image constant substitution to rule structure induction. Extensive experiments demonstrate that γILP achieves strong performance not only on classical symbolic relational datasets but also on relational image data and pure image datasets, such as Kandinsky patterns.",
-      "published": "April 09, 2026",
-      "published_raw": "2026-04-09T07:11:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07897v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07897v1"
+      "abstract": "Zeroth-order (ZO) methods are widely used when gradients are unavailable or prohibitively expensive, including black-box learning and memory-efficient fine-tuning of large models, yet their optimization dynamics in deep learning remain underexplored. In this work, we provide an explicit step size condition that exactly captures the (mean-square) linear stability of a family of ZO methods based on the standard two-point estimator. Our characterization reveals a sharp contrast with first-order (FO) methods: whereas FO stability is governed solely by the largest Hessian eigenvalue, mean-square stability of ZO methods depends on the entire Hessian spectrum. Since computing the full Hessian spectrum is infeasible in practical neural network training, we further derive tractable stability bounds that depend only on the largest eigenvalue and the Hessian trace. Empirically, we find that full-batch ZO methods operate at the edge of stability: ZO-GD, ZO-GDM, and ZO-Adam consistently stabilize near the predicted stability boundary across a range of deep learning training problems. Our results highlight an implicit regularization effect specific to ZO methods, where large step sizes primarily regularize the Hessian trace, whereas in FO methods they regularize the top eigenvalue.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T06:23:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14669v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14669v1"
     },
     {
-      "id": "2604.07328v1",
-      "title": "How to sketch a learning algorithm",
+      "id": "2604.14643v1",
+      "title": "Physically-Induced Atmospheric Adversarial Perturbations: Enhancing Transferability and Robustness in Remote Sensing Image Classification",
       "authors": [
-        "Sam Gunn"
+        "Weiwei Zhuang",
+        "Wangze Xie",
+        "Qi Zhang",
+        "Xia Du",
+        "Zihan Lin",
+        "Zheng Lin",
+        "Hanlin Cai",
+        "Jizhe Zhou",
+        "Zihan Fang",
+        "Chi-man Pun",
+        "Wei Ni",
+        "Jun Luo"
       ],
-      "abstract": "How does the choice of training data influence an AI model? This question is of central importance to interpretability, privacy, and basic science. At its core is the data deletion problem: after a reasonable amount of precomputation, quickly predict how the model would behave in a given situation if a given subset of training data had been excluded from the learning algorithm. We present a data deletion scheme capable of predicting model outputs with vanishing error $\\varepsilon$ in the deep learning setting. Our precomputation and prediction algorithms are only $\\mathrm{poly}(1/\\varepsilon)$ factors slower than regular training and inference, respectively. The storage requirements are those of $\\mathrm{poly}(1/\\varepsilon)$ models. Our proof is based on an assumption that we call \"stability.\" In contrast to the assumptions made by prior work, stability appears to be fully compatible with learning powerful AI models. In support of this, we show that stability is satisfied in a minimal set of experiments with microgpt. Our code is available at https://github.com/SamSpo1/microgpt-sketch. At a technical level, our work is based on a new method for locally sketching an arithmetic circuit by computing higher-order derivatives in random complex directions. Forward-mode automatic differentiation allows cheap computation of these derivatives.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T17:46:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07328v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07328v1"
+      "abstract": "Adversarial attacks pose a severe threat to the reliability of deep learning models in remote sensing (RS) image classification. Most existing methods rely on direct pixel-wise perturbations, failing to exploit the inherent atmospheric characteristics of RS imagery or survive real-world image degradations. In this paper, we propose FogFool, a physically plausible adversarial framework that generates fog-based perturbations by iteratively optimizing atmospheric patterns based on Perlin noise. By modeling fog formations with natural, irregular structures, FogFool generates adversarial examples that are not only visually consistent with authentic RS scenes but also deceptive. By leveraging the spatial coherence and mid-to-low-frequency nature of atmospheric phenomena, FogFool embeds adversarial information into structural features shared across diverse architectures. Extensive experiments on two benchmark RS datasets demonstrate that FogFool achieves superior performance: not only does it exceed in white-box settings, but also exhibits exceptional black-box transferability (reaching 83.74% TASR) and robustness against common preprocessing-based defenses such as JPEG compression and filtering. Detailed analyses, including confusion matrices and Class Activation Map (CAM) visualizations, reveal that our atmospheric-driven perturbations induce a universal shift in model attention. These results indicate that FogFool represents a practical, stealthy, and highly persistent threat to RS classification systems, providing a robust benchmark for evaluating model reliability in complex environments.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T05:47:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14643v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14643v1"
     },
     {
-      "id": "2604.07242v1",
-      "title": "Weaves, Wires, and Morphisms: Formalizing and Implementing the Algebra of Deep Learning",
+      "id": "2604.14587v1",
+      "title": "CLion: Efficient Cautious Lion Optimizer with Enhanced Generalization",
       "authors": [
-        "Vincent Abbott",
-        "Gioele Zardini"
+        "Feihu Huang",
+        "Guanyi Zhang",
+        "Songcan Chen"
       ],
-      "abstract": "Despite deep learning models running well-defined mathematical functions, we lack a formal mathematical framework for describing model architectures. Ad-hoc notation, diagrams, and pseudocode poorly handle nonlinear broadcasting and the relationship between individual components and composed models. This paper introduces a categorical framework for deep learning models that formalizes broadcasting through the novel axis-stride and array-broadcasted categories. This allows the mathematical function underlying architectures to be precisely expressed and manipulated in a compositional manner. These mathematical definitions are translated into human manageable diagrams and machine manageable data structures. We provide a mirrored implementation in Python (pyncd) and TypeScript (tsncd) to show the universal aspect of our framework, along with features including algebraic construction, graph conversion, PyTorch compilation and diagram rendering. This lays the foundation for a systematic, formal approach to deep learning model design and analysis.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T16:07:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07242v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07242v1"
+      "abstract": "Lion optimizer is a popular learning-based optimization algorithm in machine learning, which shows impressive performance in training many deep learning models. Although convergence property of the Lion optimizer has been studied, its generalization analysis is still missing. To fill this gap, we study generalization property of the Lion via algorithmic stability based on the mathematical induction. Specifically, we prove that the Lion has a generalization error of $O(\\frac{1}{Nτ^T})$, where $N$ is training sample size, and $τ>0$ denotes the smallest absolute value of non-zero element in gradient estimator, and $T$ is the total iteration number. In addition, we obtain an interesting byproduct that the SignSGD algorithm has the same generalization error as the Lion. To enhance generalization of the Lion, we design a novel efficient Cautious Lion (i.e., CLion) optimizer by cautiously using sign function. Moreover, we prove that our CLion has a lower generalization error of $O(\\frac{1}{N})$ than $O(\\frac{1}{Nτ^T})$ of the Lion, since the parameter $τ$ generally is very small. Meanwhile, we study convergence property of our CLion optimizer, and prove that our CLion has a fast convergence rate of $O(\\frac{\\sqrt{d}}{T^{1/4}})$ under $\\ell_1$-norm of gradient for nonconvex stochastic optimization, where $d$ denotes the model dimension. Extensive numerical experiments demonstrate effectiveness of our CLion optimizer.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T03:32:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14587v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14587v1"
     },
     {
-      "id": "2604.07421v1",
-      "title": "SPAMoE: Spectrum-Aware Hybrid Operator Framework for Full-Waveform Inversion",
+      "id": "2604.14552v1",
+      "title": "DEEP-GAP: Deep-learning Evaluation of Execution Parallelism in GPU Architectural Performance",
       "authors": [
-        "Zhenyu Wang",
-        "Peiyuan Li",
-        "Yongxiang Shi",
-        "Ruoyu Wu",
-        "Chenfei Liao",
-        "Lei Zhang"
+        "Kathiravan Palaniappan"
       ],
-      "abstract": "Full-waveform inversion (FWI) is pivotal for reconstructing high-resolution subsurface velocity models but remains computationally intensive and ill-posed. While deep learning approaches promise efficiency, existing Convolutional Neural Networks (CNNs) and single-paradigm Neural Operators (NOs) struggle with one fundamental issue: frequency entanglement of multi-scale geological features. To address this challenge, we propose Spectral-Preserving Adaptive MoE (SPAMoE), a novel spectrum-aware framework for solving inverse problems with complex multi-scale structures. Our approach introduces a Spectral-Preserving DINO Encoder that enforces a lower bound on the high-to-low frequency energy ratio of the encoded representation, mitigating high-frequency collapse and stabilizing subsequent frequency-domain modeling. Furthermore, we design a novel Spectral Decomposition and Routing mechanism that dynamically assigns frequency bands to a Mixture-of-Experts (MoE) ensemble comprising FNO, MNO, and LNO. On the ten OpenFWI sub-datasets, experiments show that SPAMoE reduces the average MAE by 54.1% relative to the best officially reported OpenFWI baseline, thereby establishing a new architectural framework for learning-based full-waveform inversion.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T15:21:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07421v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07421v1"
+      "abstract": "Modern datacenters increasingly rely on low-power, single-slot inference accelerators to balance performance, energy efficiency, and rack density constraints. The NVIDIA T4 GPU has become widely deployed due to strong performance per watt and mature software support. Its successor, the NVIDIA L4 GPU, introduces improvements in Tensor Core throughput, cache capacity, memory bandwidth, and parallel execution capability. However, limited empirical evidence quantifies the practical inference performance gap between these two generations under controlled and reproducible conditions. This work introduces DEEP-GAP, a systematic evaluation extending the GDEV-AI methodology to GPU inference. Using identical configurations and workloads, we evaluate ResNet18, ResNet50, and ResNet101 across FP32, FP16, and INT8 precision modes using PyTorch and TensorRT. Results show that reduced precision significantly improves performance, with INT8 achieving up to 58x throughput improvement over CPU baselines. L4 achieves up to 4.4x higher throughput than T4 while reaching peak efficiency at smaller batch sizes between 16 and 32, improving latency-throughput tradeoffs for latency-sensitive workloads. T4 remains competitive for large batch workloads where cost or power efficiency is important. DEEP-GAP provides practical guidance for selecting precision modes, batch sizes, and GPU architectures for modern inference deployments.",
+      "published": "April 16, 2026",
+      "published_raw": "2026-04-16T02:32:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14552v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14552v1"
     },
     {
-      "id": "2604.07182v1",
-      "title": "TeaLeafVision: An Explainable and Robust Deep Learning Framework for Tea Leaf Disease Classification",
+      "id": "2604.14108v1",
+      "title": "Momentum Further Constrains Sharpness at the Edge of Stochastic Stability",
       "authors": [
-        "Rafi Ahamed",
-        "Sidratul Moon Nafsin",
-        "Md Abir Rahman",
-        "Tasnia Tarannum Roza",
-        "Munaia Jannat Easha",
-        "Abu Raihan"
+        "Arseniy Andreyev",
+        "Advikar Ananthkumar",
+        "Marc Walden",
+        "Tomaso Poggio",
+        "Pierfrancesco Beneventano"
       ],
-      "abstract": "As the worlds second most consumed beverage after water, tea is not just a cultural staple but a global economic force of profound scale and influence. More than a mere drink, it represents a quiet negotiation between nature, culture, and the human desire for a moment of reflection. So, the precise identification and detection of tea leaf disease is crucial. With this goal, we have evaluated several Convolutional Neural Networks (CNN) models, among them three shows noticeable performance including DenseNet201, MobileNetV2, InceptionV3 on the teaLeafBD dataset. teaLeafBD dataset contains seven classes, six disease classes and one healthy class, collected under various field conditions reflecting real world challenges. Among the CNN models, DenseNet201 has achieved the highest test accuracy of 99%. In order to enhance the model reliability and interpretability, we have implemented Gradient weighted Class Activation Mapping (Grad CAM), occlusion sensitivity analysis and adversarial training techniques to increase the noise resistance of the model. Finally, we have developed a prototype in order to leverage the models capabilities on real life agriculture. This paper illustrates the deep learning models capabilities to classify the disease in real life tea leaf disease detection and management.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T15:11:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07182v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07182v1"
+      "abstract": "Recent work suggests that (stochastic) gradient descent self-organizes near an instability boundary, shaping both optimization and the solutions found. Momentum and mini-batch gradients are widely used in practical deep learning optimization, but it remains unclear whether they operate in a comparable regime of instability. We demonstrate that SGD with momentum exhibits an Edge of Stochastic Stability (EoSS)-like regime with batch-size-dependent behavior that cannot be explained by a single momentum-adjusted stability threshold. Batch Sharpness (the expected directional mini-batch curvature) stabilizes in two distinct regimes: at small batch sizes it converges to a lower plateau $2(1-β)/η$, reflecting amplification of stochastic fluctuations by momentum and favoring flatter regions than vanilla SGD; at large batch sizes it converges to a higher plateau $2(1+β)/η$, where momentum recovers its classical stabilizing effect and favors sharper regions consistent with full-batch dynamics. We further show that this aligns with linear stability thresholds and discuss the implications for hyperparameter tuning and coupling.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T17:28:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14108v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14108v1"
     },
     {
-      "id": "2604.07126v1",
-      "title": "Self-Discovered Intention-aware Transformer for Multi-modal Vehicle Trajectory Prediction",
+      "id": "2604.14263v1",
+      "title": "A deep learning framework for glomeruli segmentation with boundary attention",
       "authors": [
-        "Diyi Liu",
-        "Zihan Niu",
-        "Tu Xu",
-        "Lishan Sun"
+        "Behnaz Elhaminia",
+        "Catherine King",
+        "Jiaqi Lv",
+        "Lorraine Harper",
+        "Paul Moss",
+        "Owen Cain",
+        "Dimitrios Chanouzas",
+        "Shan E Ahmed Raza"
       ],
-      "abstract": "Predicting vehicle trajectories plays an important role in autonomous driving and ITS applications. Although multiple deep learning algorithms are devised to predict vehicle trajectories, their reliant on specific graph structure (e.g., Graph Neural Network) or explicit intention labeling limit their flexibilities. In this study, we propose a pure Transformer-based network with multiple modals considering their neighboring vehicles. Two separate tracks are employed. One track focuses on predicting the trajectories while the other focuses on predicting the likelihood of each intention considering neighboring vehicles. Study finds that the two track design can increase the performance by separating spatial module from the trajectory generating module. Also, we find the the model can learn an ordered group of trajectories by predicting residual offsets among K trajectories.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T14:20:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07126v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07126v1"
+      "abstract": "Accurate detection and segmentation of glomeruli in kidney tissue are essential for diagnostic applications. Traditional deep learning methods primarily rely on semantic segmentation, which often fails to precisely delineate adjacent glomeruli. To address this challenge, we propose a novel glomerulus detection and segmentation model that emphasises boundary separation. Leveraging pathology foundation models, the proposed U-Net-based architecture incorporates a specialised attention decoder designed to highlight critical regions and improve instancelevel segmentation. Experimental evaluations demonstrate that our approach surpasses state-of-the-art methods in both Dice score and Intersection over Union, indicating superior performance in glomerular delineation.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T16:49:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.14263v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.14263v1"
     },
     {
-      "id": "2604.07085v1",
-      "title": "Mining Electronic Health Records to Investigate Effectiveness of Ensemble Deep Clustering",
+      "id": "2604.13795v1",
+      "title": "Artificial intelligence application in lymphoma diagnosis with Vision Transformer using weakly supervised training",
       "authors": [
-        "Manar D. Samad",
-        "Yina Hou",
-        "Shrabani Ghosh"
+        " Nghia",
+        " Nguyen",
+        "Amer Wahed",
+        "Andy Quesada",
+        "Yasir Ali",
+        "Hanadi El Achi",
+        "Y. Helen Zhang",
+        "Jocelyn Ursua",
+        "Alex Banerjee",
+        "Sahib Kalra",
+        "L. Jeffrey Medeiros",
+        "Jie Xu"
       ],
-      "abstract": "In electronic health records (EHRs), clustering patients and distinguishing disease subtypes are key tasks to elucidate pathophysiology and aid clinical decision-making. However, clustering in healthcare informatics is still based on traditional methods, especially K-means, and has achieved limited success when applied to embedding representations learned by autoencoders as hybrid methods. This paper investigates the effectiveness of traditional, hybrid, and deep learning methods in heart failure patient cohorts using real EHR data from the All of Us Research Program. Traditional clustering methods perform robustly because deep learning approaches are specifically designed for image clustering, a task that differs substantially from the tabular EHR data setting. To address the shortcomings of deep clustering, we introduce an ensemble-based deep clustering approach that aggregates cluster assignments obtained from multiple embedding dimensions, rather than relying on a single fixed embedding space. When combined with traditional clustering in a novel ensemble framework, the proposed ensemble embedding for deep clustering delivers the best overall performance ranking across 14 diverse clustering methods and multiple patient cohorts. This paper underscores the importance of biological sex-specific clustering of EHR data and the advantages of combining traditional and deep clustering approaches over a single method.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T13:40:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07085v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07085v1"
+      "abstract": "Vision transformers (ViT) have been shown to allow for more flexible feature detection and can outperform convolutional neural network (CNN) when pre-trained on sufficient data. Due to their promising feature detection capabilities, we deployed ViTs for morphological classification of anaplastic large cell lymphoma (ALCL) versus classic Hodgkin lymphoma (cHL). We had previously designed a ViT model which was trained on a small dataset of 1,200 image patches in fully supervised training. That model achieved a diagnostic accuracy of 100% and an F1 score of 1.0 on the independent test set. Since fully supervised training is not a practical method due to lack of expertise resources in both the training and testing phases, we conducted a recent study on a modified approach to training data (weakly supervised training) and show that labeling training image patch automatically at the slide level of each whole-slide-image is a more practical solution for clinical use of Vision Transformer. Our ViT model, trained on a larger dataset of 100,000 image patches, yields evaluation metrics with significant accuracy, F1 score, and area under the curve (AUC) at 91.85%, 0.92, and 0.98, respectively. These are respectable values that qualify this ViT model, with weakly supervised training, as a suitable tool for a deep learning module in clinical model development using automated image patch extraction.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T12:33:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13795v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13795v1"
     },
     {
-      "id": "2604.07409v1",
-      "title": "GAN-based Domain Adaptation for Image-aware Layout Generation in Advertising Poster Design",
+      "id": "2604.13685v1",
+      "title": "EMGFlow: Robust and Efficient Surface Electromyography Synthesis via Flow Matching",
       "authors": [
-        "Chenchen Xu",
-        "Min Zhou",
-        "Tiezheng Ge",
-        "Weiwei Xu"
+        "Boxuan Jiang",
+        "Chenyun Dai",
+        "Can Han"
       ],
-      "abstract": "Layout plays a crucial role in graphic design and poster generation. Recently, the application of deep learning models for layout generation has gained significant attention. This paper focuses on using a GAN-based model conditioned on images to generate advertising poster graphic layouts, requiring a dataset of paired product images and layouts. To address this task, we introduce the Content-aware Graphic Layout Dataset (CGL-Dataset), consisting of 60,548 paired inpainted posters with annotations and 121,000 clean product images. The inpainting artifacts introduce a domain gap between the inpainted posters and clean images. To bridge this gap, we design two GAN-based models. The first model, CGL-GAN, uses Gaussian blur on the inpainted regions to generate layouts. The second model combines unsupervised domain adaptation by introducing a GAN with a pixel-level discriminator (PD), abbreviated as PDA-GAN, to generate image-aware layouts based on the visual texture of input images. The PD is connected to shallow-level feature maps and computes the GAN loss for each input-image pixel. Additionally, we propose three novel content-aware metrics to assess the model's ability to capture the intricate relationships between graphic elements and image content. Quantitative and qualitative evaluations demonstrate that PDA-GAN achieves state-of-the-art performance and generates high-quality image-aware layouts.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T11:52:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07409v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07409v1"
+      "abstract": "Deep learning-based surface electromyography (sEMG) gesture recognition is frequently bottlenecked by data scarcity and limited subject diversity. While synthetic data generation via Generative Adversarial Networks (GANs) and diffusion models has emerged as a promising augmentation strategy, these approaches often face challenges regarding training stability or inference efficiency. To bridge this gap, we propose EMGFlow, a conditional sEMG generation framework. To the best of our knowledge, this is the first study to investigate the application of Flow Matching (FM) and continuous-time generative modeling in the sEMG domain. To validate EMGFlow across three benchmark sEMG datasets, we employ a unified evaluation protocol integrating feature-based fidelity, distributional geometry, and downstream utility. Extensive evaluations show that EMGFlow outperforms conventional augmentation and GAN baselines, and provides stronger standalone utility than the diffusion baselines considered here under the train-on-synthetic test-on-real (TSTR) protocol. Furthermore, by optimizing generation dynamics through advanced numerical solvers and targeted time sampling, EMGFlow achieves improved quality-efficiency trade-offs. Taken together, these results suggest that Flow Matching is a promising and efficient paradigm for addressing data bottlenecks in myoelectric control systems. Our code is available at: https://github.com/Open-EXG/EMGFlow.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T10:07:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13685v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13685v1"
     },
     {
-      "id": "2604.06942v1",
-      "title": "Evaluating PQC KEMs, Combiners, and Cascade Encryption via Adaptive IND-CPA Testing Using Deep Learning",
+      "id": "2604.13662v1",
+      "title": "Automatic Charge State Tuning of 300 mm FDSOI Quantum Dots Using Neural Network Segmentation of Charge Stability Diagram",
       "authors": [
-        "Simon Calderon",
-        "Niklas Johansson",
-        "Onur Günlü"
+        "Peter Samaha",
+        "Amine Torki",
+        "Ysaline Renaud",
+        "Sam Fiette",
+        "Emmanuel Chanrion",
+        "Pierre-Andre Mortemousque",
+        "Yann Beilliard"
       ],
-      "abstract": "Ensuring ciphertext indistinguishability is fundamental to cryptographic security, but empirically validating this property in real implementations and hybrid settings presents practical challenges. The transition to post-quantum cryptography (PQC), with its hybrid constructions combining classical and quantum-resistant primitives, makes empirical validation approaches increasingly valuable. By modeling IND-CPA games as binary classification tasks and training on labeled ciphertext data with BCE loss, we study deep neural network (DNN) distinguishers for ciphertext indistinguishability. We apply this methodology to PQC KEMs. We specifically test the public-key encryption (PKE) schemes used to construct examples such as ML-KEM, BIKE, and HQC. Moreover, a novel extension of this DNN modeling for empirical distinguishability testing of hybrid KEMs is presented. We implement and test this on combinations of PQC KEMs with plain RSA, RSA-OAEP, and plaintext. Finally, methodological generality is illustrated by applying the DNN IND-CPA classification framework to cascade symmetric encryption, where we test combinations of AES-CTR, AES-CBC, AES-ECB, ChaCha20, and DES-ECB. In our experiments on PQC algorithms, KEM combiners, and cascade encryption, no algorithm or combination of algorithms demonstrates a significant advantage (two-sided binomial test, significance level $α= 0.01$), consistent with theoretical guarantees that hybrids including at least one IND-CPA-secure component preserve indistinguishability, and with the absence of exploitable patterns under the considered DNN adversary model. These illustrate the potential of using deep learning as an adaptive, practical, and versatile empirical estimator for indistinguishability in more general IND-CPA settings, allowing data-driven validation of implementations and compositions and complementing the analytical security analysis.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T11:06:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.06942v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.06942v1"
+      "abstract": "Tuning of gate-defined semiconductor quantum dots (QDs) is a major bottleneck for scaling spin qubit technologies. We present a deep learning (DL) driven, semantic-segmentation pipeline that performs charge auto-tuning by locating transition lines in full charge stability diagrams (CSDs) and returns gate voltage targets for the single charge regime. We assemble and manually annotate a large, heterogeneous dataset of 1015 experimental CSDs measured from silicon QD devices, spanning nine design geometries, multiple wafers, and fabrication runs. A U-Net style convolutional neural network (CNN) with a MobileNetV2 encoder is trained and validated through five-fold group cross validation. Our model achieves an overall offline tuning success of 80.0% in locating the single-charge regime, with peak performance exceeding 88% for some designs. We analyze dominant failure modes and propose targeted mitigations. Finally, wide-range diagram segmentation also naturally enables scalable physic-based feature extraction that can feed back to fabrication and design workflows and outline a roadmap for real-time integration in a cryogenic wafer prober. Overall, our results show that neural network (NN) based wide-diagram segmentation is a practical step toward automated, high-throughput charge tuning for silicon QD qubits.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T09:29:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13662v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13662v1"
     },
     {
-      "id": "2604.06752v1",
-      "title": "Busemann energy-based attention for emotion analysis in Poincaré discs",
+      "id": "2604.13658v1",
+      "title": "A Bayesian Framework for Uncertainty-Aware Explanations in Power Quality Disturbance Classification",
       "authors": [
-        "Zinaid Kapić",
-        "Vladimir Jaćimović"
+        "Yinsong Chen",
+        "Samson S. Yu",
+        "Kashem M. Muttaqi"
       ],
-      "abstract": "We present EmBolic - a novel fully hyperbolic deep learning architecture for fine-grained emotion analysis from textual messages. The underlying idea is that hyperbolic geometry efficiently captures hierarchies between both words and emotions. In our context, these hierarchical relationships arise from semantic ambiguities. EmBolic aims to infer the curvature on the continuous space of emotions, rather than treating them as a categorical set without any metric structure. In the heart of our architecture is the attention mechanism in the hyperbolic disc. The model is trained to generate queries (points in the hyperbolic disc) from textual messages, while keys (points at the boundary) emerge automatically from the generated queries. Predictions are based on the Busemann energy between queries and keys, evaluating how well a certain textual message aligns with the class directions representing emotions. Our experiments demonstrate strong generalization properties and reasonably good prediction accuracy even for small dimensions of the representation space. Overall, this study supports our claim that affective computing is one of the application domains where hyperbolic representations are particularly advantageous.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T07:19:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.06752v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.06752v1"
+      "abstract": "Advanced deep learning methods have shown remarkable success in power quality disturbance (PQD) classification. To enhance model transparency, explainable AI (XAI) techniques have been developed to provide instance-specific interpretations of classifier decisions. However, conventional XAI methods yield deterministic explanations, overlooking uncertainty and limiting reliability in safety-critical applications. This paper proposes a Bayesian explanation framework that models explanation uncertainty by generating a relevance attribution distribution for each instance. This method allows experts to select explanations based on confidence percentiles, thereby tailoring interpretability according to specific disturbance types. Extensive experiments on synthetic and real-world power quality datasets demonstrate that the proposed framework improves the transparency and reliability of PQD classifiers through uncertainty-aware explanations.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T09:22:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13658v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13658v1"
     },
     {
-      "id": "2604.07390v1",
-      "title": "A Graph Foundation Model for Wireless Resource Allocation",
+      "id": "2604.13503v1",
+      "title": "Enhancing Event Reconstruction in Hyper-Kamiokande with Machine Learning: A ResNet Implementation",
       "authors": [
-        "Yucheng Sheng",
-        "Jiacheng Wang",
-        "Le Liang",
-        "Hao Ye",
-        "Shi Jin"
+        "Andrew Atta",
+        "Nick Prouse",
+        "Shuoyu Chen",
+        "Kimihiro Okumura",
+        "Patrick de Perio",
+        "Eric Thrane",
+        "Phillip Urquijo"
       ],
-      "abstract": "The aggressive densification of modern wireless networks necessitates judicious resource allocation to mitigate severe mutual interference. However, classical iterative algorithms remain computationally prohibitive for real-time applications requiring rapid responsiveness. While recent deep learning-based methods show promise, they typically function as task-specific solvers lacking the flexibility to adapt to different objectives and scenarios without expensive retraining. To address these limitations, we propose a graph foundation model for resource allocation (GFM-RA) based on a pre-training and fine-tuning paradigm to extract unified representations, thereby enabling rapid adaptation to different objectives and scenarios. Specifically, we introduce an interference-aware Transformer architecture with a bias projector that injects interference topologies into global attention mechanisms. Furthermore, we develop a hybrid self-supervised pre-training strategy that synergizes masked edge prediction with negative-free Teacher-Student contrastive learning, enabling the model to capture transferable structural representations from massive unlabeled datasets. Extensive experiments demonstrate that the proposed framework achieves state-of-the-art performance and scales effectively with increased model capacity. Crucially, leveraging its unified representations, the foundation model exhibits exceptional sample efficiency, enabling robust few-shot adaptation to diverse and unsupervised downstream objectives in out-of-distribution (OOD) scenarios. These results demonstrate the promise of pre-trained foundation models for adaptable wireless resource allocation and provide a strong foundation for future research on generalizable learning-based wireless optimization.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T06:07:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.07390v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.07390v1"
+      "abstract": "The forthcoming Hyper-Kamiokande experiment requires substantially larger Monte Carlo datasets than previous experiments to satisfy stringent systematic-uncertainty requirements. While traditional maximum-likelihood reconstruction provides high-quality results, its per-event computational cost makes processing these large samples increasingly impractical. We demonstrate a neural-network-based reconstruction approach for the Hyper-Kamiokande far detector using simulated data. Single-particle events with kinetic energies from the Cherenkov threshold up to 2 GeV are propagated through the detector, with PMT charge and timing information mapped to $190\\times189$ two-channel images serving as inputs to ResNet models in the WatChMaL framework. These models (i) classify events into four particle hypotheses ($e$, $μ$, $γ$, $π^{0}$) and (ii) regress the vertex, direction, and momentum of electrons and muons. Averaged over the full kinematic range, the regression models achieve momentum resolutions of $1.35\\%$ and $2.39\\%$, angular resolutions of $1.25^\\circ$ and $1.94^\\circ$, and vertex resolutions of $28.2$ cm and $25.4$ cm, for muons and electrons respectively, broadly consistent with traditional methods. The classifier improves $e$-$μ$, $e$-$γ$, and $e$-$π^{0}$ separation, with ROC curve areas of $0.9999992$, $0.633$, and $0.9526$. Crucially, our networks achieve inference times of 1-2 ms per event on a single GPU, yielding speed-ups of $3.2\\times10^{4}$-$5.2\\times10^{4}$ relative to likelihood-based reconstruction, highlighting deep learning as a scalable alternative for Hyper-Kamiokande event reconstruction.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T05:41:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13503v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13503v1"
     },
     {
-      "id": "2604.06644v1",
-      "title": "Variational Feature Compression for Model-Specific Representations",
+      "id": "2604.13471v1",
+      "title": "Computational framework for multistep metabolic pathway design",
       "authors": [
-        "Zinan Guo",
-        "Zihan Wang",
-        "Chuan Yan",
-        "Liuhuo Wan",
-        "Ethan Ma",
-        "Guangdong Bai"
+        "Peter Zhiping Zhang",
+        "Jeffrey D. Varner"
       ],
-      "abstract": "As deep learning inference is increasingly deployed in shared and cloud-based settings, a growing concern is input repurposing, in which data submitted for one task is reused by unauthorized models for another. Existing privacy defenses largely focus on restricting data access, but provide limited control over what downstream uses a released representation can still support. We propose a feature extraction framework that suppresses cross-model transfer while preserving accuracy for a designated classifier. The framework employs a variational latent bottleneck, trained with a task-driven cross-entropy objective and KL regularization, but without any pixel-level reconstruction loss, to encode inputs into a compact latent space. A dynamic binary mask, computed from per-dimension KL divergence and gradient-based saliency with respect to the frozen target model, suppresses latent dimensions that are uninformative for the intended task. Because saliency computation requires gradient access, the encoder is trained in a white-box setting, whereas inference requires only a forward pass through the frozen target model. On CIFAR-100, the processed representations retain strong utility for the designated classifier while reducing the accuracy of all unintended classifiers to below 2%, yielding a suppression ratio exceeding 45 times relative to unintended models. Preliminary experiments on CIFAR-10, Tiny ImageNet, and Pascal VOC provide exploratory evidence that the approach extends across task settings, although further evaluation is needed to assess robustness against adaptive adversaries.",
-      "published": "April 08, 2026",
-      "published_raw": "2026-04-08T03:34:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.06644v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.06644v1"
+      "abstract": "In silico tools are important for generating novel hypotheses and exploring alternatives in de novo metabolic pathway design. However, while many computational frameworks have been proposed for retrobiosynthesis, few successful examples of algorithm-guided xenobiotic biochemical retrosynthesis have been reported in the literature. Deep learning has improved the quality of synthesis and retrosynthesis in organic chemistry applications. Inspired by this progress, we explored combining deep learning of biochemical transformations with the traditional retrobiosynthetic workflow to improve in silico synthetic metabolic pathway designs. To develop our computational biosynthetic pathway design framework, we assembled metabolic reaction and enzymatic template data from public databases. A data augmentation procedure, adapted from literature, was carried out to enrich the assembled reaction dataset with artificial metabolic reactions generated by enzymatic reaction templates. Two neural network-based pathway ranking models were trained as binary classifiers to distinguish assembled reactions from artificial counterparts; each model output a scalar quantifying the plausibility of a 1-step or 2-step pathway. Combining these two models with enzymatic templates, we built a multistep retrobiosynthesis pipeline and validated it by reproducing some natural and non-natural pathways computationally.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T04:50:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13471v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13471v1"
     },
     {
-      "id": "2604.06475v1",
-      "title": "AE-ViT: Stable Long-Horizon Parametric Partial Differential Equations Modeling",
+      "id": "2604.13459v1",
+      "title": "Asymmetric-Loss-Guided Hybrid CNN-BiLSTM-Attention Model for Industrial RUL Prediction with Interpretable Failure Heatmaps",
       "authors": [
-        "Iva Mikuš",
-        "Boris Muha",
-        "Domagoj Vlah"
+        "Mohammed Ezzaldin Babiker Abdullah"
       ],
-      "abstract": "Deep Learning Reduced Order Models (ROMs) are becoming increasingly popular as surrogate models for parametric partial differential equations (PDEs) due to their ability to handle high-dimensional data, approximate highly nonlinear mappings, and utilize GPUs. Existing approaches typically learn evolution either on the full solution field, which requires capturing long-range spatial interactions at high computational cost, or on compressed latent representations obtained from autoencoders, which reduces the cost but often yields latent vectors that are difficult to evolve, since they primarily encode spatial information. Moreover, in parametric PDEs, the initial condition alone is not sufficient to determine the trajectory, and most current approaches are not evaluated on jointly predicting multiple solution components with differing magnitudes and parameter sensitivities. To address these challenges, we propose a joint model consisting of a convolutional encoder, a transformer operating on latent representations, and a decoder for reconstruction. The main novelties are joint training with multi-stage parameter injection and coordinate channel injection. Parameters are injected at multiple stages to improve conditioning. Physical coordinates are encoded to provide spatial information. This allows the model to dynamically adapt its computations to the specific PDE parameters governing each system, rather than learning a single fixed response. Experiments on the Advection-Diffusion-Reaction equation and Navier-Stokes flow around the cylinder wake demonstrate that our approach combines the efficiency of latent evolution with the fidelity of full-field models, outperforming DL-ROMs, latent transformers, and plain ViTs in multi-field prediction, reducing the relative rollout error by approximately $5$ times.",
-      "published": "April 07, 2026",
-      "published_raw": "2026-04-07T21:19:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.06475v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.06475v1"
+      "abstract": "Turbofan engine degradation under sustained operational stress necessitates robust prognostic systems capable of accurately estimating the Remaining Useful Life (RUL) of critical components. Existing deep learning approaches frequently fail to simultaneously capture multi-sensor spatial correlations and long-range temporal dependencies, while standard symmetric loss functions inadequately penalize the safety-critical error of over-estimating residual life. This study proposes a hybrid architecture integrating Twin-Stage One-Dimensional Convolutional Neural Networks (1D-CNN), a Bidirectional Long Short-Term Memory (BiLSTM) network, and a custom Bahdanau Additive Attention mechanism. The model was trained and evaluated on the NASA Commercial Modular Aero-Propulsion System Simulation (C-MAPSS) FD001 sub-dataset employing a zero-leakage preprocessing pipeline, piecewise-linear RUL labeling capped at 130 cycles, and the NASA-specified asymmetric exponential loss function that disproportionately penalizes over-estimation to enforce industrial safety constraints. Experiments on 100 test engines achieved a Root Mean Squared Error (RMSE) of 17.52 cycles and a NASA S-Score of 922.06. Furthermore, extracted attention weight heatmaps provide interpretable, per-engine insights into the temporal progression of degradation, supporting informed maintenance decision-making. The proposed framework demonstrates competitive performance against established baselines and offers a principled approach to safe, interpretable prognostics in industrial settings.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T04:25:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13459v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13459v1"
     },
     {
-      "id": "2604.06032v1",
-      "title": "Ensemble-Based Dirichlet Modeling for Predictive Uncertainty and Selective Classification",
+      "id": "2604.13456v1",
+      "title": "MyoVision: A Mobile Research Tool and NEATBoost-Attention Ensemble Framework for Real Time Chicken Breast Myopathy Detection",
       "authors": [
-        "Courtney Franzen",
-        "Farhad Pourkamali-Anaraki"
+        "Chaitanya Pallerla",
+        "Siavash Mahmoudi",
+        "Dongyi Wang"
       ],
-      "abstract": "Neural network classifiers trained with cross-entropy loss achieve strong predictive accuracy but lack the capability to provide inherent predictive uncertainty estimates, thus requiring external techniques to obtain these estimates. In addition, softmax scores for the true class can vary substantially across independent training runs, which limits the reliability of uncertainty-based decisions in downstream tasks. Evidential Deep Learning aims to address these limitations by producing uncertainty estimates in a single pass, but evidential training is highly sensitive to design choices including loss formulation, prior regularization, and activation functions. Therefore, this work introduces an alternative Dirichlet parameter estimation strategy by applying a method of moments estimator to ensembles of softmax outputs, with an optional maximum-likelihood refinement step. This ensemble-based construction decouples uncertainty estimation from the fragile evidential loss design while also mitigating the variability of single-run cross-entropy training, producing explicit Dirichlet predictive distributions. Across multiple datasets, we show that the improved stability and predictive uncertainty behavior of these ensemble-derived Dirichlet estimates translate into stronger performance in downstream uncertainty-guided applications such as prediction confidence scoring and selective classification.",
-      "published": "April 07, 2026",
-      "published_raw": "2026-04-07T16:28:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.06032v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.06032v1"
+      "abstract": "Woody Breast (WB) and Spaghetti Meat (SM) myopathies significantly impact poultry meat quality, yet current detection methods rely either on subjective manual evaluation or costly laboratory-grade imaging systems. We address the problem of low-cost, non-destructive multi-class myopathy classification using consumer smartphones. MyoVision is introduced as a mobile transillumination imaging framework in which 14-bit RAW images are captured and structural texture descriptors indicative of internal tissue abnormalities are extracted. To classify three categories (Normal, Woody Breast, Spaghetti Meat), we propose a NEATBoost-Attention Ensemble model, which is a neuroevolution-optimized weighted fusion of LightGBM and attention-based MLP models. Hyperparameters are automatically discovered using NeuroEvolution of Augmenting Topologies (NEAT), eliminating manual tuning and enabling architecture diversity for small tabular datasets. On a dataset of 336 fillets collected from a commercial processing facility, our method achieves 82.4% test accuracy (F1 = 0.83), outperforming conventional machine learning and deep learning baselines and matching performance reported by hyperspectral imaging systems costing orders of magnitude more. Beyond classification performance, MyoVision establishes a reproducible mobile RGB-D acquisition pipeline for multimodal meat quality research, demonstrating that consumer-grade imaging can support scalable internal tissue assessment.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T04:21:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13456v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13456v1"
     },
     {
-      "id": "2604.06001v1",
-      "title": "A deep learning framework for jointly solving transient Fokker-Planck equations with arbitrary parameters and initial distributions",
+      "id": "2604.13400v1",
+      "title": "Classical Machine Learning Baselines for Deepfake Audio Detection on the Fake-or-Real Dataset",
       "authors": [
-        "Xiaolong Wang",
-        "Jing Feng",
-        "Qi Liu",
-        "Chengli Tan",
-        "Yuanyuan Liu",
-        "Yong Xu"
+        "Faheem Ahmad",
+        "Ajan Ahmed",
+        "Masudul Imtiaz"
       ],
-      "abstract": "Efficiently solving the Fokker-Planck equation (FPE) is central to analyzing complex parameterized stochastic systems. However, current numerical methods lack parallel computation capabilities across varying conditions, severely limiting comprehensive parameter exploration and transient analysis. This paper introduces a deep learning-based pseudo-analytical probability solution (PAPS) that, via a single training process, simultaneously resolves transient FPE solutions for arbitrary multi-modal initial distributions, system parameters, and time points. The core idea is to unify initial, transient, and stationary distributions via Gaussian mixture distributions (GMDs) and develop a constraint-preserving autoencoder that bijectively maps constrained GMD parameters to unconstrained, low-dimensional latent representations. In this representation space, the panoramic transient dynamics across varying initial conditions and system parameters can be modeled by a single evolution network. Extensive experiments on paradigmatic systems demonstrate that the proposed PAPS maintains high accuracy while achieving inference speeds four orders of magnitude faster than GPU-accelerated Monte Carlo simulations. This efficiency leap enables previously intractable real-time parameter sweeps and systematic investigations of stochastic bifurcations. By decoupling representation learning from physics-informed transient dynamics, our work establishes a scalable paradigm for probabilistic modeling of multi-dimensional, parameterized stochastic systems.",
-      "published": "April 07, 2026",
-      "published_raw": "2026-04-07T15:28:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2604.06001v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2604.06001v1"
+      "abstract": "Deep learning has enabled highly realistic synthetic speech, raising concerns about fraud, impersonation, and disinformation. Despite rapid progress in neural detectors, transparent baselines are needed to reveal which acoustic cues reliably separate real from synthetic speech. This paper presents an interpretable classical machine learning baseline for deepfake audio detection using the Fake-or-Real (FoR) dataset. We extract prosodic, voice-quality, and spectral features from two-second clips at 44.1 kHz (high-fidelity) and 16 kHz (telephone-quality) sampling rates. Statistical analysis (ANOVA, correlation heatmaps) identifies features that differ significantly between real and fake speech. We then train multiple classifiers -- Logistic Regression, LDA, QDA, Gaussian Naive Bayes, SVMs, and GMMs -- and evaluate performance using accuracy, ROC-AUC, EER, and DET curves. Pairwise McNemar's tests confirm statistically significant differences between models. The best model, an RBF SVM, achieves ~93% test accuracy and ~7% EER on both sampling rates, while linear models reach ~75% accuracy. Feature analysis reveals that pitch variability and spectral richness (spectral centroid, bandwidth) are key discriminative cues. These results provide a strong, interpretable baseline for future deepfake audio detectors.",
+      "published": "April 15, 2026",
+      "published_raw": "2026-04-15T01:59:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2604.13400v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2604.13400v1"
     }
   ]
 }
