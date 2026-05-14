@@ -1,7 +1,310 @@
 {
-  "last_updated": "2026-05-13T01:52:06.764124",
+  "last_updated": "2026-05-14T01:54:37.786628",
   "count": 20,
   "papers": [
+    {
+      "id": "2605.13366v1",
+      "title": "Neural Surrogate Forward Modelling For Electrocardiology Without Explicit Intracellular Conductivity Tensor",
+      "authors": [
+        "Shaheim Ogbomo-Harmitt",
+        "Cesare Magnetti",
+        "Jakub Grzelak",
+        "Oleg Aslanidi"
+      ],
+      "abstract": "Accurate forward modelling is essential for non-invasive cardiac electrophysiology, particularly in atrial fibrillation, where electrical activation is highly disorganised. Conventional physics-based forward models require explicit specification of intracellular conductivity tensors, which are not directly measurable in clinical practice and introduce structural modelling errors. This proof-of-concept study presents a deep learning approach that learns a direct mapping from left atrial intracellular electrical potentials to far-field ECGs without requiring explicit intracellular conductivity inputs at inference time. Despite training only on 74 subjects, the model achieved an R2 of 0.949 \\pm 0.037, highlighting potential to reduce structural uncertainty and improve non-invasive AF assessment.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T11:26:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13366v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13366v1"
+    },
+    {
+      "id": "2605.13312v1",
+      "title": "Supervised Deep Multimodal Matrix Factorization for Interpretable Brain Network Analysis",
+      "authors": [
+        "Amjad Seyedi",
+        "Lifang He",
+        "Songlin Zhao",
+        "Akwum Onwunta",
+        "Nicolas Gillis"
+      ],
+      "abstract": "We present Supervised Deep Multimodal Matrix Factorization (SD3MF), an interpretable framework for integrative brain network analysis that generalizes Symmetric Nonnegative Matrix Tri-Factorization (SNMTF) from unsupervised single-graph clustering to supervised prediction over populations of multimodal graphs. SD3MF learns deep hierarchical factorizations for each modality together with a shared latent representation that aligns subjects across views. An encoder-decoder formulation jointly optimizes graph reconstruction and supervised prediction, while adaptive weights enable data-driven multimodal fusion. By representing each subject through community-level interaction matrices, the model yields interpretable and discriminative features. Experiments on multimodal connectome datasets show that SD3MF consistently outperforms strong deep learning baselines such as CNNs and GNNs, while enabling biologically interpretable insights. Code for reproducibility is available at: https://github.com/amjadseyedi/SD3MF.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T10:26:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13312v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13312v1"
+    },
+    {
+      "id": "2605.13219v1",
+      "title": "Comparative analysis of missing data imputation methods for CSST survey: Impact on photometric redshift estimation performance",
+      "authors": [
+        "Ling Wang",
+        "Zhu Chen",
+        "Zhijian Luo",
+        "Liping Fu",
+        "Zuhui Fan",
+        "Wei Du",
+        "Yaoming Lei",
+        "Zhang Ban",
+        "Yuedong Fang",
+        "Yi Hu",
+        "Xin Ji",
+        "Guoliang Li",
+        "Xiaobo Li",
+        "Jiaqi Lin",
+        "Chenxiaoji Ling",
+        "Chao Liu",
+        "Dezi Liu",
+        "Changqing Luo",
+        "Yu Luo",
+        "Bin Ma",
+        "Xianmin Meng",
+        "Jundan Nie",
+        "Juanjuan Ren",
+        "Li Shao",
+        "Jianing Tang",
+        "Hao Tian",
+        "Feng Wang",
+        "Chengliang Wei",
+        "Peng Wei",
+        "Shoulin Wei",
+        "Kaichao Wu",
+        "You Wu",
+        "Yun-Ao Xiao",
+        "Zhou Xie",
+        "Yibo Yan",
+        "Su Yao",
+        "Yan Yu",
+        "Bo Zhang",
+        "Shengwen Zhang",
+        "Tianmeng Zhang",
+        "Xiaoli Zhang",
+        "Xin Zhang",
+        "Bowei Zhao",
+        "Zhimin Zhou",
+        "Hu Zou"
+      ],
+      "abstract": "Improving the accuracy of photometric redshifts (photo-$z$) is essential for reliable statistical studies of cosmology and galaxy evolution. However, missing photometric bands are a common observational challenge that can significantly degrade photo-$z$ estimation accuracy. In this work, we present a systematic evaluation of data imputation methods aimed at improving photo-$z$ performance. We benchmark a range of representative machine learning (ML) and deep learning (DL) architectures, identifying k-nearest neighbors (KNN) and the attention-based SAITS model as the leading performers. These models are then applied to China Space Station Survey Telescope (CSST) mock data to assess their performance under realistic observational conditions. Our results show that KNN yields the highest accuracy under idealized missing completely at random (MCAR) conditions with complete training sets, whereas robustness tests reveal that SAITS significantly outperforms KNN when training data is incomplete or when applied to realistic mixed-mechanism scenarios. We find that domain consistency between training and testing missingness patterns is a prerequisite for optimal performance, highlighting the risks of domain shift in supervised regression tasks. Furthermore, our analysis demonstrates that while general imputation models are highly effective for MCAR and missing at random (MAR) data, they are detrimental when applied to missing not at random (MNAR) data arising from flux limits, as statistical models fail to capture the physical information inherent in these non-detections. Consequently, we advocate for more sophisticated architectures capable of disentangling stochastic missingness from physical non-detections to address these distinct mechanisms individually.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T09:12:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13219v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13219v1"
+    },
+    {
+      "id": "2605.12917v1",
+      "title": "Adaptive Conformal Prediction for Reliable and Explainable Medical Image Classification",
+      "authors": [
+        "One Octadion",
+        "Novanto Yudistira",
+        "Lailil Muflikhah"
+      ],
+      "abstract": "Deep learning models for medical imaging often exhibit overconfidence, creating safety risks in ambiguous diagnostic scenarios. While Conformal Prediction (CP) provides distribution-free statistical guarantees, standard methods such as Regularized Adaptive Prediction Sets (RAPS) optimize for average efficiency and can mask severe failures on difficult inputs. We propose an Adaptive Lambda Criterion for RAPS that minimizes the worst-case coverage violation across prediction set size strata. On OrganAMNIST (58,850 abdominal CT images, 11 classes), standard size-optimized RAPS converges to near-deterministic behavior with stratified undercoverage on uncertain samples, while our method achieves 95.72 percent global coverage with average set size 1.09 and at least 90 percent coverage across all strata. Cross-domain validation on PathMNIST (107,180 pathology images, 9 classes) confirms generalizability. Quantitative Grad-CAM analysis (rho = -0.30, p < 1e-22) shows that multi-label predictions correspond to focused attention on anatomically ambiguous regions. These results demonstrate that the proposed method improves reliability while maintaining efficiency, making it suitable for safety-critical medical AI applications.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T02:45:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12917v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12917v1"
+    },
+    {
+      "id": "2605.12916v1",
+      "title": "SHM-Agents: A Generalist-Specialist Integrated Agent System for Structural Health Monitoring",
+      "authors": [
+        "Yuequan Bao",
+        "Xing Li",
+        "Huabin Sun",
+        "Dawei Liu",
+        "Yuxuan Tian",
+        "Haiyang Hu"
+      ],
+      "abstract": "Artificial intelligence is increasingly used to simplify complex tasks. In engineering applications of structural health monitoring (SHM), existing specialized algorithms, while effective, often face high implementation barriers, limited interoperability and complex training procedures. To overcome these challenges, this paper proposes SHM-Agents, a generalist-specialist agent system that integrates the reasoning and planning abilities of large language models with the problem-solving strengths of specialized algorithms. SHM-Agents enables end-to-end execution of single and combined SHM tasks via natural language, supports deep learning pre-training to simplify deployment and allows flexible expansion through a modular design. Experiments on a long-span cable-stayed bridge show that SHM-Agents can accurately and efficiently perform diverse SHM tasks, including data anomaly diagnosis and recovery, signal processing, statistical analysis, modal identification, damage identification, finite element model updating, vehicle load modeling, response calculation, reliability assessment, fatigue estimation and bridge knowledge Q\\&A.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T02:44:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12916v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12916v1"
+    },
+    {
+      "id": "2605.12878v1",
+      "title": "Adam-SHANG: A Convergent Adam-Type Method for Stochastic Smooth Convex Optimization",
+      "authors": [
+        "Yaxin Yu",
+        "Long Chen",
+        "Minfu Feng"
+      ],
+      "abstract": "We propose Adam-SHANG, a Lyapunov-guided Adam-type method that couples momentum, adaptive preconditioning, and a curvature-aware correction through a more stable lagged-preconditioner update. For stochastic smooth convex optimization, we prove convergence in expectation under an admissible stepsize condition that can always be satisfied by a conservative spectral bound, without imposing global monotonicity on the second-moment sequence. To obtain a less conservative practical rule, we introduce a computable trace-ratio stepsize, motivated by a local coordinatewise alignment condition. The same structural update is also tested beyond the convex setting with simplified parameters. Experiments validate the predicted stochastic decay and show competitive training performance against Adam and AdamW on deep learning tasks.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T01:46:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12878v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12878v1"
+    },
+    {
+      "id": "2605.12862v1",
+      "title": "NeuroRisk: Physics-Informed Neural Optimization for Risk-Aware Traffic Engineering",
+      "authors": [
+        "Yingming Mao",
+        "Ximeng Liu",
+        "Jingyi Cheng",
+        "Xiyuan Liu",
+        "Jiashuai Liu",
+        "Yike Liu",
+        "Zhen Yao",
+        "Yuzhou Zhou",
+        "Siyuan Feng",
+        "Qiaozhu Zhai",
+        "Shizhen Zhao"
+      ],
+      "abstract": "In production Wide-Area Networks (WANs), correlated failures dominate availability losses, forcing operators to reserve large safety margins that leave substantial capacity underutilized. Achieving high utilization under strict availability targets therefore requires risk-aware Traffic Engineering (TE) over dozens to hundreds of probabilistic failure scenarios-yet solving this problem at operational timescales remains elusive. We demonstrate that existing risk-aware formulations can be unified under an embedded Sort-and-Select structure, exposing a fundamental trade-off between expressiveness and tractability: classical optimizers either restrict scenario selection for efficiency or incur prohibitive decomposition costs. While deep learning appears promising, prior Deep TE methods mainly target maximum link utilization and rely on scaling-based feasibility, which fundamentally breaks under explicit capacity constraints and scenario-dependent risk. We present NeuroRisk, a physics-informed deep unrolled optimizer that exploits the structure of Sort-and-Select. NeuroRisk enforces feasibility via gated edge-local reservations and represents scenario sets through permutation-invariant, gradient-aligned cues. Evaluations on production-style WANs show that NeuroRisk achieves small optimality gaps relative to the solver with orders of magnitude speedup $(10^2- 10^5 \\times)$ on risk objectives, while outperforming neural baselines on nominal throughput.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T01:17:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12862v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12862v1"
+    },
+    {
+      "id": "2605.12764v1",
+      "title": "Yield Curves Dynamics Using Variational Autoencoders Under No-arbitrage",
+      "authors": [
+        "Fusheng Luo",
+        "H'elyette Geman"
+      ],
+      "abstract": "This paper introduces a physics-informed generative framework that resolves the fundamental conflict between the statistical flexibility of deep learning and the rigorous theoretical constraints of fixed-income modeling. We demonstrate that standard generative models and unconstrained statistical extrapolations suffer from \"manifold collapse\" and severe arbitrage violations when forecasting term structures across diverse macroeconomic regimes. To overcome this, we propose a two-stage architecture. First, a Student-t Conditional Variational Autoencoder with Dynamic Level Injection (CVAEsT+LS) extracts a robust, heavy-tailed term structure manifold, effectively decoupling macroeconomic shape dynamics from absolute base rates. Second, the latent dynamic evolution is governed by a continuous-time Neural Stochastic Differential Equation (SDE) strictly penalized by a No-Arbitrage Partial Differential Equation (PDE). Empirical results across multiple sovereign currencies (USD, GBP, JPY) confirm that our synergistic approach drastically reduces out-of-sample forecasting errors -- achieving an exceptional 6.58 bps Mean Tenor RMSE -- and successfully overcomes the massive parallel drift and zero-lower-bound violations exhibited by the classical HJM model in extreme environments. Furthermore, through phase space vector field analysis, we demonstrate the model's superior capability in unsupervised macroeconomic regime detection and high-quality continuous-time scenario generation. Ultimately, this research provides a highly scalable, mathematically sound evolutionary engine for term structure modeling.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T21:21:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12764v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12764v1"
+    },
+    {
+      "id": "2605.12657v1",
+      "title": "User Reviews as a Source for Usability Requirements: A Precursor Study on Using Large Language Models",
+      "authors": [
+        "Cedric Wellhausen",
+        "Laura Reinhardt",
+        "Kurt Schneider"
+      ],
+      "abstract": "It is known that user-centered approaches to requirements engineering in general lead to a better suited product for the end-users. LLM4RE provides promising approaches to support the requirements elicitation process (e.g. classification of requirements). Previous approaches focus on Machine-Learning (ML) or Deep-Learning (DL) aspects, which require intensive training with a large amount of manually labeled data. LLMs, on the other hand, are pre-trained on large amounts of user-generated text data, enabling a user-centric workflow to analyze requirements. In this paper, we explore the possibility of exploiting the improved natural language understanding of LLMs, rather than strict ML classification, together with the mass extraction of user reviews to analyze if the performance of LLMs in understanding user reviews is comparable to the performance of human raters. This enables a quick and cheap workflow for development teams to gather and process their userś requirements. This paper provides three major contributions: (1) We provide a completely coded dataset of 300 user reviews containing usability-relevant aspects from three different types of apps, that were labeled by two human raters and by an LLM. (2) We build an initial prompt, based on two prompt engineering iterations and specifically developed coding guidelines derived from the 10 Nielsen Usability Heuristics, for LLMs to filter usability relevant user reviews. (3) We determine that LLMs are generally able to recognize usability as a non-functional requirement in user reviews, in terms of their F-score, but the performance and reliability is strongly dependent on the prompt.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T19:05:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12657v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12657v1"
+    },
+    {
+      "id": "2605.12394v1",
+      "title": "Detecting overfitting in Neural Networks during long-horizon grokking using Random Matrix Theory",
+      "authors": [
+        "Hari K. Prakash",
+        "Charles H Martin"
+      ],
+      "abstract": "Training Neural Networks (NNs) without overfitting is difficult; detecting that overfitting is difficult as well. We present a novel Random Matrix Theory method that detects the onset of overfitting in deep learning models without access to train or test data. For each model layer, we randomize each weight matrix element-wise, $\\mathbf{W} \\to \\mathbf{W}_{\\mathrm{rand}}$, fit the randomized empirical spectral distribution with a Marchenko-Pastur distribution, and identify large outliers that violate self-averaging. We call these outliers Correlation Traps. During the onset of overfitting, which we call the \"anti-grokking\" phase in long-horizon grokking, Correlation Traps form and grow in number and scale as test accuracy decreases while train accuracy remains high. Traps may be benign or may harm generalization; we provide an empirical approach to distinguish between them by passing random data through the trained model and evaluating the JS divergence of output logits. Our findings show that anti-grokking is an additional grokking phase with high train accuracy and decreasing test accuracy, structurally distinct from pre-grokking through its Correlation Traps. More broadly, we find that some foundation-scale LLMs exhibit the same Correlation Traps, indicating potentially harmful overfitting.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T16:57:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12394v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12394v1"
+    },
+    {
+      "id": "2605.12391v1",
+      "title": "Trajectory-Agnostic Asteroid Detection in TESS with Deep Learning",
+      "authors": [
+        "Brian P. Powell",
+        "Jorge Martinez-Palomera",
+        "Amy Tuson",
+        "Christina Hedges",
+        "Jessie Dotson",
+        "Jordan Caraballo-Vega"
+      ],
+      "abstract": "We present a novel method for extracting moving objects from TESS data using machine learning. Our approach uses two stacked 3D U-Nets with skip connections, which we call a W-Net, to filter background and identify pixels containing moving objects in TESS image time-series data. By augmenting the training data through rotation of the image cubes, our method is robust to differences in speed and direction of asteroids, requiring no assumptions for either parameter range which are typically required in \"shift-and-stack\" type algorithms. We also developed a novel method for learned data scaling that we call Adaptive Normalization, which allows the neural network to learn the ideal range and scaling distribution required for optimal data processing. We built a code for creating TESS training data with asteroid masks that served as the foundation of our effort (tess-asteroid-ml), which we publicly released for the benefit of the community. Our method is not limited to TESS, but applicable for implementation in other similar time-domain surveys, making it of particular interest for use with data from upcoming missions such as the Nancy Grace Roman Space Telescope and NEOSurveyor.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T16:56:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12391v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12391v1"
+    },
+    {
+      "id": "2605.12358v1",
+      "title": "From Message-Passing to Linearized Graph Sequence Models",
+      "authors": [
+        "Joël Mathys",
+        "Basil Rohner",
+        "Saku Peltonen",
+        "Roger Wattenhofer"
+      ],
+      "abstract": "Message-passing based approaches form the default backbone of most learning architectures on graph-structured data. However, the rapid progress of modern deep learning architectures in other domains, particularly sequence modeling, raises the question of how graph learning can benefit from these advances. We introduce Linearized Graph Sequence Models, a framework that recasts message-passing graph computation from the perspective of sequence modeling to simplify architectural choices. Our approach systematically separates the computational processing depth from the information propagation depth, allowing core graph architectural decisions to be treated as sequence modeling choices. Specifically, we analyze, both empirically and theoretically, what sequence properties make methods effective for learning and preserving the graph inductive bias. In particular, we validate our findings, demonstrating improved performance on long-range information tasks in graphs. Our findings provide a principled way to integrate modern sequence modeling advances into message-passing based graph learning. Beyond this, our work demonstrates how the separation of processing and information depth can recast central architectural questions as input modeling choices.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T16:32:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12358v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12358v1"
+    },
+    {
+      "id": "2605.12308v1",
+      "title": "In-context learning to predict critical transitions in dynamical systems",
+      "authors": [
+        "Yunus Sevinchan",
+        "Juan Nathaniel",
+        "Kai Ueltzhöffer",
+        "Carla Roesch",
+        "Tobias Weber",
+        "Vaios Laschos",
+        "Hang Fan",
+        "Gregor Ramien",
+        "Johannes Haux",
+        "Pierre Gentine",
+        "Benjamin Herdeanu"
+      ],
+      "abstract": "Critical transitions - abrupt, often irreversible changes in system dynamics - arise across human and natural systems, often with catastrophic consequences. Real-world observations of such shifts remain scarce, preventing the development of reliable early warning systems. Conventional statistical and spectral indicators, such as increasing variance, tend to fail under realistic conditions of limited data and correlated noise, whereas existing deep learning classifiers do not extrapolate beyond their training data distribution. In this work, we introduce TipPFN, an in-context learning (ICL) framework that uses a prior-data fitted network to infer a system's proximity to a critical transition. Trained on our novel synthetic data generator, which is based on canonical bifurcation scenarios coupled to diverse, randomized stochastic dynamics, TipPFN flexibly capitalizes on contexts of various sizes, complexity and dimensionalities. We demonstrate robust, state-of-the-art early detection of critical transitions in previously unseen tipping regimes, sim-to-real examples, and real-world observations in both ICL and zero-shot settings.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T15:56:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12308v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12308v1"
+    },
+    {
+      "id": "2605.12217v1",
+      "title": "Heterogeneous SoC Integrating an Open-Source Recurrent SNN Accelerator for Neuromorphic Edge Computing on FPGA",
+      "authors": [
+        "Michelangelo Barocci",
+        "Vittorio Fra",
+        "Enrico Macii",
+        "Gianvito Urgese"
+      ],
+      "abstract": "The growing popularity of Spiking Neural Networks (SNNs) and their applications has led to a significant fast-paced increase of neuromorphic architectures capable of mimicking the spike-based data processing typical of biological neurons. The efficient power consumption and parallel computing capabilities of the SNNs lead researchers towards the development of digital accelerators, which exploit such features to bring fast and low-power computation on edge devices. The spread of digital neuromorphic hardware however is slowed down by the prohibitive costs that the silicon tape out of circuits brings, that's why targeting Field Programmable Gate Arrays (FPGAs) could represent a viable alternative, offering a flexible and cost-effective platform for implementing digital neuromorphic systems and helping the spread of open-source hardware designs. In this work we present an heterogeneous System-on-Chip (SoC) where the operations of ReckOn, a Recurrent SNN accelerator, are managed through the integration with traditional processors. These include the RISC-V-based, open-source microcontroller X-HEEP and the ARM processor featured in Zynq Ultrascale systems. We validate our design by reproducing the classification results through the implementation on FPGA of the taped-out version of ReckOn in order to check the equivalence of the accuracy and the characteristics in terms of physical implementation. In a second set of experiments, we evaluate the online learning capability of the solution in classifying a subset of the Braille digit dataset recently used to compare neuromorphic frameworks and platforms.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T14:55:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12217v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12217v1"
+    },
+    {
+      "id": "2605.12196v1",
+      "title": "ECTO: Exogenous-Conditioned Temporal Operator for Ultra-Short-Term Wind Power Forecasting",
+      "authors": [
+        "Cao Yuan",
+        "Junjun Wang"
+      ],
+      "abstract": "Accurate ultra-short-term wind power forecasting is critical for grid dispatch and reserve management, yet remains challenging due to the non-stationary, condition-dependent nature of wind generation. Meteorological exogenous variables carry substantial predictive information, but the most informative variable combination varies across sites, operating conditions, and prediction horizons. Existing deep learning approaches either treat exogenous inputs as generic auxiliary channels through uniform mixing or soft gating, or rely on fixed preprocessing steps such as PCA, without exploiting the physical structure of meteorological variables. We propose ECTO (Exogenous-Conditioned Temporal Operator), a unified framework that decomposes exogenous variable modeling into two complementary modules. Physically-Grounded Variable Selection (PGVS) performs hierarchical, group-aware sparse selection over exogenous variables using a domain-informed physical prior and sparsemax activations, producing a compact, condition-adaptive exogenous context. Exogenous-Conditioned Regime Refinement (ECRR) routes the forecast through learned regime experts that apply gain--bias calibration and horizon-specific corrections via a mixture-of-experts paradigm. Experiments on three wind farms spanning different climates, capacities (66--200 MW), and exogenous dimensions (11--13 variables) demonstrate that ECTO achieves the lowest MSE across all sites, with relative improvements over the strongest baseline ranging from 2.2% to 5.2%, widening to 8.6% at the longer prediction horizon ($H=32$). Ablation analysis confirms that each exogenous-related component contributes positively (PGVS +1.84%, ECRR +2.86%), and interpretability analysis reveals that PGVS learns physically meaningful, site-specific variable selection patterns, while ECRR converges to well-separated calibration strategies consistent across sites.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T14:37:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12196v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12196v1"
+    },
+    {
+      "id": "2605.12031v1",
+      "title": "Resilient Vision-Tabular Multimodal Learning under Modality Missingness",
+      "authors": [
+        "Camillo Maria Caruso",
+        "Valerio Guarrasi",
+        "Paolo Soda"
+      ],
+      "abstract": "Multimodal deep learning has shown strong potential in medical applications by integrating heterogeneous data sources such as medical images and structured clinical variables. However, most existing approaches implicitly assume complete modality availability, an assumption that rarely holds in real-world clinical settings where entire modalities and individual features are frequently missing. In this work, we propose a multimodal transformer framework for joint vision-tabular learning explicitly designed to operate under pervasive modality missingness, without relying on imputation or heuristic model switching. The architecture integrates three components: a vision, a tabular, and a multimodal fusion encoder. Unimodal representations are weighted through learnable modality tokens and fused via intermediate fusion with masked self-attention, which excludes missing tokens and modalities from information aggregation and gradient propagation. To further enhance resilience, we introduce a modality-dropout regularization strategy that stochastically removes available modalities during training, encouraging the model to exploit complementary information under partial data availability. We evaluate our approach on the MIMIC-CXR dataset paired with structured clinical data from MIMIC-IV for multilabel classification of 14 diagnostic findings with incomplete annotations. Two parallel systematic stress-test protocols progressively increase training and inference missingness in each modality separately, spanning fully multimodal to fully unimodal scenarios. Across all missingness regimes, the proposed method consistently outperforms representative baselines, showing smoother performance degradation and improved robustness. Ablation studies further demonstrate that attention-level masking and intermediate fusion with joint fine-tuning are key to resilient multimodal inference.",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T12:14:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12031v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12031v1"
+    },
+    {
+      "id": "2605.12017v1",
+      "title": "FAME: Feature Activation Map Explanation on Image Classification and Face Recognition",
+      "authors": [
+        "Xinyi Zhang",
+        "Manuel Günther"
+      ],
+      "abstract": "Deep Learning has revolutionized machine learning, reaching unprecedented levels of accuracy, but at the cost of reduced interpretability. Especially in image processing systems, deep networks transform local pixel information into more global concepts in a highly obscured manner. Explainable AI methods for image processing try to shed light on this issue by highlighting the regions of the image that are important for the prediction task. Among these, Class Activation Mapping (CAM) and its gradient-based variants compute attributions based on the feature map and upscale them to the image resolution, assuming that feature map locations are influenced only by underlying regions. Perturbation-based methods, such as CorrRISE, on the other hand, try to provide pixel-level attributions by perturbing the input with fixed patches and checking how the output of the network changes. In this work, we propose Feature Activation Map Explanation (FAME), which combines both worlds by using network gradients to compute changes to the input image, manipulating it in a gradient-driven way rather than using fixed patches. We apply this technique on two common tasks, image classification and face recognition, and show that CAM's above-mentioned assumption does not hold for deeper networks. We qualitatively and quantitively show that FAME produces attribution maps that are competitive state-of-the-art systems. Our code is available: {\\footnotesize https://github.com/AIML-IfI/fame.}",
+      "published": "May 12, 2026",
+      "published_raw": "2026-05-12T12:05:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.12017v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.12017v1"
+    },
     {
       "id": "2605.11606v1",
       "title": "Convolutional-Neural-Networks for Deanonymisation of I2P Traffic",
@@ -44,264 +347,6 @@
       "published_raw": "2026-05-12T06:06:10Z",
       "pdf_link": "http://arxiv.org/pdf/2605.11583v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2605.11583v1"
-    },
-    {
-      "id": "2605.11460v1",
-      "title": "Beyond Prediction: Interval Neural Networks for Uncertainty-Aware System Identification",
-      "authors": [
-        "Mehmet Ali Ferah",
-        "Tufan Kumbasar"
-      ],
-      "abstract": "System identification (SysID) is critical for modeling dynamical systems from experimental data, yet traditional approaches often fail to capture nonlinear behaviors. While deep learning offers powerful tools for modeling such dynamics, incorporating uncertainty quantification is essential to ensure reliable predictions. This paper presents a systematic framework for constructing and training interval Neural Networks (INNs) for uncertainty-aware SysID. By extending crisp neural networks into interval counterparts, we develop Interval LSTM and NODE models that propagate uncertainty through interval arithmetic without probabilistic assumptions. This design allows them to represent uncertainty and produce prediction intervals. For training, we propose two strategies: Cascade INN (C-INN), a two-stage approach converting a trained crisp NN into an INN, and Joint INN (J-INN), a one-stage framework jointly optimizing prediction accuracy and interval precision. Both strategies employ uncertainty-aware loss functions and parameterization tricks to ensure reliable learning. Comprehensive experiments on multiple SysID datasets demonstrate the effectiveness of both approaches and benchmark their performance against well-established uncertainty-aware baselines: C-INN achieves superior point prediction accuracy, whereas J-INN yields more accurate and better-calibrated prediction intervals. Furthermore, to reveal how uncertainty is represented across model parameters, the concept of channel-wise elasticity is introduced, which is used to identify distinct patterns across the two training strategies. The results of this study demonstrate that the proposed framework effectively integrates deep learning with uncertainty-aware modeling.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T03:19:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11460v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11460v1"
-    },
-    {
-      "id": "2605.11430v1",
-      "title": "Diabetic Retinopathy Classification using Downscaling Algorithms and Deep Learning",
-      "authors": [
-        "Nishi Doshi",
-        "Urvi Oza",
-        "Pankaj Kumar"
-      ],
-      "abstract": "Diabetic Retinopathy (DR) is an art and science of recording and classifying the retinal images of a diabetic patient. DR classification deals with classifying retinal fundus image into five stages on the basis of severity of diabetes. One of the major issue faced while dealing with DR classification problem is the large and varying size of images. In this paper we propose and explore the use of several downscaling algorithms before feeding the image data to a Deep Learning Network for classification. For improving training and testing; we amalgamate two datasets: Kaggle and Indian Diabetic Retinopathy Image Dataset. Our experiments have been performed on a novel Multi Channel Inception V3 architecture with a unique self crafted preprocessing phase. We report results of proposed approach using accuracy, specificity and sensitivity, which outperform the previous state of the art methods. Index Terms: Diabetic Retinopathy, Downscaling Algorithms, Multichannel CNN Architecture, Deep Learning",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T02:30:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11430v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11430v1"
-    },
-    {
-      "id": "2605.11402v1",
-      "title": "More Than Meets the Eye: A Semantics-Aware Traffic Augmentation Framework for Generalizable Website Fingerprinting",
-      "authors": [
-        "Youquan Xian",
-        "Xueying Zeng",
-        "Lingjia Meng",
-        "Lei Cui",
-        "Runhan Song",
-        "Wei Wang",
-        "Zhengquan Ding",
-        "Peng Liu",
-        "Zhiyu Hao"
-      ],
-      "abstract": "Deep learning-based website fingerprinting has emerged as an effective technique for inferring the websites users visit. Although existing methods achieve strong performance on closed-world datasets, they often fail to generalize to real-world environments, especially under geographic and temporal shifts. This limitation fundamentally stems from the coupled effects of two key challenges: application-layer resource composition variability and observable feature instability induced by cross-layer encapsulation. Intertwined, these factors induce systematic shifts between underlying application semantics and observable traffic features. To address the above challenges, we propose SATA , a semantics-aware traffic augmentation framework. Specifically, SATA first performs application-layer semantic augmentation based on protocol rules, expanding the resource composition patterns within each flow and frame sequence patterns under protocol constraints. Based on these augmented frame sequences, we further introduce a cross-layer feature alignment mechanism via knowledge distillation. It aligns frame sequence with packet-length sequence features, enabling cross-layer feature alignment between enhanced semantics and observable sequences. Extensive experiments show that SATA successfully generates traffic patterns that are absent from the training set but genuinely exist in the test set, and significantly improves the performance of mainstream models across diverse and complex scenarios. In particular, in open-world settings, SATA improves ACC by 90.81% and AUROC by 48.37%. The source code of the prototype system is available at https://anonymous.4open.science/r/SATA-B6C2/.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T01:48:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11402v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11402v1"
-    },
-    {
-      "id": "2605.11346v1",
-      "title": "Physics-Informed Teacher-Student Ensemble Learning for Traffic State Estimation with a Varying Speed Limit Scenario",
-      "authors": [
-        "Archie J. Huang",
-        "Dongdong Wang",
-        "Shaurya Agarwal",
-        "Mohamed Abdel-Aty",
-        "Md Mahmudul Islam",
-        "Muhammad Shahbaz"
-      ],
-      "abstract": "Physics-informed deep learning (PIDL) neural networks have shown their capability as a useful instrument for transportation practitioners in utilizing the underlying relationship between the state variables for traffic state estimation (TSE). Another efficient traffic management approach is implementing varying speed limits (VSLs) on transportation corridors to control traffic and mitigate congestion. However, the existing training architecture of PIDL in the literature cannot accommodate the changing traffic characteristics on a freeway with VSL. To tackle this challenge, we propose a novel framework integrating teacher-student ensemble training with PIDL neural networks for TSE under VSL scenarios. The physics of flow conservation law is encoded locally in the teacher models by PIDL, and the student model uses a multi-layer perceptron classifier (MLP) to identify traffic characteristics and selects the ensemble member of PIDL neural networks for TSE. This integrated framework provides a natural solution for capturing the heterogeneity of VSL and accurately addressing the TSE problem. The case study results validate the proposed ensemble approach, demonstrating its superior performance in TSE compared to other popular baseline methods, as indicated by relative L2 error.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T23:59:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11346v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11346v1"
-    },
-    {
-      "id": "2605.11327v1",
-      "title": "Neural Statistical Functions",
-      "authors": [
-        "Daniel Xu",
-        "Yuxin Xie",
-        "Minghao Guo",
-        "Haixu Wu",
-        "Wojciech Matusik"
-      ],
-      "abstract": "Classical deep learning typically operates on individual cases. Despite its success, real-world usage often requires repeated inference to estimate statistical quantities for complex decision-making tasks involving uncertainty or extreme-value analysis, resulting in substantial latency. We introduce neural statistical functions, a new family of models learned from pre-trained single-sample predictors and scattered data samples, which can directly infer statistics over continuous operating condition ranges without explicit sampling. By introducing the notion of prefix statistics, we transform and unify diverse statistical functions (e.g., integrals, quantiles, and maxima) into an interval-conditional framework, in which a principled identity between the prefix statistics and the individual-case regression serves as the learning objective. Neural statistical functions achieve strong performance in estimating essential statistics of complex physical processes, including accumulated energy in dynamical systems, quantiles of aerodynamic responses, and maximum stress in crash processes, while achieving up to a 100$\\times$ reduction in model evaluations.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T23:25:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11327v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11327v1"
-    },
-    {
-      "id": "2605.11316v1",
-      "title": "Error whitening: Why Gauss-Newton outperforms Newton",
-      "authors": [
-        "Maricela Best McKay",
-        "Nathan P. Lawrence",
-        "Brian Wetton",
-        "R. Bhushan Gopaluni"
-      ],
-      "abstract": "The Gauss-Newton matrix is widely viewed as a positive semidefinite approximation of the Hessian, yet mounting empirical evidence shows that Gauss-Newton descent outperforms Newton's method. We adopt a function space perspective to analyze this phenomenon. We show that the generalized Gauss-Newton (GGN) matrix projects the Newton direction in function space onto the model's tangent space, while a Jacobian-only variant obtained by applying the least squares Gauss-Newton matrix to non-least squares losses projects the function space loss gradient onto this same tangent space. Both projections eliminate distortions from the model's parameterization. Specifically, the evolution of the prediction-target mismatch depends on the model's parameterization through the matrix $JJ^\\top$ where $J$ is the Jacobian of the model with respect to its parameters. The projections effectively replace $JJ^\\top$ with the identity. We call this effect error whitening. Once the parameterization is removed, the prediction-target mismatch evolves according to dynamics dictated by the structure of the loss and the projection produced by the optimizer. Error whitening is a special property of Gauss-Newton descent that rigorously distinguishes it from Newton's method. We empirically demonstrate that Gauss-Newton optimizers follow the theoretically predicted function space dynamics and outperforms Newton's method, Adam, and Muon across case studies spanning supervised learning, physics-informed deep learning, and approximate dynamic programming.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T23:07:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11316v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11316v1"
-    },
-    {
-      "id": "2605.11189v1",
-      "title": "Deep Learning for Protein Complex Prediction and Design",
-      "authors": [
-        "Ziwei Xie"
-      ],
-      "abstract": "Accurately modeling and designing protein complex structures is a central problem in computational structural biology, with broad implications for understanding cellular function and developing therapeutics. This thesis investigates two fundamental aspects of this problem using deep learning: domain-specific architectures that capture the hierarchical nature of protein structures, and search algorithms that efficiently navigate the vast sequence spaces of protein complexes to identify interacting homologs for improving complex structure prediction and to design protein sequences.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T19:53:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11189v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11189v1"
-    },
-    {
-      "id": "2605.11091v1",
-      "title": "ASD-Bench: A Four-Axis Comprehensive Benchmark of AI Models for Autism Spectrum Disorder",
-      "authors": [
-        "Shubhankit Singh",
-        "Hassan Shaikh",
-        "Kuldeep Raghuwanshi",
-        "Keshav Bulia"
-      ],
-      "abstract": "Automated ASD screening tools remain limited by single-architecture evaluations, axis-restricted assessment, and near-exclusive focus on adult cohorts, obscuring age-specific diagnostic patterns critical for early intervention. We introduce ASD-Bench, a systematic tabular benchmark evaluating ML, deep learning, and foundation model configurations across three age cohorts (children 1-11 yr, adolescents 12-16 yr, adults 17-64 yr) on four axes: predictive performance, calibration, interpretability, and adversarial robustness. Applied to a curated v3 dataset of 4,068 AQ-10 records, our benchmark spans classical models (XGBoost, AdaBoost, Random Forest, Logistic Regression), neural networks (MLP), deep tabular transformers (TabNet, TabTransformer, FT-Transformer), and TabPFN v2. We introduce the Heuristic Aggregate Penalty (HAP): a cost-sensitive metric penalising false negatives more heavily and incorporating cross-validation variance for deployment stability. Adult classification yields high performance (10/17 models achieve perfect F1 and AUC), while adolescents present a harder task (F1 ceiling 0.837 vs. 0.915 for children). Feature hierarchies shift across cohorts: A9 (social motivation) dominates for children, A5 (pattern recognition) leads for adolescents, and adults exhibit a flatter importance profile consistent with developmental social masking. Accuracy and calibration are dissociated: AdaBoost achieves F1=1.000 on adults with ECE=0.302, confirming single-metric evaluation is insufficient for clinical AI. Cohort-specific deployment recommendations are provided. All findings should be interpreted as proof-of-concept evidence on questionnaire-derived labels rather than clinically validated diagnostic performance.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T18:01:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11091v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11091v1"
-    },
-    {
-      "id": "2605.10688v1",
-      "title": "DANCE: Detect and Classify Events in EEG",
-      "authors": [
-        "Jarod Lévy",
-        "Hubert Banville",
-        "Jérémy Rapin",
-        "Jean-Remi King",
-        "Thomas Moreau",
-        "Stéphane d'Ascoli"
-      ],
-      "abstract": "Event identification in continuous neural recordings is a critical task in neuroscience. Decoding in EEG is dominated by classifying windows aligned to known event onsets. However, while available in controlled experiments, such onsets are absent in continuous real-world monitoring. Here, we introduce DANCE, a deep learning pipeline that frames neural decoding as a set-prediction problem and jointly detects and classifies events directly from raw, unaligned signals. Evaluated separately on ten datasets curated from the literature with a wide variety of event types (ranging from milliseconds to minutes in duration), our model outperforms existing methods on a broad range of cognitive, clinical and BCI tasks. This single architecture establishes a new state of the art in the competitive task of seizure monitoring and matches the accuracy of onset-informed models for BCI tasks. Overall, our method marks a step towards end-to-end asynchronous neural decoding models",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T15:01:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10688v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10688v1"
-    },
-    {
-      "id": "2605.10650v1",
-      "title": "A Random-Matrix Criterion for Initializing Gated Recurrent Neural Networks",
-      "authors": [
-        "Tommaso Fioratti",
-        "Riccardo Marcaccioli",
-        "Francesco Casola"
-      ],
-      "abstract": "Proper weight initialization prior to training has historically been one of the key factors that helped kick off the deep learning revolution. Initialization is even more crucial in \"reservoir computing\", where the weights of a readout layer are learned linearly while the reservoir weights are fixed and largely determine the richness, stability and memory of the resulting dynamics. In the infinite-width limit it has been shown that meaningful initializations are those sitting at an effective critical point of the randomly initialized model. The phase transition is controlled by the weight variance $g^2$ and separates an ordered phase from a chaotic one where information progressively degrades. Here we derive a simple criterion to estimate the critical $g_c$ for a broad class of recurrent architectures and we show that it closely tracks the gain at which a gated-RNN reservoir achieves peak performance on a chaotic forecasting task. Finally, we argue that our criterion can serve as a design principle for future initialization schemes.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T14:35:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10650v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10650v1"
-    },
-    {
-      "id": "2605.10592v1",
-      "title": "A Resilient Solution for Sewer Overflow Monitoring across Cloud and Edge",
-      "authors": [
-        "Vipin Singh",
-        "Tianheng Ling",
-        "Peter Ghaly",
-        "Felix Grimmeisen",
-        "Gregor Schiele",
-        "Felix Biessmann"
-      ],
-      "abstract": "Aging combined sewer systems in many historical cities are increasingly stressed by extreme rainfall events, which can trigger combined sewer overflows (CSO) with significant environmental and public health impacts. Forecasting the filling dynamics of overflow basins is critical for anticipating capacity exceedance and enabling timely preventive actions for CSO. We present a web-based demonstrator (https://riwwer.demo.calgo-lab.de) that integrates Deep Learning forecasting methods in both cloud and edge settings into an interactive monitoring dashboard for overflow monitoring, resilient to network outages. A video showcase is available online (https://cloud.bht-berlin.de/index.php/s/b9xt4T3SdiLBiFZ).",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T14:00:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10592v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10592v1"
-    },
-    {
-      "id": "2605.10498v1",
-      "title": "Simultaneous Long-tailed Recognition and Multi-modal Fusion for Highly Imbalanced Multi-modal Data",
-      "authors": [
-        "Heegeon Yoon",
-        "Heeyoung Kim"
-      ],
-      "abstract": "Long-tailed distributions in class-imbalanced data present a fundamental challenge for deep learning models, which tend to be biased toward majority classes. While recent methods for long-tailed recognition have mitigated this issue, they are largely restricted to single-modal inputs and cannot fully exploit complementary information from diverse data sources. In this work, we introduce a new framework for long-tailed recognition that explicitly handles multi-modal inputs. Our approach extends multi-expert architectures to the multi-modal setting by fusing heterogeneous data into a unified representation while leveraging modality-specific networks to estimate the informativeness of each modality. These confidence-guided weights dynamically modulate the fusion process, ensuring that more informative modalities contribute more strongly to the final decision. To further enhance performance, we design specialized training and test procedures that accommodate diverse modality combinations, including images and tabular data. Extensive experiments on benchmark and real-world datasets demonstrate that the proposed approach not only effectively integrates multi-modal information but also outperforms existing methods in handling long-tailed, class-imbalanced scenarios, highlighting its robustness and generalization capability.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T12:56:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10498v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10498v1"
-    },
-    {
-      "id": "2605.10436v1",
-      "title": "DRIFT: Drift-Resilient Invariant-Feature Transformer for DGA Detection",
-      "authors": [
-        "Chaeyoung Lee",
-        "Chaeri Jung",
-        "Seonghoon Jeong"
-      ],
-      "abstract": "Domain Generation Algorithms (DGAs) evolve continuously to evade botnet detection, posing a persistent challenge for dependable network defense. While deep learning-based detectors achieve strong performance under static conditions, they suffer severe degradation when facing temporal drift. Through a 9-year longitudinal study (2017-2025), we empirically show that state-of-the-art character- and word-based DGA classifiers rapidly lose effectiveness as new DGA variants emerge. To address this problem, we propose a drift-resilient Transformer-based framework that learns invariant representations through a hybrid tokenization strategy and multi-task self-supervised pre-training. The model integrates (i) character-level encoding to capture stochastic morphological patterns and (ii) subword-level encoding for word-based DGAs. Three pre-training tasks enable the model to learn robust structural and contextual features prior to supervised fine-tuning. Comprehensive evaluations demonstrate that our method significantly mitigates temporal degradation and consistently outperforms state-of-the-art baselines in forward-chaining experiments. The proposed approach offers a dependable foundation for long-term DGA defense in evolving threat landscapes. Our code is available at: https://github.com/snsec-net/2026-DSN-DRIFT.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T12:08:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10436v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10436v1"
-    },
-    {
-      "id": "2605.10288v2",
-      "title": "BROS: Bias-Corrected Randomized Subspaces for Memory-Efficient Single-Loop Bilevel Optimization",
-      "authors": [
-        "Hengrui Zhang",
-        "Boao Kong",
-        "Engao Zhang",
-        "Kun Yuan"
-      ],
-      "abstract": "Stochastic bilevel optimization (SBO) has become a standard framework for hyperparameter learning, data reweighting, representation learning, and data-mixture optimization in deep learning. Existing exact single-loop SBO methods and memory-efficient surrogate SBO methods either create severe memory pressure for large lower-level neural networks or lack competitive convergence guarantees under standard assumptions. In this paper, we propose BROS, a memory-efficient single-loop SBO method with the same convergence rate order as exact single-loop SBO methods. BROS performs lower and auxiliary updates in randomized subspaces with a Rademacher bi-probe correction that recovers an unbiased Hessian-action estimator. We prove that BROS preserves the $\\mathcal O(\\varepsilon^{-2})$ sample complexity of MA-SOBA for finding an $\\varepsilon$-stationary point under only standard assumptions. Experiments on hyper-data cleaning, data-mixture learning, hyper-representation learning, and ViT sample reweighting show that BROS reduces peak memory by up to 44.9% while closely matching full-space baseline performance.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T09:50:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10288v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10288v2"
-    },
-    {
-      "id": "2605.10279v1",
-      "title": "DeepLog: A Software Framework for Modular Neurosymbolic AI",
-      "authors": [
-        "Robin Manhaeve",
-        "Stefano Colamonaco",
-        "Vincent Derkinderen",
-        "Rik Adriaensen",
-        "Lucas Van Praet",
-        "Luc De Raedt",
-        "Giuseppe Marra"
-      ],
-      "abstract": "DeepLog is an operational neurosymbolic framework that unifies logic and deep learning within standard PyTorch workflows. While existing neurosymbolic systems focus on a particular paradigm and semantics, DeepLog serves as a universal backend that can emulate many systems in the neurosymbolic alphabet soup. By treating diverse neurosymbolic languages as high-level specifications, the DeepLog software automatically compiles them into optimized arithmetic circuits. This design lowers the barrier for machine learning practitioners by treating logic as composable modules, while providing neurosymbolic developers with a shared, high-performance basis for prototyping new integration strategies. The code is available here: https://github.com/ML-KULeuven/deeplog",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T09:39:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10279v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10279v1"
-    },
-    {
-      "id": "2605.10278v1",
-      "title": "Predictive Radiomics for Evaluation of Cancer Immune SignaturE in Glioblastoma: the PRECISE-GBM study",
-      "authors": [
-        "Prajwal Ghimire",
-        "Junjie Li",
-        "Liu Yaou",
-        "Marc Modat",
-        "Thomas Booth"
-      ],
-      "abstract": "Background: Radiogenomics allows identification of radiological biomarkers for genomic phenotypes. In glioblastoma, these biomarkers could potentially complement patient stratification strategies. We aim to develop and analytically validate radiological biomarkers that capture immune cell signatures within IDH-wildtype glioblastoma microenvironment using radiogenomic analysis. Methods: This was a retrospective multicenter study using curated open-access anonymized imaging and genomic data from TCGA-GBM, CPTAC, IvyGAP, REMBRANDT and CGGA datasets. Imaging data consisted of MRI-based radiomic features extracted from necrotic core, enhancing and edema regions of deep learning-based auto-segmented tumors. Radiomic feature selections were performed using nested cross-validated LASSO. Support vector machine and ensemble models were trained using seventeen immune and cell-specific score labels extracted from deconvoluted transcriptomic data using pan-cancer and glioblastoma immune signature matrices as reference standards. Seventeen classifier models trained in three cross-cohort strategies were validated on three held-out datasets assessing stability and generalizability. Results: One-hundred-and-seventy-six patients were included in the study. The immune-related radiomic signatures obtained after feature selection were shape, first order and higher order radiomic features. Models predicting macrophage subtype immune signature showed stable mean performance on balanced accuracy (0.67) and precision (0.89) metrics for three independent holdout datasets with ensemble model outperforming support vector machine model. Conclusion: Radiogenomic models non-invasively predicted the macrophage subtype M0 immune signature in IDH-wildtype glioblastoma. These biomarkers have the potential to stratify patients for immunotherapy within prospective glioblastoma clinical trials.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T09:38:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10278v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10278v1"
-    },
-    {
-      "id": "2605.10247v1",
-      "title": "Teaching LLMs to See Graphs: Unifying Text and Structural Reasoning",
-      "authors": [
-        "Dario Vajda"
-      ],
-      "abstract": "Using Large Language Models (LLMs) to process graph-structured data is an active research area, yet current state-of-the-art approaches typically rely on multi-step pipelines with Graph Neural Network (GNN) encoders that compress rich textual attributes into solitary tokens, creating a significant semantic bottleneck. In this paper, we introduce the Graph Transformer Language Model (GTLM), a novel architecture that enables pretrained LLMs to natively process graph topologies while entirely eliminating this compressive bottleneck. GTLM is exceptionally parameter-efficient: by injecting graph-aware attention biases directly into the LLM's attention modules, it introduces only 0.015% additional parameters relative to the base model. We theoretically prove that our bidirectional attention prefix preserves node permutation equivariance while maintaining exact backward compatibility with the pretrained base model. Extensive evaluations demonstrate that a 1B-parameter GTLM matches or exceeds the performance of 7B-parameter state-of-the-art models on standard Text-Attributed Graph benchmarks, while significantly surpassing baselines on GraphQA. Finally, we demonstrate that GTLM attention heads implicitly learn to simulate message passing, explaining its superior performance on algorithmic tasks. This paradigm shift enables true algorithmic reasoning within LLMs and provides a scalable foundation for next-generation GraphRAG and relational deep learning.",
-      "published": "May 11, 2026",
-      "published_raw": "2026-05-11T09:19:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.10247v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.10247v1"
     }
   ]
 }
