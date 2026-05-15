@@ -1,7 +1,224 @@
 {
-  "last_updated": "2026-05-14T01:54:37.786628",
+  "last_updated": "2026-05-15T01:52:25.813175",
   "count": 20,
   "papers": [
+    {
+      "id": "2605.14643v1",
+      "title": "Unbiased and Second-Order-Free Training for High-Dimensional PDEs",
+      "authors": [
+        "Jaemin Seo",
+        "Surin Lee",
+        "Jae Yong Lee"
+      ],
+      "abstract": "Deep learning methods based on backward stochastic differential equations (BSDEs) have emerged as competitive alternatives to physics-informed neural networks (PINNs) for solving high-dimensional partial differential equations (PDEs). By leveraging probabilistic representations, BSDE approaches can avoid the curse of dimensionality and often admit second-order-free training objectives that do not require explicit Hessian evaluations. It has recently been established that the commonly used Euler-Maruyama (EM) time discretization induces an intrinsic bias in BSDE training losses. While high-order schemes such as Heun can fully eliminate this bias, such schemes re-introduce second-order spatial derivatives and incur substantial computational overhead. In this work, we provide a principled analysis of EM-induced loss bias and propose an unbiased, second-order-free training framework that preserves the computational advantages of BSDE methods. Our code is available at https://github.com/seojaemin22/Un-EM-BSDE.",
+      "published": "May 14, 2026",
+      "published_raw": "2026-05-14T09:59:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14643v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14643v1"
+    },
+    {
+      "id": "2605.14632v1",
+      "title": "DRL-STAF: A Deep Reinforcement Learning Framework for State-Aware Forecasting of Complex Multivariate Hidden Markov Processes",
+      "authors": [
+        "Manrui Jiang",
+        "Jingru Huang",
+        "Yong Chen",
+        "Chen Zhang"
+      ],
+      "abstract": "Forecasting multivariate hidden Markov processes is challenging due to nonlinear and nonstationary observations, latent state transitions, and cross-sequence dependencies. While deep learning methods achieve strong predictive accuracy, they typically lack explicit state modeling, whereas Hidden Markov Models (HMMs) provide interpretable latent states but struggle with complex nonlinear emissions and scalability. To address these limitations, we propose DRL-STAF, a Deep Reinforcement Learning based STate-Aware Forecasting framework that jointly predicts next-step observations and estimates the corresponding hidden states for complex multivariate hidden Markov processes. Specifically, DRL-STAF models complex nonlinear emissions using deep neural networks and estimates discrete hidden states using reinforcement learning, reducing the reliance on predefined transition structures and enabling flexible adaptation to diverse temporal dynamics. In particular, DRL-STAF mitigates the state-space explosion encountered by typical multivariate HMM-based methods. Extensive experiments demonstrate that DRL-STAF outperforms HMM variants, standalone deep learning models, and existing DL-HMM hybrids in most cases, while also providing reliable hidden-state estimates.",
+      "published": "May 14, 2026",
+      "published_raw": "2026-05-14T09:44:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14632v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14632v1"
+    },
+    {
+      "id": "2605.14521v1",
+      "title": "Enjoy Your Layer Normalization with the Computational Efficiency of RMSNorm",
+      "authors": [
+        "Yuxin Guo",
+        "Yihao Yue",
+        "Yunhao Ni",
+        "Yizhou Ruan",
+        "Jie Luo",
+        "Wenjun Wu",
+        "Lei Huang"
+      ],
+      "abstract": "Layer normalization (LN) is a fundamental component in modern deep learning, but its per-sample centering and scaling introduce non-negligible inference overhead. RMSNorm improves efficiency by removing the centering operation, yet this may discard benefits associated with centering. This paper propose a framework to determine whether an LN in an arbitrary DNN can be replaced by RMSNorm without changing the model function. The key idea is to fold LN's centering operation into upstream general linear layers by enforcing zero-mean outputs through the column-centered constraint (CCC) and column-based weight centering (CBWC). We extend the analysis to arbitrary DNNs, define such LNs as foldable LNs, and develop a graph-based detection algorithm. Our analysis shows that many LNs in widely used architectures are foldable, enabling exact inference-time conversion and end-to-end acceleration of 2% to 12% without changing model predictions. Experiments across multiple task families further show that, when exact equivalence is partially broken in practical training settings, our method remains competitive with vanilla LN while improving efficiency.",
+      "published": "May 14, 2026",
+      "published_raw": "2026-05-14T08:05:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14521v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14521v1"
+    },
+    {
+      "id": "2605.14374v1",
+      "title": "Optimal Pattern Detection Tree for Symbolic Rule-Based Classification",
+      "authors": [
+        "Young-Chae Hong",
+        "Yangho Chen"
+      ],
+      "abstract": "Pattern discovery in data plays a crucial role across diverse domains, including healthcare, risk assessment, and machinery maintenance. In contrast to black-box deep learning models, symbolic rule discovery emerges as a key data mining task, generating human-interpretable rules that offer both transparency and intuitive explainability. This paper introduces the Optimal Pattern Detection Tree (OPDT), a rule-based machine learning model based on novel mixed-integer programming to discover a single optimal pattern in data through binary classification. To incorporate prior knowledge and compliance requirements, we further introduce the Branching Structure Constraints (BSC) framework, which enables decision makers to encode domain knowledge and constraints directly into the model. This optimization-based approach discovers a hidden underlying pattern in datasets, when it exists, by identifying an optimal rule that maximizes coverage while minimizing the false positive rate due to misclassification. Our computational experiments show that OPDT discovers a pattern with optimality guarantees on moderately sized datasets within reasonable runtime.",
+      "published": "May 14, 2026",
+      "published_raw": "2026-05-14T04:53:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14374v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14374v1"
+    },
+    {
+      "id": "2605.14365v1",
+      "title": "LoMETab: Beyond Rank-1 Ensembles for Tabular Deep Learning",
+      "authors": [
+        "Changryeol Choi",
+        "Hyewon Park",
+        "Yujin Kwon",
+        "Gowun Jeong"
+      ],
+      "abstract": "Recent tabular learning benchmarks increasingly show a tight performance cluster rather than a clear hierarchy among leading methods, spanning gradient boosted decision trees, attention-based architectures, and implicit ensembles such as TabM. As benchmark gains plateau, a complementary goal is to understand and control the mechanisms that make simple neural tabular models competitive. We propose LoMETab, a rank-$r$ generalization of multiplicative implicit ensembles. LoMETab lifts the rank-1 BatchEnsemble/TabM modulation to a rank-$r$ identity-residual Hadamard family by parameterizing each member weight as $W_k = W \\odot (1 + A_kB_k^\\top)$, where $W$ is shared and $(A_k, B_k)$ are member-specific low-rank factors. This exposes two practical diversity-control axes: the adapter rank $r$ and the initialization scale $σ_{\\mathrm{init}}$, and we prove that for $r \\ge 2$ this generalization strictly enlarges BatchEnsemble's hypothesis class. Empirically, we show that this added capacity manifests as measurable predictive diversity after training: on representative classification datasets, LoMETab sustains higher pairwise KL than an additive low-rank ablation, and $(r, σ_{\\mathrm{init}})$ provides broad control over pairwise KL, varying by up to several orders of magnitude across configurations. The induced diversity is reflected in task-appropriate output-level measures: argmax disagreement for classification and ambiguity for regression, indicating that the control extends beyond pairwise KL to decision- and output-level member variation. Finally, experiments sweeping over adapter rank $r$ and initialization scale $σ_{\\mathrm{init}}$ reveal that predictive performance is dataset-dependent over the $(r, σ_{\\mathrm{init}})$ grid, supporting LoMETab as a controllable family of implicit ensembles rather than a fixed rank-1 construction.",
+      "published": "May 14, 2026",
+      "published_raw": "2026-05-14T04:47:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14365v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14365v1"
+    },
+    {
+      "id": "2605.14253v1",
+      "title": "Towards Real-Time Autonomous Navigation: Transformer-Based Catheter Tip Tracking in Fluoroscopy",
+      "authors": [
+        "Harry Robertshaw",
+        "Yanghe Hao",
+        "Weiyuan Deng",
+        "Benjamin Jackson",
+        "S. M. Hadi Sadati",
+        "Nikola Fischer",
+        "Tom Vercauteren",
+        "Alejandro Granados",
+        "Thomas C. Booth"
+      ],
+      "abstract": "Purpose: Mechanical thrombectomy (MT) improves stroke outcomes, but is limited by a lack of local treatment access. Widespread distribution of reinforcement learning (RL)-based robotic systems can be used to alleviate this challenge through autonomous navigation, but current RL methods require live device tip coordinate tracking to function. This paper aims to develop and evaluate a real-time catheter tip tracking pipeline under fluoroscopy, addressing challenges such as low contrast, noise, and device occlusion. Methods: A multi-threaded pipeline was designed, incorporating frame reading, preprocessing, inference, and post-processing. Deep learning segmentation models, including U-Net, U-Net+Transformer, and SegFormer, were trained and benchmarked using two-class and three-class formulations. Post-processing involved two-step component filtering, one-pixel medial skeletonization, and greedy arc-length path following with contour fall-back. Results: On manually-labeled moderate complexity fluoroscopic video data, the two-class SegFormer achieved a mean absolute error of 4.44 mm, outperforming U-Net (4.60 mm), U-Net+Transformer (6.20 mm) and all three-class models (5.19-7.74 mm). On segmentation benchmarks, the system exceeded state-of-the-art CathAction results with improvements of up to +5% in Dice scores for three-segmentation. Conclusion: The results demonstrate that the proposed multi-threaded tracking framework maintains stable performance under challenging imaging conditions, outperforming prior benchmarks, while providing a reliable and efficient foundation for RL-based autonomous MT navigation.",
+      "published": "May 14, 2026",
+      "published_raw": "2026-05-14T01:42:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14253v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14253v1"
+    },
+    {
+      "id": "2605.14108v1",
+      "title": "Bridging the Rural Healthcare Gap: A Cascaded Edge-Cloud Architecture for Automated Retinal Screening",
+      "authors": [
+        "Nishi Doshi",
+        "Shrey Shah"
+      ],
+      "abstract": "Diabetic Retinopathy (DR) is one of the leading causes of preventable blindness, yet rural regions often lack the specialists and infrastructure needed for early detection. Although cloud-based deep learning systems offer high accuracy, they face significant challenges in these settings due to high latency, limited bandwidth, and high data transmission costs. To address these challenges, we propose a two-tier edge-cloud cascade on the public APTOS 2019 Blindness Detection dataset. Tier 1 runs a lightweight MobileNetV3-small model on a local clinic device to perform a binary triage between Referable DR (Classes 2-4) and Non-referable DR (Classes 0-1). Tier 2 runs a RETFoundDINOv2 model in the cloud for ordinal severity grading, but only on the subset of images flagged as referable by Tier 1. On a stratified APTOS test split of 733 images, Tier 1 reaches 98.99% sensitivity and 84.37% specificity at a validation-tuned high-sensitivity threshold. The default cascade forwards 49.52% of test images to Tier 2, reducing cloud calls by 50.48% relative to using a cloud-based model for all images. In the deployed 4-class output space (Class 0-1 / Class 2 / Class 3 / Class 4), the cascade obtains 80.49% accuracy and 0.8167 quadratic weighted kappa; the cloud-only baseline obtains 80.76% accuracy and 0.8184 quadratic weighted kappa. On APTOS, the cascade cuts cloud use by about half with a modest drop in grading performance. Index Terms: Diabetic Retinopathy, Edge-Cloud Cascade, MobileNetV3-small, RETFound-DINOv2, Retinal Screening, tele-ophthalmology",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T20:47:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14108v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14108v1"
+    },
+    {
+      "id": "2605.14041v1",
+      "title": "Wahkon: A Statistically Principled Deep RKHS Superposition Network",
+      "authors": [
+        "Yongkai Chen",
+        "Wenxuan Zhong",
+        "Ping Ma"
+      ],
+      "abstract": "Deep learning excels at prediction but often lacks finite-sample guarantees and calibrated uncertainty; RKHS (Reproducing Kernel Hilbert Space)-based methods provide those guarantees but struggle to adapt in high dimensions. We propose Wahkon, a deep RKHS superposition network that unifies Kolmogorov's superposition principle with RKHS regularization in the smoothing-spline tradition of Wahba. This yields a finite-dimensional deep representer theorem that makes training tractable and provides explicit layerwise complexity control. We show the penalized estimator is exactly the MAP (maximum a posteriori) estimate under a hierarchical Gaussian-process prior, extending the spline/GP duality to deep compositions. Using metric-entropy arguments, we establish minimax-optimal convergence rates under mild smoothness and clarify how depth and width trade off with regularity. Empirically, Wahkon outperforms multilayer perceptrons, Neural Tangent Kernels, and Kolmogorov--Arnold Networks across simulation benchmarks and a single-cell CITE-seq study. By unifying Kolmogorov's superposition principle with RKHS regularization, Wahkon delivers accuracy, interpretability, and statistical rigor in a single framework.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T19:01:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.14041v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.14041v1"
+    },
+    {
+      "id": "2605.13933v1",
+      "title": "Unsupervised learning of acquisition variability in structural connectomes via hybrid latent space modeling",
+      "authors": [
+        "Gaurav Rudravaram",
+        "Lianrui Zuo",
+        "Karthik Ramadass",
+        "Elyssa McMaster",
+        "Jongyeon Yoon",
+        "Aravind R. Krishnan",
+        "Adam M. Saunders",
+        "Chenyu Gao",
+        "Nancy R. Newlin",
+        "Praitayini Kanakaraj",
+        "Lori L. Beason Held",
+        "Murat Bilgel",
+        "Laura A. Barquero",
+        "Micah DArchangel",
+        "Tin Q. Nguyen",
+        "Laurie B. Cutting",
+        "Derek Archer",
+        "Timothy J. Hohman",
+        "Daniel C. Moyer",
+        "Bennett A. Landman"
+      ],
+      "abstract": "Acquisition differences across sites, scanners, and protocols in dMRI introduce variability that complicates structural connectome analysis. This motivates deep learning models that can represent high-dimensional connectomes in a low-dimensional space while explicitly separating acquisition-related effects from biological variation. Conventional dimensionality reduction methods model all variance as continuous, so acquisition effects often get absorbed into a continuous latent space. Recent hybrid latent-space models combine discrete and continuous components to address this, but typically require manual capacity tuning to ensure the discrete component captures the intended variability. We introduce an unsupervised framework that removes this manual tuning by architecturally annealing encoder outputs before decoding, allowing the model to adaptively balance discrete and continuous latent variables during training. To evaluate it, we curated a dataset of N=7,416 structural connectomes derived from dMRI, spanning ages 2 to 102 and 13 studies with 25 unique acquisition-parameter combinations. Of these, 5,900 are cognitively unimpaired, 877 have mild cognitive impairment (MCI), and 639 have Alzheimer's disease (AD). We compare against a standard VAE, PCA with k-means clustering, and hybrid models that anneal only through the loss function. Our architectural annealing produces stronger site learning (ARI=0.53, p<0.05) than these baselines. Results show that a hybrid continuous-discrete latent space, with architectural rather than loss-based annealing, provides a useful unsupervised mechanism for capturing acquisition variability in dMRI: by jointly modeling smooth and categorical structure, the Joint-VAE recovers clusters aligned with scanner and protocol differences.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T16:11:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13933v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13933v1"
+    },
+    {
+      "id": "2605.13612v1",
+      "title": "Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning",
+      "authors": [
+        "Yatin Dandi",
+        "Matteo Vilucchio",
+        "Luca Arnaboldi",
+        "Hugo Tabanelli",
+        "Florent Krzakala"
+      ],
+      "abstract": "Understanding how deep neural networks learn useful internal representations from data remains a central open problem in the theory of deep learning. We introduce Neural Low-Degree Filtering (Neural LoFi), a stylized limit of gradient-based training in which hierarchical feature learning becomes an explicit iterative spectral procedure. In this limit, the dynamics at each layer decouple: given the current representation, the next layer selects directions with maximal accessible low-degree correlation to the label. This yields a tractable surrogate mechanism for deep learning, together with a natural kernel-space interpretation. Neural LoFi provides a mathematically explicit framework for studying multi-layer feature learning beyond the lazy regime. It predicts how representations are selected layer by layer, explains how emergence of concepts arises with given sample complexity,and gives a concrete mechanism by which depth progressively constructs new features from old ones through low-degree compositionality. We complement the theory with mechanistic experiments on fully connected and convolutional architectures, showing that Neural LoFi improves over lazy random-feature baselines, recovers meaningful structured filters, and predicts representations aligned with early gradient-descent feature discovery with real datasets.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T14:44:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13612v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13612v1"
+    },
+    {
+      "id": "2605.13568v1",
+      "title": "Dynamical Predictive Modelling of Cardiovascular Disease Progression Post-Myocardial Infarction via ECG-Trained Artificial Intelligence Model",
+      "authors": [
+        "Riccardo Cavarra",
+        "Lupo Lovatelli",
+        "Shaheim Ogbomo-Harmitt",
+        "Shahid Aziz",
+        "Adelaide De Vecchi",
+        "Andrew King",
+        "Oleg Aslanidi"
+      ],
+      "abstract": "Myocardial infarction (MI) is a leading cause of death, and its adverse outcomes are urgent to predict. Yet ECG-based prognostic models underperform because deep learning requires large, labelled datasets, which are scarce in medicine. Foundation models can learn from unlabelled ECGs via selfsupervision, but medically relevant training strategies remain underexplored. We propose a pretrained artificial intelligence model that combines patient-specific temporal information using contrastive learning with supervised multitask heads, then fine-tunes on post-MI outcome prediction. The proposed model outperformed a model trained from scratch (0.794 vs 0.608 AUC) showing that clinically structured ECG modelling improves classification in limited data regimes.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T14:05:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13568v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13568v1"
+    },
+    {
+      "id": "2605.13418v1",
+      "title": "DP-KFC: Data-Free Preconditioning for Privacy-Preserving Deep Learning",
+      "authors": [
+        "Marc Molina Van den Bosch",
+        "Riccardo Taiello",
+        "Albert Sund Aillet",
+        "Andrea Protani",
+        "Miguel Angel Gonzalez Ballester",
+        "Luigi Serio"
+      ],
+      "abstract": "Differentially private optimization suffers from a fundamental geometric mismatch: deep networks have highly anisotropic loss landscapes, yet DP-SGD injects isotropic noise. Second-order preconditioning can resolve this, but estimating curvature typically requires private data (consuming privacy budget) or public data (introducing distribution shift). We show that the Fisher Information Matrix decouples into architectural sensitivity, recoverable via synthetic noise, and input correlations, approximable from modality-specific frequency statistics. We propose DP-KFC, which constructs KFAC preconditioners by probing networks with structured synthetic noise, requiring neither private nor public data. Empirically, DP-KFC consistently outperforms DP-SGD and adaptive baselines across diverse modalities in strong privacy regimes ($\\varepsilon \\leq 3$). DP-KFC matches private-data preconditioners while public-data variants degrade by up to $4.8\\%$, showing that curvature can be estimated without consuming privacy budget or introducing distribution shift. This enables privacy-preserving learning in specialized domains (e.g., medical applications) where regulatory constraints make data scarce.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T12:14:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13418v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13418v1"
+    },
+    {
+      "id": "2605.13407v1",
+      "title": "Vector-Quantized Discrete Latent Factors Meet Financial Priors: Dynamic Cross-Sectional Stock Ranking Prediction for Portfolio Construction",
+      "authors": [
+        "Namhyoung Kim",
+        "Jae Wook Song"
+      ],
+      "abstract": "Predicting cross-sectional stock returns is challenging due to low signal-to-noise ratios and evolving market regimes. Classical factor models offer interpretability but limited flexibility, while deep learning models achieve strong performance yet often underutilize financial priors. We address this gap with PRISM-VQ (PRior-Informed Stock Model with Vector Quantization), a dynamic factor framework that integrates expert prior factors, vector-quantized discrete latent factors learned from cross-sectional structure, and a structure-conditioned Mixture-of-Experts to generate time-varying factor loadings. Vector quantization acts as an information bottleneck that suppresses noise while capturing robust market structure, with discrete codes serving both as latent factors and as routing signals for temporal expert specialization. Experiments on CSI 300 and S&P 500 show consistent improvements in cross-sectional return prediction and portfolio performance over strong baselines while preserving interpretability. Our code is available at https://github.com/finxlab/PRISM-VQ.",
+      "published": "May 13, 2026",
+      "published_raw": "2026-05-13T12:02:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2605.13407v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2605.13407v1"
+    },
     {
       "id": "2605.13366v1",
       "title": "Neural Surrogate Forward Modelling For Electrocardiology Without Explicit Intracellular Conductivity Tensor",
@@ -155,198 +372,6 @@
       "published_raw": "2026-05-13T01:17:45Z",
       "pdf_link": "http://arxiv.org/pdf/2605.12862v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2605.12862v1"
-    },
-    {
-      "id": "2605.12764v1",
-      "title": "Yield Curves Dynamics Using Variational Autoencoders Under No-arbitrage",
-      "authors": [
-        "Fusheng Luo",
-        "H'elyette Geman"
-      ],
-      "abstract": "This paper introduces a physics-informed generative framework that resolves the fundamental conflict between the statistical flexibility of deep learning and the rigorous theoretical constraints of fixed-income modeling. We demonstrate that standard generative models and unconstrained statistical extrapolations suffer from \"manifold collapse\" and severe arbitrage violations when forecasting term structures across diverse macroeconomic regimes. To overcome this, we propose a two-stage architecture. First, a Student-t Conditional Variational Autoencoder with Dynamic Level Injection (CVAEsT+LS) extracts a robust, heavy-tailed term structure manifold, effectively decoupling macroeconomic shape dynamics from absolute base rates. Second, the latent dynamic evolution is governed by a continuous-time Neural Stochastic Differential Equation (SDE) strictly penalized by a No-Arbitrage Partial Differential Equation (PDE). Empirical results across multiple sovereign currencies (USD, GBP, JPY) confirm that our synergistic approach drastically reduces out-of-sample forecasting errors -- achieving an exceptional 6.58 bps Mean Tenor RMSE -- and successfully overcomes the massive parallel drift and zero-lower-bound violations exhibited by the classical HJM model in extreme environments. Furthermore, through phase space vector field analysis, we demonstrate the model's superior capability in unsupervised macroeconomic regime detection and high-quality continuous-time scenario generation. Ultimately, this research provides a highly scalable, mathematically sound evolutionary engine for term structure modeling.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T21:21:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12764v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12764v1"
-    },
-    {
-      "id": "2605.12657v1",
-      "title": "User Reviews as a Source for Usability Requirements: A Precursor Study on Using Large Language Models",
-      "authors": [
-        "Cedric Wellhausen",
-        "Laura Reinhardt",
-        "Kurt Schneider"
-      ],
-      "abstract": "It is known that user-centered approaches to requirements engineering in general lead to a better suited product for the end-users. LLM4RE provides promising approaches to support the requirements elicitation process (e.g. classification of requirements). Previous approaches focus on Machine-Learning (ML) or Deep-Learning (DL) aspects, which require intensive training with a large amount of manually labeled data. LLMs, on the other hand, are pre-trained on large amounts of user-generated text data, enabling a user-centric workflow to analyze requirements. In this paper, we explore the possibility of exploiting the improved natural language understanding of LLMs, rather than strict ML classification, together with the mass extraction of user reviews to analyze if the performance of LLMs in understanding user reviews is comparable to the performance of human raters. This enables a quick and cheap workflow for development teams to gather and process their userś requirements. This paper provides three major contributions: (1) We provide a completely coded dataset of 300 user reviews containing usability-relevant aspects from three different types of apps, that were labeled by two human raters and by an LLM. (2) We build an initial prompt, based on two prompt engineering iterations and specifically developed coding guidelines derived from the 10 Nielsen Usability Heuristics, for LLMs to filter usability relevant user reviews. (3) We determine that LLMs are generally able to recognize usability as a non-functional requirement in user reviews, in terms of their F-score, but the performance and reliability is strongly dependent on the prompt.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T19:05:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12657v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12657v1"
-    },
-    {
-      "id": "2605.12394v1",
-      "title": "Detecting overfitting in Neural Networks during long-horizon grokking using Random Matrix Theory",
-      "authors": [
-        "Hari K. Prakash",
-        "Charles H Martin"
-      ],
-      "abstract": "Training Neural Networks (NNs) without overfitting is difficult; detecting that overfitting is difficult as well. We present a novel Random Matrix Theory method that detects the onset of overfitting in deep learning models without access to train or test data. For each model layer, we randomize each weight matrix element-wise, $\\mathbf{W} \\to \\mathbf{W}_{\\mathrm{rand}}$, fit the randomized empirical spectral distribution with a Marchenko-Pastur distribution, and identify large outliers that violate self-averaging. We call these outliers Correlation Traps. During the onset of overfitting, which we call the \"anti-grokking\" phase in long-horizon grokking, Correlation Traps form and grow in number and scale as test accuracy decreases while train accuracy remains high. Traps may be benign or may harm generalization; we provide an empirical approach to distinguish between them by passing random data through the trained model and evaluating the JS divergence of output logits. Our findings show that anti-grokking is an additional grokking phase with high train accuracy and decreasing test accuracy, structurally distinct from pre-grokking through its Correlation Traps. More broadly, we find that some foundation-scale LLMs exhibit the same Correlation Traps, indicating potentially harmful overfitting.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T16:57:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12394v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12394v1"
-    },
-    {
-      "id": "2605.12391v1",
-      "title": "Trajectory-Agnostic Asteroid Detection in TESS with Deep Learning",
-      "authors": [
-        "Brian P. Powell",
-        "Jorge Martinez-Palomera",
-        "Amy Tuson",
-        "Christina Hedges",
-        "Jessie Dotson",
-        "Jordan Caraballo-Vega"
-      ],
-      "abstract": "We present a novel method for extracting moving objects from TESS data using machine learning. Our approach uses two stacked 3D U-Nets with skip connections, which we call a W-Net, to filter background and identify pixels containing moving objects in TESS image time-series data. By augmenting the training data through rotation of the image cubes, our method is robust to differences in speed and direction of asteroids, requiring no assumptions for either parameter range which are typically required in \"shift-and-stack\" type algorithms. We also developed a novel method for learned data scaling that we call Adaptive Normalization, which allows the neural network to learn the ideal range and scaling distribution required for optimal data processing. We built a code for creating TESS training data with asteroid masks that served as the foundation of our effort (tess-asteroid-ml), which we publicly released for the benefit of the community. Our method is not limited to TESS, but applicable for implementation in other similar time-domain surveys, making it of particular interest for use with data from upcoming missions such as the Nancy Grace Roman Space Telescope and NEOSurveyor.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T16:56:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12391v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12391v1"
-    },
-    {
-      "id": "2605.12358v1",
-      "title": "From Message-Passing to Linearized Graph Sequence Models",
-      "authors": [
-        "Joël Mathys",
-        "Basil Rohner",
-        "Saku Peltonen",
-        "Roger Wattenhofer"
-      ],
-      "abstract": "Message-passing based approaches form the default backbone of most learning architectures on graph-structured data. However, the rapid progress of modern deep learning architectures in other domains, particularly sequence modeling, raises the question of how graph learning can benefit from these advances. We introduce Linearized Graph Sequence Models, a framework that recasts message-passing graph computation from the perspective of sequence modeling to simplify architectural choices. Our approach systematically separates the computational processing depth from the information propagation depth, allowing core graph architectural decisions to be treated as sequence modeling choices. Specifically, we analyze, both empirically and theoretically, what sequence properties make methods effective for learning and preserving the graph inductive bias. In particular, we validate our findings, demonstrating improved performance on long-range information tasks in graphs. Our findings provide a principled way to integrate modern sequence modeling advances into message-passing based graph learning. Beyond this, our work demonstrates how the separation of processing and information depth can recast central architectural questions as input modeling choices.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T16:32:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12358v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12358v1"
-    },
-    {
-      "id": "2605.12308v1",
-      "title": "In-context learning to predict critical transitions in dynamical systems",
-      "authors": [
-        "Yunus Sevinchan",
-        "Juan Nathaniel",
-        "Kai Ueltzhöffer",
-        "Carla Roesch",
-        "Tobias Weber",
-        "Vaios Laschos",
-        "Hang Fan",
-        "Gregor Ramien",
-        "Johannes Haux",
-        "Pierre Gentine",
-        "Benjamin Herdeanu"
-      ],
-      "abstract": "Critical transitions - abrupt, often irreversible changes in system dynamics - arise across human and natural systems, often with catastrophic consequences. Real-world observations of such shifts remain scarce, preventing the development of reliable early warning systems. Conventional statistical and spectral indicators, such as increasing variance, tend to fail under realistic conditions of limited data and correlated noise, whereas existing deep learning classifiers do not extrapolate beyond their training data distribution. In this work, we introduce TipPFN, an in-context learning (ICL) framework that uses a prior-data fitted network to infer a system's proximity to a critical transition. Trained on our novel synthetic data generator, which is based on canonical bifurcation scenarios coupled to diverse, randomized stochastic dynamics, TipPFN flexibly capitalizes on contexts of various sizes, complexity and dimensionalities. We demonstrate robust, state-of-the-art early detection of critical transitions in previously unseen tipping regimes, sim-to-real examples, and real-world observations in both ICL and zero-shot settings.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T15:56:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12308v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12308v1"
-    },
-    {
-      "id": "2605.12217v1",
-      "title": "Heterogeneous SoC Integrating an Open-Source Recurrent SNN Accelerator for Neuromorphic Edge Computing on FPGA",
-      "authors": [
-        "Michelangelo Barocci",
-        "Vittorio Fra",
-        "Enrico Macii",
-        "Gianvito Urgese"
-      ],
-      "abstract": "The growing popularity of Spiking Neural Networks (SNNs) and their applications has led to a significant fast-paced increase of neuromorphic architectures capable of mimicking the spike-based data processing typical of biological neurons. The efficient power consumption and parallel computing capabilities of the SNNs lead researchers towards the development of digital accelerators, which exploit such features to bring fast and low-power computation on edge devices. The spread of digital neuromorphic hardware however is slowed down by the prohibitive costs that the silicon tape out of circuits brings, that's why targeting Field Programmable Gate Arrays (FPGAs) could represent a viable alternative, offering a flexible and cost-effective platform for implementing digital neuromorphic systems and helping the spread of open-source hardware designs. In this work we present an heterogeneous System-on-Chip (SoC) where the operations of ReckOn, a Recurrent SNN accelerator, are managed through the integration with traditional processors. These include the RISC-V-based, open-source microcontroller X-HEEP and the ARM processor featured in Zynq Ultrascale systems. We validate our design by reproducing the classification results through the implementation on FPGA of the taped-out version of ReckOn in order to check the equivalence of the accuracy and the characteristics in terms of physical implementation. In a second set of experiments, we evaluate the online learning capability of the solution in classifying a subset of the Braille digit dataset recently used to compare neuromorphic frameworks and platforms.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T14:55:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12217v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12217v1"
-    },
-    {
-      "id": "2605.12196v1",
-      "title": "ECTO: Exogenous-Conditioned Temporal Operator for Ultra-Short-Term Wind Power Forecasting",
-      "authors": [
-        "Cao Yuan",
-        "Junjun Wang"
-      ],
-      "abstract": "Accurate ultra-short-term wind power forecasting is critical for grid dispatch and reserve management, yet remains challenging due to the non-stationary, condition-dependent nature of wind generation. Meteorological exogenous variables carry substantial predictive information, but the most informative variable combination varies across sites, operating conditions, and prediction horizons. Existing deep learning approaches either treat exogenous inputs as generic auxiliary channels through uniform mixing or soft gating, or rely on fixed preprocessing steps such as PCA, without exploiting the physical structure of meteorological variables. We propose ECTO (Exogenous-Conditioned Temporal Operator), a unified framework that decomposes exogenous variable modeling into two complementary modules. Physically-Grounded Variable Selection (PGVS) performs hierarchical, group-aware sparse selection over exogenous variables using a domain-informed physical prior and sparsemax activations, producing a compact, condition-adaptive exogenous context. Exogenous-Conditioned Regime Refinement (ECRR) routes the forecast through learned regime experts that apply gain--bias calibration and horizon-specific corrections via a mixture-of-experts paradigm. Experiments on three wind farms spanning different climates, capacities (66--200 MW), and exogenous dimensions (11--13 variables) demonstrate that ECTO achieves the lowest MSE across all sites, with relative improvements over the strongest baseline ranging from 2.2% to 5.2%, widening to 8.6% at the longer prediction horizon ($H=32$). Ablation analysis confirms that each exogenous-related component contributes positively (PGVS +1.84%, ECRR +2.86%), and interpretability analysis reveals that PGVS learns physically meaningful, site-specific variable selection patterns, while ECRR converges to well-separated calibration strategies consistent across sites.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T14:37:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12196v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12196v1"
-    },
-    {
-      "id": "2605.12031v1",
-      "title": "Resilient Vision-Tabular Multimodal Learning under Modality Missingness",
-      "authors": [
-        "Camillo Maria Caruso",
-        "Valerio Guarrasi",
-        "Paolo Soda"
-      ],
-      "abstract": "Multimodal deep learning has shown strong potential in medical applications by integrating heterogeneous data sources such as medical images and structured clinical variables. However, most existing approaches implicitly assume complete modality availability, an assumption that rarely holds in real-world clinical settings where entire modalities and individual features are frequently missing. In this work, we propose a multimodal transformer framework for joint vision-tabular learning explicitly designed to operate under pervasive modality missingness, without relying on imputation or heuristic model switching. The architecture integrates three components: a vision, a tabular, and a multimodal fusion encoder. Unimodal representations are weighted through learnable modality tokens and fused via intermediate fusion with masked self-attention, which excludes missing tokens and modalities from information aggregation and gradient propagation. To further enhance resilience, we introduce a modality-dropout regularization strategy that stochastically removes available modalities during training, encouraging the model to exploit complementary information under partial data availability. We evaluate our approach on the MIMIC-CXR dataset paired with structured clinical data from MIMIC-IV for multilabel classification of 14 diagnostic findings with incomplete annotations. Two parallel systematic stress-test protocols progressively increase training and inference missingness in each modality separately, spanning fully multimodal to fully unimodal scenarios. Across all missingness regimes, the proposed method consistently outperforms representative baselines, showing smoother performance degradation and improved robustness. Ablation studies further demonstrate that attention-level masking and intermediate fusion with joint fine-tuning are key to resilient multimodal inference.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T12:14:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12031v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12031v1"
-    },
-    {
-      "id": "2605.12017v1",
-      "title": "FAME: Feature Activation Map Explanation on Image Classification and Face Recognition",
-      "authors": [
-        "Xinyi Zhang",
-        "Manuel Günther"
-      ],
-      "abstract": "Deep Learning has revolutionized machine learning, reaching unprecedented levels of accuracy, but at the cost of reduced interpretability. Especially in image processing systems, deep networks transform local pixel information into more global concepts in a highly obscured manner. Explainable AI methods for image processing try to shed light on this issue by highlighting the regions of the image that are important for the prediction task. Among these, Class Activation Mapping (CAM) and its gradient-based variants compute attributions based on the feature map and upscale them to the image resolution, assuming that feature map locations are influenced only by underlying regions. Perturbation-based methods, such as CorrRISE, on the other hand, try to provide pixel-level attributions by perturbing the input with fixed patches and checking how the output of the network changes. In this work, we propose Feature Activation Map Explanation (FAME), which combines both worlds by using network gradients to compute changes to the input image, manipulating it in a gradient-driven way rather than using fixed patches. We apply this technique on two common tasks, image classification and face recognition, and show that CAM's above-mentioned assumption does not hold for deeper networks. We qualitatively and quantitively show that FAME produces attribution maps that are competitive state-of-the-art systems. Our code is available: {\\footnotesize https://github.com/AIML-IfI/fame.}",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T12:05:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.12017v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.12017v1"
-    },
-    {
-      "id": "2605.11606v1",
-      "title": "Convolutional-Neural-Networks for Deanonymisation of I2P Traffic",
-      "authors": [
-        "Luca Rohrer",
-        "Konrad Baechler",
-        "Dieter Arnold"
-      ],
-      "abstract": "This study investigates the potential for deanonymizing services within the Invisible Internet Project (I2P) network through passive traffic analysis and machine learning techniques. The primary objective is to identify distinctive patterns in I2P traffic despite the encryption of its payload. To achieve this, a controlled laboratory environment was established to generate synthetic I2P traffic, providing a training dataset for machine learning models. Furthermore, Fano's inequality is employed to perform a theoretical analysis of anonymous data transmission in mix networks such as I2P, thereby supporting a data-driven approach to uncover causal relationships. In computer experiments, advanced deep learning methods - particularly Convolutional Neural Networks - are applied within the laboratory I2P network, and their effectiveness is further evaluated using real-world traffic data. The results indicate that the proposed methodologies do not compromise the anonymity guarantees of the I2P network.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T06:35:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11606v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11606v1"
-    },
-    {
-      "id": "2605.11598v1",
-      "title": "EpiCastBench: Datasets and Benchmarks for Multivariate Epidemic Forecasting",
-      "authors": [
-        "Madhurima Panja",
-        "Danny D'Agostino",
-        "Huitao Li",
-        "Tanujit Chakraborty",
-        "Nan Liu"
-      ],
-      "abstract": "The increasing adoption of data-driven decision-making in public health has established epidemic forecasting as a critical area of research. Recent advances in multivariate forecasting models better capture complex temporal dependencies than conventional univariate approaches, which model individual series independently. Despite this potential, the development of robust epidemic forecasting methods is constrained by the lack of high-quality benchmarks comprising diverse multivariate datasets across infectious diseases and geographical regions. To address this gap, we present EpiCastBench, a large-scale benchmarking framework featuring 40 curated (correlated) multivariate epidemic datasets. These publicly available datasets span a wide range of infectious diseases and exhibit diverse characteristics in terms of temporal granularity, series length, and sparsity. We analyze these datasets to identify their global features and structural patterns. To ensure reproducibility and fair comparison, we establish standardized evaluation settings, including a unified forecasting horizon, consistent preprocessing pipelines, diverse performance metrics, and statistical significance testing. By leveraging this framework, we conduct a comprehensive evaluation of 15 multivariate forecasting models spanning statistical baselines to state-of-the-art deep learning and foundation models. All datasets and code are publicly available on Kaggle (https://www.kaggle.com/datasets/aimltsf/epicastbench) and GitHub (https://github.com/aimltsf/EpiCastBench).",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T06:22:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11598v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11598v1"
-    },
-    {
-      "id": "2605.11583v1",
-      "title": "NexOP: Joint Optimization of NEX-Aware k-space Sampling and Image Reconstruction for Low-Field MRI",
-      "authors": [
-        "Tal Oved",
-        "Efrat Shimron"
-      ],
-      "abstract": "Modern low-field magnetic resonance imaging (MRI) technology offers a compelling alternative to standard high-field MRI, with portable, low-cost systems. However, its clinical utility is limited by a low Signal-to-Noise Ratio (SNR), which hampers diagnostic image quality. A common approach to increase SNR is through repetitive signal acquisitions, known as NEX, but this results in excessively long scan durations. Although recent work has introduced methods to accelerate MRI scans through k-space sampling optimization, the NEX dimension remains unexploited; typically, a single sampling mask is used across all repetitions. Here we introduce NexOP, a deep-learning framework for joint optimization of the sampling and reconstruction in multi-NEX acquisitions, tailored for low-SNR settings. NexOP enables optimizing the sampling density probabilities across the extended k-space-NEX domain, under a fixed sampling-budget constraint, and introduces a new deep-learning architecture for reconstructing a single high-SNR image from multiple low-SNR measurements. Experiments with raw low-field (0.3T) brain data demonstrate that NexOP consistently outperforms competing methods, both quantitatively and qualitatively, across diverse acceleration factors and tissue contrasts. The results also demonstrate that NexOP yields non-uniform sampling strategies, with progressively decreasing sampling across repetitions, hence exploiting the NEX dimension efficiently. Moreover, we present a theoretical analysis supporting these numerical observations. Overall, this work proposes a sampling-reconstruction optimization framework highly suitable for low-field MRI, which can enable faster, higher-quality imaging with low-cost systems and contribute to advancing affordable and accessible healthcare.",
-      "published": "May 12, 2026",
-      "published_raw": "2026-05-12T06:06:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2605.11583v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2605.11583v1"
     }
   ]
 }
