@@ -1,9 +1,228 @@
 {
-  "last_updated": "2026-06-10T02:02:44.565965",
+  "last_updated": "2026-06-11T02:13:41.242438",
   "count": 20,
   "papers": [
     {
-      "id": "2606.11107v1",
+      "id": "2606.12226v1",
+      "title": "An Electric Potential-Augmented Benchmark Dataset for Physics-Guided Image Reconstruction of Electrical Capacitance Tomography",
+      "authors": [
+        "Xinqi Zhang",
+        "Qiming Ma",
+        "Lihui Peng"
+      ],
+      "abstract": "While deep learning has significantly advanced image reconstruction of Electrical Capacitance Tomography (ECT), most data-driven methods map directly between capacitance and permittivity distribution, treating the sensor as a black box. This overlooks the electric potential field -- the fundamental physical link governing the nonlinear and ill-posed ``soft-field'' effect. To address this, we propose an electric potential-augmented ECT benchmark dataset designed to explicitly integrate latent physics behind ECT into the learning process. Generated via a COMSOL-MATLAB pipeline for an eight-electrode sensor as an example, the dataset comprises 20,000 randomized samples across four typical flow patterns. Crucially, alongside the conventional capacitance vectors and permittivity distributions depicted as images, each sample preserves eight excitation-wise full-field potential maps. Beyond data release, we provide illustrative evaluation protocols for both forward and inverse problems of ECT. Through comprehensive testing on both in-distribution (IID) and out-of-distribution (OOD) scenarios, we systematically demonstrate how the inclusion of electric potential maps enhances modeling accuracy and robustness. Fundamentally, the explicit inclusion of latent field information significantly lowers the barrier to integrating physical laws into ECT modeling, thereby establishing a standardized foundation for future physics-guided machine learning of ECT image reconstruction.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T15:36:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12226v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12226v1"
+    },
+    {
+      "id": "2606.12141v1",
+      "title": "PCA-Enhanced Adaptive NVAR Framework for High-Resolution Sea Surface Temperature Forecasting in the East Sea",
+      "authors": [
+        "Sherkhon Azimov",
+        "Susana López-Moreno",
+        "Eric Dolores-Cuenca",
+        "JinYong Choi",
+        "Sangil Kim"
+      ],
+      "abstract": "Accurate forecasting of sea surface temperature (SST) in regional seas such as the East Sea is crucial for monitoring marine ecosystems, assessing climate risks, managing fisheries, and conducting naval operations. Traditional numerical ocean models provide reliable predictions but are computationally expensive and often unsuitable for real-time forecasting. Many deep learning methods also struggle with high-dimensional spatiotemporal ocean data and experience error accumulation over longer forecasting periods. This study builds on our previously proposed Adaptive Next-Generation Reservoir Computing (Adaptive NVAR) framework, initially introduced and tested on synthetic dynamical systems, and extends it to ocean forecasting. We present a reduced-order forecasting framework that combines Singular Value Decomposition (SVD) with Adaptive NVAR to predict SST dynamics in the East Sea. SST fields are compressed into a low-dimensional representation using SVD, which extracts dominant modes of ocean variability. Adaptive NVAR models the temporal evolution of these latent states, and the predicted states are reconstructed into SST forecasts. We evaluate the framework using regional ocean datasets and compare it with the standard NG-RC/NVAR. Results show that Adaptive NVAR consistently achieves lower forecasting errors across multiple prediction horizons. In addition, SVD reduces computational complexity, resulting in a fast and scalable framework suitable for real-time ocean forecasting.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T14:34:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12141v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12141v1"
+    },
+    {
+      "id": "2606.12077v1",
+      "title": "Efficient Time Series Clustering from Multiscale Reservoir Dynamics with Granular-Ball Anchoring Graph Optimization",
+      "authors": [
+        "Yifan Wang",
+        "Lifeng Shen",
+        "Shuyin Xia",
+        "Yi Wang"
+      ],
+      "abstract": "Time-series clustering remains challenging due to the inherent trade-off between clustering effectiveness and computational efficiency. Similarity-based methods often suffer from quadratic complexity caused by pairwise distance computations, while deep learning-based approaches typically rely on costly iterative training and a large number of trainable parameters. In this paper, we propose MSRGC-Net, an efficient time-series clustering framework that integrates multiscale reservoir computing, granular-ball-based anchoring graph construction, and consensus learning. MSRGC-Net adopts a training-free reservoir computing paradigm to extract multiscale temporal representations from raw time series without backpropagation, significantly reducing computational overhead. To capture the intrinsic structure of the resulting representations, granular-ball computing is employed to adaptively model data distributions via density-consistent regions, yielding compact and robust anchor graph representations. Furthermore, a consensus-based anchoring graph optimization strategy is introduced to effectively align multiscale reservoir representations and integrate complementary information across temporal scales. Extensive experiments on widely used univariate and multivariate benchmark datasets demonstrate that MSRGC-Net consistently outperforms state-of-the-art methods in clustering performance while maintaining superior computational efficiency.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T13:42:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12077v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12077v1"
+    },
+    {
+      "id": "2606.12006v1",
+      "title": "Tabular Foundation Models for Clinical Survival Analysis via Survival-Aware Adaptation",
+      "authors": [
+        "Minh-Khoi Pham",
+        "Luca Cotugno",
+        "Alina Sirbu",
+        "Tai Tan Mai",
+        "Martin Crane",
+        "Marija Bezbradica"
+      ],
+      "abstract": "Predicting time-to-event outcomes such as mortality is a fundamental task in clinical decision-making, commonly addressed through survival analysis. While classical statistical and deep learning approaches have been widely studied, they typically require task-specific training and sufficient labeled data. Recent advances in tabular foundation models offer a new paradigm by learning general-purpose representations for structured data. However, their applicability to censored time-to-event prediction in clinical settings remains underexplored, as typical applications are restricted to discrete classification rather than survival analysis tasks. In this work, we propose a lightweight adaptation approach for applying tabular foundation models to clinical survival analysis by directly training a survival-aware head on top of the pretrained representations. We study representative architectures, including TabPFN, TabDPT, and TabICL, and adapt them using a multi-task logistic regression (MTLR) head to model right-censored time-to-event outcomes. We evaluate this approach on a diverse set of public survival benchmarks and two large-scale ICU cohorts, MIMIC-IV and eICU. Our results show that this transfer learning approach achieves competitive or superior performance compared to strong baselines. On MIMIC-IV, TabDPT-FT-MTLR reaches a C-index of 0.856, corresponding to a relative improvement of +1.4% over the best non-FM baseline (DeepSurv, 0.844) and +6.7% over the best zero-shot model (0.802). On eICU, TabICL-FT-MTLR achieves 0.797, yielding gains of +1.7% (DeepSurv, 0.784) and +6.4% (0.749), respectively. These findings highlight the importance of combining pretrained tabular representations with survival-aware objectives and suggest that tabular foundation models provide a practical and effective alternative for clinical survival prediction.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T12:28:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12006v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12006v1"
+    },
+    {
+      "id": "2606.11946v1",
+      "title": "Neuro-Relational Programs: Unifying Queries and Neural Computation over Structured Data",
+      "authors": [
+        "Arie Soeteman",
+        "Balder ten Cate",
+        "Maurice Funk",
+        "Benny Kimelfeld",
+        "Carsten Lutz",
+        "Moritz Schönherr"
+      ],
+      "abstract": "The conventional approach to deep learning over relational databases applies neural models, such as Graph Neural Networks (GNNs), to a graph representation of the database. Recent approaches instead operate on databases directly, associating tuples with embeddings and extending query mechanisms to jointly process embeddings and relational content. Inspired by these developments, we introduce Neuro-Relational Programs (NRPs), a declarative query language for relational databases whose facts carry numeric vector embeddings. NRPs extend Datalog-style rules with operations that combine, aggregate, and transform embeddings, thereby interleaving relational reasoning and learnable neural components within a single formalism. This yields a general approach to neural computation over relational data: an NRP can be read both as a query plan with trainable components and as a neural architecture with relational structure built in. Natural syntactic fragments of NRPs recover existing architectures and query formalisms. Zero-ary NRPs correspond to non-adaptive query algorithms; monadic NRPs generalize GNN-style message passing and precisely capture Deep Homomorphism Networks, a connection that we extend to frontier-guarded NRPs over databases with row-ids. We characterize the expressive power of unrestricted NRPs with ReLU-FFN transformations by FOCQ, an extension of first-order logic with counting interpreted over real-weighted structures, yielding a precise connection with uniform TC$^0$ over ordered databases. Together, these results establish NRPs as a broad declarative framework for querying and neural computation over relational data.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T11:16:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11946v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11946v1"
+    },
+    {
+      "id": "2606.11857v1",
+      "title": "REACH: Interpretability-Driven Feature Identification and Architecture Compression for Multi-Channel Vehicular Channel Estimation",
+      "authors": [
+        "Simbarashe Aldrin Ngorima",
+        "Albert Helberg",
+        "Marelie H. Davel"
+      ],
+      "abstract": "Multi-channel mixed-SNR training improves out-of-distribution (OOD) generalisation of deep learning channel estimators for IEEE 802.11p vehicular communications, yet the internal mechanism responsible for this remains unexplained. This work presents REACH (Relevance-based Explanation and Architectural Compression for cHannel estimators), a gradient-based interpretability framework that operates at two levels. Input-level attribution identifies a subset of time-frequency features consistently relevant across all evaluated channel conditions, enabling input dimensionality reduction with minimal performance loss. Filter-level attribution reveals a near-universal internal representation, providing a representational account of the observed OOD generalisation. Guided by the resulting filter taxonomy, relevance-guided architecture compression substantially reduces both the number of parameters and the number of floating-point operations (FLOPs) with sub-1 dB normalised mean square error (NMSE) degradation, and OOD generalisation degrades more slowly than within-distribution accuracy under increasing compression.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T09:36:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11857v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11857v1"
+    },
+    {
+      "id": "2606.11793v1",
+      "title": "AI4Land: Scalable Deep Learning for Global High-Resolution Land Use Reconstruction",
+      "authors": [
+        "Amirpasha Mozaffari",
+        "Marina Castaño",
+        "Stefano Materia",
+        "Etienne Tourigny",
+        "Oscar Molina-Sedano",
+        "Jordi Varela-Agrelo",
+        "Dario Garcia-Gasulla",
+        "Miguel Castrillo Melguizo",
+        "Mario Acosta",
+        "Amanda Duarte"
+      ],
+      "abstract": "Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly driven by the uncertainties affecting the land surface representation and variability in Earth system models. To address this limitation, we present a data-driven framework AI4Land, for generating high-resolution historical reconstructions and future projections of key land surface variables. The framework follows a two-phase approach using a U-Net architecture. In the first phase, which is the focus of this work, it reconstructs annual land use and land cover by integrating coarse-resolution scenario data with static geophysical features. In a planned second phase, the resulting high-resolution maps will be used to predict dynamic biophysical variables, particularly leaf area index, at finer temporal scales. Trained on Earth observation data, the models learn to reproduce spatially explicit and physically consistent land surface patterns, extending temporal coverage to periods lacking direct observations. AI4Land was developed and trained on MareNostrum5, demonstrating how GPU-accelerated HPC infrastructure enables global-scale climate AI pipelines. The final product is a suite of open-source emulators designed for real-time coupling with digital twin platforms, such as those developed under the Destination Earth initiative. By delivering realistic and evolving land surface conditions on demand, this work aims to reduce critical uncertainties and improve the predictive power of next-generation climate simulations.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T08:26:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11793v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11793v1"
+    },
+    {
+      "id": "2606.11746v1",
+      "title": "Time Series Analysis in Machine Learning",
+      "authors": [
+        "Antonio Pagliaro",
+        "Anna Anzalone"
+      ],
+      "abstract": "Time series analysis is a fundamental component of machine learning, especially in astrophysics and cosmology where temporal data abound. This chapter provides a pedagogical review of time series analysis techniques from a machine learning perspective. We cover the basic concepts of time series (stationarity, autocorrelation, seasonality), classical statistical models (autoregressive, moving average, ARIMA, exponential smoothing, state-space models), and modern machine learning approaches. In particular, we discuss how traditional statistical methods lay the groundwork, and then explore machine learning methods for time series, including feature-based regression, tree-based ensemble methods, hidden Markov models, Gaussian processes, and deep learning models (recurrent neural networks, convolutional networks, transformers). Throughout, we illustrate with examples drawn from multiple domains (e.g. astronomy, weather forecasting, finance) to emphasize common principles. The goal is to equip readers with both the theoretical understanding and practical context to apply machine learning techniques for time series analysis in their research.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T07:22:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11746v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11746v1"
+    },
+    {
+      "id": "2606.11741v1",
+      "title": "Machine Learning for Event Reconstruction in Imaging Atmospheric Cherenkov Telescopes",
+      "authors": [
+        "Antonio Pagliaro",
+        "Antonino La Barbera"
+      ],
+      "abstract": "Imaging Atmospheric Cherenkov Telescopes (IACTs) are the leading instruments for very-high-energy (VHE) gamma-ray astronomy, covering the range from hundreds of GeV to hundreds of TeV. This chapter reviews the critical role of machine learning in reconstructing the physical properties of particles detected by IACTs. We introduce the IACT technique and its central challenge: distinguishing rare gamma-ray showers from the overwhelming cosmic-ray background. We detail the standard reconstruction pipeline, from image cleaning and Hillas parameterization to stereoscopic observation, and frame event reconstruction as a supervised learning problem encompassing particle classification and energy/direction regression. Two frontiers of innovation are then explored: the exploitation of the temporal dimension of shower images through novel timing-based features that enhance background rejection at low energies, and the application of advanced ensemble methods (gradient boosting, stacking) that surpass baseline Random Forests, notably in mitigating systematic energy bias. Finally, we discuss performance metrics and provide an outlook on next-generation approaches dominated by deep learning, including Convolutional and Graph Neural Networks.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T07:17:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11741v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11741v1"
+    },
+    {
+      "id": "2606.11699v1",
+      "title": "A Data-Centric Framework for Detecting and Correcting Corrupted Labels",
+      "authors": [
+        "Ha-Linh Nguyen",
+        "Hong-Anh Nguyen",
+        "Minh-Duc La",
+        "Thu-Trang Nguyen",
+        "Son Nguyen",
+        "Hieu Dinh Vo"
+      ],
+      "abstract": "The performance of machine learning and deep learning models largely depends on the quality of the training data. However, the quality of the real-world datasets is often compromised by noisy labels, which can substantially degrade model accuracy and reliability. To address this challenge, we propose Relabeler, an end-to-end data-centric framework for detecting and correcting corrupted labels. For corrupted label detection, Relabeler jointly leverages both local and global relationships among data instances to identify potentially noisy samples. After detecting suspicious instances, Relabeler further performs label correction by estimating the most probable clean label for each instance based on both its input features and observed noisy label. Extensive experiments across multiple datasets, noise types, and noise rates demonstrate that Relabeler consistently outperforms state-of-the-art baselines, achieving up to 58% improvement in label correction precision and 6% improvement in downstream task performance.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T06:23:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11699v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11699v1"
+    },
+    {
+      "id": "2606.11676v1",
+      "title": "Neural-Parameterized Cellular Automata for Wildfire Spread",
+      "authors": [
+        "Maksym Zhenirovskyy",
+        "Ion Matei",
+        "Rohit Vuppala",
+        "Takuya Kurihana",
+        "Hon Yung Wonga"
+      ],
+      "abstract": "Traditional wildfire models rely on rigid, low-dimensional parameters and static fuel maps, frequently underpredicting fire spread. To address this weakness, we introduce a hybrid deep-learning parameterized Probabilistic Cellular Automata (CA) framework implemented in JAX. Our approach employs a Multi-Scale Convolutional Neural Network to dynamically generate spatially varying parameters that govern fire-spread probability, wind alignment, and slope influence. This hybrid design captures complex, nonlinear environmental interactions while preserving the physical interpretability of the underlying three-state CA. The JAX implementation enables hardware acceleration and gradient-based parameter calibration. Evaluated on six large-scale wildfires in the western United States, the model maintains IoU > 0.6 over 72-hour forecast horizons after a 10-day data assimilation window during which the model is fitted incrementally to observed perimeters; the resulting forecast is a conditional projection of fire growth under the suppression regime already ncoded in those observations.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T05:40:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11676v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11676v1"
+    },
+    {
+      "id": "2606.11505v1",
+      "title": "On the Study of Biometric Spoofing Detection using Deep Learning",
+      "authors": [
+        "Kumar Kartikey",
+        "Nikos Komninos"
+      ],
+      "abstract": "Biometric systems are increasingly deployed in security applications; however, they remain vulnerable to spoofing attacks, in which attackers exploit counterfeit biometric data to gain unauthorized access. This research evaluates the effectiveness of state-of-the-art machine learning models, MobileNetV2, DenseNet-121, Inception-v3, and Spoof Trace Disentanglement (STD) in detecting spoofing attacks within facial recognition systems. Using the CelebA-Spoof dataset, the study evaluates model effectiveness using metrics such as accuracy, precision, recall, and F1 Score. Cross-dataset validation is carried out on the MSU-MFSD dataset to assess generalizability. The results show MobileNetV2 as the most efficient model, achieving 92% accuracy while balancing computational effectiveness, making it appropriate for real-life applications. Inception-v3 shows moderate robustness, while DenseNet-121 and STD struggle with generalization. The findings highlight the need for advances in domain adaptation and hybrid architectures to enhance biometric security systems.",
+      "published": "June 09, 2026",
+      "published_raw": "2026-06-09T22:56:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11505v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11505v1"
+    },
+    {
+      "id": "2606.11500v1",
+      "title": "FlexiBrain: Resolution-Agnostic Voxel-Level Encoding for Native fMRI",
+      "authors": [
+        "Mo Wang",
+        "Wenhao Ye",
+        "Junfeng Xia",
+        "Minghao Xu",
+        "Hongkai Wen",
+        "Quanying Liu"
+      ],
+      "abstract": "The success of large-scale deep learning models in neuroscience is fundamentally constrained by severe data heterogeneity. Native fMRI data aggregated from diverse sources exhibit substantial variation in both spatial and temporal resolutions. Consequently, most existing frameworks rely on lengthy, rigid preprocessing pipelines that enforce uniformity across datasets. This practice introduces two critical limitations: (1) potential degradation of subject-specific anatomical information; (2) significant computational overhead, often requiring hours of processing per subject. Here, we propose FlexiBrain, a resolution-agnostic voxel-level encoding framework for native fMRI based on Mamba-JEPA. FlexiBrain defines patch sizes in real-world physical units and employs a dynamic patch resizing, thereby bypassing destructive spatial standardization while enabling direct ingestion of data in native space. We instantiate the framework using an efficient Mamba-JEPA backbone to model high-dimensional 4D fMRI signals. Across five diverse downstream neuroscience tasks, FlexiBrain consistently outperforms recent state-of-the-art methods, achieving gains of up to 12 percentage points without external data augmentation. Importantly, FlexiBrain functions as a seamless plug-in module, substantially reducing preprocessing costs and accelerating the development of robust voxel-level fMRI foundation models. Code is available at https://github.com/OneMore1/FlexiBrain.",
+      "published": "June 09, 2026",
+      "published_raw": "2026-06-09T22:45:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11500v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11500v1"
+    },
+    {
+      "id": "2606.11382v1",
+      "title": "GLACIER: A Multimodal Student-Teacher Foundation Model for Molecular Property Prediction",
+      "authors": [
+        "Emily Nguyen",
+        "Yongchan Hong",
+        "Harsh Toshniwal",
+        "Yan Liu",
+        "Andreas Luttens"
+      ],
+      "abstract": "Deep learning models facilitate the discovery of molecules with tailored properties among billions of candidate compounds. However, the computational burden to develop and deploy state-of-the-art models continuously increases, limiting their scalability. Most large-scale models are unimodal in nature and overlook the potential to leverage complementary molecular data modalities. To address these shortcomings, this paper introduces the Graph-Language Alignment for Chemical Inference and Exploration using Representations (GLACIER) model, a student-teacher framework that integrates molecular graphs, SMILES strings, and physicochemical descriptors to learn rich molecular embeddings. Our framework consists of three stages: (1) we pretrain three student encoders on 100,000 drug-like molecules: a message-passing neural network for molecular graphs, a transformer-based encoder for SMILES strings, and a multilayer perceptron for physicochemical descriptors, (2) we fuse these student modalities using a novel Finsler geometry-aware module, and (3) distill complementary knowledge from large teacher models, including MiniMol and MolFormer, into a single lightweight model via contrastive learning. We demonstrate that GLACIER is a robust framework that delivers high predictive performance and computational efficiency in complex molecular property prediction tasks. Our code is publicly available at https://github.com/eemokey/glacier.",
+      "published": "June 09, 2026",
+      "published_raw": "2026-06-09T19:05:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.11382v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11382v1"
+    },
+    {
+      "id": "2606.11107v2",
       "title": "Multimodal Brain Tumour Classification Using Feature Fusion",
       "authors": [
         "Wajih ul Islam",
@@ -14,8 +233,8 @@
       "abstract": "Clinicians diagnose brain tumors by synthesizing patient symptoms, medical history, and quantitative imaging data from modalities such as MRI and CT scans into a unified clinical judgement. However, most deep learning models rely on MRI/CT images alone, failing to replicate the clinicians multimodal reasoning. We explore a two-branch multimodal network combining raw MRI scans with 91 extracted radiomic features (intensity, texture, shape, and boundary descriptors) to classify brain tumors into glioma, meningioma, pituitary, and no-tumor. A pre-trained CNN backbone encodes the image stream, whereas a dedicated MLP encodes the radiomic stream. Both streams are fused via concatenation, gated, or bidirectional cross-modal attention strategies. Across nine experimental runs on a balanced 7,200 image dataset, all multimodal configurations outperform unimodal baselines with gated fusion achieving the best accuracy of 96.13%.",
       "published": "June 09, 2026",
       "published_raw": "2026-06-09T17:03:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11107v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11107v1"
+      "pdf_link": "http://arxiv.org/pdf/2606.11107v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11107v2"
     },
     {
       "id": "2606.11098v1",
@@ -86,215 +305,6 @@
       "published_raw": "2026-06-08T23:26:39Z",
       "pdf_link": "http://arxiv.org/pdf/2606.10246v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.10246v1"
-    },
-    {
-      "id": "2606.10200v1",
-      "title": "An Improved Generative Adversarial Network for Micro-Resistivity Imaging Logging Restoration",
-      "authors": [
-        "Ahmed Faizul Haque",
-        "S. M. Riaz Rahman Antu",
-        "Saif Ahmed",
-        "Asadullah Hil Galib",
-        "Souvik Pramanik",
-        "Mohammad Ashrafuzzaman Khan",
-        "Mohammad Abdul Qayum",
-        "Mohsin Sajjad"
-      ],
-      "abstract": "An improved GAN-based imaging logging image restoration method is presented in this paper for solving the problem of partially missing micro-resistivity imaging logging images. The method uses FCN as the generative network infrastructure and adds a depth-separable convolutional residual block to learn and retain more effective pixel and semantic information; an Inception module is added to increase the multi-scale perceptual field of the network and reduce the number of parameters in the network; and a multi-scale feature extraction module and a spatial attention residual block are added to combine the channel attention. The multi-scale module adds a multi-scale feature extraction module and a spatial attention residual block, which combine the channel attention mechanism and the residual block to achieve multi-scale feature extraction. The global discriminative network and the local discriminative network are designed to gradually improve the content and semantic structure coherence between the restored parts and the whole image by playing off each other and the generative network. According to the experimental results, the average structural similarity measure of the five sets of imaged logging images with different sizes of missing regions in the test set is 0.903, which is an improvement of about 0.3 compared with other similar methods. It is shown that the method in this study can be used for the restoration of micro-resistivity imaging log images with good improvement in semantic structural coherence and texture details, thus providing a new deep learning method to ensure the smooth advancement of the subsequent interpretation of micro-resistivity imaging log images.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T21:42:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10200v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10200v1"
-    },
-    {
-      "id": "2606.10112v1",
-      "title": "Duality for Optimal Multi-Item, Multi-Bidder Auction Design: Revenue Certificates through Deep Learning",
-      "authors": [
-        "Yanchen Jiang",
-        "David C. Parkes",
-        "Tonghan Wang"
-      ],
-      "abstract": "Characterizing revenue-optimal auctions for multi-item, multi-bidder settings remains a fundamental open problem, with no known closed-form solution existing beyond restrictive binary-type instances. This has motivated interest in computational approaches to optimal auction design. In this paper, we introduce the first computational framework that directly tackles the dual problem for multi-item, multi-bidder auctions and dominant-strategy incentive compatibility (DSIC), generating certified revenue upper bounds. Our approach parametrizes Lagrange multipliers with a structurally guaranteed strict flow-conservation property using neural networks, enabling efficient optimization over feasible dual solutions via gradient descent. To bridge the gap between discrete computational methods and theoretical guarantees for continuous types, we develop a novel lifting technique that maps dual certificates from coarse discretizations to fine refinements. We prove that lifting gives valid revenue upper bounds for multi-item, multi-bidder auctions with continuous uniform valuations. Furthermore, we give a generalized lifting construction for arbitrary continuous distributions and demonstrate that these lifted duals converge to the revenue of the original continuous problem in the discrete limit. We validate this computational framework for the dual auction design problem by recovering known analytical mechanisms for canonical instances. For multi-item multi-bidder problems, our framework establishes a small gap between the optimal revenue and best-known DSIC mechanisms, providing computational certificates of near-optimality.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T19:42:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10112v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10112v1"
-    },
-    {
-      "id": "2606.10069v1",
-      "title": "Spatiotemporal Seismic Hazard Assessment Using VQ-VAE and Seismic Statistical Features",
-      "authors": [
-        "Wei Quan",
-        "Denise Gorse"
-      ],
-      "abstract": "In this paper we build upon a previous study in which we demonstrated, using XGBoost and earthquake catalogue data from Japan and Chile, that a set of 60 seismic statistical features (SSFs) had much greater predictive value than a set of 428 generic time series features from the tsfresh package. We here extend this previous work in two key ways, focusing on data from Japan as a large dataset is necessary in order to allow for the training of a deep learning (autoencoder) model. First, we move from whole-region prediction (considering, for each candidate event, the likelihood of an event M $\\geq$ 5.0 anywhere in the region in the next 15 days) to localised predictions in which both the region of feature computation and the region of prediction are restricted to a circle of radius 24 km around the candidate event, and we show that performance remains excellent, similar to our previous whole-region study for the same area. Second, we here couple this proven set of SSFs, based on one-dimensional (catalogue) data, with a novel feature based on two-dimensional seismic maps, obtained by training a VQ-VAE model to reproduce such maps as output and identifying a measure of its error in doing so with a localised build-up of crustal stress. We show that while localised prediction based on SSFs can be effective alone, with test AUC values as high as those obtained in the case of Japan in our previous whole-region study, the inclusion of the new natively-spatial VQ-VAE-derived feature, top-ranked by SHAP analysis, can enhance performance and additionally appears to near-wholly replace the traditionally-computed $b$-value in terms of feature usage.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T18:43:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10069v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10069v1"
-    },
-    {
-      "id": "2606.10031v1",
-      "title": "The Chronicles of Radio Frequency Fingerprinting",
-      "authors": [
-        "Abdul Aziz",
-        "Ingrid Huso",
-        "Savio Sciancalepore",
-        "Gabriele Oligeri"
-      ],
-      "abstract": "Radio Frequency Fingerprinting (RFF) has evolved from an early idea for radar emitter identification into a broad research field for wireless device identification and spectrum monitoring for security. Rather than presenting a conventional literature survey, this work provides a critical historical analysis of RFF organized around the field's major conceptual paradigm shifts from 1993 to 2026. We discuss the evolution of RFF across its fundamental methodological phases, beginning with early transient-based approaches, in which transmitter turn-on behavior, unintentional modulation, and hardware nonlinearities were treated as the primary fingerprint sources. We then examine the transition to digital communications, during which attention shifted to steady-state impairments and to engineered features extracted from signals. Next, we discuss the Machine Learning period, which standardized the RFF workflow around feature extraction, dimensionality reduction, and supervised classification, followed by the Deep Learning period, in which representation learning from raw IQ samples significantly improved performance and expanded the application space. Beyond a chronological list of methods and best practices, this paper critically examines the changing assumptions and persistent limitations that have driven these transitions. We highlight the central challenges that continue to shape the field, including channel dependence, receiver sensitivity, limited dataset realism, poor cross-domain generalization, open-set recognition, and adversarial robustness. By organizing more than three decades of work into a coherent narrative, this paper clarifies the evolution of RFF, identifies persistent limitations, and outlines the key research directions required to move the field toward dependable real-world adoption.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T18:09:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10031v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10031v1"
-    },
-    {
-      "id": "2606.09707v1",
-      "title": "BrainSurgery: Reproducible and Reliable Declarative Weight Manipulations for Model Editing and Upcycling",
-      "authors": [
-        "Gianluca Barmina",
-        "Annemette Broch Pirchert",
-        "Andrea Blasi Núñez",
-        "Lukas Galke Poech",
-        "Peter Schneider-Kamp"
-      ],
-      "abstract": "As deep learning models scale, managing, inspecting, and modifying large checkpoints has become increasingly challenging. Researchers often need to alter model weights for layer restructuring, precision casting, low-rank factorization, and architectural debugging, yet these workflows often rely on fragile ad-hoc Python scripts. Here, we introduce BrainSurgery, a tool for robust and reproducible \"tensor surgery\" on neural network checkpoints, and provide a system demonstration covering four examples and three case studies from model upcycling to LoRA extraction. By abstracting storage formats and memory management, BrainSurgery executes complex transformations through declarative YAML plans. It supports structural modifications, mathematical transformations, and tensor reshaping through expressive regex and structural targeting, while built-in assertions validate tensor shapes, data types, and values to prevent silent errors. We envision that BrainSurgery will provide a strong foundation for future research through its reproducible and validated operations.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T16:26:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09707v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09707v1"
-    },
-    {
-      "id": "2606.09704v1",
-      "title": "Bi-S network origin of cation-disorder stability and dispersive band edges in AgBiS2",
-      "authors": [
-        "Han-Pu Liang",
-        "Songyuan Geng",
-        "Heng Kang",
-        "Chen Qiu",
-        "Xiao-Ping Yao",
-        "Qing'an Li",
-        "Bozhao Zhang",
-        "Lechuan Sun",
-        "Yuxuan Chen",
-        "Shan Zhang",
-        "Su-Huai Wei",
-        "Peng-Fei Guan"
-      ],
-      "abstract": "Cation-disordered AgBiS2 is a promising lead-free optoelectronic material, but both its ordered structure and the microscopic origin of its favorable electronic properties remain debated. Theory has proposed a mixed-coordination tendency with tetrahedral AgS4 and octahedral BiS6 units, whereas experiments mainly report octahedrally coordinated ordered and cation-disordered phases, together with local cation off-centering. Here, we combine a machine-learning interatomic potential with a deep-learning Hamiltonian to resolve the coupled structural and electronic evolution of AgBiS2 at large length scales. We identify the three-dimensional Bi-S network as the central structural motif governing both disorder stability and band-edge electronic states. At weak disorder, Ag/Bi exchange competes with the off-centering tendency of the Ag sublattice, producing strongly distorted local environments and convoluted diffraction signatures that hinder the identification of the ordered phase. With increasing disorder, BiS6-like units connect into a continuous Bi-S network, which stabilizes the rocksalt-like disordered phase. Despite strong cation disorder, AgBiS2 retains clear semiconductor-like band dispersion and develops a direct band gap. The connected Bi:p-S:p states supported by the Bi-S network preserve a dispersive conduction-band edge and a small electron effective mass. In contrast, mobile Ag disrupts the long-range periodicity of Ag-S bonding, leading to strongly localized valence states. These results clarify the structural controversy in ordered AgBiS2 and establish a unified physical picture of disorder stability and optoelectronic response in nonisovalent semiconductor alloys.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T16:24:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09704v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09704v1"
-    },
-    {
-      "id": "2606.09964v1",
-      "title": "JGRA: Jacobian Geometry Robustness Assessment in NISQ Noise-Aware Quantum Neural Networks",
-      "authors": [
-        "Gianluca Scanu",
-        "Luca Barletta",
-        "Stefano Rini"
-      ],
-      "abstract": "The NISQ era places stringent constraints on quantum computation, where noise and decoherence fundamentally limit performance. In classical deep learning, model robustness and resilience to perturbations are well studied: deep neural networks (DNNs) maintain high performance despite pruning, noise injection, and structural perturbations due to inherent redundancy in their representations. A central challenge in quantum machine learning is to transfer this notion of robustness to quantum neural networks (QNNs) under realistic NISQ noise. While classical deep learning exhibits robustness through structural redundancy, analogous principles for QNNs remain underdeveloped. We propose JGRA: a framework for assessing robustness in noise-aware QNNs via Jacobian geometry, capturing model sensitivity to parameter perturbations induced by noise. Our method includes entropy-matched noise calibration, noise-aware training, and noise-conditioned Jacobian extraction, yielding geometric descriptors that link clean-regime structure to noisy inference behaviour. We also empirically demonstrate that these descriptors encode predictive information about robustness under unseen noise.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T15:40:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09964v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09964v1"
-    },
-    {
-      "id": "2606.09541v1",
-      "title": "Automating the Expert Eye: A System-Agnostic Deep Learning Framework for Rare Event Discovery in Imbalanced Force Spectroscopy",
-      "authors": [
-        "Jorge Rodriguez-Ramos"
-      ],
-      "abstract": "Single-Molecule Force Spectroscopy (SMFS) provides unprecedented insights into biomolecular mechanics, yet the high-throughput generation of force-extension trajectories creates a severe data curation bottleneck. Identifying rare molecular unbinding events within thousands of noise-dominated curves traditionally relies on tedious, non-scalable manual auditing. Here, we present a system-agnostic, interpretable deep learning framework tailored to overcome extreme class imbalance in automated SMFS triage. Utilizing 1D-to-2D rasterized geometric matrices, we deployed a modified ResNet18 architecture governed by an asymmetric Focal Loss objective function. We evaluated this framework on the complex mechanical unfolding pathways of the R. champanellensis cellulosome. Under hyper-imbalanced test conditions where the target interaction constituted only 1.34% of the dataset (13 true events out of 970 traces), the model achieved an overall accuracy of 0.9196 and a remarkable True Positive Rate (Recall) of 0.9231. By implementing an empirically calibrated dual-threshold triage system, the pipeline automatically discarded 880 unambiguous background noise traces , reducing the manual curation workload by over 90% while safely preserving high-value rare data. Finally, Gradient-weighted Class Activation Mapping (Grad-CAM) visually validated that the network's decisions are firmly anchored in the relevant geometric features of the force curves, specifically localizing on the structural unbinding regions, effectively mitigating 'black-box' skepticism. Built for free cloud-based execution, this open-source tool democratizes scalable, highly precise molecular discovery across the biophysics community.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T14:24:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09541v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09541v1"
-    },
-    {
-      "id": "2606.09959v1",
-      "title": "Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity Rainfall",
-      "authors": [
-        "Gijs van Nieuwkoop",
-        "Siamak Mehrkanoon"
-      ],
-      "abstract": "Precipitation nowcasting is increasingly being approached with deep learning models that learn directly from recent radar observations. Although such models can efficiently capture short-term precipitation motion, they often lack broader contextual information about the meteorological conditions under which rainfall develops. This paper investigates whether lightweight temporal context can improve radar-based nowcasting, particularly for high-intensity rainfall. We propose the Time-Aware Small-Attention U-Net (TA-SmaAt-UNet), which extends the core SmaAt-UNet model with temporal conditioning layers that use cyclical encodings of time-of-day and time-of-year to modulate intermediate feature representations. Experiments on KNMI radar precipitation data show that temporal conditioning is most beneficial for rare, high-intensity precipitation events, while also improving the representation of seasonal variability and predicted rainfall-intensity distributions. A layer conductance analysis further indicates that the added temporal conditioning layers are actively used by the model despite their small parameter cost. These findings suggest that simple, physically motivated temporal context can improve the realism and reliability of deep learning-based precipitation nowcasts. The implementation of our models and training setup is available on \\href{https://github.com/gijsvn/TA-SmaAt-UNet}{GitHub}.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T12:28:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09959v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09959v1"
-    },
-    {
-      "id": "2606.09953v1",
-      "title": "Deep Slice Interpolation for Reducing Through-Plane Anisotropy and Noise in Head CT",
-      "authors": [
-        "Luis Cortés Ferre",
-        "Miguel A. Gutiérrez-Naranjo",
-        "Marcin Balcerzyk"
-      ],
-      "abstract": "Head computed tomography (CT) typically uses sub-millimeter in-plane resolution but 2-5 mm through-plane spacing, creating substantial anisotropy that degrades multiplanar reconstructions, volumetric measurements such as hematoma volume estimation, and downstream algorithms that assume near-isotropic voxels. We present a deep learning system that synthesizes intermediate CT slices from pairs of neighboring axial slices, halving the effective through-plane spacing. The system improves three-dimensional visualization while simultaneously producing inherently denoised outputs, yielding two complementary benefits from a single inference pass. To build a reliable system, we systematically evaluate pixel-wise losses, namely mean squared error (MSE) and mean absolute error (L1); structural-similarity losses, namely the structural similarity index (SSIM) and its multi-scale variant (MS-SSIM); and hybrid combinations. On a held-out test set, all converged models outperform classical interpolation baselines and pretrained video frame interpolation methods (RIFE, FILM) on all structural measures, with MS-SSIM+L1 offering the strongest balanced profile. We also document training instability in SSIM-family losses and identify partial remedies: the standard numerical fixes eliminate the dominant failure mode but leave residual divergence at smaller batch sizes. All results are reported with patient-level bootstrap confidence intervals and paired statistical tests. As an illustration, we apply the system to an out-of-distribution head CT series from Hospital Universitario Virgen del Rocío: the model synthesizes intermediate slices and exhibits on the real slices the implicit-denoising signature predicted by our theoretical analysis, supporting in a single external case that interpolation quality and implicit denoising are not confined to the training distribution.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T10:45:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09953v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09953v1"
-    },
-    {
-      "id": "2606.09271v1",
-      "title": "Multi-View Speech Representation Learning for Parkinson's Disease Detection Using Context-guided Cross-modal Attention",
-      "authors": [
-        "George Theodosiou",
-        "Loukas Ilias",
-        "Dimitris Askounis"
-      ],
-      "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder that frequently causes speech impairments associated with hypokinetic dysarthria. As speech production relies on the precise coordination of complex neuromuscular mechanisms, speech analysis has emerged as a promising non-invasive and cost-effective biomarker for early PD detection. Recent deep learning approaches have shown encouraging results; however, most existing methods rely on a single speech representation, potentially overlooking complementary pathological information encoded across different feature spaces. In this work, we propose a multi-branch deep learning framework for automatic PD detection from speech. Each recording is segmented into 5-second chunks and represented using three complementary modalities: Log-Mel spectrograms, MFCCs, and HuBERT embeddings extracted from raw waveforms. The spectrograms are processed using a pre-trained ResNet-18 encoder, MFCC sequences are modeled through a BiLSTM network, and raw speech is encoded using a pre-trained HuBERT model. To effectively integrate these heterogeneous representations, we introduce a context-guided cross-modal attention mechanism that dynamically weights temporal HuBERT embeddings according to the global acoustic context derived from the spectrogram and MFCC branches. Experiments conducted on the publicly available Spanish PC-GITA corpus under strict speaker-independent 5-fold cross-validation demonstrate the effectiveness of the proposed approach. The proposed architecture achieves an accuracy of 91.51%, an F1-score of 91.24%, and an AUC of 95.97%. Furthermore, ablation studies confirm the contribution of both the proposed context-guided cross-modal attention mechanism and the integration of complementary speech representations. These findings highlight the potential of heterogeneous speech modeling for robust and clinically reliable PD detection.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T09:39:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09271v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09271v1"
-    },
-    {
-      "id": "2606.09160v1",
-      "title": "Crop Recommendation and Agricultural Query Answering System Using Spatio-Temporal Graph Neural Networks and Hybrid Retrieval Augmentation",
-      "authors": [
-        "Prajwal Thapa",
-        "Yagya Raj Pandeya"
-      ],
-      "abstract": "This paper presents a unified system designed to support precision agriculture by integrating advanced weather prediction, crop recommendation, and a question-answering tool for farmers. We propose two deep learning models -- a Transformer-based Graph Neural Network and a Spatio-Temporal Graph Convolutional Network (STGCN) -- to forecast weather conditions for the next 30 days using data from 1,359 locations in Nepal. The STGCN outperforms the Transformer-based model in accuracy (MSE ~0.011 vs. 0.013), effectively modeling both spatial and temporal dependencies in climate data. These predictions are combined with static soil properties such as pH, moisture, and organic content to generate localized crop recommendations through a scoring algorithm that matches each crop's optimal growing conditions. Additionally, we develop a Retrieval-Augmented Generation (RAG) chatbot that leverages domain-specific agricultural documents to answer farmers' questions in natural language. The entire system is deployed via a mobile application, offering real-time suggestions and conversational support. User feedback confirms the system's usability and relevance, especially in rural settings where personalized farming guidance is limited. Overall, our approach demonstrates how combining machine learning models with local agricultural data can empower farmers with actionable insights, promoting more informed decisions, better crop yields, and increased resilience to climate variability.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T07:51:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09160v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09160v1"
-    },
-    {
-      "id": "2606.09065v1",
-      "title": "OnlyDense: Reduced-Order Modeling for Lagrangian simulation",
-      "authors": [
-        "Tu Do",
-        "Shannon Ryan",
-        "Santu Rana"
-      ],
-      "abstract": "In science and engineering, Lagrangian simulation methods such as Smooth Particle Hydrodynamics (SPH) or Material Point Method (MPM) are often employed to study the behavior of dynamic systems. However, these methods can be prohibitively computationally expensive, particularly when simulating multi-scale spatial or temporal phenomena, e.g., void growth and coalescence within macro-scale geometries, structural failure of spacecraft components resulting from hypervelocity impact of space debris particles, etc. In contrast to graph-based methods, where the state of the system is understood as a discrete set of particles, we propose a learning framework for scalable representation and dynamics modeling of massive particle systems by treating the system state as a function and its evolution as a trajectory in Hilbert space. Rather than representing the state as a discrete set of particles or embedding it in a nonlinear latent manifold, we approximate the state space with a linear subspace spanned by learned neural basis functions. This parameterization enables direct projection to obtain latent coefficients and explicit access to the basis functions, avoiding optimization over a nonlinear latent space. The resulting representation admits a natural interpretation: latent variables correspond to coefficients in Hilbert space, and basis functions correspond to spatial modes, analogous to Proper Orthogonal Decomposition. The framework thus unifies classical projection-based reduced-order modeling with modern deep learning, while remaining invariant to the number of discretization points. Experiments on large-scale SPH simulations with over one million particles, including dynamic events with extreme deformation and fragmentation, demonstrate that the proposed method accurately reconstructs and predicts dynamics, achieving an R$^2$ score above $0.99$ with as few as $32$ basis functions.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T06:02:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09065v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09065v1"
-    },
-    {
-      "id": "2606.09051v1",
-      "title": "Beyond Convolution: Advancing Hypergraph Neural Networks with Hypergraph U-Nets",
-      "authors": [
-        "Fuli Wang",
-        "Wei Qian",
-        "Daniel L. Lau",
-        "Gonzalo R. Arce"
-      ],
-      "abstract": "Convolutions have successfully transitioned from image processing to the complex realm of non-Euclidean higher-order domains, particularly in hypergraphs. Despite the success in convolution, the exploration of a popular architecture named U-Net remains largely unexplored for hypergraph data due to the lack of well-defined pooling and unpooling operations. This work pioneers the study of U-Net architectures for hypergraph data, addressing the critical challenge of designing effective pooling and unpooling operations that retain maximal structural information from the input hypergraph. Motivated by hierarchical clustering, we propose to construct the pooling and unpooling operators all at once by cutting the clustering dendrogram at different granularities, named the Parallel Hierarchical Pooling (PHPool) and Unpooling (PHUnpool) operators. Unlike existing pooling methods that risk local structural damage through a sequential learning procedure, our PHPool operators are designed in a global and parallel manner to ensure fidelity to the original hypergraph structure with efficient computation while the PHUnpool operators are tailored to perform inverse operations of the PHPools for hypergraph reconstruction. We validate our model through hypergraph reconstruction simulation, hypergraph classification, and node-level anomaly detection, where it demonstrates superior performance over existing state-of-the-art graph and hypergraph deep learning methods.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T05:40:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.09051v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.09051v1"
     }
   ]
 }
