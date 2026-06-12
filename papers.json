@@ -1,7 +1,171 @@
 {
-  "last_updated": "2026-06-11T02:13:41.242438",
+  "last_updated": "2026-06-12T02:09:28.526961",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.13411v1",
+      "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
+      "authors": [
+        "Dihia Lanasri",
+        "Fatima Benbarek"
+      ],
+      "abstract": "The rapid growth of social media has intensified the spread of rumours. This issue is more challenging in the Algerian context due to the informal and code-switched nature of dialectal content, the scarcity of annotated resources, and the limited effectiveness of standard Arabic NLP tools on dialect text. This paper presents an end-to-end rumour detection hybrid framework for Algerian dialect social media content. We build a domain-specific annotated dataset by combining real social media posts, synthetic data, and the FASSILA corpus, with automatic labeling based on a similarity-based annotation process. A transliteration pipeline is also introduced to generate parallel datasets in Arabic script and Arabizi. We evaluate multiple approaches, including classical machine learning, deep learning, transformers, and hybrid models. Experimental results show that a hybrid approach combining transformer embeddings with a classical classifier achieves the best performance, reaching an F1-score of 0.84. We also find that domain-specific pre-training is more important than model size, with social media-trained models outperforming larger models trained on formal Arabic corpora. These results demonstrate the feasibility of rumour detection in low-resource Algerian dialect settings.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T14:40:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13411v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13411v1"
+    },
+    {
+      "id": "2606.13369v1",
+      "title": "Classification of Compact Stars via Machine Learning and Neural Network Models",
+      "authors": [
+        "D. Neraki",
+        "G. Koufetidis",
+        "I. Stergakis",
+        "Th. Diakonidis",
+        "Ch. C. Moustakidis"
+      ],
+      "abstract": "Recent advances in multimessenger astronomy, particularly through gravitational-wave observations of compact-object mergers, have significantly improved our understanding of dense matter. Nevertheless, the internal composition of compact stars remains uncertain. Depending on the underlying equation of state (EoS), these objects may be neutron stars composed primarily of nucleons, quark stars made of deconfined quark matter, or hybrid stars containing both hadronic and quark phases. More exotic constituents, such as hyperons, meson condensates, or dark matter, have also been proposed. In this work, we investigate whether the internal composition of compact stars can be inferred from observable quantities, including mass, radius, and tidal deformability. To address this problem, we employ machine-learning and deep-learning techniques trained on a larg dataset of EoSs describing both neutron stars and quark stars. From these EoSs, we generate the corresponding mass radius relations spanning a wide range of stellar configurations. The resulting dataset is used to train and evaluate classification models aimed at identifying the nature of compact objects from their macroscopic properties. Our results indicate that suitable combinations of observables can distinguish neutron stars from quark stars with very high accuracy. These findings demonstrate the potential of machine-learning approaches as tools for probing the composition of dense matter. However, further studies incorporating additional scenarios, including hybrid stars and other exotic forms of matter, are required to establish the robustness and general applicability of this methodology.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T13:55:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13369v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13369v1"
+    },
+    {
+      "id": "2606.13302v1",
+      "title": "Physics-Guided Spatiotemporal Learning for Coastal Wave Peak Period Estimation from Video",
+      "authors": [
+        "Abubakar Hamisu Kamagata",
+        "Dharm Singh Jat",
+        "Attlee Munyaradzi Gamundani",
+        "Abhishek Srivastava",
+        "Paramasivam Saravanakumar"
+      ],
+      "abstract": "Wave parameters in the nearshore are crucial for coastal engineering, shoreline protection, marine hazard assessment, and coastal management for climate resilience. Traditional monitoring systems like buoys and radar platforms offer accurate monitoring but can have high installation and maintenance expenses and limited spatial coverage. Passive ocean monitoring using video has been achieved by leveraging deep learning, however, many methods are not physically interpretable, feasible, and validated for oceanography. In thiswork, a Physics-Guided Deep Spatiotemporal Learning Framework for direct estimation of nearshore wave peak periods from passive coastal video stream is proposed. The framework combines automated temporal-variance based region-of-interest detection, multi-stage Sim-to-Real transfer learning, and physics-informed regularization to enhance the predictive accuracy and physical consistency. A variety of spatiotemporal architectures were assessed, such as transformer-based and recurrent-convolutional ones, alongside synthetic pretraining,silver-label adaptation, and expert fine-tuning. The results show that transformer-based architectures outperformed in terms of the accuracy of the instantaneous prediction, while lightweight recurrent-convolutional architectures achieved higher temporal stability and operational oceanographic skill. Ablation studies also demonstrated the benefits of physics-guided regularization in terms of trend-following consistency, and physically implausible predictions. Explainability auditing also helped to focus attention in hydrodynamically active surf-zone regions and showed good agreement with the physically derived wave propagation behavior. In general, the proposed framework shows the promise of physics-guided video-based deep learning systems for long-term coastal wave monitoring that are cost-efficient and operationally feasible.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T12:54:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13302v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13302v1"
+    },
+    {
+      "id": "2606.13287v1",
+      "title": "Clipping Makes Distributed and Federated Asynchronous SGD Robust to Stragglers",
+      "authors": [
+        "Samuel Erickson",
+        "Mikael Johansson"
+      ],
+      "abstract": "In modern machine learning, parallelization of training is an important strategy for increasing scale. Asynchronous stochastic gradient descent (ASGD), which maximizes the utilization of available hardware by avoiding waiting for slow workers. However, with constant step sizes, the convergence of ASGD is nonetheless affected negatively by slow workers due to large delays in updates. At the same time, it has been empirically observed in asynchronous training of deep learning models that gradient clipping \"stabilizes\" training. In this work, we provide a theoretical justification for this behavior, as we show that clipping removes the dependence of the maximum delay in the oracle complexity. We employ a sub-Weibull model of gradient noise which generalizes sub-Gaussian and sub-exponential distributions to more heavy-tailed distributions, motivated by empirical observations in deep learning. We show convergence in expectation, and the first time in asynchronous optimization, convergence with high probability.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T12:43:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13287v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13287v1"
+    },
+    {
+      "id": "2606.13194v1",
+      "title": "WHAR Arena: Benchmarking the State of the Art in Efficient Wearable Human Activity Recognition",
+      "authors": [
+        "Maximilian Burzer",
+        "Tobias King",
+        "Till Riedel",
+        "Michael Beigl",
+        "Tobias Röddiger"
+      ],
+      "abstract": "Deep learning has become the dominant paradigm in Wearable Human Activity Recognition (WHAR), yet progress is obscured by a comparability crisis. Results are often reported using inconsistent datasets, custom data processing, and varying evaluation protocols, making state-of-the-art claims fragile. We address this with a large-scale, open-source benchmark that integrates 30 diverse datasets under standardized processing, unified model interfaces, and a shared cross-subject evaluation protocol. Evaluating 17 representative architectures across 4760 training runs, we jointly measure predictive performance alongside on-device latency, peak memory, and model size on an Android reference device. Our results reveal that the WHAR state of the art is distributed rather than dominated by a single architecture. While CNN-HAR achieves the highest mean macro-F1, top-performing models cluster tightly, indicating contemporary architectures have converged near a predictive performance ceiling. When accounting for deployment efficiency, compact neural models, such as TinierHAR, and classical Random Forests define the practically relevant Pareto frontier, whereas larger recurrent and hybrid models incur high hardware costs without corresponding performance gains. Consequently, while predictive performance has plateaued, substantial potential for future progress remains in optimizing deployment efficiency and improving adaptation to domain shifts. We release our full framework to support transparent reuse and extension.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T11:01:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13194v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13194v1"
+    },
+    {
+      "id": "2606.13136v1",
+      "title": "An Extensible and Lightweight Unified Architecture for Demosaicing Pixel-bin Image Sensors",
+      "authors": [
+        "Saurabh Kumar",
+        "Nutan Sairam Yenneti"
+      ],
+      "abstract": "Pixel-bin image sensors are becoming the default choice for smartphone cameras due to their resolution vs light-gathering trade-off. However, their larger inter-color separation compared to the Bayer color filter array (CFA) makes them challenging to demosaic. Furthermore, existing deep learning-based demosaicing methods are CFA-specific, requiring multiple individual models that take up precious onboard resources and demand larger development and maintenance efforts. In this work, we propose a modular unified architecture for demosaicing various pixel-bin sensors that provides higher image quality while being extensible and lightweight. Additionally, to enable plug-and-play operation, we introduce a learning-free CFA-identification module to detect the CFA type of raw data accurately.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T09:59:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13136v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13136v1"
+    },
+    {
+      "id": "2606.13081v1",
+      "title": "Emotional regulation improves deep learning-based image classification",
+      "authors": [
+        "Riccardo Emanuele Landi",
+        "João M. F. Rodrigues",
+        "Marta Chinnici"
+      ],
+      "abstract": "Emotion significantly influences cognition, enhancing memory and learning under certain conditions. Drawing on this principle, emotion-augmented deep learning investigates how affective states can improve neural network architectures and learning paradigms, achieving better generalization than non-emotional models. However, existing methods often rely solely on objective neurophysiological factors, neglecting the role of subjectivity in emotion. To bridge this gap, the present study introduces Emotional Regulation, a novel framework for modeling emotion in deep learning through artificial subjective experience. The method employs pre-training based on affective stimuli, balancing non-emotional and emotionally-influenced responses in downstream task optimization. Extensive experimentation was conducted in image classification, pre-training ResNet and ViT architectures on four emotional datasets, using CIFAR-10 and -100 as target benchmarks. Results reveal improvements over the aforementioned backbones, providing evidence of Emotional Regulation as a promising method for defining emotion-augmented deep learning through artificial subjective experience. Furthermore, the proposed approach overcomes the related work in image classification based on CIFAR, revealing Emotional Regulation as the new state-of-the-art in emotion-augmented deep learning for large-scale vision datasets. The study also enforces evidence of the impact of affective states in improving machine learning tasks' optimization, encouraging further investigation on emotion-inspired architectures.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T09:03:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13081v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13081v1"
+    },
+    {
+      "id": "2606.12988v1",
+      "title": "A Machine Learning Framework for Real-Time Personalized Ergonomic Pose Analysis",
+      "authors": [
+        "Manex Atxa",
+        "Bruno Simoes",
+        "Julen Balzategui"
+      ],
+      "abstract": "This paper introduces a new methodology for real-time prediction of ergonomic and non-ergonomic human poses using volumetric video data in three dimensions. Although the methodology was designed for ergonomic assessments, it can be adapted to other applications requiring real-time analysis of human posture. One aspect that makes this system stand out is its ability to analyze 3D point clouds during the assessment, enabling computation from multiple angles. This overcomes a critical limitation of cameras which provide often a fixed viewpoint, thereby restricting the data available for a thorough postural evaluation, especially when occlusions occur. The system continuously and automatically performs pose inference using the chosen perspective on the real-time streaming data; however, only the poses manually selected and labeled by the user are used to train the personalized deep learning classifier. The methodology has been refined through a case study in which RGB-D cameras captured subjects performing load-lifting tasks, enabling real-time skeletal labeling. The model was trained on this data and, following the training phase, performs inference on new streaming data in real time. This research offers a scalable and pragmatic approach for real-time ergonomic evaluation by combining state-of-the-art 3D data technologies and traditional 2D pose estimation algorithms. It addresses the increasing need for safety and health monitoring in workplace environments, marking a notable contribution to the domain.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T07:24:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12988v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12988v1"
+    },
+    {
+      "id": "2606.12967v1",
+      "title": "Simulating Torsional Vibrations of Faulty Bevel Gears Using the Polygonal Contact Method",
+      "authors": [
+        "Milla Vehviläinen",
+        "Aleksanteri Hämäläinen",
+        "Pekka Rahkola",
+        "Mikko Savolainen",
+        "Janne Keränen",
+        "Jari Halme",
+        "Jenni Pippuri-Mäkeläinen",
+        "Kari Tammi",
+        "Anouar Belahcen"
+      ],
+      "abstract": "Gears are an integral component of electromechanical applications, but accurate condition monitoring methods, including data-driven predictive maintenance, are strongly dependent on high-quality data, especially from faulty components. To address the scarcity of data, we proposed a multibody simulation using an advanced polygonal contact method to replicate torsional vibrations from an experimental azimuth thruster test rig. The key novelty is the ability to simulate both healthy and faulty gears with arbitrary fault geometries. The simulated signals closely matched the measurements in both time and frequency domains. In the time domain, average torque levels and periodic fluctuations aligned well, although measured signals exhibited higher peak-to-peak amplitudes and greater noise, particularly in healthy conditions at lower rotational speeds. In the frequency domain, the simulations accurately reproduced expected fault frequencies and corresponding sidebands, with larger faults producing higher amplitudes. While the simulations tended to overestimate peak amplitudes and underestimate external noise, the results were highly comparable to measurements and consistent with the physical expectations. These findings provide a robust foundation for enhancing data-driven condition monitoring methods, particularly those employing machine learning or deep learning.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T06:54:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12967v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12967v1"
+    },
+    {
+      "id": "2606.12953v1",
+      "title": "OpenMedQ: Broad Open Pretraining for Medical Vision-Language Models",
+      "authors": [
+        "Ibrahim Gulluk",
+        "Max Van Puyvelde",
+        "Olivier Gevaert"
+      ],
+      "abstract": "We present OpenMedQ, a medical vision-language model pretrained on the broadest fully-open medical mix to date: 14 datasets totaling ~3.35M pretraining samples spanning pathology, radiology, microscopy, and text-only clinical QA. OpenMedQ reaches state-of-the-art BLEU-1 on PathVQA (75.9), beating Med-PaLM M variants up to 562B parameters (~80x larger), and matches the best reported VQA-MED BLEU-1 (64.5). Its vision encoder, transferred to 8 unseen medical classification benchmarks under an identical downstream recipe, obtains the highest average macro-F1 (0.757) among BiomedCLIP (0.745), PMC-CLIP (0.745), PubMedCLIP (0.746), and a from-scratch baseline (0.616). We release our code and an interactive demo is publicly available as a reproducible baseline for the community.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T06:24:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12953v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12953v1"
+    },
+    {
+      "id": "2606.12921v1",
+      "title": "LoRA-Muon: Spectral Steepest Descent on the Low-Rank Manifold",
+      "authors": [
+        "Franz Louis Cesista",
+        "Katherine Crowson",
+        "Cédric Simal",
+        "Stella Biderman"
+      ],
+      "abstract": "Low-Rank Adaptation (LoRA) significantly reduces compute and memory costs for finetuning Deep Learning models but is often harder to tune than dense training: when using factor-wise optimizers such as AdamW, it is sensitive to initialization choices, its optimal learning rates transfer poorly across ranks, and it often fails to beat dense baselines. We derive LoRA-Muon by applying the Muon optimizer's spectral steepest-descent rule to the low-rank setting. Along with our split weight-decay rule, our main claim is that LoRA-Muon is a good low-rank proxy for full-rank Muon and Shampoo-family optimizers. Its optimal learning rates transfer across rank, width, depth, and factor-rescaling. In our compute-matched TinyShakespeare study, a rank-$2$ proxy recovers the dense best tested learning rate, and a rank-$32$ LoRA-Muon run attains lower mean validation loss than the dense baseline in the seed-averaged sweep. We further show that the Spectron optimizer depends on arbitrary factor scaling, so it would likely be a poor fit when finetuning starts from badly imbalanced factors, and that LoRA-RITE's simplified QR-coordinate core implements the same spectral update. LoRA-Muon computes that update without QR-decomposition and avoids storing second moments, making it more accelerator-friendly and memory-efficient.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T05:24:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12921v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12921v1"
+    },
     {
       "id": "2606.12226v1",
       "title": "An Electric Potential-Augmented Benchmark Dataset for Physics-Guided Image Reconstruction of Electrical Capacitance Tomography",
@@ -96,8 +260,8 @@
       "arxiv_link": "http://arxiv.org/abs/2606.11857v1"
     },
     {
-      "id": "2606.11793v1",
-      "title": "AI4Land: Scalable Deep Learning for Global High-Resolution Land Use Reconstruction",
+      "id": "2606.11793v2",
+      "title": "Scalable Deep Learning Framework for Global High-Resolution Land Use Reconstruction",
       "authors": [
         "Amirpasha Mozaffari",
         "Marina Castaño",
@@ -113,8 +277,23 @@
       "abstract": "Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly driven by the uncertainties affecting the land surface representation and variability in Earth system models. To address this limitation, we present a data-driven framework AI4Land, for generating high-resolution historical reconstructions and future projections of key land surface variables. The framework follows a two-phase approach using a U-Net architecture. In the first phase, which is the focus of this work, it reconstructs annual land use and land cover by integrating coarse-resolution scenario data with static geophysical features. In a planned second phase, the resulting high-resolution maps will be used to predict dynamic biophysical variables, particularly leaf area index, at finer temporal scales. Trained on Earth observation data, the models learn to reproduce spatially explicit and physically consistent land surface patterns, extending temporal coverage to periods lacking direct observations. AI4Land was developed and trained on MareNostrum5, demonstrating how GPU-accelerated HPC infrastructure enables global-scale climate AI pipelines. The final product is a suite of open-source emulators designed for real-time coupling with digital twin platforms, such as those developed under the Destination Earth initiative. By delivering realistic and evolving land surface conditions on demand, this work aims to reduce critical uncertainties and improve the predictive power of next-generation climate simulations.",
       "published": "June 10, 2026",
       "published_raw": "2026-06-10T08:26:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11793v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11793v1"
+      "pdf_link": "http://arxiv.org/pdf/2606.11793v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.11793v2"
+    },
+    {
+      "id": "2606.12483v1",
+      "title": "Scalable anomaly detection via a univariate Christoffel function",
+      "authors": [
+        "Florian Grivet",
+        "Didier Henrion",
+        "Jean-Bernard Lasserre",
+        "Louise Travé-Massuyès"
+      ],
+      "abstract": "Anomaly detection plays a critical role in identifying unusual patterns across domains such as fraud detection, network intrusion, and system fault diagnosis. Recently, Christoffel function-based methods, rooted in polynomial optimization, have emerged as promising alternatives to deep learning due to their strong mathematical foundations and computational frugality. However, their practical applicability is hindered by the need to invert a matrix whose size grows exponentially with the data dimension, rendering the method intractable even for moderate-dimensional datasets. This paper addresses the dimensionality limitations of Christoffel function-based anomaly detection while preserving its key theoretical properties, i.e., the on-off support dichotomy behavior and the accurate support shape capture. We introduce UCF, a univariate Christoffel function which is based on the squared distance between the query point and the support points. Extensive experiments on the ADBench benchmark demonstrate that UCF consistently outperforms 14 state-of-the-art baselines in terms of Average Precision. By resolving the scalability bottleneck of the Christoffel Function, this work expands the toolkit of anomaly detection methods with a robust, theoretically grounded, and universally applicable approach.",
+      "published": "June 10, 2026",
+      "published_raw": "2026-06-10T08:03:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.12483v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.12483v1"
     },
     {
       "id": "2606.11746v1",
@@ -128,183 +307,6 @@
       "published_raw": "2026-06-10T07:22:12Z",
       "pdf_link": "http://arxiv.org/pdf/2606.11746v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.11746v1"
-    },
-    {
-      "id": "2606.11741v1",
-      "title": "Machine Learning for Event Reconstruction in Imaging Atmospheric Cherenkov Telescopes",
-      "authors": [
-        "Antonio Pagliaro",
-        "Antonino La Barbera"
-      ],
-      "abstract": "Imaging Atmospheric Cherenkov Telescopes (IACTs) are the leading instruments for very-high-energy (VHE) gamma-ray astronomy, covering the range from hundreds of GeV to hundreds of TeV. This chapter reviews the critical role of machine learning in reconstructing the physical properties of particles detected by IACTs. We introduce the IACT technique and its central challenge: distinguishing rare gamma-ray showers from the overwhelming cosmic-ray background. We detail the standard reconstruction pipeline, from image cleaning and Hillas parameterization to stereoscopic observation, and frame event reconstruction as a supervised learning problem encompassing particle classification and energy/direction regression. Two frontiers of innovation are then explored: the exploitation of the temporal dimension of shower images through novel timing-based features that enhance background rejection at low energies, and the application of advanced ensemble methods (gradient boosting, stacking) that surpass baseline Random Forests, notably in mitigating systematic energy bias. Finally, we discuss performance metrics and provide an outlook on next-generation approaches dominated by deep learning, including Convolutional and Graph Neural Networks.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T07:17:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11741v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11741v1"
-    },
-    {
-      "id": "2606.11699v1",
-      "title": "A Data-Centric Framework for Detecting and Correcting Corrupted Labels",
-      "authors": [
-        "Ha-Linh Nguyen",
-        "Hong-Anh Nguyen",
-        "Minh-Duc La",
-        "Thu-Trang Nguyen",
-        "Son Nguyen",
-        "Hieu Dinh Vo"
-      ],
-      "abstract": "The performance of machine learning and deep learning models largely depends on the quality of the training data. However, the quality of the real-world datasets is often compromised by noisy labels, which can substantially degrade model accuracy and reliability. To address this challenge, we propose Relabeler, an end-to-end data-centric framework for detecting and correcting corrupted labels. For corrupted label detection, Relabeler jointly leverages both local and global relationships among data instances to identify potentially noisy samples. After detecting suspicious instances, Relabeler further performs label correction by estimating the most probable clean label for each instance based on both its input features and observed noisy label. Extensive experiments across multiple datasets, noise types, and noise rates demonstrate that Relabeler consistently outperforms state-of-the-art baselines, achieving up to 58% improvement in label correction precision and 6% improvement in downstream task performance.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T06:23:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11699v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11699v1"
-    },
-    {
-      "id": "2606.11676v1",
-      "title": "Neural-Parameterized Cellular Automata for Wildfire Spread",
-      "authors": [
-        "Maksym Zhenirovskyy",
-        "Ion Matei",
-        "Rohit Vuppala",
-        "Takuya Kurihana",
-        "Hon Yung Wonga"
-      ],
-      "abstract": "Traditional wildfire models rely on rigid, low-dimensional parameters and static fuel maps, frequently underpredicting fire spread. To address this weakness, we introduce a hybrid deep-learning parameterized Probabilistic Cellular Automata (CA) framework implemented in JAX. Our approach employs a Multi-Scale Convolutional Neural Network to dynamically generate spatially varying parameters that govern fire-spread probability, wind alignment, and slope influence. This hybrid design captures complex, nonlinear environmental interactions while preserving the physical interpretability of the underlying three-state CA. The JAX implementation enables hardware acceleration and gradient-based parameter calibration. Evaluated on six large-scale wildfires in the western United States, the model maintains IoU > 0.6 over 72-hour forecast horizons after a 10-day data assimilation window during which the model is fitted incrementally to observed perimeters; the resulting forecast is a conditional projection of fire growth under the suppression regime already ncoded in those observations.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T05:40:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11676v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11676v1"
-    },
-    {
-      "id": "2606.11505v1",
-      "title": "On the Study of Biometric Spoofing Detection using Deep Learning",
-      "authors": [
-        "Kumar Kartikey",
-        "Nikos Komninos"
-      ],
-      "abstract": "Biometric systems are increasingly deployed in security applications; however, they remain vulnerable to spoofing attacks, in which attackers exploit counterfeit biometric data to gain unauthorized access. This research evaluates the effectiveness of state-of-the-art machine learning models, MobileNetV2, DenseNet-121, Inception-v3, and Spoof Trace Disentanglement (STD) in detecting spoofing attacks within facial recognition systems. Using the CelebA-Spoof dataset, the study evaluates model effectiveness using metrics such as accuracy, precision, recall, and F1 Score. Cross-dataset validation is carried out on the MSU-MFSD dataset to assess generalizability. The results show MobileNetV2 as the most efficient model, achieving 92% accuracy while balancing computational effectiveness, making it appropriate for real-life applications. Inception-v3 shows moderate robustness, while DenseNet-121 and STD struggle with generalization. The findings highlight the need for advances in domain adaptation and hybrid architectures to enhance biometric security systems.",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T22:56:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11505v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11505v1"
-    },
-    {
-      "id": "2606.11500v1",
-      "title": "FlexiBrain: Resolution-Agnostic Voxel-Level Encoding for Native fMRI",
-      "authors": [
-        "Mo Wang",
-        "Wenhao Ye",
-        "Junfeng Xia",
-        "Minghao Xu",
-        "Hongkai Wen",
-        "Quanying Liu"
-      ],
-      "abstract": "The success of large-scale deep learning models in neuroscience is fundamentally constrained by severe data heterogeneity. Native fMRI data aggregated from diverse sources exhibit substantial variation in both spatial and temporal resolutions. Consequently, most existing frameworks rely on lengthy, rigid preprocessing pipelines that enforce uniformity across datasets. This practice introduces two critical limitations: (1) potential degradation of subject-specific anatomical information; (2) significant computational overhead, often requiring hours of processing per subject. Here, we propose FlexiBrain, a resolution-agnostic voxel-level encoding framework for native fMRI based on Mamba-JEPA. FlexiBrain defines patch sizes in real-world physical units and employs a dynamic patch resizing, thereby bypassing destructive spatial standardization while enabling direct ingestion of data in native space. We instantiate the framework using an efficient Mamba-JEPA backbone to model high-dimensional 4D fMRI signals. Across five diverse downstream neuroscience tasks, FlexiBrain consistently outperforms recent state-of-the-art methods, achieving gains of up to 12 percentage points without external data augmentation. Importantly, FlexiBrain functions as a seamless plug-in module, substantially reducing preprocessing costs and accelerating the development of robust voxel-level fMRI foundation models. Code is available at https://github.com/OneMore1/FlexiBrain.",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T22:45:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11500v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11500v1"
-    },
-    {
-      "id": "2606.11382v1",
-      "title": "GLACIER: A Multimodal Student-Teacher Foundation Model for Molecular Property Prediction",
-      "authors": [
-        "Emily Nguyen",
-        "Yongchan Hong",
-        "Harsh Toshniwal",
-        "Yan Liu",
-        "Andreas Luttens"
-      ],
-      "abstract": "Deep learning models facilitate the discovery of molecules with tailored properties among billions of candidate compounds. However, the computational burden to develop and deploy state-of-the-art models continuously increases, limiting their scalability. Most large-scale models are unimodal in nature and overlook the potential to leverage complementary molecular data modalities. To address these shortcomings, this paper introduces the Graph-Language Alignment for Chemical Inference and Exploration using Representations (GLACIER) model, a student-teacher framework that integrates molecular graphs, SMILES strings, and physicochemical descriptors to learn rich molecular embeddings. Our framework consists of three stages: (1) we pretrain three student encoders on 100,000 drug-like molecules: a message-passing neural network for molecular graphs, a transformer-based encoder for SMILES strings, and a multilayer perceptron for physicochemical descriptors, (2) we fuse these student modalities using a novel Finsler geometry-aware module, and (3) distill complementary knowledge from large teacher models, including MiniMol and MolFormer, into a single lightweight model via contrastive learning. We demonstrate that GLACIER is a robust framework that delivers high predictive performance and computational efficiency in complex molecular property prediction tasks. Our code is publicly available at https://github.com/eemokey/glacier.",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T19:05:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11382v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11382v1"
-    },
-    {
-      "id": "2606.11107v2",
-      "title": "Multimodal Brain Tumour Classification Using Feature Fusion",
-      "authors": [
-        "Wajih ul Islam",
-        "Muhammad Yaqoob",
-        "Javed Ali Khan",
-        "Volker Steuber"
-      ],
-      "abstract": "Clinicians diagnose brain tumors by synthesizing patient symptoms, medical history, and quantitative imaging data from modalities such as MRI and CT scans into a unified clinical judgement. However, most deep learning models rely on MRI/CT images alone, failing to replicate the clinicians multimodal reasoning. We explore a two-branch multimodal network combining raw MRI scans with 91 extracted radiomic features (intensity, texture, shape, and boundary descriptors) to classify brain tumors into glioma, meningioma, pituitary, and no-tumor. A pre-trained CNN backbone encodes the image stream, whereas a dedicated MLP encodes the radiomic stream. Both streams are fused via concatenation, gated, or bidirectional cross-modal attention strategies. Across nine experimental runs on a balanced 7,200 image dataset, all multimodal configurations outperform unimodal baselines with gated fusion achieving the best accuracy of 96.13%.",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T17:03:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11107v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11107v2"
-    },
-    {
-      "id": "2606.11098v1",
-      "title": "Do Transformers Actually Help Intrusion Detection? A Temporal Sequence Evaluation on CIC-IDS2017",
-      "authors": [
-        "Zach Moczkodan",
-        "Hany Ragab"
-      ],
-      "abstract": "Recent deep learning approaches for network intrusion detection increasingly incorporate temporal architectures such as recurrent networks and Transformers, often reporting near-perfect performance on CIC-IDS2017. However, many existing studies neither supply their temporal modules with genuine sequence inputs nor evaluate under realistic, leakage-free conditions, making it unclear whether reported gains arise from true sequence-modeling capability. In this work, we reformulate CIC-IDS2017 as a temporal intrusion-detection task by constructing ordered flow sequences from network conversations and benchmarking nine classical and deep learning architectures under a random split, two leakage-free splits, and a padding-scheme ablation. The central finding is that padding convention, not architecture, determines the Transformer's performance: on genuinely sequential (non-padded) windows the Transformer achieves the highest macro-F1 of any model in the experiment (0.89); under zero-pad+mask evaluation it drops markedly (-0.24 macro-F1), while LSTM, GRU, and 1D-CNN remain stable. Under leakage-free group evaluation the Random Forest is the most robust model (+0.009), while the Transformer's false-alarm rate grows from 0.04% to 2.7%, a 67-fold increase invisible under conventional protocols. These findings demonstrate that evaluation methodology -- specifically padding convention and split protocol -- has a larger effect on reported performance than architectural choice, and that widely used random splits with repeat-last padding can overestimate model robustness by up to 0.24 macro-F1. We advocate leakage-free splits, explicit padding disclosure, and sequence-aware benchmarking as standard practice in future IDS research. Code and implementation details are available at https://github.com/zachmocz/temporal-ids-bench.",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T16:57:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11098v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11098v1"
-    },
-    {
-      "id": "2606.10811v1",
-      "title": "Deep learning for echo sounder data",
-      "authors": [
-        "Ketil Malde"
-      ],
-      "abstract": "There is no doubt that over the last decade, techniques from the field of machine learning have revolutionized how we process and interpret data, especially images and text. For underwater observations acoustics is a primary source of information, and naturally, deep learning methods have been applied to echograms and other acoustics data, but so far with rather modest results. Here, we argue that due to intrinsic properties of acoustic data, substantial advances will likely require research into deep learning methods beyond mere recycling of models and techniques from image processing. Currently, the potential for breakthroughs in method development is hindered by the lack of standard data formats and organization, and even more by the lack of readily available, high quality data sets with established performance goals. To advance the field, these shortcomings should be remedied",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T12:56:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10811v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10811v1"
-    },
-    {
-      "id": "2606.10547v1",
-      "title": "Unsupervised Deep Learning for Limited-Angle STEM-EDX Tomography -- Application to 3D Chemical Analysis of Phase-Change Memory Devices",
-      "authors": [
-        "Daniel del Pozo Bueno",
-        "Serge Brosset",
-        "Theo Monniez",
-        "Gabriele Navarro",
-        "Philippe Ciuciu",
-        "Zineb Saghi"
-      ],
-      "abstract": "Energy Dispersive X-ray (EDX) tomography in Scanning Transmission Electron Microscopy (STEM) enables 3D compositional and elemental mapping at the nanoscale, but its use is limited by restricted tilt ranges and low-dose conditions required to avoid beam damage. Limited-angle acquisition introduces missing-wedge artefacts such as elongation and anisotropic resolution, while noisy low-dose data further degrade reconstruction quality and quantitative reliability. Here, we introduce an unsupervised deep learning framework based on Deep Image Prior with total variation regularization (DIP-TV) for limited-angle STEM-EDX tomography. We extend it to a multi-channel formulation (DIPm-TV) that jointly reconstructs multiple elemental maps by exploiting spatial correlations. Using a synthetic 3-channel phantom, we show that the method compensates for severe missing-wedge artefacts corresponding to approximately $100^\\circ$ of missing angular range under moderate noise, outperforming simultaneous iterative reconstruction technique and compressed sensing approaches. We apply the method to 3D chemical analysis of Ge-Sb-Te (GST) memory devices in virgin (as-fabricated) and SET (crystalline) operational states. Samples were prepared as cross-sectional focused ion beam lamellae and acquired under a limited-angle tilt range from $-40^\\circ$ to $+40^\\circ$ with $5^\\circ$ steps and a dose of $2.0\\times10^5$ $e^-/Ang^2$. The multi-channel approach enables voxel-by-voxel elemental reconstruction using only EDX signals without external structural priors such as high-angle annular dark-field imaging. The reconstructed volumes show near-isotropic spatial resolution and reveal compositional heterogeneities associated with device operation. This approach enables 3D chemical characterization in experimentally accessible sample geometries where conventional methods fail due to severe angular limitations.",
-      "published": "June 09, 2026",
-      "published_raw": "2026-06-09T08:16:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10547v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10547v1"
-    },
-    {
-      "id": "2606.10250v1",
-      "title": "Multi-Level Analyzation of Imbalance to Resolve Non-IID-Ness in Federated Learning",
-      "authors": [
-        "Haengbok Chung",
-        "Jae Sung Lee"
-      ],
-      "abstract": "Class imbalance is a common problem in deep learning that severely degrades performance. In federated learning (FL), it is a critical factor contributing to non-identically distributed data (non-IID). Building on several previous attempts, we define and analyze imbalance issues in FL at three levels: inter-case, inter-class, and inter-client. Inter-case imbalance addresses the imbalance in every single class; inter-class imbalance compares the number of data between different classes. Inter-client imbalance represents different skewness of local data between clients. Based on these concepts, we propose FedBB, which consists of two main components: (1) Positive Negative Balanced (PNB) loss function addresses the inter-case and inter-class imbalances in local training, enhancing generalization on highly skewed local client datasets. It optimizes both multi-label and multi-class classifications by assigning higher weights to minority cases or classes. (2) Client Balanced Reweighting (CBR) reweights clients based on inter-client imbalance during model aggregation, giving greater weight to models trained on less skewed datasets. Various experiments on X-ray and natural image datasets demonstrate that FedBB outperforms other algorithms in both performance and efficiency. Additionally, it requires limited statistical information, which is beneficial for privacy protection. Through ablation studies, we proved that PNB loss and CBR independently contribute to performance. As FedBB aims to build a global model that accurately classifies all classes, it can serve as a baseline for the generic and personalized FL.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T23:36:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10250v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10250v1"
-    },
-    {
-      "id": "2606.10246v1",
-      "title": "Linguistically Augmented Audio Speech Data (LinguAS)",
-      "authors": [
-        "Ashley R. Keaton",
-        "Zahra Khanjani",
-        "Christine Mallinson",
-        "Vandana P. Janeja"
-      ],
-      "abstract": "Maliciously-created fake speech, including deepfaked and spoofed audio, is proliferating at an alarming rate, and detection models are racing to stay ahead of the curve. Yet, most detection models are trained to make inference on frame-level audio features alone without leveraging valuable linguistic cues at larger timescales. To address this gap, we present Linguistically Augmented Audio Speech Data (LinguAS), a dataset of genuine and deepfaked audio samples annotated with five strategically-chosen, Expert-Defined Linguistic Features (EDLFs) that occur frequently in spoken English and are characteristic of natural human speech. LinguAS contains over 800 audio samples, each of which are annotated with EDLFs. The dataset has a balanced number of four spoofed audio attack types and a proportionate number of genuine speech samples. We also include metadata on speaker gender and the generator/source for each spoofed audio sample, offering more granularity for model training. We found that models trained on data augmented with EDLFs had improved model performance significantly beyond the ASVspoof 2021 deep learning baselines and SSL models like HuBert and XLSR. LinguAS's augmented linguistic, gender, and generator metadata provide audio deepfake researchers with a dataset that emphasizes real human language traits to improve model inference of faked speech. Data and code are publicly available.",
-      "published": "June 08, 2026",
-      "published_raw": "2026-06-08T23:26:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.10246v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.10246v1"
     }
   ]
 }
