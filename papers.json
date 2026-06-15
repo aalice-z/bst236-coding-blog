@@ -1,7 +1,195 @@
 {
-  "last_updated": "2026-06-14T02:13:03.119051",
+  "last_updated": "2026-06-15T02:28:40.009535",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.14654v1",
+      "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
+      "authors": [
+        "Gaurav Verma",
+        "Scott Counts"
+      ],
+      "abstract": "Sequential or time-stamped interaction logs provide objective records of digital application usage, yet their granularity and noise often obscure meaningful insights into people's work. Such insights are essential for improving digital products in ways grounded in real-world user interactions. Prior research has applied deep learning models to cluster user actions into high-level activities, but these approaches are highly sensitive to noise and struggle to generalize across applications. To address this limitation, we introduce WorkflowView, a framework that uses large language models (LLMs) to abstract low-level action sequences into high-level activities. We establish the effectiveness and generality of our approach across three distinct, challenging sequential tasks and diverse domains: (a) zero-shot task description reconstruction from browser logs (achieving high semantic similarity, $μ_{sim} = 0.91$), (b) few-shot student dropout prediction using MOOC interaction logs (reaching weighted $F_1 = 0.90$ with only five few-shot examples), and (c) anonymized, privacy-preserving analysis of AI tool integration within document workflows in Microsoft Word. Our work demonstrates that LLM-based abstraction is a robust and efficient path forward for transforming low-level behavioral data into high-level, interpretable, and actionable insights. We also discuss practical considerations for deploying LLM-based inferences within logging infrastructures, including computational efficiency and user privacy.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T17:19:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14654v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14654v1"
+    },
+    {
+      "id": "2606.14604v1",
+      "title": "A Comparative Study of Deep Learning Architectures for Multi-Horizon Behavioural Forecasting for Mobile Health",
+      "authors": [
+        "Pavlos Nicolaou",
+        "Kleanthis Malialis",
+        "Artemis Kontou",
+        "Panayiotis Kolios"
+      ],
+      "abstract": "Wearable devices and smartphones generate rich behavioural time series that can support proactive health interventions, yet systematic comparisons of modern forecasting architectures for these data are lacking. In particular, it remains unclear how models generalise across populations, how different architectures respond to participant-level fine-tuning and how forecasting accuracy degrades across multi-day horizons. We benchmark six deep learning architectures, two zero-shot Foundation Models (FM) and statistical baselines on three public datasets encompassing over 800 participants, reporting per-feature metrics for step counts, screen time and sleep duration across 1-8 day horizons. We further conduct a per-feature personalisation study across all six architectures and assess FM transferability across dataset sizes and temporal granularities. Our key findings are: (i) no single architecture dominates, PatchTST leads among trained models while the three runners-up (TCN, MLP, Transformer) show no meaningful performance difference; (ii) the FM TimesFM matches or exceeds trained models zero-shot, especially in low-data regimes and (iii) participant-level fine-tuning reduces per-feature RMSE by 16-60\\%, with sleep benefiting most and step counts least. These results provide practical guidance on architecture selection, FM applicability and personalisation strategies for mobile health forecasting. To the best of our knowledge, this is the first study to jointly evaluate modern deep learning, FMs and personalisation for multi-horizon behavioural forecasting from wearables.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T16:25:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14604v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14604v1"
+    },
+    {
+      "id": "2606.14570v1",
+      "title": "Regional Climate Model Emulation with Diffusion Approaches: What is the Added Value of Generative Machine Learning?",
+      "authors": [
+        "Mikel N. Legasa",
+        "Antoine Doury",
+        "Achille Gellens",
+        "Redouane Lguensat",
+        "Clara Naldesi",
+        "Soulivanh Thao",
+        "Mathieu Vrac"
+      ],
+      "abstract": "Emulators provide a cost-effective alternative to regional climate models (RCMs) by capturing their dynamical downscaling function. They link large-scale predictors simulated by global climate models (GCMs) to RCM-simulated high-resolution fields of the target variable, here precipitation. Machine learning methods, typically deep learning, are cheaper than running RCMs in computation time and energy. Among them, generative models are appealing because they can simulate ensembles of local high-resolution fields consistent with the predictors. This ensemble, which we call the uncertainty envelope, remains to be properly assessed for added value. Here, we make three contributions. First, we introduce ParamDiffusion, a new two-stage diffusion-based framework, and compare it with a state-of-the-art diffusion approach. Second, we expand standard validation through a comprehensive framework aligned with climate-science needs, examining specific precipitation events, including extremes. Third, within this framework, we assess the added value of diffusion approaches relative to deterministic methods. We intercompare four deep-learning models: a deterministic model designed to capture the precipitation tail; a parametric probabilistic model based on it; a recently proposed diffusion approach; and ParamDiffusion, which couples the parametric model with a diffusion model. Our results show that diffusion-based approaches reproduce climatological precipitation statistics with high skill, including distributional tails and spatially compounded extremes, while generating spatially detailed fields. However, none of the assessed models consistently accounts for the most extreme RCM-simulated events within its uncertainty envelope. Diffusion models are therefore promising for probabilistic RCM emulation, but progress is still required before they can reliably represent high-impact precipitation extremes.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T15:46:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14570v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14570v1"
+    },
+    {
+      "id": "2606.14353v1",
+      "title": "Can Deep Neural Networks Improve Compression of Very Large Scientific Data?",
+      "authors": [
+        "Muhannad Alhumaidi",
+        "Guozhong Li",
+        "Spiros Skiadopoulos",
+        "Panos Kalnis"
+      ],
+      "abstract": "Error-bounded lossy compression is a fundamental technique for managing the rapidly growing volumes of scientific data produced by modern simulations and observational instruments. Most state-of-the-art-compressors follow a prediction-residual paradigm, where compression effectiveness depends on the quality of the predictor: more accurate predictions generate smaller residuals that are easier to compress. This observation raises a question: can modern machine learning models serve as superior predictors for scientific data compression? Answering this question directly is challenging because developing compression-specific ML predictors requires substantial resources. Instead, we leverage the climate domain where highly accurate pretrained weather forecasting foundation models already exist, making them an ideal testbed. We present a framework that integrates spatial and temporal deep learning models into a conventional error-bounded compression pipeline. The framework supports auto-regressive forecasting models and avoids error accumulation. Using ERA5 climate data as a representative large-scale scientific dataset, we evaluate three distinct ML predictors: a VAEformer-based codec (CRA5), a graph neural network forecaster (GraphCast), and a vision-transformer forecaster (Aurora), against the state-of-the-art compressor SZ3.1 under identical quantization and entropy-coding backends. Our evaluation over approximately 1.7 TB of data reveals a surprising result: although ML predictors generate more accurate predictions and can improve reconstruction quality by up to 91% while achieving up to 9.6x higher compression ratios for highly predictable variables, they do not improve overall dataset-level compression ratio. We show that prediction accuracy alone is insufficient: the spatial structure of the resulting residuals plays a decisive role in entropy coding efficiency.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T11:22:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14353v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14353v1"
+    },
+    {
+      "id": "2606.14283v1",
+      "title": "DIFF-ERO: A Conformance-Aware Loss for Deep Learning in Process Mining",
+      "authors": [
+        "Johannes De Smedt",
+        "Jari Peeperkorn",
+        "Artem Polyvyanyy",
+        "Jochen De Weerdt"
+      ],
+      "abstract": "Deep learning has driven many recent advances in process analytics, especially for predictive and prescriptive monitoring. However, standard objectives such as cross-entropy optimize local next-step likelihoods and only implicitly capture control-flow structure. As a result, models can achieve high token-level accuracy while permitting imprecise global behaviour. We introduce DIFF-ERO, a conformance-aware loss function for deep learning models on process data. DIFF-ERO is a differentiable formulation of entropy-based stochastic conformance that incorporates control-flow information during training. Our approach constructs batch-level stochastic transition matrices with soft edge memberships, allowing structural precision and recall signals to directly inform backpropagation. The loss is model-agnostic and can be applied whenever the final representation parametrizes stochastic transitions. We instantiate DIFF-ERO in transformer encoder-decoder pipelines for next-activity prediction and use it jointly with cross-entropy to analyse its theoretical components with respect to convergence. Across benchmarks comparing other loss functions and targets, DIFF-ERO shows improved predictive performance where structure matters most while maintaining parity elsewhere. At the same time, the learned stochastic automaton converges towards the structural ground truth, indicating that the network internalizes process model structure.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T09:06:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14283v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14283v1"
+    },
+    {
+      "id": "2606.14217v1",
+      "title": "Curvature-Informed Potential Energy Surface for Protein-Ligand Binding Affinity Prediction",
+      "authors": [
+        "Peng-Fei Sun",
+        "Chuan-Xian Ren",
+        "Hong Yan"
+      ],
+      "abstract": "Accurate prediction of protein-ligand binding affinity is essential for structure-based drug discovery. Recent geometric deep learning methods have achieved promising performance by representing protein-ligand complexes as three-dimensional graphs. However, most existing approaches mainly rely on static interaction geometry from a single bound conformation, while neglecting molecular flexibility and binding-induced conformational changes. To address this limitation, we propose a curvature-informed potential energy surface (CPES) graph neural network for protein-ligand binding affinity prediction, which incorporates physics-informed curvature representations to model conformational flexibility. CPES first derives curvature spectral descriptors from the Hessian of the potential energy surface evaluated at equilibrium configurations, whose eigenvalues define the local principal curvatures of the potential energy surface. It then uses spectral cross-attention to compare the unbound ligand and protein with the bound complex, thereby capturing binding-induced changes in conformational dynamics. In parallel, hierarchical protein-ligand interaction representations are learned from static structural features through geometry-aware message passing, soft clustering, and bidirectional cross-attention. Finally, CPES fuses the curvature-informed dynamic representations with static interaction representations for affinity regression. Extensive evaluations on multiple benchmark datasets demonstrate that CPES achieves improved predictive performance and offers physical interpretability.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T07:53:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14217v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14217v1"
+    },
+    {
+      "id": "2606.14152v1",
+      "title": "Identifying Warped Galaxies in Pan-STARRS and Euclid using Deep Convolutional Neural Network",
+      "authors": [
+        "Saranya Suguna",
+        "Arunima Banerjee"
+      ],
+      "abstract": "Warped galactic discs are common, yet their detection remains challenging, as the outskirts of galaxies are typically faint. Advances in deep imaging surveys improve the detectability of such features, while machine learning enables efficient analysis of large datasets. Using the Pan-STARRS EGIPS catalogue, we develop a deep learning framework by fine-tuning the Zoobot convNext-nano model on 1000 edge-on galaxy FITS images to distinguish warped and non-warped edge-on galaxies with 83\\% accuracy. The trained model is then applied to a larger sample, identifying 2088 warped and 1398 non-warped galaxies with a high prediction probability threshold ($\\geq 0.85$). Additionally, we use the model to predict on 3226 edge-on galaxies from the Euclid Q1 survey, demonstrating the model's ability to generalise across datasets with differing resolutions. To analyse the model predictions, we employ LayerCAM to identify the regions of galaxy images that contribute to the classification. We find that warped galaxies differ primarily in their structural properties, exhibiting lower axis ratios and higher asymmetry. Warped galaxies were found to be bluer, with younger stellar populations and enhanced star formation. These results highlight the effectiveness of deep learning methods in identifying subtle morphological features, such as warps, and demonstrate their potential for studying structural properties of galaxies in current and upcoming large imaging surveys.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T06:25:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14152v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14152v1"
+    },
+    {
+      "id": "2606.14023v1",
+      "title": "Geometric Domain Adaptation via Optimal Transport for Linear Regression in R^2",
+      "authors": [
+        "Brian Britos",
+        "Mathias Bourel"
+      ],
+      "abstract": "Optimal Transport has become recently a powerful method for domain adaptation by aligning source and target distributions. We study a supervised domain adaptation problem where source and target domains are related by a rotation or a translation or a homothety in $\\mathbb{R}^2$. We prove that the optimal transport map recovers the underlying map when using a $p-$norm cost with $p \\geq 2$. Based on this insight, we develop a method combining $K-$means and optimal transport to estimate the underlying map, enabling adaptation of linear regression models when target data is scarce. Simulations demonstrate improved performance over baseline methods. Rather than relying on highly expressive deep learning architectures, we focus on classical machine learning models to emphasize interpretability and theoretical insight. This perspective allows us to explicitly characterize the role of optimal transport in recovering geometric transformations such as rotations, translations, and homotheties. Our contributions include a theoretical result linking optimal transport and rotations, translations and homothecies in $\\mathbb{R}^2$, and a practical method for adaptation in linear regression offering both conceptual clarity and applied value in domain adaptation tasks in this space.",
+      "published": "June 12, 2026",
+      "published_raw": "2026-06-12T01:48:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.14023v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.14023v1"
+    },
+    {
+      "id": "2606.13941v1",
+      "title": "Binary Black Hole Parameter Estimation with Hybrid CNN-Transformer Neural Networks",
+      "authors": [
+        "Panagiotis N. Sakellariou",
+        "Spiros V. Georgakopoulos",
+        "Sotiris Tasoulis",
+        "Vassilis P. Plagianakos"
+      ],
+      "abstract": "The detection of gravitational waves has revolutionized our ability to explore fundamental aspects of the Universe. Traditionally, modeled gravitational-wave signals have been identified using template-based matched filtering, followed by coincidence analysis across multiple detectors in the signal-to-noise ratio time series. Recent advances in Machine Learning and Deep Learning have sparked growing interest in their application to both signal detection and parameter estimation. In this study, a hybrid Deep Learning strategy is proposed that leverages the effectiveness of Transformer encoders alongside well-established Convolutional Neural Network architectures in an attempt to estimate the intrinsic and extrinsic parameters of non-precessing binary black hole systems. The primary focus of this work is point estimation, producing single best-fit values for each parameter rather than full posterior distributions. This method is evaluated on both simulated signals embedded in Gaussian noise and real gravitational-wave events, and it demonstrates strong predictive performance and robustness across key astrophysical parameters.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T22:05:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13941v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13941v1"
+    },
+    {
+      "id": "2606.13894v1",
+      "title": "Gefen: Optimized Stochastic Optimizer",
+      "authors": [
+        "Nadav Benedek",
+        "Tomer Koren",
+        "Ohad Fried"
+      ],
+      "abstract": "AdamW is a default optimizer for modern deep learning, but its first and second moment states add roughly two parameter-sized buffers to training memory. We propose Gefen, a memory-efficient optimizer that automatically shares second-moment estimates across parameter blocks and quantizes the first moment using a learned codebook, thereby reducing AdamW's memory footprint by ~8x while maintaining the same performance, corresponding to a reduction of 6.5 GiB per billion parameters. The method is motivated by a theoretical result showing that large mixed Hessian entries constrain the ratio of squared gradients toward one, suggesting that Hessian-aligned parameters are natural candidates for sharing second-moment statistics. Since computing Hessians is impractical at scale, Gefen infers block structure from the initial squared gradients, requiring no architecture-specific metadata or hyperparameters beyond AdamW defaults. Gefen learns an exact histogram-based dynamic-programming quantization codebook and reuses the same blocks for first-moment scaling. Across diverse experiments, Gefen achieves the lowest peak optimizer memory among the compared AdamW-like methods while maintaining AdamW-level performance. In FSDP and DDP training, the reduced memory footprint enables larger microbatches and improves throughput significantly over AdamW, providing a practical drop-in replacement with lower memory usage that can increase throughput and enable training larger models or using larger batch sizes. We provide the complete Python implementation, including fused CUDA kernels at https://github.com/ndvbd/Gefen",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T20:38:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13894v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13894v1"
+    },
+    {
+      "id": "2606.13818v1",
+      "title": "Uncertainty Estimation and Generalization Bounds for Modern Deep Learning",
+      "authors": [
+        "Luis A. Ortega"
+      ],
+      "abstract": "This thesis investigates how Bayesian principles can deepen our understanding of modern deep learning systems. While neural networks achieve remarkable predictive performance, their ability to generalize and to quantify uncertainty remains only partly understood. This thesis approaches this challenge from both methodological and theoretical angles: unifying Bayesian inference, function-space modeling, and large-deviation theory under a common probabilistic perspective. On the methodological side, the thesis introduces the Deep Variational Implicit Process (DVIP), a scalable Bayesian framework that extends implicit processes to deep architectures. Complementing this, two post-hoc methods -- the Variational Linearized Laplace Approximation (VaLLA) and the Fixed-Mean Gaussian Process (FMGP) -- are proposed to equip pretrained deterministic networks with calibrated uncertainty estimates. The theoretical contributions focus on one of the central open questions in modern machine learning: why do large, over-parameterized neural networks generalize so well? To address this, the thesis develops a unified probabilistic framework that connects three key mechanisms -- diversity, smoothness, and stochasticity -- within the language of PAC-Bayesian and large-deviation theory.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T18:49:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13818v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13818v1"
+    },
+    {
+      "id": "2606.13803v1",
+      "title": "Neural Slack Variables for Shape Constraints",
+      "authors": [
+        "Ruben Wiedemann",
+        "Antoine Jacquier",
+        "Lukas Gonon"
+      ],
+      "abstract": "Enforcing functional inequality constraints such as monotonicity and convexity in neural networks is a fundamental challenge in many industrial and scientific applications. Classical one-sided penalty methods, along with primal-dual methods gated by complementary slackness, provide constraint gradients only at violated locations, resulting in fragile satisfaction. Architectures that guarantee feasibility by construction, on the other hand, remain largely limited to elementary cases and impose additional inductive biases. We introduce neural slack variables, a deep learning native primal-side approach that converts constraint enforcement into a regression problem by coupling the primary network with a jointly learned auxiliary network. The auxiliary network serves as a valid target for the primary network's constraint quantities, inducing feasibility and regularity. Neural slack variables achieve zero measured violations on dense-grid monotonicity and convexity test cases, where penalty and primal-dual baselines leave residual violations, and enable arbitrage-free learning of volatility surfaces, an open industrial challenge in quantitative finance.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T18:16:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13803v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13803v1"
+    },
+    {
+      "id": "2606.13754v1",
+      "title": "D2H-AD: A Hybrid Model Utilizing Hyperdimensional Computing for Advanced Anomaly Detection",
+      "authors": [
+        "Ghazal Ghajari",
+        "Elaheh Ghajari",
+        "Ashutosh Ghimire",
+        "Saeid Ataei",
+        "Faris Alsulami",
+        "Fathi Amsaad"
+      ],
+      "abstract": "Anomaly detection is a fundamental component of intelligent systems with applications in healthcare, cybersecurity, smart grids, and IoT environments. Although conventional machine learning and deep learning methods have demonstrated effectiveness in identifying anomalies, they often rely on large labeled datasets, incur high computational costs, and face scalability challenges in edge and high-dimensional settings. This paper presents D2H-AD, a novel anomaly detection framework based on Hyperdimensional Computing (HDC), a brain-inspired paradigm that represents information using high-dimensional distributed vectors. Unlike existing HDC-based methods, D2H-AD integrates distance-based similarity and density-aware encoding within a unified framework, improving anomaly representation and detection performance. Ablation studies show that hyperdimensional encoding alone yields up to 5.4% higher ROC-AUC than applying the same density-distance scoring directly in the original feature space. Furthermore, D2H-AD consistently outperforms five established baselines, namely HDAD, ODHD, One-Class SVM, Isolation Forest, and Autoencoders, across all evaluated datasets. The framework is lightweight, interpretable, and computationally efficient, making it suitable for resource-constrained and real-time applications. We validate D2H-AD on five benchmark datasets and demonstrate superior F1-score and ROC-AUC performance, together with robustness to class imbalance, noise, and data complexity. In addition to improved accuracy, D2H-AD offers scalability, a small memory footprint, and low-latency operation enabled by binary computations and a compact design. These properties make it particularly attractive for TinyML and edge AI deployments. The proposed framework highlights the potential of HDC for accurate, interpretable, and energy-efficient anomaly detection in dynamic environments.",
+      "published": "June 11, 2026",
+      "published_raw": "2026-06-11T16:00:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.13754v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.13754v1"
+    },
     {
       "id": "2606.13411v1",
       "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
@@ -102,211 +290,6 @@
       "published_raw": "2026-06-11T09:03:59Z",
       "pdf_link": "http://arxiv.org/pdf/2606.13081v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.13081v1"
-    },
-    {
-      "id": "2606.12988v1",
-      "title": "A Machine Learning Framework for Real-Time Personalized Ergonomic Pose Analysis",
-      "authors": [
-        "Manex Atxa",
-        "Bruno Simoes",
-        "Julen Balzategui"
-      ],
-      "abstract": "This paper introduces a new methodology for real-time prediction of ergonomic and non-ergonomic human poses using volumetric video data in three dimensions. Although the methodology was designed for ergonomic assessments, it can be adapted to other applications requiring real-time analysis of human posture. One aspect that makes this system stand out is its ability to analyze 3D point clouds during the assessment, enabling computation from multiple angles. This overcomes a critical limitation of cameras which provide often a fixed viewpoint, thereby restricting the data available for a thorough postural evaluation, especially when occlusions occur. The system continuously and automatically performs pose inference using the chosen perspective on the real-time streaming data; however, only the poses manually selected and labeled by the user are used to train the personalized deep learning classifier. The methodology has been refined through a case study in which RGB-D cameras captured subjects performing load-lifting tasks, enabling real-time skeletal labeling. The model was trained on this data and, following the training phase, performs inference on new streaming data in real time. This research offers a scalable and pragmatic approach for real-time ergonomic evaluation by combining state-of-the-art 3D data technologies and traditional 2D pose estimation algorithms. It addresses the increasing need for safety and health monitoring in workplace environments, marking a notable contribution to the domain.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T07:24:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12988v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12988v1"
-    },
-    {
-      "id": "2606.12967v1",
-      "title": "Simulating Torsional Vibrations of Faulty Bevel Gears Using the Polygonal Contact Method",
-      "authors": [
-        "Milla Vehviläinen",
-        "Aleksanteri Hämäläinen",
-        "Pekka Rahkola",
-        "Mikko Savolainen",
-        "Janne Keränen",
-        "Jari Halme",
-        "Jenni Pippuri-Mäkeläinen",
-        "Kari Tammi",
-        "Anouar Belahcen"
-      ],
-      "abstract": "Gears are an integral component of electromechanical applications, but accurate condition monitoring methods, including data-driven predictive maintenance, are strongly dependent on high-quality data, especially from faulty components. To address the scarcity of data, we proposed a multibody simulation using an advanced polygonal contact method to replicate torsional vibrations from an experimental azimuth thruster test rig. The key novelty is the ability to simulate both healthy and faulty gears with arbitrary fault geometries. The simulated signals closely matched the measurements in both time and frequency domains. In the time domain, average torque levels and periodic fluctuations aligned well, although measured signals exhibited higher peak-to-peak amplitudes and greater noise, particularly in healthy conditions at lower rotational speeds. In the frequency domain, the simulations accurately reproduced expected fault frequencies and corresponding sidebands, with larger faults producing higher amplitudes. While the simulations tended to overestimate peak amplitudes and underestimate external noise, the results were highly comparable to measurements and consistent with the physical expectations. These findings provide a robust foundation for enhancing data-driven condition monitoring methods, particularly those employing machine learning or deep learning.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T06:54:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12967v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12967v1"
-    },
-    {
-      "id": "2606.12953v1",
-      "title": "OpenMedQ: Broad Open Pretraining for Medical Vision-Language Models",
-      "authors": [
-        "Ibrahim Gulluk",
-        "Max Van Puyvelde",
-        "Olivier Gevaert"
-      ],
-      "abstract": "We present OpenMedQ, a medical vision-language model pretrained on the broadest fully-open medical mix to date: 14 datasets totaling ~3.35M pretraining samples spanning pathology, radiology, microscopy, and text-only clinical QA. OpenMedQ reaches state-of-the-art BLEU-1 on PathVQA (75.9), beating Med-PaLM M variants up to 562B parameters (~80x larger), and matches the best reported VQA-MED BLEU-1 (64.5). Its vision encoder, transferred to 8 unseen medical classification benchmarks under an identical downstream recipe, obtains the highest average macro-F1 (0.757) among BiomedCLIP (0.745), PMC-CLIP (0.745), PubMedCLIP (0.746), and a from-scratch baseline (0.616). We release our code and an interactive demo is publicly available as a reproducible baseline for the community.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T06:24:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12953v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12953v1"
-    },
-    {
-      "id": "2606.12921v1",
-      "title": "LoRA-Muon: Spectral Steepest Descent on the Low-Rank Manifold",
-      "authors": [
-        "Franz Louis Cesista",
-        "Katherine Crowson",
-        "Cédric Simal",
-        "Stella Biderman"
-      ],
-      "abstract": "Low-Rank Adaptation (LoRA) significantly reduces compute and memory costs for finetuning Deep Learning models but is often harder to tune than dense training: when using factor-wise optimizers such as AdamW, it is sensitive to initialization choices, its optimal learning rates transfer poorly across ranks, and it often fails to beat dense baselines. We derive LoRA-Muon by applying the Muon optimizer's spectral steepest-descent rule to the low-rank setting. Along with our split weight-decay rule, our main claim is that LoRA-Muon is a good low-rank proxy for full-rank Muon and Shampoo-family optimizers. Its optimal learning rates transfer across rank, width, depth, and factor-rescaling. In our compute-matched TinyShakespeare study, a rank-$2$ proxy recovers the dense best tested learning rate, and a rank-$32$ LoRA-Muon run attains lower mean validation loss than the dense baseline in the seed-averaged sweep. We further show that the Spectron optimizer depends on arbitrary factor scaling, so it would likely be a poor fit when finetuning starts from badly imbalanced factors, and that LoRA-RITE's simplified QR-coordinate core implements the same spectral update. LoRA-Muon computes that update without QR-decomposition and avoids storing second moments, making it more accelerator-friendly and memory-efficient.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T05:24:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12921v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12921v1"
-    },
-    {
-      "id": "2606.12226v1",
-      "title": "An Electric Potential-Augmented Benchmark Dataset for Physics-Guided Image Reconstruction of Electrical Capacitance Tomography",
-      "authors": [
-        "Xinqi Zhang",
-        "Qiming Ma",
-        "Lihui Peng"
-      ],
-      "abstract": "While deep learning has significantly advanced image reconstruction of Electrical Capacitance Tomography (ECT), most data-driven methods map directly between capacitance and permittivity distribution, treating the sensor as a black box. This overlooks the electric potential field -- the fundamental physical link governing the nonlinear and ill-posed ``soft-field'' effect. To address this, we propose an electric potential-augmented ECT benchmark dataset designed to explicitly integrate latent physics behind ECT into the learning process. Generated via a COMSOL-MATLAB pipeline for an eight-electrode sensor as an example, the dataset comprises 20,000 randomized samples across four typical flow patterns. Crucially, alongside the conventional capacitance vectors and permittivity distributions depicted as images, each sample preserves eight excitation-wise full-field potential maps. Beyond data release, we provide illustrative evaluation protocols for both forward and inverse problems of ECT. Through comprehensive testing on both in-distribution (IID) and out-of-distribution (OOD) scenarios, we systematically demonstrate how the inclusion of electric potential maps enhances modeling accuracy and robustness. Fundamentally, the explicit inclusion of latent field information significantly lowers the barrier to integrating physical laws into ECT modeling, thereby establishing a standardized foundation for future physics-guided machine learning of ECT image reconstruction.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T15:36:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12226v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12226v1"
-    },
-    {
-      "id": "2606.12141v1",
-      "title": "PCA-Enhanced Adaptive NVAR Framework for High-Resolution Sea Surface Temperature Forecasting in the East Sea",
-      "authors": [
-        "Sherkhon Azimov",
-        "Susana López-Moreno",
-        "Eric Dolores-Cuenca",
-        "JinYong Choi",
-        "Sangil Kim"
-      ],
-      "abstract": "Accurate forecasting of sea surface temperature (SST) in regional seas such as the East Sea is crucial for monitoring marine ecosystems, assessing climate risks, managing fisheries, and conducting naval operations. Traditional numerical ocean models provide reliable predictions but are computationally expensive and often unsuitable for real-time forecasting. Many deep learning methods also struggle with high-dimensional spatiotemporal ocean data and experience error accumulation over longer forecasting periods. This study builds on our previously proposed Adaptive Next-Generation Reservoir Computing (Adaptive NVAR) framework, initially introduced and tested on synthetic dynamical systems, and extends it to ocean forecasting. We present a reduced-order forecasting framework that combines Singular Value Decomposition (SVD) with Adaptive NVAR to predict SST dynamics in the East Sea. SST fields are compressed into a low-dimensional representation using SVD, which extracts dominant modes of ocean variability. Adaptive NVAR models the temporal evolution of these latent states, and the predicted states are reconstructed into SST forecasts. We evaluate the framework using regional ocean datasets and compare it with the standard NG-RC/NVAR. Results show that Adaptive NVAR consistently achieves lower forecasting errors across multiple prediction horizons. In addition, SVD reduces computational complexity, resulting in a fast and scalable framework suitable for real-time ocean forecasting.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T14:34:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12141v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12141v1"
-    },
-    {
-      "id": "2606.12077v1",
-      "title": "Efficient Time Series Clustering from Multiscale Reservoir Dynamics with Granular-Ball Anchoring Graph Optimization",
-      "authors": [
-        "Yifan Wang",
-        "Lifeng Shen",
-        "Shuyin Xia",
-        "Yi Wang"
-      ],
-      "abstract": "Time-series clustering remains challenging due to the inherent trade-off between clustering effectiveness and computational efficiency. Similarity-based methods often suffer from quadratic complexity caused by pairwise distance computations, while deep learning-based approaches typically rely on costly iterative training and a large number of trainable parameters. In this paper, we propose MSRGC-Net, an efficient time-series clustering framework that integrates multiscale reservoir computing, granular-ball-based anchoring graph construction, and consensus learning. MSRGC-Net adopts a training-free reservoir computing paradigm to extract multiscale temporal representations from raw time series without backpropagation, significantly reducing computational overhead. To capture the intrinsic structure of the resulting representations, granular-ball computing is employed to adaptively model data distributions via density-consistent regions, yielding compact and robust anchor graph representations. Furthermore, a consensus-based anchoring graph optimization strategy is introduced to effectively align multiscale reservoir representations and integrate complementary information across temporal scales. Extensive experiments on widely used univariate and multivariate benchmark datasets demonstrate that MSRGC-Net consistently outperforms state-of-the-art methods in clustering performance while maintaining superior computational efficiency.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T13:42:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12077v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12077v1"
-    },
-    {
-      "id": "2606.12006v1",
-      "title": "Tabular Foundation Models for Clinical Survival Analysis via Survival-Aware Adaptation",
-      "authors": [
-        "Minh-Khoi Pham",
-        "Luca Cotugno",
-        "Alina Sirbu",
-        "Tai Tan Mai",
-        "Martin Crane",
-        "Marija Bezbradica"
-      ],
-      "abstract": "Predicting time-to-event outcomes such as mortality is a fundamental task in clinical decision-making, commonly addressed through survival analysis. While classical statistical and deep learning approaches have been widely studied, they typically require task-specific training and sufficient labeled data. Recent advances in tabular foundation models offer a new paradigm by learning general-purpose representations for structured data. However, their applicability to censored time-to-event prediction in clinical settings remains underexplored, as typical applications are restricted to discrete classification rather than survival analysis tasks. In this work, we propose a lightweight adaptation approach for applying tabular foundation models to clinical survival analysis by directly training a survival-aware head on top of the pretrained representations. We study representative architectures, including TabPFN, TabDPT, and TabICL, and adapt them using a multi-task logistic regression (MTLR) head to model right-censored time-to-event outcomes. We evaluate this approach on a diverse set of public survival benchmarks and two large-scale ICU cohorts, MIMIC-IV and eICU. Our results show that this transfer learning approach achieves competitive or superior performance compared to strong baselines. On MIMIC-IV, TabDPT-FT-MTLR reaches a C-index of 0.856, corresponding to a relative improvement of +1.4% over the best non-FM baseline (DeepSurv, 0.844) and +6.7% over the best zero-shot model (0.802). On eICU, TabICL-FT-MTLR achieves 0.797, yielding gains of +1.7% (DeepSurv, 0.784) and +6.4% (0.749), respectively. These findings highlight the importance of combining pretrained tabular representations with survival-aware objectives and suggest that tabular foundation models provide a practical and effective alternative for clinical survival prediction.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T12:28:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12006v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12006v1"
-    },
-    {
-      "id": "2606.11946v1",
-      "title": "Neuro-Relational Programs: Unifying Queries and Neural Computation over Structured Data",
-      "authors": [
-        "Arie Soeteman",
-        "Balder ten Cate",
-        "Maurice Funk",
-        "Benny Kimelfeld",
-        "Carsten Lutz",
-        "Moritz Schönherr"
-      ],
-      "abstract": "The conventional approach to deep learning over relational databases applies neural models, such as Graph Neural Networks (GNNs), to a graph representation of the database. Recent approaches instead operate on databases directly, associating tuples with embeddings and extending query mechanisms to jointly process embeddings and relational content. Inspired by these developments, we introduce Neuro-Relational Programs (NRPs), a declarative query language for relational databases whose facts carry numeric vector embeddings. NRPs extend Datalog-style rules with operations that combine, aggregate, and transform embeddings, thereby interleaving relational reasoning and learnable neural components within a single formalism. This yields a general approach to neural computation over relational data: an NRP can be read both as a query plan with trainable components and as a neural architecture with relational structure built in. Natural syntactic fragments of NRPs recover existing architectures and query formalisms. Zero-ary NRPs correspond to non-adaptive query algorithms; monadic NRPs generalize GNN-style message passing and precisely capture Deep Homomorphism Networks, a connection that we extend to frontier-guarded NRPs over databases with row-ids. We characterize the expressive power of unrestricted NRPs with ReLU-FFN transformations by FOCQ, an extension of first-order logic with counting interpreted over real-weighted structures, yielding a precise connection with uniform TC$^0$ over ordered databases. Together, these results establish NRPs as a broad declarative framework for querying and neural computation over relational data.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T11:16:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11946v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11946v1"
-    },
-    {
-      "id": "2606.11857v1",
-      "title": "REACH: Interpretability-Driven Feature Identification and Architecture Compression for Multi-Channel Vehicular Channel Estimation",
-      "authors": [
-        "Simbarashe Aldrin Ngorima",
-        "Albert Helberg",
-        "Marelie H. Davel"
-      ],
-      "abstract": "Multi-channel mixed-SNR training improves out-of-distribution (OOD) generalisation of deep learning channel estimators for IEEE 802.11p vehicular communications, yet the internal mechanism responsible for this remains unexplained. This work presents REACH (Relevance-based Explanation and Architectural Compression for cHannel estimators), a gradient-based interpretability framework that operates at two levels. Input-level attribution identifies a subset of time-frequency features consistently relevant across all evaluated channel conditions, enabling input dimensionality reduction with minimal performance loss. Filter-level attribution reveals a near-universal internal representation, providing a representational account of the observed OOD generalisation. Guided by the resulting filter taxonomy, relevance-guided architecture compression substantially reduces both the number of parameters and the number of floating-point operations (FLOPs) with sub-1 dB normalised mean square error (NMSE) degradation, and OOD generalisation degrades more slowly than within-distribution accuracy under increasing compression.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T09:36:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11857v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11857v1"
-    },
-    {
-      "id": "2606.11793v2",
-      "title": "Scalable Deep Learning Framework for Global High-Resolution Land Use Reconstruction",
-      "authors": [
-        "Amirpasha Mozaffari",
-        "Marina Castaño",
-        "Stefano Materia",
-        "Etienne Tourigny",
-        "Oscar Molina-Sedano",
-        "Jordi Varela-Agrelo",
-        "Dario Garcia-Gasulla",
-        "Miguel Castrillo Melguizo",
-        "Mario Acosta",
-        "Amanda Duarte"
-      ],
-      "abstract": "Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections, partly driven by the uncertainties affecting the land surface representation and variability in Earth system models. To address this limitation, we present a data-driven framework AI4Land, for generating high-resolution historical reconstructions and future projections of key land surface variables. The framework follows a two-phase approach using a U-Net architecture. In the first phase, which is the focus of this work, it reconstructs annual land use and land cover by integrating coarse-resolution scenario data with static geophysical features. In a planned second phase, the resulting high-resolution maps will be used to predict dynamic biophysical variables, particularly leaf area index, at finer temporal scales. Trained on Earth observation data, the models learn to reproduce spatially explicit and physically consistent land surface patterns, extending temporal coverage to periods lacking direct observations. AI4Land was developed and trained on MareNostrum5, demonstrating how GPU-accelerated HPC infrastructure enables global-scale climate AI pipelines. The final product is a suite of open-source emulators designed for real-time coupling with digital twin platforms, such as those developed under the Destination Earth initiative. By delivering realistic and evolving land surface conditions on demand, this work aims to reduce critical uncertainties and improve the predictive power of next-generation climate simulations.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T08:26:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11793v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11793v2"
-    },
-    {
-      "id": "2606.12483v1",
-      "title": "Scalable anomaly detection via a univariate Christoffel function",
-      "authors": [
-        "Florian Grivet",
-        "Didier Henrion",
-        "Jean-Bernard Lasserre",
-        "Louise Travé-Massuyès"
-      ],
-      "abstract": "Anomaly detection plays a critical role in identifying unusual patterns across domains such as fraud detection, network intrusion, and system fault diagnosis. Recently, Christoffel function-based methods, rooted in polynomial optimization, have emerged as promising alternatives to deep learning due to their strong mathematical foundations and computational frugality. However, their practical applicability is hindered by the need to invert a matrix whose size grows exponentially with the data dimension, rendering the method intractable even for moderate-dimensional datasets. This paper addresses the dimensionality limitations of Christoffel function-based anomaly detection while preserving its key theoretical properties, i.e., the on-off support dichotomy behavior and the accurate support shape capture. We introduce UCF, a univariate Christoffel function which is based on the squared distance between the query point and the support points. Extensive experiments on the ADBench benchmark demonstrate that UCF consistently outperforms 14 state-of-the-art baselines in terms of Average Precision. By resolving the scalability bottleneck of the Christoffel Function, this work expands the toolkit of anomaly detection methods with a robust, theoretically grounded, and universally applicable approach.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T08:03:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.12483v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.12483v1"
-    },
-    {
-      "id": "2606.11746v1",
-      "title": "Time Series Analysis in Machine Learning",
-      "authors": [
-        "Antonio Pagliaro",
-        "Anna Anzalone"
-      ],
-      "abstract": "Time series analysis is a fundamental component of machine learning, especially in astrophysics and cosmology where temporal data abound. This chapter provides a pedagogical review of time series analysis techniques from a machine learning perspective. We cover the basic concepts of time series (stationarity, autocorrelation, seasonality), classical statistical models (autoregressive, moving average, ARIMA, exponential smoothing, state-space models), and modern machine learning approaches. In particular, we discuss how traditional statistical methods lay the groundwork, and then explore machine learning methods for time series, including feature-based regression, tree-based ensemble methods, hidden Markov models, Gaussian processes, and deep learning models (recurrent neural networks, convolutional networks, transformers). Throughout, we illustrate with examples drawn from multiple domains (e.g. astronomy, weather forecasting, finance) to emphasize common principles. The goal is to equip readers with both the theoretical understanding and practical context to apply machine learning techniques for time series analysis in their research.",
-      "published": "June 10, 2026",
-      "published_raw": "2026-06-10T07:22:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.11746v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.11746v1"
     }
   ]
 }
