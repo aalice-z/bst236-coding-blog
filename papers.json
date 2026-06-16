@@ -1,295 +1,295 @@
 {
-  "last_updated": "2026-06-15T02:28:40.009535",
+  "last_updated": "2026-06-16T02:32:04.147665",
   "count": 20,
   "papers": [
     {
-      "id": "2606.14654v1",
-      "title": "Abstracting Cross-Domain Action Sequences into Interpretable Workflows",
+      "id": "2606.16891v1",
+      "title": "Beyond Weights and Gradients: A Taxonomy of Federated Learning Messages",
       "authors": [
-        "Gaurav Verma",
-        "Scott Counts"
+        "Alvaro Javier Vargas Guerrero",
+        "Xinguang Wang",
+        "Quang Manh Doan",
+        "Guy Nagels"
       ],
-      "abstract": "Sequential or time-stamped interaction logs provide objective records of digital application usage, yet their granularity and noise often obscure meaningful insights into people's work. Such insights are essential for improving digital products in ways grounded in real-world user interactions. Prior research has applied deep learning models to cluster user actions into high-level activities, but these approaches are highly sensitive to noise and struggle to generalize across applications. To address this limitation, we introduce WorkflowView, a framework that uses large language models (LLMs) to abstract low-level action sequences into high-level activities. We establish the effectiveness and generality of our approach across three distinct, challenging sequential tasks and diverse domains: (a) zero-shot task description reconstruction from browser logs (achieving high semantic similarity, $μ_{sim} = 0.91$), (b) few-shot student dropout prediction using MOOC interaction logs (reaching weighted $F_1 = 0.90$ with only five few-shot examples), and (c) anonymized, privacy-preserving analysis of AI tool integration within document workflows in Microsoft Word. Our work demonstrates that LLM-based abstraction is a robust and efficient path forward for transforming low-level behavioral data into high-level, interpretable, and actionable insights. We also discuss practical considerations for deploying LLM-based inferences within logging infrastructures, including computational efficiency and user privacy.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T17:19:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14654v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14654v1"
+      "abstract": "Federated Learning is rapidly evolving beyond the exchange of traditional model weights and gradients, yet existing definitions fail to capture the full scope of modern payloads like synthetic data and federated analytics. This paper addresses the gap by proposing a formal mathematical definition of a federated message that accounts for both utility and privacy. We introduce a taxonomy that organizes these exchanges into three categories: model structures, statistical summaries, and data-conditioned representations. By evaluating these groups based on computational demands, communication costs, and privacy risks, we provide a clearer understanding of the trade-offs involved in decentralized training. Our review of 202 recent publications highlights a significant shift since 2021 toward diverse messaging paradigms, signaling a move away from standard deep learning updates toward more specialized information sharing. This framework provides a structured path for future research to optimize federated systems for varying hardware and security requirements.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T16:02:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16891v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16891v1"
     },
     {
-      "id": "2606.14604v1",
-      "title": "A Comparative Study of Deep Learning Architectures for Multi-Horizon Behavioural Forecasting for Mobile Health",
+      "id": "2606.16883v1",
+      "title": "Upper Bounds on the Generalization Error of Deep Learning Models via Local Robustness and Stability",
       "authors": [
-        "Pavlos Nicolaou",
-        "Kleanthis Malialis",
-        "Artemis Kontou",
-        "Panayiotis Kolios"
+        "Abdul-Rauf Nuhu",
+        "Parham M. Kebria",
+        "Vahid Hemmati",
+        "Mahmoud N. Mahmoud",
+        "Edward Tunstel",
+        "Abdollah Homaifar"
       ],
-      "abstract": "Wearable devices and smartphones generate rich behavioural time series that can support proactive health interventions, yet systematic comparisons of modern forecasting architectures for these data are lacking. In particular, it remains unclear how models generalise across populations, how different architectures respond to participant-level fine-tuning and how forecasting accuracy degrades across multi-day horizons. We benchmark six deep learning architectures, two zero-shot Foundation Models (FM) and statistical baselines on three public datasets encompassing over 800 participants, reporting per-feature metrics for step counts, screen time and sleep duration across 1-8 day horizons. We further conduct a per-feature personalisation study across all six architectures and assess FM transferability across dataset sizes and temporal granularities. Our key findings are: (i) no single architecture dominates, PatchTST leads among trained models while the three runners-up (TCN, MLP, Transformer) show no meaningful performance difference; (ii) the FM TimesFM matches or exceeds trained models zero-shot, especially in low-data regimes and (iii) participant-level fine-tuning reduces per-feature RMSE by 16-60\\%, with sleep benefiting most and step counts least. These results provide practical guidance on architecture selection, FM applicability and personalisation strategies for mobile health forecasting. To the best of our knowledge, this is the first study to jointly evaluate modern deep learning, FMs and personalisation for multi-horizon behavioural forecasting from wearables.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T16:25:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14604v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14604v1"
+      "abstract": "Generalization is a critical property of data-driven models, particularly deep learning models deployed in safety-critical applications. Robustness-based generalization bounds have gained attention as a principled way to link robustness properties to generalization performance, often in a data-dependent manner. However, most existing bounds suffer from vacuousness in practical settings, yielding loose upper bounds that greatly exceed the actual error rates and limiting their usefulness for real-world evaluation. While this issue is often attributed to the uncertainty term, a substantial part of the problem originates from the robustness term itself, particularly for the 0-1 loss. Existing approaches typically treat the robustness term as a global measure, ignoring its variation across different sub-regions of the input space. In this work, we propose a generalization bound that addresses this limitation by scaling the robustness term according to the number of stable and unstable samples within each sub-region. Our bounds incorporate both data- and model-dependent factors while maintaining practical relevance (yielding tighter upper bounds on true error). Experiments on models trained on the ImageNet dataset show that our bounds remain consistently non-vacuous and achieve the tightest estimates among existing methods, closely aligning with empirical performance across a range of robust deep neural networks.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T15:55:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16883v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16883v1"
     },
     {
-      "id": "2606.14570v1",
-      "title": "Regional Climate Model Emulation with Diffusion Approaches: What is the Added Value of Generative Machine Learning?",
+      "id": "2606.16337v1",
+      "title": "Medical Heuristic Learning: An LLM-Driven Framework for Interpretable and Auditable Clinical Decision Rules",
       "authors": [
-        "Mikel N. Legasa",
-        "Antoine Doury",
-        "Achille Gellens",
-        "Redouane Lguensat",
-        "Clara Naldesi",
-        "Soulivanh Thao",
-        "Mathieu Vrac"
+        "Wei Xu",
+        "Ke Yang",
+        "Gang Luo",
+        "Keli Zheng",
+        "Lingyan Hu",
+        "Jing Wang",
+        "Kefeng Li"
       ],
-      "abstract": "Emulators provide a cost-effective alternative to regional climate models (RCMs) by capturing their dynamical downscaling function. They link large-scale predictors simulated by global climate models (GCMs) to RCM-simulated high-resolution fields of the target variable, here precipitation. Machine learning methods, typically deep learning, are cheaper than running RCMs in computation time and energy. Among them, generative models are appealing because they can simulate ensembles of local high-resolution fields consistent with the predictors. This ensemble, which we call the uncertainty envelope, remains to be properly assessed for added value. Here, we make three contributions. First, we introduce ParamDiffusion, a new two-stage diffusion-based framework, and compare it with a state-of-the-art diffusion approach. Second, we expand standard validation through a comprehensive framework aligned with climate-science needs, examining specific precipitation events, including extremes. Third, within this framework, we assess the added value of diffusion approaches relative to deterministic methods. We intercompare four deep-learning models: a deterministic model designed to capture the precipitation tail; a parametric probabilistic model based on it; a recently proposed diffusion approach; and ParamDiffusion, which couples the parametric model with a diffusion model. Our results show that diffusion-based approaches reproduce climatological precipitation statistics with high skill, including distributional tails and spatially compounded extremes, while generating spatially detailed fields. However, none of the assessed models consistently accounts for the most extreme RCM-simulated events within its uncertainty envelope. Diffusion models are therefore promising for probabilistic RCM emulation, but progress is still required before they can reliably represent high-impact precipitation extremes.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T15:46:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14570v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14570v1"
+      "abstract": "Predictive modeling for clinical tabular data is central to clinical decision support and therefore requires not only strong predictive performance but also transparent decision logic. Although deep learning and tree-based ensemble methods can achieve high accuracy, their black-box nature remains a major obstacle to clinical deployment. This challenge is further compounded by common characteristics of medical data, including limited sample sizes, severe class imbalance, and feature evolution arising from changes in diagnostic criteria and clinical documentation. To address these issues, we propose Medical Heuristic Learning (MHL), an instantiation of the learning-beyond-gradients paradigm for clinical tabular prediction. Instead of relying on neural network weight updates, MHL uses a large language model (LLM)-driven workflow that integrates statistical probes, medical knowledge probes, rule synthesis, and code-level iterative refinement to optimize a deterministic and executable decision system. The resulting model is expressed not as opaque parameters, but as versioned pure-Python decision rules that are explicitly interpretable, fully auditable, and clinically grounded. MHL also supports continual learning by starting from previously validated rules and iteratively revising them using updated feature information under data drift or feature evolution. Comprehensive experiments on medical datasets show that MHL achieves performance comparable to state-of-the-art methods while maintaining strong behavior in small-sample and highly imbalanced settings. The results further indicate that this explicit rule update mechanism can help alleviate catastrophic forgetting under feature evolution. Overall, these findings suggest that non-gradient-based heuristic systems offer a transparent and adaptable alternative for high-stakes clinical decision support.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T07:43:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16337v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16337v1"
     },
     {
-      "id": "2606.14353v1",
-      "title": "Can Deep Neural Networks Improve Compression of Very Large Scientific Data?",
+      "id": "2606.16271v1",
+      "title": "Contrastive Learning for Seismic Horizon Tracking with Domain-Specific Priors",
       "authors": [
-        "Muhannad Alhumaidi",
-        "Guozhong Li",
-        "Spiros Skiadopoulos",
-        "Panos Kalnis"
+        "Alexandre Thouvenot",
+        "Lionel Boillot",
+        "Vincent Gripon"
       ],
-      "abstract": "Error-bounded lossy compression is a fundamental technique for managing the rapidly growing volumes of scientific data produced by modern simulations and observational instruments. Most state-of-the-art-compressors follow a prediction-residual paradigm, where compression effectiveness depends on the quality of the predictor: more accurate predictions generate smaller residuals that are easier to compress. This observation raises a question: can modern machine learning models serve as superior predictors for scientific data compression? Answering this question directly is challenging because developing compression-specific ML predictors requires substantial resources. Instead, we leverage the climate domain where highly accurate pretrained weather forecasting foundation models already exist, making them an ideal testbed. We present a framework that integrates spatial and temporal deep learning models into a conventional error-bounded compression pipeline. The framework supports auto-regressive forecasting models and avoids error accumulation. Using ERA5 climate data as a representative large-scale scientific dataset, we evaluate three distinct ML predictors: a VAEformer-based codec (CRA5), a graph neural network forecaster (GraphCast), and a vision-transformer forecaster (Aurora), against the state-of-the-art compressor SZ3.1 under identical quantization and entropy-coding backends. Our evaluation over approximately 1.7 TB of data reveals a surprising result: although ML predictors generate more accurate predictions and can improve reconstruction quality by up to 91% while achieving up to 9.6x higher compression ratios for highly predictable variables, they do not improve overall dataset-level compression ratio. We show that prediction accuracy alone is insufficient: the spatial structure of the resulting residuals plays a decisive role in entropy coding efficiency.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T11:22:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14353v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14353v1"
+      "abstract": "Unsupervised 3D seismic horizon tracking faces a key limitation: signal-based propagators provide accurate trace-level alignment but often fail near faults, whereas texture-driven deep models are more robust to discontinuities, typically at the cost of labeled data requirements and reduced trace-level precision. We propose a self-supervised fusion of both paradigms in which signal-derived local horizon correspondences act as domain-specific priors to train a texture-based deep learning model. Specifically, we estimate reliable trace-to-trace flows from reflector slopes and use them to form positive pairs in a contrastive objective, while restricting training to high-confidence neighborhoods, optionally augmented with a fault mask. The objective is not to infer ambiguous correspondences close to discontinuities, but to preserve horizon identity across them. As a result, the network learns voxel-wise embeddings that preserve local signal continuity while enabling horizon propagation beyond discontinuities through similarity search. Experiments on the public F3 dataset and a faulted synthetic dataset achieve lower mean absolute error (MAE) than unsupervised baselines and competitive performance against a semi-supervised method using a single labeled slice.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T06:19:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16271v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16271v1"
     },
     {
-      "id": "2606.14283v1",
-      "title": "DIFF-ERO: A Conformance-Aware Loss for Deep Learning in Process Mining",
+      "id": "2606.16214v1",
+      "title": "Calibrated Sampling-Free Uncertainty Estimation in Bayesian Deep Learning",
       "authors": [
-        "Johannes De Smedt",
-        "Jari Peeperkorn",
-        "Artem Polyvyanyy",
-        "Jochen De Weerdt"
+        "Tobias Jan Wieczorek",
+        "Leon de Andrade",
+        "Thomas Möllenhoff",
+        "Marcus Rohrbach"
       ],
-      "abstract": "Deep learning has driven many recent advances in process analytics, especially for predictive and prescriptive monitoring. However, standard objectives such as cross-entropy optimize local next-step likelihoods and only implicitly capture control-flow structure. As a result, models can achieve high token-level accuracy while permitting imprecise global behaviour. We introduce DIFF-ERO, a conformance-aware loss function for deep learning models on process data. DIFF-ERO is a differentiable formulation of entropy-based stochastic conformance that incorporates control-flow information during training. Our approach constructs batch-level stochastic transition matrices with soft edge memberships, allowing structural precision and recall signals to directly inform backpropagation. The loss is model-agnostic and can be applied whenever the final representation parametrizes stochastic transitions. We instantiate DIFF-ERO in transformer encoder-decoder pipelines for next-activity prediction and use it jointly with cross-entropy to analyse its theoretical components with respect to convergence. Across benchmarks comparing other loss functions and targets, DIFF-ERO shows improved predictive performance where structure matters most while maintaining parity elsewhere. At the same time, the learned stochastic automaton converges towards the structural ground truth, indicating that the network internalizes process model structure.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T09:06:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14283v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14283v1"
+      "abstract": "Modern deep learning models remain notoriously prone to overconfidence, limiting their reliability in high-stakes applications. Bayesian methods aim to counter this by learning a distribution over model parameters, and recent advances now make this feasible for large-scale architectures at costs comparable to AdamW. However, a challenge remains at test time: predictions must be averaged across many forward passes with weights sampled from the posterior, which is prohibitively expensive. Variance propagation offers an efficient alternative, computing layer-wise analytical approximations of uncertainty in a single forward pass. While such techniques are effective for MLPs, their extension to modern architectures remains challenging, due to increased depth and diversity of layer types. To fill this gap, we propose Calibrated Variance Propagation (CVP), which introduces a new propagation method for normalization layers, combines it with recent techniques for handling activation functions, and absorbs residual error through a light calibration step. CVP yields comparably accurate uncertainty estimates to MC sampling across transformers and CNNs, at a fraction of the cost. Against prior variance propagation work, CVP improves coverage at $0.5\\%$ risk from $8.2\\%$ to $14.6\\%$ with BEiT-3 on Visual Reasoning (NLVR2) and from $2.6\\%$ to $10.8\\%$ with ViLT on VQAv2, with gains extending to convolutional architectures.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T04:44:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16214v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16214v1"
     },
     {
-      "id": "2606.14217v1",
-      "title": "Curvature-Informed Potential Energy Surface for Protein-Ligand Binding Affinity Prediction",
+      "id": "2606.16112v1",
+      "title": "Scaling Adaptive Depth with Norm-Agnostic Residual Networks",
       "authors": [
-        "Peng-Fei Sun",
-        "Chuan-Xian Ren",
-        "Hong Yan"
+        "Tomás Figliolia",
+        "Beren Millidge"
       ],
-      "abstract": "Accurate prediction of protein-ligand binding affinity is essential for structure-based drug discovery. Recent geometric deep learning methods have achieved promising performance by representing protein-ligand complexes as three-dimensional graphs. However, most existing approaches mainly rely on static interaction geometry from a single bound conformation, while neglecting molecular flexibility and binding-induced conformational changes. To address this limitation, we propose a curvature-informed potential energy surface (CPES) graph neural network for protein-ligand binding affinity prediction, which incorporates physics-informed curvature representations to model conformational flexibility. CPES first derives curvature spectral descriptors from the Hessian of the potential energy surface evaluated at equilibrium configurations, whose eigenvalues define the local principal curvatures of the potential energy surface. It then uses spectral cross-attention to compare the unbound ligand and protein with the bound complex, thereby capturing binding-induced changes in conformational dynamics. In parallel, hierarchical protein-ligand interaction representations are learned from static structural features through geometry-aware message passing, soft clustering, and bidirectional cross-attention. Finally, CPES fuses the curvature-informed dynamic representations with static interaction representations for affinity regression. Extensive evaluations on multiple benchmark datasets demonstrate that CPES achieves improved predictive performance and offers physical interpretability.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T07:53:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14217v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14217v1"
+      "abstract": "Residual architectures are ubiquitous in deep learning, but they suffer from a subtle structural limitation: the norm of the residual stream can grow rapidly with depth. As a result, updates from later layers become small relative to the accumulated residual state. This reduces their impact on the representation and limits the benefits of scaling models in depth. To address this, we introduce NAG, a norm-agnostic residual architecture that separates magnitude from directional information in the residual stream, preserving meaningful layer contributions throughout depth and preventing later updates from being systematically suppressed by residual-norm growth. Importantly, NAG introduces only a negligible number of additional parameters and relies on simple operations that are easily kernel-fusible, preserving training efficiency in practice. We show that this architecture outperforms baseline Transformers, with gains that increase substantially as depth grows, enabling effective training of much deeper models. The norm-agnostic formulation also leads to an interpretable Mixture-of-Depths (MoD) mechanism that adaptively skips both attention and MLP layers. Beyond serving as a post-training accuracy-compute tradeoff, this mechanism can be used as a pretraining-time scaling strategy: under iso-FLOP training, compute saved by reducing per-token forward-pass cost can be reinvested into training on more tokens while keeping the total parameter count and KV-cache budget fixed. In our experiments, moderate Mixture-of-Depths rates of approximately 20%-25% match full-depth baseline performance under equal training compute while substantially reducing the number of executed layer parameters and forward-pass FLOPs. These results identify sparsity in depth as a new scaling axis for fixed-compute training, enabling very deep yet FLOP-efficient models.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T02:05:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16112v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16112v1"
     },
     {
-      "id": "2606.14152v1",
-      "title": "Identifying Warped Galaxies in Pan-STARRS and Euclid using Deep Convolutional Neural Network",
+      "id": "2606.16059v1",
+      "title": "Mojo: A Promising Tool for Scalable Financial AI Efficiency",
       "authors": [
-        "Saranya Suguna",
-        "Arunima Banerjee"
+        "Henry Han"
       ],
-      "abstract": "Warped galactic discs are common, yet their detection remains challenging, as the outskirts of galaxies are typically faint. Advances in deep imaging surveys improve the detectability of such features, while machine learning enables efficient analysis of large datasets. Using the Pan-STARRS EGIPS catalogue, we develop a deep learning framework by fine-tuning the Zoobot convNext-nano model on 1000 edge-on galaxy FITS images to distinguish warped and non-warped edge-on galaxies with 83\\% accuracy. The trained model is then applied to a larger sample, identifying 2088 warped and 1398 non-warped galaxies with a high prediction probability threshold ($\\geq 0.85$). Additionally, we use the model to predict on 3226 edge-on galaxies from the Euclid Q1 survey, demonstrating the model's ability to generalise across datasets with differing resolutions. To analyse the model predictions, we employ LayerCAM to identify the regions of galaxy images that contribute to the classification. We find that warped galaxies differ primarily in their structural properties, exhibiting lower axis ratios and higher asymmetry. Warped galaxies were found to be bluer, with younger stellar populations and enhanced star formation. These results highlight the effectiveness of deep learning methods in identifying subtle morphological features, such as warps, and demonstrate their potential for studying structural properties of galaxies in current and upcoming large imaging surveys.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T06:25:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14152v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14152v1"
+      "abstract": "For thirty years, quantitative finance has paid a costly two-language tax: models researched in Python are rewritten in C++ for production, often introducing numerical discrepancies. GPU-accelerated deep learning exacerbates this problem, as nondeterministic floating-point reductions can produce drift in long backtests, challenging regulatory reproducibility and auditability expectations. This article surveys Mojo, Modular's 2026 Python-like systems language, as a structural response for capital markets engineering. While closing the Python-to-C++ performance gap, Mojo uniquely combines native interoperability with the low-level systems control required to construct bit-exact deterministic kernels. Its MLIR compilation infrastructure further allows a single codebase to target scalar, SIMD, multicore, and GPU execution, reducing the translation bottleneck between research and production. We benchmark four core financial AI workloads: Monte Carlo option pricing, LLM sentiment inference, multi-asset backtesting, and portfolio Value at Risk. On Apple Silicon, Mojo demonstrates 20x to 180x speedups over pure Python on directly measured kernels; larger-scale GPU workload results are projections calibrated from published benchmarks. Alongside transparent performance data, we introduce mojo-deterministic, an open-source library of reproducible reduction kernels, and provide a candid assessment of the problems Mojo does and does not yet solve.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T23:18:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16059v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16059v1"
     },
     {
-      "id": "2606.14023v1",
-      "title": "Geometric Domain Adaptation via Optimal Transport for Linear Regression in R^2",
+      "id": "2606.16050v1",
+      "title": "ALCL: An Adaptive Log-Correntropy Loss for Robust Learning under Non-Gaussian Noise",
       "authors": [
-        "Brian Britos",
-        "Mathias Bourel"
+        "Mainak Kundu",
+        "Ria Kanjilal",
+        "Ismail Uysal"
       ],
-      "abstract": "Optimal Transport has become recently a powerful method for domain adaptation by aligning source and target distributions. We study a supervised domain adaptation problem where source and target domains are related by a rotation or a translation or a homothety in $\\mathbb{R}^2$. We prove that the optimal transport map recovers the underlying map when using a $p-$norm cost with $p \\geq 2$. Based on this insight, we develop a method combining $K-$means and optimal transport to estimate the underlying map, enabling adaptation of linear regression models when target data is scarce. Simulations demonstrate improved performance over baseline methods. Rather than relying on highly expressive deep learning architectures, we focus on classical machine learning models to emphasize interpretability and theoretical insight. This perspective allows us to explicitly characterize the role of optimal transport in recovering geometric transformations such as rotations, translations, and homotheties. Our contributions include a theoretical result linking optimal transport and rotations, translations and homothecies in $\\mathbb{R}^2$, and a practical method for adaptation in linear regression offering both conceptual clarity and applied value in domain adaptation tasks in this space.",
-      "published": "June 12, 2026",
-      "published_raw": "2026-06-12T01:48:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.14023v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.14023v1"
+      "abstract": "Robust deep learning under heavy-tailed and impulsive noise remains challenging because conventional losses such as mean squared error (MSE) exhibit unbounded sensitivity to outliers. Although correntropy-based objectives improve robustness, existing formulations rely on fixed kernel parameters that must be empirically tuned and remain static during training. To address these limitations, we propose an Adaptive Log-Correntropy Loss (ALCL), a heavy-tailed loss formulation that adaptively learns its robustness geometry during optimization. ALCL introduces a logarithmic residual model whose shape and scale parameters are learned jointly with network weights through differentiable reparameterization. This yields a principled maximum likelihood formulation whose influence function is formally bounded and redescending, allowing the loss geometry to adapt dynamically to evolving residual statistics while suppressing extreme outliers. Comparative experiments on four widely used benchmark datasets spanning grayscale and red-green-blue (RGB) image data under mixed heavy-tailed and impulsive noise demonstrate that ALCL consistently outperforms MSE and optimally tuned generalized correntropy losses in both reconstruction fidelity and downstream classification accuracy. While performance differences remain small under low-noise conditions, under high-noise regimes ALCL improves median accuracy by up to 4.75% on grayscale benchmarks and 4.51% on RGB datasets, with reduced variance across runs. These results demonstrate that adaptive robustness through joint learning of loss parameters provides a computationally efficient alternative to static correntropy-based losses for deep learning in non-Gaussian environments.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T22:49:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16050v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16050v1"
     },
     {
-      "id": "2606.13941v1",
-      "title": "Binary Black Hole Parameter Estimation with Hybrid CNN-Transformer Neural Networks",
+      "id": "2606.16028v1",
+      "title": "The Information-Theoretic Benefit of Shared Representations under Orthogonality Constraints",
       "authors": [
-        "Panagiotis N. Sakellariou",
-        "Spiros V. Georgakopoulos",
-        "Sotiris Tasoulis",
-        "Vassilis P. Plagianakos"
+        "Thomas Dittrich",
+        "Oliver Potocki",
+        "Philipp Grohs"
       ],
-      "abstract": "The detection of gravitational waves has revolutionized our ability to explore fundamental aspects of the Universe. Traditionally, modeled gravitational-wave signals have been identified using template-based matched filtering, followed by coincidence analysis across multiple detectors in the signal-to-noise ratio time series. Recent advances in Machine Learning and Deep Learning have sparked growing interest in their application to both signal detection and parameter estimation. In this study, a hybrid Deep Learning strategy is proposed that leverages the effectiveness of Transformer encoders alongside well-established Convolutional Neural Network architectures in an attempt to estimate the intrinsic and extrinsic parameters of non-precessing binary black hole systems. The primary focus of this work is point estimation, producing single best-fit values for each parameter rather than full posterior distributions. This method is evaluated on both simulated signals embedded in Gaussian noise and real gravitational-wave events, and it demonstrates strong predictive performance and robustness across key astrophysical parameters.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T22:05:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13941v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13941v1"
+      "abstract": "Modern deep learning architectures are increasingly multi-task and multi-modal, using a pretrained foundation model combined with task-specific, fine-tuned models. Empirically, exploiting similarity across different problems, instead of solving them individually, can significantly improve overall performance. While the generalization and sample complexity properties of multitask learning have been widely studied, the parametric complexity of joint approximation in comparison to separate approximation remains less well understood. The question is particularly relevant in modern deep learning, where models are increasingly required to satisfy structural constraints such as equivariance, conservation laws, or orthogonality. We prove lower and upper bounds on the description-length for separate and joint approximation classes, respectively, in uniform norm. We build a class of orthogonal functions by composing a shared hard feature, realized by a Rademacher-Haar wavelet series, with Sawtooth-Walsh readouts to enforce orthogonality of output coordinates. The dyadic tree structure of the Rademacher-Haar wavelet concentrates the approximation hardness in the common feature component, while the readouts act as task-specific heads. Using an information-theoretic framework, we obtain a sharp gap between the optimal approximation rates achievable by joint and separate coding. Finally, we realize this separation in a neural network model using Heaviside activations via reduction to triangle-wave approximation. Our results show that even under an orthogonality constraint joint approximation requires strictly fewer bits in compositional architectures, provided the tasks share a latent hard feature. This provides theoretical insight into the description-length-efficiency of compositional multi-output architectures and clarifies how neural networks can retain expressivity under geometric constraints.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T21:25:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16028v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16028v1"
     },
     {
-      "id": "2606.13894v1",
-      "title": "Gefen: Optimized Stochastic Optimizer",
+      "id": "2606.15994v1",
+      "title": "Agentic Framework for Deep Learning workload migration via In-Context Learning",
       "authors": [
-        "Nadav Benedek",
-        "Tomer Koren",
-        "Ohad Fried"
+        "Qiyue Liang",
+        "Steven Ingram",
+        "George Vanica",
+        "Andi Gavrilescu",
+        "Newfel Harrat",
+        "Hassan Sipra",
+        "Sethuraman Sankaran"
       ],
-      "abstract": "AdamW is a default optimizer for modern deep learning, but its first and second moment states add roughly two parameter-sized buffers to training memory. We propose Gefen, a memory-efficient optimizer that automatically shares second-moment estimates across parameter blocks and quantizes the first moment using a learned codebook, thereby reducing AdamW's memory footprint by ~8x while maintaining the same performance, corresponding to a reduction of 6.5 GiB per billion parameters. The method is motivated by a theoretical result showing that large mixed Hessian entries constrain the ratio of squared gradients toward one, suggesting that Hessian-aligned parameters are natural candidates for sharing second-moment statistics. Since computing Hessians is impractical at scale, Gefen infers block structure from the initial squared gradients, requiring no architecture-specific metadata or hyperparameters beyond AdamW defaults. Gefen learns an exact histogram-based dynamic-programming quantization codebook and reuses the same blocks for first-moment scaling. Across diverse experiments, Gefen achieves the lowest peak optimizer memory among the compared AdamW-like methods while maintaining AdamW-level performance. In FSDP and DDP training, the reduced memory footprint enables larger microbatches and improves throughput significantly over AdamW, providing a practical drop-in replacement with lower memory usage that can increase throughput and enable training larger models or using larger batch sizes. We provide the complete Python implementation, including fused CUDA kernels at https://github.com/ndvbd/Gefen",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T20:38:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13894v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13894v1"
+      "abstract": "Translating deep learning models from PyTorch's flexible, object-oriented design to JAX's functional, stateless setup is usually a manual and error-prone task. Automated migration is challenging because Large Language Models (LLMs) struggle with strict and dynamic API alignment and are prone to mistakes for exacting operations. We propose a fully autonomous system that combines In-Context Learning (ICL) with oracle-driven self-debugging. First, we curated an ICL context that serves as a strict reference for idiomatic JAX styling and test case generation. Second, instead of depending on the LLM to deduce mathematical outputs, we run the source PyTorch modules to get their actual dynamic tensor states. This creates an unchangeable execution oracle. We then use an autonomous agentic loop to synthesize tests based on the oracle data. The test cases are executed repeatedly, and the traceback is sent back to the LLM for self-correction. Ablations show that combining ICL references with oracle grounding and self-debugging greatly outperforms pure instructional and basic agentic baselines. This improvement does not add an excessive computational overhead. Our lightweight pipeline achieves 91% numerical equivalence (compared to baseline: 9%, instruction + self-debugging: 27%) on neural modules, providing a highly reliable, scalable blueprint for cross-framework migration. This has been validated across several state-of-the-art models including SAM (segment anything), T5, Code Whisper amongst others showing high numerical equivalency. Code: https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxCode",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T19:41:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15994v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15994v1"
     },
     {
-      "id": "2606.13818v1",
-      "title": "Uncertainty Estimation and Generalization Bounds for Modern Deep Learning",
+      "id": "2606.15927v1",
+      "title": "An Exploratory Study of Blood Glucose Estimation from Photoplethysmography Signals using Machine Learning",
       "authors": [
-        "Luis A. Ortega"
+        "Ruhani Bhatia",
+        "Vijval Ekbote"
       ],
-      "abstract": "This thesis investigates how Bayesian principles can deepen our understanding of modern deep learning systems. While neural networks achieve remarkable predictive performance, their ability to generalize and to quantify uncertainty remains only partly understood. This thesis approaches this challenge from both methodological and theoretical angles: unifying Bayesian inference, function-space modeling, and large-deviation theory under a common probabilistic perspective. On the methodological side, the thesis introduces the Deep Variational Implicit Process (DVIP), a scalable Bayesian framework that extends implicit processes to deep architectures. Complementing this, two post-hoc methods -- the Variational Linearized Laplace Approximation (VaLLA) and the Fixed-Mean Gaussian Process (FMGP) -- are proposed to equip pretrained deterministic networks with calibrated uncertainty estimates. The theoretical contributions focus on one of the central open questions in modern machine learning: why do large, over-parameterized neural networks generalize so well? To address this, the thesis develops a unified probabilistic framework that connects three key mechanisms -- diversity, smoothness, and stochasticity -- within the language of PAC-Bayesian and large-deviation theory.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T18:49:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13818v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13818v1"
+      "abstract": "Diabetes and extreme blood sugar levels are some of the major health problems faced by humans today across the world. While Continuous Glucose Monitoring (CGM) has emerged as an effective technology for management of diabetes as well as for monitoring blood sugar levels, this technology has traditionally been invasive (that is, requiring the piercing of the skin) and carries the risk of irritation, induration, etc. This highlights the need for accurate and non-invasive CGM methods that can be deployed at scale. With the emergence of various sensing technologies and their integration in wearables like the smart-watch, we now have the capability to continuously monitor body signals like the Photoplethysmogram (PPG) in a non-invasive manner. Having the ability to continuously monitor blood glucose through CGMs and continuously monitor PPG signals through a smart-watch offers an opportunity to get dense data on these two, opening the possibility of building machine learning and deep learning based models to estimate blood glucose level from PPG signals. In this work, we first present a paired dataset comprising continuous PPG signals from a smartwatch along with glucose values recorded using a CGM device. We also present the results of some preliminary experimental explorations performed on our dataset. These preliminary results suggest that some predictive signals may exist, though more exploration is needed with more data from a larger number of individuals. The dataset can be accessed at https://zenodo.org/records/20577959",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T17:05:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15927v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15927v1"
     },
     {
-      "id": "2606.13803v1",
-      "title": "Neural Slack Variables for Shape Constraints",
+      "id": "2606.15868v1",
+      "title": "David vs. Goliath in Next Activity Prediction: Argmax vs. LSTM, Transformer, and LLM",
       "authors": [
-        "Ruben Wiedemann",
-        "Antoine Jacquier",
-        "Lukas Gonon"
+        "Hans Weytjens",
+        "Ingo Weber"
       ],
-      "abstract": "Enforcing functional inequality constraints such as monotonicity and convexity in neural networks is a fundamental challenge in many industrial and scientific applications. Classical one-sided penalty methods, along with primal-dual methods gated by complementary slackness, provide constraint gradients only at violated locations, resulting in fragile satisfaction. Architectures that guarantee feasibility by construction, on the other hand, remain largely limited to elementary cases and impose additional inductive biases. We introduce neural slack variables, a deep learning native primal-side approach that converts constraint enforcement into a regression problem by coupling the primary network with a jointly learned auxiliary network. The auxiliary network serves as a valid target for the primary network's constraint quantities, inducing feasibility and regularity. Neural slack variables achieve zero measured violations on dense-grid monotonicity and convexity test cases, where penalty and primal-dual baselines leave residual violations, and enable arbitrage-free learning of volatility surfaces, an open industrial challenge in quantitative finance.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T18:16:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13803v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13803v1"
+      "abstract": "Next activity prediction (NAP) is a cornerstone of predictive process monitoring (PPM), enabling organizations to move from retrospective analysis to proactive process steering. The PPM field has progressed from classical machine learning through deep learning architectures such as LSTMs and Transformers to large language models (LLMs). Despite growing model complexity, no benchmark jointly compares LLMs, Transformers, LSTMs, and simple baselines in a direct sequence modeling setting for NAP. In this paper, we fill this gap with a systematic benchmark. We compare vocabulary-adapted LLMs, Transformers trained from scratch, LLM-distilled Transformers, and LSTMs against a simple counting-based argmax baseline across seven real-life event logs. Our results tell a David vs. Goliath story: pretraining confers no consistent improvement over training from scratch, model size shows little effect on performance, and on most datasets the argmax baseline matches or approaches the performance of billion-parameter LLMs.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T15:40:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15868v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15868v1"
     },
     {
-      "id": "2606.13754v1",
-      "title": "D2H-AD: A Hybrid Model Utilizing Hyperdimensional Computing for Advanced Anomaly Detection",
+      "id": "2606.15812v1",
+      "title": "Brownian Kernel Ladders",
       "authors": [
-        "Ghazal Ghajari",
-        "Elaheh Ghajari",
-        "Ashutosh Ghimire",
-        "Saeid Ataei",
-        "Faris Alsulami",
-        "Fathi Amsaad"
+        "Mahdi Mohammadigohari",
+        "Giuseppe Di Fatta",
+        "Giuseppe Nicosia",
+        "Panos M Pardalos"
       ],
-      "abstract": "Anomaly detection is a fundamental component of intelligent systems with applications in healthcare, cybersecurity, smart grids, and IoT environments. Although conventional machine learning and deep learning methods have demonstrated effectiveness in identifying anomalies, they often rely on large labeled datasets, incur high computational costs, and face scalability challenges in edge and high-dimensional settings. This paper presents D2H-AD, a novel anomaly detection framework based on Hyperdimensional Computing (HDC), a brain-inspired paradigm that represents information using high-dimensional distributed vectors. Unlike existing HDC-based methods, D2H-AD integrates distance-based similarity and density-aware encoding within a unified framework, improving anomaly representation and detection performance. Ablation studies show that hyperdimensional encoding alone yields up to 5.4% higher ROC-AUC than applying the same density-distance scoring directly in the original feature space. Furthermore, D2H-AD consistently outperforms five established baselines, namely HDAD, ODHD, One-Class SVM, Isolation Forest, and Autoencoders, across all evaluated datasets. The framework is lightweight, interpretable, and computationally efficient, making it suitable for resource-constrained and real-time applications. We validate D2H-AD on five benchmark datasets and demonstrate superior F1-score and ROC-AUC performance, together with robustness to class imbalance, noise, and data complexity. In addition to improved accuracy, D2H-AD offers scalability, a small memory footprint, and low-latency operation enabled by binary computations and a compact design. These properties make it particularly attractive for TinyML and edge AI deployments. The proposed framework highlights the potential of HDC for accurate, interpretable, and energy-efficient anomaly detection in dynamic environments.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T16:00:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13754v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13754v1"
+      "abstract": "Constructing mathematically tractable function spaces that capture hierarchical compositional representations remains a central challenge in statistical learning theory. We introduce Brownian kernel ladders (BKLs), a recursively defined hierarchy of integral reproducing kernel Hilbert spaces generated through Brownian-kernel integral constructions. Starting from linear functionals, each layer is obtained by integrating Brownian kernels over probability measures supported on subsets of the previous layer, yielding a recursive function-space model in which depth is encoded directly through the hierarchy. Based on this framework, we define canonical BKL spaces together with an associated complexity functional. We establish several analytical and statistical properties of these spaces. In particular, we show that BKL spaces form quasi-Banach spaces, satisfy depth-dependent Hölder regularity estimates, and exhibit strict monotonicity with respect to depth. We further prove existence results for regularized empirical risk minimization and derive Gaussian complexity bounds that remain uniformly controlled with respect to both the ambient dimension and the hierarchy depth. A key ingredient of the analysis is a combinatorial proof technique based on recursive subset decompositions and Brownian-kernel threshold representations. These estimates yield excess-risk guarantees of near-parametric order for regularized empirical risk minimization over BKL spaces. Our results provide a mathematically tractable hierarchical function-space framework for studying compositional representations in deep learning.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T13:27:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15812v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15812v1"
     },
     {
-      "id": "2606.13411v1",
-      "title": "An End-to-End Hybrid Framework for Rumour Detection in Low-Resources Algerian Dialect",
+      "id": "2606.15767v1",
+      "title": "Visualizing Uncertainty: Spatial Maps of Missing and Conflicting Evidence in Deep Learning",
       "authors": [
-        "Dihia Lanasri",
-        "Fatima Benbarek"
+        "Dong Hyun Jeong",
+        "Feng Chen",
+        "Jin-Hee Cho",
+        "Lance M. Kaplan",
+        "Audun Jøsang",
+        "Soo-Yeon Ji"
       ],
-      "abstract": "The rapid growth of social media has intensified the spread of rumours. This issue is more challenging in the Algerian context due to the informal and code-switched nature of dialectal content, the scarcity of annotated resources, and the limited effectiveness of standard Arabic NLP tools on dialect text. This paper presents an end-to-end rumour detection hybrid framework for Algerian dialect social media content. We build a domain-specific annotated dataset by combining real social media posts, synthetic data, and the FASSILA corpus, with automatic labeling based on a similarity-based annotation process. A transliteration pipeline is also introduced to generate parallel datasets in Arabic script and Arabizi. We evaluate multiple approaches, including classical machine learning, deep learning, transformers, and hybrid models. Experimental results show that a hybrid approach combining transformer embeddings with a classical classifier achieves the best performance, reaching an F1-score of 0.84. We also find that domain-specific pre-training is more important than model size, with social media-trained models outperforming larger models trained on formal Arabic corpora. These results demonstrate the feasibility of rumour detection in low-resource Algerian dialect settings.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T14:40:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13411v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13411v1"
+      "abstract": "Understanding when and why deep neural networks are uncertain is crucial for deploying reliable machine learning systems in safety-critical domains. While existing uncertainty quantification methods provide scalar measures of model confidence, they offer limited insight into which spatial regions of an input contribute to different types of uncertainty. We propose a novel visualization framework, Uncertainty Activation Map (UAM), that combines Evidential Deep Learning (EDL) with Full-Gradient Class Activation Mapping (FullGrad) to generate interpretable spatial uncertainty activation maps. Our approach distinguishes between two fundamental types of uncertainty: vacuity, representing lack of evidence, and dissonance, capturing conflicting evidence between competing hypotheses. By leveraging the complete gradient decomposition property of FullGrad and the principled uncertainty quantification of Subjective Logic, our method produces theoretically grounded visualizations that highlight specific image regions responsible for model uncertainty. With this framework, vacuity and dissonance activation maps are generated by computing belief-weighted attributions, enabling identification of where models lack knowledge versus where they encounter ambiguous evidence. Extensive evaluations across multiple benchmark datasets demonstrate that the proposed framework effectively addresses the critical gap between uncertainty quantification and explainability, providing intuitive visual feedback to assess model reliability in complex visual recognition tasks.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T12:06:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15767v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15767v1"
     },
     {
-      "id": "2606.13369v1",
-      "title": "Classification of Compact Stars via Machine Learning and Neural Network Models",
+      "id": "2606.15760v1",
+      "title": "The Data Manifold under the Microscope",
       "authors": [
-        "D. Neraki",
-        "G. Koufetidis",
-        "I. Stergakis",
-        "Th. Diakonidis",
-        "Ch. C. Moustakidis"
+        "Marios Koulakis",
+        "Constantin Seibold"
       ],
-      "abstract": "Recent advances in multimessenger astronomy, particularly through gravitational-wave observations of compact-object mergers, have significantly improved our understanding of dense matter. Nevertheless, the internal composition of compact stars remains uncertain. Depending on the underlying equation of state (EoS), these objects may be neutron stars composed primarily of nucleons, quark stars made of deconfined quark matter, or hybrid stars containing both hadronic and quark phases. More exotic constituents, such as hyperons, meson condensates, or dark matter, have also been proposed. In this work, we investigate whether the internal composition of compact stars can be inferred from observable quantities, including mass, radius, and tidal deformability. To address this problem, we employ machine-learning and deep-learning techniques trained on a larg dataset of EoSs describing both neutron stars and quark stars. From these EoSs, we generate the corresponding mass radius relations spanning a wide range of stellar configurations. The resulting dataset is used to train and evaluate classification models aimed at identifying the nature of compact objects from their macroscopic properties. Our results indicate that suitable combinations of observables can distinguish neutron stars from quark stars with very high accuracy. These findings demonstrate the potential of machine-learning approaches as tools for probing the composition of dense matter. However, further studies incorporating additional scenarios, including hybrid stars and other exotic forms of matter, are required to establish the robustness and general applicability of this methodology.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T13:55:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13369v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13369v1"
+      "abstract": "A significant gap exists between theory and practice in deep learning. Generalization and approximation error bounds are often derived for simplified models or are too loose to be informative. Many rely on the manifold hypothesis and on geometric regularity such as intrinsic dimension, curvature, and reach. Progress requires insight into data-manifold geometry and suitable benchmarks, yet existing options are polarized: analytic manifolds with known geometry but limited applicability, or real-world datasets where geometry is only coarsely estimable. We introduce a benchmarking framework for studying data geometry. We repurpose and extend dSprites and COIL-20 with additional transformation dimensions and dense, axis-aligned sampling, and pair them with finite-difference estimators that recover curvature, reach, and volume at near-ground-truth accuracy in a regime where general-purpose estimators are unreliable or difficult to deploy. The framework is intended as a controlled testbed, useful as a calibration environment for geometric estimators and a sandbox for probing theoretical assumptions. To illustrate its use, we present two application studies, namely assessing the scaling behavior of the bounds of Genovese et al. and Fefferman et al., and tracking the layer-wise geometry of a $β$-VAE, highlighting the behavior of current bounds and the value of controlled benchmarks for guiding and validating future theory. A reference implementation is available at https://github.com/koulakis/manifold-microscope.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T11:45:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15760v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15760v1"
     },
     {
-      "id": "2606.13302v1",
-      "title": "Physics-Guided Spatiotemporal Learning for Coastal Wave Peak Period Estimation from Video",
+      "id": "2606.15702v1",
+      "title": "Schattor: Schatten-family methods for deep learning optimization",
       "authors": [
-        "Abubakar Hamisu Kamagata",
-        "Dharm Singh Jat",
-        "Attlee Munyaradzi Gamundani",
-        "Abhishek Srivastava",
-        "Paramasivam Saravanakumar"
+        "Bohao Ma",
+        "Junyu Zhang",
+        "Chuan He"
       ],
-      "abstract": "Wave parameters in the nearshore are crucial for coastal engineering, shoreline protection, marine hazard assessment, and coastal management for climate resilience. Traditional monitoring systems like buoys and radar platforms offer accurate monitoring but can have high installation and maintenance expenses and limited spatial coverage. Passive ocean monitoring using video has been achieved by leveraging deep learning, however, many methods are not physically interpretable, feasible, and validated for oceanography. In thiswork, a Physics-Guided Deep Spatiotemporal Learning Framework for direct estimation of nearshore wave peak periods from passive coastal video stream is proposed. The framework combines automated temporal-variance based region-of-interest detection, multi-stage Sim-to-Real transfer learning, and physics-informed regularization to enhance the predictive accuracy and physical consistency. A variety of spatiotemporal architectures were assessed, such as transformer-based and recurrent-convolutional ones, alongside synthetic pretraining,silver-label adaptation, and expert fine-tuning. The results show that transformer-based architectures outperformed in terms of the accuracy of the instantaneous prediction, while lightweight recurrent-convolutional architectures achieved higher temporal stability and operational oceanographic skill. Ablation studies also demonstrated the benefits of physics-guided regularization in terms of trend-following consistency, and physically implausible predictions. Explainability auditing also helped to focus attention in hydrodynamically active surf-zone regions and showed good agreement with the physically derived wave propagation behavior. In general, the proposed framework shows the promise of physics-guided video-based deep learning systems for long-term coastal wave monitoring that are cost-efficient and operationally feasible.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T12:54:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13302v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13302v1"
+      "abstract": "Modern deep learning optimization features heterogeneous parameter structures, noisy gradients, and highly nonconvex landscapes, posing significant challenges for both algorithm design and theoretical analysis. Motivated by the limitations of SGD and the success of adaptive optimizers, we propose {\\it Schattor}, a family of adaptive first-order methods based on Schatten norms. Schattor unifies SGD and the recently proposed matrix-variate adaptive optimizer Muon within a single Schatten-norm-based framework. We establish dimension-free stationarity guarantees for methods in the Schattor family for stochastic matrix optimization problems via a novel matrix martingale moment bound. We also develop multi-block extensions that adaptively balance block-wise optimization progress and prove dimension-free stationarity guarantees in this more general setting.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T09:31:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15702v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15702v1"
     },
     {
-      "id": "2606.13287v1",
-      "title": "Clipping Makes Distributed and Federated Asynchronous SGD Robust to Stragglers",
+      "id": "2606.15669v1",
+      "title": "Z-Plane Neural Networks: Bounded Geometric Activation Replaces ReLU and LayerNorm",
       "authors": [
-        "Samuel Erickson",
-        "Mikael Johansson"
+        "Sungwoo Goo",
+        "Hwi-yeol Yun",
+        "Sangkeun Jung"
       ],
-      "abstract": "In modern machine learning, parallelization of training is an important strategy for increasing scale. Asynchronous stochastic gradient descent (ASGD), which maximizes the utilization of available hardware by avoiding waiting for slow workers. However, with constant step sizes, the convergence of ASGD is nonetheless affected negatively by slow workers due to large delays in updates. At the same time, it has been empirically observed in asynchronous training of deep learning models that gradient clipping \"stabilizes\" training. In this work, we provide a theoretical justification for this behavior, as we show that clipping removes the dependence of the maximum delay in the oracle complexity. We employ a sub-Weibull model of gradient noise which generalizes sub-Gaussian and sub-exponential distributions to more heavy-tailed distributions, motivated by empirical observations in deep learning. We show convergence in expectation, and the first time in asynchronous optimization, convergence with high probability.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T12:43:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13287v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13287v1"
+      "abstract": "Modern deep neural networks rely on Euclidean scalar activations (e.g., ReLU) and global normalization techniques (e.g., LayerNorm) to prevent gradient instability in deep architectures. However, these mechanisms inherently cause dead neurons, discard critical directional information, and destroy the orthogonality of feature representations. Inspired by the frequency-modulation transmission of biological axons, we propose the Z-Plane Neural Network, which maps hidden states into 2D phasor bundles on a hypersphere. We introduce a novel geometric activation function, Radial Bounding($\\mathbf{x} / \\max(1, \\|\\mathbf{x}\\|_2)$), which limits the energy magnitude while preserving the phase (direction). We demonstrate mathematically that this isotropic activation maintains 1-Lipschitz continuity and prevents gradient vanishing by preserving tangential gradients. Empirically, a 100-layer Z-Plane Multi-Layer Perceptron (MLP)-entirely devoid of ReLU and LayerNorm-successfully converges on the MNIST dataset with 98.34% accuracy and absolute numerical stability, proving that bounded geometric activation alone is sufficient for stable deep learning.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T08:22:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15669v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15669v1"
     },
     {
-      "id": "2606.13194v1",
-      "title": "WHAR Arena: Benchmarking the State of the Art in Efficient Wearable Human Activity Recognition",
+      "id": "2606.15642v1",
+      "title": "CIWI-CKT: Chaos-Informed Wave Interference Feature Fusion and Cross-City Knowledge Transfer for Traffic Flow Forecasting",
       "authors": [
-        "Maximilian Burzer",
-        "Tobias King",
-        "Till Riedel",
-        "Michael Beigl",
-        "Tobias Röddiger"
+        "Abdul Joseph Fofanah",
+        "Lian Wen",
+        "David Chen",
+        "Shaoyang Zhang"
       ],
-      "abstract": "Deep learning has become the dominant paradigm in Wearable Human Activity Recognition (WHAR), yet progress is obscured by a comparability crisis. Results are often reported using inconsistent datasets, custom data processing, and varying evaluation protocols, making state-of-the-art claims fragile. We address this with a large-scale, open-source benchmark that integrates 30 diverse datasets under standardized processing, unified model interfaces, and a shared cross-subject evaluation protocol. Evaluating 17 representative architectures across 4760 training runs, we jointly measure predictive performance alongside on-device latency, peak memory, and model size on an Android reference device. Our results reveal that the WHAR state of the art is distributed rather than dominated by a single architecture. While CNN-HAR achieves the highest mean macro-F1, top-performing models cluster tightly, indicating contemporary architectures have converged near a predictive performance ceiling. When accounting for deployment efficiency, compact neural models, such as TinierHAR, and classical Random Forests define the practically relevant Pareto frontier, whereas larger recurrent and hybrid models incur high hardware costs without corresponding performance gains. Consequently, while predictive performance has plateaued, substantial potential for future progress remains in optimizing deployment efficiency and improving adaptation to domain shifts. We release our full framework to support transparent reuse and extension.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T11:01:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13194v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13194v1"
+      "abstract": "Accurate traffic flow prediction remains challenging in cross-city, data-scarce scenarios where limited historical data hinders model generalisation. The chaotic nature of traffic dynamics, complex spatio-temporal dependencies, and heterogeneous urban networks complicate few-shot learning across cities. Existing deep learning approaches either treat traffic as purely deterministic or lack mechanisms to model wave-like interference patterns essential for cross-regime traffic dynamics. To address these limitations, this paper proposes CIWI-CKT, a novel Chaos-Informed Wave Interference Feature Fusion framework with Cross-City Knowledge Transfer. Our framework introduces three core innovations: chaos-informed wave generation that extracts measurable chaos invariants and models traffic as adaptive wave components; meta-interference processing that captures wave interactions between support and query regimes while producing a predictability score for confidence estimation; and chaos-aware meta-learning that enables efficient cross-city knowledge transfer while preserving chaotic characteristics. We establish theoretical guarantees including chaos-to-wave stability, wave-induced dimension reduction, and meta-learning generalisation bounds. Extensive experiments on four real-world traffic datasets demonstrate that CIWI-CKT significantly outperforms state-of-the-art spatio-temporal graph learning, transfer learning, prompt-based, and few-shot methods, improving prediction accuracy while substantially reducing required training data.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T07:08:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15642v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15642v1"
     },
     {
-      "id": "2606.13136v1",
-      "title": "An Extensible and Lightweight Unified Architecture for Demosaicing Pixel-bin Image Sensors",
+      "id": "2606.15551v1",
+      "title": "A Bifurcation Theory Framework for Gradient Descent on the Edge of Stability",
       "authors": [
-        "Saurabh Kumar",
-        "Nutan Sairam Yenneti"
+        "Eric Gan"
       ],
-      "abstract": "Pixel-bin image sensors are becoming the default choice for smartphone cameras due to their resolution vs light-gathering trade-off. However, their larger inter-color separation compared to the Bayer color filter array (CFA) makes them challenging to demosaic. Furthermore, existing deep learning-based demosaicing methods are CFA-specific, requiring multiple individual models that take up precious onboard resources and demand larger development and maintenance efforts. In this work, we propose a modular unified architecture for demosaicing various pixel-bin sensors that provides higher image quality while being extensible and lightweight. Additionally, to enable plug-and-play operation, we introduce a learning-free CFA-identification module to detect the CFA type of raw data accurately.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T09:59:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13136v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13136v1"
+      "abstract": "The Edge of Stability (EoS) phenomenon, where gradient descent operates with sharpness exceeding the classical convergence threshold yet the loss decreases over long timescales, is ubiquitous in modern deep learning but remains poorly understood in realistic settings. Prior rigorous analyses have been largely confined to scalar or low-dimensional losses with specific structural forms. In this work, we develop a bifurcation theory framework for gradient descent on the edge of stability that applies directly to overparameterized neural networks. By decomposing the training dynamics into components normal and tangent to the manifold of minimizers, we show that stable EoS training arises from a flip bifurcation in the normal direction, governed by the sign of the first Lyapunov coefficient, while the tangent dynamics drift toward regions of decreasing sharpness. Under mild spectral and geometric assumptions on the loss landscape, we prove convergence to the minimizing manifold when training at the EoS threshold. As a corollary, we recover and unify prior results: we show that the product-stability condition of Gan (2026) is an instance of our framework.",
+      "published": "June 14, 2026",
+      "published_raw": "2026-06-14T02:39:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15551v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15551v1"
     },
     {
-      "id": "2606.13081v1",
-      "title": "Emotional regulation improves deep learning-based image classification",
+      "id": "2606.15356v1",
+      "title": "ShipNet: A Geometric Deep Learning Surrogate for Real-Time Ship Hydrodynamics",
       "authors": [
-        "Riccardo Emanuele Landi",
-        "João M. F. Rodrigues",
-        "Marta Chinnici"
+        "Kirsten Odendaal",
+        "George Drakoulas"
       ],
-      "abstract": "Emotion significantly influences cognition, enhancing memory and learning under certain conditions. Drawing on this principle, emotion-augmented deep learning investigates how affective states can improve neural network architectures and learning paradigms, achieving better generalization than non-emotional models. However, existing methods often rely solely on objective neurophysiological factors, neglecting the role of subjectivity in emotion. To bridge this gap, the present study introduces Emotional Regulation, a novel framework for modeling emotion in deep learning through artificial subjective experience. The method employs pre-training based on affective stimuli, balancing non-emotional and emotionally-influenced responses in downstream task optimization. Extensive experimentation was conducted in image classification, pre-training ResNet and ViT architectures on four emotional datasets, using CIFAR-10 and -100 as target benchmarks. Results reveal improvements over the aforementioned backbones, providing evidence of Emotional Regulation as a promising method for defining emotion-augmented deep learning through artificial subjective experience. Furthermore, the proposed approach overcomes the related work in image classification based on CIFAR, revealing Emotional Regulation as the new state-of-the-art in emotion-augmented deep learning for large-scale vision datasets. The study also enforces evidence of the impact of affective states in improving machine learning tasks' optimization, encouraging further investigation on emotion-inspired architectures.",
-      "published": "June 11, 2026",
-      "published_raw": "2026-06-11T09:03:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.13081v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.13081v1"
+      "abstract": "Accurate prediction of hydrodynamic performance is central to ship design, yet high-fidelity computational fluid dynamics remains prohibitively expensive for large-scale parametric exploration. This motivates the development of data-driven surrogate models that provide rapid approximations to hydrodynamic predictions at substantially reduced cost. We present ShipNet, a geometric deep-learning surrogate that predicts both hull-surface pressure distributions and far-field free-surface wave patterns directly from hull geometry and speed. The network employs a regularized dynamic graph convolutional backbone on hull point clouds, with a multi-head decoder for simultaneous near-body pressure and free-surface elevation outputs. Training data consist of 420 inviscid free-surface simulations generated using a potential-flow panel method for two parent yacht hulls, each parameterized into 70 variants and evaluated at three speeds. ShipNet predicts per-point pressure coefficient and two-dimensional wave elevation map using a composite loss that combines point-wise regression and image-structure terms. On a geometry-held-out test set, ShipNet achieves R^2=0.98 for hull pressure and R^2=0.91 for wave fields. Inference requires approximately 0.15s per case, yielding over a 550x speedup relative to the potential-flow solver on conventional hardware. Limitations include the restricted geometry and speed ranges and the inviscid training data, while future work will extend the model to high-fidelity viscous simulations with physics-informed regularization.",
+      "published": "June 13, 2026",
+      "published_raw": "2026-06-13T15:38:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.15356v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.15356v1"
     }
   ]
 }
