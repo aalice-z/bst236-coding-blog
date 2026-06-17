@@ -1,7 +1,125 @@
 {
-  "last_updated": "2026-06-16T02:32:04.147665",
+  "last_updated": "2026-06-17T02:28:56.638518",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.18080v1",
+      "title": "Edge Flow: A Tractable and Predictive Continuous-Time Model for Gradient Descent at the Edge of Stability",
+      "authors": [
+        "Pierre Marion"
+      ],
+      "abstract": "Gradient descent in deep learning may operate at the edge of stability (EoS), a regime in which the largest eigenvalue of the loss Hessian hovers near the stability threshold $2/η$, where $η$ is the learning rate. Classical analysis tools such as gradient flow and the descent lemma do not apply here, motivating the search for a continuous-time model valid at EoS. We propose Edge Flow, a system of three coupled ordinary differential equations that provides a tractable, faithful, and predictive model of gradient descent dynamics at EoS. Edge Flow decomposes the dynamics into a center, an oscillation direction, and an oscillation magnitude. The center follows a modified gradient flow on a symmetrized loss; the direction tracks a top eigenvector of the Hessian via Rayleigh quotient dynamics; and the magnitude grows or decays exponentially depending on whether the sharpness exceeds or falls below the threshold $2/η$. Crucially, sharpness stabilization emerges from the coupled dynamics via a self-stabilization feedback loop. Discretizing Edge Flow only requires two gradient evaluations and one Hessian--vector product at each iteration. We demonstrate empirically that Edge Flow tracks the dynamics of gradient descent at least as faithfully as previously proposed continuous-time EoS models, while in addition resolving the oscillation of the sharpness at the onset of EoS, and that it provides a principled framework for understanding and mitigating instabilities in this regime.",
+      "published": "June 16, 2026",
+      "published_raw": "2026-06-16T15:45:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.18080v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.18080v1"
+    },
+    {
+      "id": "2606.18078v1",
+      "title": "Spatial prediction of environmental processes using random forests: How best to account for spatial dependence?",
+      "authors": [
+        "Duncan Lee",
+        "Vinny Davies",
+        "Helen R. Savage",
+        "Hussein Twabi",
+        "Marriott Nliwasa",
+        "Peter MacPherson"
+      ],
+      "abstract": "Geostatistical spatial prediction for environmental processes is typically undertaken using Gaussian process models via Kriging, while machine learning (ML) algorithms are state-of-the-art for non-spatial prediction. An exciting recent fusion of these ideas imbibes traditional ML algorithms with the capacity to deal with spatial autocorrelation, leading to improved predictive performance. A range of approaches have been proposed, including fusion with Gaussian processes, observation-driven correlation structures, spatial basis functions and local geographical fitting. However, there has been no numerical comparison of their relative predictive performances, which is needed to advise environmental scientists on the optimal approach to use. This paper fills this knowledge gap, and focuses on random forests as the ML algorithm because they are more computationally and conceptually straightforward to implement than deep learning algorithms. The results from two studies are presented, the first being a controlled simulation experiment investigating whether any single approach is consistently superior across different spatial autocorrelation types. The second study focuses on the prediction of air pollution concentrations within a tuberculosis prevalence study in Blantyre, Malawi. The results show that whilst no single approach is universally superior, utilising spatial basis functions appears to perform consistently well across both the simulation and real data studies.",
+      "published": "June 16, 2026",
+      "published_raw": "2026-06-16T15:45:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.18078v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.18078v1"
+    },
+    {
+      "id": "2606.18063v1",
+      "title": "When LLMs Analyze Scars: From Images to Clinically-Meaningful Features",
+      "authors": [
+        "Ruman Wang",
+        "Hangting Ye"
+      ],
+      "abstract": "Medical image classification faces a fundamental dilemma: while deep learning models achieve remarkable performance at scale, real-world clinical scenarios often suffer from severe data scarcity due to annotation costs, privacy constraints, and disease rarity. This challenge is particularly pronounced in pathological scar classification, where differentiating keloids from hypertrophic scars requires subtle expert knowledge and labeled images are extremely limited. We propose a novel paradigm that repositions large language models (LLMs) as knowledge-driven feature engineers rather than end-to-end classifiers. We call this framework ScaFE (Scar Feature Engineering). Our key insight is that LLMs encode rich medical knowledge that can be externalized as executable feature extraction code, enabling the transformation of high-dimensional images into low-dimensional, clinically interpretable representations. Specifically, we prompt an LLM with established scar assessment criteria to generate deterministic Python code that extracts features aligned with clinical scoring systems such as the Vancouver Scar Scale. Our approach offers three key advantages: (1) data efficiency, achieving robust performance with limited training samples by decoupling knowledge acquisition from statistical learning; (2) privacy preservation, as raw images are processed locally without exposure to external LLMs; and (3) interpretability, through explicit features grounded in clinical reasoning. Extensive experiments on scar classification demonstrate that our method consistently outperforms end-to-end deep learning baselines or using LLMs as black-box classifiers under limited data conditions, establishing a promising direction for integrating LLMs into data-efficient and clinically transparent medical AI systems.",
+      "published": "June 16, 2026",
+      "published_raw": "2026-06-16T15:38:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.18063v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.18063v1"
+    },
+    {
+      "id": "2606.18049v1",
+      "title": "ConTex: Reformulating Counterfactual Generation For Time Series Forecasting",
+      "authors": [
+        "Jan Voets",
+        "Hasan Tercan",
+        "Tobias Meisen",
+        "Sebastian Baum"
+      ],
+      "abstract": "Decision-making with deep learning-based time series forecasting requires not only accurate predictions but also actionable insights. However, current architectures do not inherently provide such information. Specifically, guidance is needed on how current conditions must be modified to shift from a predicted outcome to a desired future scenario. Counterfactual explanations provide a natural framework for this task, as they represent minimal input changes that alter the model's prediction, indicating when and how intervention is required. Existing approaches rely on instance-wise optimization, leading to inconsistency across instances, high computational costs, and limited applicability in real-time settings. To address these limitations, we reformulate counterfactual generation for time series forecasting as the problem of learning a globally consistent intervention strategy, allowing counterfactuals to be generated through a single shared function. We propose Counterfactual Time Series Explanations (ConTex), a model-agnostic, decomposed architecture comprising a temporal context encoder and a conditional encoder, followed by two heads that capture interventions in terms of temporal relevance and modification strength. This structure overcomes the instability and inconsistency of instance-based approaches by producing targeted, interpretable interventions across time and feature dimensions in a single forward pass, making it suitable for real-time applications. Across multiple forecasting architectures and benchmark datasets, ConTex achieves state-of-the-art validity while generating sparse counterfactuals that minimize the number of necessary interventions. Additionally, our approach reduces computational cost by at least 12-36x compared to instance-wise generation and supports real-time inference at approximately 0.007 seconds.",
+      "published": "June 16, 2026",
+      "published_raw": "2026-06-16T15:25:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.18049v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.18049v1"
+    },
+    {
+      "id": "2606.17692v1",
+      "title": "Delta-Based Target Reformulation for Short-Term Electricity Load Forecasting Using LSTM and Transformer Models",
+      "authors": [
+        "Vansh Bansal"
+      ],
+      "abstract": "Accurate short-term electricity load forecasting is critical for the reliable and economic operation of modern power systems, under non-stationarity arising from weather variability, calendar effects, and evolving consumption patterns. While deep learning models such as LSTMs and Transformers show promising performance, most existing studies focus on direct absolute load prediction without explicitly addressing target non-stationarity. Motivated by classical time-series differencing techniques in ARIMA models, this paper investigates a delta-based target reformulation for short-term electricity load forecasting using deep learning. Instead of directly predicting absolute load values, the proposed formulation trains models to predict the change in load between consecutive time steps, with final forecasts reconstructed using the last observed load. This aims to stabilize the learning target and reduce forecasting difficulty. Using multi-year, hourly real-world electricity load data from India, augmented with meteorological variables from the NASA POWER project and calendar features, this study evaluates LSTM and Transformer models under both formulations, benchmarking them against LightGBM. Experiments are conducted for hour-ahead and day-ahead horizons, assessing performance via Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE). Results show that delta-based reformulation consistently improves forecasting accuracy for hour-ahead prediction across all evaluated models, yielding MAPE reductions of over 50% compared to absolute formulations. For day-ahead forecasting, delta targets specifically benefit deep sequence models (LSTM and Transformer), while LightGBM remains competitive under the absolute formulation. These findings indicate that while delta reformulation is a powerful inductive bias for neural networks, its efficacy is model- and horizon-dependent.",
+      "published": "June 16, 2026",
+      "published_raw": "2026-06-16T09:01:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.17692v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.17692v1"
+    },
+    {
+      "id": "2606.17413v1",
+      "title": "Amortized Probabilistic Retrieval of Atmospheric CO2 from OCO-2 Spectra Using Deep Learning with Laplace Approximations and Normalizing Flows",
+      "authors": [
+        "Alejandro Calle-Saldarriaga",
+        "Felix Jimenez",
+        "Jack Grosskreuz",
+        "Jiazheng Wang",
+        "Jonathan Hobbs",
+        "Matthias Katzfuss"
+      ],
+      "abstract": "Space-based monitoring of atmospheric carbon dioxide (CO2) is essential for constraining the global carbon budget. NASA's Orbiting Carbon Observatory-2 (OCO-2) estimates column-averaged dry-air mole fractions of CO2 (XCO2) using high-resolution spectra. However, current operational retrieval algorithms are computationally expensive and do not properly quantify uncertainties. We present a novel deep learning framework that addresses these challenges. Due to the difficulties of ground-truth data for real satellite observations, we develop and validate our approach using a high-fidelity simulation dataset. This dataset, created to support OCO-2 uncertainty quantification (UQ), incorporates realistic forward model errors. Our architecture encodes spectral bands using a multi-branch neural network and estimates posteriors of the full CO2 column or desired summaries thereof using two scalable UQ methods: Laplace approximations and normalizing flows. Our approach has five key advantages relative to operational \"full-physics\" solvers: (1) Amortization: Inference is orders of magnitude faster, enabling real-time processing of massive data streams; (2) Model error robustness: By training on simulations that explicitly include model discrepancies, our method accounts for systematic errors often neglected by standard inversions; (3) Point estimate accuracy: We achieve superior predictive accuracy compared to baseline methods; (4) Improved UQ: The probabilistic outputs yield better-calibrated uncertainty estimates; and (5) Non-Gaussian posteriors: When utilizing normalizing flows, our framework successfully models complex, asymmetric posterior distributions, overcoming the limitations of the Gaussian assumption. These results suggest that simulation-based deep learning is a viable path toward next-generation operational processing systems.",
+      "published": "June 16, 2026",
+      "published_raw": "2026-06-16T01:49:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.17413v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.17413v1"
+    },
+    {
+      "id": "2606.17235v1",
+      "title": "Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction",
+      "authors": [
+        "Pungponhavoan Tep",
+        "Marc Bernacki"
+      ],
+      "abstract": "Machine Learning (ML) models for grain growth prediction are typically trained on idealized synthetic data, yet practical applications require generalization to conditions outside the training distribution. This study evaluated the Out-Of-Distribution (OOD) generalization capability of the trained model from our previous study across three test cases, including experimental microstructures, microstructures characterized by a bimodal grain size distribution, and abnormal grain growth. To further probe whether physics-informed architectural design could improve robustness under these different conditions, a boundary-masked attention mechanism was proposed specifically for grain growth, constraining attention to grain boundary pixels. Both the baseline and the proposed physics-informed attention model were evaluated without retraining or fine-tuning on the OOD data. Both models successfully generalized to all three test cases, yet the boundary-masked attention mechanism provided substantial improvements, with the most notable gains for microstructures characterized by a bimodal grain size distribution, where Structural Similarity Index Measure (SSIM) improved from \\num{0.6221} to \\num{0.7609} and mean grain size ($\\overline{R}$) error decreased from \\SI{8.75}{\\percent} to \\SI{3.57}{\\percent}. The attention heatmap analysis revealed that the boundary-masked attention model learned to concentrate attention on large grain boundaries in a manner consistent with curvature-driven grain growth physics, emerging from training without being explicitly encoded into the architecture. These results indicate that models trained on synthetic data can generalize to diverse OOD conditions without retraining, and that physics-informed attention may improve accuracy when the boundary morphology matches the training domain.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T19:28:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.17235v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.17235v1"
+    },
+    {
+      "id": "2606.16991v1",
+      "title": "A Multi-Center Benchmark for Abdominal Disease Diagnosis and Report Generation from Non-Contrast CT",
+      "authors": [
+        "Mariam Elbakry",
+        "Aliaa Sayed Sheha",
+        "Salma Hassan Tantawy",
+        "Aya Yassin",
+        "Concetto Spampinato",
+        "Karim Lekadir",
+        "Xiaomeng Li",
+        "Marawan Elbatel"
+      ],
+      "abstract": "Multiphasic contrast-enhanced CT (CECT) is widely used for abdominal lesion characterization, yet it carries inherent risks of contrast-induced nephropathy, escalates acquisition burden, and heavily contributes to radiologist workload. To address these challenges, we introduce a novel multi-center benchmark for multi-organ abdominal disease diagnosis and automated radiology report generation, which learns to synthesize contrast-enhanced findings from single-phase non-contrast CT (NCCT). To support this, we curated a large-scale dataset of paired NCCT-CECT studies and their corresponding contrast-enhanced radiology reports from two centers, partitioned into internal sets and an external validation cohort. Under a unified evaluation protocol, we benchmarked five contemporary deep learning architectures encompassing chest-specific, abdomen-specific, and general-purpose multimodal domains. Extensive experiments demonstrate that NCCT retains diagnostic signals, achieving an average multi-organ AUC of 69.1% on the internal cohort and 63.1% on the external cohort, respectively. By releasing this dataset and standardized benchmark publicly, this study aims to catalyze future research into safer, resource-efficient, and globally accessible contrast-free abdominal imaging workflows. Code is available at: https://github.com/xmed-lab/TriALS-Report.",
+      "published": "June 15, 2026",
+      "published_raw": "2026-06-15T17:29:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.16991v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16991v1"
+    },
     {
       "id": "2606.16891v1",
       "title": "Beyond Weights and Gradients: A Taxonomy of Federated Learning Messages",
@@ -35,7 +153,7 @@
       "arxiv_link": "http://arxiv.org/abs/2606.16883v1"
     },
     {
-      "id": "2606.16337v1",
+      "id": "2606.16337v2",
       "title": "Medical Heuristic Learning: An LLM-Driven Framework for Interpretable and Auditable Clinical Decision Rules",
       "authors": [
         "Wei Xu",
@@ -49,8 +167,8 @@
       "abstract": "Predictive modeling for clinical tabular data is central to clinical decision support and therefore requires not only strong predictive performance but also transparent decision logic. Although deep learning and tree-based ensemble methods can achieve high accuracy, their black-box nature remains a major obstacle to clinical deployment. This challenge is further compounded by common characteristics of medical data, including limited sample sizes, severe class imbalance, and feature evolution arising from changes in diagnostic criteria and clinical documentation. To address these issues, we propose Medical Heuristic Learning (MHL), an instantiation of the learning-beyond-gradients paradigm for clinical tabular prediction. Instead of relying on neural network weight updates, MHL uses a large language model (LLM)-driven workflow that integrates statistical probes, medical knowledge probes, rule synthesis, and code-level iterative refinement to optimize a deterministic and executable decision system. The resulting model is expressed not as opaque parameters, but as versioned pure-Python decision rules that are explicitly interpretable, fully auditable, and clinically grounded. MHL also supports continual learning by starting from previously validated rules and iteratively revising them using updated feature information under data drift or feature evolution. Comprehensive experiments on medical datasets show that MHL achieves performance comparable to state-of-the-art methods while maintaining strong behavior in small-sample and highly imbalanced settings. The results further indicate that this explicit rule update mechanism can help alleviate catastrophic forgetting under feature evolution. Overall, these findings suggest that non-gradient-based heuristic systems offer a transparent and adaptable alternative for high-stakes clinical decision support.",
       "published": "June 15, 2026",
       "published_raw": "2026-06-15T07:43:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.16337v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.16337v1"
+      "pdf_link": "http://arxiv.org/pdf/2606.16337v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.16337v2"
     },
     {
       "id": "2606.16271v1",
@@ -177,119 +295,6 @@
       "published_raw": "2026-06-14T15:40:21Z",
       "pdf_link": "http://arxiv.org/pdf/2606.15868v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.15868v1"
-    },
-    {
-      "id": "2606.15812v1",
-      "title": "Brownian Kernel Ladders",
-      "authors": [
-        "Mahdi Mohammadigohari",
-        "Giuseppe Di Fatta",
-        "Giuseppe Nicosia",
-        "Panos M Pardalos"
-      ],
-      "abstract": "Constructing mathematically tractable function spaces that capture hierarchical compositional representations remains a central challenge in statistical learning theory. We introduce Brownian kernel ladders (BKLs), a recursively defined hierarchy of integral reproducing kernel Hilbert spaces generated through Brownian-kernel integral constructions. Starting from linear functionals, each layer is obtained by integrating Brownian kernels over probability measures supported on subsets of the previous layer, yielding a recursive function-space model in which depth is encoded directly through the hierarchy. Based on this framework, we define canonical BKL spaces together with an associated complexity functional. We establish several analytical and statistical properties of these spaces. In particular, we show that BKL spaces form quasi-Banach spaces, satisfy depth-dependent Hölder regularity estimates, and exhibit strict monotonicity with respect to depth. We further prove existence results for regularized empirical risk minimization and derive Gaussian complexity bounds that remain uniformly controlled with respect to both the ambient dimension and the hierarchy depth. A key ingredient of the analysis is a combinatorial proof technique based on recursive subset decompositions and Brownian-kernel threshold representations. These estimates yield excess-risk guarantees of near-parametric order for regularized empirical risk minimization over BKL spaces. Our results provide a mathematically tractable hierarchical function-space framework for studying compositional representations in deep learning.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T13:27:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15812v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15812v1"
-    },
-    {
-      "id": "2606.15767v1",
-      "title": "Visualizing Uncertainty: Spatial Maps of Missing and Conflicting Evidence in Deep Learning",
-      "authors": [
-        "Dong Hyun Jeong",
-        "Feng Chen",
-        "Jin-Hee Cho",
-        "Lance M. Kaplan",
-        "Audun Jøsang",
-        "Soo-Yeon Ji"
-      ],
-      "abstract": "Understanding when and why deep neural networks are uncertain is crucial for deploying reliable machine learning systems in safety-critical domains. While existing uncertainty quantification methods provide scalar measures of model confidence, they offer limited insight into which spatial regions of an input contribute to different types of uncertainty. We propose a novel visualization framework, Uncertainty Activation Map (UAM), that combines Evidential Deep Learning (EDL) with Full-Gradient Class Activation Mapping (FullGrad) to generate interpretable spatial uncertainty activation maps. Our approach distinguishes between two fundamental types of uncertainty: vacuity, representing lack of evidence, and dissonance, capturing conflicting evidence between competing hypotheses. By leveraging the complete gradient decomposition property of FullGrad and the principled uncertainty quantification of Subjective Logic, our method produces theoretically grounded visualizations that highlight specific image regions responsible for model uncertainty. With this framework, vacuity and dissonance activation maps are generated by computing belief-weighted attributions, enabling identification of where models lack knowledge versus where they encounter ambiguous evidence. Extensive evaluations across multiple benchmark datasets demonstrate that the proposed framework effectively addresses the critical gap between uncertainty quantification and explainability, providing intuitive visual feedback to assess model reliability in complex visual recognition tasks.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T12:06:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15767v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15767v1"
-    },
-    {
-      "id": "2606.15760v1",
-      "title": "The Data Manifold under the Microscope",
-      "authors": [
-        "Marios Koulakis",
-        "Constantin Seibold"
-      ],
-      "abstract": "A significant gap exists between theory and practice in deep learning. Generalization and approximation error bounds are often derived for simplified models or are too loose to be informative. Many rely on the manifold hypothesis and on geometric regularity such as intrinsic dimension, curvature, and reach. Progress requires insight into data-manifold geometry and suitable benchmarks, yet existing options are polarized: analytic manifolds with known geometry but limited applicability, or real-world datasets where geometry is only coarsely estimable. We introduce a benchmarking framework for studying data geometry. We repurpose and extend dSprites and COIL-20 with additional transformation dimensions and dense, axis-aligned sampling, and pair them with finite-difference estimators that recover curvature, reach, and volume at near-ground-truth accuracy in a regime where general-purpose estimators are unreliable or difficult to deploy. The framework is intended as a controlled testbed, useful as a calibration environment for geometric estimators and a sandbox for probing theoretical assumptions. To illustrate its use, we present two application studies, namely assessing the scaling behavior of the bounds of Genovese et al. and Fefferman et al., and tracking the layer-wise geometry of a $β$-VAE, highlighting the behavior of current bounds and the value of controlled benchmarks for guiding and validating future theory. A reference implementation is available at https://github.com/koulakis/manifold-microscope.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T11:45:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15760v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15760v1"
-    },
-    {
-      "id": "2606.15702v1",
-      "title": "Schattor: Schatten-family methods for deep learning optimization",
-      "authors": [
-        "Bohao Ma",
-        "Junyu Zhang",
-        "Chuan He"
-      ],
-      "abstract": "Modern deep learning optimization features heterogeneous parameter structures, noisy gradients, and highly nonconvex landscapes, posing significant challenges for both algorithm design and theoretical analysis. Motivated by the limitations of SGD and the success of adaptive optimizers, we propose {\\it Schattor}, a family of adaptive first-order methods based on Schatten norms. Schattor unifies SGD and the recently proposed matrix-variate adaptive optimizer Muon within a single Schatten-norm-based framework. We establish dimension-free stationarity guarantees for methods in the Schattor family for stochastic matrix optimization problems via a novel matrix martingale moment bound. We also develop multi-block extensions that adaptively balance block-wise optimization progress and prove dimension-free stationarity guarantees in this more general setting.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T09:31:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15702v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15702v1"
-    },
-    {
-      "id": "2606.15669v1",
-      "title": "Z-Plane Neural Networks: Bounded Geometric Activation Replaces ReLU and LayerNorm",
-      "authors": [
-        "Sungwoo Goo",
-        "Hwi-yeol Yun",
-        "Sangkeun Jung"
-      ],
-      "abstract": "Modern deep neural networks rely on Euclidean scalar activations (e.g., ReLU) and global normalization techniques (e.g., LayerNorm) to prevent gradient instability in deep architectures. However, these mechanisms inherently cause dead neurons, discard critical directional information, and destroy the orthogonality of feature representations. Inspired by the frequency-modulation transmission of biological axons, we propose the Z-Plane Neural Network, which maps hidden states into 2D phasor bundles on a hypersphere. We introduce a novel geometric activation function, Radial Bounding($\\mathbf{x} / \\max(1, \\|\\mathbf{x}\\|_2)$), which limits the energy magnitude while preserving the phase (direction). We demonstrate mathematically that this isotropic activation maintains 1-Lipschitz continuity and prevents gradient vanishing by preserving tangential gradients. Empirically, a 100-layer Z-Plane Multi-Layer Perceptron (MLP)-entirely devoid of ReLU and LayerNorm-successfully converges on the MNIST dataset with 98.34% accuracy and absolute numerical stability, proving that bounded geometric activation alone is sufficient for stable deep learning.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T08:22:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15669v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15669v1"
-    },
-    {
-      "id": "2606.15642v1",
-      "title": "CIWI-CKT: Chaos-Informed Wave Interference Feature Fusion and Cross-City Knowledge Transfer for Traffic Flow Forecasting",
-      "authors": [
-        "Abdul Joseph Fofanah",
-        "Lian Wen",
-        "David Chen",
-        "Shaoyang Zhang"
-      ],
-      "abstract": "Accurate traffic flow prediction remains challenging in cross-city, data-scarce scenarios where limited historical data hinders model generalisation. The chaotic nature of traffic dynamics, complex spatio-temporal dependencies, and heterogeneous urban networks complicate few-shot learning across cities. Existing deep learning approaches either treat traffic as purely deterministic or lack mechanisms to model wave-like interference patterns essential for cross-regime traffic dynamics. To address these limitations, this paper proposes CIWI-CKT, a novel Chaos-Informed Wave Interference Feature Fusion framework with Cross-City Knowledge Transfer. Our framework introduces three core innovations: chaos-informed wave generation that extracts measurable chaos invariants and models traffic as adaptive wave components; meta-interference processing that captures wave interactions between support and query regimes while producing a predictability score for confidence estimation; and chaos-aware meta-learning that enables efficient cross-city knowledge transfer while preserving chaotic characteristics. We establish theoretical guarantees including chaos-to-wave stability, wave-induced dimension reduction, and meta-learning generalisation bounds. Extensive experiments on four real-world traffic datasets demonstrate that CIWI-CKT significantly outperforms state-of-the-art spatio-temporal graph learning, transfer learning, prompt-based, and few-shot methods, improving prediction accuracy while substantially reducing required training data.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T07:08:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15642v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15642v1"
-    },
-    {
-      "id": "2606.15551v1",
-      "title": "A Bifurcation Theory Framework for Gradient Descent on the Edge of Stability",
-      "authors": [
-        "Eric Gan"
-      ],
-      "abstract": "The Edge of Stability (EoS) phenomenon, where gradient descent operates with sharpness exceeding the classical convergence threshold yet the loss decreases over long timescales, is ubiquitous in modern deep learning but remains poorly understood in realistic settings. Prior rigorous analyses have been largely confined to scalar or low-dimensional losses with specific structural forms. In this work, we develop a bifurcation theory framework for gradient descent on the edge of stability that applies directly to overparameterized neural networks. By decomposing the training dynamics into components normal and tangent to the manifold of minimizers, we show that stable EoS training arises from a flip bifurcation in the normal direction, governed by the sign of the first Lyapunov coefficient, while the tangent dynamics drift toward regions of decreasing sharpness. Under mild spectral and geometric assumptions on the loss landscape, we prove convergence to the minimizing manifold when training at the EoS threshold. As a corollary, we recover and unify prior results: we show that the product-stability condition of Gan (2026) is an instance of our framework.",
-      "published": "June 14, 2026",
-      "published_raw": "2026-06-14T02:39:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15551v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15551v1"
-    },
-    {
-      "id": "2606.15356v1",
-      "title": "ShipNet: A Geometric Deep Learning Surrogate for Real-Time Ship Hydrodynamics",
-      "authors": [
-        "Kirsten Odendaal",
-        "George Drakoulas"
-      ],
-      "abstract": "Accurate prediction of hydrodynamic performance is central to ship design, yet high-fidelity computational fluid dynamics remains prohibitively expensive for large-scale parametric exploration. This motivates the development of data-driven surrogate models that provide rapid approximations to hydrodynamic predictions at substantially reduced cost. We present ShipNet, a geometric deep-learning surrogate that predicts both hull-surface pressure distributions and far-field free-surface wave patterns directly from hull geometry and speed. The network employs a regularized dynamic graph convolutional backbone on hull point clouds, with a multi-head decoder for simultaneous near-body pressure and free-surface elevation outputs. Training data consist of 420 inviscid free-surface simulations generated using a potential-flow panel method for two parent yacht hulls, each parameterized into 70 variants and evaluated at three speeds. ShipNet predicts per-point pressure coefficient and two-dimensional wave elevation map using a composite loss that combines point-wise regression and image-structure terms. On a geometry-held-out test set, ShipNet achieves R^2=0.98 for hull pressure and R^2=0.91 for wave fields. Inference requires approximately 0.15s per case, yielding over a 550x speedup relative to the potential-flow solver on conventional hardware. Limitations include the restricted geometry and speed ranges and the inviscid training data, while future work will extend the model to high-fidelity viscous simulations with physics-informed regularization.",
-      "published": "June 13, 2026",
-      "published_raw": "2026-06-13T15:38:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.15356v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.15356v1"
     }
   ]
 }
