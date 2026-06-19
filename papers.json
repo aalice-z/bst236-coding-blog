@@ -1,7 +1,168 @@
 {
-  "last_updated": "2026-06-18T02:14:32.008030",
+  "last_updated": "2026-06-19T02:42:57.672906",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.20469v1",
+      "title": "Fisher-Geometric Sharpness and the Implicit Bias of SGD toward Flat Minima",
+      "authors": [
+        "Md Sakir Ahmed",
+        "Kumaresh Sarmah",
+        "Hemen Dutta"
+      ],
+      "abstract": "A widely held intuition in deep learning is that stochastic gradient descent (SGD) implicitly favors flat minima and that flat minima generalize better, but standard Euclidean measures of flatness such as the trace or maximum eigenvalue of the loss Hessian are not invariant under reparametrizations that preserve the network function, which undermines the theoretical foundations of this narrative. In this study we resolve this issue by grounding flatness in the Riemannian geometry of the statistical manifold induced by the Fisher Information Matrix (FIM). We define Riemannian sharpness mathematically and prove that it is invariant under smooth, function-preserving reparametrizations, which directly addresses the critique of Dinh et al. in the paper ``Sharp minima can generalize for deep nets''.We note that this invariance is a property of the true FIM; the diagonal empirical estimator used in practice (and in all experiments below) inherits invariance only approximately, and exact invariance under arbitrary reparametrizations would require structured estimators such as K-FAC. We formalize the gradient noise of mini-batch SGD as having a covariance structure proportional to the FIM, derive the stationary distribution of the resulting stochastic differential equation, and then show that the probability mass is exponentially concentrated at Riemannian-flat minima. A PAC-Bayes generalization bound controlled explicitly by SR formally links this geometric bias to test performance. Our experiments on MNIST and CIFAR-10 confirm that SR reliably tracks generalization in ways that Euclidean sharpness does not, and that its scaling with $η/B$ matches the theoretical predictions. Together these results provide a rigorous, reparametrization-invariant account of why flat minima generalize.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T16:48:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.20469v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.20469v1"
+    },
+    {
+      "id": "2606.20299v1",
+      "title": "Statistical Properties of Training & Generalization",
+      "authors": [
+        "Itay Lavie",
+        "Noam Levi",
+        "Yonatan Kahn"
+      ],
+      "abstract": "Deep learning has managed to evade numerous intuitions from classical statistics to achieve unprecedented performance on a number of real-world tasks. In this article, we investigate the key features and surprises of deep learning from a physics-informed perspective, taking care to point out and justify where possible the many choices inherent in constructing a deep learning model. In particular, we review the phenomenon of neural scaling laws and discuss their interplay with the constraints and inductive biases which may be present when applying machine learning to problems in physics.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T14:35:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.20299v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.20299v1"
+    },
+    {
+      "id": "2606.20174v1",
+      "title": "Computational Methods and Challenges in Cell-Free DNA Analysis for Multi-Cancer Early Detection",
+      "authors": [
+        "Nicko Starkey",
+        "Marcin W. Wojewodzic",
+        "Krzysztof Rzecki"
+      ],
+      "abstract": "Cell-free DNA (cfDNA) is a promising avenue for non-invasive multicancer early detection (MCED), in that, it can enable multiple cancer detection simultaneously from a single blood draw, with particular sensitivity to cancers that currently lack established screening programs. Here we review the computational methods developed between 2022 and 2025 for cfDNA-based MCED. We focus on how fragmentomics and epigenetic features are extracted and analyzed to detect cancer at early stages. We first briefly outline the biological basis of cfDNA signals, then review classical statistical and machine learning approaches alongside deep learning frameworks including autoencoder-based models. For each method we discuss biological interpretability, validation strategy, and readiness for clinical integration. Furthermore, we categorize the current challenges into technical, computational, and methodological while outlining open problems in the field. This review shows that multimodal ensemble approaches have the strongest promise for clinical integration and the highest readiness. However, for better assessment of future work and side-by-side comparison, standardization of evaluation protocols and reporting results will be crucial.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T12:43:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.20174v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.20174v1"
+    },
+    {
+      "id": "2606.20108v1",
+      "title": "EFIQA: Explainable Fundus Image Quality Assessment via Anatomical Priors",
+      "authors": [
+        "Pengwei Wang",
+        "José Morano",
+        "Qian Wan",
+        "Hrvoje Bogunović"
+      ],
+      "abstract": "Image quality control is vital for a wide range of downstream applications. Deep learning-based image quality assessment methods typically train classifiers on dataset-specific quality labels, inheriting two limitations: (1) generalization is tied to the labeling criteria of the training set and (2) these methods cannot provide spatial feedback on where the quality is degraded, lacking explainability. In this work, we propose EFIQA, a framework that requires no quality-related supervision and produces spatial quality maps by design. Rather than learning ``what is degradation\" from human-annotated labels, EFIQA learns ``what should be there\" by leveraging anatomical priors. For fundus photography, we instantiate this as a two-stage approach, by first training an unsupervised anomaly detector via masked anatomical inpainting to identify regions of missing vasculature, and then distilling this prior knowledge into a shallow adapter mapping features of a frozen foundation model to precise quality maps. External-dataset evaluation demonstrates that this label-free approach with minimal adaptation achieves better performance and explainability compared with supervised methods across benchmarks with different quality criteria, highlighting its potential for real-world applications.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T11:31:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.20108v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.20108v1"
+    },
+    {
+      "id": "2606.20034v1",
+      "title": "Exploring the potential of AlphaEarth and TESSERA embeddings for Fine-scale Local Climate Zone Mapping: A case study across five cities in Switzerland",
+      "authors": [
+        "Htet Yamin Ko Ko",
+        "Clement Atzberger"
+      ],
+      "abstract": "Understanding urban spatial morphology is critical for climate modeling, risk assessment, and sustainable urban design, and Local Climate Zone (LCZ) mapping provides the basic framework for this. However, many cities still use coarse ~100-m resolution LCZ records, which are unsuitable for fine-scale urban research. In this study, precomputed embeddings from TESSERA (Feng et al., 2025) and AlphaEarth (Brown et al., 2025) are compared to traditional Sentinel-1/2 (S1S2) composites in five Swiss cities to see if they can upscale coarse LCZ maps to 10-m resolution using an attention-based U-Net. Three experiments assess multi-city transferability, the impact of higher-resolution reference data, and temporal robustness to year-to-year phenology changes. We find that all datasets achieve strong performance with test data Intersection-over-Union (IoU) ranging from 0.59-0.69 and 0.77-0.82 in the first two experiments. TESSERA consistently outperforms both S1S2 and AlphaEarth across both settings As expected, we find that the transfer of embedding-based models from one year to another remains an open challenge. Overall, however, our results demonstrate the promising potential of embeddings derived from EO foundation models to reduce time consuming preprocessing, respectively, manual feature engineering tasks and to guide a universal deep learning-based LCZ mapping workflow. When combined with a simple location-aware attention U-Net architecture, the embeddings enhance regional transferability and scalability, supporting the development of comprehensive and reproducible fine-scale LCZ maps for global urban climate applications Improving reference data quality remains the strongest lever for further accuracy gains.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T10:06:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.20034v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.20034v1"
+    },
+    {
+      "id": "2606.19956v1",
+      "title": "Towards Graph-Based Deep Learning for Map Generalization: Insights from Building Footprints Simplification and Aggregation",
+      "authors": [
+        "Yanning Wang",
+        "Zhiyong Zhou",
+        "Zhouyu Liu",
+        "Mengni Yu",
+        "Yu Feng"
+      ],
+      "abstract": "Map generalization remains one of the fundamental tasks in cartography, especially for the simplification and aggregation of complex building footprints. This study presents the first exploratory application of graph-based deep learning to both tasks, reformulating simplification as node movement prediction and aggregation as link prediction within a unified graph learning framework. We evaluate representative graph neural network architectures (GCN, GAT, and GraphSAGE) on multi-scale building datasets, showing that GraphSAGE demonstrates relative strengths in link prediction accuracy, while also revealing persistent challenges in precise node movement prediction. Beyond quantitative performance, the results highlight that aggregation poses greater complexity and challenges than simplification, underscoring the difficulty of capturing higher-level spatial relationships in map generalization with current deep learning approaches. Although limitations such as data imbalance and the need for post-processing remain, the study provides valuable insights and methodological directions for advancing automated map generalization with deep learning approaches.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T08:55:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.19956v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.19956v1"
+    },
+    {
+      "id": "2606.19934v1",
+      "title": "Speeding up the annotation process in semantic segmentation industrial applications",
+      "authors": [
+        "Marta Fernandez-Moreno",
+        "Margarita Guerrero",
+        "Rosalia Rementeria",
+        "Pablo Mesejo",
+        "Raul Moreno"
+      ],
+      "abstract": "Current machine learning models commonly require large and well-annotated datasets. However, the annotation process often becomes a bottleneck, with increased complexity leading to higher chances of human errors. Within this context, our goal in this paper is to leverage unsupervised algorithms to improve data annotation efficiency for complex semantic segmentation problems in industrial materials science. Previous research has quantified labeling time and others explored unsupervised methods. However, to the best of our knowledge, this is the first study to quantify how much unsupervised algorithms accelerate the labeling process. We aim to validate the extent to which this laborious process can be accelerated, focusing on semantic segmentation tasks that involve annotating each pixel of high-resolution images, such as the microstructure characterization challenge in materials science. Specifically, we demonstrate that by using unsupervised computer vision algorithms, the time required for the labeling process can be reduced from 170 hours to 37 hours, achieving an approximate reduction of 78\\%. The dataset we work with includes large images of dimensions 1280x959 and 960x703, which further increases the complexity of the annotation task. Despite these challenges, we create and share the largest public steel microstructure segmentation dataset to date, available under MIT License with permanent DOI, contributing a fully annotated, high-resolution dataset to the field. Additionally, this is the first work to compare the labeling time from scratch (a common approach in previous studies) to the labeling time when using these unsupervised algorithms as a pre-annotation step. Furthermore, we provide a Deep Learning model trained on this dataset, validated by field experts, and deployed in an industrial setting, serving as an initial benchmark for this public dataset.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T08:31:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.19934v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.19934v1"
+    },
+    {
+      "id": "2606.19882v1",
+      "title": "Multimodal Concept Bottleneck Models",
+      "authors": [
+        "Tongqing Shi",
+        "Ge Yan",
+        "Tuomas Oikarinen",
+        "Tsui-Wei Weng"
+      ],
+      "abstract": "Concept Bottleneck Models (CBMs) enhance the interpretability of deep learning networks by aligning the features extracted from images with natural concepts. However, existing CBMs are constrained in their ability to generalize beyond a fixed set of predefined classes and the risk of non-concept information leakage, where predictive signals outside the intended concepts are inadvertently exploited. In this paper, we propose Multimodal Concept Bottleneck Model (MM-CBM) to address these issues and extend CBMs into CLIP. MM-CBM utilizes dual Concept Bottleneck Layers (CBLs) to align both the image and text embeddings into interpretable features. This allows us to perform new vision tasks like zero-shot classification or image retrieval in an interpretable way. Compared to existing methods, MM-CBM achieves up to 51.26% accuracy improvement on average across four standard benchmarks. Our method maintains high accuracy, staying within ~5% of black-box performance while offering greater interpretability.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T07:41:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.19882v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.19882v1"
+    },
+    {
+      "id": "2606.19827v1",
+      "title": "When, Where, and How: Adaptive Binning for Tabular Self-Supervised Learning",
+      "authors": [
+        "Daehwan Kim",
+        "Haejun Chung",
+        "Ikbeom Jang"
+      ],
+      "abstract": "Medical tabular data are ubiquitous in clinical research, but deep learning for tables remains underexplored because reliable labels often require costly expert adjudication, even though structured clinical variables are routinely available in tabular form. Self-supervised learning can leverage these unlabeled tables, and recent binning-based pretexts offer a promising inductive bias, but existing objectives fix a single global quantile discretization and apply feature-agnostic supervision. We propose Adaptive Binning, a training-adaptive discretization pretext for tabular SSL that couples discretization to learning through a feature-wise coarse-to-fine curriculum. Motivated by the spectral bias of neural networks and the principles of curriculum learning, our method progressively refines discretization per feature upon plateau detection and selects representation-aware splits to jointly improve value-space concentration and representation-space coherence. A heterogeneity-aware objective unifies categorical reconstruction with ordinal supervision for numerical features, and experiments on public medical tabular datasets under unified evaluation protocols show consistent gains for linear probing and fine-tuning without dataset-specific discretization tuning. We further introduce a medical tabular SSL benchmark with standardized protocols to support reproducible progress in this underexplored domain. Our code is available at https://github.com/labhai/Adaptive-Binning.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T06:11:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.19827v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.19827v1"
+    },
+    {
+      "id": "2606.19690v1",
+      "title": "Multi-Granular Attention-Driven Reinforcement Learning Framework for Web Intelligent Enhancement Systems",
+      "authors": [
+        "Navin Chhibber",
+        "Deepak Singh",
+        "Anokh Kishore",
+        "Nikita Chawla",
+        "K. Anguraj"
+      ],
+      "abstract": "From the past few years, web intelligent enhancement systems increasingly rely on heterogeneous and dynamic web data to deliver personalized, context-aware services. However, traditional machine learning, deep learning, and reinforcement learning models often struggle with semantic understanding, adaptability, and scalability in continuously evolving web environments. In this research, a Multi-Granular Attention-based Reinforcement Web Intelligent Enhancement System (MGAR-WIES) is proposed to address the challenges by integrating semantic graph modeling, attention mechanisms, and adaptive reinforcement learning. Initially, heterogeneous web data comprising structured, semi-structured and unstructured sources are collected and preprocessed for generating unified feature representations. These representations are transformed into a dynamic semantic graph, where entities and their relationships are modeled by using graph embeddings enhanced by attention mechanisms for capturing both local relevance and global contextual dependencies. Subsequently, an adaptive multi-agent reinforcement learning strategy leverages the attention-aware semantic states to optimize personalized web actions like content recommendation, navigation optimization, and service adaptation. Finally, the continuous online feedback is further integrated to update graph representations and learning policies in real time by ensuring sustained adaptability and performance. The proposed MGAR-WIES acheived better results in terms of accuracy (80%) when compared with existing approaches.",
+      "published": "June 18, 2026",
+      "published_raw": "2026-06-18T01:38:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.19690v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.19690v1"
+    },
+    {
+      "id": "2606.19521v1",
+      "title": "Interactive Pareto navigation for deep multi-task learning",
+      "authors": [
+        "Augustina C. Amakor",
+        "Konstantin Sonntag",
+        "Sebastian Peitz"
+      ],
+      "abstract": "In multi-task learning, handling an increasing number of objectives can quickly become challenging, both in terms of the computational resources and the decision maker's capacity to choose appropriate trade-offs. A widely used approach is thus to aggregate the individual losses in a single loss function by a weighted sum. This often fails to capture either the decision maker's preferences as a result of the shape of the Pareto front, or requires multiple adjustments and computations which becomes prohibitively expensive in deep learning applications. To address these issues, we introduce a novel framework, Preference Pareto Exploration (PPE), which enforces the decision maker's preferences while accounting for the geometry of the Pareto set in an interactive exploration process. PPE is based on a predictor-corrector method that performs predictor steps tangential to the manifold of Pareto-optimal solutions, following the decision maker's preference. The subsequent corrector step results in a new trade-off reflecting this preference. To avoid explicit Hessian computations when characterizing the tangent space of the manifold, we employ a Krylov subspace method that relies solely on matrix-vector products. These products can be efficiently obtained via automatic differentiation, ensuring both efficiency and robustness throughout the optimization process. The method's functionality and performance are demonstrated using both toy problems and examples from deep learning.",
+      "published": "June 17, 2026",
+      "published_raw": "2026-06-17T19:08:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.19521v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.19521v1"
+    },
     {
       "id": "2606.19317v1",
       "title": "Explaining Attention with Program Synthesis",
@@ -135,169 +296,6 @@
       "published_raw": "2026-06-16T20:16:16Z",
       "pdf_link": "http://arxiv.org/pdf/2606.18464v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.18464v1"
-    },
-    {
-      "id": "2606.18338v1",
-      "title": "ThousandWorlds: A benchmark for climate emulation of potentially habitable exoplanets",
-      "authors": [
-        "Edward T. Stevenson",
-        "Mei Ting Mak",
-        "Eric Wolf",
-        "Denis E. Sergeev",
-        "Tobi Hammond",
-        "N. J. Mayne",
-        "Miles Cranmer"
-      ],
-      "abstract": "The search for life beyond Earth will depend on detecting faint signatures in the atmospheres of potentially habitable exoplanets. Interpreting those signatures requires understanding the host planet's climate: the same molecule may signal life on one planet and abiotic chemistry on another. Global climate models (GCMs) provide this understanding, but individual runs can require up to millions of core-hours and substantial domain expert time. Machine-learning emulators could remove this bottleneck, but progress has been limited by the absence of a curated, multi-model exoclimate dataset. We introduce ThousandWorlds, an ML-ready benchmark for exoclimate emulation and for the broader regime of low-data, multi-simulator, parameter-to-field regression. The dataset contains approximately 1800 simulations from five GCMs, mapping eight planet parameters to 3D atmospheric fields including temperature, humidity, winds, clouds, and radiation. Three nested subsets define progressively harder challenges: single-simulator regression, multi-simulator regression with complete observations, and multi-simulator regression with structured missingness. We propose two evaluation protocols: one for ranking methods, and one that measures performance relative to the disagreement between GCMs themselves. We evaluate seven baselines spanning simple methods, deep learning, and Gaussian processes. GP-based methods perform best, suggesting that ThousandWorlds exposes a regime where off-the-shelf deep learning does not yet succeed. Data: https://doi.org/10.57967/hf/8695. Code: https://github.com/edstevenson/ThousandWorlds.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T18:00:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18338v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18338v1"
-    },
-    {
-      "id": "2606.18080v1",
-      "title": "Edge Flow: A Tractable and Predictive Continuous-Time Model for Gradient Descent at the Edge of Stability",
-      "authors": [
-        "Pierre Marion"
-      ],
-      "abstract": "Gradient descent in deep learning may operate at the edge of stability (EoS), a regime in which the largest eigenvalue of the loss Hessian hovers near the stability threshold $2/η$, where $η$ is the learning rate. Classical analysis tools such as gradient flow and the descent lemma do not apply here, motivating the search for a continuous-time model valid at EoS. We propose Edge Flow, a system of three coupled ordinary differential equations that provides a tractable, faithful, and predictive model of gradient descent dynamics at EoS. Edge Flow decomposes the dynamics into a center, an oscillation direction, and an oscillation magnitude. The center follows a modified gradient flow on a symmetrized loss; the direction tracks a top eigenvector of the Hessian via Rayleigh quotient dynamics; and the magnitude grows or decays exponentially depending on whether the sharpness exceeds or falls below the threshold $2/η$. Crucially, sharpness stabilization emerges from the coupled dynamics via a self-stabilization feedback loop. Discretizing Edge Flow only requires two gradient evaluations and one Hessian--vector product at each iteration. We demonstrate empirically that Edge Flow tracks the dynamics of gradient descent at least as faithfully as previously proposed continuous-time EoS models, while in addition resolving the oscillation of the sharpness at the onset of EoS, and that it provides a principled framework for understanding and mitigating instabilities in this regime.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T15:45:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18080v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18080v1"
-    },
-    {
-      "id": "2606.18078v1",
-      "title": "Spatial prediction of environmental processes using random forests: How best to account for spatial dependence?",
-      "authors": [
-        "Duncan Lee",
-        "Vinny Davies",
-        "Helen R. Savage",
-        "Hussein Twabi",
-        "Marriott Nliwasa",
-        "Peter MacPherson"
-      ],
-      "abstract": "Geostatistical spatial prediction for environmental processes is typically undertaken using Gaussian process models via Kriging, while machine learning (ML) algorithms are state-of-the-art for non-spatial prediction. An exciting recent fusion of these ideas imbibes traditional ML algorithms with the capacity to deal with spatial autocorrelation, leading to improved predictive performance. A range of approaches have been proposed, including fusion with Gaussian processes, observation-driven correlation structures, spatial basis functions and local geographical fitting. However, there has been no numerical comparison of their relative predictive performances, which is needed to advise environmental scientists on the optimal approach to use. This paper fills this knowledge gap, and focuses on random forests as the ML algorithm because they are more computationally and conceptually straightforward to implement than deep learning algorithms. The results from two studies are presented, the first being a controlled simulation experiment investigating whether any single approach is consistently superior across different spatial autocorrelation types. The second study focuses on the prediction of air pollution concentrations within a tuberculosis prevalence study in Blantyre, Malawi. The results show that whilst no single approach is universally superior, utilising spatial basis functions appears to perform consistently well across both the simulation and real data studies.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T15:45:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18078v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18078v1"
-    },
-    {
-      "id": "2606.18063v1",
-      "title": "When LLMs Analyze Scars: From Images to Clinically-Meaningful Features",
-      "authors": [
-        "Ruman Wang",
-        "Hangting Ye"
-      ],
-      "abstract": "Medical image classification faces a fundamental dilemma: while deep learning models achieve remarkable performance at scale, real-world clinical scenarios often suffer from severe data scarcity due to annotation costs, privacy constraints, and disease rarity. This challenge is particularly pronounced in pathological scar classification, where differentiating keloids from hypertrophic scars requires subtle expert knowledge and labeled images are extremely limited. We propose a novel paradigm that repositions large language models (LLMs) as knowledge-driven feature engineers rather than end-to-end classifiers. We call this framework ScaFE (Scar Feature Engineering). Our key insight is that LLMs encode rich medical knowledge that can be externalized as executable feature extraction code, enabling the transformation of high-dimensional images into low-dimensional, clinically interpretable representations. Specifically, we prompt an LLM with established scar assessment criteria to generate deterministic Python code that extracts features aligned with clinical scoring systems such as the Vancouver Scar Scale. Our approach offers three key advantages: (1) data efficiency, achieving robust performance with limited training samples by decoupling knowledge acquisition from statistical learning; (2) privacy preservation, as raw images are processed locally without exposure to external LLMs; and (3) interpretability, through explicit features grounded in clinical reasoning. Extensive experiments on scar classification demonstrate that our method consistently outperforms end-to-end deep learning baselines or using LLMs as black-box classifiers under limited data conditions, establishing a promising direction for integrating LLMs into data-efficient and clinically transparent medical AI systems.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T15:38:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18063v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18063v1"
-    },
-    {
-      "id": "2606.18049v1",
-      "title": "ConTex: Reformulating Counterfactual Generation For Time Series Forecasting",
-      "authors": [
-        "Jan Voets",
-        "Hasan Tercan",
-        "Tobias Meisen",
-        "Sebastian Baum"
-      ],
-      "abstract": "Decision-making with deep learning-based time series forecasting requires not only accurate predictions but also actionable insights. However, current architectures do not inherently provide such information. Specifically, guidance is needed on how current conditions must be modified to shift from a predicted outcome to a desired future scenario. Counterfactual explanations provide a natural framework for this task, as they represent minimal input changes that alter the model's prediction, indicating when and how intervention is required. Existing approaches rely on instance-wise optimization, leading to inconsistency across instances, high computational costs, and limited applicability in real-time settings. To address these limitations, we reformulate counterfactual generation for time series forecasting as the problem of learning a globally consistent intervention strategy, allowing counterfactuals to be generated through a single shared function. We propose Counterfactual Time Series Explanations (ConTex), a model-agnostic, decomposed architecture comprising a temporal context encoder and a conditional encoder, followed by two heads that capture interventions in terms of temporal relevance and modification strength. This structure overcomes the instability and inconsistency of instance-based approaches by producing targeted, interpretable interventions across time and feature dimensions in a single forward pass, making it suitable for real-time applications. Across multiple forecasting architectures and benchmark datasets, ConTex achieves state-of-the-art validity while generating sparse counterfactuals that minimize the number of necessary interventions. Additionally, our approach reduces computational cost by at least 12-36x compared to instance-wise generation and supports real-time inference at approximately 0.007 seconds.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T15:25:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18049v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18049v1"
-    },
-    {
-      "id": "2606.18316v1",
-      "title": "A Survey on Data-Driven Models for Soil Moisture Regression and Classification",
-      "authors": [
-        "Ilektra Tsimpidi",
-        "George Georgoulas",
-        "Vidya Sumathy",
-        "George Nikolakopoulos"
-      ],
-      "abstract": "Soil Moisture (SM) modelling constitutes a complex spatiotemporal learning problem characterised by nonlinear environmental interactions, heterogeneous data sources, and limited ground observations. Physics-based approaches, such as water balance models, rely on explicit hydrological equations and high-quality inputs, but their computational cost and scalability limitations restrict large-scale deployment. Data-driven artificial intelligence (AI) methods have emerged as flexible alternatives, enabling the extraction of empirical relationships between soil moisture and environmental variables with reduced modelling assumptions. This work presents a structured survey of AI-based models for soil moisture estimation and classification. Existing approaches are organized into five categories: (a) statistical time-series models, (b) geostatistical methods (c) classical machine learning (ML) models, (d) Deep Learning (DL) models and (e) Probabilistic/Bayesian methods. These models leverage historical soil moisture records, meteorological variables, vegetation indices, topography, soil characteristics, and geolocation data to perform regression or classification tasks.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T11:31:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18316v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18316v1"
-    },
-    {
-      "id": "2606.17692v1",
-      "title": "Delta-Based Target Reformulation for Short-Term Electricity Load Forecasting Using LSTM and Transformer Models",
-      "authors": [
-        "Vansh Bansal"
-      ],
-      "abstract": "Accurate short-term electricity load forecasting is critical for the reliable and economic operation of modern power systems, under non-stationarity arising from weather variability, calendar effects, and evolving consumption patterns. While deep learning models such as LSTMs and Transformers show promising performance, most existing studies focus on direct absolute load prediction without explicitly addressing target non-stationarity. Motivated by classical time-series differencing techniques in ARIMA models, this paper investigates a delta-based target reformulation for short-term electricity load forecasting using deep learning. Instead of directly predicting absolute load values, the proposed formulation trains models to predict the change in load between consecutive time steps, with final forecasts reconstructed using the last observed load. This aims to stabilize the learning target and reduce forecasting difficulty. Using multi-year, hourly real-world electricity load data from India, augmented with meteorological variables from the NASA POWER project and calendar features, this study evaluates LSTM and Transformer models under both formulations, benchmarking them against LightGBM. Experiments are conducted for hour-ahead and day-ahead horizons, assessing performance via Mean Absolute Error (MAE) and Mean Absolute Percentage Error (MAPE). Results show that delta-based reformulation consistently improves forecasting accuracy for hour-ahead prediction across all evaluated models, yielding MAPE reductions of over 50% compared to absolute formulations. For day-ahead forecasting, delta targets specifically benefit deep sequence models (LSTM and Transformer), while LightGBM remains competitive under the absolute formulation. These findings indicate that while delta reformulation is a powerful inductive bias for neural networks, its efficacy is model- and horizon-dependent.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T09:01:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.17692v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.17692v1"
-    },
-    {
-      "id": "2606.18303v1",
-      "title": "A Link between Shock-wave Theory and Symmetry-reduced Stochastic Gradient Descent for Artificial Neural Networks",
-      "authors": [
-        "Taiki Miyagawa"
-      ],
-      "abstract": "We develop a mathematically explicit link between shock-wave theory and the symmetry-quotiented learning dynamics of stochastic gradient descent, drawing on differential geometry, Lie group theory, and fluid mechanics. Specifically, after quotienting parameter symmetries and applying local-entropy coarse-graining, the effective dynamics satisfy a viscous Hamilton--Jacobi equation on the quotient manifold. Moreover, under the assumption that the raw parameter dynamics can be summarized by a gradient field on the quotiented space, the gradient of the coarse-grained loss function obeys a Burgers-type equation, and shock formation can be established rigorously. We apply our theory to multilayer perceptrons, convolutional neural networks, Transformers, and mean-field networks, and show that they obey the Hamilton--Jacobi or Burgers-type equations. We conjecture that this framework also yields practical diagnostics for deep learning. In architectures such as Transformers, raw parameter norms are often distorted by symmetry redundancy and may therefore be misleading, whereas symmetry-corrected quotient observables provide a principled basis for monitoring, forecasting, and controlling training-phase transitions.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T06:20:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.18303v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.18303v1"
-    },
-    {
-      "id": "2606.17413v1",
-      "title": "Amortized Probabilistic Retrieval of Atmospheric CO2 from OCO-2 Spectra Using Deep Learning with Laplace Approximations and Normalizing Flows",
-      "authors": [
-        "Alejandro Calle-Saldarriaga",
-        "Felix Jimenez",
-        "Jack Grosskreuz",
-        "Jiazheng Wang",
-        "Jonathan Hobbs",
-        "Matthias Katzfuss"
-      ],
-      "abstract": "Space-based monitoring of atmospheric carbon dioxide (CO2) is essential for constraining the global carbon budget. NASA's Orbiting Carbon Observatory-2 (OCO-2) estimates column-averaged dry-air mole fractions of CO2 (XCO2) using high-resolution spectra. However, current operational retrieval algorithms are computationally expensive and do not properly quantify uncertainties. We present a novel deep learning framework that addresses these challenges. Due to the difficulties of ground-truth data for real satellite observations, we develop and validate our approach using a high-fidelity simulation dataset. This dataset, created to support OCO-2 uncertainty quantification (UQ), incorporates realistic forward model errors. Our architecture encodes spectral bands using a multi-branch neural network and estimates posteriors of the full CO2 column or desired summaries thereof using two scalable UQ methods: Laplace approximations and normalizing flows. Our approach has five key advantages relative to operational \"full-physics\" solvers: (1) Amortization: Inference is orders of magnitude faster, enabling real-time processing of massive data streams; (2) Model error robustness: By training on simulations that explicitly include model discrepancies, our method accounts for systematic errors often neglected by standard inversions; (3) Point estimate accuracy: We achieve superior predictive accuracy compared to baseline methods; (4) Improved UQ: The probabilistic outputs yield better-calibrated uncertainty estimates; and (5) Non-Gaussian posteriors: When utilizing normalizing flows, our framework successfully models complex, asymmetric posterior distributions, overcoming the limitations of the Gaussian assumption. These results suggest that simulation-based deep learning is a viable path toward next-generation operational processing systems.",
-      "published": "June 16, 2026",
-      "published_raw": "2026-06-16T01:49:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.17413v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.17413v1"
-    },
-    {
-      "id": "2606.17235v1",
-      "title": "Physics-Informed Attention Mechanism and Generalization Capability of Deep Learning-Based Grain Growth Evolution Prediction",
-      "authors": [
-        "Pungponhavoan Tep",
-        "Marc Bernacki"
-      ],
-      "abstract": "Machine Learning (ML) models for grain growth prediction are typically trained on idealized synthetic data, yet practical applications require generalization to conditions outside the training distribution. This study evaluated the Out-Of-Distribution (OOD) generalization capability of the trained model from our previous study across three test cases, including experimental microstructures, microstructures characterized by a bimodal grain size distribution, and abnormal grain growth. To further probe whether physics-informed architectural design could improve robustness under these different conditions, a boundary-masked attention mechanism was proposed specifically for grain growth, constraining attention to grain boundary pixels. Both the baseline and the proposed physics-informed attention model were evaluated without retraining or fine-tuning on the OOD data. Both models successfully generalized to all three test cases, yet the boundary-masked attention mechanism provided substantial improvements, with the most notable gains for microstructures characterized by a bimodal grain size distribution, where Structural Similarity Index Measure (SSIM) improved from \\num{0.6221} to \\num{0.7609} and mean grain size ($\\overline{R}$) error decreased from \\SI{8.75}{\\percent} to \\SI{3.57}{\\percent}. The attention heatmap analysis revealed that the boundary-masked attention model learned to concentrate attention on large grain boundaries in a manner consistent with curvature-driven grain growth physics, emerging from training without being explicitly encoded into the architecture. These results indicate that models trained on synthetic data can generalize to diverse OOD conditions without retraining, and that physics-informed attention may improve accuracy when the boundary morphology matches the training domain.",
-      "published": "June 15, 2026",
-      "published_raw": "2026-06-15T19:28:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.17235v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.17235v1"
-    },
-    {
-      "id": "2606.16991v1",
-      "title": "A Multi-Center Benchmark for Abdominal Disease Diagnosis and Report Generation from Non-Contrast CT",
-      "authors": [
-        "Mariam Elbakry",
-        "Aliaa Sayed Sheha",
-        "Salma Hassan Tantawy",
-        "Aya Yassin",
-        "Concetto Spampinato",
-        "Karim Lekadir",
-        "Xiaomeng Li",
-        "Marawan Elbatel"
-      ],
-      "abstract": "Multiphasic contrast-enhanced CT (CECT) is widely used for abdominal lesion characterization, yet it carries inherent risks of contrast-induced nephropathy, escalates acquisition burden, and heavily contributes to radiologist workload. To address these challenges, we introduce a novel multi-center benchmark for multi-organ abdominal disease diagnosis and automated radiology report generation, which learns to synthesize contrast-enhanced findings from single-phase non-contrast CT (NCCT). To support this, we curated a large-scale dataset of paired NCCT-CECT studies and their corresponding contrast-enhanced radiology reports from two centers, partitioned into internal sets and an external validation cohort. Under a unified evaluation protocol, we benchmarked five contemporary deep learning architectures encompassing chest-specific, abdomen-specific, and general-purpose multimodal domains. Extensive experiments demonstrate that NCCT retains diagnostic signals, achieving an average multi-organ AUC of 69.1% on the internal cohort and 63.1% on the external cohort, respectively. By releasing this dataset and standardized benchmark publicly, this study aims to catalyze future research into safer, resource-efficient, and globally accessible contrast-free abdominal imaging workflows. Code is available at: https://github.com/xmed-lab/TriALS-Report.",
-      "published": "June 15, 2026",
-      "published_raw": "2026-06-15T17:29:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.16991v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.16991v1"
     }
   ]
 }
