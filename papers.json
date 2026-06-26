@@ -1,7 +1,182 @@
 {
-  "last_updated": "2026-06-25T02:00:11.501331",
+  "last_updated": "2026-06-26T02:01:38.209035",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.27304v1",
+      "title": "A Multi-Fidelity Convolutional Autoencoder-Transfer Learning Framework for Guided-Wave-Based Damage Diagnosis Using Large Simulated and Limited Experimental Datasets",
+      "authors": [
+        "Santosh Kapuria",
+        " Abhishek"
+      ],
+      "abstract": "Guided wave-based structural health monitoring (GWSHM) with onboard transducers offers significant potential for the early diagnosis of damage in engineering structures. However, the practical deployment of deep learning models is often hindered by the limited availability of labelled experimental data and the high computational cost of generating large-scale high-fidelity simulation datasets. This study presents a multifidelity transfer learning framework that integrates lightweight physics-based simulations, convolutional autoencoder (CAE)-based deep feature learning, a feed-forward neural network, and limited experimental measurements for accurate damage localisation and sizing in plate-like structures instrumented with piezoelectric transducers. A computationally efficient one-dimensional time-domain spectral element model is employed to generate a large synthetic dataset for pretraining, while transfer learning adapts the model to experimental domains using only a small amount of labelled data. The CAE-based transfer learning framework significantly outperforms its CNN-based counterpart in damage localisation accuracy. The model achieves excellent predictive performance with $R^2$ scores exceeding 0.93 for damage localisation and 0.99 for damage sizing. Its generalisation capability is demonstrated on previously unseen data, showing high prediction accuracy for damage scenarios not represented during pretraining or fine-tuning. The results establish the proposed framework as an accurate, computationally efficient, and practically viable solution for real-world GWSHM applications.",
+      "published": "June 25, 2026",
+      "published_raw": "2026-06-25T17:25:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.27304v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.27304v1"
+    },
+    {
+      "id": "2606.27171v1",
+      "title": "Stochastic Gradient Optimization with Model-Assisted Sampling",
+      "authors": [
+        "Jonne Pohjankukka",
+        "Jukka Heikkonen"
+      ],
+      "abstract": "This work addresses the problem of variance in stochastic gradient estimation for machine learning optimization. Deep learning relies on mini-batch methods such as stochastic gradient descent, which approximate full gradients but introduce noise, creating trade-offs between convergence stability, speed, and generalization. Existing methods, including variance reduction techniques (e.g., SVRG and SAG) and adaptive optimizers, aim to mitigate gradient noise but may introduce additional computational overhead. We propose a model-assisted sampling framework that interprets mini-batch gradients through survey sampling theory, treating the dataset as a fixed finite population and gradients as sample-based estimates. Our aim is to bridge machine learning optimization and survey sampling theory by combining their perspectives on sample-based estimation and variance reduction. By incorporating auxiliary gradient-prediction models, we construct more efficient gradient estimators, with uniform sampling arising as a special case when no auxiliary information is used. Our approach integrates easily with existing optimizers, improving efficiency without altering their dynamics. Empirical results on synthetic and six benchmark datasets show performance gains in 71-86% of the experiments, particularly for medium-sized input spaces in our benchmarks. Notably, with momentum-based optimizers such as AdamW, the proposed estimator achieves clearly better generalization in roughly half the training epochs compared to baseline estimator.",
+      "published": "June 25, 2026",
+      "published_raw": "2026-06-25T15:39:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.27171v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.27171v1"
+    },
+    {
+      "id": "2606.27153v1",
+      "title": "DMuon: Efficient Distributed Muon Training with Near-Adam Overhead",
+      "authors": [
+        "Vincent Chen",
+        "Starrick Liu",
+        "Regis Cheng",
+        "Dance Yang",
+        "Shalfun Li",
+        "Ryan Yu",
+        "Lucy Liang",
+        "Hang Su",
+        "Roy Gan",
+        "Hao Wang",
+        "Qian Wang"
+      ],
+      "abstract": "Matrix-orthogonalization-based optimizers, exemplified by Muon, have demonstrated strong convergence behavior across a wide range of modern deep learning workloads. The matrix-aware updates offer a compelling alternative to conventional element-wise optimization, particularly as model architectures continue to grow in scale and heterogeneity. Yet contemporary distributed training infrastructure built around the assumption of element-wise optimizers is poorly matched to matrix-level optimizers such as Muon, whose updates couple entire weight matrices and require costly Newton-Schulz iterations. Vanilla Muon implementations incur more than 2x the cost of forward and backward passes. To close this gap, we present DMuon, an open-source distributed Muon implementation that integrates into existing training pipelines as a drop-in module, with no framework-level modifications. Across both embodied foundation model and large language model (LLM) training workloads, DMuon achieves a 1.48x-3.01x speedup in end-to-end step time and a 6.85x-163.00x speedup in optimizer-step time, bringing per-step latency to near-AdamW levels and enabling efficient scaling in our model training.",
+      "published": "June 25, 2026",
+      "published_raw": "2026-06-25T15:23:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.27153v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.27153v1"
+    },
+    {
+      "id": "2606.26705v1",
+      "title": "Algorithmic Foundations of Deep Learning: Complexity-Theoretic Rates and a Characterization of Universal Approximation",
+      "authors": [
+        "Anastasis Kratsios",
+        "Simone Brugiapaglia",
+        "Bum Jun Kim",
+        "Gregory Cousins",
+        "Haitz Sáez de Ocáriz Borde"
+      ],
+      "abstract": "Feedforward neural network (NN) expressivity is typically studied by emulating optimal basis-expansion schemes. While powerful, this perspective is incomplete: it primarily captures complexity through regularity, and therefore does not distinguish intuitively simple and complicated objects with comparable regularity, such as the square-root function and a typical Brownian path. The guiding message is that neural networks should be viewed not only as flexible basis functions, but also as models of computation. If a function is computable by a real-valued circuit over a prescribed elementary gate language, then it can be computed to comparable accuracy by an NN with explicit depth, width, and non-zero-parameter bounds controlled by the depth, width, gate count, and gate structure. Thus, neural-network complexity is not governed by regularity alone, but also by algorithmic complexity. We then show that any definable NN model satisfying a natural parallelization condition, allowing possibly multivariate non-linearities such as attention or layer normalization, is a universal approximator if and only if it contains a non-affine nonlinearity. The scope of our theory is illustrated by deducing universal approximation guarantees for continuous functions, minimax-optimal approximation guarantees for Besov classes, logarithmic-error complexity for holomorphic functions, and by showing that NNs can emulate numerical algorithms such as Newton-Raphson root finding and power iteration without architecture-specific arguments. Its precision is illustrated by shortest-path computation on $k$-vertex graphs: compiling the tropical dynamic-programming circuit yields NNs with O(log(1/ε)) non-zero parameters, exponentially improving in 1/ε over the generic $O(ε^{-c k^2})$ Lipschitz-approximation scale, for a constant c>0.",
+      "published": "June 25, 2026",
+      "published_raw": "2026-06-25T07:34:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26705v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26705v1"
+    },
+    {
+      "id": "2606.26547v1",
+      "title": "Compiler-Driven Approximation Tuning for Hyperdimensional Computing",
+      "authors": [
+        "Xavier Routh",
+        "Abdul Rafae Noor",
+        "Akash Kothari",
+        "Zheyu Li",
+        "Mahbod Afarin",
+        "Tajana Rosing",
+        "Vikram Adve"
+      ],
+      "abstract": "As Moore's law reaches its physical and economic limits, domain-specific approaches are increasingly employed to accelerate machine learning workloads. Hyperdimensional Computing (HDC) represents one such emerging paradigm, offering an alternative to conventional deep learning techniques. Rooted in cognitive models of computation, HDC is designed bottom-up with hardware efficiency as a first-class objective. HDC workloads map naturally to heterogeneous hardware platforms, including CPUs, GPUs, and FPGAs, as well as emerging in-memory computing technologies such as Resistive RAM (ReRAM) and Phase-Change Memory (PCM). HDC algorithms are intrinsically tolerant to noise and approximation, enabling substantial performance gains with minimal accuracy loss. In this work, we introduce ApproxHDC, a framework for automated identification and application of domain-specific approximations in HDC workloads. ApproxHDC extends the HPVM-HDC compiler infrastructure to enable retargetable compilation across diverse hardware backends, including CPUs, GPUs, and simulated ReRAM and PCM-based accelerators. The space of possible approximations is exponentially large; ApproxHDC employs efficient search and analysis to navigate it and identify high-impact configurations spanning both software and hardware levels.",
+      "published": "June 25, 2026",
+      "published_raw": "2026-06-25T02:46:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26547v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26547v1"
+    },
+    {
+      "id": "2606.26492v1",
+      "title": "Evaluation-Strategy Gap in Fault Diagnosis of Deep Learning Programs",
+      "authors": [
+        "Sigma Jahan"
+      ],
+      "abstract": "Deep Learning (DL) programs can fail during training for many reasons, and diagnosing the cause is a costly and time-consuming maintenance task. Techniques for diagnosing such failures are commonly assessed using within-program cross-validation, which may be inadequate for deployment settings involving previously unseen programs. It is therefore necessary to assess how performance differs across these settings and to identify the causes of any performance gap in established fault diagnosis techniques for DL. We investigate this gap using DynFault, a corpus of 5,542 fault-injected training traces from 38 real-world DL programs. We found a gap of 0.190 in balanced accuracy for existing fault diagnosis techniques between within-program evaluation and holding out whole programs. We also found the gap comes from program-level structure in the features, which led us to examine two runtime feature sets, curvature features and optimizer features, and their behavior on unseen programs. We found that curvature features are useful for instability detection on unseen programs, while optimizer and activation features help only on programs seen during training.",
+      "published": "June 25, 2026",
+      "published_raw": "2026-06-25T00:52:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26492v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26492v1"
+    },
+    {
+      "id": "2606.26454v1",
+      "title": "Data-driven Machine Learning Cannot Reach Symbolic-level Logical Reasoning -- The Limit of the Scaling Law",
+      "authors": [
+        "Tiansi Dong",
+        "Mateja Jamnik",
+        "Pietro Liò"
+      ],
+      "abstract": "Sphere neural networks have achieved symbolic level syllogistic reasoning without training data, raising the question of where the limit of the scaling law for logical reasoning lies, i.e., whether data-driven machine learning systems can achieve the same level by increasing training data and training time. We show two methodological limitations that prevent supervised deep learning from reaching the symbolic-level syllogistic reasoning: (1) training data can not distinguish all 24 types of valid syllogistic reasoning; (2) end-to-end mapping from premises to conclusion introduces contradictory training targets between neural components for pattern recognition and logical reasoning. Beside theoretical analysis, we experimentally illustrate that Euler Net cannot achieve rigorous syllogistic reasoning. We further challenge the most recent ChatGPTs (GPT-5-nano and GPT-5) to determine the satisfiability of syllogistic statements in four surface forms (patterns): words, double words, simple symbols, and long random symbols, showing that surface forms affect the reasoning performance and that ChatGPT GPT-5 may reach 100% accuracy but still provide incorrect explanations. As empirical training processes are stopped after achieving 100% accuracy, we conclude that supervised machine learning systems will not attain the rigour of symbolic logical reasoning.",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T23:30:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26454v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26454v1"
+    },
+    {
+      "id": "2606.26383v1",
+      "title": "SOLAR: AI-Powered Speed-of-Light Performance Analysis",
+      "authors": [
+        "Qijing Huang",
+        "Sana Damani",
+        "Zhifan Ye",
+        "Athinagoras Skiadopoulos",
+        "Siva Kumar Sastry Hari",
+        "Jason Clemons",
+        "Sahil Modi",
+        "Jingquan Wang",
+        "Aditya Kane",
+        "Edward C Lin",
+        "Humphrey Shi",
+        "Christos Kozyrakis"
+      ],
+      "abstract": "How fast could a deep-learning model run on target hardware, and how far is today's implementation from that limit? These questions are central to software, hardware, and algorithm optimizations. Speed-of-Light (SOL) analysis answers them by computing a workload's theoretical minimum execution time on a given architecture. Yet deriving SOL bounds remains manual, error-prone, and disconnected from rapid model development. To close this gap, we introduce SOLAR, a framework that automatically derives validated SOL bounds from PyTorch and JAX source code. SOLAR leverages both generative and deterministic components in its flow: an LLM frontend translates any source programs into an executable Affine Loop IR, validated by output comparison; a deterministic flow lifts the IR into an einsum graph; and an analytical backend computes unfused, fused, and cache-aware SOL bounds. SOLAR provides comprehensive operator and language coverage, produces validated bounds with zero observed SOL violations, and offers multi-fidelity analysis that tightens bounds and surfaces optimization insights. We evaluate SOLAR across KernelBench, JAX/Flax models, and robotics workloads. These experiments demonstrate four use cases: headroom analysis at multiple fidelity levels, identifying optimization opportunities, cross-platform exploration, and inverse-roofline hardware provisioning.",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T21:09:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26383v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26383v1"
+    },
+    {
+      "id": "2606.26273v1",
+      "title": "Equivariance and Augmentation for Bayesian Neural Networks",
+      "authors": [
+        "Miaowen Dong",
+        "Axel Flinth",
+        "Jan E. Gerken"
+      ],
+      "abstract": "Symmetries are important for many deep learning tasks, ranging from applications in the sciences to medical imaging. However, there is an ongoing debate about whether to impose symmetry constraints on the neural network architecture (yielding equivariant neural networks) or learn them from augmented training data. Although equivariant networks are well-studied theoretically, much less is known about data augmentation, since analyzing augmentation requires control over the training dynamics. Inspired by recent results that show that augmented infinite deep ensembles are exactly equivariant, we study data augmentation for Bayesian neural networks (BNNs) trained with variational inference. We focus on variational distributions in the exponential family and derive conditions under which exact equivariance is reached. We furthermore obtain bounds on the equivariance error and introduce three novel symmetrization techniques which boost the effect of data augmentation in this setting. We conduct extensive numerical experiments which show that one of our symmetrization methods (orbit expansion) outperforms the baseline in both equivariance and overall performance. Our code is available at github.com/dmw1998/augment-BNNs",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T18:12:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26273v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26273v1"
+    },
+    {
+      "id": "2606.25989v1",
+      "title": "Taxonomy-aware deep learning for hierarchical marine species classification in underwater imagery",
+      "authors": [
+        "Dan Zimmerman",
+        "Dimitris A. Pados",
+        "George Sklivanitis"
+      ],
+      "abstract": "Automated classification of marine species from underwater imagery is essential for scalable ocean biodiversity monitoring and conservation policy. Existing approaches struggle with severe domain shift across collection platforms, fine-grained visual similarity between closely related species, and uneven annotation granularity, where many specimens can only be identified to genus or a coarser taxonomic rank. We present a taxonomy-aware deep learning framework that aligns both the training loss and the inference rule with the hierarchical structure of biological classification, combining a taxonomy-weighted loss, minimum-risk Bayesian inference, multi-scale feature encoding, and independent per-rank classification heads. Evaluated on the FathomNet 2025 dataset1 (79 marine classes across seven taxonomic ranks), the system achieves a mean taxonomic distance of 1.581, within 3% of the 1st-place solution (1.535), with the largest gains from metric-aligned inference and simple, decoupled components that generalize better than learned dependencies under distribution shift.",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T15:59:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.25989v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.25989v1"
+    },
+    {
+      "id": "2606.25927v1",
+      "title": "Knowledge Cascade: Reverse Knowledge Distillation on Nonparametric Multivariate Functional Estimation",
+      "authors": [
+        "Luyang Fang",
+        "Haoran Lu",
+        "Yongkai Chen",
+        "Wenxuan Zhong",
+        "Ping Ma"
+      ],
+      "abstract": "As machine learning models and datasets continue to grow, developing complex models has become increasingly computationally demanding. Knowledge distillation reduces deployment cost by compressing a large, well-trained teacher model into a compact student model, but it does not address settings where constructing the teacher itself is the bottleneck. Motivated by this challenge, we introduce Knowledge Cascade (KCas), a reverse knowledge distillation framework that uses information from a small, inexpensive student model to guide the development of a more complex teacher model. Although this direction is counterintuitive because the teacher typically has greater representational capacity, we show that student-to-teacher transfer can be principled when supported by statistical scaling relationships. We first develop KCas for nonparametric multivariate functional estimation in reproducing kernel Hilbert spaces via smoothing splines, where selecting multiple smoothing parameters is a major computational bottleneck. KCas transfers student-selected smoothing parameters to the full-sample regime through asymptotic scaling laws, substantially reducing computational cost for high-dimensional and large-scale datasets while retaining theoretical guarantees. Beyond smoothing splines, we illustrate the same principle through kernel density estimation and deep learning hyperparameter transfer. Simulations and real-data experiments show that KCas achieves substantial computational savings while maintaining strong statistical performance, and can sometimes outperform the corresponding full-sample procedure.",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T15:06:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.25927v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.25927v1"
+    },
     {
       "id": "2606.25769v1",
       "title": "Deep Neural Networks with Ordinal Loss for Medical Applications",
@@ -30,6 +205,19 @@
       "published_raw": "2026-06-24T09:14:53Z",
       "pdf_link": "http://arxiv.org/pdf/2606.25606v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.25606v1"
+    },
+    {
+      "id": "2606.26165v1",
+      "title": "Predicting Fruit Quality with a Hybrid Machine Learning and Image Processing Approach",
+      "authors": [
+        "Amir Reza Hashemi",
+        "Shahram Amiri"
+      ],
+      "abstract": "Fruit spoilage is a significant issue in agriculture, leading to substantial economic losses. Addressing this, our study introduces a hybrid approach combining image processing and deep learning to assess fruit freshness. We developed an image processing algorithm that quantifies spoilage on a scale from 0 (fully fresh) to 100 (fully rotten). Alongside, we trained a convolutional neural network (CNN) to perform binary classification (fresh or rotten) using a large dataset of fruit images. The outcomes of both methods were synthesized using logistic regression to enhance the accuracy of freshness predictions. Subsequently, this logistic regression model was utilized to enable the image processing algorithm to provide binary classification based on its percentage output, thus eliminating the need for the CNN in real-time applications. Our approach, which does not require high computational resources, achieved real-time performance and was validated with over 90% accuracy on a dataset comprising apples and oranges. The primary limitation lies in the requirement for fruits to be isolated on a background that must be either white or transparent, suggesting future improvements could include advanced segmentation models to automate background removal. This study's results highlight the potential of integrating simple image processing techniques with machine learning to provide practical solutions in the agricultural sector.",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T07:16:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.26165v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.26165v1"
     },
     {
       "id": "2606.25463v1",
@@ -131,174 +319,6 @@
       "published_raw": "2026-06-23T16:39:25Z",
       "pdf_link": "http://arxiv.org/pdf/2606.24780v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.24780v1"
-    },
-    {
-      "id": "2606.24999v1",
-      "title": "A Zeroth-Order Deep Learning Method for Fully Nonlinear Parabolic Partial Differential Equations with Unknown Coefficients",
-      "authors": [
-        "Yanwei Jia",
-        "Du Ouyang",
-        "Huyên Pham",
-        "Xun Yu Zhou"
-      ],
-      "abstract": "High-dimensional partial differential equations (PDEs) with unknown coefficients arise widely in scientific machine learning, including continuous-time reinforcement learning, yet solving them efficiently in a data-driven way remains challenging. Existing deep learning solvers often rely on repeated automatic differentiation to evaluate differential operators, which can cause instability and amplify derivative errors in high dimensions, while probabilistic methods based on stochastic representations require explicit knowledge of the data-generating dynamics and therefore do not apply to black-box environments. We introduce two types of simulators as data-generating mechanisms, and take a ``representing-then-learning\" approach that learns the solutions and their derivatives under settings where the underlying PDE operators are accessible only through simulations and pointwise evaluations. Our representation of derivatives relies on the zeroth-order derivative (ZOD) estimators derived from perturbed Monte Carlo trajectories. This fully model-free approach generates targets for the gradient and Hessian networks using only function evaluations. We provide a statistical learning analysis of the proposed approach, including a bias--variance tradeoff for ZODs. Assuming a standard contraction property of the underlying operator, we establish a non-asymptotic error bound that decomposes the total error into discretization error, approximation error, statistical error, and ZOD bias. Crucially, we derive the sample complexity of the learned representations in (weighted) Sobolev space, characterizing the error up to second-order derivatives. Numerical experiments illustrate the competitive performance of the method in moderate and high dimensions.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T16:04:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24999v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24999v1"
-    },
-    {
-      "id": "2606.24637v1",
-      "title": "Application of Deep Learning to Jet Charge Discrimination",
-      "authors": [
-        "Meisam Ghasemi Bostanabad",
-        "Mojtaba Mohammadi Najafabadi"
-      ],
-      "abstract": "The Large Hadron Collider (LHC) produces an enormous volume of data in which the identification and characterization of hadronic jets is a central challenge. Determining the electric charge of the parton initiating a light-quark jet; a task known as jet-charge discrimination; is highly valuable for both precision tests of the Standard Model (SM) and searches for physics beyond it. In this work, we benchmark a range of classical and quantum machine-learning models for the task of distinguishing up-quark from anti-up-quark jets in a controlled QCD environment. Among the approaches tested, a Graph Neural Network achieved the best performance, with an AUC of 0.883. Jet-charge tagging of this kind has broad phenomenological applications, from improving measurements of charge asymmetries to enhancing sensitivity in searches for new particles from beyond the SM where quark versus antiquark discrimination is essential. Our study provides a methodological foundation for deploying modern machine-learning techniques in jet-charge analyses at the LHC experiments.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T14:30:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24637v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24637v1"
-    },
-    {
-      "id": "2606.24586v1",
-      "title": "EERLoss: A Novel Loss Function for Training Deep Biometric Models. A Case Study in Keystroke Dynamics",
-      "authors": [
-        "Nahuel Gonzalez",
-        "Marta Robledo-Moreno",
-        "Ivan DeAndres-Tame",
-        "Ruben Vera-Rodriguez",
-        "Ruben Tolosana"
-      ],
-      "abstract": "Deep learning approaches to biometric verification are commonly trained by optimizing indirect objectives, creating a misalignment between the optimization process and the primary evaluation metric, typically the Equal Error Rate (EER). This paper introduces EERLoss: a subdifferentiable, arbitrarily accurate approximation to EER for training deep biometric models. Furthermore, this framework has the potential to be adapted to optimize any specific operating point on the DET curve, enhancing its generalizability. To validate this approach, EERLoss is evaluated on a particularly demanding behavioral biometric modality: keystroke dynamics verification. This task is characterized by its high intra-class and low inter-class variability. Experiments are conducted on the large-scale KVC-onGoing benchmark, incorporating data from over 185,000 subjects across different scenarios. A comprehensive ablation study initially demonstrates the superiority of EERLoss in comparison to existing state-of-the-art loss functions. It also converges substantially faster compared to other losses, reducing the overall training cost. Additionally, a comparison is made between the proposed loss and the KVC-winning architecture by re-training it with EERLoss, demonstrating that the proposed approach significantly outperforms the original SoTA, achieving a relative EER reduction of up to approx. 30\\%. This improvement on a challenging, large-scale benchmark validates the effectiveness of EERLoss as a task-aligned training objective specifically suited for high-variance biometric traits.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T13:47:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24586v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24586v1"
-    },
-    {
-      "id": "2606.24978v1",
-      "title": "Auto-Configured Explainable Graph Neural Networks for Multi-Site Pollution Prediction",
-      "authors": [
-        "Abdelkader Dairi",
-        "Fouzi Harrou",
-        "Ying Sun"
-      ],
-      "abstract": "Accurate particulate matter (PM) prediction is crucial for mitigating air pollution. Graph Neural Networks (GNNs) effectively model spatiotemporal dependencies, but predefined graphs limit adaptability, and some datasets complicate learning. This study introduces a graph construction method based on a confusion matrix from a supervised learning process to dynamically capture inter-class relationships. Additionally, a hybrid loss function that combines energy distance and Huber loss is applied to address the vanishing gradient problem and improve learning stability. The approach is evaluated using air pollution data from the University of Utah AirU Pollution Monitoring Network in Salt Lake City, UT, with five GNN models: Graph Convolutional Networks (GCNs), Simple Graph Convolutional Networks (SGConv), Graph Isomorphism Networks (GINs), Graph Attention Networks (GATs), and GraphSage. The experimental results of single- and multistep predictions confirm that GraphSage achieves the highest accuracy in predicting the concentrations of PM${1}$, PM${10}$, and PM$_{2.5}$ over different time horizons. Furthermore, {\\color{black} GNNExplainer (Graph Neural Network Explainer) and PGExplainer (Probabilistic Graph Explainer)} are applied to interpret feature importance and graph structure, ensuring model transparency. Results show improved prediction accuracy, with GNN models outperforming traditional machine learning \\textcolor{black}{and deep learning models (i.e., Prophet, Long short-term memory, Gated recurrent units} in air pollution forecasting.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T12:24:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24978v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24978v1"
-    },
-    {
-      "id": "2606.24974v1",
-      "title": "Quantifying Explainable AI-introduced signal noise on ECG data with Spectral Entropy",
-      "authors": [
-        "David A. Kelly",
-        "Nathan Blake"
-      ],
-      "abstract": "Explainability techniques are used to assess the output of various deep learning models. This is especially true in healthcare, where models need to be trusted and decisions justified. Explainability (XAI) tools use heuristics which often add signal noise to the explanation \"core\". It is not always obvious what is signal from the model and what is noise from the XAI. We propose the use of spectral entropy as a measure of noise in XAI output. We demonstrate its usefulness in the context of classifying arrhythmias in an ECG dataset with different post hoc explainability techniques.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T11:47:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24974v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24974v1"
-    },
-    {
-      "id": "2606.24968v1",
-      "title": "Training Dynamics of Neural Software Defect Predictors under Coupled Data-Quality Issues",
-      "authors": [
-        "Emmanuel Charleson Dapaah",
-        "Philip Makedonski",
-        "Jens Grabowski"
-      ],
-      "abstract": "Context: Software defect prediction supports maintenance decisions such as testing prioritization, release-risk assessment, and quality monitoring. However, metric-based SDP datasets often contain coupled data-quality issues, especially class imbalance and class overlap. Prior work has mainly measured their impact through endpoint performance, while recent evidence suggests that such issues may also appear in neural training dynamics (gradients, weights, biases, error trajectories). However, these studies examine issues in isolation, leaving open how internal neural network training patterns manifest when data quality issues are coupled. Objective: We investigate how training-dynamics patterns from class imbalance, overlap, and their coupling can be characterized under interaction-aware conditions in deep learning-based SDP. Method: We conduct a controlled intervention study on class-level UBD datasets, training a fixed MLP under imbalance-only, overlap-only, and joint conditions across five seeds. Training dynamics are logged per epoch; fidelity is monitored via coupling ratios. Patterns are characterized using effect sizes, trajectories, sensitivity analyses, and rule-based classification. Expected contribution: The study will produce an interaction-aware empirical protocol and a candidate taxonomy of training-dynamics patterns for coupled data-quality issues in metric-based SDP.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T10:08:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24968v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24968v1"
-    },
-    {
-      "id": "2606.24271v1",
-      "title": "Deep numerical schemes for systems of Ergodic BSDEs with applications to regime-switching forward utilities",
-      "authors": [
-        "Guillaume Broux-Quemerais",
-        "Sarah Kaakai",
-        "Anis Matoussi",
-        "Wissal Sabbagh"
-      ],
-      "abstract": "In this paper, we introduce two neural-network-based numerical schemes for solving systems of coupled ergodic Backward Stochastic Differential Equations (eBSDEs), motivated by the approximation of optimal strategies within the framework of forward utilities in a regime-switching stochastic factor model. Our approach builds on the representation of such models through systems of eBSDEs introduced in [HLT20]. We first establish a link between the solution of the system of ergodic BSDEs and that of an associated multidimensional BSDE with random terminal time, given by the hitting time of the positive recurrent stochastic factor. Building on this representation, we introduce a locally additive deep learning scheme obtained by minimizing aggregated local error terms. We then present a new Deep Galerkin Method (DGM) inspired algorithm that minimizes the residual of the associated ergodic PDE system, relying on a representation of the ergodic cost. Finally, we apply this framework to regime-switching forward utilities in a stochastic factor model. We first derive a general consistency SPDE that characterizes regime-switching forward utilities and retrieve their representation with systems of ergodic BSDEs in the homothetic case. Numerical experiments demonstrate the performance of the proposed methods, with a particular focus on the impact on forward preferences of taking into account regime switches.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T07:55:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24271v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24271v1"
-    },
-    {
-      "id": "2606.24944v1",
-      "title": "A Leakage-Aware Comparative Benchmark of Machine Learning, Deep Learning, and Transformer Models for Reliable Leukemia Detection",
-      "authors": [
-        "Nisreen Albzour"
-      ],
-      "abstract": "Automated classification of acute lymphoblastic leukemia (ALL) from peripheral blood smear images has often reported near-perfect performance on the C-NMC 2019 dataset. We show that such results can be inflated by patient-level data leakage caused by random image-level partitioning, where cells from the same subject may appear in both training and test folds. We establish a leakage-aware benchmark under a strict subject-disjoint protocol, comparing LightGBM, RBF-SVM, EfficientNet-B0, EfficientNet-B1, and ViT-Tiny. Models are developed using three subject-disjoint folds from 73 subjects and evaluated on an external preliminary-phase test set of 1,867 images from 28 unseen subjects with zero patient overlap. Beyond discrimination, we assess calibration using expected calibration error, Brier score, and temperature scaling. Under honest evaluation, EfficientNet-B1 achieves the best performance, with AUROC 0.913, sensitivity 0.87, specificity 0.80, and calibrated ECE 0.024. Frozen-feature classifiers and ViT-Tiny show high sensitivity but poor specificity, indicating a tendency to over-predict the malignant class. A random-versus-subject-disjoint ablation shows that random splitting inflates AUROC by about 0.04 even in the conservative frozen-feature setting. These findings caution against image-level evaluation on C-NMC 2019 and provide a reproducible, calibration-aware benchmark for future work.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T04:53:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24944v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24944v1"
-    },
-    {
-      "id": "2606.23942v1",
-      "title": "DREG: A Layer-Wise Jacobian Regularization as a General-Purpose Penalty",
-      "authors": [
-        "Rowan Martnishn"
-      ],
-      "abstract": "We present a large-scale empirical study isolating the contributions of the Derivative Regularization penalty (DREG). Across a fully-crossed factorial sweep of 960 experiments spanning 4 activations, 6 regularizers, 8 datasets, and 5 random seeds, we ask: when, where, and why does DREG work? Our results establish three principal findings. First, DREG achieves the highest overall and clean-regime accuracy among all regularizers evaluated (significantly so against the unregularized baseline, Weight Decay, and IGPen; Wilcoxon $p \\leq 0.031$). It ranks second in noise robustness behind Spectral Normalization (SN) - the only two layer-wise regularizers in the study. Second, DREG is globally the best-performing regularizer under GELU, the default activation in modern transformer architectures, particularly on both messy vision and messy NLP benchmarks, suggesting direct applicability to frontier deep learning settings. Third, DREG's advantage over competing regularizers is most pronounced under data scarcity, consistent with its role as a geometric inductive bias that substitutes for the regularizing effect of data volume. Throughout, DREG is applied with a single fixed hyperparameter $λ= 10^{-2.5}$ and no per-dataset tuning, supporting its characterization as a plug-and-play regularizer for neural networks with nontrivial Jacobian structure. These findings are consistent with DREG's design: concentrating regularization pressure on layers where the activation derivative is largest, rather than constraining the network uniformly.",
-      "published": "June 22, 2026",
-      "published_raw": "2026-06-22T21:04:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.23942v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.23942v1"
-    },
-    {
-      "id": "2606.23851v1",
-      "title": "Machine Learning Modeling for Real-Time Melt Pool Monitoring in Laser Powder Bed Fusion Additive Manufacturing: A Hybrid Approach",
-      "authors": [
-        "Inioluwa Emmanuel",
-        "Zhuo Yang",
-        "Ho Yeung",
-        "Xinyao Zhang"
-      ],
-      "abstract": "This work investigates the implementation of artificial intelligence and machine learning (AI/ML) for real-time monitoring in laser powder bed fusion (LPBF) additive manufacturing. We developed a binary image classification framework for distinguishing normal and abnormal melt pool images using a balanced dataset of 1,200 images collected from Nickel superalloy 625 on the NIST AMMT platform. The study evaluates accuracy and inference time based on control requirements and hardware limitations of open-architecture LPBF machines. We benchmark three transfer learning architectures (ResNet50, EfficientNetB0, and MobileNetV2) against two Random Forest approaches: one trained on EfficientNetB0 feature embeddings (hybrid) and one trained on raw pixel features (baseline). Images are stratified into 80/20 train-test splits, with a further 90/10 validation split on the training set, and undergo standardized resizing, normalization, and label-preserving data augmentation to emulate realistic process variability. Each model is evaluated using accuracy, precision, recall, F1 score, and area under the receiver operating characteristic curve (AUC), along with training time, inference latency, and CPU & GPU usage to capture deployability constraints relevant to factory-floor monitoring. The hybrid EfficientNetB0-plus-Random Forest approach achieves the best performance on the held-out test set, with an F1 score of 0.9451, accuracy of 0.9458, and AUC of 0.9904, while maintaining sub-millisecond per-image inference (1.15 ms). In contrast, purely deep learning models exhibit significantly higher inference times with lower accuracy. These results demonstrate that combining pre-trained convolutional features with classical ensemble methods provides a robust, computationally efficient route to real-time melt pool anomaly detection in data-limited additive manufacturing environments.",
-      "published": "June 22, 2026",
-      "published_raw": "2026-06-22T18:38:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.23851v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.23851v1"
-    },
-    {
-      "id": "2606.23833v1",
-      "title": "Reconstructing GRACE Terrestrial Water Storage with Spatio-Temporal Graph Neural Networks: An Application to South America",
-      "authors": [
-        "Lukas Arzoumanidis",
-        "Lara Johannsen",
-        "Klara Middendorf",
-        "Annette Eicker",
-        "Youness Dehbi"
-      ],
-      "abstract": "Terrestrial water storage (TWS) integrates snow, soil moisture, surface water, and groundwater and is a key indicator of how climate variability and human activity reshape the global water cycle. The GRACE and GRACE-FO satellite missions provide the only direct, globally consistent observations of TWS change, but their record only begins in 2002 which is too short for many climate-scale analyses. We present a deep learning application that reconstructs monthly GRACE-like TWS anomalies (TWSA) back to 1940 by learning the relationship between daily ERA5 meteorological forcing (precipitation, evapotranspiration, runoff) and monthly GRACE observations. In contrast to prior reconstruction approaches based on grid-cell-wise regression, CNNs, or LSTMs, we adapt a multi-variate time series graph neural network (MTGNN) architecture, which was originally developed for mobility and traffic forecasting on urban sensor networks to this satellite-geodesy task. Spatial dependencies are encoded in a static, interpretable hybrid adjacency matrix that combines geodesic proximity with lagged correlations of climatic time series, capturing both local hydrological coupling and large-scale teleconnections. The reconstruction achieves a grid-cell Pearson correlation of 0.69, a basin-mean correlation of 0.94, and a near-zero bias, and it reproduces the spatial fingerprints of the 2015/16 El Niño and 2020/21 La Niña events. A systematic comparison with established reconstruction approaches (GTWS-MLrec, RM-REC, GRAiCE) shows that the graph-based model is statistically competitive at basin scale, reaching a correlation within 0.025 of the best baseline while using only roughly half to a tenth of the predictors the other models require and revealing characteristic weaknesses in arid regions in all models. The complete implementation is publicly available at github.com/hcu-cml/MTGNN-TWS-Reconstruction-GRACE",
-      "published": "June 22, 2026",
-      "published_raw": "2026-06-22T18:15:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.23833v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.23833v1"
-    },
-    {
-      "id": "2606.23587v1",
-      "title": "It's Much Easier for Neural Networks to learn Game of Life Dynamics with the Right Activation Function: Polynomial Kolmogorov-Arnold Networks",
-      "authors": [
-        "Tashin Ahmed",
-        "Q. Tyrell Davis"
-      ],
-      "abstract": "Previous work has found a gap between the scale of neural networks that reliably learn Conway's Game of Life, and minimal networks capable of representing the classic cellular automaton with hard-coded parameter values. Viewing neural network learning as a search process suggests a dependence on networks large enough to contain sub-networks with lucky initializations (sometimes known as 'winning tickets') that actually learn the task. In this work, we reorient our perspective from discovering Life rules as a search problem back to a learning problem, and reason that with fitting inductive biases, the problem should be much more amenable to minimal networks. We find that network variants with several alternative activation functions meaningfully outperform the default choice of Rectified Linear Units, and in particular, that a 2nd degree polynomial activation function consistently learns Life dynamics with or without the benefit of learning neural weights. Our results provide an informative demonstration of the benefits of matching learning to the task at hand and challenge the easy default choice of scale for all problems. In particular, we advocate for the use of cellular automata as simple test domains for developing strategies that can benefit machine learning for science, physics-based deep learning, and interpretable machine learning.",
-      "published": "June 22, 2026",
-      "published_raw": "2026-06-22T16:56:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.23587v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.23587v1"
     }
   ]
 }
