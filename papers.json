@@ -1,7 +1,35 @@
 {
-  "last_updated": "2026-06-28T02:05:54.775453",
+  "last_updated": "2026-06-29T02:06:25.504601",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.27886v1",
+      "title": "A Comparison of Fusion Techniques for Multi-Modal Human Activity Recognition on the HARMES Dataset",
+      "authors": [
+        "Ahmed Mohamady",
+        "Robin Burchard",
+        "Kristof Van Laerhoven"
+      ],
+      "abstract": "Recent advances in Human Activity Recognition (HAR) from wearable sensors have shown that multi-modal deep learning models consistently outperform their uni-modal counterparts. Modalities can include IMUs, RGB cameras, audio signals, and others. One important aspect of multi-modal deep learning is the sensor fusion approach we apply. Over recent years, multiple fusion paradigms have been proposed for multi-modal HAR. However, to the best of our knowledge, no head-to-head comparison of these paradigms exists on a common multi-modal HAR benchmark dataset. To address this research gap, we systematically compare seven state-of-the-art sensor fusion methods on the recently released HARMES dataset, which comprises 61 hours of fully labeled IMU, audio, and ambient humidity data. The chosen dataset focuses on 15 household and personal hygiene activities of daily living (ADLs). By applying the seven different fusion techniques to a state-of-the-art multi-modal model architecture, we show that Gated Multi-modal Fusion achieves the highest macro F1-score (0.82), surpassing the concatenation-based late fusion HARMES paper baseline of 0.76 by +6pp under leave-one-participant-out evaluation. All code used in our experiments is made publicly available on GitHub.",
+      "published": "June 26, 2026",
+      "published_raw": "2026-06-26T09:30:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.27886v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.27886v1"
+    },
+    {
+      "id": "2606.27855v1",
+      "title": "Applicability of memorization indicators for early spotting of overfitting while recalibrating sEMG-decoders on low sample sizes",
+      "authors": [
+        "Stephan J. Lehmler",
+        "Tobias Glasmachers",
+        "Ioannis Iossifidis"
+      ],
+      "abstract": "Deep learning models for surface electromyography (sEMG) can benefit substantially from subject-specific (re-)calibration, since no sufficiently large and diverse datasets are available to train fully generic decoders. However, for user acceptance, the number of repetitions that can realistically be collected during calibration is severely limited, which increases the risk of overfitting and, in extreme cases, can even degrade performance compared to the uncalibrated model. Classical overfitting indicators such as validation performance and regularization with early stopping are difficult to apply in this low-sample regime, as they require additional held-out data that is rarely available in practical calibration scenarios. In this work, we investigate a recently proposed class of memorization indicators based solely on the activation statistics of rectified linear units (ReLU) in deep neural networks, which can be computed directly from training data without any extra validation set. We conduct a transferlearning experiment on a benchmark sEMG dataset, where a convolutional neural network is first pre-trained on multiple subjects and subsequently fine-tuned on individual users using only a small number of repetitions. During calibration, we monitor both decoding performance and the activation behaviour of the last hidden layer. Our results provide first evidence that decreases in test accuracy during fine-tuning are ac companied by characteristic changes in activation rates, indicating that activation-based memorization indicators are a promising tool for early spotting of unsuccessful learning in low-sample sEMG calibration settings.",
+      "published": "June 26, 2026",
+      "published_raw": "2026-06-26T08:53:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.27855v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.27855v1"
+    },
     {
       "id": "2606.27304v1",
       "title": "A Multi-Fidelity Convolutional Autoencoder-Transfer Learning Framework for Guided-Wave-Based Damage Diagnosis Using Large Simulated and Limited Experimental Datasets",
@@ -178,6 +206,20 @@
       "arxiv_link": "http://arxiv.org/abs/2606.25927v1"
     },
     {
+      "id": "2606.27401v1",
+      "title": "Recall Before Rerank: Benchmarking Deep Learning Models for Large-Scale Code-to-Code Retrieval",
+      "authors": [
+        "Leonardo Venuta",
+        "Francesco Tosoni",
+        "Paolo Ferragina"
+      ],
+      "abstract": "Semantic code search and clone detection are essential for software development, maintenance, and reuse. This paper evaluates the effectiveness, efficiency, and scalability of contemporary deep learning models for first-stage recall in large-scale code-to-code search engines. Benchmarking across multiple programming languages and datasets reveals critical limits in the precision and scalability of these models on Terabyte-scale source-code collections. We present LLM-based code normalisation and query-rewriting schemes that yield significant gains in precision for lower-performing models. Our results question the sustainability of resource-constrained deployment and the assumed robustness of current code-specialised LLMs across datasets. We conclude with actionable insights for building scalable, efficient code-retrieval systems.",
+      "published": "June 24, 2026",
+      "published_raw": "2026-06-24T13:41:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.27401v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.27401v1"
+    },
+    {
       "id": "2606.25769v1",
       "title": "Deep Neural Networks with Ordinal Loss for Medical Applications",
       "authors": [
@@ -260,65 +302,6 @@
       "published_raw": "2026-06-24T05:54:44Z",
       "pdf_link": "http://arxiv.org/pdf/2606.25434v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.25434v1"
-    },
-    {
-      "id": "2606.25200v1",
-      "title": "A Hybrid CNN-LSTM Intrusion Detection Framework for Cybersecurity in Smart Renewable Energy Grids",
-      "authors": [
-        "Sajib Debnath",
-        "Remon Das"
-      ],
-      "abstract": "The accelerated digitalization of renewable energy smart grids through IoT sensors, AMI, and SCADA systems has significantly expanded the attack surface for sophisticated cyberattacks, FDI attacks that stealthily distort state estimation and DoS/DDoS attacks that flood communication channels. Current IDS, however, exhibit three inherent limitations: inadequate modeling of the temporal progression of multi-step attacks, degraded scalability under extremely skewed class distributions of standard benchmark datasets, and restricted generalization across heterogeneous network environments. In this study, we present a Hybrid CNN-LSTM IDS that jointly exploits CNN-based spatial feature extraction and LSTM-based temporal sequence modeling, enabling the detection of instantaneous volumetric anomalies and gradually evolving low and slow-attack campaigns in real time. The model was trained using a seven-step preprocessing workflow comprising missing-value imputation, min-max normalization, one-hot encoding, SMOTE class balancing, mutual-information feature selection, causal temporal sequence construction (T=10), and stratified partitioning. LSTM (96.1%), Random Forest (93.5%), SVM (91.2%) and KNN (89.7%); in NSL-KDD, it reaches 98.2% precision versus 96.4% (LSTM), 95.2% (CNN), 92.7% (Random Forest) and 90.8% (SVM), with margins of 2-9 percentage points in all measures. An ablation analysis identified SMOTE balancing as the most influential design choice (-3.7~pp F1 without it). The model achieves a real-time inference throughput of 27,800 flows/s on GPU and 0.082 ms/sample CPU latency in FP32,, with INT8 quantization providing an additional 3.1 x speedup at 0.3% accuracy loss, confirming deployment feasibility on resource-constrained IEDs with <128MB memory and establishing a deployable deep-learning framework for securing next-generation renewable energy smart grid infrastructure.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T21:44:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25200v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25200v1"
-    },
-    {
-      "id": "2606.25128v1",
-      "title": "Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation",
-      "authors": [
-        "Ümit Mert Çağlar",
-        "Alptekin Temizel"
-      ],
-      "abstract": "Volume and quality of datasets are crucial for deep learning model training, yet they are often constrained by availability and data acquisition costs. Synthetic data augmentation can extend existing datasets with realistic images, and the quality of these images is generally assessed through fidelity metrics such as FID, KID, IS, LPIPS and SSIM that measure structural or distributional similarity. However, such metrics, including the widely used FID, focus on visual fidelity without reflecting downstream utility, and can diverge from human perception under perturbations that are imperceptible to human observers. In this work, we systematically evaluate Earth observation datasets alongside synthetic counterparts generated by deep generative models, comparing automatic metrics against human perception and downstream tasks. Our results reveal a stark misalignment: semantics-preserving perturbations such as rotation drastically alter metric scores while leaving human recognition unaffected, and synthetic samples that score poorly on automatic metrics achieve comparable or higher perceived realism, and can improve downstream performance when combined with real data. By benchmarking semantic segmentation models trained on mixed real-synthetic datasets, we demonstrate that quality metrics rooted in ImageNet-pretrained feature spaces are unreliable indicators for geospatial data. Our findings underscore that automatic quality evaluation of synthetic datasets should be grounded in downstream task performance and human evaluation.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T20:02:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25128v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25128v1"
-    },
-    {
-      "id": "2606.24780v1",
-      "title": "BluTrain: A C++/CUDA Framework for AI Systems",
-      "authors": [
-        "Adhitya Charan",
-        "Adwaid Suresh",
-        "Anuj Kumar",
-        "Aparna A",
-        "Dhanakumar K",
-        "Dharun M S",
-        "Dinesh G",
-        "Goutham Kumar Reddy K",
-        "Harshini V M",
-        "Jenifa D",
-        "Jona Delcy C A",
-        "Kathirvel S",
-        "Killi Uma Maheswara Rao",
-        "Kiruthik Kanna M",
-        "Kurra Vishnu Sai",
-        "Madhumithaa G K",
-        "Navin Kumar",
-        "Ram Charan Golla",
-        "Revathi T",
-        "Rishikkanth R",
-        "Sanjay Krishna M",
-        "Surendra Vendra"
-      ],
-      "abstract": "Progress in deep learning is, at scale, more a matter of systems engineering than of modelling: the behaviour of a model in training (its throughput, its memory footprint, and the numerical fidelity of the result) is determined less by the architecture itself than by how that architecture is expressed on the hardware. To achieve absolute control over this hardware expression while abstracting away systems complexity to make modelling seamless and eliminating the need for repetitive orchestration logic, BluTrain was architected from first principles as a robust, lightweight, and architecture-general training framework in standard C++ and the core CUDA programming model. Every layer is implemented natively: a typed tensor module with reverse-mode autograd, a linear-algebra library, a caching allocator, a multi-mode distributed-execution module, and an MLIR-based deep-learning compiler. In formal evaluations training a 124M-parameter GPT-2 baseline in FP32 on an 8-GPU 6000 Ada system, BluTrain outperforms industry-standard baselines in both throughput (sustaining an average of 407K tokens/s versus PyTorch's 395K tokens/s) and memory efficiency (achieving up to a 22% footprint reduction), while strictly preserving numerical fidelity and converging to a marginally lower final validation loss. With every layer explicitly open to native tuning, the performance ceiling is the framework's own to raise.",
-      "published": "June 23, 2026",
-      "published_raw": "2026-06-23T16:39:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.24780v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.24780v1"
     }
   ]
 }
