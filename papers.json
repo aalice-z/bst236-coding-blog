@@ -1,7 +1,197 @@
 {
-  "last_updated": "2026-06-29T02:06:25.504601",
+  "last_updated": "2026-06-30T02:00:55.072789",
   "count": 20,
   "papers": [
+    {
+      "id": "2606.30313v1",
+      "title": "TRACE: A Concept Bottleneck Model for Longitudinal 3D Glioblastoma Response Assessment",
+      "authors": [
+        "Alia Tarek",
+        "Hamsa Saberr",
+        "Hamza Elghonemy",
+        "Youssef Afify",
+        "Tamer Basha",
+        "Omair Shahzad Bhatti",
+        "Abdulrahman M. Selim",
+        "Hasan Md Tusfiqur Alam Daniel Sonntag"
+      ],
+      "abstract": "Longitudinal glioblastoma response assessment requires comparing subtle tumor changes across MRI time points using structured clinical criteria such as RANO. However, most deep learning methods predict response labels directly from imaging features, which limits clinical inspection, verification, and correction. We introduce TRACE, a RANO 2.0-aligned concept bottleneck model for interpretable 4-class glioblastoma response classification on longitudinal 3D MRI. TRACE processes paired baseline and follow-up multimodal MRI scans with a shared 3D vision encoder, predicts clinically meaningful tumor measurements as root concepts, computes downstream RANO-derived concepts through deterministic rules, and incorporates scan interval and new-lesion information as passthrough concepts. This design frames response assessment as structured concept reasoning rather than direct image-to-label prediction. Using 5-fold patient-wise cross-validation on the LUMIERE dataset, TRACE achieves a 4-class macro F1 of 0.4769 and a binary progression-versus-non-progression macro F1 of 0.7085. It improves over a concept bottleneck baseline and remains within the range of published non-interpretable deep learning approaches. Ablation studies show that the expert RANO graph and intervention-consistency training are important for performance, while intervention experiments demonstrate that correcting concepts can improve downstream predictions. These results suggest that structured concept bottlenecks offer a transparent and clinically aligned direction for longitudinal glioblastoma response assessment, while highlighting the need for larger protocol-aligned datasets and external validation.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T13:56:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30313v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30313v1"
+    },
+    {
+      "id": "2606.30258v1",
+      "title": "KnowsTFM: Knowledge-Informed Fine-Tuning of Small Tabular Foundation Models",
+      "authors": [
+        "Boshko Koloski",
+        "Xiangjian Jiang",
+        "Senja Pollak",
+        "Blaž Škrlj",
+        "Mateja Jamnik",
+        "Nikola Simidjievski"
+      ],
+      "abstract": "Tabular foundation models have advanced deep learning for tabular data by delivering strong default performance across many small and medium tasks. Yet in niche domains, where data is scarce, high-dimensional, and shifted from the pretraining distribution, they may still fail to outperform carefully designed domain-specific methods. Many such domains also provide curated relational knowledge in the form of knowledge graphs and knowledge banks, but how to use this knowledge to improve and steer \\textit{small} specialist tabular foundation models remains unclear. We address this problem through \\textbf{Know}ledge-informed fine-tuning of \\textbf{s}mall \\textbf{T}abular \\textbf{F}oundation \\textbf{M}odels (\\modelname). Specifically, we study nanoscale TabPFN- and TabICL-style variants, pretrained under controlled synthetic prior families and adapted using two complementary mechanisms: structural attention priors derived from knowledge graphs and parameter-efficient low-rank updates. We show that injecting domain-specific structural knowledge during fine-tuning yields meaningful gains over vanilla variants in specialist settings, whereas gains on general-domain tasks are marginal. We further observe that continual fine-tuning of frontier models can trigger collapse of pretrained knowledge and mechanisms.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T13:06:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30258v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30258v1"
+    },
+    {
+      "id": "2606.30156v1",
+      "title": "Physically-Constrained Harmonic Separation for Robust Heart and Respiratory Rate Estimation from Wrist Photoplethysmography",
+      "authors": [
+        "Nouhaila Fraihi",
+        "Ouassim Karrakchou",
+        "Mounir Ghogho"
+      ],
+      "abstract": "Wrist-worn photoplethysmography (PPG) enables continuous monitoring of cardiopulmonary physiology, but reliable heart rate (HR) and respiratory rate (RR) estimation in free-living conditions remains challenging due to non-stationary motion artifacts that spectrally overlap with physiological dynamics. Existing signal-processing methods degrade under strong motion, while unconstrained deep learning approaches often lack physiological interpretability and identifiable structure. We propose a Physically-Constrained Harmonic Separation (PCHS) framework that formulates HR and RR estimation from wrist PPG as an analysis-by-synthesis problem, where accelerometer measurements condition artifact separation rather than directly regressing vital signs. A physics-guided harmonic generator decomposes the observed signal into quasi-periodic physiological components and a motion-related residual, enabling HR recovery from the fundamental frequency and RR prediction from respiratory-driven modulations of the harmonic parameters. Robust reconstruction objectives, separation constraints, and uncertainty-aware weighting stabilize the decomposition under motion. Experiments on the motion-intensive PPG-DaLiA dataset demonstrate that PCHS outperforms state-of-the-art methods while yielding interpretable signal decompositions that effectively disentangle physiological activity from motion artifacts.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T11:31:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30156v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30156v1"
+    },
+    {
+      "id": "2606.29925v1",
+      "title": "Bandwidth Selection in Kernel Density Estimation for Model Calibration",
+      "authors": [
+        "Han Zhou",
+        "Teodora Popordanoska",
+        "Matthew Blaschko"
+      ],
+      "abstract": "As deep learning models are increasingly deployed in high-stakes applications, providing well-calibrated uncertainty estimates has become as critical as achieving high predictive accuracy. While Kernel Density Estimation (KDE) has emerged as a smooth and continuous alternative to traditional binning for quantifying miscalibration, its reliability is heavily dependent on the choice of the kernel bandwidth. Standard selection techniques, such as Maximum Likelihood Estimation (MLE), often fail to produce optimal bandwidths for calibration tasks. In this work, we introduce Risk Alignment (RA), a novel optimization framework that determines the optimal bandwidth by aligning KDE-reconstructed risk with empirical risk. We theoretically demonstrate that this alignment minimizes calibration estimation bias across the data distribution, establishing a principled bandwidth selection criterion applicable to various metrics, including the challenging case of canonical calibration error. Extensive experiments across multiple architectures and datasets show that RA consistently outperforms standard bandwidth selection methods, yielding more reliable calibration assessments.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T08:02:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29925v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29925v1"
+    },
+    {
+      "id": "2606.29918v1",
+      "title": "MSFA-Net: An Advanced Deep Learning Model for Identifying Blue Horizontal-Branch Stars from LAMOST DR12",
+      "authors": [
+        "Mingyuan Wang",
+        "Xiaoming Kong",
+        "Jie Ju",
+        "Yude Bu",
+        "Yuchen Liang"
+      ],
+      "abstract": "Blue horizontal-branch (BHB) stars are low-mass, core helium-burning objects with nearly constant luminosities, making them powerful tracers of old, metal-poor populations and valuable standard candles for mapping the Galactic halo. However, robustly identifying BHB stars from low-resolution spectra remains challenging. We present MSFA-Net, a two-stage framework developed for the Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) DR12. By combining multi-scale convolutions with a soft frequency attention mechanism, MSFA-Net learns discriminative representations in both the wavelength domain and the Fourier-frequency domain. On the test set, the framework achieves a precision of 94.67% in the initial multiclass screening and 98.07% in the subsequent binary refinement. Applying the pipeline to LAMOST DR12, we retrieve 27,853 BHB candidate spectra. After spectral deduplication and removal of previously known objects, we identify 3583 new BHB stars, confirmed via Balmer-line profile fitting. We further estimate atmospheric parameters (Teff, log g, and [Fe/H]) using the machine-learning-based SLAM model and examine their distributions. A non-negligible subset shows unusually high log g and/or metallicities, which we interpret primarily as inference-related systematics rather than intrinsic properties. Photometric cross-matching with Gaia DR3 and color-magnitude diagrams provide an additional consistency check for the sample. The resulting catalog substantially enlarges the spectroscopically confirmed BHB sample from LAMOST and offers a homogeneous data set for studies of Galactic-halo structure and stellar populations.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T07:55:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29918v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29918v1"
+    },
+    {
+      "id": "2606.29859v1",
+      "title": "Exploring Motivations for Algorithm Mention in the Domain of Natural Language Processing: A Deep Learning Approach",
+      "authors": [
+        "Yuzhuo Wang",
+        "Yi Xiang",
+        "Chengzhi Zhang"
+      ],
+      "abstract": "With the rise of data-intensive science, algorithms have become central to scientific research. In academic papers, algorithms are mentioned for different purposes, such as describing, using, comparing, or improving methods for specific research tasks. Identifying these purposes can reveal relationships among algorithms and help assess their roles and value. Taking natural language processing (NLP) as an example, this study proposes a sentence-level framework for identifying, analyzing, and tracing the evolution of motivations for mentioning algorithms. We first identify algorithm entities and algorithm-related sentences from full-text papers through manual annotation and machine learning. We then classify mention motivations using pretrained models and data augmentation, and analyze their distribution and temporal evolution. The results show that deep learning models trained with augmented data outperform traditional machine learning models in motivation classification. In NLP papers, more than half of algorithm-related sentences express direct use, whereas improvement is the least frequent motivation. The diversity of motivations has increased over time. For specific algorithm categories, grammar-based algorithms are more often mentioned for description, while machine learning algorithms are more often mentioned for use. Over time, use motivations have gradually replaced description motivations across different algorithms, and the number of motivation types associated with individual algorithms has declined significantly. This study reveals how authors mention algorithm entities in academic writing and provides a basis for future research on algorithm relationship identification and algorithm impact evaluation.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T06:53:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29859v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29859v1"
+    },
+    {
+      "id": "2606.29792v1",
+      "title": "Are Humans Evolved Instruction Followers? An Underlying Inductive Bias Enables Rapid Instructed Task Learning",
+      "authors": [
+        "Anjishnu Kumar"
+      ],
+      "abstract": "Human adults can often perform a novel task correctly on the first attempt after only receiving verbal or written instructions. This rapid instructed task learning (RITL) is a hallmark of human cognitive flexibility, yet its mechanisms and parallels in artificial systems remain under-explored across disciplines. In this position paper, we argue that humans possess an evolved instruction-following bias -- an inductive bias shaped by evolution to interpret and execute linguistic instructions which critically enables fast generalization of behavior from language. This bias functions analogously to the way large language models (LLMs) leverage instruction tuning to achieve zero-shot task performance. We synthesize evidence from cognitive science, neuroscience, and machine learning research to support this hypothesis. While instruction-following in AI is currently achieved via specialized training protocols, we posit that in humans it arises as an innate cognitive architecture feature. We outline testable predictions and call for more interdisciplinary research to investigate Instruction-Following as a unifying mechanism enabling rapid task learning in both natural and artificial neural networks.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T05:12:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29792v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29792v1"
+    },
+    {
+      "id": "2606.29521v1",
+      "title": "Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization",
+      "authors": [
+        "Dara Varam",
+        "Mohamed I. Alhajri"
+      ],
+      "abstract": "Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee progress on secondary objectives, controlled by a single $τ\\in [0, 1]$ that dictates the strength of the distortion. The resulting formulation is invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing Pareto dominance and better per-objective performance with secondary progress guarantees over existing methods, further exhibiting the interpretable trade-off that $τ$ provides.",
+      "published": "June 28, 2026",
+      "published_raw": "2026-06-28T17:31:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29521v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29521v1"
+    },
+    {
+      "id": "2606.29256v1",
+      "title": "Generalization Analysis of Transformers in Distribution Regression",
+      "authors": [
+        "Peilin Liu",
+        "Ding-Xuan Zhou"
+      ],
+      "abstract": "In recent years, models based on the Transformer architecture have seen widespread applications and have become one of the core tools in the field of deep learning. Numerous successful techniques, such as parameter-efficient fine-tuning and efficient scaling, have been proposed surrounding their applications to further enhance performance. However, the success of these strategies has always lacked the support of rigorous mathematical theory. To study the underlying mechanisms behind Transformers and related techniques, we first propose a Transformer learning framework motivated by distribution regression, with distributions being inputs, connect a two-stage sampling process with natural language processing, and present a mathematical formulation of the attention mechanism called attention operator. We demonstrate that by the attention operator, Transformers can compress distributions into function representations without loss of information. Moreover, with the advantages of our novel attention operator, Transformers exhibit a stronger capability to learn functionals with more complex structures than convolutional neural networks and fully connected networks. Finally, we obtain a generalization bound within the distribution regression framework. Through the aforementioned theoretical results, we further discuss some successful techniques emerging with large language models (LLMs), such as prompt tuning, parameter-efficient fine-tuning, and efficient scaling. We also provide theoretical insights behind these techniques within our novel analysis framework.",
+      "published": "June 28, 2026",
+      "published_raw": "2026-06-28T07:54:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29256v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29256v1"
+    },
+    {
+      "id": "2606.29117v1",
+      "title": "An Integrated Two-Stage Deep-Learning Tool for Rapid Post-Hurricane Damage Identification and Repair Scheduling",
+      "authors": [
+        "Hooman Torkaman",
+        "Ellis Oti Boateng",
+        "Jignesh Solanki",
+        "Anurag Srivastava"
+      ],
+      "abstract": "Post-hurricane damage assessment and repair scheduling can require computationally intensive simulation and optimization. This paper presents an integrated two-stage deep-learning tool for rapid damaged-line identification and repair-schedule computation. An available offline synthetic dataset for the IEEE 9500-node test feeder contains 1,700 hurricane scenarios with exposure features, grid metadata, fragility parameters, OpenDSS outputs, damaged-line labels, and Adaptive Large Neighborhood Search reference schedules. Stage 1 benchmarks MLP, ResMLP, and GraphSAGE, while Stage 2 compares MLP, DeepSets, and Set Transformer. The selected ResMLP-Set Transformer pipeline propagates Stage 1 errors into Stage 2 and achieves a damaged-job F1-score of 0.920, pairwise order agreement of 0.854, and start- and end-time mean absolute errors of 4.349 min and 4.486 min, respectively. The tool provides rapid initial repair-log decision support for new hurricane cases.",
+      "published": "June 28, 2026",
+      "published_raw": "2026-06-28T00:01:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29117v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29117v1"
+    },
+    {
+      "id": "2606.29112v1",
+      "title": "A Novel Latent-Class Attack and its Detection by Class Subspace Orthogonalization",
+      "authors": [
+        "Guangmingmei Yang",
+        "David J. Miller",
+        "George Kesidis"
+      ],
+      "abstract": "Deep learning, which in general relies on voluminous amounts of training data, is vulnerable to data poisoning attacks, including error-generic attacks and backdoors (Trojans). In this work, we propose a new data poisoning attack we dub a latent class attack. Here, all poisoned examples are from a class that is novel (unknown) for the given classification domain and are mislabeled to one of the known classes (the target class) of the domain, so that the model learns to recognize the novel class as a sub-class of the target class. Such attacks could be used e.g. to defeat AI-based access control systems, or could cause a \"foe\" to be classified as a \"friend\". We also propose a post-training defense to detect this attack, without any access to the training set. This detection approach builds on \"class subspace orthogonalization\" (CSO), a plug-and-play paradigm demonstrated to improve existing backdoor detectors. Here, CSO is used to seek an input (a putative unknown class instance) whose internal representation is not aligned with any of the known classes, and yet which is classified with confidence to one of these classes. Finally, specific to image classification domains, we propose a method for visualizing the estimated unknown class instance, providing explainability to our latent class detections.",
+      "published": "June 27, 2026",
+      "published_raw": "2026-06-27T23:40:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.29112v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.29112v1"
+    },
+    {
+      "id": "2606.28553v1",
+      "title": "Improving Coherence in Hierarchical Time Series Forecasting using Structured Temporal Fusion",
+      "authors": [
+        "Ruchi Pakhle"
+      ],
+      "abstract": "In many real-world applications, such as retail sales, energy usage, and supply chain planning, forecasting is performed across hierarchical structures. These structures often represent aggregations (e.g., products to categories to regions), where forecasts must not only be accurate but also coherent, meaning that lower-level predictions sum correctly to higher-level forecasts. Traditional statistical methods, such as Bottom-Up and MinT, enforce coherence through post-processing but fail to model complex nonlinear temporal dependencies and covariate interactions. We propose Hierarchical Temporal Fusion (HTF), a novel extension of the Temporal Fusion Transformer (TFT) that integrates structured hierarchical embeddings with a coherence-aware loss function to ensure consistent forecasts across all levels of a hierarchy. Rather than applying reconciliation after forecasting, HTF embeds coherence directly into the training objective. The coherence loss penalizes the difference between aggregated child forecasts and their corresponding parent forecasts during training, enabling the model to learn both temporal dynamics and structural consistency simultaneously. We evaluate HTF on two publicly available benchmark datasets: the M5 Walmart forecasting dataset and a publicly available hierarchical energy consumption dataset. Results demonstrate that HTF substantially reduces forecast incoherence while improving forecasting accuracy compared with classical reconciliation methods and deep learning baselines. In addition, attention visualization and embedding analysis provide insight into how temporal and structural information contribute to hierarchical forecasting performance.",
+      "published": "June 26, 2026",
+      "published_raw": "2026-06-26T19:11:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.28553v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.28553v1"
+    },
+    {
+      "id": "2606.28537v1",
+      "title": "MammoFlow: Multiview Mammogram Synthesis with Anatomically Consistent Flow Matching",
+      "authors": [
+        "Yuexi Du",
+        "Leya Barrientos",
+        "Laura Sheiman",
+        "John Lewin",
+        "Hemant D. Tagare",
+        "Nicha C. Dvornek"
+      ],
+      "abstract": "Multiview mammography relies on paired craniocaudal (CC) and mediolateral oblique (MLO) views to provide complementary projections of a 3D breast volume, enabling precise anomaly localization. However, acquiring high-quality, balanced datasets remains challenging for deep learning applications. We propose a novel method to synthesize multiview mammograms by leveraging the inherent geometric relationship between CC and MLO views. To enforce an implicit 3D consistency prior during generation, we develop an alignment module that searches a 2D affine transformation subspace to establish optimal anatomical correspondence. Leveraging this alignment, we introduce a pixel-space self-consistency loss based on the Earth Mover's Distance (EMD) between the 1D anteroposterior (AP) axis tissue distributions of the generated images. Integrated into a pretrained flow matching model, MammoFlow forces synthesized pairs to share physically plausible tissue distributions from the chest wall to the nipple. To our knowledge, this is the first work to guide multiview mammogram generation using implicit geometric tissue correspondence. Our method demonstrates superior image quality, passes expert radiologist evaluation, and generates physically consistent pairs that improve downstream classification AUC by 5%. Code is available at https://github.com/XYPB/MammoFlow",
+      "published": "June 26, 2026",
+      "published_raw": "2026-06-26T18:43:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.28537v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.28537v1"
+    },
     {
       "id": "2606.27886v1",
       "title": "A Comparison of Fusion Techniques for Multi-Modal Human Activity Recognition on the HARMES Dataset",
@@ -29,6 +219,22 @@
       "published_raw": "2026-06-26T08:53:12Z",
       "pdf_link": "http://arxiv.org/pdf/2606.27855v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.27855v1"
+    },
+    {
+      "id": "2606.28431v1",
+      "title": "A Zero-Shot Deep Image Prior Framework for Denoising and Deconvolution in Fluorescence Microscopy",
+      "authors": [
+        "Xiangyu Qian",
+        "Jing Liu",
+        "Yunqing Tang",
+        "Luru Dai",
+        "Qiushi Li"
+      ],
+      "abstract": "Fluorescence microscopy images are degraded by noise and diffraction-induced blur, which compromise structural fidelity and limit quantitative analysis. Supervised deep learning methods achieve impressive restoration performance but require large-scale paired datasets that are difficult to obtain in practice. To address this issue, we propose SDIP, a zero-shot deep image prior (DIP) framework that sequentially performs denoising and deconvolution without external training data. An aSeqDIP-based module first suppresses noise while preserving fine structures through sequential autoencoding regularization. In the deconvolution stage, a wavelet-based background correction step is incorporated before the proposed RLG-DIP module performs artifact-reduced deconvolution. RLG-DIP uses the Richardson-Lucy deconvolution result as a physically consistent guidance prior, integrating the imaging model with the implicit prior of DIP to stabilize the ill-posed deconvolution process. Experiments on the BioSR dataset across multiple cellular structures demonstrate that SDIP improves both signal-to-noise ratio and resolution, achieving superior visual quality and improved quantitative performance on most evaluated structures. The proposed framework may also provide useful insights for designing physically guided DIP methods for other inverse problems.",
+      "published": "June 26, 2026",
+      "published_raw": "2026-06-26T01:52:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.28431v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.28431v1"
     },
     {
       "id": "2606.27304v1",
@@ -93,215 +299,6 @@
       "published_raw": "2026-06-25T07:34:20Z",
       "pdf_link": "http://arxiv.org/pdf/2606.26705v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.26705v1"
-    },
-    {
-      "id": "2606.26547v1",
-      "title": "Compiler-Driven Approximation Tuning for Hyperdimensional Computing",
-      "authors": [
-        "Xavier Routh",
-        "Abdul Rafae Noor",
-        "Akash Kothari",
-        "Zheyu Li",
-        "Mahbod Afarin",
-        "Tajana Rosing",
-        "Vikram Adve"
-      ],
-      "abstract": "As Moore's law reaches its physical and economic limits, domain-specific approaches are increasingly employed to accelerate machine learning workloads. Hyperdimensional Computing (HDC) represents one such emerging paradigm, offering an alternative to conventional deep learning techniques. Rooted in cognitive models of computation, HDC is designed bottom-up with hardware efficiency as a first-class objective. HDC workloads map naturally to heterogeneous hardware platforms, including CPUs, GPUs, and FPGAs, as well as emerging in-memory computing technologies such as Resistive RAM (ReRAM) and Phase-Change Memory (PCM). HDC algorithms are intrinsically tolerant to noise and approximation, enabling substantial performance gains with minimal accuracy loss. In this work, we introduce ApproxHDC, a framework for automated identification and application of domain-specific approximations in HDC workloads. ApproxHDC extends the HPVM-HDC compiler infrastructure to enable retargetable compilation across diverse hardware backends, including CPUs, GPUs, and simulated ReRAM and PCM-based accelerators. The space of possible approximations is exponentially large; ApproxHDC employs efficient search and analysis to navigate it and identify high-impact configurations spanning both software and hardware levels.",
-      "published": "June 25, 2026",
-      "published_raw": "2026-06-25T02:46:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26547v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26547v1"
-    },
-    {
-      "id": "2606.26492v1",
-      "title": "Evaluation-Strategy Gap in Fault Diagnosis of Deep Learning Programs",
-      "authors": [
-        "Sigma Jahan"
-      ],
-      "abstract": "Deep Learning (DL) programs can fail during training for many reasons, and diagnosing the cause is a costly and time-consuming maintenance task. Techniques for diagnosing such failures are commonly assessed using within-program cross-validation, which may be inadequate for deployment settings involving previously unseen programs. It is therefore necessary to assess how performance differs across these settings and to identify the causes of any performance gap in established fault diagnosis techniques for DL. We investigate this gap using DynFault, a corpus of 5,542 fault-injected training traces from 38 real-world DL programs. We found a gap of 0.190 in balanced accuracy for existing fault diagnosis techniques between within-program evaluation and holding out whole programs. We also found the gap comes from program-level structure in the features, which led us to examine two runtime feature sets, curvature features and optimizer features, and their behavior on unseen programs. We found that curvature features are useful for instability detection on unseen programs, while optimizer and activation features help only on programs seen during training.",
-      "published": "June 25, 2026",
-      "published_raw": "2026-06-25T00:52:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26492v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26492v1"
-    },
-    {
-      "id": "2606.26454v1",
-      "title": "Data-driven Machine Learning Cannot Reach Symbolic-level Logical Reasoning -- The Limit of the Scaling Law",
-      "authors": [
-        "Tiansi Dong",
-        "Mateja Jamnik",
-        "Pietro Liò"
-      ],
-      "abstract": "Sphere neural networks have achieved symbolic level syllogistic reasoning without training data, raising the question of where the limit of the scaling law for logical reasoning lies, i.e., whether data-driven machine learning systems can achieve the same level by increasing training data and training time. We show two methodological limitations that prevent supervised deep learning from reaching the symbolic-level syllogistic reasoning: (1) training data can not distinguish all 24 types of valid syllogistic reasoning; (2) end-to-end mapping from premises to conclusion introduces contradictory training targets between neural components for pattern recognition and logical reasoning. Beside theoretical analysis, we experimentally illustrate that Euler Net cannot achieve rigorous syllogistic reasoning. We further challenge the most recent ChatGPTs (GPT-5-nano and GPT-5) to determine the satisfiability of syllogistic statements in four surface forms (patterns): words, double words, simple symbols, and long random symbols, showing that surface forms affect the reasoning performance and that ChatGPT GPT-5 may reach 100% accuracy but still provide incorrect explanations. As empirical training processes are stopped after achieving 100% accuracy, we conclude that supervised machine learning systems will not attain the rigour of symbolic logical reasoning.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T23:30:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26454v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26454v1"
-    },
-    {
-      "id": "2606.26383v1",
-      "title": "SOLAR: AI-Powered Speed-of-Light Performance Analysis",
-      "authors": [
-        "Qijing Huang",
-        "Sana Damani",
-        "Zhifan Ye",
-        "Athinagoras Skiadopoulos",
-        "Siva Kumar Sastry Hari",
-        "Jason Clemons",
-        "Sahil Modi",
-        "Jingquan Wang",
-        "Aditya Kane",
-        "Edward C Lin",
-        "Humphrey Shi",
-        "Christos Kozyrakis"
-      ],
-      "abstract": "How fast could a deep-learning model run on target hardware, and how far is today's implementation from that limit? These questions are central to software, hardware, and algorithm optimizations. Speed-of-Light (SOL) analysis answers them by computing a workload's theoretical minimum execution time on a given architecture. Yet deriving SOL bounds remains manual, error-prone, and disconnected from rapid model development. To close this gap, we introduce SOLAR, a framework that automatically derives validated SOL bounds from PyTorch and JAX source code. SOLAR leverages both generative and deterministic components in its flow: an LLM frontend translates any source programs into an executable Affine Loop IR, validated by output comparison; a deterministic flow lifts the IR into an einsum graph; and an analytical backend computes unfused, fused, and cache-aware SOL bounds. SOLAR provides comprehensive operator and language coverage, produces validated bounds with zero observed SOL violations, and offers multi-fidelity analysis that tightens bounds and surfaces optimization insights. We evaluate SOLAR across KernelBench, JAX/Flax models, and robotics workloads. These experiments demonstrate four use cases: headroom analysis at multiple fidelity levels, identifying optimization opportunities, cross-platform exploration, and inverse-roofline hardware provisioning.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T21:09:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26383v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26383v1"
-    },
-    {
-      "id": "2606.26273v1",
-      "title": "Equivariance and Augmentation for Bayesian Neural Networks",
-      "authors": [
-        "Miaowen Dong",
-        "Axel Flinth",
-        "Jan E. Gerken"
-      ],
-      "abstract": "Symmetries are important for many deep learning tasks, ranging from applications in the sciences to medical imaging. However, there is an ongoing debate about whether to impose symmetry constraints on the neural network architecture (yielding equivariant neural networks) or learn them from augmented training data. Although equivariant networks are well-studied theoretically, much less is known about data augmentation, since analyzing augmentation requires control over the training dynamics. Inspired by recent results that show that augmented infinite deep ensembles are exactly equivariant, we study data augmentation for Bayesian neural networks (BNNs) trained with variational inference. We focus on variational distributions in the exponential family and derive conditions under which exact equivariance is reached. We furthermore obtain bounds on the equivariance error and introduce three novel symmetrization techniques which boost the effect of data augmentation in this setting. We conduct extensive numerical experiments which show that one of our symmetrization methods (orbit expansion) outperforms the baseline in both equivariance and overall performance. Our code is available at github.com/dmw1998/augment-BNNs",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T18:12:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26273v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26273v1"
-    },
-    {
-      "id": "2606.25989v1",
-      "title": "Taxonomy-aware deep learning for hierarchical marine species classification in underwater imagery",
-      "authors": [
-        "Dan Zimmerman",
-        "Dimitris A. Pados",
-        "George Sklivanitis"
-      ],
-      "abstract": "Automated classification of marine species from underwater imagery is essential for scalable ocean biodiversity monitoring and conservation policy. Existing approaches struggle with severe domain shift across collection platforms, fine-grained visual similarity between closely related species, and uneven annotation granularity, where many specimens can only be identified to genus or a coarser taxonomic rank. We present a taxonomy-aware deep learning framework that aligns both the training loss and the inference rule with the hierarchical structure of biological classification, combining a taxonomy-weighted loss, minimum-risk Bayesian inference, multi-scale feature encoding, and independent per-rank classification heads. Evaluated on the FathomNet 2025 dataset1 (79 marine classes across seven taxonomic ranks), the system achieves a mean taxonomic distance of 1.581, within 3% of the 1st-place solution (1.535), with the largest gains from metric-aligned inference and simple, decoupled components that generalize better than learned dependencies under distribution shift.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T15:59:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25989v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25989v1"
-    },
-    {
-      "id": "2606.25927v1",
-      "title": "Knowledge Cascade: Reverse Knowledge Distillation on Nonparametric Multivariate Functional Estimation",
-      "authors": [
-        "Luyang Fang",
-        "Haoran Lu",
-        "Yongkai Chen",
-        "Wenxuan Zhong",
-        "Ping Ma"
-      ],
-      "abstract": "As machine learning models and datasets continue to grow, developing complex models has become increasingly computationally demanding. Knowledge distillation reduces deployment cost by compressing a large, well-trained teacher model into a compact student model, but it does not address settings where constructing the teacher itself is the bottleneck. Motivated by this challenge, we introduce Knowledge Cascade (KCas), a reverse knowledge distillation framework that uses information from a small, inexpensive student model to guide the development of a more complex teacher model. Although this direction is counterintuitive because the teacher typically has greater representational capacity, we show that student-to-teacher transfer can be principled when supported by statistical scaling relationships. We first develop KCas for nonparametric multivariate functional estimation in reproducing kernel Hilbert spaces via smoothing splines, where selecting multiple smoothing parameters is a major computational bottleneck. KCas transfers student-selected smoothing parameters to the full-sample regime through asymptotic scaling laws, substantially reducing computational cost for high-dimensional and large-scale datasets while retaining theoretical guarantees. Beyond smoothing splines, we illustrate the same principle through kernel density estimation and deep learning hyperparameter transfer. Simulations and real-data experiments show that KCas achieves substantial computational savings while maintaining strong statistical performance, and can sometimes outperform the corresponding full-sample procedure.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T15:06:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25927v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25927v1"
-    },
-    {
-      "id": "2606.27401v1",
-      "title": "Recall Before Rerank: Benchmarking Deep Learning Models for Large-Scale Code-to-Code Retrieval",
-      "authors": [
-        "Leonardo Venuta",
-        "Francesco Tosoni",
-        "Paolo Ferragina"
-      ],
-      "abstract": "Semantic code search and clone detection are essential for software development, maintenance, and reuse. This paper evaluates the effectiveness, efficiency, and scalability of contemporary deep learning models for first-stage recall in large-scale code-to-code search engines. Benchmarking across multiple programming languages and datasets reveals critical limits in the precision and scalability of these models on Terabyte-scale source-code collections. We present LLM-based code normalisation and query-rewriting schemes that yield significant gains in precision for lower-performing models. Our results question the sustainability of resource-constrained deployment and the assumed robustness of current code-specialised LLMs across datasets. We conclude with actionable insights for building scalable, efficient code-retrieval systems.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T13:41:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.27401v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.27401v1"
-    },
-    {
-      "id": "2606.25769v1",
-      "title": "Deep Neural Networks with Ordinal Loss for Medical Applications",
-      "authors": [
-        "Tal Dvora",
-        "Rotem Haba",
-        "Gonen Singer"
-      ],
-      "abstract": "In many prediction problems in medical applications, target labels exhibit an inherent ordinal structure, where class ordering reflects clinically meaningful severity levels. The cost associated with misclassification is often non-uniform and asymmetric, as errors between distant ordinal categories may have substantially more severe consequences than errors between adjacent ones, and overestimating disease severity may have different clinical implications than underestimating it. Traditional loss functions such as multi-class cross-entropy treat all misclassifications equally and fail to incorporate this ordering information. Recent advances in ordinal regression aim to address this limitation by integrating rank-based structures into deep learning models. In this work, we introduce the \\textbf{Ordinal Cross-Entropy (OCE)} framework, a general and architecture-independent approach for learning from ordinal data. The proposed method extends the standard cross-entropy formulation to account for misclassification severity through an ordinal cost matrix while preserving the probabilistic interpretation and optimization benefits of the conventional loss. We provide a theoretical analysis of the OCE gradient behavior and show that it yields smoother optimization dynamics and improved ordinal consistency. Experiments on benchmark datasets show that our method achieves lower prediction error costs and better calibration compared to existing state-of-the-art ordinal approaches, establishing OCE as a simple yet effective solution for ordinal regression in deep neural networks.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T12:45:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25769v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25769v1"
-    },
-    {
-      "id": "2606.25606v1",
-      "title": "Expresso-AI: Explainable Video-Based Deep Learning Models for Depression Diagnosis",
-      "authors": [
-        "Felipe Moreno",
-        "Sharifa Alghowinem",
-        "Hae Won Park",
-        "Cynthia Breazeal"
-      ],
-      "abstract": "Given the widespread prevalence of depression and its consequential impact on individuals and society, it is crucial to obtain objective measures for early diagnosis and intervention. As a multidisciplinary topic, these objective measures should be interpretable and accessible to health care professionals, ensuring effective collaboration and treatment planning in the realm of mental health care. Even though current automated depression diagnosis approaches improved over the last decade, a critical gap exists as they often lack affect-specificity and interpretability, limiting their practical application and potential impact on mental health care. In particular, interpretability from temporal activities from videos when deep models are used is not fully explored. In this study, we present a novel framework for analyzing Deep Neural Networks' decisions when trained on facial videos, specifically focusing on automatic depression severity diagnosis. By fine-tuning Deep Convolutional Neural Networks (DCNN) pre-trained on Action Recognition datasets on depression severity facial videos from AVEC depression dataset, our framework is able to interpret the model's saliency maps by examining face regions and temporal expression semantics. Our approach generates both visual and quantitative explanations for the model's decisions, providing greater insight into its reasoning. In addition to this interpretability, our video-based modeling has improved upon previous single-face benchmarks for visual depression diagnosis, resulting in enhanced predictive performance. Overall, our work demonstrates the successful development of a framework capable of generating hypotheses from a facial model's decisions while simultaneously improving depression's predictive capabilities.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T09:14:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25606v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25606v1"
-    },
-    {
-      "id": "2606.26165v1",
-      "title": "Predicting Fruit Quality with a Hybrid Machine Learning and Image Processing Approach",
-      "authors": [
-        "Amir Reza Hashemi",
-        "Shahram Amiri"
-      ],
-      "abstract": "Fruit spoilage is a significant issue in agriculture, leading to substantial economic losses. Addressing this, our study introduces a hybrid approach combining image processing and deep learning to assess fruit freshness. We developed an image processing algorithm that quantifies spoilage on a scale from 0 (fully fresh) to 100 (fully rotten). Alongside, we trained a convolutional neural network (CNN) to perform binary classification (fresh or rotten) using a large dataset of fruit images. The outcomes of both methods were synthesized using logistic regression to enhance the accuracy of freshness predictions. Subsequently, this logistic regression model was utilized to enable the image processing algorithm to provide binary classification based on its percentage output, thus eliminating the need for the CNN in real-time applications. Our approach, which does not require high computational resources, achieved real-time performance and was validated with over 90% accuracy on a dataset comprising apples and oranges. The primary limitation lies in the requirement for fruits to be isolated on a background that must be either white or transparent, suggesting future improvements could include advanced segmentation models to automate background removal. This study's results highlight the potential of integrating simple image processing techniques with machine learning to provide practical solutions in the agricultural sector.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T07:16:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26165v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26165v1"
-    },
-    {
-      "id": "2606.25463v1",
-      "title": "Blasto-Net: An Explainable Multi-Task Learning for Blastocyst Segmentation, Grading, and Implantation Prediction",
-      "authors": [
-        "Zahra Asghari Varzaneh",
-        "Reza Khoshkangini",
-        "Magnus Johnsson",
-        "Thomas Ebner",
-        "Lars Johansson"
-      ],
-      "abstract": "This study introduces Blasto-Net, a multi-task deep learning model for comprehensive blastocyst analysis. The proposed model performs three tasks simultaneously in a single forward pass: segmentation of the ZP, TE, and ICM compartments, morphological grading, and implantation outcome prediction. Accurate blastocyst analysis in in vitro fertilization (IVF) is challenging. The compartments often have similar textures but very different structures. To address these challenges, Blasto-Net employs an EfficientNet-B3 encoder with a UNet-style decoder enhanced by the Convolutional Block Attention Module (CBAM) and a novel Edge-Aware Attention Module (EAAM) to effectively capture both semantic and boundary information. To handle distinct compartment topologies, the network employs specialized segmentation heads and a composite region- and boundary-based loss. Additionally, Grad-CAM++ visualizations are used to verify the anatomical consistency of the model's predictions. Evaluated on a public HMC blastocyst dataset, Blasto-Net achieves Dice scores of 94.93%, 91.60%, and 88.82% for ICM, ZP, and TE, respectively, alongside an implantation F1-score of 80.0%. These results demonstrate that Blasto-Net offers an accurate, interpretable, and efficient solution for automated blastocyst assessment, with strong potential to support clinical decision-making in IVF.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T06:45:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25463v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25463v1"
-    },
-    {
-      "id": "2606.25439v1",
-      "title": "TopoCast: A Topological Fidelity Framework for Evaluating Transformer-Based Time Series Forecasting",
-      "authors": [
-        "Sandeepa Weerasekara",
-        "Sandareka Wickramanayake"
-      ],
-      "abstract": "Deep learning-based models have achieved state-of-the-art performance in Time Series Forecasting (TSF), yet their evaluation remains dominated by pointwise error metrics such as Mean Squared Error (MSE), which quantify numerical accuracy but overlook structural properties of the forecast signal, including recurrent dynamics, oscillatory behavior, and phase alignment. As a result, forecasts exhibiting over-smoothing, phase shifts, or frequency distortions may achieve favorable error scores despite substantial structural degradation. To address this limitation, we propose TopoCast, a topology-driven framework for evaluating structural fidelity in TSF. TopoCast reconstructs phase-space representations of forecast and ground-truth sequences using Takens delay embedding and applies persistent homology to characterize their intrinsic dynamics. We derive four complementary topological fidelity measures from persistence diagrams and aggregate them into a Topological Fidelity Score (TFS). We further introduce dominant cycle overlap, a novel metric that maps persistent topological features to the temporal domain to assess whether dominant oscillatory patterns occur at the correct time points. Combined with TFS, this yields the Localized Topological Fidelity Score (LTFS), a phase-aware measure that captures temporal localization errors invisible to existing evaluation metrics. Experiments on five Transformer architectures across three real-world benchmark datasets demonstrate that models with similar forecasting errors can exhibit markedly different structural fidelity profiles, revealing failure modes overlooked by conventional evaluation and highlighting the value of topology-aware forecast assessment.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T06:03:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25439v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25439v1"
-    },
-    {
-      "id": "2606.25434v1",
-      "title": "Interpretable Concept-Guided Polynomial Tabular Kolmogorov-Arnold Network for EEG-Based Mild Cognitive Impairment Detection",
-      "authors": [
-        "Yosef Bernardus Wirian",
-        "Qiang Cheng"
-      ],
-      "abstract": "Early and scalable detection of mild cognitive impairment (MCI) remains an unresolved clinical challenge. Existing EEG-based screening approaches are constrained by handcrafted feature pipelines that discard neurophysiologically meaningful domain structure and deep learning classifiers that sacrifice interpretability for performance. No existing work unifies physiologically organized concept encoders, cross-concept interaction modeling, and nonlinear tabular classification in a sleep EEG-based MCI detection framework. This study proposes Concept-guided Polynomial-transformed Tabular learning using Kolmogorov-Arnold Network (CPTabKAN), which maps heterogeneous EEG-derived features into domain-informed concept representations, expands them via degree-2 polynomial transformation to expose first- and second-order interactions, and applies a Fourier-parameterized TabKAN classifier to learn nonlinear decision boundaries. CPTabKAN was evaluated on the Study of Osteoporotic Fractures cohort (372 subjects, overnight polysomnography), using 1,379 features organized into ten physiologically motivated concept groups. Under 10-fold cross-validation, CPTabKAN-Second Order achieved a weighted F1-score of 0.9038 (SD 0.034), outperforming GradientBoosting by 5.65 percentage points (t(9)=1.934,p=0.043, one-sided paired test), with advantages persisting under SMOTE-based balancing. Ablation analysis confirmed independent contributions from each component. Concept importance analysis revealed that power spectral density, multi-scale entropy, and Hjorth parameters dominated first-order weights, while cross-concept interactions involving Lempel-Ziv-Welch complexity, statistics, demographics, and slow oscillations exceeded all first-order scores. These results demonstrate that concept-structured, interaction-aware tabular learning surfaces physiologically coherent reasoning, supporting clinical trust.",
-      "published": "June 24, 2026",
-      "published_raw": "2026-06-24T05:54:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.25434v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.25434v1"
     }
   ]
 }
