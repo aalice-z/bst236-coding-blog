@@ -1,7 +1,264 @@
 {
-  "last_updated": "2026-06-30T02:00:55.072789",
+  "last_updated": "2026-07-02T01:59:33.203055",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.01010v1",
+      "title": "Function-Counting Theory for Low-Dimensional Data Structures",
+      "authors": [
+        "Konstantin Häberle",
+        "Helmut Bölcskei"
+      ],
+      "abstract": "The success of deep learning models in classification and regression is widely attributed to the low-dimensional structure that real-world data tend to exhibit, despite their high-dimensional representation. This work attempts to provide a mathematical framework for binary classification on low-dimensional data, building on Cover's (1965) function-counting theory. With our framework, we aim to address the question of how the low-dimensional structure of the data affects the classification capabilities of learning models. Cover's theory relies on a general position assumption that blinds it to the underlying data structure. We refine this assumption to account for the low-dimensionality of the data and derive dichotomy counts that reflect the data structure. We further extend Cover's separation capacity and problem of generalization to the low-dimensional setting, enabling the impact of the underlying data structure on both to be analyzed.",
+      "published": "July 01, 2026",
+      "published_raw": "2026-07-01T14:47:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.01010v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.01010v1"
+    },
+    {
+      "id": "2607.00470v1",
+      "title": "Neural Network-Based Estimation of Time-Dependent Parameters in AR(p) Processes",
+      "authors": [
+        "Agnieszka Kopeć",
+        "Paweł Przybyłowicz",
+        "Martyna Wiącek"
+      ],
+      "abstract": "We investigate a forecasting framework based on a simple discrete-time dynamic model with coefficients varying in time. The parameters of the model are recovered within a deep learning framework, which makes it possible to retain a transparent parametric structure while simultaneously accounting for complex and nonstationary patterns in the observed phenomenon. Our analysis covers two specifications of the noise process. Besides the standard Gaussian setting, we also consider Laplace-distributed noise, which can offer a more adequate description in the presence of heavier tails and sharper local fluctuations. For both cases, we formulate the predictive scheme of the model and analyze the associated uncertainty quantification, including the construction of prediction intervals. The results illustrate that a relatively simple model, when combined with time-dependent parameter estimation, can serve as a mathematically tractable and practically flexible tool for forecasting complex dynamics under different noise assumptions. The general model is stated for TVAR($p$), while the prediction-interval formulas and the numerical experiments are developed for the TVAR(1) case.",
+      "published": "July 01, 2026",
+      "published_raw": "2026-07-01T05:38:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.00470v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.00470v1"
+    },
+    {
+      "id": "2606.31742v1",
+      "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+      "authors": [
+        "Maximilian Andreas Hoefler",
+        "Karsten Mueller",
+        "Wojciech Samek"
+      ],
+      "abstract": "Explainable AI (XAI) methods have demonstrated significant success in recent years at identifying relevant features in input data that drive deep learning model decisions, enhancing interpretability for users. However, the potential of XAI beyond providing model transparency has remained largely unexplored in adjacent machine learning domains. In this paper, we show for the first time how XAI can be utilized in the context of federated learning. Specifically, while federated learning enables collaborative model training without raw data sharing, it suffers from performance degradation when client data distributions exhibit statistical heterogeneity. We introduce FedXDS (Federated Learning via XAI-guided Data Sharing), the first approach to utilize feature attribution techniques to identify precisely which data elements should be selectively shared between clients to mitigate heterogeneity. By employing propagation-based attribution, our method identifies task-relevant features through a single backward pass, enabling selective data sharing that aligns client contributions. To protect sensitive information, we incorporate metric privacy techniques that provide formal privacy guarantees while preserving utility. Experimental results demonstrate that our approach consistently achieves higher accuracy and faster convergence compared to existing methods across varying client numbers and heterogeneity settings. We provide theoretical privacy guarantees and empirically demonstrate robustness against both membership inference and feature inversion attacks. Code is available at https://github.com/MaxH1996/FedXDS.",
+      "published": "June 30, 2026",
+      "published_raw": "2026-06-30T14:35:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.31742v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.31742v1"
+    },
+    {
+      "id": "2606.31552v1",
+      "title": "Improving multichannel speech enhancement through accurate room-acoustic simulations",
+      "authors": [
+        "Georg Götz",
+        "Alessia Milo",
+        "Steinar Guðjónsson",
+        "Daniel Gert Nielsen",
+        "Jesper Pedersen",
+        "Finnur Pind"
+      ],
+      "abstract": "Room-acoustic simulations are widely used to augment training data for deep-learning-based speech enhancement. While most pipelines rely on simplified geometrical acoustics, wave-based approaches offer greater physical accuracy. In this work, we examine how simulation fidelity affects multichannel speech enhancement performance. To this end, we train SpatialNet on datasets augmented with different room-acoustic simulation methods and evaluate the resulting models on measured data. We compare lower-fidelity datasets based on geometrical acoustics with a high-fidelity dataset using advanced acoustic modelling and a hybrid combination of wave-based and geometrical acoustics simulations. Training on the high-fidelity dataset results in an up to 38 % relative reduction in median word error rate compared to the lower-fidelity alternatives. These results show that augmentation with high-fidelity room-acoustic simulations directly translates into improved multichannel speech enhancement performance.",
+      "published": "June 30, 2026",
+      "published_raw": "2026-06-30T12:10:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.31552v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.31552v1"
+    },
+    {
+      "id": "2606.31536v2",
+      "title": "Beyond the Expressivity-Trainability Paradox: A Dynamical Lie Algebra Perspective on Navigating Barren Plateaus in Quantum Machine Learning",
+      "authors": [
+        "Kung-Ming Lan",
+        "Edward Huang"
+      ],
+      "abstract": "As Quantum Machine Learning (QML) transitions toward practical implementation, the field faces a critical architectural bottleneck that challenges the fundamental assumptions of classical statistical learning theory. In classical deep learning, increasing model capacity typically risks overfitting. However, this study advances a counter-intuitive paradigm: unstructured contemporary QML architectures suffer from a profound state of quantum underfitting, driven by the \"expressivity-trainability paradox.\" We demonstrate that the vast Hilbert space capacity of Parameterized Quantum Circuits (PQCs)-traditionally chased as the source of quantum advantage is the direct mathematical cause of Barren Plateaus (BPs), where gradient landscapes become exponentially flat. By synthesizing recent breakthroughs in Dynamical Lie Algebras (DLAs) and Geometric QML, we establish a comprehensive framework linking the algebraic dimension of circuit generators to their optimization dynamics. Furthermore, we empirically validate this framework on a non-linear binary classification task, illuminating a uniquely quantum manifestation of the bias-variance tradeoff: while unstructured architectures achieve near-perfect training accuracy via unscalable parameterization (quantum overfitting), embedding group-theoretic geometric priors acts as a structural regularizer. By restricting the DLA growth to a polynomial regime, our symmetry-preserving approach sacrifices raw memorization capacity to guarantee scalable, gradient-rich training landscapes, offering a robust roadmap for \"Trainability-by-Design\" in scalable quantum neural networks.",
+      "published": "June 30, 2026",
+      "published_raw": "2026-06-30T11:50:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.31536v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.31536v2"
+    },
+    {
+      "id": "2607.00056v1",
+      "title": "Active Sensing for RIS-Aided Tracking and Power Control: A Hybrid Neuroevolution and Supervised Learning Approach",
+      "authors": [
+        "George Stamatelis",
+        "Hui Chen",
+        "Henk Henk Wymeersch",
+        "George C. Alexandropoulos"
+      ],
+      "abstract": "This paper studies energy efficient tracking of power-limited mobile users with the assistance of a Reconfigurable Intelligent Surface (RIS). Since localization pilot transmissions dominate the energy budget of power-constrained devices, we introduce a low-overhead feedback link from the Base Station (BS) to the user to enable dynamic uplink power control. To navigate the discrete and decentralized nature of this active sensing problem, we propose a novel Dual-Agent (DA) deep learning framework that jointly optimizes the discrete RIS phase profiles and the UE's transmit power in real time. Specifically, our approach employs a hybrid training methodology integrating the neuroevolution paradigm with supervised learning, effectively overcoming the non-differentiability of discrete phase responses from the RIS unit elements and the strict information bottleneck of single-bit feedback messages for pilot power control. The proposed DA active sensing framework can be applied with both single- and multi-antenna BSs, the latter with only minor modifications in the structure of one NN: an additional output branch with appropriate structure is included for the latter case to select a valid digital combiner from a finite set. Extensive numerical simulations demonstrate that the proposed scheme achieves highly accurate and robust tracking across diverse target motion models, outperforming extended Kalman and particle filters, as well as, machine learning-based trackers. Furthermore, in static localization, it is shown to significantly outperform traditional fingerprinting schemes, deep reinforcement learning baselines, and standard backpropagation-based estimators.",
+      "published": "June 30, 2026",
+      "published_raw": "2026-06-30T07:43:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.00056v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.00056v1"
+    },
+    {
+      "id": "2606.31061v1",
+      "title": "Online TT-ALS for Streaming Tensor Decomposition with Incremental Orthogonalization",
+      "authors": [
+        "Hiroki Takeda",
+        "Yuto Miyatake",
+        "Daisuke Furihata"
+      ],
+      "abstract": "Tensor Train (TT) decomposition is a powerful technique for analyzing high-dimensional data. Existing algorithms for computing TT decompositions can be categorized into two main types: conventional batch-based approaches and recursive online methods. In the context of streaming data, batch methods typically achieve higher reconstruction accuracy but often suffer from memory exhaustion, while online methods provide greater computational efficiency. In this work, we introduce Online TT-ALS (Alternating Least Squares), an algorithm that sequentially enforces orthogonality constraints. This approach allows for efficient and exact updates of the core tensor while maintaining high reconstruction accuracy. Theoretically, we prove that enforcing these orthogonal gauge constraints guarantees monotonic decrease of the local objective function and temporal smoothness. Computationally, our deterministic single-sweep update reduces the rank dependence from quadratic to linear, achieving an overall complexity of $\\mathcal{O}(I^{n-1} r)$. Experimental results demonstrate that the proposed method outperforms existing online techniques not only in terms of mathematical approximation accuracy but also in human perception-based video quality metrics. Furthermore, compared to recent deep learning-based paradigms, our algebraic approach achieves speedups of several orders of magnitude. Consequently, our method exhibits high computational efficiency and is suitable for low-latency real-time processing applications.",
+      "published": "June 30, 2026",
+      "published_raw": "2026-06-30T02:50:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.31061v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.31061v1"
+    },
+    {
+      "id": "2606.30961v1",
+      "title": "ElemeNet: Multiscale Molecular Machine Learning with Uncertainty Quantification Across the Periodic Table",
+      "authors": [
+        "Jacob W. Toney",
+        "Samir Darouich",
+        "Yiran Wang",
+        "Aaron G. Garrison",
+        "Johannes Kästner",
+        "Heather J. Kulik"
+      ],
+      "abstract": "Advances in deep learning architectures and representations have enabled ML-driven chemical property prediction, but state-of-the-art (SOTA) models have remained largely confined to independent codebases and lack support for diverse chemical species. This work introduces ElemeNet, a unified, general-purpose software package for molecular machine learning. The ElemeNet software package enables the training of advanced ML models for diverse properties and datasets with an enlarged range of elemental compositions. We define molecular representations compatible with elements 1-100, supporting diverse organometallic and biological systems in addition to organic chemistry already well-served by the Chemprop ML toolkit. As well as more common atom-, bond-, and molecule-level predictions, we introduce moiety predictions. We also natively define optional conditioning on charge and spin states. Advanced E(3)-equivariant and transformer architectures are supported, as well as classical 2D models, with all classes including built-in uncertainty quantification through deterministic and statistical measures. We benchmark our protocols for ML model training against representative datasets from organic, inorganic, coordination, and biological chemistry, achieving competitive and SOTA performance relative to literature baselines and favorable scaling to millions of molecules. The entire workflow is exposed through a concise command-line interface, lowering the barrier to entry for non-expert users. We anticipate ElemeNet will empower non-computational researchers to leverage modern deep learning methods across the chemical and physical sciences.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T22:38:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30961v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30961v1"
+    },
+    {
+      "id": "2606.30953v1",
+      "title": "Neuro-Bayesian-Symbolic Residual Attention Shallow Network: Explainable Deep Learning for Cybersecurity Risk Assessment",
+      "authors": [
+        "Nicolaie Popescu-Bodorin",
+        "Madeleine Togher"
+      ],
+      "abstract": "We introduce the Neuro-Bayesian-Symbolic Residual Attention Shallow Network (NBS-RASN), a hybrid neural architecture for explainable cybersecurity risk assessment in open-source ecosystems. Unlike deep models that trade interpretability for accuracy, our shallow network encodes domain knowledge, causal reasoning, and expert judgment as differentiable components. It uses 80 interpretable neurons across 12 layers, including a gatekeeper that enforces five epistemological axioms - precision, causality, falsifiability, transparency, and completeness - as hard constraints before propagation. Despite limited depth, the network exhibits deep-learning traits via residual attention and feedback loops, learning complex risk patterns without becoming a black box. It produces fully decomposable scores: a deterministic weighted component plus an expert adjustment, with each adjustment traceable to named amplifiers (blast radius, propagation speed, structural nature, default exposure, exploitation pattern, institutional criticality). We validate on 20 open-source projects covering all OWASP Top 10:2025 categories and language risk classes, achieving confidence scores of 0.79-0.97, and show that explainability is guaranteed by design, not by a training algorithm. This challenges the assumption that deep learning requires deep networks, proving that shallow networks with deep reasoning can outperform opaque models in high-stakes cybersecurity, where interpretability is essential.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T22:16:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30953v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30953v1"
+    },
+    {
+      "id": "2606.30940v1",
+      "title": "Motion Planning in Compressed Representation Spaces",
+      "authors": [
+        "Lukas Lao Beyer",
+        "Sertac Karaman"
+      ],
+      "abstract": "Deep learning methods have vastly expanded the capabilities of motion planning in robotics applications, as learning priors from large-scale data has been shown to be essential in capturing the highly complex behavior required for solving tasks such as manipulation or navigation for autonomous vehicles. At the same time, model-based planning algorithms based on search or optimization remain an essential tool due to their flexibility, efficiency, and the ability to incorporate domain knowledge via expert-designed algorithms and objective functions. We propose a new generative framework to unify these two paradigms. First, we learn an autoencoder with a high compression ratio and a latent space of hierarchically ordered, discrete-valued tokens. Leveraging both the dimensionality reduction and the hierarchical coarse-to-fine structure learned by this autoencoder, we then perform motion planning by directly searching in the latent space of tokens. This search can optimize arbitrary objective functions specified at test time, providing a large degree of flexibility while maintaining efficiency and producing realistic solutions by relying on the generative capabilities of the highly compressed autoencoder. We evaluate our method on nuPlan and the Waymo Open Motion Dataset, showing how latent space search can be used for a variety of guided behavior generation tasks, achieving strong performance for closed-loop motion planning and multi-agent guided scenario synthesis without requiring any task-specific training.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T21:48:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30940v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30940v1"
+    },
+    {
+      "id": "2606.30930v1",
+      "title": "SGD at the Edge of Stability: Stochastic Stabilization with Large Learning Rates",
+      "authors": [
+        "Konstantinos Emmanouilidis",
+        "Lachlan MacDonald",
+        "Salma Tarmoun",
+        "Rene Vidal"
+      ],
+      "abstract": "Modern deep learning has been shown to operate at the edge of stability, routinely using learning rates far larger than those justified by classical optimization theory. Most prior analyses of the edge of stability phenomenon focus on deterministic gradient descent, leaving the stochastic setting largely unexplored. In this work, we provide sharp convergence guarantees for Stochastic Gradient Descent (SGD) applied to the multiclass cross-entropy loss, for both linear classifiers and two-layer neural networks. We show that the stochasticity of SGD may cause the dynamics to alternate between an edge-of-stability regime that is dominated by curvature-driven oscillations, and a stable regime in which the expected loss decreases at a controlled rate. Despite that, we prove that SGD self-stabilizes the dynamics, ensuring that the iterates return to stability in a fixed number of iterations and allowing convergence in the best-iterate sense even with large learning rates. Experiments validate our theoretical findings and illustrate the benefits of SGD in the large-stepsize regime.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T21:32:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30930v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30930v1"
+    },
+    {
+      "id": "2606.30911v1",
+      "title": "Why Solve It Twice? Hierarchical Accumulation of Skills for Transfer-Efficient ML Engineering",
+      "authors": [
+        "Yongbin Kim",
+        "Yashar Talebirad",
+        "Osmar R. Zaiane"
+      ],
+      "abstract": "ML engineering agents waste compute rediscovering known techniques because every competition is a cold start. We present HASTE, a hierarchical multi-agent system that organizes cross-competition knowledge into three scope tiers (global, domain, and competition-specific), each coupled to a matching agent level. An orchestrator coordinates domain specialists and promotes learning between tiers via LLM-driven abstraction. A controlled ablation provides evidence for scoped loading: holding a 159-skill inventory constant across 8 competitions, tiered loading achieves a 100% medal rate while flat loading reaches only 62.5%, the same medal rate as loading no skills, and consumes 2x the output tokens. On the full MLE-Bench Lite benchmark (22 Kaggle competitions), HASTE reaches a medal rate of 77.3% using Claude Sonnet 4.6 at 12h per competition. In a cold-start run, the system begins with no accumulated skills. In warm-start runs, it reloads skills learned from earlier competitions, using only global and domain-level skills for transfer across competitions. Warm starts use 52% fewer refinement iterations, and the fraction of proposed changes kept by the agent rises from 42% at low inventory to 85% once 50+ skills are available. These results suggest that better knowledge organization can partly substitute for model strength and compute budget in ML-engineering agents.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T20:59:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30911v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30911v1"
+    },
+    {
+      "id": "2606.30855v1",
+      "title": "Deep Learning for Astrophysics: An Open Textbook from the NASA Cosmic Origins AI/ML Science and Technology Interest Group",
+      "authors": [
+        "Yuan-Sen Ting",
+        "Digvijay Wadekar",
+        "Phill Cargile",
+        "Carol Cuesta-Lazaro",
+        "André Curtis-Trudel",
+        "Gregory Green",
+        "Ryan McClelland",
+        "Daniel Muthukrishna",
+        "Tri Nguyen",
+        "Helen Qu",
+        "Tomasz Rozanski",
+        "Anna Scaife",
+        "Jesse Thaler",
+        "Licia Verde",
+        "Francisco Villaescusa-Navarro",
+        "John F. Wu",
+        "Duo Xu",
+        "Siyu Yao",
+        "Alex Gagliano",
+        "Siddharth Mishra-Sharma",
+        "Andrew K. Saydjari",
+        "Georgios Valogiannis",
+        "Peter Kurczynski",
+        "Swara Ravindranath"
+      ],
+      "abstract": "The astronomical community's ability to use modern machine learning shapes the science return of upcoming facilities. Recent community assessments single out education as the principal barrier to adoption, because what limits uptake is the uneven understanding of these methods rather than their availability. The NASA Cosmic Origins Artificial Intelligence and Machine Learning Science and Technology Interest Group (AI/ML STIG) was formed to address this gap through short, domain-specific tutorials and community discussion. We present Deep Learning for Astrophysics, a freely available textbook at https://deeplearning4astro.com, curated from the group's lecture series. It collects 23 chapters across six parts from 17 lecturers, running from computational foundations and deep-learning architectures through generative modeling, simulation-based inference, and reinforcement learning to large-language-model agents, and closing with the practice of AI-laden science. Many chapters include executable notebooks. We also outline the group's plan for the coming year, centered on agentic research and on NASA's ASTRA mission-concept initiative.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T19:37:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30855v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30855v1"
+    },
+    {
+      "id": "2606.30512v1",
+      "title": "Informational Frustration in Neural Manifolds: Shannon Bottlenecks and the Limits of Learnability",
+      "authors": [
+        "Srinivasa Rao P.",
+        "Vangmayi P Reddy"
+      ],
+      "abstract": "Why overparameterised deep networks generalise so remarkably well remains one of the most stubborn open questions in machine learning theory. Classical frameworks like VC dimension and Rademacher complexity predict catastrophic overfitting in modern models, leaving a massive theoretical gap between theory and reality. In this paper, we bridge this divide by introducing a unified framework that links information theory, topology, and statistical mechanics to map the hard limits of deep learning. Central to our approach is the Entropic Learnability Horizon (ELH): a fundamental law stating that a network can only truly learn a target function if the Shannon entropy of the data manifold outpaces the topological entropy of the function's decision boundary, balanced by the von Neumann entropy of the network's weight space. We establish the Shannon-Topological Bottleneck Theorem, proving that when a target boundary's geometric complexity exceeds this informational horizon, the system undergoes a sudden entropic phase transition. It falls into a state of Informational Frustration - a glassy, rigid memorization phase where generalization becomes thermodynamically impossible. Using this lens, we show that the enigmatic phenomenon of \"grokking\" is actually an Entropic Release, where weights abruptly reorganise to unlock the bottleneck. Finally, we translate this theory into practice with Entropic Gradient Descent (EGD), an optimization algorithm that dynamically manages weight entropy to keep learning on track. Ultimately, this work repositions entropy not just as a tool for tracking uncertainty but as the fundamental physical currency that dictates whether a machine can learn.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T16:20:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30512v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30512v1"
+    },
+    {
+      "id": "2606.30497v1",
+      "title": "GPU Parallelization Strategies for Forward and Backward Propagation in Shallow Neural Networks: A CUDA-Based Comparative Study",
+      "authors": [
+        "Rania Zitouni",
+        "Nadine Bousdjira",
+        "Sarah Hasnaoui",
+        "Amel Sadoun",
+        "Fatma Salhi"
+      ],
+      "abstract": "We present a comparative study of CUDA optimization strategies applied to forward and backward propagation in a shallow neural network. Three stacked optimizations are evaluated: (1) tiled shared memory with bank-conflict elimination via +1-column padding, (2) pre-transposed weight matrices for coalesced global memory access, and (3) a fused MatMul+ReLU kernel that eliminates intermediate global-memory round-trips. Experiments on an NVIDIA Tesla T4 (CUDA 13.0) across three dataset sizes show that the fully optimized implementation achieves a 1.41x speedup over the baseline CUDA version on the large dataset (25,600 samples), reducing execution time from 21.0s to 14.8s. Results are compared against a sequential CPU baseline and an OpenMP parallel implementation, demonstrating the effectiveness of memory-access optimization in GPU-accelerated deep learning primitives.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T16:02:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30497v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30497v1"
+    },
+    {
+      "id": "2606.30410v1",
+      "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
+      "authors": [
+        "Lennart Purucker",
+        "Andrej Tschalzev",
+        "Nick Erickson",
+        "Gioia Blayer",
+        "David Holzmüller",
+        "Alan Arazi",
+        "Alexander Pfefferle",
+        "Mustafa Tajjar",
+        "Gaël Varoquaux",
+        "Frank Hutter"
+      ],
+      "abstract": "Foundation models for predictive machine learning on tabular data have recently gained significant traction in academia and industry. Research communities across disciplines are increasingly evaluating tabular foundation models on diverse datasets and tasks. However, these task- and discipline-specific evaluations remain largely inaccessible to model researchers because benchmark software and evaluation protocols are fragmented. As a result, model researchers rely on standard benchmarks, which are mostly defined for tasks where tabular foundation models already excel. The most challenging scenarios are excluded, limiting meaningful progress in the field by focusing on marginal improvements on IID data rather than on broader, more demanding challenges. To overcome this, we introduce BeyondArena, the first unified holistic benchmark for tabular data that supports diverse task types (IID, temporal, grouped), across sample size and feature dimensionality scales, with diverse feature types (with text, with high cardinality) from a broad range of disciplines. To enable unified benchmarking beyond standard benchmarks, we introduce Data Foundry, a Python framework and metadata schema for curating tabular datasets for predictive machine learning. Our results across 11 models and 142 curated datasets show that existing tabular foundation models excel on tiny- to medium-sized IID data, while traditional tree-based and deep learning models still dominate on non-IID, large, and high-dimensional datasets. BeyondArena guides model research for the most demanding challenges in tabular data, enabling progress towards truly foundational tabular models.",
+      "published": "June 29, 2026",
+      "published_raw": "2026-06-29T14:55:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2606.30410v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2606.30410v1"
+    },
     {
       "id": "2606.30313v1",
       "title": "TRACE: A Concept Bottleneck Model for Longitudinal 3D Glioblastoma Response Assessment",
@@ -65,240 +322,6 @@
       "published_raw": "2026-06-29T08:02:24Z",
       "pdf_link": "http://arxiv.org/pdf/2606.29925v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.29925v1"
-    },
-    {
-      "id": "2606.29918v1",
-      "title": "MSFA-Net: An Advanced Deep Learning Model for Identifying Blue Horizontal-Branch Stars from LAMOST DR12",
-      "authors": [
-        "Mingyuan Wang",
-        "Xiaoming Kong",
-        "Jie Ju",
-        "Yude Bu",
-        "Yuchen Liang"
-      ],
-      "abstract": "Blue horizontal-branch (BHB) stars are low-mass, core helium-burning objects with nearly constant luminosities, making them powerful tracers of old, metal-poor populations and valuable standard candles for mapping the Galactic halo. However, robustly identifying BHB stars from low-resolution spectra remains challenging. We present MSFA-Net, a two-stage framework developed for the Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST) DR12. By combining multi-scale convolutions with a soft frequency attention mechanism, MSFA-Net learns discriminative representations in both the wavelength domain and the Fourier-frequency domain. On the test set, the framework achieves a precision of 94.67% in the initial multiclass screening and 98.07% in the subsequent binary refinement. Applying the pipeline to LAMOST DR12, we retrieve 27,853 BHB candidate spectra. After spectral deduplication and removal of previously known objects, we identify 3583 new BHB stars, confirmed via Balmer-line profile fitting. We further estimate atmospheric parameters (Teff, log g, and [Fe/H]) using the machine-learning-based SLAM model and examine their distributions. A non-negligible subset shows unusually high log g and/or metallicities, which we interpret primarily as inference-related systematics rather than intrinsic properties. Photometric cross-matching with Gaia DR3 and color-magnitude diagrams provide an additional consistency check for the sample. The resulting catalog substantially enlarges the spectroscopically confirmed BHB sample from LAMOST and offers a homogeneous data set for studies of Galactic-halo structure and stellar populations.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T07:55:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29918v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29918v1"
-    },
-    {
-      "id": "2606.29859v1",
-      "title": "Exploring Motivations for Algorithm Mention in the Domain of Natural Language Processing: A Deep Learning Approach",
-      "authors": [
-        "Yuzhuo Wang",
-        "Yi Xiang",
-        "Chengzhi Zhang"
-      ],
-      "abstract": "With the rise of data-intensive science, algorithms have become central to scientific research. In academic papers, algorithms are mentioned for different purposes, such as describing, using, comparing, or improving methods for specific research tasks. Identifying these purposes can reveal relationships among algorithms and help assess their roles and value. Taking natural language processing (NLP) as an example, this study proposes a sentence-level framework for identifying, analyzing, and tracing the evolution of motivations for mentioning algorithms. We first identify algorithm entities and algorithm-related sentences from full-text papers through manual annotation and machine learning. We then classify mention motivations using pretrained models and data augmentation, and analyze their distribution and temporal evolution. The results show that deep learning models trained with augmented data outperform traditional machine learning models in motivation classification. In NLP papers, more than half of algorithm-related sentences express direct use, whereas improvement is the least frequent motivation. The diversity of motivations has increased over time. For specific algorithm categories, grammar-based algorithms are more often mentioned for description, while machine learning algorithms are more often mentioned for use. Over time, use motivations have gradually replaced description motivations across different algorithms, and the number of motivation types associated with individual algorithms has declined significantly. This study reveals how authors mention algorithm entities in academic writing and provides a basis for future research on algorithm relationship identification and algorithm impact evaluation.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T06:53:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29859v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29859v1"
-    },
-    {
-      "id": "2606.29792v1",
-      "title": "Are Humans Evolved Instruction Followers? An Underlying Inductive Bias Enables Rapid Instructed Task Learning",
-      "authors": [
-        "Anjishnu Kumar"
-      ],
-      "abstract": "Human adults can often perform a novel task correctly on the first attempt after only receiving verbal or written instructions. This rapid instructed task learning (RITL) is a hallmark of human cognitive flexibility, yet its mechanisms and parallels in artificial systems remain under-explored across disciplines. In this position paper, we argue that humans possess an evolved instruction-following bias -- an inductive bias shaped by evolution to interpret and execute linguistic instructions which critically enables fast generalization of behavior from language. This bias functions analogously to the way large language models (LLMs) leverage instruction tuning to achieve zero-shot task performance. We synthesize evidence from cognitive science, neuroscience, and machine learning research to support this hypothesis. While instruction-following in AI is currently achieved via specialized training protocols, we posit that in humans it arises as an innate cognitive architecture feature. We outline testable predictions and call for more interdisciplinary research to investigate Instruction-Following as a unifying mechanism enabling rapid task learning in both natural and artificial neural networks.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T05:12:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29792v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29792v1"
-    },
-    {
-      "id": "2606.29521v1",
-      "title": "Not All Objectives Are Born Equal: Priority-Constrained Descent for Hierarchical Multi-Objective Optimization",
-      "authors": [
-        "Dara Varam",
-        "Mohamed I. Alhajri"
-      ],
-      "abstract": "Deep learning problems rarely involve objectives that are equal in importance. A primary objective defines the goal, whilst secondary objectives, such as sparsity, compression, or robustness constrain the solution. While existing multi-objective methods have proven effective in practice, they have a clear symmetry problem and neglect the inherent objective hierarchy built into these objective spaces. We introduce Priority-Constrained Descent (PCD), a gradient-based optimization framework designed to explicitly exploit hierarchical objective structures. PCD preserves the direction of primary descent whilst allowing for the minimal distortion necessary to guarantee progress on secondary objectives, controlled by a single $τ\\in [0, 1]$ that dictates the strength of the distortion. The resulting formulation is invariant to objective scaling and admits exact closed-form solutions for problems with two and three objectives. We evaluate PCD within structured network compression settings, unstructured sparsity and low-rankness, and across a variety of synthetic experiments, showing Pareto dominance and better per-objective performance with secondary progress guarantees over existing methods, further exhibiting the interpretable trade-off that $τ$ provides.",
-      "published": "June 28, 2026",
-      "published_raw": "2026-06-28T17:31:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29521v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29521v1"
-    },
-    {
-      "id": "2606.29256v1",
-      "title": "Generalization Analysis of Transformers in Distribution Regression",
-      "authors": [
-        "Peilin Liu",
-        "Ding-Xuan Zhou"
-      ],
-      "abstract": "In recent years, models based on the Transformer architecture have seen widespread applications and have become one of the core tools in the field of deep learning. Numerous successful techniques, such as parameter-efficient fine-tuning and efficient scaling, have been proposed surrounding their applications to further enhance performance. However, the success of these strategies has always lacked the support of rigorous mathematical theory. To study the underlying mechanisms behind Transformers and related techniques, we first propose a Transformer learning framework motivated by distribution regression, with distributions being inputs, connect a two-stage sampling process with natural language processing, and present a mathematical formulation of the attention mechanism called attention operator. We demonstrate that by the attention operator, Transformers can compress distributions into function representations without loss of information. Moreover, with the advantages of our novel attention operator, Transformers exhibit a stronger capability to learn functionals with more complex structures than convolutional neural networks and fully connected networks. Finally, we obtain a generalization bound within the distribution regression framework. Through the aforementioned theoretical results, we further discuss some successful techniques emerging with large language models (LLMs), such as prompt tuning, parameter-efficient fine-tuning, and efficient scaling. We also provide theoretical insights behind these techniques within our novel analysis framework.",
-      "published": "June 28, 2026",
-      "published_raw": "2026-06-28T07:54:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29256v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29256v1"
-    },
-    {
-      "id": "2606.29117v1",
-      "title": "An Integrated Two-Stage Deep-Learning Tool for Rapid Post-Hurricane Damage Identification and Repair Scheduling",
-      "authors": [
-        "Hooman Torkaman",
-        "Ellis Oti Boateng",
-        "Jignesh Solanki",
-        "Anurag Srivastava"
-      ],
-      "abstract": "Post-hurricane damage assessment and repair scheduling can require computationally intensive simulation and optimization. This paper presents an integrated two-stage deep-learning tool for rapid damaged-line identification and repair-schedule computation. An available offline synthetic dataset for the IEEE 9500-node test feeder contains 1,700 hurricane scenarios with exposure features, grid metadata, fragility parameters, OpenDSS outputs, damaged-line labels, and Adaptive Large Neighborhood Search reference schedules. Stage 1 benchmarks MLP, ResMLP, and GraphSAGE, while Stage 2 compares MLP, DeepSets, and Set Transformer. The selected ResMLP-Set Transformer pipeline propagates Stage 1 errors into Stage 2 and achieves a damaged-job F1-score of 0.920, pairwise order agreement of 0.854, and start- and end-time mean absolute errors of 4.349 min and 4.486 min, respectively. The tool provides rapid initial repair-log decision support for new hurricane cases.",
-      "published": "June 28, 2026",
-      "published_raw": "2026-06-28T00:01:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29117v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29117v1"
-    },
-    {
-      "id": "2606.29112v1",
-      "title": "A Novel Latent-Class Attack and its Detection by Class Subspace Orthogonalization",
-      "authors": [
-        "Guangmingmei Yang",
-        "David J. Miller",
-        "George Kesidis"
-      ],
-      "abstract": "Deep learning, which in general relies on voluminous amounts of training data, is vulnerable to data poisoning attacks, including error-generic attacks and backdoors (Trojans). In this work, we propose a new data poisoning attack we dub a latent class attack. Here, all poisoned examples are from a class that is novel (unknown) for the given classification domain and are mislabeled to one of the known classes (the target class) of the domain, so that the model learns to recognize the novel class as a sub-class of the target class. Such attacks could be used e.g. to defeat AI-based access control systems, or could cause a \"foe\" to be classified as a \"friend\". We also propose a post-training defense to detect this attack, without any access to the training set. This detection approach builds on \"class subspace orthogonalization\" (CSO), a plug-and-play paradigm demonstrated to improve existing backdoor detectors. Here, CSO is used to seek an input (a putative unknown class instance) whose internal representation is not aligned with any of the known classes, and yet which is classified with confidence to one of these classes. Finally, specific to image classification domains, we propose a method for visualizing the estimated unknown class instance, providing explainability to our latent class detections.",
-      "published": "June 27, 2026",
-      "published_raw": "2026-06-27T23:40:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.29112v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.29112v1"
-    },
-    {
-      "id": "2606.28553v1",
-      "title": "Improving Coherence in Hierarchical Time Series Forecasting using Structured Temporal Fusion",
-      "authors": [
-        "Ruchi Pakhle"
-      ],
-      "abstract": "In many real-world applications, such as retail sales, energy usage, and supply chain planning, forecasting is performed across hierarchical structures. These structures often represent aggregations (e.g., products to categories to regions), where forecasts must not only be accurate but also coherent, meaning that lower-level predictions sum correctly to higher-level forecasts. Traditional statistical methods, such as Bottom-Up and MinT, enforce coherence through post-processing but fail to model complex nonlinear temporal dependencies and covariate interactions. We propose Hierarchical Temporal Fusion (HTF), a novel extension of the Temporal Fusion Transformer (TFT) that integrates structured hierarchical embeddings with a coherence-aware loss function to ensure consistent forecasts across all levels of a hierarchy. Rather than applying reconciliation after forecasting, HTF embeds coherence directly into the training objective. The coherence loss penalizes the difference between aggregated child forecasts and their corresponding parent forecasts during training, enabling the model to learn both temporal dynamics and structural consistency simultaneously. We evaluate HTF on two publicly available benchmark datasets: the M5 Walmart forecasting dataset and a publicly available hierarchical energy consumption dataset. Results demonstrate that HTF substantially reduces forecast incoherence while improving forecasting accuracy compared with classical reconciliation methods and deep learning baselines. In addition, attention visualization and embedding analysis provide insight into how temporal and structural information contribute to hierarchical forecasting performance.",
-      "published": "June 26, 2026",
-      "published_raw": "2026-06-26T19:11:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.28553v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.28553v1"
-    },
-    {
-      "id": "2606.28537v1",
-      "title": "MammoFlow: Multiview Mammogram Synthesis with Anatomically Consistent Flow Matching",
-      "authors": [
-        "Yuexi Du",
-        "Leya Barrientos",
-        "Laura Sheiman",
-        "John Lewin",
-        "Hemant D. Tagare",
-        "Nicha C. Dvornek"
-      ],
-      "abstract": "Multiview mammography relies on paired craniocaudal (CC) and mediolateral oblique (MLO) views to provide complementary projections of a 3D breast volume, enabling precise anomaly localization. However, acquiring high-quality, balanced datasets remains challenging for deep learning applications. We propose a novel method to synthesize multiview mammograms by leveraging the inherent geometric relationship between CC and MLO views. To enforce an implicit 3D consistency prior during generation, we develop an alignment module that searches a 2D affine transformation subspace to establish optimal anatomical correspondence. Leveraging this alignment, we introduce a pixel-space self-consistency loss based on the Earth Mover's Distance (EMD) between the 1D anteroposterior (AP) axis tissue distributions of the generated images. Integrated into a pretrained flow matching model, MammoFlow forces synthesized pairs to share physically plausible tissue distributions from the chest wall to the nipple. To our knowledge, this is the first work to guide multiview mammogram generation using implicit geometric tissue correspondence. Our method demonstrates superior image quality, passes expert radiologist evaluation, and generates physically consistent pairs that improve downstream classification AUC by 5%. Code is available at https://github.com/XYPB/MammoFlow",
-      "published": "June 26, 2026",
-      "published_raw": "2026-06-26T18:43:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.28537v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.28537v1"
-    },
-    {
-      "id": "2606.27886v1",
-      "title": "A Comparison of Fusion Techniques for Multi-Modal Human Activity Recognition on the HARMES Dataset",
-      "authors": [
-        "Ahmed Mohamady",
-        "Robin Burchard",
-        "Kristof Van Laerhoven"
-      ],
-      "abstract": "Recent advances in Human Activity Recognition (HAR) from wearable sensors have shown that multi-modal deep learning models consistently outperform their uni-modal counterparts. Modalities can include IMUs, RGB cameras, audio signals, and others. One important aspect of multi-modal deep learning is the sensor fusion approach we apply. Over recent years, multiple fusion paradigms have been proposed for multi-modal HAR. However, to the best of our knowledge, no head-to-head comparison of these paradigms exists on a common multi-modal HAR benchmark dataset. To address this research gap, we systematically compare seven state-of-the-art sensor fusion methods on the recently released HARMES dataset, which comprises 61 hours of fully labeled IMU, audio, and ambient humidity data. The chosen dataset focuses on 15 household and personal hygiene activities of daily living (ADLs). By applying the seven different fusion techniques to a state-of-the-art multi-modal model architecture, we show that Gated Multi-modal Fusion achieves the highest macro F1-score (0.82), surpassing the concatenation-based late fusion HARMES paper baseline of 0.76 by +6pp under leave-one-participant-out evaluation. All code used in our experiments is made publicly available on GitHub.",
-      "published": "June 26, 2026",
-      "published_raw": "2026-06-26T09:30:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.27886v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.27886v1"
-    },
-    {
-      "id": "2606.27855v1",
-      "title": "Applicability of memorization indicators for early spotting of overfitting while recalibrating sEMG-decoders on low sample sizes",
-      "authors": [
-        "Stephan J. Lehmler",
-        "Tobias Glasmachers",
-        "Ioannis Iossifidis"
-      ],
-      "abstract": "Deep learning models for surface electromyography (sEMG) can benefit substantially from subject-specific (re-)calibration, since no sufficiently large and diverse datasets are available to train fully generic decoders. However, for user acceptance, the number of repetitions that can realistically be collected during calibration is severely limited, which increases the risk of overfitting and, in extreme cases, can even degrade performance compared to the uncalibrated model. Classical overfitting indicators such as validation performance and regularization with early stopping are difficult to apply in this low-sample regime, as they require additional held-out data that is rarely available in practical calibration scenarios. In this work, we investigate a recently proposed class of memorization indicators based solely on the activation statistics of rectified linear units (ReLU) in deep neural networks, which can be computed directly from training data without any extra validation set. We conduct a transferlearning experiment on a benchmark sEMG dataset, where a convolutional neural network is first pre-trained on multiple subjects and subsequently fine-tuned on individual users using only a small number of repetitions. During calibration, we monitor both decoding performance and the activation behaviour of the last hidden layer. Our results provide first evidence that decreases in test accuracy during fine-tuning are ac companied by characteristic changes in activation rates, indicating that activation-based memorization indicators are a promising tool for early spotting of unsuccessful learning in low-sample sEMG calibration settings.",
-      "published": "June 26, 2026",
-      "published_raw": "2026-06-26T08:53:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.27855v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.27855v1"
-    },
-    {
-      "id": "2606.28431v1",
-      "title": "A Zero-Shot Deep Image Prior Framework for Denoising and Deconvolution in Fluorescence Microscopy",
-      "authors": [
-        "Xiangyu Qian",
-        "Jing Liu",
-        "Yunqing Tang",
-        "Luru Dai",
-        "Qiushi Li"
-      ],
-      "abstract": "Fluorescence microscopy images are degraded by noise and diffraction-induced blur, which compromise structural fidelity and limit quantitative analysis. Supervised deep learning methods achieve impressive restoration performance but require large-scale paired datasets that are difficult to obtain in practice. To address this issue, we propose SDIP, a zero-shot deep image prior (DIP) framework that sequentially performs denoising and deconvolution without external training data. An aSeqDIP-based module first suppresses noise while preserving fine structures through sequential autoencoding regularization. In the deconvolution stage, a wavelet-based background correction step is incorporated before the proposed RLG-DIP module performs artifact-reduced deconvolution. RLG-DIP uses the Richardson-Lucy deconvolution result as a physically consistent guidance prior, integrating the imaging model with the implicit prior of DIP to stabilize the ill-posed deconvolution process. Experiments on the BioSR dataset across multiple cellular structures demonstrate that SDIP improves both signal-to-noise ratio and resolution, achieving superior visual quality and improved quantitative performance on most evaluated structures. The proposed framework may also provide useful insights for designing physically guided DIP methods for other inverse problems.",
-      "published": "June 26, 2026",
-      "published_raw": "2026-06-26T01:52:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.28431v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.28431v1"
-    },
-    {
-      "id": "2606.27304v1",
-      "title": "A Multi-Fidelity Convolutional Autoencoder-Transfer Learning Framework for Guided-Wave-Based Damage Diagnosis Using Large Simulated and Limited Experimental Datasets",
-      "authors": [
-        "Santosh Kapuria",
-        " Abhishek"
-      ],
-      "abstract": "Guided wave-based structural health monitoring (GWSHM) with onboard transducers offers significant potential for the early diagnosis of damage in engineering structures. However, the practical deployment of deep learning models is often hindered by the limited availability of labelled experimental data and the high computational cost of generating large-scale high-fidelity simulation datasets. This study presents a multifidelity transfer learning framework that integrates lightweight physics-based simulations, convolutional autoencoder (CAE)-based deep feature learning, a feed-forward neural network, and limited experimental measurements for accurate damage localisation and sizing in plate-like structures instrumented with piezoelectric transducers. A computationally efficient one-dimensional time-domain spectral element model is employed to generate a large synthetic dataset for pretraining, while transfer learning adapts the model to experimental domains using only a small amount of labelled data. The CAE-based transfer learning framework significantly outperforms its CNN-based counterpart in damage localisation accuracy. The model achieves excellent predictive performance with $R^2$ scores exceeding 0.93 for damage localisation and 0.99 for damage sizing. Its generalisation capability is demonstrated on previously unseen data, showing high prediction accuracy for damage scenarios not represented during pretraining or fine-tuning. The results establish the proposed framework as an accurate, computationally efficient, and practically viable solution for real-world GWSHM applications.",
-      "published": "June 25, 2026",
-      "published_raw": "2026-06-25T17:25:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.27304v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.27304v1"
-    },
-    {
-      "id": "2606.27171v1",
-      "title": "Stochastic Gradient Optimization with Model-Assisted Sampling",
-      "authors": [
-        "Jonne Pohjankukka",
-        "Jukka Heikkonen"
-      ],
-      "abstract": "This work addresses the problem of variance in stochastic gradient estimation for machine learning optimization. Deep learning relies on mini-batch methods such as stochastic gradient descent, which approximate full gradients but introduce noise, creating trade-offs between convergence stability, speed, and generalization. Existing methods, including variance reduction techniques (e.g., SVRG and SAG) and adaptive optimizers, aim to mitigate gradient noise but may introduce additional computational overhead. We propose a model-assisted sampling framework that interprets mini-batch gradients through survey sampling theory, treating the dataset as a fixed finite population and gradients as sample-based estimates. Our aim is to bridge machine learning optimization and survey sampling theory by combining their perspectives on sample-based estimation and variance reduction. By incorporating auxiliary gradient-prediction models, we construct more efficient gradient estimators, with uniform sampling arising as a special case when no auxiliary information is used. Our approach integrates easily with existing optimizers, improving efficiency without altering their dynamics. Empirical results on synthetic and six benchmark datasets show performance gains in 71-86% of the experiments, particularly for medium-sized input spaces in our benchmarks. Notably, with momentum-based optimizers such as AdamW, the proposed estimator achieves clearly better generalization in roughly half the training epochs compared to baseline estimator.",
-      "published": "June 25, 2026",
-      "published_raw": "2026-06-25T15:39:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.27171v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.27171v1"
-    },
-    {
-      "id": "2606.27153v1",
-      "title": "DMuon: Efficient Distributed Muon Training with Near-Adam Overhead",
-      "authors": [
-        "Vincent Chen",
-        "Starrick Liu",
-        "Regis Cheng",
-        "Dance Yang",
-        "Shalfun Li",
-        "Ryan Yu",
-        "Lucy Liang",
-        "Hang Su",
-        "Roy Gan",
-        "Hao Wang",
-        "Qian Wang"
-      ],
-      "abstract": "Matrix-orthogonalization-based optimizers, exemplified by Muon, have demonstrated strong convergence behavior across a wide range of modern deep learning workloads. The matrix-aware updates offer a compelling alternative to conventional element-wise optimization, particularly as model architectures continue to grow in scale and heterogeneity. Yet contemporary distributed training infrastructure built around the assumption of element-wise optimizers is poorly matched to matrix-level optimizers such as Muon, whose updates couple entire weight matrices and require costly Newton-Schulz iterations. Vanilla Muon implementations incur more than 2x the cost of forward and backward passes. To close this gap, we present DMuon, an open-source distributed Muon implementation that integrates into existing training pipelines as a drop-in module, with no framework-level modifications. Across both embodied foundation model and large language model (LLM) training workloads, DMuon achieves a 1.48x-3.01x speedup in end-to-end step time and a 6.85x-163.00x speedup in optimizer-step time, bringing per-step latency to near-AdamW levels and enabling efficient scaling in our model training.",
-      "published": "June 25, 2026",
-      "published_raw": "2026-06-25T15:23:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.27153v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.27153v1"
-    },
-    {
-      "id": "2606.26705v1",
-      "title": "Algorithmic Foundations of Deep Learning: Complexity-Theoretic Rates and a Characterization of Universal Approximation",
-      "authors": [
-        "Anastasis Kratsios",
-        "Simone Brugiapaglia",
-        "Bum Jun Kim",
-        "Gregory Cousins",
-        "Haitz Sáez de Ocáriz Borde"
-      ],
-      "abstract": "Feedforward neural network (NN) expressivity is typically studied by emulating optimal basis-expansion schemes. While powerful, this perspective is incomplete: it primarily captures complexity through regularity, and therefore does not distinguish intuitively simple and complicated objects with comparable regularity, such as the square-root function and a typical Brownian path. The guiding message is that neural networks should be viewed not only as flexible basis functions, but also as models of computation. If a function is computable by a real-valued circuit over a prescribed elementary gate language, then it can be computed to comparable accuracy by an NN with explicit depth, width, and non-zero-parameter bounds controlled by the depth, width, gate count, and gate structure. Thus, neural-network complexity is not governed by regularity alone, but also by algorithmic complexity. We then show that any definable NN model satisfying a natural parallelization condition, allowing possibly multivariate non-linearities such as attention or layer normalization, is a universal approximator if and only if it contains a non-affine nonlinearity. The scope of our theory is illustrated by deducing universal approximation guarantees for continuous functions, minimax-optimal approximation guarantees for Besov classes, logarithmic-error complexity for holomorphic functions, and by showing that NNs can emulate numerical algorithms such as Newton-Raphson root finding and power iteration without architecture-specific arguments. Its precision is illustrated by shortest-path computation on $k$-vertex graphs: compiling the tropical dynamic-programming circuit yields NNs with O(log(1/ε)) non-zero parameters, exponentially improving in 1/ε over the generic $O(ε^{-c k^2})$ Lipschitz-approximation scale, for a constant c>0.",
-      "published": "June 25, 2026",
-      "published_raw": "2026-06-25T07:34:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.26705v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.26705v1"
     }
   ]
 }
