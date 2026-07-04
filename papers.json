@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-07-03T01:30:52.134075",
+  "last_updated": "2026-07-04T01:30:08.199182",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.02389v1",
+      "title": "Steerability via constraints: a substrate for scalable oversight of coding agents",
+      "authors": [
+        "Thomas Winninger"
+      ],
+      "abstract": "Coding agents are capable; human oversight is the bottleneck. Unconstrained agents introduce security risks, erode codebase scalability, and make human review increasingly costly. We argue that the same methods used for decades to manage large human engineering teams: access control, network policies, strict coding conventions enforced by tooling; transfer directly to coding agents, and are cheaper (in token) than recent agentic scaffolding. We sketch a start-to-end system on this principle, and report a controlled experiment in scalable oversight: a small reviewer (Gemma 4 e4b) inspects a Python codebase containing 11 inserted backdoors. Recall rises from 54.5% (unconstrained, no tools) to 90.9% (constrained substrate plus a ~200-LoC `docs` CLI), with substrate and tools contributing independently. We choose Python deliberately: substrate-level oversight gains are largest where the language gives the fewest guarantees by default; the principles extend to languages like Rust.",
+      "published": "July 02, 2026",
+      "published_raw": "2026-07-02T16:24:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.02389v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.02389v1"
+    },
     {
       "id": "2607.02212v1",
       "title": "An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility",
@@ -283,21 +295,6 @@
       "published_raw": "2026-06-29T21:48:22Z",
       "pdf_link": "http://arxiv.org/pdf/2606.30940v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2606.30940v1"
-    },
-    {
-      "id": "2606.30930v1",
-      "title": "SGD at the Edge of Stability: Stochastic Stabilization with Large Learning Rates",
-      "authors": [
-        "Konstantinos Emmanouilidis",
-        "Lachlan MacDonald",
-        "Salma Tarmoun",
-        "Rene Vidal"
-      ],
-      "abstract": "Modern deep learning has been shown to operate at the edge of stability, routinely using learning rates far larger than those justified by classical optimization theory. Most prior analyses of the edge of stability phenomenon focus on deterministic gradient descent, leaving the stochastic setting largely unexplored. In this work, we provide sharp convergence guarantees for Stochastic Gradient Descent (SGD) applied to the multiclass cross-entropy loss, for both linear classifiers and two-layer neural networks. We show that the stochasticity of SGD may cause the dynamics to alternate between an edge-of-stability regime that is dominated by curvature-driven oscillations, and a stable regime in which the expected loss decreases at a controlled rate. Despite that, we prove that SGD self-stabilizes the dynamics, ensuring that the iterates return to stability in a fixed number of iterations and allowing convergence in the best-iterate sense even with large learning rates. Experiments validate our theoretical findings and illustrate the benefits of SGD in the large-stepsize regime.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T21:32:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.30930v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.30930v1"
     }
   ]
 }
