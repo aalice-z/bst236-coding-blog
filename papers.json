@@ -1,7 +1,70 @@
 {
-  "last_updated": "2026-07-06T01:52:13.459493",
+  "last_updated": "2026-07-07T01:49:30.972981",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.03466v1",
+      "title": "CaresAI at SMM4H-HeaRD 2026: Predicting TNM Staging",
+      "authors": [
+        "Joseph Itopa Abubakar",
+        "Jorge Jarme",
+        "Favour Igwezeke",
+        "Mary Adewunmi"
+      ],
+      "abstract": "This study aims to predict Tumor, Node, and Metastasis (TNM) stage labels independently, with the Cancer Genome Atlas (TCGA) pathology report as the sixth shared task of SMM4H-HeaRD 2026. The problem is framed as three multi-label classification tasks. We explore both classical and deep learning approaches using Term Frequency-Inverse Document Frequency (TF-IDF) features and embeddings from ClinicalBERT, BioBERT, and PubMedBERT. These representations are used with Logistic Regression (LR), Light Gradient Boosting Machine (LightGBM), Feed-Forward Neural Networks (FFNN), and Wide Residual Networks (WRN). Our results show that individual embeddings perform similarly to the TNM label classification, while their combination improves its predictive ability. WRN achieves AUROC scores of 0.839 (T), 0.8502 (N), and 0.803 (M) with F1-scores of 0.622, 0.702, and 0.9337, respectively, for the training phase. LightGBM with TF-IDF performs best with AUROC scores of 0.9368 (T), 0.9524 (N), and 0.8311 (M) and F1-scores of 0.7559 (T), 0.7384 (N), and 0.7017 (M) during the training phase. Furthermore, the result of the Codabench for the test sets indicates a Macro-F1 score of 0.978, 0.957, and 0.879 for the T, N, and M categories respectively for test set 1; while test set 2 records a Macro-F1 score for T, N, and M is 0.807, 0.767, 1.0 respectively. However, performance declined during the evaluation phase of the test sets, a drop from 0.938 to 0.858 of test set 1 to 2, for the Macro-F1 score across all stages; suggesting limitations in model generalizability, sensitivity to class imbalance, and challenges in processing lengthy clinical documents. Although this study provides an efficient baseline model and a reproducible pipeline, further optimization and validation are required before it can be considered suitable for use in a real-world clinical setting.",
+      "published": "July 03, 2026",
+      "published_raw": "2026-07-03T16:25:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.03466v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.03466v1"
+    },
+    {
+      "id": "2607.02945v1",
+      "title": "Optimus: A Generic Operator-Level PyTorch Model Transformation Framework",
+      "authors": [
+        "Menglu Yu",
+        "Jiaqi Xu",
+        "Yuzhen Huang",
+        "Yanbo Liang",
+        "Jia Liu",
+        "Shuai Yang",
+        "Jason Ansel",
+        "Elias Ellison",
+        "Edward Yang",
+        "Brian Hirsh",
+        "Jia Chen Ren",
+        "Will Feng",
+        "Oguz Ulgen",
+        "Xu Zhao",
+        "Daohang Shi",
+        "Huaqing Xiong",
+        "Quanyu Zhu",
+        "Mingming Ding",
+        "Junqing Zhou",
+        "Ruilin Chen",
+        "Yuhang Yang",
+        "Chi-Keung Luk"
+      ],
+      "abstract": "In large-scale industrial applications, deep learning models that power recommendation and ranking have complex and diverse model architectures. These models are continuously developed and refined by large teams of machine learning engineers, rendering manual optimization infeasible. Consequently, graph-based optimization techniques have become an industry standard for boosting performance, with PyTorch FX transformations leading the charge. These transformations typically rely on a set of human-engineered module-level rewrite rules which are not scalable to diverse model architectures. To address this limitation, we introduce Optimus, a general-purpose model transformation framework built in the PyTorch 2.x (PT2) machine learning compiler. With a concise set of predefined patterns, Optimus applies an efficient greedy search algorithm for pattern matching and replacement, while preserving model semantic. It is designed and implemented as a highly customizable and extensible framework integrated into the PT2 stack. Our evaluation shows that the framework can achieve up to 63% speedup, 6% peak memory reduction, and over 400 second compile time decrease for our industry-scale recommendation models compared to baselines. Optimus is open-sourced together with PyTorch 2.x as a customizable model transformation layer.",
+      "published": "July 03, 2026",
+      "published_raw": "2026-07-03T04:40:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.02945v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.02945v1"
+    },
+    {
+      "id": "2607.02671v1",
+      "title": "Benign Overfitting Does Not Occur in Diffusion Models",
+      "authors": [
+        "Tyler Farghly",
+        "Benjamin Dupuis",
+        "Alain Durmus",
+        "Umut Simsekli"
+      ],
+      "abstract": "Benign overfitting and double descent have come to shape our understanding of generalization in deep learning, establishing that overfitting is not only compatible with good generalization but can actively benefit it. Diffusion models share much of the machinery of standard deep learning, so it is natural to assume that they also exhibit these properties. In this work, we show that this assumption is largely incorrect. We first establish fundamental impossibility results showing that, unless the sample size grows exponentially with the data dimension, overfitting and good generalization cannot occur simultaneously. Consequently, the population loss follows a classical U-shaped curve in model complexity rather than exhibiting double descent. Analyzing a simplified setting, we identify a key difference between regression and score matching: regression benefits from an alignment between the target and the empirical covariance; score matching admits no such alignment, leaving overfitting irreparably harmful. We further identify implicit regularization stemming from time-smoothness of the score and early stopping during training as mechanisms that prevent such overfitting and verify our findings with high-dimensional image generation experiments. Our results reveal that generalization in diffusion models is governed by mechanisms distinct from those of traditional regression, motivating the development of new theory.",
+      "published": "July 02, 2026",
+      "published_raw": "2026-07-02T18:05:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.02671v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.02671v1"
+    },
     {
       "id": "2607.02389v1",
       "title": "Steerability via constraints: a substrate for scalable oversight of coding agents",
@@ -155,6 +218,23 @@
       "arxiv_link": "http://arxiv.org/abs/2607.01295v1"
     },
     {
+      "id": "2607.02596v1",
+      "title": "CIPHER: Causal Intervention Pathways for Healthcare Equity and Robustness",
+      "authors": [
+        "Xinyu Jia",
+        "Weidong Guo",
+        "Wangyuan Zhao",
+        "Yi Guo",
+        "Zeju Li",
+        "Yuanyuan Wang"
+      ],
+      "abstract": "Deep learning models for medical diagnosis frequently exhibit substantial performance disparities across sensitive subgroups (e.g., race, sex), even when average accuracy is high. While generative data augmentation offers a route to mitigate this, existing strategies are suboptimal; they typically address only one or two dependency channels between sensitive attributes and image features. We formalize the medical image formation process via a structural causal model, revealing that sensitive attributes actually influence image content through four distinct pathways-a structural complexity neglected by prior works. Based on this insight, we introduce CIPHER (Causal Intervention Pathways for Healthcare Equity and Robustness), a framework designed to systematically intervene on all four causal paths. To achieve this, CIPHER utilizes a diffusion backbone equipped with classifier-free guidance and null-text inversion. This technical design enables the faithful reconstruction of patient-specific anatomy while allowing for the precise, editable synthesis of counterfactuals required to break sensitive dependency chains. We tested CIPHER using chest X-ray and dermoscopy benchmarks across both standard and shifted data distributions. By employing a multi-pathway intervention strategy, our model reduced worst-group disparities by an average of 35.8% compared to disease-conditioned synthesis baselines, while also improving total diagnostic accuracy",
+      "published": "July 01, 2026",
+      "published_raw": "2026-07-01T09:36:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.02596v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.02596v1"
+    },
+    {
       "id": "2607.01278v1",
       "title": "Multilayer Q-Matrix-Embedded Neural Network for Cognitive Diagnosis (M-QCDNet): Structure-Aware Deep Learning Architecture for Psychometric Interpretability",
       "authors": [
@@ -238,63 +318,6 @@
       "published_raw": "2026-06-30T07:43:28Z",
       "pdf_link": "http://arxiv.org/pdf/2607.00056v2.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.00056v2"
-    },
-    {
-      "id": "2606.31061v1",
-      "title": "Online TT-ALS for Streaming Tensor Decomposition with Incremental Orthogonalization",
-      "authors": [
-        "Hiroki Takeda",
-        "Yuto Miyatake",
-        "Daisuke Furihata"
-      ],
-      "abstract": "Tensor Train (TT) decomposition is a powerful technique for analyzing high-dimensional data. Existing algorithms for computing TT decompositions can be categorized into two main types: conventional batch-based approaches and recursive online methods. In the context of streaming data, batch methods typically achieve higher reconstruction accuracy but often suffer from memory exhaustion, while online methods provide greater computational efficiency. In this work, we introduce Online TT-ALS (Alternating Least Squares), an algorithm that sequentially enforces orthogonality constraints. This approach allows for efficient and exact updates of the core tensor while maintaining high reconstruction accuracy. Theoretically, we prove that enforcing these orthogonal gauge constraints guarantees monotonic decrease of the local objective function and temporal smoothness. Computationally, our deterministic single-sweep update reduces the rank dependence from quadratic to linear, achieving an overall complexity of $\\mathcal{O}(I^{n-1} r)$. Experimental results demonstrate that the proposed method outperforms existing online techniques not only in terms of mathematical approximation accuracy but also in human perception-based video quality metrics. Furthermore, compared to recent deep learning-based paradigms, our algebraic approach achieves speedups of several orders of magnitude. Consequently, our method exhibits high computational efficiency and is suitable for low-latency real-time processing applications.",
-      "published": "June 30, 2026",
-      "published_raw": "2026-06-30T02:50:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.31061v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.31061v1"
-    },
-    {
-      "id": "2606.30961v1",
-      "title": "ElemeNet: Multiscale Molecular Machine Learning with Uncertainty Quantification Across the Periodic Table",
-      "authors": [
-        "Jacob W. Toney",
-        "Samir Darouich",
-        "Yiran Wang",
-        "Aaron G. Garrison",
-        "Johannes Kästner",
-        "Heather J. Kulik"
-      ],
-      "abstract": "Advances in deep learning architectures and representations have enabled ML-driven chemical property prediction, but state-of-the-art (SOTA) models have remained largely confined to independent codebases and lack support for diverse chemical species. This work introduces ElemeNet, a unified, general-purpose software package for molecular machine learning. The ElemeNet software package enables the training of advanced ML models for diverse properties and datasets with an enlarged range of elemental compositions. We define molecular representations compatible with elements 1-100, supporting diverse organometallic and biological systems in addition to organic chemistry already well-served by the Chemprop ML toolkit. As well as more common atom-, bond-, and molecule-level predictions, we introduce moiety predictions. We also natively define optional conditioning on charge and spin states. Advanced E(3)-equivariant and transformer architectures are supported, as well as classical 2D models, with all classes including built-in uncertainty quantification through deterministic and statistical measures. We benchmark our protocols for ML model training against representative datasets from organic, inorganic, coordination, and biological chemistry, achieving competitive and SOTA performance relative to literature baselines and favorable scaling to millions of molecules. The entire workflow is exposed through a concise command-line interface, lowering the barrier to entry for non-expert users. We anticipate ElemeNet will empower non-computational researchers to leverage modern deep learning methods across the chemical and physical sciences.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T22:38:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.30961v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.30961v1"
-    },
-    {
-      "id": "2606.30953v1",
-      "title": "Neuro-Bayesian-Symbolic Residual Attention Shallow Network: Explainable Deep Learning for Cybersecurity Risk Assessment",
-      "authors": [
-        "Nicolaie Popescu-Bodorin",
-        "Madeleine Togher"
-      ],
-      "abstract": "We introduce the Neuro-Bayesian-Symbolic Residual Attention Shallow Network (NBS-RASN), a hybrid neural architecture for explainable cybersecurity risk assessment in open-source ecosystems. Unlike deep models that trade interpretability for accuracy, our shallow network encodes domain knowledge, causal reasoning, and expert judgment as differentiable components. It uses 80 interpretable neurons across 12 layers, including a gatekeeper that enforces five epistemological axioms - precision, causality, falsifiability, transparency, and completeness - as hard constraints before propagation. Despite limited depth, the network exhibits deep-learning traits via residual attention and feedback loops, learning complex risk patterns without becoming a black box. It produces fully decomposable scores: a deterministic weighted component plus an expert adjustment, with each adjustment traceable to named amplifiers (blast radius, propagation speed, structural nature, default exposure, exploitation pattern, institutional criticality). We validate on 20 open-source projects covering all OWASP Top 10:2025 categories and language risk classes, achieving confidence scores of 0.79-0.97, and show that explainability is guaranteed by design, not by a training algorithm. This challenges the assumption that deep learning requires deep networks, proving that shallow networks with deep reasoning can outperform opaque models in high-stakes cybersecurity, where interpretability is essential.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T22:16:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.30953v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.30953v1"
-    },
-    {
-      "id": "2606.30940v1",
-      "title": "Motion Planning in Compressed Representation Spaces",
-      "authors": [
-        "Lukas Lao Beyer",
-        "Sertac Karaman"
-      ],
-      "abstract": "Deep learning methods have vastly expanded the capabilities of motion planning in robotics applications, as learning priors from large-scale data has been shown to be essential in capturing the highly complex behavior required for solving tasks such as manipulation or navigation for autonomous vehicles. At the same time, model-based planning algorithms based on search or optimization remain an essential tool due to their flexibility, efficiency, and the ability to incorporate domain knowledge via expert-designed algorithms and objective functions. We propose a new generative framework to unify these two paradigms. First, we learn an autoencoder with a high compression ratio and a latent space of hierarchically ordered, discrete-valued tokens. Leveraging both the dimensionality reduction and the hierarchical coarse-to-fine structure learned by this autoencoder, we then perform motion planning by directly searching in the latent space of tokens. This search can optimize arbitrary objective functions specified at test time, providing a large degree of flexibility while maintaining efficiency and producing realistic solutions by relying on the generative capabilities of the highly compressed autoencoder. We evaluate our method on nuPlan and the Waymo Open Motion Dataset, showing how latent space search can be used for a variety of guided behavior generation tasks, achieving strong performance for closed-loop motion planning and multi-agent guided scenario synthesis without requiring any task-specific training.",
-      "published": "June 29, 2026",
-      "published_raw": "2026-06-29T21:48:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.30940v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.30940v1"
     }
   ]
 }
