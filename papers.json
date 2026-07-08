@@ -1,323 +1,326 @@
 {
-  "last_updated": "2026-07-07T01:49:30.972981",
+  "last_updated": "2026-07-08T01:21:13.232734",
   "count": 20,
   "papers": [
     {
-      "id": "2607.03466v1",
-      "title": "CaresAI at SMM4H-HeaRD 2026: Predicting TNM Staging",
+      "id": "2607.06295v1",
+      "title": "Visual graphs for image classification: does the structure affect performance?",
       "authors": [
-        "Joseph Itopa Abubakar",
-        "Jorge Jarme",
-        "Favour Igwezeke",
-        "Mary Adewunmi"
+        "Alessandra Ibba"
       ],
-      "abstract": "This study aims to predict Tumor, Node, and Metastasis (TNM) stage labels independently, with the Cancer Genome Atlas (TCGA) pathology report as the sixth shared task of SMM4H-HeaRD 2026. The problem is framed as three multi-label classification tasks. We explore both classical and deep learning approaches using Term Frequency-Inverse Document Frequency (TF-IDF) features and embeddings from ClinicalBERT, BioBERT, and PubMedBERT. These representations are used with Logistic Regression (LR), Light Gradient Boosting Machine (LightGBM), Feed-Forward Neural Networks (FFNN), and Wide Residual Networks (WRN). Our results show that individual embeddings perform similarly to the TNM label classification, while their combination improves its predictive ability. WRN achieves AUROC scores of 0.839 (T), 0.8502 (N), and 0.803 (M) with F1-scores of 0.622, 0.702, and 0.9337, respectively, for the training phase. LightGBM with TF-IDF performs best with AUROC scores of 0.9368 (T), 0.9524 (N), and 0.8311 (M) and F1-scores of 0.7559 (T), 0.7384 (N), and 0.7017 (M) during the training phase. Furthermore, the result of the Codabench for the test sets indicates a Macro-F1 score of 0.978, 0.957, and 0.879 for the T, N, and M categories respectively for test set 1; while test set 2 records a Macro-F1 score for T, N, and M is 0.807, 0.767, 1.0 respectively. However, performance declined during the evaluation phase of the test sets, a drop from 0.938 to 0.858 of test set 1 to 2, for the Macro-F1 score across all stages; suggesting limitations in model generalizability, sensitivity to class imbalance, and challenges in processing lengthy clinical documents. Although this study provides an efficient baseline model and a reproducible pipeline, further optimization and validation are required before it can be considered suitable for use in a real-world clinical setting.",
-      "published": "July 03, 2026",
-      "published_raw": "2026-07-03T16:25:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.03466v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.03466v1"
+      "abstract": "Deep learning models have emerged in machine learning and related fields, demonstrating astonishing performance in various visual tasks. Despite their great success, however, these models are unable to fully encode intrinsic visual structures, and often ignore the spatial, topological, and semantic information contained within an image. Graph neural networks offer a good framework to face this aspect, but their effective use for visual tasks has been only partly explored and mainly starting from a limited perspective. This work aims to address this gap by conducting a systematic comparison of current graph construction techniques within the context of a fixed three-layer GCN architecture. Through an empirical study, it demonstrates in particular how the network structure affects performance and provides an important methodological contribution regarding the computational stages preceding graph utilization, which will be strongly influenced by the structure itself.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T14:01:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06295v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06295v1"
     },
     {
-      "id": "2607.02945v1",
-      "title": "Optimus: A Generic Operator-Level PyTorch Model Transformation Framework",
+      "id": "2607.06232v1",
+      "title": "Learning to Reconstruct Wigner Functions in Phase Space",
       "authors": [
-        "Menglu Yu",
-        "Jiaqi Xu",
-        "Yuzhen Huang",
-        "Yanbo Liang",
-        "Jia Liu",
-        "Shuai Yang",
-        "Jason Ansel",
-        "Elias Ellison",
-        "Edward Yang",
-        "Brian Hirsh",
-        "Jia Chen Ren",
-        "Will Feng",
-        "Oguz Ulgen",
-        "Xu Zhao",
-        "Daohang Shi",
-        "Huaqing Xiong",
-        "Quanyu Zhu",
-        "Mingming Ding",
-        "Junqing Zhou",
-        "Ruilin Chen",
-        "Yuhang Yang",
-        "Chi-Keung Luk"
+        "Xinyu Tang",
+        "Yi-hsin Lin",
+        "Yan Zhu",
+        "Tailong Xiao",
+        "Yuxuan Du",
+        "Giulio Chiribella",
+        "Qiongyi He",
+        "Ya-dong Wu"
       ],
-      "abstract": "In large-scale industrial applications, deep learning models that power recommendation and ranking have complex and diverse model architectures. These models are continuously developed and refined by large teams of machine learning engineers, rendering manual optimization infeasible. Consequently, graph-based optimization techniques have become an industry standard for boosting performance, with PyTorch FX transformations leading the charge. These transformations typically rely on a set of human-engineered module-level rewrite rules which are not scalable to diverse model architectures. To address this limitation, we introduce Optimus, a general-purpose model transformation framework built in the PyTorch 2.x (PT2) machine learning compiler. With a concise set of predefined patterns, Optimus applies an efficient greedy search algorithm for pattern matching and replacement, while preserving model semantic. It is designed and implemented as a highly customizable and extensible framework integrated into the PT2 stack. Our evaluation shows that the framework can achieve up to 63% speedup, 6% peak memory reduction, and over 400 second compile time decrease for our industry-scale recommendation models compared to baselines. Optimus is open-sourced together with PyTorch 2.x as a customizable model transformation layer.",
-      "published": "July 03, 2026",
-      "published_raw": "2026-07-03T04:40:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.02945v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.02945v1"
+      "abstract": "Wigner function learning is a central tool for characterizing continuous variable quantum systems. A fundamental challenge in this setting is to infer a continuous phase-space function from sparse pointwise measurement data, a task that becomes increasingly demanding as the effective dimension enlarges. Here, we develop a general machine learning framework to reconstruct Wigner functions directly as continuous functions from sparse phase-space data. For states with sparse Fock-space or coherent-state representations, such as binomial code states and cat states, we devise provably efficient regression models whose measurement complexity scales only logarithmically with the effective Hilbert-space dimension. For more general states, such as the Gottesman-Kitaev-Preskill (GKP) states, we design a deep learning model that reconstructs the Wigner function from sparse measurements and generalizes to arbitrary phase-space resolution. We demonstrate the broad applicability of our framework on both simulated data and experimental data from a circuit quantum electrodynamic (circuit-QED) system. Interestingly, on experimental data, we find that our model reconstructs Wigner functions of GKP code states across multiple rounds of quantum error correction and identifies the dominant error process using significantly fewer measurements than conventional estimation techniques.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T13:00:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06232v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06232v1"
     },
     {
-      "id": "2607.02671v1",
-      "title": "Benign Overfitting Does Not Occur in Diffusion Models",
+      "id": "2607.06151v1",
+      "title": "Leveraging Extragradient for Effective Sharpness-Aware Minimization in Deep Learning",
       "authors": [
-        "Tyler Farghly",
-        "Benjamin Dupuis",
-        "Alain Durmus",
-        "Umut Simsekli"
+        "Yao Fu",
+        "Chunxia Zhang",
+        "Junmin Liu",
+        "Yihang Jin",
+        "Haishan Ye",
+        "Yuanao Yang"
       ],
-      "abstract": "Benign overfitting and double descent have come to shape our understanding of generalization in deep learning, establishing that overfitting is not only compatible with good generalization but can actively benefit it. Diffusion models share much of the machinery of standard deep learning, so it is natural to assume that they also exhibit these properties. In this work, we show that this assumption is largely incorrect. We first establish fundamental impossibility results showing that, unless the sample size grows exponentially with the data dimension, overfitting and good generalization cannot occur simultaneously. Consequently, the population loss follows a classical U-shaped curve in model complexity rather than exhibiting double descent. Analyzing a simplified setting, we identify a key difference between regression and score matching: regression benefits from an alignment between the target and the empirical covariance; score matching admits no such alignment, leaving overfitting irreparably harmful. We further identify implicit regularization stemming from time-smoothness of the score and early stopping during training as mechanisms that prevent such overfitting and verify our findings with high-dimensional image generation experiments. Our results reveal that generalization in diffusion models is governed by mechanisms distinct from those of traditional regression, motivating the development of new theory.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T18:05:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.02671v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.02671v1"
+      "abstract": "Generalization remains a pivotal challenge in deep learning, where traditional optimizers like Stochastic Gradient Descent (SGD) often converge to sharp minima, leading to overfitting and reduced performance on unseen data. Building on Sharpness-Aware Minimization (SAM), for seeking flat minima associated with improved generalization, we propose the Extragradient-Inspired Sharpness-Aware Minimization (EISAM), a novel optimizer that enhances generalization via the extragradient technique. EISAM uses a two-step update process: a prediction step investigating the geometry of the loss landscape and a perturbation step that refines updates with a base optimizer. This approach achieves better generalization performance than SAM. Crucially, EISAM reduces sensitivity to the perturbation radius, enhancing robustness, and simplifying the tuning across diverse settings. Extensive experiments on benchmark datasets demonstrate that EISAM consistently outperforms SGD, Adaptive Moment Estimation (Adam), and SAM in test accuracy and training efficiency across various architectures. Theoretical analysis further confirms that EISAM tightens the generalization bound by steering parameters toward flatter minima with reduced curvature. Accompanied by a thorough hyperparameter analysis, EISAM offers practical tuning guidance, establishing it as a robust, scalable, and broadly applicable optimization solution that advances both the theory and practice in deep learning.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T11:25:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06151v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06151v1"
     },
     {
-      "id": "2607.02389v1",
-      "title": "Steerability via constraints: a substrate for scalable oversight of coding agents",
+      "id": "2607.06026v1",
+      "title": "SplineNet: An Isogeometric Deep Learning Method for Complex Shells",
       "authors": [
-        "Thomas Winninger"
+        "Shizhou Luo",
+        "Xiaodong Wei"
       ],
-      "abstract": "Coding agents are capable; human oversight is the bottleneck. Unconstrained agents introduce security risks, erode codebase scalability, and make human review increasingly costly. We argue that the same methods used for decades to manage large human engineering teams: access control, network policies, strict coding conventions enforced by tooling; transfer directly to coding agents, and are cheaper (in token) than recent agentic scaffolding. We sketch a start-to-end system on this principle, and report a controlled experiment in scalable oversight: a small reviewer (Gemma 4 e4b) inspects a Python codebase containing 11 inserted backdoors. Recall rises from 54.5% (unconstrained, no tools) to 90.9% (constrained substrate plus a ~200-LoC `docs` CLI), with substrate and tools contributing independently. We choose Python deliberately: substrate-level oversight gains are largest where the language gives the fewest guarantees by default; the principles extend to languages like Rust.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T16:24:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.02389v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.02389v1"
+      "abstract": "We present a novel isogeometric deep learning method, termed SplineNet, for the seamless design and analysis of shell structures with complex geometries. The proposed approach is built upon watertight spline representations, e.g., analysis-suitable unstructured T-splines, and features exact geometric descriptions of Computer-Aided Design (CAD) models in neural networks. Bézier extraction is used to build the network architecture, where Bernstein polynomials serve as the nonlinear activation functions. SplineNet can be applied in a data-free or data-driven way. In the data-free case, energy-based formulations can be naturally incorporated as loss terms, which fulfill the need of Computer-Aided Engineering (CAE) and can be accurately calculated. In particular, the Kirchhoff--Love (KL) model is adopted to solve for the mechanical behaviors of shell structures. This way, CAD and CAE can be tightly integrated in a deep neural network without the time-consuming model/data exchange process. In the data-driven case, SplineNet can be used as the trunk net of Deep Operator Networks (DeepONet) to provide interpretability. Given such a trained network and unseen input data, results can be immediately obtained without retraining the network or repeatedly performing the traditional workflow for analysis. In the end, a variety of numerical examples are studied to demonstrate the effectiveness of the proposed method, especially when real-world complex geometries are involved.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T09:05:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06026v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06026v1"
     },
     {
-      "id": "2607.02212v1",
-      "title": "An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility",
+      "id": "2607.05718v1",
+      "title": "Learning Stable Controlled Dynamical Systems via Input-Contraction Neural Differential Models",
       "authors": [
-        "Sampreeti Bhattacharya",
-        "Arkaprava Roy"
+        "Syed Pouladi"
       ],
-      "abstract": "Aqueous solubility is a key property in early-stage drug discovery, but most predictive models merge physicochemical descriptors and molecular graph information into a single representation, obscuring whether a prediction is driven by global chemistry, molecular structure, or both. We present an additive deep-learning framework that keeps these two sources of information separate throughout training: physicochemical descriptors are encoded by a multilayer perceptron (the chemical branch) and molecular graph topology by a graph neural network (the structural branch), with the two outputs combined only at the prediction stage through an additive model with an optional multiplicative interaction. This design provides a direct decomposition of chemical and structural components that can be examined separately after training. Furthermore, pretraining on the larger AqSolDB dataset and fine-tuning on the smaller BigSolDB2 dataset substantially improve accuracy and reduce run-to-run variations, indicating generalizability of the learned features from the data-rich settings. We further interpret the fitted model using best linear projections of the branch outputs, molecule-level embedding summaries across solubility classes, and atom-level GNNExplainer masks aggregated over functional groups. These analyses show that the chemical branch aligns with familiar physicochemical descriptors, while the structural branch captures graph-topological and functional-group patterns associated with solubility. Across both datasets, the framework attains competitive predictive performance while making the distinct roles of chemical and structural information more transparent.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T14:21:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.02212v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.02212v1"
+      "abstract": "Learning continuous-time representations of dynamical systems from observation data has emerged as a cornerstone of data-driven control and scientific machine learning. However, existing neural differential equations either treat external control inputs heuristically without providing strict structural guarantees, or enforce stability properties under the restrictive assumption of constant or vanishing inputs. This paper proposes the Input-Contraction Neural Differential Model (ICNDM), a novel deep learning framework that seamlessly incorporates time-varying control inputs while ensuring incremental exponential convergence via input-dependent contraction regularization. By leveraging an embedded input encoder and a parameterized metric network, the proposed architecture learns both the non-autonomous neural vector fields and a generalized Riemannian contraction metric simultaneously. We derive sufficient conditions for input-dependent contraction and formally establish an input-to-state contraction property under bounded external excitations. Extensive numerical evaluations on highly nonlinear chaotic oscillators and experimental data from a Permanent Magnet Synchronous Motor (PMSM) drive system demonstrate that ICNDM yields substantial reductions in long-horizon rollout errors and exhibits superior structural robustness against input perturbations compared with state-of-the-art neural differential benchmarks.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T01:03:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05718v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05718v1"
     },
     {
-      "id": "2607.02127v1",
-      "title": "Population-Scale Segmentation of Penile Tissue in DIXON MRI using Deep Learning for Quantitative Phenotyping in Male Reproductive Health",
+      "id": "2607.05669v1",
+      "title": "Uncertainty-Aware Velocity Correction for Proprioceptive Vehicle Localization using Evidential Mamba",
       "authors": [
-        "Jan Ernsting",
-        "Gunnar Paul Kordes",
-        "Nils Johannaber",
-        "Lynn Ogoniak",
-        "Wolfgang Roll",
-        "Tim Hahn",
-        "Alexander Siegfried Busch",
-        "Benjamin Risse"
+        "Abinav Kalyanasundaram",
+        "Karthikeyan Chandra Sekaran",
+        "Wolfgang Utschick",
+        "Michael Botsch"
       ],
-      "abstract": "Penile measurement is clinically relevant across male reproductive and urogenital health, including conditions such as micropenis, congenital and endocrine disorders, and sexual or urinary dysfunction. However, quantitative assessment of penile size has relied mainly on external length or circumference measurements, which are difficult to standardize, sensitive to measurement conditions, and unable to capture the internal portion of the penis. MRI enables volumetric assessment of the whole penis in vivo, but automated segmentation has not previously been established at population scale. Automated whole-organ volumetry would enable high-throughput phenotyping for multi-omics and clinical studies of male reproductive disease. Here, we present a deep learning framework for whole-penis segmentation in multi-channel DIXON MRI. Using a newly curated expert-annotated training dataset ($n = 145$ subjects; $13,050$ annotated slices) and a double-annotated independent test benchmark ($n = 24$ subjects; $2,160$ double-annotated slices), we optimized a 3D nnU-Net architecture. The model achieved a 5-fold cross-validation Dice score of $0.90$ and performed at observer-level accuracy on the independent test set (Dice: $0.92$; Hausdorff distance: $3.58$). We deployed the model in $34,412$ UK Biobank participants, enabling automated quantification of total penile tissue, including both external and internal components. Longitudinal evaluation in 2,282 men demonstrated high inter-session reproducibility ($r = 0.87$). This framework establishes a reproducible and population-scalable method for MRI-based assessment of penile anatomy and provides an open technical resource for future studies in urological imaging and male reproductive health. The trained model weights will be publicly released.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T13:04:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.02127v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.02127v1"
+      "abstract": "Reliable localization in GNSS-denied environments remains a fundamental challenge for intelligent vehicles, as inertial navigation systems accumulate unbounded drift without external correction. Existing approaches provide drift correction through dedicated infrastructure, expensive external sensors, or complex multi-sensor fusion, each introducing practical deployment barriers. We propose Evidential Velocity Correction using Mamba (EVC-Mamba), a learning-based architecture that transforms onboard vehicle sensor data into a virtual velocity sensor for IMU drift correction without additional hardware. A Mamba-based selective state space model captures the temporal dynamics of vehicle motion, while evidential deep learning with a Normal-Inverse-Gamma distribution provides principled uncertainty quantification. The resulting uncertainty-aware velocity estimate is incorporated as a virtual correction measurement into an Error-State Extended Kalman Filter to reduce position drift. Evaluation on real-world vehicle data demonstrates that inertial navigation using the proposed velocity correction achieves localization accuracy within 10% of a dedicated external velocity sensor across different outage durations. The proposed architecture supports real-time onboard deployment at 40 Hz on edge hardware, enabling reliable localization during prolonged GNSS outages.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T22:28:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05669v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05669v1"
     },
     {
-      "id": "2607.01795v1",
-      "title": "Single-Channel EEG-Based Cognitive Load Assessment in Online Learning: A Hybrid Deep Learning Approach",
+      "id": "2607.05645v1",
+      "title": "Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift",
       "authors": [
-        "Rowan Hussein",
-        "Mohamed Ouf"
+        "Shuochen Wang",
+        "Nishant Yadav",
+        "Auroop R. Ganguly"
       ],
-      "abstract": "Monitoring cognitive load during online learning could help instructors identify content that learners find difficult, but remote settings remove the visual cues that support this judgement in a classroom. We study whether a single-channel, consumer-grade EEG device (the NeuroSky MindWave Mobile 2) can distinguish easy from difficult educational-video content, using the publicly available dataset of Wang et al. [24] (ten learners, one excluded for excessive noise, leaving nine). We implement a hybrid CNN+LSTM+Attention model that combines the raw waveform with band-power features. In a within-subject setting, the model reaches up to 78.5% accuracy, compared with 55% for conventional feature-based classifiers; regularization (dropout and L2) closes the large gap between training and validation accuracy that we observe without it, keeping validation accuracy stable at roughly 68-73%. We are deliberately cautious about these numbers: with only nine subjects, within-subject evaluation is optimistic, and we argue that subject-independent evaluation -- in which no learner appears in both training and test data -- should be the standard for this task. To that end we release a reproducible evaluation pipeline. We frame the work as a feasibility study rather than a deployable system, and pair it with an open, notebook-based tool that records EEG, runs inference, and visualizes estimated cognitive load as a heatmap over the video timeline to help educators locate potentially challenging segments.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T07:13:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01795v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01795v1"
+      "abstract": "Deep-learning-based climate downscaling aims to learn relationships from historical low-resolution (LR) and high-resolution (HR) climate data to generate HR climate projections. However, this setting faces a temporal out-of-distribution (OOD) challenge: models trained on historical data are commonly applied to future projections whose distributions may differ substantially from the training period. This study investigates temporal OOD shift for daily temperature downscaling over the Continental United States using paired LR-HR model simulations. We propose a temporal domain-adaptive downscaling framework that combines supervised HR reconstruction on historical data with domain alignment between historical and future climate distributions. Experiments across future validation periods show that the proposed domain-adaptive model consistently outperforms statistical and deep-learning-based bias-correction methods, with the largest gains occurring when the temporal distribution shift is strongest. Spatial analyses indicate stronger improvements over high-elevation and topographically complex regions, along with higher spatiotemporal correlation with the HR target. The extreme analysis shows that domain adaptation also reduces upper-tail temperature bias relative to the non-adaptive model. These results demonstrate that temporal domain adaptation can improve the robustness of HR climate projections under non-stationary climate conditions.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T21:12:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05645v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05645v1"
     },
     {
-      "id": "2607.01676v1",
-      "title": "A Deep Learning Earth System Model Simulation of Indian Monsoon Intraseasonal and Interannual Variability",
+      "id": "2607.05393v1",
+      "title": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
       "authors": [
-        "Bijit Kumar Banerjee",
-        "Devabrat Sharma",
-        "R. I. Sujith",
-        "Chandrashekar Lakshminarayanan",
-        "Manikandan Narayanan",
-        "Subodh K. Saha",
-        "Anurag Dipankar",
-        "Utpal Sarma",
-        "B. N. Goswami"
+        "Raphaël Bonnet-Guerrini",
+        "Bruno Sanchez",
+        "Dominique Fouchez",
+        "Benjamin Racine",
+        "Maya Guy",
+        "Mariam Sabalbal",
+        "Manal Yassine",
+        "Vincenzo Piuri"
       ],
-      "abstract": "With the data-driven artificial intelligence/machine learning (AI/ML) models having demonstrated their ability to extend the prediction horizon of large-scale weather at a fraction of computational cost of numerical weather prediction models, a pertinent question is, could these models do the same for sub-seasonal to seasonal (S2S) prediction? A key challenge in developing a S2S prediction system is the requirement for a coupled ocean-atmosphere Earth system emulator that can stably simulate the observed intraseasonal and interannual variability with fidelity. In the rapidly evolving field of AI/ML weather models, such a deep learning 3D ocean-atmosphere coupled model has become available, called SamudrACE. With our interest in developing an AI/ML S2S model for Indian monsoon, here we examine the extent to which SamudrACE faithfully simulates Indian monsoon intraseasonal and interannual variability. Compared to observation, we found biases in SamudrACE's simulation of monsoon intraseasonal and interannual variability. Our systematic documentation and analyses of these biases provide a useful benchmark for improving not only SamudrACE but also coupled emulators in general and could fast track the development of a deep learning 3D global S2S prediction system.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T04:05:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01676v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01676v1"
+      "abstract": "Time-domain surveys generate many transient candidates, making Real-Bogus classification a critical step in automated discovery pipelines. Reliable labels are costly, while community labels can be noisy and survey-dependent. We aim to develop a Real-Bogus classification framework that can be trained without human-labeled data using injected transients and bogus-dominated survey data, remains robust under strong class contamination, and provides calibrated uncertainty quantification. We combine simulated transient injections with a contaminated survey class and train a dual-network model using asymmetric co-teaching for classes with different label-noise levels. We evaluate performance on a benchmark subset and analyze the learned representation with latent-space visualization tools. For uncertainty quantification (UQ), we compare MC dropout and deep ensembles and propose a low-cost hybrid strategy that exploits the dual-network setting to improve calibration. We extend the evaluation to the light-curve domain to assess recovery of light-curve classes. The method achieves strong Real-Bogus performance on the labeled subset and remains stable under severe class contamination. It recovers transient light-curve classes with high fidelity, while single-source identification is limited by ambiguity in light-curve-derived labels. Our hybrid UQ approach achieves competitive calibration relative to more expensive ensemble baselines. Latent-space analyses indicate that uncertainty aligns with the decision boundary and reveal subclasses within the bogus population. Our results show that injection-driven, weakly supervised training can enable scalable and consistent Real-Bogus classification without human-labeled training data while providing calibrated uncertainties. The method is suited for transfer to forthcoming surveys by re-running the injection-based training pipeline.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T17:59:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05393v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05393v1"
     },
     {
-      "id": "2607.01660v1",
-      "title": "Message Passing Based Two-Timescale Bayesian Learning for Joint Channel and Memory Hardware Impairments Tracking",
+      "id": "2607.05380v1",
+      "title": "TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning",
       "authors": [
-        "Wei Xu",
-        "An Liu"
+        "Yury Gorishniy",
+        "Akim Kotelnikov",
+        "Ivan Rubachev",
+        "Artem Babenko"
       ],
-      "abstract": "Hardware impairments in massive multiple-input multiple-output (MIMO) receivers introduce inter-symbol memory and inter-element coupling, severely degrading channel estimation. This paper employs a residual recurrent gated unit (RGRU) to model the intra-slot memory of the hardware impairments and proposes a message-passing-based two-timescale Bayesian deep learning (MP-TTBDL) framework for joint channel and impairment tracking. Owing to small-scale fading, the wireless channel varies rapidly across slots, whereas hardware impairments drift slowly due to hardware aging and environmental variations. To capture these distinct physical timescales, a fastvarying Markov prior and a slow-varying Gaussian Markov prior are assigned to the sparse channel and the network parameters, respectively. Based on a multi-slot factor graph formulation, a message-passing algorithm is developed. Specifically, the inter-slot messages admit closed-form updates, while the intra-slot factor graph, due to its complex recurrent structure, is partitioned into a channel tracking module and an impairments calibration module. The channel tracking module performs sparse channel estimation via turbo orthogonal approximate message passing (Turbo-OAMP), and the impairments calibration module updates the impairment parameters via a specially designed deep approximate message passing (DAMP) procedure, with the two modules iteratively exchanging extrinsic information through expectation propagation (EP) until convergence. Simulation results show that the proposed framework robustly achieves lower channel estimation error than conventional compensators followed by channel estimation across different online impairment scenarios and signal-to-noise ratio (SNR) conditions.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T03:39:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01660v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01660v1"
+      "abstract": "In deep learning for tabular data, efficient ensembles of multilayer perceptrons (MLPs) have recently emerged as effective and practical architectures. Existing methods of this kind use the same hyperparameters for all underlying MLPs, which requires hyperparameter tuning for achieving the best performance. In this work, we introduce TabPack, an efficient MLP ensemble with strong out-of-the-box performance and reduced reliance on traditional tuning. In a single run, TabPack samples and trains many MLPs with different hyperparameters efficiently in parallel and selects ensemble members on the fly during training. Thus, TabPack only requires specifying ranges from which to sample MLP hyperparameter rather than exact hyperparameter values, which naturally demands less precision for good performance. In experiments on medium-to-large public datasets, TabPack with default settings performs on par with extensively tuned prior methods, thus substantially reducing effort and compute resources needed to achieve competitive results on tabular tasks. Notably, running the default TabPack configuration on a modern MacBook took less time than tuning some baselines on an industry-grade GPU.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T17:55:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05380v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05380v1"
     },
     {
-      "id": "2607.01609v1",
-      "title": "SINA: A Fully Automated Circuit Schematic Image to Netlist Generator Using Artificial Intelligence",
+      "id": "2607.05317v2",
+      "title": "Shape Over Intensity: Directional Topological Encoding for False Positive Reduction in Intracranial Aneurysm Detection",
       "authors": [
-        "Saoud Aldowaish",
-        "Yashwanth Karumanchi",
-        "Kai-Chen Chiang",
-        "Mohammed Ayman Habib",
-        "Finn Murphy",
-        "Rishen Cao",
-        "Morteza Fayazi"
+        "Akshay Gokhale",
+        "Mansi Dhamne"
       ],
-      "abstract": "Recent advances in Artificial Intelligence (AI) have revolutionized Electronic Design Automation (EDA), particularly through Large Language Models (LLMs) for circuit design tasks. However, their application to analog and mixed-signal domains remains limited by the lack of machine-readable representations of existing circuit design knowledge. Circuit schematic images found in research manuscripts, textbooks, and websites constitute a vast repository of validated designs; however, these visual representations cannot be directly processed by EDA tools. Converting them into machine-readable netlists is essential for enabling simulation, verification, and building comprehensive databases for AI-based models. Current conversion methods lack generalization across both Integrated Circuit (IC) and Printed Circuit Board (PCB) level schematics. Moreover, they struggle with component recognition and connectivity inference, and fail to distinguish between connected junctions and crossing wires. In this paper, we propose SINA, an open-source circuit schematic image-to-netlist generator. SINA is a fully automated pipeline that integrates deep learning for robust component detection, connected-component labeling for accurate connectivity inference, Optical Character Recognition (OCR) for component reference designator extraction, and a Vision-Language Model (VLM) for reliable reference designator assignment. SINA handles both IC- and PCB-level schematics and incorporates dedicated crossing-wires detection to differentiate wire intersections from connections. We validate the correctness of the generated netlists using graph isomorphism techniques. Our experiments demonstrate an overall netlist generation accuracy of 96.67%, which is 2.72x higher compared to state-of-the-art approaches.",
-      "published": "July 02, 2026",
-      "published_raw": "2026-07-02T02:24:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01609v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01609v1"
+      "abstract": "Automated detection of intracranial aneurysms (IAs) from CT angiography (CTA) is severely hindered by high false-positive rates. Convolutional neural networks (CNNs) rely on local pixel intensities, causing systematic confusion between saccular aneurysms and vascular bifurcations - a problem especially acute for small lesions (<3 mm), where detection sensitivity falls below 60%. We propose a plug-and-play, topology-aware false-positive reduction framework evaluating the Smooth Euler Characteristic Transform (SECT) - a directional representation encoding global 3D vascular geometry independently of intensity - against persistence-based summaries (Persistence Images and Landscapes), tested on a stratified subset of the RSNA 2025 dataset. SECT achieves an AUC of 0.943, substantially outperforming direction-agnostic methods (AUC ~0.68), and exhibits a clinical performance inversion: it excels on the sub-3 mm cohort, maintaining 0.943 AUC and 78.5% sensitivity at 95% specificity. The representation is also scanner-agnostic, achieving 0.927 mean AUC under leave-one-scanner-out (LOGO) validation across four manufacturers. By capturing asymmetric geometric invariants rather than intensity profiles, SECT reliably resolves the primary structural confounder in IA detection, positioning it as a robust downstream filter for hybrid deep-learning diagnostic pipelines.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T16:56:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05317v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05317v2"
     },
     {
-      "id": "2607.01311v1",
-      "title": "From Approximation to Emergence: A Theory of Deep Learning",
+      "id": "2607.05153v1",
+      "title": "Geometric Causal Models",
       "authors": [
-        "Zhilin Zhao"
+        "Eli N. Weinstein",
+        "David M. Blei"
       ],
-      "abstract": "Deep learning has outgrown any single mathematical explanation. From Approximation to Emergence develops a unified, proof-oriented account of modern deep learning theory, tracing a path from the classical foundations of approximation, optimization, and generalization to the contemporary mechanisms of overparameterization, robustness, generative modeling, transformers, in-context learning, scaling laws, interpretability, alignment, and emergence. Rather than presenting isolated results, the book organizes a broad literature into a coherent research narrative: each theory is examined through the object it controls, the assumptions that make it valid, and the phenomena it leaves unexplained. Written for researchers, graduate students, and mathematically trained practitioners, this monograph offers a rigorous map of deep learning theory as it stands today: powerful, incomplete, and increasingly centered on the question of how learned mechanisms arise from scale, data, architecture, and training.",
-      "published": "July 01, 2026",
-      "published_raw": "2026-07-01T17:26:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01311v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01311v1"
+      "abstract": "Scientists often seek to draw causal inferences from structured data that is not independently and identically distributed, such as spatial data, network data, or molecular data. We develop geometric causal models (GCMs), a framework for causal inference from dependent data that exploits underlying symmetries of the data generating process. For example, in spatial data, we consider processes that are symmetric under translations, or in graph data, symmetric under permutations of the nodes. We show how symmetries, formalized with group theory, can enable causal identification and estimation. We deploy ergodic theory for amenable groups to establish identification, and combine geometric deep learning with scalable Bayesian inference for estimation. We recover i.i.d. causal models and do-calculus when the data is a sequence and the symmetry is permutation equivariance, and find novel types of causal models when we use alternate structures and symmetries. As an example, we construct a causal model that satisfies the symmetries of DNA. This GCM enables new estimators for the effects of genetic variation, combining deep functional genomics models to describe outcomes and DNA language models to describe propensities. We illustrate on semisynthetic data.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T14:36:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05153v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05153v1"
     },
     {
-      "id": "2607.01010v1",
-      "title": "Function-Counting Theory for Low-Dimensional Data Structures",
+      "id": "2607.05025v1",
+      "title": "Uncertainty-aware damage identification in short-span bridges via physics-informed variational autoencoder",
       "authors": [
-        "Konstantin Häberle",
-        "Helmut Bölcskei"
+        "Ana Fernandez Navamuel",
+        "A. Javier Omella",
+        "Diego Zamora-Sanchez",
+        "David Pardo"
       ],
-      "abstract": "The success of deep learning models in classification and regression is widely attributed to the low-dimensional structure that real-world data tend to exhibit, despite their high-dimensional representation. This work attempts to provide a mathematical framework for binary classification on low-dimensional data, building on Cover's (1965) function-counting theory. With our framework, we aim to address the question of how the low-dimensional structure of the data affects the classification capabilities of learning models. Cover's theory relies on a general position assumption that blinds it to the underlying data structure. We refine this assumption to account for the low-dimensionality of the data and derive dichotomy counts that reflect the data structure. We further extend Cover's separation capacity and problem of generalization to the low-dimensional setting, enabling the impact of the underlying data structure on both to be analyzed.",
-      "published": "July 01, 2026",
-      "published_raw": "2026-07-01T14:47:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01010v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01010v1"
+      "abstract": "Vibration-based damage identification in civil infrastructure is a challenging, ill-posed inverse problem due to measurement noise, sparse sensor arrays, and environmental variability. While deep learning is powerful for system identification, deterministic approaches lack reliable uncertainty quantification and can yield physically inconsistent results. This work proposes a robust probabilistic Scientific Machine Learning (SciML) framework: a physics-informed Gaussian copula variational autoencoder (PI-GCVAE) for structural health monitoring (SHM). First, we eliminate the need for data-driven surrogates by embedding a differentiable numerical eigenvalue solver directly into the VAE architecture. This ensures that latent space samples satisfy the governing equations of structural dynamics, reducing the trainable parameter space and improving generalization. Second, we replace the conventional independence assumption of latent variables with a Gaussian copula. This model captures complex, physics-dependent spatial cross-correlations between adjacent structural elements, defining feasible solutions while accounting for inherent system variability and measurement errors. Third, compared with alternatives such as Gaussian mixtures, our copula-based VAE provides an efficient distributional model for high-dimensional, strongly correlated latent spaces. We validate the approach using a synthetic dataset of a simply supported bridge subjected to various damage scenarios and corrupted with stochastic Gaussian noise. Synthetic data enables exhaustive validation against ground-truth stiffness values unavailable in practice. Results demonstrate that the PI-GCVAE accurately recovers the true posterior distribution, achieving 77.2% coverage. The proposed framework provides a reliable, scalable tool for early-stage damage diagnosis in operating bridges.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T13:02:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05025v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05025v1"
     },
     {
-      "id": "2607.01295v1",
-      "title": "CNN Models for Microphone Array Covariance Matrix Upsampling and Acoustic Imaging",
+      "id": "2607.05017v1",
+      "title": "Hyperparameter Transfer in Graph Neural Networks",
       "authors": [
-        "Marianthi Adamopoulou",
-        "Parthasaarathy Sudarsanam",
-        "David Diaz-Guerra",
-        "Meng Jiang",
-        "Archontis Politis",
-        "Seyed Jalaleddin Mousavirad",
-        "Tuomas Virtanen",
-        "Jan Lundgren"
+        "Gage DeZoort",
+        "Boris Hanin"
       ],
-      "abstract": "Acoustic imaging visualization is a core methodology in acoustics, enabling spatial analysis of sound sources and acoustic scenes. However, limited sensor availability in practical systems motivate approaches that enhance spatial resolution without increasing the hardware complexity. In this paper, we focus on upsampling virtually a tetrahedral 4-microphone array to a spherical 32-microphone array by estimating the covariance matrices of the channels employing deep learning techniques. Five neural network architectures are investigated for covariance upsampling for acoustic imaging using the real-world STARSS23 dataset. These models are developed to estimate a 32-microphone, time-frequency covariance matrix from a 4-microphone input covariance representation. The proposed architectures are based on 2D convolutional layers to capture the underlying spatial-spectral structure of covariance matrices, and are further enhanced with frequency dynamic convolution to model their frequency-dependent properties. The proposed architectures are evaluated in terms of root mean square error (RMSE) and using delay-and-sum beamforming acoustic imaging. Quantitative results show that all models outperform a random-guess baseline, which yields an RMSE of 0.548, with the best-performing architecture achieving an RMSE of 0.432. We analyze qualitatively the performance of the proposed models through beamforming heatmap visualizations derived from the 4-channel input covariance, the 32-channel ground truth, and the predicted 32-channel covariance matrices. These results demonstrate that covariance upsampling significantly enhances the effective performance of the 4-channel microphone array, producing sound maps that closely resemble those obtained with the 32-channel array.",
-      "published": "July 01, 2026",
-      "published_raw": "2026-07-01T13:25:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01295v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01295v1"
+      "abstract": "The performance of deep learning models crucially depends on the settings of hyperparameters like learning rate, initialization scale, and weight decay. Hyperparameter transfer aims to make near-optimal hyperparameter settings consistent across model scale, so that large models can be optimized by proxy tuning their smaller, cheaper-to-optimize counterparts. While transfer principles are well-studied in the context of dense neural networks in language and vision tasks, they remain comparatively under-explored for graph neural networks (GNNs). We develop and validate a transfer parameterization for GNNs trained with SGD, Adam, and AdamW. Through theoretical scaling analyses and controlled experiments, we show that the proposed parameterization yields stable feature updates, learning rate transfer, and improved performance as width and depth increase. For SGD, we identify graph-dependent first-layer correction factors and show that their use can accelerate early training in graphs with sparse bag-of-words inputs. For Adam, we explore how different message passing normalizations affect early- and late-training transfer behavior, illustrating the importance of message passing normalization and advocating for an associated hyperparameter. For AdamW, we adapt a parameterization that allows for the joint transfer of weight decay and learning rate. Together, these results provide a practical recipe for scaling GNNs across a variety of learning tasks and training scenarios.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T12:59:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05017v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05017v1"
     },
     {
-      "id": "2607.02596v1",
-      "title": "CIPHER: Causal Intervention Pathways for Healthcare Equity and Robustness",
+      "id": "2607.05009v1",
+      "title": "ImputeECG: Deep Learning Reconstruction of Complete 12-Lead Electrocardiograms from Incomplete Recordings for Cardiac Assessment",
       "authors": [
-        "Xinyu Jia",
-        "Weidong Guo",
-        "Wangyuan Zhao",
-        "Yi Guo",
-        "Zeju Li",
-        "Yuanyuan Wang"
+        "Xiaocheng Fang",
+        "Haoyu Wang",
+        "Jieyi Cai",
+        "Qinghao Zhao",
+        "Jun Li",
+        "Shanwei Zhang",
+        "Guangkun Nie",
+        "Yujie Xiao",
+        "Shun Huang",
+        "Jiarui Jin",
+        "Hongmin Liu",
+        "Guodong Wang",
+        "Shuohua Chen",
+        "Liming Lin",
+        "Shouling Wu",
+        "Hongyan Li",
+        "Shenda Hong"
       ],
-      "abstract": "Deep learning models for medical diagnosis frequently exhibit substantial performance disparities across sensitive subgroups (e.g., race, sex), even when average accuracy is high. While generative data augmentation offers a route to mitigate this, existing strategies are suboptimal; they typically address only one or two dependency channels between sensitive attributes and image features. We formalize the medical image formation process via a structural causal model, revealing that sensitive attributes actually influence image content through four distinct pathways-a structural complexity neglected by prior works. Based on this insight, we introduce CIPHER (Causal Intervention Pathways for Healthcare Equity and Robustness), a framework designed to systematically intervene on all four causal paths. To achieve this, CIPHER utilizes a diffusion backbone equipped with classifier-free guidance and null-text inversion. This technical design enables the faithful reconstruction of patient-specific anatomy while allowing for the precise, editable synthesis of counterfactuals required to break sensitive dependency chains. We tested CIPHER using chest X-ray and dermoscopy benchmarks across both standard and shifted data distributions. By employing a multi-pathway intervention strategy, our model reduced worst-group disparities by an average of 35.8% compared to disease-conditioned synthesis baselines, while also improving total diagnostic accuracy",
-      "published": "July 01, 2026",
-      "published_raw": "2026-07-01T09:36:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.02596v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.02596v1"
+      "abstract": "Complete digital 12-lead electrocardiograms (ECGs) are essential for AI-enabled cardiovascular assessment, yet many clinical ECG records, particularly those digitized from ECG images, remain incomplete because of short display formats, incomplete waveform digitization, lead loss, or signal corruption. We developed ImputeECG, a mask-conditioned one-dimensional Transformer autoencoder that completes 12-lead, 10-s ECGs while retaining all observed samples. The model was trained on PTB-XL and evaluated on PTB-XL and CPSC2018 under simulated incomplete settings, with additional real-world validation in a 43,633-record Kailuan clinical cohort after ECG image digitization. Metrics were computed over originally missing regions, with analyses of morphology and downstream diagnostic utility. On PTB-XL, ImputeECG reduced missing-region MAE by 41.7-51.0% and MSE by 54.0-63.7% versus the strongest baseline, with lower errors in R-peak timing, RR interval, QRS duration, QT interval, and P-wave, QRS-complex, and T-wave reconstruction. On CPSC2018, ImputeECG reduced MAE by 49.7-51.9%, supporting external generalization. In downstream multi-label classification, ImputeECG restored performance to 92.28% AUROC and 33.88% AUPRC in the most incomplete PTB-XL setting, approaching complete-ECG performance. On CPSC2018, completed ECGs achieved 94.75-95.89% AUROC and 78.83-81.86% AUPRC across settings. In Kailuan, ECG completion improved zero-shot sex prediction AUROC from 82.6% to 85.8% and reduced age prediction MAE from 10.72 to 9.87 years after image-based ECG digitization. These findings support ECG completion as a practical strategy for converting incomplete ECG records into AI-ready 12-lead, 10-s digital signals and extending the usable scope of ECG archives for digital cardiac assessment.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T12:51:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05009v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05009v1"
     },
     {
-      "id": "2607.01278v1",
-      "title": "Multilayer Q-Matrix-Embedded Neural Network for Cognitive Diagnosis (M-QCDNet): Structure-Aware Deep Learning Architecture for Psychometric Interpretability",
+      "id": "2607.05008v1",
+      "title": "Comparison of Loss Functions for Robust Deep Learning-based Echocardiography Segmentation when Learning with Partially Labelled Data from Multiple Domains",
       "authors": [
-        "Yiyao Yang"
+        "Iman Islam",
+        "Esther Puyol-Antón",
+        "Bram Ruijsink",
+        "Andrew J. Reader",
+        "Andrew P. King"
       ],
-      "abstract": "The research proposes a multilayer Q-matrix-embedded neural network for cognitive diagnosis (M-QCDNet), which integrates the structural interpretability of cognitive diagnostic models (CDMs) with the deep learning neural network (NN). M-QCDNet structures the item-skill relationship using the Q-matrix as a structural prior, ensuring latent mastery profiles remain interpretable and consistent with cognitive theory, followed by the proposed loss function with an L2 penalty to penalize skills not aligned with the Q-matrix and to balance predictive performance and structural alignment. Corresponding evaluation matrices, the interpretable alignment-based metrics that quantify the degree to which predicted skill activations correspond to item-level skills, were further developed. M-QCDNet offers practical benefits for classroom practice, enabling early detection of learning difficulties and supporting mastery-based interventions. By embedding diagnostic validity into model design, M-QCDNet bridges psychometric transparency and neural flexibility, advancing interpretable, fair, and actionable AI for cognitive diagnostics.",
-      "published": "July 01, 2026",
-      "published_raw": "2026-07-01T07:19:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.01278v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.01278v1"
+      "abstract": "Echocardiography is the first imaging modality used for assessing cardiac function, and accurate segmentation of cardiac structures is essential for deriving biomarkers. However, the development of effective automated segmentation models for multiple cardiac structures is challenged by the difficulty of training on datasets from different sources that are often partially-labelled. This study aims to address this challenge by evaluating the performance of three loss functions - adaptive categorical cross entropy (aCCE) loss, marginal loss, and the adaptive binary cross entropy (aBCE) loss - in handling partially-labelled data. We conduct a comprehensive comparison of these loss functions across multiple scenarios and network architectures: intra-domain and inter-domain tasks, with both single and multiple partial-labels, and varying proportions of fully-labelled to partially-labelled data. Our experiments reveal that all three loss functions exhibit strong performance in intra-domain segmentation tasks, effectively handling label variations within the same domain. For inter-domain tasks, where models are trained on datasets with a domain shift, the aBCE and marginal losses show superior performance when dealing with the case of one label being missing from some training examples. In scenarios involving more than one label being missing, marginal loss outperforms the other methods, demonstrating its robustness in such complex conditions. These results highlight the strengths of each loss function depending on the labelling scenario, emphasizing the importance of selecting the appropriate loss function to optimize model performance. This study represents the first investigation of techniques for handling partially-labelled data from multiple different domains in echocardiography segmentation and provides a comprehensive comparison of loss-based solutions.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T12:50:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.05008v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.05008v1"
     },
     {
-      "id": "2607.00470v1",
-      "title": "Neural Network-Based Estimation of Time-Dependent Parameters in AR(p) Processes",
+      "id": "2607.04993v1",
+      "title": "The Map Behind the Flow: Finite-Step Gradient Descent as a Dynamical System",
       "authors": [
-        "Agnieszka Kopeć",
-        "Paweł Przybyłowicz",
-        "Martyna Wiącek"
+        "Thomas Hofmann"
       ],
-      "abstract": "We investigate a forecasting framework based on a simple discrete-time dynamic model with coefficients varying in time. The parameters of the model are recovered within a deep learning framework, which makes it possible to retain a transparent parametric structure while simultaneously accounting for complex and nonstationary patterns in the observed phenomenon. Our analysis covers two specifications of the noise process. Besides the standard Gaussian setting, we also consider Laplace-distributed noise, which can offer a more adequate description in the presence of heavier tails and sharper local fluctuations. For both cases, we formulate the predictive scheme of the model and analyze the associated uncertainty quantification, including the construction of prediction intervals. The results illustrate that a relatively simple model, when combined with time-dependent parameter estimation, can serve as a mathematically tractable and practically flexible tool for forecasting complex dynamics under different noise assumptions. The general model is stated for TVAR($p$), while the prediction-interval formulas and the numerical experiments are developed for the TVAR(1) case.",
-      "published": "July 01, 2026",
-      "published_raw": "2026-07-01T05:38:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.00470v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.00470v1"
+      "abstract": "Many phenomena of deep learning are dynamical: they concern not only which minima exist, but how gradient descent reaches, avoids, or selects among them. Edge-of-stability behavior, sharpness oscillations, catapult phases, balancing, and movement toward flatter representations are effects of the training map itself, and are poorly captured by the small-step gradient-flow limit. This paper studies fixed-step gradient descent as a discrete dynamical system in a hierarchy of exactly solvable models retaining basic structures of deep learning: depth, factorization, width, data coupling, activation, and stochasticity. The starting point is the balanced scalar reduction of a deep linear chain, giving a quartic loss and a cubic gradient map whose post-edge behavior is explicit. Under the natural large-depth scaling, this dynamics converges to a universal Ricker-type map. The edge of stability is therefore not a breakdown of optimization, but the first bifurcation of the training map. Embedding the scalar dynamics back into factored models turns these regimes into learning phenomena. Finite steps break conservation laws of gradient flow and contract factorization imbalance; residual oscillations move parameters toward flatter, more balanced representations. Wider linear networks produce a ladder of spectral edges, so the optimal learning rate can lie beyond the first edge. Data coupling, nonlinear activations, and stochastic targets preserve the same organizing principle: finite-step oscillations drive alignment, balancing, and representation selection. Thus the learning rate is not merely a numerical stability parameter. It is a structural parameter of the training dynamics, determining its attractors and shaping the representations gradient descent selects.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T12:28:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.04993v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.04993v1"
     },
     {
-      "id": "2606.31742v1",
-      "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+      "id": "2607.04772v1",
+      "title": "HilEnT: Hilbert, Entropy Transformed Image Based Malware Detection",
       "authors": [
-        "Maximilian Andreas Hoefler",
-        "Karsten Mueller",
-        "Wojciech Samek"
+        "Rahul Kale",
+        "Thesath Wijayasiri",
+        "Kar Wai Fok",
+        "Vrizlynn L. L. Thing"
       ],
-      "abstract": "Explainable AI (XAI) methods have demonstrated significant success in recent years at identifying relevant features in input data that drive deep learning model decisions, enhancing interpretability for users. However, the potential of XAI beyond providing model transparency has remained largely unexplored in adjacent machine learning domains. In this paper, we show for the first time how XAI can be utilized in the context of federated learning. Specifically, while federated learning enables collaborative model training without raw data sharing, it suffers from performance degradation when client data distributions exhibit statistical heterogeneity. We introduce FedXDS (Federated Learning via XAI-guided Data Sharing), the first approach to utilize feature attribution techniques to identify precisely which data elements should be selectively shared between clients to mitigate heterogeneity. By employing propagation-based attribution, our method identifies task-relevant features through a single backward pass, enabling selective data sharing that aligns client contributions. To protect sensitive information, we incorporate metric privacy techniques that provide formal privacy guarantees while preserving utility. Experimental results demonstrate that our approach consistently achieves higher accuracy and faster convergence compared to existing methods across varying client numbers and heterogeneity settings. We provide theoretical privacy guarantees and empirically demonstrate robustness against both membership inference and feature inversion attacks. Code is available at https://github.com/MaxH1996/FedXDS.",
-      "published": "June 30, 2026",
-      "published_raw": "2026-06-30T14:35:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.31742v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.31742v1"
+      "abstract": "With the increasing threat of malware across various software related domains, malware detection and classification is critical to determine the response actions. Different strategies have been adopted to address the challenge of malware detection. With the advent of deep learning techniques, malware detection using image processing has garnered research attention. In this work, we proposed a novel malware binary to image transformation technique HilEnT based on a combination of Hilbert curve-based transformation of malware binary and the entropy feature comparison of malware file with benign and malware classes. Three grayscale images produced during this process are combined to form a three-channel colored image which is then used for malware detection using machine learning techniques. We performed supervised binary and multiclass classification to evaluate the effectiveness of our proposed HilEnT. We also evaluated a few-shot learning technique to assess the robustness of our proposed HilEnT in a practical setting where the number of available class samples is limited. Furthermore, we investigated the benefits of combination of Histogram of Oriented Gradients and Principal Component Analysis for time performance improvements through feature reduction techniques. We evaluated our proposed methodology on four datasets: Dike, Michael Lester Dataset, Microsoft BIG 2015 and a self-collected dataset, and achieved the state-of-the-art results.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T08:04:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.04772v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.04772v1"
     },
     {
-      "id": "2606.31552v1",
-      "title": "Improving multichannel speech enhancement through accurate room-acoustic simulations",
+      "id": "2607.04688v1",
+      "title": "URSA: Chemistry-Aware Benchmark for Utilitarian Retrosynthesis Assessment",
       "authors": [
-        "Georg Götz",
-        "Alessia Milo",
-        "Steinar Guðjónsson",
-        "Daniel Gert Nielsen",
-        "Jesper Pedersen",
-        "Finnur Pind"
+        "Bogdan Zagribelnyy",
+        "Ivan Ilin",
+        "Nikita Bondarev",
+        "Anton Morgunov",
+        "Arkadii Lin",
+        "Maksim Kuznetsov",
+        "Rim Shayakhmetov",
+        "Vladimir Aladinskiy",
+        "Alex Aliper",
+        "Alex Zhavoronkov"
       ],
-      "abstract": "Room-acoustic simulations are widely used to augment training data for deep-learning-based speech enhancement. While most pipelines rely on simplified geometrical acoustics, wave-based approaches offer greater physical accuracy. In this work, we examine how simulation fidelity affects multichannel speech enhancement performance. To this end, we train SpatialNet on datasets augmented with different room-acoustic simulation methods and evaluate the resulting models on measured data. We compare lower-fidelity datasets based on geometrical acoustics with a high-fidelity dataset using advanced acoustic modelling and a hybrid combination of wave-based and geometrical acoustics simulations. Training on the high-fidelity dataset results in an up to 38 % relative reduction in median word error rate compared to the lower-fidelity alternatives. These results show that augmentation with high-fidelity room-acoustic simulations directly translates into improved multichannel speech enhancement performance.",
-      "published": "June 30, 2026",
-      "published_raw": "2026-06-30T12:10:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.31552v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.31552v1"
+      "abstract": "Synthesis planning aiming to find pathways of reactions for a target molecule is one of the most important and challenging tasks in drug discovery. Recent progress has produced both specialized deep-learning retrosynthesis systems and general-purpose large language models, but objective comparison remains difficult due to the lack of flexible, chemically interpretable benchmarking protocols. In the current study, we are introducing the URSA (Utilitarian RetroSynthesis Assessment) evaluation framework that provides the opportunity to benchmark the synthetic routes not only from a formal perspective, such as convergence to commercially available starting materials, but also from a chemical plausibility perspective, mimicking the way expert chemists evaluate the reactions and routes. The study covers a comprehensive evaluation of both conventional end-to-end retrosynthesis solutions and LLMs for the synthesis planning task on a set of novel, diverse target molecules with undisclosed synthetic routes, which represent realistic tasks in the daily drug design routine. We find that while LLMs can support high-level strategic planning, they currently underperform specialized retrosynthesis models in reliably solving synthesis planning tasks.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T05:32:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.04688v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.04688v1"
     },
     {
-      "id": "2606.31536v3",
-      "title": "Beyond the Expressivity-Trainability Paradox: A Dynamical Lie Algebra Perspective on Navigating Barren Plateaus in Quantum Machine Learning",
+      "id": "2607.04673v1",
+      "title": "GlaKG: A Biomarker-Centric Fundus Knowledge Graph for Explainable Glaucoma Diagnosis and Risk Assessment",
       "authors": [
-        "Kung-Ming Lan",
-        "Edward Huang"
+        "Cheng Huang",
+        "Jia Zhang",
+        "Yi Jiang",
+        "Yang Liu",
+        "Karanjit Kooner",
+        "Yadi Liu",
+        "Tsengdar Lee",
+        "Yang Xie",
+        "Wenqi Shi",
+        "Guanghua Xiao"
       ],
-      "abstract": "As Quantum Machine Learning (QML) transitions toward practical implementation, the field faces a critical architectural bottleneck that challenges the fundamental assumptions of classical statistical learning theory. In classical deep learning, increasing model capacity typically risks overfitting. However, this study advances a counter-intuitive paradigm: unstructured contemporary QML architectures suffer from a profound state of quantum underfitting, driven by the \"expressivity-trainability paradox.\" We demonstrate that the vast Hilbert space capacity of Parameterized Quantum Circuits (PQCs)-traditionally chased as the source of quantum advantage is the direct mathematical cause of Barren Plateaus (BPs), where gradient landscapes become exponentially flat. By synthesizing recent breakthroughs in Dynamical Lie Algebras (DLAs) and Geometric QML, we establish a comprehensive framework linking the algebraic dimension of circuit generators to their optimization dynamics. Furthermore, we empirically validate this framework on a non-linear binary classification task, illuminating a uniquely quantum manifestation of the bias-variance tradeoff: while unstructured architectures achieve near-perfect training accuracy via unscalable parameterization (quantum overfitting), embedding group-theoretic geometric priors acts as a structural regularizer. By restricting the DLA growth to a polynomial regime, our symmetry-preserving approach sacrifices raw memorization capacity to guarantee scalable, gradient-rich training landscapes, offering a robust roadmap for \"Trainability-by-Design\" in scalable quantum neural networks.",
-      "published": "June 30, 2026",
-      "published_raw": "2026-06-30T11:50:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2606.31536v3.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2606.31536v3"
+      "abstract": "Glaucoma is a leading cause of irreversible blindness worldwide, yet most automated diagnosis systems rely on opaque deep-learning models that offer little clinical interpretability. We present GlaKG, a biomarker-centric fundus knowledge graph that integrates structural biomarkers, clinically grounded rules, and image features to produce traceable reasoning for glaucoma diagnosis and risk stratification. GlaKG encodes six entity types (Fundus Image, Optic Disc, Neural Rim, Pathology, Diagnosis, Risk Level), eight relation types, and 11 clinically validated rules into a unified graph, so that every prediction is accompanied by an explicit reasoning chain linking biomarker evidence to activated clinical rules. To keep knowledge-based reasoning strictly separate from label information, we adopt a post-processing fusion framework that combines ResNet50 image embeddings with a normalized KG reasoning-chain score via a tunable weight alpha, with all fitting confined to the training split. On a publicly available, AI-annotated fundus dataset, GlaKG reaches F1 = 0.9953 for binary glaucoma classification and 0.930 accuracy with 0.922 weighted F1 for four-class risk stratification; we report openly that the dataset's biomarker annotations are highly label-correlated, and therefore frame these figures as an upper bound attainable with clean structured biomarkers rather than as leakage-free image-only performance. Feature-importance analysis shows KG-derived and biomarker features contributing near-equally (51.1% vs. 48.9%), and the reasoning chain flags borderline cases by exposing low chain scores rather than failing silently. GlaKG's central contribution is therefore a clinically auditable reasoning framework that complements raw predictive performance by explicitly exposing the biomarker evidence and rule activations behind each decision.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T04:56:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.04673v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.04673v1"
     },
     {
-      "id": "2607.00056v2",
-      "title": "Active Sensing for RIS-Aided Tracking and Power Control: A Hybrid Neuroevolution and Supervised Learning Approach",
+      "id": "2607.04558v1",
+      "title": "EEG-SpikeAgent: Agentic Closed-Loop Program Synthesis for Automated EEG Spike Detection",
       "authors": [
-        "George Stamatelis",
-        "Hui Chen",
-        "Henk Henk Wymeersch",
-        "George C. Alexandropoulos"
+        "Sonali Santhosh",
+        "Kelly Shuhong Yu",
+        "Eugene Chang",
+        "Jonathan Kim",
+        "Kie Shidara",
+        "Danilo Bernardo"
       ],
-      "abstract": "This paper studies energy efficient tracking of power-limited mobile users with the assistance of a Reconfigurable Intelligent Surface (RIS). Since localization pilot transmissions dominate the energy budget of power-constrained devices, we introduce a low-overhead feedback link from the Base Station (BS) to the user to enable dynamic uplink power control. To navigate the discrete and decentralized nature of this active sensing problem, we propose a novel Dual-Agent (DA) deep learning framework that jointly optimizes the discrete RIS phase profiles and the UE's transmit power in real time. Specifically, our approach employs a hybrid training methodology integrating the neuroevolution paradigm with supervised learning, effectively overcoming the non-differentiability of discrete phase responses from the RIS unit elements and the strict information bottleneck of single-bit feedback messages for pilot power control. The proposed DA active sensing framework can be applied with both single- and multi-antenna BSs, the latter with only minor modifications in the structure of one NN: an additional output branch with appropriate structure is included for the latter case to select a valid digital combiner from a finite set. Extensive numerical simulations demonstrate that the proposed scheme achieves highly accurate and robust tracking across diverse target motion models, outperforming extended Kalman and particle filters, as well as, machine learning-based trackers. Furthermore, in static localization, it is shown to significantly outperform traditional fingerprinting schemes, deep reinforcement learning baselines, and standard backpropagation-based estimators.",
-      "published": "June 30, 2026",
-      "published_raw": "2026-06-30T07:43:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.00056v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.00056v2"
+      "abstract": "Automated detection of interictal epileptiform discharges in scalp electroencephalography (EEG) is clinically important, but recent high-performing deep-learning models often trade interpretability for accuracy. We introduce EEG-SpikeAgent, a closed-loop program-synthesis framework that uses a large language model (LLM) agentic system to generate signal-processing features for spike detection in scalp EEG. The system iteratively proposes one deterministic EEG feature module at a time, executes the resulting code on EEG to generate tabular features, evaluates performance via a tabular classifier, summarizes run-level metrics, and feeds structured diagnostics back to the model for refinement. Across iterations, EEG-SpikeAgent proposes and refines candidate signal features and decision rules informed by model performance. We evaluated EEG-SpikeAgent on VEPISET, a public 29-channel dataset of 4-second epochs containing 2,516 discharge-containing and 22,933 non-discharge epochs. Across five-fold cross-validation with a gradient-boosted tree classifier, agent-generated features achieved an area under the receiver operating characteristic curve of 0.935, balanced accuracy of 0.699, F1 score of 0.557, sensitivity of 0.401, and specificity of 0.996 at the default operating point. At an operating point with sensitivity 0.80, mean precision was 0.470 and mean specificity was 0.900. Artifact-aware feature generation improved balanced accuracy and F1 score over spike-only feature search. These results indicate that LLM-based program synthesis can automate EEG feature engineering in auditable and inspectable code-driven manner for clinical and methodological review.",
+      "published": "July 06, 2026",
+      "published_raw": "2026-07-06T00:19:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.04558v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.04558v1"
     }
   ]
 }
