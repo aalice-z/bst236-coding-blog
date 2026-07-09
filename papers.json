@@ -1,7 +1,206 @@
 {
-  "last_updated": "2026-07-08T01:21:13.232734",
+  "last_updated": "2026-07-09T01:28:57.250684",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.07640v1",
+      "title": "ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation",
+      "authors": [
+        "Xuan-Thong Truong",
+        "Trung-Kien Le",
+        "Tung Kieu",
+        "Thi-Thu Nguyen",
+        "Nhat-Hai Nguyen"
+      ],
+      "abstract": "Deep learning has significantly advanced time series imputation, yet most existing architectures primarily rely on localized temporal context within the corrupted input sequence. This reliance can be limiting in real-world scenarios, where time series often exhibit non-stationary dynamics, weak temporal correlations, and infrequent patterns that are difficult to reconstruct from nearby observations alone. In this paper, we propose ALER-TI, Aligned Latent Embedding Retrieval for Time Series Imputation, a retrieval-augmented framework that explicitly leverages historical patterns to supplement degraded local context for more reliable missing-value reconstruction. The core of ALER-TI is Latent Embedding Alignment (LEA), which mitigates the representation mismatch between corrupted queries and complete historical candidates. By applying post-hoc masking in the latent space, LEA aligns candidates with the query's missingness pattern while allowing historical embeddings to be pre-computed and cached for efficient retrieval. ALER-TI is model-agnostic and can be integrated with various imputation backbones through a lightweight adaptation module. Extensive experiments on six real-world datasets under different missing rates demonstrate that ALER-TI consistently improves strong baseline models and enhances robustness across diverse imputation settings.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T16:59:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07640v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07640v1"
+    },
+    {
+      "id": "2607.07500v1",
+      "title": "TimEE: End-to-end Time Series Classification via In-Context Learning",
+      "authors": [
+        "Jaris Küken",
+        "Shi Bin Hoo",
+        "Martin Mráz",
+        "Frank Hutter",
+        "Lennart Purucker"
+      ],
+      "abstract": "Time series classification (TSC) is dominated by a two-stage paradigm: train a feature encoder -- either from scratch on the target dataset or via pretraining on large corpora -- and then fit a task-specific classifier on top. While effective, this decoupling optimizes representation learning independently of the classification objective, requires per-dataset training, and prevents the model from exploiting label information during inference. We introduce TimEE, a 4.5M-parameter foundation model for end-to-end TSC via in-context learning. Given a labeled support set and a query time series, TimEE directly outputs a predicted class distribution in a single forward pass with no per-dataset training required. Following the prior-data fitted network (PFN) framework, TimEE is meta-trained exclusively on synthetic TSC tasks, where each task contains time series with distinct class identities arising from structured distributional shifts in the generative process. Despite seeing no real time series during pre-training, TimEE ranks first in ROC AUC (and third on accuracy) on the UCR benchmark among all compared methods, which include both foundation models and supervised deep learning baselines. To our knowledge, TimEE is the first purely synthetic-pretrained model to reach state-of-the-art performance on the UCR benchmark. These results establish end-to-end ICL with synthetic priors as a compelling, largely unexplored direction for TSC, with scaling, prior design, and richer generation mechanisms as natural avenues for improvement. Code is publicly available at http://github.com/automl/timee.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T14:58:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07500v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07500v1"
+    },
+    {
+      "id": "2607.07408v1",
+      "title": "Transformer-based segmentation of prosodic boundaries in Brazilian Portuguese",
+      "authors": [
+        "Rodrigo de Freitas Lima",
+        "Julio Cesar Galdino",
+        "Marcos Vinicius Treviso"
+      ],
+      "abstract": "Automatic prosodic segmentation identifies boundaries between speech units from acoustic and linguistic evidence. Although recent deep learning approaches have produced strong results for English, automatic segmentation for Brazilian Portuguese (BP) still relies mostly on rule-based or traditional machine-learning methods. This paper presents SAMPA, a Whisper-based segmenter that transcribes BP speech while inserting explicit markers for terminal prosodic boundaries. We fine-tune Whisper large-v3 on manually segmented recordings from the NURC-SP dataset and evaluate different training and test-time filtering configurations, including out-of-distribution testing on the MuPe-Diversidades dataset. SAMPA achieves competitive boundary-detection performance across settings, with the best models reaching F1=0.731 on the held-out test split and F1=0.796 on MuPe-Diversidades. Finally, through n-gram and acoustic-visual analyses, we show that our model follows morphosyntactic, semantic, and prosodic cues for detecting prosodic boundaries.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T13:41:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07408v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07408v1"
+    },
+    {
+      "id": "2607.07401v1",
+      "title": "Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation",
+      "authors": [
+        "Chengbo Wang",
+        "Jiacheng Yu",
+        "Linjie Bian",
+        "Ming Qi",
+        "Xiaosheng Liu",
+        "Tongtong Che",
+        "Jichang Zhang",
+        "Shuyu Li",
+        "Shaoli Song",
+        "Xiuying Wang"
+      ],
+      "abstract": "While whole-body multimodal medical imaging scanners have been increasingly recognized for more effective medical applications, the excessive long acquisition time in PET-MR scanning is a major obstacle in more efficient clinical practice. Deep learning-based MRI translation provides a potential solution to reduce scan duration. However, current models often focus on specific anatomical regions and face challenges for whole-body scans that consists of highly heterogeneous feature distributions mainly due to (1) different anatomical regions across whole-body, and (2) lesions or pathological tissues. This paper tackles the challenges through a novel Heterogeneity-Adaptive Diffusion Schrodinger Bridge (HA-DSB) framework. By explicitly modeling translation as stochastic transport between source and target distributions, HA-DSB incorporates region context embeddings derived from a vision-language model (VLM) to enable region-specific modeling. To enhance fidelity of the pathological tissue, lesion-aware metabolic prior from PET is integrated directly into the bridge dynamics through a dual-stage guidance mechanism. Specifically, a PET-guided noise modulation module adaptively scales spatial diffusion perturbations during the forward process, while PET features are leveraged during the reverse process to selectively amplify lesion-relevant structures via an attention mechanism. Experiments demonstrate the superiority of our method across different body regions in whole-body MRI translation and show improved translation quality in lesion areas under PET guidance. Our code is available at Github.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T13:35:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07401v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07401v1"
+    },
+    {
+      "id": "2607.07382v1",
+      "title": "Generalist Vision-Language Models for Fast Radio Burst detection: a zero-shot benchmark against a specialized detector",
+      "authors": [
+        "Raiff H. Santos",
+        "Amilcar R. Queiroz",
+        "Tharcisyo S. S. Duarte",
+        "K. E. L. de Farias",
+        "Rafael A. Batista"
+      ],
+      "abstract": "Fast Radio Bursts (FRBs) are millisecond-duration radio transients whose automated detection increasingly relies on highly specialized deep learning models. These detectors achieve exceptional performance, but they require large task-specific training datasets and cannot be redefined without retraining. In this work, we evaluate whether small, open-weight, locally run generalist Vision-Language Models (VLMs) can detect FRBs in dynamic spectra under a zero-shot, prompt-only regime, with no fine-tuning and no labeled examples, returning structured decisions with a natural-language justification. From a controlled set of 3000 simulated L-band dynamic spectra containing FRBs, structured Radio Frequency Interference (RFI), and noise, we draw a balanced binary benchmark of 2000 samples and compare two such VLMs (Gemma 4 2B and 4B), sample by sample, against the state-of-the-art specialized detector SwinYNet. At the default threshold, Gemma 4 2B reaches an accuracy of 93.65%, with no statistically significant difference from SwinYNet (92.90%), while showing a significantly lower false-positive rate on structured RFI (6.4% vs. 25.0%) and no false positives on pure noise. SwinYNet retains a perfect probabilistic ranking on this benchmark (ROC-AUC of 1.0000 vs. 0.9482), a ceiling that the zero-shot VLM approaches from general-purpose pretraining alone. Rewriting the prompt alone reconfigures the same models for three-class FRB/RFI/noise classification on the full set of 3000 spectra, where they reach up to 86% accuracy without a single false FRB.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T13:15:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07382v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07382v1"
+    },
+    {
+      "id": "2607.07263v1",
+      "title": "Machine learning pipeline for identifying tracks of muons and hadrons at GRAPES-3 muon telescope",
+      "authors": [
+        "Mansi Talwar",
+        "Sambit Sarkar",
+        "Pravata K. Mohanty"
+      ],
+      "abstract": "The GRAPES-3 experiment is a ground-based extensive air shower array which consists of approximately $400$ closely packed plastic scintillator detectors and a large area muon telescope. Estimating the number of associated muons created in an air shower is crucial to understand the properties of primary cosmic rays. The GRAPES-3 muon telescope (G3MT) records these secondary muons, however, the punch-through hadrons can introduce background noise. This study aims to develop a machine learning pipeline to distinguish the tracks of secondary muons and hadrons at G3MT. We have used CORSIKA-simulated proton showers having energy in the range 100-158 TeV as an input for a Geant4-based detector simulation to analyze the signatures of both type of particles. Initially, single-particle classification was performed using decision trees, random forests, neural networks, and XGBoost, with XGBoost achieving the highest accuracy of 88.7\\%. For multiparticle classification, we modelled Graph Neural Networks (GNNs) where each event was represented as a graph with detector hits as nodes. A GNN with edge convolution layers was developed to classify each node as a muon or hadron hit. Following this, a deep learning regression model using Dynamic Reduction Network was developed to estimate the number of particles and muons striking G3MT simultaneously. Details of the analysis and results of the multiparticle classification task will be presented.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T10:49:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07263v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07263v1"
+    },
+    {
+      "id": "2607.07089v1",
+      "title": "Structural Adversarial Attacks on Relational Deep Learning under Integrity Constraints",
+      "authors": [
+        "Alan Gany",
+        "Bogdan Cautis",
+        "Silviu Maniu"
+      ],
+      "abstract": "Relational Deep Learning (RDL) has become a standard methodology for machine learning on relational databases: the database is encoded as a heterogeneous temporal graph in which tuples become nodes and primary-key to foreign-key (PK-FK) dependencies become typed edges, over which a graph neural network is trained for downstream prediction. We study the adversarial robustness of this pipeline. We consider a white-box attacker who knows how the graph is built and the model is trained, reasons about perturbations on the graph, but can only act on the upstream database, by rewiring foreign-key references while preserving the integrity constraints of the schema (foreign-key validity, the degree-one FK constraint, and functional dependencies). This restricts the attacker to a constrained, combinatorial set of admissible edits under a global perturbation budget, which is intractable to explore exhaustively and made non-additive by GNN message passing. We investigate seven attack heuristics - two random sampling baselines and five gradient-guided variants that exploit differentiable edge masks - and evaluate them on the RelBench rel-f1 benchmark. Gradient-based attacks consistently outperform random baselines on regression tasks, whereas gains on classification are smaller, which we attribute to low label-flip rates and greater local stability of classification outputs.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T07:23:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07089v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07089v1"
+    },
+    {
+      "id": "2607.07035v1",
+      "title": "On the Principles of Deep Feedforward ReLU Networks",
+      "authors": [
+        "Changcun Huang"
+      ],
+      "abstract": "The architecture of deep feedforward neural networks is ubiquitous in deep learning, either as a whole system or as a subnetwork of other architectures, and thus its mechanism is a key ingredient of the black box of neural networks. On the basis of the simplest two-layer ReLU network, this paper systematically studies the mechanism of deep feedforward ReLU networks with multiple hidden layers and successfully explains the training solution obtained by the back-propagation algorithm. The concept of a path, especially in terms of the relationships between paths, plays a central role in uncovering the mystery of the black box. It is shown that a unit of a deep ReLU network can form a piecewise linear manifold to divide the input space, instead of a hyperplane of the two-layer case. How to efficiently use the hidden-layer units to produce both linear functions and partitions of the input space is also a central problem. The principles of a two-layer ReLU network can be generalized to the deeper case to a large extent, such as multiple strict partial orders and continuity restriction. The combination of the basic and simple principles proposed can yield complicated instantiations including the training solutions, and in this sense the black box of deep feedforward ReLU networks is revealed.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T06:09:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07035v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07035v1"
+    },
+    {
+      "id": "2607.06999v1",
+      "title": "Physics-guided spatiotemporal neural models for fuel density prediction",
+      "authors": [
+        "Tolga Caglar",
+        "Jaynil Jaiswal",
+        "Saqib Azim",
+        "Yudhir Gala",
+        "Mai H. Nguyen",
+        "Ilkay Altintas"
+      ],
+      "abstract": "This paper presents a physics-guided machine learning (PGML) framework for fuel density prediction, integrating physics constraints and domain knowledge into deep learning models to enhance model accuracy and stability. We explore three deep learning architectures -- ConvLSTM, Adaptive Fourier Neural Operator (AFNONet), and Video Vision Transformer (ViViT) -- to model the spatiotemporal evolution of fuel density. Our approach incorporates differentiable physics-informed terms in the loss function, including a mass-conserving fuel transport term and a rate-of-spread estimation. Experimental results, averaged across multiple independent trials, demonstrate that the proposed PGML framework outperforms purely data-driven baselines without physics constraints in both accuracy and stability. This framework enables computationally efficient, physically plausible fire forecasting to support adaptive prescribed burn management.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T04:46:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06999v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06999v1"
+    },
+    {
+      "id": "2607.06922v1",
+      "title": "Latency-Constrained DNN Architecture Learning for Edge Systems using Zerorized Batch Normalization",
+      "authors": [
+        "Shuo Huai",
+        "Di Liu",
+        "Hao Kong",
+        "Weichen Liu",
+        "Ravi Subramaniam",
+        "Christian Makaya",
+        "Qian Lin"
+      ],
+      "abstract": "Deep learning applications have been widely adopted on edge devices, to mitigate the privacy and latency issues of accessing cloud servers. Deciding the number of neurons during the design of a deep neural network to maximize performance is not intuitive. Particularly, many application scenarios are real-time and have a strict latency constraint, while conventional neural network optimization methods do not directly change the temporal cost of model inference for latency-critical edge systems. In this work, we propose a latency-oriented neural network learning method to optimize models for high accuracy while fulfilling the latency constraint. For efficiency, we also introduce a universal hardware-customized latency predictor to optimize this procedure to learn a model that satisfies the latency constraint by only a one-shot training process. The experiment results reveal that, compared to state-of-the-art methods, our approach can well-fit the 'hard' latency constraint and achieve high accuracy. Under the same training settings as the original model and satisfying a 34 ms latency constraint on the ImageNet-100 dataset, we reduce GoogLeNet's latency from 40.32 ms to 34 ms with a 0.14% accuracy reduction on the NVIDIA Jetson Nano. When coupled with quantization, our method can be further improved to only 0.04% drop for GoogLeNet. On the NVIDIA Jetson TX2, we compress VGG-19 from 119.98 ms to 34 ms and even improve its accuracy by 0.5%, and we scale GoogLeNet up from 20.27 ms to 34 ms and achieve higher accuracy by 0.78%. We also open source this framework at https://github.com/ntuliuteam/ZeroBN",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T02:35:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06922v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06922v1"
+    },
+    {
+      "id": "2607.06887v1",
+      "title": "Converge to Surprise: Evolutionary Self-supervised Image Clustering",
+      "authors": [
+        "Canlin Zhang",
+        "Xiuwen Liu"
+      ],
+      "abstract": "Most self-supervised image clustering models, actually almost all deep learning approaches, are based on gradient descent: In order to calculate the loss, every optimization step requires a clearly defined target, whether a contrastive split, a masked patch or entity, an EMA-teacher output, a pseudo-label, or a differentiable information-theoretic functional. We propose a self-supervised framework that drops this requirement for image clustering. Without any prior knowledge, we have to assume that each pixel is i.i.d. according to the Principle of Maximum Entropy. Taking this as our null hypothesis H0, we define a \"surprise score\" that measures how unlikely the model's output representation would be under H0. Maximizing the surprise score forces the deep learning model to reject H0 - equivalently, to discover non-random feature from data. Also, here is our fundamental assumption: a surprise score cannot, in general, be reduced to a per-step loss. Hence, we propose the \"converge-to-surprise\" scheme to optimize our model: an evolution-strategy (ES) outer loop, which directly maximizes the surprise score without needing its gradient, paired with a periodic gradient-descent inner loop, which uses the surprising clusters already discovered by ES as surrogate targets. On standard image benchmarks, our framework achieves new state-of-the-art results in non-parametric self-supervised image clustering - the strictest deep-clustering setting, in which the number of ground-truth classes is not given to the model.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T01:09:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06887v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06887v1"
+    },
+    {
+      "id": "2607.06796v1",
+      "title": "Enhancing deep learning models for time series classification via knowledge distillation",
+      "authors": [
+        "Javidan Abdullayev",
+        "Maxime Devanne",
+        "Jonathan Weber",
+        "Germain Forestier"
+      ],
+      "abstract": "Deep learning has achieved remarkable success in various domains including time series analysis, computer vision and natural language processing. However, high computational and memory demands of state-of-the-art architectures pose challenges for deployment in resource-limited environments. Knowledge Distillation (KD) addresses this by transferring knowledge from a large teacher model to a smaller, more efficient student model while maintaining competitive performance. In this work, we investigate the effectiveness of KD for Time Series Classification (TSC) across three architectures: the classical Fully Convolutional Network (FCN), the convolutional Inception model and the transformer-based ConvTran model. We evaluate our approach on UCR Archive, the largest benchmark repository of time series datasets, by modifying architectural components such as convolutional filters, Inception modules and attention heads across the three architectures. Our results consistently show that KD most effectively benefits student models of intermediate complexity across all three architectures, with the distilled FCN student reducing parameters by a factor of 38, the distilled Inception student achieving nearly the same performance as the teacher with 42% fewer parameters and the distilled ConvTran student with 2 attention heads showing the most significant improvement through distillation. To encourage further research and reproducibility, we provide our implementation at https://github.com/MSD-IRIMAS/KD-4-TSC.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T20:51:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06796v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06796v1"
+    },
+    {
+      "id": "2607.06531v1",
+      "title": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
+      "authors": [
+        "Ghassen Marrakchi",
+        "Basarab Matei"
+      ],
+      "abstract": "- Objective: Multimodal deep learning models in oncology are currently limited by monolithic designs that rigidly couple data ingestion, clinical routing, and artificial intelligence (AI) inference. To address this inflexibility, we propose the Large Cancer Assistant (LCA), a model-agnostic, post-hoc orchestration framework designed for scalable clinical decision support. - Methods: The LCA is mathematically formalized as a 7-tuple architecture grounded in the principle of Algorithmic Impermeability, ensuring the orchestration logic remains strictly independent of underlying black-box AI models. We introduce the Entry Theory, leveraging Geometric Deep Learning (GDL) to standardize multimodal patient data along distinct structural and medical axes. The system dynamically orchestrates data via a Cancer Switching Module and intentionally isolates the core AI execution from volatile hospital IT infrastructures by outputting a Standardized Intermediate Payload (SIP). - Results: A Proof of Concept (PoC) validated the orchestration logic across four technical scenarios. The framework executed a nominal flow with negligible orchestration overhead. It empirically demonstrated algorithmic impermeability by maintaining an invariant routing projection during AI model swaps, and it validated strict failure-safety by achieving a 100\\% recall rate in generating targeted Supplementary Data Requests (SDR) under injected data anomalies. Multi-protocol execution capability was also successfully verified. - Conclusion: By structurally decoupling multimodal ingestion from feature inference, the LCA provides a highly adaptable and modular orchestration foundation. The SIP establishes a clear architectural boundary, natively setting the stage for downstream Electronic Medical Record (EMR) interoperability as an independent future paradigm.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T17:38:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06531v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06531v1"
+    },
     {
       "id": "2607.06295v1",
       "title": "Visual graphs for image classification: does the structure affect performance?",
@@ -64,6 +263,18 @@
       "arxiv_link": "http://arxiv.org/abs/2607.06026v1"
     },
     {
+      "id": "2607.06615v1",
+      "title": "Format-Controlled Multi-Scale JPEG Compression Response Analysis for Image-Level Forgery Screening",
+      "authors": [
+        "Sujith K Mandala"
+      ],
+      "abstract": "Image forgery detection is a critical task in digital forensics, yet many deep-learning localization approaches are typically GPU-accelerated and computationally heavier than handcrafted screening methods. We propose a lightweight, interpretable feature engineering pipeline for image-level forgery screening using only CPU computation and gradient boosted trees. Our method introduces \\emph{multi-scale Error Level Analysis} (ELA) computed at seven JPEG quality levels, combined with novel \\emph{cross-quality ELA ratio} features that capture double-compression artifacts characteristic of spliced regions, augmented by spatial entropy, FFT energy bands, edge density, SRM residuals, and DCT blockiness, yielding a 405-dimensional feature vector. CASIA v2.0 contains a format confound (60\\% of tampered images are TIFF while authentic images are JPEG/BMP and contain no TIFF samples), enabling a trivial \\texttt{is\\_tiff} classifier to reach 0.80 AUC. We address this through rigorous format-controlled evaluation: on the JPEG-only subset (9,501 images, eliminating the TIFF/JPEG container confound), our method achieves AUC~=~0.990 [95\\% CI: 0.988--0.991] and F1~=~0.905 using 5-fold stratified cross-validation. Under a conservative source-aware group split (preventing related images from appearing in both train and test), AUC remains 0.976. An ablation study reveals that multi-scale ELA provides the dominant gain (+0.180 AUC over single-quality on the format-controlled subset), while cross-quality ratios provide complementary double-compression detection. These results support that the method detects compression-history inconsistencies rather than file-format shortcuts -- while offering feature-level interpretability, CPU-only deployment, and sub-second inference.",
+      "published": "July 07, 2026",
+      "published_raw": "2026-07-07T08:24:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.06615v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.06615v1"
+    },
+    {
       "id": "2607.05718v1",
       "title": "Learning Stable Controlled Dynamical Systems via Input-Contraction Neural Differential Models",
       "authors": [
@@ -89,238 +300,6 @@
       "published_raw": "2026-07-06T22:28:24Z",
       "pdf_link": "http://arxiv.org/pdf/2607.05669v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.05669v1"
-    },
-    {
-      "id": "2607.05645v1",
-      "title": "Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift",
-      "authors": [
-        "Shuochen Wang",
-        "Nishant Yadav",
-        "Auroop R. Ganguly"
-      ],
-      "abstract": "Deep-learning-based climate downscaling aims to learn relationships from historical low-resolution (LR) and high-resolution (HR) climate data to generate HR climate projections. However, this setting faces a temporal out-of-distribution (OOD) challenge: models trained on historical data are commonly applied to future projections whose distributions may differ substantially from the training period. This study investigates temporal OOD shift for daily temperature downscaling over the Continental United States using paired LR-HR model simulations. We propose a temporal domain-adaptive downscaling framework that combines supervised HR reconstruction on historical data with domain alignment between historical and future climate distributions. Experiments across future validation periods show that the proposed domain-adaptive model consistently outperforms statistical and deep-learning-based bias-correction methods, with the largest gains occurring when the temporal distribution shift is strongest. Spatial analyses indicate stronger improvements over high-elevation and topographically complex regions, along with higher spatiotemporal correlation with the HR target. The extreme analysis shows that domain adaptation also reduces upper-tail temperature bias relative to the non-adaptive model. These results demonstrate that temporal domain adaptation can improve the robustness of HR climate projections under non-stationary climate conditions.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T21:12:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05645v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05645v1"
-    },
-    {
-      "id": "2607.05393v1",
-      "title": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
-      "authors": [
-        "Raphaël Bonnet-Guerrini",
-        "Bruno Sanchez",
-        "Dominique Fouchez",
-        "Benjamin Racine",
-        "Maya Guy",
-        "Mariam Sabalbal",
-        "Manal Yassine",
-        "Vincenzo Piuri"
-      ],
-      "abstract": "Time-domain surveys generate many transient candidates, making Real-Bogus classification a critical step in automated discovery pipelines. Reliable labels are costly, while community labels can be noisy and survey-dependent. We aim to develop a Real-Bogus classification framework that can be trained without human-labeled data using injected transients and bogus-dominated survey data, remains robust under strong class contamination, and provides calibrated uncertainty quantification. We combine simulated transient injections with a contaminated survey class and train a dual-network model using asymmetric co-teaching for classes with different label-noise levels. We evaluate performance on a benchmark subset and analyze the learned representation with latent-space visualization tools. For uncertainty quantification (UQ), we compare MC dropout and deep ensembles and propose a low-cost hybrid strategy that exploits the dual-network setting to improve calibration. We extend the evaluation to the light-curve domain to assess recovery of light-curve classes. The method achieves strong Real-Bogus performance on the labeled subset and remains stable under severe class contamination. It recovers transient light-curve classes with high fidelity, while single-source identification is limited by ambiguity in light-curve-derived labels. Our hybrid UQ approach achieves competitive calibration relative to more expensive ensemble baselines. Latent-space analyses indicate that uncertainty aligns with the decision boundary and reveal subclasses within the bogus population. Our results show that injection-driven, weakly supervised training can enable scalable and consistent Real-Bogus classification without human-labeled training data while providing calibrated uncertainties. The method is suited for transfer to forthcoming surveys by re-running the injection-based training pipeline.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T17:59:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05393v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05393v1"
-    },
-    {
-      "id": "2607.05380v1",
-      "title": "TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning",
-      "authors": [
-        "Yury Gorishniy",
-        "Akim Kotelnikov",
-        "Ivan Rubachev",
-        "Artem Babenko"
-      ],
-      "abstract": "In deep learning for tabular data, efficient ensembles of multilayer perceptrons (MLPs) have recently emerged as effective and practical architectures. Existing methods of this kind use the same hyperparameters for all underlying MLPs, which requires hyperparameter tuning for achieving the best performance. In this work, we introduce TabPack, an efficient MLP ensemble with strong out-of-the-box performance and reduced reliance on traditional tuning. In a single run, TabPack samples and trains many MLPs with different hyperparameters efficiently in parallel and selects ensemble members on the fly during training. Thus, TabPack only requires specifying ranges from which to sample MLP hyperparameter rather than exact hyperparameter values, which naturally demands less precision for good performance. In experiments on medium-to-large public datasets, TabPack with default settings performs on par with extensively tuned prior methods, thus substantially reducing effort and compute resources needed to achieve competitive results on tabular tasks. Notably, running the default TabPack configuration on a modern MacBook took less time than tuning some baselines on an industry-grade GPU.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T17:55:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05380v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05380v1"
-    },
-    {
-      "id": "2607.05317v2",
-      "title": "Shape Over Intensity: Directional Topological Encoding for False Positive Reduction in Intracranial Aneurysm Detection",
-      "authors": [
-        "Akshay Gokhale",
-        "Mansi Dhamne"
-      ],
-      "abstract": "Automated detection of intracranial aneurysms (IAs) from CT angiography (CTA) is severely hindered by high false-positive rates. Convolutional neural networks (CNNs) rely on local pixel intensities, causing systematic confusion between saccular aneurysms and vascular bifurcations - a problem especially acute for small lesions (<3 mm), where detection sensitivity falls below 60%. We propose a plug-and-play, topology-aware false-positive reduction framework evaluating the Smooth Euler Characteristic Transform (SECT) - a directional representation encoding global 3D vascular geometry independently of intensity - against persistence-based summaries (Persistence Images and Landscapes), tested on a stratified subset of the RSNA 2025 dataset. SECT achieves an AUC of 0.943, substantially outperforming direction-agnostic methods (AUC ~0.68), and exhibits a clinical performance inversion: it excels on the sub-3 mm cohort, maintaining 0.943 AUC and 78.5% sensitivity at 95% specificity. The representation is also scanner-agnostic, achieving 0.927 mean AUC under leave-one-scanner-out (LOGO) validation across four manufacturers. By capturing asymmetric geometric invariants rather than intensity profiles, SECT reliably resolves the primary structural confounder in IA detection, positioning it as a robust downstream filter for hybrid deep-learning diagnostic pipelines.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T16:56:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05317v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05317v2"
-    },
-    {
-      "id": "2607.05153v1",
-      "title": "Geometric Causal Models",
-      "authors": [
-        "Eli N. Weinstein",
-        "David M. Blei"
-      ],
-      "abstract": "Scientists often seek to draw causal inferences from structured data that is not independently and identically distributed, such as spatial data, network data, or molecular data. We develop geometric causal models (GCMs), a framework for causal inference from dependent data that exploits underlying symmetries of the data generating process. For example, in spatial data, we consider processes that are symmetric under translations, or in graph data, symmetric under permutations of the nodes. We show how symmetries, formalized with group theory, can enable causal identification and estimation. We deploy ergodic theory for amenable groups to establish identification, and combine geometric deep learning with scalable Bayesian inference for estimation. We recover i.i.d. causal models and do-calculus when the data is a sequence and the symmetry is permutation equivariance, and find novel types of causal models when we use alternate structures and symmetries. As an example, we construct a causal model that satisfies the symmetries of DNA. This GCM enables new estimators for the effects of genetic variation, combining deep functional genomics models to describe outcomes and DNA language models to describe propensities. We illustrate on semisynthetic data.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T14:36:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05153v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05153v1"
-    },
-    {
-      "id": "2607.05025v1",
-      "title": "Uncertainty-aware damage identification in short-span bridges via physics-informed variational autoencoder",
-      "authors": [
-        "Ana Fernandez Navamuel",
-        "A. Javier Omella",
-        "Diego Zamora-Sanchez",
-        "David Pardo"
-      ],
-      "abstract": "Vibration-based damage identification in civil infrastructure is a challenging, ill-posed inverse problem due to measurement noise, sparse sensor arrays, and environmental variability. While deep learning is powerful for system identification, deterministic approaches lack reliable uncertainty quantification and can yield physically inconsistent results. This work proposes a robust probabilistic Scientific Machine Learning (SciML) framework: a physics-informed Gaussian copula variational autoencoder (PI-GCVAE) for structural health monitoring (SHM). First, we eliminate the need for data-driven surrogates by embedding a differentiable numerical eigenvalue solver directly into the VAE architecture. This ensures that latent space samples satisfy the governing equations of structural dynamics, reducing the trainable parameter space and improving generalization. Second, we replace the conventional independence assumption of latent variables with a Gaussian copula. This model captures complex, physics-dependent spatial cross-correlations between adjacent structural elements, defining feasible solutions while accounting for inherent system variability and measurement errors. Third, compared with alternatives such as Gaussian mixtures, our copula-based VAE provides an efficient distributional model for high-dimensional, strongly correlated latent spaces. We validate the approach using a synthetic dataset of a simply supported bridge subjected to various damage scenarios and corrupted with stochastic Gaussian noise. Synthetic data enables exhaustive validation against ground-truth stiffness values unavailable in practice. Results demonstrate that the PI-GCVAE accurately recovers the true posterior distribution, achieving 77.2% coverage. The proposed framework provides a reliable, scalable tool for early-stage damage diagnosis in operating bridges.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T13:02:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05025v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05025v1"
-    },
-    {
-      "id": "2607.05017v1",
-      "title": "Hyperparameter Transfer in Graph Neural Networks",
-      "authors": [
-        "Gage DeZoort",
-        "Boris Hanin"
-      ],
-      "abstract": "The performance of deep learning models crucially depends on the settings of hyperparameters like learning rate, initialization scale, and weight decay. Hyperparameter transfer aims to make near-optimal hyperparameter settings consistent across model scale, so that large models can be optimized by proxy tuning their smaller, cheaper-to-optimize counterparts. While transfer principles are well-studied in the context of dense neural networks in language and vision tasks, they remain comparatively under-explored for graph neural networks (GNNs). We develop and validate a transfer parameterization for GNNs trained with SGD, Adam, and AdamW. Through theoretical scaling analyses and controlled experiments, we show that the proposed parameterization yields stable feature updates, learning rate transfer, and improved performance as width and depth increase. For SGD, we identify graph-dependent first-layer correction factors and show that their use can accelerate early training in graphs with sparse bag-of-words inputs. For Adam, we explore how different message passing normalizations affect early- and late-training transfer behavior, illustrating the importance of message passing normalization and advocating for an associated hyperparameter. For AdamW, we adapt a parameterization that allows for the joint transfer of weight decay and learning rate. Together, these results provide a practical recipe for scaling GNNs across a variety of learning tasks and training scenarios.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T12:59:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05017v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05017v1"
-    },
-    {
-      "id": "2607.05009v1",
-      "title": "ImputeECG: Deep Learning Reconstruction of Complete 12-Lead Electrocardiograms from Incomplete Recordings for Cardiac Assessment",
-      "authors": [
-        "Xiaocheng Fang",
-        "Haoyu Wang",
-        "Jieyi Cai",
-        "Qinghao Zhao",
-        "Jun Li",
-        "Shanwei Zhang",
-        "Guangkun Nie",
-        "Yujie Xiao",
-        "Shun Huang",
-        "Jiarui Jin",
-        "Hongmin Liu",
-        "Guodong Wang",
-        "Shuohua Chen",
-        "Liming Lin",
-        "Shouling Wu",
-        "Hongyan Li",
-        "Shenda Hong"
-      ],
-      "abstract": "Complete digital 12-lead electrocardiograms (ECGs) are essential for AI-enabled cardiovascular assessment, yet many clinical ECG records, particularly those digitized from ECG images, remain incomplete because of short display formats, incomplete waveform digitization, lead loss, or signal corruption. We developed ImputeECG, a mask-conditioned one-dimensional Transformer autoencoder that completes 12-lead, 10-s ECGs while retaining all observed samples. The model was trained on PTB-XL and evaluated on PTB-XL and CPSC2018 under simulated incomplete settings, with additional real-world validation in a 43,633-record Kailuan clinical cohort after ECG image digitization. Metrics were computed over originally missing regions, with analyses of morphology and downstream diagnostic utility. On PTB-XL, ImputeECG reduced missing-region MAE by 41.7-51.0% and MSE by 54.0-63.7% versus the strongest baseline, with lower errors in R-peak timing, RR interval, QRS duration, QT interval, and P-wave, QRS-complex, and T-wave reconstruction. On CPSC2018, ImputeECG reduced MAE by 49.7-51.9%, supporting external generalization. In downstream multi-label classification, ImputeECG restored performance to 92.28% AUROC and 33.88% AUPRC in the most incomplete PTB-XL setting, approaching complete-ECG performance. On CPSC2018, completed ECGs achieved 94.75-95.89% AUROC and 78.83-81.86% AUPRC across settings. In Kailuan, ECG completion improved zero-shot sex prediction AUROC from 82.6% to 85.8% and reduced age prediction MAE from 10.72 to 9.87 years after image-based ECG digitization. These findings support ECG completion as a practical strategy for converting incomplete ECG records into AI-ready 12-lead, 10-s digital signals and extending the usable scope of ECG archives for digital cardiac assessment.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T12:51:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05009v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05009v1"
-    },
-    {
-      "id": "2607.05008v1",
-      "title": "Comparison of Loss Functions for Robust Deep Learning-based Echocardiography Segmentation when Learning with Partially Labelled Data from Multiple Domains",
-      "authors": [
-        "Iman Islam",
-        "Esther Puyol-Antón",
-        "Bram Ruijsink",
-        "Andrew J. Reader",
-        "Andrew P. King"
-      ],
-      "abstract": "Echocardiography is the first imaging modality used for assessing cardiac function, and accurate segmentation of cardiac structures is essential for deriving biomarkers. However, the development of effective automated segmentation models for multiple cardiac structures is challenged by the difficulty of training on datasets from different sources that are often partially-labelled. This study aims to address this challenge by evaluating the performance of three loss functions - adaptive categorical cross entropy (aCCE) loss, marginal loss, and the adaptive binary cross entropy (aBCE) loss - in handling partially-labelled data. We conduct a comprehensive comparison of these loss functions across multiple scenarios and network architectures: intra-domain and inter-domain tasks, with both single and multiple partial-labels, and varying proportions of fully-labelled to partially-labelled data. Our experiments reveal that all three loss functions exhibit strong performance in intra-domain segmentation tasks, effectively handling label variations within the same domain. For inter-domain tasks, where models are trained on datasets with a domain shift, the aBCE and marginal losses show superior performance when dealing with the case of one label being missing from some training examples. In scenarios involving more than one label being missing, marginal loss outperforms the other methods, demonstrating its robustness in such complex conditions. These results highlight the strengths of each loss function depending on the labelling scenario, emphasizing the importance of selecting the appropriate loss function to optimize model performance. This study represents the first investigation of techniques for handling partially-labelled data from multiple different domains in echocardiography segmentation and provides a comprehensive comparison of loss-based solutions.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T12:50:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05008v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05008v1"
-    },
-    {
-      "id": "2607.04993v1",
-      "title": "The Map Behind the Flow: Finite-Step Gradient Descent as a Dynamical System",
-      "authors": [
-        "Thomas Hofmann"
-      ],
-      "abstract": "Many phenomena of deep learning are dynamical: they concern not only which minima exist, but how gradient descent reaches, avoids, or selects among them. Edge-of-stability behavior, sharpness oscillations, catapult phases, balancing, and movement toward flatter representations are effects of the training map itself, and are poorly captured by the small-step gradient-flow limit. This paper studies fixed-step gradient descent as a discrete dynamical system in a hierarchy of exactly solvable models retaining basic structures of deep learning: depth, factorization, width, data coupling, activation, and stochasticity. The starting point is the balanced scalar reduction of a deep linear chain, giving a quartic loss and a cubic gradient map whose post-edge behavior is explicit. Under the natural large-depth scaling, this dynamics converges to a universal Ricker-type map. The edge of stability is therefore not a breakdown of optimization, but the first bifurcation of the training map. Embedding the scalar dynamics back into factored models turns these regimes into learning phenomena. Finite steps break conservation laws of gradient flow and contract factorization imbalance; residual oscillations move parameters toward flatter, more balanced representations. Wider linear networks produce a ladder of spectral edges, so the optimal learning rate can lie beyond the first edge. Data coupling, nonlinear activations, and stochastic targets preserve the same organizing principle: finite-step oscillations drive alignment, balancing, and representation selection. Thus the learning rate is not merely a numerical stability parameter. It is a structural parameter of the training dynamics, determining its attractors and shaping the representations gradient descent selects.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T12:28:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.04993v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.04993v1"
-    },
-    {
-      "id": "2607.04772v1",
-      "title": "HilEnT: Hilbert, Entropy Transformed Image Based Malware Detection",
-      "authors": [
-        "Rahul Kale",
-        "Thesath Wijayasiri",
-        "Kar Wai Fok",
-        "Vrizlynn L. L. Thing"
-      ],
-      "abstract": "With the increasing threat of malware across various software related domains, malware detection and classification is critical to determine the response actions. Different strategies have been adopted to address the challenge of malware detection. With the advent of deep learning techniques, malware detection using image processing has garnered research attention. In this work, we proposed a novel malware binary to image transformation technique HilEnT based on a combination of Hilbert curve-based transformation of malware binary and the entropy feature comparison of malware file with benign and malware classes. Three grayscale images produced during this process are combined to form a three-channel colored image which is then used for malware detection using machine learning techniques. We performed supervised binary and multiclass classification to evaluate the effectiveness of our proposed HilEnT. We also evaluated a few-shot learning technique to assess the robustness of our proposed HilEnT in a practical setting where the number of available class samples is limited. Furthermore, we investigated the benefits of combination of Histogram of Oriented Gradients and Principal Component Analysis for time performance improvements through feature reduction techniques. We evaluated our proposed methodology on four datasets: Dike, Michael Lester Dataset, Microsoft BIG 2015 and a self-collected dataset, and achieved the state-of-the-art results.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T08:04:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.04772v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.04772v1"
-    },
-    {
-      "id": "2607.04688v1",
-      "title": "URSA: Chemistry-Aware Benchmark for Utilitarian Retrosynthesis Assessment",
-      "authors": [
-        "Bogdan Zagribelnyy",
-        "Ivan Ilin",
-        "Nikita Bondarev",
-        "Anton Morgunov",
-        "Arkadii Lin",
-        "Maksim Kuznetsov",
-        "Rim Shayakhmetov",
-        "Vladimir Aladinskiy",
-        "Alex Aliper",
-        "Alex Zhavoronkov"
-      ],
-      "abstract": "Synthesis planning aiming to find pathways of reactions for a target molecule is one of the most important and challenging tasks in drug discovery. Recent progress has produced both specialized deep-learning retrosynthesis systems and general-purpose large language models, but objective comparison remains difficult due to the lack of flexible, chemically interpretable benchmarking protocols. In the current study, we are introducing the URSA (Utilitarian RetroSynthesis Assessment) evaluation framework that provides the opportunity to benchmark the synthetic routes not only from a formal perspective, such as convergence to commercially available starting materials, but also from a chemical plausibility perspective, mimicking the way expert chemists evaluate the reactions and routes. The study covers a comprehensive evaluation of both conventional end-to-end retrosynthesis solutions and LLMs for the synthesis planning task on a set of novel, diverse target molecules with undisclosed synthetic routes, which represent realistic tasks in the daily drug design routine. We find that while LLMs can support high-level strategic planning, they currently underperform specialized retrosynthesis models in reliably solving synthesis planning tasks.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T05:32:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.04688v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.04688v1"
-    },
-    {
-      "id": "2607.04673v1",
-      "title": "GlaKG: A Biomarker-Centric Fundus Knowledge Graph for Explainable Glaucoma Diagnosis and Risk Assessment",
-      "authors": [
-        "Cheng Huang",
-        "Jia Zhang",
-        "Yi Jiang",
-        "Yang Liu",
-        "Karanjit Kooner",
-        "Yadi Liu",
-        "Tsengdar Lee",
-        "Yang Xie",
-        "Wenqi Shi",
-        "Guanghua Xiao"
-      ],
-      "abstract": "Glaucoma is a leading cause of irreversible blindness worldwide, yet most automated diagnosis systems rely on opaque deep-learning models that offer little clinical interpretability. We present GlaKG, a biomarker-centric fundus knowledge graph that integrates structural biomarkers, clinically grounded rules, and image features to produce traceable reasoning for glaucoma diagnosis and risk stratification. GlaKG encodes six entity types (Fundus Image, Optic Disc, Neural Rim, Pathology, Diagnosis, Risk Level), eight relation types, and 11 clinically validated rules into a unified graph, so that every prediction is accompanied by an explicit reasoning chain linking biomarker evidence to activated clinical rules. To keep knowledge-based reasoning strictly separate from label information, we adopt a post-processing fusion framework that combines ResNet50 image embeddings with a normalized KG reasoning-chain score via a tunable weight alpha, with all fitting confined to the training split. On a publicly available, AI-annotated fundus dataset, GlaKG reaches F1 = 0.9953 for binary glaucoma classification and 0.930 accuracy with 0.922 weighted F1 for four-class risk stratification; we report openly that the dataset's biomarker annotations are highly label-correlated, and therefore frame these figures as an upper bound attainable with clean structured biomarkers rather than as leakage-free image-only performance. Feature-importance analysis shows KG-derived and biomarker features contributing near-equally (51.1% vs. 48.9%), and the reasoning chain flags borderline cases by exposing low chain scores rather than failing silently. GlaKG's central contribution is therefore a clinically auditable reasoning framework that complements raw predictive performance by explicitly exposing the biomarker evidence and rule activations behind each decision.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T04:56:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.04673v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.04673v1"
-    },
-    {
-      "id": "2607.04558v1",
-      "title": "EEG-SpikeAgent: Agentic Closed-Loop Program Synthesis for Automated EEG Spike Detection",
-      "authors": [
-        "Sonali Santhosh",
-        "Kelly Shuhong Yu",
-        "Eugene Chang",
-        "Jonathan Kim",
-        "Kie Shidara",
-        "Danilo Bernardo"
-      ],
-      "abstract": "Automated detection of interictal epileptiform discharges in scalp electroencephalography (EEG) is clinically important, but recent high-performing deep-learning models often trade interpretability for accuracy. We introduce EEG-SpikeAgent, a closed-loop program-synthesis framework that uses a large language model (LLM) agentic system to generate signal-processing features for spike detection in scalp EEG. The system iteratively proposes one deterministic EEG feature module at a time, executes the resulting code on EEG to generate tabular features, evaluates performance via a tabular classifier, summarizes run-level metrics, and feeds structured diagnostics back to the model for refinement. Across iterations, EEG-SpikeAgent proposes and refines candidate signal features and decision rules informed by model performance. We evaluated EEG-SpikeAgent on VEPISET, a public 29-channel dataset of 4-second epochs containing 2,516 discharge-containing and 22,933 non-discharge epochs. Across five-fold cross-validation with a gradient-boosted tree classifier, agent-generated features achieved an area under the receiver operating characteristic curve of 0.935, balanced accuracy of 0.699, F1 score of 0.557, sensitivity of 0.401, and specificity of 0.996 at the default operating point. At an operating point with sensitivity 0.80, mean precision was 0.470 and mean specificity was 0.900. Artifact-aware feature generation improved balanced accuracy and F1 score over spike-only feature search. These results indicate that LLM-based program synthesis can automate EEG feature engineering in auditable and inspectable code-driven manner for clinical and methodological review.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T00:19:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.04558v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.04558v1"
     }
   ]
 }
