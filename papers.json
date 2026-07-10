@@ -1,7 +1,98 @@
 {
-  "last_updated": "2026-07-09T01:28:57.250684",
+  "last_updated": "2026-07-10T01:26:38.969264",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.08717v1",
+      "title": "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems",
+      "authors": [
+        "Emmanouil Kavvousanos",
+        "Francky Catthoor",
+        "Vassilis Paliouras"
+      ],
+      "abstract": "Narrowband interference (NBI) severely degrades orthogonal frequency-division multiplexing (OFDM) systems by corrupting subcarriers and rendering classical soft demodulation ineffective. Conventional compressed-sensing (CS) mitigation exhibits high sequential latency and leaves structured, non-Gaussian residuals that cause log-likelihood ratio (LLR) unreliability, decoder saturation, and severe error floors when employing classical Gaussian demappers. We resolve this pipeline mismatch using a unified deep learning framework for joint NBI cancellation and robust soft demodulation. First, NBI-CNet employs a physics-informed convolutional architecture to estimate NBI parameters and remove multi-tone interference in a single forward pass. Without requiring prior knowledge of the active interferer count, NBI-CNet reduces computational complexity by up to 60% ($N{=}2048, Q{=}64$) compared to the state-of-the-art EOMP-IDS algorithm. Second, LLR-CNet acts as a structural whitener by mapping non-Gaussian post-mitigation residuals onto well-calibrated soft metrics. Simulations demonstrate that this joint framework eliminates the error floors inherent to traditional baselines across dense grids. Under severe interference ($\\text{SIR}{=}{-}10$ dB), the pipeline operates within a $0.2$ to $0.5$ dB SNR margin of the optimal iterative baseline at a target block error rate (BLER) of $10^{-4}$. Under mild interference ($\\text{SIR}{=}10$ dB) with heavy spectral overlap ($Q{=}12$), where classical greedy algorithms erroneously subtract valid data components and corrupt the payload, NBI-CNet avoids signal-peak confusion to deliver a coding gain exceeding $3$ dB. Finally, the architecture circumvents the $2{\\times}10^{-4}$ error floor triggered by interferer-estimation errors, while its scale-invariant design enables robust generalization across arbitrary FFT sizes without retraining.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T17:26:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08717v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08717v1"
+    },
+    {
+      "id": "2607.08679v1",
+      "title": "Multi-Resolution Feature Stem for Diabetic Retinopathy lesion segmentation",
+      "authors": [
+        "Indranil Dutta",
+        "Taehee Jeong"
+      ],
+      "abstract": "Diabetic Retinopathy (DR) is a leading cause of preventable blindness worldwide, requiring automated lesion segmentation using deep learning models for early detection and monitoring. However, DR lesions vary dramatically in size from tiny microaneurysms to large hemorrhages and exudates. This variability creates conflicting demands on the model architecture and input resolution, posing a challenge for effective design. This work investigates the impact of input resolution on different lesion types. Through systematic experimentation with multiple architectures (U-Net, UNet++, Vision Transformers, DeepLabV3+) at $512 \\times 512$ and $1024 \\times 1024$ resolutions, we identify a critical, counter-intuitive phenomenon where increasing input resolution has opposing effects on different lesion types. We demonstrate that while higher resolution is essential for resolving fine-grained microaneurysms, it can unexpectedly degrade performance on larger hemorrhages. This finding challenges the common assumption that higher resolution is uniformly beneficial. To address this, we propose a novel Multi-Resolution Feature Stem, an input-level pyramid integrated with a UNet++ backbone. This architecture processes multiple scales in parallel, capturing fine-grained details without sacrificing contextual information. This work contributes crucial empirical evidence of this complex, resolution-dependent behavior and a practical, parameter-efficient architecture that successfully resolves this trade-off.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T16:42:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08679v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08679v1"
+    },
+    {
+      "id": "2607.08595v1",
+      "title": "Federated Deep Learning for Privacy-Preserving Cardiovascular Disease Risk Prediction",
+      "authors": [
+        "Hyunho Mo",
+        "Djura Smits",
+        "Mahlet A. Birhanu",
+        "Maarten J. G. Leening",
+        "Daniel Bos",
+        "Pim van der Harst",
+        "Esther E. Bron"
+      ],
+      "abstract": "Cardiovascular disease risk prediction models often rely on data from a single institution or centrally pooled datasets. Extending these models across institutions could be limited by privacy regulations and constraints on sharing patient-level data. Federated learning enables collaborative model development without transferring sensitive patient data, but its application in healthcare remains challenging because datasets often differ in size, population characteristics, and outcome definitions. In this study, we present a federated deep learning approach for privacy-preserving cardiovascular disease risk prediction that integrates two population-based cohorts with different characteristics: Lifelines, including 148,230 participants meeting the study inclusion criteria with self-reported outcomes, and the Rotterdam Study, including a smaller cohort of 10,155 participants with digitally linked clinical outcomes. Model performance was primarily evaluated on the Rotterdam Study because of its complete follow-up. Deep survival models trained using federated learning achieved higher predictive performance than models trained locally without federation. For the Rotterdam Study, the C-statistic increased from 0.728 (95% CI: 0.717-0.739) to 0.739 (95% CI: 0.728-0.749). For Lifelines, the C-statistic increased from 0.783 (95% CI: 0.775-0.791) to 0.787 (95% CI: 0.780-0.792). These findings suggest that federated deep learning across heterogeneous cohorts can improve cardiovascular disease risk prediction while preserving the privacy of individual-level patient data.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T15:29:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08595v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08595v1"
+    },
+    {
+      "id": "2607.08406v1",
+      "title": "Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks",
+      "authors": [
+        "Hong Zhao"
+      ],
+      "abstract": "Backpropagation (BP) dominates deep learning training, but its reliance on gradients brings inherent troubles -- vanishing and exploding gradients. The pursuit of gradient-free methods has long been a goal in the field of artificial intelligence. This paper shows that indeed the simplest Monte Carlo algorithm implemented on a single GPU -- randomly mutate a parameter, keep it if the loss decreases, otherwise retry -- can practically train deep networks. This gradient-free method does not even need common techniques such as batch normalization or residual connections to directly train sufficiently deep networks. More remarkably, its flexibility extends to several nontrivial scenarios: it enables pure pruning training, supports discrete weights, accommodates unconventional transfer functions such as Gaussian, and reveals the substantial redundancy of deep networks. We have demonstrated its feasibility on deep networks with more than 20 layers, single-hidden-layer wide networks with up to 16,384 hidden neurons, and even a simple Transformer architecture trained on both image classification (MNIST) and character-level language modeling (Tiny Shakespeare). This simple gradient-free method may offer a complementary perspective for understanding the self-organization and learning mechanisms of neural networks, and also provides an alternative route for building physically inspired deep learning systems.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T12:31:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08406v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08406v1"
+    },
+    {
+      "id": "2607.08091v1",
+      "title": "Deep Learning Method for Stationary Distribution of Reflected Brownian Motion",
+      "authors": [
+        "Jim Dai",
+        "Zhanhao Zhang"
+      ],
+      "abstract": "The stationary distribution of reflected Brownian motion (RBM) plays an important role in the analysis of high-dimensional stochastic systems, yet closed-form solutions are known only for a few special cases. Computing important performance metrics, such as tail probabilities, is even more intractable, despite their practical relevance. In this paper, we develop a deep learning approach that accurately and efficiently learns the Laplace transform of high-dimensional RBMs based on the basic adjoint relationship (BAR). Our framework combines a careful design of the loss function, training data sampling procedure, and neural network architecture. We evaluate the proposed method on RBM instances with known ground-truth tail probabilities and demonstrate near-perfect prediction in high-dimensional settings, highlighting its potential as a general tool for analyzing stochastic systems beyond analytically tractable regimes. Our code can be found at https://github.com/zhangz73/NN4MGF.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T03:57:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08091v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08091v1"
+    },
+    {
+      "id": "2607.08014v1",
+      "title": "FedTR: Federated Learning Framework with Transfer Learning for Industrial Visual Inspection",
+      "authors": [
+        "Vikash Sathiamoorthy",
+        "Shuo Huai",
+        "Hao Kong",
+        "Di Liu",
+        "Wendy Yong Yi Loy",
+        "Christian Makaya",
+        "Daren Ho",
+        "Ravi Subramaniam",
+        "Qian Lin",
+        "Weichen Liu"
+      ],
+      "abstract": "Federated learning (FL) is a collaborative learning scheme to train deep learning models, where collaborating parties can consolidate their models without sharing local data with other parties, hence preserving data privacy. Nevertheless, when implementing FL in Industrial visual inspection (IVI), the constraints posed by limited data availability and the intricate nature of the inspection tasks significantly impact the performance of the resulting model. This paper introduces FedTR, a novel FL framework incorporating transfer learning designed for Autonomous IVI, focusing on the challenging task of identifying label defects through end-to-end text recognition. Transfer learning is a method that leverages the knowledge of a pre-trained model to adapt to a different dataset. FedTR initially trains the model using a publicly available dataset, after which performs the essential federated learning process with model fine-tuning on the distributed and limited private data. Extensive experiment results demonstrate the effectiveness and feasibility of FedTR on private ink cartridge datasets for label defect identification. FedTR achieves an end-to-end text recognition word-level accuracy of 95.5% and 94.2% on homogeneous and heterogeneous data respectively. Additionally, it attains performance levels that are on par with those achieved through centralized training.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T00:40:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08014v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08014v1"
+    },
     {
       "id": "2607.07640v1",
       "title": "ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation",
@@ -19,6 +110,33 @@
       "arxiv_link": "http://arxiv.org/abs/2607.07640v1"
     },
     {
+      "id": "2607.07773v1",
+      "title": "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
+      "authors": [
+        "Dongyang Kuang",
+        "Zizheng Ma",
+        "Yushan Zhang",
+        "Xiaocong Zeng"
+      ],
+      "abstract": "EEG-based emotion recognition is critical for mental health monitoring and affective brain-computer interfaces, yet existing deep learning approaches often treat emotion classes as isolated labels, ignoring their psychological interdependencies. We propose a graph-regularized learning framework that conceptualizes emotions as nodes in a graph where edges encode proximity based on dimensional emotion theories. We adapt three complementary regularization strategies--Graph Label Smoothing (intuitive soft labeling), Commuting distance on graph via Graph Laplacian (spectral graph theory), and Sliced Wasserstein Distance (optimal transport on graph)--ordered by increasing computational complexity. These strategies penalize model predictions that deviate from the established emotion topology. Our framework is evaluated across three representative backbone architectures: AudioTransformer (pure transformer), Conformer (CNN-transformer hybrid), and DCGNN (causal graph neural network), demonstrating architecture-agnostic benefits. Experiments on SEED-IV (4 classes) and SEED-V (5 classes) datasets show consistent improvements: best case up to +5.42% accuracy and 39% reduction in psychologically implausible misclassifications. Ultimately, our framework help raise the upper bound of performance achievable with standard approaches. Code will be released.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T16:41:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07773v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07773v1"
+    },
+    {
+      "id": "2607.07772v1",
+      "title": "Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models",
+      "authors": [
+        "Atiq Ur Rehman"
+      ],
+      "abstract": "In this age of social media, sites like Twitter have become meeting places for people to share their views and feelings on a wide range of issues and current events as they unfold in real time. Sentiment analysis, a critical application of NLP, has become indispensable due to the massive influx of user-generated content, enabling the extraction of meaningful insights from the opinions and emotions expressed in textual data. Sentiment analysis on Twitter employs sophisticated computational techniques to categorize tweets into positive, negative, or neutral sentiments. This method not only examines individual expressions but also analyzes vast databases related to specific subjects or events. By spotting these emotions, machine learning models help improve public opinion interpretation and trend forecasting. This paper examines the effectiveness of various machine learning and deep learning approaches. Designed for this use, the system evaluates logistic regression, random forest, naïve bayes, gradient boosting, and LSTM networks, among other algorithms applied in sentiment classification. This work identifies the optimal sentiment analysis model using a Kaggle Twitter dataset that has been preprocessed through tokenization, lemmatization, and stopword elimination. Emphasizing the better performance of the LSTM approach, the model attained a training accuracy of 90.98%, a testing accuracy of 80.00%, and a micro-average ROC- AUC score of 0.92. These results show that the model outperforms conventional machine learning techniques in capturing contextual and sequential textual aspects.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T16:32:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07772v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07772v1"
+    },
+    {
       "id": "2607.07500v1",
       "title": "TimEE: End-to-end Time Series Classification via In-Context Learning",
       "authors": [
@@ -33,6 +151,22 @@
       "published_raw": "2026-07-08T14:58:06Z",
       "pdf_link": "http://arxiv.org/pdf/2607.07500v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.07500v1"
+    },
+    {
+      "id": "2607.07756v1",
+      "title": "The Importance of Encoder Choice:A Tabular-Image Study",
+      "authors": [
+        "Ilia Koloiarov",
+        "Diego Coello de Portugal Mecke",
+        "Vijaya Krishna Yalavarthi",
+        "Tom Hanika",
+        "Lars Schmidt-Thieme"
+      ],
+      "abstract": "Multimodal learning usually requires a dedicated encoder per modality. When a tabular modality is involved, prior work has been mostly using a \\emph{plain MLP} as the encoder. Yet if it were a strong encoder, the tabular domain would not be ``the last unconquered castle for deep learning''. This study evaluates state-of-the-art tabular models as encoders in the image-tabular setting for the first time. An obstacle stands out. In-Context Learning models, among the best performing methods in the tabular domain, require labels to process instances, making it non-trivial to embed training and test instances the same way. We addressed this problem across multiple models of this family. With this study, we would like to highlight the importance of encoder factor in the multimodal learning.",
+      "published": "July 08, 2026",
+      "published_raw": "2026-07-08T14:01:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.07756v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.07756v1"
     },
     {
       "id": "2607.07408v1",
@@ -172,134 +306,6 @@
       "published_raw": "2026-07-08T01:09:21Z",
       "pdf_link": "http://arxiv.org/pdf/2607.06887v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.06887v1"
-    },
-    {
-      "id": "2607.06796v1",
-      "title": "Enhancing deep learning models for time series classification via knowledge distillation",
-      "authors": [
-        "Javidan Abdullayev",
-        "Maxime Devanne",
-        "Jonathan Weber",
-        "Germain Forestier"
-      ],
-      "abstract": "Deep learning has achieved remarkable success in various domains including time series analysis, computer vision and natural language processing. However, high computational and memory demands of state-of-the-art architectures pose challenges for deployment in resource-limited environments. Knowledge Distillation (KD) addresses this by transferring knowledge from a large teacher model to a smaller, more efficient student model while maintaining competitive performance. In this work, we investigate the effectiveness of KD for Time Series Classification (TSC) across three architectures: the classical Fully Convolutional Network (FCN), the convolutional Inception model and the transformer-based ConvTran model. We evaluate our approach on UCR Archive, the largest benchmark repository of time series datasets, by modifying architectural components such as convolutional filters, Inception modules and attention heads across the three architectures. Our results consistently show that KD most effectively benefits student models of intermediate complexity across all three architectures, with the distilled FCN student reducing parameters by a factor of 38, the distilled Inception student achieving nearly the same performance as the teacher with 42% fewer parameters and the distilled ConvTran student with 2 attention heads showing the most significant improvement through distillation. To encourage further research and reproducibility, we provide our implementation at https://github.com/MSD-IRIMAS/KD-4-TSC.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T20:51:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06796v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06796v1"
-    },
-    {
-      "id": "2607.06531v1",
-      "title": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
-      "authors": [
-        "Ghassen Marrakchi",
-        "Basarab Matei"
-      ],
-      "abstract": "- Objective: Multimodal deep learning models in oncology are currently limited by monolithic designs that rigidly couple data ingestion, clinical routing, and artificial intelligence (AI) inference. To address this inflexibility, we propose the Large Cancer Assistant (LCA), a model-agnostic, post-hoc orchestration framework designed for scalable clinical decision support. - Methods: The LCA is mathematically formalized as a 7-tuple architecture grounded in the principle of Algorithmic Impermeability, ensuring the orchestration logic remains strictly independent of underlying black-box AI models. We introduce the Entry Theory, leveraging Geometric Deep Learning (GDL) to standardize multimodal patient data along distinct structural and medical axes. The system dynamically orchestrates data via a Cancer Switching Module and intentionally isolates the core AI execution from volatile hospital IT infrastructures by outputting a Standardized Intermediate Payload (SIP). - Results: A Proof of Concept (PoC) validated the orchestration logic across four technical scenarios. The framework executed a nominal flow with negligible orchestration overhead. It empirically demonstrated algorithmic impermeability by maintaining an invariant routing projection during AI model swaps, and it validated strict failure-safety by achieving a 100\\% recall rate in generating targeted Supplementary Data Requests (SDR) under injected data anomalies. Multi-protocol execution capability was also successfully verified. - Conclusion: By structurally decoupling multimodal ingestion from feature inference, the LCA provides a highly adaptable and modular orchestration foundation. The SIP establishes a clear architectural boundary, natively setting the stage for downstream Electronic Medical Record (EMR) interoperability as an independent future paradigm.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T17:38:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06531v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06531v1"
-    },
-    {
-      "id": "2607.06295v1",
-      "title": "Visual graphs for image classification: does the structure affect performance?",
-      "authors": [
-        "Alessandra Ibba"
-      ],
-      "abstract": "Deep learning models have emerged in machine learning and related fields, demonstrating astonishing performance in various visual tasks. Despite their great success, however, these models are unable to fully encode intrinsic visual structures, and often ignore the spatial, topological, and semantic information contained within an image. Graph neural networks offer a good framework to face this aspect, but their effective use for visual tasks has been only partly explored and mainly starting from a limited perspective. This work aims to address this gap by conducting a systematic comparison of current graph construction techniques within the context of a fixed three-layer GCN architecture. Through an empirical study, it demonstrates in particular how the network structure affects performance and provides an important methodological contribution regarding the computational stages preceding graph utilization, which will be strongly influenced by the structure itself.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T14:01:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06295v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06295v1"
-    },
-    {
-      "id": "2607.06232v1",
-      "title": "Learning to Reconstruct Wigner Functions in Phase Space",
-      "authors": [
-        "Xinyu Tang",
-        "Yi-hsin Lin",
-        "Yan Zhu",
-        "Tailong Xiao",
-        "Yuxuan Du",
-        "Giulio Chiribella",
-        "Qiongyi He",
-        "Ya-dong Wu"
-      ],
-      "abstract": "Wigner function learning is a central tool for characterizing continuous variable quantum systems. A fundamental challenge in this setting is to infer a continuous phase-space function from sparse pointwise measurement data, a task that becomes increasingly demanding as the effective dimension enlarges. Here, we develop a general machine learning framework to reconstruct Wigner functions directly as continuous functions from sparse phase-space data. For states with sparse Fock-space or coherent-state representations, such as binomial code states and cat states, we devise provably efficient regression models whose measurement complexity scales only logarithmically with the effective Hilbert-space dimension. For more general states, such as the Gottesman-Kitaev-Preskill (GKP) states, we design a deep learning model that reconstructs the Wigner function from sparse measurements and generalizes to arbitrary phase-space resolution. We demonstrate the broad applicability of our framework on both simulated data and experimental data from a circuit quantum electrodynamic (circuit-QED) system. Interestingly, on experimental data, we find that our model reconstructs Wigner functions of GKP code states across multiple rounds of quantum error correction and identifies the dominant error process using significantly fewer measurements than conventional estimation techniques.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T13:00:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06232v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06232v1"
-    },
-    {
-      "id": "2607.06151v1",
-      "title": "Leveraging Extragradient for Effective Sharpness-Aware Minimization in Deep Learning",
-      "authors": [
-        "Yao Fu",
-        "Chunxia Zhang",
-        "Junmin Liu",
-        "Yihang Jin",
-        "Haishan Ye",
-        "Yuanao Yang"
-      ],
-      "abstract": "Generalization remains a pivotal challenge in deep learning, where traditional optimizers like Stochastic Gradient Descent (SGD) often converge to sharp minima, leading to overfitting and reduced performance on unseen data. Building on Sharpness-Aware Minimization (SAM), for seeking flat minima associated with improved generalization, we propose the Extragradient-Inspired Sharpness-Aware Minimization (EISAM), a novel optimizer that enhances generalization via the extragradient technique. EISAM uses a two-step update process: a prediction step investigating the geometry of the loss landscape and a perturbation step that refines updates with a base optimizer. This approach achieves better generalization performance than SAM. Crucially, EISAM reduces sensitivity to the perturbation radius, enhancing robustness, and simplifying the tuning across diverse settings. Extensive experiments on benchmark datasets demonstrate that EISAM consistently outperforms SGD, Adaptive Moment Estimation (Adam), and SAM in test accuracy and training efficiency across various architectures. Theoretical analysis further confirms that EISAM tightens the generalization bound by steering parameters toward flatter minima with reduced curvature. Accompanied by a thorough hyperparameter analysis, EISAM offers practical tuning guidance, establishing it as a robust, scalable, and broadly applicable optimization solution that advances both the theory and practice in deep learning.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T11:25:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06151v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06151v1"
-    },
-    {
-      "id": "2607.06026v1",
-      "title": "SplineNet: An Isogeometric Deep Learning Method for Complex Shells",
-      "authors": [
-        "Shizhou Luo",
-        "Xiaodong Wei"
-      ],
-      "abstract": "We present a novel isogeometric deep learning method, termed SplineNet, for the seamless design and analysis of shell structures with complex geometries. The proposed approach is built upon watertight spline representations, e.g., analysis-suitable unstructured T-splines, and features exact geometric descriptions of Computer-Aided Design (CAD) models in neural networks. Bézier extraction is used to build the network architecture, where Bernstein polynomials serve as the nonlinear activation functions. SplineNet can be applied in a data-free or data-driven way. In the data-free case, energy-based formulations can be naturally incorporated as loss terms, which fulfill the need of Computer-Aided Engineering (CAE) and can be accurately calculated. In particular, the Kirchhoff--Love (KL) model is adopted to solve for the mechanical behaviors of shell structures. This way, CAD and CAE can be tightly integrated in a deep neural network without the time-consuming model/data exchange process. In the data-driven case, SplineNet can be used as the trunk net of Deep Operator Networks (DeepONet) to provide interpretability. Given such a trained network and unseen input data, results can be immediately obtained without retraining the network or repeatedly performing the traditional workflow for analysis. In the end, a variety of numerical examples are studied to demonstrate the effectiveness of the proposed method, especially when real-world complex geometries are involved.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T09:05:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06026v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06026v1"
-    },
-    {
-      "id": "2607.06615v1",
-      "title": "Format-Controlled Multi-Scale JPEG Compression Response Analysis for Image-Level Forgery Screening",
-      "authors": [
-        "Sujith K Mandala"
-      ],
-      "abstract": "Image forgery detection is a critical task in digital forensics, yet many deep-learning localization approaches are typically GPU-accelerated and computationally heavier than handcrafted screening methods. We propose a lightweight, interpretable feature engineering pipeline for image-level forgery screening using only CPU computation and gradient boosted trees. Our method introduces \\emph{multi-scale Error Level Analysis} (ELA) computed at seven JPEG quality levels, combined with novel \\emph{cross-quality ELA ratio} features that capture double-compression artifacts characteristic of spliced regions, augmented by spatial entropy, FFT energy bands, edge density, SRM residuals, and DCT blockiness, yielding a 405-dimensional feature vector. CASIA v2.0 contains a format confound (60\\% of tampered images are TIFF while authentic images are JPEG/BMP and contain no TIFF samples), enabling a trivial \\texttt{is\\_tiff} classifier to reach 0.80 AUC. We address this through rigorous format-controlled evaluation: on the JPEG-only subset (9,501 images, eliminating the TIFF/JPEG container confound), our method achieves AUC~=~0.990 [95\\% CI: 0.988--0.991] and F1~=~0.905 using 5-fold stratified cross-validation. Under a conservative source-aware group split (preventing related images from appearing in both train and test), AUC remains 0.976. An ablation study reveals that multi-scale ELA provides the dominant gain (+0.180 AUC over single-quality on the format-controlled subset), while cross-quality ratios provide complementary double-compression detection. These results support that the method detects compression-history inconsistencies rather than file-format shortcuts -- while offering feature-level interpretability, CPU-only deployment, and sub-second inference.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T08:24:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06615v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06615v1"
-    },
-    {
-      "id": "2607.05718v1",
-      "title": "Learning Stable Controlled Dynamical Systems via Input-Contraction Neural Differential Models",
-      "authors": [
-        "Syed Pouladi"
-      ],
-      "abstract": "Learning continuous-time representations of dynamical systems from observation data has emerged as a cornerstone of data-driven control and scientific machine learning. However, existing neural differential equations either treat external control inputs heuristically without providing strict structural guarantees, or enforce stability properties under the restrictive assumption of constant or vanishing inputs. This paper proposes the Input-Contraction Neural Differential Model (ICNDM), a novel deep learning framework that seamlessly incorporates time-varying control inputs while ensuring incremental exponential convergence via input-dependent contraction regularization. By leveraging an embedded input encoder and a parameterized metric network, the proposed architecture learns both the non-autonomous neural vector fields and a generalized Riemannian contraction metric simultaneously. We derive sufficient conditions for input-dependent contraction and formally establish an input-to-state contraction property under bounded external excitations. Extensive numerical evaluations on highly nonlinear chaotic oscillators and experimental data from a Permanent Magnet Synchronous Motor (PMSM) drive system demonstrate that ICNDM yields substantial reductions in long-horizon rollout errors and exhibits superior structural robustness against input perturbations compared with state-of-the-art neural differential benchmarks.",
-      "published": "July 07, 2026",
-      "published_raw": "2026-07-07T01:03:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05718v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05718v1"
-    },
-    {
-      "id": "2607.05669v1",
-      "title": "Uncertainty-Aware Velocity Correction for Proprioceptive Vehicle Localization using Evidential Mamba",
-      "authors": [
-        "Abinav Kalyanasundaram",
-        "Karthikeyan Chandra Sekaran",
-        "Wolfgang Utschick",
-        "Michael Botsch"
-      ],
-      "abstract": "Reliable localization in GNSS-denied environments remains a fundamental challenge for intelligent vehicles, as inertial navigation systems accumulate unbounded drift without external correction. Existing approaches provide drift correction through dedicated infrastructure, expensive external sensors, or complex multi-sensor fusion, each introducing practical deployment barriers. We propose Evidential Velocity Correction using Mamba (EVC-Mamba), a learning-based architecture that transforms onboard vehicle sensor data into a virtual velocity sensor for IMU drift correction without additional hardware. A Mamba-based selective state space model captures the temporal dynamics of vehicle motion, while evidential deep learning with a Normal-Inverse-Gamma distribution provides principled uncertainty quantification. The resulting uncertainty-aware velocity estimate is incorporated as a virtual correction measurement into an Error-State Extended Kalman Filter to reduce position drift. Evaluation on real-world vehicle data demonstrates that inertial navigation using the proposed velocity correction achieves localization accuracy within 10% of a dedicated external velocity sensor across different outage durations. The proposed architecture supports real-time onboard deployment at 40 Hz on edge hardware, enabling reliable localization during prolonged GNSS outages.",
-      "published": "July 06, 2026",
-      "published_raw": "2026-07-06T22:28:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.05669v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.05669v1"
     }
   ]
 }
