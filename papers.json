@@ -1,7 +1,169 @@
 {
-  "last_updated": "2026-07-12T01:21:50.464386",
+  "last_updated": "2026-07-13T01:23:12.521410",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.09537v1",
+      "title": "GatedLinear: Adaptive Routing of Complementary Linear Bases for Time Series Forecasting",
+      "authors": [
+        "Qitai Tan",
+        "Ruiwen Gu",
+        "Yilin Su",
+        "Mo Li",
+        "Xu Lin",
+        "Xiao-Ping Zhang"
+      ],
+      "abstract": "Time series forecasting requires models to capture diverse, often mutually exclusive, temporal dynamics, from smooth trend continuation to nonstationary drift and strict phase-aligned recurrence. While recent deep learning models have improved accuracy, they typically force these diverse patterns through a single computational backbone governed by fixed algorithmic inductive biases (e.g., self-attention or spectral filtering). This single-mechanism approach often struggles with the profound heterogeneity of real-world series, where different variables and forecast horizons necessitate fundamentally different predictive treatments. To address this, we propose GatedLinear: a lightweight framework that frames forecasting as the adaptive routing of complementary linear bases. GatedLinear leverages a pool of three specialized mechanisms: a global trend-seasonal basis for smooth projection, a difference-based incremental basis for nonstationary drift, and a phase-aligned recurrence basis for explicit cyclic reuse. To dynamically orchestrate these distinct behaviors, we introduce a Tri-Factorized Fusion Gate that disentangles routing decisions into channel-specific preferences, horizon-aware offsets, and phase-indexed biases derived from known future time marks. This design allows the model to perform highly granular, point-wise soft routing across different predictive regimes without stacking computationally heavy neural modules. Experiments on standard benchmarks show that our method achieves state-of-the-art or highly competitive accuracy against recent complex foundational models, while offering explicitly interpretable routing patterns and operating with a substantially smaller parameter footprint.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T15:42:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09537v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09537v1"
+    },
+    {
+      "id": "2607.09461v1",
+      "title": "Deep Learning for Dynamic Programming with Recursive Utility Using First-order Conditions",
+      "authors": [
+        "Xianhua Peng",
+        "Wu Guo",
+        "Songyan Wang",
+        "Jianfei Zhu"
+      ],
+      "abstract": "This paper proposes the certainty-equivalent first-order learning (CEFOL) algorithm, a deep learning algorithm for solving discrete-time dynamic programming problems with recursive utility. Dynamic programming with recursive utility is challenging because nonlinear certainty equivalent appears in the Bellman equation and the first-order optimality conditions but is difficult to evaluate. By introducing a separate neural network to represent the certainty equivalent, CEFOL enables the exploitation of the Bellman and model-specific first-order optimality conditions. In addition to certainty equivalent, CEFOL also uses neural networks to learn the value functions, policy functions, and Lagrange multipliers by using model-specific first-order conditions to construct residuals for minimization. By using first-order and KKT residuals to learn the policy, CEFOL directly accommodates general equality and inequality constraints on the controls, including occasionally binding constraints, without requiring penalty functions or problem-specific reformulations. We apply the algorithm to risk-sensitive and Epstein--Zin consumption-saving problems, a small-noise robust-control problem, and a DSGE model with recursive preferences and stochastic volatility. Across these applications, out-of-sample Bellman diagnostics and model-specific optimality residuals, including Euler or first-order residuals where applicable, are generally of order 1.0e-4 to 1.0e-3 over the relevant state regions, with larger values mainly near binding constraints, and the learned value and policy functions closely match VFI benchmarks when available. The CEFOL algorithm also works for dynamic programming problems with expected utility, as expected utility is a special case of recursive utility.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T14:36:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09461v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09461v1"
+    },
+    {
+      "id": "2607.09402v1",
+      "title": "Data-Efficient Deep Learning: Empirical Guidelines for Training Set Size Estimation in Inertial Sensor Classification",
+      "authors": [
+        "Ofir Kruzel",
+        "Itzik Klien"
+      ],
+      "abstract": "Deep learning models dependency on large-scale inertial datasets presents a significant bottleneck in inertial sensor-based classification tasks, such as human activity recognition and smartphone location recognition. In these domains, data collection requires massive recording campaigns that are complex, time-consuming, and difficult to scale. Currently, data-driven guidelines for determining the minimum sample size required to reach a desired accuracy level do not exist. To address this gap, this study presents a systematic empirical evaluation of learning curve convergence rates in inertial classification. We introduce a unified framework that analyzes classification performance under both binary and multi-class scenarios, and derive an empirical formula to estimate performance relative to dataset size. Testing across six diverse, real-world datasets totaling 102.7 hours of inertial measurements demonstrates that accuracy follows a consistent logarithmic growth pattern, regardless of task complexity. Leveraging this finding, we propose a quantitative stability point metric, defined as the sample size required for the learning curve to stabilize within a predefined mean absolute percentage deviation of its asymptotic maximum. Our analysis reveals that models often reach practical stability with substantially fewer samples than traditional heuristics suggest. Ultimately, we offer a generalizable framework to extrapolate total data requirements from small-scale pilot studies, optimizing the tradeoff between recording effort and model reliability. These findings shift the prevailing paradigm from maximizing data volume toward optimizing data efficiency, offering concrete, data-backed guidelines for planning recording campaigns in inertial sensing applications.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T13:30:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09402v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09402v1"
+    },
+    {
+      "id": "2607.09400v1",
+      "title": "On-Device Adaptive Battery Power Prediction for Electric Vehicles",
+      "authors": [
+        "Avik Bhatnagar",
+        "Anton Paule",
+        "Tobias Schuermann",
+        "Sebastian Reiter",
+        "Oliver Bringmann"
+      ],
+      "abstract": "Adaptive power management in Electric Vehicles (EVs) requires accurate power prediction. Although deep learning models have emerged as highly effective for time-series forecasting in this domain, their performance is prone to degradation when exposed to data with distributions different from the training data. We introduce a novel approach that enables on-device learning in resource-constrained EV systems to continuously adapt pretrained battery prediction models to new, unseen data. We leverage existing pretrained models by transforming them into adaptable versions that retain critical hyperparameter knowledge from their initial training. We comprehensively investigate both online and offline model adaptation strategies. Our results demonstrate significant improvements in forecasting performance across various models and time horizons, achieving mean absolute error reductions of up to 7.49\\% and 14.88\\% with online and offline adaptation techniques, respectively. This study highlights the substantial benefit of on-device adaptation, resulting in enhanced battery power predictions than unadapted model deployments in real-world EV scenarios.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T13:24:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09400v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09400v1"
+    },
+    {
+      "id": "2607.09305v1",
+      "title": "From Classification to Localization and Clinical Validation: Large-Scale Development of a Deep Learning System for Thoracic Disease Detection on Chest Radiographs in Thailand",
+      "authors": [
+        "Isarun Chamveha",
+        "Tretap Promwiset",
+        "Napat Wanchaitanawong",
+        "Trongtum Tongdee",
+        "Pairash Saiviroonporn",
+        "Warasinee Chaisangmongkon"
+      ],
+      "abstract": "Chest radiography (CXR) remains the most widely used thoracic imaging modality, yet expert interpretation is constrained by a severe shortage of radiologists in Thailand and across Southeast Asia. Local adaptation of deep learning models to Thai data has been shown to substantially improve accuracy on Thai populations. Here we present the development and comprehensive validation of the chest radiograph analysis model in Inspectra CXR version 5, a deep learning system that performs multi-label thoracic disease classification and weakly supervised lesion localization within a single model. The architecture couples a DenseNet-121 backbone with Attend-and-Compare Modules (ACM) and a Probabilistic Class Activation Map (PCAM) aggregation layer, producing a per-condition classification score and heatmap simultaneously. The model was developed on 874,858 frontal chest radiographs with paired radiologist reports from Siriraj Hospital, Bangkok. On a held-out, radiologist-verified in-domain test set of 19,871 cases, it achieved a mean AUROC of 0.994 (mean sensitivity 92.4%, specificity 98.6%) across nine clinically important conditions. On an independent generalization set of 5,992 cases from 13 hospitals across Thailand, the mean AUROC was 0.970, indicating robust transfer across sites. For localization, evaluated on 4,549 radiologist-annotated cases, the model attained a mean lesion-localization fraction (LLF) of 77.9% at 0.59 non-lesion localizations per image. In a usability evaluation with five thoracic radiologists, the system reached a classification concordance of 93.6%, a localization concordance of 94.7%, and a mean System Usability Scale (SUS) score of 89. These results indicate that a locally developed, localization-capable CXR system can deliver high accuracy, generalize across heterogeneous Thai hospitals, and earn the trust of practicing radiologists.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T11:36:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09305v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09305v1"
+    },
+    {
+      "id": "2607.09063v1",
+      "title": "EvoLP: Self-Evolving Latency Predictor for Model Compression in Real-Time Edge Systems",
+      "authors": [
+        "Shuo Huai",
+        "Hao Kong",
+        "Shiqing Li",
+        "Xiangzhong Luo",
+        "Ravi Subramaniam",
+        "Christian Makaya",
+        "Qian Lin",
+        "Weichen Liu"
+      ],
+      "abstract": "Edge devices are increasingly utilized for deploying deep learning applications on embedded systems. The real-time nature of many applications and the limited resources of edge devices necessitate latency-targeted neural network compression. However, measuring latency on real devices is challenging and expensive. Therefore, this letter presents a novel and efficient framework, named EvoLP, to accurately predict the inference latency of models on edge devices. This predictor can evolve to achieve higher latency prediction precision during the network compression process. Experimental results demonstrate that EvoLP outperforms previous state-of-the-art approaches by being evaluated on three edge devices and four model variants. Moreover, when incorporated into a model compression framework, it effectively guides the compression process for higher model accuracy while satisfying strict latency constraints. We open source EvoLP at https://github.com/ntuliuteam/EvoLP.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T03:16:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09063v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09063v1"
+    },
+    {
+      "id": "2607.08978v1",
+      "title": "Federated Low-Rank Koopman Learning for Multivariate Time-Series Anomaly Detection in IoT Systems",
+      "authors": [
+        "Tung-Anh Nguyen",
+        "Van-Phuc Bui",
+        "Anh Tuyen Le",
+        "Kim Hue Ta",
+        "Minh Thuy Le",
+        "J. Andrew Zhang",
+        "Xiaojing Huang"
+      ],
+      "abstract": "Distributed IoT systems generate multivariate time-series streams for monitoring physical assets, servers, and embedded sensing platforms. Detecting abnormal temporal behavior is critical for fault diagnosis, predictive maintenance, and security. However, practical IoT anomaly detection is hindered by decentralized and non-IID data, limited bandwidth, and the constrained computation and memory of edge devices. This paper proposes FedKAD, a resource-efficient federated Koopman anomaly detection framework for distributed IoT multivariate time series. Unlike deep-learning-based anomaly detectors that require training and communicating large neural models, FedKAD learns normal temporal dynamics through lightweight sliding-window Koopman representations. Federated training is formulated as a low-rank consensus problem, where raw sensor streams and local reduced dynamics remain on device while only compact subspace variables are exchanged with the server. To optimize the shared representation under orthonormality constraints, we develop a federated Stiefel-ADMM algorithm and provide convergence and stationarity analysis under partial client participation. During inference, each client detects anomalies locally by measuring the prediction residual between observed future trajectories and the learned Koopman dynamics. Experiments on four widely used multivariate time-series anomaly detection benchmarks show that FedKAD maintains or improves detection performance compared with federated deep-learning baselines. More importantly for IoT deployment, FedKAD provides up to $2.1\\times10^3$ faster training, $80\\times$ lower communication, and $79\\times$ lower inference latency than neural baselines, confirming its suitability for resource-constrained edge devices.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T22:48:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08978v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08978v1"
+    },
+    {
+      "id": "2607.08969v1",
+      "title": "Developing Machine Learning Models of Subgrid Turbulent Transport for Quiet Sun 3D Radiative Hydrodynamic Simulations",
+      "authors": [
+        "Rimsha Hameed Syeda",
+        "Dustin Kempton",
+        "Viacheslav Sadykov",
+        "Irina Kitiashvili",
+        "Rafal Angryk"
+      ],
+      "abstract": "Numerical modeling of solar plasma dynamics is affected by the resolution of the computational grid. This often requires the estimation of subgrid processes related to the small-scale flow turbulence, as these processes play a critical role in momentum transport and energy dissipation. In this work, we investigate the use of deep learning techniques as surrogate models for subgrid turbulent transport in realistic hydrodynamic simulations of the quiet Sun. We describe the development of a 3D Convolutional Neural Network (CNN) to capture spatial dependencies in 3D velocity fields, leveraging different activation functions, as well as different architectural designs. We specifically focus on the prediction of Reynolds stress tensor components. The resultant model integrates velocity vector components and scalar features, such as plasma density, to enhance prediction accuracy. We compare the 3DCNN model to other types of models, such as a Multilayer Perceptron (MLP) and physics-based Gradient and Smagorinsky models, and show that the final model design reconstructs the Reynolds stress tensor components more accurately. Specifically, a 3DCNN model achieves an average improvement of ~31% on diagonal components and ~8% on the off-diagonal components of the stress tensor. Additionally, we show that applying a logarithmic data transformation of the target stress tensor components, to handle heavily skewed data, improves model performance. Results demonstrate the potential of deep learning, particularly CNNs, to approximate Reynolds stress tensor components for the upper solar convection zone and lower atmosphere, making them a viable candidate for modeling subgrid processes and a promising alternative to traditional turbulence models.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T22:12:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08969v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08969v1"
+    },
+    {
+      "id": "2607.08867v1",
+      "title": "Secure-by-Disguise: A Systematic Evaluation of Image Disguising for Confidential Medical Image Modeling",
+      "authors": [
+        "Jason Rojas",
+        "Jiajie He",
+        "Yash Patel",
+        "Yuechun Gu",
+        "Zeyun Yu",
+        "Keke Chen"
+      ],
+      "abstract": "Cloud-based deep learning enables large-scale medical image analysis but raises significant privacy concerns when sensitive patient images are outsourced for model development. Image disguising has recently emerged as a promising privacy-enhancing technology (PET) that transforms images into visually unintelligible representations while preserving information for downstream learning. We established a unified framework to evaluate representative methods, DisguisedNets and NeuraCrypt, across four datasets involving classification and semantic segmentation tasks. Our analysis assessed predictive utility, efficiency, and robustness against reconstruction attacks. Results showed that image disguising performance varies significantly between tasks; while methods preserved utility for medical image classification, they caused substantial degradation in dense semantic segmentation. Specifically, Randomized Multidimensional Transformation (RMT) offered the optimal balance of performance and security, whereas AES-based disguising severely impacted utility. Furthermore, regression-based reconstruction attacks effective on natural images proved considerably less successful on realistic medical images. These findings provide a systematic assessment of PET suitability for confidential medical AI applications.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T18:43:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08867v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08867v1"
+    },
+    {
+      "id": "2607.08843v1",
+      "title": "How are linear representations learned? Exact solutions to the dynamics of abstraction",
+      "authors": [
+        "William W. Yang",
+        "Andrew M. Saxe",
+        "Peter E. Latham"
+      ],
+      "abstract": "In artificial and biological neural networks, concepts are often encoded as consistent linear directions in representation space. In deep learning, this idea is known as the linear representation hypothesis and underpins many interpretability and control methods based on linear probes, from concept detection to activation steering. Yet while prior work has studied whether such directions should exist $\\textit{after}$ training, the dynamics of how they emerge $\\textit{during}$ training remain poorly understood. Here, we develop a framework to study the alignment of concept directions during training - a process we call \"abstraction\". In a minimal linear network setting, we obtain exact solutions for the full trajectory of abstraction. These solutions reveal key analytic principles governing abstraction: (i) data and target geometry jointly determine abstraction at the end-of-learning, (ii) abstraction improves with network depth, and (iii) initialization scale controls the maximum abstraction reached during training. Extending our theory to nonlinear networks, we analyze how the choice of nonlinearity affects abstraction dynamics: erf networks approximate the linear theory, while abstraction in ReLU networks depends less on target geometry and more on input geometry. Across both, we prove a striking attenuation law: both nonlinearities weaken abstraction in activations relative to preactivations. We find evidence for this law in open models (DINOv3, Gemma 4) and apply our theory to improve linear probe generalization in LLMs. Together, our results provide a dynamical theory of abstraction with implications for interpretability and control.",
+      "published": "July 09, 2026",
+      "published_raw": "2026-07-09T18:04:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.08843v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.08843v1"
+    },
     {
       "id": "2607.08717v1",
       "title": "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems",
@@ -151,161 +313,6 @@
       "published_raw": "2026-07-08T14:58:06Z",
       "pdf_link": "http://arxiv.org/pdf/2607.07500v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.07500v1"
-    },
-    {
-      "id": "2607.07756v1",
-      "title": "The Importance of Encoder Choice:A Tabular-Image Study",
-      "authors": [
-        "Ilia Koloiarov",
-        "Diego Coello de Portugal Mecke",
-        "Vijaya Krishna Yalavarthi",
-        "Tom Hanika",
-        "Lars Schmidt-Thieme"
-      ],
-      "abstract": "Multimodal learning usually requires a dedicated encoder per modality. When a tabular modality is involved, prior work has been mostly using a \\emph{plain MLP} as the encoder. Yet if it were a strong encoder, the tabular domain would not be ``the last unconquered castle for deep learning''. This study evaluates state-of-the-art tabular models as encoders in the image-tabular setting for the first time. An obstacle stands out. In-Context Learning models, among the best performing methods in the tabular domain, require labels to process instances, making it non-trivial to embed training and test instances the same way. We addressed this problem across multiple models of this family. With this study, we would like to highlight the importance of encoder factor in the multimodal learning.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T14:01:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07756v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07756v1"
-    },
-    {
-      "id": "2607.07408v1",
-      "title": "Transformer-based segmentation of prosodic boundaries in Brazilian Portuguese",
-      "authors": [
-        "Rodrigo de Freitas Lima",
-        "Julio Cesar Galdino",
-        "Marcos Vinicius Treviso"
-      ],
-      "abstract": "Automatic prosodic segmentation identifies boundaries between speech units from acoustic and linguistic evidence. Although recent deep learning approaches have produced strong results for English, automatic segmentation for Brazilian Portuguese (BP) still relies mostly on rule-based or traditional machine-learning methods. This paper presents SAMPA, a Whisper-based segmenter that transcribes BP speech while inserting explicit markers for terminal prosodic boundaries. We fine-tune Whisper large-v3 on manually segmented recordings from the NURC-SP dataset and evaluate different training and test-time filtering configurations, including out-of-distribution testing on the MuPe-Diversidades dataset. SAMPA achieves competitive boundary-detection performance across settings, with the best models reaching F1=0.731 on the held-out test split and F1=0.796 on MuPe-Diversidades. Finally, through n-gram and acoustic-visual analyses, we show that our model follows morphosyntactic, semantic, and prosodic cues for detecting prosodic boundaries.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T13:41:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07408v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07408v1"
-    },
-    {
-      "id": "2607.07401v1",
-      "title": "Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation",
-      "authors": [
-        "Chengbo Wang",
-        "Jiacheng Yu",
-        "Linjie Bian",
-        "Ming Qi",
-        "Xiaosheng Liu",
-        "Tongtong Che",
-        "Jichang Zhang",
-        "Shuyu Li",
-        "Shaoli Song",
-        "Xiuying Wang"
-      ],
-      "abstract": "While whole-body multimodal medical imaging scanners have been increasingly recognized for more effective medical applications, the excessive long acquisition time in PET-MR scanning is a major obstacle in more efficient clinical practice. Deep learning-based MRI translation provides a potential solution to reduce scan duration. However, current models often focus on specific anatomical regions and face challenges for whole-body scans that consists of highly heterogeneous feature distributions mainly due to (1) different anatomical regions across whole-body, and (2) lesions or pathological tissues. This paper tackles the challenges through a novel Heterogeneity-Adaptive Diffusion Schrodinger Bridge (HA-DSB) framework. By explicitly modeling translation as stochastic transport between source and target distributions, HA-DSB incorporates region context embeddings derived from a vision-language model (VLM) to enable region-specific modeling. To enhance fidelity of the pathological tissue, lesion-aware metabolic prior from PET is integrated directly into the bridge dynamics through a dual-stage guidance mechanism. Specifically, a PET-guided noise modulation module adaptively scales spatial diffusion perturbations during the forward process, while PET features are leveraged during the reverse process to selectively amplify lesion-relevant structures via an attention mechanism. Experiments demonstrate the superiority of our method across different body regions in whole-body MRI translation and show improved translation quality in lesion areas under PET guidance. Our code is available at Github.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T13:35:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07401v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07401v1"
-    },
-    {
-      "id": "2607.07382v1",
-      "title": "Generalist Vision-Language Models for Fast Radio Burst detection: a zero-shot benchmark against a specialized detector",
-      "authors": [
-        "Raiff H. Santos",
-        "Amilcar R. Queiroz",
-        "Tharcisyo S. S. Duarte",
-        "K. E. L. de Farias",
-        "Rafael A. Batista"
-      ],
-      "abstract": "Fast Radio Bursts (FRBs) are millisecond-duration radio transients whose automated detection increasingly relies on highly specialized deep learning models. These detectors achieve exceptional performance, but they require large task-specific training datasets and cannot be redefined without retraining. In this work, we evaluate whether small, open-weight, locally run generalist Vision-Language Models (VLMs) can detect FRBs in dynamic spectra under a zero-shot, prompt-only regime, with no fine-tuning and no labeled examples, returning structured decisions with a natural-language justification. From a controlled set of 3000 simulated L-band dynamic spectra containing FRBs, structured Radio Frequency Interference (RFI), and noise, we draw a balanced binary benchmark of 2000 samples and compare two such VLMs (Gemma 4 2B and 4B), sample by sample, against the state-of-the-art specialized detector SwinYNet. At the default threshold, Gemma 4 2B reaches an accuracy of 93.65%, with no statistically significant difference from SwinYNet (92.90%), while showing a significantly lower false-positive rate on structured RFI (6.4% vs. 25.0%) and no false positives on pure noise. SwinYNet retains a perfect probabilistic ranking on this benchmark (ROC-AUC of 1.0000 vs. 0.9482), a ceiling that the zero-shot VLM approaches from general-purpose pretraining alone. Rewriting the prompt alone reconfigures the same models for three-class FRB/RFI/noise classification on the full set of 3000 spectra, where they reach up to 86% accuracy without a single false FRB.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T13:15:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07382v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07382v1"
-    },
-    {
-      "id": "2607.07263v1",
-      "title": "Machine learning pipeline for identifying tracks of muons and hadrons at GRAPES-3 muon telescope",
-      "authors": [
-        "Mansi Talwar",
-        "Sambit Sarkar",
-        "Pravata K. Mohanty"
-      ],
-      "abstract": "The GRAPES-3 experiment is a ground-based extensive air shower array which consists of approximately $400$ closely packed plastic scintillator detectors and a large area muon telescope. Estimating the number of associated muons created in an air shower is crucial to understand the properties of primary cosmic rays. The GRAPES-3 muon telescope (G3MT) records these secondary muons, however, the punch-through hadrons can introduce background noise. This study aims to develop a machine learning pipeline to distinguish the tracks of secondary muons and hadrons at G3MT. We have used CORSIKA-simulated proton showers having energy in the range 100-158 TeV as an input for a Geant4-based detector simulation to analyze the signatures of both type of particles. Initially, single-particle classification was performed using decision trees, random forests, neural networks, and XGBoost, with XGBoost achieving the highest accuracy of 88.7\\%. For multiparticle classification, we modelled Graph Neural Networks (GNNs) where each event was represented as a graph with detector hits as nodes. A GNN with edge convolution layers was developed to classify each node as a muon or hadron hit. Following this, a deep learning regression model using Dynamic Reduction Network was developed to estimate the number of particles and muons striking G3MT simultaneously. Details of the analysis and results of the multiparticle classification task will be presented.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T10:49:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07263v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07263v1"
-    },
-    {
-      "id": "2607.07089v1",
-      "title": "Structural Adversarial Attacks on Relational Deep Learning under Integrity Constraints",
-      "authors": [
-        "Alan Gany",
-        "Bogdan Cautis",
-        "Silviu Maniu"
-      ],
-      "abstract": "Relational Deep Learning (RDL) has become a standard methodology for machine learning on relational databases: the database is encoded as a heterogeneous temporal graph in which tuples become nodes and primary-key to foreign-key (PK-FK) dependencies become typed edges, over which a graph neural network is trained for downstream prediction. We study the adversarial robustness of this pipeline. We consider a white-box attacker who knows how the graph is built and the model is trained, reasons about perturbations on the graph, but can only act on the upstream database, by rewiring foreign-key references while preserving the integrity constraints of the schema (foreign-key validity, the degree-one FK constraint, and functional dependencies). This restricts the attacker to a constrained, combinatorial set of admissible edits under a global perturbation budget, which is intractable to explore exhaustively and made non-additive by GNN message passing. We investigate seven attack heuristics - two random sampling baselines and five gradient-guided variants that exploit differentiable edge masks - and evaluate them on the RelBench rel-f1 benchmark. Gradient-based attacks consistently outperform random baselines on regression tasks, whereas gains on classification are smaller, which we attribute to low label-flip rates and greater local stability of classification outputs.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T07:23:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07089v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07089v1"
-    },
-    {
-      "id": "2607.07035v1",
-      "title": "On the Principles of Deep Feedforward ReLU Networks",
-      "authors": [
-        "Changcun Huang"
-      ],
-      "abstract": "The architecture of deep feedforward neural networks is ubiquitous in deep learning, either as a whole system or as a subnetwork of other architectures, and thus its mechanism is a key ingredient of the black box of neural networks. On the basis of the simplest two-layer ReLU network, this paper systematically studies the mechanism of deep feedforward ReLU networks with multiple hidden layers and successfully explains the training solution obtained by the back-propagation algorithm. The concept of a path, especially in terms of the relationships between paths, plays a central role in uncovering the mystery of the black box. It is shown that a unit of a deep ReLU network can form a piecewise linear manifold to divide the input space, instead of a hyperplane of the two-layer case. How to efficiently use the hidden-layer units to produce both linear functions and partitions of the input space is also a central problem. The principles of a two-layer ReLU network can be generalized to the deeper case to a large extent, such as multiple strict partial orders and continuity restriction. The combination of the basic and simple principles proposed can yield complicated instantiations including the training solutions, and in this sense the black box of deep feedforward ReLU networks is revealed.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T06:09:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07035v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07035v1"
-    },
-    {
-      "id": "2607.06999v1",
-      "title": "Physics-guided spatiotemporal neural models for fuel density prediction",
-      "authors": [
-        "Tolga Caglar",
-        "Jaynil Jaiswal",
-        "Saqib Azim",
-        "Yudhir Gala",
-        "Mai H. Nguyen",
-        "Ilkay Altintas"
-      ],
-      "abstract": "This paper presents a physics-guided machine learning (PGML) framework for fuel density prediction, integrating physics constraints and domain knowledge into deep learning models to enhance model accuracy and stability. We explore three deep learning architectures -- ConvLSTM, Adaptive Fourier Neural Operator (AFNONet), and Video Vision Transformer (ViViT) -- to model the spatiotemporal evolution of fuel density. Our approach incorporates differentiable physics-informed terms in the loss function, including a mass-conserving fuel transport term and a rate-of-spread estimation. Experimental results, averaged across multiple independent trials, demonstrate that the proposed PGML framework outperforms purely data-driven baselines without physics constraints in both accuracy and stability. This framework enables computationally efficient, physically plausible fire forecasting to support adaptive prescribed burn management.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T04:46:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06999v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06999v1"
-    },
-    {
-      "id": "2607.06922v1",
-      "title": "Latency-Constrained DNN Architecture Learning for Edge Systems using Zerorized Batch Normalization",
-      "authors": [
-        "Shuo Huai",
-        "Di Liu",
-        "Hao Kong",
-        "Weichen Liu",
-        "Ravi Subramaniam",
-        "Christian Makaya",
-        "Qian Lin"
-      ],
-      "abstract": "Deep learning applications have been widely adopted on edge devices, to mitigate the privacy and latency issues of accessing cloud servers. Deciding the number of neurons during the design of a deep neural network to maximize performance is not intuitive. Particularly, many application scenarios are real-time and have a strict latency constraint, while conventional neural network optimization methods do not directly change the temporal cost of model inference for latency-critical edge systems. In this work, we propose a latency-oriented neural network learning method to optimize models for high accuracy while fulfilling the latency constraint. For efficiency, we also introduce a universal hardware-customized latency predictor to optimize this procedure to learn a model that satisfies the latency constraint by only a one-shot training process. The experiment results reveal that, compared to state-of-the-art methods, our approach can well-fit the 'hard' latency constraint and achieve high accuracy. Under the same training settings as the original model and satisfying a 34 ms latency constraint on the ImageNet-100 dataset, we reduce GoogLeNet's latency from 40.32 ms to 34 ms with a 0.14% accuracy reduction on the NVIDIA Jetson Nano. When coupled with quantization, our method can be further improved to only 0.04% drop for GoogLeNet. On the NVIDIA Jetson TX2, we compress VGG-19 from 119.98 ms to 34 ms and even improve its accuracy by 0.5%, and we scale GoogLeNet up from 20.27 ms to 34 ms and achieve higher accuracy by 0.78%. We also open source this framework at https://github.com/ntuliuteam/ZeroBN",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T02:35:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06922v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06922v1"
-    },
-    {
-      "id": "2607.06887v1",
-      "title": "Converge to Surprise: Evolutionary Self-supervised Image Clustering",
-      "authors": [
-        "Canlin Zhang",
-        "Xiuwen Liu"
-      ],
-      "abstract": "Most self-supervised image clustering models, actually almost all deep learning approaches, are based on gradient descent: In order to calculate the loss, every optimization step requires a clearly defined target, whether a contrastive split, a masked patch or entity, an EMA-teacher output, a pseudo-label, or a differentiable information-theoretic functional. We propose a self-supervised framework that drops this requirement for image clustering. Without any prior knowledge, we have to assume that each pixel is i.i.d. according to the Principle of Maximum Entropy. Taking this as our null hypothesis H0, we define a \"surprise score\" that measures how unlikely the model's output representation would be under H0. Maximizing the surprise score forces the deep learning model to reject H0 - equivalently, to discover non-random feature from data. Also, here is our fundamental assumption: a surprise score cannot, in general, be reduced to a per-step loss. Hence, we propose the \"converge-to-surprise\" scheme to optimize our model: an evolution-strategy (ES) outer loop, which directly maximizes the surprise score without needing its gradient, paired with a periodic gradient-descent inner loop, which uses the surprising clusters already discovered by ES as surrogate targets. On standard image benchmarks, our framework achieves new state-of-the-art results in non-parametric self-supervised image clustering - the strictest deep-clustering setting, in which the number of ground-truth classes is not given to the model.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T01:09:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.06887v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.06887v1"
     }
   ]
 }
