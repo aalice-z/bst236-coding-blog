@@ -1,7 +1,211 @@
 {
-  "last_updated": "2026-07-13T01:23:12.521410",
+  "last_updated": "2026-07-14T01:12:45.205275",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.10910v1",
+      "title": "ZoRRO: A Zero-Weight Personalized Recommender System for Scalable News Recommendation",
+      "authors": [
+        "Johannes Kruse",
+        "Ryotaro Shimizu",
+        "Kasper Lindskow",
+        "Jon Tofteskov",
+        "Michael Riis Andersen",
+        "Julian McAuley",
+        "Jes Frellsen"
+      ],
+      "abstract": "We present ZoRRO (Zero-Weight Personalized Recommender System), a zero-weight, training-free framework for personalized news recommendation designed for scalable real-world deployment. ZoRRO outperforms strong neural baselines in offline ranking evaluations and achieves click-through rate performance in online A/B testing that is nearly on par with a state-of-the-art deep learning model, while operating more than 600 times faster. Our experiments reveal gaps between offline and online performance and demonstrate that models with similar click-through rate outcomes can produce markedly different recommendation distributions, thereby influencing the overall news flow. These findings position ZoRRO as a practical and efficient solution for large-scale news recommendation and highlight the importance of evaluating recommender systems using metrics beyond accuracy alone.",
+      "published": "July 12, 2026",
+      "published_raw": "2026-07-12T20:30:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10910v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10910v1"
+    },
+    {
+      "id": "2607.10803v1",
+      "title": "Weight-Adjusted Gradients Reveal Parameter Importance and Failure Modes in LLMs",
+      "authors": [
+        "Shrestha Datta",
+        "Hongfu Liu",
+        "Anshuman Chhabra"
+      ],
+      "abstract": "Understanding which parameters are influential in Large Language Models (LLMs) is central to improving their efficiency, reliability, and interpretability. We introduce Weight-Adjusted Gradients (WAG), a simple yet effective approach for estimating parameter importance that explicitly captures the interaction between model weights and first-order gradient information and identifies parameters that disproportionately influence model behavior, such as those responsible for collapse phenomena in LLMs. Across a range of models and settings, we show that WAG surfaces a tiny but critical subset of parameters whose modification leads to dramatic degradation in performance, a failure mode that existing importance metrics overlook. These findings reveal a previously underexplored interplay between weights and gradients, suggesting that parameter importance cannot be fully understood through either signal alone. The surprising effectiveness of WAG points to fundamental structural properties of trained networks and motivates new open questions about the role of zeroth-order and first-order information in deep learning. We demonstrate the practical utility of WAG across multiple applications, including expert allocation in mixture-of-expert architectures, parameter-specific unlearning, mixed-precision quantization, and layer selection for knowledge editing. Our results position WAG as a unified approach for analyzing, debugging, and controlling LLMs, and opens new directions for principled model-level interpretation.",
+      "published": "July 12, 2026",
+      "published_raw": "2026-07-12T15:21:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10803v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10803v1"
+    },
+    {
+      "id": "2607.10784v1",
+      "title": "LSTrans: Efficient Knowledge Transfer for Lightweight and Automated ECG Classification",
+      "authors": [
+        "Yi Zhao",
+        "Jiajun Gao",
+        "Chenyang Xu",
+        "Yuxi Zhou",
+        "Hao Wang"
+      ],
+      "abstract": "Deploying deep learning models for automated electrocardiogram classification on resource-constrained wearable devices remains challenging due to high computational costs. To address this, we propose LSTrans, a lightweight hybrid model designed for efficient and sensitive ECG analysis. LSTrans introduces a specialized 1D convolutional backbone with an interleaved layer architecture to capture both macroscopic rhythmic trends and microscopic morphological variations. This backbone is cascaded with a Transformer encoder to model long-range temporal dependencies, incorporating Low-Rank Adaptation across critical layers to compress the model and reduce the trainable parameter space. We further employ homogeneous and heterogeneous knowledge distillation to transfer diagnostic expertise from high-capacity teacher models to the student. Experimental results on multiple benchmark datasets demonstrate that LSTrans achieves a competitive balance between diagnostic sensitivity and resource efficiency, substantially reducing peak memory footprints and training latency during downstream adaptation. The source code is available for review at https://github.com/zyee00128/LSTrans4BIBM.",
+      "published": "July 12, 2026",
+      "published_raw": "2026-07-12T14:23:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10784v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10784v1"
+    },
+    {
+      "id": "2607.10783v1",
+      "title": "Toward Efficient Weakly Supervised Semantic Segmentation Using Only Low-Magnification Histopathological Images",
+      "authors": [
+        "Dung Minh Do",
+        "Nhat-Thanh Huynh",
+        "Duc Minh Huynh",
+        "Doanh C. Bui",
+        "Khang Nguyen"
+      ],
+      "abstract": "Whole-slide images (WSIs) provide rich tissue-level and cellular-level information, but storing and transmitting high-magnification pathology data is resource-intensive. Moreover, annotating WSIs at the pixel level is labor-intensive and time-consuming. Therefore, it is important to investigate whether low-magnification pathology images with limited annotations (i.e., image-level instead of pixel-level labels) can achieve performance comparable to high-magnification images. This paper presents a systematic benchmark study on weakly supervised histopathological image segmentation under different low-resolution storage settings. Starting from high-resolution image patches, we simulate lower-magnification inputs and reconstruct them to the original size using interpolation and deep learning-based reconstruction methods before applying the weakly-supervised segmentation pipeline. This framework enables a quantitative evaluation of how weakly supervised methods respond to different levels of resolution degradation. Experimental results show that reconstruction quality metrics alone are insufficient to predict downstream segmentation performance. In particular, the study identifies a critical degradation point where the localization of small-scale structures declines significantly. These findings provide practical guidance for designing efficient digital pathology storage systems while maintaining reliable automated analysis. Code is available at https://github.com/Dung-Dx/LowMagWSS",
+      "published": "July 12, 2026",
+      "published_raw": "2026-07-12T14:23:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10783v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10783v1"
+    },
+    {
+      "id": "2607.10605v1",
+      "title": "End-to-End Real-Time Drone-Based Person Detection Framework Using Deep Learning",
+      "authors": [
+        "Payel Sarmah",
+        "Ayush Ranjan",
+        "Piyush Kaushik Bhattacharyya",
+        "Anil Kr. Shaw",
+        "Pradip Kr. Das"
+      ],
+      "abstract": "In recent years, Unmanned Aerial Vehicles (UAVs) or drones have gained rapid response in terms of security, search and rescue (SAR), border surveillance, etc. Existing monitoring frameworks often struggle to maintain detection consistency when targets undergo significant scale variations due to altitude changes, leading to critical information gaps. To address this issue, this work proposes an integrated real-time detection pipeline for detecting targets through the wireless live drone video feed. Build upon YOLOv8-nano architecture, extensive flight experiments were conducted to determine the detection performance across multiple flight altitudes. Trained on VisDrone2019 dataset, the results of YOLOv8-nano model achieves 57.4%, 41%, 44.8% and 20.3% in precision, recall, mAP and mAP50:95 respectively. While demonstrating on real environment, this analysis revealed that the algorithm achieves near-total detection reliability at altitudes between 16 and 25 meters with the detection frame rate consistently maintained above 41 FPS and reaching a peak of 50 FPS. However, the goal of this work is to enable real-time person detection from an aerial platform via wireless transmission. This approach effectively addresses the dual challenges of identifying targets at varying scales and ensuring near-to-accurate localization during aerial observation.",
+      "published": "July 12, 2026",
+      "published_raw": "2026-07-12T06:55:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10605v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10605v1"
+    },
+    {
+      "id": "2607.10491v1",
+      "title": "EvidentialRAG: Quantifying and Mitigating Information Conflict in Multi-Source Retrieval-Augmented Generation via Evidential Deep Learning",
+      "authors": [
+        "S M Asif Hossain",
+        "Ruksat Khan Shayoni",
+        "M. F. Mridha"
+      ],
+      "abstract": "Retrieval-augmented generation grounds large language models in external evidence, but most pipelines still treat retrieved passages as deterministic and mutually consistent context. In open information environments, retrieved sources may disagree because of temporal drift, source error, ambiguity, or genuine uncertainty. This paper introduces ERAG, an uncertainty-aware RAG framework that converts retrieved chunks into probabilistic evidence before generation. A lightweight evaluator extracts candidate claims and maps chunk-level support to Dirichlet evidence. A conflict-preserving Dempster-Shafer fusion rule then transfers unresolved disagreement into epistemic uncertainty rather than normalizing it away. The generator is routed to direct answering, conflict-aware answering, or abstention according to the fused uncertainty score. Experiments on CRAG, ConflictQA, and MuSiQue show that ERAG remains competitive with the strongest matched baseline on standard question answering while improving behavior under conflict. On the CRAG ambiguous subset, hallucination decreases from 45.3% for Corrective RAG to a human-calibrated estimate of 34.8%, conflict resolution increases from 35.2% to 51.2%, and expected calibration error improves to 0.122. These results suggest that evidential modeling is a practical mechanism for trustworthy information processing in foundation-model-based retrieval systems.",
+      "published": "July 11, 2026",
+      "published_raw": "2026-07-11T21:56:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10491v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10491v1"
+    },
+    {
+      "id": "2607.10410v1",
+      "title": "TSCoNet: A Two-Stage Copula CNN-LSTM for Uncertainty-Aware Spatio-Temporal Forecasting",
+      "authors": [
+        "Jongwook Kim",
+        "Jong-Min Kim"
+      ],
+      "abstract": "Reliable forecasting of several interrelated environmental variables - such as regional precipitation and temperature, or other correlated geophysical fields - across many locations calls for accurate predictions accompanied by trustworthy statements of their uncertainty. Modern deep-learning models forecast such variables accurately but usually report no uncertainty, and forcing them to output uncertainty through maximum likelihood tends to degrade their accuracy, especially when the variables are strongly correlated. Motivated by this tension, we develop TSCoNet, a two-stage convolutional-recurrent model coupled with a Gaussian copula that jointly forecasts multiple variables over space and time while quantifying predictive uncertainty. The method first learns accurate mean forecasts and then, holding the mean fixed, refines a shared representation to estimate the predictive variance, yielding calibrated prediction intervals after a standard recalibration, so that uncertainty is added without sacrificing point accuracy. We study the approach on simulated non-stationary spatial fields on the sphere and on a real dataset of monthly precipitation and temperature for fifty cities over 2000-2020. The model matches the accuracy of a strong deterministic forecaster while supplying calibrated prediction intervals that the deterministic model cannot, giving a single tool that provides both accurate point forecasts and reliable uncertainty for multivariate spatio-temporal data.",
+      "published": "July 11, 2026",
+      "published_raw": "2026-07-11T17:28:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10410v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10410v1"
+    },
+    {
+      "id": "2607.10388v1",
+      "title": "The evolution of AI from image interpretation toward scientific inference in nanoparticle electron microscopy",
+      "authors": [
+        "Evropi Toulkeridou",
+        "Jiafei Li",
+        "Leonardo Lari",
+        "Panagiotis Grammatikopoulos"
+      ],
+      "abstract": "Artificial intelligence (AI) is transforming electron microscopy by enabling quantitative analysis of increasingly large and complex datasets for nanoparticle characterization. Recent advances in machine learning (ML) and deep learning (DL) have expanded microscopy from a descriptive imaging technique into a data-driven platform for structural interpretation, dynamic analysis, and scientific inference. This review examines AI methodologies for nanoparticle electron microscopy, focusing on transmission electron microscopy (TEM), high-resolution transmission electron microscopy (HRTEM), scanning transmission electron microscopy (STEM), and in situ TEM. The discussion is organized around the principal challenges in nanoparticle characterization, including particle detection, segmentation, morphology quantification, atomic-resolution restoration, defect identification, two-dimensional-to-three-dimensional structural inference, and analysis of dynamic processes in situ. We review computational approaches from conventional ML and convolutional neural networks to transformer architectures, self-supervised learning, foundation models, multimodal AI, and physics-informed learning. We further discuss integrating microscopy data with simulations, metadata, and autonomous experimentation to relate nanoparticle structure, dynamics, synthesis conditions, and functional properties. The advantages, limitations, benchmarking, and data requirements of current methodologies are critically assessed. Finally, emerging opportunities for foundation models, AI-guided microscopy, closed-loop experimentation, and autonomous materials discovery are discussed. By integrating advances across computer vision, materials informatics, and electron microscopy, this review highlights the role of AI in next-generation nanoparticle characterization and accelerated materials discovery.",
+      "published": "July 11, 2026",
+      "published_raw": "2026-07-11T16:35:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10388v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10388v1"
+    },
+    {
+      "id": "2607.10208v1",
+      "title": "Exploratory Analysis of Deep Learning Models for Forecasting Meteorological Parameters in the Agricultural Sector",
+      "authors": [
+        "Piotr Sikora",
+        "Sotirios Kontogiannis"
+      ],
+      "abstract": "Accurate meteorological forecasting is essential for agricultural planning, irrigation management, and environmental decision support. This study conducts a comparative evaluation of recurrent and hybrid deep learning architectures for multivariate forecasting of reference evapotranspiration ($ET_0$), vapour pressure deficit (VPD), wind speed, and the sine and cosine components of wind direction. The analysis utilizes 134,376 hourly observations from Ioannina, Greece, spanning January 2011 to April 2026, sourced from ERA5 via the OpenMeteo Historical Weather API. Single and multi-layer GRU and LSTM networks are compared with hybrid 1D-CNN-GRU and 1D-CNN-LSTM models for two forecasting tasks: a 24-hour next-day forecast and a 168-hour week-ahead forecast. Performance is evaluated using normalized root mean squared error, the coefficient of determination, and a composite Weighted Quotient Score (WQS). The most effective purely recurrent models are a 64-unit LSTM for the 24-hour horizon, with a WQS of 0.816755, and a 1024-unit GRU for the 168-hour horizon, with a WQS of 0.779465. The hybrid CNN-GRU models achieved the highest overall scores of 0.827535 and 0.782863 for the 24-hour and 168-hour horizons, but with additionally more number of units respectively to LSTM models, while the CNN-LSTM models yield nearly identical results with substantially fewer parameters. Compared to the corresponding recurrent baselines, the hybrid models improve WQS by 1.22--1.63\\% at 24 hours and by 0.44--0.45\\% at 168 hours, indicating that convolutional feature extraction is more beneficial for short-term forecasting.",
+      "published": "July 11, 2026",
+      "published_raw": "2026-07-11T08:39:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10208v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10208v1"
+    },
+    {
+      "id": "2607.10188v1",
+      "title": "BiLoG-Net: A Bi-Context Location-Guided Network for Breast Mass Segmentation and Malignancy Classification in Mammography",
+      "authors": [
+        "Abu Fatema Mohammad Abdun Noor",
+        "Md Imam Ahasan",
+        "Md Samiul Ahasan",
+        "Kah Ong Michael Goh",
+        "S M Hasan Mahmud",
+        "Raihana Zannat"
+      ],
+      "abstract": "Breast cancer remains the most commonly diagnosed malignancy among women worldwide, yet accurate detection and characterization of breast masses in mammography remain challenging due to subtle intensity variations, heterogeneous tissue densities, and indistinct lesion boundaries that complicate radiological interpretation. To address these limitations, we propose BiLoG-Net, a deep learning framework that jointly performs breast mass segmentation and malignancy classification through bi-context location-aware feature modeling and segmentation-guided attention mechanisms. Our architecture integrates a novel encoder-decoder paradigm with Fire-based feature extraction, lightweight global and local feature enhancement modules, and adaptive location-aware gating to simultaneously capture long-range contextual dependencies and fine-grained boundary-sensitive details. Unlike conventional multi-stage pipelines, our tightly coupled multi-task design enables mutual reinforcement between pixel-level localization and image-level diagnosis, reducing error propagation while producing spatially grounded malignancy predictions. Evaluated on CBIS-DDSM and INBreast benchmarks, BiLoG-Net achieves state-of-the-art performance with Dice scores of 94.20% and 93.10%, classification accuracies of 95.20% and 93.60%, and AUC values of 97.10% and 96.00%, respectively, substantially outperforming existing CNN and transformer-based baselines. By combining precise boundary delineation with reliable malignancy assessment in a single end-to-end model, this work holds strong potential for clinical computer-aided detection systems, helping radiologists prioritize suspicious cases and improve screening efficiency in busy clinical settings.",
+      "published": "July 11, 2026",
+      "published_raw": "2026-07-11T08:04:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10188v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10188v1"
+    },
+    {
+      "id": "2607.10077v1",
+      "title": "TabLoRA: Parameter-Efficient Low-Rank Ensemble Learning for Large-Scale Tabular Data",
+      "authors": [
+        "Jiaqi Luo",
+        "Shixin Xu"
+      ],
+      "abstract": "Tabular learning is still dominated by gradient-boosted decision trees (GBDTs), while recent deep learning approaches have become increasingly competitive. However, applying deep tabular models to large-scale datasets remains challenging, as large sample sizes, high feature dimensionality, or many target classes can introduce substantial computational cost. We propose TabLoRA, a parameter-efficient trainable neural ensemble for large-scale tabular learning. Instead of using fully independent ensemble backbones, TabLoRA shares a common backbone across predictors and introduces predictor-specific low-rank adaptations, enabling ensemble-style prediction without full parameter duplication. Across benchmarks, TabLoRA achieves a favorable balance between predictive performance and practical efficiency compared with GBDT methods and recent deep learning baselines under the same resource constraints. Memory analysis and ablation studies further show that the proposed design improves the feasibility of neural ensemble learning while preserving much of the benefit of full ensembles.",
+      "published": "July 11, 2026",
+      "published_raw": "2026-07-11T02:07:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.10077v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.10077v1"
+    },
+    {
+      "id": "2607.09998v1",
+      "title": "Vilya-1: An all-atom foundation model for macrocycle structure prediction and design",
+      "authors": [
+        "Vilya Research",
+        " :",
+        "Pascal Sturmfels",
+        "Milad Salem",
+        "Naozumi Hiranuma",
+        "Stephen Rettie",
+        "Xiaoliang Pan",
+        "Benjamin D. Sellers",
+        "Adam P. Moyer",
+        "Patrick J. Salveson",
+        "Ivan Anishchanka"
+      ],
+      "abstract": "Macrocyclic peptides are an increasingly important therapeutic modality, but existing computational methods for modeling their structures and properties are limited in scope and do not generalize well across the synthetically accessible chemical space. In this work, we introduce Vilya-1, a deep learning model that addresses two central challenges in macrocycle design: sampling biologically relevant conformations across arbitrary chemistries and predicting key developability properties such as membrane permeability. Vilya-1 operates on a uniform all-atom representation and is trained on heterogeneous structural datasets spanning diverse topologies and chemical classes. Across a broad set of macrocycles composed of canonical and non-canonical residues, Vilya-1 substantially improves geometric accuracy relative to physics-based methods, co-folding networks, and deep-learning conformer generators, while maintaining broad chemical coverage that extends to small molecules. Vilya-1 also supports generative applications, enabling the design of novel macrocycles with tailored chemical, structural, and property profiles. Together, these capabilities establish Vilya-1 as a foundation model for accelerating the development of next-generation macrocycle therapeutics.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T21:52:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09998v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09998v1"
+    },
+    {
+      "id": "2607.09948v1",
+      "title": "Artificial Intelligence Across the Cardiac Amyloidosis Diagnostic Pathway: From Single-Modality Detection to Multimodal Clinical Integration",
+      "authors": [
+        "Diana Shadibaeva",
+        "Rochak Dhakal",
+        "Kui Zhang",
+        "Xiaofeng Yang",
+        "Saurabh Malhotra",
+        "Weihua Zhou"
+      ],
+      "abstract": "Cardiac amyloidosis (CA) is increasingly recognized but remains substantially underdiagnosed, because its clinical and imaging phenotype overlaps with more common cardiomyopathies. Definitive subtype assignment and management further require integration of multimodal evidence to distinguish transthyretin from light chain disease. Machine learning and deep learning have been applied across the diagnostic and management pathway. These applications span ECG, echocardiography, and health record-based case finding, as well as CMR and nuclear interpretation, including SPECT/CT biomarker quantification, prognostic modeling, and treatment response assessment. This narrative review synthesizes these studies by clinical tasks, namely screening, detection, quantification, prognosis, and treatment response monitoring, rather than by input modality. This task-based organization clarifies why apparently similar AI models require different cohorts, reference standards, evaluation metrics, and implementation thresholds. The evidence reveals a maturity gradient. Binary detection and AI assisted quantification on bone scintigraphy and SPECT/CT are closest to clinical translation. Detection is supported by large externally validated cohorts, and quantification by interpretable, outcome linked measurement of myocardial tracer burden. By contrast, subtype aware classification, prognostic risk stratification, and treatment response monitoring remain at an early stage. These tasks are limited by small cohorts, enriched retrospective designs, heterogeneous labels, incomplete external validation, and uncertain calibration in realistic prevalence settings. Across tasks, high discrimination alone is insufficient.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T20:02:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09948v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09948v1"
+    },
     {
       "id": "2607.09537v1",
       "title": "GatedLinear: Adaptive Routing of Complementary Linear Bases for Time Series Forecasting",
@@ -100,219 +304,25 @@
       "arxiv_link": "http://arxiv.org/abs/2607.09063v1"
     },
     {
-      "id": "2607.08978v1",
-      "title": "Federated Low-Rank Koopman Learning for Multivariate Time-Series Anomaly Detection in IoT Systems",
+      "id": "2607.09812v1",
+      "title": "CHM-Net: Center Heatmap-driven Macro-Micro Modeling Network for MRI-based Microbial Density Stratification",
       "authors": [
-        "Tung-Anh Nguyen",
-        "Van-Phuc Bui",
-        "Anh Tuyen Le",
-        "Kim Hue Ta",
-        "Minh Thuy Le",
-        "J. Andrew Zhang",
-        "Xiaojing Huang"
+        "Jiaming Liang",
+        "Haolin Chen",
+        "Tingting Li",
+        "Bowen Yu",
+        "Qianyan Long",
+        "Tinghe Zhang",
+        "Xi Zhong",
+        "Xiaowei Hu",
+        "Xiaoqi Sheng",
+        "Hongmin Cai"
       ],
-      "abstract": "Distributed IoT systems generate multivariate time-series streams for monitoring physical assets, servers, and embedded sensing platforms. Detecting abnormal temporal behavior is critical for fault diagnosis, predictive maintenance, and security. However, practical IoT anomaly detection is hindered by decentralized and non-IID data, limited bandwidth, and the constrained computation and memory of edge devices. This paper proposes FedKAD, a resource-efficient federated Koopman anomaly detection framework for distributed IoT multivariate time series. Unlike deep-learning-based anomaly detectors that require training and communicating large neural models, FedKAD learns normal temporal dynamics through lightweight sliding-window Koopman representations. Federated training is formulated as a low-rank consensus problem, where raw sensor streams and local reduced dynamics remain on device while only compact subspace variables are exchanged with the server. To optimize the shared representation under orthonormality constraints, we develop a federated Stiefel-ADMM algorithm and provide convergence and stationarity analysis under partial client participation. During inference, each client detects anomalies locally by measuring the prediction residual between observed future trajectories and the learned Koopman dynamics. Experiments on four widely used multivariate time-series anomaly detection benchmarks show that FedKAD maintains or improves detection performance compared with federated deep-learning baselines. More importantly for IoT deployment, FedKAD provides up to $2.1\\times10^3$ faster training, $80\\times$ lower communication, and $79\\times$ lower inference latency than neural baselines, confirming its suitability for resource-constrained edge devices.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T22:48:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08978v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08978v1"
-    },
-    {
-      "id": "2607.08969v1",
-      "title": "Developing Machine Learning Models of Subgrid Turbulent Transport for Quiet Sun 3D Radiative Hydrodynamic Simulations",
-      "authors": [
-        "Rimsha Hameed Syeda",
-        "Dustin Kempton",
-        "Viacheslav Sadykov",
-        "Irina Kitiashvili",
-        "Rafal Angryk"
-      ],
-      "abstract": "Numerical modeling of solar plasma dynamics is affected by the resolution of the computational grid. This often requires the estimation of subgrid processes related to the small-scale flow turbulence, as these processes play a critical role in momentum transport and energy dissipation. In this work, we investigate the use of deep learning techniques as surrogate models for subgrid turbulent transport in realistic hydrodynamic simulations of the quiet Sun. We describe the development of a 3D Convolutional Neural Network (CNN) to capture spatial dependencies in 3D velocity fields, leveraging different activation functions, as well as different architectural designs. We specifically focus on the prediction of Reynolds stress tensor components. The resultant model integrates velocity vector components and scalar features, such as plasma density, to enhance prediction accuracy. We compare the 3DCNN model to other types of models, such as a Multilayer Perceptron (MLP) and physics-based Gradient and Smagorinsky models, and show that the final model design reconstructs the Reynolds stress tensor components more accurately. Specifically, a 3DCNN model achieves an average improvement of ~31% on diagonal components and ~8% on the off-diagonal components of the stress tensor. Additionally, we show that applying a logarithmic data transformation of the target stress tensor components, to handle heavily skewed data, improves model performance. Results demonstrate the potential of deep learning, particularly CNNs, to approximate Reynolds stress tensor components for the upper solar convection zone and lower atmosphere, making them a viable candidate for modeling subgrid processes and a promising alternative to traditional turbulence models.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T22:12:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08969v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08969v1"
-    },
-    {
-      "id": "2607.08867v1",
-      "title": "Secure-by-Disguise: A Systematic Evaluation of Image Disguising for Confidential Medical Image Modeling",
-      "authors": [
-        "Jason Rojas",
-        "Jiajie He",
-        "Yash Patel",
-        "Yuechun Gu",
-        "Zeyun Yu",
-        "Keke Chen"
-      ],
-      "abstract": "Cloud-based deep learning enables large-scale medical image analysis but raises significant privacy concerns when sensitive patient images are outsourced for model development. Image disguising has recently emerged as a promising privacy-enhancing technology (PET) that transforms images into visually unintelligible representations while preserving information for downstream learning. We established a unified framework to evaluate representative methods, DisguisedNets and NeuraCrypt, across four datasets involving classification and semantic segmentation tasks. Our analysis assessed predictive utility, efficiency, and robustness against reconstruction attacks. Results showed that image disguising performance varies significantly between tasks; while methods preserved utility for medical image classification, they caused substantial degradation in dense semantic segmentation. Specifically, Randomized Multidimensional Transformation (RMT) offered the optimal balance of performance and security, whereas AES-based disguising severely impacted utility. Furthermore, regression-based reconstruction attacks effective on natural images proved considerably less successful on realistic medical images. These findings provide a systematic assessment of PET suitability for confidential medical AI applications.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T18:43:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08867v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08867v1"
-    },
-    {
-      "id": "2607.08843v1",
-      "title": "How are linear representations learned? Exact solutions to the dynamics of abstraction",
-      "authors": [
-        "William W. Yang",
-        "Andrew M. Saxe",
-        "Peter E. Latham"
-      ],
-      "abstract": "In artificial and biological neural networks, concepts are often encoded as consistent linear directions in representation space. In deep learning, this idea is known as the linear representation hypothesis and underpins many interpretability and control methods based on linear probes, from concept detection to activation steering. Yet while prior work has studied whether such directions should exist $\\textit{after}$ training, the dynamics of how they emerge $\\textit{during}$ training remain poorly understood. Here, we develop a framework to study the alignment of concept directions during training - a process we call \"abstraction\". In a minimal linear network setting, we obtain exact solutions for the full trajectory of abstraction. These solutions reveal key analytic principles governing abstraction: (i) data and target geometry jointly determine abstraction at the end-of-learning, (ii) abstraction improves with network depth, and (iii) initialization scale controls the maximum abstraction reached during training. Extending our theory to nonlinear networks, we analyze how the choice of nonlinearity affects abstraction dynamics: erf networks approximate the linear theory, while abstraction in ReLU networks depends less on target geometry and more on input geometry. Across both, we prove a striking attenuation law: both nonlinearities weaken abstraction in activations relative to preactivations. We find evidence for this law in open models (DINOv3, Gemma 4) and apply our theory to improve linear probe generalization in LLMs. Together, our results provide a dynamical theory of abstraction with implications for interpretability and control.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T18:04:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08843v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08843v1"
-    },
-    {
-      "id": "2607.08717v1",
-      "title": "Deep Learning for Joint Narrowband Interference Cancellation and Soft Demodulation in OFDM Systems",
-      "authors": [
-        "Emmanouil Kavvousanos",
-        "Francky Catthoor",
-        "Vassilis Paliouras"
-      ],
-      "abstract": "Narrowband interference (NBI) severely degrades orthogonal frequency-division multiplexing (OFDM) systems by corrupting subcarriers and rendering classical soft demodulation ineffective. Conventional compressed-sensing (CS) mitigation exhibits high sequential latency and leaves structured, non-Gaussian residuals that cause log-likelihood ratio (LLR) unreliability, decoder saturation, and severe error floors when employing classical Gaussian demappers. We resolve this pipeline mismatch using a unified deep learning framework for joint NBI cancellation and robust soft demodulation. First, NBI-CNet employs a physics-informed convolutional architecture to estimate NBI parameters and remove multi-tone interference in a single forward pass. Without requiring prior knowledge of the active interferer count, NBI-CNet reduces computational complexity by up to 60% ($N{=}2048, Q{=}64$) compared to the state-of-the-art EOMP-IDS algorithm. Second, LLR-CNet acts as a structural whitener by mapping non-Gaussian post-mitigation residuals onto well-calibrated soft metrics. Simulations demonstrate that this joint framework eliminates the error floors inherent to traditional baselines across dense grids. Under severe interference ($\\text{SIR}{=}{-}10$ dB), the pipeline operates within a $0.2$ to $0.5$ dB SNR margin of the optimal iterative baseline at a target block error rate (BLER) of $10^{-4}$. Under mild interference ($\\text{SIR}{=}10$ dB) with heavy spectral overlap ($Q{=}12$), where classical greedy algorithms erroneously subtract valid data components and corrupt the payload, NBI-CNet avoids signal-peak confusion to deliver a coding gain exceeding $3$ dB. Finally, the architecture circumvents the $2{\\times}10^{-4}$ error floor triggered by interferer-estimation errors, while its scale-invariant design enables robust generalization across arbitrary FFT sizes without retraining.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T17:26:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08717v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08717v1"
-    },
-    {
-      "id": "2607.08679v1",
-      "title": "Multi-Resolution Feature Stem for Diabetic Retinopathy lesion segmentation",
-      "authors": [
-        "Indranil Dutta",
-        "Taehee Jeong"
-      ],
-      "abstract": "Diabetic Retinopathy (DR) is a leading cause of preventable blindness worldwide, requiring automated lesion segmentation using deep learning models for early detection and monitoring. However, DR lesions vary dramatically in size from tiny microaneurysms to large hemorrhages and exudates. This variability creates conflicting demands on the model architecture and input resolution, posing a challenge for effective design. This work investigates the impact of input resolution on different lesion types. Through systematic experimentation with multiple architectures (U-Net, UNet++, Vision Transformers, DeepLabV3+) at $512 \\times 512$ and $1024 \\times 1024$ resolutions, we identify a critical, counter-intuitive phenomenon where increasing input resolution has opposing effects on different lesion types. We demonstrate that while higher resolution is essential for resolving fine-grained microaneurysms, it can unexpectedly degrade performance on larger hemorrhages. This finding challenges the common assumption that higher resolution is uniformly beneficial. To address this, we propose a novel Multi-Resolution Feature Stem, an input-level pyramid integrated with a UNet++ backbone. This architecture processes multiple scales in parallel, capturing fine-grained details without sacrificing contextual information. This work contributes crucial empirical evidence of this complex, resolution-dependent behavior and a practical, parameter-efficient architecture that successfully resolves this trade-off.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T16:42:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08679v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08679v1"
-    },
-    {
-      "id": "2607.08595v1",
-      "title": "Federated Deep Learning for Privacy-Preserving Cardiovascular Disease Risk Prediction",
-      "authors": [
-        "Hyunho Mo",
-        "Djura Smits",
-        "Mahlet A. Birhanu",
-        "Maarten J. G. Leening",
-        "Daniel Bos",
-        "Pim van der Harst",
-        "Esther E. Bron"
-      ],
-      "abstract": "Cardiovascular disease risk prediction models often rely on data from a single institution or centrally pooled datasets. Extending these models across institutions could be limited by privacy regulations and constraints on sharing patient-level data. Federated learning enables collaborative model development without transferring sensitive patient data, but its application in healthcare remains challenging because datasets often differ in size, population characteristics, and outcome definitions. In this study, we present a federated deep learning approach for privacy-preserving cardiovascular disease risk prediction that integrates two population-based cohorts with different characteristics: Lifelines, including 148,230 participants meeting the study inclusion criteria with self-reported outcomes, and the Rotterdam Study, including a smaller cohort of 10,155 participants with digitally linked clinical outcomes. Model performance was primarily evaluated on the Rotterdam Study because of its complete follow-up. Deep survival models trained using federated learning achieved higher predictive performance than models trained locally without federation. For the Rotterdam Study, the C-statistic increased from 0.728 (95% CI: 0.717-0.739) to 0.739 (95% CI: 0.728-0.749). For Lifelines, the C-statistic increased from 0.783 (95% CI: 0.775-0.791) to 0.787 (95% CI: 0.780-0.792). These findings suggest that federated deep learning across heterogeneous cohorts can improve cardiovascular disease risk prediction while preserving the privacy of individual-level patient data.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T15:29:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08595v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08595v1"
-    },
-    {
-      "id": "2607.08406v1",
-      "title": "Beyond Backpropagation: Monte Carlo Method Can Train Deep Neural Networks",
-      "authors": [
-        "Hong Zhao"
-      ],
-      "abstract": "Backpropagation (BP) dominates deep learning training, but its reliance on gradients brings inherent troubles -- vanishing and exploding gradients. The pursuit of gradient-free methods has long been a goal in the field of artificial intelligence. This paper shows that indeed the simplest Monte Carlo algorithm implemented on a single GPU -- randomly mutate a parameter, keep it if the loss decreases, otherwise retry -- can practically train deep networks. This gradient-free method does not even need common techniques such as batch normalization or residual connections to directly train sufficiently deep networks. More remarkably, its flexibility extends to several nontrivial scenarios: it enables pure pruning training, supports discrete weights, accommodates unconventional transfer functions such as Gaussian, and reveals the substantial redundancy of deep networks. We have demonstrated its feasibility on deep networks with more than 20 layers, single-hidden-layer wide networks with up to 16,384 hidden neurons, and even a simple Transformer architecture trained on both image classification (MNIST) and character-level language modeling (Tiny Shakespeare). This simple gradient-free method may offer a complementary perspective for understanding the self-organization and learning mechanisms of neural networks, and also provides an alternative route for building physically inspired deep learning systems.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T12:31:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08406v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08406v1"
-    },
-    {
-      "id": "2607.08091v1",
-      "title": "Deep Learning Method for Stationary Distribution of Reflected Brownian Motion",
-      "authors": [
-        "Jim Dai",
-        "Zhanhao Zhang"
-      ],
-      "abstract": "The stationary distribution of reflected Brownian motion (RBM) plays an important role in the analysis of high-dimensional stochastic systems, yet closed-form solutions are known only for a few special cases. Computing important performance metrics, such as tail probabilities, is even more intractable, despite their practical relevance. In this paper, we develop a deep learning approach that accurately and efficiently learns the Laplace transform of high-dimensional RBMs based on the basic adjoint relationship (BAR). Our framework combines a careful design of the loss function, training data sampling procedure, and neural network architecture. We evaluate the proposed method on RBM instances with known ground-truth tail probabilities and demonstrate near-perfect prediction in high-dimensional settings, highlighting its potential as a general tool for analyzing stochastic systems beyond analytically tractable regimes. Our code can be found at https://github.com/zhangz73/NN4MGF.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T03:57:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08091v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08091v1"
-    },
-    {
-      "id": "2607.08014v1",
-      "title": "FedTR: Federated Learning Framework with Transfer Learning for Industrial Visual Inspection",
-      "authors": [
-        "Vikash Sathiamoorthy",
-        "Shuo Huai",
-        "Hao Kong",
-        "Di Liu",
-        "Wendy Yong Yi Loy",
-        "Christian Makaya",
-        "Daren Ho",
-        "Ravi Subramaniam",
-        "Qian Lin",
-        "Weichen Liu"
-      ],
-      "abstract": "Federated learning (FL) is a collaborative learning scheme to train deep learning models, where collaborating parties can consolidate their models without sharing local data with other parties, hence preserving data privacy. Nevertheless, when implementing FL in Industrial visual inspection (IVI), the constraints posed by limited data availability and the intricate nature of the inspection tasks significantly impact the performance of the resulting model. This paper introduces FedTR, a novel FL framework incorporating transfer learning designed for Autonomous IVI, focusing on the challenging task of identifying label defects through end-to-end text recognition. Transfer learning is a method that leverages the knowledge of a pre-trained model to adapt to a different dataset. FedTR initially trains the model using a publicly available dataset, after which performs the essential federated learning process with model fine-tuning on the distributed and limited private data. Extensive experiment results demonstrate the effectiveness and feasibility of FedTR on private ink cartridge datasets for label defect identification. FedTR achieves an end-to-end text recognition word-level accuracy of 95.5% and 94.2% on homogeneous and heterogeneous data respectively. Additionally, it attains performance levels that are on par with those achieved through centralized training.",
-      "published": "July 09, 2026",
-      "published_raw": "2026-07-09T00:40:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.08014v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.08014v1"
-    },
-    {
-      "id": "2607.07640v1",
-      "title": "ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation",
-      "authors": [
-        "Xuan-Thong Truong",
-        "Trung-Kien Le",
-        "Tung Kieu",
-        "Thi-Thu Nguyen",
-        "Nhat-Hai Nguyen"
-      ],
-      "abstract": "Deep learning has significantly advanced time series imputation, yet most existing architectures primarily rely on localized temporal context within the corrupted input sequence. This reliance can be limiting in real-world scenarios, where time series often exhibit non-stationary dynamics, weak temporal correlations, and infrequent patterns that are difficult to reconstruct from nearby observations alone. In this paper, we propose ALER-TI, Aligned Latent Embedding Retrieval for Time Series Imputation, a retrieval-augmented framework that explicitly leverages historical patterns to supplement degraded local context for more reliable missing-value reconstruction. The core of ALER-TI is Latent Embedding Alignment (LEA), which mitigates the representation mismatch between corrupted queries and complete historical candidates. By applying post-hoc masking in the latent space, LEA aligns candidates with the query's missingness pattern while allowing historical embeddings to be pre-computed and cached for efficient retrieval. ALER-TI is model-agnostic and can be integrated with various imputation backbones through a lightweight adaptation module. Extensive experiments on six real-world datasets under different missing rates demonstrate that ALER-TI consistently improves strong baseline models and enhances robustness across diverse imputation settings.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T16:59:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07640v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07640v1"
-    },
-    {
-      "id": "2607.07773v1",
-      "title": "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
-      "authors": [
-        "Dongyang Kuang",
-        "Zizheng Ma",
-        "Yushan Zhang",
-        "Xiaocong Zeng"
-      ],
-      "abstract": "EEG-based emotion recognition is critical for mental health monitoring and affective brain-computer interfaces, yet existing deep learning approaches often treat emotion classes as isolated labels, ignoring their psychological interdependencies. We propose a graph-regularized learning framework that conceptualizes emotions as nodes in a graph where edges encode proximity based on dimensional emotion theories. We adapt three complementary regularization strategies--Graph Label Smoothing (intuitive soft labeling), Commuting distance on graph via Graph Laplacian (spectral graph theory), and Sliced Wasserstein Distance (optimal transport on graph)--ordered by increasing computational complexity. These strategies penalize model predictions that deviate from the established emotion topology. Our framework is evaluated across three representative backbone architectures: AudioTransformer (pure transformer), Conformer (CNN-transformer hybrid), and DCGNN (causal graph neural network), demonstrating architecture-agnostic benefits. Experiments on SEED-IV (4 classes) and SEED-V (5 classes) datasets show consistent improvements: best case up to +5.42% accuracy and 39% reduction in psychologically implausible misclassifications. Ultimately, our framework help raise the upper bound of performance achievable with standard approaches. Code will be released.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T16:41:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07773v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07773v1"
-    },
-    {
-      "id": "2607.07772v1",
-      "title": "Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models",
-      "authors": [
-        "Atiq Ur Rehman"
-      ],
-      "abstract": "In this age of social media, sites like Twitter have become meeting places for people to share their views and feelings on a wide range of issues and current events as they unfold in real time. Sentiment analysis, a critical application of NLP, has become indispensable due to the massive influx of user-generated content, enabling the extraction of meaningful insights from the opinions and emotions expressed in textual data. Sentiment analysis on Twitter employs sophisticated computational techniques to categorize tweets into positive, negative, or neutral sentiments. This method not only examines individual expressions but also analyzes vast databases related to specific subjects or events. By spotting these emotions, machine learning models help improve public opinion interpretation and trend forecasting. This paper examines the effectiveness of various machine learning and deep learning approaches. Designed for this use, the system evaluates logistic regression, random forest, naïve bayes, gradient boosting, and LSTM networks, among other algorithms applied in sentiment classification. This work identifies the optimal sentiment analysis model using a Kaggle Twitter dataset that has been preprocessed through tokenization, lemmatization, and stopword elimination. Emphasizing the better performance of the LSTM approach, the model attained a training accuracy of 90.98%, a testing accuracy of 80.00%, and a micro-average ROC- AUC score of 0.92. These results show that the model outperforms conventional machine learning techniques in capturing contextual and sequential textual aspects.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T16:32:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07772v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07772v1"
-    },
-    {
-      "id": "2607.07500v1",
-      "title": "TimEE: End-to-end Time Series Classification via In-Context Learning",
-      "authors": [
-        "Jaris Küken",
-        "Shi Bin Hoo",
-        "Martin Mráz",
-        "Frank Hutter",
-        "Lennart Purucker"
-      ],
-      "abstract": "Time series classification (TSC) is dominated by a two-stage paradigm: train a feature encoder -- either from scratch on the target dataset or via pretraining on large corpora -- and then fit a task-specific classifier on top. While effective, this decoupling optimizes representation learning independently of the classification objective, requires per-dataset training, and prevents the model from exploiting label information during inference. We introduce TimEE, a 4.5M-parameter foundation model for end-to-end TSC via in-context learning. Given a labeled support set and a query time series, TimEE directly outputs a predicted class distribution in a single forward pass with no per-dataset training required. Following the prior-data fitted network (PFN) framework, TimEE is meta-trained exclusively on synthetic TSC tasks, where each task contains time series with distinct class identities arising from structured distributional shifts in the generative process. Despite seeing no real time series during pre-training, TimEE ranks first in ROC AUC (and third on accuracy) on the UCR benchmark among all compared methods, which include both foundation models and supervised deep learning baselines. To our knowledge, TimEE is the first purely synthetic-pretrained model to reach state-of-the-art performance on the UCR benchmark. These results establish end-to-end ICL with synthetic priors as a compelling, largely unexplored direction for TSC, with scaling, prior design, and richer generation mechanisms as natural avenues for improvement. Code is publicly available at http://github.com/automl/timee.",
-      "published": "July 08, 2026",
-      "published_raw": "2026-07-08T14:58:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.07500v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.07500v1"
+      "abstract": "Microbial density is clinically important for tumor assessment and treatment decision-making, and recent advances in deep learning suggest that it can be non-invasively inferred from multimodal MRI. In this work, MRI-based Microbial Density Stratification (MRI-MDS) is first investigated as a patient-level representation learning task, and Center Heatmap-driven Macro-micro modeling Network (CHM-Net) is introduced for this task. CHM-Net first establishes the link between imaging phenotypes and microbial states through center heatmap-guided small-lesion response localization. Building upon this, it constructs patient-level macro-micro evidence from localized heatmap responses for microbial density prediction. Experiments on the novel GBNPC 2026 dataset constructed for MRI-MDS demonstrate the effectiveness of CHM-Net, achieving superior performance over representative baselines with a 12.06% absolute ACC gain over the strongest competing result. Additionally, auxiliary validation on two 3D medical image datasets further verifies its robustness across volumetric medical image classification scenarios. The project is available at https://anonymous.4open.science/r/CHM-Net-942E/.",
+      "published": "July 10, 2026",
+      "published_raw": "2026-07-10T03:08:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.09812v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.09812v1"
     }
   ]
 }
