@@ -1,7 +1,148 @@
 {
-  "last_updated": "2026-07-15T01:09:32.422692",
+  "last_updated": "2026-07-16T01:18:51.148114",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.13891v1",
+      "title": "PiVoT: A Variational Solution for Real-time Large-scale Multi-object Detection and Tracking under Heavy Clutter",
+      "authors": [
+        "Runze Gan",
+        "Qing Li",
+        "Simon J. Godsill",
+        "Mike E. Davies",
+        "James R. Hopgood"
+      ],
+      "abstract": "Multi-object detection and tracking from noisy point clouds remain challenging in many data-scarce radar applications. Current Bayesian trackers based on Poisson measurement models offer a training-free solution but struggle to achieve accuracy and efficiency under severe clutter, large object populations, and full-resolution Doppler point clouds. We address this with PiVoT, a fast, clutter-resilient multi-object tracker for both positional and Doppler measurements. PiVoT performs end-to-end detection and tracking of a large and time-varying number of objects without external clustering or detectors, through joint inference of object states, shapes, existence probabilities, data association, and measurement rates. Its efficiency is driven by several variational inference innovations, such as theoretically justified birth pruning, quadratic-to-linear complexity reductions for exact updates, and a computationally efficient Doppler Poisson model. Experiments show that PiVoT substantially outperforms existing Bayesian trackers in challenging scenes, while also demonstrating exceptional scalability to a thousand objects, robustness to clutter visually inseparable from objects, and real-time operation on full-scale modern automotive radar datasets, where it attains performance comparable to a deep-learning detection benchmark as a training-free joint detector and tracker.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T14:35:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13891v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13891v1"
+    },
+    {
+      "id": "2607.13826v1",
+      "title": "Multimodal Assessment of Pancreatic Cancer Resectability Using Deep Learning",
+      "authors": [
+        "Vincent Ochs",
+        "Christoph Kuemmerli",
+        "Florentin Bieder",
+        "Julia Wolleb",
+        "Joel L. Lavanchy",
+        "Julia Ruppel",
+        "Jan Liechti",
+        "Stephanie Taha-Mehlitz",
+        "Christian Andreas Nebiker",
+        "Beat Mueller",
+        "Giuseppe Kito Fusai",
+        "Joerg-Matthias Pollok",
+        "Anas Taha",
+        "Philippe C. Cattin",
+        "Sebastian Staubli"
+      ],
+      "abstract": "Accurate determination of pancreatic ductal adenocarcinoma (PDAC) resectability relies on evaluating how the tumor interacts with major peripancreatic vessels on CT imaging, yet expert assessment often shows substantial variability. We introduce a fully automated multimodal deep learning framework that jointly analyzes 3D contrast enhanced CT and structured clinical information to classify patients into the three National Comprehensive Cancer Network (NCCN) resectability categories (upfront resectable, borderline resectable, locally advanced). The approach uses a Swin-UNETR backbone to obtain anatomy aware image representations through auxiliary segmentation of pancreas, tumor, and vascular structures. These features are fused with a compact clinical embedding derived from 17 routinely collected variables and processed by a lightweight classification head. Model training is guided by a dynamic multitask objective that adapts the balance between segmentation and classification based on current tumor Dice performance, promoting feature representations that remain both anatomically informed and discriminative.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T13:32:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13826v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13826v1"
+    },
+    {
+      "id": "2607.13699v1",
+      "title": "Machine learning development for quantum computing and neutrino physics",
+      "authors": [
+        "Annalisa De Lorenzis"
+      ],
+      "abstract": "This thesis investigates the application of machine-learning methods in the context of quantum computing and neutrino physics, with particular emphasis on the construction of effective representations for complex, high-dimensional data. The first part of the work is devoted to Quantum Extreme Learning Machines (QELMs), a hybrid quantum--classical framework in which classical data are encoded into quantum states and processed through fixed quantum dynamics, while learning is performed by a classical readout layer. Within this framework, we analyze the role of encoding strategies, feature-reduction methods, Hamiltonian structure, and measurement, with particular focus on the relationship between quantum dynamics, expressivity, entanglement, and classical simulability. The second part of the thesis concerns the application of deep learning to the analysis of images produced by water Cherenkov detectors in neutrino physics. Convolutional architectures, including residual networks, are developed for the classification of complex events in realistic simulated datasets, showing that such models can effectively extract relevant information from detector data. Taken together, these results highlight the potential of machine learning, in both its classical and quantum forms, as a powerful framework for the analysis of complex data in fundamental physics, while also outlining relevant challenges and directions for future research.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T11:01:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13699v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13699v1"
+    },
+    {
+      "id": "2607.13631v1",
+      "title": "How the Hessian-Spectrum of Neural Networks Depends on Data",
+      "authors": [
+        "Jasraj Singh",
+        "Enea Monzio Compagnoni",
+        "Antonio Orvieto"
+      ],
+      "abstract": "The Hessian matrix is an important quantity of interest when it comes to studying the loss landscape and optimization dynamics in deep learning, as well as designing measures of generalization, second-order learning algorithms, etc. Prior works have focused on empirical results or pursued a theoretical treatment under overly simplified settings. In this work, we derive the eigenvalues of the Hessian of linear networks with arbitrary widths and depths, and datasets with an arbitrary number of samples, features, and labels. Importantly, for classification tasks with MSE loss, we identify that the sharpness of the solution is directly related to the maximum proportion of samples belonging to any class. We empirically validate our predictions and systematically analyze the effects of shedding the impractical assumptions one at a time, as well as incorporating nonlinearities. We observe that our predictions are considerably robust in most cases, allowing us to extend our conclusions to more practical learning setups.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T09:25:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13631v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13631v1"
+    },
+    {
+      "id": "2607.13494v1",
+      "title": "A VAE-Driven Multi-Task Satellite-Aided Semantic Communication Framework for 6G-Enabled Connected Autonomous Vehicles",
+      "authors": [
+        "S. M. Abtahiul Alam",
+        "Niloy Das",
+        "Apurba Adhikary",
+        "Yu Qiao",
+        "Zhu Han",
+        "Choong Seon Hong"
+      ],
+      "abstract": "The development of smart transportation systems and the introduction of 6G wireless communication technologies have significantly changed vehicle network topologies. Future connected autonomous vehicle (CAV) networks require bandwidth-efficient, reliable, and low-latency communication for safety-critical applications such as traffic sign recognition and decision-making. Conventional communication systems transmit raw data regardless of task relevance, which is inefficient in resource-constrained satellite channels where uplink bandwidth is scarce and propagation losses are large. Semantic communication addresses this limitation by transmitting task-relevant information instead of full signal representations. It extracts and conveys essential semantic features and leverages deep learning to optimize task performance at the receiver. Therefore, we present a Variational Autoencoder (VAE)-based multi-task semantic communication framework for satellite-assisted autonomous driving. Unlike deterministic autoencoder-based methods, the proposed model uses probabilistic latent representations for more robust and efficient encoding. The learned features are transmitted over noisy wireless channels to perform traffic sign reconstruction and classification. The framework is trained end-to-end to jointly optimize both tasks. Results show that the proposed approach achieves significant bandwidth reduction of up to 87.23\\% to 98.17\\% while maintaining stable performance across varying signal-to-noise ratio conditions.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T06:49:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13494v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13494v1"
+    },
+    {
+      "id": "2607.13423v1",
+      "title": "Temperature Scaling Is Not Enough: Calibration Gaps Under Human Label Distributions",
+      "authors": [
+        "Wisdom Dogah"
+      ],
+      "abstract": "Temperature scaling is the dominant post-hoc calibration method in modern deep learning. Its theoretical justification rests on an assumption that is rarely stated explicitly: that ground-truth labels are one-hot and deterministic. In practice, labels are frequently soft, crowd-sourced, or genuinely distributional, reflecting real disagreement among human annotators rather than annotation noise. We study whether temperature scaling retains its calibration properties when this assumption is violated, and whether any resulting degradation depends on model scale. Using CIFAR-10H and ChaosNLI, two publicly available datasets with human-annotated soft label distributions, we evaluate three model scales per modality under both hard one-hot and soft distributional label targets. Across all nine configurations we find a positive soft-label calibration gap: temperature scaling calibrated on hard labels consistently underperforms an oracle calibrated directly on soft labels, with Brier Score gaps ranging from 0.002 to 0.134. The gap grows monotonically with model scale in the vision domain and on the SNLI-derived split of ChaosNLI, and is substantially larger in the language domain (mean gap 0.079) than in vision (mean gap 0.003). A scale-ordering reversal on the MNLI-derived split remains after matched-domain training; we treat it as inconclusive for the scale hypothesis and attribute it primarily to near-chance accuracy on that split. As a second post-hoc baseline, multiclass isotonic regression yields the same qualitative conclusion: positive soft-label gaps in all nine configurations, and larger gaps in language than in vision. These findings suggest that calibration protocols built on majority-vote labels systematically misstate model reliability wherever label ambiguity is structural, with direct consequences for deployment in safety-critical settings.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T03:52:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13423v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13423v1"
+    },
+    {
+      "id": "2607.13246v1",
+      "title": "Reassessing Muon for Matrix Factorization",
+      "authors": [
+        "Ali Parviz",
+        "Gal Mishne",
+        "Alex Cloninger"
+      ],
+      "abstract": "Muon has recently emerged as a strong optimizer for large-scale deep learning, where it reshapes gradient updates through approximate orthogonalization and has been reported to outperform Adam and AdamW in large language model training. Its empirical success has motivated a growing body of theoretical work that interprets Muon as steepest descent under the spectral norm. Yet it remains unclear which of Muon's advantages stem from its update rule itself and which are artifacts of the scale, architecture, and data of modern deep networks. In this work, we isolate the optimizer from these confounding factors by studying Muon on a simple, well-understood, and spectrally structured problem: low-rank matrix factorization. Through a controlled comparison against carefully tuned adaptive baselines, we find that Muon does not consistently outperform AdamW in this setting and that several previously reported advantages are sensitive to hyperparameter choices. Our results provide a more nuanced picture of when spectrum-aware orthogonalization is beneficial and argue for evaluating modern optimizers on controlled problems in addition to end-to-end benchmarks.",
+      "published": "July 14, 2026",
+      "published_raw": "2026-07-14T20:21:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13246v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13246v1"
+    },
+    {
+      "id": "2607.13123v1",
+      "title": "AI in Cyberpsychology: A systematic literature review of Cybersecurity enhancement by using AI for analyzing psychology of Victims, Attackers, and Defenders",
+      "authors": [
+        "Georg Thamer Francis",
+        "Malek Malkawi",
+        "Sevim Eyüpoğlu",
+        "Reda Alhajj",
+        "Selim Akyokuş"
+      ],
+      "abstract": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks. Cyberpsychology (CPSY) is defined as the use of psychology to enhance cybersecurity applications. Since the early 2010s, the evolution of Artificial Intelligence (AI) has increasingly integrated with CPSY, leveraging advanced data analysis to decode the distinct personality traits and behavioral patterns of victims, attackers, and defenders. In this systematic literature review (SLR), we carefully analyze 34 collected research studies of AI usage in cyberpsychology (AI-CPSY) using the preferred reporting items for systematic reviews and meta-analyses (PRISMA) methodology. The review presents a comprehensive taxonomy of the cyber-security applications, the AI methodologies used, and the psychological concepts employed across the studies . We sort the research studies into four cybersecurity applications: Anomaly Detection (AD), Vulnerability Risk Prediction (VRP), Security Awareness Training (SAT), and Authentication/Identity Verification (AIV). Within each application area, studies are further sorted according to the AI method used including machine learning (ML), deep learning (DL), natural language processing (NLP), and reinforcement learning (RL). Furthermore, the review identifies the most commonly utilized psychological concepts, quantify the datasets used in the field, and present their current implementation and deployment status. At last, it detect research gaps, present open challenges, and deduce the trending and most effective and emerging methodologies used across the AI-CPSY landscape.",
+      "published": "July 14, 2026",
+      "published_raw": "2026-07-14T17:18:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13123v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13123v1"
+    },
+    {
+      "id": "2607.12954v1",
+      "title": "Robustness of Deep Learning Models for PV Power Forecasting under NWP Forecast Errors: A Spatiotemporal and Physically Interpretable Analysis",
+      "authors": [
+        "Dandan Chen",
+        "Yan Zhao",
+        "Xuepeng Chen"
+      ],
+      "abstract": "Engineering use of AI forecasting models requires not only high nominal accuracy but also predictable behavior under uncertain inputs. In photovoltaic (PV) forecasting, this requirement is especially challenging because numerical weather prediction (NWP) errors are temporally correlated, state dependent, and physically coupled across variables. Existing evaluations, however, often rely on perfect forecast assumptions or simplistic perturbations that do not reflect these characteristics. This study presents a physically constrained robustness evaluation framework based on simulation, using virtual PV power as a controlled response variable to isolate the propagation of input uncertainty from confounders at the plant level. Six representative machine learning and deep sequence models, including PatchTST, GRU, N-HITS, and LightGBM, are evaluated under dynamic NWP perturbations with heteroscedasticity modulated by clear-sky conditions and Erbs reconstruction that preserves radiation consistency. The results show that sequence models provide stronger noise filtering and temporal resilience than a strong tabular baseline under medium to high disturbance regimes. SHapley Additive exPlanations (SHAP) and Integrated Gradients (IG) further support a feature reallocation tendency at the case level, in which predictive reliance shifts from corrupted future forecasts toward more stable historical observations and deterministic physical priors. A Pareto analysis of accuracy under clean conditions, robustness, and computational latency then translates these findings into engineering implications for robustness assessment and model selection under forecast uncertainty.",
+      "published": "July 14, 2026",
+      "published_raw": "2026-07-14T16:48:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.12954v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.12954v1"
+    },
     {
       "id": "2607.12868v1",
       "title": "Deep4ge: DNN Training Trajectories for Fault Detection and Diagnosis",
@@ -73,6 +214,22 @@
       "published_raw": "2026-07-14T10:19:07Z",
       "pdf_link": "http://arxiv.org/pdf/2607.12599v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.12599v1"
+    },
+    {
+      "id": "2607.13107v1",
+      "title": "DeepCormack: Fermi surface tomography using model-based data-driven algorithms",
+      "authors": [
+        "Georg F. B. Lovric",
+        "Bryn Drury",
+        "Carola-Bibiane Schönlieb",
+        "Stephen B. Dugdale",
+        "Ander Biguri"
+      ],
+      "abstract": "The experimental reconstruction of the 3D two-photon momentum density (TPMD) via angular correlation of electron-positron annihilation radiation (ACAR) is a particularly useful method for studying material Fermi surfaces. It does not rely on low temperatures, UHV conditions, or strong magnetic fields, and enables the study of the spin-resolved electronic structure of materials. Yet, it remains a challenging inverse problem. Typically, 10^8 positron annihilation events are measured for 3--6 projections of the TPMD at different angles. The standard reconstruction approach is an ACAR adaptation of Cormack's method (the MCM) that leverages the inherent symmetry in the crystal's structure. However, the poor signal-to-noise ratio means collecting data of sufficient quality for Fermi surface studies can take months per sample. We present DeepCormack, a family of data-driven model-based reconstruction algorithms that augments the MCM by integrating supervised deep-learning models (CNN, MLP, and UNet) at various stages. To overcome the lack of large experimental training sets, we propose a method which leverages singular value decomposition with dynamic mode decomposition to generate realistic synthetic TPMD volumes, requiring only a single reference momentum density computed via density functional theory. On test data, DeepCormack improves reconstruction quality over MCM by about 8.5 dB PSNR at 200M counts and remains stable at reduced counts, enabling significantly faster acquisition times. Generalisation to experimental data depends strongly on how well the training distribution from the reference momentum density matches the sample. We therefore recommend pairing DeepCormack with a DFT calculation of the target material to create sample-specific training data. Our proposed method offers either much higher quality reconstructions, or enables significantly faster ones, on the order of weeks.",
+      "published": "July 14, 2026",
+      "published_raw": "2026-07-14T10:10:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.13107v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.13107v1"
     },
     {
       "id": "2607.12570v1",
@@ -155,173 +312,6 @@
       "published_raw": "2026-07-13T16:57:46Z",
       "pdf_link": "http://arxiv.org/pdf/2607.11998v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.11998v1"
-    },
-    {
-      "id": "2607.11994v1",
-      "title": "Mitigating The Effect of Class Imbalance in Data with Hierarchical and Dependable Structure",
-      "authors": [
-        "Bipin Chhetri",
-        "Deepika Giri",
-        "Avishek Kadel",
-        "Rabin Kumar Karki",
-        "Akbar Siami Namin"
-      ],
-      "abstract": "Classifying cybersecurity vulnerabilities using the Common Weakness Enumeration (CWE) taxonomy is challenging due to extreme class imbalance and strong hierarchical dependencies among weakness categories. Although oversampling techniques such as Synthetic Minority Oversampling Technique (SMOTE) and Adaptive Synthetic Sampling (ADASYN) are widely adopted to mitigate class imbalance, their effectiveness for hierarchical CWE text classification remains largely unexplored. This paper proposes a Hierarchy-Aware RoBERTa framework that explicitly incorporates CWE structural information through learnable parent-class embeddings, preserving taxonomic consistency. Our experiments demonstrate that synthetic interpolation in high-dimensional embedding spaces violates the inherent parent-child constraints of the CWE hierarchy, offering only marginal benefits for classical ML models while consistently degrading deep learning architectures. Evaluated on a CWE Research Concept dataset, the proposed model achieves a weighted F1-score of 0.76 without data augmentation, outperforming all baselines with notable gains on minority classes, including the Class category whose F1-score improved from 0.40 to 0.60 over the BERT baseline. Our results suggest that hierarchy-aware representation learning is a more principled alternative to oversampling for structured vulnerability classification.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T15:58:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11994v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11994v1"
-    },
-    {
-      "id": "2607.11986v1",
-      "title": "SpikeDS: Dual Sparsity Spikformer for Perineural Invasion Prediction in 3D MRI",
-      "authors": [
-        "Induk Um",
-        "Youngung Han",
-        "Kyeonghun Kim",
-        "Yului Jeong",
-        "Jina Jeong",
-        "Hyunsu Go",
-        "Dohyun Kweon",
-        "Sungha Park",
-        "Junga Kim",
-        "Anna Jung",
-        "Suah Park",
-        "Hyuk-Jae Lee",
-        "Pa Hong",
-        "Woo Kyoung Jeong",
-        "Won Jae Lee",
-        "Ken Ying-Kai Liao",
-        "Nam-Joon Kim"
-      ],
-      "abstract": "Perineural invasion (PNI) is associated with poor prognosis in cholangiocarcinoma (CCA). However, its detection from 3D MRI remains challenging due to the subtle and spatially heterogeneous imaging signatures at the tumor periphery. Capturing such spatially sparse cues necessitates volumetric analysis of 3D MRI, but existing deep learning approaches incur prohibitive computational costs on volumetric medical images, limiting their clinical deployment. We propose Dual Sparsity Spikformer (SpikeDS), a spiking neural network architecture that jointly exploits activation sparsity from binary spike communication and spatial sparsity from window pruning based on firing rates. SpikeDS introduces Dual Sparsity Spiking Attention (DSSA), which combines two complementary mechanisms. The first is Window-based Expert Mixture Spiking Attention (W-EMSA), which selectively applies attention only to salient windows identified by their firing rates. The second is Cross-Window Spiking Self-Attention (CW-SSA), which enables global context exchange through an asymmetric scheme in which pruned windows still contribute as key-value sources. Evaluated on a clinical cohort of 139 CCA patients via 5-fold cross-validation, SpikeDS achieves an AUC of 0.753 while consuming only 14.4 mJ, surpassing the best baseline in both AUC and energy efficiency. These results suggest that dual sparsity provides an effective hardware-aware strategy for improving the efficiency of 3D spiking transformers without compromising diagnostic performance.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T14:03:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11986v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11986v1"
-    },
-    {
-      "id": "2607.11578v1",
-      "title": "DiffEEG: A Self-Supervised Denoising Diffusion Model for Learning EEG Generic Representations",
-      "authors": [
-        "Abdulkader Helwan",
-        "Lina Abou-Abbas",
-        "Hussein El Amouri",
-        "Belkacem Chikhaoui",
-        "Khadidja Henni"
-      ],
-      "abstract": "Deep learning for EEG-based seizure detection faces critical challenges: severe annotation scarcity and extreme class imbalance, where ictal events comprise less than 10\\% of clinical recordings. We present DiffEEG, a 9.6M-parameter self-supervised foundation model that addresses both limitations through denoising diffusion pre-training and reinforcement learning (RL)-based fine-tuning. Pre-trained on 1.3M unlabeled segments from the Temple University Hospital Seizure Corpus (TUHSZ), DiffEEG learns generic neural representations via a 1D U-Net with multi-head self-attention. For downstream adaptation, a reinforced decision layer employs policy gradient optimization to directly maximize F1-score, prioritizing sensitivity to rare seizure events over overall accuracy. Under strict patient-wise evaluation (279 patients, Leave-One-Fold-Out), DiffEEG achieves 61\\% accuracy and 59\\% F1 for 4-class seizure subtyping, and 81\\% accuracy with 85\\% weighted F1 for binary detection, maintaining clinically viable seizure recall (59\\%) despite extreme imbalance (6.7\\% prevalence). Segment-level evaluation establishes an upper bound of 97.6\\% accuracy, confirming strong architectural capacity. DiffEEG demonstrates that diffusion-based pre-training combined with metric-aware reinforcement learning enables clinically deployable seizure monitoring with minimal labeled data requirements.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T13:59:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11578v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11578v1"
-    },
-    {
-      "id": "2607.11530v1",
-      "title": "Learning Residual Kinematic Corrections for Continuous Neural Decoding via Reinforcement Learning",
-      "authors": [
-        "Jiamian Li",
-        "Niall McShane",
-        "Attila Korik",
-        "Naomi du Bois",
-        "Karl McCreadie",
-        "Leen Jabban",
-        "Benjamin Metcalfe",
-        "Özgür Şimşek",
-        "Damien Coyle"
-      ],
-      "abstract": "Decoding continuous three-dimensional (3D) motor imagery (MI) using non-invasive electroencephalography (EEG)-based brain--computer interfaces (BCIs) remains challenging due to signal variability and residual decoding errors. Deep learning architectures such as convolutional neural network--long short-term memory (CNN--LSTM) models can capture spatial and temporal dynamics for continuous kinematic decoding; however, systematic residual errors persist in predicted trajectories. We propose a two-stage decoding framework that applies reinforcement learning (RL) to perform residual kinematic correction on the outputs of a CNN--LSTM decoder (CNN--LSTM--RL). The RL agent is trained offline without direct EEG input and instead operates on predicted kinematic trajectories to optimize movement accuracy relative to target trajectories. Decoding performance was quantified using Pearson correlation coefficients ($r$) and Root Mean Square Errors (RMSE) along the $x, y$, and $z$ axes. Compared to CNN--LSTM applied alone, CNN--LSTM--RL improved the mean correlation from $0.5076$ to $0.7181$ ($p = 0.0005$) in 2D and from $0.6420$ to $0.7780$ ($p = 0.0059$) in VR, with relative gains of $41.5\\%$ and $21.2\\%$, respectively. Correspondingly, RMSE was reduced from $0.0890$ to $0.0532$ (2D, $p < 0.0001$) and from $0.0714$ to $0.0441$ (VR, $p < 0.0001$), representing relative reductions of $40.2\\%$ and $38.2\\%$. These findings demonstrate that this scalable framework enhances 3D BCI MI decoding by correcting kinematic errors via offline residual RL without extra neural data, advancing neurorehabilitation, prosthetics, and virtual interaction.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T13:15:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11530v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11530v1"
-    },
-    {
-      "id": "2607.11445v1",
-      "title": "Event-based Neural Decoding for Neuroprosthetic Motor Control",
-      "authors": [
-        "Khaleelulla Khan Nazeer",
-        "Sirine Arfa",
-        "Matthias Jobst",
-        "Richard George",
-        "Christian Mayr"
-      ],
-      "abstract": "A substantial number of patients experience diminished mobility due to disabilities, diseases, or accidents. Although modern prostheses, powered by deep neural networks, hold the promise of significantly enhancing the quality of life for these individuals, their widespread adoption is hindered by significant latency, energy consumption, and spatial requirements. Wired connections to external high-performance processors restrict patient mobility, while wireless connections limit the volume of information that can be transmitted to these processors. Spiking neural networks offer the potential for compressed communication and low-power inference, yet they often lag behind state-of-the-art deep learning models in various applications. In this study, we propose a high-performance neural decoding method that effectively balances task performance and efficiency. An eventbased gated recurrent unit generates a sparse communication pattern with graded spikes, surpassing classical spiking neural networks in terms of task performance. Utilising an efficient training method and sparse inference, our model presents new opportunities for on-device neural decoding.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T11:54:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11445v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11445v1"
-    },
-    {
-      "id": "2607.11349v1",
-      "title": "Inter-Stop Energy Prediction and Causal Driver Quantification for Dual-Source Trolleybuses via a Time-Aware Tabular Deep Learning Architecture",
-      "authors": [
-        "Wentao Zeng",
-        "Zijian Huang",
-        "Yiming Bie",
-        "Jiabin Wu",
-        "Jun Gong"
-      ],
-      "abstract": "Dual-source trolleybuses alternate between overhead catenary supply and on-board battery operation, creating energy-use patterns driven by route attributes, high-frequency trajectories, and hourly weather. Existing models struggle to represent these heterogeneous inputs and rarely explain the causal drivers of consumption. This paper proposes a time-aware tabular deep learning framework for inter-stop energy management. Periodic time encoding is integrated into a parameter-efficient batch-ensemble backbone to jointly learn static and sequential features, while Bayesian optimization with tree-structured density estimation tunes hyperparameters. To move beyond prediction, a three-layer causal explanation pipeline combines feature attribution for marginal effects, a linear non-Gaussian acyclic model for causal direction discovery, and a meta-learner for net average treatment effects. Experiments on the Zurich trolleybus dataset enriched with meteorological records achieve a MAPE of 6.52% and R of 0.982, outperforming ten statistical, tree-ensemble, and deep learning baselines. Ablation results show that periodic time encoding contributes most to the accuracy gain. Causal analysis identifies regenerative braking ratio and average speed as the strongest energy-saving factors, while coasting distance is the main driver of excess consumption. The findings offer actionable thresholds for vehicle technology, driving behavior, capacity allocation, and catenary network planning.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T10:12:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11349v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11349v1"
-    },
-    {
-      "id": "2607.11289v1",
-      "title": "Backpropagation as a Nilpotent Linear System",
-      "authors": [
-        "Ahmed Boughammoura"
-      ],
-      "abstract": "Backpropagation is the computational engine of deep learning, yet its mathematical structure is typically treated as a procedural traversal of computational graphs. We present a global operator theory of the \\emph{F-adjoint} framework, which reformulates the layerwise backward recursion of an $L$-depth feedforward network into a single linear system $(I-\\cB)\\Xs=\\bG$, where $\\bG$ is a source vector. We prove that the global backward operator $\\cB$ is strictly block upper-triangular and nilpotent of index at most $L$. This nilpotency guarantees the exact termination of the Neumann series solution after at most $L$ terms, revealing classical backpropagation to be mathematically equivalent to block back-substitution on an upper bidiagonal system. We formalise \\emph{F-symmetry} -- the condition in which the backward pass perfectly mirrors the forward pass -- identifying orthogonal weight matrices as canonical examples. Through worked numerical examples, we demonstrate how this operator perspective exposes the single-path collapse of strictly feedforward networks and its breakdown in residual architectures. Finally, we leverage this compositional structure to rigorously derive the mechanics of residual networks (gradient highways) and transfer learning (gradient truncation). This framework elevates backpropagation from an algorithmic recipe to a global nilpotent-operator formulation.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T09:07:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11289v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11289v1"
-    },
-    {
-      "id": "2607.11279v1",
-      "title": "FAD-SA-GRU: Enhancing Hate Speech Detection in Algerian Dialect Through Feature-Augmented Self-Attention GRU Networks",
-      "authors": [
-        "Sara Yakoubi",
-        "Ikram Khalfallah",
-        "Kenza Khelkhal",
-        "Dihia Lanasri"
-      ],
-      "abstract": "The widespread adoption of social media platforms has transformed online communication by enabling users to exchange information and opinions instantly. However, these platforms have also facilitated the dissemination of abusive and hateful content, posing major social, psychological, and ethical challenges. Hate speech can incite discrimination, harassment, and violence against individuals or communities based on attributes such as ethnicity, religion, gender, nationality, or political affiliation. Consequently, automatic hate speech detection has become a major research topic in natural language processing (NLP) and an essential component of content moderation systems. This paper investigates automatic hate speech detection in the Algerian Arabic dialect (Darija) on social media. This task remains challenging because of the dialect's linguistic diversity, characterized by the coexistence of Arabic, French, and Arabizi (Arabic written using the Latin alphabet). We compare four categories of text classification approaches: (1) traditional machine learning models using TF-IDF features, (2) deep learning models based on recurrent neural networks, (3) Transformer-based language models, including DziriBERT and multilingual BERT, and (4) a novel hybrid architecture, FAD-SA-GRU, which combines semantic representations from DZ FastText, DZ AraVec, and DziriBERT through multi-embedding fusion, followed by a self-attention-enhanced GRU encoder. Experiments on an annotated dataset of Algerian Darija social media comments for binary hate speech classification show that FAD-SA-GRU outperforms all baselines, achieving 93.2% accuracy, 93.4% precision, 91.0% recall, 92.1% F1-score, and 97.0% ROC-AUC. Results demonstrate the effectiveness of combining complementary embedding representations with attention-based sequence modeling for robust hate speech detection in low-resource dialectal Arabic.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T08:59:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11279v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11279v1"
-    },
-    {
-      "id": "2607.11272v1",
-      "title": "Long-Memory Reservoir Computing for Data-Scarce Dengue Forecasting",
-      "authors": [
-        "Rahul Goswami",
-        "Shinjini Paul",
-        "Palash Ghosh",
-        "Tanujit Chakraborty"
-      ],
-      "abstract": "Accurate dengue forecasting is crucial for public health planning, but remains challenging because incidence series are often short, noisy, non-stationary, nonlinear, and often affected by long-range temporal dependence. Fractional differencing in Autoregressive Fractionally Integrated Moving Average (ARFIMA) helps balance non-stationarity and persistence, but its linear structure limits its ability to capture nonlinear dynamics. Deep neural networks can model nonlinear patterns, but usually require large training samples and do not explicitly encode statistical long memory. Echo State Networks (ESNs), a widely used reservoir computing framework, are attractive in this setting because they retain nonlinear recurrent dynamics while training only a simple readout, making them suitable for data-scarce scenarios. However, standard ESNs lack long-term memory from a time-series perspective. This study proposes a long-memory reservoir computing framework that integrates dedicated long-memory and short-memory ESN reservoirs with a ridge-regression readout. We introduce two variants: Fractional ESN (fESN), which incorporates fractional-differencing dynamics into the reservoir to encode long-range dependence directly, and Wavelet ESN (wESN), which extracts stable low-frequency components through wavelet smoothing before modeling them with a memory-aware reservoir. We establish theoretical guarantees for closed-loop reservoir dynamics, showing that standard ESNs induce short-memory processes under mild conditions, whereas the proposed long-memory reservoirs generate polynomially decaying dependence consistent with statistical long memory. Across multiple dengue datasets and forecasting horizons, fESN and wESN outperform statistical and deep learning baselines. Combining conformal prediction with fESN and wESN provides distribution-free calibrated uncertainty intervals.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T08:56:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11272v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11272v1"
-    },
-    {
-      "id": "2607.11177v1",
-      "title": "NeuroMem-FHP: A Likelihood-Free Deep Learning Framework for Parameter Estimation of Fractional Hawkes Process",
-      "authors": [
-        "Neha Gupta",
-        "Aditya Maheshwari"
-      ],
-      "abstract": "In this paper, we propose deep learning based NeuroMem-FHP framework for estimating the parameters of the fractional Hawkes process (FHP), a self-exciting point process that captures long-range dependence through a fractional Mittag-Leffler excitation kernel. Two neural architectures, namely a Long Short-Term Memory (LSTM) network and a Transformer, are developed to estimate the model parameters $(μ,γ,α,β)$ directly from sequences of inter-arrival times without requiring computationally intensive likelihood optimization. Experiments on synthetic data that both neural models significantly outperform the classical Maximum Likelihood Estimation (MLE) method, with the Transformer achieving the highest estimation accuracy (MSE = $0.1634$), followed by the LSTM (MSE = $0.1752$), compared to MLE (MSE = $2.8032$). An ablation study further examines the effects of key hyperparameters on model performance. The proposed framework is also on two real-world high-frequency datasets, namely AAPL NBBO transaction data and Montgomery County 911 emergency call records. Using a predictive validation approach, event sequences simulated from the estimated parameters closely reproduce the empirical distribution, tail behavior, and temporal dependence structure of the observed data. These results demonstrate that Transformer-based parameter estimation provides an accurate and efficient alternative to conventional estimation techniques for FHP and offers a promising framework for modeling event-driven systems with long-memory dynamics.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T07:19:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11177v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11177v1"
     }
   ]
 }
