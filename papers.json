@@ -1,7 +1,78 @@
 {
-  "last_updated": "2026-07-16T01:18:51.148114",
+  "last_updated": "2026-07-17T01:22:03.226314",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.15107v1",
+      "title": "Learning in Infinitesimal Non-Compositional Sketches",
+      "authors": [
+        "Sridhar Mahadevan"
+      ],
+      "abstract": "This paper develops a categorical framework -- Learning in Infinitesimal Non-Compositional Sketches (LINCS) -- as the repair of non-compositionality: failures of diagrams to factor through quotient sketches lifted to the tangent category setting. Machine learning problems are specified as sketches: graphs with commutativity conditions $\\mathcal D$, limit cones $\\mathcal L$, and colimit cocones $\\mathcal K$, generalizing the usual scalarization of loss functions or vector space assumptions. Non-compositionality is defined purely as failure of a universal factorization problem, not as arithmetic error between the desired and actual predictions. Given a learning sketch $\\mathbb S=(S,\\mathcal D,\\mathcal L,\\mathcal K)$, whose underlying graph is $S$, and a model $D:J \\rightarrow C$, the base defect is the obstruction to factorization $\\mbox{Obs}(\\mbox{Fact}_{\\mathbb S}(D))$. The tangent lift applies the tangent functor $T$ to obtain $TD:J \\rightarrow C$, and LINCS is defined as the obstruction $\\mbox{Obs}(\\mbox{Fact}_{\\mathbb S}(TD))$ -- asking whether infinitesimal perturbations preserve the compositionality constraints.The paper also introduces Tangent Learning Sketches, which are sketches equipped with Cockett-Cruttwell tangent structure. The paper defines the INC endofunctor, which iterates the tangent lift, producing a tower $D,TD,T^2D, \\cdots$ of factorization problems. ML is thereby formulated as the search for a coalgebraic fixed point where successive tangent unfoldings stabilize ($νT_{\\mbox{INC}}$). Using the Aczel--Mendler theorem, we prove existence of a final INC coalgebra whenever $T_{\\mbox{INC}}$ admits a set-based class realization that creates its final carrier. A detailed experimental evaluation of LINCS is underway in a number of concrete ML settings, including deep learning, large language models, and reinforcement learning, and is described in companion papers.",
+      "published": "July 16, 2026",
+      "published_raw": "2026-07-16T15:18:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.15107v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.15107v1"
+    },
+    {
+      "id": "2607.14747v1",
+      "title": "Toward Energy-Efficient and Low-Power Arrhythmia Detection for Wearable Devices",
+      "authors": [
+        "Floriaan Bulten",
+        "Yawar Rasheed",
+        "Arlene John",
+        "Vincenzo Stoico",
+        "Ghayoor Gillani"
+      ],
+      "abstract": "Cardiovascular diseases are the leading cause of death worldwide, and conditions such as arrhythmia often require long-term monitoring for effective detection and diagnosis. However, current wearable monitoring devices are bulky, uncomfortable, and typically rely on clinicians to manually evaluate electrocardiograms (ECGs). While Deep Learning (DL) algorithms have shown superior performance in arrhythmia detection and classification, their computational complexity coupled with high power consumption limit deployment in wearable devices. To address this challenge, this paper investigates the use of approximation techniques to reduce the power and energy consumption of DL architectures while maintaining acceptable classification performance. Specifically, techniques such as data precision reduction and approximate multiplication are investigated in a state-of-the-art DL model and its corresponding hardware architecture. The model is trained and validated using the MIT-BIH Arrhythmia Database, and hardware implementations employing various approximate multipliers are synthesized and evaluated. Compared with the state-of-the-art 8.75 μW (and 2.08 μJ) reference architecture, our proposed architecture consumes 3.07 μW (and 2.17 μJ) at 12 kHz, showing 64.9% reduction in power consumption while providing an acceptable output quality, i.e., 93.7% classification accuracy and 92.1% sensitivity. At 100 MHz, our proposed architecture consumes 9.45 mW (and 0.8 μJ), showing 61.5% reduction in energy consumption as compared to the state-of-the-art architecture. These results demonstrate that our proposed approximations significantly extend wearable device battery life while preserving the required arrhythmia classification performance.",
+      "published": "July 16, 2026",
+      "published_raw": "2026-07-16T09:31:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.14747v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.14747v1"
+    },
+    {
+      "id": "2607.14613v1",
+      "title": "Angular Gaussian Supervised Contrastive Learning for Long-Tailed Electrocardiogram Arrhythmia Diagnosis",
+      "authors": [
+        "Jin Dai",
+        "Qiuzhen Zhang",
+        "Chenyun Dai",
+        "Danmei Lan",
+        "Can Han"
+      ],
+      "abstract": "Long-tailed label distributions reduce the reliability of deep learning for electrocardiogram (ECG) arrhythmia diagnosis, particularly for clinically important but rare abnormalities. Existing rebalancing and logit adjustment methods mainly address class frequency while overlooking direction-dependent morphological variability across ECG classes. This study proposes Angular Gaussian Supervised Contrastive Learning (AG-SCL) for long-tailed multi-label ECG diagnosis. AG-SCL integrates three components into a unified framework: an Angular Gaussian contrastive branch that models full-covariance class uncertainty on unit-normalized embeddings, Adaptive Logit Adjustment that learns bounded label-state-specific prior corrections instead of fixed frequency-based margins, and tail-aware augmentation that generates morphology-preserving views while protecting the 7-25 Hz QRS-dominant band. The method was evaluated on the public PTB-XL benchmark and a nocturnal ECG dataset comprising 1317 hours of recordings from 141 subjects. AG-SCL achieved the best macro-level performance on both datasets. On PTB-XL, it obtained a balanced accuracy of 0.838, sensitivity of 0.709, specificity of 0.968, mean average precision of 0.495, and TPR at 5% FPR of 0.778. On Noc-ECG, the corresponding values were 0.918, 0.889, 0.947, 0.488, and 0.900. The largest gains occurred in rare or morphologically unstable rhythm classes, while ablation studies confirmed the contributions of full-covariance modelling, Adaptive Logit Adjustment, and tail-aware augmentation. AG-SCL improves long-tailed ECG diagnosis by combining prior calibration with anisotropic representation learning, enhancing sensitivity to rare arrhythmias while maintaining clinically relevant specificity. Our code is available at: https://github.com/Open-EXG/AG-SCL-for-Long-Tailed-ECG.",
+      "published": "July 16, 2026",
+      "published_raw": "2026-07-16T06:21:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.14613v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.14613v1"
+    },
+    {
+      "id": "2607.14233v1",
+      "title": "LIGO-PINN: Learned Initialization via Gated Optimization to Alleviate Convergence Failures in Physics Informed Neural Networks",
+      "authors": [
+        "Nilay Anurag",
+        "Shital Adhikari",
+        "Taniya Kapoor",
+        "Nikhil Muralidhar"
+      ],
+      "abstract": "Physics-informed neural networks (PINNs) have had a broad research impact in modeling domains governed by partial differential equations (PDE). However, PINNs have been shown to perform poorly, sometimes even converging to trivial solutions, in challenging PDE domains, or when generalizing to unseen but related PDE domains. Previously proposed solutions detail hyperparameter tuning to reduce loss imbalance between data-driven and physics guided losses, curriculum learning based training strategies, or dynamic re-sampling of hard collocation points. These methods face certain pitfalls: hyperparameter tuning is expensive, designing a training curriculum is ambiguous in multi-parameter PDE settings, and dynamic resampling still fails in complex PDE settings. Complementary to this line of thinking, we believe the initial PINN network weights also play a crucial role in the emergence of catastrophic failures during training, yet the effect of PINN weight initialization has been surprisingly under-investigated. To this end, we propose a framework for Learned Initialization via Gated Layerwise Optimization (LIGO-PINN) to overcome PINN convergence failures. Through rigorous evaluation on 1D and 2D PDE domains, including a challenging 2D fluid dynamics setting, we demonstrate that our methodology outperforms state-of-the-art methods designed to alleviate PINN failures, achieving a 91.5% average performance improvement across six baselines and 81% over the strongest baseline. We also verify that LIGO-PINN generalizes to 3D unstructured domains. Finally, we analyze training dynamics across all three PDE domains to explain both LIGO-PINN's improvement and the convergence failure of traditional PINNs. Code: https://github.com/scailab/ligo-pinn Keywords: Machine Learning, Physics-Informed Neural Networks, Deep Learning, PDE Modeling",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T18:00:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.14233v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.14233v1"
+    },
+    {
+      "id": "2607.14064v1",
+      "title": "Minimax Theory of Likelihood-Based Deep Learning for Speckle Regression",
+      "authors": [
+        "Soham Jana"
+      ],
+      "abstract": "Speckle noise is a multiplicative noise commonly encountered in coherent imaging modalities such as synthetic aperture radar, optical coherence tomography, and digital holography. Although deep learning methods, in practice, have achieved state-of-the-art performance for speckle denoising, their fundamental statistical limits remain largely unexplored. Unlike additive noise models, multiplicative speckle noise makes the regression function unidentifiable from the conditional mean, rendering conventional least-squares-based deep learning approaches inapplicable. We study the minimax estimation of smooth nonparametric regression functions using likelihood-based deep neural network (DNN) estimators under a model with both multiplicative speckle noise and additive Gaussian noise. Our framework accommodates both low-dimensional and sparse high-dimensional features. We establish finite-sample upper bounds on the estimation error of the proposed DNN estimators and derive minimax lower bounds for nonparametric function recovery under our model, showing that they match up to logarithmic factors in the sample size. Moreover, these minimax rates coincide, up to logarithmic factors, with those for nonparametric regression under additive Gaussian noise alone, demonstrating that the intrinsic difficulty of estimation remains essentially unchanged despite the challenges posed by multiplicative speckle noise. Numerical experiments further supports consistency of our DNN-based despeckling methods and demonstrate their effectiveness.",
+      "published": "July 15, 2026",
+      "published_raw": "2026-07-15T17:36:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.14064v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.14064v1"
+    },
     {
       "id": "2607.13891v1",
       "title": "PiVoT: A Variational Solution for Real-time Large-scale Multi-object Detection and Tracking under Heavy Clutter",
@@ -98,6 +169,26 @@
       "published_raw": "2026-07-15T03:52:06Z",
       "pdf_link": "http://arxiv.org/pdf/2607.13423v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.13423v1"
+    },
+    {
+      "id": "2607.14161v1",
+      "title": "Deep-learning Causal Retrieval Optimization for Efficient e-commerce Distribution in Pinterest",
+      "authors": [
+        "Junpeng Hou",
+        "XianXing Zhang",
+        "Sai Xiao",
+        "Derek Cheng",
+        "Darren Reger",
+        "Olafur Gudmundsson",
+        "Mehdi Ben Ayed",
+        "Zhiqing Rao",
+        "Huizhong Duan"
+      ],
+      "abstract": "Pinterest is where people turn inspiration into action as users browse ideas, then take steps toward realization, often by discovering shoppable content. To support this journey, we must distribute commerce content when it helps, not when it distracts. We frame this as a causal decision of triggering shopping candidate generators in early retrieval and deploy a production system at Pinterest that learns personalized and contextualized triggering policies. A deep multi-task model jointly predicts outcomes and uplift of multiple events, trained with a doubly-robust pseudo-outcome alongside calibrated outcome losses for stable, single-robust uplift learning. A randomized data logging supplies counterfactual coverage, and the model is evaluated by both regular and reverse metrics for full assessment. A linear-time offline replay is designed to select thresholds and forecast policy impact with extremely high consistency with online results. For productionization, the model runs in parallel with remote retrieval calls without end-to-end latency regression. At web scale, we cut shopping triggers by up to 85% while holding key shopping sessions neutral, improving important total sessions (+0.26%) and Pin saves (+1.10%), with significant infrastructure savings. By unifying deep causal learning with reliable offline replay and demonstrating production-grade deployment, this work provides a generally practical recipe for early-retrieval optimizations in modern cascading recommenders beyond shopping, aligning exploration and cost with user intent at scale.",
+      "published": "July 14, 2026",
+      "published_raw": "2026-07-14T23:02:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.14161v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.14161v1"
     },
     {
       "id": "2607.13246v1",
@@ -214,104 +305,6 @@
       "published_raw": "2026-07-14T10:19:07Z",
       "pdf_link": "http://arxiv.org/pdf/2607.12599v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.12599v1"
-    },
-    {
-      "id": "2607.13107v1",
-      "title": "DeepCormack: Fermi surface tomography using model-based data-driven algorithms",
-      "authors": [
-        "Georg F. B. Lovric",
-        "Bryn Drury",
-        "Carola-Bibiane Schönlieb",
-        "Stephen B. Dugdale",
-        "Ander Biguri"
-      ],
-      "abstract": "The experimental reconstruction of the 3D two-photon momentum density (TPMD) via angular correlation of electron-positron annihilation radiation (ACAR) is a particularly useful method for studying material Fermi surfaces. It does not rely on low temperatures, UHV conditions, or strong magnetic fields, and enables the study of the spin-resolved electronic structure of materials. Yet, it remains a challenging inverse problem. Typically, 10^8 positron annihilation events are measured for 3--6 projections of the TPMD at different angles. The standard reconstruction approach is an ACAR adaptation of Cormack's method (the MCM) that leverages the inherent symmetry in the crystal's structure. However, the poor signal-to-noise ratio means collecting data of sufficient quality for Fermi surface studies can take months per sample. We present DeepCormack, a family of data-driven model-based reconstruction algorithms that augments the MCM by integrating supervised deep-learning models (CNN, MLP, and UNet) at various stages. To overcome the lack of large experimental training sets, we propose a method which leverages singular value decomposition with dynamic mode decomposition to generate realistic synthetic TPMD volumes, requiring only a single reference momentum density computed via density functional theory. On test data, DeepCormack improves reconstruction quality over MCM by about 8.5 dB PSNR at 200M counts and remains stable at reduced counts, enabling significantly faster acquisition times. Generalisation to experimental data depends strongly on how well the training distribution from the reference momentum density matches the sample. We therefore recommend pairing DeepCormack with a DFT calculation of the target material to create sample-specific training data. Our proposed method offers either much higher quality reconstructions, or enables significantly faster ones, on the order of weeks.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T10:10:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13107v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13107v1"
-    },
-    {
-      "id": "2607.12570v1",
-      "title": "Deep Learning-based Surrogate Modelling of the LOD Method for Multiscale Problems",
-      "authors": [
-        "Marc Haltmayer",
-        "Jaemin Seo",
-        "Yuseung Lee",
-        "Sungyeop Lee",
-        "Jaehoon Jeong",
-        "Jae Yong Lee"
-      ],
-      "abstract": "Multiscale problems are notoriously difficult to tackle using traditional numerical methods, as accurately resolving fine-scale features often requires prohibitively fine discretizations. This challenge is particularly pronounced in applications such as materials science, fluid dynamics, climate systems, chemical processes, and complex networks. Recent neural operator models provide a promising data-driven alternative, but frequently struggle to achieve sufficient accuracy in the presence of strongly heterogeneous or oscillatory coefficients. In this work, we focus on the solution of elliptic PDEs with rough and high-contrast inputs. The Localized Orthogonal Decomposition (LOD) method is a well-established numerical approach for such problems, but it comes, however, at a substantial computational cost. We investigate the performance of popular neural operator architectures on these challenging multiscale problems and identify key limitations in their ability to resolve fine-scale structure. To overcome these challenges, we introduce LOD-MSNO (LOD-Multiscale Neural Operator), a hybrid approach that leverages the LOD method as a strong multiscale prior by building on its representation of the solution as a linear combination of problem-adapted basis functions, while addressing its main computational bottlenecks through data-driven operator learning. We further provide theoretical error estimates for the proposed coefficient-learning framework. Lastly, we demonstrate the potential of our proposed method to outperform current neural operator baselines in terms of accuracy for challenging multiscale inputs, while mainly retaining the computational efficiency of neural operator models.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T09:41:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12570v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12570v1"
-    },
-    {
-      "id": "2607.12500v1",
-      "title": "Adversarial Attacks on Online Handwriting using Salience-based Temporal Editing",
-      "authors": [
-        "Yataro Tamura",
-        "Brian Kenji Iwana",
-        "Jiseok Lee"
-      ],
-      "abstract": "Deep learning models for online handwriting recognition have been shown effective and are increasingly deployed in practical applications. However, their vulnerability to adversarial attacks is still a challenge. Existing adversarial methods are predominantly designed for image-based inputs and typically rely on additive spatial perturbations. When applied to online handwriting, which is inherently represented as a time series of pen trajectories, such perturbations often introduce high-frequency jitter and visibly unnatural stroke artifacts. In this work, we propose a novel adversarial attack framework for online handwriting recognition based on salience-guided temporal editing. Instead of adding noise, the proposed method generates adversarial examples by inserting and deleting points at time steps selected according to temporal salience, preserving the shape and smoothness of the original handwriting. Temporal salience is estimated using gradient-based activation mapping, which guides edits toward time steps that strongly support the original class prediction. We evaluate the proposed approach on the Unipen and CASIA-OLHWDB datasets under both white-box and one-shot black-box attack settings. Experimental results demonstrate that while conventional image-based attacks achieve strong white-box performance, they exhibit poor transferability across models. In contrast, the proposed temporal editing attack achieves stronger one-shot black-box transferability while preserving the visual structure of the handwriting. These results indicate that temporal editing is a relevant threat model for online handwriting recognition, particularly in one-shot black-box transfer settings.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T08:32:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12500v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12500v1"
-    },
-    {
-      "id": "2607.12382v1",
-      "title": "Differentiable Clone-Structured Causal Graphs for End-to-End Cognitive Map Learning from Image Sequences",
-      "authors": [
-        "Arash Nikzad",
-        "Sasan Sarbishegi",
-        "Ali Dasmeh",
-        "Muhammad Asif",
-        "Parsa Gharavi",
-        "Erik Husom",
-        "Sagar Sen",
-        "Andrew B. Lehr",
-        "Olivier Penacchio",
-        "Ana Clemente",
-        "Tristan M. Stöber"
-      ],
-      "abstract": "How can an agent build a structured map of its world from nothing but an ongoing sequence of raw sensory input and its own movements, especially when natural variation means exact sensory patterns rarely repeat? The Clone-Structured Causal Graph algorithm (CSCG), a normative hippocampus model, shows how an interpretable map can be learned from aliased observations. However, CSCG requires a predefined discrete alphabet, and its expectation-maximization formulation is not easily combined with existing neural network modules, preventing the end-to-end processing of raw image sequences. We remove this barrier by reformulating CSCG as a single, fully differentiable module, gradCSCG, and coupling it to a learned vector-quantized variational autoencoder (VQ-VAE) perceptual front-end. A soft emission forward pass allows the map-learning objective to flow back into perception, while a set of loss-balancing mechanisms mitigates module collapse during joint training. We demonstrate, first, that gradient training reproduces CSCG's results on original symbolic grid worlds by recovering room topology from heavily aliased observations. Second, we show that map recovery remains robust on MNIST image sequences, where each visit to a location yields a newly sampled image of its assigned digit. Across four heavily aliased environments, the end-to-end pipeline successfully uncovers the underlying adjacency graph with high edge precision and recall, directly from visual input. This work provides a proof of principle that CSCG can serve as a composable building block in a deep learning architecture.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T05:54:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12382v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12382v1"
-    },
-    {
-      "id": "2607.11826v1",
-      "title": "Transformer-Guided Swarm Intelligence for Frugal Neural Architecture Search",
-      "authors": [
-        "Romain Amigon"
-      ],
-      "abstract": "Neural Architecture Search (NAS) has automated the design of deep learning models but traditionally requires massive computational resources, often measured in thousands of GPU-days. In this paper, we propose a frugal and memetic NAS framework designed to democratize architecture design on consumer-grade hardware. Our approach combines the global macro-search capabilities of an autoregressive Transformer controller, trained via Reinforcement Learning (RL), with the local micro-exploitation of an Artificial Bee Colony (ABC) algorithm. To prevent premature convergence during the RL phase, we introduce a dynamic entropy mechanism that forces topological exploration upon detection of performance stagnation. Evaluated on a standard GPU (NVIDIA RTX 3060), our hybrid method effectively resolves the \"cold-start\" problem inherent in metaheuristics. By algorithmically penalizing network depth, our framework actively mitigates model bloat: on the CIFAR-10 dataset, it discovers an efficient architecture reaching 84.85% accuracy with only $\\sim$174,000 parameters (significantly smaller than standard baselines like ResNet-20) in 3 hours of search time. Furthermore, we demonstrate the framework's flexibility by applying it to credit card fraud detection, directly optimizing the F1-Score on highly imbalanced tabular data to reach a F1-Score of 0.71 with a compact network of $\\sim$4,600 parameters. These results suggest that our approach can yield tailored, accessible, and highly parameter-efficient deep learning models suitable for edge deployment.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T17:18:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11826v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11826v1"
-    },
-    {
-      "id": "2607.11998v1",
-      "title": "HPC-Enabled Video-based Coastal Wave Parameter Estimation Using V-JEPA and Deep Spatiotemporal Learning",
-      "authors": [
-        "Abubakar Hamisu Kamagata",
-        "Dharm Singh Jat",
-        "Attlee Munyaradzi Gamundani",
-        "Saravanakumar Paramasivam",
-        "Babangida Sani",
-        "Aliyu Zakariyya"
-      ],
-      "abstract": "High deployment cost, poor spatial coverage and susceptibility to storm conditions are all challenges faced by traditional in-situ methods. This paper presents a video-based and high performance computing (HPC) enabled deep learning framework for joint sensor free estimation of five coastal wave parameters, namely significant wave height (Hs), maximum wave height (Hmax), peak period (Tp), zero upcrossing period (Tz) and wave direction (theta) from monocular coastal video. The proposed architecture comprises of a V-JEPA (self supervised) ViT Small backbone for robust spatiotemporal feature extraction in visually challenging scenarios, a dual-stream SlowFast temporal encoder for broad bandwidth representation of wave motion in both hydrodynamic breaking and swell regimes, an optical flow stream based on Farneback optical flow algorithm for adding saliency information to the structure with emphasis on hydrodynamically active wavelength bands of waves, and a multi-task regression layer with dispersion constraints (Airy wave dispersion lambda_p = 0.1). The model was trained on an NVIDIA DGX A100 cluster and was early stopped at epoch 31 and achieved Pearson correlation coefficients of 0.451, 0.578, 0.643, 0.680 and 0.832 for Hs, Hmax, Tp, Tz and wave direction respectively, with generalization ability to geographically diverse held out test data sites. While operating in a data-limited regime (6 annotated training scenes), the framework demonstrates statistically significant temporal correlations (PCC of 0.451 to 0.832), confirming proof of concept feasibility; R2 values (max 0.246) indicate that variance capture will improve with larger annotated datasets.",
-      "published": "July 13, 2026",
-      "published_raw": "2026-07-13T16:57:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.11998v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.11998v1"
     }
   ]
 }
