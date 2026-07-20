@@ -1,7 +1,87 @@
 {
-  "last_updated": "2026-07-19T01:20:08.692122",
+  "last_updated": "2026-07-20T03:12:22.240490",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.16050v1",
+      "title": "DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings",
+      "authors": [
+        "Yuya Kawakami",
+        "Daniel Cayan",
+        "Dongyu Liu",
+        "Kwan-Liu Ma",
+        "Tom Corringham"
+      ],
+      "abstract": "Pluvial (rainfall-driven) flooding accounts for 45% of National Flood Insurance Program (NFIP) claims in the United States and is harder to predict than its riverine and coastal counterparts, with existing approaches limited to coarse resolution, regional domains, or computationally intensive process-based models unsuitable for daily continental-scale use. We present DELUGE, a multimodal deep learning framework for daily pluvial flood damage prediction at ~1 km resolution and national scale, trained on spatially and temporally corrected NFIP claims (2017-2022) and structured around the hazard, exposure, and vulnerability components of disaster risk. Rather than blanket coverage of the Conterminous United States (CONUS), we model the top 100 highest-claim 75 km cells, distributed nationwide and accounting for ~81% of total pluvial flood claims. Our architectural novelty is a pair of parametric modules in the hydrometeorology branch, a Value Modulator and a Temporal Modulator, conditioned on terrain descriptors and AlphaEarth foundation-model embeddings, that expose directly inspectable hydrological response parameters and provide architecture-level interpretability-by-design. Under a spatial block holdout, DELUGE outperforms tuned Random Forest, XGBoost, and LightGBM baselines by 9% to 30% on a dollar-weighted area under the precision-recall curve (PR-AUC), a metric that emphasizes the rare, high-cost claims of greatest operational interest. Beyond DELUGE, we argue this interpretable conditioning scheme is a transferable pattern for integrating foundation-model embeddings into other geospatial prediction tasks.",
+      "published": "July 17, 2026",
+      "published_raw": "2026-07-17T15:27:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16050v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16050v1"
+    },
+    {
+      "id": "2607.15775v1",
+      "title": "AquaAugmentor: A Novel Feature Augmentation Algorithm for Water Potability Prediction",
+      "authors": [
+        "Muntasir Tabasum",
+        "Al Zadid Sultan Bin Habib",
+        "Tanpia Tasnim",
+        "Md. Ekramul Islam",
+        "Md Younus Ahamed",
+        "Md Asif Bin Syed"
+      ],
+      "abstract": "Access to potable water is crucial for health, economic development, and sustainability. However, accurately classifying water quality remains a significant challenge due to the complexity and variability of water source data. This paper addresses the challenge of predicting water potability through machine learning and deep learning algorithms. It introduces a novel feature augmentation algorithm, AquaAugmentor, to enhance the predictive performance of these models for low-dimensional datasets. Utilizing a dataset that includes chemical attributes of water, such as pH, hardness, solids, chloramines, sulfate, and others. This study evaluates the performance of the models with and without AquaAugmentor. Each model applied to classify water as potable or non-potable and its performance is then evaluated and compared based on test accuracy and AUC score. The results highlight the strengths and limitations of our proposed algorithm, providing insights into the most effective techniques for improving the predictive performance of water quality classification. This study contributes to the broader efforts of ensuring safe water access and serves as a framework for employing machine learning in environmental quality assessments. The findings aim to assist researchers, policymakers, and public health officials in making informed decisions based on reliable machine learning predictions.",
+      "published": "July 17, 2026",
+      "published_raw": "2026-07-17T09:11:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.15775v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.15775v1"
+    },
+    {
+      "id": "2607.15724v1",
+      "title": "Natural Backdoor Attacks on Speech Recognition Models",
+      "authors": [
+        "Jinwen Xin",
+        "Xixiang Lyu",
+        "Jing Ma"
+      ],
+      "abstract": "With the rapid development of deep learning, its vulnerability has gradually emerged in recent years. This work focuses on backdoor attacks on speech recognition systems. We adopt sounds that are ordinary in nature or in our daily life as triggers for natural backdoor attacks. We conduct experiments on two datasets and three models to validate the performance of natural backdoor attacks and explore the effects of poisoning rate, trigger duration and blend ratio on the performance of natural backdoor attacks. Our results show that natural backdoor attacks have a high attack success rate without compromising model performance on benign samples, even with short or low-amplitude triggers. It requires only 5% of poisoned samples to achieve a near 100% attack success rate. In addition, the backdoor will be automatically activated by the corresponding sound in nature, which is not easy to be detected and will bring severer harm.",
+      "published": "July 17, 2026",
+      "published_raw": "2026-07-17T07:59:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.15724v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.15724v1"
+    },
+    {
+      "id": "2607.15477v1",
+      "title": "Deep Learning Approaches for Sleep Apnea Classification from Polysomnographic EEG Signals",
+      "authors": [
+        "Shashank Manjunath",
+        "Mukesh Cheemakurthi",
+        "Aarti Sathyanarayana"
+      ],
+      "abstract": "Sleep apnea diagnosis via polysomnography remains resource intensive and relies on time consuming manual data analysis and scoring. Recent work has demonstrated that central nervous system effects of sleep apnea events can be detected through electroencephalogram (EEG) signals. However, most work uses a single feature type on various datasets combined with different classification algorithms. In this work, we present a comprehensive comparison of deep learning architectures and feature representations for automated sleep apnea detection from multichannel EEG on a single dataset of pediatric subjects. We evaluate Vision Transformers and Graph Attention Networks across distinct signal representations: raw temporal signals, short-time Fourier transform spectrograms, coherence based graphs, and two topological data analysis (TDA) derived features. Using age and sex matching of our train and test sets, we train on 2410 pediatric subjects and test on 575 pediatric subjects. We achieve a best test AUC of 0.750 using a vision transformer based model trained on TDA features. Stratified analysis across patient demographics (age, sex, AHI severity) and sleep stages (N1, N2, N3, REM) reveals significant performance variation. Our results demonstrate the feasibility of EEG based automated OSA screening while highlighting essential challenges for clinical deployment.",
+      "published": "July 16, 2026",
+      "published_raw": "2026-07-16T21:51:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.15477v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.15477v1"
+    },
+    {
+      "id": "2607.15430v1",
+      "title": "Six-sigma Quality Management of Additive Manufacturing",
+      "authors": [
+        "Hui Yang",
+        "Prahalad Rao",
+        "Timothy Simpson",
+        "Yan Lu",
+        "Paul Witherell",
+        "Abdalla R. Nassar",
+        "Edward Reutzel",
+        "Soundar Kumara"
+      ],
+      "abstract": "In this paper, we propose to design, develop, and implement the new DMAIC methodology for Six-Sigma quality management of AM. First, we define the specific quality challenges arising from AM layer-wise fabrication and mass customization (even one-of-a-kind production). Second, we present a review of AM metrology and sensing techniques, from materials through design, process, environment, to post-build inspection. Third, we contextualize a framework for realizing the full potential of data from AM systems, and emphasize the need for analytical methods and tools. We propose and delineate the utility of new data-driven analytical methods, including deep learning, machine learning, and network science, to characterize and model the interrelationships between engineering design, machine setting, process variability and final build quality. Fourth, we present the methodologies of ontology analytics, design of experiments (DOE) and simulation analysis for AM system improvements. In closing, new process control approaches are discussed to optimize the action plans, once an anomaly is detected, with specific consideration of lead time and energy consumption.",
+      "published": "July 16, 2026",
+      "published_raw": "2026-07-16T20:01:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.15430v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.15430v1"
+    },
     {
       "id": "2607.15258v1",
       "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
@@ -232,81 +312,6 @@
       "published_raw": "2026-07-14T20:21:38Z",
       "pdf_link": "http://arxiv.org/pdf/2607.13246v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.13246v1"
-    },
-    {
-      "id": "2607.13123v1",
-      "title": "AI in Cyberpsychology: A systematic literature review of Cybersecurity enhancement by using AI for analyzing psychology of Victims, Attackers, and Defenders",
-      "authors": [
-        "Georg Thamer Francis",
-        "Malek Malkawi",
-        "Sevim Eyüpoğlu",
-        "Reda Alhajj",
-        "Selim Akyokuş"
-      ],
-      "abstract": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks. Cyberpsychology (CPSY) is defined as the use of psychology to enhance cybersecurity applications. Since the early 2010s, the evolution of Artificial Intelligence (AI) has increasingly integrated with CPSY, leveraging advanced data analysis to decode the distinct personality traits and behavioral patterns of victims, attackers, and defenders. In this systematic literature review (SLR), we carefully analyze 34 collected research studies of AI usage in cyberpsychology (AI-CPSY) using the preferred reporting items for systematic reviews and meta-analyses (PRISMA) methodology. The review presents a comprehensive taxonomy of the cyber-security applications, the AI methodologies used, and the psychological concepts employed across the studies . We sort the research studies into four cybersecurity applications: Anomaly Detection (AD), Vulnerability Risk Prediction (VRP), Security Awareness Training (SAT), and Authentication/Identity Verification (AIV). Within each application area, studies are further sorted according to the AI method used including machine learning (ML), deep learning (DL), natural language processing (NLP), and reinforcement learning (RL). Furthermore, the review identifies the most commonly utilized psychological concepts, quantify the datasets used in the field, and present their current implementation and deployment status. At last, it detect research gaps, present open challenges, and deduce the trending and most effective and emerging methodologies used across the AI-CPSY landscape.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T17:18:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13123v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13123v1"
-    },
-    {
-      "id": "2607.12954v1",
-      "title": "Robustness of Deep Learning Models for PV Power Forecasting under NWP Forecast Errors: A Spatiotemporal and Physically Interpretable Analysis",
-      "authors": [
-        "Dandan Chen",
-        "Yan Zhao",
-        "Xuepeng Chen"
-      ],
-      "abstract": "Engineering use of AI forecasting models requires not only high nominal accuracy but also predictable behavior under uncertain inputs. In photovoltaic (PV) forecasting, this requirement is especially challenging because numerical weather prediction (NWP) errors are temporally correlated, state dependent, and physically coupled across variables. Existing evaluations, however, often rely on perfect forecast assumptions or simplistic perturbations that do not reflect these characteristics. This study presents a physically constrained robustness evaluation framework based on simulation, using virtual PV power as a controlled response variable to isolate the propagation of input uncertainty from confounders at the plant level. Six representative machine learning and deep sequence models, including PatchTST, GRU, N-HITS, and LightGBM, are evaluated under dynamic NWP perturbations with heteroscedasticity modulated by clear-sky conditions and Erbs reconstruction that preserves radiation consistency. The results show that sequence models provide stronger noise filtering and temporal resilience than a strong tabular baseline under medium to high disturbance regimes. SHapley Additive exPlanations (SHAP) and Integrated Gradients (IG) further support a feature reallocation tendency at the case level, in which predictive reliance shifts from corrupted future forecasts toward more stable historical observations and deterministic physical priors. A Pareto analysis of accuracy under clean conditions, robustness, and computational latency then translates these findings into engineering implications for robustness assessment and model selection under forecast uncertainty.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T16:48:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12954v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12954v1"
-    },
-    {
-      "id": "2607.12868v1",
-      "title": "Deep4ge: DNN Training Trajectories for Fault Detection and Diagnosis",
-      "authors": [
-        "Sigma Jahan"
-      ],
-      "abstract": "Deep learning systems often fail due to subtle implementation faults that alter training behavior. Recent work has studied how to detect and diagnose such failures from changes observed across training epochs. However, the software engineering community still lacks a public dataset of per-epoch training runs with documented fault history, feature extraction details, and clear reuse support for fault detection and diagnosis tasks. We present Deep4ge, a controlled benchmark of 14,227 training runs generated from 59 adapted TensorFlow/Keras deep neural network (DNN) programs collected from Stack Overflow. We generated faulty variants using 27 source-code transformations that introduce known faults across seven categories. The dataset contains 9,845 faulty runs and 4,382 correct baseline runs. For each run, we record 4 evaluation metrics and 26 features that measure training behavior at every epoch. These features capture weights, gradients, activations, accuracy and loss trends, learning rate, and hardware use. Deep4ge supports binary fault detection, multi-class fault diagnosis, and early fault prediction from partial training runs. We release the dataset and fault-injection framework at https://doi.org/10.5281/zenodo.20337241.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T15:20:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12868v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12868v1"
-    },
-    {
-      "id": "2607.12828v1",
-      "title": "Detecting Phishing in Ethereum Networks using Quantum Machine Learning",
-      "authors": [
-        "Sai Sakunthala Guddanti",
-        "Anupama Ray",
-        "Mrunal Arun Kumavat",
-        "Anil Prabhakar"
-      ],
-      "abstract": "This article explores the potential of Quantum Machine Learning (QML), specifically assessing a Quantum Support Vector Machine (QSVM) and a Variational Quantum Classifier (VQC) for detecting anomalies in real-world financial transaction data. While these QML methods outperform statistical methods, they fall short of cutting-edge deep learning techniques. To bridge this gap, we propose a hybrid quantum-classical ensemble framework that leverages the strengths of both domains. We demonstrate its effectiveness in detecting phishing in Ethereum transaction networks by combining complementary algorithms. The QSVM, whether used individually or in an ensemble, consistently delivered the lowest false negatives and higher recall rates, that are crucial for anomaly detection. To enhance individual models, we encoded the data using novel cascaded Quantum Random Access Coding (QRAC) schemes and compared it with the popular encoding ZZ feature map on both simulators and the IBM Heron quantum processor. For both QSVM and VQC, we consistently observed improvements (13% for QRAC-VQC and 3% for QRAC-QSVM) of QRAC over the ZZ feature map. Notably, certain QML algorithms exhibit remarkable resilience on the IBM Heron quantum processor, approaching simulator-level performance on devices with high quantum volume. This observation underscores the promise of QML despite hardware limitations.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T14:46:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12828v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12828v1"
-    },
-    {
-      "id": "2607.12750v1",
-      "title": "CRC-HGD: A Histopathological Image Dataset for Grading Colorectal Cancer",
-      "authors": [
-        "Elham Amjadi",
-        "Amin Bahreini",
-        "Sayed Mohammad Hasan Emami",
-        "Sayyed Mohammadreza Hakimian",
-        "Alireza Fahim",
-        "Hojjatollah Rahimi",
-        "Hamidreza Bolhasani"
-      ],
-      "abstract": "Colorectal cancer (CRC) is the third most common cancer worldwide and the second leading cause of cancer-related deaths globally, with approximately 1,926,425 new cases and 904,019 deaths reported in 2022. Accurate histologic grading plays a critical role in prognosis and treatment planning for colorectal adenocarcinoma. In recent years, artificial intelligence and its subcategories, including machine learning and deep learning, have been increasingly employed for automated cancer detection and classification. An appropriate and well-organized dataset is the essential first step to achieve this goal. This paper introduces CRC-HGD, a histopathological microscopy image dataset of 1,914 images obtained from 214 colorectal adenocarcinoma patients (Grade I: 106, Grade II: 75, Grade III: 33). The specimens are H&E-stained colorectal tissue sections acquired at the Poursina Hakim Research Center of Isfahan University of Medical Sciences, Iran, diagnosed between 2014 and 2019, and graded according to the World Health Organization (WHO) criteria into three grades: well-differentiated (Grade I), moderately differentiated (Grade II), and poorly differentiated (Grade III). For each specimen, four magnification levels are provided: 4x, 10x, 20x, and 40x. The dataset is accessible via Mendeley Data (https://doi.org/10.17632/yfp5sfj47m.4) and at http://databiox.com, where the latest version is also available. The distinctive feature of this dataset is the provision of labeled specimens across all three differentiation grades at multiple magnification levels, enabling comprehensive computational analysis of colorectal cancer grading.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T13:18:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.12750v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.12750v1"
     }
   ]
 }
