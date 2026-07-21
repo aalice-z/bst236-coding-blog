@@ -1,7 +1,148 @@
 {
-  "last_updated": "2026-07-20T03:12:22.240490",
+  "last_updated": "2026-07-21T01:19:55.331998",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.16936v1",
+      "title": "Pediatric Bone Age Prediction Using Deep Learning",
+      "authors": [
+        "Al Zadid Sultan Bin Habib",
+        "Md. Ekramul Islam",
+        "Md Asif Bin Syed",
+        "Md Younus Ahamed",
+        "Tanpia Tasnim"
+      ],
+      "abstract": "Pediatric bone age prediction is a crucial task in clinical practice that can help diagnose endocrine disorders and provide insight into a child's growth and development. However, conventional bone age prediction methods are often labor-intensive and require specialized radiological expertise. This paper presents a Deep Learning (DL)-based approach to pediatric bone age prediction using EfficientNet with Additive Attention, a state-of-the-art neural network architecture for image classification and regression tasks. The method utilizes over 12,000 X-ray images from the RSNA bone age dataset. It involves image preprocessing, transforming them into three-channel images, and training a Convolutional Neural Network (CNN) to automatically learn the features of hand bone images. This approach provides a more effective and accurate solution for predicting bone age, which is critical in diagnosing pediatric endocrine diseases. This work uses two variations of the EfficientNet model (B0 and B4), where EfficientNetB4 is also finetuned with the Additive Attention mechanism. These three models predict the age for the original age, and their comparison is shown in curves. The predicted ages depict that in most cases, EfficientNetB4 and EfficientNetB4 with Additive Attention (EN-AA) successfully predicted the bone ages more accurately regarding the original age, and their performance was better than the EfficientNetB0. Specific performance metrics are provided to underscore this improvement. Learning curves for training and validation loss confirm effective learning without overfitting or underfitting, further validating our approach's efficacy in pediatric endocrine disease diagnosis.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T19:16:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16936v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16936v1"
+    },
+    {
+      "id": "2607.16877v1",
+      "title": "Hierarchical Wireless Foundation Model for Multi-Task Optimization",
+      "authors": [
+        "Yangjing Wang",
+        "Ouya Wang",
+        "Shenglong Zhou",
+        "Geoffrey Ye Li"
+      ],
+      "abstract": "The increasing complexity of next-generation wireless networks has driven the integration of artificial intelligence (AI) into wireless communications. However, most existing studies focus on developing task-specific deep learning techniques for single scenarios, which limits their ability to generalize across diverse tasks, channel conditions, and system configurations. To address this generalization bottleneck, we propose a hierarchical wireless foundation model (WFM) for multi-task optimization. The proposed WFM couples an upstream foundation channel encoder (FCE) with a downstream foundation optimization decoder (FOD) via geometry-aware cross-attention. Specifically, the FCE extracts task-agnostic channel representations via self-supervised masked reconstruction while the FOD generates multi-task optimization decisions through differentiable output heads. Moreover, a hybrid supervised-to-unsupervised training strategy is employed to overcome the performance ceiling of purely supervised learning, and the modular architecture of the WFM enables efficient adaptation to unseen communication tasks with minimal parameter overhead. Simulation results show that the proposed WFM learns high-fidelity channel representations and achieves competitive multi-task optimization performance while substantially reducing optimization inference latency relative to numerical baselines. Furthermore, it exhibits robust generalization to unseen propagation environments, varying constraint parameters, and heterogeneous system configurations.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T16:30:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16877v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16877v1"
+    },
+    {
+      "id": "2607.16803v1",
+      "title": "Explainable Lightweight Compact Deep Models for Speech Emotion Recognition",
+      "authors": [
+        "Nelly Elsayed"
+      ],
+      "abstract": "Speech Emotion Recognition (SER) is an important component in a wide range of human-centered applications, including healthcare, customer service, and human-omputer interaction. In medical and decision-support settings, there is increasing interest in models that not only achieve accurate emotion recognition but also support transparent predictions and efficient deployment. However, many existing SER approaches rely on complex deep learning architectures that limit interpretability and increase computational cost. This paper presents an explainable and lightweight speech emotion recognition framework based on a compact convolutional neural network architecture. The proposed approach utilizes log-Mel spectrogram representations to capture spectro-temporal speech characteristics and employs attentive statistics pooling to emphasize emotionally salient temporal segments. To improve model transparency, gradient-based class activation mapping (Grad-CAM) is incorporated to visualize the time-frequency regions that influence the model's predictions. Experimental evaluation on the SAVEE emotional speech dataset demonstrates that the proposed framework achieves competitive recognition performance while maintaining a compact architecture with significantly fewer parameters than many existing SER models. The results indicate that efficient convolutional architectures combined with interpretable analysis can provide a practical balance between recognition accuracy, computational efficiency, and model transparency.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T12:50:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16803v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16803v1"
+    },
+    {
+      "id": "2607.16788v1",
+      "title": "Demodulation of chaotic signals using convolutional neural network",
+      "authors": [
+        "Mykola Kozlenko",
+        "Emrullah Demiral",
+        "Anton Yudhana"
+      ],
+      "abstract": "Chaotic modulation is an effective communication technique that exploits deterministic chaos to produce pseudo-random signals. A widely adopted approach involves modulation of the chaotic bifurcation parameter. This paper introduces a deep learning-based demodulation method for keying of the bifurcation parameter. It describes the architecture of the convolutional neural network and evaluates performance metrics for signals generated using the chaotic logistic map. The study assesses the bit error rate for binary signals and reports a bit error rate of 0.0819 for a bifurcation parameter deviation of 1.34% under additive white Gaussian noise at a signal-to-noise ratio of -13 dB (corresponding to a normalized signal-to-noise ratio of +20 dB). The results demonstrate the capability to detect chaotic patterns even when the specific patterns were not included in the training dataset.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T11:50:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16788v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16788v1"
+    },
+    {
+      "id": "2607.16761v1",
+      "title": "Dropout and Random Gradient Masking Are Asymptotically Equivalent in Large ResNets",
+      "authors": [
+        "Javier Maass",
+        "Lénaïc Chizat"
+      ],
+      "abstract": "Dropout and Random Gradient Masking (RaM) are two training techniques used to improve performance in deep learning. Both techniques inject randomness into the training dynamics, but in significantly different ways: dropout applies random masks to the activations in the forward pass, whereas RaM leaves the forward pass unchanged and instead masks the gradients. In particular, the noise induced by RaM in the parameter updates is unbiased, so standard explanations for the effectiveness of dropout, such as the penalization effect or the prevention of co-adaptation between neurons, do not apply to RaM. In this work, we show that the difference between the two methods disappears for ResNets in the large depth and width asymptotics: in the complete feature learning regime, they both converge to the same large-scale limiting dynamics. This asymptotic equivalence holds for several variants of dropout and RaM, including layerwise dropout as used in stochastic-depth ResNets, albeit at slower quantitative rates. In fact, we also show that several of these variants collapse to the same limit asymptotically.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T10:57:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16761v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16761v1"
+    },
+    {
+      "id": "2607.16720v1",
+      "title": "Effects of width-dependent model hyperparameters and $\\ell_2$-regularization on the loss landscape of two-layer ReLU networks",
+      "authors": [
+        "Haruka Eshima",
+        "Makoto Yamada"
+      ],
+      "abstract": "Understanding deep neural networks remains a central challenge in machine learning. In particular, the theoretical properties of even two-layer ReLU networks, especially in the presence of weight decay, remain poorly understood. To this end, we derive a sufficient condition on the hyperparameter settings under which the global minima collapse to the zero solution. Interestingly, our experiments reveal that using AdamW as an optimizer prevents the collapse of the learned parameters, whereas using SGD does not, which may help explain the success of AdamW in deep learning training. In addition, when restricting the input dimension to one, we derive an analytical solution for the globally optimal parameter sets of two-layer ReLU networks and show that $\\ell_2$-regularization has a width-invariant effect on connectivity, but its dimensionality-reducing effect becomes stronger as the network width increases. These results provide insight into how width-dependent hyperparameters influence the geometry of regularized loss landscapes.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T09:17:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16720v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16720v1"
+    },
+    {
+      "id": "2607.16682v1",
+      "title": "Building a Neural Network from Scratch: Implementation, Evaluation, and Optimization",
+      "authors": [
+        "Yuanzhe Jia"
+      ],
+      "abstract": "The widespread adoption of high-level deep learning libraries, while accelerating model development, has increasingly abstracted away the internal mechanics of neural networks, creating a gap between practical usage and fundamental understanding. To address this, the paper presents a self-contained neural network framework implemented entirely from scratch -- without relying on automatic differentiation or pre-built deep learning modules. The implementation encompasses all essential components, including multi-layer architectures, diverse activation functions, regularization techniques, and state-of-the-art optimizers. Beyond serving as a pedagogical instrument that demystifies forward/backward propagation, gradient dynamics, and optimization landscapes, the framework demonstrates robust performance when applied to a multi-class classification task, successfully validating its correctness, numerical stability, and generalization across varied configurations. The extensible design and clean modularity further position it as a reliable baseline for educational purposes and future research exploration.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T07:31:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16682v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16682v1"
+    },
+    {
+      "id": "2607.16662v1",
+      "title": "Multimodal Attention-based Deep Learning for Emergency Triage with Electronic Health Records",
+      "authors": [
+        "Hazqeel Afyq Athaillah Kamarul Aryffin",
+        "Kamarul Aryffin Baharuddin",
+        "Mohd Halim Mohd Noor"
+      ],
+      "abstract": "Accurate emergency triage decision is critical to avoid clinical deterioration, morbidity, and mortality. Machine learning-based triage system involves acquiring the main presenting complaint in text form and assessing vital signs in numerical data, enabling an automated and efficient analysis of patient information for timely and accurate prioritization of medical attention. However, modelling the intricacies of both data types requires a comprehensive understanding of the temporal structure and dependencies within the data. Thus, the aim of this study is to propose a multimodal deep learning architecture that can effectively handle both tabular and textual data. Furthermore, the proposed model exploits self-attention to to capture both local and global relationships between the features. A dataset consisting of 11,102 triage data collected from emergency department of Hospital Universiti Sains Malaysia is used for model development and validation. The proposed model demonstrated an increase of 1.95% in accuracy, 2.49% in F1-score, and 1.41% in ROC AUC compared to the baseline model. The experimental results demonstrated the potential of the proposed model in predicting triage decisions.",
+      "published": "July 18, 2026",
+      "published_raw": "2026-07-18T06:35:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16662v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16662v1"
+    },
+    {
+      "id": "2607.16493v1",
+      "title": "Leakage-Robust Evaluation and Data-Scale Sensitivity of Attention-Enhanced Multi-Task Learning for Joint Fault Diagnosis and Remaining Useful Life Estimation",
+      "authors": [
+        "Md Mahamudur Rahaman Shamim",
+        "Md. Nuruzzaman",
+        "Zannatul Ferdus",
+        "Md Rajib Ahmed",
+        "Abieer Nwshad Anward",
+        "Mohammad Tooneer",
+        "Johir Uddin Khan",
+        "Khalid Hossen"
+      ],
+      "abstract": "Multi-task deep learning models that jointly perform fault classification and remaining useful life (RUL) regression are increasingly used in predictive maintenance, yet reported performance can be strongly affected by how sliding-window sequences are split into training and test sets. We investigate this issue using AMTLNet, an attention-enhanced multi-task architecture, on three public benchmarks: NASA C-MAPSS, NASA IMS, and the UCI Hydraulic System dataset. We show that naive splitting can inflate classification accuracy from a genuine 20-60 percent to 99.9 percent, or reduce it to 0 percent through degenerate class representation. To address this, we introduce a chunk-based, leakage-audited splitting protocol and evaluate all models using five seeds, one-way ANOVA, and Tukey HSD tests. On C-MAPSS, with 19,976 leakage-free training windows, AMTLNet matches a single-task CNN-LSTM baseline in classification, achieving 84.12 +/- 0.96 percent accuracy with Tukey p = 1.0, and reaches an R2 of 0.86 +/- 0.01 while significantly outperforming a naive multi-task baseline. On the smaller Bearing and Hydraulic datasets, multi-task training is unstable, but the failure mode differs: classification degrades for Bearing, whereas regression degrades for Hydraulic. We relate this asymmetry to label provenance and propose a practical framework for deciding when joint training is appropriate under data scarcity. Ablation results show that the multi-head attention branch is the main contributor to regression stability. Removing it reduces R2 from 0.861 to 0.766 and more than doubles classification variance, whereas the convolutional branch contributes little to regression despite using about one-third of the parameters. This study contributes a reusable leakage-audit protocol, seed-transparent evaluation, and evidence that task-specific stability depends more on label provenance than on task type.",
+      "published": "July 17, 2026",
+      "published_raw": "2026-07-17T20:33:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16493v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16493v1"
+    },
+    {
+      "id": "2607.16449v1",
+      "title": "EA-RMENet -- Path Loss Prediction in Urban Environments using Deep Learning",
+      "authors": [
+        "Jonathan O'Shea",
+        "Conor Brennan"
+      ],
+      "abstract": "Accurate path loss prediction is a critical component of wireless network planning. Current path loss prediction methods typically struggle to balance the trade-off between accuracy and computational efficiency. This paper proposes the Efficient Attention Radio Map Estimation Network (EA-RMENet) which is an image data-driven, deep learning (DL) model designed for radio map estimation (RME). EA-RMENet uses a U-Net framework with an EfficientNetB5 encoder, Attention Gated (AG) skip connections, and Atrous Spatial Pyramid Pooling (ASPP). The EfficientNet encoder uses compound scaling to balance accuracy and efficiency. AG skip connections suppress irrelevant features, and the ASPP captures a multi-scale context. The model has a test prediction RMSE of 0.0334 on the RadioMapSeer3D dataset with an inference time of 0.022 seconds/sample. In the ICASSP 2023 Radio Map Prediction Challenge, the model ranks third with a competitive RMSE of 0.0406 this highlights the models potential for real-world RME.",
+      "published": "July 17, 2026",
+      "published_raw": "2026-07-17T18:47:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.16449v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.16449v1"
+    },
     {
       "id": "2607.16050v1",
       "title": "DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings",
@@ -154,164 +295,6 @@
       "published_raw": "2026-07-16T06:21:20Z",
       "pdf_link": "http://arxiv.org/pdf/2607.14613v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.14613v1"
-    },
-    {
-      "id": "2607.14233v1",
-      "title": "LIGO-PINN: Learned Initialization via Gated Optimization to Alleviate Convergence Failures in Physics Informed Neural Networks",
-      "authors": [
-        "Nilay Anurag",
-        "Shital Adhikari",
-        "Taniya Kapoor",
-        "Nikhil Muralidhar"
-      ],
-      "abstract": "Physics-informed neural networks (PINNs) have had a broad research impact in modeling domains governed by partial differential equations (PDE). However, PINNs have been shown to perform poorly, sometimes even converging to trivial solutions, in challenging PDE domains, or when generalizing to unseen but related PDE domains. Previously proposed solutions detail hyperparameter tuning to reduce loss imbalance between data-driven and physics guided losses, curriculum learning based training strategies, or dynamic re-sampling of hard collocation points. These methods face certain pitfalls: hyperparameter tuning is expensive, designing a training curriculum is ambiguous in multi-parameter PDE settings, and dynamic resampling still fails in complex PDE settings. Complementary to this line of thinking, we believe the initial PINN network weights also play a crucial role in the emergence of catastrophic failures during training, yet the effect of PINN weight initialization has been surprisingly under-investigated. To this end, we propose a framework for Learned Initialization via Gated Layerwise Optimization (LIGO-PINN) to overcome PINN convergence failures. Through rigorous evaluation on 1D and 2D PDE domains, including a challenging 2D fluid dynamics setting, we demonstrate that our methodology outperforms state-of-the-art methods designed to alleviate PINN failures, achieving a 91.5% average performance improvement across six baselines and 81% over the strongest baseline. We also verify that LIGO-PINN generalizes to 3D unstructured domains. Finally, we analyze training dynamics across all three PDE domains to explain both LIGO-PINN's improvement and the convergence failure of traditional PINNs. Code: https://github.com/scailab/ligo-pinn Keywords: Machine Learning, Physics-Informed Neural Networks, Deep Learning, PDE Modeling",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T18:00:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.14233v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.14233v1"
-    },
-    {
-      "id": "2607.14064v1",
-      "title": "Minimax Theory of Likelihood-Based Deep Learning for Speckle Regression",
-      "authors": [
-        "Soham Jana"
-      ],
-      "abstract": "Speckle noise is a multiplicative noise commonly encountered in coherent imaging modalities such as synthetic aperture radar, optical coherence tomography, and digital holography. Although deep learning methods, in practice, have achieved state-of-the-art performance for speckle denoising, their fundamental statistical limits remain largely unexplored. Unlike additive noise models, multiplicative speckle noise makes the regression function unidentifiable from the conditional mean, rendering conventional least-squares-based deep learning approaches inapplicable. We study the minimax estimation of smooth nonparametric regression functions using likelihood-based deep neural network (DNN) estimators under a model with both multiplicative speckle noise and additive Gaussian noise. Our framework accommodates both low-dimensional and sparse high-dimensional features. We establish finite-sample upper bounds on the estimation error of the proposed DNN estimators and derive minimax lower bounds for nonparametric function recovery under our model, showing that they match up to logarithmic factors in the sample size. Moreover, these minimax rates coincide, up to logarithmic factors, with those for nonparametric regression under additive Gaussian noise alone, demonstrating that the intrinsic difficulty of estimation remains essentially unchanged despite the challenges posed by multiplicative speckle noise. Numerical experiments further supports consistency of our DNN-based despeckling methods and demonstrate their effectiveness.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T17:36:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.14064v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.14064v1"
-    },
-    {
-      "id": "2607.13891v1",
-      "title": "PiVoT: A Variational Solution for Real-time Large-scale Multi-object Detection and Tracking under Heavy Clutter",
-      "authors": [
-        "Runze Gan",
-        "Qing Li",
-        "Simon J. Godsill",
-        "Mike E. Davies",
-        "James R. Hopgood"
-      ],
-      "abstract": "Multi-object detection and tracking from noisy point clouds remain challenging in many data-scarce radar applications. Current Bayesian trackers based on Poisson measurement models offer a training-free solution but struggle to achieve accuracy and efficiency under severe clutter, large object populations, and full-resolution Doppler point clouds. We address this with PiVoT, a fast, clutter-resilient multi-object tracker for both positional and Doppler measurements. PiVoT performs end-to-end detection and tracking of a large and time-varying number of objects without external clustering or detectors, through joint inference of object states, shapes, existence probabilities, data association, and measurement rates. Its efficiency is driven by several variational inference innovations, such as theoretically justified birth pruning, quadratic-to-linear complexity reductions for exact updates, and a computationally efficient Doppler Poisson model. Experiments show that PiVoT substantially outperforms existing Bayesian trackers in challenging scenes, while also demonstrating exceptional scalability to a thousand objects, robustness to clutter visually inseparable from objects, and real-time operation on full-scale modern automotive radar datasets, where it attains performance comparable to a deep-learning detection benchmark as a training-free joint detector and tracker.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T14:35:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13891v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13891v1"
-    },
-    {
-      "id": "2607.13826v1",
-      "title": "Multimodal Assessment of Pancreatic Cancer Resectability Using Deep Learning",
-      "authors": [
-        "Vincent Ochs",
-        "Christoph Kuemmerli",
-        "Florentin Bieder",
-        "Julia Wolleb",
-        "Joel L. Lavanchy",
-        "Julia Ruppel",
-        "Jan Liechti",
-        "Stephanie Taha-Mehlitz",
-        "Christian Andreas Nebiker",
-        "Beat Mueller",
-        "Giuseppe Kito Fusai",
-        "Joerg-Matthias Pollok",
-        "Anas Taha",
-        "Philippe C. Cattin",
-        "Sebastian Staubli"
-      ],
-      "abstract": "Accurate determination of pancreatic ductal adenocarcinoma (PDAC) resectability relies on evaluating how the tumor interacts with major peripancreatic vessels on CT imaging, yet expert assessment often shows substantial variability. We introduce a fully automated multimodal deep learning framework that jointly analyzes 3D contrast enhanced CT and structured clinical information to classify patients into the three National Comprehensive Cancer Network (NCCN) resectability categories (upfront resectable, borderline resectable, locally advanced). The approach uses a Swin-UNETR backbone to obtain anatomy aware image representations through auxiliary segmentation of pancreas, tumor, and vascular structures. These features are fused with a compact clinical embedding derived from 17 routinely collected variables and processed by a lightweight classification head. Model training is guided by a dynamic multitask objective that adapts the balance between segmentation and classification based on current tumor Dice performance, promoting feature representations that remain both anatomically informed and discriminative.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T13:32:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13826v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13826v1"
-    },
-    {
-      "id": "2607.13699v1",
-      "title": "Machine learning development for quantum computing and neutrino physics",
-      "authors": [
-        "Annalisa De Lorenzis"
-      ],
-      "abstract": "This thesis investigates the application of machine-learning methods in the context of quantum computing and neutrino physics, with particular emphasis on the construction of effective representations for complex, high-dimensional data. The first part of the work is devoted to Quantum Extreme Learning Machines (QELMs), a hybrid quantum--classical framework in which classical data are encoded into quantum states and processed through fixed quantum dynamics, while learning is performed by a classical readout layer. Within this framework, we analyze the role of encoding strategies, feature-reduction methods, Hamiltonian structure, and measurement, with particular focus on the relationship between quantum dynamics, expressivity, entanglement, and classical simulability. The second part of the thesis concerns the application of deep learning to the analysis of images produced by water Cherenkov detectors in neutrino physics. Convolutional architectures, including residual networks, are developed for the classification of complex events in realistic simulated datasets, showing that such models can effectively extract relevant information from detector data. Taken together, these results highlight the potential of machine learning, in both its classical and quantum forms, as a powerful framework for the analysis of complex data in fundamental physics, while also outlining relevant challenges and directions for future research.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T11:01:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13699v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13699v1"
-    },
-    {
-      "id": "2607.13631v1",
-      "title": "How the Hessian-Spectrum of Neural Networks Depends on Data",
-      "authors": [
-        "Jasraj Singh",
-        "Enea Monzio Compagnoni",
-        "Antonio Orvieto"
-      ],
-      "abstract": "The Hessian matrix is an important quantity of interest when it comes to studying the loss landscape and optimization dynamics in deep learning, as well as designing measures of generalization, second-order learning algorithms, etc. Prior works have focused on empirical results or pursued a theoretical treatment under overly simplified settings. In this work, we derive the eigenvalues of the Hessian of linear networks with arbitrary widths and depths, and datasets with an arbitrary number of samples, features, and labels. Importantly, for classification tasks with MSE loss, we identify that the sharpness of the solution is directly related to the maximum proportion of samples belonging to any class. We empirically validate our predictions and systematically analyze the effects of shedding the impractical assumptions one at a time, as well as incorporating nonlinearities. We observe that our predictions are considerably robust in most cases, allowing us to extend our conclusions to more practical learning setups.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T09:25:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13631v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13631v1"
-    },
-    {
-      "id": "2607.13494v1",
-      "title": "A VAE-Driven Multi-Task Satellite-Aided Semantic Communication Framework for 6G-Enabled Connected Autonomous Vehicles",
-      "authors": [
-        "S. M. Abtahiul Alam",
-        "Niloy Das",
-        "Apurba Adhikary",
-        "Yu Qiao",
-        "Zhu Han",
-        "Choong Seon Hong"
-      ],
-      "abstract": "The development of smart transportation systems and the introduction of 6G wireless communication technologies have significantly changed vehicle network topologies. Future connected autonomous vehicle (CAV) networks require bandwidth-efficient, reliable, and low-latency communication for safety-critical applications such as traffic sign recognition and decision-making. Conventional communication systems transmit raw data regardless of task relevance, which is inefficient in resource-constrained satellite channels where uplink bandwidth is scarce and propagation losses are large. Semantic communication addresses this limitation by transmitting task-relevant information instead of full signal representations. It extracts and conveys essential semantic features and leverages deep learning to optimize task performance at the receiver. Therefore, we present a Variational Autoencoder (VAE)-based multi-task semantic communication framework for satellite-assisted autonomous driving. Unlike deterministic autoencoder-based methods, the proposed model uses probabilistic latent representations for more robust and efficient encoding. The learned features are transmitted over noisy wireless channels to perform traffic sign reconstruction and classification. The framework is trained end-to-end to jointly optimize both tasks. Results show that the proposed approach achieves significant bandwidth reduction of up to 87.23\\% to 98.17\\% while maintaining stable performance across varying signal-to-noise ratio conditions.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T06:49:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13494v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13494v1"
-    },
-    {
-      "id": "2607.13423v1",
-      "title": "Temperature Scaling Is Not Enough: Calibration Gaps Under Human Label Distributions",
-      "authors": [
-        "Wisdom Dogah"
-      ],
-      "abstract": "Temperature scaling is the dominant post-hoc calibration method in modern deep learning. Its theoretical justification rests on an assumption that is rarely stated explicitly: that ground-truth labels are one-hot and deterministic. In practice, labels are frequently soft, crowd-sourced, or genuinely distributional, reflecting real disagreement among human annotators rather than annotation noise. We study whether temperature scaling retains its calibration properties when this assumption is violated, and whether any resulting degradation depends on model scale. Using CIFAR-10H and ChaosNLI, two publicly available datasets with human-annotated soft label distributions, we evaluate three model scales per modality under both hard one-hot and soft distributional label targets. Across all nine configurations we find a positive soft-label calibration gap: temperature scaling calibrated on hard labels consistently underperforms an oracle calibrated directly on soft labels, with Brier Score gaps ranging from 0.002 to 0.134. The gap grows monotonically with model scale in the vision domain and on the SNLI-derived split of ChaosNLI, and is substantially larger in the language domain (mean gap 0.079) than in vision (mean gap 0.003). A scale-ordering reversal on the MNLI-derived split remains after matched-domain training; we treat it as inconclusive for the scale hypothesis and attribute it primarily to near-chance accuracy on that split. As a second post-hoc baseline, multiclass isotonic regression yields the same qualitative conclusion: positive soft-label gaps in all nine configurations, and larger gaps in language than in vision. These findings suggest that calibration protocols built on majority-vote labels systematically misstate model reliability wherever label ambiguity is structural, with direct consequences for deployment in safety-critical settings.",
-      "published": "July 15, 2026",
-      "published_raw": "2026-07-15T03:52:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13423v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13423v1"
-    },
-    {
-      "id": "2607.14161v1",
-      "title": "Deep-learning Causal Retrieval Optimization for Efficient e-commerce Distribution in Pinterest",
-      "authors": [
-        "Junpeng Hou",
-        "XianXing Zhang",
-        "Sai Xiao",
-        "Derek Cheng",
-        "Darren Reger",
-        "Olafur Gudmundsson",
-        "Mehdi Ben Ayed",
-        "Zhiqing Rao",
-        "Huizhong Duan"
-      ],
-      "abstract": "Pinterest is where people turn inspiration into action as users browse ideas, then take steps toward realization, often by discovering shoppable content. To support this journey, we must distribute commerce content when it helps, not when it distracts. We frame this as a causal decision of triggering shopping candidate generators in early retrieval and deploy a production system at Pinterest that learns personalized and contextualized triggering policies. A deep multi-task model jointly predicts outcomes and uplift of multiple events, trained with a doubly-robust pseudo-outcome alongside calibrated outcome losses for stable, single-robust uplift learning. A randomized data logging supplies counterfactual coverage, and the model is evaluated by both regular and reverse metrics for full assessment. A linear-time offline replay is designed to select thresholds and forecast policy impact with extremely high consistency with online results. For productionization, the model runs in parallel with remote retrieval calls without end-to-end latency regression. At web scale, we cut shopping triggers by up to 85% while holding key shopping sessions neutral, improving important total sessions (+0.26%) and Pin saves (+1.10%), with significant infrastructure savings. By unifying deep causal learning with reliable offline replay and demonstrating production-grade deployment, this work provides a generally practical recipe for early-retrieval optimizations in modern cascading recommenders beyond shopping, aligning exploration and cost with user intent at scale.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T23:02:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.14161v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.14161v1"
-    },
-    {
-      "id": "2607.13246v1",
-      "title": "Reassessing Muon for Matrix Factorization",
-      "authors": [
-        "Ali Parviz",
-        "Gal Mishne",
-        "Alex Cloninger"
-      ],
-      "abstract": "Muon has recently emerged as a strong optimizer for large-scale deep learning, where it reshapes gradient updates through approximate orthogonalization and has been reported to outperform Adam and AdamW in large language model training. Its empirical success has motivated a growing body of theoretical work that interprets Muon as steepest descent under the spectral norm. Yet it remains unclear which of Muon's advantages stem from its update rule itself and which are artifacts of the scale, architecture, and data of modern deep networks. In this work, we isolate the optimizer from these confounding factors by studying Muon on a simple, well-understood, and spectrally structured problem: low-rank matrix factorization. Through a controlled comparison against carefully tuned adaptive baselines, we find that Muon does not consistently outperform AdamW in this setting and that several previously reported advantages are sensitive to hyperparameter choices. Our results provide a more nuanced picture of when spectrum-aware orthogonalization is beneficial and argue for evaluating modern optimizers on controlled problems in addition to end-to-end benchmarks.",
-      "published": "July 14, 2026",
-      "published_raw": "2026-07-14T20:21:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.13246v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.13246v1"
     }
   ]
 }
