@@ -1,7 +1,192 @@
 {
-  "last_updated": "2026-07-21T01:19:55.331998",
+  "last_updated": "2026-07-22T01:18:21.585245",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.19060v1",
+      "title": "Deep learning-based prediction of time-resolved adhesive forces in viscoelastic Hertzian contacts",
+      "authors": [
+        "Ali Maghami",
+        "Merten Stender",
+        "Michele Ciavarella",
+        "Antonio Papangelo"
+      ],
+      "abstract": "Fast prediction of the response of adhesive soft viscoelastic contacts represents a current challenge in soft robotics and for gripping and manipulation tasks. Determining the complete time-resolved force trajectory requires full numerical simulations, whose computational cost is strongly parameter-dependent, making them impractical for real-time application or design-optimization loops. In this work, we overcome this limitation by training a scalar-conditioned, stateful, sequence-to-sequence deep learning model to predict the full force evolution from a prescribed displacement history for both short- and long-range adhesion regimes. The data set spans four orders of magnitude in loading and unloading rates and includes varied dwell times, with the Tabor parameter ranging from $0.2$ to $3.2$. To enable learning across these heterogeneous time scales, we introduce a fixed-measurement-step (FMS) representation that converts variable-length trajectories into fixed-length sequences while preserving their physical-time information. Different architectures were trained, including long short-term memory (LSTM) networks, temporal convolutional neural (TCN) networks, and time-distributed dense layers with three different Tabor-conditioning mechanisms. The models were compared using global waveform and error metrics. We found that the best-performing model has an LSTM architecture with concatenated conditioning, which achieves a held-out mean-squared error of $5.0\\times10^{-4}$, a median pull-off-force error of $\\approx2.2\\%$, and a median hysteresis error of $\\approx1.1\\%$. For the held-out protocols, the model predicts a complete force trajectory with a median inference time of $0.16$ s. The model is tested across unseen parameter combinations and against analytical limiting cases, providing a rapid surrogate for repeated numerical evaluations with potential use in control-oriented applications.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T12:48:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19060v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19060v1"
+    },
+    {
+      "id": "2607.19006v1",
+      "title": "Subject-Conditioned Glucose Forecasting in Type-1 Diabetes",
+      "authors": [
+        "Giorgia Rigamonti",
+        "Mirko Paolo Barbato",
+        "Davide Marelli",
+        "Paolo Napoletano"
+      ],
+      "abstract": "Accurate forecasting of blood glucose concentration is key in the management of Type 1 Diabetes, facilitating early detection of adverse glycemic events and supporting timely therapeutic interventions. Despite recent advances in glucose prediction, most existing approaches rely on population-level representations or implicit personalization strategies that fail to deliver effective subject-specific forecasts. In this work, we propose Subject-Conditioned Glucose Prediction (SCGP), a novel multimodal deep learning architecture conceived for personalized blood glucose prediction. SCGP conditions glucose predictions based on observed glucose data and a compact subject-specific representation learned from contextual information. By explicitly separating subject characterization from glucose dynamics modeling and avoiding early fusion of heterogeneous inputs, the proposed framework effectively captures inter-subject variability while preserving robust and reliable temporal modeling. Experiments on two state-of-the-art benchmark datasets demonstrate that SCGP consistently improves forecasting performance, enabling reliable detection of adverse glycemic events across multiple prediction horizons, highlighting the benefits of explicit subject conditioning for personalized diabetes management.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T11:42:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19006v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19006v1"
+    },
+    {
+      "id": "2607.18997v1",
+      "title": "Benchmarking Deep Learning Approaches for AEC Engineering Drawing Layout Detection and Information Extraction",
+      "authors": [
+        "Tianyang Huang",
+        "Alessio Lombardi",
+        "Ahmed Elnagar",
+        "Ahmed Zalouk",
+        "George Paul",
+        "Sepehr Najjarpour",
+        "Arvid Sigurdsson",
+        "Khalid Ismail",
+        "Mohamed Ragab",
+        "Edlira Vakaj"
+      ],
+      "abstract": "Information Extraction (IE) from Architecture, Engineering, and Construction (AEC) drawings remains hindered by manual inefficiency, while Layout Detection, a vital 'middleware' organizing graphical and textual hierarchies, is underexplored. General document layout models, optimized for text-centric content, lack validation on engineering drawings. This study constructs a custom AEC-specific layouts dataset and benchmarks five deep learning architectures. RF-DETR achieves state-of-the-art performance with an $mAP_{50}$ of 0.949, while the Vision-Language Model Qwen3-VL attains a leading F1-score of 0.911. Conversely, models pre-trained on general document datasets suffer from \"domain interference\", causing performance degradation. This establishes a robust technical foundation for automated IE in AEC.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T11:30:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.18997v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.18997v1"
+    },
+    {
+      "id": "2607.18965v1",
+      "title": "Variational meta-learning inference for low dimensional neural system identification",
+      "authors": [
+        "Matteo Rufolo",
+        "Dario Piga",
+        "Marco Forgione"
+      ],
+      "abstract": "Deep learning has proven highly effective for nonlinear system identification, but heavily parameterized neural networks are prone to overfitting in low-data regimes and lack reliable uncertainty quantification. The recently developed manifold meta-learning framework addresses the data efficiency problem by restricting the model parameters to a meta-learned low-dimensional manifold. However, that method is purely deterministic. We propose a fully probabilistic extension of the manifold meta-learning framework, based on amortized Variational Inference, where a generative prior over the low-dimensional parameter manifold is learned. During task-specific adaptation, we combine Maximum A Posteriori estimation with the Laplace approximation to yield a mathematically grounded posterior approximation. Evaluated on a static regression task and the Bouc--Wen dynamical system benchmark, the proposed approach achieves predictive accuracy comparable to its deterministic counterpart while successfully providing calibrated uncertainty bounds in severely low-data regimes.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T10:55:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.18965v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.18965v1"
+    },
+    {
+      "id": "2607.18923v1",
+      "title": "Visual Semantic Decoding of Electrocorticography from Video Stimuli using End-to-End Deep Learning",
+      "authors": [
+        "Stella Ho",
+        "Joel Villalobos",
+        "Joseph West",
+        "Jingyang Liu",
+        "Weijie Qi",
+        "Haruhiko Kishima",
+        "Ryohei Fukuma",
+        "Takufumi Yanagisawa",
+        "Sam E. John",
+        "David B. Grayden"
+      ],
+      "abstract": "ECoG-based visual semantic decoding enables inference of semantic interpretation of visual perception from complex, noisy brain activity. This study examines the feasibility of visual semantic decoding using an end-to-end deep learning framework using electrocorticography (ECoG). Specifically, the decoding task is to predict visual categories from video stimuli using time-series neural inputs. A previously collected ECoG dataset from participants ($n=17$) with drug-resistant epilepsy is used for analysis. With fewer than 50 training samples per visual category, this study evaluates multiple deep learning approaches, artificial neural network architectures, and frequency-band filtered inputs. The best-performing approach is analyzed to shed light on the discriminative information it relies on across spectral, temporal, and cortical dimensions. The selected decoding system uses mixup augmentation, a Transformer-based encoder, and high-gamma (80-150 Hz) inputs with a 900 ms post-stimulus window. Further analysis shows that early visual cortex (V2-V4), ventral stream visual cortex, MT+ complex with neighbouring visual areas, and lateral temporal cortex contributed substantially to decoding performance. This study demonstrates that an end-to-end deep learning framework can yield promising decoding performance from dynamic visual stimuli without handcrafted features, while the model behavior remains interpretable through spectral, temporal, and cortical dimensions, which are broadly consistent with established neuroscience knowledge.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T10:06:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.18923v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.18923v1"
+    },
+    {
+      "id": "2607.18678v1",
+      "title": "Cross-Dataset Generalization in Breast MRI Tumor Classification via Class-Wise Dataset Mixing",
+      "authors": [
+        "Mohammad Ali Dadrast",
+        "Hamid Usefi"
+      ],
+      "abstract": "Breast MRI is highly sensitive for detecting breast tumors, but exams contain many slices and require substantial reading time. Deep learning models often perform well on internal splits but can fail across institutions because of domain shift and dataset-origin bias. We study this failure mode for binary breast MRI tumor classification. EfficientNet-B3 and WaveViT-Small are trained using Duke Breast Cancer MRI and fastMRI, and evaluated only on the independent multi-center MAMA-MIA cohort. In a deliberately confounded setup, where label is perfectly correlated with dataset origin, external accuracy is near chance (0.5048--0.5265), despite very high recall. We then construct a mixed training set in which each class contains samples from both Duke and fastMRI, while preserving patient-level splitting, augmentation, and leakage controls. On MAMA-MIA, dataset mixing improves accuracy/F1 to 0.8463/0.8625 for WaveViT-Small and 0.8884/0.8994 for EfficientNet-B3. These results show that controlling dataset-origin bias is important for reliable breast MRI classification.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T03:51:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.18678v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.18678v1"
+    },
+    {
+      "id": "2607.18403v1",
+      "title": "Towards a universal model for spin-orbit coupled Wannier Hamiltonians",
+      "authors": [
+        "Alexander C. Tyner"
+      ],
+      "abstract": "While machine learning interatomic potentials (MLiPs) have matured to revolutionize material science, deep learning models for electronic structure are just beginning to emerge and restricted, almost exclusively, to non-orthogonal basis Hamiltonians. We introduce G(Wa)NN, the first deep-learning model capable of generating the electronic Hamiltonian of solid-state systems in an orthogonal Wannier basis. G(Wa)NN is trained on an unprecedented, diverse dataset of more than 111K Wannier Hamiltonians (150M+ hopping matrices) spanning 69 elements. The combination of optimized inference and linear-scaling methods for orthogonal Hamiltonians unlock transport simulations at massive scales (10K+ atoms). Crucially, the framework supports local finetuning, allowing users to adapt the base model to custom Wannier Hamiltonian datasets. To seamlessly translate these predictions into physical observables, we introduce Tailwater, a Python package providing an API interface to G(Wa)NN alongside a high performance post-processing library. Tailwater enables automated projection of the predicted Hamiltonian into an arbitrary low-energy subspace-directly mirroring familiar Wannier90 workflows-and includes a suite of Kernel Polynomial Method (KPM) functions that exploit the orthogonal basis to achieve strict linear scaling for spectral observables. The Tailwater ecosystem, with the G(Wa)NN model at its core, aims to help bridge the gap between deep learning and macro-scale quantum transport simulations.",
+      "published": "July 20, 2026",
+      "published_raw": "2026-07-20T18:00:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.18403v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.18403v1"
+    },
+    {
+      "id": "2607.17783v1",
+      "title": "Feature Attribution-Based Explainability Analysis of Deep Learning Models in Predictive Process Monitoring",
+      "authors": [
+        "Kseniya Sahatova",
+        "Rafael Seidi Oyamada",
+        "Xuefei Lu",
+        "Johannes De Smedt"
+      ],
+      "abstract": "Predictive process monitoring supports the optimization and control of operational business processes by forecasting the future state or outcome of ongoing cases. While deep neural networks have achieved strong performance for these tasks by modeling sequential dependencies in event logs, their black-box nature limits trust and practical adoption. Feature attribution methods are often used to address this, but applying them directly poses a dilemma: event-level attributions impose high computational complexity for long traces, while explanations based on aggregated trace representations often fail to capture the underlying control-flow dynamics. To address this issue, we propose a local post-hoc explainability method for deep neural networks in outcome prediction. The method relies on a control-flow-aware segmentation algorithm that partitions a trace into meaningful segments and supports the computation of segment-level SHAP explanations. This makes it possible to identify which parts of a trace influence a prediction and which change points steer the case toward the predicted outcome. We assess the proposed segmentation method on a synthetic dataset with known process logic, where meaningful change points can be explicitly verified, and we demonstrate its usefulness on real-world event logs from a loan application process and an administrative process of a Dutch municipality.",
+      "published": "July 20, 2026",
+      "published_raw": "2026-07-20T10:15:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.17783v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.17783v1"
+    },
+    {
+      "id": "2607.18345v1",
+      "title": "Addressing Limited Data in Auditory Attention Decoding with Diffusion Generative Models",
+      "authors": [
+        "David Rannaleet",
+        "Victor Gunnarsson",
+        "Bo Bernhardsson",
+        "Martin A. Skoglund",
+        "Emina Alickovic"
+      ],
+      "abstract": "Limited training data constrains deep learning models for Auditory Attention Decoding (AAD) in hearing aids (HAs). AAD uses electroencephalogram (EEG) data to decode listener's attention, enabling real-time tracking of specific sound sources. However, achieving high AAD performance with short time windows typical in HAs (<=1s) is challenging due to the scarcity of real-world speech-evoked EEG data. To address this issue, we investigate diffusion probabilistic models (DPMs) for generating synthetic speech-evoked EEG data. DPMs learn the underlying complex data structure through a denoising process and can generate realistic samples suitable for data augmentation. We evaluate the use of synthetic EEG data for augmenting datasets in locus-of-attention (LoA) classification tasks. Our experiments demonstrate that DPMs can generate realistic EEG signals and that incorporating synthetic data significantly improves AAD performance compared to models trained solely on measured EEG data (p<0.05). These results highlight the potential of diffusion-based data augmentation to mitigate training data limitations and improve the robustness of short-window AAD models in HA applications.",
+      "published": "July 20, 2026",
+      "published_raw": "2026-07-20T07:47:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.18345v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.18345v1"
+    },
+    {
+      "id": "2607.17614v1",
+      "title": "Online learning of neural state-space models",
+      "authors": [
+        "Bendegúz Györök",
+        "Tamás Péni",
+        "Maarten Schoukens",
+        "Roland Tóth"
+      ],
+      "abstract": "Recent advances in deep-learning-based nonlinear system identification have led to encoder-based estimation of neural state-space (ANN-SS) models that achieve state-of-the-art performance in offline settings by estimating initial model states from past input-output data. These methods are typically used in multiple-shooting-based offline identification, and online learning of these models remains largely unexplored. This paper presents a batch-wise learning pipeline and a direct recursive identification algorithm for subspace encoder-based ANN-SS models. We provide convergence analysis of the recursive formulation and validate its performance through extensive simulation studies. The results demonstrate that the proposed approach enables computationally efficient online adaptation with high model accuracy.",
+      "published": "July 20, 2026",
+      "published_raw": "2026-07-20T07:04:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.17614v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.17614v1"
+    },
+    {
+      "id": "2607.17582v1",
+      "title": "ANNLib: A Development Framework for Efficient Approximate Nearest Neighbor Search",
+      "authors": [
+        "Zheqi Shen",
+        "Jingbo Su",
+        "Zijin Wan",
+        "Yan Gu",
+        "Yihan Sun"
+      ],
+      "abstract": "Approximate Nearest Neighbor Search (ANNS) plays a pivotal role in modern deep learning pipelines. Recently, many ANNS systems have been proposed to either provide broad functionality or reach high performance. However, it is yet difficult to achieve both with minimal programming efforts. We propose ANNLib to address the gap. ANNLib is a library that provides a programming framework for achieving high performance and flexible functionality in ANNS systems, based on popular graph-based ANNS algorithms. We carefully decouple and independently optimize both the algorithm and the data structure components of an ANNS system. In addition, we integrate state-of-the-art algorithms and data structures into ANNLib as modules, along with our new designs. Users can choose combinations of components to implement sophisticated settings with high performance, such as filter search, fully dynamic updates, and historical queries on snapshots. Our experiments show that our new solution provides a simple interface for various applications and achieves comparable or even better performance than previous work, specifically for each application.",
+      "published": "July 20, 2026",
+      "published_raw": "2026-07-20T05:59:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.17582v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.17582v1"
+    },
+    {
+      "id": "2607.17378v1",
+      "title": "Econometrics with Pre-Trained Embeddings for Unstructured Data",
+      "authors": [
+        "Yuya Shimizu"
+      ],
+      "abstract": "Unstructured data, such as images and text, are increasingly used in empirical economics. Since training machine-learning models on unstructured data is costly, economists often use off-the-shelf pre-trained deep learning models developed by computer scientists to extract embeddings, which are then used as covariates in target economic analyses. Despite the popularity of this practice, its theoretical foundations remain limited. There are two main difficulties. First, the pre-trained model is usually trained on a different dataset and for a different task. Consequently, it is unclear when such a model can be used reliably for the target task. Second, the embedding function is subject to an identification problem, which makes it difficult to analyze the estimation error of the embedding function and its effect on the target task. In this paper, we provide sufficient conditions to overcome these difficulties and derive the convergence rate of machine learning models with pre-trained embeddings. We illustrate the theory through double machine learning applications for estimating parameters of interest, such as partially linear regression with unstructured controls, price elasticity in demand estimation considering the product quality measured by images and text, missing data imputation with unstructured data, and the average treatment effect with unstructured confounders.",
+      "published": "July 19, 2026",
+      "published_raw": "2026-07-19T18:37:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.17378v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.17378v1"
+    },
     {
       "id": "2607.16936v1",
       "title": "Pediatric Bone Age Prediction Using Deep Learning",
@@ -110,191 +295,6 @@
       "published_raw": "2026-07-18T06:35:23Z",
       "pdf_link": "http://arxiv.org/pdf/2607.16662v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.16662v1"
-    },
-    {
-      "id": "2607.16493v1",
-      "title": "Leakage-Robust Evaluation and Data-Scale Sensitivity of Attention-Enhanced Multi-Task Learning for Joint Fault Diagnosis and Remaining Useful Life Estimation",
-      "authors": [
-        "Md Mahamudur Rahaman Shamim",
-        "Md. Nuruzzaman",
-        "Zannatul Ferdus",
-        "Md Rajib Ahmed",
-        "Abieer Nwshad Anward",
-        "Mohammad Tooneer",
-        "Johir Uddin Khan",
-        "Khalid Hossen"
-      ],
-      "abstract": "Multi-task deep learning models that jointly perform fault classification and remaining useful life (RUL) regression are increasingly used in predictive maintenance, yet reported performance can be strongly affected by how sliding-window sequences are split into training and test sets. We investigate this issue using AMTLNet, an attention-enhanced multi-task architecture, on three public benchmarks: NASA C-MAPSS, NASA IMS, and the UCI Hydraulic System dataset. We show that naive splitting can inflate classification accuracy from a genuine 20-60 percent to 99.9 percent, or reduce it to 0 percent through degenerate class representation. To address this, we introduce a chunk-based, leakage-audited splitting protocol and evaluate all models using five seeds, one-way ANOVA, and Tukey HSD tests. On C-MAPSS, with 19,976 leakage-free training windows, AMTLNet matches a single-task CNN-LSTM baseline in classification, achieving 84.12 +/- 0.96 percent accuracy with Tukey p = 1.0, and reaches an R2 of 0.86 +/- 0.01 while significantly outperforming a naive multi-task baseline. On the smaller Bearing and Hydraulic datasets, multi-task training is unstable, but the failure mode differs: classification degrades for Bearing, whereas regression degrades for Hydraulic. We relate this asymmetry to label provenance and propose a practical framework for deciding when joint training is appropriate under data scarcity. Ablation results show that the multi-head attention branch is the main contributor to regression stability. Removing it reduces R2 from 0.861 to 0.766 and more than doubles classification variance, whereas the convolutional branch contributes little to regression despite using about one-third of the parameters. This study contributes a reusable leakage-audit protocol, seed-transparent evaluation, and evidence that task-specific stability depends more on label provenance than on task type.",
-      "published": "July 17, 2026",
-      "published_raw": "2026-07-17T20:33:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16493v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16493v1"
-    },
-    {
-      "id": "2607.16449v1",
-      "title": "EA-RMENet -- Path Loss Prediction in Urban Environments using Deep Learning",
-      "authors": [
-        "Jonathan O'Shea",
-        "Conor Brennan"
-      ],
-      "abstract": "Accurate path loss prediction is a critical component of wireless network planning. Current path loss prediction methods typically struggle to balance the trade-off between accuracy and computational efficiency. This paper proposes the Efficient Attention Radio Map Estimation Network (EA-RMENet) which is an image data-driven, deep learning (DL) model designed for radio map estimation (RME). EA-RMENet uses a U-Net framework with an EfficientNetB5 encoder, Attention Gated (AG) skip connections, and Atrous Spatial Pyramid Pooling (ASPP). The EfficientNet encoder uses compound scaling to balance accuracy and efficiency. AG skip connections suppress irrelevant features, and the ASPP captures a multi-scale context. The model has a test prediction RMSE of 0.0334 on the RadioMapSeer3D dataset with an inference time of 0.022 seconds/sample. In the ICASSP 2023 Radio Map Prediction Challenge, the model ranks third with a competitive RMSE of 0.0406 this highlights the models potential for real-world RME.",
-      "published": "July 17, 2026",
-      "published_raw": "2026-07-17T18:47:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16449v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16449v1"
-    },
-    {
-      "id": "2607.16050v1",
-      "title": "DELUGE: Towards Continental-Scale Daily Pluvial Flood Damage Prediction via Interpretable Conditioning on Foundation Model Embeddings",
-      "authors": [
-        "Yuya Kawakami",
-        "Daniel Cayan",
-        "Dongyu Liu",
-        "Kwan-Liu Ma",
-        "Tom Corringham"
-      ],
-      "abstract": "Pluvial (rainfall-driven) flooding accounts for 45% of National Flood Insurance Program (NFIP) claims in the United States and is harder to predict than its riverine and coastal counterparts, with existing approaches limited to coarse resolution, regional domains, or computationally intensive process-based models unsuitable for daily continental-scale use. We present DELUGE, a multimodal deep learning framework for daily pluvial flood damage prediction at ~1 km resolution and national scale, trained on spatially and temporally corrected NFIP claims (2017-2022) and structured around the hazard, exposure, and vulnerability components of disaster risk. Rather than blanket coverage of the Conterminous United States (CONUS), we model the top 100 highest-claim 75 km cells, distributed nationwide and accounting for ~81% of total pluvial flood claims. Our architectural novelty is a pair of parametric modules in the hydrometeorology branch, a Value Modulator and a Temporal Modulator, conditioned on terrain descriptors and AlphaEarth foundation-model embeddings, that expose directly inspectable hydrological response parameters and provide architecture-level interpretability-by-design. Under a spatial block holdout, DELUGE outperforms tuned Random Forest, XGBoost, and LightGBM baselines by 9% to 30% on a dollar-weighted area under the precision-recall curve (PR-AUC), a metric that emphasizes the rare, high-cost claims of greatest operational interest. Beyond DELUGE, we argue this interpretable conditioning scheme is a transferable pattern for integrating foundation-model embeddings into other geospatial prediction tasks.",
-      "published": "July 17, 2026",
-      "published_raw": "2026-07-17T15:27:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16050v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16050v1"
-    },
-    {
-      "id": "2607.15775v1",
-      "title": "AquaAugmentor: A Novel Feature Augmentation Algorithm for Water Potability Prediction",
-      "authors": [
-        "Muntasir Tabasum",
-        "Al Zadid Sultan Bin Habib",
-        "Tanpia Tasnim",
-        "Md. Ekramul Islam",
-        "Md Younus Ahamed",
-        "Md Asif Bin Syed"
-      ],
-      "abstract": "Access to potable water is crucial for health, economic development, and sustainability. However, accurately classifying water quality remains a significant challenge due to the complexity and variability of water source data. This paper addresses the challenge of predicting water potability through machine learning and deep learning algorithms. It introduces a novel feature augmentation algorithm, AquaAugmentor, to enhance the predictive performance of these models for low-dimensional datasets. Utilizing a dataset that includes chemical attributes of water, such as pH, hardness, solids, chloramines, sulfate, and others. This study evaluates the performance of the models with and without AquaAugmentor. Each model applied to classify water as potable or non-potable and its performance is then evaluated and compared based on test accuracy and AUC score. The results highlight the strengths and limitations of our proposed algorithm, providing insights into the most effective techniques for improving the predictive performance of water quality classification. This study contributes to the broader efforts of ensuring safe water access and serves as a framework for employing machine learning in environmental quality assessments. The findings aim to assist researchers, policymakers, and public health officials in making informed decisions based on reliable machine learning predictions.",
-      "published": "July 17, 2026",
-      "published_raw": "2026-07-17T09:11:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15775v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15775v1"
-    },
-    {
-      "id": "2607.15724v1",
-      "title": "Natural Backdoor Attacks on Speech Recognition Models",
-      "authors": [
-        "Jinwen Xin",
-        "Xixiang Lyu",
-        "Jing Ma"
-      ],
-      "abstract": "With the rapid development of deep learning, its vulnerability has gradually emerged in recent years. This work focuses on backdoor attacks on speech recognition systems. We adopt sounds that are ordinary in nature or in our daily life as triggers for natural backdoor attacks. We conduct experiments on two datasets and three models to validate the performance of natural backdoor attacks and explore the effects of poisoning rate, trigger duration and blend ratio on the performance of natural backdoor attacks. Our results show that natural backdoor attacks have a high attack success rate without compromising model performance on benign samples, even with short or low-amplitude triggers. It requires only 5% of poisoned samples to achieve a near 100% attack success rate. In addition, the backdoor will be automatically activated by the corresponding sound in nature, which is not easy to be detected and will bring severer harm.",
-      "published": "July 17, 2026",
-      "published_raw": "2026-07-17T07:59:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15724v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15724v1"
-    },
-    {
-      "id": "2607.15477v1",
-      "title": "Deep Learning Approaches for Sleep Apnea Classification from Polysomnographic EEG Signals",
-      "authors": [
-        "Shashank Manjunath",
-        "Mukesh Cheemakurthi",
-        "Aarti Sathyanarayana"
-      ],
-      "abstract": "Sleep apnea diagnosis via polysomnography remains resource intensive and relies on time consuming manual data analysis and scoring. Recent work has demonstrated that central nervous system effects of sleep apnea events can be detected through electroencephalogram (EEG) signals. However, most work uses a single feature type on various datasets combined with different classification algorithms. In this work, we present a comprehensive comparison of deep learning architectures and feature representations for automated sleep apnea detection from multichannel EEG on a single dataset of pediatric subjects. We evaluate Vision Transformers and Graph Attention Networks across distinct signal representations: raw temporal signals, short-time Fourier transform spectrograms, coherence based graphs, and two topological data analysis (TDA) derived features. Using age and sex matching of our train and test sets, we train on 2410 pediatric subjects and test on 575 pediatric subjects. We achieve a best test AUC of 0.750 using a vision transformer based model trained on TDA features. Stratified analysis across patient demographics (age, sex, AHI severity) and sleep stages (N1, N2, N3, REM) reveals significant performance variation. Our results demonstrate the feasibility of EEG based automated OSA screening while highlighting essential challenges for clinical deployment.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T21:51:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15477v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15477v1"
-    },
-    {
-      "id": "2607.15430v1",
-      "title": "Six-sigma Quality Management of Additive Manufacturing",
-      "authors": [
-        "Hui Yang",
-        "Prahalad Rao",
-        "Timothy Simpson",
-        "Yan Lu",
-        "Paul Witherell",
-        "Abdalla R. Nassar",
-        "Edward Reutzel",
-        "Soundar Kumara"
-      ],
-      "abstract": "In this paper, we propose to design, develop, and implement the new DMAIC methodology for Six-Sigma quality management of AM. First, we define the specific quality challenges arising from AM layer-wise fabrication and mass customization (even one-of-a-kind production). Second, we present a review of AM metrology and sensing techniques, from materials through design, process, environment, to post-build inspection. Third, we contextualize a framework for realizing the full potential of data from AM systems, and emphasize the need for analytical methods and tools. We propose and delineate the utility of new data-driven analytical methods, including deep learning, machine learning, and network science, to characterize and model the interrelationships between engineering design, machine setting, process variability and final build quality. Fourth, we present the methodologies of ontology analytics, design of experiments (DOE) and simulation analysis for AM system improvements. In closing, new process control approaches are discussed to optimize the action plans, once an anomaly is detected, with specific consideration of lead time and energy consumption.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T20:01:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15430v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15430v1"
-    },
-    {
-      "id": "2607.15258v1",
-      "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
-      "authors": [
-        "Arthur G. Bubolz",
-        "Abreu Quevedo",
-        "Giancarlo Lucca",
-        "Rafael A. Berri",
-        "Eduardo Borges",
-        "Bruno L. Dalmazo"
-      ],
-      "abstract": "The growing use of Bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. This study presents a new approach to analyze Bitcoin market sentiment by combining on-chain and financial data with social media posts. Unlike models that aim to predict prices, this work focuses on explaining market sentiment using blockchain transactions, historical price data of Bitcoin, and daily Twitter sentiment classifications. The method merges sentiment trends with on-chain and financial metrics, normalized into a dataset for detailed market analysis. Multiple machine learning models were tested using cross-validation, with Gradient Boosting (XGBoost) emerging as the most reliable model for classifying sentiment, achieving an average F1-score of about 0.84. SHAP (SHapley Additive exPlanations), a game theory-based method for model interpretability, was used to quantify the contribution of on-chain features to the model's predictions, improving transparency. The results indicate that this data combination yields meaningful predictive signals and insights, supporting data-driven cryptocurrency analysis and future improvements with deep learning.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T17:52:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15258v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15258v1"
-    },
-    {
-      "id": "2607.15217v1",
-      "title": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation",
-      "authors": [
-        "Subodh Kalia"
-      ],
-      "abstract": "We present NeuronSoup, a neural computation architecture that replaces synchronous layer-by-layer processing with asynchronous, delay-mediated signal propagation through a pool of shared neurons. Each path in the network routes a continuous-valued signal from one input neuron to one output neuron through a variable number of intermediate hidden neurons. Hidden neurons are physically shared across paths: when two paths pass through the same neuron, the second arrival encounters the accumulated state left by the first, producing constructive or destructive interference that depends on signal polarity and arrival timing. The entire architecture -- topology, weights, delays, and connectivity -- is co-evolved by a genetic algorithm operating on a flat real-valued genome of 14,602 genes. On 10-class MNIST digit classification using frozen ResNet18 features as input, the system evolves a network of 204 active paths through 266 hidden neurons (156 shared across multiple paths, with one neuron participating in 11 distinct paths) and achieves 85.9\\% test accuracy after 10,000 generations. The trained model occupies 115 KB. We argue that this architecture addresses fundamental limitations of current deep learning: it requires no differentiable computation graph, adapts its computation depth per-sample, and discovers lateral interactions between processing pathways that current architectures must engineer explicitly. We discuss why genetic algorithms are the correct optimization tool for this problem class, why CMA-ES fails at this scale, and how the architecture generalizes to arbitrary domains by substituting the encoder and output structure.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T17:18:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15217v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15217v1"
-    },
-    {
-      "id": "2607.15107v1",
-      "title": "Learning in Infinitesimal Non-Compositional Sketches",
-      "authors": [
-        "Sridhar Mahadevan"
-      ],
-      "abstract": "This paper develops a categorical framework -- Learning in Infinitesimal Non-Compositional Sketches (LINCS) -- as the repair of non-compositionality: failures of diagrams to factor through quotient sketches lifted to the tangent category setting. Machine learning problems are specified as sketches: graphs with commutativity conditions $\\mathcal D$, limit cones $\\mathcal L$, and colimit cocones $\\mathcal K$, generalizing the usual scalarization of loss functions or vector space assumptions. Non-compositionality is defined purely as failure of a universal factorization problem, not as arithmetic error between the desired and actual predictions. Given a learning sketch $\\mathbb S=(S,\\mathcal D,\\mathcal L,\\mathcal K)$, whose underlying graph is $S$, and a model $D:J \\rightarrow C$, the base defect is the obstruction to factorization $\\mbox{Obs}(\\mbox{Fact}_{\\mathbb S}(D))$. The tangent lift applies the tangent functor $T$ to obtain $TD:J \\rightarrow C$, and LINCS is defined as the obstruction $\\mbox{Obs}(\\mbox{Fact}_{\\mathbb S}(TD))$ -- asking whether infinitesimal perturbations preserve the compositionality constraints.The paper also introduces Tangent Learning Sketches, which are sketches equipped with Cockett-Cruttwell tangent structure. The paper defines the INC endofunctor, which iterates the tangent lift, producing a tower $D,TD,T^2D, \\cdots$ of factorization problems. ML is thereby formulated as the search for a coalgebraic fixed point where successive tangent unfoldings stabilize ($νT_{\\mbox{INC}}$). Using the Aczel--Mendler theorem, we prove existence of a final INC coalgebra whenever $T_{\\mbox{INC}}$ admits a set-based class realization that creates its final carrier. A detailed experimental evaluation of LINCS is underway in a number of concrete ML settings, including deep learning, large language models, and reinforcement learning, and is described in companion papers.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T15:18:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.15107v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.15107v1"
-    },
-    {
-      "id": "2607.14747v1",
-      "title": "Toward Energy-Efficient and Low-Power Arrhythmia Detection for Wearable Devices",
-      "authors": [
-        "Floriaan Bulten",
-        "Yawar Rasheed",
-        "Arlene John",
-        "Vincenzo Stoico",
-        "Ghayoor Gillani"
-      ],
-      "abstract": "Cardiovascular diseases are the leading cause of death worldwide, and conditions such as arrhythmia often require long-term monitoring for effective detection and diagnosis. However, current wearable monitoring devices are bulky, uncomfortable, and typically rely on clinicians to manually evaluate electrocardiograms (ECGs). While Deep Learning (DL) algorithms have shown superior performance in arrhythmia detection and classification, their computational complexity coupled with high power consumption limit deployment in wearable devices. To address this challenge, this paper investigates the use of approximation techniques to reduce the power and energy consumption of DL architectures while maintaining acceptable classification performance. Specifically, techniques such as data precision reduction and approximate multiplication are investigated in a state-of-the-art DL model and its corresponding hardware architecture. The model is trained and validated using the MIT-BIH Arrhythmia Database, and hardware implementations employing various approximate multipliers are synthesized and evaluated. Compared with the state-of-the-art 8.75 μW (and 2.08 μJ) reference architecture, our proposed architecture consumes 3.07 μW (and 2.17 μJ) at 12 kHz, showing 64.9% reduction in power consumption while providing an acceptable output quality, i.e., 93.7% classification accuracy and 92.1% sensitivity. At 100 MHz, our proposed architecture consumes 9.45 mW (and 0.8 μJ), showing 61.5% reduction in energy consumption as compared to the state-of-the-art architecture. These results demonstrate that our proposed approximations significantly extend wearable device battery life while preserving the required arrhythmia classification performance.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T09:31:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.14747v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.14747v1"
-    },
-    {
-      "id": "2607.14613v1",
-      "title": "Angular Gaussian Supervised Contrastive Learning for Long-Tailed Electrocardiogram Arrhythmia Diagnosis",
-      "authors": [
-        "Jin Dai",
-        "Qiuzhen Zhang",
-        "Chenyun Dai",
-        "Danmei Lan",
-        "Can Han"
-      ],
-      "abstract": "Long-tailed label distributions reduce the reliability of deep learning for electrocardiogram (ECG) arrhythmia diagnosis, particularly for clinically important but rare abnormalities. Existing rebalancing and logit adjustment methods mainly address class frequency while overlooking direction-dependent morphological variability across ECG classes. This study proposes Angular Gaussian Supervised Contrastive Learning (AG-SCL) for long-tailed multi-label ECG diagnosis. AG-SCL integrates three components into a unified framework: an Angular Gaussian contrastive branch that models full-covariance class uncertainty on unit-normalized embeddings, Adaptive Logit Adjustment that learns bounded label-state-specific prior corrections instead of fixed frequency-based margins, and tail-aware augmentation that generates morphology-preserving views while protecting the 7-25 Hz QRS-dominant band. The method was evaluated on the public PTB-XL benchmark and a nocturnal ECG dataset comprising 1317 hours of recordings from 141 subjects. AG-SCL achieved the best macro-level performance on both datasets. On PTB-XL, it obtained a balanced accuracy of 0.838, sensitivity of 0.709, specificity of 0.968, mean average precision of 0.495, and TPR at 5% FPR of 0.778. On Noc-ECG, the corresponding values were 0.918, 0.889, 0.947, 0.488, and 0.900. The largest gains occurred in rare or morphologically unstable rhythm classes, while ablation studies confirmed the contributions of full-covariance modelling, Adaptive Logit Adjustment, and tail-aware augmentation. AG-SCL improves long-tailed ECG diagnosis by combining prior calibration with anisotropic representation learning, enhancing sensitivity to rare arrhythmias while maintaining clinically relevant specificity. Our code is available at: https://github.com/Open-EXG/AG-SCL-for-Long-Tailed-ECG.",
-      "published": "July 16, 2026",
-      "published_raw": "2026-07-16T06:21:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.14613v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.14613v1"
     }
   ]
 }
