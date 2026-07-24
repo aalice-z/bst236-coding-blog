@@ -1,7 +1,298 @@
 {
-  "last_updated": "2026-07-22T01:18:21.585245",
+  "last_updated": "2026-07-24T01:21:39.171567",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.21200v1",
+      "title": "Transformer-based Diffusion models for Hydrological Time Series Probabilistic Imputation and Forecasting",
+      "authors": [
+        "Ferdinand Bhavsar",
+        "Lionel Benoit",
+        "Maxime Savatier",
+        "Edith Gabriel"
+      ],
+      "abstract": "The modeling of hydrometeorological time series with limited observations is a key challenge in the monitoring of hydro-systems and water resources, as well as for flood or drought risk assessment. Due to the high variability of the underlying processes and the sparsity of available measurements, traditional statistical approaches often struggle to accurately represent their dynamics. In this context, recent advances in deep learning offer a promising direction for improving the representation and generation of complex temporal processes sampled at several observation sites. This study investigates the application of transformer-based diffusion models to the simulation and reconstruction of hydrological time series. The proposed framework is applied to the joint modeling of water quantity and quality at six sites spread across three adjacent headwater catchments located in North-East France on a limestone plateau covered by forests and field crops. The model is calibrated and validated using available observational data, which has been quality controlled and corrected for sensor drift and malfunction through collaborative efforts by LNE metrology expertise and Andra monthly quality control over more than 15 years. Its performance is compared with several established baseline approaches commonly used for time series modeling. Quantitative evaluation metrics are employed to assess the ability of the proposed method to reproduce key temporal characteristics of the observed signals in two settings: the imputation of incomplete time series and the forecasting of upcoming hydrological conditions. Results support the effectiveness of the transformer-based approach and highlight its capacity to capture and simulate the complex patterns present in hydrological data. In particular, the results indicate that diffusion models can efficiently sample realistic time series distributions under observation settings with variable missing data for both forecasting and imputation.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T11:19:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.21200v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.21200v1"
+    },
+    {
+      "id": "2607.21080v1",
+      "title": "Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction",
+      "authors": [
+        "Yun-Ye Cai",
+        "Hsuan-Tien Lin"
+      ],
+      "abstract": "Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although the autoregressive pipeline is highly scalable and flexible, its prediction errors grow rapidly over long forecasting horizons. In this work, we study this error growth phenomenon from both theoretical and empirical perspectives. Our analysis reveals that the growth is driven by a feedback loop between output errors and input distribution shifts. Specifically, the autoregressive process amplifies small initial output errors, which progressively corrupt subsequent input distributions, echoing the butterfly effect in atmospheric science and ultimately deteriorating forecasting accuracy over longer horizons. Furthermore, we show that this distributional shift originates at the earliest stage of inference, with out-of-distribution signatures detectable as early as the first autoregressive step. To mitigate this issue, we propose \\textbf{Self-Output Fine-Tuning (SOFT)}, a plug-and-play strategy that leverages the model's own one-step predictions to calibrate the biased input distribution encountered at the first step. Extensive experiments demonstrate that, despite its simplicity, SOFT achieves state-of-the-art performance on long-horizon forecasting tasks and substantially reduces both prediction errors and distributional discrepancy. The success of SOFT highlights the importance of reexamining the fundamental pipeline of deep learning weather prediction, representing a critical pipeline advance for atmospheric science.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T09:10:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.21080v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.21080v1"
+    },
+    {
+      "id": "2607.21068v1",
+      "title": "Counterfactual Explainability Framework With CycleGAN And Counterfactual-Classifier Alignnment Score for Retinal Disease Classification",
+      "authors": [
+        "Kritanu Chattopadhyay",
+        "Sayanjit Singha Roy",
+        "Soumya Chatterjee"
+      ],
+      "abstract": "Automated detection of vision impairing retina-based ocular conditions from fundus images is important for early screening, timely referral and reducing dependency on specialist-only assessment, for which neural network-based deep learning (DL) models have been widely utilized. However, explainability of the DL frameworks remains a major bottleneck for clinical adoption, particularly when model decisions are not linked to retinal regions that are clinically meaningful. To address this issue, this study presents CounterFundus, a novel CycleGAN-driven counterfactual explainability framework, integrating EfficientNet-B5-based retinal disease detection with visually interpretable disease-to-normal fundus image translation. For each pathological image, the counterfactual yielded by the CycleGAN generator represents an estimated healthy counterpart and the resultant difference map is utilized to localize disease-associated retinal changes. Unlike conventional post-hoc saliency methods, CounterFundus provides counterfactual explanations through visually plausible disease-to-normal retinal translation. Thereafter, to quantify the spatial agreement between counterfactual difference maps and classifier saliency, the Counterfactual-Classifier Alignment Score (CCAS) is introduced, embedding Spearman correlation, binary IoU and pointing accuracy into a single assessment protocol. To this end, EigenCAM-aligned evaluation demonstrates that the generated counterfactual explanations remain spatially consistent with classifier-relevant retinal evidence across all CCAS dimensions. Along with that, ablation studies further confirm that CCAS-filtered counterfactual augmentation improves the downstream classification performance in fundus images, establishing CounterFundus as a clinically-grounded, explainable artificially intelligence (XAI) framework for retinal disease detection.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T09:00:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.21068v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.21068v1"
+    },
+    {
+      "id": "2607.20930v1",
+      "title": "Decoding Parkinsonian Tremor: An Explainable Framework Integrating Multi-Revolution Spatial and Spectral Dynamics of Spiral Drawings",
+      "authors": [
+        "Tharaka Wijethunge",
+        "Maheshi Dissanayake",
+        "Sajitha Weerasinghe"
+      ],
+      "abstract": "Parkinson's disease (PD) manifests in motor impairments that are detectable through digitized spiral drawings. This study introduces an explainable framework for PD screening using a novel radial-sampling feature fusion approach. We transform 2D spiral images into 1D revolution signals via a systematic ray-sampling technique to extract three distinct revolutions. We integrate spatial metrics, such as inter-revolution spacing variability and RMS radial derivatives, with spectral descriptors derived from Fast Fourier Transform (FFT) analysis across low, mid, and high harmonic bands. A total of 20 features were utilized to train state-of-the-art machine learning models, including Support Vector Machines (SVMs), Random Forests (RFs), and Light Gradient Boosting Machines (LightGBMs). Among these, the RF classifier demonstrated superior performance. Subsequent 5-fold cross-validation stability analysis along with feature importance analysis identified RMS radial derivative of the outer revolution as the most critical biomarker. Stratified Cross-Validation demonstrates that combining spatial and frequency features significantly enhances detection accuracy compared to single-domain methods, facilitating effective clinical deployment even in data-scarce environments. This interpretable pipeline provides a robust, low-cost white-box screening tool, offering a practical alternative to opaque deep-learning models for early clinical intervention.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T05:23:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20930v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20930v1"
+    },
+    {
+      "id": "2607.20909v1",
+      "title": "RadioTrace: Transmitter-Aware Diffusion for Radio Map Estimation without Deployment-Time Fine-Tuning",
+      "authors": [
+        "Liu Yang",
+        "Qiang Li",
+        "Zhuo Cao",
+        "Weijie Xiong",
+        "Guomin Sun",
+        "Jingran Lin"
+      ],
+      "abstract": "Radio map (RM) estimation aims to reconstruct the spatial distribution of wireless signal characteristics, such as received signal strength (RSS), from sparse measurements, a task that is critical for spectrum management, interference mitigation, and localization in modern wireless networks. Traditional approaches, including interpolation and deep learning, either struggle to capture complex propagation effects or require large-scale retraining for each new sampling pattern, which limits their generalization. More recently, prior-based methods have combined pre-trained generative models with measurements to reduce the need for deployment-time model fine-tuning, but they typically treat the prior as a simple regularizer and lack explicit transmitter-aware integration. In this paper, we propose RadioTrace, a novel RM estimation framework without deployment-time fine-tuning that tightly integrates sparse RSS measurements with a frozen pre-trained diffusion prior. RadioTrace incorporates transmitter (Tx) location estimation directly into the denoising loop, iteratively refining Tx coordinates based on reconstruction quality to guide the generative process. To further enhance robustness, we introduce a propagation-guided K-means initialization that mitigates poor local minima in the Tx update and provides a geometry-consistent starting point. Moreover, we provide a stochastic stability analysis for the Tx-coordinate refinement component, showing that the Tx update remains stable under perturbations induced by diffusion sampling and Tx-map relaxation. Extensive experiments demonstrate that RadioTrace achieves competitive performance with state-of-the-art learning-based methods under random sampling, and maintains strong reconstruction quality under restricted-area sampling, highlighting its adaptability, robustness, and practical relevance.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T04:18:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20909v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20909v1"
+    },
+    {
+      "id": "2607.20863v1",
+      "title": "Probabilistic Residual Learning for Online Recommendations",
+      "authors": [
+        "Wenyuan Wang",
+        "Yusong Zhao",
+        "Zihao Xu",
+        "Hengyi Wang",
+        "Qi Xu",
+        "Zhigang Hua",
+        "Yan Xie",
+        "Yi Wang",
+        "Zihao Zhao",
+        "Bo Long",
+        "Chengzhi Mao",
+        "Shuang Yang",
+        "Hengguan Huang",
+        "Hao Wang"
+      ],
+      "abstract": "Modern recommender systems are typically based on deep learning (DL) models, where a dense encoder learns representations of users and items. As a result, these systems often suffer from the black-box nature and computational complexity of the underlying models, making it difficult to systematically enhance their recommendation capabilities. To address this problem, we propose Probabilistic Residual Learning (PRL), a causal Bayesian recommendation model that models the residual between ground-truth and base predictions, enabling targeted refinement of existing systems. Specifically, PRL (1) probabilistically groups users for localized residual modeling, (2) models domain-level confounders that influence user and item representations, and (3) aggregates cluster-specific residual predictions over the confounders using do-calculus. Experiments demonstrate that our plug-and-play PRL is compatible with various base deep learning recommender systems, improving their performance while automatically discovering meaningful user clusters.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T02:39:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20863v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20863v1"
+    },
+    {
+      "id": "2607.20323v1",
+      "title": "Multi-modal transformer for signal classification in nanopore blockade experiments",
+      "authors": [
+        "Sandro Kuppel",
+        "Julian Hoßbach",
+        "Samuel Tovey",
+        "Christian Holm"
+      ],
+      "abstract": "Nanopore devices have emerged as powerful tools for single-molecule sensing, with potential for rapid, portable diagnostics. They detect changes in ionic current as analytes enter nanometer-scale pores, providing a means of identifying diverse biomarkers from their characteristic signal patterns. However, these signals are highly complex, and reliably assigning them to specific molecules remains a major challenge. Here, we address this by introducing a multi-modal deep learning architecture that jointly processes multiple signal representations, including raw time-series data, wavelet-based images, and static feature vectors. Our approach surpasses existing methods by more than 10 percentage points on a 42-peptide benchmark and transfers to a 20-amino-acid dataset with near-perfect accuracy. The model integrates complementary information from these representations, with attention analysis showing that the time-series and wavelet-image inputs emphasize different features of the same event. Together, these results demonstrate the potential of machine learning to enable robust, high-accuracy molecular identification with nanopore sensors.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T16:09:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20323v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20323v1"
+    },
+    {
+      "id": "2607.20205v1",
+      "title": "Statistical Inference for Rank Allocation in Low-Rank Adaptation",
+      "authors": [
+        "Yihang Gao",
+        "Vincent Y. F. Tan"
+      ],
+      "abstract": "Low-rank adaptation (LoRA) has become a widely used parameter-efficient fine-tuning method for large language models. Since different modules and layers may contribute unequally to downstream adaptation, allocating rank resources under a fixed parameter budget is an important problem for balancing efficiency, expressiveness, and generalization. Existing adaptive rank methods address this problem mainly through carefully designed importance scores constructed from gradient-derived sensitivity and uncertainty measures, without an explicit statistical interpretation. In this paper, we formulate LoRA rank allocation as a statistical hypothesis testing problem and propose StatLoRA, a statistical inference-based rank allocation method. StatLoRA associates each LoRA component with a test statistic and uses estimated p-values to determine which components should be retained or pruned under a prescribed rank budget. The proposed testing procedure is supported by our central limit theory for stochastic optimizer trajectories. In particular, we establish asymptotic normality for a broad class of commonly used optimizers in deep learning, including AdamW, and derive the corresponding asymptotic distributions for the proposed component scores used in hypothesis testing. We evaluate StatLoRA on LoRA fine-tuning of DeBERTaV3-base, BART-Large, and Qwen2.5-7B across natural language understanding, natural language generation, and question answering tasks. Experiments show that StatLoRA achieves comparable or better performance than vanilla LoRA, AdaLoRA, and IGU-LoRA under matched rank budgets. Sensitivity analyses and empirical diagnostics further support the stability of the proposed hypothesis-testing-based allocation rule and provide empirical evidence for the asymptotic theory of component scores.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T14:25:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20205v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20205v1"
+    },
+    {
+      "id": "2607.20162v1",
+      "title": "Self-organizing Architecture of Receptron Units: a Hardware-Aware Framework for Edge Intelligence",
+      "authors": [
+        "Stefano Radice",
+        "Ludovico Casaccia",
+        "Riccaro Emanuele Beccalli",
+        "Bruno Paroli",
+        "Paolo Milani"
+      ],
+      "abstract": "The growing demand for intelligent processing at the edge of IoT networks is constrained by the severe computational and memory limitations of microcontroller units, which render impractical conventional deep learning approaches. We propose a neuromorphicinspired classifier based on the Receptron model, a single-unit architecture capable of implementing non-linearly separable decision boundaries, without resorting to multi-layer networks. The model is designed for direct deployment on mid-range MCUs, while supporting continuous on-device adaptation. Experimental evaluation on basic dataset benchmarks yields cross-validated accuracies compatible with standard machine learning method baselines. These results position the Receptron as a viable and interpretable alternative for resource-constrained neuromorphic edge systems operating in dynamic, non-stationary environments.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T13:57:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20162v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20162v1"
+    },
+    {
+      "id": "2607.20579v1",
+      "title": "Deepfake News Detection: A Multimodal Framework Integrating LipNet, DeepSpeech and ResNET for Enhanced Audio-Visual Analysis",
+      "authors": [
+        "Ameena Khan",
+        "Muhammad Ahsan Aziz",
+        "Muhammad Junaid Asif",
+        "Naeem Akhter",
+        "Rana Fayyaz Ahmad"
+      ],
+      "abstract": "Deepfake news refers to AI-generated (or AI ma-nipulated) multimedia content intentionally generated to deceive audiences by manipulating the facial expressions, or speech while maintaining the realistic appearance. The rapid progress of generative AI has made the synthesis of highly realistic fake videos and cloned voices widely accessible, posing a serious threat to the authenticity of digital news media. This paper presents a multi-modal framework that discerns the authenticity of video content by jointly exploiting audio and visual cues, thereby addressing the challenge of detecting the deepfake videos. We proposed a framework that involves features extraction from lip movements, audio content and video frames. Lip movements and speech content are encoded using the LipNet and DeepSpeech2 models, while facial features are extracted by leveraging the use of BlazeFace and represented with ResNet18. The extracted feature vectors are concatenated into a holistic video representation and classified with an ensemble of machine learning and deep learning models, including Random Forest (RF), Multi-layer Perceptron (MLP) and Long Short-Term Memory (LSTM) networks. Exten-sive experiments performed on the FakeAVCeleb dataset shows that the proposed approach attains an accuracy of 94% using augmented audio features, outperforming a state-of-the-art multi-modal ensemble baseline. The results confirm the robustness and practical potential of the proposed framework for deepfake news detection.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T11:39:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20579v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20579v1"
+    },
+    {
+      "id": "2607.20045v1",
+      "title": "PN-QNN: Harnessing Physical Noise as a Native Regularizer in Photonic Hybrid Quantum Neural Networks",
+      "authors": [
+        "Farah Elnakhal",
+        "Alberto Marchisio",
+        "Nouhaila Innan",
+        "Gabriel Falcao",
+        "Muhammad Shafique"
+      ],
+      "abstract": "Physical noise in near-term quantum hardware is usually treated as a nuisance to suppress. We ask whether it can instead act as a hardware-native regularizer for photonic hybrid quantum-classical neural networks (PHQCNNs), analogous to noise-injection regularization in classical deep learning. Using Quandela's Perceval simulator and the MerLin framework, we build PHQCNNs for Iris, Digits, and MNIST and inject Perceval's seven-parameter physical noise model directly into training. A genetic algorithm searches the six continuous noise dimensions and 1 boolean parameter to find, per dataset, the configuration maximizing validation accuracy, compared against a noiseless baseline across five seeds. GA-tuned noise yields modest accuracy gains on Iris (+0.82pp) and Digits (+1.45pp), but a clear degradation on MNIST (-1.21pp). Per-parameter sweeps show that no individual noise parameter is consistently beneficial, motivating the joint search, while a second-order loss expansion shows that physical noise induces a Tikhonov-like regularization term whose effect is dataset-dependent. Physical photonic noise can thus act as a free regularizer, but not universally.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T11:39:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20045v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20045v1"
+    },
+    {
+      "id": "2607.20003v1",
+      "title": "Taming the Security-Energy Paradox: A Green AI Approach to Optimized Android Malware Detection",
+      "authors": [
+        "Shrinidhi Sridhar",
+        "Vikas K. Malviya"
+      ],
+      "abstract": "An increase in advanced Android malware requires the use of deep learning models, which can run on Android devices. But there is a trade-off between security and energy use, as strong detection models can drain the battery of devices fast. This work tests different Multi-Layer Perceptron (MLP) model configurations to balance malware detection performance and energy efficiency. In this work, we compared standard FP32 models with optimized INT8 quantized neural networks with different model depths using TUANDROMD and DREBIN datasets for both classification performance and energy consumption. The results show that INT8 quantization reduces model size by about 3.5 times with a decrease in energy consumption to 0.0189 mJ per inference, while maintaining more than 99.2\\% detection accuracy. We found that shallow quantized architectures, such as 3-layer and 4-layer QNNs, reduce energy costs by improving throughput and shortening the time of CPU operating in a high-power state. This work shows that efficient malware protection can be achieved on resource-constrained smartphones and provides a foundation for Green AI in mobile security.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T10:39:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20003v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20003v1"
+    },
+    {
+      "id": "2607.19974v1",
+      "title": "Time Series Network Utilization KPI Forecasting Using Advanced AI/ML Models",
+      "authors": [
+        "Niraj Gadhe",
+        "Kirti Bhardwaj",
+        "Moulik Jain",
+        "Shubhi Sharma",
+        "Vinay Saini"
+      ],
+      "abstract": "The rapid proliferation of data-intensive applications, cloud infrastructure, and IoT ecosystems has made proactive resource provisioning critical for maintaining optimal network performance. However, network administrators face a constant battle against capacity constraints, where traditional reactive approaches fail to accurately anticipate traffic fluctuations. This inability to foresee demand leads to costly over-provisioning, unexpected downtime, and degraded quality of service directly impacting operational budgets and business continuity. To achieve efficient capacity planning, accurate forecasting of bandwidth utilization is essential. This study addresses the challenge by evaluating a diverse spectrum of models including seasonal decomposition, Prophet, Random Forest, XGBoost, Support Vector Regression, and advanced deep learning architectures like bidirectional and Convolutional LSTMs - using a common interface dataset benchmarked across MAPE, NRMSE, and R-square metrics. Ultimately, this research delivers actionable insights into the trade-offs between model accuracy and computational efficiency, empowering engineers, operators, and business owners to select the optimal forecasting model for their specific infrastructure needs.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T09:57:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19974v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19974v1"
+    },
+    {
+      "id": "2607.20577v1",
+      "title": "AI-Driven Surrogate Models for Predicting Electrode-Scale Discharge Behavior in Lithium-Ion Batteries",
+      "authors": [
+        "Mengda Xing",
+        "Jean-Marie Lagniez",
+        "Alejandro Franco"
+      ],
+      "abstract": "Physics-based simulations are essential for understanding the electrode-scale discharge behavior of lithium-ion batteries (LIBs) but suffer from prohibitive computational costs. To address this, we introduce a novel deep learning surrogate pipeline based on the Swin3D Transformer to predict spatiotemporal discharge dynamics directly from volumetric data. Our approach integrates two key innovations: Gaussian Positional Encoding (GPE), which enhances spatial feature representation by adapting to the complex geometry of electrode microstructures, and a specialized Temporal Encoding module to capture non-linear timeseries evolution. Experimental validation on an Electrochemical Simulation (ES) dataset demonstrates that our pipeline significantly outperforms state-of-the-art point cloud baselines in prediction accuracy. Furthermore, the proposed method reduces the computational overhead by orders of magnitude, providing a scalable and efficient framework for high-throughput battery design and optimization.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T09:10:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.20577v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.20577v1"
+    },
+    {
+      "id": "2607.19926v1",
+      "title": "Integrating Deep Learning and Contraction Theory for Robust Nonlinear State Estimation via Unsupervised Scientific Machine Learning",
+      "authors": [
+        "Yasmine Marani",
+        "Israel Filho",
+        "Eric Feron",
+        "Taous-Meriem Laleg-Kirati"
+      ],
+      "abstract": "A common way to design observers is to add a correction term to a copy of the system; however, designing the correction term for nonlinear systems remains a significant long-standing challenge. Contraction theory offers a unified approach to designing this correction term by solving a matrix partial differential inequality (MPDI) and identifying a contraction metric. However, solving the MPDI for both the correction term and the contraction metric is highly challenging, both analytically and numerically. Therefore, the aim of this paper is to propose a learning-based approach to determine both the observer's correction term and the contraction metric by incorporating the contraction requirements into the learning process. The proposed approach relies on a scientific machine learning formulation that embeds the contraction conditions into the training loss function. The proposed approach is then extended to non-autonomous systems while keeping the correction term and contraction metric static to avoid generalization issues arising from time-dependent training. Computable bounds on the learning errors of the proposed observer are established as a function of the training residual and the sampling resolution. Furthermore, the robustness of the proposed observer to measurement noise and learning errors are established in an exponential input-to-state stability sense. Based on the robustness analysis, the present paper takes a further step by proposing a robust learning-based contraction nonlinear observer. The proposed observers are evaluated in numerical simulations for different contraction rates and measurement noise levels.",
+      "published": "July 22, 2026",
+      "published_raw": "2026-07-22T08:58:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19926v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19926v1"
+    },
+    {
+      "id": "2607.19620v1",
+      "title": "SCPP: A Unified Python Library for Soft Clustering",
+      "authors": [
+        "Kiyan Rezaee",
+        "Morteza Ziabakhsh",
+        "Artin Bahrampour",
+        "Seyed Mohammad Ghoreishi",
+        "Asal Khaje",
+        "Ali Sajedifar",
+        "Manny Chalak",
+        "Ava Zerafatangiz",
+        "Sadegh Eskandari"
+      ],
+      "abstract": "In this paper, we present SCPP (Soft Clustering Python Package), an open-source Python framework for soft clustering. SCPP establishes a canonical, scikit-learn-compatible estimator interface that standardizes model training, prediction, membership representation, evaluation, and benchmarking across heterogeneous soft clustering methods, including fuzzy, probabilistic, graph-based, matrix factorization, and deep learning methods. The framework currently integrates 40 representative algorithms together with a comprehensive benchmarking comprising datasets, clustering quality metrics, and standardized runtime, memory, and scalability evaluation. SCPP further provides extensive documentation, practical examples, automated testing, and seamless integration with the scientific Python ecosystem, enabling reproducible experimentation and straightforward extension with new algorithms. The source code is publicly available at https://github.com/soft-clustering/soft-clustering.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T23:01:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19620v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19620v1"
+    },
+    {
+      "id": "2607.19618v1",
+      "title": "Causal dictionary learning reveals and validates transcription-factor binding features in genomic language models",
+      "authors": [
+        "Sarwan Ali"
+      ],
+      "abstract": "Genomic language models achieve strong performance across regulatory-genomics tasks, yet what these models internally represent remains opaque, and the field lacks a principled procedure for verifying that an apparent ``concept'' inside a model is real rather than an artifact of sequence composition. We introduce a framework that combines sparse dictionary learning with causal intervention to extract, validate, and causally test interpretable features in genomic foundation models. Training top-$k$ sparse autoencoders on the hidden activations of two architecturally distinct models, Nucleotide Transformer ($6$-mer tokenization) and DNABERT-2 (byte-pair encoding), we recover thousands of monosemantic features that map to transcription-factor (TF) sequence motifs. We show that the naive validation of such features against position weight matrices is severely confounded by GC composition and repetitive elements, producing hundreds of spurious ``TF features'', and we develop a composition-matched, binding-resolved protocol that removes these confounds. Critically, we move beyond correlation: by ablating individual dictionary directions during the model's forward pass and measuring the induced shift in the model's own predictive distribution, we establish that specific features are \\emph{causally} used to represent cell-type-specific TF binding, not merely motif presence. Across three transcription factors (CTCF, GATA1, REST) and both architectures, causally validated binding features emerge reproducibly ($7$--$14$ of $15$ tested features per condition), while two classes of negative control, scrambled binding labels and randomly selected features, yield no detectable signal. The framework is purely computational, uses only public data, and provides a reusable standard for interpretability claims in genomic deep learning.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T22:54:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19618v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19618v1"
+    },
+    {
+      "id": "2607.19597v1",
+      "title": "A Deep Learning Framework for Predicting Solar EUV Irradiance During Significant Flares",
+      "authors": [
+        "Sathvik Soman",
+        "Jason T. L. Wang",
+        "Haimin Wang",
+        "Haodi Jiang"
+      ],
+      "abstract": "We present FlareEUV, a multimodal deep learning framework for predicting daily extreme ultraviolet (EUV) irradiance at 6.5 nm over three consecutive days during significant solar flares, using multi-instrument observations from NASA's Solar Dynamics Observatory (SDO). We consider 33 significant flares in the period between 2011 and 2014 in Solar Cycle 24. The SDO observations include 13 co-aligned full-disk images, comprising eight AIA EUV/UV and five HMI magnetic/continuum products. FlareEUV learns the relationship between magnetic structure and coronal emission from the raw imaging data using a lightweight attention-based architecture. Our experimental results demonstrate the good performance of FlareEUV in short-term EUV irradiance forecasting during the significant flares and its superiority over baseline methods.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T21:55:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19597v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19597v1"
+    },
+    {
+      "id": "2607.19305v2",
+      "title": "Riemannian Deep Learning: Modules, Networks, and Geometries",
+      "authors": [
+        "Chen Ziheng"
+      ],
+      "abstract": "Deep neural networks on manifold-valued representations have attracted growing interest, but many basic components remain tied to specific manifolds, rely on Euclidean approximations, or require costly and numerically fragile geometric operations. This thesis develops a unified framework for Riemannian deep learning from three complementary perspectives: reusable neural modules, manifold-specific network architectures, and the design of underlying geometries. It generalizes batch normalization from Euclidean spaces and individual manifolds to broad classes of Lie groups and gyrogroups, and extends multinomial logistic regression from Euclidean space to SPD manifolds and then to general Riemannian manifolds. It further develops neural networks for several important geometric representations, including an unconstrained model of hyperbolic space, Busemann-based hyperbolic learning, and full-rank correlation matrices. Finally, it introduces adaptive and computationally efficient Riemannian metrics on SPD manifolds, including learnable Log-Euclidean geometries and fast, stable Cholesky-based geometries. The proposed methods are supported by theoretical analysis and validated through numerical experiments and applications in vision, signal processing, graph learning, and genomics.",
+      "published": "July 21, 2026",
+      "published_raw": "2026-07-21T17:17:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.19305v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.19305v2"
+    },
     {
       "id": "2607.19060v1",
       "title": "Deep learning-based prediction of time-resolved adhesive forces in viscoelastic Hertzian contacts",
@@ -16,285 +307,6 @@
       "published_raw": "2026-07-21T12:48:48Z",
       "pdf_link": "http://arxiv.org/pdf/2607.19060v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.19060v1"
-    },
-    {
-      "id": "2607.19006v1",
-      "title": "Subject-Conditioned Glucose Forecasting in Type-1 Diabetes",
-      "authors": [
-        "Giorgia Rigamonti",
-        "Mirko Paolo Barbato",
-        "Davide Marelli",
-        "Paolo Napoletano"
-      ],
-      "abstract": "Accurate forecasting of blood glucose concentration is key in the management of Type 1 Diabetes, facilitating early detection of adverse glycemic events and supporting timely therapeutic interventions. Despite recent advances in glucose prediction, most existing approaches rely on population-level representations or implicit personalization strategies that fail to deliver effective subject-specific forecasts. In this work, we propose Subject-Conditioned Glucose Prediction (SCGP), a novel multimodal deep learning architecture conceived for personalized blood glucose prediction. SCGP conditions glucose predictions based on observed glucose data and a compact subject-specific representation learned from contextual information. By explicitly separating subject characterization from glucose dynamics modeling and avoiding early fusion of heterogeneous inputs, the proposed framework effectively captures inter-subject variability while preserving robust and reliable temporal modeling. Experiments on two state-of-the-art benchmark datasets demonstrate that SCGP consistently improves forecasting performance, enabling reliable detection of adverse glycemic events across multiple prediction horizons, highlighting the benefits of explicit subject conditioning for personalized diabetes management.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T11:42:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19006v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19006v1"
-    },
-    {
-      "id": "2607.18997v1",
-      "title": "Benchmarking Deep Learning Approaches for AEC Engineering Drawing Layout Detection and Information Extraction",
-      "authors": [
-        "Tianyang Huang",
-        "Alessio Lombardi",
-        "Ahmed Elnagar",
-        "Ahmed Zalouk",
-        "George Paul",
-        "Sepehr Najjarpour",
-        "Arvid Sigurdsson",
-        "Khalid Ismail",
-        "Mohamed Ragab",
-        "Edlira Vakaj"
-      ],
-      "abstract": "Information Extraction (IE) from Architecture, Engineering, and Construction (AEC) drawings remains hindered by manual inefficiency, while Layout Detection, a vital 'middleware' organizing graphical and textual hierarchies, is underexplored. General document layout models, optimized for text-centric content, lack validation on engineering drawings. This study constructs a custom AEC-specific layouts dataset and benchmarks five deep learning architectures. RF-DETR achieves state-of-the-art performance with an $mAP_{50}$ of 0.949, while the Vision-Language Model Qwen3-VL attains a leading F1-score of 0.911. Conversely, models pre-trained on general document datasets suffer from \"domain interference\", causing performance degradation. This establishes a robust technical foundation for automated IE in AEC.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T11:30:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.18997v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.18997v1"
-    },
-    {
-      "id": "2607.18965v1",
-      "title": "Variational meta-learning inference for low dimensional neural system identification",
-      "authors": [
-        "Matteo Rufolo",
-        "Dario Piga",
-        "Marco Forgione"
-      ],
-      "abstract": "Deep learning has proven highly effective for nonlinear system identification, but heavily parameterized neural networks are prone to overfitting in low-data regimes and lack reliable uncertainty quantification. The recently developed manifold meta-learning framework addresses the data efficiency problem by restricting the model parameters to a meta-learned low-dimensional manifold. However, that method is purely deterministic. We propose a fully probabilistic extension of the manifold meta-learning framework, based on amortized Variational Inference, where a generative prior over the low-dimensional parameter manifold is learned. During task-specific adaptation, we combine Maximum A Posteriori estimation with the Laplace approximation to yield a mathematically grounded posterior approximation. Evaluated on a static regression task and the Bouc--Wen dynamical system benchmark, the proposed approach achieves predictive accuracy comparable to its deterministic counterpart while successfully providing calibrated uncertainty bounds in severely low-data regimes.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T10:55:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.18965v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.18965v1"
-    },
-    {
-      "id": "2607.18923v1",
-      "title": "Visual Semantic Decoding of Electrocorticography from Video Stimuli using End-to-End Deep Learning",
-      "authors": [
-        "Stella Ho",
-        "Joel Villalobos",
-        "Joseph West",
-        "Jingyang Liu",
-        "Weijie Qi",
-        "Haruhiko Kishima",
-        "Ryohei Fukuma",
-        "Takufumi Yanagisawa",
-        "Sam E. John",
-        "David B. Grayden"
-      ],
-      "abstract": "ECoG-based visual semantic decoding enables inference of semantic interpretation of visual perception from complex, noisy brain activity. This study examines the feasibility of visual semantic decoding using an end-to-end deep learning framework using electrocorticography (ECoG). Specifically, the decoding task is to predict visual categories from video stimuli using time-series neural inputs. A previously collected ECoG dataset from participants ($n=17$) with drug-resistant epilepsy is used for analysis. With fewer than 50 training samples per visual category, this study evaluates multiple deep learning approaches, artificial neural network architectures, and frequency-band filtered inputs. The best-performing approach is analyzed to shed light on the discriminative information it relies on across spectral, temporal, and cortical dimensions. The selected decoding system uses mixup augmentation, a Transformer-based encoder, and high-gamma (80-150 Hz) inputs with a 900 ms post-stimulus window. Further analysis shows that early visual cortex (V2-V4), ventral stream visual cortex, MT+ complex with neighbouring visual areas, and lateral temporal cortex contributed substantially to decoding performance. This study demonstrates that an end-to-end deep learning framework can yield promising decoding performance from dynamic visual stimuli without handcrafted features, while the model behavior remains interpretable through spectral, temporal, and cortical dimensions, which are broadly consistent with established neuroscience knowledge.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T10:06:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.18923v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.18923v1"
-    },
-    {
-      "id": "2607.18678v1",
-      "title": "Cross-Dataset Generalization in Breast MRI Tumor Classification via Class-Wise Dataset Mixing",
-      "authors": [
-        "Mohammad Ali Dadrast",
-        "Hamid Usefi"
-      ],
-      "abstract": "Breast MRI is highly sensitive for detecting breast tumors, but exams contain many slices and require substantial reading time. Deep learning models often perform well on internal splits but can fail across institutions because of domain shift and dataset-origin bias. We study this failure mode for binary breast MRI tumor classification. EfficientNet-B3 and WaveViT-Small are trained using Duke Breast Cancer MRI and fastMRI, and evaluated only on the independent multi-center MAMA-MIA cohort. In a deliberately confounded setup, where label is perfectly correlated with dataset origin, external accuracy is near chance (0.5048--0.5265), despite very high recall. We then construct a mixed training set in which each class contains samples from both Duke and fastMRI, while preserving patient-level splitting, augmentation, and leakage controls. On MAMA-MIA, dataset mixing improves accuracy/F1 to 0.8463/0.8625 for WaveViT-Small and 0.8884/0.8994 for EfficientNet-B3. These results show that controlling dataset-origin bias is important for reliable breast MRI classification.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T03:51:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.18678v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.18678v1"
-    },
-    {
-      "id": "2607.18403v1",
-      "title": "Towards a universal model for spin-orbit coupled Wannier Hamiltonians",
-      "authors": [
-        "Alexander C. Tyner"
-      ],
-      "abstract": "While machine learning interatomic potentials (MLiPs) have matured to revolutionize material science, deep learning models for electronic structure are just beginning to emerge and restricted, almost exclusively, to non-orthogonal basis Hamiltonians. We introduce G(Wa)NN, the first deep-learning model capable of generating the electronic Hamiltonian of solid-state systems in an orthogonal Wannier basis. G(Wa)NN is trained on an unprecedented, diverse dataset of more than 111K Wannier Hamiltonians (150M+ hopping matrices) spanning 69 elements. The combination of optimized inference and linear-scaling methods for orthogonal Hamiltonians unlock transport simulations at massive scales (10K+ atoms). Crucially, the framework supports local finetuning, allowing users to adapt the base model to custom Wannier Hamiltonian datasets. To seamlessly translate these predictions into physical observables, we introduce Tailwater, a Python package providing an API interface to G(Wa)NN alongside a high performance post-processing library. Tailwater enables automated projection of the predicted Hamiltonian into an arbitrary low-energy subspace-directly mirroring familiar Wannier90 workflows-and includes a suite of Kernel Polynomial Method (KPM) functions that exploit the orthogonal basis to achieve strict linear scaling for spectral observables. The Tailwater ecosystem, with the G(Wa)NN model at its core, aims to help bridge the gap between deep learning and macro-scale quantum transport simulations.",
-      "published": "July 20, 2026",
-      "published_raw": "2026-07-20T18:00:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.18403v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.18403v1"
-    },
-    {
-      "id": "2607.17783v1",
-      "title": "Feature Attribution-Based Explainability Analysis of Deep Learning Models in Predictive Process Monitoring",
-      "authors": [
-        "Kseniya Sahatova",
-        "Rafael Seidi Oyamada",
-        "Xuefei Lu",
-        "Johannes De Smedt"
-      ],
-      "abstract": "Predictive process monitoring supports the optimization and control of operational business processes by forecasting the future state or outcome of ongoing cases. While deep neural networks have achieved strong performance for these tasks by modeling sequential dependencies in event logs, their black-box nature limits trust and practical adoption. Feature attribution methods are often used to address this, but applying them directly poses a dilemma: event-level attributions impose high computational complexity for long traces, while explanations based on aggregated trace representations often fail to capture the underlying control-flow dynamics. To address this issue, we propose a local post-hoc explainability method for deep neural networks in outcome prediction. The method relies on a control-flow-aware segmentation algorithm that partitions a trace into meaningful segments and supports the computation of segment-level SHAP explanations. This makes it possible to identify which parts of a trace influence a prediction and which change points steer the case toward the predicted outcome. We assess the proposed segmentation method on a synthetic dataset with known process logic, where meaningful change points can be explicitly verified, and we demonstrate its usefulness on real-world event logs from a loan application process and an administrative process of a Dutch municipality.",
-      "published": "July 20, 2026",
-      "published_raw": "2026-07-20T10:15:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.17783v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.17783v1"
-    },
-    {
-      "id": "2607.18345v1",
-      "title": "Addressing Limited Data in Auditory Attention Decoding with Diffusion Generative Models",
-      "authors": [
-        "David Rannaleet",
-        "Victor Gunnarsson",
-        "Bo Bernhardsson",
-        "Martin A. Skoglund",
-        "Emina Alickovic"
-      ],
-      "abstract": "Limited training data constrains deep learning models for Auditory Attention Decoding (AAD) in hearing aids (HAs). AAD uses electroencephalogram (EEG) data to decode listener's attention, enabling real-time tracking of specific sound sources. However, achieving high AAD performance with short time windows typical in HAs (<=1s) is challenging due to the scarcity of real-world speech-evoked EEG data. To address this issue, we investigate diffusion probabilistic models (DPMs) for generating synthetic speech-evoked EEG data. DPMs learn the underlying complex data structure through a denoising process and can generate realistic samples suitable for data augmentation. We evaluate the use of synthetic EEG data for augmenting datasets in locus-of-attention (LoA) classification tasks. Our experiments demonstrate that DPMs can generate realistic EEG signals and that incorporating synthetic data significantly improves AAD performance compared to models trained solely on measured EEG data (p<0.05). These results highlight the potential of diffusion-based data augmentation to mitigate training data limitations and improve the robustness of short-window AAD models in HA applications.",
-      "published": "July 20, 2026",
-      "published_raw": "2026-07-20T07:47:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.18345v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.18345v1"
-    },
-    {
-      "id": "2607.17614v1",
-      "title": "Online learning of neural state-space models",
-      "authors": [
-        "Bendegúz Györök",
-        "Tamás Péni",
-        "Maarten Schoukens",
-        "Roland Tóth"
-      ],
-      "abstract": "Recent advances in deep-learning-based nonlinear system identification have led to encoder-based estimation of neural state-space (ANN-SS) models that achieve state-of-the-art performance in offline settings by estimating initial model states from past input-output data. These methods are typically used in multiple-shooting-based offline identification, and online learning of these models remains largely unexplored. This paper presents a batch-wise learning pipeline and a direct recursive identification algorithm for subspace encoder-based ANN-SS models. We provide convergence analysis of the recursive formulation and validate its performance through extensive simulation studies. The results demonstrate that the proposed approach enables computationally efficient online adaptation with high model accuracy.",
-      "published": "July 20, 2026",
-      "published_raw": "2026-07-20T07:04:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.17614v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.17614v1"
-    },
-    {
-      "id": "2607.17582v1",
-      "title": "ANNLib: A Development Framework for Efficient Approximate Nearest Neighbor Search",
-      "authors": [
-        "Zheqi Shen",
-        "Jingbo Su",
-        "Zijin Wan",
-        "Yan Gu",
-        "Yihan Sun"
-      ],
-      "abstract": "Approximate Nearest Neighbor Search (ANNS) plays a pivotal role in modern deep learning pipelines. Recently, many ANNS systems have been proposed to either provide broad functionality or reach high performance. However, it is yet difficult to achieve both with minimal programming efforts. We propose ANNLib to address the gap. ANNLib is a library that provides a programming framework for achieving high performance and flexible functionality in ANNS systems, based on popular graph-based ANNS algorithms. We carefully decouple and independently optimize both the algorithm and the data structure components of an ANNS system. In addition, we integrate state-of-the-art algorithms and data structures into ANNLib as modules, along with our new designs. Users can choose combinations of components to implement sophisticated settings with high performance, such as filter search, fully dynamic updates, and historical queries on snapshots. Our experiments show that our new solution provides a simple interface for various applications and achieves comparable or even better performance than previous work, specifically for each application.",
-      "published": "July 20, 2026",
-      "published_raw": "2026-07-20T05:59:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.17582v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.17582v1"
-    },
-    {
-      "id": "2607.17378v1",
-      "title": "Econometrics with Pre-Trained Embeddings for Unstructured Data",
-      "authors": [
-        "Yuya Shimizu"
-      ],
-      "abstract": "Unstructured data, such as images and text, are increasingly used in empirical economics. Since training machine-learning models on unstructured data is costly, economists often use off-the-shelf pre-trained deep learning models developed by computer scientists to extract embeddings, which are then used as covariates in target economic analyses. Despite the popularity of this practice, its theoretical foundations remain limited. There are two main difficulties. First, the pre-trained model is usually trained on a different dataset and for a different task. Consequently, it is unclear when such a model can be used reliably for the target task. Second, the embedding function is subject to an identification problem, which makes it difficult to analyze the estimation error of the embedding function and its effect on the target task. In this paper, we provide sufficient conditions to overcome these difficulties and derive the convergence rate of machine learning models with pre-trained embeddings. We illustrate the theory through double machine learning applications for estimating parameters of interest, such as partially linear regression with unstructured controls, price elasticity in demand estimation considering the product quality measured by images and text, missing data imputation with unstructured data, and the average treatment effect with unstructured confounders.",
-      "published": "July 19, 2026",
-      "published_raw": "2026-07-19T18:37:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.17378v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.17378v1"
-    },
-    {
-      "id": "2607.16936v1",
-      "title": "Pediatric Bone Age Prediction Using Deep Learning",
-      "authors": [
-        "Al Zadid Sultan Bin Habib",
-        "Md. Ekramul Islam",
-        "Md Asif Bin Syed",
-        "Md Younus Ahamed",
-        "Tanpia Tasnim"
-      ],
-      "abstract": "Pediatric bone age prediction is a crucial task in clinical practice that can help diagnose endocrine disorders and provide insight into a child's growth and development. However, conventional bone age prediction methods are often labor-intensive and require specialized radiological expertise. This paper presents a Deep Learning (DL)-based approach to pediatric bone age prediction using EfficientNet with Additive Attention, a state-of-the-art neural network architecture for image classification and regression tasks. The method utilizes over 12,000 X-ray images from the RSNA bone age dataset. It involves image preprocessing, transforming them into three-channel images, and training a Convolutional Neural Network (CNN) to automatically learn the features of hand bone images. This approach provides a more effective and accurate solution for predicting bone age, which is critical in diagnosing pediatric endocrine diseases. This work uses two variations of the EfficientNet model (B0 and B4), where EfficientNetB4 is also finetuned with the Additive Attention mechanism. These three models predict the age for the original age, and their comparison is shown in curves. The predicted ages depict that in most cases, EfficientNetB4 and EfficientNetB4 with Additive Attention (EN-AA) successfully predicted the bone ages more accurately regarding the original age, and their performance was better than the EfficientNetB0. Specific performance metrics are provided to underscore this improvement. Learning curves for training and validation loss confirm effective learning without overfitting or underfitting, further validating our approach's efficacy in pediatric endocrine disease diagnosis.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T19:16:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16936v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16936v1"
-    },
-    {
-      "id": "2607.16877v1",
-      "title": "Hierarchical Wireless Foundation Model for Multi-Task Optimization",
-      "authors": [
-        "Yangjing Wang",
-        "Ouya Wang",
-        "Shenglong Zhou",
-        "Geoffrey Ye Li"
-      ],
-      "abstract": "The increasing complexity of next-generation wireless networks has driven the integration of artificial intelligence (AI) into wireless communications. However, most existing studies focus on developing task-specific deep learning techniques for single scenarios, which limits their ability to generalize across diverse tasks, channel conditions, and system configurations. To address this generalization bottleneck, we propose a hierarchical wireless foundation model (WFM) for multi-task optimization. The proposed WFM couples an upstream foundation channel encoder (FCE) with a downstream foundation optimization decoder (FOD) via geometry-aware cross-attention. Specifically, the FCE extracts task-agnostic channel representations via self-supervised masked reconstruction while the FOD generates multi-task optimization decisions through differentiable output heads. Moreover, a hybrid supervised-to-unsupervised training strategy is employed to overcome the performance ceiling of purely supervised learning, and the modular architecture of the WFM enables efficient adaptation to unseen communication tasks with minimal parameter overhead. Simulation results show that the proposed WFM learns high-fidelity channel representations and achieves competitive multi-task optimization performance while substantially reducing optimization inference latency relative to numerical baselines. Furthermore, it exhibits robust generalization to unseen propagation environments, varying constraint parameters, and heterogeneous system configurations.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T16:30:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16877v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16877v1"
-    },
-    {
-      "id": "2607.16803v1",
-      "title": "Explainable Lightweight Compact Deep Models for Speech Emotion Recognition",
-      "authors": [
-        "Nelly Elsayed"
-      ],
-      "abstract": "Speech Emotion Recognition (SER) is an important component in a wide range of human-centered applications, including healthcare, customer service, and human-omputer interaction. In medical and decision-support settings, there is increasing interest in models that not only achieve accurate emotion recognition but also support transparent predictions and efficient deployment. However, many existing SER approaches rely on complex deep learning architectures that limit interpretability and increase computational cost. This paper presents an explainable and lightweight speech emotion recognition framework based on a compact convolutional neural network architecture. The proposed approach utilizes log-Mel spectrogram representations to capture spectro-temporal speech characteristics and employs attentive statistics pooling to emphasize emotionally salient temporal segments. To improve model transparency, gradient-based class activation mapping (Grad-CAM) is incorporated to visualize the time-frequency regions that influence the model's predictions. Experimental evaluation on the SAVEE emotional speech dataset demonstrates that the proposed framework achieves competitive recognition performance while maintaining a compact architecture with significantly fewer parameters than many existing SER models. The results indicate that efficient convolutional architectures combined with interpretable analysis can provide a practical balance between recognition accuracy, computational efficiency, and model transparency.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T12:50:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16803v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16803v1"
-    },
-    {
-      "id": "2607.16788v1",
-      "title": "Demodulation of chaotic signals using convolutional neural network",
-      "authors": [
-        "Mykola Kozlenko",
-        "Emrullah Demiral",
-        "Anton Yudhana"
-      ],
-      "abstract": "Chaotic modulation is an effective communication technique that exploits deterministic chaos to produce pseudo-random signals. A widely adopted approach involves modulation of the chaotic bifurcation parameter. This paper introduces a deep learning-based demodulation method for keying of the bifurcation parameter. It describes the architecture of the convolutional neural network and evaluates performance metrics for signals generated using the chaotic logistic map. The study assesses the bit error rate for binary signals and reports a bit error rate of 0.0819 for a bifurcation parameter deviation of 1.34% under additive white Gaussian noise at a signal-to-noise ratio of -13 dB (corresponding to a normalized signal-to-noise ratio of +20 dB). The results demonstrate the capability to detect chaotic patterns even when the specific patterns were not included in the training dataset.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T11:50:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16788v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16788v1"
-    },
-    {
-      "id": "2607.16761v1",
-      "title": "Dropout and Random Gradient Masking Are Asymptotically Equivalent in Large ResNets",
-      "authors": [
-        "Javier Maass",
-        "Lénaïc Chizat"
-      ],
-      "abstract": "Dropout and Random Gradient Masking (RaM) are two training techniques used to improve performance in deep learning. Both techniques inject randomness into the training dynamics, but in significantly different ways: dropout applies random masks to the activations in the forward pass, whereas RaM leaves the forward pass unchanged and instead masks the gradients. In particular, the noise induced by RaM in the parameter updates is unbiased, so standard explanations for the effectiveness of dropout, such as the penalization effect or the prevention of co-adaptation between neurons, do not apply to RaM. In this work, we show that the difference between the two methods disappears for ResNets in the large depth and width asymptotics: in the complete feature learning regime, they both converge to the same large-scale limiting dynamics. This asymptotic equivalence holds for several variants of dropout and RaM, including layerwise dropout as used in stochastic-depth ResNets, albeit at slower quantitative rates. In fact, we also show that several of these variants collapse to the same limit asymptotically.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T10:57:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16761v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16761v1"
-    },
-    {
-      "id": "2607.16720v1",
-      "title": "Effects of width-dependent model hyperparameters and $\\ell_2$-regularization on the loss landscape of two-layer ReLU networks",
-      "authors": [
-        "Haruka Eshima",
-        "Makoto Yamada"
-      ],
-      "abstract": "Understanding deep neural networks remains a central challenge in machine learning. In particular, the theoretical properties of even two-layer ReLU networks, especially in the presence of weight decay, remain poorly understood. To this end, we derive a sufficient condition on the hyperparameter settings under which the global minima collapse to the zero solution. Interestingly, our experiments reveal that using AdamW as an optimizer prevents the collapse of the learned parameters, whereas using SGD does not, which may help explain the success of AdamW in deep learning training. In addition, when restricting the input dimension to one, we derive an analytical solution for the globally optimal parameter sets of two-layer ReLU networks and show that $\\ell_2$-regularization has a width-invariant effect on connectivity, but its dimensionality-reducing effect becomes stronger as the network width increases. These results provide insight into how width-dependent hyperparameters influence the geometry of regularized loss landscapes.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T09:17:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16720v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16720v1"
-    },
-    {
-      "id": "2607.16682v1",
-      "title": "Building a Neural Network from Scratch: Implementation, Evaluation, and Optimization",
-      "authors": [
-        "Yuanzhe Jia"
-      ],
-      "abstract": "The widespread adoption of high-level deep learning libraries, while accelerating model development, has increasingly abstracted away the internal mechanics of neural networks, creating a gap between practical usage and fundamental understanding. To address this, the paper presents a self-contained neural network framework implemented entirely from scratch -- without relying on automatic differentiation or pre-built deep learning modules. The implementation encompasses all essential components, including multi-layer architectures, diverse activation functions, regularization techniques, and state-of-the-art optimizers. Beyond serving as a pedagogical instrument that demystifies forward/backward propagation, gradient dynamics, and optimization landscapes, the framework demonstrates robust performance when applied to a multi-class classification task, successfully validating its correctness, numerical stability, and generalization across varied configurations. The extensible design and clean modularity further position it as a reliable baseline for educational purposes and future research exploration.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T07:31:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16682v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16682v1"
-    },
-    {
-      "id": "2607.16662v1",
-      "title": "Multimodal Attention-based Deep Learning for Emergency Triage with Electronic Health Records",
-      "authors": [
-        "Hazqeel Afyq Athaillah Kamarul Aryffin",
-        "Kamarul Aryffin Baharuddin",
-        "Mohd Halim Mohd Noor"
-      ],
-      "abstract": "Accurate emergency triage decision is critical to avoid clinical deterioration, morbidity, and mortality. Machine learning-based triage system involves acquiring the main presenting complaint in text form and assessing vital signs in numerical data, enabling an automated and efficient analysis of patient information for timely and accurate prioritization of medical attention. However, modelling the intricacies of both data types requires a comprehensive understanding of the temporal structure and dependencies within the data. Thus, the aim of this study is to propose a multimodal deep learning architecture that can effectively handle both tabular and textual data. Furthermore, the proposed model exploits self-attention to to capture both local and global relationships between the features. A dataset consisting of 11,102 triage data collected from emergency department of Hospital Universiti Sains Malaysia is used for model development and validation. The proposed model demonstrated an increase of 1.95% in accuracy, 2.49% in F1-score, and 1.41% in ROC AUC compared to the baseline model. The experimental results demonstrated the potential of the proposed model in predicting triage decisions.",
-      "published": "July 18, 2026",
-      "published_raw": "2026-07-18T06:35:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.16662v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.16662v1"
     }
   ]
 }
