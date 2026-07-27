@@ -1,7 +1,151 @@
 {
-  "last_updated": "2026-07-26T01:25:32.250108",
+  "last_updated": "2026-07-27T01:29:40.521554",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.22453v1",
+      "title": "Forecasting and Explaining the Phillips Curve: A SHAP-Based Comparison of Machine Learning and Traditional Time-Series Models for Canadian Unemployment and Inflation",
+      "authors": [
+        "Louis Agyekum"
+      ],
+      "abstract": "This study evaluates the out-of-sample forecasting ability of six model types: ARIMA, VAR, Random Forest, XGBoost, LSTM, and GRU, for monthly Canadian inflation from January 2012 to April 2026 (n = 172). The evaluation employs expanding-window walk-forward validation across 1-, 3-, 6-, and 12-month horizons. Results reveal a horizon-dependent shift: ARIMA significantly outperforms all machine learning and deep learning models at the one-month horizon (Diebold-Mariano p < 0.05). However, Random Forest and XGBoost become notably superior at six and twelve months, reducing RMSE by approximately 30-75 percent compared to ARIMA and VAR. LSTM and GRU perform well only at the shortest horizon, likely due to overfitting given the limited data. Analyzing four macroeconomic sub-periods shows that no single model consistently dominates. SHAP analysis of the top-performing XGBoost model indicates that lagged inflation is more influential than unemployment, which only becomes significantly impactful during the pandemic tail. The findings clarify when machine learning methods can surpass traditional benchmarks.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T16:13:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22453v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22453v1"
+    },
+    {
+      "id": "2607.22422v1",
+      "title": "PRIMS: Physics-guided Representation for Fluid Identification in Multimodal Sensing",
+      "authors": [
+        "Hai-Long Nguyen",
+        "Trung Thanh Nguyen",
+        "Lars Holm",
+        "Dennis Alveringh",
+        "Duc Viet Le"
+      ],
+      "abstract": "Accurate on-device fluid identification is essential for microfluidic applications, yet maintaining reliability under varying flow, pressure, and temperature remains a key challenge. Existing learning-based methods often treat sensor signals as domain-agnostic features, neglecting the underlying physical relationships that govern fluid behavior, thereby limiting generalization and interpretability. To address this, we propose PRIMS, a physics-aware multimodal Transformer that integrates physical knowledge into representation learning and attention mechanisms through three dedicated modules: (1) Physics-based Token Vectorization transforms raw Coriolis and pressure sensor signals into physically meaningful token embeddings; (2) Physical Component Synthesizer models viscosity-related dependencies among flow, pressure, and density; and (3) Physics-guided Fusion captures cross-physical correlations through attention-based integration. By embedding these physics-based relationships directly into the model architecture, PRIMS bridges analytical fluid mechanics and deep learning, enabling interpretable, data-efficient, and resilient fluid classification. Evaluations on a five-fluid benchmark under dynamic flow, pressure, and temperature conditions show that PRIMS achieves 98.92% average F1-score with only 0.46 million parameters, a 14 times reduction compared to state-of-the-art Transformer-based methods. PRIMS also consistently outperforms prior SOTA models under out-of-distribution shifts to unseen temperature ranges and unseen flow-rate ranges, indicating strong robustness to operating conditions not observed during training. These findings suggest that designing architectures that explicitly mirror governing physical relationships can make them learn transferable, environment-independent representations, improving real-world reliability for microfluidic sensing.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T15:46:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22422v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22422v1"
+    },
+    {
+      "id": "2607.22361v1",
+      "title": "Indexing: the Beginning and the End",
+      "authors": [
+        "Alexander Kozachinskiy",
+        "Vicente Opazo",
+        "Felipe Urrutia"
+      ],
+      "abstract": "We study information bottlenecks in modern deep-learning architectures -- RNNs, softmax transformers, linear-attention transformers and state-space models -- through the lens of the indexing primitive. In this primitive, the input consists of $n$ bits and one integer $i$ from $1$ to $n$ called the index, and the output equals the value of the $i$-th bit. We introduce causal complexity for masked architectures. We show that architectures with low causal complexity cannot solve the indexing primitive in any constant number of layers when the index appears at the end of the input. In particular, this limitation applies to low-parameter RNNs, SSMs and masked linear-attention transformers. In contrast, small softmax transformers can solve it in one layer, while non-masked linear-attention transformers can solve it in 2, which separates them from their masked counterparts. In turn, when the index appears at the beginning, we show that small RNNs are capable of solving this task in 1 layer, while all the other architectures require 2. All our impossibility results are unconditional and apply even to models that employ infinite-precision real arithmetic. Moreover, experiments for up to $n=64$ qualitatively align with our theory: configurations with low-parameter theoretical solutions learn the indexing task easily, while configurations that do not admit such theoretical solutions struggle to learn as the sequence length grows.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T14:42:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22361v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22361v1"
+    },
+    {
+      "id": "2607.22342v1",
+      "title": "Beyond Binary Rooftop Mapping: A Four-Class Deep Learning Framework for Green Roof Potential Assessment from Open Swiss Geospatial Data",
+      "authors": [
+        "Htet Yamin Ko Ko"
+      ],
+      "abstract": "The development of effective urban climate adaptation strategies requires comprehensive spatial information on rooftops and buildings, since such information underpins the assessment of ecosystem services provided by green infrastructure, particularly for urban heat island (UHI) mitigation. Although green roofs are widely acknowledged as a promising measure for improving urban thermal comfort, most existing research maps either current green rooftops or rooftops with greening potential, but not both. This study presents a modified deep convolutional neural network rooftop classification framework based on Roofpedia, developed by the Urban Analytics Lab at the National University of Singapore. The proposed model combines high resolution aerial imagery with rooftop slope information derived from a digital surface model and relies entirely on publicly available Swisstopo datasets: SWISSIMAGE orthophotos, swissSURFACE3D elevation data, and swissTLM3D building footprints. Applied to Bern, Switzerland, the model labels rooftops into four categories: existing green roofs, rooftops suitable for green roof installation, rooftops with solar panels, and flat rooftops unsuitable for greening. The framework identifies realistic opportunities for green roof expansion and supplies urban planners with evidence-based information for green infrastructure deployment in Bern and other Swiss cities. Because it is fully open source, the framework is transferable to cities worldwide.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T14:18:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22342v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22342v1"
+    },
+    {
+      "id": "2607.22258v1",
+      "title": "Class-Balanced Softmax: A Bayes Theory-Based Method for Long-Tailed Recognition",
+      "authors": [
+        "Yi-Hang Zhu",
+        "Rajeev Raman",
+        "Shiqi Su",
+        "Jianyuan Sun",
+        "Xinyu Yang",
+        "Nan Xing",
+        "Huiyu Zhou"
+      ],
+      "abstract": "Deep learning models using traditional softmax classifiers have achieved remarkable success in various classification tasks. However, their performance degrades significantly on imbalanced datasets. Although Balanced Softmax is widely adopted as a state-of-the-art rebalancing method, it possesses inherent limitations, such as yielding disproportionately lower testing accuracy for tail classes. To mitigate these shortcomings, we propose the Class-Balanced Softmax (CBS). Rooted in a theoretical Bayesian framework and a heuristic power-law assumption, the CBS is a simple logit adjustment that is computationally inexpensive and easily integrated into existing pipelines. Furthermore, we characterise a fundamental phenomenon in models trained on imbalanced data, termed the preference issue, wherein models exhibit higher training error and a larger generalisation gap for classes with limited data. To quantify this issue, we introduce a novel metric and demonstrate that CBS effectively mitigates the preference issue. Extensive experiments on large-scale benchmarks show that CBS is highly scalable and outperforms existing methods, including Balanced Softmax.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T12:46:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22258v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22258v1"
+    },
+    {
+      "id": "2607.22238v1",
+      "title": "Optimization of time-consuming experimental conditions using pseudo-experimental data guided by adaptive polynomial regression",
+      "authors": [
+        "Hirotaka Sugawara",
+        "Yujin Taguchi",
+        "Kei Minagawa",
+        "Yusuke Hiki",
+        "Takashi Morikura",
+        "Akira Funahashi"
+      ],
+      "abstract": "Bayesian optimization (BO) is an optimization method that sequentially proposes the next candidate explainable variables for optimizing target variables by balancing exploration and exploitation. BO is often used under a limited evaluation budget, such as hyperparameter tuning of deep learning. Despite its effectiveness, conventional BO may have poor convergence in practical experimental science where each evaluation is often costly and time-consuming. Recently, BO methods have been proposed that accelerate optimization by using pseudo-experimental data that simulate experimental data. However, when only a limited number of experimental data are available, the generated pseudo-experimental data may be of insufficient quality. In this study, we developed PolyBO to improve optimization time by generating high-quality pseudo-experimental data even when the number of trials is limited. PolyBO performs BO efficiently by generating pseudo-experimental data with an adaptively updated versatile parametric model. This low-capacity polynomial regression model is intended to enable efficient BO even with limited experimental data. PolyBO updates the BO surrogate model with a combined dataset consisting of experimental data and pseudo-experimental data and then performs optimization. Using synthetic benchmark functions with diverse landscapes, we found that PolyBO reduced the optimization time by a median of 42\\%. For a real-world material composition optimization problem, PolyBO reduced the optimization time by a median of 96\\% compared with conventional methods. Overall, PolyBO achieves efficient optimization in settings where each experiment requires a long time.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T12:16:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22238v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22238v1"
+    },
+    {
+      "id": "2607.22173v1",
+      "title": "Bowel Obstruction Detection and Localization on Abdominal CT with Deep Learning",
+      "authors": [
+        "Moritz Vandenhirtz",
+        "Andrea Agostini",
+        "Dana Belde",
+        "Mélanie Roschewitz",
+        "Ismaiel Chikh Bakri",
+        "Tilo Niemann",
+        "André Euler",
+        "Julia E Vogt"
+      ],
+      "abstract": "Bowel obstruction is a common and potentially life-threatening gastrointestinal condition. In the face of rising diagnostic workloads, the automated diagnosis of bowel obstruction on CT scans supports radiologists by accelerating detection and improving patient outcomes. In this work, we propose a deep learning framework with a multi-task objective that jointly detects bowel obstruction and localizes its transition zone. Additionally, we extend the method with an inherently interpretable classification method that locates the suspected transition point within a slice. It does so by learning a probabilistic selection mask that faithfully bases the classifier's prediction solely on a small image region. The proposed method is evaluated on an internal dataset comprising 1,427 abdominal CTs. Here, the model achieves an obstruction detection test accuracy of 93% and a Hit@10 transition zone localization of 95%. As the first method to reliably localize the transition zone, this marks a significant step towards the automated identification of this critical clinical landmark.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T10:23:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22173v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22173v1"
+    },
+    {
+      "id": "2607.22139v1",
+      "title": "CARDIAG: A Dense Segment Classification Benchmark of Deep Learning Architectures for Coronary Angiography",
+      "authors": [
+        "Dominik Bernard Lau",
+        "Hubert Malinowski",
+        "Jerzy Szyjut",
+        "Adam Brzeski",
+        "Tomasz Dziubich",
+        "Radosław Targoński",
+        "Tomasz Figatowski",
+        "Natalia Zielińska"
+      ],
+      "abstract": "Accurate pixel-level classification of coronary angiograms is critical for cardiovascular disease assessment, yet the field lacks standardized evaluation protocols. In this work we demonstrate a new benchmark for the assessment of deep learning models which densely classify pixels of coronary angiograms to one of SYNTAX classes (or background). The evaluation covers 24 distinct architectures starting with classic convnets to recent state-space-based vision algorithms. We release CARDIAG - a multi-center, multi-label dataset which we carefully split to reliably compute metrics, accounting for diameter error, overlap, centerline quality and calibration. The data contains SYNTAX labels, binary, uncertainty and segmentation masks as well as intermediate frames together with the selected non-sensitive DICOM metadata. From the multitude of algorithms, we nominate ConvNeXt V2 encoder with DeepLab V3 Plus decoder as the best performing, achieving macro $F_1=0.456$, which we then ensemble with Mamba U-Net and Feature Pyramid Network, for an increased $F_1=0.479$. We demonstrate all the architectures to be well calibrated and determine the generalization of the top 5 methods, together with the data efficiency of these architectures. We highlight the importance of both high-resolution and low-resolution features in encoding. We also demonstrate the model correctness in the context of patient demographic, vessel sides and projection angle configurations. Overall the released benchmark allows for future studies to robustly and rigorously assess the proposals, not only for SYNTAX segmentation, but lesion detection and many more.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T09:35:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22139v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22139v1"
+    },
+    {
+      "id": "2607.21895v1",
+      "title": "PrivDNN: A Secure Multi-Party Computation Framework for Deep Learning using Partial DNN Encryption",
+      "authors": [
+        "Liangqin Ren",
+        "Zeyan Liu",
+        "Fengjun Li",
+        "Kaitai Liang",
+        "Zhu Li",
+        "Bo Luo"
+      ],
+      "abstract": "In the past decade, we have witnessed an exponential growth of deep learning models, platforms, and applications. While existing DL applications and Machine Learning as a service (MLaaS) frameworks assume fully trusted models, the need for privacy-preserving DNN evaluation arises. In a secure multi-party computation scenario, both the model and the data are considered proprietary, i.e., the model owner does not want to reveal the highly valuable DL model to the user, while the user does not wish to disclose their private data samples either. Conventional privacy-preserving deep learning solutions ask the users to send encrypted samples to the model owners, who must handle the heavy lifting of ciphertext-domain computation with homomorphic encryption. In this paper, we present a novel solution, namely, PrivDNN, which (1) offloads the computation to the user side by sharing an encrypted deep learning model with them, (2) significantly improves the efficiency of DNN evaluation using partial DNN encryption, (3) ensures model accuracy and model privacy using a core neuron selection and encryption scheme. Experimental results show that PrivDNN reduces privacy-preserving DNN inference time and memory requirement by up to 97% while maintaining model performance and privacy. Codes can be found at https://github.com/LiangqinRen/PrivDNN",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T01:52:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.21895v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.21895v1"
+    },
     {
       "id": "2607.21577v1",
       "title": "Synthetic data generation framework for quality control automation in gravure printing",
@@ -33,6 +177,24 @@
       "arxiv_link": "http://arxiv.org/abs/2607.21200v1"
     },
     {
+      "id": "2607.21186v1",
+      "title": "Do emulated quantum circuits change what CNNs look at? Performance and explainability comparison in medical image classification",
+      "authors": [
+        "Guillermo Rubiños Rodríguez",
+        "Martín Ottavianelli",
+        "Mateo Alonso",
+        "Gonzalo Blázquez Gil",
+        "Boris-Stephan Rauchmann",
+        "Pablo Díez-Valle",
+        "Sergio Altares-López"
+      ],
+      "abstract": "Numerous studies have analyzed the use of hybrid quantum-classical convolutional neural networks as a promising alternative to classical deep learning. However, network components on quantum hardware impose fundamental limitations, while the scalability of quantum circuits leads to trainability issues. In this work, we investigate whether small, classically-emulated quantum circuit components can play a meaningful role within complex models, offering an alternative to purely classical convolutional architectures. To this end, we present a systematic study of the effectiveness of a Hybrid Quantum-inspired Convolutional Neural Network (HQiCNN) compared with a parameter-matched classical Convolutional Neural Network (CNN) that differs only in an intermediate dense neural layer. Both models are evaluated on two real-world medical datasets while systematically varying the different hyperparameters, ensuring a fair model comparison that is both dataset and hyperparameter independent. The results show that no architecture consistently dominates the other: the HQiCNN achieves its largest gains in intermediate-data regimes, whereas the CNN reaches the highest accuracies for the largest training sets in both datasets. Furthermore, removing entanglement produces comparable performance while enabling substantially better scalability of quantum simulations, and richer observable sets become beneficial only when sufficient training data are available. Finally, we propose two SHAP-based explainability tools for comparing the predictions between both models, $|SHAP|$IoU and $EMD_{pos}$ metric, to demonstrate that both architectures consistently attend to anatomically plausible regions. Thus, we provide a comprehensive benchmark showing that, under certain conditions, hybrid quantum-inspired models are an alternative that can offer benefits in practical tasks such as medical image classification.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T11:15:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.21186v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.21186v1"
+    },
+    {
       "id": "2607.21080v1",
       "title": "Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction",
       "authors": [
@@ -58,6 +220,20 @@
       "published_raw": "2026-07-23T09:00:31Z",
       "pdf_link": "http://arxiv.org/pdf/2607.21068v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.21068v1"
+    },
+    {
+      "id": "2607.21671v1",
+      "title": "Neural Feature Governance: Extending Atom Prevalence",
+      "authors": [
+        "Idris Karel Seunda Ekwe",
+        "Patrick Tenga Shako",
+        "Ernest Parfait Fokoué"
+      ],
+      "abstract": "Neural network compression and interpretability remain open challenges in modern deep learn- ing, where billion-parameter architectures deliver impressive accuracy at the cost of trans- parency, computational efficiency, and reliable uncertainty quantification. This paper introduces Neural Atom Prevalence (NAP), a principled Bayesian framework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total predictive variance across all experiments, and regression reliability diagrams confirm a near-nominal predictive interval coverage (93.4% observed against a 95% target). These results establish NAP as a reliable, theoretically grounded, and computation- ally tractable solution to the simultaneous pursuit of sparsity, accuracy, interpretability, and uncertainty quantification in Bayesian neural networks.",
+      "published": "July 23, 2026",
+      "published_raw": "2026-07-23T08:50:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.21671v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.21671v1"
     },
     {
       "id": "2607.20930v1",
@@ -142,171 +318,6 @@
       "published_raw": "2026-07-22T14:25:59Z",
       "pdf_link": "http://arxiv.org/pdf/2607.20205v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.20205v1"
-    },
-    {
-      "id": "2607.20162v1",
-      "title": "Self-organizing Architecture of Receptron Units: a Hardware-Aware Framework for Edge Intelligence",
-      "authors": [
-        "Stefano Radice",
-        "Ludovico Casaccia",
-        "Riccaro Emanuele Beccalli",
-        "Bruno Paroli",
-        "Paolo Milani"
-      ],
-      "abstract": "The growing demand for intelligent processing at the edge of IoT networks is constrained by the severe computational and memory limitations of microcontroller units, which render impractical conventional deep learning approaches. We propose a neuromorphicinspired classifier based on the Receptron model, a single-unit architecture capable of implementing non-linearly separable decision boundaries, without resorting to multi-layer networks. The model is designed for direct deployment on mid-range MCUs, while supporting continuous on-device adaptation. Experimental evaluation on basic dataset benchmarks yields cross-validated accuracies compatible with standard machine learning method baselines. These results position the Receptron as a viable and interpretable alternative for resource-constrained neuromorphic edge systems operating in dynamic, non-stationary environments.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T13:57:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20162v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20162v1"
-    },
-    {
-      "id": "2607.20579v1",
-      "title": "Deepfake News Detection: A Multimodal Framework Integrating LipNet, DeepSpeech and ResNET for Enhanced Audio-Visual Analysis",
-      "authors": [
-        "Ameena Khan",
-        "Muhammad Ahsan Aziz",
-        "Muhammad Junaid Asif",
-        "Naeem Akhter",
-        "Rana Fayyaz Ahmad"
-      ],
-      "abstract": "Deepfake news refers to AI-generated (or AI ma-nipulated) multimedia content intentionally generated to deceive audiences by manipulating the facial expressions, or speech while maintaining the realistic appearance. The rapid progress of generative AI has made the synthesis of highly realistic fake videos and cloned voices widely accessible, posing a serious threat to the authenticity of digital news media. This paper presents a multi-modal framework that discerns the authenticity of video content by jointly exploiting audio and visual cues, thereby addressing the challenge of detecting the deepfake videos. We proposed a framework that involves features extraction from lip movements, audio content and video frames. Lip movements and speech content are encoded using the LipNet and DeepSpeech2 models, while facial features are extracted by leveraging the use of BlazeFace and represented with ResNet18. The extracted feature vectors are concatenated into a holistic video representation and classified with an ensemble of machine learning and deep learning models, including Random Forest (RF), Multi-layer Perceptron (MLP) and Long Short-Term Memory (LSTM) networks. Exten-sive experiments performed on the FakeAVCeleb dataset shows that the proposed approach attains an accuracy of 94% using augmented audio features, outperforming a state-of-the-art multi-modal ensemble baseline. The results confirm the robustness and practical potential of the proposed framework for deepfake news detection.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T11:39:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20579v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20579v1"
-    },
-    {
-      "id": "2607.20045v1",
-      "title": "PN-QNN: Harnessing Physical Noise as a Native Regularizer in Photonic Hybrid Quantum Neural Networks",
-      "authors": [
-        "Farah Elnakhal",
-        "Alberto Marchisio",
-        "Nouhaila Innan",
-        "Gabriel Falcao",
-        "Muhammad Shafique"
-      ],
-      "abstract": "Physical noise in near-term quantum hardware is usually treated as a nuisance to suppress. We ask whether it can instead act as a hardware-native regularizer for photonic hybrid quantum-classical neural networks (PHQCNNs), analogous to noise-injection regularization in classical deep learning. Using Quandela's Perceval simulator and the MerLin framework, we build PHQCNNs for Iris, Digits, and MNIST and inject Perceval's seven-parameter physical noise model directly into training. A genetic algorithm searches the six continuous noise dimensions and 1 boolean parameter to find, per dataset, the configuration maximizing validation accuracy, compared against a noiseless baseline across five seeds. GA-tuned noise yields modest accuracy gains on Iris (+0.82pp) and Digits (+1.45pp), but a clear degradation on MNIST (-1.21pp). Per-parameter sweeps show that no individual noise parameter is consistently beneficial, motivating the joint search, while a second-order loss expansion shows that physical noise induces a Tikhonov-like regularization term whose effect is dataset-dependent. Physical photonic noise can thus act as a free regularizer, but not universally.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T11:39:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20045v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20045v1"
-    },
-    {
-      "id": "2607.20003v1",
-      "title": "Taming the Security-Energy Paradox: A Green AI Approach to Optimized Android Malware Detection",
-      "authors": [
-        "Shrinidhi Sridhar",
-        "Vikas K. Malviya"
-      ],
-      "abstract": "An increase in advanced Android malware requires the use of deep learning models, which can run on Android devices. But there is a trade-off between security and energy use, as strong detection models can drain the battery of devices fast. This work tests different Multi-Layer Perceptron (MLP) model configurations to balance malware detection performance and energy efficiency. In this work, we compared standard FP32 models with optimized INT8 quantized neural networks with different model depths using TUANDROMD and DREBIN datasets for both classification performance and energy consumption. The results show that INT8 quantization reduces model size by about 3.5 times with a decrease in energy consumption to 0.0189 mJ per inference, while maintaining more than 99.2\\% detection accuracy. We found that shallow quantized architectures, such as 3-layer and 4-layer QNNs, reduce energy costs by improving throughput and shortening the time of CPU operating in a high-power state. This work shows that efficient malware protection can be achieved on resource-constrained smartphones and provides a foundation for Green AI in mobile security.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T10:39:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20003v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20003v1"
-    },
-    {
-      "id": "2607.19974v1",
-      "title": "Time Series Network Utilization KPI Forecasting Using Advanced AI/ML Models",
-      "authors": [
-        "Niraj Gadhe",
-        "Kirti Bhardwaj",
-        "Moulik Jain",
-        "Shubhi Sharma",
-        "Vinay Saini"
-      ],
-      "abstract": "The rapid proliferation of data-intensive applications, cloud infrastructure, and IoT ecosystems has made proactive resource provisioning critical for maintaining optimal network performance. However, network administrators face a constant battle against capacity constraints, where traditional reactive approaches fail to accurately anticipate traffic fluctuations. This inability to foresee demand leads to costly over-provisioning, unexpected downtime, and degraded quality of service directly impacting operational budgets and business continuity. To achieve efficient capacity planning, accurate forecasting of bandwidth utilization is essential. This study addresses the challenge by evaluating a diverse spectrum of models including seasonal decomposition, Prophet, Random Forest, XGBoost, Support Vector Regression, and advanced deep learning architectures like bidirectional and Convolutional LSTMs - using a common interface dataset benchmarked across MAPE, NRMSE, and R-square metrics. Ultimately, this research delivers actionable insights into the trade-offs between model accuracy and computational efficiency, empowering engineers, operators, and business owners to select the optimal forecasting model for their specific infrastructure needs.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T09:57:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19974v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19974v1"
-    },
-    {
-      "id": "2607.20577v1",
-      "title": "AI-Driven Surrogate Models for Predicting Electrode-Scale Discharge Behavior in Lithium-Ion Batteries",
-      "authors": [
-        "Mengda Xing",
-        "Jean-Marie Lagniez",
-        "Alejandro Franco"
-      ],
-      "abstract": "Physics-based simulations are essential for understanding the electrode-scale discharge behavior of lithium-ion batteries (LIBs) but suffer from prohibitive computational costs. To address this, we introduce a novel deep learning surrogate pipeline based on the Swin3D Transformer to predict spatiotemporal discharge dynamics directly from volumetric data. Our approach integrates two key innovations: Gaussian Positional Encoding (GPE), which enhances spatial feature representation by adapting to the complex geometry of electrode microstructures, and a specialized Temporal Encoding module to capture non-linear timeseries evolution. Experimental validation on an Electrochemical Simulation (ES) dataset demonstrates that our pipeline significantly outperforms state-of-the-art point cloud baselines in prediction accuracy. Furthermore, the proposed method reduces the computational overhead by orders of magnitude, providing a scalable and efficient framework for high-throughput battery design and optimization.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T09:10:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20577v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20577v1"
-    },
-    {
-      "id": "2607.19926v1",
-      "title": "Integrating Deep Learning and Contraction Theory for Robust Nonlinear State Estimation via Unsupervised Scientific Machine Learning",
-      "authors": [
-        "Yasmine Marani",
-        "Israel Filho",
-        "Eric Feron",
-        "Taous-Meriem Laleg-Kirati"
-      ],
-      "abstract": "A common way to design observers is to add a correction term to a copy of the system; however, designing the correction term for nonlinear systems remains a significant long-standing challenge. Contraction theory offers a unified approach to designing this correction term by solving a matrix partial differential inequality (MPDI) and identifying a contraction metric. However, solving the MPDI for both the correction term and the contraction metric is highly challenging, both analytically and numerically. Therefore, the aim of this paper is to propose a learning-based approach to determine both the observer's correction term and the contraction metric by incorporating the contraction requirements into the learning process. The proposed approach relies on a scientific machine learning formulation that embeds the contraction conditions into the training loss function. The proposed approach is then extended to non-autonomous systems while keeping the correction term and contraction metric static to avoid generalization issues arising from time-dependent training. Computable bounds on the learning errors of the proposed observer are established as a function of the training residual and the sampling resolution. Furthermore, the robustness of the proposed observer to measurement noise and learning errors are established in an exponential input-to-state stability sense. Based on the robustness analysis, the present paper takes a further step by proposing a robust learning-based contraction nonlinear observer. The proposed observers are evaluated in numerical simulations for different contraction rates and measurement noise levels.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T08:58:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19926v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19926v1"
-    },
-    {
-      "id": "2607.19620v1",
-      "title": "SCPP: A Unified Python Library for Soft Clustering",
-      "authors": [
-        "Kiyan Rezaee",
-        "Morteza Ziabakhsh",
-        "Artin Bahrampour",
-        "Seyed Mohammad Ghoreishi",
-        "Asal Khaje",
-        "Ali Sajedifar",
-        "Manny Chalak",
-        "Ava Zerafatangiz",
-        "Sadegh Eskandari"
-      ],
-      "abstract": "In this paper, we present SCPP (Soft Clustering Python Package), an open-source Python framework for soft clustering. SCPP establishes a canonical, scikit-learn-compatible estimator interface that standardizes model training, prediction, membership representation, evaluation, and benchmarking across heterogeneous soft clustering methods, including fuzzy, probabilistic, graph-based, matrix factorization, and deep learning methods. The framework currently integrates 40 representative algorithms together with a comprehensive benchmarking comprising datasets, clustering quality metrics, and standardized runtime, memory, and scalability evaluation. SCPP further provides extensive documentation, practical examples, automated testing, and seamless integration with the scientific Python ecosystem, enabling reproducible experimentation and straightforward extension with new algorithms. The source code is publicly available at https://github.com/soft-clustering/soft-clustering.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T23:01:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19620v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19620v1"
-    },
-    {
-      "id": "2607.19618v1",
-      "title": "Causal dictionary learning reveals and validates transcription-factor binding features in genomic language models",
-      "authors": [
-        "Sarwan Ali"
-      ],
-      "abstract": "Genomic language models achieve strong performance across regulatory-genomics tasks, yet what these models internally represent remains opaque, and the field lacks a principled procedure for verifying that an apparent ``concept'' inside a model is real rather than an artifact of sequence composition. We introduce a framework that combines sparse dictionary learning with causal intervention to extract, validate, and causally test interpretable features in genomic foundation models. Training top-$k$ sparse autoencoders on the hidden activations of two architecturally distinct models, Nucleotide Transformer ($6$-mer tokenization) and DNABERT-2 (byte-pair encoding), we recover thousands of monosemantic features that map to transcription-factor (TF) sequence motifs. We show that the naive validation of such features against position weight matrices is severely confounded by GC composition and repetitive elements, producing hundreds of spurious ``TF features'', and we develop a composition-matched, binding-resolved protocol that removes these confounds. Critically, we move beyond correlation: by ablating individual dictionary directions during the model's forward pass and measuring the induced shift in the model's own predictive distribution, we establish that specific features are \\emph{causally} used to represent cell-type-specific TF binding, not merely motif presence. Across three transcription factors (CTCF, GATA1, REST) and both architectures, causally validated binding features emerge reproducibly ($7$--$14$ of $15$ tested features per condition), while two classes of negative control, scrambled binding labels and randomly selected features, yield no detectable signal. The framework is purely computational, uses only public data, and provides a reusable standard for interpretability claims in genomic deep learning.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T22:54:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19618v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19618v1"
-    },
-    {
-      "id": "2607.19597v1",
-      "title": "A Deep Learning Framework for Predicting Solar EUV Irradiance During Significant Flares",
-      "authors": [
-        "Sathvik Soman",
-        "Jason T. L. Wang",
-        "Haimin Wang",
-        "Haodi Jiang"
-      ],
-      "abstract": "We present FlareEUV, a multimodal deep learning framework for predicting daily extreme ultraviolet (EUV) irradiance at 6.5 nm over three consecutive days during significant solar flares, using multi-instrument observations from NASA's Solar Dynamics Observatory (SDO). We consider 33 significant flares in the period between 2011 and 2014 in Solar Cycle 24. The SDO observations include 13 co-aligned full-disk images, comprising eight AIA EUV/UV and five HMI magnetic/continuum products. FlareEUV learns the relationship between magnetic structure and coronal emission from the raw imaging data using a lightweight attention-based architecture. Our experimental results demonstrate the good performance of FlareEUV in short-term EUV irradiance forecasting during the significant flares and its superiority over baseline methods.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T21:55:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19597v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19597v1"
-    },
-    {
-      "id": "2607.19305v2",
-      "title": "Riemannian Deep Learning: Modules, Networks, and Geometries",
-      "authors": [
-        "Chen Ziheng"
-      ],
-      "abstract": "Deep neural networks on manifold-valued representations have attracted growing interest, but many basic components remain tied to specific manifolds, rely on Euclidean approximations, or require costly and numerically fragile geometric operations. This thesis develops a unified framework for Riemannian deep learning from three complementary perspectives: reusable neural modules, manifold-specific network architectures, and the design of underlying geometries. It generalizes batch normalization from Euclidean spaces and individual manifolds to broad classes of Lie groups and gyrogroups, and extends multinomial logistic regression from Euclidean space to SPD manifolds and then to general Riemannian manifolds. It further develops neural networks for several important geometric representations, including an unconstrained model of hyperbolic space, Busemann-based hyperbolic learning, and full-rank correlation matrices. Finally, it introduces adaptive and computationally efficient Riemannian metrics on SPD manifolds, including learnable Log-Euclidean geometries and fast, stable Cholesky-based geometries. The proposed methods are supported by theoretical analysis and validated through numerical experiments and applications in vision, signal processing, graph learning, and genomics.",
-      "published": "July 21, 2026",
-      "published_raw": "2026-07-21T17:17:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.19305v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.19305v2"
     }
   ]
 }
