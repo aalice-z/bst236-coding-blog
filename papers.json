@@ -1,7 +1,206 @@
 {
-  "last_updated": "2026-07-27T01:29:40.521554",
+  "last_updated": "2026-07-28T01:17:53.922928",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.23649v1",
+      "title": "DP-IVON-Gradsq: Differentially Private Squared-Gradient Improved Variational Online Newton",
+      "authors": [
+        "Nour Jamoussi",
+        "Ikram Dridi",
+        "Giuseppe Serra",
+        "Marios Kountouris"
+      ],
+      "abstract": "Differential privacy provides formal privacy guarantees for training neural networks on sensitive data, while Bayesian deep learning offers a principled framework for uncertainty-aware prediction. Combining these two objectives remains challenging, as privacy noise can interact with the stochasticity introduced by Bayesian posterior sampling. In this work, we investigate differentially private variational Bayesian learning through the Improved Variational Online Newton (IVON) optimizer. We introduce DP-IVON-Gradsq, a private variant of IVON. The proposed method constructs its curvature estimate from the privatized gradient using a noise-corrected squared-gradient estimator, reducing the direct interaction between posterior-sampling noise and privacy noise while preserving the Adam-like computational efficiency of IVON. We evaluate DP-IVON-Gradsq on CIFAR-10 against the standard private optimizers DP-SGD and DP-Adam over a range of privacy budgets. The results show that DP-IVON-Gradsq is competitive under weak-to-moderate privacy constraints, i.e., large-to-moderate values of $\\varepsilon$, while degrading under strong privacy. Code is available at https://github.com/NourJamoussi/DP-IVON-Gradsq.git.",
+      "published": "July 26, 2026",
+      "published_raw": "2026-07-26T13:32:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23649v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23649v1"
+    },
+    {
+      "id": "2607.23642v1",
+      "title": "When Rates Are Geometric: Rate-Certificate Transfer for Contact Splittings in Optimization",
+      "authors": [
+        "George A Kevrekidis"
+      ],
+      "abstract": "Discrete optimization algorithms are often analyzed through continuous-time limiting ODEs, but a convergence certificate for the ODE is not automatically one for the discrete algorithm. We develop contact Hamiltonian systems as a setting where the transfer can be made precise. A contact Hamiltonian $H$ on $J^1(\\mathbb{R}^n)$ obeys the intrinsic decay identity $\\dot H = -H\\,\\partial_s H$, so an augmented energy $\\mathcal{E}$ built from $H$, together with the conformal rate $\\partial_s H$, is a continuous-time rate certificate whenever $\\mathcal{E}$ controls the objective gap. Our main theorem states, under three named and independently checkable hypotheses, that an order-$r$ contact splitting with step $h$ transfers this certificate over the finite horizon set by backward error analysis. The discrete decay envelope is governed by the modified conformal factor up to $O(h^r)$ perturbations plus a backward-error shadowing defect, and the mechanism is inherited exactly because the modified Hamiltonian is itself a contact Hamiltonian. Quadratic heavy ball is a fully solvable example: its projected dissipative-leapfrog spectrum agrees with established conformal-symplectic optimization theory, while the augmented contact Hamiltonian yields a sharp objective-to-certificate comparison that verifies the transfer hypotheses. For strongly convex objectives with state-dependent damping, an explicit Bregman-type Lyapunov certificate instead transfers by an auxiliary-shadowing corollary. The decomposition $H=K+V+D$ into kinetic, objective-encoding potential, and dissipation terms serves as a design template, with a catalogue of closed-form sub-flows including contact-specific damping families. Numerical experiments confirm the predicted conformal-factor tracking orders and show competitive performance on ill-conditioned benchmarks and deep-learning tasks.",
+      "published": "July 26, 2026",
+      "published_raw": "2026-07-26T13:12:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23642v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23642v1"
+    },
+    {
+      "id": "2607.23406v1",
+      "title": "Blood Pressure Estimation from PPG: A Comparative Study of Direct and ECG-Mediated Deep Learning Pipelines",
+      "authors": [
+        "Bo Wu",
+        "Haoling Wang",
+        "Zhuodiao Kuang",
+        "Kateryna Shapovalenko"
+      ],
+      "abstract": "Continuous cuffless blood pressure (BP) monitoring is essential for connected health systems and wearable devices, enabling early detection, longitudinal tracking, and personalized management of cardiovascular disease. Many prior approaches attempt to estimate BP indirectly by reconstructing electrocardiography (ECG) from photoplethysmography (PPG), assuming ECG provides a stronger physiological link to BP. However, ECG sensing is less accessible in wearable settings and may introduce unnecessary complexity. In this work, we first perform a large-scale physiological correlation analysis on the MIMIC-III waveform database, revealing that PPG exhibits substantially stronger coupling with arterial blood pressure (ABP) ($|r|=0.247$, $p<0.001$) than ECG does ($r=0.018$, $p=0.187$), challenging the assumption that ECG provides a superior intermediate representation. Motivated by this insight, we conduct a systematic comparison between direct PPG-to-BP prediction and ECG-mediated pipelines using multiple state-of-the-art deep learning models. Across 1.74M segments from 3,127 patients, direct PPG-to-BP prediction achieves British Hypertension Society Grade A performance ($\\mathrm{MAE}_{\\mathrm{SBP}} = 4.82 mmHg$, $\\mathrm{MAE}_{\\mathrm{DBP}} = 4.31 mmHg$), outperforming all ECG-mediated approaches, which achieve only Grade B accuracy. Our findings suggest that accurate continuous BP monitoring can be achieved directly from wearable PPG signals, enabling simpler, more efficient pipelines for real-world connected health systems.",
+      "published": "July 26, 2026",
+      "published_raw": "2026-07-26T01:44:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23406v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23406v1"
+    },
+    {
+      "id": "2607.23397v1",
+      "title": "A Statistical Difference between Single-Layer Learning and Hierarchical Learning in Wide Neural Networks",
+      "authors": [
+        "Sumio Watanabe"
+      ],
+      "abstract": "Hierarchical neural networks are widely used in artificial intelligence, yet their mathematical properties remain incompletely understood. In the infinite-width limit, two different theoretical frameworks have been proposed. One reduces deep learning to kernel regression with a fixed kernel by assuming that the parameters remain close to their initialization, whereas the other allows the parameters to move away from their initialization, requiring the kernel itself to be optimized. In this paper, we study a three-layer neural network with a finite but large number of hidden units. We show that training the input-to-hidden weights yields a smaller generalization error than keeping them fixed. Furthermore, the latter setting exhibits singularities in the parameter space, whereas the former does not. These findings indicate that singularities play an essential role even in wide neural networks.",
+      "published": "July 26, 2026",
+      "published_raw": "2026-07-26T00:11:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23397v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23397v1"
+    },
+    {
+      "id": "2607.23371v1",
+      "title": "Investigating the Visual Cues of CNNs for Vascular Segmentation: A Case Study in Microscopy and Fundus Imaging",
+      "authors": [
+        "Weslley dos Santos Silva",
+        "Cesar Henrique Comin"
+      ],
+      "abstract": "Vascular segmentation is a standard procedure for clinical diagnosis, yet the specific visual features determining model decisions remain poorly understood. This paper investigates the visual cues Convolutional Neural Networks (CNNs) use to segment blood vessels across two distinct imaging domains: fluorescence microscopy and retinal fundus photography. We employ a series of experiments to quantify the influence of shape, texture, and receptive field on segmentation performance. First, we isolate texture and intensity by evaluating performance on patches subjected to pixel shuffling and normalization. Second, we assess global shape relevance by training models on sparse contours and centerlines. Lastly, we quantify the required spatial context by systematically varying the network's theoretical and effective receptive fields. Within the scope of the evaluated datasets, we found that pixel intensity is more relevant than texture, though networks maintain surprisingly high accuracy even when both cues are removed. Furthermore, CNNs struggle to extrapolate full vessel geometry from shape cues alone, typically relying on a relatively small effective receptive field of around 20 pixels, though global context provides a modest benefit for fundus images. While specific to the modalities studied, this methodology offers a quantitative foundation to audit and refine deep learning systems in vascular imaging.",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T21:25:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23371v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23371v1"
+    },
+    {
+      "id": "2607.23284v1",
+      "title": "StageGuard: Physiologically Constrained Sleep Staging",
+      "authors": [
+        "Juntang Wang",
+        "Yihan Wang",
+        "Hao Wu",
+        "Jiayu Gao",
+        "Shixin Xu",
+        "Dongmian Zou"
+      ],
+      "abstract": "Automated sleep staging is increasingly used in large-scale studies to derive sleep-architecture endpoints: total sleep time, REM latency, sleep efficiency, and bout-duration statistics. Deep learning models achieve epoch-level accuracy approaching inter-rater agreement, yet often produce hypnograms that violate physiological invariants, such as rare transitions (e.g., direct Wake -> REM) or excessively fragmented sequences. Such violations can bias downstream sleep metrics, regardless of overall accuracy. We propose StageGuard, a plug-and-play, backbone-agnostic structured-inference framework that wraps any neural sleep-staging backbone with physiology-informed priors. StageGuard combines (1) a differentiable soft transition penalty that discourages physiologically rare transitions during training, and (2) a semi-Markov constrained decoder with a duration-augmented state space that jointly enforces transition penalties and minimum bout durations at inference. Unlike hard-prohibition methods, it admits rare transitions when emission evidence is overwhelming, leaving informative pathological events recoverable rather than blocked. StageGuard constrains staging outputs to satisfy known physiological priors rather than modeling sleep generatively. We quantify the validity gap using transition-violation rate (TVR) and fragmentation index (FI) and demonstrate that, across six backbones and four datasets, StageGuard reduces TVR to physiologically plausible levels and lowers FI by 56-62%, while maintaining or slightly improving classification accuracy. Crucially, improved constraint satisfaction translates into 59-79% lower error on derived sleep-architecture statistics not directly optimized by the method, and recovers the direction and effect size of expert-defined subgroup differences (OSA severity, age) more faithfully than the unconstrained baseline.",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T16:37:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23284v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23284v1"
+    },
+    {
+      "id": "2607.23237v1",
+      "title": "Context-Aware Concept Distillation for Trustworthy Flood Prediction",
+      "authors": [
+        "Eli Levinkopf",
+        "Efrat Morin",
+        "Claudia V. Goldman"
+      ],
+      "abstract": "Effective flood risk management relies on accurate forecasting, yet the \"black box\" nature of stateof-the-art Deep Learning models creates a barrier to trust and accountability in high-stakes public safety decisions. While existing Explainable AI (XAI) methods offer local attributions, they fail to provide the verifiable, operationally meaningful causal narratives required by disaster response authorities. To address this societal challenge, we propose Context-Aware Concept Distillation (CACD), a framework developed in collaboration with domain experts to distill opaque LSTMs into interpretable, hydrology-aware surrogate models. We introduce an unsupervised pipeline to discover a \"Hydrological Language\" and a Residual Hypernetwork that dynamically modulates these concepts based on static basin characteristics. Evaluated on 5,203 basins globally, our model achieves high fidelity (Median NSE 0.70), significantly outperforming black-box baselines (e.g., Multi Layer Perceptrons) on unseen future data. By demonstrating that human-interpretable concepts are sufficient to reconstruct flood dynamics, this work balances AI accuracy with the transparency required for responsible environmental decision-making.",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T14:45:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23237v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23237v1"
+    },
+    {
+      "id": "2607.23197v1",
+      "title": "Domain-Prior-Regularized Graph Modeling for Anomaly Detection in Cyber-Physical Systems",
+      "authors": [
+        "Youngseok Hwang",
+        "Joonsung Kwon",
+        "Geonwoo Lee",
+        "Hyunwoo Park"
+      ],
+      "abstract": "Anomaly detection on multivariate sensor time series is critical for industrial monitoring of cyber-physical systems (CPS), where even subtle deviations from normal behavior can indicate process disruption. Recent graph-based approaches have made significant progress, but they often struggle in small-scale physical systems with scarce labeled anomalies and limited normal data. In such settings, graph-based models tend to capture spurious correlations and produce unstable sensor topologies. We propose DPR-GM (Domain-Prior-Regularized Graph Modeling), a forecasting-based framework that incorporates system design knowledge into graph construction. DPR-GM leverages a large language model (LLM) to extract directed physical couplings between sensor pairs from system documentation, which are encoded as a binary domain adjacency matrix serving as a structural gate over sensor relations. This gate is then modulated by Pearson correlations estimated from normal training data. The anomaly score is further weighted by sensor-level reliability derived from the coefficient of variation. All graph and weighting components are fixed prior to training and add no learnable parameters. On the SKAB benchmark, DPR-GM outperforms graph-based, statistical, and deep learning baselines across F1, AUROC, and AUPRC, showing that domain-structured graph priors are a practical alternative to fully learned topologies in data-scarce CPS.",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T13:21:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23197v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23197v1"
+    },
+    {
+      "id": "2607.23120v1",
+      "title": "A scalable online machine learning approach for Stock Recommendation",
+      "authors": [
+        "Harsh Nagarkar"
+      ],
+      "abstract": "Stock recommendation systems face the dual challenge of adapting to rapidly changing market conditions while maintaining low-latency predictions for end users. Traditional batch-trained models fail to capture concept drift, and monolithic architectures struggle to provide fault tolerance under load. This paper presents a scalable online deep learning-based stock recommendation system built on a distributed microservices architecture using Kubernetes, Docker, and RabbitMQ. The system employs a hybrid leader-follower architecture where a primary model continuously trains on streaming financial data, including EPS, MACD, and price, from the Alpha Vantage API while multiple replica models serve user-facing recommendations in parallel. A multilayer perceptron implemented with TensorFlow Recommenders generates content-based recommendations using explicit user ratings (1-5) and transfer learning. The architecture ensures high availability. The leader persists model weights to Google Cloud Object Storage, allowing replicas to recover seamlessly upon failure, while RabbitMQ provides message durability and replay. Results demonstrate that the system serves stock recommendations in 23 seconds per request and processes up to 500 portfolio addition requests per second per follower. Key limitations include data staleness (up to 150 minutes due to API rate limits) and the absence of a service mesh for inter-cluster security. This work contributes a production-ready reference architecture for online recommender systems that balances consistency, availability, and scalability in a financial domain context",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T09:32:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23120v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23120v1"
+    },
+    {
+      "id": "2607.23024v1",
+      "title": "When Less Is More: A Controlled Benchmark of Lightweight CNNs for Satellite Land-Cover Segmentation on DeepGlobe",
+      "authors": [
+        "Atiq Ur Rehman",
+        "Joseph Michael Donovan"
+      ],
+      "abstract": "High-resolution satellite imagery is the backbone of good land-cover classification, and without that, environmental monitoring, urban planning, and sustainable resource management all fall short. Deep learning architectures perform well in semantic segmentation, but the efficiency-accuracy trade-off across classical convolutional encoders is not well quantified under controlled, reproducible conditions. This study compares five architectures VGG16, MobileNetV2, InceptionV3, AlexNet, and CNN on the DeepGlobe Land Cover Classification dataset using three progressively optimized iterations to isolate regularisation, transfer learning, and architectural depth. To ensure performance differentials reflect architectural properties, all experiments used identical preprocessing, hyperparameter, and training protocols without data augmentation or class-imbalance correction. At 24.98 MB, MobileNetV2_v1 had the highest overall accuracy (0.7906) and mean Intersection over Union (0.4625), outperforming deeper alternatives like InceptionV3_v2 (125.17 MB, accuracy 0.7610) and VGG16_v2 (71.13 MB, accuracy 0.7653). Class-wise analysis showed strength in urban, agricultural, and water categories, but rangeland-barren confusion showed that architectural optimization alone cannot optimize spectrally similar minority classes. Strong spatial generalization and crisp boundary delineation were confirmed on held-out test imagery, validating operational applicability. These results show that lightweight, transfer-learned models can match or outperform deeper models in resource-constrained remote-sensing environments, enabling scalable land-cover mapping.",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T03:51:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23024v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23024v1"
+    },
+    {
+      "id": "2607.23014v1",
+      "title": "AI Empowered Communication and Radar Modulation Recognition: A Survey",
+      "authors": [
+        "Wei Huang",
+        "Pengfei Zhang",
+        "Huai Qin",
+        "Jixuan Zhou",
+        "Hao Zhang",
+        "Kaitao Meng",
+        "Christos Masouros"
+      ],
+      "abstract": "Automatic modulation recognition (AMR) is of vital importance for ensuring communication and radar reliability, efficient spectrum utilization and resistance to electronic interference. The development of artificial intelligence (AI) technology is reshaping the technological paradigm of AMR, promoting its transition from traditional modes relying on manual features to data-driven intelligent recognition. This change is not only reflected in the significant improvement of recognition accuracy, but also injects strong momentum into the intelligent evolution of both communication and radar systems through algorithm innovation, architecture optimization, and scenario expansion. In order to clarify the current development status and bottlenecks of AMR, and to find breakthrough directions, we make a comprehensive survey of recent AI-based technologies for AMR in this paper, including model-based machine learning (ML) methods and data-driven deep learning (DL) methods. We first investigate the modulation types used in current communication and radar systems. Next, we summarize the typically used features in the field of AMR, and discuss their inherent advantages and disadvantages. Then, we introduce the basic AI models for AMR and conduct a hierarchical investigation of AMR methods for communication and radar. Finally, based on existing research works, we highlight open issues and propose future research directions for AMR.",
+      "published": "July 25, 2026",
+      "published_raw": "2026-07-25T03:15:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.23014v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.23014v1"
+    },
+    {
+      "id": "2607.22875v1",
+      "title": "Spatial Prediction of Soil Microplastics and Organic Matter Using Graph Attention Networks",
+      "authors": [
+        "Anik Dev Nath",
+        "Md Al Amin",
+        "Bikash Kumar Paul"
+      ],
+      "abstract": "Accurate estimation of soil microplastics and organic matter is essential to assess ecosystem health and support sustainable land use. This study presents a graph-based deep learning approach using Graph Attention Networks (GATs) to model spatial dependencies among 91 georeferenced soil samples. By incorporating spatial coordinates, soil properties, and land use data, a two-layer GAT architecture was developed to capture local interactions. The final model showed strong performance, achieving RMSEs of 625.06 ($R^2 = 0.87$) for microplastics and 0.43 ($R^2 = 0.91$) for organic matter. However, cross-validation results revealed limited generalization, probably due to the small sample size and sparse graph structure. These findings demonstrate the potential of GATs for spatial soil prediction and underscore the need for dense datasets and improved graph connectivity.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T19:35:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22875v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22875v1"
+    },
+    {
+      "id": "2607.22872v1",
+      "title": "Same Predictions, Different Reasons: The Effect of Quantization on Model Explanations",
+      "authors": [
+        "Kazi Kamruzzaman Rabbi",
+        "Md. Zami Al Zunaed Farabe",
+        "M. Sohel Rahman"
+      ],
+      "abstract": "Post-training quantization (PTQ) has become a practical solution for deploying deep learning models on resource-constrained edge devices by compressing high-precision floating-point weights into low-precision representations without requiring retraining. Past research has demonstrated that quantization largely preserves classification accuracy; however, whether it also preserves the model's internal reasoning remains an open question. This study presents a systematic evaluation on how static PTQ affects the interpretability / explainability of five widely used CNN architectures: VGG19, ResNet18, EfficientNet-B0, DenseNet161, and MobileNetV2 at INT8 and INT4 precision. We employ a dual interpretability framework that combines Grad-CAM for spatial attention analysis with LIME for input-level feature attribution, and systematically compare full-precision and quantized models on two binary classification datasets. Interpretability is evaluated using three complementary metrics: the Pearson correlation coefficient, structural similarity index, and top-20% IoU to capture distributional and structural variations in model explanations, supplemented by deletion/insertion faithfulness analysis. The results show that classification accuracy is not a reliable indicator of interpretability stability under reduced precision. DenseNet161 maintains strong feature consistency across both precision levels, whereas EfficientNet-B0, despite achieving competitive spatial attention and classification accuracy at INT8 precision, exhibits a substantial degradation in input-level feature attribution. These findings have direct implications for the trustworthy deployment of quantized models in applications with high interpretability requirements, demonstrating that architecture selection is as important as the quantization strategy.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T19:26:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22872v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22872v1"
+    },
+    {
+      "id": "2607.22867v1",
+      "title": "AI-interpreted Optical Scattering for Robust and Focal Depth-Aware Imaging",
+      "authors": [
+        "Eunji Ko",
+        "Patrick Ross",
+        "Corey Hart",
+        "Wolfgang Losert"
+      ],
+      "abstract": "Optical scattering has conventionally been regarded as an impediment in imaging research due to the degradation of image quality during reconstruction. Nevertheless, this study explores two cases in which optical scattering may serve a beneficial role in image reconstruction tasks. We compared the No Scattering MNIST dataset with three Scattering MNIST datasets, each generated under distinct scattering conditions. To assess the information content of the resulting speckle patterns, we employed a Variational Autoencoder (VAE) approach which achieves accuracy comparable to state-of-the-art deep learning approaches, but has an interpretable latent space. We find that scattering can enhance data robustness against spatial pixel loss by effectively distributing information. We also demonstrate that scattering can enable distinctions of focal depth information. We anticipate that these findings will contribute to more efficient imaging techniques, particularly in the presence of obstacles and three-dimensional signals.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T19:14:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22867v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22867v1"
+    },
     {
       "id": "2607.22453v1",
       "title": "Forecasting and Explaining the Phillips Curve: A SHAP-Based Comparison of Machine Learning and Traditional Time-Series Models for Canadian Unemployment and Inflation",
@@ -57,6 +256,20 @@
       "arxiv_link": "http://arxiv.org/abs/2607.22342v1"
     },
     {
+      "id": "2607.22794v1",
+      "title": "Multimodal Domain Generalization for Depression Detection: An Attention-Based BiLSTM Network with Domain-Adversarial Training",
+      "authors": [
+        "Ali Tabaraei",
+        "Federico Simonetta",
+        "Stavros Ntalampiras"
+      ],
+      "abstract": "Automatic depression detection with deep learning has shown promise but often suffers from limited generalization due to domain shift arising from inter-speaker variability. To address this critical issue, we present the first patient-independent multimodal depression detection framework that incorporates domain generalization (DG), jointly leveraging both acoustic and textual modalities. The proposed model integrates bidirectional Long Short-Term Memory (BiLSTM) with intra- and cross-modal attention mechanisms, accompanied by segment-level fusion for decision-making. Generalization is further enhanced by applying a gradient reversal layer inspired by Domain-Adversarial Training of Neural Networks (DANN), which promotes domain-invariant representations by adversarially limiting the model's ability to identify individual speakers, effectively reducing patient-specific bias. Conducting experiments on the Androids-Corpus dataset with a 5-fold cross-validation (CV) protocol, various pairings of audio and text feature extractors were evaluated over different segment durations, determining MelSpec and ItalianBERT as the optimal baseline at a 30-second segment duration. The addition of DG to this baseline yields a 2.5% increase in accuracy and 3.3% in F1-score, achieving 93.2% accuracy, 93.2% precision, 96.2% recall, and 94.2% F1-score, surpassing all existing benchmarks. Extensive ablation studies assess the impact of multimodal fusion, deep architectural choices, and DG, highlighting their combined contribution to robust and generalizable depression detection.",
+      "published": "July 24, 2026",
+      "published_raw": "2026-07-24T13:52:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.22794v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.22794v1"
+    },
+    {
       "id": "2607.22258v1",
       "title": "Class-Balanced Softmax: A Bayes Theory-Based Method for Long-Tailed Recognition",
       "authors": [
@@ -73,251 +286,6 @@
       "published_raw": "2026-07-24T12:46:03Z",
       "pdf_link": "http://arxiv.org/pdf/2607.22258v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.22258v1"
-    },
-    {
-      "id": "2607.22238v1",
-      "title": "Optimization of time-consuming experimental conditions using pseudo-experimental data guided by adaptive polynomial regression",
-      "authors": [
-        "Hirotaka Sugawara",
-        "Yujin Taguchi",
-        "Kei Minagawa",
-        "Yusuke Hiki",
-        "Takashi Morikura",
-        "Akira Funahashi"
-      ],
-      "abstract": "Bayesian optimization (BO) is an optimization method that sequentially proposes the next candidate explainable variables for optimizing target variables by balancing exploration and exploitation. BO is often used under a limited evaluation budget, such as hyperparameter tuning of deep learning. Despite its effectiveness, conventional BO may have poor convergence in practical experimental science where each evaluation is often costly and time-consuming. Recently, BO methods have been proposed that accelerate optimization by using pseudo-experimental data that simulate experimental data. However, when only a limited number of experimental data are available, the generated pseudo-experimental data may be of insufficient quality. In this study, we developed PolyBO to improve optimization time by generating high-quality pseudo-experimental data even when the number of trials is limited. PolyBO performs BO efficiently by generating pseudo-experimental data with an adaptively updated versatile parametric model. This low-capacity polynomial regression model is intended to enable efficient BO even with limited experimental data. PolyBO updates the BO surrogate model with a combined dataset consisting of experimental data and pseudo-experimental data and then performs optimization. Using synthetic benchmark functions with diverse landscapes, we found that PolyBO reduced the optimization time by a median of 42\\%. For a real-world material composition optimization problem, PolyBO reduced the optimization time by a median of 96\\% compared with conventional methods. Overall, PolyBO achieves efficient optimization in settings where each experiment requires a long time.",
-      "published": "July 24, 2026",
-      "published_raw": "2026-07-24T12:16:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.22238v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.22238v1"
-    },
-    {
-      "id": "2607.22173v1",
-      "title": "Bowel Obstruction Detection and Localization on Abdominal CT with Deep Learning",
-      "authors": [
-        "Moritz Vandenhirtz",
-        "Andrea Agostini",
-        "Dana Belde",
-        "Mélanie Roschewitz",
-        "Ismaiel Chikh Bakri",
-        "Tilo Niemann",
-        "André Euler",
-        "Julia E Vogt"
-      ],
-      "abstract": "Bowel obstruction is a common and potentially life-threatening gastrointestinal condition. In the face of rising diagnostic workloads, the automated diagnosis of bowel obstruction on CT scans supports radiologists by accelerating detection and improving patient outcomes. In this work, we propose a deep learning framework with a multi-task objective that jointly detects bowel obstruction and localizes its transition zone. Additionally, we extend the method with an inherently interpretable classification method that locates the suspected transition point within a slice. It does so by learning a probabilistic selection mask that faithfully bases the classifier's prediction solely on a small image region. The proposed method is evaluated on an internal dataset comprising 1,427 abdominal CTs. Here, the model achieves an obstruction detection test accuracy of 93% and a Hit@10 transition zone localization of 95%. As the first method to reliably localize the transition zone, this marks a significant step towards the automated identification of this critical clinical landmark.",
-      "published": "July 24, 2026",
-      "published_raw": "2026-07-24T10:23:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.22173v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.22173v1"
-    },
-    {
-      "id": "2607.22139v1",
-      "title": "CARDIAG: A Dense Segment Classification Benchmark of Deep Learning Architectures for Coronary Angiography",
-      "authors": [
-        "Dominik Bernard Lau",
-        "Hubert Malinowski",
-        "Jerzy Szyjut",
-        "Adam Brzeski",
-        "Tomasz Dziubich",
-        "Radosław Targoński",
-        "Tomasz Figatowski",
-        "Natalia Zielińska"
-      ],
-      "abstract": "Accurate pixel-level classification of coronary angiograms is critical for cardiovascular disease assessment, yet the field lacks standardized evaluation protocols. In this work we demonstrate a new benchmark for the assessment of deep learning models which densely classify pixels of coronary angiograms to one of SYNTAX classes (or background). The evaluation covers 24 distinct architectures starting with classic convnets to recent state-space-based vision algorithms. We release CARDIAG - a multi-center, multi-label dataset which we carefully split to reliably compute metrics, accounting for diameter error, overlap, centerline quality and calibration. The data contains SYNTAX labels, binary, uncertainty and segmentation masks as well as intermediate frames together with the selected non-sensitive DICOM metadata. From the multitude of algorithms, we nominate ConvNeXt V2 encoder with DeepLab V3 Plus decoder as the best performing, achieving macro $F_1=0.456$, which we then ensemble with Mamba U-Net and Feature Pyramid Network, for an increased $F_1=0.479$. We demonstrate all the architectures to be well calibrated and determine the generalization of the top 5 methods, together with the data efficiency of these architectures. We highlight the importance of both high-resolution and low-resolution features in encoding. We also demonstrate the model correctness in the context of patient demographic, vessel sides and projection angle configurations. Overall the released benchmark allows for future studies to robustly and rigorously assess the proposals, not only for SYNTAX segmentation, but lesion detection and many more.",
-      "published": "July 24, 2026",
-      "published_raw": "2026-07-24T09:35:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.22139v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.22139v1"
-    },
-    {
-      "id": "2607.21895v1",
-      "title": "PrivDNN: A Secure Multi-Party Computation Framework for Deep Learning using Partial DNN Encryption",
-      "authors": [
-        "Liangqin Ren",
-        "Zeyan Liu",
-        "Fengjun Li",
-        "Kaitai Liang",
-        "Zhu Li",
-        "Bo Luo"
-      ],
-      "abstract": "In the past decade, we have witnessed an exponential growth of deep learning models, platforms, and applications. While existing DL applications and Machine Learning as a service (MLaaS) frameworks assume fully trusted models, the need for privacy-preserving DNN evaluation arises. In a secure multi-party computation scenario, both the model and the data are considered proprietary, i.e., the model owner does not want to reveal the highly valuable DL model to the user, while the user does not wish to disclose their private data samples either. Conventional privacy-preserving deep learning solutions ask the users to send encrypted samples to the model owners, who must handle the heavy lifting of ciphertext-domain computation with homomorphic encryption. In this paper, we present a novel solution, namely, PrivDNN, which (1) offloads the computation to the user side by sharing an encrypted deep learning model with them, (2) significantly improves the efficiency of DNN evaluation using partial DNN encryption, (3) ensures model accuracy and model privacy using a core neuron selection and encryption scheme. Experimental results show that PrivDNN reduces privacy-preserving DNN inference time and memory requirement by up to 97% while maintaining model performance and privacy. Codes can be found at https://github.com/LiangqinRen/PrivDNN",
-      "published": "July 24, 2026",
-      "published_raw": "2026-07-24T01:52:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21895v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21895v1"
-    },
-    {
-      "id": "2607.21577v1",
-      "title": "Synthetic data generation framework for quality control automation in gravure printing",
-      "authors": [
-        "Korota Arsène Coulibaly",
-        "Mohamed Hamlich",
-        "Khalid Hmali",
-        "Andrea Trombin"
-      ],
-      "abstract": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state-of-the-art object-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision (mAP) of 80.9\\% on real industrial testing samples. This framework provides a zero-cost, rapid-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T17:55:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21577v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21577v1"
-    },
-    {
-      "id": "2607.21200v1",
-      "title": "Transformer-based Diffusion models for Hydrological Time Series Probabilistic Imputation and Forecasting",
-      "authors": [
-        "Ferdinand Bhavsar",
-        "Lionel Benoit",
-        "Maxime Savatier",
-        "Edith Gabriel"
-      ],
-      "abstract": "The modeling of hydrometeorological time series with limited observations is a key challenge in the monitoring of hydro-systems and water resources, as well as for flood or drought risk assessment. Due to the high variability of the underlying processes and the sparsity of available measurements, traditional statistical approaches often struggle to accurately represent their dynamics. In this context, recent advances in deep learning offer a promising direction for improving the representation and generation of complex temporal processes sampled at several observation sites. This study investigates the application of transformer-based diffusion models to the simulation and reconstruction of hydrological time series. The proposed framework is applied to the joint modeling of water quantity and quality at six sites spread across three adjacent headwater catchments located in North-East France on a limestone plateau covered by forests and field crops. The model is calibrated and validated using available observational data, which has been quality controlled and corrected for sensor drift and malfunction through collaborative efforts by LNE metrology expertise and Andra monthly quality control over more than 15 years. Its performance is compared with several established baseline approaches commonly used for time series modeling. Quantitative evaluation metrics are employed to assess the ability of the proposed method to reproduce key temporal characteristics of the observed signals in two settings: the imputation of incomplete time series and the forecasting of upcoming hydrological conditions. Results support the effectiveness of the transformer-based approach and highlight its capacity to capture and simulate the complex patterns present in hydrological data. In particular, the results indicate that diffusion models can efficiently sample realistic time series distributions under observation settings with variable missing data for both forecasting and imputation.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T11:19:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21200v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21200v1"
-    },
-    {
-      "id": "2607.21186v1",
-      "title": "Do emulated quantum circuits change what CNNs look at? Performance and explainability comparison in medical image classification",
-      "authors": [
-        "Guillermo Rubiños Rodríguez",
-        "Martín Ottavianelli",
-        "Mateo Alonso",
-        "Gonzalo Blázquez Gil",
-        "Boris-Stephan Rauchmann",
-        "Pablo Díez-Valle",
-        "Sergio Altares-López"
-      ],
-      "abstract": "Numerous studies have analyzed the use of hybrid quantum-classical convolutional neural networks as a promising alternative to classical deep learning. However, network components on quantum hardware impose fundamental limitations, while the scalability of quantum circuits leads to trainability issues. In this work, we investigate whether small, classically-emulated quantum circuit components can play a meaningful role within complex models, offering an alternative to purely classical convolutional architectures. To this end, we present a systematic study of the effectiveness of a Hybrid Quantum-inspired Convolutional Neural Network (HQiCNN) compared with a parameter-matched classical Convolutional Neural Network (CNN) that differs only in an intermediate dense neural layer. Both models are evaluated on two real-world medical datasets while systematically varying the different hyperparameters, ensuring a fair model comparison that is both dataset and hyperparameter independent. The results show that no architecture consistently dominates the other: the HQiCNN achieves its largest gains in intermediate-data regimes, whereas the CNN reaches the highest accuracies for the largest training sets in both datasets. Furthermore, removing entanglement produces comparable performance while enabling substantially better scalability of quantum simulations, and richer observable sets become beneficial only when sufficient training data are available. Finally, we propose two SHAP-based explainability tools for comparing the predictions between both models, $|SHAP|$IoU and $EMD_{pos}$ metric, to demonstrate that both architectures consistently attend to anatomically plausible regions. Thus, we provide a comprehensive benchmark showing that, under certain conditions, hybrid quantum-inspired models are an alternative that can offer benefits in practical tasks such as medical image classification.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T11:15:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21186v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21186v1"
-    },
-    {
-      "id": "2607.21080v1",
-      "title": "Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction",
-      "authors": [
-        "Yun-Ye Cai",
-        "Hsuan-Tien Lin"
-      ],
-      "abstract": "Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although the autoregressive pipeline is highly scalable and flexible, its prediction errors grow rapidly over long forecasting horizons. In this work, we study this error growth phenomenon from both theoretical and empirical perspectives. Our analysis reveals that the growth is driven by a feedback loop between output errors and input distribution shifts. Specifically, the autoregressive process amplifies small initial output errors, which progressively corrupt subsequent input distributions, echoing the butterfly effect in atmospheric science and ultimately deteriorating forecasting accuracy over longer horizons. Furthermore, we show that this distributional shift originates at the earliest stage of inference, with out-of-distribution signatures detectable as early as the first autoregressive step. To mitigate this issue, we propose \\textbf{Self-Output Fine-Tuning (SOFT)}, a plug-and-play strategy that leverages the model's own one-step predictions to calibrate the biased input distribution encountered at the first step. Extensive experiments demonstrate that, despite its simplicity, SOFT achieves state-of-the-art performance on long-horizon forecasting tasks and substantially reduces both prediction errors and distributional discrepancy. The success of SOFT highlights the importance of reexamining the fundamental pipeline of deep learning weather prediction, representing a critical pipeline advance for atmospheric science.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T09:10:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21080v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21080v1"
-    },
-    {
-      "id": "2607.21068v1",
-      "title": "Counterfactual Explainability Framework With CycleGAN And Counterfactual-Classifier Alignnment Score for Retinal Disease Classification",
-      "authors": [
-        "Kritanu Chattopadhyay",
-        "Sayanjit Singha Roy",
-        "Soumya Chatterjee"
-      ],
-      "abstract": "Automated detection of vision impairing retina-based ocular conditions from fundus images is important for early screening, timely referral and reducing dependency on specialist-only assessment, for which neural network-based deep learning (DL) models have been widely utilized. However, explainability of the DL frameworks remains a major bottleneck for clinical adoption, particularly when model decisions are not linked to retinal regions that are clinically meaningful. To address this issue, this study presents CounterFundus, a novel CycleGAN-driven counterfactual explainability framework, integrating EfficientNet-B5-based retinal disease detection with visually interpretable disease-to-normal fundus image translation. For each pathological image, the counterfactual yielded by the CycleGAN generator represents an estimated healthy counterpart and the resultant difference map is utilized to localize disease-associated retinal changes. Unlike conventional post-hoc saliency methods, CounterFundus provides counterfactual explanations through visually plausible disease-to-normal retinal translation. Thereafter, to quantify the spatial agreement between counterfactual difference maps and classifier saliency, the Counterfactual-Classifier Alignment Score (CCAS) is introduced, embedding Spearman correlation, binary IoU and pointing accuracy into a single assessment protocol. To this end, EigenCAM-aligned evaluation demonstrates that the generated counterfactual explanations remain spatially consistent with classifier-relevant retinal evidence across all CCAS dimensions. Along with that, ablation studies further confirm that CCAS-filtered counterfactual augmentation improves the downstream classification performance in fundus images, establishing CounterFundus as a clinically-grounded, explainable artificially intelligence (XAI) framework for retinal disease detection.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T09:00:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21068v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21068v1"
-    },
-    {
-      "id": "2607.21671v1",
-      "title": "Neural Feature Governance: Extending Atom Prevalence",
-      "authors": [
-        "Idris Karel Seunda Ekwe",
-        "Patrick Tenga Shako",
-        "Ernest Parfait Fokoué"
-      ],
-      "abstract": "Neural network compression and interpretability remain open challenges in modern deep learn- ing, where billion-parameter architectures deliver impressive accuracy at the cost of trans- parency, computational efficiency, and reliable uncertainty quantification. This paper introduces Neural Atom Prevalence (NAP), a principled Bayesian framework for structured node-level model selection in feedforward neural networks. NAP introduces the neural atom (activation unit) and functions as a hybrid method operating through a four-phase pipeline: Bayesian Lottery Ticket (BLT) identification via Iterative Magnitude Pruning (IMP), soft variational training of the Spike and Slab Independent Gaussian (SS-IG) model, Poisson-Binomial (PB) optimal layer-size selection, and Bayesian fine-tuning to produce a sparse, stable, interpretable, and accurate model. Extensive empirical validation across simulated nonlinear regression, two UCI benchmark datasets (Concrete, YearPredictionMSD), and the MNIST image classification task demonstrates that NAP achieves state-of-the-art structural sparsity, reducing active nodes to as few as 8% of the original dense architecture on MNIST, while well-calibrated probabilisti- cally: the aleatoric-epistemic uncertainty decomposition reveals that model ignorance accounts for only 3 to 4% of total predictive variance across all experiments, and regression reliability diagrams confirm a near-nominal predictive interval coverage (93.4% observed against a 95% target). These results establish NAP as a reliable, theoretically grounded, and computation- ally tractable solution to the simultaneous pursuit of sparsity, accuracy, interpretability, and uncertainty quantification in Bayesian neural networks.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T08:50:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.21671v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.21671v1"
-    },
-    {
-      "id": "2607.20930v1",
-      "title": "Decoding Parkinsonian Tremor: An Explainable Framework Integrating Multi-Revolution Spatial and Spectral Dynamics of Spiral Drawings",
-      "authors": [
-        "Tharaka Wijethunge",
-        "Maheshi Dissanayake",
-        "Sajitha Weerasinghe"
-      ],
-      "abstract": "Parkinson's disease (PD) manifests in motor impairments that are detectable through digitized spiral drawings. This study introduces an explainable framework for PD screening using a novel radial-sampling feature fusion approach. We transform 2D spiral images into 1D revolution signals via a systematic ray-sampling technique to extract three distinct revolutions. We integrate spatial metrics, such as inter-revolution spacing variability and RMS radial derivatives, with spectral descriptors derived from Fast Fourier Transform (FFT) analysis across low, mid, and high harmonic bands. A total of 20 features were utilized to train state-of-the-art machine learning models, including Support Vector Machines (SVMs), Random Forests (RFs), and Light Gradient Boosting Machines (LightGBMs). Among these, the RF classifier demonstrated superior performance. Subsequent 5-fold cross-validation stability analysis along with feature importance analysis identified RMS radial derivative of the outer revolution as the most critical biomarker. Stratified Cross-Validation demonstrates that combining spatial and frequency features significantly enhances detection accuracy compared to single-domain methods, facilitating effective clinical deployment even in data-scarce environments. This interpretable pipeline provides a robust, low-cost white-box screening tool, offering a practical alternative to opaque deep-learning models for early clinical intervention.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T05:23:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20930v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20930v1"
-    },
-    {
-      "id": "2607.20909v1",
-      "title": "RadioTrace: Transmitter-Aware Diffusion for Radio Map Estimation without Deployment-Time Fine-Tuning",
-      "authors": [
-        "Liu Yang",
-        "Qiang Li",
-        "Zhuo Cao",
-        "Weijie Xiong",
-        "Guomin Sun",
-        "Jingran Lin"
-      ],
-      "abstract": "Radio map (RM) estimation aims to reconstruct the spatial distribution of wireless signal characteristics, such as received signal strength (RSS), from sparse measurements, a task that is critical for spectrum management, interference mitigation, and localization in modern wireless networks. Traditional approaches, including interpolation and deep learning, either struggle to capture complex propagation effects or require large-scale retraining for each new sampling pattern, which limits their generalization. More recently, prior-based methods have combined pre-trained generative models with measurements to reduce the need for deployment-time model fine-tuning, but they typically treat the prior as a simple regularizer and lack explicit transmitter-aware integration. In this paper, we propose RadioTrace, a novel RM estimation framework without deployment-time fine-tuning that tightly integrates sparse RSS measurements with a frozen pre-trained diffusion prior. RadioTrace incorporates transmitter (Tx) location estimation directly into the denoising loop, iteratively refining Tx coordinates based on reconstruction quality to guide the generative process. To further enhance robustness, we introduce a propagation-guided K-means initialization that mitigates poor local minima in the Tx update and provides a geometry-consistent starting point. Moreover, we provide a stochastic stability analysis for the Tx-coordinate refinement component, showing that the Tx update remains stable under perturbations induced by diffusion sampling and Tx-map relaxation. Extensive experiments demonstrate that RadioTrace achieves competitive performance with state-of-the-art learning-based methods under random sampling, and maintains strong reconstruction quality under restricted-area sampling, highlighting its adaptability, robustness, and practical relevance.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T04:18:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20909v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20909v1"
-    },
-    {
-      "id": "2607.20863v1",
-      "title": "Probabilistic Residual Learning for Online Recommendations",
-      "authors": [
-        "Wenyuan Wang",
-        "Yusong Zhao",
-        "Zihao Xu",
-        "Hengyi Wang",
-        "Qi Xu",
-        "Zhigang Hua",
-        "Yan Xie",
-        "Yi Wang",
-        "Zihao Zhao",
-        "Bo Long",
-        "Chengzhi Mao",
-        "Shuang Yang",
-        "Hengguan Huang",
-        "Hao Wang"
-      ],
-      "abstract": "Modern recommender systems are typically based on deep learning (DL) models, where a dense encoder learns representations of users and items. As a result, these systems often suffer from the black-box nature and computational complexity of the underlying models, making it difficult to systematically enhance their recommendation capabilities. To address this problem, we propose Probabilistic Residual Learning (PRL), a causal Bayesian recommendation model that models the residual between ground-truth and base predictions, enabling targeted refinement of existing systems. Specifically, PRL (1) probabilistically groups users for localized residual modeling, (2) models domain-level confounders that influence user and item representations, and (3) aggregates cluster-specific residual predictions over the confounders using do-calculus. Experiments demonstrate that our plug-and-play PRL is compatible with various base deep learning recommender systems, improving their performance while automatically discovering meaningful user clusters.",
-      "published": "July 23, 2026",
-      "published_raw": "2026-07-23T02:39:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20863v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20863v1"
-    },
-    {
-      "id": "2607.20323v1",
-      "title": "Multi-modal transformer for signal classification in nanopore blockade experiments",
-      "authors": [
-        "Sandro Kuppel",
-        "Julian Hoßbach",
-        "Samuel Tovey",
-        "Christian Holm"
-      ],
-      "abstract": "Nanopore devices have emerged as powerful tools for single-molecule sensing, with potential for rapid, portable diagnostics. They detect changes in ionic current as analytes enter nanometer-scale pores, providing a means of identifying diverse biomarkers from their characteristic signal patterns. However, these signals are highly complex, and reliably assigning them to specific molecules remains a major challenge. Here, we address this by introducing a multi-modal deep learning architecture that jointly processes multiple signal representations, including raw time-series data, wavelet-based images, and static feature vectors. Our approach surpasses existing methods by more than 10 percentage points on a 42-peptide benchmark and transfers to a 20-amino-acid dataset with near-perfect accuracy. The model integrates complementary information from these representations, with attention analysis showing that the time-series and wavelet-image inputs emphasize different features of the same event. Together, these results demonstrate the potential of machine learning to enable robust, high-accuracy molecular identification with nanopore sensors.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T16:09:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20323v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20323v1"
-    },
-    {
-      "id": "2607.20205v1",
-      "title": "Statistical Inference for Rank Allocation in Low-Rank Adaptation",
-      "authors": [
-        "Yihang Gao",
-        "Vincent Y. F. Tan"
-      ],
-      "abstract": "Low-rank adaptation (LoRA) has become a widely used parameter-efficient fine-tuning method for large language models. Since different modules and layers may contribute unequally to downstream adaptation, allocating rank resources under a fixed parameter budget is an important problem for balancing efficiency, expressiveness, and generalization. Existing adaptive rank methods address this problem mainly through carefully designed importance scores constructed from gradient-derived sensitivity and uncertainty measures, without an explicit statistical interpretation. In this paper, we formulate LoRA rank allocation as a statistical hypothesis testing problem and propose StatLoRA, a statistical inference-based rank allocation method. StatLoRA associates each LoRA component with a test statistic and uses estimated p-values to determine which components should be retained or pruned under a prescribed rank budget. The proposed testing procedure is supported by our central limit theory for stochastic optimizer trajectories. In particular, we establish asymptotic normality for a broad class of commonly used optimizers in deep learning, including AdamW, and derive the corresponding asymptotic distributions for the proposed component scores used in hypothesis testing. We evaluate StatLoRA on LoRA fine-tuning of DeBERTaV3-base, BART-Large, and Qwen2.5-7B across natural language understanding, natural language generation, and question answering tasks. Experiments show that StatLoRA achieves comparable or better performance than vanilla LoRA, AdaLoRA, and IGU-LoRA under matched rank budgets. Sensitivity analyses and empirical diagnostics further support the stability of the proposed hypothesis-testing-based allocation rule and provide empirical evidence for the asymptotic theory of component scores.",
-      "published": "July 22, 2026",
-      "published_raw": "2026-07-22T14:25:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.20205v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.20205v1"
     }
   ]
 }
