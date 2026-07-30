@@ -1,7 +1,157 @@
 {
-  "last_updated": "2026-07-29T01:19:14.269339",
+  "last_updated": "2026-07-30T01:12:58.172506",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.27106v1",
+      "title": "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting",
+      "authors": [
+        "Filipa Lino",
+        "Bárbara Tavares",
+        "Carlos Santiago",
+        "Cláudia Soares",
+        "Manuel Marques"
+      ],
+      "abstract": "Emergency Departments (EDs) are critical access points in healthcare systems, yet they face persistent pressure from unpredictable patient demand, seasonal surges, and non-urgent visits. Effective ED planning requires forecasts at multiple decision-making levels: hospitals need local demand estimates for staffing and bed management, regions require forecasts to coordinate healthcare units, and national authorities need system-wide projections for capacity planning. However, most existing approaches forecast ED demand independently at a single level, ignoring the hierarchy linking hospitals, regions, and national systems. This can produce incoherent predictions, where hospital-level forecasts do not aggregate consistently to regional or national demand. We propose HierSTT, a hierarchical Transformer-based framework for coherent multi-level ED forecasting. HierSTT jointly predicts hospital, regional, and national level demand in a single end-to-end model. A Temporal Fusion Transformer captures national dynamics, while spatio-temporal Transformer encoder-decoder modules model regional and hospital demand conditioned on higher-level forecasts. A coherence-aware loss penalizes cross-level inconsistencies during training. We further introduce a nationwide Portuguese ED dataset covering 81 hospitals across 5 regional health administrations, with heterogeneous covariates at each level. Experiments show that HierSTT reduces average WAPE by 32\\% relative to the best non-hierarchical deep learning baseline and outperforms all classical hierarchical reconciliation methods, while producing near-coherent predictions across levels. Additional resources associated with this work are available at https://github.com/FilipaLino/HierSTT.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T16:33:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27106v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27106v1"
+    },
+    {
+      "id": "2607.26832v1",
+      "title": "Kairos: Numerically Robust News Recommendation under Item Cold-Start via Cholesky-based LinUCB",
+      "authors": [
+        "Finn Hertsch"
+      ],
+      "abstract": "Algorithmic news personalization in regional markets often fails because modern deep learning models require massive interaction data while real-world news has a short Time-to-Live (TTL < 48 h) and shallow article pools. This structural item cold-start deprives collaborative filtering of the data needed for robust modeling. This paper presents Project Kairos, a framework that bridges this data scarcity through a contextual online learning approach (LinUCB). To ensure numerical integrity for continuous operation, Kairos replaces error-prone Sherman-Morrison inversions with direct rank-1 updates of Cholesky factors. This preserves the positive definiteness of the covariance matrix even under ill-conditioned data scenarios. Simultaneously, Matryoshka Representation Learning (MRL) integration addresses inference latency. Empirical evaluations based on the Tagesschau API demonstrate that exploiting semantic redundancy in the feature space achieves a 4.85-fold efficiency gain without significantly compromising ranking precision. Kairos thus provides a blueprint for high-performance recommendation systems in resource- and data-constrained environments.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T12:25:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26832v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26832v1"
+    },
+    {
+      "id": "2607.26746v1",
+      "title": "An Attention-Based Framework for Alzheimers Disease Classification Using Resting-State fMRI",
+      "authors": [
+        "Harshiddhi Pathak",
+        "Gowtham Reddy N",
+        "Mrinal Acharya",
+        "Manjunatha Mahadevappa"
+      ],
+      "abstract": "Accurate identification of Alzheimers disease (AD) using resting-state functional magnetic resonance imaging (rs-fMRI) remains challenging due to the high dimensionality, noise, and complex inter-regional dependencies inherent in functional brain connectivity, which limit the effectiveness of traditional approaches based on handcrafted connectivity features or conventional machine learning models. In this work, we present an attention-based deep learning framework for Alzheimers disease classification that operates directly on rs-fMRI functional connectivity matrices by treating brain regions as tokens and employing a Transformer-inspired self-attention mechanism to model long-range and global functional dependencies across distributed brain networks. The proposed framework learns discriminative functional representations without reliance on manual feature engineering and is evaluated on a longitudinal cohort from the Alzheimers Disease Neuroimaging Initiative (ADNI) comprising cognitively normal and Alzheimers disease subjects with multiple visits. A subject-wise evaluation protocol is adopted to prevent information leakage across visits, and class-weighted optimization is incorporated to address mild class imbalance. Experimental results for binary AD versus cognitively normal classification demonstrate that the proposed attention- based rs-fMRI model achieves an accuracy of 88.95% and a ROC-AUC of 0.90, along with a favorable precision-recall balance, highlighting the effectiveness of self-attention-driven functional connectivity modeling as a robust and interpretable approach for Alzheimers disease detection using resting-state fMRI.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T10:38:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26746v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26746v1"
+    },
+    {
+      "id": "2607.26631v1",
+      "title": "RAG-HAR+: Towards Cost-Efficient LLM-Based Human Activity Recognition for Edge Deployment",
+      "authors": [
+        "Hansi Karunarathna",
+        "Nirhoshan Sivaroopan",
+        "Chamara Madarasingha",
+        "Anura Jayasumana",
+        "Kanchana Thilakarathna"
+      ],
+      "abstract": "Human Activity Recognition (HAR) from wearable sensors supports applications in healthcare, rehabilitation, fitness tracking, and smart environments. Yet, existing deep learning approaches require dataset-specific training, large labeled corpora, and repeated adaptation to new sensor settings or activity taxonomies. Retrieval-Augmented Generation for Human Activity Recognition (RAG-HAR) addresses this by framing HAR as a training-free, retrieval-augmented task, in which statistical descriptions of sensor windows are used to retrieve similar labeled examples that guide LLM-based classification. We introduce RAG-HAR+, a retrieval-first and cost-optimized extension that strengthens retrieval while reducing dependence on LLM-based inference. RAG-HAR+ uses an offline Retrieval Designer Agent to design dataset-specific feature groups from a diverse pool of motion descriptors, enabling sensor windows to be compared using features better aligned with dataset-specific activity patterns. During inference, RAG-HAR+ uses majority voting over retrieved neighbors for samples with strong retrieval evidence and defers only uncertain cases to an LLM-based Ambiguity Resolver Agent. Across six HAR benchmarks, RAG-HAR+ maintains competitive or improved performance while reducing LLM usage, token consumption, and inference time. We further extend the RAG-HAR mobile prototype to demonstrate the practical feasibility of retrieval-first, LLM-assisted HAR in mobile sensing scenarios.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T08:57:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26631v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26631v1"
+    },
+    {
+      "id": "2607.26580v1",
+      "title": "Classification of Disease from Lungs X-ray Images using VGG16, VGG19 and ResNet50 Models",
+      "authors": [
+        "Nand Lal Yadav",
+        "Rajesh Kumar",
+        "Satyendra Singh",
+        "Sudhakar Singh"
+      ],
+      "abstract": "With the increase in the number of cases related to respiratory diseases, there is an urgent need to detect them early and diagnose them accurately. Convolutional neural networks have given promising results when used for diagnosing diseases using imaging tests. In this study, we investigate the potential of applying deep learning algorithms such as VGG16, VGG19, and ResNet50 for classification of lung ailments based on X-ray images. A detailed analysis of the aforementioned models' performances was conducted to assess how well they can classify various types of lung ailments, including pneumonia, tuberculosis, lung cancer, and normal lungs. In order to do that, these deep learning models were trained on a vast amount of X-ray images. The results of our study show that while all three models provide good results, ResNet-50 performs best in comparison with other models due to its efficiency and high level of accuracy. We believe that these deep learning models can be successfully implemented in the practice of diagnosing pulmonary diseases in the future. It helps with early disease detection and improves patient outcomes.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T08:00:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26580v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26580v1"
+    },
+    {
+      "id": "2607.26481v1",
+      "title": "Conformal Changepoint Localization and Root Cause Analysis with Corrupted Observations",
+      "authors": [
+        "Seunghun Yu",
+        "Meiyi Zhu",
+        "Petar Popovski",
+        "Joonhyuk Kang",
+        "Osvaldo Simeone"
+      ],
+      "abstract": "Detecting when the statistical behavior of an engineered system changes, and identifying which component is responsible, are core problems in the monitoring of telecommunication networks, robotic platforms, security infrastructure, and multi-agent systems. In safety- and mission-critical deployments, such decisions must be accompanied by statistical reliability guarantees rather than by point estimates alone. Conformal changepoint localization (CONCH) and conformal root cause analysis (CROC) meet this need by returning confidence sets that contain the true changepoint, or the true root-cause stream, with a user-specified probability, without parametric assumptions on the data-generating process. In practice, however, observations are frequently corrupted, e.g., by outliers, sensor faults, or adversarial perturbations. While the finite-sample coverage of these procedures is preserved under contamination, the resulting confidence sets can become uninformatively large. Adopting a Huber-type contamination model, this paper proposes weighted CONCH (W-CONCH) and weighted CROC (W-CROC), which downweight observations that are likely to be corrupted with the goal of reducing confidence set size when data may be corrupted. The weighting mechanism, derived from a formal bound on the unknown corrupted data densities, leverages pre-existing second-order classifier-based uncertainty signals, such as those produced by evidential deep learning or Bayesian learning. W-CONCH and W-CROC are further generalized by introducing a meta-learning procedure for the weights that optimizes a differentiable surrogate of the confidence set size. Experiments on image-based and real-world changepoint and root-cause benchmarks show that uncertainty-based weighting substantially reduces confidence set size while maintaining the target coverage.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T05:16:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26481v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26481v1"
+    },
+    {
+      "id": "2607.26467v1",
+      "title": "Neural Architecture Search for Traffic Prediction: A Survey of Methods, Challenges, and Future Directions",
+      "authors": [
+        "Truong Giang Vu",
+        "Li Yang",
+        "Richard W. Pazzi"
+      ],
+      "abstract": "Traffic prediction is a core task in intelligent transportation systems, supporting applications such as adaptive signal control, route guidance, and ride-hailing dispatch. Deep learning models, including graph convolutional networks, recurrent networks, and Transformers, achieve strong results on standard benchmarks, but their architectures are designed by hand, requiring significant expert effort and producing models that often generalize poorly across cities and datasets. Neural Architecture Search (NAS) offers a systematic alternative to manual design. It automates the search over candidate architectures of deep learning models, finding designs that match the spatial-temporal structure of traffic data without manual trial and error. This survey reviews NAS methods applied to traffic prediction, organized by search strategy: gradient-based methods, evolutionary methods, and one-shot weight-sharing methods. For each category, we analyze how the search space is designed to cover spatial and temporal traffic operators, and how the search strategy balances cost against architecture quality. We also discuss open challenges, computational scalability to large road networks, manual search space design, cross-city generalization, dynamic graph structure, and the open question of NAS for spatial-temporal foundation models, and identify directions for future research.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T04:41:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26467v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26467v1"
+    },
+    {
+      "id": "2607.26276v1",
+      "title": "Comparing the Performance of Foundation Model Derived Embeddings with Traditional Approaches for Distant Metastasis Prediction in Head and Neck Cancer",
+      "authors": [
+        "Erich Schmitz",
+        "Meixu Chen",
+        "Bowen Jing",
+        "Jing Wang"
+      ],
+      "abstract": "Background: Early prediction of distant metastasis (DM) risk in head and neck cancer (HNC) can enable timely interventions that may improve treatment outcomes. Many current machine learning methods rely on prior knowledge of the region of interest such as tumor segmentations, which require expert knowledge, is time-consuming and introduces user-dependent variability. Medical image-based foundation models have recently been developed for specific imaging modalities to streamline down-stream prediction tasks by extracting modality-relevant features. Purpose: In this study, we evaluate the effectiveness of using a foundation model as the feature extractor to predict DM risk in HNC patients and compare its performance with traditional approaches that require prior knowledge on the regions of interest. Methods: Preoperative CT images of 2327 patients from the RADCURE dataset were used. Three features-sets were created including radiomics, deep-learning based features, and CT Foundation derived features. The feature-sets were used individually in a multi-layer perceptron (MLP) to predict DM risk. Results: The model using CT Foundation embeddings outperformed the radiomics and deep learning-based models, achieving a Receiver Operating Characteristic Area Under the Curve (AUC) of 0.791, compared to AUC values of 0.772 and 0.753 for the radiomics and deep learning-based models, respectively. The CT Foundation based model had similar performance to a model that combined the use of radiomics and deep learning-based features that achieved an AUC of 0.794. Conclusions: Features based on foundation models offer a promising alternative to traditional radiomics while reducing the need for domain expertise and extensively annotated datasets. Their minimal preprocessing requirements also make them a more accessible and scalable option.",
+      "published": "July 28, 2026",
+      "published_raw": "2026-07-28T21:17:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26276v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26276v1"
+    },
+    {
+      "id": "2607.26170v1",
+      "title": "A Picture Says Thousands of Words - Harnessing Dermal Exposure Data from Images through Hybrid Deep Learning for Enhanced Safety Assessment",
+      "authors": [
+        "Hua Qian",
+        "Manisha Kotha",
+        "Tuan Tran",
+        "Jennifer Shin",
+        "Haining Zheng"
+      ],
+      "abstract": "This study developed a hybrid computer vision method to quantify exposed skin from images for dermal exposure assessment. Using 170 indoor-painting images, Mask R-CNN first identified human subjects and removed background interference; a color-based algorithm then segmented exposed skin. The resulting exposed-skin-to-body pixel ratios showed approximately 80% agreement with human estimates. The approach demonstrates a scalable way to extract semi-quantitative exposure information from images, with future extensions to body-part recognition, PPE detection, and video-based exposure analysis.",
+      "published": "July 28, 2026",
+      "published_raw": "2026-07-28T18:20:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.26170v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26170v1"
+    },
+    {
+      "id": "2607.25940v1",
+      "title": "CNN-Based Reanalysis of Optical Turbulence at the Canary Islands Observatories (OCAN)",
+      "authors": [
+        "Airam Salas",
+        "Begoña García-Lorenzo",
+        "Julio A. Castro-Almazán",
+        "Gelys Trancho"
+      ],
+      "abstract": "Atmospheric optical turbulence, caused by refractive-index fluctuations driven by wind and temperature inhomogeneities, is the primary source of image degradation in ground-based telescopes. Its vertical distribution, described by the refractive-index structure constant (Cn2(h)), determines essential parameters such as seeing, isoplanatic angle, and coherence time, which characterize astronomical sites and are also crucial for the design and performance of high-resolution instruments. The Observatorios de Canarias (OCAN), comprising the Observatorio del Roque de los Muchachos on La Palma and the Observatorio del Teide on Tenerife, have been extensively characterized through long-term Generalized SCIDAR campaigns. In total, the database comprises nearly 300 observing nights and hundreds of thousands of individual Cn2(h) profiles. We present a reanalysis of the OCAN database using deep-learning techniques. An end-to-end software framework was developed to ingest, preprocess, and transform the original turbulence measurements into standardized numerical representations suitable for machine-learning analysis. Temporal-vertical turbulence heatmaps are generated under multiple temporal configurations and enriched with seasonal information. These representations are processed by pre-trained convolutional neural networks (CNN) used as frozen feature extractors to obtain compact deep embeddings. Unsupervised clustering is subsequently applied to identify latent atmospheric regimes within the dataset. The resulting clusters reveal coherent turbulence structures and offer a complementary perspective on atmospheric conditions at the Canary Islands observatories. This methodology provides new insights into turbulence variability at the Canary Islands sites and represents a novel approach to large-scale turbulence characterization using modern deep-learning techniques.",
+      "published": "July 28, 2026",
+      "published_raw": "2026-07-28T16:25:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.25940v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.25940v1"
+    },
     {
       "id": "2607.25763v1",
       "title": "WALoMA: A Multitask Wireless Foundation Model via Adaptive Low-Rank Masked Autoencoders",
@@ -153,150 +303,6 @@
       "published_raw": "2026-07-27T09:04:23Z",
       "pdf_link": "http://arxiv.org/pdf/2607.24180v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.24180v1"
-    },
-    {
-      "id": "2607.24168v1",
-      "title": "Forecasting the Emergence and Evolution of Crash Hotspots: A Unified Deep Learning Framework for Proactive Traffic Safety",
-      "authors": [
-        "Jingwen Zhu",
-        "Keshu Wu",
-        "Pei Li",
-        "Steven T. Parker",
-        "Bin Ran",
-        "David A. Noyce"
-      ],
-      "abstract": "Road crashes remain among the gravest threats to public safety, and preventing them is a defining task of transportation systems worldwide. Much of that harm concentrates at hotspots, yet a hotspot is less a place than an episode; it emerges quietly at an intersection or along an arterial, intensifies for weeks, then subsides, only to reappear elsewhere. Enforcement guided by maps of past crashes inevitably trails this cycle, patrolling yesterday's hotspots while tomorrow's form unwatched. Breaking that lag requires three capabilities at once: detecting hotspots as they are born, forecasting where they will sit next week, and following each one through its life. We introduce HERALD (Hotspot Emergence, Risk Anticipation, and Life-cycle Dynamics), a unified deep learning framework that provides all three from a single statewide model. HERALD distills each county's recent crash history into weekly risk maps and forecasts the next with a CNN--Transformer, whose mixture-of-experts lets one model serve dense urban cores and sparse rural corridors alike. Each forecast is anchored in the county's long-run crash geography, sharpened by the self-exciting effect of recent crashes, and paired with explicit warnings of where new hotspots are about to appear. Followed over time, every hotspot acquires a legible life story, from birth through growth and stability to decline and death. Across six heterogeneous Wisconsin counties, HERALD forecasts more accurately than five identically trained baselines, locates hotspots most precisely, and flags emerging risks before they take hold. A single adjustable setting trades accuracy for extra sensitivity where deployment demands it. The result shifts hotspot management from mapping the past to anticipating the future.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T08:51:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24168v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24168v1"
-    },
-    {
-      "id": "2607.24131v1",
-      "title": "MAPLE: Efficient and Diverse Multi-Alpha Generation for Portfolio Construction",
-      "authors": [
-        "Yu-Chen Den",
-        "Kuan-Yu Chen",
-        "Kendro Vincent",
-        "Tien-Hao Chang"
-      ],
-      "abstract": "Classical alpha mining achieves strong risk-adjusted returns by combining many low-correlated predictive signals, yet deep learning stock-ranking methods typically produce a single alpha per stock, rely on increasingly complex architectures with diminishing gains, and obtain diversity only through separate models or implicit routing, without explicitly controlling inter-alpha correlation. We introduce MAPLE (Multi-Alpha Position-aware Listwise Ensembling), a backbone-agnostic framework that recovers this diversity principle within a single training pass. MAPLE combines a unified, capacity-scaled prediction head with an extreme-rank weighted listwise ranking loss and a diversity regularizer that explicitly penalizes pairwise correlation across alphas. Across four equity markets spanning the US, China, and Japan, MAPLE achieves the best average Sharpe and Calmar ratios among nine baselines, using up to 55x fewer parameters and 2.5x less training time, and generalizes across five backbone architectures with Sharpe and Calmar Ratio gains of 10-23% and 17-43%, respectively. Behavioral analysis further shows why each component works: the unified head already reduces inter-alpha correlation before any diversity loss is applied, and the extreme-rank loss lets diversity regularization improve rather than erode per-alpha ranking quality as capacity scaling sustains this balance at scale. These results show that principled loss design and capacity allocation, rather than architectural complexity, drive diverse and effective multi-alpha generation.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T08:14:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24131v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24131v1"
-    },
-    {
-      "id": "2607.24056v1",
-      "title": "Capacity-Aware Deep Learning for Generalizable Traffic Volume Estimation Across Links and Cities",
-      "authors": [
-        "Léo Hein",
-        "Giovanni De Nunzio",
-        "Aurélie Pirayre",
-        "Laurent Najman"
-      ],
-      "abstract": "Network-wide traffic volume estimation typically relies on propagating measurements from fixed sensors, making performance highly dependent on sensor density and limiting deployment in sparsely instrumented networks. We propose a link-level learning framework that estimates hourly traffic volumes from widely available territorial data only, including probe speed profiles, road and topological descriptors, along with weather observations. A supervised local mapping is learned from sparse sensor measurements and evaluated under two generalization settings: intra-network (unseen links within the training network) and inter-network (unseen city). This formulation frames traffic volume estimation as a spatial out-of-distribution generalization problem under sparse supervision. To enhance spatial robustness, we introduce a capacity-aware formulation that models volume as the product of a link-specific structural capacity and an hourly regime-aware utilization ratio, embedding traffic-theoretic constraints directly into the learning process. Extensive experiments in both generalization settings demonstrate that the proposed structural constraints consistently outperform a state-of-the-art baseline under spatial distribution shift.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T06:53:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24056v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24056v1"
-    },
-    {
-      "id": "2607.23883v1",
-      "title": "Long-Tailed Medical Image Classification",
-      "authors": [
-        "Nathanael Ren",
-        "Saagar Arya"
-      ],
-      "abstract": "In this paper, we examine the difficulties of using standard techniques for medical image classification due to long-tailed distributions (wherein rarer conditions have very few samples) resulting in bias towards diagnosing common diseases and away from rarer diseases. We then discuss and implement deep learning models with techniques such as augmentation to minimize error, especially from rarer diseases. We evaluate various different models with AP, F1 score, AUROC, and loss (all on the validation set). We conclude with the promising results from our best model, and potential applications in the healthcare space.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T23:04:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23883v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23883v1"
-    },
-    {
-      "id": "2607.23865v1",
-      "title": "XMix: Combating Extremely Noisy Labels via Local Smoothness in Self-Supervised Feature Space",
-      "authors": [
-        "Chengqi Li",
-        "Yangdi Lu",
-        "Zhihao Shi",
-        "Wenbo He",
-        "Chamseddine Talhi",
-        "Nadjia Kara"
-      ],
-      "abstract": "Supervised deep learning models rely on large, accurately labeled datasets, yet noisy annotations are often unavoidable and can severely degrade performance under high noise levels. Recent state-of-the-art methods tackle this by using sample selection strategies that exploit the memorization effect to filter out clean data for semi-supervised learning. However, these methods struggle with extreme noise, class imbalance, and require careful tuning or prior noise knowledge. To address these limitations, we propose XMix, a novel framework that leverages local smoothness in the self-supervised feature space to systematically enhance all stages of the sample selection process, without dependence on potentially corrupted labels. First, XMix estimates the noise rate using maximum likelihood among self-supervised feature neighbors. Second, these neighbors then help identify additional clean samples and ensure balanced selection across classes during sample selection. Finally, in the semi-supervised learning phase, XMix uses neighboring samples to generate more reliable pseudo-labels. Our empirical results show that XMix substantially outperforms existing methods in extremely noisy environments and maintains superior performance in standard LNL benchmarks.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T22:15:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23865v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23865v1"
-    },
-    {
-      "id": "2607.23860v1",
-      "title": "Controllable Diversity in Normalization-Based Implicit Ensembles via Softmax-Temperature Modulation",
-      "authors": [
-        "Mihai Suteu",
-        "Ovidiu Serban"
-      ],
-      "abstract": "Deep ensembles provide the most reliable uncertainty estimates in deep learning, but their cost grows linearly with the number of members. Implicit ensembles lower this cost by sharing a single backbone across members. Member diversity is a primary determinant of ensemble quality, yet no implicit ensemble can shape it during training; existing methods fix it at initialisation or build it into the architecture. We introduce $σ$N-Ens, a normalisation-based implicit ensemble that treats each member as a task in a multi-task architecture and modulates the shared backbone through sigmoid-bounded scalers. We also introduce a softmax-temperature regulariser, which shapes the equilibrium level of sharing between members and traces the accuracy-calibration frontier. Because only normalisation layers are replicated, the mechanism can wrap convolutional and transformer backbones alike, also allowing pretrained models to be adapted through a short fine-tune. We frame the epistemic uncertainty such an ensemble expresses as modulation uncertainty, and explain why its calibration holds under input corruption, and why its out-of-distribution detection is weaker. Our method is evaluated across ResNets and transformers on CIFAR-10/100, ImageNet and SST-2. $σ$N-Ens matches or outperforms deep ensembles at a fraction of their parameter cost, scales with ensemble size where partitioning methods collapse, and maintains calibration under distribution shift.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T22:06:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23860v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23860v1"
-    },
-    {
-      "id": "2607.23649v1",
-      "title": "DP-IVON-Gradsq: Differentially Private Squared-Gradient Improved Variational Online Newton",
-      "authors": [
-        "Nour Jamoussi",
-        "Ikram Dridi",
-        "Giuseppe Serra",
-        "Marios Kountouris"
-      ],
-      "abstract": "Differential privacy provides formal privacy guarantees for training neural networks on sensitive data, while Bayesian deep learning offers a principled framework for uncertainty-aware prediction. Combining these two objectives remains challenging, as privacy noise can interact with the stochasticity introduced by Bayesian posterior sampling. In this work, we investigate differentially private variational Bayesian learning through the Improved Variational Online Newton (IVON) optimizer. We introduce DP-IVON-Gradsq, a private variant of IVON. The proposed method constructs its curvature estimate from the privatized gradient using a noise-corrected squared-gradient estimator, reducing the direct interaction between posterior-sampling noise and privacy noise while preserving the Adam-like computational efficiency of IVON. We evaluate DP-IVON-Gradsq on CIFAR-10 against the standard private optimizers DP-SGD and DP-Adam over a range of privacy budgets. The results show that DP-IVON-Gradsq is competitive under weak-to-moderate privacy constraints, i.e., large-to-moderate values of $\\varepsilon$, while degrading under strong privacy. Code is available at https://github.com/NourJamoussi/DP-IVON-Gradsq.git.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T13:32:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23649v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23649v1"
-    },
-    {
-      "id": "2607.23642v1",
-      "title": "When Rates Are Geometric: Rate-Certificate Transfer for Contact Splittings in Optimization",
-      "authors": [
-        "George A Kevrekidis"
-      ],
-      "abstract": "Discrete optimization algorithms are often analyzed through continuous-time limiting ODEs, but a convergence certificate for the ODE is not automatically one for the discrete algorithm. We develop contact Hamiltonian systems as a setting where the transfer can be made precise. A contact Hamiltonian $H$ on $J^1(\\mathbb{R}^n)$ obeys the intrinsic decay identity $\\dot H = -H\\,\\partial_s H$, so an augmented energy $\\mathcal{E}$ built from $H$, together with the conformal rate $\\partial_s H$, is a continuous-time rate certificate whenever $\\mathcal{E}$ controls the objective gap. Our main theorem states, under three named and independently checkable hypotheses, that an order-$r$ contact splitting with step $h$ transfers this certificate over the finite horizon set by backward error analysis. The discrete decay envelope is governed by the modified conformal factor up to $O(h^r)$ perturbations plus a backward-error shadowing defect, and the mechanism is inherited exactly because the modified Hamiltonian is itself a contact Hamiltonian. Quadratic heavy ball is a fully solvable example: its projected dissipative-leapfrog spectrum agrees with established conformal-symplectic optimization theory, while the augmented contact Hamiltonian yields a sharp objective-to-certificate comparison that verifies the transfer hypotheses. For strongly convex objectives with state-dependent damping, an explicit Bregman-type Lyapunov certificate instead transfers by an auxiliary-shadowing corollary. The decomposition $H=K+V+D$ into kinetic, objective-encoding potential, and dissipation terms serves as a design template, with a catalogue of closed-form sub-flows including contact-specific damping families. Numerical experiments confirm the predicted conformal-factor tracking orders and show competitive performance on ill-conditioned benchmarks and deep-learning tasks.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T13:12:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23642v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23642v1"
-    },
-    {
-      "id": "2607.23406v1",
-      "title": "Blood Pressure Estimation from PPG: A Comparative Study of Direct and ECG-Mediated Deep Learning Pipelines",
-      "authors": [
-        "Bo Wu",
-        "Haoling Wang",
-        "Zhuodiao Kuang",
-        "Kateryna Shapovalenko"
-      ],
-      "abstract": "Continuous cuffless blood pressure (BP) monitoring is essential for connected health systems and wearable devices, enabling early detection, longitudinal tracking, and personalized management of cardiovascular disease. Many prior approaches attempt to estimate BP indirectly by reconstructing electrocardiography (ECG) from photoplethysmography (PPG), assuming ECG provides a stronger physiological link to BP. However, ECG sensing is less accessible in wearable settings and may introduce unnecessary complexity. In this work, we first perform a large-scale physiological correlation analysis on the MIMIC-III waveform database, revealing that PPG exhibits substantially stronger coupling with arterial blood pressure (ABP) ($|r|=0.247$, $p<0.001$) than ECG does ($r=0.018$, $p=0.187$), challenging the assumption that ECG provides a superior intermediate representation. Motivated by this insight, we conduct a systematic comparison between direct PPG-to-BP prediction and ECG-mediated pipelines using multiple state-of-the-art deep learning models. Across 1.74M segments from 3,127 patients, direct PPG-to-BP prediction achieves British Hypertension Society Grade A performance ($\\mathrm{MAE}_{\\mathrm{SBP}} = 4.82 mmHg$, $\\mathrm{MAE}_{\\mathrm{DBP}} = 4.31 mmHg$), outperforming all ECG-mediated approaches, which achieve only Grade B accuracy. Our findings suggest that accurate continuous BP monitoring can be achieved directly from wearable PPG signals, enabling simpler, more efficient pipelines for real-world connected health systems.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T01:44:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23406v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23406v1"
-    },
-    {
-      "id": "2607.23397v1",
-      "title": "A Statistical Difference between Single-Layer Learning and Hierarchical Learning in Wide Neural Networks",
-      "authors": [
-        "Sumio Watanabe"
-      ],
-      "abstract": "Hierarchical neural networks are widely used in artificial intelligence, yet their mathematical properties remain incompletely understood. In the infinite-width limit, two different theoretical frameworks have been proposed. One reduces deep learning to kernel regression with a fixed kernel by assuming that the parameters remain close to their initialization, whereas the other allows the parameters to move away from their initialization, requiring the kernel itself to be optimized. In this paper, we study a three-layer neural network with a finite but large number of hidden units. We show that training the input-to-hidden weights yields a smaller generalization error than keeping them fixed. Furthermore, the latter setting exhibits singularities in the parameter space, whereas the former does not. These findings indicate that singularities play an essential role even in wide neural networks.",
-      "published": "July 26, 2026",
-      "published_raw": "2026-07-26T00:11:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.23397v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.23397v1"
     }
   ]
 }
