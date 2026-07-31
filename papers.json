@@ -1,7 +1,164 @@
 {
-  "last_updated": "2026-07-30T01:12:58.172506",
+  "last_updated": "2026-07-31T01:25:48.626185",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.28259v1",
+      "title": "TopoFormer: Topology Meets Attention for Graph Learning",
+      "authors": [
+        "Md Joshem Uddin",
+        "Astrit Tola",
+        "Cuneyt Gurcan Akcora",
+        "Baris Coskunuzer"
+      ],
+      "abstract": "We introduce Topoformer, a lightweight and scalable framework for graph representation learning that encodes topological structure into attention-friendly sequences. At the core of our method is Topo-Scan, a novel module that decomposes a graph into a short, ordered sequence of topological tokens by slicing over node or edge filtrations. These sequences capture multi-scale structural patterns, from local motifs to global organization, and are processed by a Transformer to produce expressive graph-level embeddings. Unlike traditional persistent homology pipelines, Topo-Scan is parallelizable, avoids costly diagram computations, and integrates seamlessly with standard deep learning architectures. We provide theoretical guarantees on the stability of our topological encodings and demonstrate state-of-the-art performance across graph classification and molecular property prediction benchmarks. Our results show that Topoformer matches or exceeds strong GNN and topology-based baselines while offering predictable and efficient compute. This work opens a new path for parallelizable and unifying approaches to graph representation learning that integrate topological inductive biases into attention frameworks.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T14:18:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28259v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28259v1"
+    },
+    {
+      "id": "2607.28248v1",
+      "title": "Uncertainty quantification for trustworthy deep learning: Methods and measures",
+      "authors": [
+        "H. Martin Gillis",
+        "Thomas Trappenberg"
+      ],
+      "abstract": "The deployment of deep neural networks in safety-critical domains demands reliable estimates of predictive confidence, yet conventional architectures lack principled uncertainty quantification. This survey provides a structured, critical review of methods for Uncertainty Quantification (UQ) in deep learning, scoped to ensemble-based and approximate Bayesian approaches and the measures used to summarize their outputs. Relative to existing UQ surveys, our contribution is depth on efficient ensemble approximations and single-pass methods, and a unified treatment that separates the method producing a predictive distribution from the measure that summarizes its uncertainty. We organize methods into five families: Bayesian neural networks, Monte Carlo Dropout, deep ensembles, efficient ensemble approximations, and last-layer or single-pass approaches. We situate adjacent work on evidential and prior networks, conformal prediction, and post-hoc calibration, together with the decision-time tasks of out-of-distribution detection and selective prediction. For each, we examine theoretical motivation, implementation, empirical performance, and limitations. We then review ensemble diversity theory and uncertainty measures and their decompositions, contrasting the entropy decomposition with pairwise divergence measures, and consolidate evaluation methodology so that our qualitative comparisons share a common basis. We close with a brief treatment of uncertainty in large language models and open research directions, including efficient epistemic measures for classification, last-layer diversity, diversity and calibration under shift, and hybrid architectures.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T14:10:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28248v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28248v1"
+    },
+    {
+      "id": "2607.28220v1",
+      "title": "Weather Emulators at the Frontier of Heat Extremes Predictability",
+      "authors": [
+        "Cas Decancq",
+        "Thomas Mortier",
+        "Jessica Keune",
+        "Diego G. Miralles"
+      ],
+      "abstract": "Atmospheric predictability declines rapidly beyond the next ten days, such that forecasts at longer lead times primarily convey large-scale trends rather than specific states. Yet in a warming world, improving early warnings of extreme heat is an increasingly critical challenge. Here we evaluate six state-of-the-art deep learning weather emulators - Pangu-Weather, FuXi, ArchesWeather, AIFS, GraphCast and Aurora - alongside leading dynamical systems and statistical baselines in forecasting global near-surface temperature and extreme heat at lead times of 10-15 days. We find that several emulators rival or even surpass physics-based forecasts in deterministic temperature skill, but do so at the cost of reduced spectral fidelity, in a process widely known as blurring. While all models show some degree of predictive skill for extreme heat, most emulators under-represent peak intensities, and IFS recall is greater than that of any of the emulators. These results highlight both the emerging potential of AI to enhance extended range temperature prediction, and the remaining challenges in delivering reliable, actionable early warnings in a changing climate.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T13:54:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28220v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28220v1"
+    },
+    {
+      "id": "2607.28148v1",
+      "title": "What Makes Deep Learning Work for Traditional Chinese Medicine Tongue Diagnosis? A Comprehensive Ablation Study",
+      "authors": [
+        "Longxia Gao",
+        "Linan Wang",
+        "Yuhe Han",
+        "Junze Geng",
+        "Meng Zhang",
+        "Hanqing Zhao"
+      ],
+      "abstract": "Deep learning has shown promise for automated tongue diagnosis in traditional Chinese medicine (TCM), yet the design space remains underexplored. We conducted a systematic ablation study spanning 20+ model versions under rigorous 5-fold cross-validation on TongueDx2 (5,109 images, 976 expert-annotated) and a merged dataset of 11,101 samples. We compared six backbone architectures, four loss functions, five augmentation strategies, and six training strategies. The best 976-sample model achieved weighted-F1 of 0.6625 using ConvNeXt-Tiny with restrained augmentation and weak-group ensemble, while the best 11,101-sample model reached weighted-F1 of 0.7761. Six key design principles emerged: (1) ConvNeXt-Tiny offers optimal parameter efficiency; (2) BCE substantially outperforms Asymmetric Loss (+2.7%); (3) restrained color augmentation is critical; (4) weak-group ensemble replacement (+2.1%) outperforms probability averaging; (5) data scaling yielded +20.6% improvement; (6) expanding from 13 to 45 label dimensions caused catastrophic collapse (0.78 to 0.22). These principles are generalizable to multi-label medical image classification with class imbalance.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T12:55:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28148v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28148v1"
+    },
+    {
+      "id": "2607.27731v1",
+      "title": "Towards joint scaling laws with optimal batch size schedules",
+      "authors": [
+        "Jiaxiang Li",
+        "Zhiqi Bu",
+        "Shiyun Xu"
+      ],
+      "abstract": "Modern deep learning typically keeps the batch size static throughout training, thus overlooking the joint effect of learning rate and batch size on the training dynamics. In this paper, we study the deep learning dynamics through the lens of convex optimization and derive a joint characterization of loss in terms of both schedules, applicable to general optimizers and model architectures. This characterization yields a closed-form optimal batch size schedule for any prescribed learning rate schedule, and further leads to joint scaling laws that consistently outperform static batch size baselines, highlighting the significance of dynamic batch size schedule in large language model training.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T06:14:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27731v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27731v1"
+    },
+    {
+      "id": "2607.27635v1",
+      "title": "HealthCAT: An Interpretable Encoder-only Transformer Framework for Health Indicator Prediction and Temporal Interpretation of Wearable Sensor Data",
+      "authors": [
+        "Xiaotong Yu",
+        "Joshua Y. Kim",
+        "HaeJin Lee",
+        "Kalina Yacef"
+      ],
+      "abstract": "Wearable sensors continuously capture fine-grained multivariate time-series data, providing opportunities to model behavioural patterns associated with health outcomes. However, existing deep learning methods prioritise predictive accuracy over interpretability, limiting their application in health research. In this study, we present HealthCAT, a flexible framework that integrates an Encoder-only Transformer with an Attentive Class Activation Token (AttentiveCAT) to generate class-specific, time-step-level interpretations. These interpretations can be mapped back onto behavioural cycles that are relevant to the domain (e.g., time-of-day), supporting individual-level analysis of wearable sensor data. We evaluated HealthCAT using two real-world wearable sensor datasets (306 participants in total). HealthCAT outperformed deep learning baselines by up to 17\\% in F1-score and 12\\% in accuracy on both datasets ($p<0.05$). In masking experiments, the time steps identified by HealthCAT carried significantly more predictive value than random selection across all masking conditions ($p<0.05$), indicating that the identified time steps are predictively informative. By coupling predictive performance with validated time-step-level interpretability, HealthCAT moves wearable sensor analysis beyond aggregated metrics towards temporal patterns that support health monitoring, behavioural pattern analysis, and intervention design in health research. The significance of this work is that it enables accurate prediction of health indicators from wearable sensor data while providing insights into when and how physical activity patterns occur, rather than relying solely on aggregated summary measures.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T03:45:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27635v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27635v1"
+    },
+    {
+      "id": "2607.27450v1",
+      "title": "Neural Network-Assisted CLEAN for Channel Modeling in Low-SNR Regimes",
+      "authors": [
+        "Chaofan Deng",
+        "Linyu Sun",
+        "Jaeho Lee",
+        "Arijit Raychowdhury"
+      ],
+      "abstract": "Accurate multipath parameter estimation is critical for modern wireless communication systems, particularly in challenging low-SNR environments. Traditional Maximum Likelihood Estimation algorithms, such as CLEAN, provide high-resolution parameter extraction but suffer from prohibitive computational complexity due to exhaustive grid search. Conversely, purely data-driven deep learning approaches lack physical grounding and struggle to generalize across variable multipath densities and off-grid parameters. To address these limitations, this paper proposes Neural Network-Assisted CLEAN (NN-CLEAN), a hybrid framework that embeds a multi-head residual network directly into the iterative CLEAN extraction loop. By replacing the exhaustive grid search with rapid, parallelizable forward passes while delegating residual subtraction to exact mathematical models, NN-CLEAN isolates physical multipath parameters without accumulating non- physical errors. Extensive Monte Carlo simulations demonstrate that NN-CLEAN achieves estimation accuracy exceeding 96% at 5 dB SNR, matching the traditional Grid-Search CLEAN (GS- CLEAN) baseline, while providing a massive reduction in computational complexity and substantially outperforming subspace methods and standalone one-shot neural networks. Crucially, NN-CLEAN exhibits a near-flat scaling in execution runtime and memory consumption as batch sizes increase. This highly efficient parallelization establishes NN-CLEAN as a robust, real- time solution for channel estimation in MIMO systems.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T20:32:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27450v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27450v1"
+    },
+    {
+      "id": "2607.27383v1",
+      "title": "The Convergence Behavior of Adam under Heavy-Tailed Noise",
+      "authors": [
+        "Yijiang Pang"
+      ],
+      "abstract": "We establish the first convergence guarantees for the plain vector-form \\emph{Adam} optimizer under heavy-tailed stochastic noise. While several Adam variants are known to achieve optimal iteration complexity in bounded-variance nonconvex optimization, little is understood about their behavior when stochastic gradients admit only a bounded $p$-th central moment for some $p \\in (1,2]$, a setting increasingly observed in modern deep learning. To address this gap, we generalize the recent online-to-nonconvex conversion framework to accommodate heavy-tailed martingale-difference noise. Building on this generalized framework, we develop a discounted regret analysis for Adam, without restrictive parameter coupling. Our results show that Adam converges to $(ρ,ε)$-stationary points under heavy-tailed noise. However, it exhibits a suboptimal iteration complexity and $p$-dependent convergence, a suboptimality that persists even in the bounded-variance case ($p=2$). When the domain radius is known and used to control the online-learner output, a standard setup in related literature, the convergence rate improves to match the optimal complexity. These findings provide new theoretical insight into the robustness and limitations of Adam in heavy-tailed regimes.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T18:42:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27383v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27383v1"
+    },
+    {
+      "id": "2607.27372v1",
+      "title": "Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation",
+      "authors": [
+        "Alexi Gladstone",
+        "Heng Ji",
+        "Yilun Du"
+      ],
+      "abstract": "The deep learning revolution, kicked off by AlexNet, taught us that end-to-end training beats decomposing a problem into hand-designed stages. Generative modeling, however, has remained the exception-despite generative models being remarkably capable, they are still not trained end-to-end. This is because, at its core, generative modeling is about handling distributions with many modes, and existing scalable approaches handle this the same way, by factoring the generation procedure, which prevents end-to-end generation. In this work, we introduce Explorative Modeling, a new paradigm that instead factors the training loop, exploring K candidate matches between model generations and data, and training on the best, so predictions commit to modes rather than blurring them. We find Explorative Models (XMs) useful in two settings. First, increasing exploration adds a third pretraining axis beyond parameters and data for existing generative models-where scaling exploration monotonically improves performance across both continuous and discrete domains (images, video, and language). Notably, gains from exploration increase with scale, climbing from 7% to 36% as data scales and from 13% to 23% as models grow, with efficiency gains more than doubling at 3x the compute. Concretely, exploration improves FLOP efficiency by 4.1x, sample efficiency by 6.2x, parameter efficiency by 47%, lifts the strongest of image-generation recipes to a near-state-of-the-art 1.43 FID on ImageNet without guidance, enables scaling how end-to-end existing models are, and unlocks scaling generalization. Second, XMs enable end-to-end reconstructive generative modeling, matching diffusion on control tasks with 16-256x fewer inference steps. Together, these results establish XMs as both a new pretraining axis for existing generative models and a standalone end-to-end generative modeling paradigm.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T18:25:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27372v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27372v1"
+    },
+    {
+      "id": "2607.27350v1",
+      "title": "Modeling Decisions in Blockchain Analytics: A Leakage-Aware Evaluation of Tree-Based vs. Sequential Models",
+      "authors": [
+        "Michał Bartnicki",
+        "Jarosław A. Chudziak"
+      ],
+      "abstract": "Sybil bots are Ethereum actors that imitate legitimate users to extract airdrop rewards or influence governance. Recent Sybil detection methods increasingly use deep learning and treat blockchain activity as a quasi-linguistic sequence. However, complex sequence models are computationally expensive for real-time monitoring, and their reported performance may be inflated by label leakage from high-signal smart contracts. We ask whether and how organic users, Sybil bots, and MEV bots differ in the structural complexity of their transaction histories; whether sequential models outperform tree-based tabular models once leakage is reduced; whether transaction order or timing provides the stronger behavioral signal; and whether the resulting models are practical for low-latency deployment. Our approach to leakage-aware Sybil bot detection consists of a Blind-Spot protocol and a Transaction Grammar representation of wallet behavior. The former eliminates shortcuts associated with high-signal contracts, whereas the latter models wallets using rhythm, EVM execution structure, and intent. We evaluate this approach on Ethereum actor classification by comparing Transformer and BiLSTM sequence models against XGBoost and SVM baselines. We contribute a framework for leakage-aware Ethereum actor classification and a Transaction Grammar representation of wallet behavior. Our results demonstrate that, under leakage-aware evaluation, XGBoost outperforms Transformer-based sequence models while providing lower latency and estimated energy use.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T18:08:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27350v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27350v1"
+    },
+    {
+      "id": "2607.27320v1",
+      "title": "Emulating Cosmic Structure Formation with a Lagrangian Neural Cellular Automaton",
+      "authors": [
+        "Cooper Jacobus",
+        "Beatriz Tucci",
+        "Oliver Philcox"
+      ],
+      "abstract": "Field-level inference of cosmological initial conditions from galaxy surveys requires a forward model that is simultaneously accurate in the non-linear regime, computationally efficient, and fully differentiable. Traditional N-body simulations are accurate but computationally prohibitive for iterative inference, while approximate solvers like Lagrangian Perturbation Theory (LPT) fail to capture the knotty halo-forming dynamics of the cosmic web at late times. We introduce the \\textit{Lagrangian Neural Cellular Automaton} (LNCA), a hybrid deep learning framework that can be applied to emulate structure formation as a local, iterative dynamical process on a comoving lattice. Unlike standard Eulerian Convolutional Neural Networks (CNNs) which map fixed density fields, the LNCA operates in the Lagrangian frame, advecting the computational graph itself to follow the flow of mass. By training the network to learn only the \\textit{residual} displacement corrections to the Zeldovich approximation, we achieve high-fidelity emulation of the non-linear physics while guaranteeing accuracy at large scales. We further constrain our model to produce complete trajectories, not just final states, by adopting an equivariant cellular automaton architecture, which recurrently iterates on its internal states to yield a dynamic history. The resulting model is strictly local, translationally and rotationally equivariant, and naturally supports continuous time integration, making it a reliable differentiable forward model for reconstructing the initial conditions of the universe from lightcone data. Our trained model supports percent-level precision in the power and cross spectra well into the non-linear regime ($k \\lesssim 0.5 \\, h \\text{Mpc}^{-1}$), while requiring $\\sim10^4$ times fewer learned parameters than comparable models which take the form of an interpretable internal dynamic rule set.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T18:00:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27320v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27320v1"
+    },
     {
       "id": "2607.27106v1",
       "title": "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting",
@@ -19,7 +176,19 @@
       "arxiv_link": "http://arxiv.org/abs/2607.27106v1"
     },
     {
-      "id": "2607.26832v1",
+      "id": "2607.27286v1",
+      "title": "Toward Multi-Modal Deep Learning for Pulmonary Disease Classification: A Texture-Based Machine Learning Pilot Study on Public Chest X-Ray Data",
+      "authors": [
+        "Yogisri Pujitha Chinthoti"
+      ],
+      "abstract": "Automated classification of pulmonary disease from chest radiographs is a widely studied application of machine learning in medical imaging. This paper presents a pilot study evaluating classical texture- and gradient-based feature representations for distinguishing COVID-19 from other forms of pneumonia using the publicly available COVID-19 Image Data Collection (668 posteroanterior/anteroposterior radiographs from 408 patients). Using histogram of oriented gradients (HOG) and gray-level co-occurrence matrix (GLCM) texture descriptors with classical classifiers (logistic regression, random forest, and support vector machine), evaluated under patient-level 5-fold stratified cross-validation to prevent data leakage, we obtain a best mean accuracy of 75.4% and AUC of 0.755, modestly exceeding the 71.6% majority-class baseline. We report these results transparently, including their limitations, and use them to motivate and scope a proposed multi-modal deep learning architecture -- combining convolutional and transformer-based encoders across imaging modalities -- as a direction for future work requiring access to larger, multi-institutional, ethically sourced datasets.",
+      "published": "July 29, 2026",
+      "published_raw": "2026-07-29T14:27:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.27286v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.27286v1"
+    },
+    {
+      "id": "2607.26832v2",
       "title": "Kairos: Numerically Robust News Recommendation under Item Cold-Start via Cholesky-based LinUCB",
       "authors": [
         "Finn Hertsch"
@@ -27,8 +196,8 @@
       "abstract": "Algorithmic news personalization in regional markets often fails because modern deep learning models require massive interaction data while real-world news has a short Time-to-Live (TTL < 48 h) and shallow article pools. This structural item cold-start deprives collaborative filtering of the data needed for robust modeling. This paper presents Project Kairos, a framework that bridges this data scarcity through a contextual online learning approach (LinUCB). To ensure numerical integrity for continuous operation, Kairos replaces error-prone Sherman-Morrison inversions with direct rank-1 updates of Cholesky factors. This preserves the positive definiteness of the covariance matrix even under ill-conditioned data scenarios. Simultaneously, Matryoshka Representation Learning (MRL) integration addresses inference latency. Empirical evaluations based on the Tagesschau API demonstrate that exploiting semantic redundancy in the feature space achieves a 4.85-fold efficiency gain without significantly compromising ranking precision. Kairos thus provides a blueprint for high-performance recommendation systems in resource- and data-constrained environments.",
       "published": "July 29, 2026",
       "published_raw": "2026-07-29T12:25:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26832v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26832v1"
+      "pdf_link": "http://arxiv.org/pdf/2607.26832v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.26832v2"
     },
     {
       "id": "2607.26746v1",
@@ -120,189 +289,6 @@
       "published_raw": "2026-07-28T21:17:33Z",
       "pdf_link": "http://arxiv.org/pdf/2607.26276v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.26276v1"
-    },
-    {
-      "id": "2607.26170v1",
-      "title": "A Picture Says Thousands of Words - Harnessing Dermal Exposure Data from Images through Hybrid Deep Learning for Enhanced Safety Assessment",
-      "authors": [
-        "Hua Qian",
-        "Manisha Kotha",
-        "Tuan Tran",
-        "Jennifer Shin",
-        "Haining Zheng"
-      ],
-      "abstract": "This study developed a hybrid computer vision method to quantify exposed skin from images for dermal exposure assessment. Using 170 indoor-painting images, Mask R-CNN first identified human subjects and removed background interference; a color-based algorithm then segmented exposed skin. The resulting exposed-skin-to-body pixel ratios showed approximately 80% agreement with human estimates. The approach demonstrates a scalable way to extract semi-quantitative exposure information from images, with future extensions to body-part recognition, PPE detection, and video-based exposure analysis.",
-      "published": "July 28, 2026",
-      "published_raw": "2026-07-28T18:20:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26170v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26170v1"
-    },
-    {
-      "id": "2607.25940v1",
-      "title": "CNN-Based Reanalysis of Optical Turbulence at the Canary Islands Observatories (OCAN)",
-      "authors": [
-        "Airam Salas",
-        "Begoña García-Lorenzo",
-        "Julio A. Castro-Almazán",
-        "Gelys Trancho"
-      ],
-      "abstract": "Atmospheric optical turbulence, caused by refractive-index fluctuations driven by wind and temperature inhomogeneities, is the primary source of image degradation in ground-based telescopes. Its vertical distribution, described by the refractive-index structure constant (Cn2(h)), determines essential parameters such as seeing, isoplanatic angle, and coherence time, which characterize astronomical sites and are also crucial for the design and performance of high-resolution instruments. The Observatorios de Canarias (OCAN), comprising the Observatorio del Roque de los Muchachos on La Palma and the Observatorio del Teide on Tenerife, have been extensively characterized through long-term Generalized SCIDAR campaigns. In total, the database comprises nearly 300 observing nights and hundreds of thousands of individual Cn2(h) profiles. We present a reanalysis of the OCAN database using deep-learning techniques. An end-to-end software framework was developed to ingest, preprocess, and transform the original turbulence measurements into standardized numerical representations suitable for machine-learning analysis. Temporal-vertical turbulence heatmaps are generated under multiple temporal configurations and enriched with seasonal information. These representations are processed by pre-trained convolutional neural networks (CNN) used as frozen feature extractors to obtain compact deep embeddings. Unsupervised clustering is subsequently applied to identify latent atmospheric regimes within the dataset. The resulting clusters reveal coherent turbulence structures and offer a complementary perspective on atmospheric conditions at the Canary Islands observatories. This methodology provides new insights into turbulence variability at the Canary Islands sites and represents a novel approach to large-scale turbulence characterization using modern deep-learning techniques.",
-      "published": "July 28, 2026",
-      "published_raw": "2026-07-28T16:25:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.25940v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.25940v1"
-    },
-    {
-      "id": "2607.25763v1",
-      "title": "WALoMA: A Multitask Wireless Foundation Model via Adaptive Low-Rank Masked Autoencoders",
-      "authors": [
-        "Madi Makin",
-        "Asmaa Abdallah",
-        "Abdulkadir Celik",
-        "Ahmed M. Eltawil"
-      ],
-      "abstract": "This paper proposes a multitask wireless foundation model via adaptive low-rank masked autoencoders (WALoMA), a unified multi-task foundation model for sixth-generation (6G) wireless physical layer architectures, to address the limitations of specialized, task-specific deep learning models and the practical challenge of scarce labeled wireless datasets. By leveraging concepts inspired by foundation models, the proposed framework adopts a masked autoencoder (MAE) paradigm to learn from unlabeled channel data, to significantly reduce reliance on extensive annotations. The model treats wireless channel state information (CSI) as a universal modality and learns transferable representations through self-supervised channel reconstruction. Key architectural novelties include the use of 2D positional encoding (PE) to explicitly preserve the spatial-frequency relationships between antennas and subcarriers, and low-rank adaptation (LoRA) for parameter-efficient fine-tuning. The framework's efficacy is demonstrated across five downstream tasks, achieving individual scores of 96.47\\% for LoS/NLoS classification, 80.45\\% for beam prediction, 85.78\\% for channel interpolation, 99.12\\% for channel estimation, and 77.18\\% for channel charting. Consequently, numerical results show that the proposed model achieves a composite score of 87.80\\%, significantly outperforming the 59.90\\% achieved by the large wireless model (LWM) baseline while training an average of only 14.68\\% of total parameters, and maintaining strong performance even under extremely limited labeled data conditions.",
-      "published": "July 28, 2026",
-      "published_raw": "2026-07-28T14:18:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.25763v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.25763v1"
-    },
-    {
-      "id": "2607.25687v1",
-      "title": "From Deterministic to Generative Deep Learning for Urban Air Quality Reconstruction from Sparse Observations",
-      "authors": [
-        "Abhishek A. Sabnis",
-        "Mihai Mitrea",
-        "Lya Lugon",
-        "Karine Sartelet",
-        "Marc Bocquet",
-        "Xiaoyuan Cheng",
-        "Shupeng Zhu",
-        "Sibo Cheng"
-      ],
-      "abstract": "Full-field reconstruction of air pollution is essential for evaluating pollution exposure and supporting public health decision-making. However, the complex interactions among pollutants, hard-to-predict weather patterns, and limited monitoring station coverage make this a complex task. We apply deep learning techniques to provide fast and accurate reconstructions from sparse observations of four key pollutants: NO2, O3, PM2.5 and PM10. Models are trained on full-field simulation data and evaluated on real-world observations collected from 9 to 28 monitoring stations in the city of Paris. We introduce a diffusion-based generative framework for multi-pollutant reconstruction and benchmark its performance against deterministic deep learning models. Despite noisy observations and strong spatial variability, the models achieve high structural similarity on simulated validation data and produce realistic spatial patterns on real-world observations, as indicated by power-spectrum analysis. We introduce data augmentation methods that enable transfer to real-world observations without retraining, allowing the models to generalise beyond the training period. These findings highlight the potential of ML models for reliable real-world deployment in air pollution reconstruction tasks.",
-      "published": "July 28, 2026",
-      "published_raw": "2026-07-28T13:03:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.25687v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.25687v1"
-    },
-    {
-      "id": "2607.25148v1",
-      "title": "Physics-Informed CNN-LSTM for Street-Scale Urban Flood Prediction: Reconciling Aggregate Accuracy and Street-Level Plausibility",
-      "authors": [
-        "Luc DCosta",
-        "Yidi Wang",
-        "Jonathan L. Goodall",
-        "Rohan Chandra"
-      ],
-      "abstract": "Deep learning surrogate models trained with mean-squared-error loss produce statistically accurate but physically unconstrained flood predictions: water may flow uphill, appear spontaneously, or smooth over street-level corridors. We develop a physics-informed training framework for CNN-LSTM models that predict urban flood depths at 15 min intervals over a 128x128 spatial grid. Three differentiable penalty terms are embedded into the loss: (i) a gravity loss penalizing depth increases against the water-surface-elevation gradient, (ii) a continuity loss enforcing local mass conservation with rainfall-adaptive thresholds, and (iii) a topography-aware false-alarm penalty modulated by the topographic wetness index (TWI). We evaluate on the Norfolk, Virginia flood dataset spanning two storm events (August 2017 and September 2022, 300 samples), with all variants trained on identical splits and robustness assessed over repeated random splits and leave-one-storm-out tests. A road-proximal evaluation restricted to a TWI-derived street mask quantifies street-level skill. The physics-constrained model achieves near-zero gravity violations (order 1e-6) and the highest street-channel recall (0.77 +/- 0.09 vs 0.44 +/- 0.10 for the unconstrained baseline), the capability most relevant to traffic routing, and its advantage more than doubles on a held-out storm; a uniform false-alarm variant attains 16% lower mean absolute error but suppresses street recall to 0.25. The TWI-modulated penalty reconciles this trade-off: it improves on the uniform variant on every metric, recovering 60% higher street recall at the lowest MAE among constrained variants and the best street-level F1. These results expose a fundamental tension between aggregate pixel-level error and application-specific physical plausibility, and show that terrain-aware loss modulation offers a principled resolution.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T23:46:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.25148v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.25148v1"
-    },
-    {
-      "id": "2607.25117v1",
-      "title": "Analysis of the Shortcut Learning and Clever Hans Effect in CNN based ECG Image Classification",
-      "authors": [
-        "Abhay Kumar Pathak",
-        "Mrityunjay Chaubey",
-        "Manjari Gupta",
-        "Deepti Mishra"
-      ],
-      "abstract": "Deep learning models for ECG image classification may achieve high accuracy by exploiting non-physiological visual cues instead of ECG waveform morphology. Given the black-box nature of deep learning models, their promise of high predictive performance often remains insufficiently translated into clinical or real-world trust, interpretability, and actionable decision-making. In this study, we examine shortcut learning and Clever Hans effect in a publicly available ECG image dataset using convolutional neural networks. In process we have created six image-derived feature sets (FSs), FS1: raw full ECG images, FS2: cropped waveform-only images, FS3: waveform-masked metadata images, FS4: red-arrow artifact images for the myocardial infarction class, FS5: contrast-enhanced images for the abnormal heartbeat class and FS6: Gaussian-blurred images for the normal class. These controlled representations were used to test whether classification performance persists when waveform information is removed or when artificial class-specific artifacts are introduced. Shortcut retention score, prediction consistency and confidence divergence across Feature-Set Representations have been calculated to assess the transparency about the learning pattern. Along with factual results, average Integrated Gradients and occlusion sensitivity test results are presented to inspect whether model attribution focused on ECG-relevant waveform regions or on non-clinical artifacts. Performance changes across feature sets and attribution patterns were used to identify potential Clever Hans behavior. This study evaluates whether ECG image classifiers learn clinically meaningful morphology or shortcut cues introduced by report layout, metadata, contrast, blur, or artificial markers.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T22:24:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.25117v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.25117v1"
-    },
-    {
-      "id": "2607.24984v1",
-      "title": "Automatic Knowledge Graph Construction and Query for Earthquake Catalogs",
-      "authors": [
-        "Yuxin Zhou",
-        "Huai Zhang",
-        "S. Mostafa Mousavi"
-      ],
-      "abstract": "In recent years, the number of events in earthquake catalogs has significantly increased due to the utilization of more effective deep learning based detectors and phase pickers but answering open ended questions such as what characterizes this sequence? remains constrained by rigid spatiotemporal windowing and subjective expert interpretation. We present the first systematic application of graph based retrieval augmented generation GraphRAG directly to raw, tabular catalog records across three independently featured catalogs, a reservoir adjacent swarm, the 2019 Ridgecrest tectonic sequence, and the 2021 Maduo Mw7.4 aftershock sequence. Without the need for manual data structuring, the pipeline builds structurally complete, queryable knowledge graphs for all three. Rigorous evaluation individually verified against catalog derived ground truth and a rule based reference graph exposes failure modes, and four seismology informed prompt fixes eliminate all targeted fabrications while sharply improving mechanism reasoning. A vector RAG baseline demonstrates the graph layers distinctive value, catalog wide summarization and temporal stage comparison. In addition, we have identified two main pitfalls that need attention. GraphRAG thus offers a practical, transferable, near zero cost query interface for earthquake catalogs, where careful prompting ensures the results are consistently accurate and trustworthy.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T18:39:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24984v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24984v1"
-    },
-    {
-      "id": "2607.24608v1",
-      "title": "Attribution and Uncertainty Behavior of Learned Residual Gyro Correction for Gyro-Stellar Estimation",
-      "authors": [
-        "Mariela De Lucas Álvarez",
-        "Melvin Laux",
-        "Arthur de Freitas Precht",
-        "Maurice Martin",
-        "Edoardo Caroselli",
-        "Frank Kirchner",
-        "Alexander Fabisch"
-      ],
-      "abstract": "This work investigates uncertainty decomposition and explainability in a deep learning-based framework for gyroscope bias correction. A 1-D Convolutional Neural Network is trained to predict residual angular rate corrections from multi-sensor inputs, including gyroscope and star tracker measurements. The bias corrections are sent to a flight-representative Gyro-Stellar Estimator. The network produces both mean corrections and input-dependent (heteroscedastic) aleatoric uncertainty, while epistemic uncertainty is estimated via an ensemble of independently trained models. The proposed approach is trained under nominal conditions and evaluated in both nominal and structured perturbations that include additive and temporally correlated noise. Gradient-based attribution methods are applied to both the correction and uncertainty outputs, enabling a decomposition of the evidence that drives state updates and uncertainty estimates. By aggregating attribution patterns across rotational axes and regimes, we reveal axis-specific behaviors and characterize how structured perturbations influence the collaboration between aleatoric and epistemic uncertainty. Uncertainty analysis shows that aleatoric uncertainty increases with perturbation intensity, but the distributions overlap and the calibration is not consistent across regimes. On the other hand, epistemic uncertainty gives a clear signal that gets clearer as the distributional shift happens, showing that the models disagree more. These results show that aleatoric and epistemic uncertainty work well together and that epistemic uncertainty is better at distinguishing between nominal and perturbed operating conditions. The results provide insight into the behavior of hybrid learning-based state estimation components and motivate the use of uncertainty for downstream monitoring and fault detection.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T16:10:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24608v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24608v1"
-    },
-    {
-      "id": "2607.24525v1",
-      "title": "A Modern ConvNet for Solar Filament Detection",
-      "authors": [
-        "J. R. Hu",
-        "Q. Hao",
-        "Z. Zheng",
-        "P. F. Chen",
-        "C. Li",
-        "Y. Meng"
-      ],
-      "abstract": "Automated solar filament detection using deep learning faces several challenges. Semantic segmentation of solar filaments is a complicated multiscale feature extraction task with long-tail distribution. Furthermore, a large-scale, highly complete, and finely detailed dataset has become mandatory for providing abundant information. To address these challenges, we present a series of machine learning approaches to develop a solar filament detection workflow that performs superbly. First, we manually annotated a small-scale solar filament dataset based on H$α$ spectra called MHAS. Next, we developed the Multiscale ORiented DENdritic (MORDEN) model, a semantic segmentation model focusing on multiscale feature extraction. We also introduced the Dense Conditional Random Field (DenseCRF) and Density-Based Spatial Clustering of Applications with Noise (DBSCAN) methods for post-processing. Using the proposed workflow, we generated a large-scale, high-quality dataset called AHAS. Experimental results demonstrate that MORDEN outperforms several existing solar filament semantic segmentation models with open access. DenseCRF has been demonstrated to effectively capture fine edge details. We also evaluated the effects of data scaling and the reliability of DBSCAN and found that both approaches yield satisfactory performance. Multiple visualization results substantiate our quantitative findings. Our work provides a foundation for maximizing the potential of deep learning models for solar filament detection.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T15:06:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24525v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24525v1"
-    },
-    {
-      "id": "2607.24420v1",
-      "title": "Frequency-Based Reservoir computing",
-      "authors": [
-        "Arthur S Powanwe"
-      ],
-      "abstract": "Reservoir computing has emerged as an efficient machine learning framework for predicting time series generated by dynamical systems. In contrast to other machine and deep learning approaches, a reservoir computing trains only the output layer via linear regression, leaving the reservoir (recurrent layer) untrained. This simplification makes reservoir computers easier to train and more amenable to experimentation. However, because current reservoirs consist of networks of randomly connected nodes and require the optimization of numerous hyperparameters, a framework that precisely explains how reservoir computing operates and how it can be optimized remains missing. Here, we propose a frequency-based reservoir inspired by the brain's oscillatory dynamics and its hierarchy of timescales. The frequency-based reservoir can be interpreted as an ensemble of independent oscillatory units, each processing a portion of the input's frequency content. This allows us to understand the reservoir's internal behavior by modeling it as a single unit driven by an external input. Borrowing from the theory of a nonlinear oscillator forced by complex periodic inputs, we found that units of the frequency-based reservoir selectively amplify and store specific input frequencies, which are then used for prediction. The frequency-based reservoir performs as well as or better than equivalent random reservoirs. Furthermore, the frequency-based approach can be optimized to improve short-term prediction, a property that random reservoirs lack. Finally, we show that the frequency-based reservoir can also predict complex spatiotemporal dynamics. Our results show that reservoir computing can be designed using brain properties and theoretical insights borrowed from the physics of forced nonlinear oscillators.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T13:33:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24420v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24420v1"
-    },
-    {
-      "id": "2607.24405v1",
-      "title": "K-Survival Means",
-      "authors": [
-        "Abdallah Alabdallah"
-      ],
-      "abstract": "In this work, we propose K-SurvMeans, a novel extension of K-Means for clustering survival data. The method explicitly uses the survival outcome in the clustering process to optimize cluster centers, thereby maximizing pairwise survival differences between clusters. The objective function encourages the clusters to be well-separated from the survival perspective. Since the resulting optimization problem is non-differentiable, we employ the Particle Swarm algorithm for the Optimization process. To further improve flexibility and mitigate the curse of dimensionality, we extend the framework to operate in a learned low-dimensional latent space obtained via a dimensionality reduction. This allows the method to capture better-separated clusters and enhance optimization efficiency by reducing the search space. Experiments on multiple publicly available benchmark survival datasets demonstrate that K-SurvMeans consistently yields clusters with improved separation in survival distributions compared to existing deep learning-based survival clustering methods.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T13:21:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24405v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24405v1"
-    },
-    {
-      "id": "2607.24180v1",
-      "title": "Monitoring Post-Disaster Urban Recovery Using High-Resolution SAR Time Series and Unsupervised Learning: Evidence from the 2023 Türkiye-Syria Earthquake",
-      "authors": [
-        "Luigi Russo",
-        "Deodato Tapete",
-        "Silvia Liberata Ullo",
-        "Paolo Gamba"
-      ],
-      "abstract": "Monitoring post-disaster recovery is essential for understanding how urban systems rebuild and progressively return to functionality. However, tracking reconstruction remains difficult because reliable ground-truth information is often scarce and recovery processes evolve over time. This paper proposes an unsupervised framework for recovery monitoring based on multi-temporal synthetic aperture radar (SAR) observations and deep-learning anomaly detection. COSMO-SkyMed time series are used to identify persistent temporal anomalies associated with reconstruction activities and to generate spatially explicit recovery maps. The framework is applied to four cities severely affected by the 2023 Turkiye-Syria earthquakes, revealing heterogeneous reconstruction dynamics across different urban contexts. The results show spatially structured patterns of persistent anomalies related to reconstruction over damaged and cleared areas, temporary container settlements, and new residential districts. Comparison with nighttime-light recovery indicators derived from SDGSAT-1 data highlights the complementary nature of the two modalities: nighttime lights reflect the restoration of electricity supply and nighttime socioeconomic activity, whereas SAR anomalies capture structural changes in the built environment and may reveal reconstruction at earlier stages. The results demonstrate that multi-temporal SAR data combined with unsupervised learning provide an effective and scalable approach for monitoring post-disaster reconstruction when labeled recovery datasets are unavailable.",
-      "published": "July 27, 2026",
-      "published_raw": "2026-07-27T09:04:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.24180v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.24180v1"
     }
   ]
 }
