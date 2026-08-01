@@ -1,7 +1,21 @@
 {
-  "last_updated": "2026-07-31T01:25:48.626185",
+  "last_updated": "2026-08-01T01:26:55.457056",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.28428v1",
+      "title": "Kohn-Sham Spectral Embedding on Sparse Graphs at the Nishimori Temperature for Image Classification",
+      "authors": [
+        "V. S. Usatyuk",
+        "D. A. Sapozhnikov",
+        "S. I. Egorov"
+      ],
+      "abstract": "We introduce Kohn--Sham Spectral Embedding (KSSE), a physics-inspired energy-based model replacing dense CNN classifiers with a sparse-graph spectral embedding evaluated at the Nishimori temperature of an associated Random-Bond Ising Model. By mapping pre-trained features onto quasi-cyclic low-density parity-check graphs and constructing a regularized Laplacian acting as a Kohn--Sham Hamiltonian, we solve $D$ independent channel spectral problems in $\\mathcal{O}(N\\log N + k^2_{\\text{mode}} N)$ time via FFT on circulant blocks (leveraging Pontryagin self-duality of $\\mathbb{Z}/p\\mathbb{Z}$) and low-order Rayleigh refinement. Graph topology is optimized using \\emph{star-domain surgery}: rather than destroying information-carrying codewords by removing frustrated cycles, we construct edge shifts creating local convexity around codewords while bounding residual frustration to $ρ(B_γ)\\leq 1+δ$. Multi-scale fractal analysis ($D_2$ spectrum) and fractal learning-rate landscape certifies a landscape transition from rough regimes ($D_2>3$) to star-domain basins ($D_2<1$), enabling Rayleigh refinement with $k_{\\text{mode}}=5$ modes. We prove six theoretical results: a generalized Ihara--Bass identity linking belief propagation to the Laplacian; trapping-set eigenvalue correspondence; additive channel separability with an explicit exchange-correlation bound; a surgery theorem bounding frustration with attractor width $Ω(1/\\sqrt{d_{\\min}})$; a quasi-stationarity perturbation bound; and a fixed-point convergence theorem. In a transductive protocol on ImageNet-1000 with frozen EfficientNet-B4 features ($D=1792$), KSSE achieves \\textbf{88.93\\%} Top-1 accuracy using $\\approx 21.24$M parameters, outperforming Swin-L (197M, 86.4--87.3\\%) and matching ViT-H/14 (632M, 88.0--89.5\\%) under standard inductive setups, while reducing model footprint by $10\\times$ and $30\\times$, respectively.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T16:05:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28428v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28428v1"
+    },
     {
       "id": "2607.28259v1",
       "title": "TopoFormer: Topology Meets Attention for Graph Learning",
@@ -274,21 +288,6 @@
       "published_raw": "2026-07-29T04:41:53Z",
       "pdf_link": "http://arxiv.org/pdf/2607.26467v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.26467v1"
-    },
-    {
-      "id": "2607.26276v1",
-      "title": "Comparing the Performance of Foundation Model Derived Embeddings with Traditional Approaches for Distant Metastasis Prediction in Head and Neck Cancer",
-      "authors": [
-        "Erich Schmitz",
-        "Meixu Chen",
-        "Bowen Jing",
-        "Jing Wang"
-      ],
-      "abstract": "Background: Early prediction of distant metastasis (DM) risk in head and neck cancer (HNC) can enable timely interventions that may improve treatment outcomes. Many current machine learning methods rely on prior knowledge of the region of interest such as tumor segmentations, which require expert knowledge, is time-consuming and introduces user-dependent variability. Medical image-based foundation models have recently been developed for specific imaging modalities to streamline down-stream prediction tasks by extracting modality-relevant features. Purpose: In this study, we evaluate the effectiveness of using a foundation model as the feature extractor to predict DM risk in HNC patients and compare its performance with traditional approaches that require prior knowledge on the regions of interest. Methods: Preoperative CT images of 2327 patients from the RADCURE dataset were used. Three features-sets were created including radiomics, deep-learning based features, and CT Foundation derived features. The feature-sets were used individually in a multi-layer perceptron (MLP) to predict DM risk. Results: The model using CT Foundation embeddings outperformed the radiomics and deep learning-based models, achieving a Receiver Operating Characteristic Area Under the Curve (AUC) of 0.791, compared to AUC values of 0.772 and 0.753 for the radiomics and deep learning-based models, respectively. The CT Foundation based model had similar performance to a model that combined the use of radiomics and deep learning-based features that achieved an AUC of 0.794. Conclusions: Features based on foundation models offer a promising alternative to traditional radiomics while reducing the need for domain expertise and extensively annotated datasets. Their minimal preprocessing requirements also make them a more accessible and scalable option.",
-      "published": "July 28, 2026",
-      "published_raw": "2026-07-28T21:17:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26276v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26276v1"
     }
   ]
 }
