@@ -1,7 +1,115 @@
 {
-  "last_updated": "2026-08-02T01:24:37.213010",
+  "last_updated": "2026-08-03T01:25:16.418975",
   "count": 20,
   "papers": [
+    {
+      "id": "2607.29614v1",
+      "title": "A Human-Centered Validation of the Explainability-Performance Coefficient",
+      "authors": [
+        "Christian Oliva",
+        "Luis F. Lago-Fernández"
+      ],
+      "abstract": "The rapid adoption of deep learning models in high-risk domains has intensified the need for trustworthy Explainable Artificial Intelligence (XAI). However, objectively evaluating explanation fidelity and aligning XAI metrics with human-centered understanding remain critical open challenges. In this work, we propose a model-agnostic metric, the EPC score, which is an extension of the Explainability-Performance Coefficient (EPC), that quantifies explanation quality by explicitly balancing the trade-off between feature selection sparsity and preserved model performance. Through an empirical validation across tabular, text, and image modalities, we show that the EPC score effectively uncovers operational dependencies among network activations, data dimensionality, and explainer performance. Furthermore, we validate the EPC score against independent human-based explanations, proving that higher EPC scores strongly align with human lexical sentiment judgments and spatial visual annotations.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T16:50:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.29614v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.29614v1"
+    },
+    {
+      "id": "2607.29462v1",
+      "title": "MoPET: Parameter-Efficient Mixture-of-Experts for Unified Medical Image Classification",
+      "authors": [
+        "Sebastian Doerrich",
+        "Daniel Würtinger",
+        "Francesco Di Salvo",
+        "Shyam Nandan Rai",
+        "Christian Ledig"
+      ],
+      "abstract": "Adapting deep learning models to profound clinical heterogeneity typically relies on parameter-efficient fine-tuning (PEFT) to avoid the severe overfitting associated with full end-to-end network updates. Although PEFT successfully navigates limited data scenarios, it inherently forces the training of a separate, isolated adapter for every specific diagnostic task. Consolidating these isolated adapters into a single generalist network risks negative transfer, as optimization gradients from conflicting visual domains interfere. To address this, we propose MoPET, a mixture-of-experts (MoE) method that uses a learned sparse router to direct each input through a small subset of low-rank PEFT experts injected into a frozen foundation model, sharing capacity across datasets while limiting cross-domain gradient conflict. Through selected evaluations on the MedMNIST benchmark, we first establish that PEFT outperforms full network updates, improving average accuracy from 86.50% to 88.97%. We then show that a single MoPET model consolidates four heterogeneous datasets into one network, improving average accuracy over the best isolated PEFT adapters (93.46% versus 92.83%). Finally, we show that co-training with auxiliary datasets improves accuracy on data-constrained clinical targets, raising average target accuracy over the strongest isolated adapter from 81.58% to 83.58%. Our source code is publicly available at https://github.com/sdoerrich97/mopet .",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T14:28:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.29462v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.29462v1"
+    },
+    {
+      "id": "2607.29383v1",
+      "title": "Exploring Block Anomaly Detection In HDFS Log Data Analysis",
+      "authors": [
+        "WenYang Zhong",
+        "Tutut Herawan"
+      ],
+      "abstract": "In recent years, with the development of big data technology, increasingly more companies use HDFS for data processing and storage. As a result, the maintenance of distributed file systems has become an extremely important part of data management. As the function of server systems is becoming increasingly diversified and their services are becoming complex, the logs, recording real-time events make it easier for system operators to locate the failures and errors that happened in the server systems to make server always available. HDFS, a distributed file system, which contains large data sets, will record a large number of logs. Moreover, the logs are not always structured data, they are not stable as well. However, to detect the problems that occur in the system by checking one log by one log, it's complicated and boring work for the system operators. Using machine learning techniques and natural language processing techniques to detect the HDFS block anomaly will help the system operators to locate and fix the anomaly rapidly and accurately. This paper proposes a streaming HDFS log block anomaly workflow. It helps maintenance practitioners to use parallel computing network in processing historical log, and construct LLM-BiLSTM hybrid deep learning model to detect anomaly block in HDFS, then build streaming log pipeline based on Kafka to give one real-time HDFS log block anomaly detection solution.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T13:04:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.29383v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.29383v1"
+    },
+    {
+      "id": "2607.29243v1",
+      "title": "TAVI-TEC: An AI-Based Tool for Procedural Planning of Transcatheter Aortic Valve Implantation",
+      "authors": [
+        "Alessandra Zerillo",
+        "Stefano Cannata",
+        "Diego Bellavia",
+        "Daniele Ciriello",
+        "Simone Manini",
+        "Salvatore Pasta",
+        "Caterina Gandolfo"
+      ],
+      "abstract": "Computed tomography angiography (CTA) is crucial for preprocedural TAVI planning, providing the anatomical information required for prosthesis sizing and vascular access assessment. As the volume of TAVI procedure increases, improving efficiency and standardizing annotations is becoming essential in clinical practice. This study presents TAVI-TEC, a fully automated artificial intelligence-based framework integrated into a web based DICOM viewer for routine preoperative TAVI planning. Pre-procedural CTA scans from patients undergoing TAVI with SAPIEN 3 Ultra (S3U) prostheses were processed using a fully automated pipeline. Deep learning-based segmentation of cardiovascular structures, calcification detection, centerline extraction, landmark identification, and annular plane definition was implemented to quantify key annular and aortic root measurements and color-coded maps of lumen reduction and vessel diameter for vascular access. A multilayer perceptron classifier was trained to predict prosthesis size prior to the TAVI procedure. Results revealed that TAVI-TEC enabled pre-procedural measurements in approximately 2-6 min. Strong agreement with clinician-derived measurements was observed for annular area (coefficient of concordance, CCC = 0.934; interclass correlation coefficient, ICC = 0.935; R^2 = 0.881) and perimeter (CCC = 0.909; ICC = 0.909; R^2 = 0.854). The valve-size prediction model achieved 82% overall accuracy, with most misclassifications occurring between adjacent prosthesis sizes. Though further multicenter validation and extension to additional measurements and valve platforms are required, the TAVI-TEC methodology may reduce operator variability in pre-TAVI measurements and streamline the preoperative workflows of the Heart Team for decision-making.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T10:16:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.29243v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.29243v1"
+    },
+    {
+      "id": "2607.29182v1",
+      "title": "Few-shot Deep Learning for Phase-Amplitude Aberration Correction in Transcranial Focused Ultrasound",
+      "authors": [
+        "Minju Seol",
+        "Minjee Seo",
+        "Seonaeng Cho",
+        "Kyungho Yoon"
+      ],
+      "abstract": "Transcranial focused ultrasound (tFUS) is a non-invasive technique that delivers focused acoustic energy through the skull for neuromodulation and therapeutic applications. However, the heterogeneous structure of the skull induces complex, patient-specific phase and amplitude aberrations that distort the acoustic focus and deviate it from the intended target, compromising therapeutic efficacy and safety. Conventional time-reversal (TR) simulations can correct these aberrations but rely on computationally expensive full-wave solvers, making them impractical for real-time use and iterative treatment planning. We propose a few-shot deep surrogate framework that predicts per-element phase and amplitude corrections for a 96-element 3D phased-array transducer from patient CT images. A geometry-aware encoder extracts skull-path features shared across dedicated phase classification and amplitude regression branches, where phase periodicity is handled via circular expectation decoding. The framework is pretrained on diverse skull geometries and fine-tuned with only ten target points, enabling rapid adaptation to unseen patients without full patient-specific simulation. Evaluated via leave-one-out cross-validation across 12 skulls, it achieves a mean phase CMAE of 0.155 rad and amplitude rMAE of 9.089%, a focal centroid error of 0.467 mm, Dice score of 94.422%, and peak pressure ratio of 92.332%, with an approximately 2,535 times speedup over TR simulation. The code is available at https://github.com/Minju-Seol/fewshot-tfus-correction.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T09:02:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.29182v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.29182v1"
+    },
+    {
+      "id": "2607.29090v1",
+      "title": "What Is Missing in Surgical Risk Stratification and Outcome Prediction: A Scoping Review of End-to-End Machine Learning Approaches",
+      "authors": [
+        "Yizhi Dong",
+        "Yuhe Ke",
+        "Hairil Rizal Abdullah",
+        "Yucheng Xing",
+        "Kevan Kai Bing Teo",
+        "Ling Huang",
+        "Mengling Feng"
+      ],
+      "abstract": "Postoperative adverse events, including mortality and morbidity, remain a major global burden, many of which are preventable through early identification of high-risk patients and targeted perioperative care. Accurate risk stratification is therefore essential. With the growing availability of large-scale electronic health records (EHRs), machine learning (ML) provides a data-driven approach to model complex clinical patterns. However, existing studies vary widely in design, and methodological practices remain fragmented. This scoping review characterizes ML pipelines for surgical risk stratification and outcome prediction using EHR data. We reviewed 190 studies covering the ML workflow, including data preprocessing, algorithm selection, model evaluation, and explainability. Most studies relied on single-center private datasets with limited data modalities, while the scarcity of open-access surgical datasets constrained reproducibility and generalizability. Reporting of key preprocessing steps, including missing data handling, feature selection, and class imbalance, was often incomplete. Conventional ML models and simple neural networks predominated, whereas deep learning and multimodal approaches remained uncommon. Benchmark datasets and standardized evaluation protocols were largely absent, hindering cross-study comparisons. Only about one-third of studies incorporated explainability methods. This review identifies methodological gaps limiting clinically robust postoperative ML tools and provides a structured reference to support more rigorous, reproducible, and clinically meaningful ML development for perioperative care.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T07:16:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.29090v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.29090v1"
+    },
+    {
+      "id": "2607.28723v1",
+      "title": "Deep Learning-Based Classification and Analysis of Pulsar Candidates in Fermi-LAT Unassociated Sources",
+      "authors": [
+        "C. Pozo González",
+        "R. López-Coto",
+        "J. Méndez-Gallego",
+        "E. de Oña Wilhelm"
+      ],
+      "abstract": "The Large Area Telescope (LAT) has revolutionized our understanding of the high-energy sky, yet approximately one-third of the sources in the Fourth Fermi-LAT Source Catalog (4FGL) remain unassociated. Conventional machine learning, such as Decision Trees, often treat spectral features as independent tabular entries, neglecting the sequential topological information inherent in the Spectral Energy Distribution (SED). We aim to classify unassociated Fermi-LAT sources by exploiting the intrinsic shape of their spectra and variability features, avoiding the use of galactic coordinates as training features. Our primary objective is to generate a high-confidence list of PSRs candidates, further distinguishing between Young Pulsars (YPs) and Millisecond Pulsars (MSPs). We developed a hierarchical deep learning framework based on a 1D Convolutional Neural Network (1D-CNN), named TabularResCNN. This architecture treats the spectral data from the 4FGL catalog, allowing the model spectral shape. The classification is performed in two stages: first discriminating between AGNs and PSRs, and subsequently categorizing PSRs into YPs and MSPs. We implemented a cost-sensitive learning strategy to handle class imbalance and utilized Grad-CAM techniques to ensure the physical interpretability of the model's decisions. Applying this framework to 2563 unassociated sources, we identified 1136 AGNs and 202 high-confidence PSR candidates (166 YPs, 36 MSPs), increasing the pulsar population by more than 60%. They exhibit strong astrophysical consistency: YPs are confined to the Galactic plane, MSPs show a broader vertical distribution, and AGNs are isotropic. Furthermore, we identified 5 out of 5 PSRs recently confirmed by FAST. The proposed 1D-CNN framework isolates PSRs candidates based on intrinsic spectral and temporal properties, minimizing spatial bias.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T18:00:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28723v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28723v1"
+    },
     {
       "id": "2607.28428v1",
       "title": "Kohn-Sham Spectral Embedding on Sparse Graphs at the Nishimori Temperature for Image Classification",
@@ -75,6 +183,33 @@
       "published_raw": "2026-07-30T12:55:05Z",
       "pdf_link": "http://arxiv.org/pdf/2607.28148v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.28148v1"
+    },
+    {
+      "id": "2607.28695v1",
+      "title": "Predicting Steel Fatigue Life from Micrographs Using Physics-Informed Deep Learning",
+      "authors": [
+        "Aryuemaan Kumar Chowdhury"
+      ],
+      "abstract": "Here is the plain text version optimized for arXiv's submission form. Custom macros (like \\CV and \\SI) have been converted to standard text/math so they render correctly on the webpage: Evaluating the fatigue life of structural steels conventionally requires mechanical testing lasting tens to hundreds of hours, making it impractical for rapid quality control. We present CV, a computer vision framework that estimates the fatigue life ($\\log N_f$) of lightweight alloy steels directly from optical micrographs without physical testing.The pipeline features a seven-stage OpenCV preprocessing routine to remove artifacts, a 28-dimensional physics-informed feature extractor (quantifying crack morphology, grain structure, porosity, and texture), and a CNN regression model trained with a Gaussian negative log-likelihood (GNLL) loss to jointly predict $\\log N_f$ and sample-specific uncertainty $\\hatσ$.Evaluating three architectures (SE-CNN, ResNet-50, VGG-16) on a synthetic micrograph benchmark, ResNet-50 achieves $R^2 = 0.93$, RMSE = 0.18 log-cycles, and macro-F1 = 0.91. The GNLL objective reduces Expected Calibration Error by 76% compared to a mean-squared-error baseline (ECE: $0.089 \\rightarrow 0.021$). Grad-CAM maps confirm the network attends to metallurgically meaningful microstructural features.Running in under 65 ms per image, the pipeline and synthetic dataset generator are open-sourced. Because validation relies entirely on synthetic micrographs, these results demonstrate methodological soundness under simulated conditions; a domain-transfer study on real field samples is the immediate next step.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T10:13:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28695v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28695v1"
+    },
+    {
+      "id": "2607.28687v1",
+      "title": "Technological Advances in Detecting and Managing Cognitive Impairment in Older Adults: Trends, Challenges, and Future Directions",
+      "authors": [
+        "Mohammad Asif",
+        "Azizuddin Khan",
+        "Mohd Azam",
+        "Anurag Rajkumar Bombarde"
+      ],
+      "abstract": "As populations age, cognitive decline from mild cognitive impairment (MCI) to dementia is a defining health challenge of the coming decades, yet routine assessment often misses its earliest signs. This article critically synthesizes recent technological advances for detecting and managing cognitive impairment in older adults, spanning neurophysiological signals (chiefly electroencephalography, EEG), structural and molecular neuroimaging (MRI and amyloid/tau PET), blood-based biomarkers, and digital markers, integrated through artificial intelligence (AI), machine learning (ML), and deep learning (DL). Beyond summarizing, it contributes a cross-disciplinary taxonomy, a methodological-rigor lens foregrounding subject- and site-independent validation, an integrative early-detection framework linking tiered screening to intervention, and comparison tables of detection methods, interventions, and risk and protective factors. EEG markers (alpha/theta changes, P300 latency) and deep models (CNNs, LSTM/BiLSTM, transformers, self-supervised EEG foundation models) report strong accuracy, yet many rest on small, single-site datasets unlikely to survive rigorous external validation. Elsewhere, gains are tangible: plasma p-tau217 has reached clinical utility, with the first blood test cleared to aid Alzheimer's diagnosis in 2025; anti-amyloid therapies (lecanemab, donanemab) are approved despite modest, contested benefits; and multidomain lifestyle prevention has matured. Wearable, remote, speech, and virtual-reality tools enable continuous, ecologically valid monitoring, and multimodal fusion improves sensitivity and specificity. Barriers remain: standardization, explainability, data privacy, and equitable, externally validated deployment. The field's near-term promise lies in trustworthy, multimodal, longitudinally validated systems linking early detection to actionable, personalized care.",
+      "published": "July 30, 2026",
+      "published_raw": "2026-07-30T06:38:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2607.28687v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2607.28687v1"
     },
     {
       "id": "2607.27731v1",
@@ -158,136 +293,6 @@
       "published_raw": "2026-07-29T18:08:07Z",
       "pdf_link": "http://arxiv.org/pdf/2607.27350v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.27350v1"
-    },
-    {
-      "id": "2607.27320v1",
-      "title": "Emulating Cosmic Structure Formation with a Lagrangian Neural Cellular Automaton",
-      "authors": [
-        "Cooper Jacobus",
-        "Beatriz Tucci",
-        "Oliver Philcox"
-      ],
-      "abstract": "Field-level inference of cosmological initial conditions from galaxy surveys requires a forward model that is simultaneously accurate in the non-linear regime, computationally efficient, and fully differentiable. Traditional N-body simulations are accurate but computationally prohibitive for iterative inference, while approximate solvers like Lagrangian Perturbation Theory (LPT) fail to capture the knotty halo-forming dynamics of the cosmic web at late times. We introduce the \\textit{Lagrangian Neural Cellular Automaton} (LNCA), a hybrid deep learning framework that can be applied to emulate structure formation as a local, iterative dynamical process on a comoving lattice. Unlike standard Eulerian Convolutional Neural Networks (CNNs) which map fixed density fields, the LNCA operates in the Lagrangian frame, advecting the computational graph itself to follow the flow of mass. By training the network to learn only the \\textit{residual} displacement corrections to the Zeldovich approximation, we achieve high-fidelity emulation of the non-linear physics while guaranteeing accuracy at large scales. We further constrain our model to produce complete trajectories, not just final states, by adopting an equivariant cellular automaton architecture, which recurrently iterates on its internal states to yield a dynamic history. The resulting model is strictly local, translationally and rotationally equivariant, and naturally supports continuous time integration, making it a reliable differentiable forward model for reconstructing the initial conditions of the universe from lightcone data. Our trained model supports percent-level precision in the power and cross spectra well into the non-linear regime ($k \\lesssim 0.5 \\, h \\text{Mpc}^{-1}$), while requiring $\\sim10^4$ times fewer learned parameters than comparable models which take the form of an interpretable internal dynamic rule set.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T18:00:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27320v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27320v1"
-    },
-    {
-      "id": "2607.27106v1",
-      "title": "Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting",
-      "authors": [
-        "Filipa Lino",
-        "Bárbara Tavares",
-        "Carlos Santiago",
-        "Cláudia Soares",
-        "Manuel Marques"
-      ],
-      "abstract": "Emergency Departments (EDs) are critical access points in healthcare systems, yet they face persistent pressure from unpredictable patient demand, seasonal surges, and non-urgent visits. Effective ED planning requires forecasts at multiple decision-making levels: hospitals need local demand estimates for staffing and bed management, regions require forecasts to coordinate healthcare units, and national authorities need system-wide projections for capacity planning. However, most existing approaches forecast ED demand independently at a single level, ignoring the hierarchy linking hospitals, regions, and national systems. This can produce incoherent predictions, where hospital-level forecasts do not aggregate consistently to regional or national demand. We propose HierSTT, a hierarchical Transformer-based framework for coherent multi-level ED forecasting. HierSTT jointly predicts hospital, regional, and national level demand in a single end-to-end model. A Temporal Fusion Transformer captures national dynamics, while spatio-temporal Transformer encoder-decoder modules model regional and hospital demand conditioned on higher-level forecasts. A coherence-aware loss penalizes cross-level inconsistencies during training. We further introduce a nationwide Portuguese ED dataset covering 81 hospitals across 5 regional health administrations, with heterogeneous covariates at each level. Experiments show that HierSTT reduces average WAPE by 32\\% relative to the best non-hierarchical deep learning baseline and outperforms all classical hierarchical reconciliation methods, while producing near-coherent predictions across levels. Additional resources associated with this work are available at https://github.com/FilipaLino/HierSTT.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T16:33:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27106v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27106v1"
-    },
-    {
-      "id": "2607.27286v1",
-      "title": "Toward Multi-Modal Deep Learning for Pulmonary Disease Classification: A Texture-Based Machine Learning Pilot Study on Public Chest X-Ray Data",
-      "authors": [
-        "Yogisri Pujitha Chinthoti"
-      ],
-      "abstract": "Automated classification of pulmonary disease from chest radiographs is a widely studied application of machine learning in medical imaging. This paper presents a pilot study evaluating classical texture- and gradient-based feature representations for distinguishing COVID-19 from other forms of pneumonia using the publicly available COVID-19 Image Data Collection (668 posteroanterior/anteroposterior radiographs from 408 patients). Using histogram of oriented gradients (HOG) and gray-level co-occurrence matrix (GLCM) texture descriptors with classical classifiers (logistic regression, random forest, and support vector machine), evaluated under patient-level 5-fold stratified cross-validation to prevent data leakage, we obtain a best mean accuracy of 75.4% and AUC of 0.755, modestly exceeding the 71.6% majority-class baseline. We report these results transparently, including their limitations, and use them to motivate and scope a proposed multi-modal deep learning architecture -- combining convolutional and transformer-based encoders across imaging modalities -- as a direction for future work requiring access to larger, multi-institutional, ethically sourced datasets.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T14:27:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27286v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27286v1"
-    },
-    {
-      "id": "2607.26832v2",
-      "title": "Kairos: Numerically Robust News Recommendation under Item Cold-Start via Cholesky-based LinUCB",
-      "authors": [
-        "Finn Hertsch"
-      ],
-      "abstract": "Algorithmic news personalization in regional markets often fails because modern deep learning models require massive interaction data while real-world news has a short Time-to-Live (TTL < 48 h) and shallow article pools. This structural item cold-start deprives collaborative filtering of the data needed for robust modeling. This paper presents Project Kairos, a framework that bridges this data scarcity through a contextual online learning approach (LinUCB). To ensure numerical integrity for continuous operation, Kairos replaces error-prone Sherman-Morrison inversions with direct rank-1 updates of Cholesky factors. This preserves the positive definiteness of the covariance matrix even under ill-conditioned data scenarios. Simultaneously, Matryoshka Representation Learning (MRL) integration addresses inference latency. Empirical evaluations based on the Tagesschau API demonstrate that exploiting semantic redundancy in the feature space achieves a 4.85-fold efficiency gain without significantly compromising ranking precision. Kairos thus provides a blueprint for high-performance recommendation systems in resource- and data-constrained environments.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T12:25:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26832v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26832v2"
-    },
-    {
-      "id": "2607.26746v1",
-      "title": "An Attention-Based Framework for Alzheimers Disease Classification Using Resting-State fMRI",
-      "authors": [
-        "Harshiddhi Pathak",
-        "Gowtham Reddy N",
-        "Mrinal Acharya",
-        "Manjunatha Mahadevappa"
-      ],
-      "abstract": "Accurate identification of Alzheimers disease (AD) using resting-state functional magnetic resonance imaging (rs-fMRI) remains challenging due to the high dimensionality, noise, and complex inter-regional dependencies inherent in functional brain connectivity, which limit the effectiveness of traditional approaches based on handcrafted connectivity features or conventional machine learning models. In this work, we present an attention-based deep learning framework for Alzheimers disease classification that operates directly on rs-fMRI functional connectivity matrices by treating brain regions as tokens and employing a Transformer-inspired self-attention mechanism to model long-range and global functional dependencies across distributed brain networks. The proposed framework learns discriminative functional representations without reliance on manual feature engineering and is evaluated on a longitudinal cohort from the Alzheimers Disease Neuroimaging Initiative (ADNI) comprising cognitively normal and Alzheimers disease subjects with multiple visits. A subject-wise evaluation protocol is adopted to prevent information leakage across visits, and class-weighted optimization is incorporated to address mild class imbalance. Experimental results for binary AD versus cognitively normal classification demonstrate that the proposed attention- based rs-fMRI model achieves an accuracy of 88.95% and a ROC-AUC of 0.90, along with a favorable precision-recall balance, highlighting the effectiveness of self-attention-driven functional connectivity modeling as a robust and interpretable approach for Alzheimers disease detection using resting-state fMRI.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T10:38:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26746v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26746v1"
-    },
-    {
-      "id": "2607.26631v1",
-      "title": "RAG-HAR+: Towards Cost-Efficient LLM-Based Human Activity Recognition for Edge Deployment",
-      "authors": [
-        "Hansi Karunarathna",
-        "Nirhoshan Sivaroopan",
-        "Chamara Madarasingha",
-        "Anura Jayasumana",
-        "Kanchana Thilakarathna"
-      ],
-      "abstract": "Human Activity Recognition (HAR) from wearable sensors supports applications in healthcare, rehabilitation, fitness tracking, and smart environments. Yet, existing deep learning approaches require dataset-specific training, large labeled corpora, and repeated adaptation to new sensor settings or activity taxonomies. Retrieval-Augmented Generation for Human Activity Recognition (RAG-HAR) addresses this by framing HAR as a training-free, retrieval-augmented task, in which statistical descriptions of sensor windows are used to retrieve similar labeled examples that guide LLM-based classification. We introduce RAG-HAR+, a retrieval-first and cost-optimized extension that strengthens retrieval while reducing dependence on LLM-based inference. RAG-HAR+ uses an offline Retrieval Designer Agent to design dataset-specific feature groups from a diverse pool of motion descriptors, enabling sensor windows to be compared using features better aligned with dataset-specific activity patterns. During inference, RAG-HAR+ uses majority voting over retrieved neighbors for samples with strong retrieval evidence and defers only uncertain cases to an LLM-based Ambiguity Resolver Agent. Across six HAR benchmarks, RAG-HAR+ maintains competitive or improved performance while reducing LLM usage, token consumption, and inference time. We further extend the RAG-HAR mobile prototype to demonstrate the practical feasibility of retrieval-first, LLM-assisted HAR in mobile sensing scenarios.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T08:57:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26631v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26631v1"
-    },
-    {
-      "id": "2607.26580v1",
-      "title": "Classification of Disease from Lungs X-ray Images using VGG16, VGG19 and ResNet50 Models",
-      "authors": [
-        "Nand Lal Yadav",
-        "Rajesh Kumar",
-        "Satyendra Singh",
-        "Sudhakar Singh"
-      ],
-      "abstract": "With the increase in the number of cases related to respiratory diseases, there is an urgent need to detect them early and diagnose them accurately. Convolutional neural networks have given promising results when used for diagnosing diseases using imaging tests. In this study, we investigate the potential of applying deep learning algorithms such as VGG16, VGG19, and ResNet50 for classification of lung ailments based on X-ray images. A detailed analysis of the aforementioned models' performances was conducted to assess how well they can classify various types of lung ailments, including pneumonia, tuberculosis, lung cancer, and normal lungs. In order to do that, these deep learning models were trained on a vast amount of X-ray images. The results of our study show that while all three models provide good results, ResNet-50 performs best in comparison with other models due to its efficiency and high level of accuracy. We believe that these deep learning models can be successfully implemented in the practice of diagnosing pulmonary diseases in the future. It helps with early disease detection and improves patient outcomes.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T08:00:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26580v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26580v1"
-    },
-    {
-      "id": "2607.26481v1",
-      "title": "Conformal Changepoint Localization and Root Cause Analysis with Corrupted Observations",
-      "authors": [
-        "Seunghun Yu",
-        "Meiyi Zhu",
-        "Petar Popovski",
-        "Joonhyuk Kang",
-        "Osvaldo Simeone"
-      ],
-      "abstract": "Detecting when the statistical behavior of an engineered system changes, and identifying which component is responsible, are core problems in the monitoring of telecommunication networks, robotic platforms, security infrastructure, and multi-agent systems. In safety- and mission-critical deployments, such decisions must be accompanied by statistical reliability guarantees rather than by point estimates alone. Conformal changepoint localization (CONCH) and conformal root cause analysis (CROC) meet this need by returning confidence sets that contain the true changepoint, or the true root-cause stream, with a user-specified probability, without parametric assumptions on the data-generating process. In practice, however, observations are frequently corrupted, e.g., by outliers, sensor faults, or adversarial perturbations. While the finite-sample coverage of these procedures is preserved under contamination, the resulting confidence sets can become uninformatively large. Adopting a Huber-type contamination model, this paper proposes weighted CONCH (W-CONCH) and weighted CROC (W-CROC), which downweight observations that are likely to be corrupted with the goal of reducing confidence set size when data may be corrupted. The weighting mechanism, derived from a formal bound on the unknown corrupted data densities, leverages pre-existing second-order classifier-based uncertainty signals, such as those produced by evidential deep learning or Bayesian learning. W-CONCH and W-CROC are further generalized by introducing a meta-learning procedure for the weights that optimizes a differentiable surrogate of the confidence set size. Experiments on image-based and real-world changepoint and root-cause benchmarks show that uncertainty-based weighting substantially reduces confidence set size while maintaining the target coverage.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T05:16:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26481v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26481v1"
-    },
-    {
-      "id": "2607.26467v1",
-      "title": "Neural Architecture Search for Traffic Prediction: A Survey of Methods, Challenges, and Future Directions",
-      "authors": [
-        "Truong Giang Vu",
-        "Li Yang",
-        "Richard W. Pazzi"
-      ],
-      "abstract": "Traffic prediction is a core task in intelligent transportation systems, supporting applications such as adaptive signal control, route guidance, and ride-hailing dispatch. Deep learning models, including graph convolutional networks, recurrent networks, and Transformers, achieve strong results on standard benchmarks, but their architectures are designed by hand, requiring significant expert effort and producing models that often generalize poorly across cities and datasets. Neural Architecture Search (NAS) offers a systematic alternative to manual design. It automates the search over candidate architectures of deep learning models, finding designs that match the spatial-temporal structure of traffic data without manual trial and error. This survey reviews NAS methods applied to traffic prediction, organized by search strategy: gradient-based methods, evolutionary methods, and one-shot weight-sharing methods. For each category, we analyze how the search space is designed to cover spatial and temporal traffic operators, and how the search strategy balances cost against architecture quality. We also discuss open challenges, computational scalability to large road networks, manual search space design, cross-city generalization, dynamic graph structure, and the open question of NAS for spatial-temporal foundation models, and identify directions for future research.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T04:41:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.26467v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.26467v1"
     }
   ]
 }
