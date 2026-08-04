@@ -1,7 +1,98 @@
 {
-  "last_updated": "2026-08-03T01:25:16.418975",
+  "last_updated": "2026-08-04T01:15:35.661112",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.01074v1",
+      "title": "Logit-Origin Centering for Singleton Test-Time Adaptation",
+      "authors": [
+        "Mayank Sharma",
+        "Rohit Kumar Mourya",
+        "Pratik Mazumder"
+      ],
+      "abstract": "Tabular data is used extensively in many real-world use cases. Deep learning models have been developed to deal with tabular data, but generally perform poorly when the test data distribution differs from that of the training data. Researchers have proposed test-time adaptation approaches to deal with this problem. The fully test-time adaptation (FTTA) setting involves adapting deployed classifiers to shifted target distributions using only unlabeled test data. Leading FTTA methods inherit a batch-dependent approach from computer vision literature. This paper demonstrates for the first time that such approaches degrade sharply in strict streaming regimes where examples arrive and must be classified one at a time. This occurs because at a batch size of one, batch-level statistics become unavailable or poorly estimated. We argue that singleton tabular FTTA is not merely a small-batch variant of ordinary FTTA, but a distinct identifiability problem where only the location of the model's score stream remains directly observable. To address this, we propose Prequential Logit-Origin Centering (PLOC), a lightweight approach that keeps the source model frozen and shifts the logit space at each step. PLOC stores only a single running number (the mean of past logits), requires no labels, estimates no priors, and bypasses weight updates entirely. A deferred variant applies a static shift that preserves the source ranking, and thus the AUROC, exactly. Evaluated across five tabular benchmarks, three architectures (MLP, FT-Transformer, and TabTransformer), and five independent source checkpoints, PLOC significantly outperforms strong tabular and entropy-based baselines.",
+      "published": "August 02, 2026",
+      "published_raw": "2026-08-02T08:18:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.01074v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.01074v1"
+    },
+    {
+      "id": "2608.00835v1",
+      "title": "Deep Learning CNN and Recurrence Analysis for Alpha Gamma EEG Biomarkers in Fragile X Syndrome",
+      "authors": [
+        "Zag ElSayed",
+        "Payton Siekierski",
+        "Jack Yanchen Liu",
+        "Ernest Pedapati"
+      ],
+      "abstract": "Fragile X Syndrome (FXS) is a neurodevelopmental disorder caused by reduced expression of fragile X mental retardation protein (FMRP), leading to disrupted synaptic plasticity, cortical hyperexcitability, and impaired network synchronization. Electroencephalography (EEG) provides a noninvasive window into these mechanisms and consistently reveals abnormalities in alpha (8 to 12 Hz) and gamma (30 to 100 Hz) oscillations that relate to inhibitory control, sensory processing, and cognition. This paper proposes a multi representation deep learning framework for automated characterization of FXS EEG phenotypes by integrating convolutional neural networks (CNNs), long short-term memory (LSTM) networks, and recurrence plot (RP) analysis. Band limited EEG signals are decomposed into alpha and gamma components and transformed into complementary representations, including temporal feature sequences, time frequency maps, and RP images encoding the nonlinear recurrence structure. CNN modules learn discriminative spatial-spectral and dynamical textures from image based representations, while LSTM modules model temporal modulation of oscillatory activity; a hybrid CNN LSTM architecture jointly captures spatial, temporal, and nonlinear dependencies. Subject-independent evaluation demonstrates that the hybrid model outperforms single modality baselines, with gamma features providing strong discriminative power and alpha gamma integration yielding the best overall performance. These findings support deep learning with nonlinear representations as a scalable approach for EEG biomarker development in FXS, with potential utility for diagnosis, stratification, and treatment monitoring in translational settings.",
+      "published": "August 01, 2026",
+      "published_raw": "2026-08-01T19:27:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.00835v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.00835v1"
+    },
+    {
+      "id": "2608.00796v1",
+      "title": "An Uncertainty-Driven Hybrid Deep Learning Approach for Broad-Coverage RF Modulation Recognition",
+      "authors": [
+        "Nurettin Safak",
+        "Durdu Can Yerdeyatar",
+        "Muhammet Sefa Demirel",
+        "Alperen Marasli",
+        "Taha Eren Atmaca",
+        "Ozgun Ersoy"
+      ],
+      "abstract": "Automatic RF modulation recognition is of critical importance in spectrum monitoring, electronic warfare, and cognitive radio applications, where low signal-to-noise ratio (SNR) conditions and the growing diversity of modulation schemes limit the performance of existing methods. This paper proposes an uncertainty-driven hybrid deep learning architecture for recognizing RF signals over a broad modulation space. The proposed approach carries out a multi-stage classification process by combining spectral information obtained through low-cost FFT-based preprocessing with time-frequency features extracted from short-time Fourier transform (STFT) spectrograms. The architecture comprises a 2D convolutional neural network (2D CNN)-based path for fast, low-latency primary classification, MC Dropout-supported Bayesian uncertainty estimation for assessing classification reliability, and a BiLSTM-based secondary decision mechanism activated under high-uncertainty conditions. The proposed system is evaluated in a controlled simulation environment spanning different SNR levels and modulation classes. Experimental results show that the primary 2D CNN path achieves $83.3\\pm0.7\\%$ accuracy with an inference time of only 0.138 ms per sample, providing superior performance compared with traditional rule-based and classical machine-learning approaches. Furthermore, the obtained findings reveal the limitations of compact spectral feature representations and classifiers lacking temporal modeling, particularly in disambiguating FSK-based modulations. The uncertainty estimation module offers promising results for detecting low-confidence decisions, and the proposed approach demonstrates the potential of a low-latency and scalable solution for real-time RF modulation recognition.",
+      "published": "August 01, 2026",
+      "published_raw": "2026-08-01T17:57:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.00796v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.00796v1"
+    },
+    {
+      "id": "2608.00508v1",
+      "title": "RadYOLO: Computationally Efficient 3D Object Detection and Segmentation in CT and MRI",
+      "authors": [
+        "Kai Geissler",
+        "Laurens Müller-Groh",
+        "Hans Meine"
+      ],
+      "abstract": "Object detection and segmentation in three-dimensional medical images is a very active area of research. However, most proposed deep learning models carry a high computational cost, and only few aim to be broadly applicable, achieve high detection performance, and remain fast to execute on resource-constrained hardware. To address this gap, we present RadYOLO, a 3D extension of YOLO11 tailored to medical images. We compare it with nnU-Net and nnDetection on five datasets comprising CT and MRI data with varying object sizes and prevalence. RadYOLO's detection performance surpasses that of nnDetection on four of five datasets and is comparable on one. Compared to nnU-Net, RadYOLO performs better on lesion detection tasks, while nnU-Net excels at detecting large organs when precise localization is required. When rough object localization is sufficient, RadYOLO matches or outperforms nnU-Net on all five datasets. Regarding inference time, RadYOLO is 8-46x faster than nnU-Net on a GPU. Compared to nnDetection the speedup is even higher. When executed on a CPU, RadYOLO's inference runs within seconds (still faster than nnU-Net on a GPU) offering a significant advantage for clinical and edge-device deployment. RadYOLO repository: https://github.com/FraunhoferMEVIS/RadYOLO",
+      "published": "August 01, 2026",
+      "published_raw": "2026-08-01T08:02:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.00508v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.00508v1"
+    },
+    {
+      "id": "2608.00346v1",
+      "title": "Ensemble of Unsupervised Deep Learning for Clustering Imbalanced Tabular Data",
+      "authors": [
+        "Pulock Das",
+        "Yina Hou",
+        "Md. Kamrozzaman Bhuiyan",
+        "Manar D. Samad"
+      ],
+      "abstract": "Data imbalance poses a major challenge in supervised classification, where the majority-class bias contributes to false negatives and overestimates classification accuracy. Unsupervised deep clustering can be immune to class imbalance because representation learning for clustering is performed without class labels. Deep clustering has been proposed for images, languages, and graphs, while its application to tabular data has only emerged recently. This paper is among the first to examine the performance of state-of-the-art deep clustering methods under varying levels of data imbalance. We introduce two novel cluster ensemble approaches: one aggregates deep clustering assignments across different embedding dimensions, and the other applies majority voting to the best-performing clustering algorithms. Experiments on 16 binary tabular datasets with varying and artificially induced levels of imbalance reveal distinct strengths of different deep clustering methods. On average, our ensemble methods outperform individual clustering methods in ACC, NMI, and ARI scores, offering greater resilience to data imbalance when identifying ground-truth classes without supervision. Therefore, in an imbalanced data scenario, deep clustering can serve as a strong alternative to supervised classification.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T23:28:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.00346v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.00346v1"
+    },
+    {
+      "id": "2608.00281v1",
+      "title": "Can machine learning improve the detectability and disentanglement of the gravitational-wave background?",
+      "authors": [
+        "Hugo Einsle",
+        "Marie Anne Bizouard",
+        "Tania Regimbau",
+        "Mairi Sakellariadou",
+        "Jishnu Suresh"
+      ],
+      "abstract": "Gravitational waves from compact binary coalescences and from early Universe processes are expected to form a gravitational-wave background. We employ a custom deep learning multi-scale multi-headed autoencoder architecture to isolate gravitational-wave background from detector noise, followed by a Markov chain Monte Carlo inference stage to separate the astrophysical and cosmological components. Analyzing $108$-day mock datasets representative of the first period of the fourth LIGO-Virgo-KAGRA observing run, we show that we can detect with high confidence --- $\\log_{10}$ noise Bayes factor larger than 3 --- a compact binary coalescence gravitational-wave background with an amplitude of $4.3^{+0.5}_{-0.4}\\times10^{-9}$ at $f_{\\rm ref}=25\\,\\mathrm{Hz}$, which is a factor $\\sim5$ higher than the amplitude expected from compact binary sources. We also show that we can isolate a cosmological -- assumed flat spectrum -- gravitational-wave background as weak as $ 9.7^{+2.5}_{-2.4} \\times 10^{-10}$ from the expected compact binary coalescence gravitational-wave background within simulated Gaussian noise mimicking the LIGO detectors sensitivity achieved in the fourth observing run. In blind-test comparisons with the standard \\texttt{pygwb} pipeline, we show that our method achieves more accurate amplitude and spectral-index recovery and enables the separation of astrophysical and cosmological background components.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T20:34:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.00281v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.00281v1"
+    },
     {
       "id": "2607.29614v1",
       "title": "A Human-Centered Validation of the Explainability-Performance Coefficient",
@@ -43,6 +134,18 @@
       "published_raw": "2026-07-31T13:04:39Z",
       "pdf_link": "http://arxiv.org/pdf/2607.29383v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.29383v1"
+    },
+    {
+      "id": "2608.00118v1",
+      "title": "Deep Learning for Cyber Threat Detection and Mitigation in Healthcare-IoT",
+      "authors": [
+        "Mirza Akhi"
+      ],
+      "abstract": "Cybersecurity is a fundamental requirement for protecting wearable devices used in healthcare Internet of Things (H-IoT) systems. Security failures in these resource-constrained systems directly compromise patient safety. Physiological data and network traffic are frequent targets of cyberattacks in H-IoT environments. To address these risks, deep learning-based cybersecurity mechanisms for H-IoT often involve complex architectures with large parameter counts. Existing datasets are also rarely assessed for quality, limiting their applicability. However, this research addresses these challenges by developing multiple realistic datasets and proposing lightweight deep learning models, namely the Temporal Convolutional Network (TCN) and Residual TCN (Res-TCN), for H-IoT. It includes two binary classification datasets for Distributed Denial of Service (DDoS) attacks and a multiclass dataset representing Selective Forwarding (SF), Man-in-the-Middle (MITM), and DDoS attacks. The datasets UL-ECE-MQTT-DDoS-H-IoT2025 and UL-ECE-UDP-DDoS-H-IoT2025 are generated in Cooja and ns-3 to capture transmission behaviours and protocol variations. The third dataset, UL-ECE-MultiAttack-H-IoT2025, integrates physiological and network features to represent multiple cyber threats in H-IoT. Building on this, the TCN model is designed to detect and mitigate DDoS attacks over the MQTT and UDP-based datasets. It incorporates a monitoring frequency-based detection mechanism and a dynamic threshold-based mitigation strategy. To enable edge deployment, the model is quantised and converted into TensorFlow Lite (TFLite) for real-time DDoS detection on Raspberry Pi 4, achieving low latency and power-efficient operation in H-IoT. This thesis establishes a deep learning-based cybersecurity defence mechanism encompassing realistic dataset generation, lightweight model design, and edge deployment for securing H-IoT systems.",
+      "published": "July 31, 2026",
+      "published_raw": "2026-07-31T10:24:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.00118v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.00118v1"
     },
     {
       "id": "2607.29243v1",
@@ -195,104 +298,6 @@
       "published_raw": "2026-07-30T10:13:21Z",
       "pdf_link": "http://arxiv.org/pdf/2607.28695v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2607.28695v1"
-    },
-    {
-      "id": "2607.28687v1",
-      "title": "Technological Advances in Detecting and Managing Cognitive Impairment in Older Adults: Trends, Challenges, and Future Directions",
-      "authors": [
-        "Mohammad Asif",
-        "Azizuddin Khan",
-        "Mohd Azam",
-        "Anurag Rajkumar Bombarde"
-      ],
-      "abstract": "As populations age, cognitive decline from mild cognitive impairment (MCI) to dementia is a defining health challenge of the coming decades, yet routine assessment often misses its earliest signs. This article critically synthesizes recent technological advances for detecting and managing cognitive impairment in older adults, spanning neurophysiological signals (chiefly electroencephalography, EEG), structural and molecular neuroimaging (MRI and amyloid/tau PET), blood-based biomarkers, and digital markers, integrated through artificial intelligence (AI), machine learning (ML), and deep learning (DL). Beyond summarizing, it contributes a cross-disciplinary taxonomy, a methodological-rigor lens foregrounding subject- and site-independent validation, an integrative early-detection framework linking tiered screening to intervention, and comparison tables of detection methods, interventions, and risk and protective factors. EEG markers (alpha/theta changes, P300 latency) and deep models (CNNs, LSTM/BiLSTM, transformers, self-supervised EEG foundation models) report strong accuracy, yet many rest on small, single-site datasets unlikely to survive rigorous external validation. Elsewhere, gains are tangible: plasma p-tau217 has reached clinical utility, with the first blood test cleared to aid Alzheimer's diagnosis in 2025; anti-amyloid therapies (lecanemab, donanemab) are approved despite modest, contested benefits; and multidomain lifestyle prevention has matured. Wearable, remote, speech, and virtual-reality tools enable continuous, ecologically valid monitoring, and multimodal fusion improves sensitivity and specificity. Barriers remain: standardization, explainability, data privacy, and equitable, externally validated deployment. The field's near-term promise lies in trustworthy, multimodal, longitudinally validated systems linking early detection to actionable, personalized care.",
-      "published": "July 30, 2026",
-      "published_raw": "2026-07-30T06:38:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.28687v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.28687v1"
-    },
-    {
-      "id": "2607.27731v1",
-      "title": "Towards joint scaling laws with optimal batch size schedules",
-      "authors": [
-        "Jiaxiang Li",
-        "Zhiqi Bu",
-        "Shiyun Xu"
-      ],
-      "abstract": "Modern deep learning typically keeps the batch size static throughout training, thus overlooking the joint effect of learning rate and batch size on the training dynamics. In this paper, we study the deep learning dynamics through the lens of convex optimization and derive a joint characterization of loss in terms of both schedules, applicable to general optimizers and model architectures. This characterization yields a closed-form optimal batch size schedule for any prescribed learning rate schedule, and further leads to joint scaling laws that consistently outperform static batch size baselines, highlighting the significance of dynamic batch size schedule in large language model training.",
-      "published": "July 30, 2026",
-      "published_raw": "2026-07-30T06:14:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27731v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27731v1"
-    },
-    {
-      "id": "2607.27635v1",
-      "title": "HealthCAT: An Interpretable Encoder-only Transformer Framework for Health Indicator Prediction and Temporal Interpretation of Wearable Sensor Data",
-      "authors": [
-        "Xiaotong Yu",
-        "Joshua Y. Kim",
-        "HaeJin Lee",
-        "Kalina Yacef"
-      ],
-      "abstract": "Wearable sensors continuously capture fine-grained multivariate time-series data, providing opportunities to model behavioural patterns associated with health outcomes. However, existing deep learning methods prioritise predictive accuracy over interpretability, limiting their application in health research. In this study, we present HealthCAT, a flexible framework that integrates an Encoder-only Transformer with an Attentive Class Activation Token (AttentiveCAT) to generate class-specific, time-step-level interpretations. These interpretations can be mapped back onto behavioural cycles that are relevant to the domain (e.g., time-of-day), supporting individual-level analysis of wearable sensor data. We evaluated HealthCAT using two real-world wearable sensor datasets (306 participants in total). HealthCAT outperformed deep learning baselines by up to 17\\% in F1-score and 12\\% in accuracy on both datasets ($p<0.05$). In masking experiments, the time steps identified by HealthCAT carried significantly more predictive value than random selection across all masking conditions ($p<0.05$), indicating that the identified time steps are predictively informative. By coupling predictive performance with validated time-step-level interpretability, HealthCAT moves wearable sensor analysis beyond aggregated metrics towards temporal patterns that support health monitoring, behavioural pattern analysis, and intervention design in health research. The significance of this work is that it enables accurate prediction of health indicators from wearable sensor data while providing insights into when and how physical activity patterns occur, rather than relying solely on aggregated summary measures.",
-      "published": "July 30, 2026",
-      "published_raw": "2026-07-30T03:45:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27635v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27635v1"
-    },
-    {
-      "id": "2607.27450v1",
-      "title": "Neural Network-Assisted CLEAN for Channel Modeling in Low-SNR Regimes",
-      "authors": [
-        "Chaofan Deng",
-        "Linyu Sun",
-        "Jaeho Lee",
-        "Arijit Raychowdhury"
-      ],
-      "abstract": "Accurate multipath parameter estimation is critical for modern wireless communication systems, particularly in challenging low-SNR environments. Traditional Maximum Likelihood Estimation algorithms, such as CLEAN, provide high-resolution parameter extraction but suffer from prohibitive computational complexity due to exhaustive grid search. Conversely, purely data-driven deep learning approaches lack physical grounding and struggle to generalize across variable multipath densities and off-grid parameters. To address these limitations, this paper proposes Neural Network-Assisted CLEAN (NN-CLEAN), a hybrid framework that embeds a multi-head residual network directly into the iterative CLEAN extraction loop. By replacing the exhaustive grid search with rapid, parallelizable forward passes while delegating residual subtraction to exact mathematical models, NN-CLEAN isolates physical multipath parameters without accumulating non- physical errors. Extensive Monte Carlo simulations demonstrate that NN-CLEAN achieves estimation accuracy exceeding 96% at 5 dB SNR, matching the traditional Grid-Search CLEAN (GS- CLEAN) baseline, while providing a massive reduction in computational complexity and substantially outperforming subspace methods and standalone one-shot neural networks. Crucially, NN-CLEAN exhibits a near-flat scaling in execution runtime and memory consumption as batch sizes increase. This highly efficient parallelization establishes NN-CLEAN as a robust, real- time solution for channel estimation in MIMO systems.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T20:32:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27450v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27450v1"
-    },
-    {
-      "id": "2607.27383v1",
-      "title": "The Convergence Behavior of Adam under Heavy-Tailed Noise",
-      "authors": [
-        "Yijiang Pang"
-      ],
-      "abstract": "We establish the first convergence guarantees for the plain vector-form \\emph{Adam} optimizer under heavy-tailed stochastic noise. While several Adam variants are known to achieve optimal iteration complexity in bounded-variance nonconvex optimization, little is understood about their behavior when stochastic gradients admit only a bounded $p$-th central moment for some $p \\in (1,2]$, a setting increasingly observed in modern deep learning. To address this gap, we generalize the recent online-to-nonconvex conversion framework to accommodate heavy-tailed martingale-difference noise. Building on this generalized framework, we develop a discounted regret analysis for Adam, without restrictive parameter coupling. Our results show that Adam converges to $(ρ,ε)$-stationary points under heavy-tailed noise. However, it exhibits a suboptimal iteration complexity and $p$-dependent convergence, a suboptimality that persists even in the bounded-variance case ($p=2$). When the domain radius is known and used to control the online-learner output, a standard setup in related literature, the convergence rate improves to match the optimal complexity. These findings provide new theoretical insight into the robustness and limitations of Adam in heavy-tailed regimes.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T18:42:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27383v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27383v1"
-    },
-    {
-      "id": "2607.27372v1",
-      "title": "Explorative Modeling: Unlocking a Third Pretraining Axis and End-to-End Generation",
-      "authors": [
-        "Alexi Gladstone",
-        "Heng Ji",
-        "Yilun Du"
-      ],
-      "abstract": "The deep learning revolution, kicked off by AlexNet, taught us that end-to-end training beats decomposing a problem into hand-designed stages. Generative modeling, however, has remained the exception-despite generative models being remarkably capable, they are still not trained end-to-end. This is because, at its core, generative modeling is about handling distributions with many modes, and existing scalable approaches handle this the same way, by factoring the generation procedure, which prevents end-to-end generation. In this work, we introduce Explorative Modeling, a new paradigm that instead factors the training loop, exploring K candidate matches between model generations and data, and training on the best, so predictions commit to modes rather than blurring them. We find Explorative Models (XMs) useful in two settings. First, increasing exploration adds a third pretraining axis beyond parameters and data for existing generative models-where scaling exploration monotonically improves performance across both continuous and discrete domains (images, video, and language). Notably, gains from exploration increase with scale, climbing from 7% to 36% as data scales and from 13% to 23% as models grow, with efficiency gains more than doubling at 3x the compute. Concretely, exploration improves FLOP efficiency by 4.1x, sample efficiency by 6.2x, parameter efficiency by 47%, lifts the strongest of image-generation recipes to a near-state-of-the-art 1.43 FID on ImageNet without guidance, enables scaling how end-to-end existing models are, and unlocks scaling generalization. Second, XMs enable end-to-end reconstructive generative modeling, matching diffusion on control tasks with 16-256x fewer inference steps. Together, these results establish XMs as both a new pretraining axis for existing generative models and a standalone end-to-end generative modeling paradigm.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T18:25:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27372v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27372v1"
-    },
-    {
-      "id": "2607.27350v1",
-      "title": "Modeling Decisions in Blockchain Analytics: A Leakage-Aware Evaluation of Tree-Based vs. Sequential Models",
-      "authors": [
-        "Michał Bartnicki",
-        "Jarosław A. Chudziak"
-      ],
-      "abstract": "Sybil bots are Ethereum actors that imitate legitimate users to extract airdrop rewards or influence governance. Recent Sybil detection methods increasingly use deep learning and treat blockchain activity as a quasi-linguistic sequence. However, complex sequence models are computationally expensive for real-time monitoring, and their reported performance may be inflated by label leakage from high-signal smart contracts. We ask whether and how organic users, Sybil bots, and MEV bots differ in the structural complexity of their transaction histories; whether sequential models outperform tree-based tabular models once leakage is reduced; whether transaction order or timing provides the stronger behavioral signal; and whether the resulting models are practical for low-latency deployment. Our approach to leakage-aware Sybil bot detection consists of a Blind-Spot protocol and a Transaction Grammar representation of wallet behavior. The former eliminates shortcuts associated with high-signal contracts, whereas the latter models wallets using rhythm, EVM execution structure, and intent. We evaluate this approach on Ethereum actor classification by comparing Transformer and BiLSTM sequence models against XGBoost and SVM baselines. We contribute a framework for leakage-aware Ethereum actor classification and a Transaction Grammar representation of wallet behavior. Our results demonstrate that, under leakage-aware evaluation, XGBoost outperforms Transformer-based sequence models while providing lower latency and estimated energy use.",
-      "published": "July 29, 2026",
-      "published_raw": "2026-07-29T18:08:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2607.27350v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2607.27350v1"
     }
   ]
 }
