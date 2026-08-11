@@ -1,7 +1,129 @@
 {
-  "last_updated": "2026-08-10T00:45:07.868536",
+  "last_updated": "2026-08-11T00:44:42.587878",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.07393v1",
+      "title": "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity",
+      "authors": [
+        "Deepank Girish",
+        "Yi Hao Chan",
+        "Yubin Zheng",
+        "Sukrit Gupta",
+        "Jagath C. Rajapakse"
+      ],
+      "abstract": "Functional Magnetic Resonance Imaging ( fMRI ) data are often pooled into collaborative multi-site consortia, as deep learning models for analyses require large datasets to generalize well. While Federated Learning (FL) offers a privacy-preserving paradigm for collaborative training, standard approaches continue to struggle with statistical heterogeneity. In particular, site differences pose a key challenge in multi-site data settings. Additionally, existing FL approaches for fMRI rely on static Functional Connectivity ( FC), omitting dynamic information in brain networks. To address this, we propose FedDOSE, a novel framework that explicitly decomposes site differences for analysis of dynamic FC (dFC). FedDOSE introduces a Modularity-Guided Tucker Decomposition block to encode high-dimensional dFC tensors and capture modular-level spatio-temporal patterns efficiently. Class-specific prototypes are generated across all sites and subsequently aligned at the global level by using a combination of Optimal Transport (OT) barycenter formulation and Procrustes analysis. Extensive experiments for diagnosing Autism Spectrum Disorder (ASD) and Attention-Deficit Hyperactivity Disorder (ADHD) on three multi-site resting-state fMRI datasets: ABIDE-I, ABIDE-II, and ADHD-200, demonstrate that FedDOSE outperforms state-of-the-art methods in ASD and ADHD detection. Our results highlight its effectiveness in learning robust representations from multi-site datasets for reliable analysis.",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T16:37:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.07393v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.07393v1"
+    },
+    {
+      "id": "2608.07220v1",
+      "title": "Beyond the Black Box: Interpretable Models of Human Randomisation Failures",
+      "authors": [
+        "Ngoc Linh Dao"
+      ],
+      "abstract": "Mixed strategy equilibrium predicts i.i.d play: past actions should not help predict future decisions. Human players, however, systematically depart from this benchmark, and in O'Neill's zero sum card game, these departures can be predicted by black box sequence models such as LSTMs. This paper asks whether that predictive power can be achieved by transparent alternatives that also reveal the behavioural structure behind it. Using 84,060 decisions from 2,802 pairs, the analysis first benchmarks naive and behavioral models against interpretable machine learning and deep learning models, then evaluates the modified EWA specifications of prior work against these benchmarks and uses the LASSO diagnostics to motivate a further nested frequency tracking extension. The results show that repeat or avoid behavior, especially players' management of their own recent action histories, accounts for most of the interpretable and strategically exploitable signal, while frequency tracking adds little out of sample.",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T13:36:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.07220v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.07220v1"
+    },
+    {
+      "id": "2608.07106v1",
+      "title": "Synthetic LiDAR Data Generation and Deterministic Downsampling for Point Cloud Classification on the Edge",
+      "authors": [
+        "Niclas Meyer",
+        "Stefan Reitmann"
+      ],
+      "abstract": "Deploying three-dimensional deep learning frameworks to low-power embedded processors is bottlenecked by the unstructured nature of spatial data and the resource-intensive distance sorting algorithms often used before neural network inference. To address this gap, this paper presents a hardware-constrained workflow optimized for native execution on the Raspberry Pi 5. To account for the reality gap between noiseless, clean computer-aided design (CAD) datasets and real-world sensor data, we use physics-based simulation to construct a synthetic LiDAR dataset. Cross-dataset evaluations demonstrate a substantial drop in classification accuracy when networks trained on clean CAD data are evaluated on synthetic LiDAR sensor data, highlighting the critical need for sensor-aware training. To address the latency bottleneck of traditional geometric preprocessing on edge CPUs, we integrate an isolated, feature-driven Critical Points Layer (CPL) as a frontend filter. Our results show that the pretrained CPL deterministically compresses raw 1024-point clouds to a subset of 40 to 60 unique coordinates. When profiled on the ARM Cortex-A76 processor, the complete pipeline achieves an inference throughput of approximately 50 FPS while maintaining an instance classification accuracy of 88.36%, demonstrating the viability of deterministic real-time 3D perception at the edge.",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T11:02:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.07106v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.07106v1"
+    },
+    {
+      "id": "2608.07018v1",
+      "title": "IceHorizon: A Dataset for Horizon Detection in Ice-Covered Maritime Environments and Comparative Evaluation of Detection Methods",
+      "authors": [
+        "Alisa Pesotskaia",
+        "Emin Zerman"
+      ],
+      "abstract": "Horizon detection in images of ice-covered waters is a challenging problem for maritime navigation due to low contrast between water and sky, cluttered ice structures, and varying illumination conditions. This paper presents a comparative evaluation of six horizon detection algorithms, including four classical computer vision methods and two hybrid approaches combining deep learning with classical line detection. A new bespoke IceHorizon dataset consisting of 30 ship-based and 8 drone-based videos is used to evaluate detection accuracy, horizon coverage, and computational performance. The results show that hybrid methods achieve the highest accuracy and most reliable horizon estimates. In contrast, purely classical methods exhibit reduced robustness, particularly in visually ambiguous scenes. Performance on ship-based imagery was consistently higher than on drone-based imagery, indicating a strong dependency on acquisition characteristics. The created dataset and codes used in this study are made publicly available to support further research on this topic. The code is available at https://github.com/allythe/HorizonDetection. The dataset is available at https://doi.org/10.5281/zenodo.20411867",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T09:26:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.07018v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.07018v1"
+    },
+    {
+      "id": "2608.06934v1",
+      "title": "Walkable to Whom? Capturing Subjective Variability in Walkability Perception Using Multimodal Deep Learning",
+      "authors": [
+        "Moloud Damandeh",
+        "Meead Saberi"
+      ],
+      "abstract": "Visual perception of walkability varies substantially across individuals, reflecting differences in personal characteristics, experiences, and preferences. Existing studies, however, often reduce these diverse judgements to aggregated scores, implicitly assuming uniform perception, and commonly rely on vehicle-mounted street-view imagery that does not reflect the pedestrian's visual experience. This paper introduces a dataset of 29,870 walkability ratings from 1,196 respondents, linking sidewalk-view imagery across urban, suburban, and regional Australian environments with individual rater attributes, and proposes the first user-conditioned multimodal deep learning framework for walkability perception, fusing visual features with respondent-level representations. A viewpoint-comparison study shows that sidewalk-view images receive significantly higher walkability ratings than matched street-view images, indicating that imagery source is a substantive design decision in perception surveys. The user-conditioned model improves rank agreement with observed ratings by 65% over an image-only baseline (quadratic weighted kappa 0.47 vs. 0.29), demonstrating that who is evaluating an environment carries predictive indication beyond image content alone. These findings support moving from aggregated, observer-independent walkability scores toward models that represent diverse users, enabling more inclusive assessment of pedestrian environments.",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T08:07:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.06934v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.06934v1"
+    },
+    {
+      "id": "2608.06896v1",
+      "title": "Recent advances in weakly supervised learning: New supervision paradigms, assumption relaxations, and practical solutions",
+      "authors": [
+        "Wei Wang",
+        "Gang Niu",
+        "Masashi Sugiyama"
+      ],
+      "abstract": "Deep learning has achieved great success in recent years thanks to the availability of high-quality, well-annotated training data. However, this requirement is often not met in real-world applications. Weakly supervised learning aims to train an accurate model with incomplete, inexact, or inaccurate supervision. In this chapter, we will discuss recent advances in this field, including new supervision paradigms, relaxed assumptions, and practical solutions. First, we introduce a new weakly supervised binary classification problem called confidence-difference classification and propose consistent approaches to solve it. Next, we investigate complementary-label learning, a weakly supervised multi-class classification problem. Our proposed approaches are based on more relaxed assumptions about the data generation process than existing consistent approaches. Lastly, we present an evaluation framework for partial-label learning, another popular multi-class weakly supervised learning problem, in order to promote fair and realistic evaluation of algorithms in this field.",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T07:30:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.06896v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.06896v1"
+    },
+    {
+      "id": "2608.06839v1",
+      "title": "Mathematical Principles and Experimental Discoveries of the Emergence of Symbolic Patterns in Artificial Neural Networks",
+      "authors": [
+        "Quanshi Zhang",
+        "Qihan Ren",
+        "Siyu Lou"
+      ],
+      "abstract": "Artificial Neural networks (ANNs) are often treated as black-box models, making explainability a central challenge in deep learning. Many engineering methods have been proposed to approximately explain the ANN from various perspectives, such as feature attribution and visualization. However, it remains a long-standing open question whether the complex inference logic of an ANN can be explained exhaustively and concisely as sparse symbolic patterns. This raises a deeper inquiry: does the emergence of symbolic patterns reflect a natural law rather than chance? Here, we show that across a broad class of ANNs trained on diverse tasks, their inference logic can indeed be reformulated as sparse symbolic interactions. We further prove that two common mathematical criteria, which are implicitly required across tasks, lead to the emergence of such sparse symbolic interactions. Empirical evidence confirms that the two criteria hold for the majority of input samples in diverse models. Furthermore, the faithfulness of these interactions is also demonstrated by their strong sample-to-sample and model-to-model transferability, as well as their ability to explain the overall generalization power of ANNs. Our theoretical analysis and extensive experiments provide a solid foundation for symbolic explanations of ANNs, and offer novel insights into the ANN's generalization power. Our findings also highlight the potential of communicative learning, a paradigm in which the inference logic of an ANN can be directly inspected and tuned at the level of symbolic patterns, thus complementing traditional end-to-end learning paradigm. Finally, the observed emergence of symbolic patterns in ANNs suggests that similar symbolic representations may also emerge in other types of black-box systems under certain conditions, because our proof does not depend on any specific ANN architecture.",
+      "published": "August 07, 2026",
+      "published_raw": "2026-08-07T05:59:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.06839v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.06839v1"
+    },
+    {
+      "id": "2608.06597v1",
+      "title": "Cascading Through the Hierarchy: Regularizer-Induced Feature Detection as Phase Transitions in Deep Linear Neural Networks",
+      "authors": [
+        "Björn Ladewig",
+        "Ibrahim Talha Ersoy",
+        "Karoline Wiesner"
+      ],
+      "abstract": "A scientific theory of deep learning, comprising learning dynamics and statistical properties of learned models, is rapidly gaining attention. One of the corner stones of this development are analytically solvable toy models, allowing for the fully tractable analysis of the learning dynamics. Here we analytically investigate such a toy model using the regularization strength as a tunable external parameter - akin to external fields in statistical physics. In previous studies, (i) an onset of learning transition was predicted analytically and (ii) it was phenomenologically/numerically established that tuning the regularization strength can result in a cascade of phase transitions. The number of those transitions was linked to the geometry of the loss landscape determined by the model complexity. Setting up a rigorous framework underpinning the previous numerical observations, our investigation reveals a precise connection between those cascades of phase transitions, learnable features and the underlying geometry. We provide analytic predictions of these phase transitions as well as tractable order parameters related to learned features. At the level of the minimal model, we connect this macroscopic perspective (that can be condensed into an effective description) to the microscopic perspective in terms of the geometry of the loss landscape characterized by the Hessian spectrum. Thus, the presented model provides a platform to explore and sharpen advances made in the scientific theory of deep learning rooted in statistical physics concepts.",
+      "published": "August 06, 2026",
+      "published_raw": "2026-08-06T21:15:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.06597v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.06597v1"
+    },
+    {
+      "id": "2608.06595v1",
+      "title": "Flowing Through States: Neural ODE Regularization for Reinforcement Learning",
+      "authors": [
+        "Mohamed Ghanem",
+        "Bernd Finkbeiner"
+      ],
+      "abstract": "Neural networks applied to sequential decision-making tasks typically rely on latent representations of environment states. While environment dynamics dictate how semantic states evolve, the corresponding latent transitions are usually left implicit, creating a potential misalignment between the two. We propose to model latent dynamics explicitly by drawing an analogy between Markov decision process (MDP) trajectories and ordinary differential equation (ODE) flows: in both cases, the current state fully determines its successors. Building on this view, we introduce a neural ODE-based regularization method that enforces latent embeddings to follow consistent ODE flows, thereby aligning representation learning with environment dynamics. Although broadly applicable to deep learning agents, we demonstrate its effectiveness in reinforcement learning by integrating it into Actor-Critic algorithms. Our approach yields major performance gains across various standard Atari benchmarks for A2C and gridworld environments for PPO.",
+      "published": "August 06, 2026",
+      "published_raw": "2026-08-06T21:11:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.06595v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.06595v1"
+    },
     {
       "id": "2608.06264v1",
       "title": "OTLesMix: Wasserstein Barycenter and Optimal Transport Map for Synthetic Lesion Generation with Diverse Shapes and Locations",
@@ -59,7 +181,7 @@
       "arxiv_link": "http://arxiv.org/abs/2608.05981v1"
     },
     {
-      "id": "2608.05930v1",
+      "id": "2608.05930v2",
       "title": "Deep Generalised Mixed Models: a Novel Neural Network Structure for Analysing Hierarchical Data",
       "authors": [
         "Nina van Gerwen",
@@ -71,8 +193,8 @@
       "abstract": "The experience sampling method (ESM) is a longitudinal research design where participants report their thoughts, emotional states and behaviours multiple times a day. Our work is motivated by such data collected by the GrowIt! app, which was released to investigate daily emotions among adolescents during the COVID-19 pandemic. Current procedures to analyse ESM data face various challenges. While standard statistical techniques may not scale well to a high-dimensional setting, machine learning procedures can give biased results due to selection bias introduced by missingness. In our motivating dataset, adolescents dropped out due to previous strong feelings of negative emotions. Hence, the implied missing data are of the missing-at-random type that standard machine learning procedures cannot accommodate. We develop a novel neural network architecture that generalises mixed effects models to deep learning to overcome these challenges. It allows semi-parametric and flexible modelling of data's mean and correlation structure through fixed and random effects. For estimation, we use an adaptation of variational auto-encoders and a Bayesian data augmentation algorithm. Through this approach, the model can accommodate longitudinal outcomes following generic distributions, scale well to high-dimensional settings and provide valid inference when data are missing-at-random. We applied the Deep Generalised Mixed Model to the GrowIt! study and various simulations. The results show potential for the Deep Generalised Mixed Model, yet suboptimal performance due to model instability.",
       "published": "August 06, 2026",
       "published_raw": "2026-08-06T11:59:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.05930v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.05930v1"
+      "pdf_link": "http://arxiv.org/pdf/2608.05930v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.05930v2"
     },
     {
       "id": "2608.05744v1",
@@ -166,141 +288,6 @@
       "published_raw": "2026-08-05T14:35:27Z",
       "pdf_link": "http://arxiv.org/pdf/2608.04906v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.04906v1"
-    },
-    {
-      "id": "2608.04706v1",
-      "title": "Benchmarking Deep Learning Models for Dense Event Classification of Offshore Wind Infrastructure in Sentinel-1 Time Series",
-      "authors": [
-        "Thorsten Hoeser",
-        "Felix Bachofer",
-        "Claudia Kuenzer"
-      ],
-      "abstract": "Monitoring of offshore wind energy infrastructure life cycles, especially during the deployment phase, is an important contribution for stakeholders to make informed decisions in a phase of increasing deployment activities. ESA's Sentinel-1 Synthetic Aperture Radar (SAR) mission produces large data archives that enable the global monitoring of offshore wind infrastructure. Turning these high-volume archives into information requires algorithms that automatically extract single event labels from dense time series at a global scale. In this study, we present a structured comparison of ten deep learning model-training variants for the dense classification of Sentinel-1 based offshore wind infrastructure time series, aiming to advance rule-based event classification of this task. We trained LSTM, Transformer, and fully connected model variants with monotemporal, unidirectional, and bidirectional context awareness, each with and without self-supervised pretraining. Among these, the supervised BiLSTM performs best, raising the target AUC score from 0.7853 for the rule-based baseline to 0.8509, and the perfect match rate from 0.3508 to 0.5063. Combining the BiLSTM predictions with the existing baseline labels in a label-transition-minimising ensemble further improves agreement with the test data. Using these improved labels, we isolate the deployment phase of individual turbines at a global scale and conduct a regional and subregional analysis covering 2016-01-01 to 2025-03-31, reporting median deployment durations of 84 d (China), 242 d (EU), and 258 d (UK). Deployment-related drivers, including legal regulations such as subsidies, and environmental conditions, emerge clearly from the analysed results across multiple spatial scales.",
-      "published": "August 05, 2026",
-      "published_raw": "2026-08-05T11:17:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04706v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04706v1"
-    },
-    {
-      "id": "2608.04702v1",
-      "title": "Design Choices That Matter: A Functional ANOVA Analysis for Remote Sensing Multi-Label Classification",
-      "authors": [
-        "Maryam Gholami Shiri",
-        "Eva Tuba",
-        "Sašo Džeroski",
-        "Tome Eftimov",
-        "Ana Nikolikj"
-      ],
-      "abstract": "Benchmarking deep learning (DL) models for multi-label classification (MLC) of remote sensing images (RSI) typically yields rankings that do not generalize beyond the evaluated datasets. In this work, we move beyond rankings by employing functional analysis of variance (fANOVA) to systematically quantify the contributions of individual design choices and their interactions to performance variability. We conduct two empirical analyses covering 48 and 20 DL models, respectively, spanning design choices such as network architecture, fine-tuning strategy, learning strategy, and initialization. By applying fANOVA across seven MLC RSI datasets, we construct dataset meta-representations that capture design-choice sensitivity profiles. Hierarchical clustering of these meta-representations reveals that datasets naturally group according to how they respond to design decisions, with patterns strongly linked to intrinsic dataset properties such as scale, spatial resolution, and label space complexity. Our findings show that for large-scale datasets, fine-tuning strategy and architecture are dominant factors, while in data-limited regimes, initialization becomes decisive. For intermediate regimes, the interaction between architecture and learning strategy governs performance.",
-      "published": "August 05, 2026",
-      "published_raw": "2026-08-05T11:12:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04702v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04702v1"
-    },
-    {
-      "id": "2608.04358v1",
-      "title": "NeuMoSync: End-to-End Neuromodulatory Control for Plasticity and Adaptability in Continual Learning",
-      "authors": [
-        "Seyed Roozbeh Razavi Rohani",
-        "Khashayar Khajavi",
-        "Wesley Chung",
-        "Mandana Samiei",
-        "Mo Chen"
-      ],
-      "abstract": "Continual learning (CL) requires models to learn tasks sequentially, yet deep neural networks often suffer from plasticity loss and poor knowledge transfer, which can impede their long-term adaptability. Drawing high-level inspiration from global neuromodulatory mechanisms in the brain, we introduce Neuromodulation and Synchronization (NeuMoSync), a novel architecture that integrates dynamic, neuron-specific modulation into deep neural networks to enhance their adaptability and plasticity. NeuMoSync extends standard neural network architectures with learnable feature vectors for each neuron that track network-wide historical context and with a module operating at a higher level of abstraction. This module synthesizes neuron-specific signals, conditioned on both current inputs and the network's evolving state, to adaptively regulate activation dynamics and synaptic plasticity. Evaluated on diverse CL benchmarks, including memorization (Random Label CIFAR-10 and Random Label MNIST), concept drift (Shuffle CIFAR-10 and Shuffle Mini-ImageNet), class-incremental learning (Class Split ImageNet and Class Split CIFAR-100), and domain-incremental learning (Permuted MNIST), NeuMoSync demonstrates strong performance in retaining plasticity and achieves improvements in both forward and backward adaptation compared with existing methods. Ablation studies validate the necessity of each component, while analysis of the learned modulatory signals reveals interpretable coordination patterns across tasks. Our work underscores the potential of integrating global coordination mechanisms into deep learning systems to advance robust, adaptive continual learning. The code is publicly available at https://github.com/RoozbehRazavi/NeuMoSync.",
-      "published": "August 05, 2026",
-      "published_raw": "2026-08-05T02:01:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04358v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04358v1"
-    },
-    {
-      "id": "2608.04257v1",
-      "title": "Geometry-Informed Parameter-Efficient Fine-Tuning of Pre-trained Molecular GNNs for Blood-Brain Barrier Permeability Prediction",
-      "authors": [
-        "Marco Vieto Vega",
-        "Long D. Nguyen",
-        "Binh P. Nguyen"
-      ],
-      "abstract": "Blood-brain barrier permeability (BBBP) prediction is a critical screening task in central nervous system drug discovery, where candidate molecules must be assessed for whether they can cross, or should be prevented from crossing, the blood-brain barrier. However, this task remains challenging because of limited, class-imbalanced datasets and sensitivity to molecular structure. Recent advances in deep learning have established graph neural networks (GNNs) as a powerful approach for molecular representation learning, while pre-trained molecular GNNs provide transferable knowledge for downstream tasks. However, full fine-tuning is often parameter-inefficient and prone to overfitting, whereas existing parameter-efficient fine-tuning (PEFT) methods mainly adapt node features or the two-dimensional covalent graph, limiting their ability to capture three-dimensional geometry and second-order interactions. To address these limitations, we propose BBBP-GeoPEFT, a geometry-informed PEFT framework for pre-trained molecular GNNs. BBBP-GeoPEFT constructs distance-based graphs at multiple cutoffs and their corresponding line graphs from molecular conformers to capture spatial atom and second-order edge interactions. Lightweight auxiliary geometric graph encoders generate cutoff-specific representations, which are incorporated into each pre-trained layer through node-wise cutoff attention and gated residual connections. This design preserves pre-trained knowledge while incorporating permeability-relevant geometric information with a small trainable-parameter budget. Experiments on a curated BBBP dataset show that BBBP-GeoPEFT achieves competitive performance compared with full fine-tuning and representative PEFT baselines. Under both random and scaffold splitting, BBBP-GeoPEFT achieves competitive or improved ROC-AUC and accuracy in most experiments while updating only 10.1% of the model parameters.",
-      "published": "August 04, 2026",
-      "published_raw": "2026-08-04T22:29:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04257v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04257v1"
-    },
-    {
-      "id": "2608.04230v1",
-      "title": "Transferable Dual-Stream Representations for Mesoscale-Preserving Sea Surface Temperature Downscaling",
-      "authors": [
-        "Parth Doshi",
-        "Priyanka Aravindan",
-        "Vaishnav Vaidheeswaran",
-        "Md Mahbub Alam",
-        "Gabriel Spadon"
-      ],
-      "abstract": "Deep learning models for scientific spatio-temporal downscaling often minimize reconstruction error while failing to preserve physically meaningful multi-scale structure. For sea surface temperature prediction, this can yield outputs that are numerically plausible yet overly smooth, missing mesoscale variability critical to regional ocean dynamics. Existing methods often focus on pixel-wise objectives or single-context conditioning, which limits their ability to preserve spectral fidelity and generalize across regions. To address this, we propose EddyFlow, a representation learning framework for kilometer-scale sea surface temperature downscaling that balances predictive accuracy, scale-dependent structure, and regional generalization. EddyFlow is trained on the Gulf of St.~Lawrence and evaluated in zero-shot and few-shot settings on the Bay of Fundy and the Gulf of Mexico. EddyFlow demonstrates that physics-informed representation learning reduces zero-shot RMSE by 21%, achieves up to 85.6% skill relative to persistence on unseen domains, and maintains near-ideal spectral fidelity with a PSD ratio of $\\approx 1.00$.",
-      "published": "August 04, 2026",
-      "published_raw": "2026-08-04T21:11:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04230v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04230v1"
-    },
-    {
-      "id": "2608.04201v1",
-      "title": "Unscented KalmanNet: a hybrid deep learning filter with calibrated posterior covariance for nonlinear state estimation",
-      "authors": [
-        "Minhyeok Ko",
-        "Abdollah Shafieezadeh"
-      ],
-      "abstract": "State estimation for nonlinear dynamical systems is commonly performed with the Unscented Kalman filter (UKF), which propagates the state moments through deterministic sigma points and reports a posterior covariance at every step. In practice, however, unknown and time-varying noise statistics and model mismatch degrade both estimation accuracy and covariance calibration. Existing learned filters improve accuracy but are largely built on the extended Kalman filter and either forgo an explicit covariance or learn uncertainty without correcting mismatch-induced gain bias. This paper introduces the Unscented KalmanNet (UKN), a hybrid recursive estimator that augments the UKF with two structurally distinct learned components while preserving its explicit sigma-point covariance recursion. NoiseNet predicts time-varying process and measurement covariances as bounded multiplicative corrections to fixed baselines, guaranteeing positive definiteness, while GainNet applies a bounded residual correction to the analytical gain. A calibration-aware training objective combines state error with covariance- and innovation-consistency terms through adaptive weights, jointly optimizing accuracy and calibration. UKN is benchmarked against UKF, KalmanNet, and Bayesian KalmanNet on three synthetic systems and UZH-FPV real-flight data. It achieves the lowest aggregate state-estimation error in all four examples and reduces RMSE by $26.4$-$49.7\\%$ compared to UKF in the synthetic cases. Leave-one-sequence-out cross-validation over 11 flights shows $22.4\\%$ and $34.3\\%$ reductions in mean position and velocity RMSE, respectively. UKN also yields the lowest fold-to-fold variability, with normalized NEES and empirical coverage closest to nominal values among the other filters.",
-      "published": "August 04, 2026",
-      "published_raw": "2026-08-04T19:58:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04201v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04201v1"
-    },
-    {
-      "id": "2608.04174v1",
-      "title": "TS2TabPFN: Time Series Classification and Extrinsic Regression through Feature Extraction and a Tabular Foundation Model",
-      "authors": [
-        "Gabriel da Costa Merlin",
-        "Diego Furtado Silva"
-      ],
-      "abstract": "Time series data are ubiquitous in practical applications, where classification (TSC) and extrinsic regression (TSER) have emerged as essential tasks for obtaining value from temporal sequences. While the literature has seen significant progress through feature-based and deep learning models, existing methods often focus either on the quality of feature extraction or on the intrinsic predictive power of complex architectures applied to raw data. This division creates a gap between the control offered by feature engineering and the automated performance of end-to-end models. This paper proposes TS2TabPFN, a framework that bridges this gap by integrating explicit feature extraction with TabPFN 2.5, a cutting-edge foundation model for tabular data, to leverage its predictive capabilities. Our extensive experimental evaluation demonstrates that TS2TabPFN significantly outperforms state-of-the-art models in TSER tasks with statistical significance, providing a robust and efficient alternative for TSC and surpassing most of the currently best-performing algorithms. These results suggest that combining foundation models with structured features overcomes single-paradigm limitations, establishing a new time series state-of-the-art.",
-      "published": "August 04, 2026",
-      "published_raw": "2026-08-04T19:32:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.04174v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.04174v1"
-    },
-    {
-      "id": "2608.03630v1",
-      "title": "POEM: Phase-Aware $\\mathrm{SO}(2)$ Feature Rotation for Time Series Forecasting Under Periodicity Drift",
-      "authors": [
-        "Jiawen Zhu",
-        "Shuhan Liu",
-        "Shengxuan Li",
-        "Qiming Shi",
-        "Di Weng"
-      ],
-      "abstract": "Deep learning has advanced time series forecasting, but periodicity drift, in which cycle timing and phase vary over time, remains a challenging problem. Existing methods predominantly model these sequences on fixed time grids, suffering from a limited ability to accommodate phase-related variation. To address this limitation, we propose \\textbf{POEM}, a phase-aware forecasting framework based on latent feature rotation using the special orthogonal group in two dimensions, denoted by $\\mathrm{SO}(2)$. POEM aims to reduce the phase-related variability by learning a phase-correction coordinate and applying an invertible $\\mathrm{SO}(2)$-based rotation to paired latent features. To extrapolate this correction coordinate, Directional Phase Increment Attention (DPIA) retrieves historical phase increments from similar temporal contexts and integrates them into future phase corrections. Experiments demonstrate that POEM achieves competitive performance, while qualitative visualizations suggest that the learned phase-aware transformation makes latent trajectories more regular.",
-      "published": "August 04, 2026",
-      "published_raw": "2026-08-04T13:16:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.03630v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.03630v1"
-    },
-    {
-      "id": "2608.03557v1",
-      "title": "Test-Time Augmentation for Tabular-to-Image Classifiers under Distribution Shifts",
-      "authors": [
-        "Malena Loza",
-        "Felipe Grijalva",
-        "Eva Milara",
-        "Luis Bote-Curiel",
-        "Francisco J. Lara-Abelenda",
-        "David Chushig-Muzo"
-      ],
-      "abstract": "Tabular-to-image methods that convert tabular data into visual representations have emerged as a novel paradigm for leveraging the high performance of deep learning models. Despite their advantages, the robustness of these methods under distribution shifts remains under explored. Test-Time Augmentation (TTA) is an effective approach in image classification to improve model generalization and robustness, where predictions over multiple transformed views of each input are aggregated. This work evaluates the impact of TTA techniques on predictive performance under Out-Of-Distribution (OOD) for representations generated by tabular-to-image methods. Six tabular-to-image encoding methods were considered: TINTO, IGTD, DeepInsight, BIE, DistanceMatrix, Fotomics. Twenty-five TTA techniques were used, organized into six types: Geometric, Photometric, Structural, Frequency/Encoding, Mixup, and Composite. We employed two datasets from the TableShift benchmark (HELOC and Voting) that provide in-distribution and OOD test subsets designed to evaluate the effect of distribution shifts on tabular data. The results indicate that TTA improves OOD performance, with composite and photometric strategies providing the best trade-off between robustness and variance. In contrast, frequency-domain transformations that alter the encoder's feature-to-intensity mapping consistently degrade performance. These findings highlight TTA as a promising approach for improving the robustness and generalization of classifiers trained on image representations derived from tabular data, particularly under distribution shifts.",
-      "published": "August 04, 2026",
-      "published_raw": "2026-08-04T12:26:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.03557v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.03557v1"
     }
   ]
 }
