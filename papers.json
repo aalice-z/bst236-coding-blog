@@ -1,7 +1,78 @@
 {
-  "last_updated": "2026-08-12T00:52:27.372501",
+  "last_updated": "2026-08-13T00:53:57.079532",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.11054v1",
+      "title": "Uncertainty-Aware Deep Learning for Genomics Applications: Insights from an Empirical Study",
+      "authors": [
+        "Sepideh Saran",
+        "Mahsa Ghanbari",
+        "Uwe Ohler"
+      ],
+      "abstract": "Deep learning models have emerged as the standard computational tool for a wide range of applications in genomics. Yet, uncertainty quantification (UQ) -- and more specifically, the reliability of different uncertainty estimates in this domain -- has received little systematic attention. This work presents an empirical analysis of UQ in deep learning models, focusing on genomics applications. In a series of experiments, we contrast Deep Ensembles, Bayesian Neural Networks, and Monte Carlo-dropout methods. We assess their ability to quantify uncertainty in different scenarios, accounting for common dataset characteristics in two genomic application areas and modalities: sequence-to-activity models, and single-cell expression analysis. Our systematic comparison framework provides guidelines for the applicability and reliability of UQ methods in genomics, highlighting their strengths and limitations in different scenarios. We show that Bayesian Neural Networks are better at capturing uncertainty caused by strong class imbalance and out-of-distribution data in genomics, despite their computational disadvantages. Moreover, we show how uncertainty scores can be used to select high-quality predictions in protein-RNA interactions.",
+      "published": "August 11, 2026",
+      "published_raw": "2026-08-11T15:23:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11054v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11054v1"
+    },
+    {
+      "id": "2608.10969v1",
+      "title": "GARLIC: Graph Attention-based Relational Learning of Multivariate Time Series in Intensive Care",
+      "authors": [
+        "Ruirui Wang",
+        "Yanke Li",
+        "Manuel Günther",
+        "Diego Paez-Granados"
+      ],
+      "abstract": "Healthcare data, such as Intensive Care Unit (ICU) records, comprise heterogeneous multivariate time series sampled at irregular intervals with pervasive missingness. However, clinical applications demand predictive models that are both accurate and interpretable. We present our Graph Attention-based Relational Learning for Intensive Care (GARLIC) model, a novel neural network architecture that imputes missing data through a learnable exponential-decay encoder, captures inter-sensor dependencies via time-lagged summary graphs, and fuses global patterns with cross-dimensional sequential attention. All attention weights and graph edges are learned end-to-end to serve as built-in observation-, signal-, and edge-level explanations. To reconcile auxiliary reconstruction and primary classification objectives, we developed an alternating decoupled optimization scheme that stabilizes training. On three ICU benchmarks (PhysioNet 2012 & 2019, MIMIC-III), GARLIC sets the new state of the art in outcome prediction, significantly improving AUROC and AUPRC over best-performing baselines at comparable computational cost. Ablation studies confirm the contribution of each module, and feature-removal trials validate the fidelity of importance attribution through a monotonic performance drop (full > top 50% > random 50% > bottom 50%). Real-time case studies demonstrate actionable risk warnings with transparent explanations, marking a significant advance toward accurate, explainable deep learning for irregularly sampled ICU time series data. Moreover, we demonstrated \\proposed{}'s superiority in data imputation and classification on various time-series datasets beyond the ICU domain, showing its generalizability and applicability to broader tasks.",
+      "published": "August 11, 2026",
+      "published_raw": "2026-08-11T14:29:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.10969v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.10969v1"
+    },
+    {
+      "id": "2608.10710v1",
+      "title": "LLM Ensemble Fault Classification for Automotive HiL Validation",
+      "authors": [
+        "Hamza Ouarrad",
+        "Mohammad Abboush",
+        "Andreas Rausch"
+      ],
+      "abstract": "Automotive HiL validation generates large multivariate test recordings whose analysis remains challenging due to manual review effort, rule-based limitations, and the need for explainable diagnostic decisions. Recent machine-learning and deep-learning approaches have improved fault diagnosis, but they often require large labelled datasets, generalise poorly across operating conditions, and provide limited insight into their predictions. This paper proposes an explainable multi-LLM ensemble framework for sensor-level fault classification in automotive validation. The framework uses compact evidence representations of fault-injection recordings and combines the outputs of heterogeneous large language models to improve diagnostic robustness, ranking quality, confidence reliability, and interpretability. The approach is evaluated on gasoline-engine and electric-vehicle HiL systems across three driving settings and ten single-fault classes. Among the individual models, Mistral Small~24B provides the strongest overall single-model trade-off, achieving 0.903 Top-1 accuracy, 0.887 MCC, and the lowest Brier score of 0.102. The final Top-3 ensemble combines Mistral Small~24B, Qwen2.5~32B, and Phi-4~14B using confidence-weighted voting, improving the scenario-averaged results to 0.917 Top-1 accuracy, 0.913 macro F1, and 0.902 MCC, while also providing the best calibration among the tested ensemble strategies. A Top-5 ensemble does not improve over the Top-3 configuration, indicating that model complementarity is more important than ensemble size. The results show that coordinated multi-LLM reasoning can support robust, calibrated, and engineer-interpretable fault classification for automotive HiL validation.",
+      "published": "August 11, 2026",
+      "published_raw": "2026-08-11T09:31:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.10710v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.10710v1"
+    },
+    {
+      "id": "2608.10301v1",
+      "title": "The near-threshold cross section of $e^+e^- \\to Ω^-\\barΩ^+$: Heavy-flavor rescattering and physics-informed deep learning",
+      "authors": [
+        "Sara Rahmani"
+      ],
+      "abstract": "Recent precision measurements of the $e^+e^- \\to Ω^-\\barΩ^+$ cross section by the BESIII collaboration provide a valuable opportunity to probe complex hadronic rescattering mechanisms. In this work, we investigate a potential structure near the $D_s\\bar{D}_s$ threshold using a coupled-channel framework incorporating $Ω\\barΩ$, $Ξ\\barΞ$, and $D_s\\bar{D}_s$ interactions. The driving potentials are derived from effective Lagrangians respecting heavy quark spin symmetry, chiral symmetry, and hidden local symmetry, and the scattering amplitude is unitarized via the on-shell factorization of the Bethe-Salpeter equation. To go beyond local fits and map theoretical uncertainties, we use a two-step machine-learning framework. First, Simulation-Based Inference with a Mixture Density Network maps the global Bayesian posterior of the effective couplings. Second, to identify the non-perturbative threshold dynamics without the instabilities of traditional root-finding across multiple Riemann sheets, we employ a Cauchy-Riemann Physics-Informed Neural Network (PINN). The network enforces mathematical analyticity, smoothly continuing the real-axis amplitude into the complex energy plane. We isolate a pole at $M = 3.847$ GeV with zero decay width, sitting $89$~MeV below the $D_s^-\\bar{D}_s^+$ threshold. The corresponding S-matrix residues show an overwhelming coupling to the $D_s\\bar{D}_s$ channel, indicating that the threshold dynamics are driven by a dynamically generated $D_s^-\\bar{D}_s^+$ bound state.",
+      "published": "August 10, 2026",
+      "published_raw": "2026-08-10T23:13:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.10301v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.10301v1"
+    },
+    {
+      "id": "2608.10256v1",
+      "title": "CRHT: A Continuous Regression Hybrid Transformer for Vessel Trajectory Prediction with Online Cluster Sampling",
+      "authors": [
+        "Alexander Schiøtz",
+        "Bertram Hage",
+        "Christian Rand",
+        "Felix Thomsen",
+        "Peder Heiselberg"
+      ],
+      "abstract": "Accurate vessel trajectory prediction is critical for maritime safety and anomaly detection, yet existing models often struggle with geographic bias and navigational realism. We propose the Continuous Regression Hybrid Transformer (CRHT), a deep learning framework designed to forecast vessel motion using Automatic Identification System (AIS) data. To mitigate spatial data imbalance, we introduce an online K-means cluster sampling strategy that ensures diverse exposure to rare maneuvers during training. Our hybrid architecture integrates 1D convolutional layers for local kinematic feature extraction with a multi-head attention mechanism for global temporal context. CRHT demonstrates superior performance in short-term forecasting, achieving the lowest errors at the 1-hour horizon. The results demonstrate that while discrete models provide high navigational stability over long horizons, CRHT offers an optimal balance of precision and maneuver tracking for real-time maritime surveillance.",
+      "published": "August 10, 2026",
+      "published_raw": "2026-08-10T21:42:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.10256v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.10256v1"
+    },
     {
       "id": "2608.09840v1",
       "title": "Langevin dynamics along the zero set of real-analytic potentials",
@@ -183,6 +254,22 @@
       "arxiv_link": "http://arxiv.org/abs/2608.08788v1"
     },
     {
+      "id": "2608.10022v1",
+      "title": "Deep Learning-Based Statistical Downscaling of Sea Surface Temperature Using a Residual Corrective Neural Network",
+      "authors": [
+        "Onkar Jadhav",
+        "Tim French",
+        "Ivica Janekovic",
+        "Nicole L. Jones",
+        "Matthew Rayson"
+      ],
+      "abstract": "The large-scale oceanic and atmospheric forecasts provided by global climate models typically lack sufficient resolution to accurately capture the response of the coastal ocean to atmospheric forcing and coastal circulation that drive fine-scale SST variability. Dynamical downscaling is computationally prohibitive, when applied to extensive coastlines, predictive ensembles, or long time periods. Therefore, this work presents a statistical downscaling of sea surface temperature (SST) from the seasonal coupled ocean-atmosphere forecast system (ACCESS-S2) using machine learning techniques. This study proposes a novel deep learning framework that uses a U-Net to generate an initial high-resolution SST estimate, which is subsequently refined using a residual corrective approach. The target SST fields are derived from the Regional Ocean Modeling System (ROMS). This two step approach called Residual Corrective Neural Network (RCNN) progressively refines initial U-Net predictions by incorporating dynamically scaled residuals at each step, enabling accurate capture of broad patterns and fine-grained features such as eddies and fronts. We also introduce a custom loss-assisted RCNN variant to improve performance during extreme events, which may be absent from training data due to climate-driven shifts in SST extremes. The framework efficiently downscales SST along the west coast of Australia. A 2011 marine heatwave case study shows that the RCNN improves ACCESS-S2 SST predictions by increasing horizontal resolution from 25 km to 2 km, enabling identification of fine-scale anomalies unresolved in the ACCESS-S2 dataset. This balance between computational efficiency and accuracy supports applications in coastal impact assessment and marine ecosystem studies.",
+      "published": "August 09, 2026",
+      "published_raw": "2026-08-09T11:30:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.10022v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.10022v1"
+    },
+    {
       "id": "2608.08489v1",
       "title": "No Unique Minimizer, No Problem: On the Consistency of Robust Neural Classifiers",
       "authors": [
@@ -210,92 +297,6 @@
       "published_raw": "2026-08-08T22:18:10Z",
       "pdf_link": "http://arxiv.org/pdf/2608.08350v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.08350v1"
-    },
-    {
-      "id": "2608.08259v1",
-      "title": "Topological analysis of scale-invariant spatial fluctuations in ultrarelativistic heavy-ion collisions",
-      "authors": [
-        "Salman Khurshid Malik",
-        "Ramni Gupta",
-        "Fakhar Ul Haider",
-        "Balwan Singh"
-      ],
-      "abstract": "The QGP-to-hadronic matter phase transition and QCD critical point in heavy-ion collisions can be identified by studying spatial fluctuations among final-state particles using intermittency analysis. First CMC-based intermittency analysis in the two-dimensional angular ($η$, $\\varphi$) phase space, using EPOS as the background model is presented. Critical fluctuation signals are extremely weak, constituting only a few percent of the total event sample and are severely diluted by the overwhelming non-critical background, rendering traditional intermittency analyses insufficient for reliable signal extraction. To extract the weak critical signal, we employ a two-stage topological machine learning framework combining Topological Data Analysis (TDA) with deep learning. In the first stage, particle events are represented as two-dimensional point clouds and a Delaunay-based sub-level set filtration is constructed to extract Betti curves as multiscale topological invariants, corrected for multiplicity bias via azimuthal randomisation and classified by two complementary architectures, a TopoPointNet (TPN) and Boosted Decision Trees (BDT). Since event-level classification alone is insufficient to restore the critical scaling, a second stage applies a particle-level density filter, explicitly stripping away the diffuse thermal background and isolating the densely packed critical clusters. The two stage pipeline successfully restores the power-law scaling of the normalized factorial moments, enabling accurate recovery of the intermittency index in ($η$, $\\varphi$) space and establishing topological machine learning as a robust data driven tool for probing the QCD critical point and the phase structure of strongly interacting matter in heavy-ion collisions at LHC energies.",
-      "published": "August 08, 2026",
-      "published_raw": "2026-08-08T17:42:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.08259v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.08259v1"
-    },
-    {
-      "id": "2608.08148v1",
-      "title": "DoGMA: A Central-Dogma-Guided Foundation Model for Multi-Omics Alignment and Multi-Task Learning in Oncology",
-      "authors": [
-        "Junfei Ling",
-        "Bangzheng Pu",
-        "Bingsen Xue",
-        "Tianle Li",
-        "Ruying Hu",
-        "Cheng Jin"
-      ],
-      "abstract": "Attention mechanisms have been widely utilized in modern deep learning, and many existing multi-omics models inherit their conventional use to allow unrestricted bidirectional interactions. However, the fundamental logic of life is directional. Existing designs often overlook the directionality suggested by the central dogma, potentially limiting transfer across heterogeneous cancers, downstream tasks, and incomplete modality settings.In this work, we present DoGMA, a central-dogma-guided foundation model for pan-cancer multi-omics analysis, arguing that robust transfer requires representations with domain-specific inductive bias. Concretely, we build it on a Transformer-MoE architecture where directed attention biases inter-omics communication toward central-dogma information flow. We further pretrain our model with masked hierarchical omics reconstruction to guide it toward learning central-dogma-consistent interactions. Across diverse downstream tasks, including cancer representation learning, survival prediction, and metastasis prediction, DoGMA consistently demonstrates strong predictive performance. Ablations and analyses further suggest that the performance gains arise from the synergy between central-dogma-guided directed attention and reconstruction-based pretraining, which together promote more biologically consistent cross-omics information exchange. Overall, DoGMA demonstrates that domain-specific inductive biases can improve the robustness and transferability of multi-omics foundation models, offering new insights into the design of attention mechanisms for multi-omics representation learning.",
-      "published": "August 08, 2026",
-      "published_raw": "2026-08-08T14:15:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.08148v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.08148v1"
-    },
-    {
-      "id": "2608.07393v1",
-      "title": "FedDOSE: Federated Learning Framework Decomposing Site Effects for Modeling Brain Dynamic Functional Connectivity",
-      "authors": [
-        "Deepank Girish",
-        "Yi Hao Chan",
-        "Yubin Zheng",
-        "Sukrit Gupta",
-        "Jagath C. Rajapakse"
-      ],
-      "abstract": "Functional Magnetic Resonance Imaging ( fMRI ) data are often pooled into collaborative multi-site consortia, as deep learning models for analyses require large datasets to generalize well. While Federated Learning (FL) offers a privacy-preserving paradigm for collaborative training, standard approaches continue to struggle with statistical heterogeneity. In particular, site differences pose a key challenge in multi-site data settings. Additionally, existing FL approaches for fMRI rely on static Functional Connectivity ( FC), omitting dynamic information in brain networks. To address this, we propose FedDOSE, a novel framework that explicitly decomposes site differences for analysis of dynamic FC (dFC). FedDOSE introduces a Modularity-Guided Tucker Decomposition block to encode high-dimensional dFC tensors and capture modular-level spatio-temporal patterns efficiently. Class-specific prototypes are generated across all sites and subsequently aligned at the global level by using a combination of Optimal Transport (OT) barycenter formulation and Procrustes analysis. Extensive experiments for diagnosing Autism Spectrum Disorder (ASD) and Attention-Deficit Hyperactivity Disorder (ADHD) on three multi-site resting-state fMRI datasets: ABIDE-I, ABIDE-II, and ADHD-200, demonstrate that FedDOSE outperforms state-of-the-art methods in ASD and ADHD detection. Our results highlight its effectiveness in learning robust representations from multi-site datasets for reliable analysis.",
-      "published": "August 07, 2026",
-      "published_raw": "2026-08-07T16:37:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.07393v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.07393v1"
-    },
-    {
-      "id": "2608.07220v1",
-      "title": "Beyond the Black Box: Interpretable Models of Human Randomisation Failures",
-      "authors": [
-        "Ngoc Linh Dao"
-      ],
-      "abstract": "Mixed strategy equilibrium predicts i.i.d play: past actions should not help predict future decisions. Human players, however, systematically depart from this benchmark, and in O'Neill's zero sum card game, these departures can be predicted by black box sequence models such as LSTMs. This paper asks whether that predictive power can be achieved by transparent alternatives that also reveal the behavioural structure behind it. Using 84,060 decisions from 2,802 pairs, the analysis first benchmarks naive and behavioral models against interpretable machine learning and deep learning models, then evaluates the modified EWA specifications of prior work against these benchmarks and uses the LASSO diagnostics to motivate a further nested frequency tracking extension. The results show that repeat or avoid behavior, especially players' management of their own recent action histories, accounts for most of the interpretable and strategically exploitable signal, while frequency tracking adds little out of sample.",
-      "published": "August 07, 2026",
-      "published_raw": "2026-08-07T13:36:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.07220v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.07220v1"
-    },
-    {
-      "id": "2608.07630v1",
-      "title": "Tracing sources of epistemic uncertainty in deep learning predictions: homo- and hetero-scedastic linearized estimators",
-      "authors": [
-        "Pierre Nodet",
-        "Thomas George"
-      ],
-      "abstract": "We adapt two classical statistical estimators for quantifying uncertainty to modern deep learning, in order to provide clearer insights into uncertainty attributable to two sources : aleatoric uncertainty, or locally scarce data. Our approach leverages recent advances in approximate Fisher Information Matrices, to enable scaling to actual architectures. Experimental results demonstrate how each test points is differentially impacted by both sources, highlighting the practical utility of our estimators in improving the robustness of real-world applications.",
-      "published": "August 07, 2026",
-      "published_raw": "2026-08-07T12:18:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.07630v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.07630v1"
-    },
-    {
-      "id": "2608.07106v1",
-      "title": "Synthetic LiDAR Data Generation and Deterministic Downsampling for Point Cloud Classification on the Edge",
-      "authors": [
-        "Niclas Meyer",
-        "Stefan Reitmann"
-      ],
-      "abstract": "Deploying three-dimensional deep learning frameworks to low-power embedded processors is bottlenecked by the unstructured nature of spatial data and the resource-intensive distance sorting algorithms often used before neural network inference. To address this gap, this paper presents a hardware-constrained workflow optimized for native execution on the Raspberry Pi 5. To account for the reality gap between noiseless, clean computer-aided design (CAD) datasets and real-world sensor data, we use physics-based simulation to construct a synthetic LiDAR dataset. Cross-dataset evaluations demonstrate a substantial drop in classification accuracy when networks trained on clean CAD data are evaluated on synthetic LiDAR sensor data, highlighting the critical need for sensor-aware training. To address the latency bottleneck of traditional geometric preprocessing on edge CPUs, we integrate an isolated, feature-driven Critical Points Layer (CPL) as a frontend filter. Our results show that the pretrained CPL deterministically compresses raw 1024-point clouds to a subset of 40 to 60 unique coordinates. When profiled on the ARM Cortex-A76 processor, the complete pipeline achieves an inference throughput of approximately 50 FPS while maintaining an instance classification accuracy of 88.36%, demonstrating the viability of deterministic real-time 3D perception at the edge.",
-      "published": "August 07, 2026",
-      "published_raw": "2026-08-07T11:02:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.07106v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.07106v1"
     }
   ]
 }
