@@ -1,302 +1,318 @@
 {
-  "last_updated": "2026-08-13T00:53:57.079532",
+  "last_updated": "2026-08-14T00:53:12.634695",
   "count": 20,
   "papers": [
     {
-      "id": "2608.11054v1",
-      "title": "Uncertainty-Aware Deep Learning for Genomics Applications: Insights from an Empirical Study",
+      "id": "2608.12198v1",
+      "title": "Learning-Based Behavior Planning for Automated Driving: Real-World Integration and Deployment",
       "authors": [
-        "Sepideh Saran",
-        "Mahsa Ghanbari",
-        "Uwe Ohler"
+        "Jean-Pierre Busch",
+        "Guido Linden",
+        "Jan Bergmann",
+        "Lutz Eckstein"
       ],
-      "abstract": "Deep learning models have emerged as the standard computational tool for a wide range of applications in genomics. Yet, uncertainty quantification (UQ) -- and more specifically, the reliability of different uncertainty estimates in this domain -- has received little systematic attention. This work presents an empirical analysis of UQ in deep learning models, focusing on genomics applications. In a series of experiments, we contrast Deep Ensembles, Bayesian Neural Networks, and Monte Carlo-dropout methods. We assess their ability to quantify uncertainty in different scenarios, accounting for common dataset characteristics in two genomic application areas and modalities: sequence-to-activity models, and single-cell expression analysis. Our systematic comparison framework provides guidelines for the applicability and reliability of UQ methods in genomics, highlighting their strengths and limitations in different scenarios. We show that Bayesian Neural Networks are better at capturing uncertainty caused by strong class imbalance and out-of-distribution data in genomics, despite their computational disadvantages. Moreover, we show how uncertainty scores can be used to select high-quality predictions in protein-RNA interactions.",
+      "abstract": "Recent research in machine and deep learning has shown the potential of learningbased motion planning approaches to improve the driving behavior of automated vehicles, especially in complex environments. However, their complex nature and lack of transparency can hinder explainability and trustworthiness and complicate safety assurance. Motivated by these challenges, we propose a hybrid planning architecture that combines the advantages of machine learning with the verifiability and the determinism of classical approaches. Specifically, we developed a deep neural network to interpret complex traffic scenes and propose driving behavior, while an optimization-based supervision layer validates this proposal and enforces explicit drivability and safety constraints. We evaluate the learned planner's driving behavior in open-loop studies on real-world urban data, discuss system integration aspects for stable closed-loop operation, and report results from real-world deployment on our research vehicle karl..",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T15:52:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.12198v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.12198v1"
+    },
+    {
+      "id": "2608.12144v1",
+      "title": "ADEPT: A Unified Framework for Deep Learning Test Adequacy",
+      "authors": [
+        "Yidi Kao",
+        "Shawn Burnham",
+        "Tommi Rose Fahy",
+        "Ali Ghanbari"
+      ],
+      "abstract": "Over the past decade, many test adequacy metrics have been proposed for deep learning that characterize test dataset adequacy from different perspectives, e.g., neuron activation behavior, latent feature coverage, decision-boundary exploration, etc. However, these metrics are typically released as independent research prototypes with substantially different installation and preprocessing requirements, execution workflows, and configuration mechanisms. These complications make them quite difficult to reproduce, compare, and adopt in research work and practical deployment alike. In this paper, we present the engineering details of ADEPT, a framework that integrates representative adequacy techniques, including neuron-coverage-based metrics, surprise adequacy, input distribution coverage, boundary coverage, and source- and model-level mutation score, under a consistent execution workflow. ADEPT provides a template-based metric interface with well-defined extension points for integrating new adequacy metrics. Furthermore, it provides YAML-based configuration management, preprocessing-cache reuse, and structured result reporting, making it easy to use in any research and development workflows. ADEPT is designed for researchers and practitioners who wish to reproduce and apply adequacy metrics without spending days or weeks implementing missing tooling or configuring disparate research prototypes. A demo video is available at https://aub.ie/ADEPT_video.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T15:03:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.12144v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.12144v1"
+    },
+    {
+      "id": "2608.12117v1",
+      "title": "Attractor Image-Based Deep Learning of Arterial Pulse Waves for Age Classification",
+      "authors": [
+        "Sara Vardanega",
+        "Patrick Segers",
+        "Philip Aston",
+        "Ernst Rietzschel",
+        "Jordi Alastruey",
+        "Manasi Nandi"
+      ],
+      "abstract": "Arterial pulse waveform morphology evolves with age, reflecting structural and functional changes in the cardiovascular system. Thus, vascular age is a valuable surrogate marker of cardiovascular health, and premature vascular ageing can indicate increased disease risk. Pulse wave analysis could support risk stratification in otherwise asymptomatic adults. We transformed pulse wave time-series data from photoplethysmography (PPG) and arterial tonometry into images, using the Symmetric Projection Attractor Reconstruction (SPAR) method. These SPAR images were used to train a convolutional neural network to classify healthy subjects into two closely spaced age groups (35-40 and 50-55 years). The model demonstrated consistent classification performance across internal and external test sets, achieving F1 scores above 70% for both PPG and tonometry signals. These results suggest that SPAR-derived pulse wave images contain discriminative morphological features even among healthy adults close in age. This proof-of-concept lays the groundwork for future research into the use of SPAR for early risk detection using smart wearables.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T14:39:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.12117v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.12117v1"
+    },
+    {
+      "id": "2608.12100v1",
+      "title": "Confidence Calibration of Deep Learning Systems",
+      "authors": [
+        "Coby Penso"
+      ],
+      "abstract": "In high-stakes applications, reliable confidence estimates are as important as the predictions themselves. Confidence calibration ensures that predicted probabilities reflect the likelihood of correctness, making it essential for safe deployment of deep learning models. However, existing methods typically assume access to clean validation data, which is often unrealistic due to label noise and domain shifts. This thesis develops methods for improving calibration under these conditions. First, we address calibration under label noise. Standard methods can produce misleading confidence estimates when labels are unreliable. We propose a framework that uses an estimated noise model to reconstruct noise-free confidence estimates by modeling the relationship between noisy and clean label distributions. We extend this approach to Conformal Prediction (CP), which provides set-valued predictions with guaranteed coverage. Our noise-aware CP method estimates clean conformity scores despite label noise, enabling reliable uncertainty quantification. Next, we study calibration in unsupervised domain adaptation, where a model trained on a labeled source domain is adapted to an unlabeled target domain. Since labeled target data are unavailable, we estimate target-domain accuracy from source performance and domain discrepancies, enabling calibration without target labels. We also consider privacy-preserving settings in which user labels and model outputs must remain protected. We propose a locally differentially private conformal prediction framework that provides valid uncertainty quantification while maintaining privacy guarantees and balancing privacy, computational feasibility, and prediction reliability. Our results bridge calibration theory and practical deployment in safety-critical applications, contributing to reliable, privacy-preserving, and noise-resilient neural network predictions.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T14:23:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.12100v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.12100v1"
+    },
+    {
+      "id": "2608.12007v1",
+      "title": "Dual-Model Sentiment Analysis of Consumer Reviews in the Retail Coffee Sector Using Machine Learning and Deep Learning Approaches",
+      "authors": [
+        "Muntasir Hasan Kanchan",
+        "Md. Alamgir Hossain",
+        "Md. Samiul Islam",
+        "Muhammad Masud Tarek"
+      ],
+      "abstract": "Consumer reviews play an important role in shaping brand perception and business strategies, particularly in service-driven industries such as retail coffee. This study presents a comparative sentiment analysis framework for Starbucks customer reviews using classical machine learning and deep learning approaches. The dataset, collected from ConsumerAffairs, contains more than 700 reviews and was analyzed through preprocessing and exploratory data analysis to identify temporal and geographic patterns. Sentiment labels were generated by binarizing star ratings, with ratings of 4 and 5 classified as positive and ratings of 1 to 3 as negative. The resulting dataset was substantially imbalanced toward negative sentiment. Five machine learning classifiers, including Logistic Regression, Support Vector Machine (SVM), Decision Tree, Random Forest, and Naive Bayes, were evaluated alongside five deep learning models: LSTM, RNN, Bidirectional LSTM, GRU, and CNN. Model performance was assessed using accuracy, precision, recall, and F1-score. SVM achieved the highest accuracy among the machine learning models at 91.0 percent, while Bidirectional LSTM showed the strongest performance among the deep learning models and demonstrated good generalization on unseen data. The findings also show that class imbalance negatively affected positive sentiment recall across several models. Overall, this study provides a comparative evaluation of machine learning and deep learning approaches for real-world consumer sentiment analysis and highlights the importance of appropriate model selection and preprocessing for customer experience analytics in the retail coffee sector.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T12:44:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.12007v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.12007v1"
+    },
+    {
+      "id": "2608.11951v1",
+      "title": "TailBooster: A Dual-Layer Generative Framework for Extreme Value Augmentation with Operational Validity Enforcement",
+      "authors": [
+        "Karim Aly",
+        "Alexei Sharpanskykh",
+        "Jacco Hoekstra"
+      ],
+      "abstract": "Extreme events in air transport, such as severe arrival delays and abnormal air times, cause cascading network disruptions with substantial operational, economic, and safety costs. Such events are rare in historical records, leaving insufficient training signal for machine learning models. Synthetic data augmentation offers a principled solution, but conventional generative models under-represent distributional tails and give no guarantee against operationally infeasible instances, such as a short air time paired with a long flight distance. No existing approach addresses both limitations for mixed-type tabular records. We propose TailBooster, a dual-layer generative framework combining generative modelling with two anomaly detection layers. A statistical layer extracts extremes via the interquartile range, supplying tail-concentrated training signal to dedicated generative models, here a Tabular Variational Autoencoder. A deep learning layer then applies autoencoder-based cleaning, discarding synthetic records that violate the operational envelope learned from historical data. The framework was evaluated on US flight records across five dimensions: diversity, statistical similarity, fidelity, operational validity, and utility, the latter two being the primary improvement targets. Data-driven cleaning markedly improved operational validity, while targeted augmentation enhanced utility for extreme-event prediction. Across six regression algorithms, training on the framework's records reduced Mean Absolute Error by 47-49% on extreme air time and 29-57% on extreme arrival delay prediction relative to conventional synthetic data, with comparable gains when real records were enriched with synthetic extremes. Being fully data-driven and model-agnostic, TailBooster extends to domains where extreme-event prediction is critical and domain-specific rules are unavailable.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T11:37:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11951v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11951v1"
+    },
+    {
+      "id": "2608.11942v1",
+      "title": "Evaluating and Calibrating Diffusion Model-derived Uncertainty for Quantitative MRI Mapping",
+      "authors": [
+        "Shishuai Wang",
+        "Stefan Klein",
+        "Juan A. Hernandez-Tamames",
+        "Dirk H. J. Poot"
+      ],
+      "abstract": "Quantitative MRI (qMRI) provides standardised tissue parameter maps, but the reliability of deep learning-based qMRI mapping methods is often not explicitly characterised. In this work we systematically evaluate uncertainty maps for quantitative MRI derived from multiple inferences of a data-consistent diffusion model-based qMRI framework. Evaluation on synthetic test data assessed error-awareness, high-error detection, selective prediction, and Gaussian interval calibration. Diffusion model-derived uncertainty was positively associated with the mapping error, while risk-coverage analysis showed that excluding high-uncertainty voxels reduced the retained error. However, the raw uncertainty was poorly calibrated for quantitative interval interpretation. Calibration was substantially improved using a post-hoc procedure combining prediction-value-dependent bias correction with scalar uncertainty scaling. Qualitative evaluation on a healthy volunteer showed spatially meaningful uncertainty patterns. These results indicate that diffusion model-derived uncertainty is informative for reliability assessment and selective prediction, but requires calibration for quantitative interval interpretation.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T11:30:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11942v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11942v1"
+    },
+    {
+      "id": "2608.11839v1",
+      "title": "Air Quality Station Simulation via LSTM and Attention-Based Modelling",
+      "authors": [
+        "Alexander Kostadinov",
+        "Petar O. Hristov",
+        "Dessislava Petrova-Antonova"
+      ],
+      "abstract": "Poor air quality in urban areas is driven by a complex chain of processes and presents a significant public health concern. To better understand and control the mechanisms that determine air quality, cities deploy networks of measurement stations, and launch initiatives for collecting denser data about the concentration of pollutants in the atmosphere. Extracting insights from the stations relies on their reliable and uninterrupted operation. However, hardware is susceptible to faults and black- outs that may result in data unavailability, which affects the overall quality of analyses. In this paper, we present a deep-learning model, called SATADL, which can infer complex relations and output multiple-hour-ahead air-quality forecasts. The goal of the model is to simulate the mea- surements of an unresponsive station until its operation is restored. The architecture of the model, which allows it to extract information from different aspects of the data, is described in detail and a careful examination of all of its components is provided. We demonstrate the performance of SATADL on four sets of air quality stations from around the world, by using it to simulate the concentration of PM10 for periods of hypothetical failures of one of the measurement stations, lasting for as long as 48 hours. A selection of baseline and published deep learning models were trained and used as a benchmark. The results show that SATADL per- forms better across different prediction windows, for both coefficient of determination and root mean squared error, demonstrating its suitability as a virtual proxy station.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T09:26:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11839v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11839v1"
+    },
+    {
+      "id": "2608.11831v1",
+      "title": "Kernel Methods for Learning Operators with Multiple Inputs and Outputs",
+      "authors": [
+        "Adrien Weihs",
+        "Chunyang Liao",
+        "Jingmin Sun",
+        "Hayden Schaeffer"
+      ],
+      "abstract": "Learning mappings between infinite-dimensional objects is a central challenge in scientific machine learning. We introduce a general kernel-based encoder-decoder framework for operator learning that separates observation, representation, learning, and reconstruction. We develop this framework for multi-input, multi-output operator learning, where operators map between products of potentially distinct function spaces. Our approximation theory shows that, although the number of inputs and outputs can increase, the convergence rate is governed by the most challenging constituent approximation problem rather than the overall problem dimension. The framework leads to practical kernel methods with closed-form training and inference, combining mathematical tractability with computational efficiency. We further specialize the approach to multiple operator learning by introducing KernelMO, a family of kernel methods with complementary operator-valued and product-space formulations. Across five families of parametric partial differential equations, the proposed methods achieve competitive or state-of-the-art predictive accuracy while reducing training and inference costs relative to neural operator architectures and deep learning based models, offering an efficient and lightweight alternative.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T09:15:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11831v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11831v1"
+    },
+    {
+      "id": "2608.11810v1",
+      "title": "Can Vision Models Read the Radar Display? On the Feasibility of Radar Imagery for Air Traffic Complexity Estimation",
+      "authors": [
+        "Hyewook Kim",
+        "Byul Kang",
+        "Seokbin Yoon",
+        "Keumjin Lee"
+      ],
+      "abstract": "Air traffic controllers perceive traffic complexity through the radar display, suggesting that a computer vision model operating on the same imagery may provide a natural architecture for modeling controller-perceived complexity; however, whether radar imagery is a viable input format for deep learning vision models remains unclear. Unlike natural images, radar images are extremely sparse and self-similar, consisting primarily of a black background and a few visually identical aircraft blobs, while small changes in aircraft positions can substantially alter sector-level complexity. To test whether a vision model can capture these operationally important differences, we encode each traffic situation as a position image supplemented by five channels representing aircraft state variables, including heading, speed, and altitude, and train a Vision Transformer (ViT) to regress four intrinsic complexity components derived from pairwise geometric relations among aircraft. The model achieves $R^2 > 0.96$ for all four components, and a one-aircraft-removal perturbation study shows that its response changes proportionally to how much the removed aircraft contributed to sector complexity rather than treating every removal as equivalent. These results demonstrate that, despite its atypical visual characteristics, radar imagery is a viable input format for air traffic complexity modeling.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T08:53:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11810v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11810v1"
+    },
+    {
+      "id": "2608.11762v1",
+      "title": "A comparison of CNN architectures for Alzheimer's disease detection in single-view MRI scans",
+      "authors": [
+        "Hiram Zuniga",
+        "Ulises Orozco-Rosas",
+        "Kenia Picos"
+      ],
+      "abstract": "Alzheimer's disease is a leading cause of death with no cure. Therefore, early detection is critical to slow progression and preserve quality of life. Diagnosis relies on medical history, cognitive tests, physical exams, and MRI brain scans, making deep learning suitable for Alzheimer's classification. This work proposes a benchmark that evaluates ten different convolutional neural network (CNN) architectures (including ResNet, DenseNet, MobileNet, EfficientNet, and VGG family models) under the same held-out test split protocol. A two-stage transfer learning and full fine-tuning pipeline is introduced to perform training using a class-balanced subset (3,900 images) derived from the OASIS medical imaging dataset, comprising 86,437 single-view MRI brain scans labeled into four classifications of Alzheimer's disease: Non-Demented, Very Mild Dementia, Mild Dementia, and Moderate Dementia. The best results were achieved by VGG16, with a 0.9637 validation accuracy and a 0.9533 test accuracy score. A key finding documented in this work is the difficulty of classifying the transition from Non-Demented to Very Mild Demented stages, observed consistently across all ten architectures.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T08:01:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11762v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11762v1"
+    },
+    {
+      "id": "2608.11759v1",
+      "title": "Automated binary classification of hazelnut X-ray images: A deep-learning benchmark for quality assessment",
+      "authors": [
+        "Giancarlo Sportelli",
+        "Nicola Belcari",
+        "Roberta Pace",
+        "Umberto Bernardo",
+        "Sharmin Sultana",
+        "Alessandra Toncelli",
+        "Matteo Giaccone"
+      ],
+      "abstract": "Non-destructive X-ray imaging can reveal internal hazelnut defects that are difficult to detect by external inspection alone; however, automated interpretation remains challenging because of subtle radiographic differences among classes, marked class imbalance, and limited annotated data. Here, we present a benchmark for binary hazelnut quality classification (healthy versus defective) based on 799 segmented single-kernel X-ray images (224 x 224 pixels, grayscale), grouped into 101 acquisition units. Seven single-model configurations and ten probability-aggregation ensembles were evaluated using a group-wise split-rotation protocol across five data splits generated using different random seeds. Decision thresholds were selected on the validation set, and performance was assessed deterministically on validation and test sets. Under the expert-reassessed annotation condition, the average-probability ensemble of the binary cross-entropy-trained convolutional neural network and frozen Swin Transformer achieved the highest mean balanced accuracy (86.3% +/- 1.8%, five seeds), with several other ensembles providing comparable performance. Across methods, substantial split-to-split variability was observed, indicating that multi-split evaluation is essential for reliable model comparison at this dataset scale. Expert reassessment of ambiguous samples improved the performance of all 17 evaluated methods by 2.8-8.1 percentage points, while having only a limited effect on cross-split variance. The results highlight both the potential of deep learning for automated X-ray-based hazelnut quality assessment and the importance of rigorous evaluation and label curation in small, imbalanced agricultural imaging datasets.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T07:55:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11759v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11759v1"
+    },
+    {
+      "id": "2608.11725v1",
+      "title": "Deep-Learning-Accelerated Dopant Selection for High-k HfO2 Dielectrics: A Disorder-Resolved Study of Y, Si and Al",
+      "authors": [
+        "Zunair Masroor",
+        "Bonwook Gu",
+        "Wonjoong Kim",
+        "Trinh Ngoc Le",
+        "Summal Zoha",
+        "Han-Bo-Ram Lee"
+      ],
+      "abstract": "Hafnium oxide (HfO2) is the cornerstone high-k dielectric in modern silicon technology. Since the constraints of silicon device fabrication rule out replacing the material itself, dopant incorporation is the principal means available to engineer its band gap and dielectric constant within existing process flows. However, dopant selection is still largely empirical due to the coupled interplay among thermodynamic stability, electronic insulation, and dielectric response. Here, we present a high-throughput computational framework integrating special quasi-random structures (SQS), machine-learning potentials (SevenNet), and graph neural networks (ALIGNN) to systematically evaluate doped-HfO2 compositions across three dopants (Al, Si, Y) and two technologically relevant polymorphs (monoclinic and orthorhombic). Our analysis uncovers a fundamental design principle: formation energy, band gap, and dielectric constant are decoupled parameters requiring application-specific prioritization rather than simultaneous optimization. Yttrium achieves the lowest formation energy (-3.763 eV/atom) and favors orthorhombic phase stabilization at process-compatible thermal budgets; silicon preserves near-pristine band gaps (around 5.72 eV) critical for suppressing leakage in gate dielectric applications; and aluminum enables concentration-tunable band gap widening (5.6-5.9 eV) suited for voltage scaling. Validation against experimental literature and density functional theory (DFT) confirms quantitative accuracy (0.02 eV band gap error for Si-doping, mean absolute error less than 0.001 eV/atom formation energy). This framework provides rational, property-decoupled guidance for dopant engineering in HfO2-based dielectrics and related high-k oxide systems.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T07:03:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11725v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11725v1"
+    },
+    {
+      "id": "2608.11643v1",
+      "title": "Robustness of AI-Art Detectors under Generator Shift",
+      "authors": [
+        "Shivank Singh Thakur",
+        "Meien Li",
+        "Mark Stamp"
+      ],
+      "abstract": "Text-to-image generative models have advanced rapidly, with modern Diffusion Transformer architectures producing images that are increasingly difficult to distinguish from human-created artwork. This development has raised significant concerns regarding copyright protection, misinformation, fraud, impersonation, and the authenticity of digital content. Most AI-art detectors are trained and evaluated on the same generator family, leaving robustness to newer architectures underexplored. In this chapter, we analyze generator shift based on a Stable Diffusion 3.5 Medium (SD3.5m) artwork dataset spanning ten art styles through reverse prompting of held-out human artwork samples. Five detectors are trained on U-Net-based latent diffusion artwork and evaluated in a zero-shot cross-generator setting on the SD3.5m dataset. Deep learning models perform strongly in-distribution but degrade under generator shift, misclassifying many SD3.5m images as human while human false positives remain low. The CLIP ViT-L/14 model performs best overall, while Grad-CAM analysis reveals weaker and more diffuse activation on false negatives. These findings highlight a generalization gap in current AI-art detectors and motivate the development of detectors as one component of a layered defense that remains reliable across rapidly evolving generative architectures.",
+      "published": "August 12, 2026",
+      "published_raw": "2026-08-12T04:41:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11643v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11643v1"
+    },
+    {
+      "id": "2608.11472v1",
+      "title": "Gaussian Meta-Space Augmentation for Stacking Ensembles in Multimodal IPMN Risk Stratification",
+      "authors": [
+        "Max A. Nelson",
+        "Eminenur Sen Tasci",
+        "Zhixiang Wang",
+        "Zongwei Zhou",
+        "Halil Ertugrul Aktas",
+        "Andrea M. Bejar",
+        "Elif Keles",
+        "Ziliang Hong",
+        "Sıtkı Safa Taflan",
+        "Muhammed Enes Tasci",
+        "Frank H. Miller",
+        "Michael B. Wallace",
+        "Rajesh N. Keswani",
+        "Gorkem Durak",
+        "Ulas Bagci"
+      ],
+      "abstract": "Pancreatic cancer is among the most lethal malignancies; risk stratification of intraductal papillary mucinous neoplasms (IPMNs) offers a crucial opportunity for early intervention but typically requires invasive tissue biopsy. Dominant vision-based approaches, including radiomics and deep learning, provide promising but initially separate discrimination opportunities. Similarly, multisequence MRI (T1W/T2W) and anatomically decomposed (head, body and tail) analysis of the pancreas provide additional and potentially complementary signals. Effective fusion of this information is crucial in ordinal IPMN dysplasia risk prediction and can be accomplished via a meticulously regularized and calibrated ensemble stacking combiner. We present cUPMI, a class-conditional Gaussian augmentation of a combiner's log-probability meta-features, and test it on various prediction paradigms. In our multi-center analysis, we find cUPMI adds limited value to properly regularized L2-logistic binary classification stacks, but consistently regularizes higher-capacity tree combiners in the binary and radiomics-only setting (RF +0.015 and XGBoost +0.024 binary AUC, positive in all seeds). Its cleanest ordinal benefit appears for XGBoost on an 8-stream radiomics task (3-class no < low < high, +0.022 QWK in all seeds). Separately, fold-locked fusion of radiomics and 2.5D CNN streams yields the strongest overall model, an RF stack reaching QWK 0.595 (95% CI [0.54, 0.64]) and binary AUC 0.839, surpassing radiomics, 2.5D ResNet, and 3D DenseNet-121 baselines.",
       "published": "August 11, 2026",
-      "published_raw": "2026-08-11T15:23:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.11054v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.11054v1"
+      "published_raw": "2026-08-11T22:17:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11472v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11472v1"
     },
     {
-      "id": "2608.10969v1",
-      "title": "GARLIC: Graph Attention-based Relational Learning of Multivariate Time Series in Intensive Care",
+      "id": "2608.11446v1",
+      "title": "XGBoost \"is all you need\": the case of forecasting transmitted heat energy in District Heating Systems",
       "authors": [
-        "Ruirui Wang",
-        "Yanke Li",
-        "Manuel Günther",
-        "Diego Paez-Granados"
+        "Milan Zdravković"
       ],
-      "abstract": "Healthcare data, such as Intensive Care Unit (ICU) records, comprise heterogeneous multivariate time series sampled at irregular intervals with pervasive missingness. However, clinical applications demand predictive models that are both accurate and interpretable. We present our Graph Attention-based Relational Learning for Intensive Care (GARLIC) model, a novel neural network architecture that imputes missing data through a learnable exponential-decay encoder, captures inter-sensor dependencies via time-lagged summary graphs, and fuses global patterns with cross-dimensional sequential attention. All attention weights and graph edges are learned end-to-end to serve as built-in observation-, signal-, and edge-level explanations. To reconcile auxiliary reconstruction and primary classification objectives, we developed an alternating decoupled optimization scheme that stabilizes training. On three ICU benchmarks (PhysioNet 2012 & 2019, MIMIC-III), GARLIC sets the new state of the art in outcome prediction, significantly improving AUROC and AUPRC over best-performing baselines at comparable computational cost. Ablation studies confirm the contribution of each module, and feature-removal trials validate the fidelity of importance attribution through a monotonic performance drop (full > top 50% > random 50% > bottom 50%). Real-time case studies demonstrate actionable risk warnings with transparent explanations, marking a significant advance toward accurate, explainable deep learning for irregularly sampled ICU time series data. Moreover, we demonstrated \\proposed{}'s superiority in data imputation and classification on various time-series datasets beyond the ICU domain, showing its generalizability and applicability to broader tasks.",
+      "abstract": "This paper presents a comparative study of two distinct approaches, XGBoost and Long-Short Term Memory (LSTM), for forecasting transmitted heat energy in District Heating Systems (DHS). The objective is to explore scenarios in which conventional ML algorithms demonstrate better performance over deep learning networks in time series forecasting and the associated benefits in terms of computational cost and environmental impact. The study focuses on a real-world DHS dataset. Through experimentation and analysis, it is demonstrated that XGBoost consistently outperforms LSTM in this specific forecasting task. The difference is explained by the error distribution illustrating that LSTM makes more significant errors in the intervals of less data availability. The reduced computational demands of conventional ML approaches not only result in cost savings but also minimize the carbon footprint associated with data analysis tasks in energy systems.",
       "published": "August 11, 2026",
-      "published_raw": "2026-08-11T14:29:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.10969v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.10969v1"
+      "published_raw": "2026-08-11T21:24:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11446v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11446v1"
     },
     {
-      "id": "2608.10710v1",
-      "title": "LLM Ensemble Fault Classification for Automotive HiL Validation",
+      "id": "2608.11435v1",
+      "title": "Variational Parameter Calibration with Physics-Aware Latent-Space Surrogates",
       "authors": [
-        "Hamza Ouarrad",
-        "Mohammad Abboush",
-        "Andreas Rausch"
+        "Qiyao Zhou",
+        "Xujia Zhu",
+        "Pierre Joli",
+        "Yu Cong",
+        "Sibo Cheng"
       ],
-      "abstract": "Automotive HiL validation generates large multivariate test recordings whose analysis remains challenging due to manual review effort, rule-based limitations, and the need for explainable diagnostic decisions. Recent machine-learning and deep-learning approaches have improved fault diagnosis, but they often require large labelled datasets, generalise poorly across operating conditions, and provide limited insight into their predictions. This paper proposes an explainable multi-LLM ensemble framework for sensor-level fault classification in automotive validation. The framework uses compact evidence representations of fault-injection recordings and combines the outputs of heterogeneous large language models to improve diagnostic robustness, ranking quality, confidence reliability, and interpretability. The approach is evaluated on gasoline-engine and electric-vehicle HiL systems across three driving settings and ten single-fault classes. Among the individual models, Mistral Small~24B provides the strongest overall single-model trade-off, achieving 0.903 Top-1 accuracy, 0.887 MCC, and the lowest Brier score of 0.102. The final Top-3 ensemble combines Mistral Small~24B, Qwen2.5~32B, and Phi-4~14B using confidence-weighted voting, improving the scenario-averaged results to 0.917 Top-1 accuracy, 0.913 macro F1, and 0.902 MCC, while also providing the best calibration among the tested ensemble strategies. A Top-5 ensemble does not improve over the Top-3 configuration, indicating that model complementarity is more important than ensemble size. The results show that coordinated multi-LLM reasoning can support robust, calibrated, and engineer-interpretable fault classification for automotive HiL validation.",
+      "abstract": "Forward and inverse modeling of parametric dynamical systems requires surrogate models that are not only accurate for state prediction, but also informative for parameter calibration. However, a systematic end-to-end differentiable formulation for coupling deep-learning-based reduced-order surrogates with variational parameter estimation remains underdeveloped. In this work, we introduce a physics-aware neural-network-based latent-space framework for reduced-order forward modeling and variational parameter estimation. The proposed autoencoder-based approach yields a differentiable surrogate that maps physical parameters to predicted flow fields through a latent representation. The observable supervision is used during offline training to encourage the latent variables to retain information correlated with system parameters, while the online inverse problem is solved in the parameter space through the surrogate-induced observation operator. The method is evaluated on two computational-fluid-dynamics benchmarks. The results show that reconstruction accuracy alone is insufficient for inverse modeling, owing to the lack of end-to-end differentiability or physics awareness for variational parameter calibration. Quantitative latent-space analysis further shows that observable supervision improves case-level separability and temporal organization of latent representations. Experiments with realistic measurement settings, including noisy, low-resolution, randomly masked, and block-wise partial observations, demonstrate the robustness of the proposed framework and show that it generally reduces calibration error and variability compared with the standard surrogate models.",
       "published": "August 11, 2026",
-      "published_raw": "2026-08-11T09:31:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.10710v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.10710v1"
+      "published_raw": "2026-08-11T21:02:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11435v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11435v1"
     },
     {
-      "id": "2608.10301v1",
-      "title": "The near-threshold cross section of $e^+e^- \\to Ω^-\\barΩ^+$: Heavy-flavor rescattering and physics-informed deep learning",
+      "id": "2608.11424v1",
+      "title": "Click2Poly: A VLM for vector mapping buildings and walls",
       "authors": [
-        "Sara Rahmani"
+        "Nicolas Girard",
+        "Jawher Ben Abdallah",
+        "Arno Gobbin",
+        "Liuyun Duan",
+        "Sacha Lepretre"
       ],
-      "abstract": "Recent precision measurements of the $e^+e^- \\to Ω^-\\barΩ^+$ cross section by the BESIII collaboration provide a valuable opportunity to probe complex hadronic rescattering mechanisms. In this work, we investigate a potential structure near the $D_s\\bar{D}_s$ threshold using a coupled-channel framework incorporating $Ω\\barΩ$, $Ξ\\barΞ$, and $D_s\\bar{D}_s$ interactions. The driving potentials are derived from effective Lagrangians respecting heavy quark spin symmetry, chiral symmetry, and hidden local symmetry, and the scattering amplitude is unitarized via the on-shell factorization of the Bethe-Salpeter equation. To go beyond local fits and map theoretical uncertainties, we use a two-step machine-learning framework. First, Simulation-Based Inference with a Mixture Density Network maps the global Bayesian posterior of the effective couplings. Second, to identify the non-perturbative threshold dynamics without the instabilities of traditional root-finding across multiple Riemann sheets, we employ a Cauchy-Riemann Physics-Informed Neural Network (PINN). The network enforces mathematical analyticity, smoothly continuing the real-axis amplitude into the complex energy plane. We isolate a pole at $M = 3.847$ GeV with zero decay width, sitting $89$~MeV below the $D_s^-\\bar{D}_s^+$ threshold. The corresponding S-matrix residues show an overwhelming coupling to the $D_s\\bar{D}_s$ channel, indicating that the threshold dynamics are driven by a dynamically generated $D_s^-\\bar{D}_s^+$ bound state.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T23:13:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.10301v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.10301v1"
+      "abstract": "Accurate vector mapping of buildings and walls is critical for geospatial applications but remains a labor-intensive process. While recent deep learning methods have improved automatic extraction, in order to meet cartographic standards they always require a human to perform quality control and fix complex cases in the extraction. We present Click2Poly, a human-in-the-loop AI assistant designed to speed up this manual step. Extending the Florence-2 Vision Language Model (VLM), Click2Poly responds to user clicks by editing the building or wall vector layer directly. Implemented as a QGIS plugin, Click2Poly speeds up the manual editing of building and wall vector layers in a real-world production environment.",
+      "published": "August 11, 2026",
+      "published_raw": "2026-08-11T20:43:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11424v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11424v1"
     },
     {
-      "id": "2608.10256v1",
-      "title": "CRHT: A Continuous Regression Hybrid Transformer for Vessel Trajectory Prediction with Online Cluster Sampling",
+      "id": "2608.11317v1",
+      "title": "Clinical Feasibility of Low-Magnification Fluorescence Imaging for Breast Cancer Margin Detection Using Texture Analysis and Deep Learning",
       "authors": [
-        "Alexander Schiøtz",
-        "Bertram Hage",
-        "Christian Rand",
-        "Felix Thomsen",
-        "Peder Heiselberg"
+        "Pouya Afshin",
+        "Tianling Niu",
+        "Tongtong Lu",
+        "David Helminiak",
+        "Julie Jorns",
+        "Mollie Patton",
+        "Tina Yen",
+        "Donghye Ye",
+        "Bing Yu"
       ],
-      "abstract": "Accurate vessel trajectory prediction is critical for maritime safety and anomaly detection, yet existing models often struggle with geographic bias and navigational realism. We propose the Continuous Regression Hybrid Transformer (CRHT), a deep learning framework designed to forecast vessel motion using Automatic Identification System (AIS) data. To mitigate spatial data imbalance, we introduce an online K-means cluster sampling strategy that ensures diverse exposure to rare maneuvers during training. Our hybrid architecture integrates 1D convolutional layers for local kinematic feature extraction with a multi-head attention mechanism for global temporal context. CRHT demonstrates superior performance in short-term forecasting, achieving the lowest errors at the 1-hour horizon. The results demonstrate that while discrete models provide high navigational stability over long horizons, CRHT offers an optimal balance of precision and maneuver tracking for real-time maritime surveillance.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T21:42:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.10256v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.10256v1"
+      "abstract": "High-resolution images of unprocessed surgical breast tissue can be obtained using microscopy with ultraviolet surface excitation (MUSE). This technique is considered a promising method for checking surgical margins during breast cancer surgery. In this study, MUSE images at 4x and 10x magnifications were compared using patch-level classification methods. Texture analysis (TA) based on local binary patterns (LBP) and deep learning (DL) with a base Vision Transformer (ViT) model were used. Both methods achieved similar performance at both magnifications. Using DL method, both 4x and 10x magnifications achieved 96.30% sensitivity, 100% specificity and 98.18% accuracy. Using TA method, 4x achieved better specificity (100% vs 93.33%) and 10x yielded higher sensitivity (100% vs 93.33%), but both had the same accuracy (96.67%). No clear improvement in performance was observed with 10x magnification. These results show that 4x imaging achieves the same diagnostic accuracy as 10x imaging. At the same time, 4x offers a larger field of view and faster image capture. Therefore, lower magnification can be effectively used in MUSE systems for accurate and efficient intraoperative margin assessment.",
+      "published": "August 11, 2026",
+      "published_raw": "2026-08-11T18:08:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11317v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11317v1"
     },
     {
-      "id": "2608.09840v1",
-      "title": "Langevin dynamics along the zero set of real-analytic potentials",
+      "id": "2608.11288v1",
+      "title": "Uncertainty-Aware Compositional Localization and Placement Assessment of Catheters and Tubes in Chest X-Rays",
       "authors": [
-        "Martin Larsson"
+        "Harshil Lodhiya"
       ],
-      "abstract": "We consider the Langevin diffusion $dX_t = - β\\nabla V(X_t) dt + \\sqrt{2} dB_t$ for a general nonnegative real-analytic potential $V$ and a large parameter $β$. In the large-$β$ limit the process is confined to the zero set of $V$, assuming that it starts there. We derive a candidate limiting evolution on the zero set. To do so, the zero set is partitioned into strata according to a measure of local codimension known as the local learning coefficient and its multiplicity. It is then shown that the Dirichlet form associated with $X$ converges in a certain sense to a hierarchy of Dirichlet forms corresponding to a stochastic evolution on the strata. This evolution is strongly biased toward higher-dimensional, or \"more singular\", strata. This result is motivated by a question from Watanabe's singular learning theory regarding the learning dynamics of overparameterized statistical models and the generalization puzzle in deep learning. The result suggests a mechanism for the observation that stochastic gradient methods tend to be biased toward singular solutions that generalize well.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T16:55:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09840v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09840v1"
-    },
-    {
-      "id": "2608.09830v1",
-      "title": "Deep Multimodal Wearable Sensor Fusion for Detection of Body-Focused Repetitive Behaviors",
-      "authors": [
-        "Samaneh Rezaeimanesh",
-        "Mohsen Behradfar",
-        "Mohammad Fili",
-        "Guiping Hu"
-      ],
-      "abstract": "Body-focused repetitive behaviors, such as hair pulling and skin picking, are compulsive motor actions commonly associated with obsessive-compulsive and anxiety disorders. Their early, objective detection remains difficult because the movements are subtle and overlap with ordinary, non-pathological gestures. We developed and evaluated a multimodal deep learning framework to detect and classify these behaviors from wrist-worn sensor data. The data, collected by the Child Mind Institute using the Helios wrist-worn device, combine inertial measurement units, thermopile sensors, and time-of-flight sensors, capturing kinematic, thermal, and proximity information. The framework combined a convolutional neural network with a gated recurrent unit, alongside modality-specific autoencoders and a late-fusion classifier, to exploit temporal and spatial dynamics. It achieved an F1 score of 0.985 and an area under the receiver operating characteristic curve of 0.997 for binary detection, distinguishing these behaviors from other activities, and a macro-averaged F1 score of 0.700 with an area under the curve of 0.963 across a nine-class scheme that distinguished each individual behavior from a single grouped Non-Target class, improving over single-modality baselines. Post-hoc interpretability based on Shapley additive explanations showed that the time-of-flight and inertial modalities dominated discriminative power by capturing spatial proximity and dynamic movement, while hierarchical clustering indicated that misclassifications were driven primarily by the anatomical region of the gesture. These findings demonstrate that multimodal sensor fusion enables accurate, objective, and continuous behavioral monitoring. This work establishes a foundation for real-time, wearable-assisted mental health diagnostics and personalized interventions in biomedical research and clinical care.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T16:48:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09830v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09830v1"
-    },
-    {
-      "id": "2608.09768v1",
-      "title": "ReliableNet: A Chance-Constrained Approach to Trustworthy Classification in Deep Learning",
-      "authors": [
-        "Ange-Clément Akazan",
-        "Ineza Remy Mugenga",
-        "Abebe Geletu",
-        "Jean Medard Ngnotchouye",
-        "Issa Karambal"
-      ],
-      "abstract": "A prediction that is both confident and wrong is a critical reliability failure because it can bypass abstention and human review precisely when the model is mistaken. Empirical risk minimization (ERM) controls average loss but not this failure directly, while calibration, uncertainty estimation, conformal risk control, and selective prediction methods target related reliability properties rather than bounding the joint failure event during training. We propose ReliableNet, which constrains the Joint Confident-Wrong (JCW) probability, the probability that a prediction is simultaneously confident and incorrect, below a user-specified risk budget $α\\in(0,1)$. We formulate this as a chance-constrained ERM problem, use a conservative smooth inner approximation whose population feasibility implies the original JCW constraint. Across four tabular and two image datasets, ReliableNet is the only method certified within the JCW budget for every dataset and seed in distribution, when compared against baselines spanning ERM, post-hoc calibration, conformal risk control, and selective prediction. Under demographic, ambiguity, spurious-correlation, novel-class, and covariate shifts, it achieves the lowest empirical JCW among the compared methods while remaining very competitive in accuracy, coverage, calibration, and selective prediction. Risk-coverage results further indicate that ReliableNet achieves better selective ranking than the benchmark methods on most datasets. Overall, ReliableNet provides a principled approach to trustworthy classification.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T15:58:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09768v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09768v1"
-    },
-    {
-      "id": "2608.09752v1",
-      "title": "Disentangling Co-Occurring Retinal Pathologies with Saliency-Guided Sparse Expert Routing",
-      "authors": [
-        "Nagur Shareef Shaik",
-        "Jeongwoo Park",
-        "Yeong-Jin Kim",
-        "Jaeuk Jung",
-        "Hyunjung Oh",
-        "Dong Hye Ye"
-      ],
-      "abstract": "Retinal fundus images frequently exhibit multiple co-occurring pathologies, yet standard deep learning classifiers apply static, identical computation to every image regardless of the underlying disease distribution. We propose a novel architecture that resolves this via sparse conditional computation, pairing a Guided Context Gating (GCG) spatial attention front-end with a sparsely-routed Mixture-of-Experts (MoE) block operating over feature tokens. Crucially, this routing yields an interpretable, data-driven decomposition. Expert allocation is significantly disease-dependent (p < 0.001), with the healthy Normal state and morphologically distinct pathologies (e.g., ERM, AMD) isolating to dedicated experts. On a five-class, patient-disjoint 5-fold cross-validation benchmark, our model achieves 0.912 +/- 0.008 macro AUC and 0.653 +/- 0.014 macro F1. Furthermore, Grad-CAM++ and post-MoE t-SNE visualizations confirm that expert routing aligns with localized lesions and geometrically maps co-occurring cases between their constituent clusters, positioning sparse MoE as an interpretable approach to multi-disease retinal screening.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T15:43:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09752v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09752v1"
-    },
-    {
-      "id": "2608.09721v1",
-      "title": "PET/CT Radiogenomic Mutation Prediction in Non-Small Cell Lung Cancer Using Multi-Label Learning",
-      "authors": [
-        "Mona Furukawa",
-        "Sai Hyne",
-        "Daniel R. McGowan",
-        "Bartłomiej W. Papież"
-      ],
-      "abstract": "Lung cancer remains one of the leading causes of cancer- related mortality worldwide. Although targeted therapies have improved outcomes for patients with non-small cell lung cancer (NSCLC), they rely on mutation profiling through tissue biopsy, an invasive procedure with several limitations. This study investigates PET/CT-based radio- genomic prediction of epidermal growth factor receptor (EGFR), tumour protein 53 (TP53), and Kirsten rat sarcoma viral oncogene (KRAS) mutations using deep learning. We further evaluate whether pairwise multi-label learning improves mutation prediction compared with conventional single-gene classification. To the best of our knowledge, this is among the first studies to systematically investigate multi-label learning for PET/CT radiogenomic mutation prediction in NSCLC. Experiments were conducted on a novel UK-based radiogenomics cohort. Joint pre- diction of KRAS and TP53 improved AUC from 0.58 to 0.64 for KRAS and from 0.69 to 0.71 for TP53. For the EGFR/KRAS pair, only EGFR benefited from joint learning, while no improvement was observed for the EGFR/TP53 pair. These findings demonstrate that the effectiveness of multi-label learning depends on the specific combination of gene mutations being modelled, suggesting that mutation-specific modelling strategies may be preferable for PET/CT radiogenomic prediction.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T15:22:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09721v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09721v1"
-    },
-    {
-      "id": "2608.09683v1",
-      "title": "Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data",
-      "authors": [
-        "Swastik Agrawal",
-        "Nishkal Hundia",
-        "Ziyue Liu",
-        "Michelle Bensi"
-      ],
-      "abstract": "Probabilistic coastal hazard assessments require accurate characterization of tropical cyclone (TC) parameters, yet datasets often contain missing records for the radius of maximum winds (Rmax), a key variable in Joint Probability Method analyses. This study evaluates data-driven approaches for Rmax imputation, including one-dimensional Convolutional Neural Networks (1DCNNs), Long Short-Term Memory (LSTM) networks, and conventional machine learning models. We examine physics-informed input augmentation, temporal modeling, and transfer learning using synthetic RAFT and STORM datasets for pre-training and observational IBTrACS data for fine-tuning. Including the radius of 34-knot winds (R34) substantially improves performance across all model types. Temporal models achieve higher average correlations than non-temporal models despite using approximately an order of magnitude fewer samples, indicating better preservation of relative Rmax variability across storms. This advantage is more pronounced when R34 is unavailable, suggesting temporal information can partially compensate for missing storm-size predictors. Transfer learning does not improve performance, likely because synthetic datasets have lower and less variable Rmax distributions than IBTrACS. These findings demonstrate the potential of temporal deep learning for reconstructing incomplete TC records and highlight the importance of physics-informed inputs, observational data availability, and distributional consistency in coastal hazard assessment.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T14:52:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09683v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09683v1"
-    },
-    {
-      "id": "2608.09421v1",
-      "title": "LITEWAY: LIghtweight HAR via Temporal Efficient highWAY",
-      "authors": [
-        "Dominique Nshimyimana",
-        "Vitor Fortes Rey",
-        "Mengxi Liu",
-        "Bo Zhou",
-        "Paul Lukowicz"
-      ],
-      "abstract": "Wearable human activity recognition (HAR) remains challenging due to the computational and energy constraints of deep learning models on resource-limited devices. Existing lightweight approaches often rely on recurrent architectures (e.g., GRU and LSTM), limiting parallelism and increasing inference latency. We propose LITEWAY, a modality-agnostic, fully convolutional framework for multichannel sensor time series that replaces recurrent temporal modeling with structured convolutional decomposition. LITEWAY combines lightweight convolutional blocks, strided temporal processing, and convolution-attention pooling to efficiently capture temporal dependencies while reducing computational complexity. We evaluate LITEWAY on 16 HAR datasets against TinyHAR, TinierHAR, and MLP-HAR. LITEWAY achieves competitive macro F1 while reducing model size by 4.06x-9.52x (Light) and 3.87x-9.07x (Full) compared with TinyHAR and TinierHAR. Deployment experiments further show energy reductions of 2.29x-3.14x (Light) and 1.46x-2.01x (Full) compared with TinierHAR and MLP-HAR, highlighting efficient fully convolutional temporal modeling for wearable HAR. The source code is publicly available at https://github.com/dominique-nshimyimana/liteway.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T10:49:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09421v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09421v1"
-    },
-    {
-      "id": "2608.09360v1",
-      "title": "Deep Learning based Detection of Fishing Vessels and Fishing Monitoring using Nightlight Images",
-      "authors": [
-        "Shantakar Mohanty",
-        "Prasun Kumar Gupta",
-        "Raian Vargas Maretto"
-      ],
-      "abstract": "The demand for maritime surveillance has given rise to the need for monitoring fishing vessel activities, particularly in addressing the challenge of \"dark vessels\" that operate without Automatic Identification System (AIS) transmission. This study presents a novel approach for detecting small-scale fishing vessels using nighttime light (NTL) imagery from the SDGSAT-1 satellite, combined with deep learning techniques to enhance fishing monitoring awareness along the western coast of India. A dual-branch YOLO11 architecture was developed to exploit both the 10-meter panchromatic and 40-meter RGB imagery from SDGSAT-1. The custom model architecture was specifically optimized for small object detection in NTL imagery, featuring parallel convolutional backbones that process both modalities before concatenation for enhanced feature extraction. The dual-branch YOLO11 model demonstrated optimal performance with a precision of 0.99, recall of 0.93, F1-score of 0.96, and mAP@50 of 0.96, significantly outperforming single-branch implementations of YOLOv5s, YOLOv8s, and standard YOLO11s architectures. When applied to the western coast of India, the model detected 31525 vessel instances across the temporal dataset spanning 2022-23. Cross-matching analysis with AIS data revealed that only 7146 (22.7%) of detected vessels had corresponding AIS transmissions, while 24379 (77.3%) were identified as potential dark vessels. Spatio-temporal analysis showed peak fishing activity during January-April, with a primary activity corridor parallel to the coastline within 50-100 km, corresponding to productive continental shelf areas. This research contributes to maritime surveillance capabilities by highlighting the effectiveness of nighttime lights satellite imagery for fishing vessel detection and provides valuable insights into fishing patterns and potential regulatory compliance issues in Indian waters.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T09:39:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09360v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09360v1"
-    },
-    {
-      "id": "2608.09162v1",
-      "title": "Tabular Numeric Stretch Transformation",
-      "authors": [
-        "Zihao Ye",
-        "Juyong Kim",
-        "Johnna Sundberg",
-        "Burak Varici",
-        "Pradeep Ravikumar"
-      ],
-      "abstract": "Tabular data presents unique challenges for deep learning due to its heterogeneous nature, where numeric features exhibit diverse distributions, scales, and statistical properties. Although recent advances have improved how models learn from tabular data, how numeric data are transformed into model-friendly representations remains comparatively underexplored. We introduce the stretch transformation framework, which formulates numeric feature preprocessing as an optimization problem to make the target function smoother and thus more learnable. Our framework has two variants: (1) unsupervised stretch, which uniformly redistributes feature density via minimax optimization, and (2) supervised stretch, which optimizes target-aware numeric feature transformations from the perspective of target-function smoothness by minimizing the target function's Dirichlet energy in the transformed space. Our theoretical analysis further connects this framework to several popular transformations: unsupervised stretch is closely related to Piecewise Linear Encoding through a shared piecewise-linear geometry and approaches the empirical CDF transformation as the number of bins grows, while supervised stretch becomes closely related to target encoding in the fine-binning limit. Comprehensive experiments on 38 datasets from the TALENT benchmark demonstrate that supervised stretch consistently outperforms all baselines. These results show that explicitly optimizing for target function smoothness is a powerful and underexplored strategy for tabular deep learning.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T06:16:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09162v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09162v1"
-    },
-    {
-      "id": "2608.09048v1",
-      "title": "GeoAI-based post-segmentation quality validation of building footprints via spatial feature engineering",
-      "authors": [
-        "Shah Imran Ahsan Chowdhury",
-        "Kazi Jihadur Rashid",
-        "Rajsree Das Tuli",
-        "Rahul Saha",
-        "Bulbul Ahammad"
-      ],
-      "abstract": "Deep learning-based building footprint extraction from high-resolution imagery often produces topologically inconsistent vectors unfit for direct GIS database ingestion. To address this, we present a multidomain GeoAI quality control framework that automates error detection to systematically purify vector footprint databases. Candidate footprints were generated across five UAV survey sites in Bangladesh using U-Net (ResNet-34) and SAM-LoRA (ViT-B). The extracted raster masks were vectorized, geometrically regularized, and consolidated under a spatial-exclusivity constraint to eliminate duplicate representations. We used twenty-four predictors capturing geometric, spatial-contextual, and raster-derived spectral and texture properties. Machine Learning (ML) classifiers were trained on a development partition (Sites B-D) and rigorously validated on a spatially independent test set (Site E) excluded from hyperparameter tuning and class balancing. The experimental results demonstrate that geometric and spatial-contextual predictors using Decision Tree (DT) provide the most effective discriminatory evidence for identifying object-level boundary deformations. DT achieved an accuracy of 95.31%, an F1-score of 91.06%, and a Matthews correlation coefficient (MCC) of 0.880 on the unseen testing site. At the database level, this framework successfully identified 87.34% of erroneous footprints while maintaining 98.31% of acceptable structures, reducing the residual error proportion from 27.32% to 4.62% and improving final database purity to 95.38%. This translates into a relative error reduction of 83.09%. The findings indicate that post-segmentation object-level ML provides a highly transferable, robust mechanism for automated quality assurance in production-ready geographic information system (GIS) workflows.",
-      "published": "August 10, 2026",
-      "published_raw": "2026-08-10T02:55:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.09048v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.09048v1"
-    },
-    {
-      "id": "2608.08804v1",
-      "title": "ML-Based Hierarchical Prediction for Practical Energy Scheduling in Dynamic NTN-WPT Systems",
-      "authors": [
-        "Zhanyu Ju",
-        "Wenchi Cheng"
-      ],
-      "abstract": "With advancements in long-distance wireless power transfer (WPT) and space-based energy technologies, integrating WPT into non-terrestrial networks (NTNs), referred to as NTN-WPT, is emerging as a promising approach for next-generation wireless networks. This paper proposes an energy-scheduling approach that jointly optimizes energy efficiency, task completion rate, and task waiting time for power transfer from low Earth orbit satellites to terrestrial mobile user devices (UDs). To address scheduling challenges caused by satellite and UD mobility and channel uncertainty from stochastic propagation effects, we decompose the problem into three subproblems within a three-layer predictive framework: 1) a state prediction layer forecasts UD and satellite states; 2) an interaction mapping layer uses a graph neural network (GNN) to model energy transfer efficiency; and 3) a decision-making layer determines the energy allocation plan. Distinct machine learning (ML) methods are tailored to each layer. To balance the competing objectives, we adopt a multi-objective reinforcement learning (MORL) technique that scalarizes them into a weighted-sum reward, transforming the multi-objective problem into a tractable single-objective problem. We further introduce a multi-agent deep learning model integrating self-attention with multi-agent proximal policy optimization (MAPPO) to improve objective balancing. Simulation results show that the proposed approach achieves a better overall trade-off than baseline methods, maintaining competitive task completion rates and energy efficiency while reducing task waiting times, and remains robust under highly variable conditions.",
-      "published": "August 09, 2026",
-      "published_raw": "2026-08-09T16:41:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.08804v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.08804v1"
-    },
-    {
-      "id": "2608.08788v1",
-      "title": "End-to-End Neural Decomposition with Koopman Operators for Time-Series Forecasting",
-      "authors": [
-        "De-Yan Lu",
-        "Xugang Lu",
-        "Yu Tsao",
-        "Jian-Jiun Ding"
-      ],
-      "abstract": "Koopman theory offers a linear-operator view of nonlinear sequence dynamics by lifting observations into a space where evolution is governed by a linear time-invariant Koopman operator. While the Koopman operator provides a linear representation of nonlinear dynamics, it is generally infinite dimensional and defined under time-invariant assumptions. To model non-stationary signals with frequency-dependent behavior, a frequency-varying extension is required. In recent years, deep learning has been increasingly employed to exploit its powerful function-approximation ability for learning the Koopman operator. In this study, we propose a novel approach called neural decomposition Koopman (NDKoop), an end-to-end architecture that integrates a learnable signal decomposition module with both frequency-independent and frequency-dependent Koopman based networks for sequence forecasting. To the best of our knowledge, this is the first work to jointly realize end-to end Koopman modeling and signal decomposition within a unified neural framework. We demonstrate that decomposing a signal into a frequency-independent trend component and a frequency-dependent periodic component, each governed by a corresponding Koopman operator, improves prediction accuracy when perfect linearization is unattainable. Numerical experiments across several forecasting benchmarks indicate that the proposed NDKoop provides strong performance.",
-      "published": "August 09, 2026",
-      "published_raw": "2026-08-09T16:08:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.08788v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.08788v1"
-    },
-    {
-      "id": "2608.10022v1",
-      "title": "Deep Learning-Based Statistical Downscaling of Sea Surface Temperature Using a Residual Corrective Neural Network",
-      "authors": [
-        "Onkar Jadhav",
-        "Tim French",
-        "Ivica Janekovic",
-        "Nicole L. Jones",
-        "Matthew Rayson"
-      ],
-      "abstract": "The large-scale oceanic and atmospheric forecasts provided by global climate models typically lack sufficient resolution to accurately capture the response of the coastal ocean to atmospheric forcing and coastal circulation that drive fine-scale SST variability. Dynamical downscaling is computationally prohibitive, when applied to extensive coastlines, predictive ensembles, or long time periods. Therefore, this work presents a statistical downscaling of sea surface temperature (SST) from the seasonal coupled ocean-atmosphere forecast system (ACCESS-S2) using machine learning techniques. This study proposes a novel deep learning framework that uses a U-Net to generate an initial high-resolution SST estimate, which is subsequently refined using a residual corrective approach. The target SST fields are derived from the Regional Ocean Modeling System (ROMS). This two step approach called Residual Corrective Neural Network (RCNN) progressively refines initial U-Net predictions by incorporating dynamically scaled residuals at each step, enabling accurate capture of broad patterns and fine-grained features such as eddies and fronts. We also introduce a custom loss-assisted RCNN variant to improve performance during extreme events, which may be absent from training data due to climate-driven shifts in SST extremes. The framework efficiently downscales SST along the west coast of Australia. A 2011 marine heatwave case study shows that the RCNN improves ACCESS-S2 SST predictions by increasing horizontal resolution from 25 km to 2 km, enabling identification of fine-scale anomalies unresolved in the ACCESS-S2 dataset. This balance between computational efficiency and accuracy supports applications in coastal impact assessment and marine ecosystem studies.",
-      "published": "August 09, 2026",
-      "published_raw": "2026-08-09T11:30:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.10022v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.10022v1"
-    },
-    {
-      "id": "2608.08489v1",
-      "title": "No Unique Minimizer, No Problem: On the Consistency of Robust Neural Classifiers",
-      "authors": [
-        "Subhabrata Majumdar",
-        "Anand Deo",
-        "Partha Pratim Saha",
-        "Abhik Ghosh"
-      ],
-      "abstract": "Neural network classifiers trained by cross-entropy minimization are highly sensitive to label noise and adversarial contamination. While robust alternatives offer bounded influence and resistance to corruption, their statistical foundations in the deep learning setting are insufficient due to a fundamental difficulty: neural parameterizations are non-identifiable, so the population loss minimizer is an equivalence class of parameters, not a unique point. We develop a consistency theory for robust neural classifiers based on the S-divergence family that requires no identifiability assumption. Casting training as stochastic optimization over a non-identifiable parameter space, we prove that empirical S-divergence minimizers converge to the population-optimal equivalence class under mild regularity conditions, and verify these conditions for three architecture choices. We further establish that limit points of the robust training algorithm are stationary points of the empirical objective. Experiments on vision and language benchmark datasets confirm that S-divergence training maintains clean-data accuracy while exhibiting performance competitive with existing robust methods.",
-      "published": "August 09, 2026",
-      "published_raw": "2026-08-09T05:21:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.08489v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.08489v1"
-    },
-    {
-      "id": "2608.08350v1",
-      "title": "Correlation flow governs learning at criticality",
-      "authors": [
-        "Andrea Combette",
-        "Nelly Pustelnik",
-        "Antoine Venaille"
-      ],
-      "abstract": "The initialisation of deep neural networks determines whether information and gradients can propagate across depth, yet a unified theory connecting these properties to learning dynamics remains elusive. Combining mean-field theory and random matrix theory, we establish a direct link between correlation propagation and the Neural Tangent Kernel (NTK) that governs learning in the sequential limit of infinitely wide, infinitely deep networks. Correlation propagation to infinite depth is possible only at a single critical point in the weight-bias variance plane. At this point, we show that the end-to-end Jacobian vanishes algebraically with depth, and use this to prove that the NTK becomes exactly proportional to the output correlation at infinite depth. This equivalence between information propagation and learning dynamics had not yet been noticed. We further show that orthogonal initialisation suppresses the leading finite-size corrections present under Gaussian initialisation, clarifying the respective roles of the two initialisation ensembles in this limit. These theoretical predictions are validated quantitatively on finite-width, finite-depth networks. Together, these results demonstrate that orthogonal initialisation at criticality plays a central role in controlling the asymptotic dynamics of deep learning.",
-      "published": "August 08, 2026",
-      "published_raw": "2026-08-08T22:18:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.08350v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.08350v1"
+      "abstract": "Assessing catheter and tube placement on chest X-rays is safety-critical yet tedious and error-prone. Current deep learning methods either classify placement globally -- losing track of which device is where -- or segment all devices into a single mask, making per-device assessment impossible when catheters overlap. We introduce UCompCXR, a compositional framework that detects local catheter fragments, associates them into device instances via graph-based clustering, fuses per-fragment tip predictions through precision-weighted Gaussian estimation, and classifies placement per device. On the RANZCR CLiP dataset (30,083 images, 5-fold patient-level CV with bootstrap CIs), UCompCXR detects 26% more devices than a strong multi-task baseline sharing the same MobileNetV3 backbone, with 75% fewer false positives and well-calibrated tip uncertainty (95% coverage = 0.948). The aggregate tip error rises -- but only because the model finds devices the baseline misses entirely, especially nasogastric tubes. On matched devices, catastrophic localization failures drop substantially. At 2.27M parameters in a single forward pass, the model is deployable on resource-constrained clinical hardware.",
+      "published": "August 11, 2026",
+      "published_raw": "2026-08-11T16:04:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.11288v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.11288v1"
     }
   ]
 }
