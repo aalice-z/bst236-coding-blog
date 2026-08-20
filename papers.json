@@ -1,7 +1,129 @@
 {
-  "last_updated": "2026-08-19T00:29:31.426863",
+  "last_updated": "2026-08-20T00:29:58.021553",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.18036v1",
+      "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
+      "authors": [
+        "Mahdi Saberi",
+        "Yaşar Utku Alçalar",
+        "Merve Gülle",
+        "Chetan Shenoy",
+        "Mehmet Akçakaya"
+      ],
+      "abstract": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may provide complementary information for signal recovery. However, their use in MRI reconstruction remains largely unexplored, due to lack of practical settings where informative magnitude measurements can be obtained without additional scan time. In this work, we investigate the use of auxiliary k-space magnitude information for accelerated steady-state dynamic MRI reconstruction, and demonstrate strong consistency of k-space magnitudes across time-frames. Building on this observation, we propose $\\mathbb{C}+\\text{Mag}$, a magnitude-informed physics-driven deep learning reconstruction method. The proposed method employs an ADMM-based unrolling framework with a novel magnitude-aware data-fidelity formulation, where quadratically smoothed optimization and momentum-based updates are introduced to address the non-differentiability and non-convexity of the magnitude constraints. Experiments on retrospectively undersampled cine MRI and phase-contrast flow MRI datasets, as well as prospectively undersampled real-time cine MRI acquisitions, demonstrate improved artifact suppression, sharper anatomical recovery, and better preservation of phase information compared to conventional PD-DL methods, which is further supported through blinded expert reader evaluations.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T17:31:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.18036v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.18036v1"
+    },
+    {
+      "id": "2608.17971v1",
+      "title": "Evaluating and improving crop-yield forecasting methods during extreme drought",
+      "authors": [
+        "Shrey Gupta",
+        "Yi Ming",
+        "George Mohler"
+      ],
+      "abstract": "The impact of climate variability on food production has led to the creation of various forecasting models that uses machine learning (ML), numerical weather predictors (NWP) or a hybrid of ML-NWP models to identify structural and physical relationships between meteorological drivers and crop growth, in order to predict crop yield. Droughts, for example the 2012 Midwestern US (Corn Belt) drought, are extreme events that affect crop production and test the limits of these forecasting models. Using 16 meteorological drivers as predictors, we compare ML (non-deep learning) and deep learning forecasting models to predict the county-level corn yield for the extreme drought year, 2012. This forecasting problem is characterized by a dissimilarity between the feature distributions of the training and test data, where the meteorological conditions of the extreme drought year fall outside the range of historically observed values. Additionally, the dataset consists of spatial and temporal irregularities where counties with missing yields introduce spatial sparsity and the use of only a subset of daily values per year introduce temporal sparsity. To overcome this, we use sample weighting and feature selection as modifications to improve our forecasting models. These modifications lead to an improvement for ML models; however, the deep learning model VITA shows little to no improvement. While VITA outperforms the ML models with or without modifications, our current study sheds light on the effect of dissimilarity between train and test feature distributions on forecasting models, compares deep learning versus non-deep learning models, and introduces modifications that are effective for non-deep learning models.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T16:23:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17971v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17971v1"
+    },
+    {
+      "id": "2608.17923v1",
+      "title": "AppendiGrade: An XAI-Enhanced Deep Learning Framework for Grading Appendicitis in Ultrasound with Gaussian Blur and Grad-CAM",
+      "authors": [
+        "Fahad Ahammed",
+        "Omar Faruq Shikdar",
+        "Navid Zaman",
+        "Md Tahsin",
+        "Md. Nawab Yousuf Ali",
+        "Golam Sorwar"
+      ],
+      "abstract": "Appendicitis is one of the most common abdominal emergencies worldwide and requires prompt diagnosis and treatment to prevent life-threatening conditions. However, accurately differentiating complicated cases, such as perforation or abscess formation, from uncomplicated appendicitis remains a significant clinical challenge. Among other methods, ultrasound is a safer and more cost-efficient diagnostic technique because of the lack of radiation exposure. In this research, an advanced system capable of automatically detecting complicated appendicitis from ultrasound images was developed. A dataset consisting of 4679 ultrasound images with 5 classes, namely perforated, abscess, acute, appendicolith, and normal, was used for the proposed model training and testing. Four pretrained deep learning models, DenseNet201, InceptionV3, ConvNextTiny, and VGG19, have been employed for detecting and classifying complicated appendicitis. In the initial configuration, InceptionV3 achieved the second highest accuracy, with a value of 69.21%. Owing to suboptimal performance with raw images, further optimization techniques, including image preprocessing, hyperparameter tuning, model fine-tuning, and image sharpening, were applied. These enhancements significantly improved the model's performance, with an accuracy of 95.58% for InceptionV3. The model performance is then explained with gradient-weighted class activation mapping (Grad-CAM), which creates a heatmap of the regions responsible for the model's prediction of the infected areas. This could make crosschecking with experts much easier.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T15:46:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17923v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17923v1"
+    },
+    {
+      "id": "2608.17796v1",
+      "title": "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models",
+      "authors": [
+        "Bilal Hussain",
+        "Xiao Tang",
+        "Qinghe Du",
+        "Tan Li",
+        "Muhammad Azhar",
+        "Danista Khan"
+      ],
+      "abstract": "Deep learning-based DDoS detectors for 5G-enabled cyber-physical systems face scarce labeled attack data and unrealistic synthetic substitutes, which limit robustness against adaptive adversaries. Detectors trained on hand-crafted attacks with fixed scaling multipliers degrade catastrophically (F1-score drops of about 47 percent to 100 percent, depending on scenario) when confronted with realistic, distribution-preserving samples. We propose Diff-DDoS, a three-phase framework for realistic attack synthesis and robust detection using tabular diffusion models. Phase 1 trains a baseline CNN cell-level detector on spatiotemporal grids from call detail records (CDRs). Phase 2 trains a tabular denoising diffusion probabilistic model (TabDDPM) on normal CDR aggregates to generate realistic attacks and expose detector vulnerabilities. Phase 3 introduces adversarial diffusion training (ADT), using inverse classifier guidance to generate hard yet distribution-preserving samples until the detector converges. On a Milano CDR dataset across SMS-flooding, silent-call, Internet-signaling, and blended scenarios, ResNet50 with ADT recovers F1-scores of 79.62 percent (silent-call), 100 percent (Internet), and 92.79 percent (blended). After validation-based threshold calibration, ADT reaches 100 percent SMS F1 versus 47.3 percent for CTGAN, and matches the strongest gradient-based adversarial-training baseline on silent-call. These results support tabular diffusion models for stress-testing and hardening intrusion detectors in data-scarce 5G cyber-physical deployments.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T13:56:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17796v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17796v1"
+    },
+    {
+      "id": "2608.17753v1",
+      "title": "MAGPIE-Net: Predicting short-duration heavy-rainfall events in station neighborhoods from multitemporal FY-4A AGRI observations",
+      "authors": [
+        "Xiang Lin",
+        "Yunying Li",
+        "Chengzhi Ye",
+        "Zitong Chen",
+        "Jing Sun"
+      ],
+      "abstract": "Short-duration heavy-rainfall warning determines whether 1 h rainfall will exceed a threshold within a target-station neighborhood over the next few hours. Multitemporal infrared and water-vapor observations from the Fengyun-4A Advanced Geostationary Radiation Imager (FY-4A AGRI) capture cloud-top cooling, moisture evolution, and cloud expansion before substantial surface rainfall develops. However, most deep-learning nowcasting methods convert these signals into local warnings by post-processing gridded precipitation predictions, preventing station-neighborhood event targets from directly supervising the satellite-to-station learning pathway. We propose MAGPIE-Net, which embeds a geographically adaptive, differentiable grid-to-station mapping in a pathway combining convection-initiation features, multiscale encoding, and auxiliary gridded precipitation diagnosis. Station-neighborhood event losses thereby constrain the satellite representation and its mapping to irregular station locations for 0-3 h event prediction. In independent 2023 warm-season tests over central and eastern China, critical success index (CSI) values under the primary 40 km/20 mm h-1 definition were 0.371, 0.304, and 0.238 at 0-1, 1-2, and 2-3 h. Across episodes, MAGPIE-Net achieved a detection rate of 65.1% and a mean lead time of 64.6 min, compared with 23.6% and 18.3 min for the best gridded-output baseline, and remained superior for smaller neighborhoods and the 50 mm h-1 threshold. During the critical early-warning stage, when antecedent 1 h rainfall within 40 km remained below 1 mm, MAGPIE-Net detected 51.9% of episodes with a mean lead time of 38.5 min. These results show that event-oriented satellite-to-station modeling converts multitemporal geostationary cloud and moisture observations into local heavy-rainfall warnings more effectively than gridded-precipitation modeling.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T13:17:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17753v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17753v1"
+    },
+    {
+      "id": "2608.17342v1",
+      "title": "MoFE: A Novel Mixture-of-Experts Framework with Fourier Neural Operators for Cryptocurrency Forecasting",
+      "authors": [
+        "Bowen Liu",
+        "Mingming Sun"
+      ],
+      "abstract": "Forecasting cryptocurrency prices remains a formidable challenge due to inherent non-stationarity, abrupt regime shifts, and multi-scale stochastic dependencies. Conventional deep learning models often struggle to capture complex underlying dynamics, frequently resulting in persistent phase-lagged predictions. To address these limitations, we propose MoFE, a novel deep learning framework that integrates Fourier Neural Operators (FNOs) within a Mixture-of-Experts (MoE) architecture. Rooted in the theoretical framework of stochastic differential equations, MoFE conceptualizes cryptocurrency volatility as a superposition of multi-frequency components, which includes user network based fundamental growth, mining costs and halving mechanism caused seasonal volatility, and market sentiment-induced chaos. Specifically, specialized adaptive FNO (AFNO) and Convolution dual-domain experts learn continuous function-to-function mappings to encapsulate global spectral trends, cyclical adjustments and microstructures, while a dynamic gating based MoE mechanism enables adaptive strategy switching across diverse market regimes. Extensive experiments on Bitcoin datasets spanning January 2020 to December 2025 demonstrate that MoFE achieves state-of-the-art (SOTA) performance in both T+1 and T+5 forecasting horizons. Notably, the model effectively mitigates the phase-lag effect, delivering superior Directional Accuracy (DA) and Information Coefficient (IC). In high-fidelity simulated trading environments, these predictive gains transfer into significant excess returns and robust risk-adjusted performance, characterized by a high Sharpe ratio.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T04:00:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17342v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17342v1"
+    },
+    {
+      "id": "2608.17246v1",
+      "title": "Physics-Informed and Hybrid Machine Learning in Additive Manufacturing: Application to Fused Filament Fabrication",
+      "authors": [
+        "Berkcan Kapusuzoglu",
+        "Sankaran Mahadevan"
+      ],
+      "abstract": "This article investigates several physics-informed and hybrid machine learning strategies that incorporate physics knowledge in experimental data-driven deep-learning models for predicting the bond quality and porosity of fused filament fabrication (FFF) parts. Three types of strategies are explored to incorporate physics constraints and multi-physics FFF simulation results into a deep neural network (DNN), thus ensuring consistency with physical laws: (1) incorporate physics constraints within the loss function of the DNN, (2) use physics model outputs as additional inputs to the DNN model, and (3) pre-train a DNN model with physics model input-output and then update it with experimental data. These strategies help to enforce a physically consistent relationship between bond quality and tensile strength, thus making porosity predictions physically meaningful. Eight different combinations of the above strategies are investigated. The results show how the combination of multiple strategies produces accurate machine learning models even with limited experimental data.",
+      "published": "August 18, 2026",
+      "published_raw": "2026-08-18T01:02:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17246v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17246v1"
+    },
+    {
+      "id": "2608.17091v1",
+      "title": "Deep Learning for Cross-Border Electricity Price Forecasting: A Comparative Study",
+      "authors": [
+        "Hadeer Elashhab",
+        "Sai Srijan Papineni",
+        "Marvin Dorn",
+        "Veit Hagenmeyer",
+        "Benjamin Schäfer"
+      ],
+      "abstract": "While publicly available electricity market data presents a valuable resource for forecasting research, the field lacks established benchmark datasets for standardized comparison. As a result, many studies have relied on different datasets and metrics to evaluate methods in isolated settings, making it difficult to assess progress and compare state-of-the-art approaches consistently. In this work, we use public data to evaluate deep learning models for electricity price forecasting (EPF) across multiple market settings. Our goal is to establish a reproducible framework that enables a consistent evaluation of forecasting models. Although deep learning has been explored for day-ahead EPF, many prior studies are limited to single-market settings, narrow feature sets, or fixed training regimes. This work presents a comparative evaluation of six deep learning models--covering state-space, MLP, RNN, and Transformer-based architectures--emphasizing generalization across markets. We simulate low-data target-market conditions using zero-shot, one-shot, and few-shot learning. Our test set focuses on the Germany-Luxembourg (DE-LU) bidding zone in 2024 using a standardized dataset with calendar, historical price, and market-derived features. Our findings suggest that N-HiTS and NBEATSx perform competitively in limited-data scenarios, while transformer-based models can reach comparable accuracy but tend to require more adaptation and tuning. Model performance also benefits from careful feature selection and hyperparameter tuning, and we note that the differences between the strongest models are often small.",
+      "published": "August 17, 2026",
+      "published_raw": "2026-08-17T19:57:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.17091v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.17091v1"
+    },
     {
       "id": "2608.16870v1",
       "title": "Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning",
@@ -182,120 +304,6 @@
       "published_raw": "2026-08-17T02:48:33Z",
       "pdf_link": "http://arxiv.org/pdf/2608.16029v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.16029v1"
-    },
-    {
-      "id": "2608.15982v1",
-      "title": "Operator-Theoretic Generalization Bounds for Multitask Deep Learning",
-      "authors": [
-        "Mahdi Mohammadigohari",
-        "Thomas Borsani",
-        "Giuseppe Di Fatta"
-      ],
-      "abstract": "We develop operator-theoretic generalization bounds for deep multi-output function classes by representing network layers as Koopman composition operators on vector-valued reproducing kernel Hilbert spaces. In vector-valued Sobolev RKHSs, we derive Rademacher complexity bounds for invertible and width-expanding injective architectures. The estimates separate the output-coupling contribution, represented by the trace of the task matrix, from the layerwise operator norms, Sobolev symbol ratios, determinant factors, and restriction constants generated by the linear maps. We then analyze a distinct one-dimensional Brownian/Cameron--Martin regime. Using the exact anchored derivative-norm characterization of the vector-valued Brownian RKHS, we obtain layerwise bounds for domain-preserving scalar linear maps and anchored diffeomorphic activations; the corresponding factors scale as $|W_l|^{1/2}$ and $\\|σ_l'\\|_\\infty^{1/2}$, respectively, and do not involve Sobolev smoothness exponents. Because the Sobolev and Brownian results concern different hypothesis spaces, neither is asserted to dominate the other uniformly. We additionally formulate shared operator learning across tasks, prove a finite-rank representer theorem, derive the exact finite-dimensional problem for squared loss, and establish a target-transfer bound when the learned operator is obtained independently of the target sample. Synthetic and MNIST studies examine stabilized Sobolev-inspired and Brownian-inspired complexity proxies; these empirical proxies are not evaluations of the proved bounds for rank-deficient architectures.",
-      "published": "August 17, 2026",
-      "published_raw": "2026-08-17T00:36:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.15982v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.15982v1"
-    },
-    {
-      "id": "2608.15712v1",
-      "title": "Deep learning-based computed tomography (CT) derived body composition classifier for colorectal cancer patients",
-      "authors": [
-        "Eve Harling",
-        "Chattarin Pumtako",
-        "Bernd Porr",
-        "Donald C McMillan",
-        "Ross D Dolan"
-      ],
-      "abstract": "Background: Accurate body composition analysis using Computed Tomography (CT) scans is essential for assessing skeletal muscle area (SMA) and skeletal muscle density (SMD), key markers of nutritional status in cancer patients. Conventional manual methods are labour-intensive and require specialist expertise, limiting their routine clinical use. Therefore, this study serves as a feasibility and pilot investigation to explore the potential of deep learning-based automated regression for body composition analysis within a clinical workflow. Methods: Four deep learning architectures (AlexNet, UNet, GoogLeNet, and ResNet34) were trained to predict SMA, SMD, subcutaneous fat area (SFA), and visceral fat area (VFA) from CT scans of colorectal cancer patients. Systematic hyperparameter optimization identified the most accurate models, which were subsequently implemented in a web application for clinical use. Results: GoogLeNet achieved the best performance, with a mean percentage error (PE) of 4.96% for SMA prediction, while AlexNet reached 8.12% for SMD. Independent testing demonstrated robust accuracy, correctly classifying body composition metrics in 80% of cases. The web application delivered rapid and consistent outputs, supporting integration into clinical workflows. Conclusion: Optimized deep learning models, particularly GoogLeNet and AlexNet, can automate CT-derived body composition analysis with a Mean Percentage Error (PE) of 4.96% for SMA and 8.12% for SMD. These tools have the potential to streamline clinical practice by reducing the time and expertise required for manual segmentation. Further validation in larger, more diverse datasets is warranted.",
-      "published": "August 16, 2026",
-      "published_raw": "2026-08-16T12:33:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.15712v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.15712v1"
-    },
-    {
-      "id": "2608.15388v1",
-      "title": "Look Before You Lift: Visual and Quantitative Diagnostics for Topological Deep Learning",
-      "authors": [
-        "Mathilde Papillon",
-        "Guillermo Bernárdez",
-        "Álvaro Ballón Barreiro",
-        "Marco Montagna",
-        "Rémi Devaux",
-        "Antoine Jardin",
-        "Nina Miolane"
-      ],
-      "abstract": "Topological deep learning (TDL) methods rely on lifting raw data into higher-order discrete domains such as simplicial complexes, cell complexes, and hypergraphs. In practice, this lifting step is often treated as a black box: practitioners select a lifting and then tune architectures, with limited visibility into whether the induced higher-order connectivity is meaningful for the downstream task. To address this missing diagnostic layer, we propose a visualization technique called TopoExplorer that leverages the strictly augmented Hasse graph form of topological datasets for exploratory data analysis. For the first time, practitioners can easily visualize the incidence- and adjacency-based neighborhoods that define the lifted dataset, as well as read off key graph metrics that describe its structural and feature landscape. Via an extensive set of experiments across many datasets and liftings, we show that several of these metrics correlate with downstream model performance, suggesting they can help inform TDL preprocessing design. Our perspective reframes the TDL workflow from lift-train to lift-look-design-train, enabling more principled, interpretable, and efficient model development. TopoExplorer is hosted at https://topoexplorer.pagekite.me, and its source code is available at github.com/geometric-intelligence/topoexplorer.",
-      "published": "August 15, 2026",
-      "published_raw": "2026-08-15T19:38:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.15388v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.15388v1"
-    },
-    {
-      "id": "2608.15121v1",
-      "title": "Sufficient Dimesion Reduction via Generalized Stein's Lemma",
-      "authors": [
-        "Ye Tian"
-      ],
-      "abstract": "Sufficient dimension reduction (SDR) seeks the minimal subspace of the predictors that captures the full conditional distribution of the response, which is known as the central subspace (CS). When the response is multivariate, the problem becomes considerably more challenging, particularly when the sample size is limited. Existing methods face different limitations:inverse regression approaches rely on strong distributional assumptions and matrix inversion, and their multi-response extensions suffer from severe slice sparsity; forward regression methods depend on computationally intensive iterative smoothing whose cost grows with the response dimension; and deep learning-based approaches demand large amounts of labeled data. To circumvent these shortcomings, we propose an SDR framework based on the generalized Stein's lemma. Our method constructs a cross-moment matrix between the multivariate response and the marginal score function of the predictors, and recovers the CS via its singular value decomposition. The proposed method does not rely on the linearity condition, avoids matrix inversion as well as iterative smoothing, and can leverage unlabeled data when available. We establish convergence guarantees for the proposed estimator under standard regularity conditions. Moreover, we propose a practical rank-selection algorithm to estimate the dimension of the CS. Extensive simulation studies and a real data application demonstrate that the proposed methods consistently outperform existing approaches across a variety of settings, particularly in moderate-dimensional, label-scarce scenarios with high noise levels.",
-      "published": "August 15, 2026",
-      "published_raw": "2026-08-15T08:46:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.15121v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.15121v1"
-    },
-    {
-      "id": "2608.14968v1",
-      "title": "A Deep Learning Model for Spatially Clustered Data via Differentiable Cluster Assignment",
-      "authors": [
-        "Kexuan Li",
-        "Weidong Ma"
-      ],
-      "abstract": "We consider nonparametric regression when the association between a response and its covariates changes across an unknown partition of a spatial domain. The proposed estimator learns the partition and the cluster-specific regression functions jointly. A neural network depending only on location determines cluster membership, while separate neural networks describe the covariate--response relationship within the clusters. An annealed softmax relaxation permits gradient-based estimation of the otherwise discrete assignments. Graph-Laplacian and occupancy penalties are used to discourage fragmented regions and degenerate solutions. We establish identifiability up to label permutation, bound partition error under a margin condition, and decompose prediction risk into regression and assignment components. The resulting rate agrees with that of an oracle estimator when the partition is estimated sufficiently accurately. Simulations show that joint estimation is useful when regression surfaces change abruptly across spatial boundaries, including settings with nonlinear effects, unequal region sizes, preferential sampling, and spatially correlated errors. Finally, a real data analysis is provided to demonstrate the validity and effectiveness of the proposed method.",
-      "published": "August 15, 2026",
-      "published_raw": "2026-08-15T01:39:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.14968v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.14968v1"
-    },
-    {
-      "id": "2608.14539v1",
-      "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
-      "authors": [
-        "Karel Becerra",
-        "Boris Mederos",
-        "Dean Snow",
-        "Ramón A. Mollineda"
-      ],
-      "abstract": "Determining the biological sex of the individuals who created Upper Paleolithic hand stencils remains a challenging problem due to the absence of ground truth, population differences between contemporary and prehistoric groups, and the uncertainty introduced by image degradation. Traditional morphometric methods suffer from high structural overlap across sexes, poor cross-population generalizability, and subjective feature engineering. This study presents an uncertainty-aware deep learning framework for sex attribution in prehistoric hand stencils that explicitly models, propagates, and aggregates uncertainty throughout the analytical pipeline. The methodology combines dual image processing, dual contour extraction, structured silhouette augmentation, model architectural diversity, and ensemble-based decision aggregation. The pipeline generates twelve plausible silhouette realizations per stencil to capture boundary uncertainties, which are processed by two ensembles of ten deep neural networks each (EfficientNet-B3 and MobileViT-S) trained on 14,036 contemporary hand samples. Furthermore, a triangulated validation scheme integrates ensemble predictions with unsupervised 2D latent-space manifold mapping (UMAP + k-NN) and explainable AI spatial attributions (LayerCAM) to ensure anatomical consistency. On contemporary data, ensemble models achieve strong classification performance, with accuracies exceeding 88% in older age groups. When applied to prehistoric stencils, the framework produces both sex predictions and confidence measures of internal agreement, enabling the distinction between morphologically stable and ambiguous cases. Convergence across ensemble predictions, latent-space structure, and interpretability analyses shows that uncertainty can become a measurable component of archaeological inference, enabling robust and reproducible decoding of ancient rock art.",
-      "published": "August 14, 2026",
-      "published_raw": "2026-08-14T17:51:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.14539v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.14539v1"
-    },
-    {
-      "id": "2608.14774v1",
-      "title": "p-Spin Glass Network Efficient Single-Batch Continual Learning",
-      "authors": [
-        "Vladimer Khasia"
-      ],
-      "abstract": "Modern sequence models heavily rely on massive memory footprints and large-batch stochastic optimization, barriers that restrict sample efficiency and continual learning. We introduce the $p$-Spin Glass Network, a novel architecture that overcomes these limitations, structurally manages optimization variance and yields four noticeable capabilities: 1. It enforces memory efficiency: native ternary quantization compresses internal parameters by $8\\times$, while exact implicit gradients strictly bound activation memory to $\\mathcal{O}(B \\cdot T \\cdot D)$. 2. it demonstrates sample efficiency, matching the asymptotic performance of a Transformer baseline while utilizing $8\\times$ fewer training sequences. 3. Method enables single-batch stability and smooth, monotonic convergence at a stochastic micro-batch size of $1$. 4. Finally, this stability proves modality-agnostic, maintaining robust temporal credit assignment across both discrete subword and long horizon uncompressed raw byte streams. Ultimately, this work removes large batch requirement for stable deep learning, establishing a foundation for continuous learning and edge AI.",
-      "published": "August 14, 2026",
-      "published_raw": "2026-08-14T16:24:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.14774v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.14774v1"
-    },
-    {
-      "id": "2608.14422v1",
-      "title": "UMPIRE-Net: Unrolled Magnitude-Phase Regularization Network for Accelerated MRI",
-      "authors": [
-        "Mahdi Saberi",
-        "Toygan Kiliç",
-        "Mehmet Akçakaya"
-      ],
-      "abstract": "MRI reconstruction from undersampled k-space measurements is an ill-posed inverse problem. Physics-driven deep learning (PD-DL) methods have shown strong performance for this task by combining the MRI forward model with learned image regularization within algorithm-unrolling frameworks. However, most existing PD-DL methods reconstruct complex-valued images directly, thereby implicitly coupling magnitude and phase within a single learned representation. This coupled regularization may be suboptimal in reconstruction settings where accurate phase modeling plays an important role, such as partial Fourier (PF) imaging, where recovery of the omitted asymmetric k-space measurements depends on the underlying image phase. In such scenarios, explicit modeling of magnitude and phase as separate components may reduce the reliance on externally estimated or predefined phase information. To this end, we propose UMPIRE-Net (Unrolled Magnitude-Phase In REgularization Network), a PD-DL method that introduces separate learned regularizers for magnitude and phase components, together with a novel data-fidelity formulation that enforces measurements consistency. We evaluate UMPIRE-Net for accelerated MRI with PF across different datasets and acceleration factors. Experimental results demonstrate that our proposed method improves reconstruction quality compared with a conventional complex-valued PD-DL baseline, yielding sharper images and reduced artifacts. Code available at: https://github.com/MahdiSaberii/UMPIRE-Net",
-      "published": "August 14, 2026",
-      "published_raw": "2026-08-14T16:04:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.14422v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.14422v1"
     }
   ]
 }
