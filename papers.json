@@ -1,7 +1,130 @@
 {
-  "last_updated": "2026-08-21T00:31:59.816655",
+  "last_updated": "2026-08-22T00:29:23.965876",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.20240v1",
+      "title": "QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication",
+      "authors": [
+        "Vincenzo Sammartino",
+        "Nathanael Denis",
+        "Roberto Di Pietro"
+      ],
+      "abstract": "X-band SAR satellites (8-12 GHz) play a critical role in disaster response, environmental monitoring, and military intelligence. Yet, they lack robust physical-layer authentication (PLA), a security layer orthogonal to cryptographic solutions. Existing PLA systems, typically based on radio-frequency fingerprinting, are often limited to sub-6 GHz frequencies and rely on classical deep learning. However, this approach underfits the IQ phase nonlinearities that distinguish satellite hardware. In this paper, we present QUASAR, to the best of our knowledge the first quantum-classical hybrid architecture that fuses a CNN spectrogram encoder with a variational quantum circuit (VQC) to provide PLA to X-band SAR signals. Our solution enjoys two distinctive features: (i) it is markedly more data-efficient than classical machine learning, requiring only 10% of the training data to match the accuracy of classical baselines -- data collection being notoriously the most time-consuming phase of PLA; and, (ii) at an equal data budget, it improves classification accuracy over those baselines. In detail, we test our solution under three adversarial scenarios: replay, crafted-IQ injection, and space-borne spoofing. QUASAR rejects spoofed transmissions in 89.7%, 94.1%, and 81.3% of attempts, respectively, establishing the first quantum-enhanced physical-layer classifier for satellite constellations. The fully detailed framework and the supporting results, other than being interesting on their own, show a novel research avenue for physical-layer authentication.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T16:31:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.20240v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.20240v1"
+    },
+    {
+      "id": "2608.20183v1",
+      "title": "Exact Algebraic Computation of Learning Coefficients for Two-Dimensional Singular Models",
+      "authors": [
+        "Grégoire Sergeant-Perthuis",
+        "Elias Tsigaridas",
+        "Jules Tsukahara"
+      ],
+      "abstract": "Classical information criteria such as the Bayesian Information Criterion (BIC) rely on regularity assumptions that break down for singular models, leading to incorrect model selection in settings such as deep learning. The Widely Applicable Bayesian Information Criterion (WBIC) relies on local learning coefficients $λ$, which in the analytic case coincides with local Real Log Canonical Thresholds (RLCT) of the Kullback-Leibler divergence of the model, to capture correct marginal likelihood asymptotics. Exact computation of the learning coefficients has been limited to special cases, and only sampling-based estimation methods are generally applicable. We present the first deterministic algorithm that computes local RLCTs exactly for any two-dimensional model whose Kullback-Leibler distance is contact equivalent to a polynomial, derive a bound on its complexity, and demonstrate its effectiveness for a broad class of models, with applications including polynomial neural networks. Beyond providing ground truth to calibrate sampling-based estimators, exact computation reveals algebraic structure in learning coefficients that sampling cannot and out-speeds it in the shallow regime.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T15:40:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.20183v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.20183v1"
+    },
+    {
+      "id": "2608.20117v1",
+      "title": "SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events",
+      "authors": [
+        "Hugo Porta",
+        "Emanuele Dalsasso",
+        "Chang Xu",
+        "Theo Gnassounou",
+        "Devis Tuia"
+      ],
+      "abstract": "The emergence of large-scale Weather and Climate (W&C) datasets offers new opportunities for modeling extreme Earth events (ExEE) and their impacts using deep learning. However, their adoption in operational settings remains limited by the lack of models' interpretability. While for conventional text and image modalities, tools such as Sparse Autoencoders (SAEs) have proven effective for extracting human-understandable concepts, their use for the analysis of ExEE remains challenging due to the nature of W&C data. To address this, we introduce (i) a geographic location-based modulation of the inputs of SAE to capture the local semantic meaning of environmental patterns, and (ii) an ensemble of rule-based SAE-Xplainers to interpret the resulting high-dimensional features derived from complex, multi-modal environmental predictors. We evaluate our method on three ExEE types: the prediction of fires, and the detection of tropical cyclones and atmospheric rivers. We show that SAE input modulation improves both reconstruction performance and feature utilization, and that our SAE-Xplainers enable faithful interpretation of complex climatic patterns by unfolding them into human-understandable rules that are consistent with the scientific literature, while also supporting the identification of feature absorption.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T14:49:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.20117v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.20117v1"
+    },
+    {
+      "id": "2608.19965v1",
+      "title": "Flow Matching Meets 3D Curvilinear Structure Segmentation in Medical Imaging",
+      "authors": [
+        "Sidi Mohamed Sid'El Moctar",
+        "Nicolas Vitry",
+        "Hélène Bouvrais"
+      ],
+      "abstract": "Segmentation of curvilinear anatomical structures in 3D medical images remains challenging due to complex topology, severe class imbalance, weak contrast, and large variations in structure morphology. While deep learning approaches for 3D curvilinear segmentation have been proposed, they are often tailored to specific anatomies or modalities, limiting generalization across clinical settings and leaving room for improvement. Recent generative models have shown the benefits of iterative prediction for structured segmentation tasks, yet diffusion-based methods suffer from computationally expensive sampling, hindering their use on high-resolution 3D volumes. We present 3D-CurvSegFlow, a flow matching-based model for 3D curvilinear structure segmentation. The model learns a continuous transformation from a simple source distribution to the target vascular representation, enabling progressive refinement of complex curvilinear geometries with efficient inference. We evaluate our method on Three public challenging datasets covering distinct anatomies and modalities: portal vein, cerebral vessel, and coronary arteries. Using a common architecture and training strategy across all tasks, our method outperforms general-purpose and vessel-specific approaches, with strong preservation of thin branches and vascular continuity. This work not only advances the state-of-the-art in 3D curvilinear segmentation but also opens new avenues for efficient, generalizable, and clinically applicable methods in medical image analysis.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T12:35:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.19965v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.19965v1"
+    },
+    {
+      "id": "2608.19881v1",
+      "title": "Interpretable Feature Learning for RF Fingerprinting via Polar MKANs",
+      "authors": [
+        "Mikhail Krasnov",
+        "Ljupcho Milosheski",
+        "Carolina Fortuna"
+      ],
+      "abstract": "Radio frequency (RF) fingerprinting authenticates wireless devices from hardware-induced I/Q impairments, typically with deep learning feature extractors that are accurate but opaque, limiting their use in security critical settings. We propose Polar Monotonic Kolmogorov-Arnold Networks (Polar MKAN), a block partitioned monotonic encoder on polar inputs in which each latent dimension depends exclusively on magnitude or phase, yielding channel separation and monotone responses by construction. On a synthetic gain and carrier frequency offset (CFO) benchmark, Polar MKAN reaches 57.2 percent DCI Disentanglement versus at most 12.9 percent for unpartitioned baselines. We further evaluate the detection accuracy trade off on real data and the sensitivity to blind CFO compensation.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T10:42:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.19881v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.19881v1"
+    },
+    {
+      "id": "2608.19789v1",
+      "title": "TT-net: Quantum Inspired Tensor Network Denoising in Conditional GANs",
+      "authors": [
+        "Michal A. Sterzel",
+        "Marko J. Rančić"
+      ],
+      "abstract": "Developed as a workhorse for classical simulations of quantum algorithms and quantum many-body systems, Tensor Network methods have entered the scientific mainstream in quantum physics. Among various types of tensor networks, Tensor Trains (commonly know as Matrix Product States in the quantum computing community) have already found applications in machine learning. These methods often rely on a powerful linear algebra tool called the Singular Value Decomposition (SVD). Several conditional GAN architectures for image denoising incorporate SVD as a single-cut decomposition step applied to generator feature maps. In this work we introduce TT-Net, which replaces the per-channel SVD denoising block with a two-cut tensor-train decomposition capable of accessing cross-channel information directly, a capability absent from contemporary alternatives. In a controlled comparison differing only in this decomposition mechanism, TT-Net outperforms SVD-Net on PSNR and SSIM across all three noise types tested (Gaussian, motion blur, and salt-and-pepper), supporting the hypothesis that cross-channel access improves denoising quality. Training-dynamics analysis further shows that TT-Net's adversarial loss term consistently saturates to a stagnant state across all three noise types, more so than SVD-Net's, while reconstruction quality continues to improve regardless, raising an open question about the adversarial component's contribution that this work identifies but does not resolve. Furthermore, for Gaussian noise our method outperforms both the EigenGAN and the state of the art Pix2pix method which does not assume any linear algebra decompositions and does not retain any linear algebra information. Our manuscript shows how quantum inspired tools can be used as practical real world feature filters for deep learning applications.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T08:34:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.19789v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.19789v1"
+    },
+    {
+      "id": "2608.19672v1",
+      "title": "SAGE-XGBoost: Spatially Augmented Graph Embeddings--Machine Learning Framework for Natural Hazards Susceptibility Mapping under Data Scarcity",
+      "authors": [
+        "Mohammad H. Vahidnia",
+        "Ali Pourkarimi"
+      ],
+      "abstract": "Natural hazard susceptibility mapping is often constrained by limited labeled data, reducing the generalizability of conventional machine learning and limiting the applicability of complex deep learning models. This study proposes SAGE (Spatially Augmented Graph Embeddings), a structurally informed feature-engineering framework that combines controlled noise-based data augmentation with neighborhood-based graph embeddings to improve prediction under data-scarce conditions. A K-nearest neighbor graph is constructed to derive local spatial statistics, which are reduced using principal component analysis and integrated with environmental covariates and spatial coordinates. The resulting features are used with XGBoost to develop the SAGE-XGBoost model. The framework was evaluated for landslide and wildfire susceptibility mapping. SAGE-XGBoost consistently outperformed conventional and spatially explicit machine learning models. Compared with Spatial XGBoost, it achieved an absolute improvement of above 33 percentage points across the two case studies. The model reached AUC values of approximately 0.97 for landslide susceptibility and 0.95 for wildfire susceptibility. Feature importance analysis confirmed the contribution of graph embeddings to prediction, while their integration improved spatial coherence and reduced local noise amplification. Overall, SAGE-XGBoost provides an efficient and transferable alternative to deep representation learning for environmental hazard assessment and other geospatial prediction tasks under limited supervision.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T06:07:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.19672v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.19672v1"
+    },
+    {
+      "id": "2608.19584v1",
+      "title": "Kähler landscapes for complex neural network descents and guarantees including a search and destroy of the Calabi-Yau manifold",
+      "authors": [
+        "Andrew Gracyk"
+      ],
+      "abstract": "We study landscapes for complex-parameterized networks. Our approach is motivated with an information-theoretic manifold perspective of the parameter and via classical optimization guarantees although of complex geometric variety such as through Dolbeault asymptotics. The descent path admits a Kähler information metric under a cross-entropy via the Wirtinger Hessian on the log-likelihood potential. We restrict attention to a descent update rule with natural gradient descent via a differentiated loss scaled by the inverse metric, so the descent path remains in the holomorphic tangent bundle. We emphasize Calabi-Yau information manifolds which profane theoretical guarantees via an ill-curvature-conditioned landscape. Under a Calabi-Yau metric, specifically in a non-compact setting with a global potential so defined geometrically rather than invoking the topological requirements of the Calabi conjecture, a wedged nowhere-vanishing holomorphic form is the top exterior product of the Kähler form up to constants, yielding a constant determinant condition. Under a fixed determinant, a metric almost low rank up to an eigenvalue tolerance implies a blow-up effect. Moreover, it has been discovered that negative curvature subverts the loss landscape, specifically sectional curvature, so we expand on this and draw interconnections to negative-definite Ricci curvature. Our arguments primarily exist in a geometric analytic modality, although we establish roots in deep learning theory such as through asymptotics at initialization and connections through failure modes of neural network guarantees under vanishing and negative Ricci curvature.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T03:03:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.19584v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.19584v1"
+    },
+    {
+      "id": "2608.19407v1",
+      "title": "HiRA-CAM: Preserving Fine-Grained Spatial Relevance in Gradient-Based Visual Explanations",
+      "authors": [
+        "Manasi Nerurkar",
+        "Ali A. Minai"
+      ],
+      "abstract": "Deep Learning models can include billions of parameters or more, making it difficult to explain their internal transformations and outputs. However, explainability is increasing in importance due to the use of AI in crucial applications. This paper focuses on the interpretability of convolutional neural networks (CNNs). Building on the popular gradient based method LayerCAM for extracting internal features in CNNs, we propose an improved method named HiRA-CAM, and show that it outperforms both LayerCAM and Grad-CAM on creating useful saliency maps for object classification. The main feature of HiRA-CAM is its adaptive use of activation maps from all the layers of the CNN to arrive at a more focused saliency map.",
+      "published": "August 19, 2026",
+      "published_raw": "2026-08-19T19:44:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.19407v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.19407v1"
+    },
     {
       "id": "2608.19190v1",
       "title": "SiNMULI: Novel Signed Network Approach for Malicious URL Identification",
@@ -172,150 +295,6 @@
       "published_raw": "2026-08-19T01:03:34Z",
       "pdf_link": "http://arxiv.org/pdf/2608.18415v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.18415v1"
-    },
-    {
-      "id": "2608.18282v1",
-      "title": "Self-supervised In-context Operator Learning for Stochastic Mean-Field Control",
-      "authors": [
-        "Suyi Gao",
-        "Mo Zhou",
-        "Rongjie Lai"
-      ],
-      "abstract": "Stochastic mean-field control (MFC) provides a fundamental framework for coordinating large populations of interacting agents under uncertainty, with a wide range of applications. Existing numerical and deep-learning methods solve one MFC problem instance at a time and must be re-optimized whenever the task changes. In this work, we formulate stochastic MFC as an operator-learning problem and develop, to the best of our knowledge, the first mesh-free, self-supervised neural operator for stochastic MFC. The main challenge is that the diffusion term in the controlled Fokker--Planck equation precludes deterministic transport-map representations. We address this challenge by combining the probability-flow ODE with an invertible normalizing-flow-based transformer, which recasts the dynamics as a deterministic continuity equation and enables closed-form score evaluation through the exact inverse and analytical log-determinant of the normalizing flow, with $\\mathcal{O}(d)$ cost per particle for networks of fixed size. Through transformer-based in-context learning, task prompts, represented by compact distribution parameters or raw particle clouds, condition the transport map, enabling a single pretrained operator to solve unseen tasks in one forward pass. The resulting \\emph{Normalizing Flow Invertible Solution Transformer} (NFIST) is trained end-to-end by minimizing the stochastic control objective directly, requiring no precomputed numerical solutions for training. We further prove the consistency of the proposed operator-learning formulation with task-by-task optimization. Numerical experiments on stochastic optimal control, Schrödinger bridge, systemic-risk control, and obstacle-avoiding path planning demonstrate effective zero-shot generalization while substantially reducing the computational cost of solving large families of stochastic MFC problems.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T20:03:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18282v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18282v1"
-    },
-    {
-      "id": "2608.18279v1",
-      "title": "A Comprehensive Review of Large Language Models for Nanophotonics: From Surrogate Modeling to Autonomous Design",
-      "authors": [
-        "Huanshu Zhang",
-        "Kegeng Tang",
-        "Lei Kang",
-        "Sawyer D. Campbell",
-        "Zihao Wang",
-        "Douglas H. Werner"
-      ],
-      "abstract": "Metasurfaces have revolutionized the development of photonic devices by enabling unprecedented precision in light manipulation. However, their design processes are often constrained by computationally expensive simulations and complex high-dimensional design spaces. Although deep learning has accelerated the design process by serving as a surrogate model, it remains constrained by task-specific architectures and lacks universal reasoning capabilities. This review surveys how Large Language Models (LLMs) are adding semantic interfaces, code generation, and tool orchestration to established numerical nanophotonic workflows. We first outline the development from classical neural networks to transformer-based models and their applications in nanophotonic design. We then review the emergence of LLM-related methods in nanophotonics and organize them into two operational modes: surrogate models that treat structure-spectrum mapping as a language task, and agentic systems that have been demonstrated to generate code, orchestrate selected simulation steps, and support closed-loop optimization. Furthermore, to identify future cross-disciplinary opportunities, we briefly explore applications of LLMs in research fields such as materials science and wireless communications. This review concludes by looking ahead to the next generation of multimodal foundation models with physical perception capabilities. In this vision, artificial intelligence is evolving from passive tools into active collaborators, participating in autonomous scientific discovery.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T19:57:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18279v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18279v1"
-    },
-    {
-      "id": "2608.18036v1",
-      "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
-      "authors": [
-        "Mahdi Saberi",
-        "Yaşar Utku Alçalar",
-        "Merve Gülle",
-        "Chetan Shenoy",
-        "Mehmet Akçakaya"
-      ],
-      "abstract": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may provide complementary information for signal recovery. However, their use in MRI reconstruction remains largely unexplored, due to lack of practical settings where informative magnitude measurements can be obtained without additional scan time. In this work, we investigate the use of auxiliary k-space magnitude information for accelerated steady-state dynamic MRI reconstruction, and demonstrate strong consistency of k-space magnitudes across time-frames. Building on this observation, we propose $\\mathbb{C}+\\text{Mag}$, a magnitude-informed physics-driven deep learning reconstruction method. The proposed method employs an ADMM-based unrolling framework with a novel magnitude-aware data-fidelity formulation, where quadratically smoothed optimization and momentum-based updates are introduced to address the non-differentiability and non-convexity of the magnitude constraints. Experiments on retrospectively undersampled cine MRI and phase-contrast flow MRI datasets, as well as prospectively undersampled real-time cine MRI acquisitions, demonstrate improved artifact suppression, sharper anatomical recovery, and better preservation of phase information compared to conventional PD-DL methods, which is further supported through blinded expert reader evaluations.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T17:31:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18036v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18036v1"
-    },
-    {
-      "id": "2608.17971v1",
-      "title": "Evaluating and improving crop-yield forecasting methods during extreme drought",
-      "authors": [
-        "Shrey Gupta",
-        "Yi Ming",
-        "George Mohler"
-      ],
-      "abstract": "The impact of climate variability on food production has led to the creation of various forecasting models that uses machine learning (ML), numerical weather predictors (NWP) or a hybrid of ML-NWP models to identify structural and physical relationships between meteorological drivers and crop growth, in order to predict crop yield. Droughts, for example the 2012 Midwestern US (Corn Belt) drought, are extreme events that affect crop production and test the limits of these forecasting models. Using 16 meteorological drivers as predictors, we compare ML (non-deep learning) and deep learning forecasting models to predict the county-level corn yield for the extreme drought year, 2012. This forecasting problem is characterized by a dissimilarity between the feature distributions of the training and test data, where the meteorological conditions of the extreme drought year fall outside the range of historically observed values. Additionally, the dataset consists of spatial and temporal irregularities where counties with missing yields introduce spatial sparsity and the use of only a subset of daily values per year introduce temporal sparsity. To overcome this, we use sample weighting and feature selection as modifications to improve our forecasting models. These modifications lead to an improvement for ML models; however, the deep learning model VITA shows little to no improvement. While VITA outperforms the ML models with or without modifications, our current study sheds light on the effect of dissimilarity between train and test feature distributions on forecasting models, compares deep learning versus non-deep learning models, and introduces modifications that are effective for non-deep learning models.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T16:23:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.17971v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.17971v1"
-    },
-    {
-      "id": "2608.17923v1",
-      "title": "AppendiGrade: An XAI-Enhanced Deep Learning Framework for Grading Appendicitis in Ultrasound with Gaussian Blur and Grad-CAM",
-      "authors": [
-        "Fahad Ahammed",
-        "Omar Faruq Shikdar",
-        "Navid Zaman",
-        "Md Tahsin",
-        "Md. Nawab Yousuf Ali",
-        "Golam Sorwar"
-      ],
-      "abstract": "Appendicitis is one of the most common abdominal emergencies worldwide and requires prompt diagnosis and treatment to prevent life-threatening conditions. However, accurately differentiating complicated cases, such as perforation or abscess formation, from uncomplicated appendicitis remains a significant clinical challenge. Among other methods, ultrasound is a safer and more cost-efficient diagnostic technique because of the lack of radiation exposure. In this research, an advanced system capable of automatically detecting complicated appendicitis from ultrasound images was developed. A dataset consisting of 4679 ultrasound images with 5 classes, namely perforated, abscess, acute, appendicolith, and normal, was used for the proposed model training and testing. Four pretrained deep learning models, DenseNet201, InceptionV3, ConvNextTiny, and VGG19, have been employed for detecting and classifying complicated appendicitis. In the initial configuration, InceptionV3 achieved the second highest accuracy, with a value of 69.21%. Owing to suboptimal performance with raw images, further optimization techniques, including image preprocessing, hyperparameter tuning, model fine-tuning, and image sharpening, were applied. These enhancements significantly improved the model's performance, with an accuracy of 95.58% for InceptionV3. The model performance is then explained with gradient-weighted class activation mapping (Grad-CAM), which creates a heatmap of the regions responsible for the model's prediction of the infected areas. This could make crosschecking with experts much easier.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T15:46:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.17923v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.17923v1"
-    },
-    {
-      "id": "2608.17796v1",
-      "title": "Diff-DDoS: Realistic Cyber-Physical Attack Synthesis and Robust Detection for 5G-Enabled CPS Using Tabular Diffusion Models",
-      "authors": [
-        "Bilal Hussain",
-        "Xiao Tang",
-        "Qinghe Du",
-        "Tan Li",
-        "Muhammad Azhar",
-        "Danista Khan"
-      ],
-      "abstract": "Deep learning-based DDoS detectors for 5G-enabled cyber-physical systems face scarce labeled attack data and unrealistic synthetic substitutes, which limit robustness against adaptive adversaries. Detectors trained on hand-crafted attacks with fixed scaling multipliers degrade catastrophically (F1-score drops of about 47 percent to 100 percent, depending on scenario) when confronted with realistic, distribution-preserving samples. We propose Diff-DDoS, a three-phase framework for realistic attack synthesis and robust detection using tabular diffusion models. Phase 1 trains a baseline CNN cell-level detector on spatiotemporal grids from call detail records (CDRs). Phase 2 trains a tabular denoising diffusion probabilistic model (TabDDPM) on normal CDR aggregates to generate realistic attacks and expose detector vulnerabilities. Phase 3 introduces adversarial diffusion training (ADT), using inverse classifier guidance to generate hard yet distribution-preserving samples until the detector converges. On a Milano CDR dataset across SMS-flooding, silent-call, Internet-signaling, and blended scenarios, ResNet50 with ADT recovers F1-scores of 79.62 percent (silent-call), 100 percent (Internet), and 92.79 percent (blended). After validation-based threshold calibration, ADT reaches 100 percent SMS F1 versus 47.3 percent for CTGAN, and matches the strongest gradient-based adversarial-training baseline on silent-call. These results support tabular diffusion models for stress-testing and hardening intrusion detectors in data-scarce 5G cyber-physical deployments.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T13:56:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.17796v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.17796v1"
-    },
-    {
-      "id": "2608.17753v1",
-      "title": "MAGPIE-Net: Predicting short-duration heavy-rainfall events in station neighborhoods from multitemporal FY-4A AGRI observations",
-      "authors": [
-        "Xiang Lin",
-        "Yunying Li",
-        "Chengzhi Ye",
-        "Zitong Chen",
-        "Jing Sun"
-      ],
-      "abstract": "Short-duration heavy-rainfall warning determines whether 1 h rainfall will exceed a threshold within a target-station neighborhood over the next few hours. Multitemporal infrared and water-vapor observations from the Fengyun-4A Advanced Geostationary Radiation Imager (FY-4A AGRI) capture cloud-top cooling, moisture evolution, and cloud expansion before substantial surface rainfall develops. However, most deep-learning nowcasting methods convert these signals into local warnings by post-processing gridded precipitation predictions, preventing station-neighborhood event targets from directly supervising the satellite-to-station learning pathway. We propose MAGPIE-Net, which embeds a geographically adaptive, differentiable grid-to-station mapping in a pathway combining convection-initiation features, multiscale encoding, and auxiliary gridded precipitation diagnosis. Station-neighborhood event losses thereby constrain the satellite representation and its mapping to irregular station locations for 0-3 h event prediction. In independent 2023 warm-season tests over central and eastern China, critical success index (CSI) values under the primary 40 km/20 mm h-1 definition were 0.371, 0.304, and 0.238 at 0-1, 1-2, and 2-3 h. Across episodes, MAGPIE-Net achieved a detection rate of 65.1% and a mean lead time of 64.6 min, compared with 23.6% and 18.3 min for the best gridded-output baseline, and remained superior for smaller neighborhoods and the 50 mm h-1 threshold. During the critical early-warning stage, when antecedent 1 h rainfall within 40 km remained below 1 mm, MAGPIE-Net detected 51.9% of episodes with a mean lead time of 38.5 min. These results show that event-oriented satellite-to-station modeling converts multitemporal geostationary cloud and moisture observations into local heavy-rainfall warnings more effectively than gridded-precipitation modeling.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T13:17:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.17753v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.17753v1"
-    },
-    {
-      "id": "2608.18191v1",
-      "title": "ChiroEcho: extending automated bat vocalisation classification beyond the learned taxonomy",
-      "authors": [
-        "Burooj Ghani",
-        "Welmoed Eversteijn",
-        "Milan van Hirtum",
-        "Juan Sebastián Cañas",
-        "Vincent J. Kalkman",
-        "Dan Stowell",
-        "A. Leonie Baier"
-      ],
-      "abstract": "Bats are key indicators of ecosystem health and are protected throughout Europe, making reliable population monitoring a conservation priority. Their cryptic nocturnal lifestyle makes passive acoustic monitoring essential, yet automated identification remains difficult as echolocation calls vary with behaviour and environment and overlap among species. We present a deep learning framework that jointly predicts species and genus and combines genus predictions with geographic species distributions at inference. When only one species of a predicted genus occurs in a region, the framework can resolve species absent from the learned taxonomy. This reframes geographic information as a means of extending, rather than constraining, a classifier's effective taxonomy. Using recordings spanning 35 European bat species, we evaluate closed-set classification, examine the instability of performance estimates for sparsely represented species, and conduct a controlled held-out proof-of-principle experiment. The rare-species analysis shows how limited evaluation data can obscure species-level performance, while the held-out experiment shows that genus predictions and location can recover labels unavailable to the species head. Geographic resolution extends operational coverage from 35 to 41 of the 48 native European bat species, increasing coverage from 73% to 85%. To our knowledge, this is the broadest operational coverage reported for automated European bat classification. More broadly, the bat framework provides proof of principle for resolving unseen fine-grained classes by combining coarse predictions with transparent external constraints.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T12:38:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18191v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18191v1"
-    },
-    {
-      "id": "2608.18188v1",
-      "title": "A systematic review of machine learning techniques to address diagnosis and treatment of autism: challenges and opportunities",
-      "authors": [
-        "Rafael Muñoz-Terol",
-        "Jesús Peral",
-        "Sandra Amador",
-        "David Gil"
-      ],
-      "abstract": "Autism spectrum disorder (ASD) is a developmental disability characterized by challenges in social interaction and communication. As the causes of ASD remain unclear, identifying relevant features and hidden correlations is crucial for early diagnosis. This systematic review evaluates 55 studies from 2017 to 2023 on the application of machine learning (ML) techniques to ASD. The primary objective is to examine recent ML applications in ASD research, identifying trends, techniques, and datasets that enhance diagnosis and treatment. Supervised learning methods dominate, as they align well with ASD diagnostic needs; however, the role of deep learning is expanding with greater data availability. Emerging techniques based on hybrid methods, where unsupervised, deep learning, and fuzzy logic could be included, will be interesting to observe in the future. The review highlights key challenges and opportunities, particularly the need for models that can integrate complex data -such as genetic and clinical information- to improve diagnostic accuracy and treatment outcomes. Additionally, incorporating innovative data sources, like wearable devices and biometric sensors, could enable continuous and non-intrusive monitoring, providing a more holistic understanding of ASD. Findings emphasize that addressing current challenges requires interdisciplinary collaboration and expanded datasets tailored to ASD. Future ML models will benefit from broader multimodal data integration, enabling researchers to more comprehensively address the complexities of ASD.",
-      "published": "August 18, 2026",
-      "published_raw": "2026-08-18T11:27:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18188v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18188v1"
     }
   ]
 }
