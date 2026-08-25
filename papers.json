@@ -1,7 +1,58 @@
 {
-  "last_updated": "2026-08-24T00:31:14.371621",
+  "last_updated": "2026-08-25T00:30:25.032026",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.21157v1",
+      "title": "HIERA: Workload-Aware Planning Across Implementation Spaces for GPU Kernel Optimization",
+      "authors": [
+        "Jinghao Wang",
+        "Qiqi Gu",
+        "Chenpeng Wu",
+        "Jianguo Yao",
+        "Haibing Guan",
+        "Xijun Li"
+      ],
+      "abstract": "High-performance GPU kernels underpin modern deep learning and scientific computing. As workloads become increasingly diverse and GPU hardware evolves rapidly, developing efficient methods for automated GPU kernel generation and optimization has become increasingly important. Existing LLM-based methods typically optimize within a fixed implementation space, limiting either optimization flexibility or search efficiency. We propose \\textsc{HIERA}, a hierarchical search-space planning framework for GPU kernel optimization. \\textsc{HIERA} constructs contract-augmented task specifications, selects an appropriate implementation space across PyTorch operators, CUDA libraries, and custom CUDA kernels, and uses profiling feedback and expert knowledge to guide structured iterative refinement. Experiments on KernelBench across multiple various workload levels and base LLMs show that \\textsc{HIERA} delivers stronger overall implementation validity, sample efficiency, and optimization performance than existing training-free methods, while remaining competitive with the training-based CUDA-L1 without additional model training. A case study on a specialized stencil operator from scientific computing further achieves a \\(1.53\\times\\) speedup over cuDNN, demonstrating the potentiality of the general framework beyond standard machine-learning workloads.",
+      "published": "August 21, 2026",
+      "published_raw": "2026-08-21T14:29:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.21157v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.21157v1"
+    },
+    {
+      "id": "2608.21148v1",
+      "title": "Statistical and Deep Learning Approaches for Predicting Degradation of Polymeric Materials in Photovoltaics",
+      "authors": [
+        "Yili Hong",
+        "Xiaohong Gu"
+      ],
+      "abstract": "Polymeric materials are widely used in photovoltaic (PV) systems, making it essential to understand their service life to ensure reliable PV performance. The primary failure mechanism of polymeric materials in PV systems is photodegradation caused by ultraviolet (UV) radiation. Degradation modeling provides a framework for predicting service life, with a key step being the development of predictive models for degradation paths. This paper presents statistical and machine learning approaches for predicting the outdoor degradation of polymeric components in PV systems. We describe the study design and data collection process for developing predictive models based on indoor laboratory testing data, which are then extended to outdoor field conditions with time-varying environmental variables, with prediction uncertainty quantified through simulation. Deep learning (DL) methods are also explored, and results are compared across modeling approaches. The parametric statistical model demonstrates good fit and predictive performance across datasets and shows greater robustness by incorporating physical and chemical knowledge. The DL model provides flexibility in capturing complex covariate relationships and often yields accurate predictions, though it is less robust across datasets. The paper concludes with remarks on key findings and their implications for PV reliability.",
+      "published": "August 21, 2026",
+      "published_raw": "2026-08-21T14:24:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.21148v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.21148v1"
+    },
+    {
+      "id": "2608.20557v1",
+      "title": "Learning Prostate Anatomy at Test Time for Cancer Detection in Micro-Ultrasound",
+      "authors": [
+        "Obed Korshie Dzikunu",
+        "Mohammad Mahdi Abootorabi",
+        "Mohamed Harmanani",
+        "Paul F. R. Wilson",
+        "Emma Willis",
+        "Ferdinand Luger",
+        "Adam Kinnaird",
+        "Brian Wodlinger",
+        "Parvin Mousavi",
+        "Purang Abolmaesumi"
+      ],
+      "abstract": "Domain shift across clinical centers using different imaging hardware or acquisition protocols remains a fundamental barrier to deploying deep learning models for prostate cancer (PCa) detection. Existing test-time adaptation (TTA) methods address distribution shift through entropy minimization or augmentation-based self-supervision, correcting for statistical differences in image appearance but ignoring the anatomical structure of the target domain. We propose ANT, a segmentation-guided TTA framework that adapts a pretrained cancer detection encoder to the target domain by solving an auxiliary prostate segmentation task at test time, supervised by pseudo-masks from a frozen pretrained segmentation network. By aligning encoder representations to prostate anatomy in the target domain, ANT corrects domain-specific feature drift while preserving cancer-discriminative structure. The model was trained on 693 patients imaged with an earlier-generation micro-ultrasound scanner in a multi-center clinical trial, and evaluated on 118 patients acquired with a newer-generation system across two centers in another clinical trial. Under a leave-one-center-out protocol with identical evaluation conditions across all methods, ANT improves mean AUC by 2.9% and 3.6% at the biopsy-core and patient levels, respectively, over no adaptation, outperforming TTA baselines. Code is available at: https://github.com/ObedDzik/ant.git.",
+      "published": "August 20, 2026",
+      "published_raw": "2026-08-20T20:36:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.20557v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.20557v1"
+    },
     {
       "id": "2608.20240v1",
       "title": "QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication",
@@ -242,59 +293,6 @@
       "published_raw": "2026-08-19T05:27:27Z",
       "pdf_link": "http://arxiv.org/pdf/2608.18558v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.18558v1"
-    },
-    {
-      "id": "2608.18500v1",
-      "title": "Tianmu-TC: Physics-constraints Generative Artificial Intelligence for Global Tropical Cyclone Forecasting",
-      "authors": [
-        "Shiqi Zhang",
-        "Pan Mu",
-        "Cheng Huang",
-        "Hanting Yan",
-        "Yuchao Zhu",
-        "Jinglin Zhang",
-        "Shengyong Chen",
-        "Shoujuan Shu",
-        "Cong Bai"
-      ],
-      "abstract": "Tropical cyclones (TCs) pose severe risks from strong winds and heavy rainfall. However, forecasting their track and intensity remains challenging due to chaotic atmosphere and the rapid amplification of initial condition errors, leading to growing forecast uncertainty. While numerical weather prediction (NWP) and deep learning models have made progress, they remain computationally demanding and often fail under complex meteorological scenarios. Here, we present Tianmu-TC, a physics-constraints generative framework for global TC forecasting. Trained on Western North Pacific data, Tianmu-TC leverages physics-constraints to generate controllable outputs with reduced uncertainty thus improving forecast reliability. Experiments show Tianmu-TC outperforms deterministic and ensemble meteorological artificial intelligence models and authoritative NWP systems such as ECMWF in global ocean basins, with significantly lower computational cost. We further show Tianmu-TC performs well in challenging scenarios such as data sparsity, anomaly tracks, rapid intensification and weakening. These findings suggest physics-constraints generative AI offers a promising approach for reliable, efficient global TC forecasting.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T03:46:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18500v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18500v1"
-    },
-    {
-      "id": "2608.18451v1",
-      "title": "Atrial Fibrillation Detection with Arbitrary Leads via a Codebook-Based Reconstruction-Classification Framework",
-      "authors": [
-        "Hongtao Li",
-        "Jia Wei",
-        "Guoyao Li",
-        "Yuchen Lei",
-        "Guangnian Ma",
-        "Jia Xiao",
-        "Yuanjun Lai",
-        "Shuzhen Lv",
-        "Xueqiang Ouyang"
-      ],
-      "abstract": "\\textbf{Background and Objective}: Reliable atrial fibrillation (AF) detection from electrocardiogram (ECG) signals remains challenging in real-world clinical settings due to variable lead configurations, cross-dataset domain shifts, and pervasive physiological and technical artifacts. So we develop a robust and generalizable deep learning model for accurate AF detection.\\\\ \\textbf{Methods}: We propose the Dual-Codebook Graph Collaborative Network (DCGCNet), a novel end-to-end vector-quantized variational autoencoder that jointly performs AF classification and ECG reconstruction. DCGCNet introduces two key components: (1) a Local-Global Contrastive Module for learning noise-invariant representations, and (2) an Adaptive Codebook Vector Quantizer that dynamically refines codebook prototypes to better align with input data distributions, thereby preventing codebook collapse and enhancing generalization.\\\\ \\textbf{Results}: DCGCNet achieves state-of-the-art performance in standard intra-dataset 12-lead evaluation and demonstrates exceptional cross-dataset generalization across seven diverse settings, consistently attaining AUC > 0.98 in all cases. Furthermore, it maintains high diagnostic accuracy under realistic noisy conditions, including baseline wander, powerline interference, and EMG artifacts.\\\\ \\textbf{Conclusions}: DCGCNet establishes a new benchmark for robust, generalizable, and noise-resilient AF detection, showing strong potential for deployment in real-world clinical environments.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T02:25:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18451v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18451v1"
-    },
-    {
-      "id": "2608.18415v1",
-      "title": "The Road Taken: The Role of Optimizers at the Edge of Stability",
-      "authors": [
-        "Jaerin Lee",
-        "Kyoung Mu Lee"
-      ],
-      "abstract": "The edge of stability refers to a phenomenon in deep learning with gradient-based optimizers where the Hessian eigenvalues of the loss remain stable above a threshold that the classical descent lemma predicts to be unstable. Previous works formulate the edge of stability with respect to the maximum Hessian eigenvalue and the learning rate. However, we observe that many first-order methods, including gradient descent, significantly violate the stability bound predicted by these theories by a factor as large as $\\times 21.1$. Moreover, this deviation turns out to be systematic and highly dependent on the underlying optimizer, which is not captured by previous formulations. This calls for a new formulation of the stability threshold, which we derive from the directional Hessian and the gradient-alignment score with respect to the actual update taken by the optimizer, rather than the maximum curvature mode. Our new formulation of the realized edge of stability not only removes optimizer-dependent offsets and provides more consistent predictions of the stability threshold, but also introduces new diagnostic tools that reveal the unique role of the optimizer in actively balancing between the temporal and spatial budgets in first-order optimization.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T01:03:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18415v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18415v1"
     }
   ]
 }
