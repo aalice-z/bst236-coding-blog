@@ -1,7 +1,216 @@
 {
-  "last_updated": "2026-08-25T00:30:25.032026",
+  "last_updated": "2026-08-26T00:31:38.727731",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.23531v1",
+      "title": "Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement",
+      "authors": [
+        "Santosh Ray",
+        "Pratik K. Mishra",
+        "Ali Abedi",
+        "Charlene H. Chu",
+        "Amir Ahmad",
+        "Shehroz S. Khan"
+      ],
+      "abstract": "Older adults recovering after lower-limb fracture or hip replacement may experience complex recovery trajectories. Most of the time, these clinical aspects are studied in isolation, masking their joint impact on recovery. This study used the MAISON-LLF dataset, which contains multimodal sensor and clinical assessment data from 18 older adults recovering in the community after lower-limb fracture or hip replacement. Participants were monitored for up to eight weeks, corresponding to a maximum of 1,008 participant-days of sensor monitoring. Forty-six daily features were extracted from indoor motion, acceleration, step count, heart rate, out-of-home mobility, and sleep data. Five clinical outcomes were assessed every two weeks: the Social Isolation Scale, Oxford Hip Score, Oxford Knee Score, Timed Up and Go test, and 30-second Chair Stand test. We utilize an inherent relationship between multi-modal sensor data and different clinical scores and formulate it as a multi-output regression problem. We tested various machine learning and deep learning single- and multi-output regression algorithms to predict these scores simultaneously. The results showed that predicting clinical scores jointly was better than separately. The tabular DL multi-output regressor, NODE, gave a remarkable performance of MSE=3.96 and MAE=1.02 in comparison to other multi- and single-output regressors. The SHAP feature analysis further showed the importance of including multimodal sensors to provide a good estimate of patients' recovery trajectory. This work may support the simultaneous assessment of functional recovery and social engagement among community-dwelling older adults and ultimately help improve their care and quality of life.",
+      "published": "August 24, 2026",
+      "published_raw": "2026-08-24T17:33:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.23531v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.23531v1"
+    },
+    {
+      "id": "2608.23347v1",
+      "title": "Test-Time Adaptation for ECG Classification via SQI-Gated Self-Training and Beat-Rhythm Consistency",
+      "authors": [
+        "Wenhan Jiang",
+        "Zhipeng Deng",
+        "Jiale Zhou",
+        "Haolin Wang",
+        "Yafei Ou",
+        "Yefeng Zheng"
+      ],
+      "abstract": "Deep learning models for electrocardiogram (ECG) classification often suffer from significant performance degradation when deployed in unseen domains due to shifts in acquisition devices and patient populations. Test-time adaptation (TTA) offers a practical solution by adapting models using only unlabeled data at inference time. However, existing TTA methods often underperform on ECG tasks, since naive online updates ignore the hierarchical beat-rhythm structure of cardiac cycles and are vulnerable to signal artifacts, which leads to unstable adaptation and model drift. We propose BeatRhythm-TTA, an ECG-tailored TTA framework that explicitly accounts for ECG's noisy observations and structured beat-rhythm semantics under domain shift. First, to handle pervasive ECG artifacts, we introduce a Signal Quality Index (SQI)-gated adaptation scheme that selectively filters out low-quality signals to prevent harmful updates. Second, to leverage ECG's beat-rhythm semantics, we enforce dual-level consistency so the model preserves beat morphology and rhythm dynamics while adapting to shifted acquisition conditions. Extensive experiments on multi-label ECG diagnosis across three adaptation protocols, using PTB-XL as the source domain and CPSC2018/Georgia as two target domains, demonstrate the effectiveness of our method, yielding an average +2.70% relative improvement in Macro-F1 over the best competing method.",
+      "published": "August 24, 2026",
+      "published_raw": "2026-08-24T14:59:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.23347v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.23347v1"
+    },
+    {
+      "id": "2608.23182v1",
+      "title": "A Comparative Study of Label-free Representation Quality Metrics in Deep Learning",
+      "authors": [
+        "Daniel Richards Arputharaj",
+        "Daniel Jönsson",
+        "Gabriel Eilertsen"
+      ],
+      "abstract": "We present a comparative study of label-free metrics for assessing the quality of representations in deep neural networks to understand their reliability under a wide variety of configurations. We group existing label-free metrics into three families based on their construction and analytically establish connections between metrics within the same family. We then characterise the sensitivity of spectral metrics through controlled synthetic experiments. Finally, all label-free metrics are evaluated against downstream task accuracy across a diverse set of 260 vision models on six datasets spanning generic object classification, fine-grained object classification, scene recognition and geospatial task, stratifying results by architecture class and training objective. We find that intrinsic dimensionality (ID) is the most reliable predictor among the metrics considered. However, the reliability of all metrics, including ID, is moderated by architecture class and training objective. Our results provide a clearer understanding of what label-free representation quality metrics measure, when they are reliable, and how to interpret them in practice.",
+      "published": "August 24, 2026",
+      "published_raw": "2026-08-24T12:31:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.23182v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.23182v1"
+    },
+    {
+      "id": "2608.22820v1",
+      "title": "Fairness-Aware Mixture-of-Experts via Subgroup Reweighting and Gate Regularization",
+      "authors": [
+        "Sunhee Hwang"
+      ],
+      "abstract": "Deep learning models often produce performance disparities across demographic groups, due to the training data imbalance with respect to sensitive attributes such as gender or age. To address this problem, existing work has explored fair representation learning, data re-sampling, and adversarial training, which can be broadly categorized into two main approaches. Single-stage methods typically learn a shared representation for fairness, but often struggle to handle heterogeneous subgroup distributions. Two-stage methods learn representations separately from the final prediction task, which can lead to misalignment between fairness objectives and downstream predictions. We identify routing-induced bias, a failure mode in which subgroup imbalance drives the gating network to route subgroups onto a few experts, and propose an end-to-end Mixture-of-Experts (MoE) framework that corrects it. Specifically, we apply subgroup reweighting to correct data imbalance, and introduce gate entropy regularization to prevent routing from collapsing onto subgroup attributes, keeping expert utilization both balanced and interpretable. Beyond improving fairness, the routing distribution offers an interpretable view of how subgroups are allocated across experts. Experimental results demonstrate that the proposed approach improves fairness while maintaining competitive predictive performance.",
+      "published": "August 24, 2026",
+      "published_raw": "2026-08-24T05:34:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22820v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22820v1"
+    },
+    {
+      "id": "2608.22804v1",
+      "title": "Contrastive Representation-Guided Genetic Minority Oversampling for Imbalanced Time-Series Classification",
+      "authors": [
+        "Wenbin Pei",
+        "Yunrong Hao",
+        "Zhen Liu",
+        "Guan Wang",
+        "Bing Xue",
+        "Yiu-Ming Cheung",
+        "Qiang Zhang"
+      ],
+      "abstract": "Real-world time-series classification tasks often exhibit class imbalance, which can be extremely severe in some applications. To avoid training biased classifiers on imbalanced data, sampling is one of the most popular data pre-processing techniques because of its classifier-agnostic nature. However, due to the complex temporal dependencies in original time-series data and the scarcity of minority-class samples, existing sampling methods, including interpolation-based oversampling methods and deep learning-based generative models, usually suffer from limited generalization and poor diversity when generating new time-series samples. This paper proposes a Frequency-domain representation-guided Multi-tree Genetic Programming-based oversampling approach (FreMGP) to imbalanced time-series classification, where each individual represents a set of synthetic samples for the minority class. A frequency-domain class-discriminative representation module based on contrastive learning is also developed, guiding the evolutionary search toward high-quality synthetic time-series samples. Experiments on imbalanced time-series datasets demonstrate that FreMGP outperforms existing oversampling methods and consistently improves the performance of different classifiers, including both general machine learning and deep learning models.",
+      "published": "August 24, 2026",
+      "published_raw": "2026-08-24T05:03:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22804v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22804v1"
+    },
+    {
+      "id": "2608.22606v1",
+      "title": "Adversarial Agents on Topology Optimization: Understanding the Fragility and Robustness of Deep Learning-based and Physics-Based Design Models under Adversarial Perturbation",
+      "authors": [
+        "Hoang Anh Nguyen",
+        "Yuan Hong",
+        "Hongyi Xu"
+      ],
+      "abstract": "Topology optimization, using both physic-based approaches and deep learning surrogates, serves as a cornerstone for generative design agents in cyber-manufacturing systems. While deep learning surrogates have gained widespread adoption due to their speed in online design generation, this work demonstrates their vulnerability under input perturbations. In this work, we present a mechanics-grounded reliability evaluation framework that formulates an adversarial agent targeting the generative design models. We investigate a strictly non-intrusive threat model where bounded perturbations are introduced exclusively to the initial-density channel, while physical boundary conditions, compliance-gradient channels, network architectures, and solver routines remain intact. Evaluating surrogate models across U-Net, convolutional, and generative architectures with varying physics-gradient conditioning depths demonstrates that bounded initialization noise can cause catastrophic mechanical failure, increasing compliance by multiple orders of magnitude through severed load paths and disconnected supports. Furthermore, we discover that incorporating richer physics-gradient conditioning in the deep learning surrogates does not guarantee monotonic robustness across surrogate families. Finally, physics-in-the-loop recovery demonstrates that initializing the classical SIMP optimizer with perturbed topologies mitigates design performance degradation, having a high probability of restoring compliance to near-baseline levels across tested instances. These findings demonstrate that learned surrogates should serve as physics-verified initializers instead of replacing physics-based solvers entirely in a resilient cyber-manufacturing system. Moreover, the proposed adversarial agent provides a foundation for future training generative design agents robust against noise and targeted perturbations.",
+      "published": "August 23, 2026",
+      "published_raw": "2026-08-23T21:23:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22606v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22606v1"
+    },
+    {
+      "id": "2608.22378v1",
+      "title": "Precision-Aware Variable Bit Processing Elements for Hardware-Efficient Systolic Array Designs",
+      "authors": [
+        "Dantu Nandini Devi",
+        "Madhav Rao"
+      ],
+      "abstract": "Systolic arrays (SAs) have emerged as prominent hardware accelerators for matrix operations in deep learning, while floating point number formats enable precision control across computational domains. This research investigates approximate computing techniques for floating point (FP) multipliers in Weight Stationary Systolic Arrays, focusing on IEEE 754 (FP32), TensorFloat-32 (TF32), and Brain Floating point (BF16) formats. By integrating partial product matrix (PPM) column truncation with positive and negative compressors in the FP multiplier architecture, we optimize the trade-off between computational efficiency and accuracy. NSGA-II optimization algorithm was employed to explore the vast design space for evolving FP multiplier designs, towards achieving substantial hardware improvements while maintaining acceptable output quality. Substantial hardware benefits were observed in the FP multiplier designs across various applications, while preserving output quality. The FP approximated Processing Elements designed in the SA was found to offer comparable CNN accuracy for models trained on MNIST, F-MNIST, and CIFAR-10 dataset. The FP approximated SA designs that fall in the top 10 CNN performance offered substantial hardware gains in the range of 66% to 92% footprint savings, 60% to 93% of power benefits with 21% to 54% improvement in the delay when compared with the corresponding exact implementations mentioned in the literature for running the model trained on CIFAR-10 dataset. The TF32 and BF16 approximated SA designs also achieved substantial gains while maintaining comparable CNN accuracy. Our findings confirm that targeted approximation in FP multiplier design significantly improves the efficiency of hardware accelerators for error-tolerant applications, establishing an effective approach to hardware resource optimization in contemporary computing architectures.",
+      "published": "August 23, 2026",
+      "published_raw": "2026-08-23T12:00:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22378v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22378v1"
+    },
+    {
+      "id": "2608.22277v1",
+      "title": "DAW: Dynamics-Aware Weighting for Deep Learning Forecasts of Chaotic Systems",
+      "authors": [
+        "Zhou Fang",
+        "Gianmarco Mengaldo"
+      ],
+      "abstract": "Deep learning surrogates for forecasting chaotic dynamical systems suffer from catastrophic error accumulation over long-term autoregressive rollouts. This behavior is partly tied to the underlying systems: chaotic spatiotemporal systems, such as the Kuramoto-Sivashinsky (KS) equation, visit phase space unevenly - dominated by recurrent, low-dimensional quiescent states (e.g., near-laminar flows) and punctuated by rare, dynamically complex topological transitions (e.g., wave-merging events). Under a sample-wise uniform objective, standard neural surrogates allocate their finite capacity to the statistically numerous quiescent states, under-representing the transient regimes that trigger disproportionate, localized errors. Existing imbalanced-regression methods reweight samples by target-space density. However, statistical target-space rarity need not coincide with the intrinsic dynamical rarity - the recurrence geometry of the attractor that is the source of the imbalance. To address this, we introduce Dynamics-Aware Weighting (DAW), a data-centric objective reweighting framework. Using the local dimension $d$ from dynamical systems theory as an a priori measure of a state's active degrees of freedom, DAW reshapes the loss landscape to allocate representational capacity toward the sparse, high-$d$ regimes where forecast errors are systematically large. On the chaotic KS equation, DAW consistently outperforms uniform training, purely statistical density weighting, and its randomly permuted ablation, reducing long-term autoregressive error relative to all baselines. Event-level analysis shows that DAW achieves this by suppressing the localized error amplifications incurred during sharp jumps in $d$, which accompany complex physical processes such as wave-merging in the KS system.",
+      "published": "August 23, 2026",
+      "published_raw": "2026-08-23T08:07:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22277v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22277v1"
+    },
+    {
+      "id": "2608.22026v1",
+      "title": "One-Step Evolution for Long-Time Extrapolation: An Error-Bound-Informed and Prior-Guided Neural Residual Framework for Autonomous PDEs",
+      "authors": [
+        "Maqun Zhang",
+        "Feng Gao",
+        "Wankun Chen",
+        "Hui Yu",
+        "Yanhai Gan",
+        "Junyu Dong"
+      ],
+      "abstract": "Accurate simulation of the long-time evolution of systems governed by partial differential equations (PDEs) is central to scientific computing. Among existing deep learning?based approaches for solving PDEs, neural operators typically rely on extensive trajectory data, whereas physics-informed meth?ods often exhibit limited stability during long-time extrapolation. For a well-posed autonomous PDE, long-time trajectories can be generated by repeated composition of a fixed-step evolution operator; hence, long-time extrapolation depends on controlling the approximation error of this operator and the propagation of that error under recursive composition. Accordingly, we propose a numerical-prior-guided, physics-constrained method trained without ground-truth trajectory supervision: a low-cost numerical prior reduces the difficulty of approximating the one?step evolution operator, while a weak-form PDE residual provides a computable proxy for the one-step error term in the error?propagation bound. We validate the method on five benchmark cases spanning four PDE classes and compare it with ten physics?informed learning methods under a unified protocol that excludes ground-truth trajectories from training and model selection. The results indicate that, in all five cases, the proposed method reduces long-time extrapolation error relative to the numerical prior and outperforms the best competing baseline in each case, thereby improving long-time simulation accuracy across different PDEs without ground-truth trajectory supervision. The source code developed for this paper will be made publicly available upon acceptance of the manuscript.",
+      "published": "August 22, 2026",
+      "published_raw": "2026-08-22T16:04:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22026v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22026v1"
+    },
+    {
+      "id": "2608.22024v1",
+      "title": "Barycentric Fused Gromov-Wasserstein Balancing for Causal Inference under Multiple Treatments",
+      "authors": [
+        "Yuki Murakami",
+        "Takumi Hattori",
+        "Kohsuke Kubota"
+      ],
+      "abstract": "Estimating heterogeneous single and interaction treatment effects from observational data under multiple simultaneous treatments is crucial for decision-making. To mitigate estimation variance, previous studies balance representation distributions between every pair of treatment patterns. However, such pairwise balancing scales quadratically with the number of treatment patterns and fails to preserve consistent local proximity structures across patterns, which degrades counterfactual estimation. To address these challenges, we propose the Causal Inference for Heterogeneous Single and Interaction Treatment Effects Network (CIHSI-Net), a deep learning framework built on a novel Barycentric Fused Gromov-Wasserstein Balancing (BFG-WB) objective. BFG-WB aligns the representation distribution of each treatment pattern with a shared Wasserstein barycenter, achieving global alignment while reducing the computational complexity from quadratic to linear, and its Fused Gromov-Wasserstein discrepancy preserves the local proximity structures essential for reliable heterogeneous effect estimation. Simulation studies show that CIHSI-Net consistently outperforms state-of-the-art baselines, and an application to real-world marketing data demonstrates its practical utility in complex multi-treatment scenarios.",
+      "published": "August 22, 2026",
+      "published_raw": "2026-08-22T16:01:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.22024v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.22024v1"
+    },
+    {
+      "id": "2608.21756v1",
+      "title": "How Architecture and Training Affect TPC Representations Across Experiments",
+      "authors": [
+        "Tyler Wheeler",
+        "Michelle P. Kuchera",
+        "Raghuram Ramanujan",
+        "William Sieland",
+        "Ryan Krupp",
+        "Daniel Bazin",
+        "Connor L. Cross",
+        "Hoi Yan Ian Heung",
+        "Andrew J. Jones",
+        "Ruchi Mahajan",
+        "Saiprasad Ravishankar",
+        "Pranjal Singh",
+        "Benjamin Votaw",
+        "Chris Wrede"
+      ],
+      "abstract": "Deep-learning efforts have increasingly shifted toward foundation model approaches. In experimental physics, this allows models and learned representations to be reused beyond the experiments in which they were developed. This work evaluates the reusability of representations across experiments and detector systems using probes on frozen encoders. These probes reveal task-relevant structure before downstream adaptation, complementing fine-tuning. Together with random-weight controls, they distinguish contributions from architecture and encoder training that downstream performance alone cannot resolve. Time projection chamber (TPC) data provide a useful testbed because events from TPC systems can be represented as variable-length sparse tensors, while detector geometries, event topologies, and scientific tasks can differ substantially. We investigate whether fixed-dimensional TPC event representations can be reused across classification tasks, experiments, and detector systems. Sparse ResNet and PointNet-style encoders produce 512-dimensional embeddings for four datasets from the GADGET II TPC and AT-TPC. Randomly initialized encoders isolate the contribution from architecture before supervised training. We then train each encoder on a classification task, freeze its parameters, and train a linear or nonlinear probe for each downstream task. We find that this architecture-induced structure remains useful across experiments and detector systems. The randomly initialized PointNet-style representation is highly informative on several tasks. The two architectures organize their embedding spaces differently, but neither exhibits a large, systematic loss of utility cross-detector. These results show that architecture is a major source of task-relevant structure in TPC embeddings and should be treated explicitly when assessing representation learning and developing reusable detector models.",
+      "published": "August 22, 2026",
+      "published_raw": "2026-08-22T03:40:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.21756v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.21756v1"
+    },
+    {
+      "id": "2608.21612v1",
+      "title": "Machine Learning to Foundation Models: Artificial Intelligence for Nanophotonic Modeling and Scientific Discovery",
+      "authors": [
+        "Chaobin Yang",
+        "Xueqing Liu",
+        "Yiqun Fu",
+        "Fengbo Zhou",
+        "Krzysztof Kempa",
+        "Stefano Anzellotti",
+        "Michael J. Naughton"
+      ],
+      "abstract": "Artificial intelligence (AI) is increasingly used to model, design, and study nanophotonic systems. This review traces the development of the field from classical machine learning and deep learning to generative models, transfer learning, transformers, and emerging foundation models. It first introduces major nanophotonic platforms, including nanoparticles, nanoholes, metasurfaces, photonic crystals, multilayer thin films, and integrated photonic devices, together with their main forward and inverse problems. It then reviews data-driven methods for predicting optical spectra and fields, generating structures from target responses, improving designs through optimization, and accounting for fabrication constraints. Generative models are discussed as a way to produce multiple valid solutions to nonunique inverse problems, while transfer learning, few-shot learning, and physics-aware training help reduce data requirements and improve generalization. Recent domain-specific foundation models show that different optical structures and responses can be handled within shared representations, but current systems remain limited in scope and physical grounding. Future progress will depend on multimodal models that connect geometry, materials, spectra, electromagnetic (EM) fields, fabrication data, experiments, and scientific literature with reliable simulation and validation tools. Current foundation models remain domain-specific, and their extension to broader nanophotonic tasks will require stronger physical grounding and validation.",
+      "published": "August 21, 2026",
+      "published_raw": "2026-08-21T20:24:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.21612v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.21612v1"
+    },
+    {
+      "id": "2608.21530v1",
+      "title": "Multimodal Injury Risk and Performance Prediction in Tennis Using Weighted Ensemble Learning",
+      "authors": [
+        "Weihao Qu",
+        "Dongyang Wang",
+        "Ling Zheng",
+        "Francisco E. Alvarez",
+        "Shobharani Polasa",
+        "Jiacun Wang"
+      ],
+      "abstract": "Machine learning has had a positive impact on the sports industry, with one of its most promising applications being the prediction of athlete performance and injury risk. Recent advances have employed state-of-the-art models to improve prediction accuracy, yet progress remains limited by data availability and the reliance on subjective observations or expert assessments. To address these limitations, researchers in sports such as soccer, basketball, and wrestling have begun integrating heterogeneous data sources, such as wearable device readings, with traditional subjective assessments. However, similar multimodal approaches remain underexplored in tennis. In this work, we propose a multimodal weighted ensemble learning framework, Predictive Athlete Readiness for Tennis (PART), to monitor athlete wellness and estimate near-term injury risk in tennis players. PART processes a wide range of inputs, including physiological metrics, training and match data, sleep information from wearable devices, self-reported questionnaires, vertical jump assessments, and motion analysis from match-play videos. From these modalities, specialized machine learning and deep learning models independently extract four athlete-specific characteristics: overall wellness, injury risk, physical capability, and playing style. To overcome the complexity of combining these diverse modalities, PART employs a supervised weighted ensemble integration strategy, assigning adaptive weights to each predictive model based on its reliability. Evaluation of multimodal data collected from nine collegiate tennis players demonstrates that PART achieves strong performance in monitoring athlete wellness and estimating near-term injury susceptibility. Beyond collegiate athletes, the framework also shows promise for recreational tennis players, offering personalized insights to mitigate injury risk and optimize performance.",
+      "published": "August 21, 2026",
+      "published_raw": "2026-08-21T18:09:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.21530v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.21530v1"
+    },
     {
       "id": "2608.21157v1",
       "title": "HIERA: Workload-Aware Planning Across Implementation Spaces for GPU Kernel Optimization",
@@ -31,6 +240,20 @@
       "published_raw": "2026-08-21T14:24:10Z",
       "pdf_link": "http://arxiv.org/pdf/2608.21148v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.21148v1"
+    },
+    {
+      "id": "2608.21474v1",
+      "title": "Radio Galaxies detection and characterization using deep learning techniques",
+      "authors": [
+        "Sanjay Khatik",
+        "Rohit Sharma",
+        "Pankaj Jain"
+      ],
+      "abstract": "Future radio telescopes will generate data volumes that are increasingly difficult to analyse using traditional statistical methods, motivating the adoption of machine-learning techniques. In this work, we present YOLO-Chars (YOLO-based Detection and Characterisation of Radio Sources), a two-stage deep-learning framework for the automated detection and characterisation of radio galaxies in survey images. The framework is developed and evaluated using the Square Kilometre Array Science Data Challenge 1 (SKA SDC1) dataset. In the first stage, customised YOLO-based multi-scale detection models are used to localise compact and extended sources across large sky maps. In the second stage, a dedicated source-characterisation network estimates the physical properties of the detected sources. We focus on three key parameters: flux density, angular size, and position angle. Our results show that YOLO-Chars achieves competitive detection and characterisation performance on the SKA SDC1 benchmark, demonstrating its potential as a scalable framework for next-generation radio continuum surveys.",
+      "published": "August 21, 2026",
+      "published_raw": "2026-08-21T06:39:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.21474v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.21474v1"
     },
     {
       "id": "2608.20557v1",
@@ -96,203 +319,6 @@
       "published_raw": "2026-08-20T14:49:26Z",
       "pdf_link": "http://arxiv.org/pdf/2608.20117v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.20117v1"
-    },
-    {
-      "id": "2608.19965v1",
-      "title": "Flow Matching Meets 3D Curvilinear Structure Segmentation in Medical Imaging",
-      "authors": [
-        "Sidi Mohamed Sid'El Moctar",
-        "Nicolas Vitry",
-        "Hélène Bouvrais"
-      ],
-      "abstract": "Segmentation of curvilinear anatomical structures in 3D medical images remains challenging due to complex topology, severe class imbalance, weak contrast, and large variations in structure morphology. While deep learning approaches for 3D curvilinear segmentation have been proposed, they are often tailored to specific anatomies or modalities, limiting generalization across clinical settings and leaving room for improvement. Recent generative models have shown the benefits of iterative prediction for structured segmentation tasks, yet diffusion-based methods suffer from computationally expensive sampling, hindering their use on high-resolution 3D volumes. We present 3D-CurvSegFlow, a flow matching-based model for 3D curvilinear structure segmentation. The model learns a continuous transformation from a simple source distribution to the target vascular representation, enabling progressive refinement of complex curvilinear geometries with efficient inference. We evaluate our method on Three public challenging datasets covering distinct anatomies and modalities: portal vein, cerebral vessel, and coronary arteries. Using a common architecture and training strategy across all tasks, our method outperforms general-purpose and vessel-specific approaches, with strong preservation of thin branches and vascular continuity. This work not only advances the state-of-the-art in 3D curvilinear segmentation but also opens new avenues for efficient, generalizable, and clinically applicable methods in medical image analysis.",
-      "published": "August 20, 2026",
-      "published_raw": "2026-08-20T12:35:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19965v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19965v1"
-    },
-    {
-      "id": "2608.19881v1",
-      "title": "Interpretable Feature Learning for RF Fingerprinting via Polar MKANs",
-      "authors": [
-        "Mikhail Krasnov",
-        "Ljupcho Milosheski",
-        "Carolina Fortuna"
-      ],
-      "abstract": "Radio frequency (RF) fingerprinting authenticates wireless devices from hardware-induced I/Q impairments, typically with deep learning feature extractors that are accurate but opaque, limiting their use in security critical settings. We propose Polar Monotonic Kolmogorov-Arnold Networks (Polar MKAN), a block partitioned monotonic encoder on polar inputs in which each latent dimension depends exclusively on magnitude or phase, yielding channel separation and monotone responses by construction. On a synthetic gain and carrier frequency offset (CFO) benchmark, Polar MKAN reaches 57.2 percent DCI Disentanglement versus at most 12.9 percent for unpartitioned baselines. We further evaluate the detection accuracy trade off on real data and the sensitivity to blind CFO compensation.",
-      "published": "August 20, 2026",
-      "published_raw": "2026-08-20T10:42:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19881v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19881v1"
-    },
-    {
-      "id": "2608.19789v1",
-      "title": "TT-net: Quantum Inspired Tensor Network Denoising in Conditional GANs",
-      "authors": [
-        "Michal A. Sterzel",
-        "Marko J. Rančić"
-      ],
-      "abstract": "Developed as a workhorse for classical simulations of quantum algorithms and quantum many-body systems, Tensor Network methods have entered the scientific mainstream in quantum physics. Among various types of tensor networks, Tensor Trains (commonly know as Matrix Product States in the quantum computing community) have already found applications in machine learning. These methods often rely on a powerful linear algebra tool called the Singular Value Decomposition (SVD). Several conditional GAN architectures for image denoising incorporate SVD as a single-cut decomposition step applied to generator feature maps. In this work we introduce TT-Net, which replaces the per-channel SVD denoising block with a two-cut tensor-train decomposition capable of accessing cross-channel information directly, a capability absent from contemporary alternatives. In a controlled comparison differing only in this decomposition mechanism, TT-Net outperforms SVD-Net on PSNR and SSIM across all three noise types tested (Gaussian, motion blur, and salt-and-pepper), supporting the hypothesis that cross-channel access improves denoising quality. Training-dynamics analysis further shows that TT-Net's adversarial loss term consistently saturates to a stagnant state across all three noise types, more so than SVD-Net's, while reconstruction quality continues to improve regardless, raising an open question about the adversarial component's contribution that this work identifies but does not resolve. Furthermore, for Gaussian noise our method outperforms both the EigenGAN and the state of the art Pix2pix method which does not assume any linear algebra decompositions and does not retain any linear algebra information. Our manuscript shows how quantum inspired tools can be used as practical real world feature filters for deep learning applications.",
-      "published": "August 20, 2026",
-      "published_raw": "2026-08-20T08:34:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19789v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19789v1"
-    },
-    {
-      "id": "2608.19672v1",
-      "title": "SAGE-XGBoost: Spatially Augmented Graph Embeddings--Machine Learning Framework for Natural Hazards Susceptibility Mapping under Data Scarcity",
-      "authors": [
-        "Mohammad H. Vahidnia",
-        "Ali Pourkarimi"
-      ],
-      "abstract": "Natural hazard susceptibility mapping is often constrained by limited labeled data, reducing the generalizability of conventional machine learning and limiting the applicability of complex deep learning models. This study proposes SAGE (Spatially Augmented Graph Embeddings), a structurally informed feature-engineering framework that combines controlled noise-based data augmentation with neighborhood-based graph embeddings to improve prediction under data-scarce conditions. A K-nearest neighbor graph is constructed to derive local spatial statistics, which are reduced using principal component analysis and integrated with environmental covariates and spatial coordinates. The resulting features are used with XGBoost to develop the SAGE-XGBoost model. The framework was evaluated for landslide and wildfire susceptibility mapping. SAGE-XGBoost consistently outperformed conventional and spatially explicit machine learning models. Compared with Spatial XGBoost, it achieved an absolute improvement of above 33 percentage points across the two case studies. The model reached AUC values of approximately 0.97 for landslide susceptibility and 0.95 for wildfire susceptibility. Feature importance analysis confirmed the contribution of graph embeddings to prediction, while their integration improved spatial coherence and reduced local noise amplification. Overall, SAGE-XGBoost provides an efficient and transferable alternative to deep representation learning for environmental hazard assessment and other geospatial prediction tasks under limited supervision.",
-      "published": "August 20, 2026",
-      "published_raw": "2026-08-20T06:07:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19672v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19672v1"
-    },
-    {
-      "id": "2608.19584v1",
-      "title": "Kähler landscapes for complex neural network descents and guarantees including a search and destroy of the Calabi-Yau manifold",
-      "authors": [
-        "Andrew Gracyk"
-      ],
-      "abstract": "We study landscapes for complex-parameterized networks. Our approach is motivated with an information-theoretic manifold perspective of the parameter and via classical optimization guarantees although of complex geometric variety such as through Dolbeault asymptotics. The descent path admits a Kähler information metric under a cross-entropy via the Wirtinger Hessian on the log-likelihood potential. We restrict attention to a descent update rule with natural gradient descent via a differentiated loss scaled by the inverse metric, so the descent path remains in the holomorphic tangent bundle. We emphasize Calabi-Yau information manifolds which profane theoretical guarantees via an ill-curvature-conditioned landscape. Under a Calabi-Yau metric, specifically in a non-compact setting with a global potential so defined geometrically rather than invoking the topological requirements of the Calabi conjecture, a wedged nowhere-vanishing holomorphic form is the top exterior product of the Kähler form up to constants, yielding a constant determinant condition. Under a fixed determinant, a metric almost low rank up to an eigenvalue tolerance implies a blow-up effect. Moreover, it has been discovered that negative curvature subverts the loss landscape, specifically sectional curvature, so we expand on this and draw interconnections to negative-definite Ricci curvature. Our arguments primarily exist in a geometric analytic modality, although we establish roots in deep learning theory such as through asymptotics at initialization and connections through failure modes of neural network guarantees under vanishing and negative Ricci curvature.",
-      "published": "August 20, 2026",
-      "published_raw": "2026-08-20T03:03:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19584v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19584v1"
-    },
-    {
-      "id": "2608.19407v1",
-      "title": "HiRA-CAM: Preserving Fine-Grained Spatial Relevance in Gradient-Based Visual Explanations",
-      "authors": [
-        "Manasi Nerurkar",
-        "Ali A. Minai"
-      ],
-      "abstract": "Deep Learning models can include billions of parameters or more, making it difficult to explain their internal transformations and outputs. However, explainability is increasing in importance due to the use of AI in crucial applications. This paper focuses on the interpretability of convolutional neural networks (CNNs). Building on the popular gradient based method LayerCAM for extracting internal features in CNNs, we propose an improved method named HiRA-CAM, and show that it outperforms both LayerCAM and Grad-CAM on creating useful saliency maps for object classification. The main feature of HiRA-CAM is its adaptive use of activation maps from all the layers of the CNN to arrive at a more focused saliency map.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T19:44:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19407v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19407v1"
-    },
-    {
-      "id": "2608.19190v1",
-      "title": "SiNMULI: Novel Signed Network Approach for Malicious URL Identification",
-      "authors": [
-        "Avijit Gayen",
-        "Sayan Mondal",
-        "Angshuman Jana"
-      ],
-      "abstract": "In today's era of rapid advancements in artificial intelligence, computer security and online safeguarding measures have undergone significant improvements. However, malicious websites continue to facilitate the spread of phishing schemes, fraudulent activities and unsolicited communications. Conventional methodologies in machine learning, deep learning and counterfeit website detection predominantly depend on static data analysis, which frequently proves ineffective against the evolving nature of malicious online entities. In response to these challenges, in this work, we propose a signed network-based approach for malicious URL identification, SiNMULI. We introduce an innovative framework that conceptualises the identification of harmful URLs as a signed network-based binary classification problem strongly rooted in the fundamental principles of social network analysis and social balance theory. In this approach, a signed network is constructed based on the backlinks, i.e., external hyperlinks of URLs, wherein each node symbolises a URL and the hyperlinks function as signed edges. Utilising a balance-theoretic inference mechanism, our methodology propagates edge signs and classifies unlabeled domains by employing a 51% majority rule across incoming links. Experimental results on this real-world dataset demonstrate that SiNMULI achieves 99.89% accuracy, 99.62% precision, and 99.80% F1-score, outperforming traditional ML and deep learning baseline models. Beyond high accuracy, SiNMULI offers interpretability, resilience against adversarial obfuscation, and independence from training data, making it a lightweight and scalable solution for real-world cyber defence.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T17:57:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.19190v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.19190v1"
-    },
-    {
-      "id": "2608.18969v1",
-      "title": "Fuzzy Accuracy Compensates for Label Subjectivity in Classification of Skin Tone Using Wearable Photoplethysmography Signals",
-      "authors": [
-        "Padmini Krishnadas",
-        "Urs Hackstein",
-        "Alen Bosnjakovic",
-        "Philip J. Aston"
-      ],
-      "abstract": "We consider the problem of classification of skin tone using photoplethysmography (PPG) signals with labels of the ordinal six-class Fitzpatrick skin tones. A typical accuracy for this task is a poor 40-55 %. However, the labels are subjectively determined by comparing the skin with a colour chart, and hence contain widespread small-scale inaccuracies. By working with a \"fuzzy accuracy\", which deems a prediction of skin tone class to be correct if its difference from the labelled class is not greater than one, much higher accuracy is obtained which provides more convincing evidence that skin tone can be accurately predicted from PPG signals. Three machine learning approaches were used, namely deep learning or tree-based approaches on raw PPG signals, deep learning on image representations of the signals generated by the Symmetric Projection Attractor Reconstruction (SPAR) method, and machine learning on features extracted from the signals. The first method also employed a fuzzy version of the cross entropy loss function, which gave the best results. Tree-based models on raw signals give accuracies up to 55 % and higher fuzzy accuracies up to 96 %, while deep learning models on the SPAR images obtained lower results of 44 % accuracy and 85 % fuzzy accuracy. The machine learning on PPG features gave similar results to the SPAR method with accuracy of 42 % and fuzzy accuracy of 87 %. We have shown that classification of skin tone using PPG signals is possible with high fuzzy accuracy which implies that our modelling approach enables accurate prediction of skin tone class within at most one class of the observer's choice of class, from which we conclude that PPG signals are affected by skin tone in a discernible way.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T14:38:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18969v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18969v1"
-    },
-    {
-      "id": "2608.18777v1",
-      "title": "GraphK: Variable-Size Graph Generation with Efficient Edge Construction",
-      "authors": [
-        "Resul Tugay",
-        "Eren Oluğ",
-        "Elif Ak",
-        "Sule Gunduz Oguducu"
-      ],
-      "abstract": "Graph generation models have advanced significantly with deep learning, yet they remain limited in scalability, flexibility, and ability to model underlying structures. We present GraphK, a novel encoder-sampler-decoder framework for graph generation that overcomes these challenges through structural flexibility and computational efficiency. Unlike autoregressive approaches constrained by vocabulary size (i.e. number of nodes in graph generation), GraphK allows for both upscaling (generating graphs with more nodes than the input) and downscaling, providing a flexible control over output graph size. By learning permutation-invariant latent representations and sampling new node embeddings via maximum likelihood estimation, GraphK generalizes across graph sizes and structures. For edge generation, we employ edge prediction with a KDTree-based top-k neighbor search in the latent space, reducing computational cost. Based on the manifold smoothness assumption, our method effectively captures graph properties. Experiments on synthetic and real-world datasets show that GraphK outperforms existing methods, accurately learns graph structures, and generates synthetic graphs without explicit definitions.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T10:34:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18777v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18777v1"
-    },
-    {
-      "id": "2608.18709v1",
-      "title": "A Critical Synthesis of Uncertainty Quantification and Foundation Models for Semantic Segmentation",
-      "authors": [
-        "Steven Landgraf",
-        "Joceline Hinz",
-        "Markus Ulrich"
-      ],
-      "abstract": "Foundation models are increasingly breaking what seemed to be impossible not long ago by enabling unprecedented accuracy and cross-domain generalization. Yet their lack of interpretability, tendency to be overconfident, and sensitivity to real-world domain shifts pose critical challenges for safety- and mission-critical applications. Uncertainty quantification (UQ) offers a principled way to address these issues, but its integration into segmentation foundation models has yet to be explored. In this paper we present the first systematic evaluation of UQ methods applied to a foundation model for semantic segmentation. We fine-tune a lightweight DPT decoder on top of the pretrained SAM2 encoder to establish a simple yet competitive baseline and benchmark four representative UQ approaches - Monte Carlo Dropout, Deep Sub-Ensemble, Test-Time Augmentation, and Evidential Deep Learning - across Cityscapes, NYUv2, and two challenging out-of-domain settings. Our analysis compares segmentation accuracy, calibration, uncertainty quality, and inference time, revealing clear trade-offs between predictive performance, reliability, and computational cost. These results highlight both the promise and the current limitations of uncertainty-aware foundation models, pointing to the need for future work that jointly optimizes accuracy, robustness, and efficiency for real-world deployment.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T09:09:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18709v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18709v1"
-    },
-    {
-      "id": "2608.18690v1",
-      "title": "Europe's Climate Ambition Under Scrutiny: Evidence from Deep Learning Emission Projections",
-      "authors": [
-        "Jacopo Ghirri",
-        "Carlos Rodriguez-Pardo",
-        "Lara Aleluia Reis",
-        "Massimo Tavoni"
-      ],
-      "abstract": "The European Union has committed to reducing greenhouse gas emissions 55% below 1990 levels by 2030, but whether current trends are compatible with this ambition remains uncertain. We apply deep learning to high-resolution socioeconomic and sectoral data across EU27 member states till 2023 to project sectoral CO$_2$ trajectories under current trends, extrapolating observed sectoral momentum without assuming changes in the pace or effectiveness of the policy environment beyond what is already reflected in historical data. We project that EU27 emissions will exceed the 2030 target by 35% (620 Mt CO$_2$ shortfall), with only a small minority of countries on trajectories consistent with the bloc's commitments. While the Power sector achieves target-consistent reductions driven by the renewable transition, Mobility shows minimal progress and accounts for over a third of total emissions by 2030, reflecting a structural inertia across member states rather than geographically concentrated lag. Our findings indicate that substantial additional intervention is required to close Europe's ambition-implementation gap, and call for establishing up-to-date energy information in Europe.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T08:41:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18690v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18690v1"
-    },
-    {
-      "id": "2608.18675v1",
-      "title": "An Empirical Benchmark of Deep Time-Series Models for Smart Meter Energy Forecasting",
-      "authors": [
-        "Behnaz Kavoosighafi",
-        "Maria Eidenskog",
-        "Wiktoria Glad",
-        "Katerina Vrotsou"
-      ],
-      "abstract": "Accurate forecasting of energy consumption is important for the efficient operation of power systems, with direct implications for operational costs, energy management, and system maintenance. Due to the availability of extensive high-resolution consumption data from smart meters, data-driven methods have been used for short-term and long-term forecasting. However, their comparative performance on real-world smart meter data is still not well studied. In this paper, we present an empirical benchmark of nine modern deep learning models for time-series forecasting, including linear, MLP-based, convolutional, and Transformer architectures. We evaluate these models on two publicly available smart meter datasets. Our analysis focuses on three factors that strongly affect forecasting performance: the length of historical input, the prediction horizon, and the choice of model architecture. We show that extending the historical context improves accuracy, but only up to a saturation point, after which additional input provides limited benefit. In contrast, accuracy decreases as the prediction horizon increases. We also investigate the trade-off between prediction accuracy and computational complexity, and assess the statistical significance and practical magnitude of performance differences across models. Our results show that deep learning models consistently outperform classical baselines, while lightweight architectures achieve relatively similar performance at significantly lower computational cost. Additionally, architectural differences only become meaningful at longer forecasting horizons and on more heterogeneous datasets. Finally, a subgroup analysis across geodemographic and household categories shows that model choice has limited impact for most population segments.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T08:27:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18675v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18675v1"
-    },
-    {
-      "id": "2608.18571v1",
-      "title": "NanoSleep: A Parameter-Efficient Hybrid Temporal Convolutional Network for Single-Channel Sleep Stage Classification",
-      "authors": [
-        "S M Asif Hossain",
-        "Shruti Kshirsagar"
-      ],
-      "abstract": "Sleep stage classification from single-channel electroencephalography (EEG) is essential for wearable and home-based sleep monitoring. However, many deep learning models achieve high accuracy at the cost of large model sizes, which limits their deployment on resource-constrained devices. In this work, we present NanoSleep, a compact hybrid temporal convolutional network for automatic sleep stage classification. NanoSleep combines a learnable Sinc-convolutional front end, a dual-branch feature extractor that fuses multi-scale temporal and spectral representations, a gated dilated temporal convolutional backbone with channel recalibration, and a conditional random field for sequence-level decoding. We further employ a weighted calibrated focal loss to address class imbalance. We evaluate NanoSleep on the Sleep-EDF and Sleep-EDF-Expanded datasets using subject-wise cross-validation. The proposed model consistently outperforms six representative baseline methods, and an ablation study confirms the contribution of each major component. These results demonstrate that NanoSleep provides an effective balance between accuracy and efficiency, making it well suited for wearable devices, home-based sleep monitoring, and resource-constrained clinical applications.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T06:08:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18571v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18571v1"
-    },
-    {
-      "id": "2608.18558v1",
-      "title": "MorphoGP: A Nonparametric Framework for Predicting Equilibrium Beach Profiles Under Tidal Influence",
-      "authors": [
-        "Xi Wu",
-        "Yanqing Wei",
-        "Hang Yin",
-        "Pengze Li",
-        "Hongshuai Qi",
-        "Xi Chen"
-      ],
-      "abstract": "The prediction of equilibrium beach profiles under tidal influence is of fundamental importance for sustainable coastal development, informing shoreline protection strategies and managing coastal ecosystems under changing environmental conditions. However, it remains challenging due to the highly nonlinear interactions among wave, tide, and sedimentary processes. Traditional empirical and numerical models often exhibit limited adaptability across diverse coastal environments, with especially pronounced limitations in beach systems where tidal processes are important . To improve data-driven prediction under these conditions, this study proposes MorphoGP, a unified category-specific Gaussian process framework for predicting equilibrium beach profiles (EBPs) under tidal influence. The framework first introduces a ContourCluster model based on contrastive learning to classify tide-influenced beach morphologies automatically. Within each morphological category, a specialized Gaussian process expert learns statistical associations between environmental descriptors including waves, tides, and sediments and the beach profile's shape. A Gating Net then integrates the outputs of all experts through a probabilistic weighting mechanism to produce the final prediction. Evaluated on data from over 180 beach profiles from tide-influenced coasts along the Chinese coast, MorphoGP achieves improved predictive performance compared with conventional and deep learning models, reducing the test RMSE by about 59.3\\% compared with the best baseline and achieving a final RMSE of 0.297 m. The proposed framework provides a physically informed, data-driven tool for equilibrium beach-profile prediction under tidal influence and coastal management, while stronger process-level physical coupling remains an important direction for future development.",
-      "published": "August 19, 2026",
-      "published_raw": "2026-08-19T05:27:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.18558v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.18558v1"
     }
   ]
 }
