@@ -1,7 +1,109 @@
 {
-  "last_updated": "2026-08-27T05:21:59.444277",
+  "last_updated": "2026-08-28T07:18:51.804360",
   "count": 20,
   "papers": [
+    {
+      "id": "2608.27241v1",
+      "title": "Importance Scoring of Transformer Attention Heads in Learning Tabular Data",
+      "authors": [
+        "Ahmad Jad Allah",
+        "Kazi F. Akhter",
+        "Md. Kamrozzaman Bhuiyan",
+        "Manar D. Samad"
+      ],
+      "abstract": "Computationally demanding and opaque deep learning models can be better understood and optimized by analyzing how they transform data. While deep transformers have been widely studied in computer vision and natural language processing, their application in tabular data remains relatively underexplored. This paper presents one of the first applications of an importance-scoring metric to interpret multi-head transformer models in learning from tabular data. Experiments conducted on 40 diverse tabular datasets demonstrate robustness to head drops based on the proposed head importance score. In 72.5\\% of experimental examples, the model remains most resilient to performance drops when heads with the lowest importance scores are gradually removed. In contrast, removing the most important attention head first results in the greatest reduction in classification performance. A closer look at individual head importance scores across six attention layers reveals that important heads are scattered across layers, with no consistent layer-specific trends. In contrast to the image and language domains, the importance of individual attention heads varies considerably across tabular datasets with different schemas and feature spaces. The proposed importance score can improve efficiency and redundancy within transformer architectures. We make the source code for measuring the importance of individual attention heads publicly available.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T15:22:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.27241v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.27241v1"
+    },
+    {
+      "id": "2608.27124v1",
+      "title": "TRACE-CRC: Trajectory-Adaptive Conformal Risk Control for Multi-Step Channel State Information Prediction",
+      "authors": [
+        "Kiarash Rezaei",
+        "Mehdi Sattari",
+        "Javad Aliakbari",
+        "Tommy Svensson",
+        "Paolo Monti",
+        "Carlos Natalino"
+      ],
+      "abstract": "Reliable prediction of time-varying channel state information (CSI) is essential for efficient wireless communication. Each CSI frame is a matrix-valued representation of the wireless channel response, and a sequence of CSI frames forms a temporal channel trajectory. Modern deep learning-based CSI predictors, however, often provide only point predictions and lack calibrated uncertainty estimates. This limitation is particularly problematic in multi-step CSI prediction, where the target is a sequence of future CSI matrices, and downstream decisions such as beamforming or scheduling may fail if any part of the predicted trajectory is unreliable. We propose trajectory-adaptive calibration and error profiling with conformal risk control (TRACE-CRC), a method for trajectory-aware uncertainty quantification in multi-step CSI prediction. TRACE-CRC constructs Frobenius-norm uncertainty balls around predicted CSI matrices and controls the risk that at least one future frame is uncovered. Instead of calibrating each future step independently, TRACE-CRC combines future-step-dependent error profiling, trajectory difficulty stratification, and learn-then-test (LTT) risk control. Empirically, TRACE-CRC achieves reliable trajectory-level coverage with substantially smaller uncertainty balls than conservative multi-step corrections, while avoiding the trajectory undercoverage of compact stepwise and adaptive conformal baselines.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T13:39:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.27124v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.27124v1"
+    },
+    {
+      "id": "2608.27113v1",
+      "title": "Linear Independence of Polynomial Compositions and Identifiability of Deep Neural Networks",
+      "authors": [
+        "Kathlén Kohn",
+        "Giovanni Luca Marchetti",
+        "Alex Massarenti",
+        "Massimiliano Mella"
+      ],
+      "abstract": "Motivated by theoretical problems in deep learning, we conjecture that post-composing a fixed number of pairwise distinct nonconstant polynomials with a generic polynomial of sufficiently large degree yields linearly independent polynomials. This generalizes Newman--Slater's theorem on powers of polynomials. We establish several cases of this conjecture and its origin-passing variant: We prove the result for two polynomials, and for an arbitrary number of polynomials when their degrees are bounded. Furthermore, we show how the conjecture implies a complete understanding of the identifiability (i.e., parameter symmetries) of deep fully connected neural network architectures with generic polynomial activation functions. In particular, for network architectures with layer-specific activations of increasing degree, our established versions of the conjecture fully characterize the set of parameters yielding the same end-to-end network function. As a special case, we fully resolve the identifiability of shallow polynomial networks.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T13:26:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.27113v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.27113v1"
+    },
+    {
+      "id": "2608.27076v1",
+      "title": "Tabular Deep Learning for Algorithmic Trading: Cross-Regime Bayesian Optimisation for Equity Signal Generation",
+      "authors": [
+        "Joshua Le Grice"
+      ],
+      "abstract": "Algorithmic trading now represents a market exceeding $20 billion, where even marginal gains in signal robustness can translate into economically significant returns. Existing evaluations of equity prediction models do not explicitly target regime robustness during hyperparameter selection. Five model classes are trained on daily observations from approximately 300 large-cap US equities over eleven years, with Bayesian optimisation configured to target trading performance across three statistically different market regimes. Regime-robust hyperparameter selection is associated with out-of-sample generalisation, as signal precision remains above the random baseline across all four quarters of the test period, and portfolio performance slowly degrades under simulated input noise before collapsing beyond a defined threshold. No individual tabular deep learning architecture outperforms gradient-boosted trees, but combining XGBoost and TabNet using rank aggregation produces a Hybrid ensemble with an annualised return of 51.26%, a Sharpe ratio of 2.44, and a statistically significant CAPM alpha of 0.423 (p = 0.011). A near-zero beta indicates this outperformance is driven by stock selection, not market exposure. Alternative data plays a secondary role once technical and fundamental features are accounted for, as well as contributing more strongly on the short side than the long, and varies by model class. An interactive application makes these results explorable in real time, with live data integration the remaining step toward practical deployment.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T13:01:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.27076v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.27076v1"
+    },
+    {
+      "id": "2608.26901v1",
+      "title": "Dose-PlanNet: Physics Based Radiotherapy Dose Prediction with Deep Learning",
+      "authors": [
+        "Ankit Bhattacharjee",
+        "Sougata Maity",
+        "Santam Chakraborty",
+        "Indranil Mallick"
+      ],
+      "abstract": "Automating prostate radiotherapy treatment planning is dosimetrically complex, particularly for extreme hypofractionated regimens. In this study, we introduce Dose-PlanNet, a physics-guided 3D deep learning architecture designed to predict dose distributions. This model's performance was evaluated on a cohort of patients treated in a prospective trial where two different dose fractionation regimens were employed. Dose-PlanNet achieved comparable target coverage ($D_{95}$), though statistical analysis revealed a marginal reduction in target homogeneity ($p<0.001$) offset. However the model achieved statistically significant improvements in high-dose organ-at-risk sparing ($p<0.001$). When evaluated against strict Prospective Randomized protocol volumetric constraints, automated plans met prespecified clinical acceptance criteria in $11$ out of $14$ Moderate Hypofraction Arm plans and $9$ out of $12$ Stereotactic Body Radiation Therapy Arm plans. This pipeline demonstrates that physics-informed deep learning can accelerate radiotherapy workflows while safely maintaining the stringent dosimetric quality required for high-precision clinical deployment.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T10:05:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.26901v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.26901v1"
+    },
+    {
+      "id": "2608.26613v1",
+      "title": "Technical Comparative Benchmarking Study: Advanced AI Hybrid Methods for Renewable Energy Farm Optimization and Forecasting",
+      "authors": [
+        "Majid Masoumi",
+        "Asghar Dashtiy",
+        "Mohammad Dehghan",
+        "Mina Rajabi"
+      ],
+      "abstract": "This study provides a comprehensive benchmarking of conventional machine learning (ML), ensemble learning, deep neural networks, recurrent architectures, Transformers, graph based models, and hybrid ensemble deep learning approaches under complementary renewable energy scenarios. Three datasets are considered: a large scale WEC dataset, a 16 WEC dataset, and operational 10 min SCADA measurements at the Penmanshiel wind farm. For structured WEC layout data, tree ensembles exhibited a clear advantage over conventional ML and neural predictors because randomized partitioning and boosting efficiently captured nonlinear layout power interactions without requiring explicit feature representation learning. The Extra Trees was the strongest model, achieving considerable results. Relative to the MLP baseline, this corresponds to an approximately 63.7% reduction in MAE, demonstrating the suitability of randomized tree ensembles for high dimensional structured WEC data. Also, STGCN reduced the MAE to approximately 167.0 kW and achieved R = 0.93 by explicitly learning spatial and temporal turbine interactions. The best overall forecasting accuracy was obtained by the RF BiLSTM hybrid, with an MAE=150.5 kW. Compared with standalone LSTM, this represents an approximately 75% reduction in MAE, while improving on STGCN by approximately 10.0%. Finally, the experiments reveal that no single AI architecture is universally optimal: randomized and boosted ensembles are particularly effective for structured WEC surrogate modeling, graph networks become advantageous when explicit spatial interactions dominate, and ensemble recurrent hybrids provide the strongest balance when nonlinear tabular relationships and temporal dynamics coexist.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T04:52:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.26613v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.26613v1"
+    },
+    {
+      "id": "2608.26594v1",
+      "title": "SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations",
+      "authors": [
+        "Hiep V. Dang",
+        "Antonios Mamalakis"
+      ],
+      "abstract": "Subseasonal-to-seasonal (S2S) precipitation forecasting has substantial financial and societal impact, yet remains challenging because of weak predictive signals, high associated uncertainty, and the computational cost of operational systems, which constrains simulation fidelity. We introduce SimCast-S2S, a generative latent-diffusion framework for probabilistic S2S precipitation forecasting that addresses three major bottlenecks in data-driven prediction. First, because S2S prediction requires uncertainty quantification rather than only deterministic point forecasts, SimCast-S2S is the first data-driven system that uses a diffusion-based generative pipeline for S2S prediction, enabling effective sampling from the underlying conditional distribution. Second, since generating large probabilistic ensembles is computationally costly in physical space, SimCast-S2S instead operates in a compact latent space learned by variational autoencoders, enabling efficient large-ensemble generation. Third, diffusion models typically require large training datasets; SimCast-S2S overcomes this via transfer learning with low-rank adaptation (LoRA), pretraining on large ensembles of climate simulations before fine-tuning on limited reanalysis data. On reanalysis data, SimCast-S2S outperforms deep learning baselines, including convolutional neural networks and U-Net architectures. Notably, despite using only a subset of atmospheric input variables and no post-processing, bias correction, or calibration, SimCast-S2S remains competitive with, and in many cases outperforms, state-of-the-art operational systems such as the ECMWF-S2S baseline. These results indicate that latent generative modeling combined with simulation-to-reanalysis transfer learning offers an efficient and scalable path toward data-driven probabilistic S2S precipitation forecasting.",
+      "published": "August 27, 2026",
+      "published_raw": "2026-08-27T04:20:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.26594v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.26594v1"
+    },
     {
       "id": "2608.25965v1",
       "title": "Less Contouring, More Accuracy: Lesion-Guided ROI Deep Learning for Ovarian Ultrasound Classification",
@@ -205,124 +307,6 @@
       "published_raw": "2026-08-26T10:12:51Z",
       "pdf_link": "http://arxiv.org/pdf/2608.25598v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.25598v1"
-    },
-    {
-      "id": "2608.25592v1",
-      "title": "A Hierarchical Synergistic Deep Learning Framework Integrating Composition, Structure, and Ionic Transport for Solid-State Electrolyte Discovery",
-      "authors": [
-        "Hongwei Du",
-        "Dingyang Lv",
-        "Baole Wei",
-        "Yongheng Li",
-        "Feng Yu",
-        "Ziheng Lu",
-        "Siqi Shi",
-        "Hong Wang"
-      ],
-      "abstract": "Inorganic solid-state electrolytes must combine high room-temperature ionic conductivity, a wide electrochemical window, excellent electronic insulation, and favorable mechanical compliance. Single models struggle to support reliable multi-objective screening across vast chemical spaces because of training-data distribution mismatch, cross-property dataset heterogeneity, and scarce kinetic transport data. To overcome these limitations, we develop a hierarchical synergistic deep-learning framework that sequentially coordinates efficiency, accuracy, and reliability through four complementary modules. The in-house-developed L-G-DCNN and a multi-fidelity implementation built on DenseGNN serve as compositional and structural experts for thermodynamic coarse screening and multi-property evaluation, respectively; MatterSim and system-specific DeePMD models provide transport pre-assessment and kinetic validation. Systematic benchmarks show that each module outperforms mainstream counterparts in its task, while retrospective validation establishes dual closed-loop verification of module-level accuracy and end-to-end workflow reliability. Applied to 30,364,908 Alex/ICSD-derived candidates, the framework identifies 97 high-performance candidates with room-temperature ionic conductivities of 0.109--59.0 mS/cm, including 94 halides, one borohydride, and two oxides. Consistency with independent experimental data confirms that 76 of the 94 halides fall within reported high-conductivity structural regions. Analysis reveals that Li$^{+}$ jump-network connectivity, rather than the number of geometric Li sites, is the core determinant of room-temperature ionic conductivity. Li-defect engineering effectively enhances oxide transport, whereas the inherent rigidity of the O$^{2-}$ framework suggests a potential upper limit on oxide electrolyte performance.",
-      "published": "August 26, 2026",
-      "published_raw": "2026-08-26T10:04:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.25592v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.25592v1"
-    },
-    {
-      "id": "2608.25235v1",
-      "title": "Multi-View Trust Evaluation for Collaborator Selection via Evidential Deep Learning",
-      "authors": [
-        "Botao Zhu",
-        "Xianbin Wang"
-      ],
-      "abstract": "Selection of trustworthy collaborators in distributed systems is critical for efficient task completion, necessitating the inference of trustworthiness from their past collaboration experience. However, as a collaborator serves distinct devices across diverse scenarios in past collaborations, its trust-related data, observed from different device-specific views, is inherently multi-source, heterogeneous, and uneven in quality. Consequently, achieving accurate trust evaluations for collaborator selection remains a major challenge. To tackle these issues, we propose a novel multi-view evidential learning (MVE) based trust evaluation method. First, to accommodate the multi-source heterogeneity of observed trust-related data, we model each task owner who has interacted with a potential collaborator as an independent observational view, enabling the evaluation of the collaborator's view-specific trust. Second, to address the dynamic evolution of trust under changing conditions, we leverage the powerful long-sequence modeling capability of the Mamba model to capture the deep temporal patterns of a collaborator's trust state within each view. Furthermore, to quantify the certainty levels of view-specific trust assessments, we incorporate an evidential deep learning mechanism in MVE, which outputs trust evaluation results while quantifying the subjective uncertainty underlying them. Finally, we employ a dynamic evidential fusion strategy to adaptively integrate the multi-view evidence based on their respective quantified uncertainties, thereby yielding a final trust evaluation for the collaborator. Extensive experiments demonstrate that the proposed MVE method outperforms baselines in both trust evaluation accuracy and task success rate.",
-      "published": "August 25, 2026",
-      "published_raw": "2026-08-25T23:52:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.25235v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.25235v1"
-    },
-    {
-      "id": "2608.25204v1",
-      "title": "LibriBrain100: One Hundred Hours of Broad and Deep MEG Data for Neural Speech Decoding at Scale",
-      "authors": [
-        "Francesco Mantegna",
-        "Dulhan Jayalath",
-        "Gereon Elvers",
-        "Tasha Kim",
-        "Benjamin Ballyk",
-        "Alex Fung",
-        "SungJun Cho",
-        "Teyun Kwon",
-        "Luisa Kurth",
-        "Miran Özdogan",
-        "Gilad Landau",
-        "Pratik Somaiya",
-        "Natalie Voets",
-        "Mark Woolrich",
-        "Oiwi Parker Jones"
-      ],
-      "abstract": "We introduce LibriBrain100, a large-scale MEG dataset for speech decoding designed from the ground up for reproducible, standardised evaluation. LibriBrain100 more than doubles the size of the original LibriBrain release, resulting in over 100 hours of high-quality MEG acquired while subjects listened to naturalistic continuous speech. With $\\sim$80 hours from a single subject, LibriBrain100 sets a new record for deep, within-subject neural data (8$\\times$ more than the next comparable dataset and roughly 80$\\times$ more than other datasets). To demonstrate the payoff of this depth-first design, we evaluate on a word-classification benchmark---an increasingly well-established stepping stone towards the open challenge of noninvasive brain-to-text decoding. Using an existing decoding model, we achieve state-of-the-art performance---validating both the quality of the recordings and the value of within-subject data at scale. Because collecting 80 hours of data per user is impractical for real-world applications, we also collected $\\sim$40 minutes of additional data from each of 32 subjects. Using the same word-classification benchmark, we demonstrate the value of broad multi-subject data: supervised finetuning of a pre-trained model can substantially compensate for limited per-subject data. We provide standard train, validation, and test splits, all reproducible through an open-sourced Python library that supports easy downloading, optional preprocessing, and data loading for common deep learning frameworks. In addition, the dataset and evaluation infrastructure are being released alongside an open machine-learning competition with a public leaderboard for standardised benchmarking. Ultimately, our hope is that LibriBrain100 will accelerate progress towards practical non-invasive brain-computer interfaces, capable of restoring communication to people living with severe paralysis.",
-      "published": "August 25, 2026",
-      "published_raw": "2026-08-25T22:45:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.25204v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.25204v1"
-    },
-    {
-      "id": "2608.25160v1",
-      "title": "ROMNet: a hybrid reduced order modeling and machine learning approach to waveform inversion",
-      "authors": [
-        "Liliana Borcea",
-        "Alexander Mamonov",
-        "Kui Ren",
-        "Haizhao Yang",
-        "Chugang Yi"
-      ],
-      "abstract": "Waveform inversion seeks to estimate the wave speed of a heterogeneous, inaccessible medium, from time-resolved measurements of the waves at user controlled sensors. We consider this inverse problem for acoustic waves and an active array of source/receiver sensors that emit probing signals and measure the generated pressure waves. The forward map, from the wave speed to the measurements, is nonlinear and oscillatory. The oscillations cause cycle skipping, the main impediment to using the standard, nonlinear least-squares data fitting formulation, known as full waveform inversion (FWI). A recently introduced alternative waveform inversion approach computes from the measurements an algebraic surrogate of the wave operator, a reduced order model (ROM) matrix, which is then used to estimate the wave speed. The mapping from the measurements to the ROM is nonlinear, but well understood. It is computed efficiently, in a non-iterative manner. The nonlinear mapping from the ROM to the wave speed is less understood, and its approximation involves time-consuming optimization. Our goal in this paper is to use a neural network to map the ROM matrix to a nearby one, that has a simpler and explicit dependence on the wave speed. This simplifies and reduces the computational cost of the ROM-based waveform inversion. We introduce the methodology, called ROMNet, and test it with numerical simulations, using two training data sets: The first set consists of random media with variations of the wave speed modeled by a superposition of Gaussians with random amplitudes and standard deviations. The second is the publicly available GeoFWI dataset introduced for benchmarking FWI using deep learning. We compare the performance of ROMNet with the direct ROM-based inversion and with two representative deep learning approaches to FWI: ``Fourier-DeepONet\" and ``InversionNet\".",
-      "published": "August 25, 2026",
-      "published_raw": "2026-08-25T21:13:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.25160v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.25160v1"
-    },
-    {
-      "id": "2608.25126v1",
-      "title": "Multimodal Injury Risk Prediction in Tennis",
-      "authors": [
-        "Francisco Erramuspe Alvarez",
-        "Shobharani Polasa",
-        "Weihao Qu",
-        "Jay Wang",
-        "Ling Zheng"
-      ],
-      "abstract": "Machine learning has had a significant positive impact on the prediction of athlete performance and injury risk. Most works in this field rely on subjective observations and expert assessments, which restrict their effectiveness. In sports like soccer, basketball, and wrestling, some studies attempt to address this challenge by integrating data from alternative sources, such as readings from wearable devices, alongside traditional subjective observations and expert assessments to enhance accuracy. However, similar research in tennis remains largely unexplored. In this paper, we propose a multimodal Predictive Athlete Readiness framework for Tennis (PART) to assess both performance and injury risk in tennis players. By leveraging machine learning and deep learning techniques, PART processes multiple sources of data collected from nine collegiate tennis players, including physiological metrics, training and match data, sleep data from wearable devices, self-reported information via daily questionnaires, jump assessments, and motion analysis from match play videos. PART captures four characteristics of tennis players: overall wellness, injury risk, physical capability, and playing style. By integrating these four characteristics by supervised learning, it is capable of providing a holistic assessment of the tennis athlete's condition, along with advanced forecasts of specific body areas at risk such as the upper body (e.g., elbows) or lower body (e.g., knees). Our evaluation, conducted with data from nine collegiate tennis players, shows that PART achieves strong performance in predicting both overall wellness and injury risk. Additionally, our framework also shows promise for recreational tennis players, who often suffer from injuries due to incorrect playing techniques.",
-      "published": "August 25, 2026",
-      "published_raw": "2026-08-25T20:21:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.25126v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.25126v1"
-    },
-    {
-      "id": "2608.24793v1",
-      "title": "EMFE: A lightweight, explainable machine learning framework for malaria cell classification",
-      "authors": [
-        "Md Abdullah Al Kafi",
-        "Walayat Hussain",
-        "Mousumi Karmakar",
-        "Sumit Kumar Banshal",
-        "Ahmed Al Marouf"
-      ],
-      "abstract": "Automated malaria diagnosis from stained blood-smear microscopy is dominated by deep convolutional neural networks that are accurate but computationally expensive, poorly interpretable, and rarely validated with patient-level rigor. We present EMFE (Efficient Mathematical Feature Extraction), a five-feature framework for classifying single red-blood-cell images as parasitized or uninfected using Gray World color normalization, adaptive green-channel thresholding, morphological spot detection, and classical machine learning. Using the NIH LHNCBC malaria dataset (27,558 images from 200 patients), we evaluate Random Forest, Histogram Gradient Boosting, and Support Vector Machine classifiers under patient-grouped nested cross-validation (K_outer=20, K_inner=3), ensuring that cells from each patient remain within a single fold. The optimized Random Forest achieves 94.6% pooled out-of-fold accuracy (95% CI [93.6, 95.7]), corroborated by an untouched 40-patient holdout test (94.3%) and a patient-level permutation test (p<0.001, 1,000 permutations). Ablation experiments quantify the contribution of individual features and pipeline stages. Hardware-matched comparisons with retrained DenseNet121, ResNet50, and MobileNetV2 models assess the accuracy-efficiency trade-off. Synthetic perturbations characterize three failure modes, while explainability analysis identifies spot saturation as the dominant discriminative feature. Patient-level aggregation further quantifies sensitivity-specificity trade-offs and false-positive accumulation. These results demonstrate a statistically rigorous, interpretable, and computationally lightweight alternative to deep learning, while explicitly quantifying its limitations.",
-      "published": "August 25, 2026",
-      "published_raw": "2026-08-25T16:38:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.24793v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.24793v1"
-    },
-    {
-      "id": "2608.24771v1",
-      "title": "Ensemble of Convolutional Neural Networks for StrokePrediction: Towards Improved Diagnostic Accuracy",
-      "authors": [
-        "Md Shahriar Sajid"
-      ],
-      "abstract": "Brain stroke, known for its high mortality and incidence rates, poses significant health risks and requires rapid intervention for survival. Early diagnosis and preventive measures can greatly reduce life loss and disabilities. Recent advancements in deep learning have led to novel computer-aided diagnostic techniques for early stroke detection. This study proposes an intelligent system that predicts potential strokes using eleven features, evaluated through seven supervised machine learning algorithms. The process includes a literature review, dataset visualization, data preprocessing, and model evaluation. Ensemble methods like Random Forest, Stacking Classifier, and Bagging Classifier achieved high accuracies of 99.52%, while Decision Tree reached 98.24%. Other models, including KNN and TabNet, demonstrated reliable performance, achieving accuracies of 96.73% and 96.49%, respectively. The custom feedforward model achieved 94.91%, while SVC and logistic regression had lower accuracies at 88.06% and 77.03%. The results highlight the effectiveness of ensemble methods in stroke classification.",
-      "published": "August 25, 2026",
-      "published_raw": "2026-08-25T16:09:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.24771v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.24771v1"
     }
   ]
 }
