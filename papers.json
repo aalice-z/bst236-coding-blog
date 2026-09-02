@@ -1,7 +1,132 @@
 {
-  "last_updated": "2026-09-01T02:16:42.256192",
+  "last_updated": "2026-09-02T01:38:42.055727",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.01102v1",
+      "title": "Neural Symbollic Regression Using Deep Learning and Sparse Modelling",
+      "authors": [
+        "Ravi Kumar U",
+        "Sumitra S"
+      ],
+      "abstract": "Symbolic Regression (SR) seeks to find succinct mathematical expressions that represent the fundamental relationships within data, providing interpretability and scientific understanding that exceeds that of black-box models. Nevertheless, traditional methods like Genetic Programming face challenges with scalability and are highly sensitive to noise, while sparse regression techniques such as SINDy rely significantly on predetermined feature libraries. In this work, we present a Neural Symbolic Regression (NSR) framework that treats neural networks as functional preconditioners for symbolic discovery. Our approach uses a decoupled pipeline: a neural network first learns a smooth, noise-robust approximation of the target function in an interaction- aware nonlinear feature space. LASSO is then applied to extract sparse, interpretable closed-form expressions. To improve predictive accuracy and symbolic fidelity by integrating distributed hyperparameter optimization with Ray Tune and ASHA scheduling. Experiments on the Nguyen benchmark suite show that our approach consistently outperforms SINDy and non-tuned neural baselines in RMSE, noise robustness, and out-of-distribution generalization. Ablation studies confirm the significance of feature interactions, neural depth, and tuning strategies. In general, this study presents a scalable and understandable neural-symbolic framework, creating a solid link between neural approximation and the discovery of sparse equations for scientific machine learning.",
+      "published": "September 01, 2026",
+      "published_raw": "2026-09-01T11:46:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.01102v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.01102v1"
+    },
+    {
+      "id": "2609.01034v1",
+      "title": "The Multiple Timescales of Gradient Descent on the Edge of Stability: A Perturbative Derivation of the Central Flow",
+      "authors": [
+        "Raphaël Berthier"
+      ],
+      "abstract": "The central flow of Cohen et al. (2025) is an empirically accurate continuous-time model of gradient descent at the edge of stability in deep learning, However, its derivation is heuristic. We propose a perturbative regime in which the central flow is the limit of gradient descent: we assume that the loss decomposes as $f = g + \\varepsilon h$; in the limit $\\varepsilon \\to 0$, the dynamics of gradient descent with learning rate $η$ converge to the gradient flow of $h$ constrained to the minimizers of $g$ of sharpness at most $2/η$. Our approach is formal rather than rigorous; it treats gradient descent as a singularly perturbed dynamical system in $\\varepsilon$. Three timescales emerge: a fast timescale of oscillations along the sharpest direction, an intermediate timescale of the self-stabilization mechanism, and a slow timescale of the dynamics along the minimizers of $g$-the central flow. Using the method of multiple scales, a classical formal method from singular perturbation theory, we derive the expansion of the dynamics in $\\varepsilon$: the central flow emerges as the leading-order term in the expansion, while the self-stabilization mechanism appears in the next-order term. We study this mechanism beyond previous analyses: with a single eigenvalue at the edge of stability, we compute the slow drift of the energy of the fluctuations; with several eigenvalues at the edge of stability, we derive the self-stabilization system and explain why fluctuations persist.",
+      "published": "September 01, 2026",
+      "published_raw": "2026-09-01T10:32:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.01034v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.01034v1"
+    },
+    {
+      "id": "2609.00792v1",
+      "title": "MADS: A Multiview Acoustic Descriptor Set Beyond Standard Spectral Summaries",
+      "authors": [
+        "Utsab Ghosh",
+        "Roshni Chakraborty"
+      ],
+      "abstract": "Dominant audio classification pipelines rely either on compact handcrafted summaries or on fixed time-frequency frontends such as log-mel representations prior to deep modeling. While highly successful, these representations do not explicitly expose the physical dynamics of the underlying sound-generating event. We introduce MADS (Multi-view Acoustic Descriptor Set), a compact 19-dimensional physics-informed descriptor set de- signed to capture complementary spectral, temporal, mechanical, and stochastic structure in audio signals. Rather than treating sound only as a spectral pattern, MADS encodes properties related to excitation, damping, periodicity, impulsiveness, and structural consistency within a unified multi-view representation. We evaluate MADS using standard classical machine learning models on ESC-10, ESC-50, and MSoS, and compare it against two conventional handcrafted baselines: a compact 26D MFCC- based baseline and an expanded 38D spectral-summary baseline. Across ESC-10 and ESC-50, MADS achieves the strongest peak results overall, reaching 81.00% and 52.78%, respectively, while using roughly half the dimensionality of the 38D baseline. On MSoS, MADS again delivers the strongest top-end performance, reaching 67.48%. These results establish MADS not merely as a competitive standalone descriptor set, but as the foundational descriptor layer of a broader acoustically grounded representation program for future frame-level and deep-learning-compatible audio modeling.",
+      "published": "September 01, 2026",
+      "published_raw": "2026-09-01T06:43:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.00792v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.00792v1"
+    },
+    {
+      "id": "2609.00544v1",
+      "title": "GenONet: A Generative operator Network for High-Resolution Precipitation Nowcasting",
+      "authors": [
+        "Mohammad Kian Golkar",
+        "Luciano Alves de Oliveira",
+        "Mohammad Khanjani"
+      ],
+      "abstract": "High-resolution precipitation nowcasting is critical for reducing the impacts of severe weather but remains difficult because of rapid storm evolution. Deep learning models have shown great promise for this task, but their predictive skill often deteriorates over longer forecast horizons. This leads to increasingly blurry forecasts that fail to capture the complex, non-linear evolution of storm systems. In order to address these limitations, we introduce Spatio-Temporal U-DeepONet (GenONet), a novel architecture for long-range precipitation forecasting up to 3 hours, specifically designed to produce sharp and physically consistent results. GenONet's architecture pioneers the use of a Deep Operator Network (DeepONet) as a generator within a Generative Adversarial Network (GAN) framework for this task. The DeepONet learns the continuous-time dynamics of precipitation, ensuring stability over long forecast horizons. Adversial training against a spatio-temporal discriminator compels the model to produce sharp, coherent forecasts, while a physics-informed loss regularizer, derived from the Moisture Conservation Equation, improves physical plausibility in our ablation setting. Quantitative evaluations show that our model achieves consistently higher scores on most of the metrics, especially for highintensity events and at longer lead times. Qualitatively, GenONet produces structurally coherent forecasts that maintain their integrity, whereas baseline models degrade into indistinct patterns. Finally, an ablation study confirms the benefit of this physics-informed loss, highlighting the strength of combining operator learning with adversarial training.",
+      "published": "September 01, 2026",
+      "published_raw": "2026-09-01T01:30:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.00544v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.00544v1"
+    },
+    {
+      "id": "2609.00472v1",
+      "title": "Higher Structures in Deep Learning",
+      "authors": [
+        "Michael L. Roberts",
+        "Carlos Zapata Carratalá. Nicholas J. Cooper",
+        "Lijun Chen",
+        "François G. Meyer",
+        "Danna Gurari"
+      ],
+      "abstract": "We provide an expository introduction on the importance of higher-arity tensor operations to deep learning. Then, we conduct a novel empirical investigation of higher-arity phenomenon in trained neural networks, introduce a hypergraphical generalization of the multilayer perceptron, and explore connections to evolutionary algorithms. We conclude with a discussion of promising directions for future research.",
+      "published": "August 31, 2026",
+      "published_raw": "2026-08-31T23:22:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.00472v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.00472v1"
+    },
+    {
+      "id": "2609.00460v1",
+      "title": "Context Window Failures in Relational Foundation Models",
+      "authors": [
+        "Denis Oliveira Correa",
+        "Francisco Galuppo Azevedo"
+      ],
+      "abstract": "Recent Relational Deep Learning architectures have been proposed as foundation models for multi-table relational data, yet they impose constrained neighborhood budgets that force row truncation when an entity has many related records. We introduce Animus, a synthetic financial dataset in which predicting customer income requires aggregating up to tens of thousands of transactions. On the raw representation, three recently proposed models (RT, Griffin, RelGT) achieve $R^2 \\le 0.18$; a single, routine, temporal pre-aggregation step recovers $R^2$ up to $0.65$. This questions whether current relational foundation models are ready for high-cardinality real-world data.",
+      "published": "August 31, 2026",
+      "published_raw": "2026-08-31T22:59:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.00460v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.00460v1"
+    },
+    {
+      "id": "2609.00339v1",
+      "title": "A Fast and Scalable Transformer Pipeline for Binary Black Hole Detection",
+      "authors": [
+        "Chayan Chatterjee",
+        "Abigail Petulante",
+        "Haowei Fu",
+        "Yang Hu",
+        "Roy Lau",
+        "Karan Jani"
+      ],
+      "abstract": "With the projected increase in the detection rate of compact-binary coalescences in the coming decade, there is critical need to develop fast, robust, and scalable alternatives to matched filtering for gravitational-wave searches. Transformer models have revolutionized natural language and audio processing but their application to gravitational-wave astronomy is still largely unexplored. In this work, we introduce \\castor, a transformer-based coincident search pipeline for detecting binary black hole gravitational-wave signals from Advanced LIGO detectors. One of the major features of our model is that it allows the false-alarm rate to be estimated via time slides cheaply without requiring repeated evaluations of the neural network. We evaluate \\castor\\ on datasets from the Machine-Learning Gravitational-Wave Search Challenge (MLGWSC-1) and on approximately five months of real O3b observing strain. When tested on benchmark datasets, \\castor\\ ranks among the most sensitive machine-learning pipelines and successfully recovers the majority of confident events from the GWTC-3 catalog that lie within its training range. We also benchmark \\castor\\ against another transformer architecture, GW-Whisper, a domain-adaptation of OpenAI's audio foundation model. We find that \\castor\\ substantially outperforms the repurposed audio model in sensitivity and also reduces the computational cost of background estimation by a factor of 20. Our results demonstrate a highly practical, scalable approach for deep-learning gravitational wave searches and empirical background estimation for future observing runs.",
+      "published": "August 31, 2026",
+      "published_raw": "2026-08-31T20:34:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.00339v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.00339v1"
+    },
+    {
+      "id": "2608.31045v1",
+      "title": "Rotational Equivariance in Machine Learning: A Comprehensive Tutorial",
+      "authors": [
+        "Peter Lippmann",
+        "Fred A. Hamprecht"
+      ],
+      "abstract": "Rotational symmetry is one of the most important structural principles in machine learning on 3D data. In applications ranging from physics and materials science to 3D computer vision, predictions should not depend on an arbitrary choice of coordinate frame. Rotational equivariance captures this requirement mathematically by enforcing that a rotation of the input induces a corresponding transformation of the model output. This tutorial provides a comprehensive introduction to rotational equivariance, starting from the physical and geometric intuition behind coordinate independence and building up the necessary machinery from geometric deep learning, group theory, and representation theory. We introduce message passing on Euclidean graphs, group actions and representations, spherical harmonics, Wigner matrices, tensor products, and Clebsch-Gordan decomposition, and explain how these ingredients give rise to modern equivariant architectures. We then survey the principal strategies for incorporating rotational equivariance in deep learning, including group convolutions, internal tensorial representations, and canonicalization-based methods, and discuss their practical strengths and limitations. The tutorial aims to lower the barrier to the subject by connecting the underlying mathematics to practical model design, by unifying ideas that are often expressed in different formal languages, and by helping practitioners choose among competing approaches through a clear discussion of their trade-offs.",
+      "published": "August 31, 2026",
+      "published_raw": "2026-08-31T16:21:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.31045v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.31045v1"
+    },
+    {
+      "id": "2608.30804v1",
+      "title": "Geometric Attractor Monitoring: A Robust and Frugal Framework for Multi-modal Industrial Robotic Cycles",
+      "authors": [
+        "Martin Bonsergent-Brachet",
+        "Jesse Read",
+        "Dany Abboud"
+      ],
+      "abstract": "Monitoring the health of heterogeneous industrial robot fleets is severely challenged by the multi-modal nature of their operational cycles and a persistent scarcity of run-to-failure data. Standard data-driven approaches, particularly deep learning architectures relying on sequential reconstruction, often struggle in this specific setting; they tend to over-smooth complex dynamics, masking early signs of degradation. To address these industrial constraints, we reframe the monitoring problem through a framework based on Phase Space Reconstruction (PSR). Instead of predicting temporal sequences, this framework transforms univariate sensor data into a geometric attractor, explicitly unfolding the mechanical states independently of their temporal occurrence. By evaluating various anomaly scoring techniques within this space, we demonstrate that discrete support estimation provides an effective and computationally frugal Health Indicator (HI). Validated on a real-world dataset of 21 heterogeneous robots over three years and a synthetic Langevin system, our approach outperforms standard deep learning baselines. We show that aligning the algorithmic bias with the geometric properties of the target system yields a pragmatic, traceable and easily deployable approach perfectly tailored to the realities of industrial constraints.",
+      "published": "August 31, 2026",
+      "published_raw": "2026-08-31T13:55:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2608.30804v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2608.30804v1"
+    },
     {
       "id": "2608.30633v1",
       "title": "Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment",
@@ -203,142 +328,6 @@
       "published_raw": "2026-08-28T21:24:54Z",
       "pdf_link": "http://arxiv.org/pdf/2608.28874v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2608.28874v1"
-    },
-    {
-      "id": "2608.28844v1",
-      "title": "Toward Postural State Classification in Immersive VR with Multimodal Data and Explainability Analysis",
-      "authors": [
-        "Nipa Anjum",
-        "Md Irfan Pavel",
-        "Robert Gonzalez",
-        "Kevin Desai",
-        "Alberto Cordova",
-        "M. Rasel Mahmud",
-        "John Quarles"
-      ],
-      "abstract": "Ensuring a safe virtual reality (VR) experience requires systems that can predict and respond when users lose their balance. Although prior work has examined fall prediction and motion sickness, many approaches are regression-based and postural state classification remains less explored. This study compares machine learning (ML) and deep learning (DL) models for classifying postural states in VR under visual perturbations. We used a multimodal dataset containing kinematic, electromyographic (EMG), and electrodermal activity (EDA) signals. The data were prepared for a binary task to distinguish balanced from imbalanced postural states, and participant-wise downsampling addressed class imbalance. All models were evaluated with Leave-One-Participant-Out (LOPO) cross-validation to test generalization to unseen participants. Among the models, the Mamba-inspired CNN (MI-CNN) achieved the highest accuracy of 96.76%. SHapley Additive exPlanations (SHAP) analysis improved interpretability and identified the most influential classification factors. The SHAP results showed that kinematic features were dominant, indicating that body-motion patterns are informative for detecting imbalance in VR. We also evaluated MI-CNN using only the top two-thirds of features ranked by SHAP importance. Despite a 33% reduction in input dimensionality, the model maintained performance, achieving 0.957 accuracy and 0.957 F1-score, with about a 1% decrease compared with the full-feature model. These findings suggest that multimodal sensing, temporal deep learning, and explainable AI can support reliable classification of balance-related instability in VR. Accurate recognition of imbalanced postural states may raise awareness of fall risk and guide safer, adaptive VR systems that respond to instability while improving user safety and experience. Code is available at: https://github.com/NipaAnjum/MI-CNN.",
-      "published": "August 28, 2026",
-      "published_raw": "2026-08-28T20:31:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.28844v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.28844v1"
-    },
-    {
-      "id": "2608.28495v1",
-      "title": "Automated Dislocation Detection in Electron Channelling Contrast Imaging: A Comparative Study of Rule-Based, Neural Network, and Deep Learning Approaches",
-      "authors": [
-        "A. Holmes",
-        "C. Trager-Cowan",
-        "J. Bruckbauer",
-        "B. Hourahine"
-      ],
-      "abstract": "Quantifying threading dislocations in semiconductor materials via electron channelling contrast imaging (ECCI) is heavily bottlenecked by slow manual analysis. This work benchmarks three automated detection pipelines on ECCI micrographs of gallium nitride (GaN) against a statistical ground truth. A classical rule-based computer vision approach proved unreliable due to extensive per-image tuning requirements, while a convolutional neural network (CNN)-based multi-stage classification and locator method achieved 87% accuracy but required significant time for a test image and was less efficient in high-density regions. By contrast, a unified single-stage you only look once (YOLOv8) architecture achieved a counting accuracy of 98.6%, alongside 98.7% precision and 98.7% recall across 7451 dislocations over multiple images, with rapid inference times. Successful deployment of YOLOv8 required addressing two domain-specific machine learning challenges. First, to mitigate the model's scale sensitivity, an adaptive gaussian tile-sizing algorithm was developed to optimise the field of view per image. Second, the deployed confidence threshold (0.025) differed substantially from the suggested inference default value for YOLOv8 (0.25), raising counting accuracy from 90.8% to 99.3% on a subsection of the benchmark image. In this case, low confidence scores represented physical signal strength rather than classification ambiguity. This unified, scale-adaptive approach demonstrates practical viability for high-throughput, quantitative semiconductor defect characterisation.",
-      "published": "August 28, 2026",
-      "published_raw": "2026-08-28T16:21:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.28495v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.28495v1"
-    },
-    {
-      "id": "2608.28209v1",
-      "title": "Generalized Context in Cross Attention for Transfer Learning of Disjoint Tabular Data",
-      "authors": [
-        "Kazi F. Akhter",
-        "Ibna Kowsar",
-        "Manar D. Samad"
-      ],
-      "abstract": "Unlike images and text, applying transfer learning to tabular data is challenging due to heterogeneity in feature types, structures, and semantics across disparate domains. Existing methods assume shared features across data tables to enable knowledge transfer between domains, which is unrealistic in practice. \\mds{This paper introduces generalized context learning to remove the requirement of shared features across domains. The generalized context captured by transformer projection weights for $key$, $value$, and $query$ provides rule-based generalization rather than the domain-specific context conventionally learned from transformer activations. Projection weights for $key$ from the source domain interact with the weight for $query$ in the target domain to achieve Cross-domain Attention Transfer Learning (CATTLE) in a data-agnostic manner. Our experiments on ten pairs of disjoint source-target data sets show that CATTLE can learn generalized context from a single source data set and is rank-wise and statistically superior to nine state-of-the-art baselines, including machine learning, deep learning, and transfer learning methods using large-scale pre-trained models. CATTLE achieves the best average rank (2.9) and delivers a 3.7% average AUROC gain over the baseline methods.} The CATTLE source code is available at https://tinyurl.com/pr5s8ywn.",
-      "published": "August 28, 2026",
-      "published_raw": "2026-08-28T11:29:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.28209v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.28209v1"
-    },
-    {
-      "id": "2608.28161v1",
-      "title": "Empowering Local Agriculture: A Deep Learning-Powered Web System for Identifying Bangladeshi Mango Varieties",
-      "authors": [
-        "Monowar Islam",
-        "Safaruzzaman Shovo"
-      ],
-      "abstract": "Mango variety identification in Bangladesh is challenging because closely related cultivars can have similar visual characteristics and images are often captured under varying real-world conditions. This work presents a deep learning-based web system for automatic identification of Bangladeshi mango varieties. We collected 2,013 high-quality mango images (3024x4032 pixels) from local markets and farms and organized them into nine classes, combining Bari-4 and Bari-7 as a single Bari class. The dataset was divided into training (70%), validation (15%), and test (15%) sets, with image augmentation applied to improve model generalization. Three pretrained CNN architectures, ResNet18, ResNet50, and EfficientNetB0, were fine-tuned under consistent training settings. EfficientNetB0 achieved the best performance, obtaining 98.01% validation accuracy and 97.36% test accuracy, compared with 86.47% and 78.55% test accuracy for ResNet18 and ResNet50, respectively. Class-wise F1-scores for EfficientNetB0 ranged from 0.93 to 0.99, while the Bari class achieved an F1-score of 0.97. The selected EfficientNetB0 model has approximately 4 million parameters, making it suitable for lightweight deployment. We integrated the model into a Streamlit web application that enables users to upload a mango image and receive a predicted variety with class probabilities. The system provides an accessible, practical tool for mango identification and demonstrates the potential of deep learning for supporting agricultural applications in Bangladesh.",
-      "published": "August 28, 2026",
-      "published_raw": "2026-08-28T10:21:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.28161v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.28161v1"
-    },
-    {
-      "id": "2608.27692v1",
-      "title": "Application of the latent twins approach for clear sky retrieval from IASI observations",
-      "authors": [
-        "Michele Martinazzo",
-        "Cristina Sgattoni",
-        "Marco Menarini",
-        "Chiara Zugarini",
-        "Tiziano Maestri",
-        "Luca Sgheri"
-      ],
-      "abstract": "In recent years, data-driven approaches emerged as alternatives to traditional physics-based retrievals, taking advantage of machine learning techniques such as learnable pseudoinverse, random forests, or deep learning architectures. Classical data-driven models generalize poorly to out-of-sample regimes, as they optimize over finite datasets without incorporating underlying physical laws. This often requires large models and extensive data to achieve reliability. Physics-Informed Neural Networks address this by embedding physical constraints into the learning process, enabling improved extrapolation. However, they requires substantial computational cost due to the need to solve governing equations at each training step. In this work, we introduce a novel deep learning architecture, based on latent twin approach, that balances model complexity, dataset size, and training cost, while providing a quantitative measure of data quality. This architecture is applied to IASI spectra, with the goal to assess the robustness of this method for retrieving atmospheric profiles, including temperature, water vapor, ozone, surface emissivity, and surface temperature, in real-world clear-sky conditions. The algorithm is first applied on synthetic radiances derived from the NWP SAF database using the fast radiative transfer code sigma-IASI/F2N. After validating the architecture on synthetic data, the algorithm is applied to IASI Level 1C observations, along with their corresponding Level 2 products which serve as reference to evaluate the reconstruction accuracy of the autoencoder-based retrieval. The retrieval performances are discussed along with possible strategies to provide an error analysis for the reconstructed thermodynamical profiles.",
-      "published": "August 27, 2026",
-      "published_raw": "2026-08-27T20:28:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.27692v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.27692v1"
-    },
-    {
-      "id": "2608.27241v1",
-      "title": "Importance Scoring of Transformer Attention Heads in Learning Tabular Data",
-      "authors": [
-        "Ahmad Jad Allah",
-        "Kazi F. Akhter",
-        "Md. Kamrozzaman Bhuiyan",
-        "Manar D. Samad"
-      ],
-      "abstract": "Computationally demanding and opaque deep learning models can be better understood and optimized by analyzing how they transform data. While deep transformers have been widely studied in computer vision and natural language processing, their application in tabular data remains relatively underexplored. This paper presents one of the first applications of an importance-scoring metric to interpret multi-head transformer models in learning from tabular data. Experiments conducted on 40 diverse tabular datasets demonstrate robustness to head drops based on the proposed head importance score. In 72.5\\% of experimental examples, the model remains most resilient to performance drops when heads with the lowest importance scores are gradually removed. In contrast, removing the most important attention head first results in the greatest reduction in classification performance. A closer look at individual head importance scores across six attention layers reveals that important heads are scattered across layers, with no consistent layer-specific trends. In contrast to the image and language domains, the importance of individual attention heads varies considerably across tabular datasets with different schemas and feature spaces. The proposed importance score can improve efficiency and redundancy within transformer architectures. We make the source code for measuring the importance of individual attention heads publicly available.",
-      "published": "August 27, 2026",
-      "published_raw": "2026-08-27T15:22:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.27241v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.27241v1"
-    },
-    {
-      "id": "2608.27124v1",
-      "title": "TRACE-CRC: Trajectory-Adaptive Conformal Risk Control for Multi-Step Channel State Information Prediction",
-      "authors": [
-        "Kiarash Rezaei",
-        "Mehdi Sattari",
-        "Javad Aliakbari",
-        "Tommy Svensson",
-        "Paolo Monti",
-        "Carlos Natalino"
-      ],
-      "abstract": "Reliable prediction of time-varying channel state information (CSI) is essential for efficient wireless communication. Each CSI frame is a matrix-valued representation of the wireless channel response, and a sequence of CSI frames forms a temporal channel trajectory. Modern deep learning-based CSI predictors, however, often provide only point predictions and lack calibrated uncertainty estimates. This limitation is particularly problematic in multi-step CSI prediction, where the target is a sequence of future CSI matrices, and downstream decisions such as beamforming or scheduling may fail if any part of the predicted trajectory is unreliable. We propose trajectory-adaptive calibration and error profiling with conformal risk control (TRACE-CRC), a method for trajectory-aware uncertainty quantification in multi-step CSI prediction. TRACE-CRC constructs Frobenius-norm uncertainty balls around predicted CSI matrices and controls the risk that at least one future frame is uncovered. Instead of calibrating each future step independently, TRACE-CRC combines future-step-dependent error profiling, trajectory difficulty stratification, and learn-then-test (LTT) risk control. Empirically, TRACE-CRC achieves reliable trajectory-level coverage with substantially smaller uncertainty balls than conservative multi-step corrections, while avoiding the trajectory undercoverage of compact stepwise and adaptive conformal baselines.",
-      "published": "August 27, 2026",
-      "published_raw": "2026-08-27T13:39:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.27124v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.27124v1"
-    },
-    {
-      "id": "2608.27113v1",
-      "title": "Linear Independence of Polynomial Compositions and Identifiability of Deep Neural Networks",
-      "authors": [
-        "Kathlén Kohn",
-        "Giovanni Luca Marchetti",
-        "Alex Massarenti",
-        "Massimiliano Mella"
-      ],
-      "abstract": "Motivated by theoretical problems in deep learning, we conjecture that post-composing a fixed number of pairwise distinct nonconstant polynomials with a generic polynomial of sufficiently large degree yields linearly independent polynomials. This generalizes Newman--Slater's theorem on powers of polynomials. We establish several cases of this conjecture and its origin-passing variant: We prove the result for two polynomials, and for an arbitrary number of polynomials when their degrees are bounded. Furthermore, we show how the conjecture implies a complete understanding of the identifiability (i.e., parameter symmetries) of deep fully connected neural network architectures with generic polynomial activation functions. In particular, for network architectures with layer-specific activations of increasing degree, our established versions of the conjecture fully characterize the set of parameters yielding the same end-to-end network function. As a special case, we fully resolve the identifiability of shallow polynomial networks.",
-      "published": "August 27, 2026",
-      "published_raw": "2026-08-27T13:26:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.27113v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.27113v1"
-    },
-    {
-      "id": "2608.27076v1",
-      "title": "Tabular Deep Learning for Algorithmic Trading: Cross-Regime Bayesian Optimisation for Equity Signal Generation",
-      "authors": [
-        "Joshua Le Grice"
-      ],
-      "abstract": "Algorithmic trading now represents a market exceeding $20 billion, where even marginal gains in signal robustness can translate into economically significant returns. Existing evaluations of equity prediction models do not explicitly target regime robustness during hyperparameter selection. Five model classes are trained on daily observations from approximately 300 large-cap US equities over eleven years, with Bayesian optimisation configured to target trading performance across three statistically different market regimes. Regime-robust hyperparameter selection is associated with out-of-sample generalisation, as signal precision remains above the random baseline across all four quarters of the test period, and portfolio performance slowly degrades under simulated input noise before collapsing beyond a defined threshold. No individual tabular deep learning architecture outperforms gradient-boosted trees, but combining XGBoost and TabNet using rank aggregation produces a Hybrid ensemble with an annualised return of 51.26%, a Sharpe ratio of 2.44, and a statistically significant CAPM alpha of 0.423 (p = 0.011). A near-zero beta indicates this outperformance is driven by stock selection, not market exposure. Alternative data plays a secondary role once technical and fundamental features are accounted for, as well as contributing more strongly on the short side than the long, and varies by model class. An interactive application makes these results explorable in real time, with live data integration the remaining step toward practical deployment.",
-      "published": "August 27, 2026",
-      "published_raw": "2026-08-27T13:01:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.27076v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.27076v1"
     }
   ]
 }
