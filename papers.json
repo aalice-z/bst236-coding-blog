@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-09-04T01:37:29.591897",
+  "last_updated": "2026-09-05T01:38:51.448857",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.04168v1",
+      "title": "Para-Pipe: Exploiting Hierarchical Operator Parallelism of ML Computational Graphs on SoCs",
+      "authors": [
+        "Yujie Zhang",
+        "Huiying Lan",
+        "Ehsan Aghapour",
+        "Zhiyuan Ning",
+        "Peng Zan",
+        "Weidong Shao",
+        "Anuj Pathania",
+        "Tulika Mitra"
+      ],
+      "abstract": "As edge-based deep learning applications become more complex, optimizing performance on heterogeneous System-on-Chips (SoCs) presents unique challenges. Traditional pipelining techniques distributing the computation across different on-chip processing units, while effective for throughput, do not address the latency demands posed by modern neural networks with complex interdependencies and extensive operator parallelism. There is a potential in leveraging operator parallelism to enable concurrent execution across multiple processing units, thereby reducing inference latency. However, prioritizing pipelining or parallel execution often necessitates a compromise, where optimizing one performance metric adversely impacts the other. This paper introduces Para-Pipe, a hierarchical mapping framework that integrates intra- and inter-stage operator parallelism within a pipelined architecture. Para-Pipe navigates the trade-off between throughput and latency by selectively fine-tuning parallelism levels within and across pipeline stages. This strategy can significantly reduce inter-processor communication overhead, significantly improving energy efficiency. Our evaluation demonstrates that Para-Pipe generates multiple Pareto-optimal configurations, achieving a balance between throughput and latency on an Amlogic SoC equipped with ARM big.LITTLE CPUs and GPU, as well as the Black Sesame Technology SoC featuring a deep learning accelerator and two DSPs. More importantly, throughput-optimized configurations under Para-Pipe on Amlogic SoC show an average energy efficiency improvement of 11.0% over purely pipelined strategies and 23.3% relative to non-pipelined parallel execution.",
+      "published": "September 03, 2026",
+      "published_raw": "2026-09-03T17:53:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.04168v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.04168v1"
+    },
+    {
+      "id": "2609.04066v1",
+      "title": "Subspace Inference Enables Efficient Active Reward Learning from Preferences",
+      "authors": [
+        "Yutai Zhou",
+        "Erdem Bıyık"
+      ],
+      "abstract": "Reinforcement learning from human feedback (RLHF) has emerged as a powerful yet sample-inefficient approach for learning reward models from human preferences, making active learning a critical component in synthesizing informative preference queries. However, effective uncertainty quantification required for active learning remains a key challenge for large neural network reward models. In this paper, we introduce PreferenceEKF, a sample-efficient approach that tracks reward model uncertainty by framing active preference learning as a sequential Bayesian filtering problem. Instead of relying on computationally prohibitive posterior inference over the full neural network parameter space, our method performs sequential inference via an extended Kalman filter within a low-dimensional parameter subspace, continuously updating the reward model posterior as new preference queries arrive. Our approach enables scalable sampling of neural network parameters to efficiently compute acquisition functions for active reward learning. Experiments on the D4RL and V-D4RL benchmarks demonstrate that our approach achieves better sample efficiency, runtime, scalability, and calibration compared to other Bayesian deep learning approaches, and the learned reward models lead to competitive offline reinforcement learning policy performance. This highlights the potential of scalable Bayesian methods for preference-based reward modeling in RLHF. Our code is available at https://github.com/yutaizhou/bnn_pref.",
+      "published": "September 03, 2026",
+      "published_raw": "2026-09-03T16:39:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.04066v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.04066v1"
+    },
+    {
+      "id": "2609.04028v1",
+      "title": "Influence of Extruded Filament Shape on Buildability in 3D Concrete Printing: A Geometry-Informed Deep Learning-FEM Approach",
+      "authors": [
+        "Giacomo Rizzieri",
+        " Saif-Ur-Rehman",
+        "Jörg F. Unger",
+        "Annika Robens-Radermacher"
+      ],
+      "abstract": "The geometric morphology of deposited filaments can significantly influence the structural performance and stability of 3D concrete-printed (3DCP) structures. However, most finite element (FEM)-based approaches for buildability assessment represent printed layers as simplified rectangles, potentially limiting predictive accuracy. This study proposes a geometry-informed modelling framework that integrates the deep-learning-based filament shape prediction tool ShapeGen3DCP with a layer-activation FEM approach to investigate the effect of realistic filament geometries on buildability. The framework generates geometry-aware numerical models directly from material and process parameters, eliminating the need for experimental filament characterization or computationally intensive fluid-flow simulations. Validation against experimental data and a parametric study of rectilinear walls demonstrate that extrusion parameters and the resulting filament geometry can significantly influence buildability predictions. Realistic filament representations are particularly important for free-flow deposition, whereas layer-pressing strategies are less sensitive to geometric simplifications. Among the investigated representations, an elliptical approximation provides an effective balance between geometric fidelity and modelling simplicity. When rectangular representations are preferred to enable regular computational meshes for faster simulations, defining their dimensions based on volume conservation improves prediction reliability compared with calibrating them using either the maximum filament width or the interlayer contact width. Overall, the proposed methodology demonstrates the importance of incorporating filament geometry into 3DCP simulations and provides practical guidance for selecting efficient and accurate geometric representations for buildability assessment.",
+      "published": "September 03, 2026",
+      "published_raw": "2026-09-03T16:08:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.04028v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.04028v1"
+    },
+    {
+      "id": "2609.04013v1",
+      "title": "LLM4CKD: Large Language Models for Early Stage Chronic Kidney Disease Screening",
+      "authors": [
+        "Muhammad Ashad Kabir",
+        "Sirajam Munira"
+      ],
+      "abstract": "Early screening of chronic kidney disease (CKD) is critical for timely intervention, yet most machine learning (ML) and deep learning (DL) approaches require labeled data and model training, limiting their use in real-world screening settings. This study evaluates the effectiveness of large language models (LLMs) for CKD screening under zero-shot and few-shot in-context learning settings and compares them with traditional ML and DL methods. We propose a framework that uses clinically selected tabular features and structured prompt templates to enable LLM-based inference without task-specific training. LLM performance is evaluated across multiple prompt styles, feature configurations, and data settings, and compared with standard ML, DL, and tabular foundation model (TFM) baselines, and existing CKD screening tools. The results show that LLMs can achieve competitive performance using only a small number of examples, often matching or outperforming traditional approaches in low-data settings. However, their performance remains model-dependent and less stable as input complexity increases. In contrast, ML, DL, and TFM models show more consistent improvement with larger training data. Overall, the findings highlight a trade-off between data efficiency and stability, suggesting that LLMs may serve as a flexible complementary approach for CKD screening when labeled data are limited.",
+      "published": "September 03, 2026",
+      "published_raw": "2026-09-03T15:53:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.04013v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.04013v1"
+    },
     {
       "id": "2609.03642v1",
       "title": "Machine learning-assisted design and explainable optimization of CdSnP2-based integrated solar-photodetector devices",
@@ -229,63 +289,6 @@
       "published_raw": "2026-08-31T23:22:30Z",
       "pdf_link": "http://arxiv.org/pdf/2609.00472v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.00472v1"
-    },
-    {
-      "id": "2609.00460v1",
-      "title": "Context Window Failures in Relational Foundation Models",
-      "authors": [
-        "Denis Oliveira Correa",
-        "Francisco Galuppo Azevedo"
-      ],
-      "abstract": "Recent Relational Deep Learning architectures have been proposed as foundation models for multi-table relational data, yet they impose constrained neighborhood budgets that force row truncation when an entity has many related records. We introduce Animus, a synthetic financial dataset in which predicting customer income requires aggregating up to tens of thousands of transactions. On the raw representation, three recently proposed models (RT, Griffin, RelGT) achieve $R^2 \\le 0.18$; a single, routine, temporal pre-aggregation step recovers $R^2$ up to $0.65$. This questions whether current relational foundation models are ready for high-cardinality real-world data.",
-      "published": "August 31, 2026",
-      "published_raw": "2026-08-31T22:59:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.00460v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.00460v1"
-    },
-    {
-      "id": "2609.00339v1",
-      "title": "A Fast and Scalable Transformer Pipeline for Binary Black Hole Detection",
-      "authors": [
-        "Chayan Chatterjee",
-        "Abigail Petulante",
-        "Haowei Fu",
-        "Yang Hu",
-        "Roy Lau",
-        "Karan Jani"
-      ],
-      "abstract": "With the projected increase in the detection rate of compact-binary coalescences in the coming decade, there is critical need to develop fast, robust, and scalable alternatives to matched filtering for gravitational-wave searches. Transformer models have revolutionized natural language and audio processing but their application to gravitational-wave astronomy is still largely unexplored. In this work, we introduce \\castor, a transformer-based coincident search pipeline for detecting binary black hole gravitational-wave signals from Advanced LIGO detectors. One of the major features of our model is that it allows the false-alarm rate to be estimated via time slides cheaply without requiring repeated evaluations of the neural network. We evaluate \\castor\\ on datasets from the Machine-Learning Gravitational-Wave Search Challenge (MLGWSC-1) and on approximately five months of real O3b observing strain. When tested on benchmark datasets, \\castor\\ ranks among the most sensitive machine-learning pipelines and successfully recovers the majority of confident events from the GWTC-3 catalog that lie within its training range. We also benchmark \\castor\\ against another transformer architecture, GW-Whisper, a domain-adaptation of OpenAI's audio foundation model. We find that \\castor\\ substantially outperforms the repurposed audio model in sensitivity and also reduces the computational cost of background estimation by a factor of 20. Our results demonstrate a highly practical, scalable approach for deep-learning gravitational wave searches and empirical background estimation for future observing runs.",
-      "published": "August 31, 2026",
-      "published_raw": "2026-08-31T20:34:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.00339v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.00339v1"
-    },
-    {
-      "id": "2608.31045v1",
-      "title": "Rotational Equivariance in Machine Learning: A Comprehensive Tutorial",
-      "authors": [
-        "Peter Lippmann",
-        "Fred A. Hamprecht"
-      ],
-      "abstract": "Rotational symmetry is one of the most important structural principles in machine learning on 3D data. In applications ranging from physics and materials science to 3D computer vision, predictions should not depend on an arbitrary choice of coordinate frame. Rotational equivariance captures this requirement mathematically by enforcing that a rotation of the input induces a corresponding transformation of the model output. This tutorial provides a comprehensive introduction to rotational equivariance, starting from the physical and geometric intuition behind coordinate independence and building up the necessary machinery from geometric deep learning, group theory, and representation theory. We introduce message passing on Euclidean graphs, group actions and representations, spherical harmonics, Wigner matrices, tensor products, and Clebsch-Gordan decomposition, and explain how these ingredients give rise to modern equivariant architectures. We then survey the principal strategies for incorporating rotational equivariance in deep learning, including group convolutions, internal tensorial representations, and canonicalization-based methods, and discuss their practical strengths and limitations. The tutorial aims to lower the barrier to the subject by connecting the underlying mathematics to practical model design, by unifying ideas that are often expressed in different formal languages, and by helping practitioners choose among competing approaches through a clear discussion of their trade-offs.",
-      "published": "August 31, 2026",
-      "published_raw": "2026-08-31T16:21:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.31045v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.31045v1"
-    },
-    {
-      "id": "2608.30804v1",
-      "title": "Geometric Attractor Monitoring: A Robust and Frugal Framework for Multi-modal Industrial Robotic Cycles",
-      "authors": [
-        "Martin Bonsergent-Brachet",
-        "Jesse Read",
-        "Dany Abboud"
-      ],
-      "abstract": "Monitoring the health of heterogeneous industrial robot fleets is severely challenged by the multi-modal nature of their operational cycles and a persistent scarcity of run-to-failure data. Standard data-driven approaches, particularly deep learning architectures relying on sequential reconstruction, often struggle in this specific setting; they tend to over-smooth complex dynamics, masking early signs of degradation. To address these industrial constraints, we reframe the monitoring problem through a framework based on Phase Space Reconstruction (PSR). Instead of predicting temporal sequences, this framework transforms univariate sensor data into a geometric attractor, explicitly unfolding the mechanical states independently of their temporal occurrence. By evaluating various anomaly scoring techniques within this space, we demonstrate that discrete support estimation provides an effective and computationally frugal Health Indicator (HI). Validated on a real-world dataset of 21 heterogeneous robots over three years and a synthetic Langevin system, our approach outperforms standard deep learning baselines. We show that aligning the algorithmic bias with the geometric properties of the target system yields a pragmatic, traceable and easily deployable approach perfectly tailored to the realities of industrial constraints.",
-      "published": "August 31, 2026",
-      "published_raw": "2026-08-31T13:55:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2608.30804v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2608.30804v1"
     }
   ]
 }
