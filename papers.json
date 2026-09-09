@@ -1,7 +1,126 @@
 {
-  "last_updated": "2026-09-08T01:41:13.949411",
+  "last_updated": "2026-09-09T01:48:18.529098",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.06437v1",
+      "title": "Large-Scale Pretraining for Improving Deep Learning-Based Geometric Distortion Correction of Diffusion-Weighted Imaging",
+      "authors": [
+        "Saroj Khanal",
+        "Yashawant Kumar Yadav",
+        "Kritam Bhattarai",
+        "Jeevan Neupane",
+        "Shristi Subedi",
+        "Saship Gwachha",
+        "Manish Kumar Tiwari",
+        "Dong Zhang",
+        "Confidence Raymond",
+        "Aondona Moses Iorumbur",
+        "Udunna Anazodo",
+        "Surendra Maharjan",
+        "Bishesh Khanal",
+        "Mahesh Shakya",
+        "Pralhad Kumar Shrestha"
+      ],
+      "abstract": "Diffusion-weighted imaging (DWI) is widely used in clinical settings but remains vulnerable to geometric distortion. Conventional correction methods often require additional acquisitions or vendor-specific solutions, limiting their feasibility in high-throughput, resource-constrained settings. This study investigates whether large-scale pretraining strategies can improve deep learning-based distortion correction for single-phase-encoding DWI. We formulate the task as image reconstruction, and compare a non-pretrained baseline against a self-supervised and a generative pretrained model, evaluated using both quantitative image-similarity metrics and qualitative expert assessment. The best-performing model was further tested for transferability on data collected in an LMIC setting with acquisition shift. Pretrained models outperformed the non-pretrained baseline, with cWDM achieving the strongest results across both quantitative and qualitative evaluation. However, application to LMIC data revealed transferability challenges, including contrast alteration and over-reliance on T1-weighted anatomical structure. Registering images to a common standard space improved predictions, suggesting that harmonized preprocessing may enhance cross-domain deployment.",
+      "published": "September 06, 2026",
+      "published_raw": "2026-09-06T07:23:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.06437v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.06437v1"
+    },
+    {
+      "id": "2609.06316v1",
+      "title": "Deep learning from the crowd Fundamentals of morphological galaxy classification",
+      "authors": [
+        "Luis Enrique Sucar",
+        "Carlos del Burgo",
+        "Jonathan Serrano-Pérez"
+      ],
+      "abstract": "Aims. The objective of this work is to adapt a deep neural network model to perform galaxy morphological classification trained from crowd annotations, considering the training scheme, the agreement between the annotators, and the hierarchy. Methods. We use Galaxy Zoo 1 as our experimental testbed and trained a convolutional neural network (CNN) for the automatic classification of galaxies' morphologies. We analyze the impact of the following aspects on the classification accuracy and training efficiency: (i) Training only the last layer vs. training all the network; (ii) Classification with only the CNN vs. considering the hierarchy; (iii) Comparing the models trained with different amounts of data and levels of agreement between the annotators; (iv) Training by stages, transferring knowledge from one model to another; and (v) Combining several models as an ensemble. Results From the experiments, we derive the following results: (i) Training all the layers in the network significantly improves the accuracy (10% increase in exact match), compared to training only the last layer; (ii) There is a tradeoff between the amount of data and the level of agreement between the annotators used for training; (iii) Using the hierarchy can improve accuracy when the amount of training data is reduced; (iv) Training by stages through transfer learning (curriculum learning) produces higher accuracy for limited data; (v) Ensembles can improve accuracy; (vi) Models achieve a low accuracy for the most difficult cases, but, if we consider hierarchical measures, we can derive useful results for upper levels in the hierarchy. An accuracy above 99% is achieved when training all layers of the network and considering a high agreement between the annotators. Conclusions. Training deep learning models from crowd annotations involves additional challenges than learning from hard annotations.",
+      "published": "September 06, 2026",
+      "published_raw": "2026-09-06T00:36:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.06316v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.06316v1"
+    },
+    {
+      "id": "2609.06187v1",
+      "title": "SolarBench: A global solar energy nowcasting benchmark",
+      "authors": [
+        "Yuhao Nie",
+        "Stephen Campbell",
+        "Quentin Paletta",
+        "Liwenbo Zhang",
+        "Tao Jing",
+        "Samer Chaaraoui",
+        "Jonathan Giezendanner",
+        "Andea Scott",
+        "Tao Sun",
+        "Cong Feng",
+        "Max Aragon",
+        "Jacques Camier",
+        "Adam Jensen",
+        "Florian Kotthoff",
+        "Yuexing Yang",
+        "Yang Ming",
+        "Mengying Li",
+        "Stefanie Meilinger",
+        "Yupeng Wu",
+        "Adam Brandt",
+        "Sherrie Wang"
+      ],
+      "abstract": "As the share of solar power grows, nowcasting weather-driven solar variability becomes critical for reliable energy system operation. State-of-the-art approaches increasingly apply deep learning to sky camera and geostationary satellite observations, but fragmented datasets and inconsistent evaluation make it difficult to determine whether reported improvements generalize across climates, cloud regimes, and photovoltaic (PV) systems. Here we introduce SolarBench, an open global benchmark for image-based solar nowcasting. SolarBench harmonizes more than six million sky and satellite images from 11 diverse sites spanning a decade, together with irradiance or PV output and auxiliary atmospheric data. An accompanying toolbox supports reproducible data access, processing, model development, and evaluation. Using SolarBench, we benchmark representative models and reveal a gap between average forecasting accuracy and the ability to capture rapid solar fluctuations. We further quantify predictability across cloud regimes and demonstrate data-efficient adaptation to new PV systems. SolarBench provides an extensible foundation for fair comparison and methodological innovation in solar nowcasting.",
+      "published": "September 05, 2026",
+      "published_raw": "2026-09-05T17:09:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.06187v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.06187v1"
+    },
+    {
+      "id": "2609.06131v1",
+      "title": "IIns-VAE+: A Robust Transfer Learning Framework for Environmental Identification in Wireless Sensing",
+      "authors": [
+        "Yuxiao Li",
+        "Keke Hu",
+        "Bobai Zhao",
+        "Santiago Mazuelas",
+        "Yuan Shen"
+      ],
+      "abstract": "Environmental identification in wireless sensing is essential for 6G integrated sensing and communication (ISAC) systems to achieve reliable situational awareness. However, deep learning (DL) models for this task often fail to generalize under domain shift across diverse environments. While the Inter-Instance Variational Auto-encoder (IIns-VAE) learns features of rich representation, its neural classifier remains vulnerable to these distribution changes. In this paper, we propose IIns-VAE+, a hybrid model that combines the IIns-VAE framework with Minimax Risk Classifiers (MRC) to improve adaptability in transfer learning scenarios. We use real-world datasets to evaluate our framework across three transfer learning scenarios, including general to specific room environments, high to low label resolutions, and mixed to specific environments. The experimental results indicate that IIns-VAE+ significantly outperforms baselines, demonstrating its critical value in building adaptable and robust perceptive networks in future 6G systems.",
+      "published": "September 05, 2026",
+      "published_raw": "2026-09-05T14:55:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.06131v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.06131v1"
+    },
+    {
+      "id": "2609.06006v1",
+      "title": "Memory in Deep Time-Series Models",
+      "authors": [
+        "Minh Hoang Nguyen",
+        "Huu Hiep Nguyen",
+        "Manh Nguyen",
+        "Van Dai Do",
+        "Dung Nguyen",
+        "Hung Le"
+      ],
+      "abstract": "Deep learning for time series has progressed through successive architectural paradigms, from recurrent networks and transformers to structured state-space models, retrieval-augmented predictors, foundation models, and tool-using agents. These developments are typically studied in isolation, organized by architecture or modeling era. We argue that they can instead be viewed through a common question of \\emph{how does a time-series model retain and access information beyond its immediate input?} This question is motivated by a fundamental limitation of conventional time-series modeling: information relevant to a prediction may lie far beyond a feasible input window, while compressing history into a fixed-size state can discard information that may become useful later. We formulate this challenge as a \\emph{memory} problem and organize existing time-series methods along a spectrum from internal memory, encoded in parameters and fixed-size states, to external memory that is addressable, retrievable, and increasingly maintained by agents. We then develop a unified taxonomy of memory mechanisms and review three classes of external memory, including explicit modules, retrieval augmentation, and agentic stores, under a common framework for what is retained, how it is written and accessed, and how it persists. A cross-cutting analysis maps these mechanisms to time-series tasks and identifies gaps in both methods and evaluation. We conclude by outlining open problems in building memory systems that can selectively retain, retrieve, revise, and forget information as temporal environments evolve. The result is a framework for studying memory as a first-class dimension of time series modeling, independent of the underlying backbone.",
+      "published": "September 05, 2026",
+      "published_raw": "2026-09-05T10:19:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.06006v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.06006v1"
+    },
+    {
+      "id": "2609.05698v1",
+      "title": "Analysis of Respiratory Sinus Arrhythmia with Neural Networks",
+      "authors": [
+        "Julian Szymanski",
+        "Patryk Orkisz",
+        "Higinio Mora"
+      ],
+      "abstract": "The paper introduces a neural network-based approach for analyzing ECG signals to estimate respiratory rate by leveraging the phe- nomenon of Respiratory Sinus Arrhythmia (RSA). Our method employs a deep learning model trained to predict respiratory waveforms directly from ECG input data. To achieve this, we developed and evaluated three different neural network architectures capable of automatically extract- ing relevant features from ECG signals without the need for manual preprocessing. The proposed approach offers a robust and scalable solu- tion for non-invasive respiratory monitoring, with potential applications in healthcare and wearable technology",
+      "published": "September 04, 2026",
+      "published_raw": "2026-09-04T20:09:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.05698v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.05698v1"
+    },
     {
       "id": "2609.05146v1",
       "title": "A Hybrid Predictive Ensemble of Machine Learning and Deep Neural Networks for Early Cardiovascular Disease Risk Assessment",
@@ -27,6 +146,23 @@
       "published_raw": "2026-09-04T12:38:07Z",
       "pdf_link": "http://arxiv.org/pdf/2609.05081v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.05081v1"
+    },
+    {
+      "id": "2609.05575v1",
+      "title": "Capsule Lens: Locating and Tracking Concept Geometry in Model Representations",
+      "authors": [
+        "Yiming Tang",
+        "Harshvardhan Saini",
+        "Samyak Jha",
+        "Huaming Chen",
+        "Xufeng Duan",
+        "Dianbo Liu"
+      ],
+      "abstract": "Understanding how concepts are encoded in the internal representations of machine learning models is a central problem in mechanistic interpretability, essential both for the science of deep learning and for the trustworthy deployment of increasingly capable models. Existing approaches to interpret model representations mainly map representations onto more interpretable spaces and do not directly characterize how concepts occupy representation space; various hypotheses have been proposed, but often lack of rigorous validation and largely focus on static representations. In this work, we introduce Capsule Lens, a framework that matches the region a concept occupies with a simple, trackable geometric form, a capsule, defined by several interpretable parameters, fitted in closed form to each concept's geometry and validated on held-out samples. We apply Capsule Lens in two major settings: static and dynamic representations. On static representations, we demonstrate how to locate concept geometry across various models, and how the span and norm curves uncover important geometric characteristics. On dynamic representations, we present three case studies tracking representation drifts induced by distinct training settings, CLIP pretraining, RL post-training on visual question answering, and RL post-training on mathematical reasoning. These analyses reveal qualitatively different geometric dynamics, ranging from broad network-wide restructuring in CLIP pretraining to localized and concept-specific changes in RL post-training. Our results include findings aligned with existing literature as well as novel observations. We believe Capsule Lens stands as a promising tool for locating, analyzing, and tracking concept geometry in both static and dynamic representations.",
+      "published": "September 04, 2026",
+      "published_raw": "2026-09-04T09:15:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.05575v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.05575v1"
     },
     {
       "id": "2609.04845v1",
@@ -176,124 +312,18 @@
       "arxiv_link": "http://arxiv.org/abs/2609.04267v1"
     },
     {
-      "id": "2609.02741v1",
+      "id": "2609.02741v2",
       "title": "SPADE: SPaT Attack Detection from the Connected Vehicle's Perspective",
       "authors": [
         "James Di Novo",
         "Hany Ragab",
         "Sylvain P. Leblanc"
       ],
-      "abstract": "Signal Phase and Timing (SPaT) messages are a cornerstone of connected vehicle (CV) safety, enabling CVs to perceive and respond to intersection state through Vehicle-to-Infrastructure (V2I) and Vehicle-to-Vehicle (V2V) communication. The integrity of these messages is threatened by a range of application-layer attacks that can bypass conventional authentication when a roadside unit or peer vehicle is compromised. Existing intrusion detection research either defends the infrastructure side or targets V2V Basic Safety Message (BSM) / Cooperative Awareness Message (CAM) misbehavior, leaving the onboard CV perspective on SPaT integrity unaddressed.To close this gap, we introduce SPADE --- the SPaT Attack Detection and Evaluation dataset --- a labelled, multi-modal, simulation-based dataset designed specifically for deep learning IDS research in this space. SPADE is generated through Eclipse MOSAIC using runtime attack injection at the SAE J2735 application layer across six attack classes and one benign class. By combining four intersection geometries, six operating conditions, and five independent random-seed repetitions, SPADE comprises 180 unique base scenario runs, yielding $\\sim$1,890,000 labelled timestep records (270,000 per class). Each record fuses SPaT message fields, onboard camera confidence scores, and cooperative V2V peer data across 40 features, reflecting the multi-modal signal space required to distinguish deliberate attacks from environmental degradation. The dataset, generation code, and scenario configurations are released publicly to support reproducible and comparative IDS research in C-V2X security. The developed toolbox, instructions, and dataset link are publicly available on GitHub: https://github.com/jdinovo/SPADE.",
+      "abstract": "Signal Phase and Timing (SPaT) messages are a cornerstone of connected vehicle (CV) safety, enabling CVs to perceive and respond to intersection state through Vehicle-to-Infrastructure (V2I) and Vehicle-to-Vehicle (V2V) communication. The integrity of these messages is threatened by a range of application-layer attacks that can bypass conventional authentication when a roadside unit or peer vehicle is compromised. Existing intrusion detection research either defends the infrastructure side or targets V2V Basic Safety Message (BSM) / Cooperative Awareness Message (CAM) misbehavior, leaving the onboard CV perspective on SPaT integrity unaddressed. To close this gap, we introduce SPADE --- the SPaT Attack Detection and Evaluation dataset --- a labelled, multi-modal, simulation-based dataset designed specifically for deep learning IDS research in this space. SPADE is generated through Eclipse MOSAIC using runtime attack injection at the SAE J2735 application layer across six attack classes and one benign class. By combining four intersection geometries, six operating conditions, and five independent random-seed repetitions, SPADE comprises 180 unique base scenario runs, yielding $\\sim$1,890,000 labelled timestep records (270,000 per class). Each record fuses SPaT message fields, onboard camera confidence scores, and cooperative V2V peer data across 40 features, reflecting the multi-modal signal space required to distinguish deliberate attacks from environmental degradation. The dataset, generation code, and scenario configurations are released publicly to support reproducible and comparative IDS research in C-V2X security. The developed toolbox, instructions, and dataset link are publicly available on GitHub: https://github.com/jdinovo/SPADE.",
       "published": "September 02, 2026",
       "published_raw": "2026-09-02T15:46:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.02741v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.02741v1"
-    },
-    {
-      "id": "2609.02448v1",
-      "title": "Adapting a Foundation Model for Lunar Surface Height Estimation",
-      "authors": [
-        "Patrick Bauer",
-        "Marius Schwinning",
-        "Melanie Siegel",
-        "Andreas Weinmann",
-        "Hichem Snoussi"
-      ],
-      "abstract": "Digital elevation models (DEMs) can provide accurate height information, making it invaluable for analyzing the lunar surface. As the European Space Agency (ESA) prepares for future lunar missions that aim to land on the Moon, a precise method for height estimation will be essential for hazardous terrain that could endanger the landing approach. Traditional approaches to generate DEMs from imagery, such as shape from shading (SfS) and stereophotogrammetry (SPG) have been proven highly valuable for this task. However, due to advancements in machine learning, especially computer vision, the focus has shifted towards monocular depth estimation via deep learning. The lunar surface is covered by rocks and craters, and classic hazard detection methods rely solely on 2D image data. Our goal is to address this issue by developing a relative lunar surface height estimator that can provide additional information for hazard localization. In this letter, we present a methodology that builds on the well-known zero-shot relative depth estimation model Depth Anything V2 (DAV2). Other works have been using it as a state-of-the-art comparison for their proposed lunar DEM estimation method, but without adaptations to the target domain. Thus, it may underperform. Therefore, we propose a fine-tuning strategy with publicly available SPG-derived DEM data of the lunar surface. Our results demonstrate a significant improvement in performance compared to the zero-shot model, effectively transforming DAV2 into a reliable relative depth estimator of the lunar surface.",
-      "published": "September 02, 2026",
-      "published_raw": "2026-09-02T11:11:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.02448v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.02448v1"
-    },
-    {
-      "id": "2609.02219v1",
-      "title": "Hardware-Accelerated Instance Segmentation for Resource-Constrained Space Robotics with Criticality Analysis",
-      "authors": [
-        "Siddhant Shete",
-        "Hilmi Dogu Kücüker",
-        "Udo Frese",
-        "Frank Kirchner"
-      ],
-      "abstract": "Autonomous lunar missions require real-time per- ception under three coupled constraints: extreme low-light conditions, limited onboard compute, and radiation-induced hardware faults that can silently corrupt inference. We present a deployment-oriented instance segmentation framework for resource-constrained lunar robotics that jointly addresses quan- tization calibration and system-level fault exposure under strict compute constraints. First, we introduce Activation Variance Informative Sampling (AVIS), a label-free calibration strategy that deterministically selects calibration samples based on activation variance statistics. Second, we deploy a YOLO-based segmentation model on a Deep Learning Processor Unit (DPU) with architectural modifications that reduce CPU fallback paths and enable statically compiled execution with bounded latency in low-lighting conditions. We further introduce a software-level criticality analysis to estimate fault exposure and guide mitigation under radiation-constrained operation. On a lunar micro-rover platform, AVIS with bias correction recovers 69.8% of quantization-induced accuracy loss while achieving 309 ms inference latency and 5.7 W power consumption. Targeted mitigation reduces global criticality by 31.7%. The results demonstrate an integrated approach and a blueprint for a reliable and safe AI perception framework under space deployment constraints.",
-      "published": "September 02, 2026",
-      "published_raw": "2026-09-02T07:33:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.02219v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.02219v1"
-    },
-    {
-      "id": "2609.02965v1",
-      "title": "Statistical Feature Augmentation for Anomaly Detection in Dynamic Graphs",
-      "authors": [
-        "Philipp Schlinge",
-        "Jean-Luc Schnipper",
-        "Martin Atzmueller"
-      ],
-      "abstract": "Dynamic networks are being applied in many domains, from social media to logistics systems, each with their own set of special characteristics. A model employed on this type of data must capture the duality between temporal/structural and feature-based information. Yet state-of-the-art deep learning models often struggle to learn especially short-term behavioral interaction signals, such as sender intensity or interaction inertia, directly from raw event streams. To address this gap, we propose a statistical feature augmentation method that explicitly encodes behavioral interaction statistics into the input feature space. We evaluate our proposed method on an anomaly detection task across three real-world datasets (Reddit, Wikipedia, MOOC) and seven models spanning both continuous-time and discrete-time architectures. As a baseline, we apply the same models trained on the original embeddings. Our results show, that augmentation consistently improves detection performance. Beyond performance, the enriched input enables fine-grained post-hoc analysis of behavioral importance, since each statistic occupies a dedicated input dimension. In particular, this work showcases a promising approach for merging classical network analysis with deep learning.",
-      "published": "September 02, 2026",
-      "published_raw": "2026-09-02T07:20:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.02965v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.02965v1"
-    },
-    {
-      "id": "2609.02085v1",
-      "title": "TC-Next: Zero-Shot Multimodal Cyclone Forecasting",
-      "authors": [
-        "Zhe Wang",
-        "Sijie Chen",
-        "Yiming Luo",
-        "Daehyun Kim",
-        "Chien-Yi Chang"
-      ],
-      "abstract": "We present TropicalCycloneNext (TC-Next), a multimodal deep learning model that forecasts tropical cyclone track and intensity at $6$-$24$ h leads by leveraging a foundation model's forecast fields of atmospheric kinematic and thermodynamic fields and GridSat infrared satellite imagery. Trained only on GraphCast forecasts over the Western Pacific (WP), yet reliant only on generic atmospheric variables, TC-Next on GraphCast lowers track error by $15$-$44\\%$ and intensity error by a factor of $3$-$6$ relative to a conventional, rule-based tracker, TempestExtremes; applied without retraining to the forecast fields of Pangu-Weather and IFS HRES, it stays ahead of TempestExtremes on both. Applied zero-shot to the generic weather fields of WeatherNext Cyclones on the 2025 WP season, TC-Next attains lower intensity error at every lead time, and lower or comparable track error, compared to that model's specialized direct tracker in a deterministic comparison. Our ablation studies show that our multimodal model is able to utilize the additional modality to improve performance in tracking errors at every lead time and in intensity prediction at longer lead times.",
-      "published": "September 02, 2026",
-      "published_raw": "2026-09-02T04:17:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.02085v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.02085v1"
-    },
-    {
-      "id": "2609.02016v1",
-      "title": "Perceptually Regularized Diffusion Model for Image Super-Resolution",
-      "authors": [
-        "Chuxiangbo Wang",
-        "Pavithra Venkatachalapathy",
-        "Ying Liang",
-        "Min Wang",
-        "Jing Qin",
-        "Yifei Lou",
-        "Weihong Guo"
-      ],
-      "abstract": "Image super-resolution, which aims to reconstruct high-resolution images from their low-resolution observations, is fundamental to medical imaging, remote sensing, surveillance, microscopy, and scientific visualization. Traditional model-based methods formulate super-resolution as an inverse problem with hand-crafted regularization priors. While interpretable and theoretically grounded, they rely on fixed assumptions and require computationally intensive iterative solvers. Deep learning methods offer data-driven flexibility by learning nonlinear mappings from low- to high-resolution images, among which diffusion models have achieved particularly impressive perceptual quality. However, the standard diffusion training objective is a pixel-domain noise-prediction loss that does not explicitly enforce perceptual fidelity, which can lead to oversmoothing and loss of fine image structure. To address these limitations, we propose a perceptually regularized diffusion framework that incorporates prior knowledge through perceptual-loss-based regularization, improving training convergence and encouraging the recovery of meaningful image features. Experiments on benchmark datasets demonstrate improved perceptual quality and competitive distortion metrics, highlighting the effectiveness of regularization for diffusion-based super resolution.",
-      "published": "September 02, 2026",
-      "published_raw": "2026-09-02T02:43:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.02016v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.02016v1"
-    },
-    {
-      "id": "2609.01417v1",
-      "title": "Predicting Subsurface Abnormalities Growth using Physics-Informed Neural Networks",
-      "authors": [
-        "Mehrdad Shafiei Dizaji",
-        "Hoda Azari"
-      ],
-      "abstract": "The research explores the pioneering integration of Physics-Informed Neural Networks (PINNs) into the domain of Ground-Penetrating Radar (GPR) data prediction. This research presents a detailed development framework for a specialized PINN model, proficient at interpreting and forecasting GPR data, much like how medical imaging models predict tumor behavior. By harnessing the synergy between deep learning algorithms and the physical laws governing subsurface structures or in medical terms, human tissues the model effectively embeds the physics of electromagnetic wave propagation into its architecture. This ensures that predictions not only align with fundamental physical principles but also mirror the precision needed in medical diagnostics for detecting and monitoring tumors. The suggested deep learning structure comprises three components: a CNN, a spatial feature channel attention (SFCA) mechanism, and ConvLSTM, along with temporal feature frame attention (TFFA) modules. The attention mechanism computes channel attention and temporal attention weights using self-adaptation, thereby fine tuning the visual and temporal feature responses to extract the most pertinent and significant visual and temporal features. By integrating physics directly into the neural network, our model has shown enhanced accuracy in forecasting GPR data. This improvement is vital for conducting effective assessments of bridge deck conditions and other evaluations related to civil infrastructure. The use of Physics Informed Neural Networks (PINNs) has demonstrated the potential to transform the field of Non-Destructive Evaluation (NDE) by enhancing the precision of infrastructure deterioration predictions. Moreover, it offers a deeper insight into the fundamental mechanisms of deterioration, viewed through the prism of physics-based models.",
-      "published": "September 01, 2026",
-      "published_raw": "2026-09-01T15:34:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.01417v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.01417v1"
-    },
-    {
-      "id": "2609.01292v1",
-      "title": "Relational Task Generation Language: A Declarative Specification Framework for Relational Deep Learning",
-      "authors": [
-        "Oleksii Kolesnichenko",
-        "Jakub Peleška",
-        "Gustav Šír"
-      ],
-      "abstract": "Relational Deep Learning (RDL) has become a powerful paradigm for learning from multi-tabular data. However, manually defining RDL prediction tasks is a laborious process that frequently results in data leakage. To address this issue, we introduce Relational Task Generation Language (RTGL) - an open-source declarative language that streamlines RDL task formulation by abstracting away low-level SQL details. We showcase RTGL by reconstructing existing RDL benchmark tasks and uncovering their inconsistencies stemming from manually crafted SQL definitions of RDL prediction targets, thereby underscoring the value of a dedicated declarative language. In addition, we demonstrate the practical utility of RTGL by designing various new tasks with diverse forms and target types. Our experiments confirm the robustness and usability of RTGL, as well as its seamless integration with the existing RDL frameworks, making it widely accessible to the community.",
-      "published": "September 01, 2026",
-      "published_raw": "2026-09-01T14:27:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.01292v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.01292v1"
+      "pdf_link": "http://arxiv.org/pdf/2609.02741v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.02741v2"
     }
   ]
 }
