@@ -1,7 +1,140 @@
 {
-  "last_updated": "2026-09-10T01:44:03.314740",
+  "last_updated": "2026-09-11T01:42:51.546929",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.11320v1",
+      "title": "A global mobile network coverage raster product at 1km resolution, 1999--2030",
+      "authors": [
+        "Till Koebe",
+        "Theophilus Aidoo",
+        "Ali El Chami",
+        "Ali Kanso",
+        "Akansh Maurya",
+        "Purushottam Sharma",
+        "Ingmar Weber",
+        "Ridhi Kashyap"
+      ],
+      "abstract": "Where a mobile signal is available shapes who can work, learn, bank, seek health care and respond to crises in the digital age, yet no globally consistent, sub-national record of mobile network coverage exists. We present such a record: annual 1km maps of the probability of 2G, 3G and 4G coverage for 214 countries and territories for the years 1999 to 2030. The maps are produced by three independent models: a calibrated machine-learning model, a techno-economic simulator of network build-out, and a spatial deep-learning model. The three estimates are then combined, per country and technology and in proportion to their measured accuracy, into a single best estimate with per-pixel 90% uncertainty bands; all four layers are released as part of the dataset. Because mobile roll-out closely follows a country's socio-economic conditions (population distribution, electrification, physical infrastructure), the models are grounded in existing geospatial data and tuned on 2,409 quality-screened operator-reported coverage maps, which are available up to 2020. For 2021--2024 the maps are predicted from recent geospatial data alone; for 2025--2030 they are extrapolated from demographic and infrastructure projections. On countries held out during training, the machine-learning model attains AUC 0.89--0.92. Baseline comparisons and the combined product's external validation are reported in Technical Validation. The dataset supports mapping the global digital divide, linking connectivity to household-survey outcomes, and humanitarian and infrastructure planning.",
+      "published": "September 10, 2026",
+      "published_raw": "2026-09-10T09:48:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.11320v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.11320v1"
+    },
+    {
+      "id": "2609.11269v1",
+      "title": "Improving Faint Object Detection for Space Situational Awareness with Variational Autoencoders",
+      "authors": [
+        "Angela Cratere",
+        "Luca Ghilardi",
+        "Vishnu Reddy",
+        "Francesco Dell'Olio",
+        "Charalampos S. Kouzinopoulos",
+        "Roberto Furfaro"
+      ],
+      "abstract": "We present a deep-learning pipeline for enhancing the detection of faint moving objects in optical space situational awareness (SSA) imagery through automated star removal and background reconstruction. Detecting low signal-to-noise ratio (SNR) objects remains extremely challenging in optical observations, particularly in the cislunar (X-GEO) environment, where structured sky backgrounds, dense stellar fields, and scattered moonlight significantly degrade the performance of classical detection algorithms. To address this problem, the proposed pipeline combines a lightweight segmentation network (Tiny-U-Net) to generate stellar masks with a partial-convolution variational autoencoder (astro-VAE), designed to learn the statistical distribution of astronomical backgrounds and perform context-aware inpainting of masked regions. The reconstructed background maps can then be used as a preprocessing step to suppress fixed sources and background inhomogeneities prior to detection. As a proof of concept, the approach is integrated with a shift-and-stack scheme and evaluated on real ground-based telescope observations targeting the X-GEO region. Results demonstrate that the method reconstructs star-free backgrounds with high fidelity, while preserving moving targets and significantly enhancing detectability, thereby providing an effective data-driven preprocessing strategy for faint moving-object detection in optical SSA scenarios.",
+      "published": "September 10, 2026",
+      "published_raw": "2026-09-10T09:02:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.11269v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.11269v1"
+    },
+    {
+      "id": "2609.11135v1",
+      "title": "Bidirectional Multimodal Fusion of Sky Images and Time-Series for Solar Forecasting with Large Language Models",
+      "authors": [
+        "Ken Chen",
+        "Maneesha Perera",
+        "Wei Wang",
+        "Sachith Seneviratne",
+        "Hansani Weeratunge",
+        "Saman Halgamuge"
+      ],
+      "abstract": "Short-term photovoltaic (PV) power and global horizontal irradiance (GHI) forecasts are essential for effective dispatch, reserve scheduling, and grid operations. At these forecasting horizons, errors are predominantly driven by cloud induced ramps: relying solely on historical numerical data may struggle to anticipate an incoming cloud, making ground-based sky images a crucial complementary physical signal. Furthermore, forecast performance is highly sensitive to location and local observing conditions, creating a strong need for site-specific data that are often scarce. Recently, large language models (LLMs) have demonstrated competitive performance and high data efficiency in time-series forecasting. Despite their success, existing LLM-based forecasting methods remain predominantly unimodal, relying primarily on historical numerical time-series data. Effectively incorporating sky imagery into an LLM-based forecasting framework remains under-explored and an open challenge. In this paper, we propose SolCloudLLM, an LLM-based multimodal forecasting framework. SolCloudLLM aligns sky-image patches with time-series patches and fuses their corresponding representations through bidirectional multimodal fusion, yielding a unified representation that is subsequently mapped into the embedding space of an LLM. Extensive experiments on the SIRTA and SKIPP'D datasets demonstrate that SolCloudLLM consistently outperforms the best baseline methods in MSE across all forecasting horizons, achieving a maximum relative MSE reduction of 25.4%. Stratified analysis further indicates that the benefits of multimodal fusion are concentrated primarily under cloudy conditions. Notably, SolCloudLLM achieves the best performance in nearly all few-shot settings, whereas other deep learning baselines experience substantial performance degradation and are frequently outperformed by the non-learning physical method.",
+      "published": "September 10, 2026",
+      "published_raw": "2026-09-10T06:26:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.11135v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.11135v1"
+    },
+    {
+      "id": "2609.10831v1",
+      "title": "scDEFT: A deep learning framework for drug-effect prediction and counterfactual reasoning",
+      "authors": [
+        "Murthy Devarakonda"
+      ],
+      "abstract": "Longitudinal single cell atlases now capture matched pre treatment and post treatment states from responders and non responders, presenting an opportunity to mechanistically explain why two patients on the same drug diverge. We introduce scDEFT (single cell Drug EFfect Transducer), which treats a drug as a conditioning operator on cell representations, enabling prediction and explanation. In scDEFT, feature wise linear modulation produces drug conditioned cell latents, learned under abundant per cell supervision and then frozen. Two independent heads aggregate those latents over shared transcriptional neighborhoods to predict drug induced state change and responder status. A backward stage ranks the latent dimensions by how strongly they separate responders from non responders and maps them to genes under a cell composition control. On a harmonized inflammatory bowel disease atlas of 1.16 million cells, three cohorts and two drug classes, scDEFT predicts state change at 45% of the baseline to reproducibility ceiling headroom and stratifies responders before treatment at AUROC 0.70, where standard predictors remain at chance. These predictions and the drivers behind them support target and co target nomination, patient stratification, and counterfactual prediction of unseen drug cohort effects.",
+      "published": "September 09, 2026",
+      "published_raw": "2026-09-09T21:02:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.10831v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.10831v1"
+    },
+    {
+      "id": "2609.10825v1",
+      "title": "Scale-Aware 3D Deep Learning for Robust Brain Metastasis Detection in Multimodal MRI",
+      "authors": [
+        "Sylvain Jaume",
+        "Hongming Wang",
+        "Simon K. Warfield"
+      ],
+      "abstract": "Detecting brain metastases in magnetic resonance imaging (MRI) remains challenging because lesions vary widely in size and appearance, with very small metastases occupying only a minute fraction of a three-dimensional input. We investigate whether combining different spatial fields of view (FOVs) improves lesion detection in multimodal MRI and present a scale-aware 3D deep-learning framework. The method uses independently trained $96^3$ and $64^3$ 3D U-Nets whose whole-volume probability maps are combined by weighted late fusion. This design allows us to study the effect of spatial context separately from image resolution and modality choice. On a 97-patient development cohort, cross-FOV fusion improved lesion-level precision and F1 while substantially reducing false positives relative to the individual models. A same-FOV ensemble control showed that these gains were not explained solely by averaging independently trained networks, supporting a contribution from complementary spatial context. An exploratory cross-FOV agreement filter reduced false positives but did not improve overall F1. These results support cross-FOV probability fusion as a simple and computationally practical strategy for improving the precision-false-positive trade-off in 3D brain-metastasis detection.",
+      "published": "September 09, 2026",
+      "published_raw": "2026-09-09T20:53:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.10825v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.10825v1"
+    },
+    {
+      "id": "2609.10772v1",
+      "title": "Solar Flare Prediction Using a Hybrid Convolutional Neural Network and Transformer Model",
+      "authors": [
+        "Mason Cao",
+        "Junwei Zhao"
+      ],
+      "abstract": "Solar flares are intense bursts of electromagnetic radiation that occur when stored magnetic energy in the Sun's atmosphere is suddenly released. They are categorized into five classes -- from least to most powerful: A, B, C, M, and X -- with each successive class representing a ten-fold increase in energy output. The electromagnetic radiation emitted by the stronger classes (C, M, and X) is capable of causing significant disruptions to communication systems, satellites, and power grids on Earth. Accurate prediction of solar flares is crucial for mitigating their adverse effects and ensuring the functionality of critical infrastructure. This research introduces a novel model named ResNet-Transformer, which combines a convolutional neural network (CNN), ResNet50, with a standard Transformer architecture. The hybrid model effectively processes both spatial and time-series data derived from solar images to predict the occurrence, class (C, M, and X), and probability of solar flares within 24-hour, 36-hour, and 72-hour windows. This hybrid deep learning model represents the first of its kind in the domain of image-based, multiclass solar flare prediction. We evaluated the model's performance using a comprehensive set of metrics, including weighted precision, recall, and F1 score, together with balanced accuracy, the Matthews correlation coefficient (MCC), Cohen's kappa, and the area under the receiver operating characteristic curve (ROC-AUC). Results show that ResNet-Transformer surpasses traditional machine learning methods, such as support vector machines (SVMs) and standalone CNN models, across all evaluated metrics. This study highlights the potential of integrating convolutional neural networks with Transformers to enhance predictive capabilities in solar physics, paving the way for more reliable and timely solar flare forecasting.",
+      "published": "September 09, 2026",
+      "published_raw": "2026-09-09T19:20:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.10772v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.10772v1"
+    },
+    {
+      "id": "2609.10746v1",
+      "title": "Temporal and Multimodal Deep Learning for Cyberattack Detection in LEO Satellite Systems",
+      "authors": [
+        "Kyle Stein",
+        "Guillermo Francia",
+        "Eman El-Sheikh",
+        "Hossain Shahriar"
+      ],
+      "abstract": "The growing reliance on Low-Earth Orbit (LEO) satellite communication systems has increased the need for intelligent methods capable of detecting cyberattacks across complex and dynamic space environments. Unlike conventional network intrusion detection, satellite systems generate heterogeneous information across radio-frequency (RF) links, onboard hardware, and orbital operations. However, many existing approaches either rely on terrestrial intrusion datasets or evaluate individual observations independently, limiting their ability to capture temporal attack behavior specific to LEO satellites. In this work, we conduct a systematic study of deep-learning-based cyberattack detection using the recently introduced satellite-specific UNSW-IoTSAT dataset. We investigate structured learning architectures that preserve hardware, orbital, and RF information, including a Subsystem-Fusion MLP and a hierarchical multimodal Transformer that models both cross-subsystem interactions and temporal evolution. We further evaluate leakage-resistant row-level and temporal settings, along with cross-satellite generalization, to characterize how model architecture and evaluation protocol influence satellite cyberattack detection. Experimental results demonstrate the value of structured multimodal modeling and rigorous evaluation, with the hierarchical Transformer achieving up to 91.66% accuracy and 85.63% macro F1 under the leakage-resistant evaluation protocol.",
+      "published": "September 09, 2026",
+      "published_raw": "2026-09-09T18:42:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.10746v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.10746v1"
+    },
+    {
+      "id": "2609.10479v1",
+      "title": "Deep Learning-Based Detection of Electrical Faults and Power Quality Disturbances in Aerospace Power Systems",
+      "authors": [
+        "Ian C. Guzmán",
+        "Radu Babiceanu",
+        "Berker Peköz"
+      ],
+      "abstract": "More Electric Aircraft require fast and reliable monitoring of high-frequency electrical networks, yet most power quality disturbance and fault diagnosis methods are developed for conventional 50 or 60 Hz grids. This work presents a hardware-aware deep learning framework for multiclass detection of electrical faults and power quality disturbances in a 400 Hz aerospace power system. A high-fidelity simulation model inspired by the Boeing 787 electrical architecture generates voltage and current waveforms for 21 normal, disturbance, switching, open-circuit, and short-circuit conditions. Two datasets, each containing 73,500 samples, are formed from one-dimensional time-series signals and short-time Fourier transform time-frequency representations. Signal-processing augmentation, domain randomization, and class-specific generative adversarial networks increase waveform diversity, and the time-series dataset is released through IEEE DataPort. We compare 1D and 2D convolutional neural networks, long short-term memory networks, CNN-LSTM hybrids, ResNet, MobileNet, and VGG models under common training conditions. A compact ResNet provides the best accuracy-complexity tradeoff, achieving 96.94 percent software test accuracy with 175,685 parameters. After 8-bit quantization and deployment on a Xilinx Zynq UltraScale Plus MPSoC ZCU102, the model achieves 95.87 percent accuracy and a measured mean neural-network accelerator latency of 6.90 ms per input record. The results establish simulation-based, accelerator-level feasibility for embedded edge AI in aircraft electrical health monitoring and motivate future end-to-end data acquisition and experimental validation.",
+      "published": "September 09, 2026",
+      "published_raw": "2026-09-09T17:19:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.10479v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.10479v1"
+    },
+    {
+      "id": "2609.10652v1",
+      "title": "Artificial Intelligence Algorithms for the Detection of Pathologies Related to Lung Cancer through Image Analysis using Convolutional Neural Networks and Data Augmentation: a systematic mapping of the literature",
+      "authors": [
+        "Pablo Ramirez Amador"
+      ],
+      "abstract": "Lung cancer is one of the leading causes of death worldwide, and its early diagnosis is crucial to improving patients prognosis and quality of life. However, the process of interpreting medical images for the detection of lung cancer is complex and requires trained experts. In this context, artificial intelligence (AI) and deep learning (DL) emerge as potential tools to automate and optimize image analysis. The objective of this work is to review the most recent and relevant applications of AI and DL in the field of radiology for the detection of lung cancer. To this end, an exhaustive search was carried out in scientific databases such as PubMed,IEEEXPLORE, Scopus and Web of Science, and 96 articles published from 2015 to the present addressing the use of AI and DL in biomedical engineering were selected. Emphasis is placed on the use of convolutional neural networks (CNN) with transfer learning and Data Augmentation as promising techniques to improve the accuracy and efficiency of the image interpretation process. The results show that the use of AI and DL can offer an effective alternative for the early diagnosis of lung cancer, with high sensitivity and specificity. However, current limitations and challenges that must be addressed to guarantee its responsible and safe application in clinical practice are also identified, such as the lack of standardized data, the ex plainability of the models, patient privacy, and the ethical and social implications. It is concluded that the use of AI and DL can have a positive impact on the care of patients with lung cancer, but further research and regulation are required to ensure its quality and reliability.",
+      "published": "September 09, 2026",
+      "published_raw": "2026-09-09T14:27:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.10652v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.10652v1"
+    },
     {
       "id": "2609.10109v1",
       "title": "Enabling New Discoveries with Machine Learning",
@@ -162,131 +295,6 @@
       "published_raw": "2026-09-08T06:57:50Z",
       "pdf_link": "http://arxiv.org/pdf/2609.08330v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.08330v1"
-    },
-    {
-      "id": "2609.08276v1",
-      "title": "Online Signature Verification Using Augmented Path Signature and T-Mamba",
-      "authors": [
-        "Ruiling Li",
-        "Danyu Yang"
-      ],
-      "abstract": "Handwritten signature verification is vital for personal authentication across commercial and financial applications. Although deep learning methods are widely adopted for online signature verification (OSV), they often struggle with capturing highly discriminative features and modelling long-range dependencies. To address these issues, we propose a novel framework that integrates the augmented path signature (APS) descriptor with the T-Mamba model. The APS descriptor first applies time and basepoint augmentations, then computes sliding-window path signatures. The path signature is a non-parametric feature map from rough path theory that effectively captures geometric structures and nonlinear inter-channel interactions. Inspired by the efficacy of state space models (SSMs) in sequence modelling, our T-Mamba model employs a hybrid design combining two temporal convolutional network (TCN) blocks with a time-scanning Mamba. This design enables the model to learn both local temporal patterns and global long-range dependencies, substantially improving verification accuracy. Our framework achieves state-of-the-art EERs on three public benchmark datasets (MCYT-100, SVC-2004 Task 2, DeepSignDB), validating its effectiveness and robustness, especially when the training data is limited. Our code is publicly available at https://github.com/DLRL04/OSV-using-APS-and-T-Mamba.",
-      "published": "September 08, 2026",
-      "published_raw": "2026-09-08T05:36:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.08276v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.08276v1"
-    },
-    {
-      "id": "2609.08043v1",
-      "title": "A Quantitative Evaluation Framework for Temporal Explainability in Echocardiographic Video Segmentation",
-      "authors": [
-        "Jiyoo Noh",
-        "Jonathan H. Chan"
-      ],
-      "abstract": "Deep learning has achieved state-of-the-art performance in echocardiographic video segmentation, with an increasing number of models incorporating temporal information. However, quantitative evaluation of temporal explainability remains largely unexplored. We propose a quantitative framework for evaluating Grad-CAM explanations using four complementary metrics measuring temporal consistency, saliency motion, anatomical overlap, and temporal overlap. Using EchoNet-Dynamic, we compare a baseline 2D U-Net with ConvLSTM U-Net models trained across multiple temporal strides. While segmentation performance remained comparable across all models, intermediate ConvLSTM explanations exhibited substantially lower saliency consistency and greater centroid motion than final prediction explanations. Temporal Bottleneck explanations were significantly more stable than Encoder Bottleneck explanations across all strides, while final ConvLSTM Decoder3 explanations were broadly comparable to those of the 2D U-Net. Importantly, conventional frame-wise explanation metrics cannot determine whether variation in intermediate explanations reflects meaningful temporal feature evolution or explanation instability. These findings establish a preliminary quantitative framework for temporal explainability and motivate temporal-aware XAI methods that explicitly account for evolving representations in medical video models.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T22:58:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.08043v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.08043v1"
-    },
-    {
-      "id": "2609.07897v1",
-      "title": "The Accuracy Paradox: Empirical Diagnostic of Default Decision Thresholds in Multi-Label Enzyme Commission Prediction [With Code]",
-      "authors": [
-        "Bilal Ahmad",
-        "Rajed Mehmood"
-      ],
-      "abstract": "Automated prediction of Enzyme Commission (EC) numbers plays a central role in functional annotation and computational drug discovery. However, standard multi-label machine learning pipelines frequently rely on default decision thresholds (t=0.50), assuming balanced prior distributions across target heads. In this study, we present a systematic empirical diagnostic of uncalibrated fixed decision boundaries operating under severe class imbalance across N = 14,096 annotated compounds categorized into six primary EC classes (EC1-EC6). Our results highlight a pronounced Accuracy Paradox: while the multi-label system achieves a deceivingly high mean accuracy of 77.16%, the macro F1-score (0.3976) and macro recall (0.3872) reveal severe predictive breakdown. Majority target classes suffer from hyper-sensitivity and over-prediction, whereas minority classes exhibit sharp recall decay, culminating in a total decision boundary collapse for EC6 (Recall = 0.00%) despite underlying discriminative power (ROC-AUC = 0.5857). Feature correlation analysis further reveals high linear redundancy among topological indices relative to fingerprint density metrics. Ultimately, this diagnostic study demonstrates that standard point predictions mask critical errors in bioinformatics workflows. We establish target-specific threshold optimization and post-hoc conformal calibration as essential, open-source post-processing safeguards for reliable applied machine learning and deep learning architectures.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T19:00:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07897v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07897v1"
-    },
-    {
-      "id": "2609.07893v1",
-      "title": "Explainable Temporal Attention-based Defect Detection For Fillet Joints in Real-Time Gas Metal Arc Welding Based on Multi-modal Data",
-      "authors": [
-        "Mobina Mobaraki",
-        "Mahyar Asadi",
-        "Klaske Van Heusden",
-        "Guy A. Dumont"
-      ],
-      "abstract": "Deep learning is an efficient technique to monitor the real time welding process, reducing post-welding repairs and production delays. This paper leverages the monitoring capability by proposing a multi modal temporal attention based deep learning defect detection model for internal defects that are challenging to detect, including porosity, lack of penetration and fusion, undercut, and cold lap during Gas Metal Arc Welding in fillet joints. The model is trained on collected welding images and sound data from an industrial collaborative welding robot. The results show that the attention module can improve the F1 Score to 0.99. We use explainable Artificial Intelligence to interpret the proposed models behavior and dataset distribution, determining potential important areas in image and sound spectrograms and preferred modality to detect each defect. This improves trust and reliability in Artificial Intelligence driven welding inspection.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T18:57:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07893v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07893v1"
-    },
-    {
-      "id": "2609.07752v1",
-      "title": "Local gradient neural operator",
-      "authors": [
-        "Baiming Zhang",
-        "Jinsong Tang",
-        "Ying Xu",
-        "Lihua Chen",
-        "Shiying Xiong"
-      ],
-      "abstract": "Field temporal prediction and source identification constitute canonical problems in dynamical systems. Conventional approaches to these problems depend on a thorough understanding of the governing partial differential equations (PDEs). Recently, deep learning, as represented by neural operators, has provided a data-driven paradigm for addressing such tasks. However, most existing global neural operators for PDEs require large training datasets and many learnable parameters, with limited interpretability and generalization. We propose the local gradient neural operator (LGNO) as a lightweight and interpretable alternative for field temporal evolution prediction and source identification in typical mechanical problems. The method builds on priors from nonlinear gradient discretization and uses multilayer perceptron convolutional layers to learn translation-invariant local kernels that resemble discrete stencils. A zero consistent stencil factorization separates coefficient learning from field reconstruction, rendering the learned operators more transparent. For problems with symmetries, network folding shares equivalent components and reduces parameter counts. We evaluate the method on PDE benchmarks covering linear and nonlinear, static and dynamic, and low and high dimensional cases. Results show that LGNO maintains accuracy, parameter efficiency, and rollout stability across these tasks, and further exhibits wide applicability to mechanical problems including diffusion, flow, and quantum phenomena.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T16:53:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07752v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07752v1"
-    },
-    {
-      "id": "2609.07740v1",
-      "title": "Scalability Analysis of Distributed Kolmogorov-Arnold Network Training on High-Performance Computing Systems",
-      "authors": [
-        "Guangneng Chen",
-        "David Garcia Selfa",
-        "Pablo Quesada Barriuso"
-      ],
-      "abstract": "Kolmogorov-Arnold Networks (KANs) replace the fixed activation functions and linear weights of Multi-Layer Perceptrons (MLPs) with learnable univariate functions on network edges, offering improved interpretability and, in some settings, competitive parameter efficiency. While the approximation properties of KANs have received considerable attention, their behavior under distributed, multi-GPU training has not been systematically characterized. This paper presents an empirical scalability study of data-parallel KAN training on multi-node, multi-GPU high-performance computing (HPC) infrastructure, evaluated along four dimensions: strong scaling, weak scaling, communication overhead, and model-size scaling. Experiments were conducted on the FinisTerrae III supercomputer using up to 8 NVIDIA A100 GPUs across 4 nodes with PyTorch Distributed Data Parallel (DDP). KAN training reaches 74.7% parallel efficiency at 8 GPUs with a 5.97x speedup, consistent with conventional deep learning workloads. Weak scaling shows an initial single-to-multi-GPU throughput drop followed by strong stability. Communication overhead follows a non-monotonic pattern (1.3%-6.1%), driven primarily by All-Reduce algorithm selection and inter-node latency rather than KAN's edge-wise gradient structure. The parameter-to-memory ratio improves with model size even as training time scales unfavorably. These results indicate that operator-level and data-parallel optimizations for KAN are complementary. We provide deployment guidelines for GPU topology and model-size selection, and discuss the limitations of a synthetic-regression evaluation.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T16:45:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07740v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07740v1"
-    },
-    {
-      "id": "2609.07558v1",
-      "title": "SeisBench DAS: A machine learning framework for Distributed Acoustic Sensing",
-      "authors": [
-        "Jannes Münchmeyer",
-        "Han Xiao",
-        "Frederik Tilmann"
-      ],
-      "abstract": "Fibre optic sensing, such as distributed acoustic sensing (DAS), has become a widespread technology for geophysical studies. To process the large-scale datasets produced by DAS, several machine learning methods have been proposed. However, without standardization of data and models, these methods lack comparability and interoperability. This introduces a gap between model developers and practitioners analyzing DAS data and inhibits adoption of deep learning for DAS. To address these limitations, here we present SeisBench DAS, an extension to the SeisBench library for machine learning in seismology. SeisBench DAS defines standard formats for DAS benchmark datasets, including standardised metadata and labels, and DAS models. It builds on the xdas framework for data ingestion and virtual array handling, and on PyTorch for reading and applying the machine learning models. Importantly, SeisBench provides an engine to efficiently apply deep learning models to diverse formats of DAS data, bridging the gap between model developers and practitioners. SeisBench DAS is designed as an open and extensible framework, allowing to easily incorporate future developments in deep learning for DAS.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T14:40:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07558v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07558v1"
-    },
-    {
-      "id": "2609.07456v1",
-      "title": "Graph neural networks and the energetic cavity method for combinatorial optimization",
-      "authors": [
-        "Joe Bacchus George",
-        "George T. Cantwell"
-      ],
-      "abstract": "We study the use of graph neural networks (GNNs) for finding approximate ground states of Ising models. Efficiently finding these ground states is of broad significance because many combinatorial optimization problems can be formulated as an Ising model with the appropriate choice of couplings and fields. Exactly solving these problems is hard but there are many good heuristic methods. A lineage of these heuristics build from mean-field approximations: one approach uses the leading eigenvector of an appropriately defined matrix, another is the min-sum algorithm, also known as the energetic cavity method. Without modification, GNNs perform worse than both of these methods. We consider small modifications to the GNN to incorporate these heuristics and find that this considerably improves performance. While the modified approach is competitive against other deep-learning approaches, we still find that simulated annealing is reliably at least as good as deep learning methods for the same computational cost.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T13:07:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07456v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07456v1"
-    },
-    {
-      "id": "2609.07444v1",
-      "title": "TASTE: Throughput-Aware Batch Size Tuning for On-Device Edge Learning",
-      "authors": [
-        "Avik Bhatnagar",
-        "Federico Nicolas Peccia",
-        "Oliver Bringmann"
-      ],
-      "abstract": "The rise of privacy-preserving artificial intelligence (AI) has shifted the focus of model adaptation and personalization towards on-device learning, where deep learning models are finetuned directly on edge hardware using local user data. However, this shift requires optimization of deep learning training on resource-constrained hardware to maximize throughput while maintaining predictive accuracy. This paper introduces a novel technique for on-device model training that incorporates an efficient Bayesian optimization-based batch size tuning approach to maximize hardware throughput. To evaluate the impact of this hyperparameter on the learning dynamics, we investigated two distinct paradigms: standard supervised learning (SL) and online continual learning (CL). Experimental results across various edge devices demonstrate a throughput ceiling, beyond which increasing the batch size yields no additional throughput gains. The proposed tuning approach identifies the optimal batch size, which, when combined with gradient accumulation and linear learning rate scaling, achieves up to a 2X increase in training throughput on platforms such as Raspberry Pi 4 compared to maximum batch sizes, without compromising model accuracy. Furthermore, in the CL paradigm, we demonstrate that optimal batch sizes maintain the stability-plasticity balance required for incremental learning, effectively mitigating catastrophic forgetting while maximizing computational efficiency on edge-hardware.",
-      "published": "September 07, 2026",
-      "published_raw": "2026-09-07T12:50:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.07444v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.07444v1"
     }
   ]
 }
