@@ -1,7 +1,150 @@
 {
-  "last_updated": "2026-09-16T01:58:14.955870",
+  "last_updated": "2026-09-17T02:01:41.847631",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.18825v1",
+      "title": "Interpretable Multi-Instance Learning Enables Early Prediction of Key Molecular Alterations from Routine Flow Cytometry in Acute Myeloid Leukemia",
+      "authors": [
+        "Jonathan Legrand",
+        "Aguirre Mimoun",
+        "Baudouin Denis de Senneville",
+        "Audrey Bidet",
+        "Pierre-Yves Dumas",
+        "Christèle Etchegaray"
+      ],
+      "abstract": "Background: Molecular testing for NPM1 and FLT3-ITD mutations guides critical early treatment decisions in acute myeloid leukemia (AML), but results can take weeks, long after these decisions must be made. Flow cytometry, already performed within hours of admission as part of routine care, may carry enough signal to predict these mutations directly, without added cost or delay. Methods: We developed an interpretable multi-instance learning classifier based on a decision tree, in which each patient sample is modeled as a collection of individual cells and mutation status is inferred from cell-level predictions. The model was benchmarked against a random forest trained on clinical variables and a deep convolutional neural network adapted for multitube flow cytometry data. Performance was assessed by cross-validation on a discovery cohort of 197 patients and tested on an independent cohort of 161 patients, using the area under the receiver operating characteristic curve (AUROC) and positive predictive value. Results: In cross-validation on the discovery cohort, the MIL model achieved mean AUROCs of 0.96 (SD=0.05) for NPM1 and 0.86 (SD=0.10) for FLT3-ITD, outperforming the clinical baseline and matching deep learning approaches. The model then successfully generalized to the independent test cohort of 161 patients, reaching AUROCs of 0.90 (NPM1) and 0.82 (FLT3-ITD), with positive predictive values of 0.87 and 0.68, respectively. Cell-level interpretation recovered established immunophenotypic signatures (CD33${}^{+}$ /CD34___ for NPM1-mutated cases, CD33${}^{+}$ /low side-scatter for FLT3-ITD), directly linking model predictions to known biology. Conclusions: These results show that an interpretable model applied to data already collected in routine care can predict AML molecular status within hours, offering a practical route to earlier, biology-informed treatment decisions.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T15:30:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.18825v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.18825v1"
+    },
+    {
+      "id": "2609.18566v1",
+      "title": "Deep learning emergent spacetime from fermionic spectral functions in holography",
+      "authors": [
+        "Koji Hashimoto",
+        "Hyun-Sik Jeong",
+        "Keun-Young Kim",
+        "Daichi Takeda",
+        "Kwan Yun"
+      ],
+      "abstract": "We present a physics-informed machine learning framework based on Neural Ordinary Differential Equations that solves the holographic inverse problem: reconstructing the bulk spacetime and gauge field of a charged AdS black hole directly from boundary fermionic spectral functions. Encoding the UV asymptotics, horizon regularity, and zero temperature extremality as hard constraints in the neural network architecture, our framework reliably reconstructs the extremal Reissner-Nordström AdS geometry across three quantum critical regimes set by the $U(1)$ probe charge---non-Fermi liquid, marginal Fermi liquid (strange metal), and Fermi-liquid-like states---and can jointly infer the probe charge itself to sub-percent accuracy. Relaxing the near-AdS boundary constraint uncovers a geometrical degeneracy: bulk profiles that differ throughout the radial direction but share the same near-horizon $AdS_2 \\times \\mathbb{R}^2$ data reproduce identical spectral functions near the Fermi surface. This isospectral non-uniqueness is precisely the bulk degeneracy expected on general holographic grounds at zero temperature, and its spontaneous emergence across independent training runs shows that the network isolates the IR CFT universality rather than overfitting a single UV completion.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T12:23:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.18566v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.18566v1"
+    },
+    {
+      "id": "2609.18555v1",
+      "title": "Interpretable Patch-Based Deep Learning for Wildfire Spread Prediction from Ensemble Simulations",
+      "authors": [
+        "Marcin Lawenda",
+        "Aleksandra Krasicka",
+        "David Caballero",
+        "Luis Torres",
+        "Łukasz Szustak"
+      ],
+      "abstract": "Wildfire spread is traditionally predicted using physics-based simulators, which are physically interpretable but whose cost increases with each additional ensemble member. We ask how well deep learning surrogates can reproduce these simulations at a fraction of this cost, training them on 10,584 fire spread simulations at 2m resolution for the Rectoret region in Catalonia, Spain. Four architectures are compared: a patch-based U-Net, a transfer-learned ResNet-50, a physics-informed network constrained by the wind-driven advection equation and a Swin-Unet transformer. Among the terrain and vegetation variables, only surface fuel load predicts burn probability with any strength (r = 0.27) and including it lowers prediction error by 21%. The remaining variables correlate weakly and are highly duplicative. Next, an experiment with saliency, occlusion and rotation demonstrates the models' learning. Convolutional models rely primarily on distance from the current fire front, while Swin-Unet assigns more weight to fuel and terrain, a finding also noted in an unrelated wildfire dataset. When applied without retraining to the second region, Pedriza, all three convolutional models still predict fire spread, losing accuracy by a small but systematic margin.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T12:17:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.18555v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.18555v1"
+    },
+    {
+      "id": "2609.18519v1",
+      "title": "COMPASS-ABS: Reducing Fragmentation in Shared GPU Clusters for Deep Learning Training Workloads",
+      "authors": [
+        "Yukai Zhou",
+        "Hongfan Wu"
+      ],
+      "abstract": "With the rapid advancement of deep learning technology, shared GPU clusters receive an increasing number of deep learning training (DLT) jobs. Yet resource fragmentation make such clusters underutilized and forces the DLT jobs running on them to endure long turnaround times. Extensive research has been devoted to quantifying fragmentation and developing scheduling algorithms that alleviate its impact. However, existing fragmentation measures break down in the absence of workload distribution information, while current schedulers cannot continuously maintain resource fragmentation at a low level. To tackle these problems, we first introduce Scheduler-Induced Fragmentation (SIF), a metric built on the notion of partial-nodes that is independent of historical workload knowledge. We then propose COMPASS-ABS, which employs the COMPact-ASSured (COMPASS) algorithm to confine the cluster state within a tight Anchor-Based Space (ABS), whose construction fully leverages the topological alignment between dominant workload size and node capacity. Moreover. We also prove that it ensures SIF is bounded by $\\frac{2}{N}$ under a workload composition condition that matches both theory and production. Evaluations implemented on a physical cluster and a simulated cluster demonstrate COMPASS-ABS effectiveness at improving resource utilization, reducing DLT job completion time by reducing fragmentation.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T11:49:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.18519v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.18519v1"
+    },
+    {
+      "id": "2609.18038v1",
+      "title": "CoAtNet-DeepMoE: A Convolution-Attention Hybrid with DeepSeek Mixture-of-Experts for Parameter-Efficient Tomato Disease Classification",
+      "authors": [
+        "Md Nadim Mahamood",
+        "Md Arif Shahriar",
+        "Md Shafi Ud Doula",
+        "Kamrul Hasan"
+      ],
+      "abstract": "The world population is growing rapidly, and technology is improving in parallel. Meeting the huge demand for food for these 7 billion people not only depends on increasing food production but also on reducing food loss. Crop losses due to disease affect both the food supply and the financial and economic stability of a country. Tomatoes are among the top food-producing crops globally, and a significant portion of this production is lost due to disease. People have used Machine Learning techniques for feature extraction and early diagnosis of tomato diseases, and nowadays, Deep Learning-based models are widely used for disease recognition. However, most existing models are highly parameter-intensive, which increases the time required for training and inference. As a result, while lightweight models are more suitable for user-friendly applications, they often show a reduction in performance. To balance performance and model size, we propose CoAtNet-DeepMoE, a Convolution-Attention hybrid architecture for rich feature extraction, further enhanced with a DeepSeek Mixture of Experts to substantially reduce the number of parameters without sacrificing accuracy. We evaluate our model on both balanced and imbalanced datasets from Kaggle and PlantVillage, demonstrating robustness and achieving 99.80% accuracy, 99.80% precision, 99.80% recall, and 99.80% F1-score on Kaggle, and 99.83% accuracy, 99.85% precision, 99.76% recall, and 99.80% F1-score on PlantVillage, representing state-of-the-art performance with only 2.47M parameters. The source code will be available at https://github.com/nadimbrur/CoAt-MoE.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T02:39:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.18038v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.18038v1"
+    },
+    {
+      "id": "2609.17906v1",
+      "title": "FlowLOT: Linearized Optimal Transport for Flow Cytometry Analysis",
+      "authors": [
+        "Naqib Sad Pathan",
+        "Mohammad Shifat-E-Rabbi",
+        "Kristofor E. Pas",
+        "Ivan Medri",
+        "Bartek Rajwa",
+        "Gustavo K. Rohde"
+      ],
+      "abstract": "Multiparameter flow cytometry generates high-dimensional, unordered single-cell mea- surement data for disease diagnosis and monitoring, yet analysis often remains dependent on manual gating, limiting scalability and reproducibility. Existing machine-learning ap- proaches can reduce annotation burden but frequently require large training cohorts and offer limited interpretability. To address these challenges, we introduce FlowLOT , an optimal-transport-based framework that models the single-cell measurement data of a pa- tient sample as an empirical cellular distribution and maps it directly into a fixed-length feature vector. Within a single transparent architecture, FlowLOT unifies high-dimensional classification, interpretable visualization, and continuous quantitative inference. In few-shot regimes, using as few as 16 patients per class on FlowCAP-II and 8 patients per class on BLAST110, it accurately distinguishes healthy from acute myeloid leukemia (AML) sam- ples, reaching 94.3% and 98.0% balanced accuracy, respectively. The underlying embedding exposes marker-level variation driving disease-associated population shifts and enables quantitative measurable residual disease (MRD) estimation, achieving a Pearson correlation of 0.82 on held-out samples and 0.79 under cross-dataset transfer. Furthermore, at the clinically relevant 0.1% threshold for leukemia-associated immunophenotype (LAIP) residual disease, FlowLOT detects positivity with 72% sensitivity at 100% specificity. By replacing subjective manual gating and black-box deep learning with a distribution-aware framework, FlowLOT offers a sample-efficient, scalable, and interpretable solution for high- dimensional cytometry under realistic clinical and experimental constraints.",
+      "published": "September 15, 2026",
+      "published_raw": "2026-09-15T22:57:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.17906v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.17906v1"
+    },
+    {
+      "id": "2609.17763v1",
+      "title": "Modular Deep Learning Mechanisms for Auditable Next-Day Wildfire Spread Prediction",
+      "authors": [
+        "Miguel Esparza",
+        "Aydin Ayanzadeh Ahmad Mousavi",
+        "Ali Mostafavi"
+      ],
+      "abstract": "Next-day wildfire prediction requires models whose forecasts can be evaluated alongside the assumptions and historical evidence used in their computation. Although deep learning can learn spatial patterns from remote-sensing data, predictive performance alone does not establish physical fidelity or operational trustworthiness. This study investigates three modular augmentations for next-day active-fire prediction: wind- and slope-conditioned attention biases, physics-feature retrieval-augmented output correction, and fire conditioned dual-stream gating. The attention biases expose prescribed directional preferences, while the retrieval module selects historical tiles using a nine-dimensional environmental and fire-state descriptor and applies a learned correction to a frozen model's logits. The modules are evaluated across five backbones on the Next Day Wildfire Spread benchmark, using staged ablations, directional audits, retrieval perturbations, calibration measures, and computational comparisons. The three-seed mean F1 score and area under the precision--recall curve (AUC-PR) of a SwinUNETR model with all three augmentations are 0.4216 and 0.3673. Then, a mixed ensemble (two augmented architectures and one non-augmented architecture) model achieves 0.4292 and 0.3790. Benefits vary across architectures, and retrieval-related improvements in AUC-PR do not consistently translate into higher F1. The constructed wind bias aligns closely with input wind, but its alignment with observed next-day fire displacement is much weaker, distinguishing prior inspectability from predictive physical fidelity. The study contributes a framework for exposing and evaluating selected domain-informed components within wildfire prediction models. Together, the results presented show that predictive performance, operational trustworthiness, and computational practicality need not be competing objectives.",
+      "published": "September 15, 2026",
+      "published_raw": "2026-09-15T19:12:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.17763v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.17763v1"
+    },
+    {
+      "id": "2609.17380v1",
+      "title": "OPEN-1B: A Fully Auditable Training Run",
+      "authors": [
+        "John Donaghy",
+        "Brian Wilcox",
+        "Oğuzhan Ersoy",
+        "Shikhar Rastogi",
+        "Adam St Arnaud",
+        "Alexey Titov",
+        "Jordan Greenberg",
+        "Ben Fielding",
+        "Harry Grieve"
+      ],
+      "abstract": "Open-source language models have a reproducibility problem. Despite releasing weights, training data, and recipes, none of them are provably reproducible due to the non-associativity of floating-point arithmetic. Deep learning frameworks often offer a deterministic execution mode, allowing reproducible operations on the same machines. Unfortunately, this determinism does not carry across hardware such that a user can verify that a released checkpoint was actually produced using the declared training recipe. This leaves room for undisclosed data, injected biases, or backdoors that existing techniques such as proof-of-learning or proof-of-training-data cannot rule out. We introduce a new tier of model transparency, fully auditable, in which every operation on every data sample during training is independently reproducible on heterogeneous commodity hardware with bitwise certainty. By imposing a definite order on the sources of training nondeterminism, GPU kernel reductions, data batch ordering across a data-parallel cluster, and inter/intra-node collective communication, we make it possible to replay any individual step of a large, distributed training run on a single piece of commodity hardware and check it against the published trajectory. Because replaying an entire run on one machine is infeasible, we support this with a collective verification scheme in which many independent auditors each certify individual steps, together covering the whole run. We release Open-1B, a model trained under this regime, together with its full pretraining dataset, every intermediate checkpoint, the training codebase, and the audit harness needed to reproduce and verify any step of its training.",
+      "published": "September 15, 2026",
+      "published_raw": "2026-09-15T16:23:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.17380v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.17380v1"
+    },
+    {
+      "id": "2609.17175v1",
+      "title": "IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy",
+      "authors": [
+        "Alessandro Camilletti",
+        "Gabriele Franch",
+        "Elena Tomasi",
+        "Marco Cristoforetti"
+      ],
+      "abstract": "We present IRENE (Italian Radar Ensemble Nowcasting Experiment), a deep learning model for probabilistic short-range precipitation nowcasting over the Italian domain at \\SI{1}{km} spatial and 5 min temporal resolution. IRENE adopts an encoder--forecaster architecture built on multi-scale Convolutional Gated Recurrent Units (ConvGRUs), trained on the national radar composite produced by the Italian Civil Protection Department (DPC). An importance-sampling scheme focuses training on precipitation-relevant events, while the almost-fair Continuous Ranked Probability Score (afCRPS) is adopted as the primary probabilistic loss function. Two additional training configurations are proposed: an adversarial (GAN) variant, IRENE-GAN, designed to improve the spatial sharpness of the generated forecasts, and a spectrally constrained variant, IRENE-GAN-RAPSD, in which the adversarial objective is complemented by an explicit penalty on the radially averaged power spectral density. The three configurations are evaluated against the stochastic extrapolation method STEPS and the pre-trained deep learning model DGMR. All IRENE configurations attain a lower Continuous Ranked Probability Score than both benchmarks at every lead time and rank histograms closer to uniformity, indicating better probabilistic skill and ensemble calibration. In terms of ensemble-mean mean absolute error the advantage is confined to the first 90 min, beyond which the strongly damped DGMR fields and, to a lesser extent, STEPS become competitive. Spectral analysis shows that the adversarial training removes the progressive loss of small-scale variance exhibited by IRENE, at the cost of an excess of fine-scale power at long lead times that the spectral penalty only partially controls.",
+      "published": "September 15, 2026",
+      "published_raw": "2026-09-15T13:38:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.17175v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.17175v1"
+    },
     {
       "id": "2609.17101v1",
       "title": "High-Fidelity Digital Twin Data Models by Randomized Dynamic Mode Decomposition and Deep Learning with Applications in Fluid Dynamics",
@@ -13,6 +156,19 @@
       "published_raw": "2026-09-15T12:34:07Z",
       "pdf_link": "http://arxiv.org/pdf/2609.17101v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.17101v1"
+    },
+    {
+      "id": "2609.17629v1",
+      "title": "Fenchel-Young Duality Gaps: Certified Early Stopping for Regularized Inverse Problems",
+      "authors": [
+        "Pierre-Cyril Aubin-Frankowski",
+        "Yohann de Castro"
+      ],
+      "abstract": "We study computable error bounds and certified early stopping for regularized inverse problems, where a data-fidelity term is traded against a regularizer. The analysis relies on an exact duality-gap identity that splits the total gap of $F(Φμ)+λR(μ)$ into a data-fidelity Fenchel--Young loss and a regularizer Fenchel--Young loss, $ Δ(μ,h)=L_F(Φμ\\parallel h)+λL_R(μ\\parallelη),\\qquad η=-Φ^\\star h/λ, $ valid for any primal point $μ$ and any dual point $h$. The data-fidelity term $F$ is strictly convex, so wherever $F^\\star$ is differentiable the loss $L_F(Φμ\\parallel h)$ is the Bregman divergence of~$F$ between the prediction $Φμ$ and $\\nabla F^\\star(h)$, and it vanishes exactly at \\emph{Mirror Alignment} $h=\\nabla F(Φμ)$. Evaluated at a dual-feasible point $\\tilde h$, the gap~$Δ(μ,\\tilde h)$ is computable and \\emph{oracle-free}, meaning that it uses no knowledge of the solution, and it bounds the suboptimality of $μ$. Under the source condition, the same Fenchel--Young losses give \\emph{a priori} bounds on the estimation and prediction errors. Their scale is the irreducible model and noise error $L_F(Φμ^\\star\\parallel h^\\star)$, which vanishes exactly when Mirror Alignment holds at the certificate. This gives an early-stopping rule: run the algorithm until the regularizer Fenchel--Young loss falls below a tolerance $ε$. A constructive version of the Brøndsted--Rockafellar theorem then turns the current pair into an exact \\emph{dual-feasible} one, and this proxy lifts to an exact primal certificate. We build the proxy by a proximal step in the geometry of the fidelity, with Bregman kernel $F^\\star$ and tilted by the prediction $Φμ$: it recovers the Euclidean step of Carlier when $F$ is the squared error, and it reduces the duality gap by the regularizer Fenchel--Young loss, up to a second-order remainder that vanishes in the quadratic case. Our running example is the Generalized Beurling--Lasso (GBL), where $R$ is the total-variation norm on signed measures. It contains the classical Beurling--Lasso, obtained with the squared error, and also covers robust, logistic, entropic and inverse-optimal-transport losses. The same duality gap certifies deep-learning optimizers such as Lion-K and Muon, in their proximal form, as solvers of the regularized program. A companion paper by the same authors builds on these error bounds to establish exact support recovery for the GBL under a non-degenerate source condition.",
+      "published": "September 15, 2026",
+      "published_raw": "2026-09-15T09:16:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.17629v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.17629v1"
     },
     {
       "id": "2609.16853v1",
@@ -175,156 +331,6 @@
       "published_raw": "2026-09-14T15:59:46Z",
       "pdf_link": "http://arxiv.org/pdf/2609.15780v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.15780v1"
-    },
-    {
-      "id": "2609.15744v1",
-      "title": "Design of a Deep Learning Credit Risk Early Warning System Integrating Multi-source Heterogeneous Data",
-      "authors": [
-        "LiYang Wang",
-        "Zhen Zhong",
-        "Zhen Tian",
-        "Keyu Chen",
-        "Keyu Chen"
-      ],
-      "abstract": "Advancements in data fusion and real-time analytics technologies have opened new avenues for addressing complex domain challenges. Financial risk early warning systems often suffer from inefficiency due to information silos and monitoring delays. This paper proposes a credit risk early warning system based on heterogeneous information fusion. The system employs a model architecture integrating deep neural networks and attention mechanisms to extract multidimensional features from diverse data sources such as transaction behaviors and social networks, thereby establishing an early identification mechanism for corporate and individual credit risks. System testing demonstrates that this approach significantly enhances the accuracy and timeliness of risk warnings, outperforming traditional rule-based engine solutions. The findings offer innovative insights for early intervention in financial risks, holding practical significance for safeguarding financial stability.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T15:35:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.15744v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.15744v1"
-    },
-    {
-      "id": "2609.15148v1",
-      "title": "Multi-source Transfer Learning of Time Series with a Shapelet-based Distance Measure",
-      "authors": [
-        "Jiseok Lee",
-        "Brian Kenji Iwana"
-      ],
-      "abstract": "Transfer learning is an effective technique for addressing data scarcity in deep learning for time series classification, but its success depends on the selection of source datasets. Conventional transferability estimation methods are often computationally expensive, as they require fully pre-training a model on each potential source dataset to assess its suitability. This paper introduces a novel, training-free source selection method named Shapelet Matching. Our approach first identifies discriminative shapelets from the target and potential source datasets. Then, Shapelet Matching quantifies dataset similarity by comparing the extracted sets of shapelets. To mitigate the risk of negative transfer from selecting an unsuitable single source, we introduce a multi-source transfer learning method. We select several source datasets based on their shapelet-based similarity scores, combine them into a single multi-source dataset, and use this aggregated dataset for pre-training. The model is then fine-tuned on the target task. We evaluated our method on 128 datasets from the UCR Archive using both temporal CNN and Transformer architectures. The empirical results demonstrate that our multi-source pre-training reduces the risk of negative transfer on average. Shapelet Matching achieves the strongest performance for the CNN backbone and remains competitive for patch-based Transformer architectures, while avoiding the cost of pre-training a separate model for every candidate source.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T07:23:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.15148v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.15148v1"
-    },
-    {
-      "id": "2609.15055v1",
-      "title": "Bridging the Gap in ECG-Based Emotion Recognition: A Unified Evaluation of Deep Learning Models",
-      "authors": [
-        "Timothy C Sweeney-Fanelli",
-        "Ajan Ahmed",
-        "Masudul Imtiaz"
-      ],
-      "abstract": "Deep learning has led to numerous proposed architectures for Automated Emotion Recognition (AER) from electrocardiogram (ECG) data, but inconsistencies in preprocessing, training, and evaluation make direct comparisons difficult. Most studies train and validate models on individual datasets collected under homogeneous conditions, limiting variability and raising concerns about generalizability. Cross-dataset validation is sometimes used but primarily assesses model adaptability rather than true generalization. This study presents a comparative analysis of prominent deep learning architectures in AER, emphasizing model generalization over dataset adaptability. To enable this benchmark, we introduce two open-source frameworks: Affective Research on Representations and Classifications (ARRC), a standardized benchmarking toolkit, and Affective Research Dataset Toolkit (ARDT), a framework for inter-dataset training and validation. Using ARDT, we consolidate three publicly available AER datasets, CUADS, ASCERTAIN, and DREAMER, into a single dataset, increasing variability in sensor types, recording conditions, and participant demographics. We then use ARRC to evaluate three widely studied deep learning models and two CNN baselines through hyperparameter optimization and 10-fold cross-validation. Our findings provide insights into the trade-offs between classification accuracy and model complexity, establishing a reproducible benchmark for AER research. All source code for ARRC, ARDT, and model evaluation is publicly available to ensure transparency and facilitate further research.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T05:21:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.15055v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.15055v1"
-    },
-    {
-      "id": "2609.14917v1",
-      "title": "Geometric Signatures of Conceptual Reorganization: A Counterfactual Embedding Framework for Detecting Scientific Revolutions",
-      "authors": [
-        "Dimitris Ntounis",
-        "Ariel Schwartzman",
-        "Chris Chafe",
-        "Thomas A. Ryckman"
-      ],
-      "abstract": "We introduce document embedding geometry as a quantitative observable of conceptual reorganization and develop a counterfactual ablation framework for measuring how individual concepts influence the organization of scientific knowledge, providing a quantitative framework for detecting scientific revolutions. The observable is defined by the geometric perturbation induced when removing documents associated with a candidate concept from the embedding space before and after its historical emergence. Statistical validation is performed using five historical case studies spanning physics, mathematics, and machine learning: special relativity, Gödel's incompleteness theorems, the Higgs mechanism, deep learning, and the attention mechanism underlying transformer architectures. Across the historical case studies, the framework identifies measurable geometric signatures associated with conceptual reorganization, while the validation studies expose important limitations arising from document assignment and sparse historical data. These results establish embedding geometry as a medium for quantifying conceptual reorganization, providing a new approach for studying how scientific fields restructure over time.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T02:08:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.14917v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.14917v1"
-    },
-    {
-      "id": "2609.14882v1",
-      "title": "SeqMaestro: From nucleotide sequences to biological hypotheses through interpretable machine learning",
-      "authors": [
-        "Evgeny S. Saveliev",
-        "Krzysztof Kacprzyk",
-        "Charlotte Capitanchik",
-        "Neelanjan Mukherjee",
-        "Kate Matlin",
-        "Ryan Sheridan",
-        "Srinivas Ramachandran",
-        "Jernej Ule",
-        "David L. Bentley",
-        "Mihaela van der Schaar"
-      ],
-      "abstract": "Nucleotide sequence analysis is central to problems spanning regulatory genomics, evolutionary biology, and phenotype prediction. Classical bioinformatics methods extract interpretable sequence properties such as motifs and k-mer composition, but their flexibility is limited. In contrast, modern deep learning models can learn powerful predictive representations directly from raw sequences, yet their internal representations and decision mechanisms are difficult to inspect. Interpretable machine learning methods (e.g., sparse linear models and decision trees) provide human-understandable representations of predictive relationships but are not designed to operate directly on nucleotide sequences. Here, we introduce SeqMaestro, a machine learning framework that proposes biological hypotheses from nucleotide sequences using interpretable models. Our solution is centered around a two-layer interface that connects nucleotide sequences with the broader ecosystem of interpretable machine learning. SeqMaestro uses this interface to fit diverse combinations of interpretable models, feature representations, and extraction strategies, leveraging variability across transparent models to identify robust biological signals and richer predictive relationships than feature importance alone can provide. The system also supports data transformation and cleaning, model fitting, hyperparameter tuning, reliability analysis, and synthesis of results into a contextualized written report. By providing these capabilities through a no-code workflow, SeqMaestro is designed to make interpretable sequence analysis accessible to researchers without requiring extensive programming or machine learning expertise. SeqMaestro thereby provides an accessible route from nucleotide sequences to biological hypotheses.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T01:04:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.14882v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.14882v1"
-    },
-    {
-      "id": "2609.14735v1",
-      "title": "HELENA for 5G NR LEO NTN Channel Estimation: A Comparative Evaluation",
-      "authors": [
-        "Miguel Camelo Botero",
-        "Nina Slamnik-Kriještorac",
-        "Johann Marquez-Barja"
-      ],
-      "abstract": "Deep Learning (DL)-based channel estimation has shown high accuracy and low latency in terrestrial 5G NR, but Low Earth Orbit (LEO) Non-Terrestrial Networks (NTNs) introduce Doppler and synchronization impairments that may require NTN-specific architectures. We test whether High-Efficiency Learning-based channel Estimation using dual Neural Attention (HELENA), originally designed for terrestrial channels, remains effective after NTN retraining and suitable across high-performance and power-constrained inference platforms. Its unchanged architecture is trained on paired receiver-compensated (NTN-1) and residual-impaired (NTN-2) datasets and compared with eight terrestrial-origin models trained on the same NTN data and the NTN-specific MDELAN-SISO. HELENA achieves the lowest observed SNR-averaged NMSE among the DL estimators in both conditions, including 55.8-62.7% lower linear-scale NMSE than MDELAN-SISO. All DL models degrade in NTN-2, demonstrating the challenge posed by residual Doppler and its associated impairments. On an RTX PRO 4500, HELENA achieves 0.0595 ms 99th-percentile (P99) inference latency, 88.1% below the 0.5 ms budget, with lower energy than its closest attention-based competitors. On a 10 W Jetson Orin NX, it retains a favorable accuracy-energy trade-off, but no model meets the P99 budget. Thus, HELENA needs no NTN-specific redesign for the evaluated task, while embedded tail latency remains an open challenge.",
-      "published": "September 13, 2026",
-      "published_raw": "2026-09-13T18:54:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.14735v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.14735v1"
-    },
-    {
-      "id": "2609.14733v1",
-      "title": "WaVeFuse: Regime-Adaptive Equity Index Forecasting via Channel-Wise Wavelet Denoising and Vertical Attention Fusion",
-      "authors": [
-        "Aashish Bohra",
-        "Vivek Vijay"
-      ],
-      "abstract": "Hybrid Deep Learning for equity index forecasting is limited by three problems: propagation of OHLCV noise into derived technical indicators (TIs), channel-indiscriminate multi-scale decomposition that conflates heterogeneous frequency signatures, and static multi-branch fusion that cannot adapt to market regime shifts. WaVeFuse addresses these limitations through a unified dual-branch architecture. Symlet-4 wavelet denoising (level 2, MAD soft threshold) suppresses microstructure noise in OHLCV. Seven low-lag TIs computed from denoised prices are encoded by a causal channel-wise continuous wavelet transform (Morlet, 32 scales) into a per-timestep scale-space matrix. A CNN-BiLSTM branch captures temporal dynamics, while a dual-layer Transformer (heads=4, dk in {16, 32}) models inter-scale spectral dependencies, and their representations are integrated by a 2-token softmax gate Vertical Attention Fusion (VAF) that dynamically reweights branches as market regimes shift. Evaluated under walk-forward validation (WFV) on KOSPI, DAX, NYSE Composite, and Russell 2000 (2010-2023), WaVeFuse achieves R2 = 0.81-0.96 and directional accuracy 70.5-78.3%. It outperforms seven state-of-the-art models by 8.9-20.2% MAE across twelve dataset-period configurations. Diebold-Mariano statistics (4.62-10.38, p<0.001) confirm superiority over a well-tuned XGBoost benchmark across four indices. Ablation verifies component-wise contributions. Under realistic backtesting with 10 basis point transaction costs, WaVeFuse's directional strategy achieves a mean Sharpe ratio of 3.69 across four markets and limits maximum drawdown to 7.5% during the COVID-19 crash. With 152k parameters (0.68MB) and sub-1.3ms GPU inference, WaVeFuse delivers a computationally efficient, regime-robust framework suitable for research and decision-support deployment.",
-      "published": "September 13, 2026",
-      "published_raw": "2026-09-13T18:50:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.14733v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.14733v1"
-    },
-    {
-      "id": "2609.14614v1",
-      "title": "SH-WRNN: Implicit Spherical Harmonics Weight Field Routing Neural Networks for Asymmetric Edge Intelligence",
-      "authors": [
-        "Zhibin Jiao",
-        "Xiangjing An"
-      ],
-      "abstract": "Deep learning architectures remain rigidly built upon traditional fully connected layers. While networks scale up, few challenge this foundational root. In this work, we reshape this paradigm by transforming the core synapse weight matrix from static, discrete parameters into a differentiable, continuous field governed by spherical harmonics functions. We introduce the Implicit Spherical Harmonics Weight Field Routing Neural Network (SH-WRNN), which constrains weight matrices within a continuous parametric field instead of optimizing millions of localized discrete weights. When retrieving the weight matrix of the current layer, connection parameters are localized using latitude and longitude on a rectangular plane mapped from the continuous field. The latitudinal coordinate is specified by activated neurons from the previous layer, while the longitudinal coordinate is determined by keys generated from previous layer activations via matrix multiplication. By evaluating intersections on this map, the network dynamically extracts its connection weights on-the-fly. Empirical validation on MNIST demonstrates that under compact configurations of (32, 10, 10) and (32, 3, 10), SH-WRNN achieves robust accuracies of 91.05% and 81.54% within a single training epoch. Furthermore, we propose an asymmetric Surface Baking scheme. Upon convergence, the continuous weight field is baked once into a static parametric surface. By eliminating analytical spherical harmonics calculations during inference and reducing dynamic matrix extraction to high-speed localized memory slicing, this scheme achieves asymmetric algorithmic acceleration with negligible accuracy degradation. This paradigm shift bypasses GPU memory-bandwidth monopolies, opening a novel path to reshape the advantages of CPU computing. Code is available at https://github.com/jzb1111/SphericalHarmonyRoutedNeuralNetWork.",
-      "published": "September 13, 2026",
-      "published_raw": "2026-09-13T15:44:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.14614v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.14614v1"
-    },
-    {
-      "id": "2609.16066v1",
-      "title": "A panoramic aerodynamic performance prediction method for turbomachinery cascades using transformer-enhanced neural operator",
-      "authors": [
-        "Qineng Wang",
-        "Zhendong Guo",
-        "Liming Song",
-        "Tianyuan Liu"
-      ],
-      "abstract": "To enable flexible and rapid aerodynamic performance evaluation in turbomachinery design, this paper proposes a panoramic performance prediction framework. Unlike most previous prediction models that directly predict the objective functions of interest, our approach first predicts the basic parameters of the Navier-Stokes equations, such as temperature, pressure, and density. Utilizing these basic physical quantities, it subsequently predicts key performance parameters of the turbine stage meridian plane. By adopting this methodology, our proposed panoramic performance prediction framework functions similarly to a CFD simulator, capable of predicting various objective of interest to the designers. To enhance prediction accuracy, a transformer-enhanced neural operator (TNO) is introduced within this framework. Using the Rotor 37 blades as a reference, the proposed TNO is trained to predict the performance of a transonic compressor blade in the meridian plane. The TNO can accurately predict total quantities such as isentropic efficiency, mass flow, and distributions of total pressure ratio. Remarkably, the prediction error of TNO is observed to be smaller than that of state-of-the-art deep learning operators such as the FNO and DeepONet. Furthermore, the TNO is applied to downstream tasks, including sensitivity analysis and optimization of various objective functions. The results confirm that the TNO can operate almost like a CFD simulator, while reducing the computational cost of downstream tasks by four orders of magnitude. The effectiveness and reliability of the proposed TNO for solving different kinds of downstream tasks have been well demonstrated.",
-      "published": "September 13, 2026",
-      "published_raw": "2026-09-13T13:45:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16066v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16066v1"
-    },
-    {
-      "id": "2609.14504v1",
-      "title": "Should All Noises Be Treated Equally: Impact of Input Noise Variability on Neural Network Robustness",
-      "authors": [
-        "Salma Alsinan",
-        "Maksim Makarenko",
-        "Sixiu Liu",
-        "Ali Aldawood",
-        "Ibrahim Hoteit"
-      ],
-      "abstract": "Geophysical data collected from active field sites are often contaminated by complex and heterogeneous noise, obscuring weak seismic events, and complicating automated interpretation. Although deep learning offers promising solutions for seismic processing, its performance is highly sensitive to the nature of training noise, especially under out-of-distribution (OOD) conditions. This study investigates the influence of noise parameters, such as type, scale, and complexity on the performance, generalization and robustness of neural networks in two geophysical tasks: first break picking and denoising. We simulate seismic-while-drilling data and apply controlled input source noise augmentation using stochastic generators to vary the noise characteristics. Different neural networks are trained on fixed noise types and scales, then evaluated across both seen and unseen noise scenarios. We incrementally increase the complexity of the noise by introducing compound noise mixtures and assess the performance of the model under increasingly challenging OOD conditions. This yields a robustness matrix that captures the generalizability of each model relative to its training configuration. Results indicate that larger noise scales boost generalization, and that effective alignment between noise type, task complexity, and architecture is key for maximizing generalization gains. In addition, training with compound noises mitigate weaknesses associated with single-noise training, acting as an additional implicit regularizer to improving robustness. These findings highlight key factors influencing model resilience in noisy geophysical environments and offer guidance for developing deep learning models that generalize effectively across diverse and unpredictable noise conditions.",
-      "published": "September 13, 2026",
-      "published_raw": "2026-09-13T13:30:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.14504v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.14504v1"
     }
   ]
 }
