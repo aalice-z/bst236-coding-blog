@@ -1,7 +1,110 @@
 {
-  "last_updated": "2026-09-17T02:01:41.847631",
+  "last_updated": "2026-09-18T01:49:03.821448",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.20159v1",
+      "title": "Special Lagrangian cones in Deep Learning",
+      "authors": [
+        "Tejas Kotwal",
+        "Govind Menon"
+      ],
+      "abstract": "We introduce a matrix generalization of the cone of Harvey and Lawson and prove that it is an exact special Lagrangian manifold. We further show that it belongs to a family of exact special Lagrangian manifolds that foliate the balanced manifold arising in deep learning.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T12:49:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.20159v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.20159v1"
+    },
+    {
+      "id": "2609.19755v1",
+      "title": "HyperAMS-Net: Adaptive Multi-Scale Spatial Hypergraph Network for Brain Disorder Classification",
+      "authors": [
+        "Proloy Kumar Mondal",
+        "Md Kamran Hussin Chowdhury",
+        "Hoi Leong Lee"
+      ],
+      "abstract": "Accurate classification of brain disorders from neuroimaging data remains challenging because of substantial inter-subject heterogeneity and the complex multi-scale patterns present in functional connectivity and morphological representations. To address these challenges, we propose HyperAMS-Net, a deep learning framework for brain disorder classification using neuroimaging representations derived from resting-state functional MRI or structural MRI. HyperAMS-Net integrates adaptive multi-scale convolution, hypergraph attention, spatial-channel attention, and adaptive feature fusion. Specifically, adaptive multi-scale convolution learns data-driven weights over multiple receptive fields to capture complementary patterns at different scales. Hypergraph attention models higher-order dependencies among learned feature representations through node--hyperedge--node message passing, while spatial-channel attention enhances discriminative feature learning. Adaptive feature fusion further aggregates complementary information across parallel network branches. HyperAMS-Net is evaluated on three benchmark datasets spanning distinct brain disorders: ABIDE for autism spectrum disorder, REST-meta-MDD for major depressive disorder, and ADNI for Alzheimer's disease, using 5-fold stratified cross-validation. HyperAMS-Net achieves state-of-the-art performance across all evaluated datasets, attaining the highest accuracy and AUC among the compared methods. Ablation studies further demonstrate the contribution of each proposed component, with the largest performance degradation observed when hypergraph attention is removed.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T06:25:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.19755v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.19755v1"
+    },
+    {
+      "id": "2609.19740v1",
+      "title": "Federated Learning Framework for Privacy-Preserving Kidney Stone Detection",
+      "authors": [
+        "Najiyya Younas",
+        "Omar Abdulkader",
+        "Yaser Ali Shah",
+        "Muhammad Jawad Ikram",
+        "Jebran Khan",
+        "Amaad Khalil"
+      ],
+      "abstract": "Recent innovations in deep learning have significantly enhanced the diagnosis of medical images, although they are based on the use of centralized data storage that pose severe threats to patient privacy and medical data security. To address this issue, this research proposes a Federated Learning (FL) model that is coupled with an optimized YOLOv8 network to detect the kidney stones on a computed tomography (CT) image and at the same time, protect privacy of the patients. The suggested system can help various medical organizations to jointly train a common model without exchanging the information about the patients. This is to ensure that data protection laws like GDPR and HIPAA are adhered to. The residual feature fusion and DropBlock regularization among other architectural improvements are also included in YOLOv8 to enhance detection robustness and minimize overfitting. Experimental analysis carried out on a distributed CT dataset demonstrated that the federated YOLOv8 model has a mAP at 50 of 0.733 and is able to keep the data confidential. Moreover, its lean design facilitates fast edge deployment and real-time inference across a clinical setting. Altogether, these findings indicate that Federated Learning is a safe and efficient solution to AI-assisted diagnosis in contemporary healthcare when combined with the use of sophisticated object detection models.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T06:06:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.19740v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.19740v1"
+    },
+    {
+      "id": "2609.19611v1",
+      "title": "The Output-Space Hypothesis: Enumerative Equivalence Checking for Tensor Programs",
+      "authors": [
+        "Paul Biberstein",
+        "Joseph Devietti",
+        "Mayur Naik"
+      ],
+      "abstract": "Tensor programs, as used in deep learning models, are a prime target for optimization, as small performance improvements can have a large impact across training or inference workloads. However, such optimizations are complicated and can produce subtle bugs. Traditionally, correctness is assumed when differential testing against a reference on random inputs fails to reveal bugs. However, the inputs to these programs are massive tensors, and finding bugs can require generating extremely low likelihood inputs with precise relationships among their values. We propose a novel way to find bugs more consistently by flipping the quantifiers. Rather than generating a single input and checking all output tensor locations for equivalence, what if you could check a single output tensor location's equivalence for all inputs? We implement this idea in a system, \\dirigo, by using a novel symbolic execution strategy. We demonstrate that \\dirigo can find bugs effectively in a public dataset of 6,988 AI-written CUDA kernels that are all marked correct by differential testing. Of these, \\dirigo finds 600 kernels that are actually buggy, and finds 97.3\\% of those bugs within two minutes.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T02:54:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.19611v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.19611v1"
+    },
+    {
+      "id": "2609.19466v1",
+      "title": "Enhanced Agriculture-informed Neural Network by Domain Knowledge",
+      "authors": [
+        "Ci Lin",
+        "Futong Li",
+        "Rose Chong-Wu",
+        "Tet Yeap",
+        "Iluju Kiringa"
+      ],
+      "abstract": "Accurate prediction of nitrous oxide (N2O) emissions from agriculture is important for assessing environmental impacts and supporting sustainable farming. However, prediction remains difficult because N2O emissions result from complex interactions among soil properties, climate, biochemical processes, and management practices, while high-quality observations are limited. Deep learning models can capture nonlinear relationships but often lack physical interpretability and may generalize poorly across environmental conditions. We propose the Knowledge-enhanced Agriculture-informed Neural Network (KAINN), a hybrid neural-mechanistic framework that extends the Agriculture-informed Neural Network by incorporating domain knowledge about fertilizer diffusion, soil respiration, and water-filled porosity. We evaluate KAINN using CNN, LSTM, and Transformer architectures across multiple growing seasons and input-feature configurations. The results show that KAINN generally provides lower root mean square error and mean absolute error and higher R-squared values than purely data-driven models and the original AINN. Analysis of the learned interfaces also shows smoother and more physically consistent parameter trajectories with reduced uncertainty. These findings demonstrate that incorporating environmental knowledge into neural networks can improve the reliability, interpretability, and generalization of agricultural N2O-emission predictions.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T22:13:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.19466v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.19466v1"
+    },
+    {
+      "id": "2609.19416v1",
+      "title": "Deep Learning Detection of Beyond-General-Relativity Deviations in Gravitational-Wave Signals: A Detection-Threshold Study with Real LIGO Noise",
+      "authors": [
+        "Muhammad Adnan Shahzad"
+      ],
+      "abstract": "We study machine-learning detection of controlled beyond-General-Relativity (beyond-GR) deviations in gravitational-wave signals, using both synthetic aLIGO-PSD noise and real LIGO H1 detector strain. Three deviation families are applied to General-Relativistic inspiral-merger-ringdown waveforms: amplitude modulation, phase modulation, and frequency modulation, each parameterized by a dimensionless strength coefficient $β$. A hybrid classifier combining a one-dimensional convolutional neural network with ten hand-crafted waveform statistics is trained on GR and modified waveforms and tested on a deviation type excluded from training. The central result is a quantitative detectability curve as a function of $β$. Using the real GW150914 strain as a template and real H1 detector noise, we find a detection threshold at $β\\approx 0.25$, with accuracy rising smoothly from chance at $β\\leq 0.2$ to perfect classification at $β\\geq 0.5$. The threshold value is specific to the quadratic-in-time modulation form adopted here and should not be interpreted as a generic constraint on beyond-GR parameters. We nevertheless argue that the negative result at small $β$ is informative: it establishes a quantitative limit on machine-learning-only beyond-GR searches in real detector noise, in the absence of matched-filter signal extraction.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T20:53:33Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.19416v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.19416v1"
+    },
+    {
+      "id": "2609.19374v1",
+      "title": "Machine-Learning Assessment of the Predictive Value of Inflammatory Biomarkers for Cognitive Impairment in an Older Hispanic Adult Cohort",
+      "authors": [
+        "Antony Garcia",
+        "Gabrielle Britton",
+        "Alcibiades Villarreal",
+        "Diana Oviedo",
+        "Giselle Rangel",
+        "Xinming Huang"
+      ],
+      "abstract": "Small clinical tabular datasets require interpretable machine learning because deep learning is often impractical and ensemble models can be difficult to inspect. A key pitfall is that statistical significance does not necessarily imply predictive utility. Using data from the Panama Aging Research Initiative--Health Disparities (PARI-HD) cohort (n=165), we implemented a leakage-safe threshold-likelihood Bernoulli/Categorical Naive Bayes (BNB/CNB) classifier. Within every training fold, each continuous predictor was reduced to a supervised chi-square-derived state, while income entered the model through a categorical likelihood. All data-dependent steps were performed within repeated stratified 10-fold cross-validation with 30 repeats. The demographic baseline achieved a ROC-AUC of 0.630 +/- 0.017. I-309 (CCL1) was the dominant incremental feature, increasing AUC by 0.110, with paired DeLong tests yielding p<0.05 in 100% of repeats. In the pre-specified primary analysis, I-309 produced a fixed-partition DeLong p=0.0018, with robustness assessed across 200 random partitions, where the median p-value was 0.0011. Within the exploratory family of 18 candidate markers, I-309 achieved a Benjamini-Hochberg-adjusted q=0.032 on the frozen partition and satisfied q<0.05 in 85% of random partitions, whereas no other marker demonstrated reliable incremental predictive value. Because the fitted model is an inspectable table of thresholds and class-conditional probabilities, these results identify I-309/CCL1 as an interpretable candidate feature for tabular prediction of cognitive impairment, pending external validation.",
+      "published": "September 16, 2026",
+      "published_raw": "2026-09-16T19:50:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.19374v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.19374v1"
+    },
     {
       "id": "2609.18825v1",
       "title": "Interpretable Multi-Instance Learning Enables Early Prediction of Key Molecular Alterations from Routine Flow Cytometry in Acute Myeloid Leukemia",
@@ -199,138 +302,6 @@
       "published_raw": "2026-09-14T22:46:32Z",
       "pdf_link": "http://arxiv.org/pdf/2609.16415v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.16415v1"
-    },
-    {
-      "id": "2609.16406v1",
-      "title": "Physics Informed Random Feature Neural Networks for Solving PDEs",
-      "authors": [
-        "Chi-An Chen",
-        "Chunyang Liao",
-        "Ming Zhong"
-      ],
-      "abstract": "Machine learning-based partial differential equations (PDEs) solvers have attracted significant attention in recent years. Most progress in this area has been driven by deep neural networks such as physics-informed neural networks (PINNs) and kernel method (such as physics-informed Gaussian Processes). We introduce a physics-informed random feature method for countering part of the spectral bias which PINN-based solvers are facing for a certain class of PDEs. Random feature method was originally proposed to approximate large-scale kernel machines and can be viewed as a specialized randomized neural network. Compared to other state-of-the-art PINN-based solvers which require a large number of collocation points, our proposed method reduces the computational complexity. In this paper, we develop a rigorous approximation error analysis and derive high-probability error bounds on the $H^1$ norm. We provide extensive numerical tests for verifying our theoretical guarantees on error decay rates, as well as several comparison tests to showcase our claimed capability for combating spectral bias in these deep learning based methods.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T22:22:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16406v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16406v1"
-    },
-    {
-      "id": "2609.16347v1",
-      "title": "Multi-Label Proportion Learning for Sea-Ice Type Prediction",
-      "authors": [
-        "Samira Alkaee Taleghan",
-        "Younghyun Koo",
-        "Andrew P. Barrett",
-        "Farnoush Banaei-Kashani"
-      ],
-      "abstract": "Sea-ice type prediction is important for climate monitoring, maritime navigation, and decision-making in polar regions. The main source of label data for this task is the ice chart, produced manually by ice analysts who interpret satellite imagery to delineate ice zones into polygons. Although ice charts are valuable, their production is labor-intensive and expensive, motivating recent efforts to automate the process using deep learning. However, deep learning models require patch-level (or pixel-level) label data for training, while ice charts provide only polygon-level annotations. As a workaround, supervised approaches often create approximate patch-level labels from polygon-level ice chart labels by assigning each sample the dominant ice type of its parent polygon. This approach enables supervised training but creates an ill-posed learning problem with intrinsically approximate solution. In this paper, we redefine sea-ice type prediction as a weakly supervised multi-label proportion learning problem to be able to directly use the polygon-level ice chart labels and avoid unnecessary label approximation for improved prediction accuracy. To address this problem, we propose a two-module framework where first Multiple Instance Learning (MIL) is used for water--ice classification, and then a multi-label proportion learning (MLPL) is introduced for ice-type composition prediction. We further extend this framework with a multimodal model that integrates SAR imagery with AMSR2 brightness temperatures and ERA5 reanalysis data through modality-guided auxiliary regularization. Evaluated on the AI4Arctic dataset, the SAR-only model reduces MAE by 14.5\\% and more than doubles mean ice-class F1 over the best supervised baseline. The multimodal model further reduces MAE by 21.5\\% and raises mean F1 by 41.2\\% over the SAR-only model, and by 52.7\\% over the supervised multimodal baseline.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T21:09:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16347v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16347v1"
-    },
-    {
-      "id": "2609.16336v1",
-      "title": "Illusion of Depth: Revealing Hidden Stereo Vision Vulnerabilities in Depth Estimation",
-      "authors": [
-        "Sri Hrushikesh Varma Bhupathiraju",
-        "Tetsu Ishizue",
-        "Nicholas U. Costagliola",
-        "Ozora Sako",
-        "Kentaro Yoshioka",
-        "Takeshi Sugawara",
-        "Sara Rampazzi"
-      ],
-      "abstract": "Stereo cameras are integrated into autonomous systems such as self-driving cars, drones, and robots to offer precise depth estimation in a cost-effective manner compared to LiDAR technology. In this work, we reveal an intrinsic vulnerability in stereo cameras that stems from their pixel sampling and calibration processes, which can influence the outputs of stereo matching algorithms. Attackers can achieve fine-grained control over the estimated depth of real obstacles using simple repeating patterns, without relying on sophisticated adversarial machine learning techniques. Furthermore, deep learning-based depth estimation models exhibit a similar vulnerability. We evaluate the impact of this attack on two widely used stereo matching algorithms (BM and SGBM), three deep learning models (PSMNet, MoCha-Stereo, and UniMatch), a stereo-LiDAR fusion model (SGM-DDC), and two popular commercial stereo cameras, the ZED2 and Intel RealSense D435. For example, in the ZED2 camera, an attacker can displace obstacles up to 20~meters farther or 12~meters closer. In our real-world evaluation in a driving setting, a brief 0.5~second attack can trigger emergency braking in a popular autonomous driving framework. We further demonstrate the feasibility at driving speeds up to 40~km/h using CARLA. Finally, we confirm the ineffectiveness of state-of-the-art defenses, and we propose a novel strategy that leverages similarity scores to dynamically detect and suppress the depth discrepancies. Our work highlights vulnerabilities hidden in stereo matching and deep learning depth estimation models, addressing critical limitations in autonomous system deployments.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T20:51:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16336v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16336v1"
-    },
-    {
-      "id": "2609.16321v1",
-      "title": "FairLint-DL: An IDE-Native Tool for Fairness Debugging of Deep Learning Software",
-      "authors": [
-        "Archit Rathod",
-        "Saeid Tizpaz-Niari"
-      ],
-      "abstract": "Existing fairness analysis tools predominantly operate as post-training evaluation frameworks, requiring practitioners to complete the full model development lifecycle before assessing bias. We present FairLint-DL, a Visual Studio Code extension that implements a shift-left approach to fairness testing by enabling pre-training, IDE-native bias detection directly on tabular datasets. FairLint-DL trains a configurable deep neural network as a proxy model and applies information-theoretic Quantitative Individual Discrimination (QID) metrics. Grounded in Shannon and min-entropy, QID quantifies the causal influence of protected attributes on predictions. The system implements a two-phase gradient-guided search algorithm for discovering discriminatory instances, a causal debugging pipeline that localizes bias to specific network layers and neurons via sensitivity analysis, and dual explainability engines using SHAP and LIME for feature-level attribution. Evaluation on three tabular benchmarks (Adult Census Income, German Credit, and Bank Marketing) reveals fairness concerns that vary widely across datasets: on Adult, 96.0% of analyzed instances exhibit QID above the 0.1-bit significance threshold, with a mean QID of 0.619 bits and a disparate impact ratio of 0.581, violating the four-fifths legal rule. FairLint-DL produces these results within 12 seconds on cached models, demonstrating the feasibility of integrating fairness analysis into the developer workflow without significant overhead.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T20:37:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16321v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16321v1"
-    },
-    {
-      "id": "2609.16288v1",
-      "title": "Drift Field Net: Learning Ocean Lagrangian advection fields from in-situ and satellite observations",
-      "authors": [
-        "Théo Archambault",
-        "Pierre Garcia",
-        "Mattia Romero",
-        "Anastase Charantonis",
-        "Dominique Béréziat"
-      ],
-      "abstract": "The North Pacific Subtropical Gyre (NPSG) is a major accumulation zone for floating plastic debris, resulting from basin-scale convergent ocean circulation. Effective cleanup strategies in this region rely on accurate forecasts of Lagrangian particle drift. Here, we introduce Drift Field Net (DFN), a deep neural network that predicts ocean surface flow fields from operational satellite observations. DFN is trained using a novel two-stage strategy that combines pretraining on simulated data with Lagrangian fine-tuning based on an advection-consistent loss function. This physics-informed optimization directly improves the accuracy of particle trajectory predictions. We evaluate DFN against an operational physics-based forecasting system and demonstrate the potential of deep learning for ocean surface flow prediction. On in situ drifter trajectories, DFN reduces the mean positioning error by 20 km after a 7-day forecast compared with the operational model. Furthermore, Lagrangian fine-tuning with the proposed advection loss further reduces the positioning error by 10 km, highlighting the benefits of incorporating Lagrangian constraints into the training process.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T19:43:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16288v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16288v1"
-    },
-    {
-      "id": "2609.16199v1",
-      "title": "A Sentinel-2 benchmark dataset for deep-learning active-fire segmentation across 25 California wildfires",
-      "authors": [
-        "Shreyan Mitra",
-        "Mohammadreza Narimani",
-        "Parastoo Farajpoor"
-      ],
-      "abstract": "This article describes an open image dataset for developing and evaluating active-fire segmentation methods in satellite imagery. The dataset contains 2,148 image-mask pairs from 25 California wildfires, with acquisitions spanning July 2020 to August 2026. Each image is a 512x512-pixel, three-channel composite derived from Sentinel-2 Level-2A bands B12, B11 and B8A at 20 m spatial sampling. A fixed linear rendering is applied throughout the dataset. Corresponding masks distinguish background, SWIR-rule active fire and invalid observations. The masks were generated from shortwave-infrared brightness and near-infrared contrast, followed by constrained neighborhood growth. The release includes chip-level metadata and an incident-disjoint partition containing 18 training, three validation and four test fires. Among the image pairs, 841 contain active-fire labels; these labels occupy 0.0766% of all grid cells. A mask-blind analyst review covers 233 test chips and provides a separate assessment of the rule-generated labels at chip and connected-component levels. Reference training and evaluation code accompanies the data, including a ResNet-34 U-Net implementation with validation-based checkpoint and threshold selection. The archived images, masks, metadata and review annotations support research on rare-class segmentation, learning from algorithmic labels and transfer across fire incidents. The versioned dataset is deposited on Zenodo, with preparation and reuse software maintained in a public GitHub repository.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T18:31:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16199v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16199v1"
-    },
-    {
-      "id": "2609.15780v1",
-      "title": "MoveBench: A Benchmark for Global-Scale Wildlife Movement Forecasting",
-      "authors": [
-        "Justin Kay",
-        "Shir Bar",
-        "Ellen O. Aikens",
-        "Martin Becker",
-        "Francesca Cagnacci",
-        "Juliet Cohen",
-        "Scott W. Forrest",
-        "Jessica Kendall-Bar",
-        "Madeleine Lucas",
-        "Macon Overcast",
-        "Meredith S. Palmer",
-        "Will Rogers",
-        "Nicholas J. Russo",
-        "Christian Rutz",
-        "Larissa T. Beumer",
-        "Michael Brown",
-        "Ying-Chi Chan",
-        "Sarah C. Davidson",
-        "Diego Ellis Soto",
-        "Anne G. Hertel",
-        "Roland Kays",
-        "Benjamin Koger",
-        "Guram Mikaberidze",
-        "Thomas Mueller",
-        "Ruth Oliver",
-        "Thorsten Papenbrock",
-        "Robert Patchett",
-        "Jared A. Stabach",
-        "Dane Taylor",
-        "Scott W. Yanco",
-        "Sara Beery"
-      ],
-      "abstract": "Understanding and predicting wildlife movement is critical for ecology and conservation. While trajectory forecasting has advanced for human and vehicle movement, wildlife trajectories present distinct challenges: they are unconstrained in space, highly stochastic, and influenced by environmental conditions. We introduce MoveBench, the first large-scale benchmark for probabilistic wildlife movement forecasting, containing 2.6M GPS locations from 800+ individuals across 110 species in 127 countries, paired with 1.6B environmental raster tiles capturing 160 covariates known or hypothesized to influence movement. We propose a probabilistic evaluation protocol for movement trajectory forecasts, addressing limitations of point-prediction metrics for inherently stochastic phenomena. Through comprehensive empirical evaluation of four method families across multiple temporal and spatial scales, we reveal that: (1) existing predictive methods generalize better to future timepoints than to unseen individuals, (2) deep learning approaches do not consistently outperform simpler baselines, and (3) environmental covariate selection significantly impacts performance. MoveBench enables standardized evaluation of movement forecasting methods and provides a foundation for methodological advances on this ecologically important task.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T15:59:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.15780v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.15780v1"
     }
   ]
 }
