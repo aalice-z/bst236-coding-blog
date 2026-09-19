@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-18T01:49:03.821448",
+  "last_updated": "2026-09-19T01:54:06.618782",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.20523v1",
+      "title": "Noise-Robust Quantum State Characterization for Remote State Preparation with Deep Learning",
+      "authors": [
+        "Bo Tang",
+        "Zixuan Liao",
+        "Hao Li",
+        "Yilin Yang",
+        "Jiani Lei",
+        "Zengya Li",
+        "Jing Qiu",
+        "Zhaohui Dong",
+        "Zhengyang Mao",
+        "Yuanhua Li",
+        "Yuanlin Zheng",
+        "Xianfeng Chen"
+      ],
+      "abstract": "Quantum communication underpins secure information processing and scalable quantum networks. In particular, remote state preparation (RSP) enables efficient quantum state transfer, but accurately estimating target states under complex noise remains challenging. Here, we propose a Transformer-based Quantum State Characterizer (TQSC) model for noisy RSP experiments. Our model reconstructs experimentally prepared pure and mixed photonic polarization states from noisy measurements in complex scattering environments, while its attention patterns provide physically grounded insights into correlations among the measured observables. The method achieves a mean estimator-target fidelity exceeding 99.999% under complex scattering and dynamic Gaussian noise, while its robustness and generalization are further examined using Qiskit-simulated Bloch-ball states.Furthermore, in a practical MNIST image transmission task with held-out states, the decoded bit error rate is reduced from 50.34% to zero after TQSC post-processing. The TQSC model enables accurate tomographic characterization under dynamic noise and provides physically grounded post-hoc insights, holding promise for intelligent quantum information processing applications.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T15:01:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.20523v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.20523v1"
+    },
+    {
+      "id": "2609.20467v1",
+      "title": "Deep Learning-Based Classification of Cognitive and Resting States Using Electroencephalography Signals",
+      "authors": [
+        "K. A. Januka S. Fernando",
+        "Harshit Srivastava"
+      ],
+      "abstract": "The categorization of cognitive and resting states derived from electroencephalography (EEG) signals is crucial for comprehending fluctuations in brain activity linked to various mental states. EEG provides a non-intrusive approach for documenting brain function in both resting and task-oriented cognitive conditions, whilst deep learning techniques enable the automatic extraction of significant patterns from intricate EEG data. This study presents a deep learning framework to distinguish between resting and cognitive states through EEG records. The proposed framework integrates a Convolutional Neural Network (CNN) stacked with a Gated Recurrent Unit (GRU) for the extraction of features from EEG signals. Time-frequency analysis is conducted to explore the salient aspects of signals, and the derived features are then assessed utilizing conventional deep learning and machine learning classifiers, including the suggested 2D-Net architecture. The proposed approach and feature extraction strategy outperform the evaluated comparative methods, achieving accuracies of 83.177% for resting-versus-mathematical task classification, 76.107% for resting-versus-memory task classification, and 83.432% for resting-versus-music task classification. The findings illustrate the efficacy of integrating signal processing with deep learning methodologies to discriminate resting from cognitive states utilizing EEG signals.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T14:26:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.20467v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.20467v1"
+    },
     {
       "id": "2609.20159v1",
       "title": "Special Lagrangian cones in Deep Learning",
@@ -272,36 +308,6 @@
       "published_raw": "2026-09-15T09:16:07Z",
       "pdf_link": "http://arxiv.org/pdf/2609.17629v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.17629v1"
-    },
-    {
-      "id": "2609.16853v1",
-      "title": "Can Deep Learning Achieve Cross-Physics Mapping?",
-      "authors": [
-        "Pengfei Zhu",
-        "Julien Lecompagnon",
-        "Mathias Ziegler"
-      ],
-      "abstract": "Can deep learning translate physical fields governed by fundamentally different equations? We address this question by introducing Cross-Physics Mapping (CPM), an operator-learning framework for mappings between heterogeneous physical domains. We formulate sufficient conditions for such mappings through compatible latent representations and propose a dimensionless scaling principle that aligns the characteristic evolution scales of the source and target systems without assuming their dynamical equivalence. As a representative test, paired diffusion and wave fields are generated independently from their respective parabolic and hyperbolic equations while sharing the same latent geometry, material heterogeneity, excitation, and dimensionless scale. Seven architectures-ResUNet, DeepONet, Fourier, latent, wavelet, U-shaped, and Galerkin neural operators-are evaluated for both diffusion-to-wave and wave-to-diffusion mappings. The results reveal a strong directional asymmetry. Diffusion-to-wave reconstruction is more challenging because it requires recovering wavefront, phase, and time-of-flight information attenuated by diffusion; U-NO performs best in this direction, achieving a relative $\\ell_2$ error of $0.307$ and an $R^2$ of $0.905$. Wave-to-diffusion mapping is considerably more stable, with GNO attaining a relative $\\ell_2$ error of $0.154$ and an $R^2$ of $0.935$. Neural operators generally outperform the conventional convolutional baseline, highlighting the nonlocal nature of cross-physics transformations. These findings demonstrate that deep learning can establish useful mappings between distinct physical modalities on a shared latent manifold, while the achievable accuracy remains fundamentally constrained by the direction-dependent information content of the governing physics.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T08:45:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16853v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16853v1"
-    },
-    {
-      "id": "2609.16415v1",
-      "title": "How Good Are Time-Series Foundation Models for Pedestrian Crowd Count Forecasting? A Cross-Dataset Comparative Study",
-      "authors": [
-        "Theivaprakasham Hari",
-        "Ziteng Li",
-        "Yanan Xin",
-        "Winnie Daamen",
-        "Serge Hoogendoorn"
-      ],
-      "abstract": "Pedestrian-count forecasting supports pedestrian-oriented Intelligent Transportation Systems (ITS), including crowd monitoring, pedestrian-traffic staffing and routing, and proactive risk mitigation during surges. Recent time-series foundation models (FMs) report strong zero-shot accuracy on heterogeneous forecasting benchmarks, but it remains unclear whether these gains transfer reliably to pedestrian sensing deployments. We benchmark seven univariate forecasting approaches spanning four paradigms: Seasonal Naive, gradient-boosted trees (LightGBM, CatBoost), deep learning models (N-HiTS, PatchTST), and two pretrained FMs (TimesFM, Chronos-2). Experiments cover two complementary regimes: (i) a five-day special event dataset SAIL2025 at 3-minute resolution with limited in-domain history; and (ii) Melbourne pedestrian sensors as a multi-year hourly dataset (2010--2017) with strong seasonality. We compare the MAE and RMSE results per sensor across datasets and multiple forecast horizons. Results show three consistent findings. First, with limited historical data, Seasonal Naive remains a strong baseline for long-horizon forecasting on high-volume sensors, while trained models can degrade when the next day differs substantially from prior days. Second, boosted trees can be competitive on lower-volume sensors but exhibit higher sensitivity on high-volume sensors under event-driven shift. Third, FMs excel in the seasonal and data-rich regime under long-context configuration. The findings highlight the importance of choosing pedestrian forecasting models based on both the underlying data conditions and the forecasting horizon.",
-      "published": "September 14, 2026",
-      "published_raw": "2026-09-14T22:46:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.16415v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.16415v1"
     }
   ]
 }
