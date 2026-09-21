@@ -1,7 +1,126 @@
 {
-  "last_updated": "2026-09-20T01:56:48.247647",
+  "last_updated": "2026-09-21T01:57:52.719881",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.21791v1",
+      "title": "RegKT: Interpretable and Robust Deep Knowledge Tracing With IRT-Regularizer",
+      "authors": [
+        "Samuel Girard",
+        "Juan D. Pinto",
+        "Jill-Jênn Vie",
+        "Amel Bouzeghoub"
+      ],
+      "abstract": "As deep learning models continue to advance, knowledge tracing models have achieved higher accuracy. However, these gains come at the cost of reduced interpretability, which is crucial for practitioners in educational settings to adopt new methodologies. Additionally, deep learning models are prone to overfitting, particularly when dealing with the small datasets that are common in educational applications. In this paper, we propose a novel regularization technique designed to enhance the robustness of deep-learning-based knowledge tracing models, while simultaneously improving their interpretability. Our method addresses both the interpretability and overfitting challenges, making it more feasible for real-world educational applications.",
+      "published": "September 18, 2026",
+      "published_raw": "2026-09-18T14:05:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.21791v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.21791v1"
+    },
+    {
+      "id": "2609.21655v1",
+      "title": "Analysing the Linearity of Linguistic Relations in Language Model Embedding Spaces",
+      "authors": [
+        "Vasudevan Nedumpozhimana",
+        "Fathima Thekkekara",
+        "John Kelleher"
+      ],
+      "abstract": "We propose a framework to analyse how strongly different linguistic relations are linearly encoded in language model embedding spaces. We formalise linear encoding via a constrained linear approximation over related and unrelated word pairs and apply this to an extended BATS dataset covering inflectional, derivational, lexicographic, and encyclopedic relations in GloVe, RoBERTa, and ModernBERT. Our experiments show near-perfect linear encodings for inflectional and derivational relations, but substantially higher errors for lexicographic and encyclopedic relations, especially for one-to-many and many-to-many associations. We also find that RoBERTa and ModernBERT generally encode relations more linearly than GloVe. These results indicate that our framework can reveal which relational structures are most linearly accessible in embeddings, offering a compact tool for probing and comparing relational geometry across models.",
+      "published": "September 18, 2026",
+      "published_raw": "2026-09-18T11:53:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.21655v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.21655v1"
+    },
+    {
+      "id": "2609.21382v1",
+      "title": "Probabilistic Forecasting of Business Process Executions with Neural Temporal Point Processes",
+      "authors": [
+        "Jiaxin Yuan",
+        "Daniela Grigori",
+        "Han van der Aa"
+      ],
+      "abstract": "Operators of service-based systems act on forecasts of how a running execution will continue, and such a forecast is actionable only if its reliability is known. Mainstream deep-learning models for this task are discriminative and deterministic: they emit a single next activity and a single remaining-time estimate, without a distribution to reason over. We instead cast the problem as generative sequence modelling with marked temporal point processes, which define a joint density over the next mark and its inter-event time and therefore deliver predictive distributions by construction. Real event logs violate the simple-point-process assumption these models rest on, since consecutive events frequently carry identical timestamps; we handle such ties explicitly and combine a transformer encoder with a mixture decoder over inter-event times, trained by exact log-likelihood. On ten public logs, the resulting model matches discriminative baselines on point accuracy, dominates them on the calibration and sharpness of remaining-time distributions, and is the cheapest at inference, since a full predictive distribution is obtained in a single forward pass without sampling.",
+      "published": "September 18, 2026",
+      "published_raw": "2026-09-18T06:50:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.21382v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.21382v1"
+    },
+    {
+      "id": "2609.21241v1",
+      "title": "Multiclass Semantic Segmentation of Wildland Fire Images Using Context-Aware Centralized Copy-Paste Data Augmentation",
+      "authors": [
+        "Joon Tai Kim",
+        "Nishanth Kunchala",
+        "Vishv Patel",
+        "Tianle Chen",
+        "Ziyu Dong",
+        "Daniel Ospina Acero",
+        "Roger Williams",
+        "Mrinal Kumar"
+      ],
+      "abstract": "Producing accurate annotations for deep learning based image segmentation is both costly and labor intensive. This challenge is especially evident in wildland fire applications, where accurately labeled datasets are scarce due to the difficulty of collecting and annotating dynamic fire scenes. To address this problem, our previous work introduced the Centralized Copy-Paste Data Augmentation (CCPDA) method for semantic segmentation of wildland fire imagery, which generates artificial training samples by randomly pasting fire clusters from source images onto target images. However, random placement can produce contextually unrealistic scenes, such as fire burning on asphalt. In this paper, we present a context-aware strategy designed specifically to improve data quality and realism in small multiclass wildland fire datasets, ensuring that augmented samples remain contextually meaningful. The proposed method restricts fire placement to semantically valid target regions and selects the location whose Ash-Vegetation composition most closely matches the source context. This approach preserves existing fire regions in the target image, prevents unrealistic placements, and maintains contextual accuracy by generating images that resemble real wildland fire scenes. We evaluate the Context-Aware CCPDA strategy through numerical analysis and comparisons with other augmentation methods by a weighted sum-based multi-objective optimization (MOO) approach. The results confirm that the context-aware data augmentation strategy leads to improved segmentation performance and contextual realism, outperforming other augmentation procedures.",
+      "published": "September 18, 2026",
+      "published_raw": "2026-09-18T02:34:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.21241v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.21241v1"
+    },
+    {
+      "id": "2609.21039v1",
+      "title": "Stiefel-AdamW: Geometry-Aware AdamW for Linear Factorization Blocks",
+      "authors": [
+        "Emanuele Zangrando",
+        "Marco Sutti",
+        "Francesco Tudisco"
+      ],
+      "abstract": "A pervasive structural pattern in modern deep learning is the linear factorization block: a submodule of the form $W = BA$ in which two parameter matrices are multiplied directly, with no intervening nonlinearity. Such blocks appear in LoRA adapters, low-rank compressed layers, query-key products of self-attention, and share a common pathology: the factorization is non-unique, which can destabilize training and limit usable learning rates. Despite this, factorization blocks are typically optimized with standard Euclidean methods that ignore the underlying geometry. We introduce Stiefel-AdamW, a near drop-in replacement for AdamW for use wherever such blocks appear. By constraining one factor on the Stiefel manifold while leaving the other Euclidean, Stiefel-AdamW relaxes the full $\\mathrm{GL}(\\mathbb{R}^r)$ gauge symmetry to a compact orthogonal symmetry, ruling out factor blow-up while retaining the coordinate-wise diagonal preconditioning that gives AdamW its practical strength. Moment estimation is performed in the ambient Euclidean space, with geometry entering only through a tangent-space projection and a manifold retraction. The implementation overhead over AdamW is minimal, and we show that the resulting optimizer inherits both the stability benefits of Riemannian methods and standard convergence guarantees. We validate Stiefel-AdamW on LoRA-style fine-tuning of GPT2, ViT, and Mistral 7B and on full pretraining of GPT2 on OpenWebText, showing consistent improvements over strong baselines at essentially no additional cost over AdamW.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T19:57:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.21039v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.21039v1"
+    },
+    {
+      "id": "2609.21001v1",
+      "title": "On the Limits of Maximal Coding Rate Reduction for Out-of-Distribution Generalisation",
+      "authors": [
+        "Menghui Zhou",
+        "Gaoshan Bi",
+        "Vitaveska Lanfranchi",
+        "Po Yang"
+      ],
+      "abstract": "Substantial efforts have been devoted to making deep learning objectives, representations, and architectures interpretable, with the goal of improving the safety, robustness, and generalisation of learning systems in diverse real-world applications. The recently proposed maximal coding rate reduction ($\\mathrm{MCR}^{2}$) offers a promising information-theoretic framework for learning structured, discriminative representations of class-wise submanifolds and has inspired interpretable white-box architectures. However, we observe that $\\mathrm{MCR}^{2}$ can completely fail under distribution shift, motivating our study of its out-of-distribution (OOD) generalisation limits. We establish two limitations of $\\mathrm{MCR}^{2}$ for OOD generalisation. First, the $\\mathrm{MCR}^{2}$ objective alone can admit complete prediction failure: a representation based entirely on unstable environmental features can achieve the global coding optimum yet fail completely after correlation reversal, despite an available perfectly stable feature. This exact-optimum example includes test inputs that cannot occur during training. Even when every possible test input can also occur during training, coding quality can be arbitrarily close to optimal while prediction error is arbitrarily close to 100%. Second, directly incorporating the invariance principle underlying widely successful invariant risk minimisation (IRM) and risk extrapolation (REx) does not eliminate this failure. The failing representation admits the same optimal coding operator across training environments, showing that shared coding optimality does not ensure stable prediction. Reliable OOD guarantees for $\\mathrm{MCR}^{2}$ therefore require additional new assumptions or learning principles that establish stable predictive relationships across environments.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T18:56:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.21001v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.21001v1"
+    },
+    {
+      "id": "2609.20991v1",
+      "title": "From Stress to Affect: Multimodal Deep Learning for Physiological Emotion Recognition Across Wearable Sensor Modalities",
+      "authors": [
+        "Desta Haileselassie Hagos",
+        "Saurav Keshari Aryal",
+        "Legand L. Burge"
+      ],
+      "abstract": "Physiological emotion recognition using wearable sensors has important applications in mental health monitoring, affective computing, and human-computer interaction. However, existing studies typically evaluate a single model, sensing configuration, or dataset, limiting our understanding of how these factors influence recognition performance. We present a comparative study of temporal deep learning architectures for physiological emotion recognition using two multimodal wearable datasets: WESAD and EmoWear. Bidirectional long short-term memory (LSTM), temporal convolutional network (TCN), and Transformer models are evaluated under wrist-only, chest-only, and multimodal sensing configurations using participant-independent leave-one-subject-out cross-validation (LOSO-CV). We also investigate soft-voting ensembles, sensor ablation, sampling frequency, and gradient-based saliency. The Transformer achieved the highest multimodal accuracy on WESAD (99.02% +/- 0.51%), whereas the LSTM achieved the best multimodal accuracy on EmoWear for both arousal (91.80% +/- 1.06%) and valence (89.96% +/- 0.36%). These results show that relative architecture performance depends on dataset characteristics rather than one architecture being uniformly superior. Multimodal sensing consistently outperformed wrist-only and chest-only configurations across both datasets. Sampling-frequency analysis showed that 4 Hz provides a practical operating point, with performance comparable to higher frequencies at substantially lower training cost. These findings provide guidance for selecting architectures, sensing modalities, and sampling frequencies for wearable physiological emotion recognition.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T18:45:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.20991v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.20991v1"
+    },
+    {
+      "id": "2609.20905v1",
+      "title": "Uncertainty-driven training for three-dimensional calibrated lung nodule classification",
+      "authors": [
+        "Giuseppe Tripodi",
+        "Alessandro De Rosis",
+        "Saleh Rezaeiravesh"
+      ],
+      "abstract": "In this work, we present an uncertainty-driven training framework for three-dimensional computed tomography (CT) lung nodule classification, where validation-based uncertainty estimates guide loss reweighting to enhance predictive performance and probability calibration. Two Uncertainty Quantification (UQ) methods are considered: Monte Carlo Dropout (MCD) and Evidential Deep Learning (EDL). Both provide per-class uncertainty estimates that modulate the loss and encourage focus on hard or unreliable classes. The framework is evaluated with ResNet, DenseNet, EfficientNet, Vision Transformer (ViT), and Swin Transformer backbones on two datasets: the clinical LIDC-IDRI cohort and the NoduleMNIST3D benchmark. Uncertainty-driven training achieves classification performance similar to conventional training while substantially improving calibration, with an expected calibration error (ECE) reduced by up to 65% on LIDC-IDRI. EDL attains competitive performance on shallower architectures with single-pass inference, whereas MCD is more robust on deeper networks. Analysis across architectural families reveals that uncertainty-driven training benefits convolutional backbones more consistently than transformer-based architectures: EDL in particular degrades on ViT, suggesting that the Dirichlet evidence parameterisation may interact unfavourably with attention-based architectures at lower input resolutions. A posteriori temperature scaling proves highly effective across all configurations, indicating that a simple scalar calibration can be competitive even without explicit uncertainty-aware training. Our results indicate that integrating UQ into the training loop can significantly improve probabilistic calibration and support more trustworthy deployment of three-dimensional medical imaging models.",
+      "published": "September 17, 2026",
+      "published_raw": "2026-09-17T15:25:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.20905v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.20905v1"
+    },
     {
       "id": "2609.20523v1",
       "title": "Noise-Robust Quantum State Characterization for Remote State Preparation with Deep Learning",
@@ -189,125 +308,6 @@
       "published_raw": "2026-09-16T12:17:47Z",
       "pdf_link": "http://arxiv.org/pdf/2609.18555v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.18555v1"
-    },
-    {
-      "id": "2609.18519v1",
-      "title": "COMPASS-ABS: Reducing Fragmentation in Shared GPU Clusters for Deep Learning Training Workloads",
-      "authors": [
-        "Yukai Zhou",
-        "Hongfan Wu"
-      ],
-      "abstract": "With the rapid advancement of deep learning technology, shared GPU clusters receive an increasing number of deep learning training (DLT) jobs. Yet resource fragmentation make such clusters underutilized and forces the DLT jobs running on them to endure long turnaround times. Extensive research has been devoted to quantifying fragmentation and developing scheduling algorithms that alleviate its impact. However, existing fragmentation measures break down in the absence of workload distribution information, while current schedulers cannot continuously maintain resource fragmentation at a low level. To tackle these problems, we first introduce Scheduler-Induced Fragmentation (SIF), a metric built on the notion of partial-nodes that is independent of historical workload knowledge. We then propose COMPASS-ABS, which employs the COMPact-ASSured (COMPASS) algorithm to confine the cluster state within a tight Anchor-Based Space (ABS), whose construction fully leverages the topological alignment between dominant workload size and node capacity. Moreover. We also prove that it ensures SIF is bounded by $\\frac{2}{N}$ under a workload composition condition that matches both theory and production. Evaluations implemented on a physical cluster and a simulated cluster demonstrate COMPASS-ABS effectiveness at improving resource utilization, reducing DLT job completion time by reducing fragmentation.",
-      "published": "September 16, 2026",
-      "published_raw": "2026-09-16T11:49:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.18519v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.18519v1"
-    },
-    {
-      "id": "2609.18038v1",
-      "title": "CoAtNet-DeepMoE: A Convolution-Attention Hybrid with DeepSeek Mixture-of-Experts for Parameter-Efficient Tomato Disease Classification",
-      "authors": [
-        "Md Nadim Mahamood",
-        "Md Arif Shahriar",
-        "Md Shafi Ud Doula",
-        "Kamrul Hasan"
-      ],
-      "abstract": "The world population is growing rapidly, and technology is improving in parallel. Meeting the huge demand for food for these 7 billion people not only depends on increasing food production but also on reducing food loss. Crop losses due to disease affect both the food supply and the financial and economic stability of a country. Tomatoes are among the top food-producing crops globally, and a significant portion of this production is lost due to disease. People have used Machine Learning techniques for feature extraction and early diagnosis of tomato diseases, and nowadays, Deep Learning-based models are widely used for disease recognition. However, most existing models are highly parameter-intensive, which increases the time required for training and inference. As a result, while lightweight models are more suitable for user-friendly applications, they often show a reduction in performance. To balance performance and model size, we propose CoAtNet-DeepMoE, a Convolution-Attention hybrid architecture for rich feature extraction, further enhanced with a DeepSeek Mixture of Experts to substantially reduce the number of parameters without sacrificing accuracy. We evaluate our model on both balanced and imbalanced datasets from Kaggle and PlantVillage, demonstrating robustness and achieving 99.80% accuracy, 99.80% precision, 99.80% recall, and 99.80% F1-score on Kaggle, and 99.83% accuracy, 99.85% precision, 99.76% recall, and 99.80% F1-score on PlantVillage, representing state-of-the-art performance with only 2.47M parameters. The source code will be available at https://github.com/nadimbrur/CoAt-MoE.",
-      "published": "September 16, 2026",
-      "published_raw": "2026-09-16T02:39:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.18038v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.18038v1"
-    },
-    {
-      "id": "2609.17906v1",
-      "title": "FlowLOT: Linearized Optimal Transport for Flow Cytometry Analysis",
-      "authors": [
-        "Naqib Sad Pathan",
-        "Mohammad Shifat-E-Rabbi",
-        "Kristofor E. Pas",
-        "Ivan Medri",
-        "Bartek Rajwa",
-        "Gustavo K. Rohde"
-      ],
-      "abstract": "Multiparameter flow cytometry generates high-dimensional, unordered single-cell mea- surement data for disease diagnosis and monitoring, yet analysis often remains dependent on manual gating, limiting scalability and reproducibility. Existing machine-learning ap- proaches can reduce annotation burden but frequently require large training cohorts and offer limited interpretability. To address these challenges, we introduce FlowLOT , an optimal-transport-based framework that models the single-cell measurement data of a pa- tient sample as an empirical cellular distribution and maps it directly into a fixed-length feature vector. Within a single transparent architecture, FlowLOT unifies high-dimensional classification, interpretable visualization, and continuous quantitative inference. In few-shot regimes, using as few as 16 patients per class on FlowCAP-II and 8 patients per class on BLAST110, it accurately distinguishes healthy from acute myeloid leukemia (AML) sam- ples, reaching 94.3% and 98.0% balanced accuracy, respectively. The underlying embedding exposes marker-level variation driving disease-associated population shifts and enables quantitative measurable residual disease (MRD) estimation, achieving a Pearson correlation of 0.82 on held-out samples and 0.79 under cross-dataset transfer. Furthermore, at the clinically relevant 0.1% threshold for leukemia-associated immunophenotype (LAIP) residual disease, FlowLOT detects positivity with 72% sensitivity at 100% specificity. By replacing subjective manual gating and black-box deep learning with a distribution-aware framework, FlowLOT offers a sample-efficient, scalable, and interpretable solution for high- dimensional cytometry under realistic clinical and experimental constraints.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T22:57:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.17906v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.17906v1"
-    },
-    {
-      "id": "2609.17763v1",
-      "title": "Modular Deep Learning Mechanisms for Auditable Next-Day Wildfire Spread Prediction",
-      "authors": [
-        "Miguel Esparza",
-        "Aydin Ayanzadeh Ahmad Mousavi",
-        "Ali Mostafavi"
-      ],
-      "abstract": "Next-day wildfire prediction requires models whose forecasts can be evaluated alongside the assumptions and historical evidence used in their computation. Although deep learning can learn spatial patterns from remote-sensing data, predictive performance alone does not establish physical fidelity or operational trustworthiness. This study investigates three modular augmentations for next-day active-fire prediction: wind- and slope-conditioned attention biases, physics-feature retrieval-augmented output correction, and fire conditioned dual-stream gating. The attention biases expose prescribed directional preferences, while the retrieval module selects historical tiles using a nine-dimensional environmental and fire-state descriptor and applies a learned correction to a frozen model's logits. The modules are evaluated across five backbones on the Next Day Wildfire Spread benchmark, using staged ablations, directional audits, retrieval perturbations, calibration measures, and computational comparisons. The three-seed mean F1 score and area under the precision--recall curve (AUC-PR) of a SwinUNETR model with all three augmentations are 0.4216 and 0.3673. Then, a mixed ensemble (two augmented architectures and one non-augmented architecture) model achieves 0.4292 and 0.3790. Benefits vary across architectures, and retrieval-related improvements in AUC-PR do not consistently translate into higher F1. The constructed wind bias aligns closely with input wind, but its alignment with observed next-day fire displacement is much weaker, distinguishing prior inspectability from predictive physical fidelity. The study contributes a framework for exposing and evaluating selected domain-informed components within wildfire prediction models. Together, the results presented show that predictive performance, operational trustworthiness, and computational practicality need not be competing objectives.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T19:12:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.17763v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.17763v1"
-    },
-    {
-      "id": "2609.17380v1",
-      "title": "OPEN-1B: A Fully Auditable Training Run",
-      "authors": [
-        "John Donaghy",
-        "Brian Wilcox",
-        "Oğuzhan Ersoy",
-        "Shikhar Rastogi",
-        "Adam St Arnaud",
-        "Alexey Titov",
-        "Jordan Greenberg",
-        "Ben Fielding",
-        "Harry Grieve"
-      ],
-      "abstract": "Open-source language models have a reproducibility problem. Despite releasing weights, training data, and recipes, none of them are provably reproducible due to the non-associativity of floating-point arithmetic. Deep learning frameworks often offer a deterministic execution mode, allowing reproducible operations on the same machines. Unfortunately, this determinism does not carry across hardware such that a user can verify that a released checkpoint was actually produced using the declared training recipe. This leaves room for undisclosed data, injected biases, or backdoors that existing techniques such as proof-of-learning or proof-of-training-data cannot rule out. We introduce a new tier of model transparency, fully auditable, in which every operation on every data sample during training is independently reproducible on heterogeneous commodity hardware with bitwise certainty. By imposing a definite order on the sources of training nondeterminism, GPU kernel reductions, data batch ordering across a data-parallel cluster, and inter/intra-node collective communication, we make it possible to replay any individual step of a large, distributed training run on a single piece of commodity hardware and check it against the published trajectory. Because replaying an entire run on one machine is infeasible, we support this with a collective verification scheme in which many independent auditors each certify individual steps, together covering the whole run. We release Open-1B, a model trained under this regime, together with its full pretraining dataset, every intermediate checkpoint, the training codebase, and the audit harness needed to reproduce and verify any step of its training.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T16:23:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.17380v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.17380v1"
-    },
-    {
-      "id": "2609.17175v1",
-      "title": "IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy",
-      "authors": [
-        "Alessandro Camilletti",
-        "Gabriele Franch",
-        "Elena Tomasi",
-        "Marco Cristoforetti"
-      ],
-      "abstract": "We present IRENE (Italian Radar Ensemble Nowcasting Experiment), a deep learning model for probabilistic short-range precipitation nowcasting over the Italian domain at \\SI{1}{km} spatial and 5 min temporal resolution. IRENE adopts an encoder--forecaster architecture built on multi-scale Convolutional Gated Recurrent Units (ConvGRUs), trained on the national radar composite produced by the Italian Civil Protection Department (DPC). An importance-sampling scheme focuses training on precipitation-relevant events, while the almost-fair Continuous Ranked Probability Score (afCRPS) is adopted as the primary probabilistic loss function. Two additional training configurations are proposed: an adversarial (GAN) variant, IRENE-GAN, designed to improve the spatial sharpness of the generated forecasts, and a spectrally constrained variant, IRENE-GAN-RAPSD, in which the adversarial objective is complemented by an explicit penalty on the radially averaged power spectral density. The three configurations are evaluated against the stochastic extrapolation method STEPS and the pre-trained deep learning model DGMR. All IRENE configurations attain a lower Continuous Ranked Probability Score than both benchmarks at every lead time and rank histograms closer to uniformity, indicating better probabilistic skill and ensemble calibration. In terms of ensemble-mean mean absolute error the advantage is confined to the first 90 min, beyond which the strongly damped DGMR fields and, to a lesser extent, STEPS become competitive. Spectral analysis shows that the adversarial training removes the progressive loss of small-scale variance exhibited by IRENE, at the cost of an excess of fine-scale power at long lead times that the spectral penalty only partially controls.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T13:38:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.17175v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.17175v1"
-    },
-    {
-      "id": "2609.17101v1",
-      "title": "High-Fidelity Digital Twin Data Models by Randomized Dynamic Mode Decomposition and Deep Learning with Applications in Fluid Dynamics",
-      "authors": [
-        "Diana A. Bistrian"
-      ],
-      "abstract": "The purpose of this paper is the identification of high-fidelity digital twin data models from numerical code outputs by non-intrusive techniques (i.e., not requiring Galerkin projection of the governing equations onto the reduced modes basis). In this paper the author defines the concept of the digital twin data model (DTM) as a model of reduced complexity that has the main feature of mirroring the original process behavior. The significant advantage of a DTM is to reproduce the dynamics with high accuracy and reduced costs in CPU time and hardware for settings difficult to explore because of the complexity of the dynamics over time. This paper introduces a new framework for creating efficient digital twin data models by combining two state-of-the-art tools: randomized dynamic mode decomposition and deep learning artificial intelligence. It is shown that the outputs are consistent with the original source data with the advantage of reduced complexity. The DTMs are investigated in the numerical simulation of three shock wave phenomena with increasing complexity. The author performs a thorough assessment of the performance of the new digital twin data models in terms of numerical accuracy and computational efficiency.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T12:34:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.17101v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.17101v1"
-    },
-    {
-      "id": "2609.17629v1",
-      "title": "Fenchel-Young Duality Gaps: Certified Early Stopping for Regularized Inverse Problems",
-      "authors": [
-        "Pierre-Cyril Aubin-Frankowski",
-        "Yohann de Castro"
-      ],
-      "abstract": "We study computable error bounds and certified early stopping for regularized inverse problems, where a data-fidelity term is traded against a regularizer. The analysis relies on an exact duality-gap identity that splits the total gap of $F(Φμ)+λR(μ)$ into a data-fidelity Fenchel--Young loss and a regularizer Fenchel--Young loss, $ Δ(μ,h)=L_F(Φμ\\parallel h)+λL_R(μ\\parallelη),\\qquad η=-Φ^\\star h/λ, $ valid for any primal point $μ$ and any dual point $h$. The data-fidelity term $F$ is strictly convex, so wherever $F^\\star$ is differentiable the loss $L_F(Φμ\\parallel h)$ is the Bregman divergence of~$F$ between the prediction $Φμ$ and $\\nabla F^\\star(h)$, and it vanishes exactly at \\emph{Mirror Alignment} $h=\\nabla F(Φμ)$. Evaluated at a dual-feasible point $\\tilde h$, the gap~$Δ(μ,\\tilde h)$ is computable and \\emph{oracle-free}, meaning that it uses no knowledge of the solution, and it bounds the suboptimality of $μ$. Under the source condition, the same Fenchel--Young losses give \\emph{a priori} bounds on the estimation and prediction errors. Their scale is the irreducible model and noise error $L_F(Φμ^\\star\\parallel h^\\star)$, which vanishes exactly when Mirror Alignment holds at the certificate. This gives an early-stopping rule: run the algorithm until the regularizer Fenchel--Young loss falls below a tolerance $ε$. A constructive version of the Brøndsted--Rockafellar theorem then turns the current pair into an exact \\emph{dual-feasible} one, and this proxy lifts to an exact primal certificate. We build the proxy by a proximal step in the geometry of the fidelity, with Bregman kernel $F^\\star$ and tilted by the prediction $Φμ$: it recovers the Euclidean step of Carlier when $F$ is the squared error, and it reduces the duality gap by the regularizer Fenchel--Young loss, up to a second-order remainder that vanishes in the quadratic case. Our running example is the Generalized Beurling--Lasso (GBL), where $R$ is the total-variation norm on signed measures. It contains the classical Beurling--Lasso, obtained with the squared error, and also covers robust, logistic, entropic and inverse-optimal-transport losses. The same duality gap certifies deep-learning optimizers such as Lion-K and Muon, in their proximal form, as solvers of the regularized program. A companion paper by the same authors builds on these error bounds to establish exact support recovery for the GBL under a non-degenerate source condition.",
-      "published": "September 15, 2026",
-      "published_raw": "2026-09-15T09:16:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.17629v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.17629v1"
     }
   ]
 }
