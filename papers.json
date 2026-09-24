@@ -1,7 +1,52 @@
 {
-  "last_updated": "2026-09-23T02:03:16.606430",
+  "last_updated": "2026-09-24T01:51:48.199397",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.27982v1",
+      "title": "Riemannian Structure and Optimization for a Class of Low-Parametric Orthogonal Matrices",
+      "authors": [
+        "Ali Aliev",
+        "Maxim Rakhuba"
+      ],
+      "abstract": "In this paper, we are concerned with matrices formed by block-diagonal factors interleaved with fixed permutations -- a flexible family of structured matrices. This class has recently drawn interest in deep learning architectures for its balanced expressivity-efficiency trade-off, yet efficient computational strategies for working with it remain to be found. We approach this problem through Riemannian geometry and examine under what conditions this class admits a smooth manifold structure. For the practically important case of orthogonal two-factor matrices, we derive the essential Riemannian tools and propose efficient algorithms for their implementation. The algorithms leverage automatic differentiation, support parameter sharing within each factor, and avoid explicit dense matrix construction. We test them within the Riemannian optimization framework on the best matrix approximation problem and for parameter-efficient fine-tuning of large language models. Beyond the two-factor setting, we study the geometric and matrix-theoretic properties of factorizations with a larger number of block-diagonal factors.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T12:07:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.27982v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.27982v1"
+    },
+    {
+      "id": "2609.27201v1",
+      "title": "A Systematic Benchmark of Explainable Methods for Temporal Attribution in Sequential Recommendation Systems",
+      "authors": [
+        "Akash Pandey",
+        "Kanisha Shah",
+        "Addrish Roy",
+        "Dwipam Katariya",
+        "Hongyangyang Shi",
+        "Amanda Ding",
+        "Kalanand Mishra",
+        "Pranab Mohanty"
+      ],
+      "abstract": "Sequential RecSys are central to modern personalization, exploiting user's historical interaction sequences to drive next-step decisions. Deep learning models, particularly CNN and Transformer-based architectures, have proven highly effective at capturing temporal dependencies in these histories. For transparency and trust, understanding which past interactions drive a given recommendation is increasingly important --- both for developers auditing model behavior and for users seeking a rationale. However, the non-linearities that give these models their predictive power also render them black boxes, making it difficult to attribute decisions to specific interactions. While gradient-based, perturbation-based, and attention-based explainability methods exist, a systematic benchmark of their faithfulness for sequential recommendation is missing. We address this gap by introducing a dual-model masking metric in which one model supplies per-timestep attribution scores and a separately trained, masking-robust probe measures the resulting change in predicted probability. Using this metric, we benchmark ten XAI methods across CNN, Transformer, SASRec, and BERT4Rec backbones on KuaiRand and MovieLens, complemented by analyses of temporal attribution patterns, item popularity confounding, and robustness to input corruption. Our key findings are: (1) gradient-based methods, particularly GradientSHAP and Integrated Gradients, yield the most faithful and robust attributions; (2) raw attention weights are unreliable, but gradient-weighted attention restores faithfulness on shorter sequences, with degradation on longer horizons as softmax attention probabilities converge toward uniform importance scores, diminishing the method's ability to identify informative interactions; and (3) temporal attribution patterns in faithful methods reflect genuine task structure rather than recency or popularity bias.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T01:07:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.27201v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.27201v1"
+    },
+    {
+      "id": "2609.26963v1",
+      "title": "Raytracing Black Holes with AI Accelerators",
+      "authors": [
+        "Thomas Fischbacher",
+        "Nicholas Kessler"
+      ],
+      "abstract": "We show how software infrastructure that was mainly built to power AI applications also can be used to great benefit for other purposes -- by demonstrating a fully self-contained JAX-based black hole raytracer in under 180+200 lines of Python code plus documentation. Major motivations for showcasing such a construction are (a) to show to professional physicists how Machine Learning (ML) accelerators can greatly simplify building numerical applications for GPU accelerator hardware with very modest coding effort and programming expertise -- even if the problems at hand do not involve ML per se, (b) to make a meaningful part of General Relativity (GR) accessible to computer science professionals who might not have realized that mathematical background they developed on Deep Learning problems may have brought this theory within easy reach for them, and (c) to inspire students and educators to explore the potential of an approach that represents physical law, i.e. relations between local differential quantities, not in terms of differentiable symbolic expressions, but in terms of differentiable algorithms.",
+      "published": "September 22, 2026",
+      "published_raw": "2026-09-22T18:54:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.26963v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.26963v1"
+    },
     {
       "id": "2609.26737v1",
       "title": "Diffusion-Induced Spatial Attention Overlapping Community Detection",
@@ -32,6 +77,24 @@
       "published_raw": "2026-09-22T16:06:22Z",
       "pdf_link": "http://arxiv.org/pdf/2609.26631v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.26631v1"
+    },
+    {
+      "id": "2609.26855v1",
+      "title": "QUARTET: Quad-branch cross-Attention and Random-walk Traces for Enhancing Transformers on Relational Graphs",
+      "authors": [
+        "Kyaw Hpone Myint",
+        "Nan Jiang",
+        "Xiang Li",
+        "Zhe Wu",
+        "Alexandre G. R. Day",
+        "Pranab Mohanty",
+        "Giri Iyengar"
+      ],
+      "abstract": "Relational Deep Learning (RDL) models multi-table databases as heterogeneous temporal graphs, and graph transformers currently achieve state-of-the-art performance on benchmarks like RelBench. However, the current leading model, RelGT, suffers from two key limitations: its random local sampler yields loosely connected subgraphs that hinder message passing, and its global attention module relies on a single, seed-feature-based memory that ignores broader macro-level dynamics. To overcome these limitations, we introduce QUARTET, an expressive graph transformer architecture that applies full self-attention on local subgraphs while enriching global context through cross-attention branches. Specifically, QUARTET employs a Causal Random Walk (CRW) sampler based on recency-truncated Personalized PageRank (PPR) to extract compact, hub-robust, and densely connected local subgraphs without temporal leakage. Concurrently, a quad-branch cross-attention module integrates global context from four complementary perspectives: seed feature, seed topology, temporal dynamics, and collaborative dynamics. Across the RelBench v1 classification tasks, QUARTET consistently matches or outperforms the current state-of-the-art graph transformer baselines (HGT and RelGT). Ablation studies confirm that the CRW sampler significantly enriches local neighborhood quality, while the global branches provide essential, task-specific predictive gains.",
+      "published": "September 22, 2026",
+      "published_raw": "2026-09-22T14:36:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.26855v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.26855v1"
     },
     {
       "id": "2609.26426v1",
@@ -138,7 +201,7 @@
       "arxiv_link": "http://arxiv.org/abs/2609.23460v1"
     },
     {
-      "id": "2609.23241v1",
+      "id": "2609.23241v2",
       "title": "UQMIA: An Open, Hands-On Tutorial on Uncertainty Quantification in Medical Imaging Analysis with Large Language Model-Based Assessment of Educational Content",
       "authors": [
         "Benyamin Gheiji",
@@ -147,11 +210,11 @@
         "Meysam Tavakoli",
         "Shahriar Faghani"
       ],
-      "abstract": "Uncertainty quantification (UQ) is increasingly recognized as an important component of reliable machine learning in medical imaging, yet practical resources connecting UQ theory, implementation, and evaluation remain limited. We developed Uncertainty Quantification in Medical Imaging Analysis (UQMIA), an open-access, hands-on tutorial comprising 19 sessions covering major UQ approaches, including variational inference, Monte Carlo dropout, deep ensembles, evidential deep learning, and conformal prediction, together with methods for evaluating uncertainty reliability. The tutorial is designed for researchers and practitioners with experience in medical imaging, progressing from foundational concepts to implementation and evaluation, with notebooks executable through Kaggle. Beyond presenting the tutorial, we introduce a framework using large language models (LLMs) to evaluate whether technical educational resources contain retrievable and usable knowledge. Using 100 four-option multiple-choice questions derived from primary methodological literature, we evaluated 20 instruction-tuned LLMs from six model families with and without retrieved tutorial context. Retrieval of UQMIA improved accuracy in 18 of 20 models, increasing mean accuracy from 0.680 to 0.742 (+0.062; Holm-adjusted P=0.00032), and improved area under the receiver operating characteristic curve (AUROC) in 18 of 20 models, increasing from 0.725 to 0.788 (+0.063; Holm-adjusted P=0.00032). UQMIA provides an accessible resource for learning UQ in medical imaging and demonstrates an LLM-based approach for evaluating technical educational material. The tutorial is available at https://benyamin-gheiji.github.io/UncertaintyQuantification-Medical-Imaging/ and its source code and notebooks at https://github.com/benyamingheiji/Uncertainty-Quantification-Medical-Imaging/.",
+      "abstract": "Uncertainty quantification (UQ) is increasingly recognized as an important component of reliable machine learning in medical imaging, yet practical resources connecting UQ theory, implementation, and evaluation remain limited. We developed Uncertainty Quantification in Medical Imaging Analysis (UQMIA), an open-access, hands-on tutorial comprising 19 sessions covering major UQ approaches, including variational inference, Monte Carlo dropout, deep ensembles, evidential deep learning, and conformal prediction, together with methods for evaluating uncertainty reliability. The tutorial is designed for researchers and practitioners with experience in medical imaging, progressing from foundational concepts to implementation and evaluation, with notebooks executable through Kaggle. Beyond presenting the tutorial, we introduce a framework using large language models (LLMs) to evaluate whether technical educational resources contain retrievable and usable knowledge. Using 100 four-option multiple-choice questions derived from primary methodological literature, we evaluated 20 instruction-tuned LLMs from six model families with and without retrieved tutorial context. Retrieval of UQMIA improved accuracy in 18 of 20 models, increasing mean accuracy from 0.680 to 0.742 (+0.062; Holm-adjusted P=0.00032), and improved area under the receiver operating characteristic curve (AUROC) in 18 of 20 models, increasing from 0.725 to 0.788 (+0.063; Holm-adjusted P=0.00032). UQMIA provides an accessible resource for learning UQ in medical imaging and demonstrates an LLM-based approach for evaluating technical educational material. The tutorial is available at https://benyamin-gheiji.github.io/Uncertainty-Quantification-Medical-Imaging-Analysis/ and its source code and notebooks at https://github.com/benyamin-gheiji/Uncertainty-Quantification-Medical-Imaging-Analysis/.",
       "published": "September 19, 2026",
       "published_raw": "2026-09-19T22:48:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.23241v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.23241v1"
+      "pdf_link": "http://arxiv.org/pdf/2609.23241v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.23241v2"
     },
     {
       "id": "2609.23170v1",
@@ -181,7 +244,7 @@
       "arxiv_link": "http://arxiv.org/abs/2609.23016v1"
     },
     {
-      "id": "2609.22663v1",
+      "id": "2609.22663v2",
       "title": "SPIBER: Reconstructing Free Energy Landscapes from Short, Unconverged Trajectories with Generative Flow Networks",
       "authors": [
         "Venkata Sai Sreyas Adury",
@@ -190,8 +253,8 @@
       "abstract": "Molecular systems have many degrees of freedom, but their metastable behavior can often be described by a few collective variables. Identifying these variables and estimating free energies along them from limited simulation data remains a challenging, important problem. Separate short trajectories may sample different metastable states without capturing transitions or establishing their relative equilibrium populations. For unbiased trajectories generated with the same Hamiltonian at a single temperature, alternate methods based on histogram reweighting cannot correct this imbalance. Here we present SPIBER, which combines the State Predictive Information Bottleneck (SPIB) with Generative Flow Networks (GFlowNets). SPIB uses deep learning to approximate slow degrees of freedom through a past-future information bottleneck, retaining information needed to predict future metastable states. We show that this compression limits conditional entropy variations in populated regions, allowing conditional mean potential energies, which are much easier to calculate, to be used to approximate free energy differences. Given sufficient local sampling to estimate these energies, they define the target distribution for GFlowNets, energy-based generative samplers that sample according to estimated thermodynamic stability rather than observed populations. For a particle in a radial double-well potential, for alanine dipeptide, and for the nine-residue peptide AIB9, SPIBER recovers free energy differences between sampled metastable states to within one thermal energy unit of reference values. The method combines collective-variable learning and free energy estimation in up to four latent dimensions, without requiring converged state populations or additional molecular dynamics simulations.",
       "published": "September 19, 2026",
       "published_raw": "2026-09-19T00:37:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.22663v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.22663v1"
+      "pdf_link": "http://arxiv.org/pdf/2609.22663v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.22663v2"
     },
     {
       "id": "2609.22622v1",
@@ -236,64 +299,6 @@
       "published_raw": "2026-09-18T20:10:34Z",
       "pdf_link": "http://arxiv.org/pdf/2609.22554v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.22554v1"
-    },
-    {
-      "id": "2609.21945v1",
-      "title": "Learning to Move Cities: Deep Meta-Models and Reinforcement Policies for Calibration and Control in Urban Networks",
-      "authors": [
-        "Adewumi Augustine Adepitan",
-        "Christopher J. Haruna",
-        "Oluwasegun Adegoke",
-        "Ayooluwatomiwa Ajiboye",
-        "Oluwatobi Oluwasakin"
-      ],
-      "abstract": "Urban transportation networks present complex optimization challenges spanning calibration of high-fidelity simulators and real-time operational control. This paper presents a shared latent-space framework that connects simulator calibration and reinforcement learning control through a common learned representation of urban traffic dynamics. First, we develop a combinatorial MLP-autoencoder architecture that learns low-dimensional manifolds linking simulator inputs (origin-destination demand, network parameters) to outputs (travel times, congestion patterns), enabling efficient Bayesian optimization for calibration. This approach demonstrates superior sample efficiency compared to traditional dimension reduction methods, achieving better fit to observational data within fixed computational budgets. Second, we implement a deep Q-learning agent with experience replay and target networks to optimize dynamic traffic assignment through scheduling and routing adjustments. In empirical evaluations on benchmark networks, our approach reduces system-wide travel times by up to 51% compared to baseline operations. The learned latent representation is not only used to reduce the dimensionality of Bayesian calibration, but is also incorporated into the reinforcement learning state representation, allowing the control policy to operate on compressed and calibrated traffic dynamics. This shared latent-space formulation provides a unified pathway from simulator calibration to adaptive operational control within intelligent transportation systems. Our results highlight the transformative potential of deep learning methods in urban mobility planning and management, particularly for large-scale networks where traditional optimization approaches face computational bottlenecks.",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T16:03:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.21945v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.21945v1"
-    },
-    {
-      "id": "2609.21870v1",
-      "title": "Neural Cellular Automata Learn General Features in their Hidden Channels",
-      "authors": [
-        "Etienne Guichard",
-        "Stefano Nichele"
-      ],
-      "abstract": "Modern deep learning models achieve impressive generalization through over-parameterization, but this paradigm often struggles with overfitting and memorization in few-shot regimes. Neural Cellular Automata (NCAs) offer a highly parameter-efficient alternative, yet research has focused primarily on their output, leaving the role of their internal hidden channels largely unexplored. In this paper, we investigate the internal dynamics of NCA hidden channels and introduce a novel transfer-learning mechanism that injects a pretrained teacher's hidden states into a student model to guide early optimization. Evaluated on few-shot and scale-variant MNIST benchmarks, NCAs outperform comparable recurrent and feed-forward architectures, demonstrating superior generalization with a minimal parameter budget (~9,800 parameters). Mechanistic analysis reveals that the hidden channels decouple feature extraction from uniform classification consensus by absorbing morphological complexity and converging to mutually orthogonal states. Furthermore, we demonstrate that these hidden channels capture general, scale-invariant topological primitives rather than class-specific templates. This allows a student model to achieve strong few-shot performance on unseen classes using features transferred from a teacher trained only on a subset of digits (0-5). Our results highlight the potential of utilizing hidden-state dynamics as a robust, decentralized computational substrate for parameter-efficient transfer learning",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T14:58:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.21870v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.21870v1"
-    },
-    {
-      "id": "2609.21791v1",
-      "title": "RegKT: Interpretable and Robust Deep Knowledge Tracing With IRT-Regularizer",
-      "authors": [
-        "Samuel Girard",
-        "Juan D. Pinto",
-        "Jill-Jênn Vie",
-        "Amel Bouzeghoub"
-      ],
-      "abstract": "As deep learning models continue to advance, knowledge tracing models have achieved higher accuracy. However, these gains come at the cost of reduced interpretability, which is crucial for practitioners in educational settings to adopt new methodologies. Additionally, deep learning models are prone to overfitting, particularly when dealing with the small datasets that are common in educational applications. In this paper, we propose a novel regularization technique designed to enhance the robustness of deep-learning-based knowledge tracing models, while simultaneously improving their interpretability. Our method addresses both the interpretability and overfitting challenges, making it more feasible for real-world educational applications.",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T14:05:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.21791v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.21791v1"
-    },
-    {
-      "id": "2609.21655v1",
-      "title": "Analysing the Linearity of Linguistic Relations in Language Model Embedding Spaces",
-      "authors": [
-        "Vasudevan Nedumpozhimana",
-        "Fathima Thekkekara",
-        "John Kelleher"
-      ],
-      "abstract": "We propose a framework to analyse how strongly different linguistic relations are linearly encoded in language model embedding spaces. We formalise linear encoding via a constrained linear approximation over related and unrelated word pairs and apply this to an extended BATS dataset covering inflectional, derivational, lexicographic, and encyclopedic relations in GloVe, RoBERTa, and ModernBERT. Our experiments show near-perfect linear encodings for inflectional and derivational relations, but substantially higher errors for lexicographic and encyclopedic relations, especially for one-to-many and many-to-many associations. We also find that RoBERTa and ModernBERT generally encode relations more linearly than GloVe. These results indicate that our framework can reveal which relational structures are most linearly accessible in embeddings, offering a compact tool for probing and comparing relational geometry across models.",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T11:53:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.21655v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.21655v1"
     }
   ]
 }
