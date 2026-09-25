@@ -1,7 +1,194 @@
 {
-  "last_updated": "2026-09-24T01:51:48.199397",
+  "last_updated": "2026-09-25T02:08:12.962877",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.30104v1",
+      "title": "MQSS-Selector: RL-Guided Pass Selection for an MLIR Compilation Pipeline",
+      "authors": [
+        "Andre Youssefi",
+        "Ercüment Kaya",
+        "Minh Chung",
+        "Jorge Echavarria",
+        "Laura B. Schulz",
+        "Martin Schulz"
+      ],
+      "abstract": "High Performance Computing (HPC) and Quantum Computing (QC) systems are increasingly converging towards unified High Performance Computing-Quantum Computing (HPCQC) infrastructures, driven by a growing need to bridge classical and quantum workflows, which affects all levels of the system stack, from the hardware to compilers and runtimes, all the way to applications. However, today's QC devices are still in the Noisy Intermediate-Scale Quantum (NISQ) era, are error-prone and resource-limited, and therefore require specialized optimizations and topology mappings to achieve sufficient fidelity. This places special emphasis on proper compilation and optimization within the overall quantum software stack. Many existing stacks remain fragmented, with separate components responsible for device selection, compiler-pass optimization, and job queue scheduling. This paper proposes a unified, learning-based selector that integrates these disparate stages into a cohesive framework. Our proposed selector scheme leverages reinforcement learning and deep learning models that can be extended to simultaneously optimize multiple objectives -- such as fidelity, compilation time, and scheduling latency -- while dynamically adapting to circuit characteristics and device conditions.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T16:46:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30104v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30104v1"
+    },
+    {
+      "id": "2609.30059v1",
+      "title": "KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization",
+      "authors": [
+        "Aheli Poddar",
+        "Sanskar Prasad",
+        "Arindam Samanta",
+        "Subha Chakraborty",
+        "Vishal Goyal",
+        "Rohit Singh Rathaur"
+      ],
+      "abstract": "Deep learning inference and training performance depends critically on GPU kernel efficiency. Modern compilers such as PyTorch Inductor automatically generate GPU kernels from high-level model code, but frequently underperform expert-written implementations by wide margins. Recent LLM-assisted kernel optimizers can close this gap for standalone kernels, yet treat compiled models as black boxes, generally optimizing individual standalone kernels without respecting the compiler's structural decisions or verifying the model end-to-end. We present KernelOPT, a multi-agent system that treats compiled models as structured artifacts. It preserves vendor library calls (cuBLAS, cuDNN) and exclusively targets generated Triton sub-kernels using five profiling-guided LLM agents. A four-gate verification cascade of static validation, multi-seed correctness, model-level float64-fallback verification, and performance gating filters candidates during optimization and verifies the re-stitched model end-to-end. If no candidate passes all four gates, the system preserves the compiler baseline. The system accepts PyTorch nn.Modules, standalone Triton kernels, and Helion kernels. Evaluated on 250 KernelBench problems, KernelOPT achieves geometric mean speedups over \\texttt{torch.compile} of 1.40$\\times$ (Level 1: 51/100), 1.15$\\times$ (Level 2: 31/100), and 1.07$\\times$ (Level 3: 12/50) across all problems.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T16:17:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30059v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30059v1"
+    },
+    {
+      "id": "2609.29867v1",
+      "title": "Does per-frame early exit pay? A compute-matched study of dynamic depth for on-device speech enhancement",
+      "authors": [
+        "Clément Laroche",
+        "Riccardo Miccini"
+      ],
+      "abstract": "Deep learning-based speech enhancement is increasingly deployed on-device in hearing aids, headsets, and earbuds. Most of these devices, however, can only accelerate static int8 graphs, so a depth-varying network must be implemented as several graphs, orchestrated by a policy. In this paper, we supervise every intermediate depth of one causal model, then we fine-tune its output heads to guarantee that deeper outputs are never worse than shallower ones. Using this training protocol, we can derive a family of static models that are more Pareto-efficient than their equivalently-sized counterparts trained from scratch on the same budget. Specifically, we achieve up to 0.11 higher PESQ for equivalent compute, and match the best PESQ at 30% less compute. We then quantize the models to int8 and measure the latency-quality frontier on an STM32N6 microcontroller. On VoiceBank-DEMAND, the dynamic enhancer lies on the same frontier as the static models, rather than trading quality for dynamic execution. Running the policy on the companion Cortex-M55 takes only 26 $μ$s per frame, while splitting the enhancer into separate NPU graphs adds 2.2% latency overhead. The cost of dynamic execution is therefore small.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T14:25:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.29867v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.29867v1"
+    },
+    {
+      "id": "2609.29317v1",
+      "title": "Neuralized Multi-Wavelet Decomposition for Time Series Classification and Forecasting",
+      "authors": [
+        "Xiaohan Jiang",
+        "Jingyuan Wang",
+        "Jiahao Ji",
+        "Yongyao Wang",
+        "Chen Yang",
+        "Junjie Wu"
+      ],
+      "abstract": "Time series analysis is fundamental in domains such as finance, healthcare, and meteorology. Real-world time series often exhibit multiscale characteristics shaped by diverse latent factors, resulting in intricate temporal patterns and rich frequency structures. However, existing approaches typically focus on either frequency-domain decomposition or time-domain pattern extraction in isolation, neglecting their joint structure. This decoupled modeling limits representation expressiveness and undermines performance in tasks requiring simultaneous temporal and spectral reasoning. To address this gap, we propose m-WCN, a novel end-to-end deep learning framework that neuralizes multi-wavelet decomposition for joint extraction of temporal patterns and frequency components. By approximating the classical GHM multi-wavelet transform with trainable convolutional operators and enforcing orthogonality constraints, m-WCN produces interpretable multi-resolution representations. Built on this foundation, we introduce two task-specific architectures: TFBC for time series classification, which boosts discriminative features across frequency scales, and FTB for forecasting, which ensembles frequency-aware predictors. Extensive experiments on 64 UCR datasets and seven public forecasting benchmarks demonstrate the effectiveness of our approach. Built on the neuralized m-WCN, our TFBC and FTB outperform various baseline models across diverse datasets, achieving average improvements of 19.97% in classification and 19.92% in forecasting tasks.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T09:51:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.29317v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.29317v1"
+    },
+    {
+      "id": "2609.29270v1",
+      "title": "Learnable Time-Frequency Masks for Explaining Time-Series Classifiers",
+      "authors": [
+        "Theresa Dahl Frehr",
+        "Francisco Pelayo",
+        "Lukas Raad",
+        "Alicia García Sanz",
+        "Thea Brüsch",
+        "Tommy Sonne Alstrøm"
+      ],
+      "abstract": "Time-series explainability remains challenging because discriminative information is often encoded in latent frequency or time-frequency features rather than in the raw signal itself. Existing attribution methods typically operate either in the time domain or in a fixed transform domain, limiting their ability to capture salient information across different representations. We propose XACT, a general framework that learns sparse attribution masks over coefficients from arbitrary invertible time-frequency transforms. We evaluate the framework on the STFT, the continuous wavelet transform, and the discrete wavelet transform. In addition, we extend the virtual inspection layer approach from the STFT to both wavelet transforms, enabling LRP to generate explanations in these representations. On a synthetic dataset, XACT produces precise explanations and is less prone to highlighting spurious features than the tested baselines. Across two real-world datasets, XACT produces sparse and structured explanations, although no method performs best across all quantitative evaluation criteria. These results demonstrate that learning explanations directly in time-frequency representations offers a flexible approach to interpreting deep-learning models for time series data.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T09:09:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.29270v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.29270v1"
+    },
+    {
+      "id": "2609.29087v1",
+      "title": "Physics and Data Driven Transformer-Mamba Framework for Flow Field",
+      "authors": [
+        "Zhuo Zhang",
+        "Shun Zou",
+        "Canqun Yang",
+        "Xi Yang"
+      ],
+      "abstract": "While deep learning accelerates expensive partial differential equation solving in computational fluid dynamics (CFD), existing methods like PINNs and FNOs often struggle with generalization, noise robustness, and physical consistency. We introduce the Transformer-Mamba for Flow Field (TM4FF) framework, a physics-constrained operator learning model with three key innovations: a Residual Wavelet Mamba (RWM) layer for feature denoising, a Transformer-based attention mechanism for enhanced feature fusion, and a physics-informed loss using Fourier derivatives to enforce the Navier-Stokes equations. Experiments on four CFD datasets show TM4FF achieves high accuracy and robust generalization across varying flow conditions.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T06:14:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.29087v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.29087v1"
+    },
+    {
+      "id": "2609.28793v1",
+      "title": "Monitoring Urban Traffic Dynamics at Fine Spatiotemporal Resolution Using Distributed Acoustic Sensing and Deep Learning",
+      "authors": [
+        "Hao Tian",
+        "Heng Cai",
+        "Xiaowei Chen",
+        "Yifan Yang"
+      ],
+      "abstract": "Mapping the distribution of traffic dynamics at high spatiotemporal resolution is a fundamental question in transportation research. Distributed acoustic sensing (DAS), an innovative seismic observation tool, emerges as a promising solution for real-time urban traffic monitoring at high spatial and temporal scales. Distributed acoustic sensing repurposes existing underground fiber-optic cables as dense, continuous sensor arrays, enabling passive and privacy-preserving monitoring of roadway traffic activity at meter-level spatial and second-level temporal resolution. This study examines whether integrating DAS and deep learning models can serve as a continuous and efficient urban traffic observatory for revealing urban traffic dynamics (i.e. traffic volume and congestion, event-driven changes) at high spatiotemporal resolution. Using a DAS deployment along a roadway network in the City of College Station, Texas, USA, this study develops a deep learning-empowered analytical framework that converts raw ground vibration waveforms into spatiotemporal representations, detects vehicle trajectory, and infers traffic states from aggregated traffic volume and speed. A hybrid training strategy combining synthetic and manually annotated DAS images is used to improve vehicle detection under noisy and congested conditions, with model outputs further aggregated to characterize system-level traffic dynamics.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T21:10:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28793v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28793v1"
+    },
+    {
+      "id": "2609.28775v1",
+      "title": "Physics-Guided Multi-Objective Deep Learning for Ultrasound RF Data Interpolation in Resource-Constrained Imaging",
+      "authors": [
+        "Luoyuan Zhang",
+        "Yiyang You",
+        "Ananya Tandri",
+        "Yinan Feng",
+        "Hyunwoo Song",
+        "Jeeun Kang",
+        "Youzuo Lin"
+      ],
+      "abstract": "Ultrasound imaging increasingly targets portable, point-of-care, and wearable settings where constraints on power, bandwidth, and hardware complexity often necessitate sparse data acquisition in spatiotemporal scanning. However, image reconstruction using the sparse data can introduce insufficient phase information in coherent beamforming process, resulting in grating-lobe artifacts that degrade imaging contrast resolution. We present a physics-guided, data-driven framework for sparse-to-dense radio-frequency (RF) reconstruction that aligns training with downstream image formation. Our approach trains an end-to-end interpolation network using a hybrid supervision scheme that combines an RF-domain and a beamforming-domain loss with exponential moving average (EMA) to stabilize the multi-objective training. To improve generalization under variable acquisition layouts, we also introduce a random-skip masking strategy that varies sparsity patterns during training so a single model can handle diverse decimation factors and irregular channel configurations. We evaluate the framework on a held-out test set using the mean structural similarity index measure (SSIM) between reconstructed and ground-truth beamformed images. Across decimation factors $\\times 2$ to $\\times 13$, the best-performing configuration maintains mean SSIM around 0.95. Overall, the results show consistent gains in RF reconstruction and post-beamforming image quality across diverse acquisition conditions. This approach enables robust, high-quality ultrasound imaging at resource-constrained settings by allowing more sparse scanning in spatiotemporal domain.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T20:37:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28775v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28775v1"
+    },
+    {
+      "id": "2609.28262v1",
+      "title": "RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models",
+      "authors": [
+        "David Población-Criado",
+        "Dario Garcia-Gasulla",
+        "Eduardo Quinones"
+      ],
+      "abstract": "Deploying deep learning models on edge CPUs is bottlenecked by computational and memory constraints. Mixed-precision quantization promises to reduce inference latency while preserving accuracy. However, quantization affects different layer types in inconsistent ways, so identifying where accuracy loss is minimized and latency reduction is maximized is critical, as the effect accumulates over a full deployment into substantial savings or unacceptable task degradation. Such identification relies on sensitivity metrics, proxies that estimate layer-wise degradation without evaluating the task accuracy of every candidate policy. Nevertheless, widely used metrics fail systematically on modern architectures. We present a systematic empirical study of 13 sensitivity metrics for layer-wise INT8 quantization across four distinctly different neural networks, and validate the resulting policies on two ARM64 platforms. Gradient-based sensitivity methods fail on 4 out of 8 model-hardware configurations and weight-based statistics on 2. In contrast, the Jensen-Shannon Divergence achieves zero catastrophic failures, reliably isolating the layers that cannot be safely quantized. A sensitivity metric alone does not define a policy, and the fixed thresholds typically used for that step are fragile over the highly skewed distributions of modern architectures. We address this with K-Means clustering, achieving near-lossless accuracy and a mean speed-up of $1.81\\times$ over the full-precision model. Finally, we reveal that excluding from quantization the layers whose speed-up is negligible, regardless of their sensitivity, can be counterproductive, as it induces computational graph fragmentation and disables operator fusion. Our results yield concrete allocation policies for practitioners and researchers deploying quantized vision models on heterogeneous edge CPUs, without GPU access or gradient computation.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T15:23:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28262v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28262v1"
+    },
+    {
+      "id": "2609.28248v1",
+      "title": "hyperbolix: Hyperbolic Deep Learning in JAX",
+      "authors": [
+        "Timo Klein",
+        "Thomas Lang",
+        "Yllka Velaj",
+        "Sebastian Tschiatschek"
+      ],
+      "abstract": "We present hyperbolix, an open-source library for hyperbolic deep learning in JAX, built on Flax NNX. To our knowledge, it is the first comprehensive, general-purpose hyperbolic deep learning library in JAX. It includes six manifolds with a common interface: Euclidean space, the Poincaré ball, the hyperboloid, the $κ$-stereographic model, mixed-curvature product spaces, and the proper velocity space. We implement layer families that cover linear layers, convolutions, attention, normalization, positional encoding, regression, and vector quantization. These building blocks span methods ranging from Ganea's original hyperbolic neural networks to recent fully hyperbolic architectures such as Hypformer and Lorentzian ResNet. Additionally, hyperbolix contains Riemannian optimizers implemented as optax transformations, wrapped distributions, and hyperbolic dimensionality-reduction techniques. Its API uses idiomatic JAX: Manifolds are stateless, with curvature being passed at call time, while manifold operations act on single points, with jax.vmap enabling batch operations. The precision of every checked operation is tested against a closed-form NumPy/SciPy transcription from the source paper or a finite difference, for both float32 and float64. On the hyperboloid, standard formulas for two-point operations, such as the distance, lose precision far from the origin, because they subtract two large, nearly equal terms. hyperbolix replaces these subtractions with cancellation-free formulas that stay accurate in float32 at distances where prior implementations return NaN. hyperbolix is available under the MIT license at https://github.com/timoklein/hyperbolix .",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T15:09:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28248v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28248v1"
+    },
+    {
+      "id": "2609.28590v1",
+      "title": "TAM-Chain: Multi-Scale Thyroid Cytology Classification via Absorbing Markov Chains and Shannon Entropy Uncertainty Quantification for False-Negative Suppression and Domain-Shift Adaptation",
+      "authors": [
+        "Hai Pham Ngoc"
+      ],
+      "abstract": "Background & Problem: Thyroid Fine-Needle Aspiration Biopsy (FNAB) cytology based on the Bethesda System plays a pivotal role in early thyroid cancer detection; however, deep learning approaches face substantial challenges regarding high false-negative rates and overconfidence under clinical domain shift. Methods: In this study, we propose TAM-Chain, a multi-scale (10x, 20x, 40x) thyroid cytology classification framework leveraging Absorbing Markov Chain theory combined with Shannon Entropy-based Uncertainty Quantification. The framework dynamically models multi-magnification feature extraction as an absorbing stochastic process, enabling optimal stopping criteria and a human-in-the-loop referral mechanism to strictly suppress critical diagnostic errors. Results: Extensive evaluation on an internal test set (N = 235) demonstrates a Macro F1 score of 0.9741 with an absolute False-Negative Rate (FNR) of 0.00%. On an independent external validation set (N = 1015) presenting severe domain shift, TAM-Chain maintains superior stability and classification performance (Macro F1 = 0.7026) by adaptively adjusting the expected stopping step and triggering specialist referrals, significantly outperforming single-magnification baselines. Conclusion: The TAM-Chain framework proves to be a highly effective, safe, and adaptable solution for digital pathology workflows, successfully harmonizing automated diagnostic efficiency with stringent biological safety.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T14:58:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28590v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28590v1"
+    },
+    {
+      "id": "2609.28149v1",
+      "title": "EvEMTBench: An Open Benchmark for Machine Learning in Power System Protection",
+      "authors": [
+        "Julian Oelhaf",
+        "Georg Kordowich",
+        "Christian Bergler",
+        "Andreas Maier",
+        "Johann Jäger",
+        "Siming Bayer"
+      ],
+      "abstract": "Studies of machine-learning-based power system protection are difficult to compare because task definitions, measurement access, data partitions, metrics, and generalization conditions often differ. EvEMTBench addresses this gap with an open, executable, and versioned benchmark that fixes these evaluation choices while leaving model design open. Across four grids spanning 20-345 kV, it defines 12 protection and event-analysis functions instantiated as 24 scored tasks and supports structured evaluation across observability conditions, predefined distribution shifts, and zero-shot and fine-tuned cross-grid transfer. Committed partitions, leakage controls, and reproducible reporting provide a common basis for comparing future methods. A reference evaluation spanning trivial, conventional, feature-based, and deep-learning baselines shows that wider observability is not uniformly beneficial, shifted conditions can reveal failures not apparent in-distribution, and cross-grid transfer is substantially stronger for fault detection than for fault localization. Protection-relevant diagnostics identify failure modes not apparent from primary metrics alone. EvEMTBench therefore makes generalization in machine-learning-based protection an explicit and reproducible evaluation problem.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T14:05:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28149v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28149v1"
+    },
     {
       "id": "2609.27982v1",
       "title": "Riemannian Structure and Optimization for a Class of Low-Parametric Orthogonal Matrices",
@@ -14,6 +201,23 @@
       "published_raw": "2026-09-23T12:07:18Z",
       "pdf_link": "http://arxiv.org/pdf/2609.27982v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.27982v1"
+    },
+    {
+      "id": "2609.28567v1",
+      "title": "Leakage-Safe Machine Learning for Hydrogen Embrittlement Detection in 316L Stainless Steel: A Region-Held-Out Evaluation of Texture and Deep Features in SEM Micrographs",
+      "authors": [
+        "Muhammad Awais",
+        "Muhammad Yaseen",
+        "Abdul Shakoor",
+        "Niaz Ahmed Niaz",
+        "Huria Zia",
+        "Muhammad Zain Shakoor"
+      ],
+      "abstract": "Scanning electron microscopy (SEM) is routinely used to characterize the microstructural changes caused by hydrogen embrittlement (HE) in structural steels. Machine learning can automate this characterization, but models are often evaluated using image-level splits. When several images come from the same specimen region, such splits leak information between the training and test sets. Here, we propose a region-held-out protocol for classifying as-received (AR) and hydrogen-charged (H2) SEM micrographs of 316L stainless steel, based on Leave-One-Region-Out (LORO) cross-validation over 14 spatial regions (8 AR, 6 H2; 31 images). We compared six feature-classifier combinations built on local binary patterns (LBP), grey-level co-occurrence matrices (GLCM), self-supervised convolutional embeddings pretrained on 143 unlabeled SEM images, and a convolutional neural network (CNN). The simplest texture approach, LBP with a support vector machine (LBP+SVM), performed best, achieving a balanced accuracy of 0.79, H2 recall of 0.69, and H2 precision of 0.82, outperforming every deep-learning and combined-feature model. A group-level permutation test (500 permutations sampled from the 3,003 possible region-to-label assignments) yielded p = 0.008, indicating that the result cannot be explained by a chance alignment of the region structure. Grad-CAM maps from a CNN trained on the full dataset tended to concentrate on localized surface and grain-boundary features, where hydrogen-induced morphological changes are known to occur. Under a leakage-safe, statistically validated protocol, texture descriptors recover a hydrogen-charging signature from SEM micrographs even with few samples, and the same protocol can be extended to larger HE detection studies in other alloy systems.",
+      "published": "September 23, 2026",
+      "published_raw": "2026-09-23T11:18:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.28567v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.28567v1"
     },
     {
       "id": "2609.27201v1",
@@ -79,7 +283,7 @@
       "arxiv_link": "http://arxiv.org/abs/2609.26631v1"
     },
     {
-      "id": "2609.26855v1",
+      "id": "2609.26855v2",
       "title": "QUARTET: Quad-branch cross-Attention and Random-walk Traces for Enhancing Transformers on Relational Graphs",
       "authors": [
         "Kyaw Hpone Myint",
@@ -93,8 +297,8 @@
       "abstract": "Relational Deep Learning (RDL) models multi-table databases as heterogeneous temporal graphs, and graph transformers currently achieve state-of-the-art performance on benchmarks like RelBench. However, the current leading model, RelGT, suffers from two key limitations: its random local sampler yields loosely connected subgraphs that hinder message passing, and its global attention module relies on a single, seed-feature-based memory that ignores broader macro-level dynamics. To overcome these limitations, we introduce QUARTET, an expressive graph transformer architecture that applies full self-attention on local subgraphs while enriching global context through cross-attention branches. Specifically, QUARTET employs a Causal Random Walk (CRW) sampler based on recency-truncated Personalized PageRank (PPR) to extract compact, hub-robust, and densely connected local subgraphs without temporal leakage. Concurrently, a quad-branch cross-attention module integrates global context from four complementary perspectives: seed feature, seed topology, temporal dynamics, and collaborative dynamics. Across the RelBench v1 classification tasks, QUARTET consistently matches or outperforms the current state-of-the-art graph transformer baselines (HGT and RelGT). Ablation studies confirm that the CRW sampler significantly enriches local neighborhood quality, while the global branches provide essential, task-specific predictive gains.",
       "published": "September 22, 2026",
       "published_raw": "2026-09-22T14:36:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26855v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26855v1"
+      "pdf_link": "http://arxiv.org/pdf/2609.26855v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.26855v2"
     },
     {
       "id": "2609.26426v1",
@@ -109,196 +313,6 @@
       "published_raw": "2026-09-22T13:51:17Z",
       "pdf_link": "http://arxiv.org/pdf/2609.26426v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.26426v1"
-    },
-    {
-      "id": "2609.26392v1",
-      "title": "Double Descent and Malign Overfitting in Diffusion Models",
-      "authors": [
-        "Raphaël Urfin",
-        "Tony Bonnaire",
-        "Giulio Biroli",
-        "Marc Mézard"
-      ],
-      "abstract": "Conventional wisdom in deep learning holds that overparameterization---having more parameters $p$ than training samples $n$---is benign: larger models generalize better and, even without regularization, interpolating models generalize well, the test error following a double-descent curve. One might expect the same benign overfitting for diffusion models, whose training reduces to regression, i.e. to minimizing a quadratic score-matching loss. Yet the opposite is observed: overfitting here is catastrophic, driving the model into a memorization regime. We resolve this paradox by combining experiments on U-Nets trained on CelebA with a random-features model for which we derive closed-form learning curves. We show that with a fixed number $m$ of noise realizations per training sample, an interpolation peak does occur, but at $p\\sim nm$ rather than at $p\\sim n$ as in standard regression. The rise of the test loss, however, sets in much earlier, at $p\\sim n$, independently of $m$. This overfitting is malign because, although the implicit regularization of training is fully at work, it drives the model toward the empirical score, which memorizes the training set, rather than toward the true score. A bias-variance decomposition pinpoints the mechanism: the bias of the score estimator starts to grow at $p\\sim n$; past the peak the variance decays, as in regression, whereas the bias keeps growing and both saturate at a large value. Since diffusion models are trained with $m\\gg1$, the peak is pushed to very large model sizes, and therefore sit on the rising branch that precedes it, where malign overfitting is already in play. Nevertheless, overparameterization remains beneficial when paired with regularization: in the random-features theory and in U-Net experiments, optimally regularized large models---via a ridge penalty or early stopping, respectively---outperform any unregularized models.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T13:30:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26392v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26392v1"
-    },
-    {
-      "id": "2609.25978v1",
-      "title": "Faithful Faithfulness Evaluations: Challenges & Pitfalls Learned from a Breast MRI Case Study",
-      "authors": [
-        "Peachapong Poolpol",
-        "Henrik H. J. Detjen",
-        "Eike Petersen"
-      ],
-      "abstract": "Saliency maps are widely used to explain deep learning predictions in medical imaging, yet visually plausible explanations do not necessarily reflect a model's true decision process and may therefore mislead clinicians. We investigate this problem using a Vision Transformer-based breast MRI classifier trained on the ODELIA Breast MRI Challenge dataset and evaluate multiple saliency methods, including Last-layer Attention, Attention Rollout, Grad-SAM, Gradient Attention Rollout, GMAR, Grad-CAM, and HiResCAM. Our study highlights two often-overlooked challenges in perturbation-based faithfulness evaluation. First, method rankings depend strongly on the perturbation strategy, varying across intensity-based perturbations and transformer-based attention masking. Second, benchmarking saliency methods requires distinguishing between class-specific and class-agnostic explanations. To enable fair comparisons, we introduce non-class-specific variants of gradient-based methods and evaluate both settings separately. Across protocols, Grad-CAM and Gradient Attention Rollout consistently emerged as the strongest class-specific methods, although their relative ranking depended on the evaluation design. These findings expose important limitations of current saliency-based explainability approaches and highlight the need for more robust and standardized evaluation frameworks for trustworthy clinical AI systems.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T10:34:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.25978v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.25978v1"
-    },
-    {
-      "id": "2609.24358v1",
-      "title": "Explainable Neuro-Fuzzy Prediction for Trustworthy Decision-Making in Maritime",
-      "authors": [
-        "Dionisis Kalogeropoulos",
-        "Georgia Sovatzidi",
-        "Dimitris K. Iakovidis"
-      ],
-      "abstract": "Predicting when maritime systems require maintenance can be critical, avoiding hazards and costly consequences. To address this problem, this paper proposes an explainable decision-making framework that integrates a neuro-fuzzy prediction model with a two-stage explainable component. The first stage of this component produces feature-attribution explanations, using gradient-based saliency maps, and the second stage extracts local rules using a fuzzy decision tree. The proposed framework is generic and can be integrated into any deep learning-based approach, rendering it explainable. To the best of our knowledge, this is the first fuzzy logic-based framework enabling both feature-level and local rule-based explanations of black box models. This approach aims to foster trustworthiness in decision making through user-understandable machine inferences. The performance of the proposed framework using a deep residual-based neural backbone is evaluated on various general-purpose public benchmark datasets, and its utility in maritime is demonstrated in the context of early fault detection in a naval propulsion system dataset. The results indicate that it can provide predictions outperforming relevant state-of-the-art approaches, with an average AUC-ROC (Area Under the Receiver Operating Characteristic Curve) value, reaching up to 99%, while offering the advantage of explainability.",
-      "published": "September 21, 2026",
-      "published_raw": "2026-09-21T09:47:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.24358v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.24358v1"
-    },
-    {
-      "id": "2609.24328v1",
-      "title": "A Distributional Optimisation Perspective on Combining Models in Deep Learning",
-      "authors": [
-        "Congye Wang",
-        "Yan Lin",
-        "Zheyang Shen",
-        "Matthew A. Fisher",
-        "Chris. J. Oates"
-      ],
-      "abstract": "Combining predictions from different models can improve performance at machine learning tasks, but the training of the individual models and the rule used to combine them are typically chosen separately, and by ad hoc means. Recent advances in distributional optimisation (i.e. where the optimisation occurs over the set of probability distributions) offer an opportunity for principled joint training, viewing the collection of models as a discrete distribution whose support points are to be optimised, but the potential of these methods is not well-understood. In this paper we (1) cast two standard combination strategies - ensembles and low-rank adapter averaging - as entropy-regularised distributional optimisation, observing that the resulting objective is convex in the ensemble case but not in the adapter-averaging case, so that existing convergence guarantees for mean field Langevin dynamics transfer only to the former; (2) assess existing and novel algorithms for this task, including a functional variant of variational gradient descent; and (3) report an empirical study spanning synthetic classification tasks and fine-tuning of large language models on a commonsense reasoning benchmark.",
-      "published": "September 21, 2026",
-      "published_raw": "2026-09-21T09:28:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.24328v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.24328v1"
-    },
-    {
-      "id": "2609.24089v1",
-      "title": "FlashBoB: I/O-Efficient Exact Backward-over-Backward for Softmax Attention",
-      "authors": [
-        "Anthony Givans",
-        "Michael Crawshaw",
-        "Mingrui Liu"
-      ],
-      "abstract": "Transformer models built on the attention mechanism have become a central building block in modern deep learning, yet softmax attention remains a major bottleneck for long-context workloads. While FlashAttention makes the forward and first backward passes I/O-efficient, it does not support backward-over-backward (BoB), which enables exact differentiation through the backward pass for applications such as second-order optimization, test-time training, gradient-based memory, and meta-learning. Existing BoB implementations either materialize large intermediate tensors or exhaust GPU memory at long sequence lengths. We present FlashBoB, an exact, I/O-efficient algorithm for BoB in softmax attention that keeps computation within on-chip tiles and avoids all $N \\times N$ intermediate tensors, where $N$ is the sequence length. The key insight is a hierarchical affine structure in the softmax double backward: two row-wise scalars determine all outputs through affine transformations. This yields a two-pass schedule with bounded on-chip static random-access memory (SRAM) usage and minimal off-chip high-bandwidth memory (HBM) traffic. FlashBoB achieves $Θ(N^2 d^2/M)$ HBM traffic ($d$ is the head dimension and $M$ is the memory size) and, within the standard FlashAttention-style score-recomputation model, matches the inherited large-cache lower bound for exact forward attention. Empirically, it scales exact attention BoB to $N=262\\text{K}$ on a single A100 80GB GPU, where prior PyTorch exact baselines fail by $N=16\\text{K}$, and is up to $6.3\\times$ faster than FlashBack. These results make exact second-order attention practical at long-context sequence lengths where prior implementations cannot run efficiently.",
-      "published": "September 21, 2026",
-      "published_raw": "2026-09-21T04:20:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.24089v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.24089v1"
-    },
-    {
-      "id": "2609.23460v1",
-      "title": "TRACE: Tractable Routing Autoencoder for Clinical ECG",
-      "authors": [
-        "Shunbo Jia",
-        "Runze Ma",
-        "Haonan Lyu",
-        "Haijin Zhang",
-        "Qiang Yang",
-        "Caizhi Liao"
-      ],
-      "abstract": "Deep learning has advanced automated electrocardiogram (ECG) diagnosis, but the field's most accurate models, foundation models pretrained on millions of recordings, are not decision-pathway auditable: a clinician cannot trace a diagnosis to a physiological pathway or intervene on one. We propose TRACE, a Tractable Routing Autoencoder for Clinical ECG, whose 32-dimensional clinical latent space is specified in advance from domain knowledge rather than discovered by optimization. TRACE partitions this space into perfusion, structure, and conduction subspaces, routes each to its own diagnostic head by design, regularizes the partition with an orthogonality penalty, and reconstructs the ECG through a decoder that permits latent perturbation. On PTB-XL and Georgia, TRACE exceeds unconstrained classifiers and stays ahead of an ECG foundation model pretrained on ten million recordings, evaluated by linear probe on frozen features, at roughly an eighth of the parameter count. On the nine-label CPSC2018 cohort, which carries no structural class, the framework transfers with only the routing table re-specified to a perfusion/rhythm/conduction partition. Joint probe, erasure, and perturbation analyses verify the routing contract, and perturbing the depolarization and repolarization pathways modulates the reconstructed waveform. Removing the specified partition and its orthogonality penalty costs 1.70 AUC and 11.30 macro-F1 points on PTB-XL, and 2.76 AUC and 16.92 macro-F1 points on Georgia. A capacity-matched permutation control places arbitrary assignments within 0.34 AUC points of the ontology routing and leaves macro-F1 statistically level (p=0.619): the ontology supplies decision-pathway auditability at no macro-F1 cost.",
-      "published": "September 20, 2026",
-      "published_raw": "2026-09-20T08:41:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.23460v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.23460v1"
-    },
-    {
-      "id": "2609.23241v2",
-      "title": "UQMIA: An Open, Hands-On Tutorial on Uncertainty Quantification in Medical Imaging Analysis with Large Language Model-Based Assessment of Educational Content",
-      "authors": [
-        "Benyamin Gheiji",
-        "Danial Elyassirad",
-        "Mahsa Vatanparast",
-        "Meysam Tavakoli",
-        "Shahriar Faghani"
-      ],
-      "abstract": "Uncertainty quantification (UQ) is increasingly recognized as an important component of reliable machine learning in medical imaging, yet practical resources connecting UQ theory, implementation, and evaluation remain limited. We developed Uncertainty Quantification in Medical Imaging Analysis (UQMIA), an open-access, hands-on tutorial comprising 19 sessions covering major UQ approaches, including variational inference, Monte Carlo dropout, deep ensembles, evidential deep learning, and conformal prediction, together with methods for evaluating uncertainty reliability. The tutorial is designed for researchers and practitioners with experience in medical imaging, progressing from foundational concepts to implementation and evaluation, with notebooks executable through Kaggle. Beyond presenting the tutorial, we introduce a framework using large language models (LLMs) to evaluate whether technical educational resources contain retrievable and usable knowledge. Using 100 four-option multiple-choice questions derived from primary methodological literature, we evaluated 20 instruction-tuned LLMs from six model families with and without retrieved tutorial context. Retrieval of UQMIA improved accuracy in 18 of 20 models, increasing mean accuracy from 0.680 to 0.742 (+0.062; Holm-adjusted P=0.00032), and improved area under the receiver operating characteristic curve (AUROC) in 18 of 20 models, increasing from 0.725 to 0.788 (+0.063; Holm-adjusted P=0.00032). UQMIA provides an accessible resource for learning UQ in medical imaging and demonstrates an LLM-based approach for evaluating technical educational material. The tutorial is available at https://benyamin-gheiji.github.io/Uncertainty-Quantification-Medical-Imaging-Analysis/ and its source code and notebooks at https://github.com/benyamin-gheiji/Uncertainty-Quantification-Medical-Imaging-Analysis/.",
-      "published": "September 19, 2026",
-      "published_raw": "2026-09-19T22:48:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.23241v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.23241v2"
-    },
-    {
-      "id": "2609.23170v1",
-      "title": "Conformal Robustness in Prediction-Driven Decision-Making",
-      "authors": [
-        "Lingjie Zhao",
-        "Hansheng Jiang",
-        "Wei Qi"
-      ],
-      "abstract": "Modern prediction-driven decision systems often rely on black-box predictors, but a point forecast alone does not provide the uncertainty scale required for robust downstream decision-making. We build a score-calibrated robustness framework that converts any fixed point predictor into a decision-relevant uncertainty representation through distribution-free conformal calibration. We use the conformal score, rather than a particular uncertainty set, as the primitive unit of robustness. The same score determines coverage-calibrated uncertainty sets for reliability-based robust optimization and normalizes target violations in a target-oriented formulation, Conformal Robust Satisficing. This formulation induces a conformal fragility measure that quantifies how rapidly performance deteriorates as the realized parameter departs from the forecast on the conformal score scale. For objective-uncertainty problems under standard convexity and duality conditions, we show that the reliability-based and target-oriented formulations parameterize the same score-calibrated robust decision frontier. This equivalence yields a data-driven mapping between reliability levels and acceptable targets and characterizes the marginal cost of robustness. Synthetic experiments validate the theoretical guarantees and illustrate the reliability-target correspondence. A real-data online-grocery case study demonstrates how the interface combines deep-learning demand forecasts with tractable inventory optimization, thereby improving reliability and reducing operational costs. Overall, our work shows that conformal scores endow fixed black-box predictors with an interpretable uncertainty scale for downstream decision-making while enabling reliability guarantees, acceptable-target selection, and fragility analysis within a unified framework.",
-      "published": "September 19, 2026",
-      "published_raw": "2026-09-19T18:43:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.23170v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.23170v1"
-    },
-    {
-      "id": "2609.23016v1",
-      "title": "Watching Quantum Models Think: Hilbert-Space Interpretability in Quantum Transformer Blocks",
-      "authors": [
-        "Diego Iacopetta",
-        "Andrea Gasparini"
-      ],
-      "abstract": "Deep learning models are powerful but opaque. As quantum machine learning matures, the field faces a defining choice: build quantum models that are equally opaque, or exploit the mathematical structure of quantum mechanics to make them inherently interpretable. We show that the latter is possible. By tracking quantum mutual information~(MI), entanglement entropy, and state fidelity through the layers of a Quantum Transformer Block (\\qtb{}), a fully-coherent variational circuit with quantum analogues of both attention and feedforward, we gain direct insight into how the model processes information: which tokens it attends to, when correlations form, and why predictions fail. On four tasks with known dependency structure we show that (i)~learned MI matrices align with ground-truth task structure (AUC$\\,{=}\\,0.69$ on lookup), (ii)~disabling entangling gates collapses accuracy from 100\\% to 15\\% while MI$\\to 0$, proving entanglement is the mechanism, (iii)~accuracy and MI co-evolve during training ($ρ\\,{=}\\,0.92$ on lookup), and (iv)~per-sample MI predicts prediction correctness on the conditional task with ROC AUC$\\,{=}\\,0.84$. All results are validated on IBM Quantum hardware (ibm\\_kingston, Heron~r2): the circuit's reasoning process, from product state through structured entanglement, is directly observable on a superconducting processor. These proof-of-concept results, obtained on small synthetic tasks, suggest that the physics of quantum computation can provide intrinsic interpretability signals with no direct classical counterpart, motivating study of whether this advantage persists at scale.",
-      "published": "September 19, 2026",
-      "published_raw": "2026-09-19T13:34:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.23016v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.23016v1"
-    },
-    {
-      "id": "2609.22663v2",
-      "title": "SPIBER: Reconstructing Free Energy Landscapes from Short, Unconverged Trajectories with Generative Flow Networks",
-      "authors": [
-        "Venkata Sai Sreyas Adury",
-        "Pratyush Tiwary"
-      ],
-      "abstract": "Molecular systems have many degrees of freedom, but their metastable behavior can often be described by a few collective variables. Identifying these variables and estimating free energies along them from limited simulation data remains a challenging, important problem. Separate short trajectories may sample different metastable states without capturing transitions or establishing their relative equilibrium populations. For unbiased trajectories generated with the same Hamiltonian at a single temperature, alternate methods based on histogram reweighting cannot correct this imbalance. Here we present SPIBER, which combines the State Predictive Information Bottleneck (SPIB) with Generative Flow Networks (GFlowNets). SPIB uses deep learning to approximate slow degrees of freedom through a past-future information bottleneck, retaining information needed to predict future metastable states. We show that this compression limits conditional entropy variations in populated regions, allowing conditional mean potential energies, which are much easier to calculate, to be used to approximate free energy differences. Given sufficient local sampling to estimate these energies, they define the target distribution for GFlowNets, energy-based generative samplers that sample according to estimated thermodynamic stability rather than observed populations. For a particle in a radial double-well potential, for alanine dipeptide, and for the nine-residue peptide AIB9, SPIBER recovers free energy differences between sampled metastable states to within one thermal energy unit of reference values. The method combines collective-variable learning and free energy estimation in up to four latent dimensions, without requiring converged state populations or additional molecular dynamics simulations.",
-      "published": "September 19, 2026",
-      "published_raw": "2026-09-19T00:37:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.22663v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.22663v2"
-    },
-    {
-      "id": "2609.22622v1",
-      "title": "Electrodermal Activity (EDA) for Stress Detection: A Comprehensive Survey and Benchmark",
-      "authors": [
-        "Gang Liu",
-        "Zixiong Ning"
-      ],
-      "abstract": "Electrodermal activity (EDA) is widely used for pervasive stress monitoring because of its sensitivity to sympathetic arousal and its computational efficiency. However, research remains fragmented: studies concentrate on a small subset of available datasets, preprocessing and evaluation protocols are inconsistent, and widely adopted methodological conventions remain unvalidated. Existing reviews summarize these practices without evaluating them under a common protocol. To bridge these gaps, this paper presents a comprehensive survey and benchmark for EDA-based stress detection. We review the technical pipeline from preprocessing to modeling and compile 26 public datasets and 22 representative unimodal studies to inform future dataset selection and methodological design. Under a subject-independent protocol spanning five diverse datasets, we benchmark decomposition, filtering, and channel-input choices alongside a broad range of machine learning (ML) and deep learning (DL) models in both in-domain and cross-domain transfer settings. Our results provide the first multi-dataset validation of cvxEDA, the default decomposition method, show that feature-based ML outperforms end-to-end (E2E) DL, and identify ecological validity as a key factor in cross-domain transfer. We conclude with directions toward robust, data-efficient, and trustworthy deployment.",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T22:19:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.22622v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.22622v1"
-    },
-    {
-      "id": "2609.22583v1",
-      "title": "Benchmarking Hybrid Deep Learning Architectures for Predictive Maintenance in Industry 4.0",
-      "authors": [
-        " Zhengyang",
-        " Gu",
-        "Joseph E. Hernandez",
-        "Thomas Cook",
-        "John Burtenshaw",
-        "Sean Scott",
-        "Chris Couch"
-      ],
-      "abstract": "Predictive maintenance in Industry 4.0 refers to using data from sensors, machines, and production systems to estimate when equipment is likely to fail, so maintenance can be planned before a breakdown occurs [1]. However, a model that predicts maintenance may work perfectly in the lab but fail unexpectedly when applied to real factory data [2]. To solve this \"reliability\" gap, we evaluated six deep learning architectures across more than 700 experimental runs. We focused on the two dominant approaches in the field: Recurrent Neural Networks (RNNs), which process data step-by-step, like reading a sentence [3], and Transformers, a recent dominant approach, which look at the entire sequence at once to spot important connections [4]. We examined whether Transformers still outperform recurrent neural networks (RNNs) when the data includes noise [5]. We found that while Transformers excelled at tracking stable, slow-moving processes, they tend to overreact to chaotic data, mistakenly taking sensor noise for meaningful signals [6]. We also found that the hybrid method that combines a Long Short-Term Memory (LSTM) layer with a Transformer layer is more resilient to noisy data from factory shops [7]. Functioning as a noise filter, the LSTM smooths out data volatility, allowing the Transformer to focus on the bigger picture without being distracted [8]. The hybrid model did not just improve accuracy; it proved to be significantly more consistent than complex models, delivering reliable predictions regardless of how chaotic the underlying system became.",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T21:07:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.22583v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.22583v1"
-    },
-    {
-      "id": "2609.22554v1",
-      "title": "The Ups and Downs of Backprop Weights",
-      "authors": [
-        "Giuseppe Chindemi",
-        "Benjamin F. Grewe"
-      ],
-      "abstract": "Backpropagation (BP) has driven the remarkable success of modern deep learning by enabling large hierarchical networks to learn complex functions end-to-end. Yet it does not by itself determine how parameters should be organized so that functional components can be reused and adapted selectively. For example, object recognition and motion prediction may depend on overlapping parameter sets, making them difficult to isolate or modify independently. We call this condition weight entanglement. Modern architectures dynamically select which parts of a network process each sample: nonlinearities gate units, attention selects interactions, and Mixture-of-Experts architectures route inputs to modules. Yet such selection does not ensure that the same functional component remains linked to an identifiable parameter set across samples. We propose weight operators: parameterized modules that implement reusable functional components and can be composed at inference to form the function required by each sample. Learning proceeds in two stages: the model first infers the required operator composition, then updates only the selected operators' parameter sets. Vector Networks (VNs) provide one implementation. They couple operator selection to local error-driven updates within each layer and show that learned operators can be reused in combinations absent from training while updates remain restricted to the selected parameter sets. This provides a basis for testing functional parameter identifiability: whether an operator remains linked to the same functional component during learning. We argue that functional parameter identifiability may provide an organizing principle for models that systematically reuse and recombine learned functions while adapting only the components that need to change.",
-      "published": "September 18, 2026",
-      "published_raw": "2026-09-18T20:10:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.22554v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.22554v1"
     }
   ]
 }
