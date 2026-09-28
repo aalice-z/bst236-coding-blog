@@ -1,7 +1,184 @@
 {
-  "last_updated": "2026-09-27T02:07:33.140633",
+  "last_updated": "2026-09-28T02:12:22.098717",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.31570v1",
+      "title": "Uncertainty and Explainability in Deep Rough Volatility: A Neural Information-Theoretic Posterior Approach",
+      "authors": [
+        "Damiano Brigo",
+        "Raphaël Huser",
+        "Dan Leonte"
+      ],
+      "abstract": "Deep learning has substantially accelerated the calibration of complex stochastic-volatility models, but neural point calibration alone does not capture the uncertainty remaining after an implied-volatility (IV) surface has been observed. We develop a simulation-based inference framework for rough Heston (rHeston) calibration that learns the posterior distribution of the model parameters conditional on an IV surface. Using neural ratio estimation, we obtain calibrated posterior samples that can be propagated through heteroscedastic neural surrogate pricers for path-dependent exotic options. The resulting posterior-predictive distributions combine residual parameter uncertainty with conditional surrogate uncertainty and yield uncertainty-aware price intervals. We further introduce Hellinger-SHAP, an information-theoretic explainability method for posterior inference. Rather than attributing a single parameter point estimate, it applies local-background Kernel SHAP to a posterior-information functional measuring contraction from the prior to the posterior. This identifies maturity--moneyness regions associated with posterior information gain for individual rHeston parameters. In a simulation study, posterior-predictive intervals provide calibrated or conservative coverage across forward-start, barrier, and realized-variance claims, while point plug-in prices can be materially unreliable for selected contract regimes. Together, the UQ and XAI analyses provide a transparent framework for uncertainty-aware neural calibration and downstream exotic pricing under the specified prior-predictive model.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T17:34:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.31570v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.31570v1"
+    },
+    {
+      "id": "2609.31463v1",
+      "title": "Uncertainty-Aware Federated Learning for Infant Movement Analysis",
+      "authors": [
+        "Edmond S. L. Ho"
+      ],
+      "abstract": "Infant movement analysis provides valuable biomarkers for the early identification of neurodevelopmental disorders. Recent advances in deep learning have enabled automated analysis of infant movements from video-derived skeletal representations, achieving performance comparable to expert assessment for tasks such as General Movement Assessment (GMA). However, most existing approaches rely on centralized training, requiring data from multiple institutions to be collected and stored at a single site. Such assumptions are often impractical in clinical settings due to privacy, governance, and data-sharing constraints. To address these challenges, we present, to the best of our knowledge, the first federated learning framework for automated infant movement analysis and General Movement Assessment using skeletal motion data. As a clinically relevant use case, the proposed framework is evaluated on fidgety movement classification. To quantify model confidence, Monte Carlo (MC) Dropout is employed to estimate predictive uncertainty during inference. Building upon this, we propose an Uncertainty-Aware Federated Averaging (UA-FedAvg) strategy that incorporates predictive entropy derived from MC-Dropout into the federated aggregation process, enabling client contributions to be adjusted according to their predictive uncertainty. Experiments were conducted using a cross-subject evaluation protocol under a three-client federated learning setting. Results demonstrate that federated learning substantially improves classification performance compared with independently trained local models while achieving performance approaching that of centralized training. Furthermore, UA-FedAvg and its variant incorporating validation loss generally outperform conventional FedAvg across the evaluated data-split configurations.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T16:13:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.31463v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.31463v1"
+    },
+    {
+      "id": "2609.31402v1",
+      "title": "AFA-Net: A Differential Attention Approach for Auditory Attention Detection",
+      "authors": [
+        "Philip H. Lee",
+        "Shreeram Suresh Chandra",
+        "Karan Thakkar",
+        "John H. L. Hansen"
+      ],
+      "abstract": "Auditory Attention Detection (AAD) utilizes electroencephalographic (EEG) signals to identify a target speaker in a multi-speaker environment. Despite considerable progress, existing deep learning architectures often lack explicit mechanisms for handling noisy EEG data. To address this limitation, we propose Auditory Focus Attention Networks (AFA-Net), a machine learning framework that replaces vanilla attention with a simple yet flexible differential attention mechanism to help focus on task-relevant neural activity. AFA-Net achieves an upward accuracy of 96.8% at the 2s decision window, while using substantially fewer parameters than most existing methods. To the best of our knowledge, AFA-Net is among the first frameworks to explicitly try to combat EEG noise to improve AAD.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T15:25:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.31402v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.31402v1"
+    },
+    {
+      "id": "2609.31082v1",
+      "title": "SAGE: A sampling-aware global evaluation benchmark for species distribution modeling",
+      "authors": [
+        "Emilia Arens",
+        "Nina van Tiel",
+        "Robin Zbinden",
+        "Damien Robert",
+        "Lukas Drees",
+        "Chiara Vanalli",
+        "Benjamin Kellenberger",
+        "Niklaus E. Zimmermann",
+        "Loïc Pellissier",
+        "Devis Tuia",
+        "Jan Dirk Wegner"
+      ],
+      "abstract": "Knowing where species occur is fundamental for biodiversity research and conservation. Species distribution models (SDMs) link species observations to environmental conditions to estimate their spatial distribution. However, accuracy varies with the underlying data and models, making it essential to know for which species models can be trusted. Deep-learning-based SDMs (\"DeepSDMs\") now jointly model thousands of species, drawing on hundreds of millions of community-science records. At this scale, averaging performance hides substantial species-level variability, particularly for rare species, often of greatest conservation concern. Records are also strongly biased, making occurrence counts misleading. Accounting for these factors is essential for a reliable and informative evaluation of multi-species SDMs. Here, we introduce a Sampling-Aware Global Evaluation (SAGE) benchmark, combining GBIF records for training with sPlotOpen vegetation plots for presence-absence evaluation across 5771 plant species. We propose an evaluation framework that groups species based on two properties, sampling effort and relative prevalence, which describe how densely a species' range is sampled and how frequently the species is recorded. Evaluating single-species SDMs and multi-species DeepSDMs, we find that Random Forests and DeepSDMs perform best overall, but neither dominates: DeepSDMs outperform single-species SDMs for infrequently recorded species while offering no consistent advantage for well-sampled ones. Crucially, this advantage emerges only when established bias-correction practices, such as spatial thinning and reweighting, are carried over to the deep-learning setting. SAGE helps identify the species and data conditions for which a given approach is beneficial, thereby supporting the development of more transparent and ecologically credible SDMs. Data and code: https://earens.github.io/sage/",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T10:23:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.31082v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.31082v1"
+    },
+    {
+      "id": "2609.30966v1",
+      "title": "Gradient Surgery for Physics-Informed Neural Networks",
+      "authors": [
+        "Thomas Borsani",
+        "Giuseppe Di Fatta"
+      ],
+      "abstract": "Physics-Informed Neural Networks (PINNs) are trained by optimising a composite objective that combines data fitting with physics-based constraints, typically resulting in a highly imbalanced multi-task optimisation problem. Under these conditions, existing optimisation strategies are affected by conflicting task gradients, leading to slow convergence and unstable training, particularly for stiff and high-frequency partial differential equations. We analyse gradient conflicts throughout training of PINNs with standard optimiser and investigate Multi-Task Deep Learning (MTDL) optimisation methods. In our analysis across four benchmark problems we observed that PINN optimisation exhibits three distinct phases in which angle- and magnitude-based gradient conflicts alternate, with only one present at a time. Building on these observations, we propose PAM-GS, a physics-aware gradient surgery method that adaptively mitigates task interference during training according to the observed conflict types. Experiments on four representative PDE benchmarks demonstrate that PAM-GS combines competitive solution accuracy with consistently strong task-balanced performance, outperforming existing methods on most problems.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T08:16:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30966v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30966v1"
+    },
+    {
+      "id": "2609.30809v1",
+      "title": "Deep-Learning Solvers and Surrogates for Infinity and p-Laplace Problems",
+      "authors": [
+        "Tak Shing Au Yeung",
+        "Ka Chun Cheung",
+        "Hannah Potgieter",
+        "Steven J. Ruuth",
+        "Simon See"
+      ],
+      "abstract": "We investigate the use of neural network solvers for infinity and $p$-Laplace problems, which are fundamental in nonlinear analysis and have practical applications. Our approach employs Physics-Informed Neural Networks (PINNs) and Deep Operator Networks (DeepONets) to address computational challenges associated with large $p$ values, ranging from $2$ to $1000$, on various 2D and 3D domains. Our method offers advantages over traditional physics-based solvers, especially in three dimensions where mesh-based solvers become very costly for these problems. We also establish conditional convergence results for PINN approximations of both problems and a universal approximation result for DeepONet on the parametric $p$-Poisson problem. We demonstrate the effectiveness of these neural network solvers through numerical experiments and compare their performance with conventional methods.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T04:39:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30809v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30809v1"
+    },
+    {
+      "id": "2609.30752v1",
+      "title": "Differentiable RNA Secondary Structure Extraction for Deep Learning",
+      "authors": [
+        "Tyler Illman",
+        "Max Ward",
+        "Marcell Szikszai",
+        "Ryan K. Krueger"
+      ],
+      "abstract": "Many deep learning approaches to RNA secondary structure prediction have recently been proposed. They typically output a weight matrix $W$ where $W_{ij}$ is an arbitrary weight for base $i$ pairing with base $j$. Converting this matrix to a predicted secondary structure or base-pairing probability matrix typically involves ad hoc and problematic downstream algorithms. Despite the importance of this conversion step, which we refer to as structure extraction, it has received relatively little attention in the literature. In this work, we analyze how the congruence between training and extraction methods affects prediction performance. To do this, we compare four extraction algorithms: a Nussinov-like dynamic programming method, maximum-weight graph matching and the greedy extraction algorithms used by SPOT-RNA and RiNALMo. These are evaluated on outputs from the pretrained RiNALMo model and three toy models trained in this paper: a differentiable Nussinov-like model, a binary cross-entropy (BCE) baseline, and a model that incorporates a novel symmetric doubly stochastic matrix (SDSM) normalization algorithm during training which allows it to output base-pairing probability matrices directly, without a separate extraction step. This SDSM normalization algorithm is differentiable and can be added inline to any deep learning model during training and evaluation. We find that the performance of each extraction method depends strongly on how the corresponding model was trained. Considering the toy models themselves, the SDSM model showed the strongest overall performance: it outperformed the BCE baseline under all four extraction algorithms and produced pre-extraction outputs closest to the ground truth. These results suggest that SDSM normalization is a tractable alternative to traditional structure extraction.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T03:28:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30752v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30752v1"
+    },
+    {
+      "id": "2609.30688v1",
+      "title": "On the Limits of Univariate Deep Learning for Significant Wave Height Forecasting",
+      "authors": [
+        "Yilin Zhai",
+        "Hongyuan Shi",
+        "Zaijin You"
+      ],
+      "abstract": "This study conducts a systematic hyperparameter search across five deep learning architectures, DLinear, LSTM, PatchTST, ResAttLstm, and Mamba2, and nine context lengths (1-168 h) for single-station significant wave height (Hs) forecasting on NDBC buoy 41009, followed by re-evaluation of the best configurations on a 47-buoy, 37-year corpus. The five families converge to a common performance level on the multi-buoy evaluation (between-family SD = 0.0014 m^2, 0.8% of the grand mean), a spread dwarfed by the 4.83x cross-dataset MSE shift between buoy corpora. All multi-buoy trials beat persistence (mean skill +0.062), but no architecture consistently outperforms the others. On the single-buoy experiment, skill peaks at 12-24 h where five trials fall below persistence, per-family Q4/Q3 test MSE ratios range from 2.4 to 2.6, and deep models underperform persistence for the most extreme 1% of waves. These findings are consistent with the interpretation that persistence already captures the dominant linear-inertial signal in univariate Hs, and that architecture engineering under this univariate input setting has reached diminishing returns: cross-buoy variance, not model class, dominates forecast error. Future work should prioritise atmospheric covariates, zero-shot cross-buoy transfer, and decomposition of Hs into swell and wind-sea components. By establishing a rigorous reference baseline for what univariate Hs models can and cannot achieve, this study provides a benchmark against which future multivariate and physics-informed approaches can be calibrated, and offers practical guidance for lightweight buoy-level forecasting in mid-latitude storm-dominated and swell-mixed environments.",
+      "published": "September 25, 2026",
+      "published_raw": "2026-09-25T01:51:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30688v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30688v1"
+    },
+    {
+      "id": "2609.30569v1",
+      "title": "Atelier: Learning Local Self-Supervised Features for CryoEM Volumes via Hypernetworks",
+      "authors": [
+        "Phillip Lo",
+        "Sudarshan Babu",
+        "Dari Kimanius",
+        "Aly A. Khan"
+      ],
+      "abstract": "CryoEM map interpretation requires features that are spatially localized, consistent across samples, and informative across spatial scales. Most deep learning methods for map annotation extract features from fixed voxel grids. However, implicit neural representations (INRs) are able to model volumetric data as scale-agnostic, coordinate-conditioned functions. INRs are therefore attractive for cryoEM, but fitting a separate INR for each map is too expensive for large-scale feature extraction and produces representations that are not aligned across samples. We introduce Atelier, a self-supervised framework that amortizes INR fitting for reconstructed cryoEM maps. Pretrained on 5,439 Electron Microscopy Data Bank maps, Atelier is a transformer-based hypernetwork that generates high-fidelity reconstructions across a wide range of protein structures, including large multi-subunit assemblies. Beyond reconstruction, the INR generated by the pretrained transformer exposes a continuous, local feature field through its intermediate activations at any spatial query point, a property that voxel grid and patch-tokenizer architectures do not naturally provide. Used as auxiliary channels to a 3D nested U-Net annotation head trained from scratch, these coordinate-conditioned features improve performance on eight voxel-level property prediction tasks over a volume-only baseline. Our results demonstrate that amortized implicit neural representations are an effective primitive for geometry-aware analysis of cryoEM data.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T21:30:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30569v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30569v1"
+    },
+    {
+      "id": "2609.30542v1",
+      "title": "GyroNovo: Error-Guided Fragment Imputation with Mass-Aware Attention for \\textit{De Novo} Peptide Sequencing",
+      "authors": [
+        "Abdellah El Mekki",
+        "Laks V. S. Lakshmanan",
+        "Muhammad Abdul-Mageed"
+      ],
+      "abstract": "De novo peptide sequencing from tandem mass spectra is essential for identifying peptides without relying on reference databases. Despite advances in deep learning, accurate sequencing remains challenging because experimental spectra are often sparse, noisy, and incomplete, leaving informative b- and y-ion fragments unobserved. Existing methods attempt to recover this missing evidence via latent-space imputation before autoregressive decoding. However, they typically treat imputation as a fixed reconstruction task, without considering which missing fragments are most relevant to decoder errors. Moreover, existing peak representations do not explicitly model mass differences between peaks, despite their fundamental importance. We introduce GyroNovo, a framework with two main contributions. First, we use decoder errors observed during training to adapt the imputation objective, prioritizing fragments associated with frequent decoding errors. We further use the decoder error distribution to construct easy and hard augmented views of each spectrum, enabling the decoder to learn under varying degrees of spectral corruption and missing-fragment severity. Second, we introduce a mass-aware inductive bias into self-attention by using rotary embeddings to encode pairwise mass differences between spectral peaks. Together, these components align missing-fragment recovery with decoder behavior while explicitly incorporating the mass relationships that underlie peptide fragmentation. At inference time, GyroNovo retains a standard encoder-imputer-decoder architecture and requires neither additional inputs nor auxiliary search procedures. Experiments on NovoBench show gains of about 9 percentage points in peptide-level precision and 7 percentage points in amino-acid-level precision over the state-of-the-art baseline. Code: https://github.com/UBC-NLP/gyronovo.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T20:50:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30542v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30542v1"
+    },
+    {
+      "id": "2609.30433v1",
+      "title": "Improving Molecular-Morphology Contrastive Pretraining using Deep-Learning-based Morphology Profiles",
+      "authors": [
+        "Jie Li",
+        "Kathryn E. Kirchoff",
+        "Dante A. Pertusi",
+        "Zhizhuo Zhang"
+      ],
+      "abstract": "Recent advancements in image-based profiling techniques have enabled the collection of high-volume cell morphology data, allowing new molecular embedding models to learn from the experimental phenotypic perturbations of a molecule in a cell. Previously, we developed Molecule-Morphology Contrastive Pretraining (MoCoP), a strategy for aligning small molecule embeddings to morphology fingerprints extracted through CellProfiler. The resulting molecular representation showed transferable performance for quantitative structure--activity relationship (QSAR) prediction tasks. Here, we extend the method by using a deep-learning-based cell image encoding pipeline to extract more feature-rich morphology profiles and align them to the molecular embeddings through contrastive learning. The new embeddings encode more accurate information on how molecules perturb cell morphology and enable improvements for QSAR predictions through either fixed-embedding linear probes or fully flexible fine-tuning. Morphology retrieval performance scales log-linearly with training data size, suggesting continued improvements as larger datasets become available. The improved MoCoP v2 also achieves superior performance on toxicity prediction and competitive results on ADME and activity benchmarks, when compared with existing molecular embedding models that use both cell morphology and transcriptomic data during training.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T18:29:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30433v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30433v1"
+    },
+    {
+      "id": "2609.30379v1",
+      "title": "DanLing NestedTensor: Composable Multi-Ragged Tensors for Deep Learning",
+      "authors": [
+        "Zhiyuan Chen"
+      ],
+      "abstract": "Variable-size inputs are common in deep learning, but dense batching allocates a shared envelope and spends computation on padding. The cost multiplies across varying axes: an explicit pair state allocates $BN_{\\max}^2$ positions instead of $\\sum_i N_i^2$. Packing removes that waste, but composing packed operations still requires the logical axes and sample boundaries a flat buffer no longer exposes. We present DanLing NestedTensor, a PyTorch tensor abstraction that makes multi-ragged structure a property of the tensor itself. Packed values carry tensor-backed partitions and logical dimension order, so broadcasting creates ragged axes, feature transformations retain them, and reductions consume them. The same representation carries through autograd and both eager and compiled execution. On an A100, the geometric-mean speedup over same-mode padding is 2.74$\\times$ eager and 3.39$\\times$ compiled across four BERT scales, and 1.97$\\times$ eager across four FCN backbones. A four-block Pairformer-style workload runs 2.40-4.32$\\times$ faster than a padded reference using native PyTorch kernels across square length regimes in eager execution, with peak allocation falling from 38.08 to 5.41 GiB on its high-variation batch. The tensor interface lets model code built from its supported operators compose efficient variable-size computation without managing offsets at any call site. Code will be released publicly upon publication.",
+      "published": "September 24, 2026",
+      "published_raw": "2026-09-24T18:00:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.30379v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.30379v1"
+    },
     {
       "id": "2609.30104v1",
       "title": "MQSS-Selector: RL-Guided Pass Selection for an MLIR Compilation Pipeline",
@@ -130,189 +307,6 @@
       "published_raw": "2026-09-23T20:37:22Z",
       "pdf_link": "http://arxiv.org/pdf/2609.28775v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.28775v1"
-    },
-    {
-      "id": "2609.28262v1",
-      "title": "RAMP: Robust Adaptive Mixed-Precision Quantization for Edge CPU Vision Models",
-      "authors": [
-        "David Población-Criado",
-        "Dario Garcia-Gasulla",
-        "Eduardo Quinones"
-      ],
-      "abstract": "Deploying deep learning models on edge CPUs is bottlenecked by computational and memory constraints. Mixed-precision quantization promises to reduce inference latency while preserving accuracy. However, quantization affects different layer types in inconsistent ways, so identifying where accuracy loss is minimized and latency reduction is maximized is critical, as the effect accumulates over a full deployment into substantial savings or unacceptable task degradation. Such identification relies on sensitivity metrics, proxies that estimate layer-wise degradation without evaluating the task accuracy of every candidate policy. Nevertheless, widely used metrics fail systematically on modern architectures. We present a systematic empirical study of 13 sensitivity metrics for layer-wise INT8 quantization across four distinctly different neural networks, and validate the resulting policies on two ARM64 platforms. Gradient-based sensitivity methods fail on 4 out of 8 model-hardware configurations and weight-based statistics on 2. In contrast, the Jensen-Shannon Divergence achieves zero catastrophic failures, reliably isolating the layers that cannot be safely quantized. A sensitivity metric alone does not define a policy, and the fixed thresholds typically used for that step are fragile over the highly skewed distributions of modern architectures. We address this with K-Means clustering, achieving near-lossless accuracy and a mean speed-up of $1.81\\times$ over the full-precision model. Finally, we reveal that excluding from quantization the layers whose speed-up is negligible, regardless of their sensitivity, can be counterproductive, as it induces computational graph fragmentation and disables operator fusion. Our results yield concrete allocation policies for practitioners and researchers deploying quantized vision models on heterogeneous edge CPUs, without GPU access or gradient computation.",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T15:23:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.28262v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.28262v1"
-    },
-    {
-      "id": "2609.28248v1",
-      "title": "hyperbolix: Hyperbolic Deep Learning in JAX",
-      "authors": [
-        "Timo Klein",
-        "Thomas Lang",
-        "Yllka Velaj",
-        "Sebastian Tschiatschek"
-      ],
-      "abstract": "We present hyperbolix, an open-source library for hyperbolic deep learning in JAX, built on Flax NNX. To our knowledge, it is the first comprehensive, general-purpose hyperbolic deep learning library in JAX. It includes six manifolds with a common interface: Euclidean space, the Poincaré ball, the hyperboloid, the $κ$-stereographic model, mixed-curvature product spaces, and the proper velocity space. We implement layer families that cover linear layers, convolutions, attention, normalization, positional encoding, regression, and vector quantization. These building blocks span methods ranging from Ganea's original hyperbolic neural networks to recent fully hyperbolic architectures such as Hypformer and Lorentzian ResNet. Additionally, hyperbolix contains Riemannian optimizers implemented as optax transformations, wrapped distributions, and hyperbolic dimensionality-reduction techniques. Its API uses idiomatic JAX: Manifolds are stateless, with curvature being passed at call time, while manifold operations act on single points, with jax.vmap enabling batch operations. The precision of every checked operation is tested against a closed-form NumPy/SciPy transcription from the source paper or a finite difference, for both float32 and float64. On the hyperboloid, standard formulas for two-point operations, such as the distance, lose precision far from the origin, because they subtract two large, nearly equal terms. hyperbolix replaces these subtractions with cancellation-free formulas that stay accurate in float32 at distances where prior implementations return NaN. hyperbolix is available under the MIT license at https://github.com/timoklein/hyperbolix .",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T15:09:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.28248v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.28248v1"
-    },
-    {
-      "id": "2609.28590v1",
-      "title": "TAM-Chain: Multi-Scale Thyroid Cytology Classification via Absorbing Markov Chains and Shannon Entropy Uncertainty Quantification for False-Negative Suppression and Domain-Shift Adaptation",
-      "authors": [
-        "Hai Pham Ngoc"
-      ],
-      "abstract": "Background & Problem: Thyroid Fine-Needle Aspiration Biopsy (FNAB) cytology based on the Bethesda System plays a pivotal role in early thyroid cancer detection; however, deep learning approaches face substantial challenges regarding high false-negative rates and overconfidence under clinical domain shift. Methods: In this study, we propose TAM-Chain, a multi-scale (10x, 20x, 40x) thyroid cytology classification framework leveraging Absorbing Markov Chain theory combined with Shannon Entropy-based Uncertainty Quantification. The framework dynamically models multi-magnification feature extraction as an absorbing stochastic process, enabling optimal stopping criteria and a human-in-the-loop referral mechanism to strictly suppress critical diagnostic errors. Results: Extensive evaluation on an internal test set (N = 235) demonstrates a Macro F1 score of 0.9741 with an absolute False-Negative Rate (FNR) of 0.00%. On an independent external validation set (N = 1015) presenting severe domain shift, TAM-Chain maintains superior stability and classification performance (Macro F1 = 0.7026) by adaptively adjusting the expected stopping step and triggering specialist referrals, significantly outperforming single-magnification baselines. Conclusion: The TAM-Chain framework proves to be a highly effective, safe, and adaptable solution for digital pathology workflows, successfully harmonizing automated diagnostic efficiency with stringent biological safety.",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T14:58:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.28590v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.28590v1"
-    },
-    {
-      "id": "2609.28149v1",
-      "title": "EvEMTBench: An Open Benchmark for Machine Learning in Power System Protection",
-      "authors": [
-        "Julian Oelhaf",
-        "Georg Kordowich",
-        "Christian Bergler",
-        "Andreas Maier",
-        "Johann Jäger",
-        "Siming Bayer"
-      ],
-      "abstract": "Studies of machine-learning-based power system protection are difficult to compare because task definitions, measurement access, data partitions, metrics, and generalization conditions often differ. EvEMTBench addresses this gap with an open, executable, and versioned benchmark that fixes these evaluation choices while leaving model design open. Across four grids spanning 20-345 kV, it defines 12 protection and event-analysis functions instantiated as 24 scored tasks and supports structured evaluation across observability conditions, predefined distribution shifts, and zero-shot and fine-tuned cross-grid transfer. Committed partitions, leakage controls, and reproducible reporting provide a common basis for comparing future methods. A reference evaluation spanning trivial, conventional, feature-based, and deep-learning baselines shows that wider observability is not uniformly beneficial, shifted conditions can reveal failures not apparent in-distribution, and cross-grid transfer is substantially stronger for fault detection than for fault localization. Protection-relevant diagnostics identify failure modes not apparent from primary metrics alone. EvEMTBench therefore makes generalization in machine-learning-based protection an explicit and reproducible evaluation problem.",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T14:05:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.28149v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.28149v1"
-    },
-    {
-      "id": "2609.27982v1",
-      "title": "Riemannian Structure and Optimization for a Class of Low-Parametric Orthogonal Matrices",
-      "authors": [
-        "Ali Aliev",
-        "Maxim Rakhuba"
-      ],
-      "abstract": "In this paper, we are concerned with matrices formed by block-diagonal factors interleaved with fixed permutations -- a flexible family of structured matrices. This class has recently drawn interest in deep learning architectures for its balanced expressivity-efficiency trade-off, yet efficient computational strategies for working with it remain to be found. We approach this problem through Riemannian geometry and examine under what conditions this class admits a smooth manifold structure. For the practically important case of orthogonal two-factor matrices, we derive the essential Riemannian tools and propose efficient algorithms for their implementation. The algorithms leverage automatic differentiation, support parameter sharing within each factor, and avoid explicit dense matrix construction. We test them within the Riemannian optimization framework on the best matrix approximation problem and for parameter-efficient fine-tuning of large language models. Beyond the two-factor setting, we study the geometric and matrix-theoretic properties of factorizations with a larger number of block-diagonal factors.",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T12:07:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.27982v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.27982v1"
-    },
-    {
-      "id": "2609.28567v1",
-      "title": "Leakage-Safe Machine Learning for Hydrogen Embrittlement Detection in 316L Stainless Steel: A Region-Held-Out Evaluation of Texture and Deep Features in SEM Micrographs",
-      "authors": [
-        "Muhammad Awais",
-        "Muhammad Yaseen",
-        "Abdul Shakoor",
-        "Niaz Ahmed Niaz",
-        "Huria Zia",
-        "Muhammad Zain Shakoor"
-      ],
-      "abstract": "Scanning electron microscopy (SEM) is routinely used to characterize the microstructural changes caused by hydrogen embrittlement (HE) in structural steels. Machine learning can automate this characterization, but models are often evaluated using image-level splits. When several images come from the same specimen region, such splits leak information between the training and test sets. Here, we propose a region-held-out protocol for classifying as-received (AR) and hydrogen-charged (H2) SEM micrographs of 316L stainless steel, based on Leave-One-Region-Out (LORO) cross-validation over 14 spatial regions (8 AR, 6 H2; 31 images). We compared six feature-classifier combinations built on local binary patterns (LBP), grey-level co-occurrence matrices (GLCM), self-supervised convolutional embeddings pretrained on 143 unlabeled SEM images, and a convolutional neural network (CNN). The simplest texture approach, LBP with a support vector machine (LBP+SVM), performed best, achieving a balanced accuracy of 0.79, H2 recall of 0.69, and H2 precision of 0.82, outperforming every deep-learning and combined-feature model. A group-level permutation test (500 permutations sampled from the 3,003 possible region-to-label assignments) yielded p = 0.008, indicating that the result cannot be explained by a chance alignment of the region structure. Grad-CAM maps from a CNN trained on the full dataset tended to concentrate on localized surface and grain-boundary features, where hydrogen-induced morphological changes are known to occur. Under a leakage-safe, statistically validated protocol, texture descriptors recover a hydrogen-charging signature from SEM micrographs even with few samples, and the same protocol can be extended to larger HE detection studies in other alloy systems.",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T11:18:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.28567v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.28567v1"
-    },
-    {
-      "id": "2609.27201v1",
-      "title": "A Systematic Benchmark of Explainable Methods for Temporal Attribution in Sequential Recommendation Systems",
-      "authors": [
-        "Akash Pandey",
-        "Kanisha Shah",
-        "Addrish Roy",
-        "Dwipam Katariya",
-        "Hongyangyang Shi",
-        "Amanda Ding",
-        "Kalanand Mishra",
-        "Pranab Mohanty"
-      ],
-      "abstract": "Sequential RecSys are central to modern personalization, exploiting user's historical interaction sequences to drive next-step decisions. Deep learning models, particularly CNN and Transformer-based architectures, have proven highly effective at capturing temporal dependencies in these histories. For transparency and trust, understanding which past interactions drive a given recommendation is increasingly important --- both for developers auditing model behavior and for users seeking a rationale. However, the non-linearities that give these models their predictive power also render them black boxes, making it difficult to attribute decisions to specific interactions. While gradient-based, perturbation-based, and attention-based explainability methods exist, a systematic benchmark of their faithfulness for sequential recommendation is missing. We address this gap by introducing a dual-model masking metric in which one model supplies per-timestep attribution scores and a separately trained, masking-robust probe measures the resulting change in predicted probability. Using this metric, we benchmark ten XAI methods across CNN, Transformer, SASRec, and BERT4Rec backbones on KuaiRand and MovieLens, complemented by analyses of temporal attribution patterns, item popularity confounding, and robustness to input corruption. Our key findings are: (1) gradient-based methods, particularly GradientSHAP and Integrated Gradients, yield the most faithful and robust attributions; (2) raw attention weights are unreliable, but gradient-weighted attention restores faithfulness on shorter sequences, with degradation on longer horizons as softmax attention probabilities converge toward uniform importance scores, diminishing the method's ability to identify informative interactions; and (3) temporal attribution patterns in faithful methods reflect genuine task structure rather than recency or popularity bias.",
-      "published": "September 23, 2026",
-      "published_raw": "2026-09-23T01:07:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.27201v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.27201v1"
-    },
-    {
-      "id": "2609.26963v1",
-      "title": "Raytracing Black Holes with AI Accelerators",
-      "authors": [
-        "Thomas Fischbacher",
-        "Nicholas Kessler"
-      ],
-      "abstract": "We show how software infrastructure that was mainly built to power AI applications also can be used to great benefit for other purposes -- by demonstrating a fully self-contained JAX-based black hole raytracer in under 180+200 lines of Python code plus documentation. Major motivations for showcasing such a construction are (a) to show to professional physicists how Machine Learning (ML) accelerators can greatly simplify building numerical applications for GPU accelerator hardware with very modest coding effort and programming expertise -- even if the problems at hand do not involve ML per se, (b) to make a meaningful part of General Relativity (GR) accessible to computer science professionals who might not have realized that mathematical background they developed on Deep Learning problems may have brought this theory within easy reach for them, and (c) to inspire students and educators to explore the potential of an approach that represents physical law, i.e. relations between local differential quantities, not in terms of differentiable symbolic expressions, but in terms of differentiable algorithms.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T18:54:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26963v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26963v1"
-    },
-    {
-      "id": "2609.26737v1",
-      "title": "Diffusion-Induced Spatial Attention Overlapping Community Detection",
-      "authors": [
-        "Kosti Koistinen",
-        "Vesa Kuikka",
-        "Joni Herttuainen",
-        "Matthew Hendren",
-        "Brian Holt",
-        "Kimmo K. Kaski"
-      ],
-      "abstract": "Detection of overlapping communities is essential for modelling networks in which nodes participate simultaneously in multiple structural or functional groups. Existing graph neural network approaches commonly rely on local message passing, which can obscure community boundaries through smoothing and limit the representation of structurally relevant long-range dependencies. We introduce Diffusion-Induced Spatial Attention Community Detection (DISCO), a deep-learning framework that combines a structural prior derived from influence spreading dynamics, sparse multi-head attention, and non-negative community-affiliation learning. The prior identifies candidate interactions beyond immediate graph neighbours and biases attention according to their structural proximity, while a Bernoulli-Poisson edge-reconstruction objective enables overlapping community inference from node attributes and structural profiles, or both. Benchmark experiments show that DISCO performs competitively against established graph convolutional and graph attention approaches across different input configurations. To demonstrate its practical applicability, we present a proof-of-concept cybersecurity use case in which changes between community assignments inferred from consecutive communication-network snapshots provide an interpretable anomaly signal. Temporal community similarity identifies structural deviations, while node-level contributions help locate the devices associated with them. DISCO therefore provides both a flexible method for overlapping community detection and a foundation for analysing structural change in dynamic networks.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T17:25:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26737v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26737v1"
-    },
-    {
-      "id": "2609.26631v1",
-      "title": "Label-Efficient Learning for Ground-Based Sky-Image Classification: A Benchmark of Transfer Learning, Active Learning, and Pseudo-Labeling on GCD",
-      "authors": [
-        "Esther Bou Dagher",
-        "Viktoriya Bu-Dager",
-        "Boguslaw Zegarlinski"
-      ],
-      "abstract": "Accurate ground-based cloud classification is important for atmospheric monitoring, solar-energy forecasting, aviation weather assessment, and climate observation systems. However, reliable sky-image annotation is time-consuming, especially when cloud types are visually similar or mixed. We study the label efficiency of deep learning for ground-based cloud classification using the Ground-based Cloud Dataset (GCD). Rather than proposing a new architecture, we benchmark three practical strategies under limited annotation budgets: supervised transfer learning, uncertainty-based active learning, and high-confidence pseudo-labeling. An ImageNet-pretrained ResNet50 is used as a common frozen backbone, with experiments repeated over five random seeds for label budgets from $1\\%$ to $100\\%$ of the training labels. Supervised transfer learning is already highly label-efficient: test accuracy increases from $0.635 \\pm 0.018$ with $1\\%$ labels to $0.730 \\pm 0.002$ with $40\\%$ labels, approaching the full-label result of $0.735 \\pm 0.003$. Active learning and pseudo-labeling are competitive with supervised sampling and provide small improvements for some metrics and budgets, but neither gives a large or consistent aggregate gain. Diagnostic analyses show that accepted pseudo-labels are reliable, with accuracy from $0.946$ to $0.977$, but biased toward easier high-confidence sky-type groups. In contrast, uncertainty sampling preferentially queries visually challenging groups, including Mixed and the confusable Stratocumulus and Cumulonimbus groups, but these targeted acquisitions yield only modest gains. Overall, transfer learning substantially reduces annotation requirements for GCD, while simple active and semi-supervised strategies provide limited additional benefit over a strong supervised baseline.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T16:06:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26631v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26631v1"
-    },
-    {
-      "id": "2609.26855v2",
-      "title": "QUARTET: Quad-branch cross-Attention and Random-walk Traces for Enhancing Transformers on Relational Graphs",
-      "authors": [
-        "Kyaw Hpone Myint",
-        "Nan Jiang",
-        "Xiang Li",
-        "Zhe Wu",
-        "Alexandre G. R. Day",
-        "Pranab Mohanty",
-        "Giri Iyengar"
-      ],
-      "abstract": "Relational Deep Learning (RDL) models multi-table databases as heterogeneous temporal graphs, and graph transformers currently achieve state-of-the-art performance on benchmarks like RelBench. However, the current leading model, RelGT, suffers from two key limitations: its random local sampler yields loosely connected subgraphs that hinder message passing, and its global attention module relies on a single, seed-feature-based memory that ignores broader macro-level dynamics. To overcome these limitations, we introduce QUARTET, an expressive graph transformer architecture that applies full self-attention on local subgraphs while enriching global context through cross-attention branches. Specifically, QUARTET employs a Causal Random Walk (CRW) sampler based on recency-truncated Personalized PageRank (PPR) to extract compact, hub-robust, and densely connected local subgraphs without temporal leakage. Concurrently, a quad-branch cross-attention module integrates global context from four complementary perspectives: seed feature, seed topology, temporal dynamics, and collaborative dynamics. Across the RelBench v1 classification tasks, QUARTET consistently matches or outperforms the current state-of-the-art graph transformer baselines (HGT and RelGT). Ablation studies confirm that the CRW sampler significantly enriches local neighborhood quality, while the global branches provide essential, task-specific predictive gains.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T14:36:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26855v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26855v2"
-    },
-    {
-      "id": "2609.26426v1",
-      "title": "DeepFEAv2: Deep Learning for Transient Finite Element Analysis Beyond Structured Meshes",
-      "authors": [
-        "Georgios Triantafyllou",
-        "Panagiotis G. Kalozoumis",
-        "Dimitris K. Iakovidis"
-      ],
-      "abstract": "Finite Element Analysis (FEA) is widely used for transient mechanical simulations, but its high computational cost limits real-time and high-resolution applications. Deep learning surrogate models can reduce this cost; however, many existing approaches are restricted to steady-state prediction or cannot jointly predict Node- and Element-based Outputs (NEO) over time. The state-of-the-art DeepFEA framework has addressed these issues but remains limited to structured finite element (FE) meshes. To overcome this limitation, this study proposes DeepFEAv2, a deep learning surrogate framework that enables prediction of transient FEA simulations across different FE mesh topologies and element types. The main contributions of DeepFEAv2 are: (a) a module that uses the FE connectivity matrix to organize input features by element and arrange them into an input sequence guided by the mesh topology; (b) a novel neural network architecture designed to process the input sequence and jointly predict NEO over time; and (c) a FEA-informed optimization strategy for regularizing these NEO predictions. DeepFEAv2 was evaluated on structured and unstructured 3D linear elastic datasets, as well as on a pressure-driven aortic valve dataset. DeepFEAv2 achieved R^2 values up to 0.99 and normalized errors as low as 0.38%. Compared with DeepFEA, it achieved up to 38.0% relative increase in R^2 and up to 87.1% reduction in normalized error. DeepFEAv2 also performed inference up to three orders of magnitude faster than traditional FEA. These results demonstrate that DeepFEAv2 can efficiently model transient FEA simulations across increasingly complex FE settings, providing a scalable surrogate framework for transient FEA.",
-      "published": "September 22, 2026",
-      "published_raw": "2026-09-22T13:51:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.26426v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.26426v1"
     }
   ]
 }
