@@ -1,7 +1,170 @@
 {
-  "last_updated": "2026-09-30T02:39:27.101564",
+  "last_updated": "2026-10-01T02:43:45.973384",
   "count": 20,
   "papers": [
+    {
+      "id": "2609.40047v1",
+      "title": "Gromov-Wasserstein Distillation for Inductive Multi-View Embedding",
+      "authors": [
+        "Rafael Pereira Eufrazio",
+        "Eduardo Fernandes Montesuma",
+        "Charles Casimiro Cavalcante"
+      ],
+      "abstract": "Gromov-Wasserstein multidimensional scaling (GW-MDS) learns low-dimensional representations from relational data but remains transductive, providing no explicit mapping for unseen samples. We introduce an inductive framework based on barycentric distillation. A GW-MDS teacher learns a latent support and an optimal transport plan from the training data, and barycentric projection converts the resulting coupling into sample-aligned targets. A neural student then learns an explicit out-of-sample mapping, avoiding additional relational-matrix construction and GW optimization at inference. We formulate the approach for single-view data and extend it to Mean-GWMDS and Multi-GWMDS teachers through consensus and selected-projection targets learned by a multi-view student with view-specific encoders. We also investigate a direct neural baseline trained solely with a GW objective. Experiments on synthetic and real-world data using Euclidean, geodesic, and cosine relations show that the distilled models preserve the teacher geometry on unseen samples and consistently outperform direct neural GW training in sample-indexed relational preservation. These results establish barycentric projection as an effective bridge between transductive GW embeddings and inductive neural mappings.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T16:14:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.40047v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.40047v1"
+    },
+    {
+      "id": "2609.40008v1",
+      "title": "PINNing the pion: conformal deep learning for $F_π(s)$ and the $(g-2)_μ$ hadronic contribution",
+      "authors": [
+        "Mayank Goel",
+        "Subhadip Mitra",
+        "Monalisa Patra"
+      ],
+      "abstract": "Extracting the pion electromagnetic form factor $F_π(s)$ through phenomenological curve-fitting models introduces model dependence, unphysical artefacts, and kinematic inconsistencies. We introduce a Physics-Informed Neural Network (PINN) embedded in a conformal $z$-plane that constructs $F_π(s)$ directly from first principles across spacelike and timelike domains: charge normalisation and Schwarz reflection are enforced by construction, while Cauchy-Riemann analyticity, dispersion relations, Watson's theorem, and perturbative QCD asymptotics enter through the loss functional. Thus, the fundamental S-matrix principles dictate the form factor's behaviour while data act as constraints. Mapping the cut complex plane onto the unit disk bounds the Hessian norm and prevents Neural Tangent Kernel spectral starvation, two known failure modes of deep-learning optimisation. Besides $e^+e^-$ scattering data, we also incorporate $τ$-decay data through a switch that isolates the pure isovector form factor natively, bypassing model-dependent isospin-breaking pre-corrections. The network organically yields an interior zero-free form factor, while the framework tests experimental tensions around the $ρ(770)$ peak against analyticity and dispersion constraints. We obtain model-independent estimates of the pion charge radius, $\\langle r_π^2 \\rangle = 0.435 \\pm 0.008_{\\text{stat}} \\pm 0.007_{\\text{cali}}$ fm$^2$, the second-sheet pole parameters, $m_ρ^{\\text{pole}} = 761.72\\pm 1.04$ MeV and $Γ_ρ^{\\text{pole}} = 135.99 \\pm 1.20$ MeV, and the two-pion contribution to the muon anomalous magnetic moment, $a_μ^{ππ} = (506.48 \\pm 2.02_{\\text{stat}} \\pm 1.70_{\\text{cali}}) \\times 10^{-10}$.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T15:49:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.40008v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.40008v1"
+    },
+    {
+      "id": "2609.39626v1",
+      "title": "Parameterization method of reservoir properties for ensemble-based data assimilation using intermediate latent space of StyleGAN",
+      "authors": [
+        "Marcio A. Sampaio",
+        "Paulo H. Ranazzi",
+        "Martin J. Blunt"
+      ],
+      "abstract": "Ensemble smoothers are the most successful and efficient techniques currently available for history matching. However, because these methods rely on Gaussian assumptions, their performance is severely degraded when the prior geology is described in terms of complex facies distributions (non-Gaussian). In this way, for these methods, we need to apply efficient parameterization techniques. Currently, the most efficient methods for performing parameterization are deep learning models. However, given the variety of existing deep learning models, studies have not identified which is most suitable for use with ensemble-based methods, although some important models had already been evaluated. Based on a recent literature review, the most promising models selected were VAE-GAN, Latent Diffusion, and StyleGAN models. As a novel aspect of this work, data assimilation with the second generation of StyleGAN (StyleGAN2) model was performed using the latent z-space and intermediate w-space, separately. They were applied in two 2D case studies: one categorical (three facies) and the other continuous. The results demonstrated that all three models are highly efficient, with the StyleGAN2 model standing out for generating samples with geological realism and achieving excellent data matching in the cases studied. Our findings show that performing data assimilation with StyleGAN2 using the intermediate space (w-space) yielded better results than the traditional application in the latent space (z-space). This is due to the fact that ESMDA uses linear updates and the w-space is much more linear and disentangled than the highly entangled z-space, thereby ensuring that the updated vectors remain close to realistic geological patterns. These results were validated using main geostatistical and history matching metrics.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T12:35:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.39626v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.39626v1"
+    },
+    {
+      "id": "2609.39584v1",
+      "title": "Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework",
+      "authors": [
+        "Zawad Yalmie Sazid",
+        "Robert Abbas"
+      ],
+      "abstract": "Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially enlarges the cyberattack surface. Heterogeneous, resource-constrained edge devices deployed across unmanaged administrative domains present highly vulnerable targets. To address these vulnerabilities without compromising global data privacy regulations, this paper proposes a novel Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF). The proposed framework integrates an Autoencoder, a 1D Convolutional Neural Network (1D-CNN), and a Bidirectional Long Short-Term Memory (BiLSTM) model into a unified, localized deep learning engine capable of autonomous spatial and temporal feature extraction. Model training is performed collaboratively via federated learning, ensuring raw network telemetry remains isolated at local gateways. Furthermore, to defend against adversarial model poisoning attacks, we introduce a robust server-side trust-aware aggregation mechanism that evaluates client reliability using a cosine similarity metric before global model integration. Empirical evaluations across multi-vector benchmark datasets (UNSW-NB15, CICIDS2017, and Edge-IIoTset) demonstrate the framework's superior detection accuracy, rapid convergence, and high Byzantine fault tolerance under adversarial attack scenarios.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T12:12:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.39584v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.39584v1"
+    },
+    {
+      "id": "2609.39583v1",
+      "title": "MADGRAV: a multilevel anomaly-detection pipeline for gravitational-wave searches applied to LIGO data",
+      "authors": [
+        "Gianluca Inguglia",
+        "Huw Haigh",
+        "Ulyana Dupletsa",
+        "Alessandro Longo"
+      ],
+      "abstract": "We present the results of \\textbf{MADGRAV}, a deep-learning-based search for high-mass compact binary coalescences, applied to the data collected by the LIGO interferometers during the third observing run and during the first and second part of the fourth observing run. The \\textbf{MADGRAV} pipeline consists of a series of sequential convolutional neural networks that perform anomaly detection, glitch classification, coherence testing, and signal ranking. Data from the Hanford and Livingston LIGO detectors are studied (both individually and in coherence) by way of 1 second Q-transform windows. Of the candidates that survive every stage of the pipeline, 48 reach the significance threshold, and we report 47 gravitational wave detections characterised by a false alarm rate below $1\\,{\\rm yr}^{-1}$ with a probability of astrophysical origin $p_{\\rm astro}>0.9$. Of the 47 detections, 44 are shared with the minimally modelled coherent WaveBurst search. The observed total source-frame masses, extracted from official gravitational wave transient catalogues, are in the $14-236 M_{\\odot}$ range with a median of $69 M_{\\odot}$, and a median SNR of 16. We note that the recovered fraction of confident detections rises with mass: for LIGO detectors network SNR $>10$ the pipeline recovers $8.1\\%$ of confident catalog events below $30 M_{\\odot}$, $39.8\\%$ between $30$ and $100 M_{\\odot}$, and $53.3\\%$ above $100 M_{\\odot}$, corresponding to $33.3\\%$, $45.5\\%$ and $53.3\\%$ of the events detected by coherent WaveBurst in the same bins. These results suggest that anomaly detection pipelines can serve as an independent detection channel complementary to matched filtering in the high-mass high-SNR regime.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T12:12:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.39583v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.39583v1"
+    },
+    {
+      "id": "2609.39512v1",
+      "title": "Can Domain Generalization be Guaranteed in Small-Sample Learning?",
+      "authors": [
+        "Hong Zheng"
+      ],
+      "abstract": "The small-sample learning problem remains a fundamental challenge in machine learning because limited training data lead to unstable model estimation and generalization. Structural Risk Minimization (SRM) has long been regarded as a principled solution under the classical i.i.d. assumption. However, domain generalization (DG) violates this assumption, leaving the theoretical role of SRM in DG largely unexplored. To bridge this gap, we establish the first theoretical guarantees for SRM in DG under mild assumptions. Specifically, based on the concept of stability, we derive learning consistency and generalization error bounds and prove that these bounds become tight when the hypotheses satisfy the stability condition. Building upon this, under a specific hypothesis space assumption, we establish stability, learning, and generalization bounds for SRM. We further discuss the applicability of these bounds to deep learning. This work establishes theoretical foundations for SRM under distribution shifts and sheds light on the design of robust DG algorithms in small-sample scenarios.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T11:12:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.39512v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.39512v1"
+    },
+    {
+      "id": "2609.39429v1",
+      "title": "Towards Trustworthy AI for Glioma Diagnosis: A Task-Aware Evaluation of Uncertainty Quantification",
+      "authors": [
+        "Gonzalo Esteban Mosquera Rojas",
+        "Sebastian R. van der Voort",
+        "Carolin M. Pirkl",
+        "Sandeep Kaushik",
+        "Marion Smits",
+        "Stefan Klein"
+      ],
+      "abstract": "Uncertainty Quantification (UQ) is a key requirement for trustworthy AI in high-stakes medical image analysis. In this work, we evaluate UQ in a multi-task Deep Learning framework for MRI-based glioma diagnosis that performs tumor segmentation and predicts IDH mutation status, 1p/19q co-deletion status, and tumor grade. Monte Carlo Dropout (MCD) is used for a detailed task-aware analysis of predictive, aleatoric, and epistemic uncertainty. We assess MC sample convergence, calibration, error detection, selective prediction, associations with segmentation performance, and the effect of voxel-wise uncertainty aggregation on case-level reliability. We also compare MCD with Deep Ensembles (DE) and Monte Carlo Deep Ensembles (MCDE), examine interactions between segmentation quality and classification, and evaluate a composite trust score integrating segmentation and classification uncertainty. Across tasks, uncertainty estimates supported meaningful error detection, while calibration depended on the dropout rate, with moderate rates yielding the most reliable probabilities. Uncertainty decomposition provided task-dependent interpretability but did not consistently improve error detection over predictive uncertainty alone. DE and MCDE showed comparable operational utility, with no method consistently dominating across tasks and metrics. The composite trust score did not consistently outperform classification uncertainty for selective prediction. Overall, our results provide a task-aware evaluation strategy and practical guidance for the development of trustworthy AI for glioma diagnosis.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T10:06:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.39429v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.39429v1"
+    },
+    {
+      "id": "2609.39296v1",
+      "title": "Semantic-Aware Joint Source-Channel Optimization for Encoder-Agnostic Digital Video Communication",
+      "authors": [
+        "Xiangben Zhu",
+        "Caili Guo",
+        "Yang Yang",
+        "Chuanhong Liu",
+        "Meiyi Zhu"
+      ],
+      "abstract": "Video semantic communication has attracted increasing attention as a promising approach to improving video transmission efficiency. However, most existing approaches rely on computationally intensive deep learning-based video encoders and decoders, which hinders their deployment in resource-constrained scenarios. To address this issue, we propose a lightweight semantic-aware joint source-channel optimization (SAJSCO) scheme that can be integrated into existing digital video communication systems as a plug-in module. Specifically, we develop a video communication system model in which the transmitter jointly optimizes source and channel coding parameters based on the inter-frame semantic importance of the input video and estimated channel state information. On this basis, we formulate an optimization problem that maximizes semantic importance weighted video reconstruction quality under a maximum bitrate constraint. To solve it, we first quantify inter-frame semantic importance using a cosine similarity-based metric with a shifted window mechanism. We then develop a multi-actor proximal policy optimization (MPPO) algorithm to solve the formulated problem by jointly adapting the source compression rate and channel coding rate. The learned policy can be directly applied to different video encoders without encoder-specific retraining or fine-tuning. SAJSCO achieves Bjøntegaard Delta rate reductions of 34.86\\% and 18.01\\% when integrated with H.265, a conventional video encoder, and DCVC-RT, a deep learning-based video encoder. Over-the-air experiments on a hardware testbed further demonstrate a PSNR gain of up to 1.448 dB with H.265 and an LPIPS reduction of up to 0.033 with DCVC-RT compared with the respective best-performing fixed-parameter baselines.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T08:40:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.39296v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.39296v1"
+    },
+    {
+      "id": "2609.38560v1",
+      "title": "Detail in Context: A Dual-Scale Machine Learning Framework for Mycosis Fungoides Detection",
+      "authors": [
+        "Mohamed Hazem",
+        "Tarek Waleed",
+        "Omar Khaled",
+        "Nada Omar",
+        "Mahmoud Raslan",
+        "Marwa Mohamed Fawzy",
+        "Aya Fahim",
+        "Rania M. Mogawer",
+        "Ahmed Mourad",
+        "Kariman Mansour",
+        "Muhammad Rushdi"
+      ],
+      "abstract": "Mycosis fungoides (MF) is a rare form of cutaneous T-cell lymphoma that is often misdiagnosed in early stages due to its visual similarity to benign inflammatory dermatoses. Early and accurate diagnosis is critical for improving patient outcomes. In this paper, we propose a comprehensive diagnostic framework for automated MF detection that combines dual- scale histopathological image analysis with deep learning. To distinguish MF from other lymphoproliferative skin conditions, the proposed approach leverages a late-fusion ensemble of dual- magnification (10x and 20x) convolutional neural networks (CNNs), complemented by a random forest classifier trained on 16 clinical features. Experimental results on an expanded dataset of 6,267 images (4,306 MF; 1,961 Non-MF) across 463 patients demonstrate that strong detection performance is obtained by prioritizing higher-resolution cytological details (20x) within broader architectural context (10x). The image-based late-fusion model achieves an accuracy of 83.58% and a sensitivity of 89.13%, while the clinical random forest model achieves an accuracy of 96.6% and sensitivity of 93.8%, highlighting the po- tential of this multimodal framework as a robust clinical decision support system in dermatology. This framework addresses two distinct clinical objectives: an image-based dual-scale pipeline optimized for the early diagnostic screening of MF versus non- MF dermatoses, and a complementary clinical metadata model designed for the subsequent staging of confirmed MF cases (patch/plaque versus tumor)",
+      "published": "September 29, 2026",
+      "published_raw": "2026-09-29T21:21:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.38560v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.38560v1"
+    },
+    {
+      "id": "2609.38447v1",
+      "title": "An Input-Frugal Deep Learning Framework for Weather-Driven National Crop-Yield Forecasting: A Case Study of Brazilian Soybean",
+      "authors": [
+        "Fernando Dupin da Cunha Mello",
+        "Prashant Kumar",
+        "Erick G. Sperandio Nascimento"
+      ],
+      "abstract": "Reliable, timely crop-yield forecasts are essential for market stability and risk management, yet many approaches rely on costly or hard-to-scale inputs. We present a frugal, transferable, and architecture-agnostic deep learning framework that uses routine weather as the only time-varying input plus two lightweight static context inputs (crop year and an agro-environmental label) to capture long-run change and regional heterogeneity, while supporting multiple sequence encoders under identical data requirements. Using a 20-season Brazilian soybean case study (2001/02-2020/21) with leave-one-year-out cross-validation, we benchmark MLP, CNN, LSTM, CNN-LSTM, a Transformer encoder and the Mamba state-space model against linear ridge regression and a five-year moving-average \"farmer\" baseline. All deep learning variants outperform ridge, and all sequential encoders surpass the non-sequential MLP. The Transformer achieves the best national accuracy (RMSE 149 kg ha^-1; rRMSE 5.3%; R^2 = 0.784), reducing error by 47.6% relative to the farmer baseline. In-season forecasts improve monotonically from early- to late-season issuance, reaching approximately 50% lower error than the baseline at the latest forecast point. Ablations indicate that the agro-environmental label and spatial instance expansion (multiple grid-node weather sequences per municipality-year) contribute positively without increasing input complexity. SHAP diagnostics suggest crop year explains most of the long-run trajectory, whereas within-season weather and agro-environmental context primarily drive interannual deviations, with moisture/cloud and thermal-demand variables dominating. Overall, the framework is straightforward to deploy across other crops and geographic regions and is naturally compatible with operational weather forecasts for routine monitoring.",
+      "published": "September 29, 2026",
+      "published_raw": "2026-09-29T19:40:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.38447v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.38447v1"
+    },
+    {
+      "id": "2609.38372v1",
+      "title": "Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer",
+      "authors": [
+        "Qiankai Xu"
+      ],
+      "abstract": "A harness is the code around a language-model agent that organizes prompts, calls tools, manages context, and controls execution. As models grow stronger, recent work has begun to let agents improve their own harnesses, a line of work known as self-evolving harnesses. In most existing methods, a separate proposer running on a human-designed harness modifies the solver's harness, and a separate harness is evolved for each benchmark. Real-world tasks come from many domains, so both the evolution and the evaluation of a harness should cover a diverse range of tasks. We propose a framework close to recursive self-improvement: the same frozen model, on the same version of the harness, first solves tasks as the solver and then, as the proposer, reads the complete run records and directly edits the harness that runs it. Each evolution batch draws tasks from five benchmarks in different domains. To measure generalization, training and held-out tasks are strictly separated, and we additionally evaluate on five out-of-distribution benchmarks never used during evolution. We frame the evolution process as deep-learning training with two stages, multi-task pretraining and continual training. Starting from a 49-line seed harness, the harness obtained at the end of the first stage improves the average score by 4.48 points on the in-distribution benchmarks and by 12.64 points on the out-of-distribution benchmarks, surpassing Codex on the former and matching it on the latter. In the second stage, continued evolution on Claw-Eval, one of the out-of-distribution benchmarks, further raises the score on that benchmark from 66.17 to 68.06, exceeding Codex. We also provide an in-depth analysis of the mechanisms that emerged during evolution, including output truncation, history compaction, and independent review.",
+      "published": "September 29, 2026",
+      "published_raw": "2026-09-29T18:33:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2609.38372v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2609.38372v1"
+    },
     {
       "id": "2609.38095v1",
       "title": "Probe-Space Preconditioning for Fast and Stable Zero-Order Training",
@@ -131,174 +294,6 @@
       "published_raw": "2026-09-29T03:17:37Z",
       "pdf_link": "http://arxiv.org/pdf/2609.36600v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.36600v1"
-    },
-    {
-      "id": "2609.36453v1",
-      "title": "Channel-Dependent State Space Model for Multivariate Time Series Forecasting",
-      "authors": [
-        "Yu-Cheng Wu",
-        "Fan-Keng Sun",
-        "Li-Chun Lu",
-        "Duane S. Boning"
-      ],
-      "abstract": "Multivariate time series forecasting (MTSF) is critical across many real-world domains. Existing deep learning approaches fall into two paradigms with distinct limitations: channel-independent (CI) methods unconditionally ignore cross-variable dependencies and model only temporal dynamics, while channel-dependent (CD) methods consider both but typically rely on architectural compromises to mitigate overfitting and computational overhead. We therefore propose Chameleon, a specialized CD state space model (SSM) that enables data-dependent, fine-grained interactions across variables while scaling linearly with their number. By connecting selective SSMs with the Kalman filter, we leverage the missing measurement update in the former for cross-variable modeling while preserving the SSM backbone for robust temporal modeling. We further identify favorable inductive biases of GatedDeltaNet for time series, adapt it as our backbone, and improve generalization through additional techniques, including a previously unexplored stochastic perturbation of reversible instance normalization. On strongly dependent ODE and PEMS datasets, Chameleon achieves the best MSE and MAE across all settings, while its CI ablation and prior CD methods incur 61-178% higher MSE on average. Across 28 standard benchmark settings, Chameleon also achieves better MSE and MAE than each baseline in at least 27 and 22 cases, respectively. Training-time and peak-memory analyses on Traffic and ETT further demonstrate competitive efficiency and favorable memory scalability across different variable counts.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T01:15:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36453v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36453v1"
-    },
-    {
-      "id": "2609.36400v1",
-      "title": "CAMEO: A Class-Activation-Mapped Equitable Overlay Framework for Fair and Robust Deep Learning-based Skin Condition Diagnosis",
-      "authors": [
-        "Youssef Attia",
-        "Debasmita Mukherjee"
-      ],
-      "abstract": "Deep learning classifiers for dermoscopic skin lesions often reach high in-distribution accuracy while quietly relying on spurious background cues such as skin tone, device vignetting, and embedded rulers, rather than on lesion morphology. This undermines robustness and fairness across skin tones. This work asks whether Explainable AI (XAI), typically used only to audit a finished model, can instead be repurposed as an active training signal that corrects this shortcut without sacrificing diagnostic accuracy. We introduce CAMEO (Class Activation Mapped Equitable Overlay), a framework that improves skin-lesion classification by selecting stable model explanations and using them to separate lesions from their backgrounds. It then replaces the background with realistic synthetic skin while keeping the lesion unchanged. On HAM10000 and dark-skin ISIC images, CAMEO maintained accuracy while reducing background-driven errors by nearly four times. It also made the model's attention more consistent when backgrounds changed. Results across multiple tests show that reducing reliance on background information improves robustness, with Fitzpatrick-based backgrounds providing a realistic and interpretable approach. Results show that XAI-guided augmentation can make dermoscopic classifiers measurably more robust and fair at no cost to accuracy. They also clarify that it is the mechanism and not the specific tone palette that matters, and that the lasting contribution of XAI here lies in stability-screened, annotation-free lesion localisation rather than in the robustness number itself.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T23:54:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36400v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36400v1"
-    },
-    {
-      "id": "2609.36354v1",
-      "title": "Explainability from Training with Applications to TCR-Epitope Prediction",
-      "authors": [
-        "Jiarui Li",
-        "Zixiang Yin",
-        "Samuel Landry",
-        "Zhengming Ding",
-        "Ramgopal Mettu"
-      ],
-      "abstract": "Deep learning models have achieved strong performance in artificial intelligence for science, yet their black-box nature limits our understanding of how they learn scientific tasks. Existing methods for interpretability provide limited insight into how models organize evidence and evolve during learning. We introduce explainability from training (EFT), a model-agnostic paradigm that traces model interpretation during training to explain why models rely on specific features and how they organize these features as predictive evidence. We apply EFT to four state-of-the-art T cell receptor (TCR)-epitope prediction models, TCR-SRIM, TULIP, MixTCRpred, and NetTCR-2.2, spanning post-hoc and interpret-by-design approaches as well as transformers and CNNs. To investigate how structural information affects model explanations, we introduce a benchmark, TCR-XAI2, containing 388 unique experimentally resolved TCR-epitope structures, complemented by structures predicted using AlphaFold3, Boltz-2, TCRModel2, tFold-TCR, and OpenFold3. Using EFT with TCR-XAI2, we demonstrate that (1) CNN and transformer models exhibit distinct learning trajectories; (2) TCR $α$ and $β$ evidence can conflict during learning, limiting the benefits of jointly modeling both chains, while MHC information mitigates this; and (3) real versus predicted structural data for TCR-epitope prediction exhibits distinct TCR and peptide feature preferences as well as differing trajectories of model certainty.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T22:36:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36354v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36354v1"
-    },
-    {
-      "id": "2609.36172v1",
-      "title": "Exploring Learning Models for Topological Relationship Recognition from Image Data",
-      "authors": [
-        "Saptak Das",
-        "Monidipa Das"
-      ],
-      "abstract": "Figuring out how objects relate to each other, like whether they touch, overlap, stay completely separate or one sits inside another, matters a lot in fields like GIS, biomedical imaging, and robotics. Even though machine learning has come a long way, people haven't really focused on spotting these topological relationships in images. The main roadblocks? Not enough good datasets and no clear way to measure results. So, we rolled up our sleeves and built a new dataset. It's pretty sizable: over 11,000 labelled images showing all those essential relationships. We ran tests with some classic machine learning models, Naive Bayes, KNN, Random Forest, SVM, and Artificial Neural Networks, and threw in some deep learning stars like VGG16 and InceptionResNetV2. For the dataset itself, we used segmentation, contour detection, and grayscale normalization to tease out solid feature vectors. The results? Deep learning methods, especially VGG16, pulled ahead, with validation accuracy hitting 89.55%. That's a big jump compared to the traditional models. This shows how powerful transfer learning is for analyzing topological relationships in images, and it gives researchers a new standard to aim for in future work on spatial reasoning and topological classification.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T19:42:06Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36172v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36172v1"
-    },
-    {
-      "id": "2609.36039v1",
-      "title": "Multi-Class, Multi-Tier Network Intrusion Detection: A Comprehensive and Reproducible Benchmark",
-      "authors": [
-        "Yufeng Xin",
-        "Bryant Goseland",
-        "Mohamed Rahouti"
-      ],
-      "abstract": "Machine learning (ML) and deep learning (DL) have dominated Intrusion Detection System (IDS) research in recent years. Unfortunately, many existing studies have produced inflated results and unreliable benchmarks due to critical oversights and mistakes in the ML and DL pipeline, from data collection and labeling to feature engineering and model training and evaluation. CIC-IDS2017 is a standard benchmark for network intrusion detection. Still, many published results on this dataset are difficult to compare due to labeling errors, inconsistent flow extraction, potential leakage, and performance evaluation metrics dominated by benign traffic. In this paper, we present a comprehensive benchmark with corrected PCAP-level labeling and a complete evaluation pipeline with diverse ML models. We evaluate eleven tabular classifiers at three nested levels: binary attack detection, nine-class attack-family attribution, and fifteen-class fine-grained classification. A soft-voting ensemble of Random Forest, XGBoost, and LightGBM obtains the best fine-tier macro-F1 of 0.955, with coarse and binary macro-F1 scores of 0.980 and 0.999, respectively. We further conducted a feature selection study based on an analysis of feature importance. This comprehensive benchmark pipeline is configurable and open-source, enabling new feature extraction and model plugins for new datasets. Future work should use this pipeline as a reference point for richer features, rare-class analysis, and model generalization towards new datasets and attack classes.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T18:06:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36039v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36039v1"
-    },
-    {
-      "id": "2609.35634v1",
-      "title": "DR-net-Mamba: Selective State-Space Modeling for Long-Range ECG Time-Series Denoising",
-      "authors": [
-        "Basile Morel",
-        "Samuel Ruiperez-Campillo",
-        "Andreas P. Streich",
-        "Julia E. Vogt",
-        "Thomas Hofmann"
-      ],
-      "abstract": "Electrocardiogram (ECG) recordings are corrupted by non-stationary noise sources that degrade diagnostic reliability, particularly in ambulatory and long-duration recordings. Deep learning denoisers exist, but convolutional architectures are limited by their receptive field, transformer-based models scale quadratically with sequence length, and diffusion-based approaches incur prohibitive inference cost. We propose a Mamba-augmented model that inserts selective state-space blocks at the convolutional bottleneck, combining local feature extraction with long-range temporal modeling at linear complexity. We comprehensively evaluate the proposed model with respect to reconstruction fidelity, noise robustness, recording-length scaling, and downstream diagnostic classification across over 40 pathology classes. On synthetic and real datasets, our model achieves the highest SNR and lowest RMSE, with the Mamba advantage increasing with sequence length and in low-SNR regimes. On classification with two independent classifiers, the proposed Mamba-based models achieve the best macro AUROC among all denoisers and improve over their convolutional base models. Calibration is more nuanced and classifier-dependent: denoising improves Binary Cross-Entropy and Brier score on Inception1D but often fails to beat the noisy input on ResNet1D-Wang, and the lead-specific Mamba variant is the only denoiser to improve both calibration metrics over the noisy baseline on both classifiers. Per-class analysis reveals a morphology-dependent benefit: Mamba substantially improves ST/T-change diagnoses, which depend on broad, context-sensitive waveforms.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T17:03:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.35634v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.35634v1"
-    },
-    {
-      "id": "2609.35499v1",
-      "title": "Physics-Guided Conditional Diffusion Model for Rare Event Synthesis and Diagnosis for the Water-Gas Shift Reaction",
-      "authors": [
-        "Md Abrar Rafid Siddique",
-        "Bibek Aryal",
-        "Qiugang Lu"
-      ],
-      "abstract": "As the world moves towards sustainable energy sources, hydrogen (H2) can be treated as an eco-friendly alternative to fossil fuels due to its high energy density and zero carbon emissions. The water-gas shift (WGS) reaction is a widely used industrial process for hydrogen production by converting carbon monoxide and steam into hydrogen and carbon dioxide. However, occurrences like severe fouling, catalyst deterioration, and thermal runaway can hamper the reaction kinetics/process safety and decrease the yield of H2. These incidents are rare, and gathering process data under such abnormal conditions is challenging. In this work, we propose a physics-guided conditional diffusion model to generate realistic rare-event trajectories for the WGS reaction. The proposed model integrates a conditional denoising diffusion probabilistic model (CDDPM) with governing laws of the reaction to generate physically consistent process trajectories. The conditioning features allow the model to produce high-quality synthetic profiles for rare-event domains that are typically beyond the training regimes. The generated rare-event trajectories then augment the raw dataset for a balanced distribution between normal and abnormal conditions. We further propose a hazard score to assess the risk severity of the operating condition based on the operating trajectory. Deep learning models are trained with the augmented dataset to diagnose the health status of the reaction. Simulation results show that the proposed physics-guided diffusion model outperforms data-driven models in terms of the quality of synthetic data and diagnosis performance for rare events.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T16:03:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.35499v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.35499v1"
-    },
-    {
-      "id": "2609.35219v1",
-      "title": "Temporal Heterogeneous Graph Pretraining for Relational Deep Learning",
-      "authors": [
-        "Yixin Peng",
-        "Er Jin",
-        "Diego Collarana",
-        "Stefan Decker"
-      ],
-      "abstract": "Relational deep learning models database rows and foreign-key links as a heterogeneous graph for prediction from record attributes and relational context. These graphs contain two distinct temporal signals: record age changes with the prediction cutoff, while intervals between observed records remain fixed. Prior work often treats time as a single signal or studies temporal representation and pretraining separately. We investigate how explicitly encoding both signals affects temporal pretraining for downstream tasks. Our framework combines Multi-scale Time Encoding, which captures record age using learnable time scales and type-specific projections, with Rotary Time Encoding, which represents signed inter-record intervals through rotary transformations during graph propagation. We pair these encodings with three self-supervised objectives: historical relation recovery, horizon-aware future relation activity prediction, and temporal subgraph contrast. All inputs respect their observation cutoffs. Pretraining proceeds in two stages: subgraph contrast first learns neighborhood representations, followed by refinement through either relation recovery or future activity prediction. We evaluate on five RelBench datasets across 11 classification and regression tasks using heterogeneous GNN and graph Transformer backbones. With both encodings, the best evaluated staged schedules improve over supervised training with the same encodings by 3.02% and 1.06% on the two backbones, respectively, and over controls without pretraining or either encoding by 3.24% and 2.37%.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T14:05:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.35219v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.35219v1"
-    },
-    {
-      "id": "2609.35099v1",
-      "title": "E3J: An Efficient and Open-Source Backend for Euclidean Equivariant Operations on GPU and TPU",
-      "authors": [
-        "Olivier Peltre",
-        "Armand Picard",
-        "Adrien Pichard",
-        "Miguel Bragança",
-        "Luca Giacomoni",
-        "Valentin Heyraud",
-        "Zachary Weller-Davies",
-        "Christoph Brunken",
-        "Jules Tilly"
-      ],
-      "abstract": "We present e3j, a fast Euclid-equivariance backend for geometric deep learning applications with JAX bindings for GPU and TPU. Leveraging both optimized CUDA and Pallas kernels and algorithmic improvements, the library achieves state-of-the-art throughput and runtime on both forward and backward paths. On a machine learning interatomic potential (MLIP) use case, it outperforms established backends, measuring up to 34% speed-up over cuEquivariance on water box NPT simulation using MACE, while remaining fully open source. E3j achieves over 80% efficiency over the H100 maximum memory bandwidth on tensor product operations, and in many cases more than doubles throughput of message passing convolutions forward compared to previously available backends. In addition, with the release of dedicated Pallas TPU kernel, e3j opens the possibility of large scale equivariant deep learning workloads on TPU architectures, which has so far been difficult to achieve. Our benchmarks show that e3j also achieves over 80% of a TPUv6e memory bandwidth, up to one order of magnitude more than e3nn-jax. The library is available on GitHub, PyPI and is released under an open source Apache 2.0 license.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T13:10:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.35099v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.35099v1"
-    },
-    {
-      "id": "2609.34921v1",
-      "title": "Drug-Target Interaction Prediction via Hierarchical Sequential Cross-Attention over Chemical and Protein Language Models",
-      "authors": [
-        "Khadidja Henni",
-        "Hamza Abdelali",
-        "Abdelkrim Aries",
-        "Neila Mezghani",
-        "Brigitte Vannier",
-        "Sara Magdouli",
-        "Lina Abou-Abbas"
-      ],
-      "abstract": "Predicting Drug-Target Interactions~(DTIs) is a central task in computational drug discovery, with direct applications in virtual screening, drug repurposing, and therapeutic candidate prioritization. Although recent deep learning methods have improved DTI prediction, many sequence-based models still process drugs and proteins independently and only combine their representations at a late prediction stage. This limits their ability to explicitly model cross-molecular dependencies between chemical substructures and protein sequence regions. In this paper, we propose a sequence-only DTI prediction architecture that combines two pre-trained language models, ChemBERTa for drug SMILES strings and ESM-2 for protein amino acid sequences, with a hierarchical interaction module. The proposed model first extracts contextual representations using pre-trained encoders, then applies 1D convolutional layers to condense local sequence patterns, followed by a sequential bidirectional cross-attention mechanism inspired by the induced-fit view of molecular recognition. Finally, attention-based pooling constructs fixed-size interaction-aware vectors for binary prediction. Experiments on BIOSNAP, Davis, and BindingDB show that the proposed model achieves the best performance on BIOSNAP, matches the best AUROC on Davis, and remains competitive on BindingDB while using only 25.2 million trainable parameters. Ablation results confirm the contribution of both the CNN and cross-attention modules, and cold-start experiments indicate promising generalization to unseen proteins and drugs.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T11:25:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.34921v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.34921v1"
-    },
-    {
-      "id": "2609.34756v1",
-      "title": "Statistical Benefits of Fine-Tuning from Pretrained Initialization in Diagonal Linear Networks",
-      "authors": [
-        "Alexandre Declèves",
-        "Etienne Boursier",
-        "Nicolas Flammarion"
-      ],
-      "abstract": "Adapting pretrained models to downstream tasks with limited data has become a central paradigm in modern deep learning. Yet, despite its widespread practical success, how fine-tuning leverages information from pretraining remains poorly understood theoretically. We study fine-tuning from pretrained weights through the lens of sparse linear regression and two-layer diagonal linear networks. In our setting, pretraining provides information through the support (and signs) of the initialization predictor, which may contain coordinates relevant to the downstream task. We show how pretrained information reshapes the implicit bias and training dynamics, and can thereby reduce the sample complexity of recovering the target parameters and support. In particular, for a clean initialization with correctly inherited signs, we show that the required sample size is comparable to that of a weighted Lasso estimator that explicitly exploits the pretrained support through a suitably chosen regularizer. Our results thus show how information encoded in pretrained weights can be implicitly exploited by gradient-based fine-tuning, reducing the amount of data needed to recover a downstream task.",
-      "published": "September 28, 2026",
-      "published_raw": "2026-09-28T09:42:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.34756v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.34756v1"
     }
   ]
 }
