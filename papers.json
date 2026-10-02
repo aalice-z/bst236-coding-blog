@@ -1,7 +1,228 @@
 {
-  "last_updated": "2026-10-01T02:43:45.973384",
+  "last_updated": "2026-10-02T02:47:36.169845",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.02182v1",
+      "title": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
+      "authors": [
+        "Joohwan Ko",
+        "Tetiana Parshakova",
+        "Diana Cai",
+        "Robert M. Gower"
+      ],
+      "abstract": "Quasi-Newton (QN) methods have long been among the most effective methods for large-scale unconstrained convex optimization. Two obstacles have limited their use in deep learning: non-convexity and enormous parameter sizes. We introduce SoftServe, a family of QN methods designed to overcome these obstacles without line searches or ad hoc curvature corrections. SoftServe derives positivedefinite curvature estimates from the variational objective of Berglund et al. (2025), even in the presence of negative curvature. We develop diagonal and Kroneckerfactored variants that preserve positive definiteness by construction and scale to massive neural networks. Finally, SoftServe relies on the stable coupled Newton-Schulz iteration for the required matrix operations, replacing costly matrix decompositions with GPU-friendly matrix multiplications. SoftServe excels on problems that are severely ill-conditioned, including tasks such as recurrent networks, deep autoencoders, physics-informed neural networks, and a 136M-parameter physics-informed diffusion model, often achieving lower losses than established baselines including Adam, Muon, and SOAP.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T17:58:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02182v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02182v1"
+    },
+    {
+      "id": "2610.02069v1",
+      "title": "AI Emulation of Stochastic Sudden Stratospheric Warming with Interpretable Latent Structure",
+      "authors": [
+        "C. Daniel Boscu",
+        "Daniel Hernandez",
+        "Fabio Alvarez Ventura",
+        "Justin Finkel",
+        "Ashesh Chattopadhyay",
+        "Pedram Hassanzadeh",
+        "Dorian S. Abbot"
+      ],
+      "abstract": "Rare weather regime transitions pose a challenge for data-driven modeling due to class imbalance. In this study, we develop a probabilistic deep learning emulator for a prototypical system with regime transitions, the stochastic Holton--Mass model of stratospheric variability, and analyze the structure of its learned latent space. The Holton--Mass model exhibits two metastable regimes, a strong and a weak polar vortex, maintained by nonlinear wave--mean flow interactions, with weak stochastic forcing intermittently triggering rare transitions between these regimes that qualitatively represent SSW events. We employ a ResNet-inspired Conditional Variational Autoencoder with six-layer encoder and decoder layers and explicit current-state conditioning to model the distribution of the system's state at the next time step (one day). The emulator accurately reproduces short-term dynamics, steady-state probability distributions, regime persistence statistics, rare transition rates, the transition committor function, and the transition expected lead time of the physical model. Beyond emulation fidelity, we interrogate the learned latent representation to understand how the model internalizes the underlying metastable structure of the dynamics. Principal Component Analysis of the 32-dimensional latent space reveals a clear and unsupervised separation into four physically interpretable clusters corresponding to strong versus weak vortex regimes and stable versus transition-prone configurations. Such emergent regime separation in latent space is hard to identify for deep generative models applied to high-dimensional stochastic systems. Our results show that carefully designed probabilistic emulators can uncover physically meaningful manifolds governing extreme-event dynamics, potentially aiding the development of improved operational advanced warning systems.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T17:11:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02069v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02069v1"
+    },
+    {
+      "id": "2610.01949v1",
+      "title": "A Hybrid Approach to Malware Detection: Integrating Few-Shot Model-Agnostic Meta-Learning with Autoencoders",
+      "authors": [
+        "Emmanuela Andam",
+        "Yasir Abbas Zaidi",
+        "Abdelali Hadir",
+        "Emmanuel Grant",
+        "Naima Kaabouch"
+      ],
+      "abstract": "Ransomware has emerged as a major cybersecurity threat, with incidents increasing in frequency and impact across critical sectors. These attacks are typically launched through phishing emails, malicious downloads, or exploitation of software vulnerabilities to gain system access. Once inside, the malware encrypts files and demands a ransom, often in cryptocurrency, for the decryption key. Conventional detection methods often struggle with novel or scarce samples, leaving systems vulnerable. To address these challenges, this paper proposes a hybrid deep learning framework that combines an Autoencoder Feature Extractor (AFE) with a Model Agnostic Meta Learning (MAML) classifier for few shot malware detection. The AFE generates compact latent features that reduce noise and dimensionality, while the MAML classifier rapidly adapts to new threats using limited labeled data. Experiments conducted on the Ransomware Dataset 2024 demonstrate the effectiveness of the framework in binary classification tasks. Across one to fifty shot settings, the proposed model consistently achieves high accuracy, F1 score, and Matthews Correlation Coefficient values, maintaining reliable classification even under extreme scarcity. These results highlight the model's robustness and effectiveness in adapting to limited data scenarios, demonstrating the potential of combining feature extraction with meta learning to enhance resilience against malware, particularly in sectors such as healthcare, manufacturing, and public infrastructure, where cyberattacks can cause significant operational and financial disruption.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T16:11:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01949v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01949v1"
+    },
+    {
+      "id": "2610.01903v1",
+      "title": "Higher-Order Positional Encodings for Graph Representation Learning",
+      "authors": [
+        "Caleb Stam",
+        "Aagrim Hoysal",
+        "Sanjukta Krishnagopal"
+      ],
+      "abstract": "Many real-world systems exhibit higher-order interactions among groups of entities that cannot be captured by pairwise relationships alone. Graph Transformers and Graph Neural Networks increasingly rely on positional encodings to enrich graph representations, yet existing positional encodings are computed solely from the original graph and therefore cannot directly capture observed higher-order interactions. Topological Deep Learning addresses this limitation by lifting graphs to simplicial complexes, but typically requires performing message passing or attention on higher-order neural network representations. We introduce a representation learning paradigm that enriches graph representations with higher-order topology through positional encodings, enabling standard graph learning models to exploit lifted incidence structure without modifying the backbone. We derive a theoretical characterization of the expressivity of higher-order positional encodings, proving that node-level operators induced by higher-order lifts can mix graph Laplacian frequencies in ways that scalar graph spectral filters cannot. Guided by this theory, we instantiate higher-order positional encodings using Hodge Laplacians derived from clique complexes. Experiments with Graph Transformers on ZINC and controlled synthetic benchmarks demonstrate improvements in predictive performance, while a fixed-1-skeleton experiment shows that the pipeline can transmit higher-order information when cells are supplied independently of the graph. Together, our results establish higher-order positional encodings as a principled bridge between graph positional encodings and topological deep learning.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T15:49:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01903v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01903v1"
+    },
+    {
+      "id": "2610.01894v1",
+      "title": "A foundation for systematic analysis of transformers and RNNs for tractography",
+      "authors": [
+        "Emmanuelle Renauld",
+        "Philippe Poulin",
+        "Hugo Larochelle",
+        "Antoine Théberge",
+        "Maxime Descoteaux"
+      ],
+      "abstract": "Machine learning (ML) has emerged as a promising approach for improving diffusion MRI (dMRI) tractography, a task that remains limited by the intrinsic tension between local diffusion information and global anatomical plausibility. In this work, we systematically evaluate recurrent neural networks (RNNs) and Transformer models for iterative tractography, with particular attention to training strategies, input representations (including convolutional neural network (CNN)-based embeddings and end-of-sequence (EOS) tokens), and hyperparameter selection. We introduce a generation-validation phase enabling supervision at the streamline level during training, allowing supervision despite the mismatch between local loss functions and global streamline quality. Using the ISMRM2015 tractography challenge dataset, our models achieve the highest reported performance to date. Through controlled experiments, we quantify the impact of missing bundles, noisy or imperfect training streamlines, and invalid fibers in the training set. Finally, we demonstrate the applicability of our best-performing models for in vivo data from the Tractoinferno database. Overall, our results highlight both the potential and the limits of sequence-based deep learning models such as Transformers and RNNs for tractography, and emphasize the need for improved phantoms and evaluation methods for in vivo validation. We provide takeaways and recommendations for future researchers training and validating sequence-based supervised methods for tractography.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T15:43:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01894v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01894v1"
+    },
+    {
+      "id": "2610.01893v1",
+      "title": "A Structured State Space Sequence Model for Multi-Class Classification of Malware",
+      "authors": [
+        "Emmanuela Andam",
+        "Rana Shaaban",
+        "Emanuel Grant",
+        "Naima Kaabouch"
+      ],
+      "abstract": "By 2030, Internet of Things (IoT) devices are projected to reach 40 billion, with fast-paced technological advancements in fields such as industry, healthcare, agriculture, automobiles, and building/home automation systems. This expansion has created a large attack surface for cybercrime, as the majority of these devices open the door for cybercriminals to exploit vulnerabilities, as they lack adequate built-in security. Cybercriminals launch malware attacks to compromise systems or steal sensitive data, and once a system is compromised, a ransom is typically demanded for its release. Current cybersecurity measures in place are being outpaced by the rapid growth of the IoT, which is accompanied by a subsequent growth in malware variants being created per day. Recognizing this pitfall, this research examines and proposes a novel approach to malware detection and classification to safeguard devices from further attacks and make IoT systems more robust and secure. The framework proposed utilizes a Structured State Space Sequence (S4) model, which discretizes sequences of malware samples in a sequence and captures long-range dependencies, essentially identifying the \"cause\" and \"effect\" hidden within malware execution flow. This study presents two novel contributions: the first empirical application of the S4 model for malware analysis, and a comprehensive comparison of its performance against other deep learning architectures, laying the stepping stone for future research in this new paradigm.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T15:42:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01893v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01893v1"
+    },
+    {
+      "id": "2610.01746v1",
+      "title": "End-to-End Learning vs. Modular Architectures: Comparative Insights into Autonomous Driving Systems",
+      "authors": [
+        "Kartik B. Kapse"
+      ],
+      "abstract": "Autonomous driving systems have become a central focus of intelligent transportation research, with End-to-End Learning and Modular Architectures offering two prominent design paradigms for their implementation. E2E Learning uses deep learning algorithms to map raw sensory inputs directly to driving actuators, providing a streamlined and adaptable solution. while Modular Architectures employ a pipeline-based approach, dividing the system into distinct subsystems for perception, cognition, planning, and control. This paper presents a comprehensive comparative analysis of these paradigms, focusing on their strengths, limitations, and trade-offs to provide insights into their suitability for various autonomous driving applications. The study evaluates key factors such as interpretability, scalability, robustness, and real-world applicability. While End-to-End Learning emphasizes simplicity and adaptability in dynamic environments, it lacks transparency and is highly dependent on large datasets. Conversely, Modular Architectures offer superior interpretability and task-specific optimization, but face challenges related to integration complexity and scalability. To address these limitations, hybrid approaches that combine the strengths of both paradigms have emerged, offering a promising direction for overcoming these challenges. Beyond this comparative synthesis, following work proposes a Four-Dimensional Architecture Selection Framework, comprising twelve binary criteria across safety, operating environment, data/computational resources, and deployment context, and validate it against ten published autonomous driving systems, correctly recommending 7/10 deployed architectures. This work synthesizes existing literature to highlight key trade-offs between the paradigms and identifies hybrid architectures as a promising direction for future research.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T14:15:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01746v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01746v1"
+    },
+    {
+      "id": "2610.01619v1",
+      "title": "Exposing the Cost of Deep Learning Audio Development",
+      "authors": [
+        "Constance Douwes",
+        "Paul Magron",
+        "Romain Serizel"
+      ],
+      "abstract": "The environmental impact of deep learning has attracted increasing attention over the past decade. Existing studies mainly focus on the energy and carbon emissions of model training and inference, while the whole development phase is often overlooked. Yet, architecture prototyping and intensive experiments are conducted during this stage, which is highly energy-demanding. In this article, we propose a methodology to estimate these costs, based on activity logs from the Grid5000 shared computing platform used by the LORIA laboratory. As a case-study, we focus on audio projects developed in the Multispeech research team. We evaluate the overall energy cost of four projects, and we compare them to those of training the reported models. Our results show that the energy required for the development phase is 3 to 256 times greater than that required to train the best-performing model alone. These results advocate for a more systematic reporting of energy consumption across the entire life cycle of deep learning-based audio projects.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T12:55:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01619v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01619v1"
+    },
+    {
+      "id": "2610.01384v1",
+      "title": "Robust Evidential Learning Through Latent Consistency",
+      "authors": [
+        "Charmaine Barker",
+        "Daniel Bethell",
+        "Simos Gerasimou"
+      ],
+      "abstract": "Reliable uncertainty quantification is essential for deploying deep learning models in high-stakes settings, where out-of-distribution and adversarial inputs can induce confident but unreliable predictions. Evidential Deep Learning provides efficient uncertainty estimates in a single forward pass, but can still assign high evidential strength to inputs that are poorly supported by the learned representation, such as adversarial inputs. We introduce CLEAR, a lightweight, task-agnostic post-hoc method that improves evidential robustness without retraining or altering the base prediction. Using held-out calibration data, CLEAR characterises the group-conditioned geometry of the model's latent space. At inference, it efficiently generates perturbation views directly in the latent space and measures their conflict relative to the calibrated geometry of the predicted group. High latent conflict indicates unsupported evidence, which CLEAR uses to selectively reduce evidential strength while retaining evidence for latent-consistent inputs. On ImageNet$\\rightarrow$CUB, CLEAR improves OOD and adversarial AUROC by $+8.29$ and $+5.01$ while running 17.4$\\times$ faster than competing post-hoc methods while preserving predictive performance across classification, regression, and object detection benchmarks.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T09:50:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01384v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01384v1"
+    },
+    {
+      "id": "2610.01356v1",
+      "title": "Port-Hamiltonian Neural Networks for Systems with Multiple Asymptotically Stable Equilibria",
+      "authors": [
+        "Simon Heilig",
+        "Jens Püttschneider",
+        "Mohammad Itani",
+        "Asja Fischer",
+        "Timm Faulwasser"
+      ],
+      "abstract": "Stable port-Hamiltonian neural networks certify asymptotic stability by construction. Yet, their Hamiltonian is a global Lyapunov function with a single global minimum, so they can represent only dynamic systems with {one} attractor. We demonstrate that this excludes even simple systems with energy landscapes forming a double well, and we overcome the restriction by parametrising the Hamiltonian as a {product} of Bregman divergences generated by one input-convex network. We prove that the resulting model is locally Lyapunov stable, that the coexistence of stable equilibria forces additional non-asymptotically-stable equilibria to exist, that all equilibria lie in a bounded region, and under a hyperbolicity assumption that almost-everywhere stability holds. On three systems our approach is able to recover the energy surface characteristics and improve the convergence speed by 1.8$\\times$-8.5$\\times$.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T09:25:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01356v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01356v1"
+    },
+    {
+      "id": "2610.01173v1",
+      "title": "CAGE-NAS: Certified Functional Descent for Efficient Model Growth",
+      "authors": [
+        "Santiago Florido Gomez",
+        "Stéphane Rivaud"
+      ],
+      "abstract": "The progressive growth of neural networks requires deciding when the current representation remains sufficient for optimization and when it should be expanded. CAGE-NAS formulates this decision in function space through an admissibility criterion on approximations of the functional gradient. As long as a representation enables a certified Functional Gradient Descent step, the architecture remains fixed; when the criterion fails, a function-preserving expansion is applied and the resulting representation is evaluated again. As the main instance, we study the family induced by the tangent space, using a regularized projection of the functional gradient. In a controlled setting with exact certification, CAGE-NAS produces architectures positioned above the 99.8th performance percentile by held-out RMSE among all admissible alternatives within the same parameter budget, without enumerating them during the growth trajectory.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T06:46:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01173v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01173v1"
+    },
+    {
+      "id": "2610.01134v1",
+      "title": "Open Vocabulary Word Recognition From Transcribed Bangla Texts",
+      "authors": [
+        "Faias Satter",
+        "Sk. Md. Masudul Ahsan"
+      ],
+      "abstract": "An optical character recognition (OCR) can scan a paper and extract text using technology, making people's jobs easier. While various OCR systems are available in the software industry, finding a reliable equivalent solution for Bangla takes much work. When it comes to handwritten texts, the situation is much more unusual. Recognizing words from word images is the most critical stage in any OCR process. It is the second stage after segmenting words from text pictures. If this stage fails, the overall performance of the OCR will be poor, regardless of how well the other phases perform. This study aims to recognize words using deep learning in a handwritten Bangla word image. Three object detection models, SSD with MobileNetV2, Faster R-CNN with InceptionResNetV2, and an ensemble model of these two, have been used to train and test handwritten word images. A modified Non-Maximum Suppression has been introduced to enhance the effectiveness of the models' results. A customized dataset of 9841 handwritten Bangla word images has been compiled, featuring diverse handwriting styles from various individuals. All three models' performances have been checked against the test dataset, and the ensemble model has been the most impressive, with an F1-score of 92.61%. Also, at the word level, the ensemble model correctly recognizes 96.12% of the words to some extent. The system can be further improved by introducing a post-processing phase to correct errors generated by the system.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T06:14:41Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.01134v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.01134v1"
+    },
+    {
+      "id": "2610.00753v1",
+      "title": "Increasing Width Allows Greedy Layer-wise Training to Rival End-to-End Backpropagation in Self-Supervised Learning",
+      "authors": [
+        "Syon Mansur",
+        "Joel Zylberberg"
+      ],
+      "abstract": "End-to-end backpropagation has been the dominant mode of training in deep learning, allowing for the coordination of parameter updates across layers of a neural network. Prior studies have explored alternative -- and, in some cases, simpler -- training mechanisms, showing that they can sometimes achieve performance similar to backpropagation. However, the architectural conditions under which locally optimized networks, which avoid end-to-end backpropagation of error, can learn representations comparable to those learned through end-to-end training remain unclear. We aim to answer this question in the context of self-supervised learning, an important framework for large-scale pretraining in artificial intelligence. Here, we investigate how network width and depth affect the efficacy of greedy layer-wise and end-to-end self-supervised training in convolutional networks. We find that in wider networks, the benefits of end-to-end backpropagation over greedy layer-wise training shrink: in relatively shallow and very wide networks, we even observed higher performance in models trained with greedy layer-wise training. Subsequent analysis of the representations formed by these networks shows that very wide greedy-trained networks exhibit more favorable representational geometry than do networks trained end-to-end with backpropagation. This work shows that width can compensate for restricted credit assignment and identifies differences in representational geometry as a potential mechanism for their improved performance.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T21:47:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.00753v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.00753v1"
+    },
+    {
+      "id": "2610.00728v1",
+      "title": "Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations",
+      "authors": [
+        "Ruizhe Huang",
+        "Qidong Yang",
+        "Jonathan Giezendanner",
+        "Sherrie Wang"
+      ],
+      "abstract": "Weather reanalysis products rely on computationally intensive numerical weather predictions followed by data assimilation that corrects the forecast toward observations. Deep generative models offer a cheaper alternative that shifts much of this cost from inference to offline training. However, existing generative approaches have been evaluated on synthetic observations or under different datasets and evaluation schemes, making it unclear which design choices actually improve real-world data assimilation. We present the first controlled benchmark of generative weather data assimilation on real weather station observations. Using 11,849 NOAA MADIS stations across the contiguous United States and four weather variables, we evaluate methods while holding the dataset, observation operator, and deep learning architecture fixed. The benchmark compares the major design choices, including diffusion versus flow matching, pixel versus latent-space formulations, and multiple inference-time conditioning strategies, against a classical 3D-Var baseline. The benchmark reveals three clear conclusions. First, learned generative priors outperform the Gaussian prior of 3D-Var (35.7% vs. 33.3% RMSE reduction over ERA5) despite using no ERA5 background field at inference. Second, full-gradient guidance consistently outperforms stop-gradient and initial-noise optimization. Third, other choices provide little measurable benefit: diffusion and flow matching perform nearly identically under matched conditions, and latent-space variable mixing does not help. We further evaluate both dense and sparse station settings and find advantages from generative AI and full-gradient guidance more pronounced under sparsity. Together, these results identify which components of generative weather data assimilation improve performance on real station observations and establish a standardized benchmark for future work.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T21:18:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.00728v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.00728v1"
+    },
+    {
+      "id": "2610.00607v1",
+      "title": "End-to-End Historical Music Restoration in Latent Space",
+      "authors": [
+        "Steven Cho",
+        "Junghyun Koo",
+        "Raphael Lafargue",
+        "Tushar Dhyani",
+        "Eloi Moliner",
+        "Yuki Mitsufuji"
+      ],
+      "abstract": "Historical music restoration (HMR) has almost exclusively focused on constrained problems such as Super-Resolution or the restoration of solo pieces, under-exploring the general task of restoring orchestral historical music, which has multiple instruments. This under-exploration is largely because the HMR domain, early-20th-century recordings, has no pre-degradation ground-truth pairs, making the restoration task unsupervised and more challenging. This paper presents a supervised end-to-end orchestral HMR benchmark by exploring both the synthetic degradation functions and the end-to-end generative deep-learning restoration methods. We simulate the historical recording degradation chain more faithfully than prior work, which makes orchestral restoration into a tractable supervised problem. A latent flow-matching model trained on the resulting synthetic pairs outperforms existing HMR baselines on intrusive, non-intrusive, and subjective evaluations. We also curate and release a 9.3-hour license-free, unpaired, historical classical-music test set, along with code and audio demos.",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T19:11:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.00607v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.00607v1"
+    },
     {
       "id": "2609.40047v1",
       "title": "Gromov-Wasserstein Distillation for Inductive Multi-View Embedding",
@@ -15,6 +236,21 @@
       "published_raw": "2026-09-30T16:14:13Z",
       "pdf_link": "http://arxiv.org/pdf/2609.40047v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.40047v1"
+    },
+    {
+      "id": "2610.00426v1",
+      "title": "IrekoGPT: Turning Structured Pruning into Post-Hoc Slimmable LLMs",
+      "authors": [
+        "Pietro Moriello",
+        "Pietro Buzzega",
+        "Angelo Porrello",
+        "Simone Calderara"
+      ],
+      "abstract": "We introduce IrekoGPT, a post-hoc method for converting pretrained LLMs into slimmable models whose width can be adjusted at inference time. Building on SliceGPT, we retain its projection matrices without pruning them, allowing a single model to expose nested subnetworks at different widths. We improve robustness by calibrating each layer across multiple compression ratios, and correct downstream linear layers through gradient-free ridge regression. Across Llama and Qwen models, preliminary results show improvements over naive PCA-based slimming, with the largest gains at high compression. Code is available at https://github.com/aimagelab/IrekoGPT",
+      "published": "September 30, 2026",
+      "published_raw": "2026-09-30T16:08:59Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.00426v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.00426v1"
     },
     {
       "id": "2609.40008v1",
@@ -56,244 +292,6 @@
       "published_raw": "2026-09-30T12:12:26Z",
       "pdf_link": "http://arxiv.org/pdf/2609.39584v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2609.39584v1"
-    },
-    {
-      "id": "2609.39583v1",
-      "title": "MADGRAV: a multilevel anomaly-detection pipeline for gravitational-wave searches applied to LIGO data",
-      "authors": [
-        "Gianluca Inguglia",
-        "Huw Haigh",
-        "Ulyana Dupletsa",
-        "Alessandro Longo"
-      ],
-      "abstract": "We present the results of \\textbf{MADGRAV}, a deep-learning-based search for high-mass compact binary coalescences, applied to the data collected by the LIGO interferometers during the third observing run and during the first and second part of the fourth observing run. The \\textbf{MADGRAV} pipeline consists of a series of sequential convolutional neural networks that perform anomaly detection, glitch classification, coherence testing, and signal ranking. Data from the Hanford and Livingston LIGO detectors are studied (both individually and in coherence) by way of 1 second Q-transform windows. Of the candidates that survive every stage of the pipeline, 48 reach the significance threshold, and we report 47 gravitational wave detections characterised by a false alarm rate below $1\\,{\\rm yr}^{-1}$ with a probability of astrophysical origin $p_{\\rm astro}>0.9$. Of the 47 detections, 44 are shared with the minimally modelled coherent WaveBurst search. The observed total source-frame masses, extracted from official gravitational wave transient catalogues, are in the $14-236 M_{\\odot}$ range with a median of $69 M_{\\odot}$, and a median SNR of 16. We note that the recovered fraction of confident detections rises with mass: for LIGO detectors network SNR $>10$ the pipeline recovers $8.1\\%$ of confident catalog events below $30 M_{\\odot}$, $39.8\\%$ between $30$ and $100 M_{\\odot}$, and $53.3\\%$ above $100 M_{\\odot}$, corresponding to $33.3\\%$, $45.5\\%$ and $53.3\\%$ of the events detected by coherent WaveBurst in the same bins. These results suggest that anomaly detection pipelines can serve as an independent detection channel complementary to matched filtering in the high-mass high-SNR regime.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T12:12:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.39583v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.39583v1"
-    },
-    {
-      "id": "2609.39512v1",
-      "title": "Can Domain Generalization be Guaranteed in Small-Sample Learning?",
-      "authors": [
-        "Hong Zheng"
-      ],
-      "abstract": "The small-sample learning problem remains a fundamental challenge in machine learning because limited training data lead to unstable model estimation and generalization. Structural Risk Minimization (SRM) has long been regarded as a principled solution under the classical i.i.d. assumption. However, domain generalization (DG) violates this assumption, leaving the theoretical role of SRM in DG largely unexplored. To bridge this gap, we establish the first theoretical guarantees for SRM in DG under mild assumptions. Specifically, based on the concept of stability, we derive learning consistency and generalization error bounds and prove that these bounds become tight when the hypotheses satisfy the stability condition. Building upon this, under a specific hypothesis space assumption, we establish stability, learning, and generalization bounds for SRM. We further discuss the applicability of these bounds to deep learning. This work establishes theoretical foundations for SRM under distribution shifts and sheds light on the design of robust DG algorithms in small-sample scenarios.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T11:12:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.39512v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.39512v1"
-    },
-    {
-      "id": "2609.39429v1",
-      "title": "Towards Trustworthy AI for Glioma Diagnosis: A Task-Aware Evaluation of Uncertainty Quantification",
-      "authors": [
-        "Gonzalo Esteban Mosquera Rojas",
-        "Sebastian R. van der Voort",
-        "Carolin M. Pirkl",
-        "Sandeep Kaushik",
-        "Marion Smits",
-        "Stefan Klein"
-      ],
-      "abstract": "Uncertainty Quantification (UQ) is a key requirement for trustworthy AI in high-stakes medical image analysis. In this work, we evaluate UQ in a multi-task Deep Learning framework for MRI-based glioma diagnosis that performs tumor segmentation and predicts IDH mutation status, 1p/19q co-deletion status, and tumor grade. Monte Carlo Dropout (MCD) is used for a detailed task-aware analysis of predictive, aleatoric, and epistemic uncertainty. We assess MC sample convergence, calibration, error detection, selective prediction, associations with segmentation performance, and the effect of voxel-wise uncertainty aggregation on case-level reliability. We also compare MCD with Deep Ensembles (DE) and Monte Carlo Deep Ensembles (MCDE), examine interactions between segmentation quality and classification, and evaluate a composite trust score integrating segmentation and classification uncertainty. Across tasks, uncertainty estimates supported meaningful error detection, while calibration depended on the dropout rate, with moderate rates yielding the most reliable probabilities. Uncertainty decomposition provided task-dependent interpretability but did not consistently improve error detection over predictive uncertainty alone. DE and MCDE showed comparable operational utility, with no method consistently dominating across tasks and metrics. The composite trust score did not consistently outperform classification uncertainty for selective prediction. Overall, our results provide a task-aware evaluation strategy and practical guidance for the development of trustworthy AI for glioma diagnosis.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T10:06:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.39429v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.39429v1"
-    },
-    {
-      "id": "2609.39296v1",
-      "title": "Semantic-Aware Joint Source-Channel Optimization for Encoder-Agnostic Digital Video Communication",
-      "authors": [
-        "Xiangben Zhu",
-        "Caili Guo",
-        "Yang Yang",
-        "Chuanhong Liu",
-        "Meiyi Zhu"
-      ],
-      "abstract": "Video semantic communication has attracted increasing attention as a promising approach to improving video transmission efficiency. However, most existing approaches rely on computationally intensive deep learning-based video encoders and decoders, which hinders their deployment in resource-constrained scenarios. To address this issue, we propose a lightweight semantic-aware joint source-channel optimization (SAJSCO) scheme that can be integrated into existing digital video communication systems as a plug-in module. Specifically, we develop a video communication system model in which the transmitter jointly optimizes source and channel coding parameters based on the inter-frame semantic importance of the input video and estimated channel state information. On this basis, we formulate an optimization problem that maximizes semantic importance weighted video reconstruction quality under a maximum bitrate constraint. To solve it, we first quantify inter-frame semantic importance using a cosine similarity-based metric with a shifted window mechanism. We then develop a multi-actor proximal policy optimization (MPPO) algorithm to solve the formulated problem by jointly adapting the source compression rate and channel coding rate. The learned policy can be directly applied to different video encoders without encoder-specific retraining or fine-tuning. SAJSCO achieves Bjøntegaard Delta rate reductions of 34.86\\% and 18.01\\% when integrated with H.265, a conventional video encoder, and DCVC-RT, a deep learning-based video encoder. Over-the-air experiments on a hardware testbed further demonstrate a PSNR gain of up to 1.448 dB with H.265 and an LPIPS reduction of up to 0.033 with DCVC-RT compared with the respective best-performing fixed-parameter baselines.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T08:40:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.39296v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.39296v1"
-    },
-    {
-      "id": "2609.38560v1",
-      "title": "Detail in Context: A Dual-Scale Machine Learning Framework for Mycosis Fungoides Detection",
-      "authors": [
-        "Mohamed Hazem",
-        "Tarek Waleed",
-        "Omar Khaled",
-        "Nada Omar",
-        "Mahmoud Raslan",
-        "Marwa Mohamed Fawzy",
-        "Aya Fahim",
-        "Rania M. Mogawer",
-        "Ahmed Mourad",
-        "Kariman Mansour",
-        "Muhammad Rushdi"
-      ],
-      "abstract": "Mycosis fungoides (MF) is a rare form of cutaneous T-cell lymphoma that is often misdiagnosed in early stages due to its visual similarity to benign inflammatory dermatoses. Early and accurate diagnosis is critical for improving patient outcomes. In this paper, we propose a comprehensive diagnostic framework for automated MF detection that combines dual- scale histopathological image analysis with deep learning. To distinguish MF from other lymphoproliferative skin conditions, the proposed approach leverages a late-fusion ensemble of dual- magnification (10x and 20x) convolutional neural networks (CNNs), complemented by a random forest classifier trained on 16 clinical features. Experimental results on an expanded dataset of 6,267 images (4,306 MF; 1,961 Non-MF) across 463 patients demonstrate that strong detection performance is obtained by prioritizing higher-resolution cytological details (20x) within broader architectural context (10x). The image-based late-fusion model achieves an accuracy of 83.58% and a sensitivity of 89.13%, while the clinical random forest model achieves an accuracy of 96.6% and sensitivity of 93.8%, highlighting the po- tential of this multimodal framework as a robust clinical decision support system in dermatology. This framework addresses two distinct clinical objectives: an image-based dual-scale pipeline optimized for the early diagnostic screening of MF versus non- MF dermatoses, and a complementary clinical metadata model designed for the subsequent staging of confirmed MF cases (patch/plaque versus tumor)",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T21:21:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.38560v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.38560v1"
-    },
-    {
-      "id": "2609.38447v1",
-      "title": "An Input-Frugal Deep Learning Framework for Weather-Driven National Crop-Yield Forecasting: A Case Study of Brazilian Soybean",
-      "authors": [
-        "Fernando Dupin da Cunha Mello",
-        "Prashant Kumar",
-        "Erick G. Sperandio Nascimento"
-      ],
-      "abstract": "Reliable, timely crop-yield forecasts are essential for market stability and risk management, yet many approaches rely on costly or hard-to-scale inputs. We present a frugal, transferable, and architecture-agnostic deep learning framework that uses routine weather as the only time-varying input plus two lightweight static context inputs (crop year and an agro-environmental label) to capture long-run change and regional heterogeneity, while supporting multiple sequence encoders under identical data requirements. Using a 20-season Brazilian soybean case study (2001/02-2020/21) with leave-one-year-out cross-validation, we benchmark MLP, CNN, LSTM, CNN-LSTM, a Transformer encoder and the Mamba state-space model against linear ridge regression and a five-year moving-average \"farmer\" baseline. All deep learning variants outperform ridge, and all sequential encoders surpass the non-sequential MLP. The Transformer achieves the best national accuracy (RMSE 149 kg ha^-1; rRMSE 5.3%; R^2 = 0.784), reducing error by 47.6% relative to the farmer baseline. In-season forecasts improve monotonically from early- to late-season issuance, reaching approximately 50% lower error than the baseline at the latest forecast point. Ablations indicate that the agro-environmental label and spatial instance expansion (multiple grid-node weather sequences per municipality-year) contribute positively without increasing input complexity. SHAP diagnostics suggest crop year explains most of the long-run trajectory, whereas within-season weather and agro-environmental context primarily drive interannual deviations, with moisture/cloud and thermal-demand variables dominating. Overall, the framework is straightforward to deploy across other crops and geographic regions and is naturally compatible with operational weather forecasts for routine monitoring.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T19:40:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.38447v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.38447v1"
-    },
-    {
-      "id": "2609.38372v1",
-      "title": "Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer",
-      "authors": [
-        "Qiankai Xu"
-      ],
-      "abstract": "A harness is the code around a language-model agent that organizes prompts, calls tools, manages context, and controls execution. As models grow stronger, recent work has begun to let agents improve their own harnesses, a line of work known as self-evolving harnesses. In most existing methods, a separate proposer running on a human-designed harness modifies the solver's harness, and a separate harness is evolved for each benchmark. Real-world tasks come from many domains, so both the evolution and the evaluation of a harness should cover a diverse range of tasks. We propose a framework close to recursive self-improvement: the same frozen model, on the same version of the harness, first solves tasks as the solver and then, as the proposer, reads the complete run records and directly edits the harness that runs it. Each evolution batch draws tasks from five benchmarks in different domains. To measure generalization, training and held-out tasks are strictly separated, and we additionally evaluate on five out-of-distribution benchmarks never used during evolution. We frame the evolution process as deep-learning training with two stages, multi-task pretraining and continual training. Starting from a 49-line seed harness, the harness obtained at the end of the first stage improves the average score by 4.48 points on the in-distribution benchmarks and by 12.64 points on the out-of-distribution benchmarks, surpassing Codex on the former and matching it on the latter. In the second stage, continued evolution on Claw-Eval, one of the out-of-distribution benchmarks, further raises the score on that benchmark from 66.17 to 68.06, exceeding Codex. We also provide an in-depth analysis of the mechanisms that emerged during evolution, including output truncation, history compaction, and independent review.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T18:33:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.38372v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.38372v1"
-    },
-    {
-      "id": "2609.38095v1",
-      "title": "Probe-Space Preconditioning for Fast and Stable Zero-Order Training",
-      "authors": [
-        "Francois Chaubard",
-        "Mykel J. Kochenderfer",
-        "Chris Ré"
-      ],
-      "abstract": "Backpropagation (BP) dominates deep learning but imposes a massive memory tax. For example, training OPT-30B with Adam requires $\\approx$ 600GB of GPU memory (assuming batch size 8 and sequence length 2048). Alternatively, zero-order optimization (ZOO) trains in inference-mode (requiring only $\\approx$ 60GB for the same model): no stored activations, no gradients, and no optimizer states. However, ZOO convergence has lagged behind BP. In this work, we evaluate two methods to close this gap. First, we show that reallocating training compute budget from many steps to large effective batch sizes with many perturbations (or probes) but fewer steps, allows 1SPSA (Spall, 1992) to outperform zero order methods like MeZO (Malladi et al., 2023) with less training compute. Next, we introduce 1.5-SPSA, adding a single \"clean\" forward-pass per step to 1SPSA to calculate a cheap diagonal preconditioner in probe-space, which improves convergence rate and convergence by down-weighting high curvature directions. Benchmarking on 6 post-training datasets on both Qwen3 and OPT model families, we show that 1.5-SPSA achieves State-of-the-Art results over previous ZOO solvers with much less optimization steps. For example, we train OPT-13B (for direct comparison to MeZO) and find 1.5-SPSA achieves +3.1% accuracy on SST-2 over both MeZO and BP in only 70 steps vs. MeZO's 100,000 steps. Finally, we combine an 8-bit-packing random generator, triton fused unpack/apply kernels, and distributed parallelism to achieve fast and stable training of models as large as OPT-30B in-place on commodity GPUs (e.g. A100).",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T17:43:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.38095v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.38095v1"
-    },
-    {
-      "id": "2609.37740v1",
-      "title": "HyDI: A hybrid Deep Learning-Inductive Logic Programming ensemble for multi-label classification",
-      "authors": [
-        "Simon Flügel",
-        "Till Mossakowski"
-      ],
-      "abstract": "While attaining remarkable results for many applications, Deep Learning models are notoriously difficult to explain. This work introduces HyDI, a hybrid ensemble architecture for hierarchical multi-label classification. It combines a Deep Learning (DL) model with rule-based classifiers generated by Inductive Logic Programming (ILP). For leaf classes of the label hierarchy, the rule-based classifiers replace the DL model, leading to more transparent classification results. HyDI is applied to the Chemical Entities of Biological Interest (ChEBI) ontology, providing ILP-generated rules for 314 classes. For these classes, HyDI can generate global explanations as well as local explanations that combine visual and text-based descriptions.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T14:56:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.37740v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.37740v1"
-    },
-    {
-      "id": "2609.37632v1",
-      "title": "ProCTI: Prototype-Refined Global Conditioning for Diffusion-Based Time Series Imputation",
-      "authors": [
-        "Fariza Rashid",
-        "Duc Van Le",
-        "Rahat Masood",
-        "Gustavo Batista",
-        "Aruna Seneviratne",
-        "Suranga Seneviratne"
-      ],
-      "abstract": "Time series imputation has progressed from statistical and deep learning approaches to diffusion-based models, which have shown strong recent performance. Existing diffusion-based methods typically condition the reverse process using local contextual information from the current or neighbouring windows. Meanwhile, global dataset-level structure often remains implicit, limiting performance when local observations are sparse, noisy, or unrepresentative. To address this issue, we propose ProCTI, a diffusion-imputation framework that augments local conditioning with retrieved global dataset-level priors through learned prototypes. A hybrid conditioning mechanism integrates this global context with local signals during reverse diffusion, enabling more accurate reconstruction under varying missingness scenarios. Experiments across multiple benchmark datasets show that ProCTI outperforms strong baselines overall under random missingness, while remaining competitive under attribute-wise missingness. Furthermore, we use a latent-regime data model to characterise the precise conditions under which prototype-derived global conditioning provably improves imputation. We support this with a general theoretical analysis of local-global conditioning.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T14:04:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.37632v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.37632v1"
-    },
-    {
-      "id": "2609.37605v1",
-      "title": "TomoTransformer: Towards a Foundation Model for CT Reconstruction",
-      "authors": [
-        "AmirEhsan Khorashadizadeh",
-        "Benjamín Béjar"
-      ],
-      "abstract": "Supervised deep learning has advanced sparse-view tomographic reconstruction. However, conventional models, which typically map filtered back-projection (FBP) images or sinograms to clean reconstructions, are brittle under distribution shifts. Because they require retraining whenever projection counts and angles, detector resolutions, or data distributions change, their deployment in real-world applications remains limited. To address this, we introduce TomoTransformer, a transformer-based architecture that treats each \\textit{local} filtered projection as an individual token and predicts missing views via self-attention. Crucially, TomoTransformer operates in a \\emph{back-projection space} that separates projections across spatial locations, making view interpolation geometrically well-posed and invariant to detector size. This design yields a single foundation model that can process any number of input projections, at arbitrary angular locations and detector dimensions, and query any number of target angles without retraining. Trained on a large-scale dataset spanning diverse medical CT anatomies and natural images, TomoTransformer generalizes effectively across anatomies, materials, and resolutions. Extensive evaluations on several benchmark sparse-view datasets show that TomoTransformer significantly outperforms concurrent multi-purpose models like ViewTrans and matches or exceeds strong protocol-specific baselines, while remaining fully agnostic to the number of input and target projections. Furthermore, the model demonstrates robust zero-shot generalization on real experimental nanoscale brain data collected from an X-ray synchrotron, showcasing its practical utility for real-world applications.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T13:53:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.37605v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.37605v1"
-    },
-    {
-      "id": "2609.37565v1",
-      "title": "A Model-Agnostic Physics-Guided Adapter for Few-Shot Transfer of Coastal Flood Prediction Models to Unseen Regions",
-      "authors": [
-        "Bilal Hassan",
-        "Areg Karapetyan",
-        "Samer Madanat"
-      ],
-      "abstract": "Deep learning surrogates can produce high-resolution coastal flood maps orders of magnitude faster than physics-based hydrodynamic simulators, yet transferring them to new coastal regions remains costly, since generating target-region data for fine-tuning typically requires numerous time-consuming simulations. To tackle this bottleneck, we introduce the Physics Adapter (PA), a compact, architecture-agnostic adaptation interface that enables efficient few-shot transfer of flood prediction models across diverse coastal regions. PA predicts peak water level through a differentiable wet/dry response that compares terrain elevation against a learned water level, and blends this physics-structured prediction with a data-driven branch through a learned gate. Unlike physics-informed formulations, PA imposes no PDE-residual or conservation losses and instead exploits elevation as an architectural inductive bias, adding a negligible number of trainable parameters. We integrate PA into 12 heterogeneous models, and evaluate them on two coastal regions with markedly distinct geometries, topographies, and shoreline protection configurations. The performance of PA is benchmarked against a no-physics baseline, full fine-tuning, and standard parameter-efficient fine-tuning (PEFT) methods, considering both within-region generalization to unseen sea level rise values and between-region transfer. In low-shot regime (K=3), and averaged over all backbones and transfer settings, adding PA reduces root mean square error by 11.5% when only the output head is adapted on a frozen backbone, by 15.4% when combined with PEFT methods, and by 22.9% under full fine-tuning, compared to matched configurations without PA. Taken together, the findings of this work offer practitioners a concrete recipe for extending DL-based coastal flood predictors to new, data-scarce regions.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T13:34:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.37565v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.37565v1"
-    },
-    {
-      "id": "2609.37555v1",
-      "title": "Benchmarking graph-based models for in-silico toxicity prediction in drug discovery",
-      "authors": [
-        "Noel Suarez-Barro",
-        "Manuel Lama",
-        "Juan C. Vidal"
-      ],
-      "abstract": "Drug discovery is a costly and high-risk process, where toxicity-related failures remain a major cause of attrition in both preclinical and clinical stages. As a result, accurate early prediction of chemical toxicity is essential to reduce downstream costs and improve compound prioritization. In this context, graph deep learning (GDL) has emerged as a powerful paradigm for toxicity prediction, leveraging molecular graph representations to learn directly from chemical structure with improved expressivity over traditional approaches. Despite the growing number of proposed models, current literature-based comparisons are often difficult to interpret due to inconsistencies in datasets, preprocessing pipelines, and evaluation protocols. To address this limitation, we introduce a unified and standardized benchmarking framework for GDL-based toxicity prediction. We systematically evaluate more than 20 representative approaches under consistent experimental conditions and across multiple datasets and partitioning strategies, enabling a fair and reproducible comparison of model performance. In addition, we complement this empirical study with a structured literature analysis to contextualize existing methodological trends and performance claims. Our results provide a clearer and more reliable assessment of the current state of the field, highlighting both the strengths and limitations of existing graph-based approaches. To support transparency and reproducibility, we release our benchmarking framework as open-source software https://gitlab.citius.gal/noel.suarez/benchtox, allowing the community to evaluate and compare models under consistent conditions.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T13:31:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.37555v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.37555v1"
-    },
-    {
-      "id": "2609.36732v1",
-      "title": "Deep Learning Latency Attacks and Defenses: A Cross-Domain Survey of Availability Threats",
-      "authors": [
-        "Zonghua Gu",
-        "Zeyu Gao",
-        "Amin Saremi",
-        "Samarjit Chakraborty"
-      ],
-      "abstract": "Adversarial machine learning has focused mainly on integrity, but availability is an increasingly consequential complement. Latency attacks (also energy-latency attacks) increase inference-time work, energy, or response time, causing deadline misses, throughput collapse, or resource exhaustion in vehicle controllers, interactive services, or battery-powered sensors, sometimes while preserving the nominal prediction. This survey unifies a fragmented literature spanning perception pipelines (including physical attacks on autonomous-driving detection and tracking), input-adaptive neural inference (sponge examples, dynamic networks), and autoregressive and agentic systems (output-length, verbose-image, and reasoning denial-of-service attacks on LLMs, VLMs, mixture-of-experts models, and tool-using agents). We organize attacks by exploited computational bottleneck rather than formulation, separating what makes a computation expensive from how the attacker triggers it; the delivery channel (input, prompt or retrieved content, message, poisoning, or weight tampering) is an orthogonal attribute. Many attacks share one mechanism, intermediate-work amplification, motivating a work-budget defense abstraction; we distinguish caps on the work entering an expensive stage from caps on the results leaving it. We further analyze when a model-level cost increase becomes a system-level availability failure, which depends on critical-path share, slack, existing ceilings, accumulation, resource sharing, and fallback policy, not on the amplification factor alone. We also provide a threat-model taxonomy, consolidated quantitative comparisons, a defense review by control mechanism, and open challenges such as standardized evaluation, physical realizability, and whole-system availability. Companion website: https://github.com/guzonghua/awesome-latency-attacks.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T05:06:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36732v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36732v1"
-    },
-    {
-      "id": "2609.36609v1",
-      "title": "Best Practices in EEG Analysis: Preprocessing, Modeling, and Machine Learning",
-      "authors": [
-        "Parsa Razmara",
-        "Woojae Jeong",
-        "Aditya Kommineni",
-        "Raymundo Cassani",
-        "Richard Leahy",
-        "Takfarinas Medani"
-      ],
-      "abstract": "Electroencephalography (EEG) analysis requires careful choices in preprocessing, statistical modeling, and machine learning because EEG signals are highly susceptible to artifacts, volume conduction, low signal-to-noise ratio, and substantial inter-subject variability. This chapter provides a practical and methodological guide to modern EEG analysis, spanning EEG preprocessing, artifact removal, filtering, bad-channel detection and interpolation, re-referencing, independent component analysis (ICA), and preprocessing of simultaneous EEG-fMRI recordings. We review major approaches for computational EEG analysis, including event-related potentials (ERPs), time-frequency analysis, functional and effective connectivity, source localization, multivariate decoding, permutation testing, and multiple-comparison correction. We then examine machine-learning methods for EEG, from feature-based classifiers to deep learning and emerging EEG foundation models, with emphasis on cross-subject generalization, limited-data regimes, data leakage, evaluation metrics, and fair benchmarking. Reproducibility is treated as a core requirement throughout, including transparent preprocessing, BIDS-EEG data organization, standardized derivatives, preservation of raw data, and FAIR data practices. The chapter is intended as a practical reference for researchers developing reliable, interpretable, and reproducible EEG analysis and machine-learning pipelines.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T03:26:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36609v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36609v1"
-    },
-    {
-      "id": "2609.36600v1",
-      "title": "Second-Moment Stochastic Approximation Methods",
-      "authors": [
-        "Tao Jiang",
-        "Lin Xiao"
-      ],
-      "abstract": "Classical stochastic approximation methods rely on estimators of the first moment (mean) of a random regression function. We study methods that employ estimators of both the first and the second moments, which include modern deep-learning optimizers such as Adam and Muon as special cases. We derive second-moment stochastic approximation methods through the lens of optimal preconditioning for solving matrix equations, and develop a two-stage framework for their convergence analysis. The first stage focuses on the analysis of conceptual (impractical) methods that rely on the exact first and second moments. In the second stage, we replace the exact moments with their respective estimators, and invoke Dvoretzky's theorem to show that the resulting practical methods converge almost surely to a neighborhood of the target solution. The size of the neighborhood depends on the biases and variances of the first- and second-moment estimators. We derive concrete bounds for Muon and a spectral variant of Adam that determine the radius of their neighborhood of convergence.",
-      "published": "September 29, 2026",
-      "published_raw": "2026-09-29T03:17:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.36600v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.36600v1"
     }
   ]
 }
