@@ -1,7 +1,129 @@
 {
-  "last_updated": "2026-10-04T03:05:18.297098",
+  "last_updated": "2026-10-05T02:38:24.947546",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.03463v1",
+      "title": "Generalization of Transformer-Based Neural Quantum States via In-Context Learning",
+      "authors": [
+        "Zhen Qin",
+        "Qing Qu",
+        "Alfred O. Hero"
+      ],
+      "abstract": "Neural quantum states based on modern deep learning architectures have emerged as powerful representations for quantum many-body systems. In particular, Transformer-based neural quantum states provide expressive models capable of capturing long-range correlations, and their empirical generalization performance has recently been demonstrated. However, a theoretical understanding of their generalization behavior remains largely unexplored. In this paper, we develop a theoretical framework to analyze the generalization properties of Transformer-based neural quantum states under in-context learning. We establish a rigorous inference-time generalization error bound in terms of mean squared error (MSE), showing that the pointwise prediction error decreases inversely with both the number of in-context examples and the depth of the Transformer. We further show that the Transformer depth required to achieve this guarantee scales only linearly with the system size--namely, the number of particles in continuous systems or the number of qudits in discrete systems. Building on this result, we extend our analysis to full quantum states formulated as rank-one density operators, and derive MSE-based generalization bounds over both continuous and discrete domains under physical constraints. Finally, numerical simulations corroborate our theoretical analysis.",
+      "published": "October 02, 2026",
+      "published_raw": "2026-10-02T15:38:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.03463v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.03463v1"
+    },
+    {
+      "id": "2610.03418v1",
+      "title": "Rethinking Epistemic Uncertainty in Node Classification through Information Growth",
+      "authors": [
+        "Emma Meneghini",
+        "Francesco Ferrini",
+        "Bruno Lepri",
+        "Andrea Passerini",
+        "Veronica Lachi"
+      ],
+      "abstract": "Epistemic uncertainty should decrease as additional information about the data-generating process (DGP) becomes available to the predictor. Yet, existing graph evidential deep learning (EDL) methods for node classification typically construct epistemic uncertainty from graph-specific properties and evaluate it on downstream tasks such as out-of-distribution detection, which do not test its reducibility as information about the DGP increases. To make reducibility directly testable, we introduce a statistical framework for studying epistemic uncertainty under information growth. Our framework specifies an information-growth experimental protocol and a consistency criterion for epistemic predictors, while using projective graph DGPs to ensure that growing graphs, which in general need not provide increasing information about the same DGP, constitute coherent observations of the same underlying process. We show that EDL methods do not explicitly estimate data uncertainty arising from a single finite graph observation and instead regulate epistemic uncertainty through model hyperparameters, precluding consistency, as corroborated by controlled information-growth experiments. As an alternative, we propose graph bootstrap ensembles, capturing both data and procedural uncertainty through graph resampling and randomized training. Under the same experimental protocol, these ensembles exhibit epistemic uncertainty reduction beyond standard deep ensembles. These findings support bootstrap ensembles as candidate consistent epistemic predictors under information growth.",
+      "published": "October 02, 2026",
+      "published_raw": "2026-10-02T15:04:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.03418v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.03418v1"
+    },
+    {
+      "id": "2610.03220v1",
+      "title": "Evolving Hybrid Quantum-Classical Architectures for Image Classification",
+      "authors": [
+        "Devroop Kar",
+        "Daniel Krutz",
+        "Travis Desell"
+      ],
+      "abstract": "Hybrid quantum classical neural networks integrate parameterized quantum circuits (PQCs) with established deep learning architectures, but their performance depends strongly on the choice of quantum circuit architecture, a choice that remains largely manual. Most existing approaches rely on hand-designed or fixed circuit ansätze, requiring circuit structure, gate composition, and qubit connectivity to be specified in advance with no guarantee that they suit the task. This limitation is especially acute in image classification, where quantum circuits must transform features extracted by classical networks while remaining compact enough for practical training, requirements that generic, task-agnostic ansätze are unlikely to satisfy simultaneously. We extend EXAQC, an evolutionary framework for automated quantum circuit discovery, to image classification. EXAQC evolves PQCs as intermediate processing modules while retaining classical feature-extraction and prediction layers. On MNIST, Fashion-MNIST, and CIFAR-10, EXAQC achieves 98.42%, 90.62%, and 85.47% accuracy, respectively, while using comparable gate counts to other quantum architecture-search methods. Against classical networks, evolved hybrid models maintain comparable accuracy with substantially fewer trainable parameters, reaching 85.68% on CIFAR-10 with over 25$\\times$ fewer parameters than a 10-layer CNN. Encoding choice also matters: rotation-based encodings (RX, RY, U3) outperform amplitude encoding by 22-25 points on CIFAR-10. These results demonstrate that automated circuit discovery yields compact quantum modules that can replace larger classical components in vision architectures while retaining competitive accuracy.",
+      "published": "October 02, 2026",
+      "published_raw": "2026-10-02T12:37:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.03220v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.03220v1"
+    },
+    {
+      "id": "2610.02960v1",
+      "title": "Dirac-Interconnected Neural Elements: Discovering Modularity in Physical Systems Without Reduction",
+      "authors": [
+        "Reiho Li",
+        "Razmik Arman Khosrovian",
+        "Takaharu Yaguchi",
+        "Hiroaki Yoshimura",
+        "Takashi Matsubara"
+      ],
+      "abstract": "Deep learning has shown remarkable success in the data-driven modeling of dynamical systems. Much of its success is attributed not to the flexibility of neural networks but to inductive biases based on physical prior knowledge, such as energy conservation and symplecticity. However, existing methods do not fully exploit the fact that real-world physical systems are interconnections of components. Some methods require the interconnection to be known a priori, while others assume the system to be reducible to an ordinary differential equation (ODE) and learn only the reduced ODE, discarding the algebraic constraints imposed by the interconnection. Here, we propose Dirac-interconnected neural elements (DINEs), a neural network model that represents a physical system as a differential-algebraic equation (DAE), whose algebraic constraints are given by a Dirac structure in kernel representation. With DINEs, we simultaneously identify from data the interconnection among the components as a Dirac structure and learn the characteristics of the components as neural networks. This allows us to keep the learned subsystems in unreduced form and isolate or compose them to make a new system without retraining. Moreover, DINEs can handle partially observable systems. Experimental results demonstrate these capabilities on physical systems beyond the reach of existing methods.",
+      "published": "October 02, 2026",
+      "published_raw": "2026-10-02T07:58:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02960v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02960v1"
+    },
+    {
+      "id": "2610.02711v1",
+      "title": "Characterizing the Performance Gap in Human Activity Recognition for Older Adults",
+      "authors": [
+        "Hossein Khayami",
+        "Sungjin Hwang",
+        "Eshed Ohn-Bar",
+        "David E. Conroy",
+        "Amanda Lazar",
+        "Eun Kyoung Choe",
+        "Hernisa Kacorri"
+      ],
+      "abstract": "Human activity recognition (HAR) from wrist-worn accelerometers is increasingly used for health and behavioral tracking. Yet, most wearable HAR models are developed and evaluated on datasets dominated by younger adults, leaving it unclear whether benchmark progress generalizes across age groups. In this work, we leverage MyMove, our carefully annotated, free-living older-adult HAR dataset (mean age 71), to evaluate deep-learning architectures and training regimes under both leave-one-subject-out and cross-dataset transfer. We find that improvements on younger-adult benchmarks fail to transfer equally to data collected from older adults, resulting in a persistent and often widening performance gap. However, richer representations, particularly frozen self-supervised features pretrained on the age-diverse UK Biobank dataset, substantially improve performance on data from older adults and consistently narrow the performance gap, at modest cost to younger-adult performance, though disparities remain. These findings suggest that benchmark gains and architectural scaling alone provide an incomplete picture of progress in wearable HAR, and broader advances may require representations that better capture population diversity, alongside personalized adaptation to individual movement patterns and routines.",
+      "published": "October 02, 2026",
+      "published_raw": "2026-10-02T02:46:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02711v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02711v1"
+    },
+    {
+      "id": "2610.02574v1",
+      "title": "DISSOLVR: An Interpretable and Fast Framework for Aqueous and Organic Solubility Prediction",
+      "authors": [
+        "Vansh Ramani",
+        "Har Ashish Arora",
+        "Dhairya Kuchhal",
+        "Sayan Ranu",
+        "Tarak Karmakar"
+      ],
+      "abstract": "High-fidelity solubility prediction is fundamental to pharmaceutical development and environmental partitioning, where accurate modeling must couple molecular structure with thermodynamic behavior across diverse chemical environments. However, recent advancements have been dominated by deep learning architectures that often sacrifice physical interpretability for predictive power. We challenge this trend by showing that state-of-the-art performance does not require such non-transparent architectures. To address this, we introduce DISSOLVR, a transparent framework for molecular solubility prediction. In addition, we perform a comprehensive literature review and a benchmarking study against various methods. We show that DISSOLVR approaches the aleatoric limit of experimental uncertainty and achieves OOD generalization through structural invariance, derived by mapping molecules to physically-grounded descriptors. Then, we present an LLM-assisted post-hoc explanation pipeline that bridges the gap between symbolic model artifacts and chemically grounded narratives. Finally, a comparative benchmark of a survey involving 22 expert chemists reveals that expert evaluators provide deep insights.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T23:10:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02574v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02574v1"
+    },
+    {
+      "id": "2610.02511v1",
+      "title": "Post-Training Quantization of Autoregressive Weather Models",
+      "authors": [
+        "Ananyo Bhattacharya",
+        "Swastik Bhattacharya",
+        "Christiane Jablonowski"
+      ],
+      "abstract": "Advancements in high-resolution numerical weather prediction (NWP) and data assimilation (DA) have shaped the developments in deep learning (DL) architectures emulating atmospheric dynamics. Emulators for weather forecasting exhibit forecast quality comparable to physics based models at forecast horizon scaling from few days to subseasonal time scales. The emulators are driven by hardware-accelerated matrix multiplication in autoregressive inferences, significantly reducing the computation time and resources required for NWP. Optimization of the matrix multiplication processes in GPU architectures provides opportunities to scale towards high-resolution domain, and offers implementation of out of the box solutions. Post-training quantization (PTQ) has been demonstrated across multiple DL architectures to accelerate and increase the number of computations in unit time while consuming less power, enabling applications on edge hardware. In this study, we investigate the effect of PTQ on pre-trained AI emulators for global-scale weather forecasting. We implement PTQ algorithms in Deep Learning Weather Prediction (DLWP) and FourCastNet (FCN) models as a proof of concept for geophysical fluid dynamics applications. We systematically investigate the effect of PTQ on emulator inferences over short-range forecast horizons. Evaluation of PTQ configurations using simulated quantization hints at qualitatively meaningful forecasts over short-time horizons. These results provide a first benchmark of PTQ for autoregressive weather emulators and a basis for quantization-based optimization of DL models for dynamical systems.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T21:34:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02511v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02511v1"
+    },
+    {
+      "id": "2610.02357v1",
+      "title": "Conformal Prediction for Time Series with Deep Sequence Models",
+      "authors": [
+        "Junghwan Lee",
+        "Jonghyeok Lee",
+        "Yao Xie"
+      ],
+      "abstract": "Recent advances in deep learning for time series prediction have amplified the need for reliable uncertainty quantification. Conformal prediction has gained attention as a distribution-free framework for constructing prediction intervals with coverage guarantees. However, its coverage guarantees rely on data exchangeability, an assumption generally violated in time series. Active research has focused on developing conformal prediction methods for time series that overcome this limitation. While deep sequence models, such as recurrent neural networks and Transformers, have often been used in conformal prediction for time series, limited work has systematically studied how deep sequence models can be utilized in conformal prediction for time series. In this work, we systematically investigate the use of deep sequence models in conformal prediction for time series through three approaches: conditional quantile regression, conditional quantile function estimation, and localized conformal prediction. We provide a theoretical analysis establishing asymptotic conditional coverage guarantees for all three approaches under suitable assumptions. Through comprehensive experiments on real-world datasets, we demonstrate the effectiveness of leveraging deep sequence models into conformal prediction for time series.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T18:34:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02357v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02357v1"
+    },
     {
       "id": "2610.02182v1",
       "title": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
@@ -109,6 +231,21 @@
       "arxiv_link": "http://arxiv.org/abs/2610.01746v1"
     },
     {
+      "id": "2610.02284v1",
+      "title": "Effects of interpulse-interval variation on deep-learning classification of bat vocalizations",
+      "authors": [
+        "Welmoed R. Eversteijn",
+        "Burooj Ghani",
+        "A. Leonie Baier",
+        "Dan Stowell"
+      ],
+      "abstract": "Temporal context may aid automated bat-species classification, but the contribution of specific features remains unclear. We investigated whether variation in the interpulse interval (IPI)-the time between consecutive call onsets-provides species-discriminative information and whether transformer-based models are more sensitive to this information than convolutional neural networks. We created two matched datasets from European bat recordings: a natural-IPI condition retaining the original call timing and a normalized-IPI condition in which call onsets were spaced at 50-ms intervals. EfficientNet-B0 and PaSST were fine-tuned and evaluated within each condition. In an additional experiment, each architecture was trained separately on natural-IPI and normalized-IPI recordings, and evaluated on the same natural-IPI test set. Finally, the pretrained classifiers BatDetect2 and BAT were evaluated on both conditions. Within-condition IPI normalization had model-dependent effects. PaSST accuracy differed little between the natural-IPI ($71 \\pm 2.3\\%$) and normalized-IPI ($70 \\pm 6.3\\%$) conditions, whereas EfficientNet accuracy increased from $47 \\pm 4.7\\%$ to $57 \\pm 3.9\\%$. PaSST exceeded EfficientNet under both conditions. In the cross-condition evaluation, models trained on natural-IPI recordings outperformed those trained on normalized-IPI recordings on the natural-IPI test set: accuracy decreased from 54% to 50% for EfficientNet and from 65% to 57% for PaSST. BatDetect2 and BAT differed little between IPI conditions. Overall, we found limited support for the hypotheses that natural IPI variation contributes substantially to bat-species classification and that it is used more effectively by transformer-based than CNN-based models. Nevertheless, the cross-condition performance decrease shows that results obtained under normalized conditions may not transfer fully to natural recordings.",
+      "published": "October 01, 2026",
+      "published_raw": "2026-10-01T14:01:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.02284v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.02284v1"
+    },
+    {
       "id": "2610.01619v1",
       "title": "Exposing the Cost of Deep Learning Audio Development",
       "authors": [
@@ -164,134 +301,6 @@
       "published_raw": "2026-10-01T06:46:47Z",
       "pdf_link": "http://arxiv.org/pdf/2610.01173v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.01173v1"
-    },
-    {
-      "id": "2610.01134v1",
-      "title": "Open Vocabulary Word Recognition From Transcribed Bangla Texts",
-      "authors": [
-        "Faias Satter",
-        "Sk. Md. Masudul Ahsan"
-      ],
-      "abstract": "An optical character recognition (OCR) can scan a paper and extract text using technology, making people's jobs easier. While various OCR systems are available in the software industry, finding a reliable equivalent solution for Bangla takes much work. When it comes to handwritten texts, the situation is much more unusual. Recognizing words from word images is the most critical stage in any OCR process. It is the second stage after segmenting words from text pictures. If this stage fails, the overall performance of the OCR will be poor, regardless of how well the other phases perform. This study aims to recognize words using deep learning in a handwritten Bangla word image. Three object detection models, SSD with MobileNetV2, Faster R-CNN with InceptionResNetV2, and an ensemble model of these two, have been used to train and test handwritten word images. A modified Non-Maximum Suppression has been introduced to enhance the effectiveness of the models' results. A customized dataset of 9841 handwritten Bangla word images has been compiled, featuring diverse handwriting styles from various individuals. All three models' performances have been checked against the test dataset, and the ensemble model has been the most impressive, with an F1-score of 92.61%. Also, at the word level, the ensemble model correctly recognizes 96.12% of the words to some extent. The system can be further improved by introducing a post-processing phase to correct errors generated by the system.",
-      "published": "October 01, 2026",
-      "published_raw": "2026-10-01T06:14:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.01134v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.01134v1"
-    },
-    {
-      "id": "2610.00753v1",
-      "title": "Increasing Width Allows Greedy Layer-wise Training to Rival End-to-End Backpropagation in Self-Supervised Learning",
-      "authors": [
-        "Syon Mansur",
-        "Joel Zylberberg"
-      ],
-      "abstract": "End-to-end backpropagation has been the dominant mode of training in deep learning, allowing for the coordination of parameter updates across layers of a neural network. Prior studies have explored alternative -- and, in some cases, simpler -- training mechanisms, showing that they can sometimes achieve performance similar to backpropagation. However, the architectural conditions under which locally optimized networks, which avoid end-to-end backpropagation of error, can learn representations comparable to those learned through end-to-end training remain unclear. We aim to answer this question in the context of self-supervised learning, an important framework for large-scale pretraining in artificial intelligence. Here, we investigate how network width and depth affect the efficacy of greedy layer-wise and end-to-end self-supervised training in convolutional networks. We find that in wider networks, the benefits of end-to-end backpropagation over greedy layer-wise training shrink: in relatively shallow and very wide networks, we even observed higher performance in models trained with greedy layer-wise training. Subsequent analysis of the representations formed by these networks shows that very wide greedy-trained networks exhibit more favorable representational geometry than do networks trained end-to-end with backpropagation. This work shows that width can compensate for restricted credit assignment and identifies differences in representational geometry as a potential mechanism for their improved performance.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T21:47:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.00753v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.00753v1"
-    },
-    {
-      "id": "2610.00728v1",
-      "title": "Benchmarking Generative Models for Weather Data Assimilation on Real Station Observations",
-      "authors": [
-        "Ruizhe Huang",
-        "Qidong Yang",
-        "Jonathan Giezendanner",
-        "Sherrie Wang"
-      ],
-      "abstract": "Weather reanalysis products rely on computationally intensive numerical weather predictions followed by data assimilation that corrects the forecast toward observations. Deep generative models offer a cheaper alternative that shifts much of this cost from inference to offline training. However, existing generative approaches have been evaluated on synthetic observations or under different datasets and evaluation schemes, making it unclear which design choices actually improve real-world data assimilation. We present the first controlled benchmark of generative weather data assimilation on real weather station observations. Using 11,849 NOAA MADIS stations across the contiguous United States and four weather variables, we evaluate methods while holding the dataset, observation operator, and deep learning architecture fixed. The benchmark compares the major design choices, including diffusion versus flow matching, pixel versus latent-space formulations, and multiple inference-time conditioning strategies, against a classical 3D-Var baseline. The benchmark reveals three clear conclusions. First, learned generative priors outperform the Gaussian prior of 3D-Var (35.7% vs. 33.3% RMSE reduction over ERA5) despite using no ERA5 background field at inference. Second, full-gradient guidance consistently outperforms stop-gradient and initial-noise optimization. Third, other choices provide little measurable benefit: diffusion and flow matching perform nearly identically under matched conditions, and latent-space variable mixing does not help. We further evaluate both dense and sparse station settings and find advantages from generative AI and full-gradient guidance more pronounced under sparsity. Together, these results identify which components of generative weather data assimilation improve performance on real station observations and establish a standardized benchmark for future work.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T21:18:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.00728v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.00728v1"
-    },
-    {
-      "id": "2610.00607v1",
-      "title": "End-to-End Historical Music Restoration in Latent Space",
-      "authors": [
-        "Steven Cho",
-        "Junghyun Koo",
-        "Raphael Lafargue",
-        "Tushar Dhyani",
-        "Eloi Moliner",
-        "Yuki Mitsufuji"
-      ],
-      "abstract": "Historical music restoration (HMR) has almost exclusively focused on constrained problems such as Super-Resolution or the restoration of solo pieces, under-exploring the general task of restoring orchestral historical music, which has multiple instruments. This under-exploration is largely because the HMR domain, early-20th-century recordings, has no pre-degradation ground-truth pairs, making the restoration task unsupervised and more challenging. This paper presents a supervised end-to-end orchestral HMR benchmark by exploring both the synthetic degradation functions and the end-to-end generative deep-learning restoration methods. We simulate the historical recording degradation chain more faithfully than prior work, which makes orchestral restoration into a tractable supervised problem. A latent flow-matching model trained on the resulting synthetic pairs outperforms existing HMR baselines on intrusive, non-intrusive, and subjective evaluations. We also curate and release a 9.3-hour license-free, unpaired, historical classical-music test set, along with code and audio demos.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T19:11:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.00607v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.00607v1"
-    },
-    {
-      "id": "2609.40047v1",
-      "title": "Gromov-Wasserstein Distillation for Inductive Multi-View Embedding",
-      "authors": [
-        "Rafael Pereira Eufrazio",
-        "Eduardo Fernandes Montesuma",
-        "Charles Casimiro Cavalcante"
-      ],
-      "abstract": "Gromov-Wasserstein multidimensional scaling (GW-MDS) learns low-dimensional representations from relational data but remains transductive, providing no explicit mapping for unseen samples. We introduce an inductive framework based on barycentric distillation. A GW-MDS teacher learns a latent support and an optimal transport plan from the training data, and barycentric projection converts the resulting coupling into sample-aligned targets. A neural student then learns an explicit out-of-sample mapping, avoiding additional relational-matrix construction and GW optimization at inference. We formulate the approach for single-view data and extend it to Mean-GWMDS and Multi-GWMDS teachers through consensus and selected-projection targets learned by a multi-view student with view-specific encoders. We also investigate a direct neural baseline trained solely with a GW objective. Experiments on synthetic and real-world data using Euclidean, geodesic, and cosine relations show that the distilled models preserve the teacher geometry on unseen samples and consistently outperform direct neural GW training in sample-indexed relational preservation. These results establish barycentric projection as an effective bridge between transductive GW embeddings and inductive neural mappings.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T16:14:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.40047v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.40047v1"
-    },
-    {
-      "id": "2610.00426v1",
-      "title": "IrekoGPT: Turning Structured Pruning into Post-Hoc Slimmable LLMs",
-      "authors": [
-        "Pietro Moriello",
-        "Pietro Buzzega",
-        "Angelo Porrello",
-        "Simone Calderara"
-      ],
-      "abstract": "We introduce IrekoGPT, a post-hoc method for converting pretrained LLMs into slimmable models whose width can be adjusted at inference time. Building on SliceGPT, we retain its projection matrices without pruning them, allowing a single model to expose nested subnetworks at different widths. We improve robustness by calibrating each layer across multiple compression ratios, and correct downstream linear layers through gradient-free ridge regression. Across Llama and Qwen models, preliminary results show improvements over naive PCA-based slimming, with the largest gains at high compression. Code is available at https://github.com/aimagelab/IrekoGPT",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T16:08:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.00426v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.00426v1"
-    },
-    {
-      "id": "2609.40008v1",
-      "title": "PINNing the pion: conformal deep learning for $F_π(s)$ and the $(g-2)_μ$ hadronic contribution",
-      "authors": [
-        "Mayank Goel",
-        "Subhadip Mitra",
-        "Monalisa Patra"
-      ],
-      "abstract": "Extracting the pion electromagnetic form factor $F_π(s)$ through phenomenological curve-fitting models introduces model dependence, unphysical artefacts, and kinematic inconsistencies. We introduce a Physics-Informed Neural Network (PINN) embedded in a conformal $z$-plane that constructs $F_π(s)$ directly from first principles across spacelike and timelike domains: charge normalisation and Schwarz reflection are enforced by construction, while Cauchy-Riemann analyticity, dispersion relations, Watson's theorem, and perturbative QCD asymptotics enter through the loss functional. Thus, the fundamental S-matrix principles dictate the form factor's behaviour while data act as constraints. Mapping the cut complex plane onto the unit disk bounds the Hessian norm and prevents Neural Tangent Kernel spectral starvation, two known failure modes of deep-learning optimisation. Besides $e^+e^-$ scattering data, we also incorporate $τ$-decay data through a switch that isolates the pure isovector form factor natively, bypassing model-dependent isospin-breaking pre-corrections. The network organically yields an interior zero-free form factor, while the framework tests experimental tensions around the $ρ(770)$ peak against analyticity and dispersion constraints. We obtain model-independent estimates of the pion charge radius, $\\langle r_π^2 \\rangle = 0.435 \\pm 0.008_{\\text{stat}} \\pm 0.007_{\\text{cali}}$ fm$^2$, the second-sheet pole parameters, $m_ρ^{\\text{pole}} = 761.72\\pm 1.04$ MeV and $Γ_ρ^{\\text{pole}} = 135.99 \\pm 1.20$ MeV, and the two-pion contribution to the muon anomalous magnetic moment, $a_μ^{ππ} = (506.48 \\pm 2.02_{\\text{stat}} \\pm 1.70_{\\text{cali}}) \\times 10^{-10}$.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T15:49:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.40008v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.40008v1"
-    },
-    {
-      "id": "2609.39626v1",
-      "title": "Parameterization method of reservoir properties for ensemble-based data assimilation using intermediate latent space of StyleGAN",
-      "authors": [
-        "Marcio A. Sampaio",
-        "Paulo H. Ranazzi",
-        "Martin J. Blunt"
-      ],
-      "abstract": "Ensemble smoothers are the most successful and efficient techniques currently available for history matching. However, because these methods rely on Gaussian assumptions, their performance is severely degraded when the prior geology is described in terms of complex facies distributions (non-Gaussian). In this way, for these methods, we need to apply efficient parameterization techniques. Currently, the most efficient methods for performing parameterization are deep learning models. However, given the variety of existing deep learning models, studies have not identified which is most suitable for use with ensemble-based methods, although some important models had already been evaluated. Based on a recent literature review, the most promising models selected were VAE-GAN, Latent Diffusion, and StyleGAN models. As a novel aspect of this work, data assimilation with the second generation of StyleGAN (StyleGAN2) model was performed using the latent z-space and intermediate w-space, separately. They were applied in two 2D case studies: one categorical (three facies) and the other continuous. The results demonstrated that all three models are highly efficient, with the StyleGAN2 model standing out for generating samples with geological realism and achieving excellent data matching in the cases studied. Our findings show that performing data assimilation with StyleGAN2 using the intermediate space (w-space) yielded better results than the traditional application in the latent space (z-space). This is due to the fact that ESMDA uses linear updates and the w-space is much more linear and disentangled than the highly entangled z-space, thereby ensuring that the updated vectors remain close to realistic geological patterns. These results were validated using main geostatistical and history matching metrics.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T12:35:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.39626v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.39626v1"
-    },
-    {
-      "id": "2609.39584v1",
-      "title": "Cybersecurity in Edge Computing: A Trust-Aware Federated Hybrid Intrusion Detection Framework",
-      "authors": [
-        "Zawad Yalmie Sazid",
-        "Robert Abbas"
-      ],
-      "abstract": "Edge computing has emerged as a critical computing paradigm in modern distributed systems by migrating data processing closer to end users and Internet of Things (IoT) devices. While this paradigm decentralizes processes, minimizes latency, and reduces backhaul bandwidth congestion, it exponentially enlarges the cyberattack surface. Heterogeneous, resource-constrained edge devices deployed across unmanaged administrative domains present highly vulnerable targets. To address these vulnerabilities without compromising global data privacy regulations, this paper proposes a novel Trust-Aware Federated Hybrid Intrusion Detection Framework (TA-FHIDF). The proposed framework integrates an Autoencoder, a 1D Convolutional Neural Network (1D-CNN), and a Bidirectional Long Short-Term Memory (BiLSTM) model into a unified, localized deep learning engine capable of autonomous spatial and temporal feature extraction. Model training is performed collaboratively via federated learning, ensuring raw network telemetry remains isolated at local gateways. Furthermore, to defend against adversarial model poisoning attacks, we introduce a robust server-side trust-aware aggregation mechanism that evaluates client reliability using a cosine similarity metric before global model integration. Empirical evaluations across multi-vector benchmark datasets (UNSW-NB15, CICIDS2017, and Edge-IIoTset) demonstrate the framework's superior detection accuracy, rapid convergence, and high Byzantine fault tolerance under adversarial attack scenarios.",
-      "published": "September 30, 2026",
-      "published_raw": "2026-09-30T12:12:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2609.39584v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2609.39584v1"
     }
   ]
 }
