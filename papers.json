@@ -1,7 +1,85 @@
 {
-  "last_updated": "2026-10-07T02:56:36.009974",
+  "last_updated": "2026-10-08T03:13:38.756882",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.09956v1",
+      "title": "Possibilistic Radial Transport for Approximate IM Inference",
+      "authors": [
+        "Jungeum Kim",
+        "Percy Zhai"
+      ],
+      "abstract": "Probing the hypothesis space after seeing the data remains valid under possibilistic inferential models (IMs), provided the significance level stays fixed. The price is computation, as each plausibility is a supremum of the possibility contour over the hypothesis, and the contour itself is approximated at each queried parameter value. We propose a possibilistic radial transport, which hides the contour value of a parameter in the radius of its source point. When a transport that maximizes within-shell entropy is picked, sampling parameters covering a confidence cut becomes a matter of truncating the radius. We provide a deep learning algorithm that enforces the contour depth condition while maximizing the entropy within each shell. Our amortization makes coverage and power assessments of the learned approximation practical as well as predictive check of new datasets. We also use the sampler to construct a Bel-Pl spectrum for comparing and selecting interpretable hypotheses that satisfy a prescribed Bel-Pl decision criterion. In simulations the learned contours match or improve on ellipsoidal approximations to the cuts, while the coverage and power track the exact reference. Finally, we probe hypotheses about ovarian aging using synthetic AMH records, asking for each woman how many more years her median AMH level will remain above a specified reference value.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T12:32:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.09956v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.09956v1"
+    },
+    {
+      "id": "2610.09919v1",
+      "title": "Eigenvalues of the Hessian in Deep Learning: The Origin of Symmetry and Its Breaking",
+      "authors": [
+        "Yossi Arjevani"
+      ],
+      "abstract": "Hessian spectra at trained models in deep learning exhibit a persistent pattern: eigenvalues organize into distinct clusters, including a large bulk near zero and a few isolated outliers. This paper shows that a natural account of these spectral phenomena emerges when the original setting is understood as a departure from a nearby, otherwise hidden, highly symmetric reference. Modifications, including changes to the architecture, data distribution, or parameter metric, expose a nearby reference configuration whose Hessian exhibits rich invariances-ones not accounted for by weight symmetries. There, symmetry enables a precise description of the spectra, forcing high-dimensional kernels and eigenvalues of large multiplicity. Returning to the original configuration breaks the Hessian symmetry and thereby produces the observed hierarchy of clusters and outliers. The framework is developed in some generality, with a detailed analysis of three-layer ReLU networks and applications to convolutional, graph, and transformer models, as well as to the NTK. The same mechanism is further shown to yield analogous spectral structures in layerwise Hessians and the Gauss-Newton matrix.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T12:08:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.09919v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.09919v1"
+    },
+    {
+      "id": "2610.09770v1",
+      "title": "Artificial intelligence pathways from weather to climate",
+      "authors": [
+        "Tom Beucler",
+        "J. David Neelin",
+        "Hui Su",
+        "Shivanshi Asthana",
+        "Chris Bretherton",
+        "Will Chapman",
+        "Costa Christopoulos",
+        "Spencer K. Clark",
+        "Aditya Grover",
+        "Ignacio Lopez-Gomez",
+        "Tapio Schneider",
+        "Adam Subel",
+        "Oliver Watt-Meyer"
+      ],
+      "abstract": "Deep learning has made rapid advances in weather forecasting: autoregressive models trained on atmospheric reanalyses now rival dynamical models across nowcasting, medium-range, and subseasonal-to-seasonal lead times, producing well-calibrated ensemble forecasts at reduced cost. We review these advances and consider their extension to climate horizons, where the challenge shifts from initial-condition skill to producing reliable statistical responses under altered forcings. AI-powered climate prediction systems must produce credible forced responses to drivers (e.g., greenhouse gases, land-use change) typically outside the observed record. We propose two minimum requirements for AI in climate modeling: (i) external forcing agents must enter explicitly enough to support interventions in which they vary independently; and (ii) robustness must be stress-tested in out-of-distribution regimes, including extremes and counterfactual trajectories. Using leading AI autoregressive emulators and hybrid physics-AI models, we identify development and coupling challenges. Comparing the reported throughput of these models with that of GPU-ported dynamical models highlights how AI can reduce time-to-solution by advancing only the target variables at the required resolution and using longer time steps, rather than integrating a full high-frequency, multivariate state. Diverse AI downscaling strategies can partially substitute for explicit fine-scale resolution, paving the way toward inexpensive local hazard assessment across prediction horizons.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T09:52:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.09770v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.09770v1"
+    },
+    {
+      "id": "2610.09687v1",
+      "title": "The Silhouette Operator: Identifiability of Low-Rank Measures from One-Dimensional Projections",
+      "authors": [
+        "Robert A. Vandermeulen"
+      ],
+      "abstract": "Structured recovery phenomena, such as restricted isometry properties in compressed sensing, have shown that high-dimensional objects can often be reconstructed from remarkably low-dimensional linear measurements. This work develops an analogous recovery framework for low-rank signed measures on $\\mathbb{R}^2$, defined here as measures that can be expressed as finite sums of product measures with one-dimensional factors. The framework is based on linear operators, termed \"silhouette operators,\" that map a measure to a fixed finite collection of one-dimensional linear pushforwards. The main results show that a suitably chosen collection of $2k$ projected marginals suffices to identify every compactly supported rank-$\\le k$ signed measure, that this number is optimal, and that the projection directions cannot be chosen arbitrarily. The framework is also extended to higher-dimensional sums of product measures by establishing sufficient conditions under which collections of pairwise marginals identify the full model. Building on this framework, a computationally efficient estimator, termed \"silhouette mixture estimation\" (SME), is introduced for constructing a low-rank empirical measure from data by matching its one-dimensional projected marginals to the corresponding empirical marginals in Wasserstein distance. When combined with one-dimensional density estimators, SME yields an efficient nonparametric density estimator that performs strongly relative to a range of parametric, nonparametric, and deep-learning baselines in settings of moderate dimension and sample size.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T08:49:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.09687v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.09687v1"
+    },
+    {
+      "id": "2610.09031v1",
+      "title": "Beyond Explanation: Debugging Medical Imaging Models via Concept Intervention",
+      "authors": [
+        "Samrajya Thapa",
+        "Daniel J. Quest",
+        "Timothy L. Kline",
+        "Carrie L. Langstraat",
+        "Emanuel C. Trabuco",
+        "Wei Le"
+      ],
+      "abstract": "Medical imaging models often operate as black boxes, limiting interpretability and systematic debugging. We introduce an easy-to-use, plug-and-play framework for concept-based interpretation and model refinement. By aligning a single-modality encoder to BioMedCLIP, we construct a Concept Bottleneck Model (CBM) that enables concept-level interventions. These interventions allow us to isolate causal versus spuriously correlated concepts, validate insights with domain experts, and generate counterfactual samples for targeted fine-tuning. We evaluate our framework on a Mayo Clinic ultrasound dataset and the CheXpert 5x200 chest X-ray dataset. Results demonstrate that concept intervention enables reliable model diagnosis while maintaining, and occasionally improving predictive performance via guided fine-tuning. Our findings highlight the practical value of this framework for controlled, interpretable refinement of clinical deep learning models.",
+      "published": "October 06, 2026",
+      "published_raw": "2026-10-06T19:31:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.09031v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.09031v1"
+    },
     {
       "id": "2610.08593v1",
       "title": "Multi-Label Perceptual Bug Detection in Video Games using Deep Learning on Gameplay Footage",
@@ -17,16 +95,16 @@
       "arxiv_link": "http://arxiv.org/abs/2610.08593v1"
     },
     {
-      "id": "2610.08592v1",
+      "id": "2610.08592v2",
       "title": "CNet: A Complex-Valued Deep Learning Framework with Wirtinger Autodifferentiation and FFT--Hadamard Convolution",
       "authors": [
         "Marcel Crasmaru"
       ],
-      "abstract": "CNet is a C++/CUDA framework for building and training deep complex-valued neural networks (CVNNs) and, more generally, for optimizing complex-valued functions by gradient descent with Wirtinger (CR-calculus) derivatives. It takes a physics-native stance: a network is a cascade of complex -- and often unitary (the DFT) -- operations acting on an amplitude vector, and classification is a Born-rule measurement $p_k = |z_k|^2 / \\|z\\|^2$ rather than a softmax over real logits. Every layer ships a CPU reference and a CUDA kernel checked against finite differences, and the computation graph is cloned across the batch for GPU execution. On top of the base layers we add signal-processing primitives that turn the identity conv(x,k) = IFFT(FFT(x) . FFT(k)) into a learnable complex convolutional network, together with a true-Adam optimizer and a reduced-memory inference mode. We report three studies. First, a fully complex-valued, FNet-style causal sequence model built on a new $O(N \\log N)$ causal Fourier mixer -- a triangular-masked DFT evaluated by a Bluestein / chirp-z factorization: once properly tuned it matches or exceeds a parameter-matched real-valued causal FNet on character-level language modeling, reaching the real model's converged quality in under half the training steps. Second and third, bottleneck analyses on radio-modulation classification (RML2016.10a) and the Fourier phase problem of coherent-diffraction imaging, which isolate exactly where complex-valued networks still need new operators. Across all three the complex formulation provably learns the physically correct structure. Code: https://github.com/crasmarum/CNet",
+      "abstract": "CNet is a C++/CUDA framework for building deep complex-valued neural networks (CVNNs) and optimizing complex functions by gradient descent with Wirtinger derivatives. Complex models are underexplored yet natural where data is intrinsically complex -- RF/IQ communications, MRI k-space, radar/SAR, audio spectra -- and phase carries information real networks discard. CNet is physics-native: a network is a cascade of complex (often unitary) operations on an amplitude vector, and classification is a Born-rule measurement p_k = |z_k|^2/||z||^2 rather than a softmax over real logits. Its library of complex layers makes conv(x,k) = IFFT(FFT(x).FFT(k)) learnable via signal-processing primitives -- spectral-padding local kernels (Pad), the inverse DFT, a magnitude nonlinearity |z|^2 (CModulus2), holomorphic powers z^M (CPower), and mean pooling (MeanPool) -- with GPU kernels for every layer, a GPU true-Adam optimizer, and a reduced-memory inference mode. Three studies. (1) A fully complex FNet-style causal language model, built on a new O(N log N) causal Fourier mixer, matches a param-matched real-valued causal FNet on tiny-shakespeare in under half the steps. We introduce Born-rule attention: a content-based causal mixer whose weights are quantum-measurement probabilities |<Q_k,K_j>|^2 of one token against another -- the first attention mechanism built on the Born rule. With rotary position embeddings and per-token complex normalization, a fully complex Born-rule model reaches 1.52 nats/char on tiny-shakespeare, matching softmax attention and beating the Fourier mixer by 0.23. (2,3) Two bottleneck analyses -- radio-modulation classification (RML2016.10a) and the Fourier phase problem of coherent-diffraction imaging -- isolate where CVNNs need new operators. The complex machinery learns the correct structure; open problems are concrete and operator-level. Code: https://github.com/crasmarum/CNet",
       "published": "October 06, 2026",
       "published_raw": "2026-10-06T15:57:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.08592v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.08592v1"
+      "pdf_link": "http://arxiv.org/pdf/2610.08592v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.08592v2"
     },
     {
       "id": "2610.08574v1",
@@ -225,83 +303,6 @@
       "published_raw": "2026-10-05T10:59:53Z",
       "pdf_link": "http://arxiv.org/pdf/2610.06128v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.06128v1"
-    },
-    {
-      "id": "2610.06034v1",
-      "title": "How well do routinely collected demographic and clinical variables aid point-of-care lung ultrasound TB classification",
-      "authors": [
-        "Joshua M. Jansen van Vüren",
-        "Christiaan M. Geldenhuys",
-        "Devendra S. Parihar",
-        "Véronique Suttels",
-        "Trevor Brokowski",
-        "Ablo P. Wachinou",
-        "Mary-Anne Hartley",
-        "Rensu P. Theart",
-        "Grant Theron",
-        "Thomas R. Niesler"
-      ],
-      "abstract": "We consider the fusion of lung ultrasound images with routinely-collected clinical and demographic data for the purpose of automated tuberculosis (TB) screening using deep-learning. Such deep-learning based screening tools for TB could meaningfully support the health care system in Africa, where the burden of disease is severe and resources are constrained. Beginning with an established ResNet baseline for classification of lung ultrasound images, which achieves an area under the receiver operating characteristic (AUROC) curve of 0.91 [0.86,0.96] (95% CI), we consider the incorporation of the clinical and demographic data using three fusion approaches. We find that a simple average-based fusion of the output scores of separately-trained image and clinical data classifiers consistently matches or outperforms a more complex approach where the data is fused earlier and a combined classifier is trained. Fusing the image and the clinical classifiers in this way leads to a classifier with an overall AUROC of 0.95 [0.91,0.99] (specificity of 0.76 at sensitivity 0.93) which is an improvement of 4% absolute over the image-only baseline. We also find that greedy feature selection can be used to reduce the number of clinical and demographic inputs without sacrificing classification performance. Finally, when we differentiate between clinical and demographic data that are self-reported, that require some basic measurement or calculation, and that require a point-of-care (POC) test, we find the inclusion of the POC tests included in this study to be of minimal benefit to classification performance. We conclude that the incorporation of routinely-collected clinical and demographic data is a promising way to improve the performance of lung ultrasound based automatic classification.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T09:32:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06034v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06034v1"
-    },
-    {
-      "id": "2610.05936v1",
-      "title": "Combining Improvements in Uplink AI-RAN",
-      "authors": [
-        "Petteri Kela",
-        "Dani Korpi",
-        "Mikko Honkala"
-      ],
-      "abstract": "One of the major transformative factors in 6G will be the integration of Artificial Intelligence (AI) to become a native part of Radio Access Network (RAN). While most physical-layer AI features have so far been evaluated in isolation using link-level simulations, their combined behavior in a realistic multi-cell, multi-UE deployment has remained largely unexplored. In this paper, we present system-level performance results when multiple uplink AI features are enabled together, achieved by integrating accurate link-level and system-level simulators. To infer state-of-the-art deep-learning-aided Multiple Input Multiple Output (MIMO) receivers under the dynamic allocations produced by a realistic uplink scheduler, we propose a mirrored data augmentation method that decouples receiver performance from scheduled allocation size. In addition to these Physical Layer (PHY) receiver features, we combine several recent advances in deep reinforcement learning to train uplink power control and link adaptation that outperform a heuristic baseline and further boost the gains obtainable from the AI receiver alone. The system-level results show that the combined AI features improve the mean uplink user throughput by roughly 27% compared to a non-AI baseline, confirming that the individual PHY and Medium Access Control (MAC) AI features provide complementary gains when deployed jointly.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T07:54:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.05936v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.05936v1"
-    },
-    {
-      "id": "2610.05919v1",
-      "title": "Non-invasive Seizure Detection Using Wearable Wrist-worn Accelerometry and Deep Learning",
-      "authors": [
-        "Nilushika Udayangani Hewa Dehigahawattage",
-        "Kishor Nandakishor",
-        "Marimuthu Palaniswami"
-      ],
-      "abstract": "Seizure monitoring and detection are crucial for reducing the morbidity and mortality associated with seizures. Current epilepsy care, often involving expensive video-electroencephalography (VEEG) monitoring, requires specialized expertise and is limited to in-hospital settings, and intrusive in nature. Seizure diaries, on the other hand, suffer from unreliability due to under-reporting, leading to incorrect therapeutic decisions. Wearable non-invasive seizure detection may offer a more tolerable and feasible solution for long-term ambulatory monitoring. This study explores a wearable remote monitoring system utilizing a single wrist-worn accelerometer device and capable of detecting multiple types of seizures, including shorter duration events. We enrolled 79 patients under video-electroencephalography monitoring to wear accelerometer devices and collect data. Concurrent VEEG recordings were reviewed by board-certified epileptologists to produce annotations, including seizure onset, offset, and seizure type. Using this data, we constructed a deep neural network based on the time-series ResNet architecture, which could discriminate among seizure and non-seizure events. Our proposed approach achieved a seizure detection sensitivity of 95.65% and an overall false alarm rate of 0.15/24 hours during the evaluation, which spanned 5576 hours of total recording. Additionally, it resulted in an area under the receiver operating characteristic curve (AUC-ROC) of 0.98 and an area under the precision-re call curve (AUC-PRC) of 0.67 when averaged over 20 patients who experienced 46 convulsive seizures. These promising results suggest that the proposed seizure detection system can be effectively used for long-term ambulatory seizure monitoring. Future steps include validating our findings in larger datasets and assessing the utility of detection for additional seizure types.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T07:35:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.05919v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.05919v1"
-    },
-    {
-      "id": "2610.07060v1",
-      "title": "Skillful Data-Driven Subseasonal Soil Moisture Forecasting: Prospects and Limits for Flash Drought Prediction",
-      "authors": [
-        "Noelia Otero",
-        "Atahan Özer",
-        "Miguel-Ángel Fernández-Torres",
-        "Jackie Ma"
-      ],
-      "abstract": "Despite substantial progress in short-to-medium-range weather forecasting, predicting high-impact events such as flash droughts remains a key challenge for both early warning operations and physically-based subseasonal-to-seasonal (S2S) prediction systems. Here we demonstrate that, for S2S soil-moisture forecasting over Europe, forecast skill depends as much on how the prediction problem is formulated as on the forecasting model itself. Using a Vision Transformer-based architecture with dual-pathway temporal and spatial attention, we show that residual learning is essential to outperform persistence. This advantage is realized only when forecasting root-zone soil moisture in physical units rather than standardized anomalies, revealing that the target representation itself constrains predictability. A probabilistic extension via quantile-head fine-tuning further provides well-calibrated predictive distributions. Benchmarked against deep-learning and operational ECMWF S2S baselines over 2021-2022, our model achieves the highest deterministic and probabilistic skill at all lead times and reliably detects anomalously dry root-zone states (below the 20th percentile). Yet flash drought onset, defined by multi-pentad intensification criteria, remains a fundamental challenge shared across all current S2S systems. These findings advance data-driven S2S soil-moisture forecasting while highlighting the remaining challenge of predicting rapid drought development.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T06:34:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.07060v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.07060v1"
-    },
-    {
-      "id": "2610.05756v1",
-      "title": "Vision-enabled detection of safety helmet compliance in construction zones",
-      "authors": [
-        "Tri Nhut Do*",
-        "Ba Loc Pham"
-      ],
-      "abstract": "In the rapidly evolving field of construction management, worker safety remains a top priority. This paper introduces an innovative vision-based system for real-time detection of helmet compliance, specifically designed for construction sites, utilizing advanced computer vision techniques and machine learning algorithms within the YOLO (you only look once) framework. Our system leverages high-resolution video feeds from strategically positioned cameras to monitor adherence to safety regulations regarding helmet usage. By employing deep learning methodologies, the system effectively identifies individuals not wearing helmets, thereby significantly mitigating the risk of head injuries among workers. Our training and validation results revealed an impressive precision exceeding 97% at mAP@0.5 for both helmeted and non-helmeted individuals. Furthermore, our experiments demonstrate exceptional detection accuracy, demonstrating the system's resilience under varying lighting conditions and diverse worker movements. The consistent decrease in loss and improvement in metrics throughout training validates the effectiveness of the YOLOv8 model in enhancing recognition performance. The implications of this research extend beyond mere regulatory compliance, opening avenues for innovative applications in occupational safety management. This study highlights the critical role of technology in protecting lives and lays the groundwork for future advancements in smart construction environments.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T04:06:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.05756v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.05756v1"
     }
   ]
 }
