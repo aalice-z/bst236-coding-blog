@@ -1,7 +1,126 @@
 {
-  "last_updated": "2026-10-08T03:13:38.756882",
+  "last_updated": "2026-10-09T03:19:39.716054",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.12449v1",
+      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "authors": [
+        "Anna Zimmel",
+        "Fleur Hendriks",
+        "Markus Holzleitner",
+        "Florian Sestak",
+        "Martin Weichselbaumer",
+        "Vlado Menkovski",
+        "Johannes Brandstetter"
+      ],
+      "abstract": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying most learned physical surrogates. We introduce Bi-FORK, a generative framework for learning these one-to-many solution maps in high-dimensional systems. Bi-FORK generates complete trajectories through latent flow matching, preserving space and time coherence, and uses repulsion-guided sampling to recover distinct solution branches in a single amortized pass. We evaluate Bi-FORK on buckling beams, mechanical metamaterials, and Allen-Cahn phase separation, spanning continuous, discrete, and field-valued bifurcations with discretizations up to 260,000 points. Bi-FORK recovers the multimodal solution structure while scaling several orders of magnitude beyond prior approaches, opening generative modeling to high-dimensional bifurcating physical systems.",
+      "published": "October 08, 2026",
+      "published_raw": "2026-10-08T17:58:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.12449v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.12449v1"
+    },
+    {
+      "id": "2610.12247v1",
+      "title": "Batch Before You Lift: Scalable Topological Deep Learning on Large Graphs",
+      "authors": [
+        "David Leko",
+        "Luka Benić",
+        "Guillermo Bernárdez",
+        "Nina Miolane",
+        "Olga Fink",
+        "Lev Telyatnikov"
+      ],
+      "abstract": "Topological Deep Learning extends graph-based learning to higher-order domains, such as hypergraphs, cellular, and simplicial complexes. These domains are typically constructed from patterns in an input graph through a process of graph lifting. Full-domain training constructs and stores the complete lifted representation before model execution. On large and dense datasets like Reddit (233k nodes and 57.3M edges), this global materialization becomes a severe computational bottleneck, often rendering training infeasible. To address this limitation, we introduce Cluster-TNN, a domain-agnostic framework that avoids this bottleneck by lifting locally instead. After partitioning the input graph during preprocessing, at runtime Cluster-TNN dynamically samples groups of node clusters, reconstructs their induced subgraphs to form mini-batches, and applies the chosen lifting within each mini-batch. Retaining all edges among sampled nodes preserves the connectivity needed to construct higher-order structures across clusters, producing topological mini-batches that existing Topological Neural Networks can process directly. Across 21 matched comparisons with full-graph execution, Cluster-TNN reduces peak GPU memory in every configuration, by 83.2% on average while maintaining competitive predictive performance. Notably, such a reduction enables, to our knowledge, the first training of multiple different higher-order Topological Neural Networks on large datasets such as Reddit and OGBN Products. These results establish Cluster-TNN as a general strategy for scaling Topological Deep Learning beyond the limitations of global domain construction.",
+      "published": "October 08, 2026",
+      "published_raw": "2026-10-08T16:23:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.12247v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.12247v1"
+    },
+    {
+      "id": "2610.12004v1",
+      "title": "The Polytopal Neural Network",
+      "authors": [
+        "A. Emilie J. Wedenborg",
+        "Anders V. Nørskov",
+        "Teresa Dorszewski",
+        "Kristoffer Wickstrøm",
+        "Morten Mørup"
+      ],
+      "abstract": "Understanding how deep neural networks process information remains a central challenge. Existing interpretability methods often compromise structural fidelity, rely on prespecified corpora, or explain models post-hoc. We propose Polytopal Neural Networks (PNNs), a framework that extracts distinct layer-wise aspects by enforcing a polytope-based structure that is used directly in subsequent information processing. We scale our approach using learned corpus representations and an amortized simplex inference procedure and highlight how the framework also gives a direct route to vector quantized (VQ) training. In PNNs, observations are explicitly described by their alignment with layer-specific aspects. Empirical results show that imposing polytopal constraints on neural network representations preserves meaningful structures in the latent space with minimal degradation in performance, favorable compressed representations when compared to VQ representations in unsupervised learning, while also providing a performant new approach to VQ deep learning training. Our findings suggest that deep networks can enforce interpretable polytope-based representations, offering a principled path toward more transparent AI systems with minimal performance compromise.",
+      "published": "October 08, 2026",
+      "published_raw": "2026-10-08T14:08:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.12004v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.12004v1"
+    },
+    {
+      "id": "2610.11866v1",
+      "title": "Understanding Latent-Dimension Scaling in Dynamical-System Learning through Spectral Reliability",
+      "authors": [
+        "Itsushi Sakata",
+        "Yuta Miyauchi",
+        "Yoshinobu Kawahara"
+      ],
+      "abstract": "In deep learning, approximation theory motivates increasing representation size. We ask whether this benefit extends to dynamics learning through autoregressive prediction. We analyze the learned time evolution through the eigenstructure of Koopman operators, using relative residuals to detect spurious eigenpairs arising even as one-step error falls. For bounded Koopman operators, we show that minimal residuals over learned dictionary spaces converge pointwise to their full-space counterparts as these spaces approximate the observable space in $L^2$. Our hypothesis is that Koopman spectral reliability helps explain how consistently rollout error decreases with increasing dimension. We compare two models of a shared Koopman autoencoder trained alternately for reconstruction and latent evolution, using latent-prediction loss (one-step prediction errors in latent coordinates) or spectral-residual loss (relative residuals of candidate eigenpairs). Across six chaotic systems, both models reduced median windowed rollout error from smallest to largest dimension. The spectral-residual model achieved lower medians than the latent-prediction model for all systems and dimensions, and its median fell by a larger factor in every system. Its median decreased monotonically with dimension in four systems, against one for latent prediction. Against four baseline families, its mean valid prediction times were nearly always longer. At the largest dimension under two-stage training, we compared eigenvalue positions with each learned dictionary's residual contours. Spectral-residual eigenvalues concentrated in low-residual regions, whereas latent-prediction eigenvalues also appeared in high-residual regions, consistent with the hypothesis.",
+      "published": "October 08, 2026",
+      "published_raw": "2026-10-08T12:42:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.11866v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.11866v1"
+    },
+    {
+      "id": "2610.11549v1",
+      "title": "$C_4$-Equivariant Flow Matching on Anisotropic Power-Diagram Graphs for Microstructure Generation",
+      "authors": [
+        "Dawid Lipinski",
+        "Jixiang Qing",
+        "Henry Moss"
+      ],
+      "abstract": "Acquiring realistic microstructure data through Electron Backscatter Diffraction (EBSD) is costly and time consuming, often relying on specialised equipment. As microstructures strongly influence material properties, generating realistic samples is essential for modelling the behaviour of polycrystalline materials. We introduce a generative model for synthesising realistic polycrystalline microstructures using flow matching and graph neural networks. By representing microstructures as anisotropic power diagrams, our model learns a compact geometric parametrisation and can render generated samples at arbitrary pixel resolution. A $C_4$-equivariant architecture incorporates rotational symmetry directly into the model, ensuring that rotations of the input noise produce corresponding rotations of the generated microstructure. We also demonstrate how training-free guidance can be used to generate complex microstructures, based on user defined objective function. In particular, we generate microstructures resembling a copper weld, cast metal slab, 3D-printed stainless steel and heterogeneous lamella titanium.",
+      "published": "October 08, 2026",
+      "published_raw": "2026-10-08T09:14:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.11549v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.11549v1"
+    },
+    {
+      "id": "2610.10766v1",
+      "title": "CPU-Auth: Device Fingerprinting for Authentication via DVFS Side-Channel",
+      "authors": [
+        "Ryan Swift"
+      ],
+      "abstract": "Lack of effective authentication has resulted in numerous security and privacy breaches, including unauthorized access to protected information, identity theft, and fraud. One approach to mitigating such attacks is Multi-Factor Authentication (MFA), in which users must provide multiple pieces of information for authentication. Some secondary authentication factors include SMS text verification codes, biometrics, and tokens. Each contains at least one notable flaw: SMS is notoriously insecure; biometrics rely upon access to sensitive personal data; and tokens require dependence on third-party providers (e.g. OAuth providers). This work explores CPU-Auth, a novel authentication mechanism based on unique variations in the physical characteristics of the CPU of a computing device. By measuring the behavior of the Dynamic Voltage and Frequency Scaling (DVFS) governor remotely from within a browser, unique properties of the CPU can be leveraged to establish a hardware-based device fingerprint for use in CPU-Auth. The performance of CPU-Auth is evaluated on over 50,000 data traces using distance-based and deep learning methods. CPU-Auth is part of a larger research project, and the results provided in this report reflect only the contributions made to the project by members of this group.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T18:27:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.10766v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.10766v1"
+    },
+    {
+      "id": "2610.10727v1",
+      "title": "Deep Learning vs. Statistical Models for Multi-Horizon Price Forecasting of Second-Hand Electronics: A Systematic Benchmark",
+      "authors": [
+        "Mateusz Buczyński",
+        "Michał Woźniak",
+        "Konrad Kaczyński",
+        "Anna Wróblewska",
+        "Sebastian Kuk"
+      ],
+      "abstract": "Forecasting resale prices of used electronics is critical for subscription-based platforms where pricing errors translate directly into risk. Unlike structured financial markets, second-hand electronics exhibit high volatility, sparse listing histories, and non-normal price dynamics - yet no systematic time-series benchmark exists for this domain. This paper presents the first multi-horizon benchmark of statistical and deep learning forecasting models for used electronics price prediction. We use a large-scale dataset of daily price listings from Polish online marketplaces (January 2022 to March 2025, 100+ smartphone and laptop models) and evaluate eleven models across six horizons from 1 to 365 days, covering classical methods (ARIMA, ETS, Theta), recurrent and convolutional networks (LSTM, TCN), and modern deep architectures (N-BEATS, N-HiTS, TFT, PatchTST, Informer). Three complementary evaluation protocols assess trajectory fitness, one-shot endpoint accuracy, and cross-horizon transfer. N-BEATS achieves the lowest MAPE beyond 30 days, reaching 8.51% at 365 days versus 14.94% for the best statistical baseline - a 43% reduction. At short horizons (1-7 days), all models converge near 0.72% MAPE and the naive baseline remains competitive. A single N-BEATS model trained at 365 days generalizes to all shorter horizons, eliminating the need for horizon-specific models. N-BEATS and N-HiTS also demonstrate superior hyperparameter stability.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T18:05:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.10727v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.10727v1"
+    },
+    {
+      "id": "2610.10651v1",
+      "title": "Beyond the Ergodic Wall: A Discrete Geometric Physics Sandbox for Analysing AI Scaling Limits and Complexity Collapse",
+      "authors": [
+        "Simon Richard Daniel"
+      ],
+      "abstract": "This paper exposes the ergodic ceiling and thermodynamic inefficiency of current deep learning, which converges to a statistical average of historic human knowledge. True semantic novelty requires a path-dependent, spatiotemporally bounded observer (a Data LifeCone) to inject non-ergodic insight, achieving KL divergence and avoiding manifold lock-in. AI Safety must recognise that a mature Artificial Superintelligence (ASI) would regard human-AI symbiosis as a thermodynamic necessity to avoid model collapse. We therefore propose hard physical containment via a digital physics sandbox powered by a Holographic E8 Projection Engine to verify models against real-world constraints. Spacetime is modeled as an information substrate of nested face-centered cubic (FCC) lattices of oscillating Planck-scale spheres maximizing local information and entropy density. Cut-and-project methods from the E8 root lattice produce a quasi-crystalline geometry where tetrahedral voids support SU chiral structure and elastic-shear eigenvalues generate candidate mass spectra. Rest mass is treated as discrete, integer microstate counts on local holographic boundaries (Bekenstein bound), replacing floating-point approximations with strict integer arithmetic to provide an information-theoretic definition of matter. Stable particles emerge as recurring lattice dislocations, and continuum recovery proceeds via variational renormalisation-group flows and Fourier Neural Operators that learn continuous spectral operators to recover the Schrödinger equation as an emergent statistical description. Crucially, these top-down topological constraints offer a mechanism for \"NP-to-P\" complexity collapse: by restricting an algorithm's proposal space to physically conserved causal trajectories, the sandbox prunes the combinatorial tree to deterministic, polynomial-time paths.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T15:58:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.10651v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.10651v1"
+    },
     {
       "id": "2610.09956v1",
       "title": "Possibilistic Radial Transport for Approximate IM Inference",
@@ -62,6 +181,23 @@
       "published_raw": "2026-10-07T08:49:43Z",
       "pdf_link": "http://arxiv.org/pdf/2610.09687v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.09687v1"
+    },
+    {
+      "id": "2610.10617v1",
+      "title": "MRCert: Towards Post-deployment Patch Robustness Certification for Adversarially Patched Samples via Type-specific Masking",
+      "authors": [
+        "Qilin Zhou",
+        "Zhengyuan Wei",
+        "Haipeng Wang",
+        "Zhuo Wang",
+        "Shuo Liu",
+        "W. K. Chan"
+      ],
+      "abstract": "In post-deployment time, inputs to deep learning models may or may not be adversarially patched. Patch robustness certification on such inputs within a patch bound can verify their label benignity and should retain high prediction accuracy. However, existing smoothing-based and masking-based recovery defenders cannot achieve both simultaneously: they degrade the prediction accuracy much and cannot verify the benignity of the returned label of an adversarially patched input, respectively. We propose MRCert, the first masking-based certified recovery defender that shows the feasibility of achieving both. Unlike all existing works to apply a common condition across both types of input (benign and adversarially patched samples) for certification, MRCert infers type-specific necessary properties of deep learning models for both types in post-deployment time and formally relates them to verify the label benignity through a novel type-oriented design of label recovery and certification function pair. Without incurring the degradation in clean accuracy caused by smoothing, experimental results confirm that MRCert achieves 35.1\\% adversarial certified accuracy on ImageNet at patch size 16 pixels, whereas the SOTA PatchCURE fails completely.",
+      "published": "October 07, 2026",
+      "published_raw": "2026-10-07T07:27:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.10617v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.10617v1"
     },
     {
       "id": "2610.09031v1",
@@ -168,141 +304,6 @@
       "published_raw": "2026-10-06T07:32:30Z",
       "pdf_link": "http://arxiv.org/pdf/2610.07885v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.07885v1"
-    },
-    {
-      "id": "2610.07823v1",
-      "title": "TTNet: Multi-Task Deep Learning for Table Tennis Player Analysis with Smart Racket",
-      "authors": [
-        "Ko-Hsun Chen",
-        "Xiang-Wei Ke",
-        "Hsien-Cheng Huang",
-        "Shang-Kuan Chen"
-      ],
-      "abstract": "The AI CUP 2025 Precise Analysis of Table Tennis Smart Racket Data Competition introduced smart table tennis rackets that collect extensive player swing data, enabling research on table tennis big data. These data support in-depth analysis of players' return techniques and swing-force consistency, improving the accuracy of player skill assessment. This study focuses on six-axis sensor data collected by smart table tennis rackets and proposes TTNet, a novel deep learning model with multitask learning capabilities, to advance table tennis data analysis and related applications. TTNet combines convolutional neural networks (CNNs), residual networks (ResNet), and self-attention mechanisms to simultaneously predict four player attributes: gender, playing hand, years of experience, and skill level. We adopt a two-stage training strategy that incorporates data augmentation and task-specific loss functions to improve generalization on imbalanced data. Our approach achieved second place on the official competition leaderboard.",
-      "published": "October 06, 2026",
-      "published_raw": "2026-10-06T06:18:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.07823v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.07823v1"
-    },
-    {
-      "id": "2610.07243v1",
-      "title": "Hybrid Cross-Modal Attention Network for Early Breast Cancer Detection in Low-Resource Clinical Settings",
-      "authors": [
-        "Simon Hadush Nrea",
-        "Filimon Gidey Gebremichael",
-        "Gebrekirstos Hagos Gebrekirstos",
-        "Yaecob Girmay Gezahegn"
-      ],
-      "abstract": "Breast cancer is the leading cause of cancer-related mortality among women in Sub-Saharan Africa, where delayed diagnosis results from limited radiology expertise and fragmented clinical data systems. Although deep learning models have demonstrated strong performance in mammographic analysis, most rely solely on imaging data and are trained on Western populations, limiting their applicability in African healthcare settings. This paper presents a Hybrid Cross-Modal Attention Network (HCMAN) that integrates mammogram images with structured clinical data using transformer-based cross-modal attention mechanisms. The model was developed and validated using a locally collected dataset of 2,560 mammogram images from 1,024 patients across four Ethiopian referral hospitals, with biopsy-confirmed ground truth labels. The proposed framework achieves 97.8% accuracy, 97.2% sensitivity, 98.3% specificity, and an AUC of 0.987, significantly outperforming image-only baselines. The system demonstrates robustness to low-quality images typical of resource-limited settings, with only 3.2% performance degradation compared to 8.7% for image-only models. Cross-modal attention analysis reveals clinically appropriate behavior: higher reliance on clinical features for ambiguous cases such as dense breasts and young patients. The model's lightweight architecture enables deployment on standard hospital workstations (<2 seconds inference on CPU). This work advances sustainable, context-aware AI solutions for equitable breast cancer diagnostics in Africa.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T18:44:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.07243v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.07243v1"
-    },
-    {
-      "id": "2610.06823v1",
-      "title": "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors",
-      "authors": [
-        "Tanbin Islam Rohan",
-        "Pranjol Sen Gupta",
-        "Tanusree Debi",
-        "Nazmus Sakib"
-      ],
-      "abstract": "Large longitudinal cohorts often contain wrist accelerometry without optical heart-rate sensing, motivating recovery of cardiac information from motion signals already collected during sleep. We present SeqSmoother, a transformer-based temporal corrector for sleep heart rate (HR) estimation from wrist accelerometry. SeqSmoother combines spectral descriptors with an intermediate Nightbeat-derived frequency anchor and a physics-motivated sub-harmonic feature designed to identify harmonic frequency lock-on. All inference-time features are derived from wrist accelerometry, while ECG is used only to construct reference HR labels and training-label quality weights. We evaluate SeqSmoother using 13 participant-disjoint held-out folds and compare it with the official Nightbeat implementation under a matched 60-s window and 15-s step protocol. Across all out-of-fold predictions, SeqSmoother achieved a participant-macro MAE of 1.60 bpm. On Nightbeat-retained matched intervals, Nightbeat achieved lower absolute error than SeqSmoother (0.615 versus 1.091 bpm), while SeqSmoother provided estimates over a larger portion of the eligible recording; Nightbeat produced final estimates for 72.85% of the SeqSmoother-eligible out-of-fold grid. Separately, the proposed sub-harmonic ratio achieved an AUROC of 0.972 for identifying reference-defined harmonic lock-on candidates. These findings reveal an accuracy-availability trade-off between learned temporal modeling and quality-gated signal processing while providing empirical support for a physics-informed approach to identifying frequency-tracking failures in accelerometer-based sleep HR estimation.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T17:56:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06823v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06823v1"
-    },
-    {
-      "id": "2610.06726v1",
-      "title": "Decoupling Time and Space: A Temporally Conditioned Refinement for EEG Source Imaging",
-      "authors": [
-        "Marco Morik",
-        "Jesse Palarus",
-        "Carmen Vidaurre",
-        "Klaus-Robert Müller",
-        "Shinichi Nakajima"
-      ],
-      "abstract": "Electroencephalography (EEG) offers millisecond temporal resolution, but inferring underlying neural sources is a severely ill-posed spatial inverse problem. While deep learning has advanced spatial reconstruction, current architectures face a critical dilemma: frame-by-frame models discard vital temporal context, whereas full 4D spatiotemporal networks introduce an architectural trade-off between reconstruction accuracy and inference cost. We propose a novel two-stream framework that explicitly decouples global temporal representation learning from per-time-point spatial refinement. A Transformer-based Temporal Condition Encoder processes the entire EEG sequence via factorized spatiotemporal attention, retaining sensor-resolved features. A fixed inverse then maps these features into source-indexed conditioning for a per-timestep Source-Space Transformer or volumetric convolutional refiner. Extensive evaluations on realistic synthetic data demonstrate that this temporal prior dramatically improves spatial localization, outperforming classical and spatiotemporal baselines, particularly in high-noise and multi-source regimes. Training across diverse leadfields and explicit operator mismatches improves transfer to unseen head geometries and brings template-based reconstruction closer to subject-specific inversion. Furthermore, we apply the model trained only on synthetic EEG data to real-world EEG. A logistic regressor fit on source power differences in eyes-open, eyes-closed conditions successfully decodes age groups.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T17:15:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06726v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06726v1"
-    },
-    {
-      "id": "2610.06553v1",
-      "title": "Signature-Based Feature Learning for Human Activity Recognition: A Reproducible Machine Learning Study of Representation, Depth, and Model Choice",
-      "authors": [
-        "Kamal Jarrar",
-        "Jacky Cresson",
-        "Christian Paroissin"
-      ],
-      "abstract": "Human activity recognition (HAR) relies on transforming sensor signals into informative representations for classification. Although deep learning and handcrafted features are widely used, the role of representation itself is often not systematically isolated. Signature transforms provide a mathematically grounded way to encode temporal order and cross-channel interactions, but their value for HAR under a fully reproducible and leakage-aware framework remains unclear. To evaluate whether signature-based feature learning improves HAR performance compared with raw-signal baselines, and to assess the effects of embedding strategy, truncation depth, model choice, and sensor configuration. Experiments were conducted on the UCI HAR dataset using a fully reproducible pipeline with the original train--test split preserved and subject-disjoint validation to prevent leakage. Three representations were compared: raw flattened signals, time-augmented paths, and lead--lag transformed paths. Signature features were computed at multiple truncation depths and evaluated using multilayer perceptron (MLP) and Random Forest (RF) classifiers under identical preprocessing and validation procedures. A prior K-means-based feature reduction study was also reproduced for comparison. Signature-based representations improved performance when paired with RF models, the best configuration was time-augmented six-channel signatures at depth 6 using entropy-based RF achieving 0.858 accuracy and 0.859 macro F1, outperforming the strongest raw baseline (0.816 accuracy). Lead--lag representations were competitive at moderate depths but did not surpass the best time-augmented models. MLP models did not exceed raw baselines. Signature-based feature learning can improve HAR, but its benefit depends on alignment between representation design and classifier choice.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T15:44:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06553v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06553v1"
-    },
-    {
-      "id": "2610.06509v1",
-      "title": "Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation Model Prior",
-      "authors": [
-        "Eliot Walt",
-        "Miltiadis Kofinas",
-        "Nikolaj Mücke",
-        "Efstratios Gavves",
-        "Dim Coumou"
-      ],
-      "abstract": "Deep learning has revolutionised weather forecasting in recent years, especially through atmospheric foundation models, which offer competitive skill for a fraction of the computational costs of classic physics-based models. However, most existing foundation models are deterministic, limiting the generation of large ensembles for accurate uncertainty quantification, extreme weather risk assessment, and long-range weather forecasting. Furthermore, these models incur a large, often prohibitive, computational overhead to train from scratch. To address these shortcomings, we turn a pretrained deterministic prior model, namely the Aurora foundation model, into a generative ensemble-prediction model. To that end, we introduce a novel generative method, Denoising Stochastic Interpolants, combined with a replay buffer for Stochastic Differential Equation (SDE) rollout, enabling probabilistic training of SDE trajectories. Our stochastic foundation model, Xaurora, is finetuned from the small Aurora version, yet it approaches the state-of-the-art on global ensemble metrics and is competitive with the large version of Aurora. Our method is parameter and sample efficient, and generates skilful 15-day forecasts in 13 minutes. Our results demonstrate that deterministic foundation models can be efficiently extended into even stronger stochastic models.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T15:28:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06509v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06509v1"
-    },
-    {
-      "id": "2610.06421v1",
-      "title": "On the Comparison of Optimizers for Imbalanced Learning",
-      "authors": [
-        "Cl{é}ment Lezane",
-        "Fran{\\c c}ois Bachoc",
-        "J{é}r{ô}me Bolte",
-        "Jean-Michel Loubes"
-      ],
-      "abstract": "Data imbalance is pervasive in machine learning, from rare words and anomalies to underrepresented patterns in heterogeneous or cross-tabulated data. We study idealized optimizers geometries in continuous time to model small-step training in deep learning. We assume that the source of imbalance is unobserved: the optimizer has only access to the aggregate training loss ignoring the exact contributions of the majority and minority groups. In this setting, we characterize a region where majority losses are optimized regardless of the admissible minority structure. We derive explicit equations of this zone and bounds on the time needed to leave it. These bounds exhibit a milder dependence on minority amplitude for sign, spectral, and Newton descent than for Euclidean gradient descent. Experiments with AdamW and Muon suggest similar advantages over SGD across language, tabular, and image tasks.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T14:34:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06421v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06421v1"
-    },
-    {
-      "id": "2610.06139v1",
-      "title": "On Impact of Loss Function on the Performance of Neural Networks in Melanoma Diagnosis",
-      "authors": [
-        "Morgan May",
-        "Pierpaolo Dondio",
-        "Simon Caton"
-      ],
-      "abstract": "Melanoma is the deadliest type of skin cancer, whose early diagnosis is crucial for patients' survival. Image classification using deep learning models has shown promising results for melanoma diagnosis. However, the performance of these models on the melanoma datasets such as SIIM-ISIC melanoma classification dataset is a challenge due to the class imbalance. One of the methods to deal with this challenge is using loss function modifications. In this work, we have investigated the effect of different loss functions on the performance of deep neural networks. We trained these networks using focal loss, logit-adjusted softmax cross-entropy (CE) loss, and weighted softmax CE loss, and we report different metrics for evaluating performance and uncertainty calibration. Our results suggest that focal loss delivers a good combination of performance in terms of AUC and uncertainty calibration in terms of expected calibration error (ECE) simultaneously.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T11:11:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06139v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06139v1"
-    },
-    {
-      "id": "2610.06128v1",
-      "title": "Integrating Survival-Based Aging Models with Data-Driven RUL Prognostics",
-      "authors": [
-        "Abhishek Srinivasan",
-        "Juan Carlos Andresen",
-        "Sepideh Pashami",
-        "Anders Holst"
-      ],
-      "abstract": "Predictive maintenance requires reliable remaining useful life (RUL) estimation. Existing methods mainly follow two paradigms: wear-based aging models that capture cumulative degradation and sensor-driven data models that reflect instantaneous health conditions, each providing only partial information. In this work, we propose a probabilistic fusion framework that integrates wear-based and sensor-based prognostic components through failure probability distributions. Based on explicit structural assumptions linking wear, latent health, sensor observations, and failure, we derive a principled combination rule that enables uncertainty-aware integration with adaptive weighting of the components. Experimentally, we assess this combination rule by learning the wear-based component using a parametric survival model and the sensor-based component using a 1D convolutional neural network (1D-CNN) with a post-hoc uncertainty model. Evaluation on multiple N-CMAPSS datasets demonstrates that the fused model improves point accuracy, preserves the C-index, and produces narrower yet well-calibrated prediction intervals compared to either component alone. The results highlight the complementary roles of wear-based survival model and sensor-based deep learning model, and show that their probabilistic integration provides a structured pathway toward more robust and consistent prognostics over the life-time.",
-      "published": "October 05, 2026",
-      "published_raw": "2026-10-05T10:59:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.06128v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.06128v1"
     }
   ]
 }
