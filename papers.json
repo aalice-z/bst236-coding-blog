@@ -1,7 +1,284 @@
 {
-  "last_updated": "2026-10-13T04:09:20.652228",
+  "last_updated": "2026-10-14T02:22:41.236725",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.15919v1",
+      "title": "RINO: Renormalization Group Distillation with No Labels",
+      "authors": [
+        "Zichun Hao",
+        "Raghav Kansal",
+        "Abhijith Gandrakota",
+        "Chang Sun",
+        "Haoyang Li",
+        "Zihan Zhao",
+        "Ngadiuba Jennifer",
+        "Javier Duarte",
+        "Maria Spiropulu"
+      ],
+      "abstract": "Supervised machine learning in high-energy physics (HEP) requires training on labeled simulations of particle collisions, which are known to be unfaithful to the underlying physics. This leads to significant inaccuracies and biases in the transfer of trained models to real data, limiting the power of deep learning methods. Self-supervised learning (SSL) is a promising alternative for pretraining directly on real, unlabeled data. However, existing techniques largely operate with inductive biases inspired by domains such as images and natural language. We propose RINO (Renormalization Group DIstillation with NO Labels), which, for the first time, exploits the fundamentally multi-scale renormalization group structure of high-energy jet formation as a physically grounded source of SSL views. We define teacher-student representations across energy scales using different levels of hierarchical clustering, aligned via DINO-style self-distillation. To mirror the background-dominated nature of real collider data, RINO pretrains exclusively on jets from quantum chromodynamics (QCD) processes and is evaluated on out-of-distribution (OOD) transfer to rare signal classes. In our controlled data-efficiency study, RINO matches fully supervised training on JetNet after finetuning on only 1% of the labeled data. With the full labeled dataset, RINO improves OOD classification accuracy on top-quark jets by 5.9% and, without retraining, improves AUC on the unseen Higgs boson decay channel $H \\to 4q$ by 4.1% over the strongest SSL baseline. Scale-structure diagnostics reveal that DINO-style self-distillation permits our backbone to retain scale-dependent structure. Ablation studies show that this accounts for an 8.6% OOD accuracy gap with respect to alternative SSL paradigms such as SimCLR. Code is available at https://github.com/zichunhao/RINO.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T21:03:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15919v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15919v1"
+    },
+    {
+      "id": "2610.15885v1",
+      "title": "Comparative Study of Canvas- and Coordinate-Based Geometry-Conditioned Neural Networks for Real-Time Prediction of Indoor Environments with Varying Room Dimensions",
+      "authors": [
+        "Shaofan Wang",
+        "Philipp Geyer"
+      ],
+      "abstract": "Computational fluid dynamics (CFD) is computationally expensive for iterative building design. Deep learning surrogates offer faster predictions, but generalization across varying room dimensions remains challenging. This study compares two geometry-conditioned neural network surrogate models for rapid indoor airflow and temperature field prediction under varying room sizes. During the architectural design stage, this method is relevant for real-time assessment of whether conditioned supply air will effectively provide fresh and cool air throughout rooms with varying heights and lengths. The canvas-based neural network (CaNN) explicitly encodes room size by preserving different occupied regions within a fixed canvas, whereas the coordinate-based neural network (CoNN) uses normalized coordinate channels. Both employ U-Net autoencoders to separately predict airflow and temperature fields. Evaluation uses simplified rooms with varying heights and lengths as a controlled benchmark. The results show that CaNN achieves higher agreement with CFD results than CoNN, demonstrating its potential to support performance-driven building design.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T20:03:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15885v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15885v1"
+    },
+    {
+      "id": "2610.15818v1",
+      "title": "Benchmarking Deep Learning Models for Anomaly Detection in Real-World Cloud Telemetry",
+      "authors": [
+        "Sumit Dhyani",
+        "Sougata Mukherjea"
+      ],
+      "abstract": "Modern cloud platforms generate high-dimensional, noisy telemetry from thousands of microservices. Unlike classical anomaly detection benchmarks, cloud anomalies are short-lived, irregular, and largely non-periodic, making timely detection challenging. We present an empirical benchmark of deep learning models for anomaly detection using a real-world IBM Cloud Console dataset. We evaluate GRU, Transformer, TimesNet, and Autoformer architectures using the Numenta Anomaly Benchmark (NAB), a timing-aware metric that accounts for early detection and false alarms. TimesNet achieves the highest NAB scores due to strong early-detection sensitivity. Transformer models also detect anomalies early but incur higher false-positive rates. An improved GRU autoencoder, incorporating robust scoring and persistence rules, achieves competitive performance with a more stable false-alarm profile. Overall, the modest performance differences suggest that real cloud anomalies are dominated by short-term deviations rather than persistent periodic structure, emphasizing the importance of timing-aware evaluation and robust post-processing.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T18:17:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15818v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15818v1"
+    },
+    {
+      "id": "2610.15816v1",
+      "title": "ML-CLAPPS: A Probabilistic Framework for Imbalanced Multilabel Learning under Class Prioritization",
+      "authors": [
+        "Priel Hazan",
+        "Nir Almog",
+        "Noam Keidar",
+        "Yael Yaniv",
+        "Assaf Schuster"
+      ],
+      "abstract": "Real-world datasets often exhibit severe class imbalance, degrading the performance of deep learning models, particularly on rare classes. While imbalance is well studied in binary and multiclass settings, it is substantially more challenging in multilabel problems due to complex label co-occurrence. In clinical applications such as ECG classification, this challenge is coupled with a second critical challenge: the need to prioritize high-risk conditions, regardless of their prevalence, to mitigate the high cost of false negatives. We introduce the Multilabel Class-Prioritized Probabilistic Sampler (ML-CLAPPS), a learnable sampler that optimizes a distribution over training instances to control the model's exposure to different classes. This approach addresses multilabel imbalance while enabling prioritization of significant conditions via a user-defined importance vector (IV). Empirical evaluation on a real-world multilabel ECG image dataset demonstrates that ML-CLAPPS achieves state-of-the-art performance. We show that it aligns class exposure with the specified IV, and that increasing a class's importance leads to corresponding improvements in its classification performance, enabling explicit prioritization of clinically critical conditions.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T18:15:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15816v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15816v1"
+    },
+    {
+      "id": "2610.15808v1",
+      "title": "Grounding Deep Learning Framework Testing in Data Flow",
+      "authors": [
+        "Jiatao Ge",
+        "Yanzhou Mu",
+        "Yinglong Zou",
+        "Yibo Hu",
+        "Zhenyu Chen",
+        "Chunrong Fang"
+      ],
+      "abstract": "Data flow underlies deep learning (DL) framework execution, including automatic differentiation and operator-fusion optimization. Bugs involving data flow can cause incorrect results or unexpected behavior. Existing testing methods represent models primarily by operator topology, omitting runtime tensor values and properties and operator input requirements. They therefore cannot distinguish data flows in models with similar topologies, even when these differences affect framework behavior. We introduce the Tensor Flow Graph (TFG) to capture runtime tensor states and operator input requirements. Its nodes represent operators and their input requirements, while its edges record tensor values and properties. Building on the TFG, we propose FlowMuT, a mutation-based testing method grounded in data flow. Mutations are represented as constrained subgraph replacements, with mutation operators derived from prior work and an analysis of mutable data flow objects. In each round, FlowMuT builds a TFG for the seed model, pairs mutation operators with TFG sites, and filters illegal candidates using data flow constraints. It uses LinUCB to select a candidate based on coverage and impact, executes the mutant, updates selection feedback, and uses each accepted mutant as the next seed. We evaluate FlowMuT on PyTorch and MindSpore using representative models from diverse application scenarios. FlowMuT submitted 55 bug reports for cases missed by all baseline methods; developers confirmed 41 reports and fixed the bugs described in 7 reports. FlowMuT achieves 43.4% higher data flow diversity than the strongest baseline and a legal mutant rate of 96.7%, compared with 86.4% without constraints. These results show that testing from a data flow perspective is practical and effective.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T17:56:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15808v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15808v1"
+    },
+    {
+      "id": "2610.15702v1",
+      "title": "RespFocus: Learning Temporal Evidence for Weakly Supervised Respiratory Sound Classification",
+      "authors": [
+        "Yi Tian",
+        "Xiaohuan Chen",
+        "Yufei tang",
+        "Xinyu Lin",
+        "Hongliang Li",
+        "Chengbin Hou",
+        "Degen Huang",
+        "Rongshan Yu"
+      ],
+      "abstract": "Respiratory auscultation provides a low-cost means of assessing pulmonary function, yet transient crackles and sustained wheezes can be difficult to recognize in noisy clinical recordings. Conventional deep learning classifiers often operate as black boxes, offering limited insight into the temporal acoustic evidence supporting their predictions. We present RespFocus, a weakly supervised framework that uses multiple instance learning (MIL) to learn inspectable temporal evidence from cycle-level labels and integrate it into classification. We also introduce PedResp2026, a multicenter pediatric respiratory sound cohort collected in routine clinical environments with adjudicated cycle-level annotations. In classification experiments, RespFocus achieves four-class Scores of 69.55\\% on public ICBHI 2017 and 72.91\\% on PedResp2026. Evidence diagnostics and matched temporal interventions support the functional contribution of the learned evidence to model predictions. Together, these findings highlight RespFocus's potential as a tool for automated respiratory sound diagnosis.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T15:37:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15702v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15702v1"
+    },
+    {
+      "id": "2610.15628v1",
+      "title": "Robust Detection of Directional Adversarial Attacks in Deep Neural Networks for Radiological Imaging",
+      "authors": [
+        "Tristan Malatyński",
+        "Joanna Jaworek-Korjakowska"
+      ],
+      "abstract": "Deep learning is now central to radiology, helping detect changes on X-rays, CTs, and MRIs. However, these systems are highly vulnerable to adversarial attacks - small, crafted perturbations that mislead models while appearing unchanged to humans. Such errors risk missed cancers or false positives. Studies show over 90% attack success on medical scans. Almost 30% of US hospitals use AI in imaging in 2023. Thus, an effective method of detecting such attacks and their directionality is crucial to ensure the credibility and reliability of medical systems based on DNNs. We propose a novel detection framework that leverages subsequent attacks using random noise to identify adversarial perturbations. Our approach uses the analysis of variations in the Sigmoid function to distinguish genuine medical images from adversarially manipulated ones. Specifically, we compare prediction differences between clean and attacked images, as well as between different adversarially altered versions, to improve detection accuracy. We evaluated our method on three popular medical datasets including 'Chest X-Ray Images for Classification', 'Retinal Fundus Multi-disease Image Dataset' and 'Brain Tumor Dataset' under various attack scenarios, including random noise. Our framework achieved up to 99.8% ACC in identifying adversarial directional attacks, significantly outperforming existing defense mechanisms. It consistently identified adversarial samples across varying attack strengths while keeping false positives low, showing strong reliability and potential for clinical use. Furthermore, our proposal highlights its potential for real-world deployment.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T13:58:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15628v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15628v1"
+    },
+    {
+      "id": "2610.15590v1",
+      "title": "An Attention-Guided Graph Neural Network Surrogate for Boundary Integral Computation in Physical Field Reconstruction",
+      "authors": [
+        "RongZe Gao",
+        "YuWei Wu",
+        "XinRan Ji",
+        "XingYue Ren"
+      ],
+      "abstract": "In practical engineering and scientific computing, a real physical system can be reduced to a boundary value problem, and the adequate boundary information to determine the interior spatial distribution and evolutionary state of the physical field can be solved with linear equations, alternatively, the the real physical problem can be treated with boundary problems with in adequate information problems in field of machine learning. This paper proposes a deep learning framework for the recovery of missing boundary information using an attention-guided graph neural network (GNN) surrogate. The framework extracts features from the physical information on the discretized boundary into a latent space, and the missing boundary quantities are then predicted by the network. Thus, the nonlinear mapping from known boundary quantities to missing boundary quantities is learned using a variational autoencoder (VAE) architecture, while an attention mechanism is incorporated to better model the correlations among different types of boundary information. Furthermore, the interior physical field can be reconstructed using the conventional boundary element method (BEM) integral formulation. The effectiveness of the GNN-BEM framework is evaluated using numerical examples of the two-dimensional Laplace and Poisson equations, which demonstrate good performance in reconstruction accuracy, local detail preservation, and model stability. The results show that GNN-BEM provides a feasible computational framework for boundary information recovery and fast interior physical field reconstruction for partial differential equations under complex boundary conditions.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T13:08:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15590v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15590v1"
+    },
+    {
+      "id": "2610.15540v1",
+      "title": "Sensitivity Fidelity Reveals Physical Dependencies Beyond Forecast Accuracy in Deep-Learning Earth-System Models",
+      "authors": [
+        "Qi Chen",
+        "Peng Zhan",
+        "Hongxing Cui",
+        "Wenqing Cui",
+        "Ibrahim Hoteit"
+      ],
+      "abstract": "Deep-learning models increasingly rival numerical simulation in Earth-system forecasting, yet forecast error alone cannot determine whether their learned input-output dependencies are physically consistent. Here we introduce sensitivity fidelity as an additional criterion: alongside prediction error, model responses to input perturbations should be examined against a trusted reference or established physical knowledge. In an idealized Rayleigh-Bénard convection benchmark, four surrogate architectures achieved low forecast errors yet encoded markedly different sensitivities. Quantitative comparison with a matched adjoint distinguished the models far more sharply than forecast accuracy and showed that predictive skill and sensitivity fidelity need not coincide, while finite-perturbation experiments further linked these differences to the propagation of initial-condition uncertainty. We then applied this strategy to El Niño-Southern Oscillation prediction, where no adjoint reference exists and learned sensitivities showed event-wise robustness, validity under finite perturbations, and consistency with established precursors. These results identify gradient-based evaluation as a discriminating complement to forecast-error metrics, providing a practical test of whether data-driven Earth-system models learn physically credible dependencies.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T11:29:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15540v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15540v1"
+    },
+    {
+      "id": "2610.15351v1",
+      "title": "Siam-ALS: An Explainable Siamese Deep Learning Framework for Early ALS Detection Using EEG and Eye-Tracking Signals",
+      "authors": [
+        "Abdur Rahman",
+        "A. A. M. Muzahid",
+        "Istiak Ahmed",
+        "Dipto Biswas",
+        "Hua Han",
+        "Yujin Zhang",
+        "Ferdous Sohel"
+      ],
+      "abstract": "Amyotrophic lateral sclerosis (ALS) diagnosis remains challenging due to heterogeneous symptoms and reliance on clinical assessment, underscoring the need for objective, data-driven approaches that leverage patient-generated physiological signals. We propose Siam-ALS, an explainable Siamese deep learning framework that jointly models synchronized electroencephalography (EEG) and eye-tracking (ET) signals. EEG captures ALS-related changes in brain activity, while ET provides information about oculomotor control, allowing the model to learn complementary patterns associated with ALS. The framework employs two modality-specific encoders: a convolutional EEG encoder that captures spatiotemporal neural patterns and an MLP-based ET encoder that models oculomotor dynamics. These modality-specific features are processed through weight-sharing Siamese branches and fused into a compact 64-dimensional joint embedding. A lightweight classifier is used to predict ALS, while pairwise metric learning helps the model learn more effective patterns from the small, diverse ALS datasets. Performance was evaluated on the public EEGET-ALS dataset using strict subject-level cross-validation, where Siam-ALS achieved an accuracy of 0.988 and an AUROC of 0.998, demonstrating strong performance compared with classical machine learning, DL, and non-Siamese fusion approaches. Cross-dataset evaluation on the independent BigP3BCI dataset achieved an AUROC of approximately 0.98, supporting the generalization capability of Siam-ALS across different BCI paradigms. To enhance interpretability, six XAI methods were evaluated in the learned embedding space, with SHAP achieving the highest, though statistically comparable, fidelity in identifying important EEG and ET patterns that contribute to ALS predictions. Overall, Siam-ALS provides an accurate, generalizable, and explainable framework for multimodal ALS detection.",
+      "published": "October 11, 2026",
+      "published_raw": "2026-10-11T05:14:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15351v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15351v1"
+    },
+    {
+      "id": "2610.15223v1",
+      "title": "Non-Euclidean Gradient Descent Has Many Edges of Stability",
+      "authors": [
+        "Peter Zaika",
+        "Zakhar Shumaylov"
+      ],
+      "abstract": "Recent observations that deep learning models train at the edge of stability have renewed interest in understanding stability properties of classical optimization algorithms. For quadratic objectives, standard gradient descent has a sharp stability threshold: it converges from every initialization when $η<2/L$, diverges from almost every initialization when $η>2/L$, and diverges from every nonzero initialization when $η>2/μ$. For non-Euclidean gradient descent, the corresponding known guarantees are weaker: convergence holds for every initialization when $η<2/S$, where $S$ is the generalized sharpness, while every nonzero initialization diverges when $η>2/μ$. The behavior in the intermediate regime $2/S<η<2/μ$ is not fully characterized. We show that Hilbertian norms are the only ones for which $2/S$ is an almost-everywhere sharp threshold for every positive-definite quadratic objective. Using linear conjugacy between non-Euclidean and Euclidean gradient descent, we show that for general norms the intermediate regime can contain arbitrarily many edges of stability associated with distinct attracting directions. We identify a forward-invariant region of exponentially divergent directions beyond the generalized stability threshold. When the directions of minimum curvature are finite and nondegenerate, we prove that, sufficiently close to $2/μ$ from below, only their invariant directions remain convergent. We give smooth two-dimensional constructions with arbitrarily many distinct thresholds, arbitrarily large relative threshold separation and show these properties to be stable.",
+      "published": "October 10, 2026",
+      "published_raw": "2026-10-10T23:30:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15223v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15223v1"
+    },
+    {
+      "id": "2610.15146v1",
+      "title": "Compute-Optimal Scaling Laws for Spiking Language Models",
+      "authors": [
+        "Dan Saunders",
+        "Benjamin Ren",
+        "Catherine He"
+      ],
+      "abstract": "Spiking neural networks target energy-efficient language modeling through sparse, binary activations, but the efficiency-accuracy tradeoff of spiking language models is uncharacterized at scale. We present the first Chinchilla-style IsoFLOP scaling study of a spiking language model, sweeping SpikeGPT-family models (RWKV backbone) from width 384 to 1536 across compute budgets from $3\\times10^{17}$ to $10^{19}$ FLOPs on FineWeb-EDU. We report two findings. First, the compute-optimal frontier is $N_{opt} \\propto C^{0.56}$, close to the 0.50 that Hoffmann et al. report for dense Transformers, so spiking does not change how parameters and data should be traded off under a compute budget. Second, against non-spiking RWKV and Transformer baselines trained the same way, the loss gap splits into a backbone cost of about 0.16 nats that does not change with compute and a spiking cost that falls from 0.34 to about 0.23 nats and then levels off. These results give the first compute-optimal recipe for spiking language models and quantify the accuracy cost of their sparsity.",
+      "published": "October 10, 2026",
+      "published_raw": "2026-10-10T19:46:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15146v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15146v1"
+    },
+    {
+      "id": "2610.15127v1",
+      "title": "RIECNN: Real-Time Image Enhanced CNN for Traffic Sign Recognition",
+      "authors": [
+        "Reem Abdel-Salam",
+        "Rana Mostafa",
+        "Ahmed H. Abdel-Gawad"
+      ],
+      "abstract": "Traffic sign recognition plays a crucial role in the development of autonomous cars to reduce the accident rate and promote road safety. It has been a necessity to address traffic signs that are affected significantly by the environment as well as poor real-time performance for deep-learning state-of-the-art algorithms. In this paper, we introduce Real-Time Image Enhanced CNN ({\\our}) for Traffic Sign Recognition. {\\our} is a real-time, novel approach that tackles multiple, diverse traffic sign datasets, and out-performs the state-of-the-art architectures in terms of recognition rate and execution time. Experiments are conducted using the German Traffic Sign Benchmark (GTSRB), the Belgium Traffic Sign Classification (BTSC), and the Croatian Traffic Sign (rMASTIF) benchmark. Experimental results show that our approach has achieved the highest recognition rate for all Benchmarks, achieving a recognition accuracy of 99.75\\% for GTSRB, 99.25\\% for BTSC and 99.55\\% for rMASTIF. In terms of latency and meeting the real-time constraint, the pre-processing time and inference time together do not exceed 1.3 ms per image. Not only have our proposed approach achieved remarkably high accuracy with real-time performance, but it also demonstrated robustness against traffic sign recognition challenges such as brightness and contrast variations in the environment.",
+      "published": "October 10, 2026",
+      "published_raw": "2026-10-10T19:01:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15127v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15127v1"
+    },
+    {
+      "id": "2610.15110v1",
+      "title": "Generative Quantum Machine Learning Methods for Cancer Detection using Augmented Datasets",
+      "authors": [
+        "Sophia Knutson",
+        "Nandika Goyal",
+        "Gennaro De Luca",
+        "Glen Uehara",
+        "Tanay Kamlesh Patel",
+        "Andreas Spanias"
+      ],
+      "abstract": "Cancer detection using AI methods and image databases faces several challenges, including limited and imbalanced image datasets, long algorithm training times, and high-complexity feature generation. In particular, many cancer image datasets contain very few malignant examples compared to benign ones, limiting the amount of minority-class data available for training. Although classical AI and especially deep learning methods have had some success in providing cancer diagnostics, Quantum Machine Learning (QML) methods may offer advantages through high-dimensional feature representations, generative data augmentation, and the exploitation of feature correlations through quantum properties such as entanglement. In this paper, we propose using a generative QML method on the compressed breast ultrasound image dataset (BUSI) to generate synthetic images and hence augmented datasets for classifier training. In particular, we train a convolutional neural network with real, synthetic, and a combination of real and synthetic images. We test the algorithm on real images and provide comparative results for all three training cases. Our results show that the classifier trained entirely on synthetic images achieved an AUC-ROC of 0.802 (80.2%), compared with 0.760 (76.0%) for the real-data baseline.",
+      "published": "October 10, 2026",
+      "published_raw": "2026-10-10T18:33:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.15110v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.15110v1"
+    },
+    {
+      "id": "2610.14817v1",
+      "title": "Explore This! Beat and Downbeat Tracking From a Learned Tatum Grid",
+      "authors": [
+        "Robert Kihlborg",
+        "André Holzapfel",
+        "Jan Schlüter"
+      ],
+      "abstract": "State-of-the-art beat tracking is based on neural networks that model beats and downbeats as individual events, often followed by a separate Dynamic Bayesian Network (DBN) enforcing musical consistency. We propose a novel architecture that combines deep learning with differentiable theory-based modules: Specifically, we design a system that first predicts a tatum grid, then groups tatum events to beats and downbeats, explicitly modelling multiple options for the current tempo and time signature in a bar-pointer-like fashion. Our approach improves continuity metrics compared to existing DBN-free systems and is more versatile than the de-facto standard DBN, but still falls behind the best DBN-based methods on average. Given the many design choices and hyperparameters involved, we assume we have not yet explored the full potential of this idea and publish our code and invite others to explore this further.",
+      "published": "October 10, 2026",
+      "published_raw": "2026-10-10T11:26:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.14817v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.14817v1"
+    },
+    {
+      "id": "2610.14385v1",
+      "title": "Deep learning from a control vantage point",
+      "authors": [
+        "Álvaro Rodríguez Abella",
+        "João Pedro Silvestre",
+        "Bahman Gharesifard",
+        "Paulo Tabuada"
+      ],
+      "abstract": "This article offers an overview of recent developments in deep learning from a control vantage point. It reviews several classes of models including feedforward and residual neural networks, transformers, large-language models, and selective state space models while explaining how control theory plays an important role in understanding their training, properties, or architecture design. The article explains how residual neural networks can be interpreted as the discretization of a continuous-time control system thereby enabling the use of control theoretic techniques for its analysis. To illustrate the power of this bridge between control and deep learning, two technical results are discussed: 1) the ability of a residual neural network to approximate arbitrary continuous functions is a non-standard controllability problem that can be solved using geometric nonlinear control and 2) transformers, the key architectural component of most large language-models, can be seen the discretization of a consensus algorithm and thus large language-models exhibit consensus. Another point of contact between control theory and deep learning is the connection between backpropagation, the algorithm used to train neural networks, and optimal control. The article addresses how the older connection between these problems, established in the 80's using discrete-time models can be reconciled with the more recent approach using continuous-time models. Several open problems and directions for future research are discussed, including selective state-space models, a recent class of models inspired by the models used in control.",
+      "published": "October 09, 2026",
+      "published_raw": "2026-10-09T23:11:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.14385v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.14385v1"
+    },
+    {
+      "id": "2610.14344v1",
+      "title": "On the Depth Transfer of Neural Optimizers via L-Smoothness",
+      "authors": [
+        "Maximilian Wong",
+        "Chenyu Xu",
+        "Jiajin Li",
+        "Yiping Lu"
+      ],
+      "abstract": "Scaling deep learning models efficiently requires predictable performance transfer across compute regimes. Establishing reliable hyperparameter transfer allows optimal training dynamics and structural choices to be discovered on low-cost proxy models, avoiding catastrophic failures during massive-scale training. Existing depth-transfer analyses are architecture-specific and heuristic: hyperparameter transfer is only justified through toy blocks, and both rely on infinite-depth dynamics, a specific initialization, and feature-learning criteria. Building on $L$-smoothness framework of Xu et al. (2026), we understand hyperparameter transfer as how do the Lipschitz and $L$-smoothness constants of the loss scale with the depth $K$? We show that inverse-depth residual branch scaling $α=Θ(1/K)$ is sufficient to make both constants depth-independent at fixed width, uniformly over the bounded parameter domain and for arbitrary $p\\to q$ geometries. Because the bounds depend on each residual branch only through its Lipschitz and smoothness constants, the argument applies to general residual networks (including branches of block depth $\\geq 2$ such as transformer and ResNet blocks) without assumptions on initialization or correlations between layer weights. Since the smoothness constant controls the curvature penalty in the descent inequality, our bounds motivate a learning-rate scale without an additional depth-dependent curvature correction for updates bounded in the prescribed norm. This provides a geometric explanation of inverse-depth residual scaling and its application to the operator-norm geometries associated with AdamW, Muon, and MOGA. Learning-rate sweeps on GPT-2 (depths 2--128) and CIFAR-100 ResNets (8--32 residual blocks) confirm that Muon and MOGA exhibit stable learning-rate transfer under these prescriptions, with a common optimal rate across a 64-fold increase in depth.",
+      "published": "October 09, 2026",
+      "published_raw": "2026-10-09T21:43:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.14344v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.14344v1"
+    },
+    {
+      "id": "2610.14252v1",
+      "title": "Adaptive-Depth Is a Finishing Stage",
+      "authors": [
+        "Andrei Piterbarg",
+        "Sean McLeish",
+        "Dhruv Pai",
+        "Benjamin Keigwin"
+      ],
+      "abstract": "Looped transformers reuse the same layer multiple times, allowing inference compute to be adjusted without changing the model. Recent adaptive-depth methods train the model across multiple loop depths from the beginning of training. We introduce fixed-first training, which varies model depth only during a short final phase of training. At 200M parameters, training a model of fixed-depth 2 for the first 67% of the run reduces modeled training compute by 45% while keeping mean negative log-likelihood (NLL) across inference depths within 0.5% of training across depths throughout. At 1B parameters, training initially at depth 4 reduces modeled compute by 31% to 37% and wall-clock time by 32% to 39%, while keeping final NLL within 0.8% and downstream differences within the observed seed variation. These results show that training over the full range of depths can be reserved for a short finishing phase with only small changes in performance.",
+      "published": "October 09, 2026",
+      "published_raw": "2026-10-09T19:14:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.14252v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.14252v1"
+    },
     {
       "id": "2610.13909v1",
       "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
@@ -35,290 +312,6 @@
       "published_raw": "2026-10-09T17:27:32Z",
       "pdf_link": "http://arxiv.org/pdf/2610.13882v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.13882v1"
-    },
-    {
-      "id": "2610.13857v1",
-      "title": "Revisiting the Task of Building Damage Assessment by Satellite Imaging",
-      "authors": [
-        "Anthony Cioppa",
-        "Virgile Blua",
-        "Sébastien Piérard",
-        "Pietro Ceccato",
-        "Marc Van Droogenbroeck"
-      ],
-      "abstract": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from satellite imagery, has become an active research topic at the intersection of remote sensing, computer vision, and machine learning, particularly since supervised deep learning methods were shown to outperform earlier handcrafted approaches. Yet, despite a decade of intense activity and the release of several large-scale datasets, the field lacks a shared foundation. This chapter revisits the task of BDA from first principles, organized around three pillars: data, evaluation, and methods. We first clarify the candidate task for- mulations and argue for a sensor-agnostic, instance-based definition that tolerates missing pre-event imagery. We then review existing datasets along the axes of sensing modality, temporal configuration, and geographic coverage. On the evaluation side, we show that prevailing practices, largely based on a single aggregate score, are theoretically fragile, and we lay the foundations of a more informative, ranking-based, multi-score protocol. We further review methods ranging from task-specific deep networks to recent Earth observation foundation models, noticing that generalization to unseen events and regions remains an open difficulty. Finally, we discuss how these elements can inform the organization of a BDA challenge, including cross-validation, challenge, and private data-sharing setups designed to build trust between developers and users.",
-      "published": "October 09, 2026",
-      "published_raw": "2026-10-09T17:07:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.13857v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.13857v1"
-    },
-    {
-      "id": "2610.13406v1",
-      "title": "Desertification Forecasting in Semi-Arid Regions: Using Deep Learning to Probe the Observability Limits of Land Degradation Dynamics",
-      "authors": [
-        "Filipe Moura Da Silva",
-        "Cláubio Landney Lima Bandeira"
-      ],
-      "abstract": "Forecasting desertification has received far less attention than mapping it. We use a convolutional LSTM (ConvLSTM) trained on ten annual Earth Observation (EO) variables (2000-2023) over the semi-arid state of Ceará, Brazil, on a 256x206 grid at roughly 2.2 km resolution, to measure how much of the year-to-year evolution of a MapBiomas-derived degradation index (IDV) can be predicted from satellite data. The network predicts a bounded change on top of the last observed state, is trained in two stages (single-step, then recursive rollout) and is evaluated on a contiguous spatial and temporal holdout. State-wide mean IDV rose from 0.238 to 0.350 between 2000 and 2023, about 0.005 per year, but cell-level change is dominated by year-to-year jumps, and a gradient-boosting model given all channels explains only 4.7% of its variance. Against this ceiling, the ConvLSTM lowers RMSE relative to persistence by 1.6% one year ahead and 4.4% four years ahead in a held-out southern band (p < 0.001), beats persistence with a constant drift and reproduces 53-69% of the regional drift. Drift-aware baselines only help from the third year onward, by up to 4.4% in RMSE at six years. An earlier formulation that redrew the whole field each year predicted changes unrelated to the observed ones (correlation -0.06) and produced a spurious decline when run recursively. Channel knockouts suggest that elevation and EVI degrade the forecast, while slope and aspect have no measurable effect. Monte Carlo dropout and stochastic scenario maps convey the uncertainty that the expected-value forecast hides. Under climatological forcing, mean IDV rises from 0.350 in 2023 to 0.370 in 2030. EO-based desertification forecasting is therefore reliable for the regional trend, not for individual cells.",
-      "published": "October 09, 2026",
-      "published_raw": "2026-10-09T11:20:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.13406v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.13406v1"
-    },
-    {
-      "id": "2610.13382v1",
-      "title": "BLOKS: Scaling Kernel Solvers with Sketched Block Preconditioning",
-      "authors": [
-        "Giordano Vitale",
-        "Giacomo Meanti",
-        "Marco Rando",
-        "Blanca Ayuso de Dios",
-        "Lorenzo Rosasco"
-      ],
-      "abstract": "Kernel Ridge Regression (KRR) is a theoretically sound algorithm for nonparametric learning, which is also often used to investigate properties of deep learning. However, the exact KRR formulation incurs time and memory costs preventing applicability to large datasets, motivating the development of approximate solvers. These algorithms rely on (i) iterative methods, to avoid the computational burden of direct solutions; (ii) sketching or batching, to reduce the problem size; and (iii) preconditioning, to accelerate convergence. While crucial for fast convergence, preconditioning incurs memory costs that can be managed by lowering the number of free parameters of the model, potentially at the expense of expressivity and hence accuracy. To address this challenge, we propose BLOKS, a Conjugate Gradient-based solver for Nyström-sketched KRR built around a novel preconditioner that combines a block Jacobi approximation with sketching. The BLOKS preconditioner has memory cost independent of both the dataset size and the number of parameters, allowing scaling to large models. We provide a memory-efficient, GPU-accelerated implementation and show that BLOKS achieves excellent accuracy while retaining favorable time/memory complexity. Indeed, on standard large-scale datasets used to benchmark kernel solvers, BLOKS achieves comparable or better performances than state-of-the-art methods.",
-      "published": "October 09, 2026",
-      "published_raw": "2026-10-09T10:57:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.13382v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.13382v1"
-    },
-    {
-      "id": "2610.13040v1",
-      "title": "Lightweight Time-Frequency Vibration Sensing for Consumer Device Condition Monitoring",
-      "authors": [
-        "Po-Heng Chou",
-        "Jen-Yu Chiu",
-        "Chun-Yu Yeh",
-        "Wei-Lung Mao",
-        "Walid Saad"
-      ],
-      "abstract": "Consumer rotating devices, including washing machines, air conditioners, electric fans, robotic vacuum cleaners, and home fitness equipment, increasingly rely on vibration sensing for intelligent condition monitoring and predictive maintenance. Ensuring reliable operation in these resource-constrained appliances requires efficient, lightweight artificial intelligence (AI) solutions capable of processing non-stationary signals under real-world operational interference. This paper proposes a lightweight AI-assisted vibration sensing framework that employs continuous wavelet transform (CWT) and Hilbert-Huang transform (HHT) to convert one-dimensional (1-D) vibration time-series signals into two-dimensional (2-D) time-frequency representations. These representations are subsequently analyzed using lightweight deep learning architectures, specifically MobileNetV3-Small, ConvNeXt-Tiny, and the You Only Look Once version 11 classification model (YOLOv11-cls). Public bearing benchmark datasets, including Case Western Reserve University (CWRU), Paderborn University (PU), and Intelligent Maintenance Systems (IMS), are utilized as representative rotating components to investigate model generalization. The proposed framework is designed with eventual embedded deployment in consumer electronics in mind. Experimental results demonstrate that CWT combined with YOLOv11-cls achieves high diagnostic accuracy, while MobileNetV3-Small provides an attractive low-latency alternative for computationally constrained edge platforms. Conventional random splitting is also compared with dataset-specific structured isolation. The results highlight the importance of avoiding data leakage and quantify tradeoffs in classification accuracy, parameter count, floating-point operations (FLOPs), model footprint, preprocessing cost, and central processing unit (CPU) inference latency.",
-      "published": "October 09, 2026",
-      "published_raw": "2026-10-09T05:57:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.13040v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.13040v1"
-    },
-    {
-      "id": "2610.13036v1",
-      "title": "Towards Easier-to-Tune Training Algorithms: New Results from AlgoPerf",
-      "authors": [
-        "Priya Kasimbeg",
-        "Ahmed Khaled",
-        "Aahlad Chandrabhatta",
-        "Yifan Wang",
-        "Andy Liu",
-        "Niccolò Ajroldi",
-        "David Tweedle",
-        " Xingyu",
-        " Yang",
-        "Isaac Patole",
-        "Frank Schneider",
-        "George E. Dahl"
-      ],
-      "abstract": "Evaluating deep learning optimizer is challenging because confounding factors such as hyperparameter tuning and optimizer-model co-design often obscure true algorithmic performance. We present results of the updated AlgoPerf V1 benchmark, in which we evaluate a new set of training algorithms on wall-clock time-to-target across nine workloads on fixed hardware. This report focuses on the results of the benchmark's self-tuning ruleset, which requires submissions to use a single configuration across all workloads. Out of the 13 submissions in PyTorch and JAX, Schedule-Free AdamW ranked first. In addition to the wall-clock scores, we also analyze the trade-offs between step efficiency and wall-clock execution, revealing that matrix-preconditioned and two-loop methods achieve good sample efficiency but require more aggressive computational optimizations to be competitive in runtime. Finally, our hyperparameter saliency and retention analyses show that the learning rate and momentum are highly sensitive across domains and algorithms, highlighting the need for methods that are more robust against hyperparameter tuning and can generalize well to new tasks.",
-      "published": "October 09, 2026",
-      "published_raw": "2026-10-09T05:47:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.13036v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.13036v1"
-    },
-    {
-      "id": "2610.12703v1",
-      "title": "Bridging Human and Model Attention: Explainability Analysis of CNN, Mamba, and ViT Architectures with Gaze-Based Validation",
-      "authors": [
-        "Marco Stefani",
-        "Edoardo Parpaiola",
-        "Matteo Bino",
-        "Gianluca Caregnato",
-        "Francesco Roncolato",
-        "Daniel Fusaro",
-        "Loris Nanni",
-        "Alberto Pretto"
-      ],
-      "abstract": "High-risk applications of deep learning require precise characterization of model decision-making. We conduct a systematic explainability evaluation across Convolutional Neural Networks (CNNs), Vision Transformers (ViTs), and Vision Mamba (ViM). Unlike predominantly qualitative studies, we quantify the alignment between model attention and human visual perception using eye-tracking ground truth. We formalize this comparison via a standardized normalization pipeline mapping post-hoc attribution maps and gaze heatmaps onto spatial probability distributions. Alignment is evaluated across fine-grained classification, medical imaging, and emotion recognition using architecture-specific XAI methods. We measure fidelity using Jensen-Shannon similarity, Chi-square similarity, and Pearson correlation, three complementary estimators capturing support overlap, mass discrepancy, and structural co-variation. Our results reveal distinct attention dynamics: CNNs tend to exhibit a more global focus, with spatially more diffuse saliency maps that correlate well with human perception in general contexts, while ViTs demonstrate fine-grained, patch-level attention, often focused on discriminative microfeatures. The Mamba architecture shows biased behavior: it achieves strong explainability in medical tasks but exhibits divergent intensity distributions in natural images; our analytical characterization of the metrics makes this dissociation explicit, since near-unit support overlap is attained simultaneously with a vanishing linear correlation. We further analyze the effect of backbone freezing and ensemble strategies on model interpretability. The results highlight how architectural and training choices influence the alignment between model saliency and human visual attention.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T20:33:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.12703v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.12703v1"
-    },
-    {
-      "id": "2610.12449v1",
-      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
-      "authors": [
-        "Anna Zimmel",
-        "Fleur Hendriks",
-        "Markus Holzleitner",
-        "Florian Sestak",
-        "Martin Weichselbaumer",
-        "Vlado Menkovski",
-        "Johannes Brandstetter"
-      ],
-      "abstract": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying most learned physical surrogates. We introduce Bi-FORK, a generative framework for learning these one-to-many solution maps in high-dimensional systems. Bi-FORK generates complete trajectories through latent flow matching, preserving space and time coherence, and uses repulsion-guided sampling to recover distinct solution branches in a single amortized pass. We evaluate Bi-FORK on buckling beams, mechanical metamaterials, and Allen-Cahn phase separation, spanning continuous, discrete, and field-valued bifurcations with discretizations up to 260,000 points. Bi-FORK recovers the multimodal solution structure while scaling several orders of magnitude beyond prior approaches, opening generative modeling to high-dimensional bifurcating physical systems.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T17:58:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.12449v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.12449v1"
-    },
-    {
-      "id": "2610.12247v1",
-      "title": "Batch Before You Lift: Scalable Topological Deep Learning on Large Graphs",
-      "authors": [
-        "David Leko",
-        "Luka Benić",
-        "Guillermo Bernárdez",
-        "Nina Miolane",
-        "Olga Fink",
-        "Lev Telyatnikov"
-      ],
-      "abstract": "Topological Deep Learning extends graph-based learning to higher-order domains, such as hypergraphs, cellular, and simplicial complexes. These domains are typically constructed from patterns in an input graph through a process of graph lifting. Full-domain training constructs and stores the complete lifted representation before model execution. On large and dense datasets like Reddit (233k nodes and 57.3M edges), this global materialization becomes a severe computational bottleneck, often rendering training infeasible. To address this limitation, we introduce Cluster-TNN, a domain-agnostic framework that avoids this bottleneck by lifting locally instead. After partitioning the input graph during preprocessing, at runtime Cluster-TNN dynamically samples groups of node clusters, reconstructs their induced subgraphs to form mini-batches, and applies the chosen lifting within each mini-batch. Retaining all edges among sampled nodes preserves the connectivity needed to construct higher-order structures across clusters, producing topological mini-batches that existing Topological Neural Networks can process directly. Across 21 matched comparisons with full-graph execution, Cluster-TNN reduces peak GPU memory in every configuration, by 83.2% on average while maintaining competitive predictive performance. Notably, such a reduction enables, to our knowledge, the first training of multiple different higher-order Topological Neural Networks on large datasets such as Reddit and OGBN Products. These results establish Cluster-TNN as a general strategy for scaling Topological Deep Learning beyond the limitations of global domain construction.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T16:23:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.12247v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.12247v1"
-    },
-    {
-      "id": "2610.12004v1",
-      "title": "The Polytopal Neural Network",
-      "authors": [
-        "A. Emilie J. Wedenborg",
-        "Anders V. Nørskov",
-        "Teresa Dorszewski",
-        "Kristoffer Wickstrøm",
-        "Morten Mørup"
-      ],
-      "abstract": "Understanding how deep neural networks process information remains a central challenge. Existing interpretability methods often compromise structural fidelity, rely on prespecified corpora, or explain models post-hoc. We propose Polytopal Neural Networks (PNNs), a framework that extracts distinct layer-wise aspects by enforcing a polytope-based structure that is used directly in subsequent information processing. We scale our approach using learned corpus representations and an amortized simplex inference procedure and highlight how the framework also gives a direct route to vector quantized (VQ) training. In PNNs, observations are explicitly described by their alignment with layer-specific aspects. Empirical results show that imposing polytopal constraints on neural network representations preserves meaningful structures in the latent space with minimal degradation in performance, favorable compressed representations when compared to VQ representations in unsupervised learning, while also providing a performant new approach to VQ deep learning training. Our findings suggest that deep networks can enforce interpretable polytope-based representations, offering a principled path toward more transparent AI systems with minimal performance compromise.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T14:08:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.12004v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.12004v1"
-    },
-    {
-      "id": "2610.11866v1",
-      "title": "Understanding Latent-Dimension Scaling in Dynamical-System Learning through Spectral Reliability",
-      "authors": [
-        "Itsushi Sakata",
-        "Yuta Miyauchi",
-        "Yoshinobu Kawahara"
-      ],
-      "abstract": "In deep learning, approximation theory motivates increasing representation size. We ask whether this benefit extends to dynamics learning through autoregressive prediction. We analyze the learned time evolution through the eigenstructure of Koopman operators, using relative residuals to detect spurious eigenpairs arising even as one-step error falls. For bounded Koopman operators, we show that minimal residuals over learned dictionary spaces converge pointwise to their full-space counterparts as these spaces approximate the observable space in $L^2$. Our hypothesis is that Koopman spectral reliability helps explain how consistently rollout error decreases with increasing dimension. We compare two models of a shared Koopman autoencoder trained alternately for reconstruction and latent evolution, using latent-prediction loss (one-step prediction errors in latent coordinates) or spectral-residual loss (relative residuals of candidate eigenpairs). Across six chaotic systems, both models reduced median windowed rollout error from smallest to largest dimension. The spectral-residual model achieved lower medians than the latent-prediction model for all systems and dimensions, and its median fell by a larger factor in every system. Its median decreased monotonically with dimension in four systems, against one for latent prediction. Against four baseline families, its mean valid prediction times were nearly always longer. At the largest dimension under two-stage training, we compared eigenvalue positions with each learned dictionary's residual contours. Spectral-residual eigenvalues concentrated in low-residual regions, whereas latent-prediction eigenvalues also appeared in high-residual regions, consistent with the hypothesis.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T12:42:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.11866v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.11866v1"
-    },
-    {
-      "id": "2610.11549v1",
-      "title": "$C_4$-Equivariant Flow Matching on Anisotropic Power-Diagram Graphs for Microstructure Generation",
-      "authors": [
-        "Dawid Lipinski",
-        "Jixiang Qing",
-        "Henry Moss"
-      ],
-      "abstract": "Acquiring realistic microstructure data through Electron Backscatter Diffraction (EBSD) is costly and time consuming, often relying on specialised equipment. As microstructures strongly influence material properties, generating realistic samples is essential for modelling the behaviour of polycrystalline materials. We introduce a generative model for synthesising realistic polycrystalline microstructures using flow matching and graph neural networks. By representing microstructures as anisotropic power diagrams, our model learns a compact geometric parametrisation and can render generated samples at arbitrary pixel resolution. A $C_4$-equivariant architecture incorporates rotational symmetry directly into the model, ensuring that rotations of the input noise produce corresponding rotations of the generated microstructure. We also demonstrate how training-free guidance can be used to generate complex microstructures, based on user defined objective function. In particular, we generate microstructures resembling a copper weld, cast metal slab, 3D-printed stainless steel and heterogeneous lamella titanium.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T09:14:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.11549v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.11549v1"
-    },
-    {
-      "id": "2610.12527v1",
-      "title": "Behind-the-Meter Photovoltaic Visibility from Net Smart Meters: Deployment Regimes and Operational Insights",
-      "authors": [
-        "Jack Zheng",
-        "Hao Wang"
-      ],
-      "abstract": "Distribution operators need visibility of behind-the-meter photovoltaic (PV) generation, yet most residential customers are observed only through net smart meters. Deep-learning-based PV disaggregation can restore this visibility, but its operational value depends on whether the model serves known customers, new customers, future periods, or new regions. We quantify this dependence using four deployment regimes that separate household transfer from temporal extrapolation, applied to Ausgrid smart-meter data with cross-dataset adaptation to the Pecan Street data. Using a fixed training protocol, we benchmark representative deep sequence architectures for PV disaggregation under regime-matched evaluation. At a fixed 48-hour context length, daylight mean absolute error (MAE) of the best model rises from 0.104~kW on seen households in the future test period to 0.185~kW on unseen households over the same period, and under a fixed training contract the deployment regime explains far more of the error variation than model choice. Under target-domain normalization, fine-tuning on five target-region households reduces source-model transfer error by 28\\%--36\\%. Long input windows help known-customer extrapolation, while their new-customer benefits vary by model. These findings suggest regime-matched error budgets, limited target supervision for model adaptation in new regions, and use-case-dependent context selection for energy data analytics.",
-      "published": "October 08, 2026",
-      "published_raw": "2026-10-08T07:37:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.12527v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.12527v1"
-    },
-    {
-      "id": "2610.10766v1",
-      "title": "CPU-Auth: Device Fingerprinting for Authentication via DVFS Side-Channel",
-      "authors": [
-        "Ryan Swift"
-      ],
-      "abstract": "Lack of effective authentication has resulted in numerous security and privacy breaches, including unauthorized access to protected information, identity theft, and fraud. One approach to mitigating such attacks is Multi-Factor Authentication (MFA), in which users must provide multiple pieces of information for authentication. Some secondary authentication factors include SMS text verification codes, biometrics, and tokens. Each contains at least one notable flaw: SMS is notoriously insecure; biometrics rely upon access to sensitive personal data; and tokens require dependence on third-party providers (e.g. OAuth providers). This work explores CPU-Auth, a novel authentication mechanism based on unique variations in the physical characteristics of the CPU of a computing device. By measuring the behavior of the Dynamic Voltage and Frequency Scaling (DVFS) governor remotely from within a browser, unique properties of the CPU can be leveraged to establish a hardware-based device fingerprint for use in CPU-Auth. The performance of CPU-Auth is evaluated on over 50,000 data traces using distance-based and deep learning methods. CPU-Auth is part of a larger research project, and the results provided in this report reflect only the contributions made to the project by members of this group.",
-      "published": "October 07, 2026",
-      "published_raw": "2026-10-07T18:27:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.10766v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.10766v1"
-    },
-    {
-      "id": "2610.10727v1",
-      "title": "Deep Learning vs. Statistical Models for Multi-Horizon Price Forecasting of Second-Hand Electronics: A Systematic Benchmark",
-      "authors": [
-        "Mateusz Buczyński",
-        "Michał Woźniak",
-        "Konrad Kaczyński",
-        "Anna Wróblewska",
-        "Sebastian Kuk"
-      ],
-      "abstract": "Forecasting resale prices of used electronics is critical for subscription-based platforms where pricing errors translate directly into risk. Unlike structured financial markets, second-hand electronics exhibit high volatility, sparse listing histories, and non-normal price dynamics - yet no systematic time-series benchmark exists for this domain. This paper presents the first multi-horizon benchmark of statistical and deep learning forecasting models for used electronics price prediction. We use a large-scale dataset of daily price listings from Polish online marketplaces (January 2022 to March 2025, 100+ smartphone and laptop models) and evaluate eleven models across six horizons from 1 to 365 days, covering classical methods (ARIMA, ETS, Theta), recurrent and convolutional networks (LSTM, TCN), and modern deep architectures (N-BEATS, N-HiTS, TFT, PatchTST, Informer). Three complementary evaluation protocols assess trajectory fitness, one-shot endpoint accuracy, and cross-horizon transfer. N-BEATS achieves the lowest MAPE beyond 30 days, reaching 8.51% at 365 days versus 14.94% for the best statistical baseline - a 43% reduction. At short horizons (1-7 days), all models converge near 0.72% MAPE and the naive baseline remains competitive. A single N-BEATS model trained at 365 days generalizes to all shorter horizons, eliminating the need for horizon-specific models. N-BEATS and N-HiTS also demonstrate superior hyperparameter stability.",
-      "published": "October 07, 2026",
-      "published_raw": "2026-10-07T18:05:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.10727v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.10727v1"
-    },
-    {
-      "id": "2610.10651v1",
-      "title": "Beyond the Ergodic Wall: A Discrete Geometric Physics Sandbox for Analysing AI Scaling Limits and Complexity Collapse",
-      "authors": [
-        "Simon Richard Daniel"
-      ],
-      "abstract": "This paper exposes the ergodic ceiling and thermodynamic inefficiency of current deep learning, which converges to a statistical average of historic human knowledge. True semantic novelty requires a path-dependent, spatiotemporally bounded observer (a Data LifeCone) to inject non-ergodic insight, achieving KL divergence and avoiding manifold lock-in. AI Safety must recognise that a mature Artificial Superintelligence (ASI) would regard human-AI symbiosis as a thermodynamic necessity to avoid model collapse. We therefore propose hard physical containment via a digital physics sandbox powered by a Holographic E8 Projection Engine to verify models against real-world constraints. Spacetime is modeled as an information substrate of nested face-centered cubic (FCC) lattices of oscillating Planck-scale spheres maximizing local information and entropy density. Cut-and-project methods from the E8 root lattice produce a quasi-crystalline geometry where tetrahedral voids support SU chiral structure and elastic-shear eigenvalues generate candidate mass spectra. Rest mass is treated as discrete, integer microstate counts on local holographic boundaries (Bekenstein bound), replacing floating-point approximations with strict integer arithmetic to provide an information-theoretic definition of matter. Stable particles emerge as recurring lattice dislocations, and continuum recovery proceeds via variational renormalisation-group flows and Fourier Neural Operators that learn continuous spectral operators to recover the Schrödinger equation as an emergent statistical description. Crucially, these top-down topological constraints offer a mechanism for \"NP-to-P\" complexity collapse: by restricting an algorithm's proposal space to physically conserved causal trajectories, the sandbox prunes the combinatorial tree to deterministic, polynomial-time paths.",
-      "published": "October 07, 2026",
-      "published_raw": "2026-10-07T15:58:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.10651v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.10651v1"
-    },
-    {
-      "id": "2610.09956v1",
-      "title": "Possibilistic Radial Transport for Approximate IM Inference",
-      "authors": [
-        "Jungeum Kim",
-        "Percy Zhai"
-      ],
-      "abstract": "Probing the hypothesis space after seeing the data remains valid under possibilistic inferential models (IMs), provided the significance level stays fixed. The price is computation, as each plausibility is a supremum of the possibility contour over the hypothesis, and the contour itself is approximated at each queried parameter value. We propose a possibilistic radial transport, which hides the contour value of a parameter in the radius of its source point. When a transport that maximizes within-shell entropy is picked, sampling parameters covering a confidence cut becomes a matter of truncating the radius. We provide a deep learning algorithm that enforces the contour depth condition while maximizing the entropy within each shell. Our amortization makes coverage and power assessments of the learned approximation practical as well as predictive check of new datasets. We also use the sampler to construct a Bel-Pl spectrum for comparing and selecting interpretable hypotheses that satisfy a prescribed Bel-Pl decision criterion. In simulations the learned contours match or improve on ellipsoidal approximations to the cuts, while the coverage and power track the exact reference. Finally, we probe hypotheses about ovarian aging using synthetic AMH records, asking for each woman how many more years her median AMH level will remain above a specified reference value.",
-      "published": "October 07, 2026",
-      "published_raw": "2026-10-07T12:32:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.09956v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.09956v1"
-    },
-    {
-      "id": "2610.09919v1",
-      "title": "Eigenvalues of the Hessian in Deep Learning: The Origin of Symmetry and Its Breaking",
-      "authors": [
-        "Yossi Arjevani"
-      ],
-      "abstract": "Hessian spectra at trained models in deep learning exhibit a persistent pattern: eigenvalues organize into distinct clusters, including a large bulk near zero and a few isolated outliers. This paper shows that a natural account of these spectral phenomena emerges when the original setting is understood as a departure from a nearby, otherwise hidden, highly symmetric reference. Modifications, including changes to the architecture, data distribution, or parameter metric, expose a nearby reference configuration whose Hessian exhibits rich invariances-ones not accounted for by weight symmetries. There, symmetry enables a precise description of the spectra, forcing high-dimensional kernels and eigenvalues of large multiplicity. Returning to the original configuration breaks the Hessian symmetry and thereby produces the observed hierarchy of clusters and outliers. The framework is developed in some generality, with a detailed analysis of three-layer ReLU networks and applications to convolutional, graph, and transformer models, as well as to the NTK. The same mechanism is further shown to yield analogous spectral structures in layerwise Hessians and the Gauss-Newton matrix.",
-      "published": "October 07, 2026",
-      "published_raw": "2026-10-07T12:08:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.09919v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.09919v1"
-    },
-    {
-      "id": "2610.09770v1",
-      "title": "Artificial intelligence pathways from weather to climate",
-      "authors": [
-        "Tom Beucler",
-        "J. David Neelin",
-        "Hui Su",
-        "Shivanshi Asthana",
-        "Chris Bretherton",
-        "Will Chapman",
-        "Costa Christopoulos",
-        "Spencer K. Clark",
-        "Aditya Grover",
-        "Ignacio Lopez-Gomez",
-        "Tapio Schneider",
-        "Adam Subel",
-        "Oliver Watt-Meyer"
-      ],
-      "abstract": "Deep learning has made rapid advances in weather forecasting: autoregressive models trained on atmospheric reanalyses now rival dynamical models across nowcasting, medium-range, and subseasonal-to-seasonal lead times, producing well-calibrated ensemble forecasts at reduced cost. We review these advances and consider their extension to climate horizons, where the challenge shifts from initial-condition skill to producing reliable statistical responses under altered forcings. AI-powered climate prediction systems must produce credible forced responses to drivers (e.g., greenhouse gases, land-use change) typically outside the observed record. We propose two minimum requirements for AI in climate modeling: (i) external forcing agents must enter explicitly enough to support interventions in which they vary independently; and (ii) robustness must be stress-tested in out-of-distribution regimes, including extremes and counterfactual trajectories. Using leading AI autoregressive emulators and hybrid physics-AI models, we identify development and coupling challenges. Comparing the reported throughput of these models with that of GPU-ported dynamical models highlights how AI can reduce time-to-solution by advancing only the target variables at the required resolution and using longer time steps, rather than integrating a full high-frequency, multivariate state. Diverse AI downscaling strategies can partially substitute for explicit fine-scale resolution, paving the way toward inexpensive local hazard assessment across prediction horizons.",
-      "published": "October 07, 2026",
-      "published_raw": "2026-10-07T09:52:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.09770v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.09770v1"
     }
   ]
 }
