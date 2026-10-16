@@ -1,7 +1,93 @@
 {
-  "last_updated": "2026-10-15T02:03:21.848873",
+  "last_updated": "2026-10-16T01:53:48.276763",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.21414v1",
+      "title": "Learning to Forecast on Multiple Spatiotemporal Hierarchies",
+      "authors": [
+        "Valentina Moretti",
+        "Cesare Alippi",
+        "Andrea Cini"
+      ],
+      "abstract": "Hierarchical forecasting exploits aggregation structures that expose multiple views of the same underlying spatiotemporal forecasting problem, while ensuring coherence among forecasts. Individual series provide fine-grained information, while progressively coarser aggregates reveal temporal and spatial patterns at different scales. In the associated deep learning architectures, the hierarchy determines which aggregate series are available and how they are processed together with individual series (e.g., through reconciliation or message-passing operators). Different hierarchies thus provide distinct learning signals and inductive biases for forecasting the same collection of time series. Nonetheless, existing architectures are typically trained on a single, often fixed, structure. In this work, we propose a graph deep learning framework that leverages variations across hierarchies as multi-task regularization. We show that jointly learning across these structures can reduce over-specialization to any single hierarchy and improve forecasting performance. Indeed, training across hierarchies provides an inductive bias toward representations that are useful across different structures, and as such, generalize better. Making forecasts coherent with the aggregation constraints for each sampled hierarchy is computationally expensive: to complement the framework, we propose a novel operator-based on a top-down approach-that produces coherent forecasts with linear time and space complexity w.r.t. the hierarchy size. Experiments show that our approach improves forecasting accuracy over training on a single structure and is competitive with current state-of-the-art methods.",
+      "published": "October 15, 2026",
+      "published_raw": "2026-10-15T07:29:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.21414v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.21414v1"
+    },
+    {
+      "id": "2610.21164v1",
+      "title": "Automatic Sentence Completion Using Bengali Audio Speech with a Transformer-Based Early Speech Recognition System",
+      "authors": [
+        "Md Asif Akram",
+        "Arif Faisal",
+        "Sakir Hossain Faruque",
+        "Sharun Akter Khushbu"
+      ],
+      "abstract": "Dementia severely impairs communication abilities and turns everyday conversations into challenging experiences. Individuals affected by dementia frequently struggle to express their thoughts or complete sentences, making it difficult for family members and caregivers to understand their needs. This study proposes a novel approach to assist dementia patients by developing an integrated system that detects signs of dementia through Bangla speech and text analysis and provides sentence auto-completion support during conversations. To achieve this, recorded voices from individuals with and without dementia were analysed, and key acoustic features were extracted to capture vocal patterns associated with cognitive decline. A transformer-based model was employed to transcribe voice signals into text for linguistic analysis. In the classification task, several Machine Learning (ML) and Deep Learning (DL) models were evaluated using both acoustic and textual representations, and the LSTM model architectures demonstrated strong capabilities for modelling contextual patterns in speech and language data. For the sentence auto-completion task, a sequential learning model based on a Bidirectional LSTM (Bi-LSTM) network with an attention mechanism was developed to sequentially complete partially expressed Bangla sentences during conversation. This research bridges the gap in dementia analysis in an underrepresented language and implements a sentence auto-completion framework for cognitive disorders.",
+      "published": "October 15, 2026",
+      "published_raw": "2026-10-15T03:24:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.21164v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.21164v1"
+    },
+    {
+      "id": "2610.21043v1",
+      "title": "Orientation-Aware Deep Learning Framework for RSSI-Based Indoor Localization in RIS-Aided mmWave Systems",
+      "authors": [
+        "Varun S. Advani",
+        "Ahmed Nasser",
+        "Mohamed Y. Selim",
+        "Ahmed M. Eltawil"
+      ],
+      "abstract": "Reconfigurable intelligent surface (RIS)-aided millimeter wave (mmWave) systems provide directional measurements of received power for indoor localization, but device orientation changes the fingerprints. This work proposes an orientation-aware dual-stream gated (O-DSG) deep learning framework for received signal strength indicator (RSSI)-based indoor localization. An orientation classifier estimates device orientation from RSSI, so inference needs only received power. An embedding of the predicted angle and posterior entropy controls feature modulation and soft expert gating. Parallel convolutional and statistical streams are fused through bidirectional long short-term memory (BiLSTM) processing and temporal attention. Single-user measurements in an indoor laboratory at 28 GHz under non-line-of-sight (NLoS) conditions yield a median localization error of 0.141 m, a 25.8% improvement over the closest evaluated baseline (supplied with the measured orientation), and 92.3% orientation classification accuracy across four discrete classes. In spatial regions withheld from training, O-DSG has an average median error of 0.247 m, against 0.392 m for a validation-selected sequence model. A separate offline evaluation constructs non-orthogonal multiple access (NOMA)-style power mixtures from the single-user measurements and measures localization accuracy and computational scaling with up to eight emulated users whose power contributions overlap, under the specified mixture model.",
+      "published": "October 15, 2026",
+      "published_raw": "2026-10-15T00:36:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.21043v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.21043v1"
+    },
+    {
+      "id": "2610.20947v1",
+      "title": "Ranked Right, Sized Wrong: Ensemble Spread Fails Silently at Streamflow Extremes",
+      "authors": [
+        "Justin Gallant",
+        "Tyler Wilson"
+      ],
+      "abstract": "Deep learning models, particularly Long Short-Term Memory networks, are increasingly used for operational streamflow forecasting, with ensemble spread providing a signal of predictive uncertainty. As climate change increases the frequency of hydroclimatic extremes, these models will increasingly operate under flow conditions that are rare in their historical records. We therefore evaluate whether ensemble spread remains informative under increasing flows, examining both its magnitude relative to error and its ability to rank errors. Prediction error is approximately $2\\times$ the corrected spread at ordinary flows and up to $4\\times$ at the highest flows, with the discrepancy increasing with flow (log-log slope $1.30$, 95% CI: $[1.20,1.41]$). Under-dispersion is strongest in observed extreme flows beyond the training record, reaching an $18\\times$ discrepancy. This is pervasive and not explainable by conditional mean bias. Area Under the Sparsification Error, a standard distribution-free metric of uncertainty ranking, describing how well a model knows when it is uncertain, indicates near-oracle ranking for ensemble spread ($0.071$), yet ordering by predicted discharge alone nearly matches it. Informative uncertainty ranking can coexist with severe under-dispersion. In deployment, error ranking cannot be verified, yet the spread is available, and it is relied on as the uncertainty signal under increasingly extreme conditions, while systematically understating risk, most severely for the extreme events that matter most.",
+      "published": "October 14, 2026",
+      "published_raw": "2026-10-14T21:12:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.20947v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.20947v1"
+    },
+    {
+      "id": "2610.20816v1",
+      "title": "O-RAN-Native Jamming Detection Under Network Heterogeneity",
+      "authors": [
+        "Sneihil Gopal",
+        "Fernando J. Cintrón",
+        "Richard A. Rouil"
+      ],
+      "abstract": "Radio-frequency jamming threatens cellular network operations in contested environments. The Open Radio Access Network (O-RAN) architecture exposes per-User Equipment (UE) telemetry through the E2 interface, enabling Key Performance Indicator (KPI)-based jamming detection without proprietary hardware. However, operational deployment demands detection methods that generalize across heterogeneous networks. We propose a Statistical Ensemble Method (SEM) combining adaptive Median Absolute Deviation (MAD)-based baseline detection, count-based anomaly detection, and abrupt change detection through a weighted voting system. SEM operates in two modes: a cold-start mode requiring no labeled data for immediate deployment, and a supervised mode where parameters are refined offline via grid search as labeled data accumulates. We evaluate SEM against five machine learning (ML) classifiers and five deep learning (DL) sequence models using approximately 25 hours of testbed data comprising logs from eight heterogeneous 5G environments, employing both single-environment and multi-environment leave-one-out (LOO) validation. Our analysis indicates that under conditions not encountered during training (distribution shift), learning-based models tend to lose recall and miss jamming events, whereas SEM, even in cold-start mode, maintains detection capabilities at the cost of false alarms. Furthermore, SEM's parameter optimization can be mapped to O-RAN's Non-RT RIC as an rApp for continuous refinement, allowing operators to transition to learning-based alternatives once corpus coverage is sufficient.",
+      "published": "October 14, 2026",
+      "published_raw": "2026-10-14T19:00:48Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.20816v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.20816v1"
+    },
+    {
+      "id": "2610.20795v1",
+      "title": "EEG-Based Prediction of Music Enjoyment Using Deep Learning with Explainable Temporal Analysis",
+      "authors": [
+        "Parshav Singla",
+        "Simranjit Kaur",
+        "Maanya Walia",
+        " Niharika"
+      ],
+      "abstract": "Understanding why listeners enjoy music is difficult because the experience is subjective and changes as a piece unfolds. Electroencephalography (EEG) offers a non-invasive way to study neural responses during listening, yet earlier work has mostly treated music emotion as a categorical label or relied on black-box models. We formulate enjoyment prediction as a regression problem on the public MUSIN-G dataset, which contains 128-channel EEG from 20 listeners together with song-level enjoyment ratings. Six deep learning models were compared under a participant-wise protocol, in which 15 listeners were used for training and validation and 5 were held out for testing. DeepConvNet, CNN-LSTM and GNN-CNN reached the lowest mean absolute error (0.97 to 0.99 on the 1 to 5 scale), while the temporal convolutional network (TCN) had the highest Pearson correlation with the ratings (r = 0.21). Gradient-based and occlusion-based explanations, averaged over all held-out windows, identify the time segments within each two-second window that most influence the TCN predictions. The study provides a reproducible cross-listener benchmark for EEG-based enjoyment regression and shows how explainability analysis complements standard metrics.",
+      "published": "October 14, 2026",
+      "published_raw": "2026-10-14T18:39:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.20795v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.20795v1"
+    },
     {
       "id": "2610.20534v1",
       "title": "Revisiting Simple Baselines for Relational Deep Learning",
@@ -212,91 +298,6 @@
       "published_raw": "2026-10-13T07:21:17Z",
       "pdf_link": "http://arxiv.org/pdf/2610.17857v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.17857v1"
-    },
-    {
-      "id": "2610.17603v1",
-      "title": "Morphology-aware deep learning predicts colorectal cancer survival from whole-slide images",
-      "authors": [
-        "Hikmat Khan",
-        "Metin N. Gurcan",
-        "Anil Parwani",
-        "Wendy L. Frankel",
-        "Wei Chen",
-        "Muhammad Khalid Khan Niazi"
-      ],
-      "abstract": "Background: Five-year survival prediction from hematoxylin-and-eosin whole-slide images could support risk stratification, but the task is weakly supervised, and the tissue morphologies carrying prognostic information remain incompletely characterized. Methods: We conducted a retrospective secondary analysis using TCGA-COAD/READ (n=562) for morphology-specific analysis, Alliance/ CALGB 89803 (n=424) for model development, and SurGen (n=218) for external evaluation. We propose MorphContrast, a morphology-aware contrastive multiple-instance learning framework that uses tissue labels as structural supervision for five-year survival prediction. MorphContrast combines gated-attention pooling with three auxiliary objectives: patch-level morphology labels define within-patient contrasts, outcome concordance or discordance defines cross-patient contrasts within matched morphologies, and diversity regularization discourages representational collapse. Morphology-matched patches from patients with discordant outcomes serve as hard negatives, encouraging prognostic discrimination within comparable histologic contexts. Results: Morphology-specific models show weak but distributed prognostic discrimination: adipose tissue achieves an area under the receiver operating characteristic curve (AUC) of 0.622, stroma achieves 0.604, and both perform comparably to tumor epithelium (0.601-0.605). On Alliance/CALGB 89803, the single model achieves an AUC of 0.642, while the post hoc ensemble reaches a pooled out-of-fold AUC of 0.70 and a risk-group hazard ratio of 3.79 (95% confidence interval: 2.55-5.63). On the external SurGen colon cancer cohort (n=218), the single model and ensemble achieve AUCs of 0.669 and 0.678, respectively. Conclusions: These findings support tissue morphology as structural supervision for outcome-aware representation learning in colorectal cancer prognosis.",
-      "published": "October 13, 2026",
-      "published_raw": "2026-10-13T02:22:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.17603v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.17603v1"
-    },
-    {
-      "id": "2610.17314v1",
-      "title": "Joint Embedding with Dynamic Integration network (JEDI-net)",
-      "authors": [
-        "Rishav Mukherjee",
-        "Jeffrey Ahearn Thompson"
-      ],
-      "abstract": "Deep learning has become the dominant form of machine learning due in part, to its ability to automatically engineer complex meta features from data. However, even deep learning features can perform erratically because of unobserved latent factors. incorporating latent factor information explicitly, can improve performance by letting the model alter its behavior based on such inferred factors. Because neural networks often capture such complexity inherently, external clustering of the original feature space offers limited benefit. clustering observations by feature importance profiles, rather than raw features, offers a principled way to uncover latent structure, since observations with similar importance patterns may share predictive dynamics. In a prior work, Feature Oriented Representation with Clustering and Explanation (FORCE) we showed that this approach measurably improved neural network performance. In this article, we present JEDI-net(Joint Embedding with Dynamic Integration Network) a unified architecture that periodically clusters SHAP values during optimization to identify latent subgroups with similar feature importance patterns, embed their identities directly into the network, allowing predictions to adapt to each observations predictive structure.",
-      "published": "October 12, 2026",
-      "published_raw": "2026-10-12T19:13:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.17314v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.17314v1"
-    },
-    {
-      "id": "2610.17171v1",
-      "title": "Comprehensive Workflow for Uncertainty-Aware Ionic Liquid Solvent Discovery",
-      "authors": [
-        "Alexander Lobo",
-        "Urvi Awasthi",
-        "Leonid Zhukov"
-      ],
-      "abstract": "Designing synthesizable materials with targeted properties remains one of the central objectives in materials sciences. Ionic liquids (ILs) are well suited to this goal due to their \"tunability\", where physical and chemical properties can be precisely customized by modifying their molecular structure, specifically by varying the combination of cations and anions. At the same time, current data-driven property models for ionic liquids often degrade in scarce, noisy, and uneven data regimes, where measurements cover only a small fraction of chemical space and a limited range of thermodynamic conditions. This makes out-of-distribution screening brittle: even when point predictions look plausible, it is difficult to compare candidates consistently, quantify downstream implications, or trust rankings enough to guide molecular discovery. We present a property-prediction and optimal candidate selection workflow that treats data processing, deep learning modeling, and physics-based calculations as a coupled system, linking property prediction with uncertainty estimation and physics-based filtering. By tightening the link between predicted properties and the criteria used for down-selection, the workflow supports reliable out-of-distribution ranking and enables prioritization of previously untested ionic liquid candidates with favorable predicted trade-offs. We demonstrate the application of our workflow by designing novel ionic liquids for CO2 capture from flue gas, predicting their properties and selecting Pareto-optimal candidates based on CO2 solubility, IL viscosity and working capacity.",
-      "published": "October 12, 2026",
-      "published_raw": "2026-10-12T17:43:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.17171v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.17171v1"
-    },
-    {
-      "id": "2610.16868v1",
-      "title": "From Parallel to Sequential: Small-Batch Noise Restores Simplicity Bias of Muon",
-      "authors": [
-        "Tom Jacobs",
-        "Rebekka Burkholz"
-      ],
-      "abstract": "Simplicity bias, which can arise from sequential feature learning during training, has been proposed as a general explanation for the success of deep learning. An important driver of this phenomenon is saddle-to-saddle behavior, in which the gradient flow trajectory remains close to a sequence of saddle manifolds while learning one feature at a time. However, Muon, a state-of-the-art optimizer based on spectral descent, does not exhibit such dynamics in the full-batch setting and instead learns features in parallel. How is it then that Muon is so successful in deep learning settings? We show that stochastic gradient noise fundamentally changes this behavior: small-batch noise restores sequential feature learning, providing a mechanism for simplicity bias that is absent from full-batch Muon. We explain this transition through stochastic smoothing of the spectral descent operator underlying Muon. When gradients are small relative to the noise scale, the expected spectral update becomes approximately proportional to the actual gradient, which restores gradient-flow-like dynamics. We formalize this mechanism for deep linear models by deriving the effective continuous dynamics of noisy spectral descent. Experiments on low-rank matrix reconstruction, vision transformers, and large language models (LLMs) support these findings.",
-      "published": "October 12, 2026",
-      "published_raw": "2026-10-12T14:33:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.16868v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.16868v1"
-    },
-    {
-      "id": "2610.16596v2",
-      "title": "Towards Modality-Agnostic Seizure Classification: A Unified Deep Learning Framework for Heterogeneous EEG and Intracranial EEG Signals",
-      "authors": [
-        "Ramya Sundaram",
-        "Muhammad Aslam Jarwar",
-        "M Uma",
-        "Sunder Ali Khowaja",
-        "Qurat-Ul-Ain Mastoi"
-      ],
-      "abstract": "Seizure prediction and detection, essential for clinical treatment of epilepsy, remain the crucial task of this neurological disease. EEG and iEEG are widely used to analyze epilepsy due to its capability of capturing discriminative brain activities at high time resolution. However, existing works generally analyze either EEG or iEEG seizure activity separately, where EEG analysis has been well-researched, while more and more works consider iEEG for its higher specificity at the spatial level and signal quality. Currently, most of the existing seizure prediction systems are single-modal in nature, which limits its application to a variety of clinical conditions. Therefore, a common framework to analyze seizures with both EEG and iEEG signals needs to be developed. This paper presents a new framework of multimodal seizure classification integrating the heterogeneous EEG and iEEG recordings from different subjects and sources. A specific framework, called Unified Multimodal Signal Harmonization (UMSH), is developed for harmonizing signals with varied sampling rates and recording conditions. Moreover, to handle the extremely class-imbalanced problem in the data sets, we use a Conditional Generative Adversarial Network (cGAN) based data augmentation technique to generate synthetic samples to balance the class distribution. The proposed framework uses the EEGNet-Vision Transformer (EEGNet-ViT) as the feature extraction and classification network to learn the local discriminative patterns as well as global contextual information in the multimodal seizure data. Experimental results demonstrate the effectiveness of the proposed framework for robust seizure classification, emphasizing the potential of integrated EEG-iEEG multimodal learning in advancing next-generation epilepsy monitoring and clinical decision-support systems.",
-      "published": "October 12, 2026",
-      "published_raw": "2026-10-12T11:18:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.16596v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.16596v2"
-    },
-    {
-      "id": "2610.16546v1",
-      "title": "DeepFlow: Two Convergent Differentiable Approaches for Pairwise Conditional Random Fields",
-      "authors": [
-        "John S. H. Baxter"
-      ],
-      "abstract": "Basic probabilistic models form the basis of modern deep learning largely by defining the final activation layer of a network and allowing the networks outputs to be interpreted through a probabilistic lens. By increasing the complexity of these final activation layers to include features such as spatial regularisation, allow for these models to improve in performance without requiring significantly more data. The challenge however is to ensure that these more complex probabilistic graphical models adapt well to being used in tandem with deep learning, that is, ensuring they converge and have meaningful derivatives. The goal of this paper is to show two algorithms with provable convergence properties to allow this type of regularisation for image and signal classification models. Through both rigorous mathematical analysis and in silico experiments, we can show the differing performance between these solution types.",
-      "published": "October 12, 2026",
-      "published_raw": "2026-10-12T10:29:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.16546v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.16546v1"
     }
   ]
 }
