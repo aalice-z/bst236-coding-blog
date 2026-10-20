@@ -1,299 +1,303 @@
 {
-  "last_updated": "2026-10-18T01:46:29.095457",
+  "last_updated": "2026-10-20T02:20:18.658434",
   "count": 20,
   "papers": [
     {
-      "id": "2610.22003v1",
-      "title": "Stateful Testing for Deep Learning Compilers",
+      "id": "2610.25285v1",
+      "title": "A discrete-continuous-time stochastic framework for attention-deficit/hyperactivity disorder-related symptom modeling and pharmacological intervention via methylphenidate",
       "authors": [
-        "Jiatao Ge",
-        "Ruixiang Qian",
-        "Yibo Hu",
-        "Yanzhou Mu",
-        "Yinglong Zou",
-        "Jiawei Liu",
-        "Zhenyu Chen",
-        "Chunrong Fang"
+        "Oana-Maria-Catalina Crisan"
       ],
-      "abstract": "Modern deep learning compilers compile models lazily and cache artifacts across invocations. Retained compiler state can make a later invocation incorrect even when it is correct in isolation. An analysis of 26 publicly reported issues in PyTorch, JAX, and TensorFlow shows that detecting such bugs requires sequences that first establish compiler state and then expose a failure. We present Rondo, a stateful testing method that represents each test case as a model paired with an invocation sequence. Rondo mutates invocation sequences and uses a Markov chain Monte Carlo sampler guided by compilation behavior to favor rarely observed behaviors. Its three-way differential oracle compares execution without compilation, compiled execution with compiler state reset, and compiled execution with state retained. It confirms stateful bugs by replaying the same invocation with state retained and reset while preserving inputs and program state, then shortens sequences while preserving the original bug. We evaluate Rondo on four deep learning frameworks using 24 common model architectures. Rondo detects 117 bugs, including 35 stateful bugs. We submit 39 bug reports, including 18 for stateful bugs; developers confirm 35 reports, including 16 for stateful bugs, and fix 18 bugs, including 11 stateful bugs. Rondo achieves the highest behavior coverage and compiler Python source-line coverage among the compared methods, with 99.26% alarm precision. It shortens 44 of 117 invocation sequences, reducing the lengths of these 44 sequences by 83.34% on average.",
+      "abstract": "This paper presents an original mathematical and computational framework for modeling the efficacy of methylphenidate as an optimal control policy acting on the nonlinear dynamics of attention deficit hyperactivity disorder. Neural processes in ADHD are conceptualized as stochastic processes with trajectories that inherently converge towards stable, yet dysfunctional patterns associated with clinical symptoms. The pharmacological intervention is mathematically formalized as an external control signal that reassesses the system's drift and redirects these trajectories towards neurotypical regimes. To bridge these theoretical stochastic models with empirical clinical data, latent representations are inferred using a novel deterministic hybrid deep learning architecture, combining a one-dimensional convolutional neural network and a Vision Transformer, trained on preprocessed functional magnetic resonance imaging data.",
+      "published": "October 18, 2026",
+      "published_raw": "2026-10-18T14:05:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.25285v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.25285v1"
+    },
+    {
+      "id": "2610.25150v1",
+      "title": "Learning without Overwriting: Structural Knowledge Fusion for Continual Learning",
+      "authors": [
+        "Kanishk Bakshi",
+        "Amitansu Pattanaik",
+        "Kathiravan Srinivasan"
+      ],
+      "abstract": "Catastrophic forgetting in sequential deep learning arises from a fixed-capacity architectural constraint: parameter updates encoding new tasks perturb weight subspaces supporting prior representations. We introduce the Knowledge Fusion Network (KFN), which mitigates the stability-plasticity trade-off in class-incremental learning through novelty-gated structural expansion rather than parameter negotiation within a shared capacity budget. KFN decouples task acquisition from knowledge consolidation: each incoming task is learned in an isolated lightweight specialist network (2.8M parameters) and integrated into the global model via a Structural Fusion Module that allocates dedicated channel capacity conditioned on a quantitative novelty score. Dual structural isolation--channel-space separation with temporally phased gradient unfreezing--protects consolidated knowledge. On ten-task Split CIFAR-100, KFN achieves 11.94% minimum task accuracy and 71.16% task-10 accuracy, whereas shared-parameter baselines degrade severely: LwF to 9.07% average accuracy (0.00% min), Replay++ to 8.91% (85.08% forgetting), and Replay to 16.21% (73.44% forgetting); KFN's forgetting (57.92%) is 15.5 pp lower than Replay. Furthermore, KFN prevents logit-scale drift, maintaining near-symmetric task performance. Across CIFAR-100 and EuroSAT satellite imagery, KFN's class-incremental retention (72.7% and 42.5%) substantially exceeds the best baselines (29.6% and 0.94%). Crucially, KFN achieves parameter-efficient linear scaling, adding 25% of the base parameter count per step and requiring 25.1% of naive backbone duplication over ten tasks (28.1M vs 112.0M). With a 37.1% peak GPU memory reduction over full retraining, KFN establishes novelty-gated expansion as a practical path beyond fixed-capacity architectures.",
+      "published": "October 18, 2026",
+      "published_raw": "2026-10-18T10:07:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.25150v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.25150v1"
+    },
+    {
+      "id": "2610.24941v1",
+      "title": "LowNet: Looped Wavelet Neural Networks with 24 Learnable Parameters for Solving Poisson Equations",
+      "authors": [
+        "Yuanhao Gong"
+      ],
+      "abstract": "Poisson equations frequently appear in various fields, such as mathematics, physics and informatics. Solving Poisson equation, however, is challenging. Traditional methods are not data-specific, although have high certainty. They require a large number of iterations due to the CFL numerical stability. In contrast, deep learning methods are data-driven and more efficient, but require accurate training data and suffer from heavy computation. To tackle these issues, we propose a wavelet-inspired Poisson solver with 24 trainable scalars. The proposed network has several advantages. First, it is compact. It has four independent $5\\times5$ kernels, each represented by six parameters, leading to 24 scalars in total. Such compact format can be deployed on most devices. Second, thanks to the loop design, it achieves higher accuracy than previous methods. A residual loop reuses the wavelet block without increasing its parameters. Numerical experiments confirm that such loop indeed improves the solving accuracy. On 10000 images, one, two, and three loops of the wavelet block lead to PSNRs of $47.27$, $74.14$, and $100.74$ dB, respectively. Third, the proposed method is computationally fast. Thanks to the wavelet transform, the proposed method has linear computation complexity, leading to high computation performance. In short, we propose a novel looped wavelet neural network with compactness, accuracy and efficiency for solving Poisson equations. Our method can be applied in various fields, such as computational fluid dynamics, image reconstruction, biomedical engineering, electromagnetic field simulation.",
+      "published": "October 18, 2026",
+      "published_raw": "2026-10-18T01:26:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.24941v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.24941v1"
+    },
+    {
+      "id": "2610.24777v1",
+      "title": "Process-Aware Event Log Augmentation for Process Prediction under Labeled Data Scarcity",
+      "authors": [
+        "Sjoerd van Straten",
+        "Alessandro Padella",
+        "Marwan Hassani"
+      ],
+      "abstract": "Predictive Process Monitoring (PPM) forecasts future events of ongoing business processes based on event logs. However, deep learning PPM approaches are often limited by labeled data scarcity and the low variability of real-world logs. To address this, we introduce SiamSA-PPM, a self-supervised framework combining Siamese learning with statistically grounded data augmentation. It employs novel transformation methods that leverage control-flow semantics and frequent behavioral patterns to generate realistic, semantically valid trace variants, learning generalizable prefix representations without labeled supervision. Extensive experiments on real-world event logs with a wide range of variability, incorporating exhaustive hyperparameter tuning, demonstrate the value of this process-aware augmentation. Compared to state-of-the-art baselines, SiamSA-PPM achieves competitive or superior predictive performance in both next activity and final outcome prediction tasks. An open source implementation of our method is publicly available under https://github.com/SvStraten/SiamSA-PPM-Extension..",
+      "published": "October 17, 2026",
+      "published_raw": "2026-10-17T16:42:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.24777v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.24777v1"
+    },
+    {
+      "id": "2610.24736v1",
+      "title": "How Does Muon Work in Private Deep Learning? Scalable Differentially Private Training via Orthogonalization",
+      "authors": [
+        "Alexander Gaponov",
+        "Grigory Malinovsky",
+        "Egor Shulgin",
+        "Peter Richtarik"
+      ],
+      "abstract": "Training deep neural networks requires optimizers that balance computational efficiency with formal data privacy. While orthogonalized update rules, such as the recently introduced Muon optimizer, have shown strong empirical performance and scalability, their behavior under Differential Privacy (DP) is not yet understood. In this paper, we propose DP-Muon, a differentially private variant of the Muon optimizer. By analyzing Muon's orthogonalized updates through the lens of a Linear Minimization Oracle (LMO), we show that the leading effect of per-example clipping is a positive rescaling of the gradient, to which the LMO is blind, so that only a small directional residual controlled by the centered gradient variance enters the optimization error. This yields an $\\mathcal O(K^{-1/4})$ convergence rate, up to logarithmic factors, to a clipping-dependent neighborhood at a fixed noise scale and, with noise calibrated to a fixed $(\\varepsilon,δ)$ budget, the standard $(\\sqrt d/(n\\varepsilon))^{1/2}$ privacy--utility bound of DP-SGD, without assuming bounded gradients. Furthermore, we investigate the hyperparameter landscape of DP-Muon and document how the optimal learning rate, momentum, and batch size change under privacy. Empirically, on image classification DP-Muon matches or improves on DP-SGD and DP-Adam, whereas on language modeling the best optimizer depends on the batch size, with DP-Muon best at small batches and DP-Adam best near the privacy-optimal batch size.",
+      "published": "October 17, 2026",
+      "published_raw": "2026-10-17T15:00:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.24736v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.24736v1"
+    },
+    {
+      "id": "2610.24124v1",
+      "title": "On the Selectivity of Generative Models in Structure-Based Drug Design",
+      "authors": [
+        "Ella Miray Rajaonson",
+        "Jungyoon Lee",
+        "William Chau",
+        "Alan Aspuru-Guzik",
+        "Benjamin Sanchez-Lengeling",
+        "Dominique Beaini",
+        "Kirill Neklyudov",
+        "Marta Skreta"
+      ],
+      "abstract": "Designing small-molecule drugs that selectively bind to a target protein while avoiding unintended interactions with other proteins is essential for reducing side effects that contribute substantially to clinical attrition. Although structure-based drug design (SBDD) has advanced rapidly with deep learning, most generative models still optimize binding to a single target and disregard selectivity due to limited training data and unknown off-target interactions. Motivated by this gap, we introduce SELECTBENCH, a comprehensive benchmark assessing the selectivity of generative SBDD models. SELECTBENCH provides three curated evaluation tasks reflecting different real-world drug discovery scenarios: literature-based case studies, safety screening panels used in pharmaceutical development, and large-scale structure-based evaluation sets. We further introduce a suite of metrics to quantify selectivity and conduct a systematic evaluation of nine representative SBDD models, including methods explicitly trained for selectivity and widely-used inference-time guidance techniques. Our results show that even selectivity-trained models achieve only modest off-target discrimination and inference-time guidance provides limited gains, underscoring the need for method improvement. SELECTBENCH provides both a characterization of where current generative SBDD stands on selectivity and an open, extensible platform to accelerate progress. The benchmark is available at https://github.com/lovetaro/selectbench.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T18:49:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.24124v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.24124v1"
+    },
+    {
+      "id": "2610.23727v1",
+      "title": "ECG-SDI: Single-lead Electrocardiogram Enables Continuous Sleep Depth Index Profiling and Scalable Digital Biomarkers for Sleep Health",
+      "authors": [
+        "Donglin Xie",
+        "Qingshuo Zhao",
+        "Songchi Zhou",
+        "Haoyu Wang",
+        "Jingyu Wang",
+        "Yuxi Zhou",
+        "Thomas Penzel",
+        "Shenda Hong"
+      ],
+      "abstract": "Conventional sleep staging provides a coarse-grained representation that obscures within-stage depth variation. We developed ECG-SDI, a single-lead electrocardiography (ECG) framework for continuous sleep-depth profiling and digital biomarker extraction. Using 12,392 overnight polysomnographic recordings, we trained and validated a two-stage deep learning model supervised by conventional sleep-stage labels. Correlations with ordered stages excluding rapid eye movement (REM) sleep were 0.828 in the pooled internal test set and 0.848 in the external Cleveland Family Study; corresponding REM classification AUROCs were 0.954 and 0.977. Overnight trajectories captured within-stage variation. Biomarker-based phenotyping identified a disturbed subtype associated with poorer subjective sleep quality and higher all-cause mortality in the Sleep Heart Health Study (adjusted hazard ratio, 1.20; 95% CI, 1.05-1.38). Among 507 participants with paired recordings before and after continuous positive airway pressure (CPAP), normalized sleep-depth area increased by 6.1% and shallow-sleep burden below 0.3 decreased by 16.0%. Exploratory analyses linked reductions in approximate entropy and depth variability to reduced oxygen desaturation and increased sleep efficiency, respectively (Spearman rho = 0.24 and 0.12); both associations remained positive after covariate adjustment. Mean ECG-SDI within N2 increased by 0.017 (95% CI, 0.004-0.030). A wearable proof-of-concept illustrated the acquisition-to-report workflow. These findings support ECG-based sleep phenotyping and further evaluation of CPAP response monitoring at home.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T16:43:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23727v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23727v1"
+    },
+    {
+      "id": "2610.23716v1",
+      "title": "Neural Expansion: A Unified Mechanism for How Deep Neural Networks Generalize",
+      "authors": [
+        "Chashi Mahiul Islam",
+        "Samuel Jacob Chacko",
+        "Mao Nishino",
+        "Canlin Zhang",
+        "Xiuwen Liu"
+      ],
+      "abstract": "Deep neural networks demonstrate remarkable generalization despite being highly over-parameterized, challenging traditional statistical learning theories. While several theoretical paradigms such as margin-based bounds, PAC-Bayesian analyses, and neural tangent kernels provide global explanations, they often lack mechanistic insight into how generalization emerges from training dynamics. We introduce Neural Expansion, a unified geometric framework that characterizes generalization through the expansion of directionally-selective ray coverage in the input space. Using Generalization Intervals (GIs), we quantify direction-specific regions around training samples where the model's predictions remain stable. Our extensive empirical studies across diverse architectures and datasets reveal that training leads to progressive expansion of ray coverage, particularly along directions with low Jacobian singular values. This mechanism helps explain a large fraction of correctly classified test inputs, adversarial examples, and even mislabeled or out-of-distribution samples through the geometry of ray coverage rather than instance-level memorization. By connecting input-space curvature to predictive behavior, our framework provides a mechanistic foundation that complements existing global theories of deep learning.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T16:38:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23716v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23716v1"
+    },
+    {
+      "id": "2610.23661v1",
+      "title": "An Efficient Approach to Beetle Damage Detection of Banana Using Deep Learning",
+      "authors": [
+        "Md. Mehedi Hasan Naeem",
+        "Ishtiyak Ahmmad Araf",
+        "Md. Arefin Haque Mahir",
+        "Tushar Kanti Saha"
+      ],
+      "abstract": "Visible surface damage of banana fruits by Basilepta subcostata (the banana fruit scarring beetle) can reduce their market value. Here, manual inspection of Banana fruits is subjective and difficult to scale. This study presents a lightweight framework based on YOLOv8n deep learning model for locating individual bananas and classifying their visible surface condition as healthy or unhealthy. The term beetle damage in the paper title is used operationally for the locally observed scar-like surface condition; the model does not identify a specific beetle species or biological cause. A custom dataset of 2,473 images containing 5,827 annotated banana instances was prepared from local-market imagery in Bangladesh. The reported experiment used an 80/20 protocol with 1,982 training images and 491 test images. A pretrained YOLOv8n model was trained at 640x640 resolution for 50 epochs with a batch size of 4. On the test partition, it achieved 81.36% precision, 74.30% recall, 77.67% F1-score, 87.04% mAP@0.50 and 59.33% mAP@0.50:0.95. A YOLOv8s comparison gave slightly lower F1 and mAP while using a substantially larger checkpoint. The YOLOv8n checkpoint occupied 5.96 MB and required 6.54 ms/image for inference on an NVIDIA Tesla T4. The results support YOLOv8n as a compact baseline for instance-level banana surface inspection within the studied acquisition conditions.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T15:55:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23661v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23661v1"
+    },
+    {
+      "id": "2610.23611v1",
+      "title": "How Many, but How Sure? Class Competition as a Confidence Proxy in Multi-Class Density-Based Counting",
+      "authors": [
+        "Villanelle O'Reilly",
+        "Georgios Leontidis",
+        "Marc Hanheide"
+      ],
+      "abstract": "Multi-class density estimators can count objects in crowded scenes, but their class-wise outputs offer no indication of how reliably density mass has been allocated. We introduce a training-free confidence proxy based on local competition between the strongest class channels. The resulting prominence measure requires only the predicted density maps, with no retraining or access to model internals. We test whether residual competition is diagnostic of cross-class leakage by attenuating contested density at inference time. On DSACA predictions for the Hicks et al. dataset, this reduces overall MAE from 0.920 to 0.846, suggesting that class competition contains useful information about count reliability.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T15:23:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23611v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23611v1"
+    },
+    {
+      "id": "2610.23394v1",
+      "title": "Forecasting Voltage Time Series under Anomalies Using a WGAN Model With Lipschitz Control and Progressive Kernel Critic Strategy",
+      "authors": [
+        "Najmieh Sadat Safarabadi"
+      ],
+      "abstract": "In time-series forecasting tasks, the use of recursive forecasting on high-dimensional data substantially increases the complexity of the prediction process. The main challenge is that long-term dynamics becomes harder to model, since the sequences show greater temporal variability. To counteract this limitation and improve the modeling of long-term dynamics, and more importantly, address high-dimensional recursive forecasting, this paper uses a Wasserstein GAN equipped with a progressive Lipschitz penalty and an adaptive kernel. This model is capable of taking a window of the data stream and forecasting the next values, subsequently reconstructing the time-series stream and dynamically adapting its kernel to each new window. The proopsed model is a deep learning framework based on a Wasserstein GAN (WGAN-CLP) with an adaptive kernel to model alterations in streaming voltage time series. To establish the methodological foundation, we review the WGAN-LP formulation another variant model in this class and extend its framework through an adaptive kernel critic model. We then evaluate this extended model using power ratios, correlation coefficient (CC), and relative root mean squared error (RRMSE). The experimental results demonstrate that the proposed model outperforms benchmark methods in both accuracy and robustness. The evaluation shows promising performance of the WGAN-CLP with an adaptive kernel framework in forecasting sequence alterations across the voltage and energy time-series datasets.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T12:52:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23394v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23394v1"
+    },
+    {
+      "id": "2610.23353v1",
+      "title": "RTSM: Adapting Recursive Models to Multivariate Time-Series Classification",
+      "authors": [
+        "Georg Tenzing",
+        "Anna Tegon",
+        "Luca Benini",
+        "Thorir Mar Ingolfsson"
+      ],
+      "abstract": "Accurate multivariate time-series classification requires extracting temporal features and integrating information across a sequence. Weight-tied refinement offers a way to repeatedly process these features without allocating new parameters at each stage. Applying this principle to time series requires choosing both a temporal representation and a latent-state organization suited to classification. We introduce the Recursive Time-Series Model (RTSM), which combines a learned convolutional temporal tokenizer, single-state weight-tied refinement, and a pooled classification readout. Across all 30 UEA datasets, RTSM achieves 72.81% mean accuracy under validation-based configuration and checkpoint selection, the highest observed mean among the 17 evaluated deep-learning models and 1.60 percentage points above MambaSL. Ablations on eight datasets favor the proposed tokenizer over a simple convolutional embedding and the single-state model over the tested two-state variants. The complete classifier reaches 86.10% mean accuracy versus 84.79% for a separately trained tokenizer-only classifier. These findings identify temporal encoding and state organization as key design choices for adapting recursive architectures to time series. The resulting classifier combines competitive accuracy with a shared refinement module whose parameter count is independent of computational depth.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T11:59:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23353v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23353v1"
+    },
+    {
+      "id": "2610.23338v1",
+      "title": "SETAREH Transform: A Sorting-Assisted Haar-Wavelet Sparsification Method for Approximate Inner-Product Computation",
+      "authors": [
+        "Seyed Kamaledin Setarehdan"
+      ],
+      "abstract": "Modern deep learning systems increasingly rely on high-dimensional vector operations, in which large input and parameter vectors are repeatedly stored, transferred, and processed. Although substantial research has focused on reducing neural-network model size through pruning, quantization, knowledge distillation, and efficient architectures, the storage, memory-traffic, and communication costs associated with repeatedly presented high-dimensional input vectors remain important practical considerations, particularly in distributed and edge-computing environments. This paper proposes the SETAREH (Sorting-assisted Energy-concentrating Transform for Approximate Representation using Haar wavelets) transform, a Haar-wavelet-based sparsification approach for approximating the inner product between a fixed high-dimensional coefficient vector and successive input vectors. By applying the same sequence of permutations and Haar transforms to both vectors, SETAREH preserves the exact inner product before truncation. It then retains only a subset of the transformed coefficient-input pairs, reducing their representation cost while introducing a controllable approximation error. To evaluate SETAREH, we consider two complementary experimental settings: a synthetic Gaussian-vector baseline and a real apparent-age estimation task using a convolutional neural network on the APPA-REAL dataset. The results show that SETAREH can approximate the evaluated inner products using substantially fewer transformed coefficient-input pairs than the original vector dimension. The findings support its use as a potential structured data-representation method for repeated inner products with fixed weights, while the practical benefit depends on approximation accuracy and the cost of storing or transmitting permutation metadata.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T11:42:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23338v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23338v1"
+    },
+    {
+      "id": "2610.23322v1",
+      "title": "The Loss or the Architecture? What Matters in Survival Analysis with Competing Risks",
+      "authors": [
+        "Julie Alberge",
+        "Gaël Varoquaux",
+        "Judith Abécassis"
+      ],
+      "abstract": "Often, \\emph{eg} in healthcare and predictive maintenance, what matters is which of several competing causes will strike first, and with what probability: survival analysis with competing risks. Corresponding deep learning methods are developed as bundles: a new architecture together with a new training loss, tested on one to five datasets against a handful of baselines. Thus, a state-of-the-art result cannot be attributed to the architecture, the loss, or the evaluation protocol. The coupling is not accidental: with one incidence curve per cause, a network's head is tied to the losses expressible on it. We vary the two axes independently, three losses, two of them strictly proper, on four backbones, across two modalities that tease the axes apart: 20 tabular and 3 pathology-image datasets. One loss wins in both: modelling cumulative incidence directly under censoring weighting. It brings twice as much as benefits a good choice of backbone on competing-risks data, and no more than it on single-event data: the loss is decisive for competing risks. The backbone matters too, and must match the modality: tabular networks lead on tables, pretrained vision encoders on images. The two choices compound rather than substitute. Proper scoring rules reveal these dynamics; the concordance index (C-index), which is not proper, does not separate models: neither axis moves it, not even tuning on the loss built to improve it. This is an avenue of progress: composed, the two give a model nobody has tried, RealMLP or TabM trained with the cumulative-incidence loss, which takes the best Brier score in our benchmark.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T11:26:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23322v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23322v1"
+    },
+    {
+      "id": "2610.23204v1",
+      "title": "Non-Parametric Optimization for Scalable Learning in Stochastic Decision Problems",
+      "authors": [
+        "Mohsen Amidzadeh",
+        "Lauri Viitasaari",
+        "Mario Di Francesco"
+      ],
+      "abstract": "Stochastic optimization (SO) plays a central role in decision-making under uncertainty. Among SO problems, time-varying stochastic optimization (TV-SO) is particularly important due to its applications in adaptive control and machine learning. Non-parametric approaches have been proposed for time-varying deterministic optimization; however, they have not been developed for their stochastic counterparts. This work addresses that gap by developing a stochastic variational framework based on Malliavin calculus. This framework yields non-parametric optimality conditions for SO problems with stochastic decisions and supports the design of a scalable deep-learning algorithm that is insensitive to the parameterization dimension. This algorithm, called the Stochastic Path Follower (SPF), is applied to two important problems under distribution drift, namely least-squares recovery and logistic regression. Experimental results show that the proposed approach outperforms state-of-the-art learning-based and gradient-based methods in both performance and scalability.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T09:42:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.23204v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.23204v1"
+    },
+    {
+      "id": "2610.22925v1",
+      "title": "Scalable Levenberg-Marquardt Training Framework for Deep Learning",
+      "authors": [
+        "Xianghao Wang",
+        "Johan Barthélemy",
+        "John Taylor"
+      ],
+      "abstract": "The Levenberg-Marquardt (LMA) algorithm is a widely used nonlinear least-squares solver known for its rapid convergence. For small-scale neural networks, LMA provides better convergence and architectural robustness than first-order optimizers like Adam. However, LMA imposes prohibitive memory and computational costs. These costs are primarily from the Jacobian matrix, whose dimensions scale with both the number of samples and parameters. This bottleneck prevents its use in large-scale neural networks. Recent efforts scale LMA using preconditioned conjugate gradient (PCG) solvers to avoid materializing the Jacobian. However, PCG only approximates the solution, requiring many network propagations and a task-specific preconditioner. Other studies optimize LMA to reduce costs, but they restrict their methods to specific tasks or network architectures. As a result, LMA remains impractical for training general large-scale neural networks. In this paper, we propose LeMA, a distributed LMA algorithm for large-scale neural network training on multi-GPU platforms. Our contributions are twofold: First, an exact dual formulation of LMA removes the memory dependence on the parameter dimension. Second, a Jacobian sharding strategy computes Jacobian shards on the fly and in parallel to avoid materializing the full Jacobian. For large-scale neural networks, LeMA reduces the memory footprint of LMA from quadratic in the number of parameters to quadratic in the batch size. This makes exact LMA steps feasible for billion-parameter models without approximate PCG solves. Furthermore, for a convolutional neural network with 1,000,022,632 parameters on an 8-GPU node, LeMA achieves a 7.97x speedup over a single GPU, corresponding to a 99.7% strong scaling efficiency.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T04:41:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.22925v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.22925v1"
+    },
+    {
+      "id": "2610.22898v1",
+      "title": "A Feature Selection Layer Approach for Multi-Class Classification on Neural Networks",
+      "authors": [
+        "João Pedro Silveira e Silva",
+        "Márcio Dorn",
+        "Bruno Iochins Grisci"
+      ],
+      "abstract": "In the age of data-driven decision-making, deep learning models have become powerful tools for uncovering patterns and making predictions that influence many aspects of society. However, their broader adoption in scientific and business applications is often limited by a lack of interpretability. Feature weighting methods, which assess the relevance of individual features, are among the most widely studied approaches for improving interpretability. While post hoc techniques have advanced significantly, especially in modeling nuanced relationships between features and labels in multiclass problems, embedded methods typically fall short in this regard. Embedded techniques integrate feature relevance learning directly into the model training process, but they are often unable to capture label-specific relationships. To address the limitation, we propose multiple extensions to the Feature Selection Layer, an embedded feature weighting mechanism for neural networks. Through extensive experimentation, we identify the most effective extension and benchmark it against established feature weighting methods. Our results show that the proposed method matches existing techniques in identifying globally relevant features and outperforms them in capturing label-specific relevance. By leveraging the internal dynamics of the trained neural network, it reveals how individual features contribute to the prediction of specific labels, requiring no post-processing beyond the training process.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T04:01:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.22898v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.22898v1"
+    },
+    {
+      "id": "2610.24024v1",
+      "title": "Unified Multiparadigm Fusion Intelligence for Rare Disease Diagnosis",
+      "authors": [
+        "Jian Yang",
+        "Peiling Liu",
+        "Songda Li",
+        "Yu Cao",
+        "Yuqing Feng",
+        "Lan Yu",
+        "Jiarong Pan",
+        "Jing Ye",
+        "Xinwen Huang",
+        "Chaochun Zou",
+        "Xudong Lu",
+        "Huilong Duan",
+        "Haomin Li"
+      ],
+      "abstract": "Rare diseases (RDs) affect an estimated 300 million people globally, leaving patients to navigate a protracted diagnostic odyssey constrained by clinical scarcity and fragmented medical knowledge. Artificial intelligence (AI) has progressively advanced RD diagnostics, from symbolic methods and deep learning to large language model (LLM)-based systems. However, each paradigm carries structural limitations: symbolic methods are bounded by knowledge completeness, neural models sacrifice interpretability, and LLM-based systems are vulnerable to evaluation biases like data leakage. In this study, we introduce FusionRare, a unified multiparadigm fusion framework integrating knowledge-driven symbolic reasoning, deep-learning pattern recognition, case-based patient retrieval, and LLM-based heuristic inference via statistical meta-aggregation and knowledge-enhanced agentic reflection. Evaluated on 2,528 strictly isolated clinical cases, FusionRare achieves state-of-the-art RD prioritization, attaining a macro-averaged Recall @1 of 51% for phenotype-only diagnosis and 79% for phenotype-genotype joint analysis. These results represent decisive advantages over the advanced agentic system DeepRare, frontier LLMs including GPT 5.5, and specialized tools like PhenoBrain and LIRICAL under stringent anti-leakage protocols. A randomized, crossover clinician-AI validation demonstrated that FusionRare elevates the true diagnostic rank in 45% of decisions, improves physician confidence in 62%, and reduces time to diagnosis by 21%. These findings indicate that reconciling these orthogonal AI paradigms significantly enhances diagnostic capabilities, bridging the gap between computational benchmarks and actionable clinical reliability. More broadly, this work provides a replicable framework for deploying trustworthy diagnostic AI across complex, high-stakes, and underserved medical domains.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T03:52:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.24024v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.24024v1"
+    },
+    {
+      "id": "2610.22811v1",
+      "title": "Replay Pruning and Few-Bit Integer Inference for Hardware-Efficient Speed-Sign Recognition",
+      "authors": [
+        "Se Un Park",
+        "Kyungkeon Chung",
+        "Huigeol Kim",
+        "Junyoung Park"
+      ],
+      "abstract": "Speed-limit sign recognition on an automotive camera system-on-chip (SoC) must fit a detector and a classifier (the reader) into the memory, arithmetic, and energy budgets of the device. In our two-stage recognizer, the detector, a YOLO-family network with ReLU and hard-sigmoid operators, is compressed by channel replay: an iterative pruning cascade identifies the channels to remove, the recorded deletions are replayed on the original task-trained network, the parent, and one continuous knowledge-distillation recovery follows. On a YOLOv5n, replay removes 60.3% of the parameters at the accuracy of the parent and, in validation mAP50-95 over five matched seeds, outperforms iterative pruning and training from scratch, and its per-step variant (per-step replay) is the most accurate pruning method. On a YOLOv8n, replay and per-step replay outperform every other method and the unpruned parent. The reader, a five-layer CNN with 18k parameters, and the post-processing of the YOLOv5n and YOLOv8n heads use integer arithmetic only. With 4-bit weights and 8-bit activations (W4A8), the reader matches FP32 accuracy in 12.1 KB of on-chip memory, and an executable streaming model reproduces the INT8 class predictions of its runtime on all 9,850 test crops. On a Jetson AGX Orin, INT8 is faster than FP16 only in the implicit formulation of TensorRT, and the replay detector runs fastest on the deep-learning accelerator (DLA). Trained on public data only, the combined system of 0.72 M parameters recognizes 95.2% of the signs of a held-out automotive camera at 90% precision and 94 frames per second.",
+      "published": "October 16, 2026",
+      "published_raw": "2026-10-16T01:41:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.22811v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.22811v1"
+    },
+    {
+      "id": "2610.24013v1",
+      "title": "SPADE-KD: Peer-to-Peer Collaborative Learning under Heterogeneous Settings",
+      "authors": [
+        "Harikrishna Kuttivelil",
+        "Katia Obraczka"
+      ],
+      "abstract": "Peer-to-peer collaborative learning is an emerging distributed deep learning paradigm that eliminates the need for a central aggregator and disseminator, avoiding the single-point-of-failure and bottleneck issues they can bring. Many such approaches use parameter averaging, requiring clients to have homogeneous model architectures, whereas others use knowledge distillation as an alternative while leaning on shared public data or centralized control infrastructure. Many of these approaches also make a one-size-fits-all assumption, i.e., jointly training a single, globally optimal solution for all clients, when in reality, clients' underlying data distributions might differ such that a globally optimal solution may not be locally optimal for all clients. To enable collaborative learning in environments with both model architecture and data distribution heterogeneity, we present SPADE-KD -- a fully decentralized model distillation framework that optimizes collaboration towards personalized rather than global performance. SPADE-KD leverages two mechanisms -- adaptive distillation and utility-driven peer selection. Adaptive distillation modulates the strength of each incoming model transfer by the performance advantage of the incoming model compared to the native model measured by their task losses, such that a client will distill more aggressively from incoming models that outperform it on its own local data. Utility-driven peer selection uses the loss-informed utility derived from adaptive distillation to rank prospective partners, focusing on exchanges that measurably improve the local model while suppressing low-utility transfers. Using federated classification tasks, we demonstrate that SPADE-KD consistent outperforms naive decentralized distillation with lower loss and faster convergence and that its individual components are more effective together than independently.",
       "published": "October 15, 2026",
-      "published_raw": "2026-10-15T14:45:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.22003v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.22003v1"
-    },
-    {
-      "id": "2610.21981v1",
-      "title": "Deep Learning of Topological Equivalence Classes",
-      "authors": [
-        "Linden Disney-Hogg",
-        "Max Zuev"
-      ],
-      "abstract": "We demonstrate an application of deep learning to the problem of identifying whether two generating vectors correspond to topologically equivalent finite group actions on Riemann surfaces, showing how architectures developed for semantic understanding have use for pure mathematical problems. In doing so we discuss how desired algebraic structure influences model design, and explore which structural properties of topological equivalence classes the model has successfully learnt.",
-      "published": "October 15, 2026",
-      "published_raw": "2026-10-15T14:33:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.21981v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.21981v1"
-    },
-    {
-      "id": "2610.21969v1",
-      "title": "Uncertainty-Aware Federated Learning for Joint Communication and Computation in XR Systems",
-      "authors": [
-        "Robert-Jeron Reifert",
-        "Hayssam Dahrouj",
-        "Alaa Alameer Ahmad",
-        "Haris Gacanin",
-        "Aydin Sezgin"
-      ],
-      "abstract": "The convergence of communication and computation, empowered by artificial intelligence (AI) enhanced capabilities, emerges as a key enabler for realizing the promising functionalities of the sixth-generation of communication systems (6G). To this end, this paper investigates an AI-native, robust network, where multiple base stations (BSs) simultaneously serve several extended reality (XR) devices. The paper then presents an innovative distributed deep learning-based approach to simultaneously manage the transmit and computing powers, and computation allocation, amidst uncertainties in both channel and computing states information. Under such an interference network scenario, the paper proposes a robust approach for minimizing the worst-case delay across the served XR devices, subject to computation and power constraints. The paper leverages a deep neural network (DNN) that can be trained either centrally or in a federated manner to map estimated channels and computation requirements to optimized resource allocations per BS. During training, uncertainty samples, reflecting both channel and computing estimation errors, are injected after the DNN output to account for such joint uncertainties. Our results validate the enhanced robust delay performance and scalability of joint uncertainty injection as compared to uncertainty-agnostic methods and state-of-the-art benchmarks, with federated learning-based solutions achieving near-centralized performance while enhancing efficiency, privacy, and adaptability.",
-      "published": "October 15, 2026",
-      "published_raw": "2026-10-15T14:27:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.21969v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.21969v1"
-    },
-    {
-      "id": "2610.21414v1",
-      "title": "Learning to Forecast on Multiple Spatiotemporal Hierarchies",
-      "authors": [
-        "Valentina Moretti",
-        "Cesare Alippi",
-        "Andrea Cini"
-      ],
-      "abstract": "Hierarchical forecasting exploits aggregation structures that expose multiple views of the same underlying spatiotemporal forecasting problem, while ensuring coherence among forecasts. Individual series provide fine-grained information, while progressively coarser aggregates reveal temporal and spatial patterns at different scales. In the associated deep learning architectures, the hierarchy determines which aggregate series are available and how they are processed together with individual series (e.g., through reconciliation or message-passing operators). Different hierarchies thus provide distinct learning signals and inductive biases for forecasting the same collection of time series. Nonetheless, existing architectures are typically trained on a single, often fixed, structure. In this work, we propose a graph deep learning framework that leverages variations across hierarchies as multi-task regularization. We show that jointly learning across these structures can reduce over-specialization to any single hierarchy and improve forecasting performance. Indeed, training across hierarchies provides an inductive bias toward representations that are useful across different structures, and as such, generalize better. Making forecasts coherent with the aggregation constraints for each sampled hierarchy is computationally expensive: to complement the framework, we propose a novel operator-based on a top-down approach-that produces coherent forecasts with linear time and space complexity w.r.t. the hierarchy size. Experiments show that our approach improves forecasting accuracy over training on a single structure and is competitive with current state-of-the-art methods.",
-      "published": "October 15, 2026",
-      "published_raw": "2026-10-15T07:29:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.21414v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.21414v1"
-    },
-    {
-      "id": "2610.21164v1",
-      "title": "Automatic Sentence Completion Using Bengali Audio Speech with a Transformer-Based Early Speech Recognition System",
-      "authors": [
-        "Md Asif Akram",
-        "Arif Faisal",
-        "Sakir Hossain Faruque",
-        "Sharun Akter Khushbu"
-      ],
-      "abstract": "Dementia severely impairs communication abilities and turns everyday conversations into challenging experiences. Individuals affected by dementia frequently struggle to express their thoughts or complete sentences, making it difficult for family members and caregivers to understand their needs. This study proposes a novel approach to assist dementia patients by developing an integrated system that detects signs of dementia through Bangla speech and text analysis and provides sentence auto-completion support during conversations. To achieve this, recorded voices from individuals with and without dementia were analysed, and key acoustic features were extracted to capture vocal patterns associated with cognitive decline. A transformer-based model was employed to transcribe voice signals into text for linguistic analysis. In the classification task, several Machine Learning (ML) and Deep Learning (DL) models were evaluated using both acoustic and textual representations, and the LSTM model architectures demonstrated strong capabilities for modelling contextual patterns in speech and language data. For the sentence auto-completion task, a sequential learning model based on a Bidirectional LSTM (Bi-LSTM) network with an attention mechanism was developed to sequentially complete partially expressed Bangla sentences during conversation. This research bridges the gap in dementia analysis in an underrepresented language and implements a sentence auto-completion framework for cognitive disorders.",
-      "published": "October 15, 2026",
-      "published_raw": "2026-10-15T03:24:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.21164v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.21164v1"
-    },
-    {
-      "id": "2610.21043v1",
-      "title": "Orientation-Aware Deep Learning Framework for RSSI-Based Indoor Localization in RIS-Aided mmWave Systems",
-      "authors": [
-        "Varun S. Advani",
-        "Ahmed Nasser",
-        "Mohamed Y. Selim",
-        "Ahmed M. Eltawil"
-      ],
-      "abstract": "Reconfigurable intelligent surface (RIS)-aided millimeter wave (mmWave) systems provide directional measurements of received power for indoor localization, but device orientation changes the fingerprints. This work proposes an orientation-aware dual-stream gated (O-DSG) deep learning framework for received signal strength indicator (RSSI)-based indoor localization. An orientation classifier estimates device orientation from RSSI, so inference needs only received power. An embedding of the predicted angle and posterior entropy controls feature modulation and soft expert gating. Parallel convolutional and statistical streams are fused through bidirectional long short-term memory (BiLSTM) processing and temporal attention. Single-user measurements in an indoor laboratory at 28 GHz under non-line-of-sight (NLoS) conditions yield a median localization error of 0.141 m, a 25.8% improvement over the closest evaluated baseline (supplied with the measured orientation), and 92.3% orientation classification accuracy across four discrete classes. In spatial regions withheld from training, O-DSG has an average median error of 0.247 m, against 0.392 m for a validation-selected sequence model. A separate offline evaluation constructs non-orthogonal multiple access (NOMA)-style power mixtures from the single-user measurements and measures localization accuracy and computational scaling with up to eight emulated users whose power contributions overlap, under the specified mixture model.",
-      "published": "October 15, 2026",
-      "published_raw": "2026-10-15T00:36:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.21043v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.21043v1"
-    },
-    {
-      "id": "2610.20947v1",
-      "title": "Ranked Right, Sized Wrong: Ensemble Spread Fails Silently at Streamflow Extremes",
-      "authors": [
-        "Justin Gallant",
-        "Tyler Wilson"
-      ],
-      "abstract": "Deep learning models, particularly Long Short-Term Memory networks, are increasingly used for operational streamflow forecasting, with ensemble spread providing a signal of predictive uncertainty. As climate change increases the frequency of hydroclimatic extremes, these models will increasingly operate under flow conditions that are rare in their historical records. We therefore evaluate whether ensemble spread remains informative under increasing flows, examining both its magnitude relative to error and its ability to rank errors. Prediction error is approximately $2\\times$ the corrected spread at ordinary flows and up to $4\\times$ at the highest flows, with the discrepancy increasing with flow (log-log slope $1.30$, 95% CI: $[1.20,1.41]$). Under-dispersion is strongest in observed extreme flows beyond the training record, reaching an $18\\times$ discrepancy. This is pervasive and not explainable by conditional mean bias. Area Under the Sparsification Error, a standard distribution-free metric of uncertainty ranking, describing how well a model knows when it is uncertain, indicates near-oracle ranking for ensemble spread ($0.071$), yet ordering by predicted discharge alone nearly matches it. Informative uncertainty ranking can coexist with severe under-dispersion. In deployment, error ranking cannot be verified, yet the spread is available, and it is relied on as the uncertainty signal under increasingly extreme conditions, while systematically understating risk, most severely for the extreme events that matter most.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T21:12:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.20947v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.20947v1"
-    },
-    {
-      "id": "2610.20816v1",
-      "title": "O-RAN-Native Jamming Detection Under Network Heterogeneity",
-      "authors": [
-        "Sneihil Gopal",
-        "Fernando J. Cintrón",
-        "Richard A. Rouil"
-      ],
-      "abstract": "Radio-frequency jamming threatens cellular network operations in contested environments. The Open Radio Access Network (O-RAN) architecture exposes per-User Equipment (UE) telemetry through the E2 interface, enabling Key Performance Indicator (KPI)-based jamming detection without proprietary hardware. However, operational deployment demands detection methods that generalize across heterogeneous networks. We propose a Statistical Ensemble Method (SEM) combining adaptive Median Absolute Deviation (MAD)-based baseline detection, count-based anomaly detection, and abrupt change detection through a weighted voting system. SEM operates in two modes: a cold-start mode requiring no labeled data for immediate deployment, and a supervised mode where parameters are refined offline via grid search as labeled data accumulates. We evaluate SEM against five machine learning (ML) classifiers and five deep learning (DL) sequence models using approximately 25 hours of testbed data comprising logs from eight heterogeneous 5G environments, employing both single-environment and multi-environment leave-one-out (LOO) validation. Our analysis indicates that under conditions not encountered during training (distribution shift), learning-based models tend to lose recall and miss jamming events, whereas SEM, even in cold-start mode, maintains detection capabilities at the cost of false alarms. Furthermore, SEM's parameter optimization can be mapped to O-RAN's Non-RT RIC as an rApp for continuous refinement, allowing operators to transition to learning-based alternatives once corpus coverage is sufficient.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T19:00:48Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.20816v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.20816v1"
-    },
-    {
-      "id": "2610.20795v1",
-      "title": "EEG-Based Prediction of Music Enjoyment Using Deep Learning with Explainable Temporal Analysis",
-      "authors": [
-        "Parshav Singla",
-        "Simranjit Kaur",
-        "Maanya Walia",
-        " Niharika"
-      ],
-      "abstract": "Understanding why listeners enjoy music is difficult because the experience is subjective and changes as a piece unfolds. Electroencephalography (EEG) offers a non-invasive way to study neural responses during listening, yet earlier work has mostly treated music emotion as a categorical label or relied on black-box models. We formulate enjoyment prediction as a regression problem on the public MUSIN-G dataset, which contains 128-channel EEG from 20 listeners together with song-level enjoyment ratings. Six deep learning models were compared under a participant-wise protocol, in which 15 listeners were used for training and validation and 5 were held out for testing. DeepConvNet, CNN-LSTM and GNN-CNN reached the lowest mean absolute error (0.97 to 0.99 on the 1 to 5 scale), while the temporal convolutional network (TCN) had the highest Pearson correlation with the ratings (r = 0.21). Gradient-based and occlusion-based explanations, averaged over all held-out windows, identify the time segments within each two-second window that most influence the TCN predictions. The study provides a reproducible cross-listener benchmark for EEG-based enjoyment regression and shows how explainability analysis complements standard metrics.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T18:39:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.20795v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.20795v1"
-    },
-    {
-      "id": "2610.20534v1",
-      "title": "Revisiting Simple Baselines for Relational Deep Learning",
-      "authors": [
-        "Viet The Nguyen",
-        "Vijay Prakash Dwivedi",
-        "Gunther Gust"
-      ],
-      "abstract": "Relational deep learning has emerged as a powerful paradigm for learning end-to-end predictive models over relational databases by representing them as temporal heterogeneous graphs. Recent advances based on graph neural networks and Transformers have achieved strong performance across diverse domains. However, the effectiveness of simpler relational baselines remains underexplored, making it difficult to assess how much architectural complexity is needed to achieve strong predictive performance. Motivated by the observation that predictive signals arise from target attributes, relational attributes, and historical labels, we revisit how effectively these signals can be exploited using simple propagation methods. We adapt fixed low-pass feature propagation to relational entity graphs and train an MLP for prediction. The resulting predictions are further refined using Correct-and-Smooth, a graph-based label propagation algorithm that incorporates historical labels over task-specific meta-graphs connecting target entities. Across classification and regression tasks on RelBench, an MLP trained on neighborhood-filtered features outperforms one using only target-entity features on most tasks and recovers a substantial portion of the performance of heterogeneous GNNs. Correct-and-Smooth provides further gains from historical labels, although applying it requires a separately constructed meta-graph because connections among target entities are not directly specified by the relational entity graph. Together, our studies revisit the effectiveness of established propagation methods as simple RDL baselines while identifying canonical meta-graph construction as a key challenge for effective label propagation.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T17:30:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.20534v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.20534v1"
-    },
-    {
-      "id": "2610.20326v1",
-      "title": "Comparative Evaluation of Deep-Learning based DoA Estimators for Real-Time ISAC Beamforming",
-      "authors": [
-        "Anjali K. S.",
-        "Manoj Kumar Panda",
-        "Chandramani Singh"
-      ],
-      "abstract": "Integrated Sensing and Communication (ISAC) systems rely on accurate Direction-of-Arrival (DoA) estimation for effective beamforming and spectral-efficiency enhancement. While numerous classical and deep-learning-based DoA estimation methods have been reported in the literature, their suitability for real-time ISAC operation remains insufficiently understood because practical deployment requires consideration of both estimation accuracy and computational latency. This paper presents a unified evaluation framework for systematically comparing classical and learning-based DoA estimators within an ISAC beamforming pipeline. Representative classical and learning-based DoA estimators, together with an ensemble architecture, are integrated with Singular Value Decomposition (SVD)-based beamforming and evaluated under identical operating conditions. The impact of DoA estimation accuracy, inference latency, beamforming-weight generation time, and resulting effective spectral efficiency is investigated. Results show that different estimators occupy distinct operating points in the accuracy-latency-performance design space. Although learning-based approaches substantially reduce estimation time compared with MUSIC, the overall processing latency increasingly becomes dominated by the computational cost of SVD-based beamforming. Among the evaluated methods, the Regression Convolutional Neural Network (RCNN) exhibits a favorable balance between estimation accuracy, computational efficiency, and beamforming performance, making it a promising candidate for real-time ISAC deployment. The findings further suggest that future low-latency ISAC systems may benefit from beamforming strategies that reduce or avoid computationally intensive SVD-based beamforming-weight generation.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T15:11:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.20326v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.20326v1"
-    },
-    {
-      "id": "2610.19995v1",
-      "title": "Deep Learning of Phase Transitions for Bilinear-Biquadratic Spin-1 Chains from Correlation Aspects",
-      "authors": [
-        "Ming-Chiang Chung",
-        "Yu-Ting Kuo",
-        "Ian McCulloch",
-        "Yuan-Hong Tsai"
-      ],
-      "abstract": "We investigate the role of different correlation functions in reconstructing the phase diagram of the spin-1 bilinear-biquadratic chain, parametrized by the angle $θ$ between the bilinear and biquadratic couplings, using our previously developed label-free machine-learning pipeline \\cite{Ming21, Ming23}, in which an autoencoder compresses iDMRG correlation matrices into latent features and K-means clustering with silhouette analysis groups them into phases. Without any prior labels, the scheme reveals four natural phases, the Haldane, dimerized, critical trimerized, and ferromagnetic phases, and accurately locates the Takhtajan-Babujian ($θ=-π/4$), $SU(3)$-symmetric Uimin-Lai-Sutherland ($θ=π/4$), and Ferro-Dimer ($θ=5π/4$) transition points; a shallow supervised refinement further sharpens the phase boundaries. We find that different correlation functions play fundamentally different roles in phase identification. The $SU(3)$-symmetric correlation alone selects a four-cluster partition that can be associated with the four phases, whereas the spin-spin and dimer-dimer correlations must be combined to recover the complete phase diagram. In contrast, the trimer-trimer correlation behaves as a marginal correlation: it is insufficient for phase identification by itself but improves the precision of the predicted phase boundaries when combined with the other correlations. Furthermore, the latent representations and silhouette values reveal signatures that we relate to the $θ$ dependence of the correlations within each phase and, tentatively, to the underlying renormalization-group structure. These results demonstrate that machine learning can not only identify quantum phases but also uncover the physical information encoded in different correlation functions.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T11:11:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19995v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19995v1"
-    },
-    {
-      "id": "2610.19961v1",
-      "title": "Taming the Online Software Engineering Tongue: Detecting and Reducing Offensive Language in Software Communities",
-      "authors": [
-        "Jithin Cheriyan",
-        "Bastin Tony Roy Savarimuthu",
-        "Stephen Cranefield"
-      ],
-      "abstract": "Online Software Engineering (SE) communities such as Stack Overflow have become unwelcoming and hostile spaces, as evidenced by the presence of rude and offensive comments that are detrimental to the emotional wellbeing of participants. The main objective of this work is to investigate the prevalence and nature of offensive language in online SE communities, and develop approaches to classify them with the ultimate goal of reducing offensive language by proposing an Offensive Language Reduction System (OLRSSE) that has the ability to detect, classify, and explain to the poster why a comment is offensive and also propose non-offensive alternative suggestions. Using data from 130,000 user comments on discussions held in four prominent SE platforms: Stack Overflow, GitHub, Gitter and Slack, we developed six sets of twelve (72 in total) different machine learning models (both traditional and deep learning). The F1-Score of the best performing models in the system ranges from 0.56 to 0.94, with an average F1-Score of 0.85, predominantly using BERT as the primary model for various classification tasks. Also, two language-based models were developed for paraphrasing offensive to non-offensive comments. The overall utility of the OLRS-SE was evaluated using user studies with 30 participants, which showed that the developed system is easy to use and also effective in reducing offensive language. Investigating the capabilities of different large language models for offensive language reduction is a promising avenue for future research.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T10:47:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19961v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19961v1"
-    },
-    {
-      "id": "2610.19944v1",
-      "title": "Recursive Gradient Retraction Methods for Stochastic Nonconvex Optimization on Stiefel Manifolds",
-      "authors": [
-        "Zhijie Yuan",
-        "Lei Sun",
-        "Ganzhao Yuan"
-      ],
-      "abstract": "Nonconvex optimization on Stiefel manifolds underlies many problems in machine learning and deep learning. However, existing stochastic Riemannian retraction methods often rely on stepsizes that require prior knowledge of the gradient Lipschitz constant, a prescribed iteration horizon, or restrictive batch-size choices. We develop {\\sf RGR}, a recursive gradient retraction method for stochastic nonconvex optimization on Stiefel manifolds. Instead of recursively updating gradient estimators in changing tangent spaces, {\\sf RGR} constructs them in the Euclidean space and subsequently maps them to tangent space, thereby avoiding vector transport. The method comprises three variants: {\\sf RGR-SPIDER} for finite-sum optimization and {\\sf RGR-SRM} and {\\sf RGR-EMA} for online stochastic optimization. {\\sf RGR-SPIDER} is Lipschitz-free and horizon-free, as its adaptive stepsize requires neither prior knowledge of the gradient Lipschitz constant nor a prescribed iteration horizon. {\\sf RGR-SRM} and {\\sf RGR-EMA} are mini-batch and horizon-free methods whose convergence guarantees do not rely on prescribed large batch sizes and whose parameters can be chosen without prior knowledge of the total iteration budget. We show that {\\sf RGR-SPIDER} reaches an $\\varepsilon$-critical point using $\\mathcal{O}(\\varepsilon^{-2})$ iterations and $\\mathcal{O}(N+\\sqrt{N}\\varepsilon^{-2})$ component-gradient evaluations, where $N$ denotes the number of component functions. For the online setting, {\\sf RGR-SRM} and {\\sf RGR-EMA} achieve iteration complexities of $\\tilde{\\mathcal{O}}(\\varepsilon^{-3})$ and $\\tilde{\\mathcal{O}}(\\varepsilon^{-4})$, respectively. Experiments on principal component analysis, low-rank matrix completion, and orthogonal convolutional neural networks demonstrate faster empirical convergence than methods that construct recursive gradient estimators directly in Riemannian tangent spaces.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T10:26:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19944v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19944v1"
-    },
-    {
-      "id": "2610.19436v1",
-      "title": "Learning to Select Features with Manifold Deep Unfolding PCA",
-      "authors": [
-        "Jingjing Liu",
-        "Pei Tai",
-        "Xianchao Xiu",
-        "Wanquan Liu"
-      ],
-      "abstract": "Unsupervised feature selection (UFS) is of great significance in image processing and pattern recognition. Nevertheless, existing model-based methods often rely on manually tuned hyperparameters, while deep learning-based methods generally require massive training data. To address these issues, this paper proposes an efficient manifold deep unfolding feature selection network (MDUFS-Net). Technically, we first incorporate the $\\ell_{2,0}$-norm into the classic principal component analysis (PCA) framework, then unfold the alternating direction method of multipliers (ADMM)-based iterative algorithm into an end-to-end trainable network, thereby enabling automatic parameter learning. Moreover, a manifold optimization strategy is developed to improve the numerical robustness. On this basis, we further extend MDUFS-Net into an enhanced variant called MDUFS-Net+ by introducing the $\\ell_{0}$-norm for more discriminative feature representations. Extensive experiments validate that our proposed MDUFS-Net and MDUFS-Net+ outperform state-of-the-art methods in the UFS task, with promising performance in clustering. Our code is available at https://github.com/xianchaoxiu/MDUFS.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T02:28:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19436v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19436v1"
-    },
-    {
-      "id": "2610.19324v1",
-      "title": "Why don't Graph Transformers attend to the same token?",
-      "authors": [
-        "Alexandre Bismuth"
-      ],
-      "abstract": "In large language models (LLMs), attention concentrates heavily on the first token. This 'attention sink' is believed to protect deep models against over-mixing. Even though graph transformers face a related pressure, we find that a SoTA graph transformer, GRIT, rarely forms sinks on molecules, and that it sinks less when trained on larger graphs, the opposite of the trend in LLMs. In principle, a graph can prevent sinks: we prove and show empirically that its symmetry and locality limit the attention any node can receive. On molecules, however, with distinguishable atoms and global attention, neither limit prevents sinks; what stops them lies in the model. We find that the attention scoring function is the main cause. Replacing GRIT's gated logit with a dot product raises its sink rate from 0.09 to 0.68 on identical graphs. In Graph Transformers using dot-product attention, removing the sink gives about the same error as removing a random node, while GRIT's most-attended nodes matter to its predictions. Attention sinks are therefore a property of dot-product attention rather than of Transformers. In our experiments, they form when dot-product scoring has a distinguishable node to concentrate on.",
-      "published": "October 14, 2026",
-      "published_raw": "2026-10-14T00:02:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19324v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19324v1"
-    },
-    {
-      "id": "2610.19270v1",
-      "title": "Exploring Interpretability in Deep Learning-Based Forest Classification - Separating Similar Forest Classes using Sentinel-2 Time Series",
-      "authors": [
-        "Maximilian Kirsch",
-        "Christine Preisach"
-      ],
-      "abstract": "The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosystem services. However, a diverse species distribution complicates remote sensing-based species mapping, as distinguishing pure from mixed species compositions at the pixel level remains challenging. We evaluated the potential of recurrent neural networks (RNNs) for tree-species classification from Sentinel-2 time series and investigated the spectral-temporal features underlying class discrimination, with particular emphasis on separating pure from mixed Norway spruce pixels. We compared RNN classification models with Random Forest (RF) and Extreme Gradient Boosting (XGBoost) and used Integrated Gradients (IG) to quantify feature attributions across spectral bands and time. The best-performing RNN achieved a Macro-F1 score of 0.851 on the test data, outperforming XGBoost by 0.012 and Random Forest by 0.103. Beyond classification performance, the attribution analysis revealed distinct spectral-temporal patterns associated with the separation of pure and mixed Norway spruce pixels. Attribution values increased particularly after approximately day of year (DOY) 125, while B11 showed the strongest contribution during periods of increasing spectral divergence between the two classes. These findings show that recurrent models can provide competitive classification performance while also revealing the phenological periods and spectral regions that are most relevant for distinguishing closely related forest compositions. Combining time-series classification with explainability therefore provides additional insight into the spectral-temporal mechanisms underlying tree-species discrimination and may support more detailed mapping of mixed forest structures.",
-      "published": "October 13, 2026",
-      "published_raw": "2026-10-13T22:44:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19270v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19270v1"
-    },
-    {
-      "id": "2610.19074v1",
-      "title": "Theoretical and Practical Advances in Hierarchical Bayesian Deep Learning Methodology",
-      "authors": [
-        "Neil K. Chada",
-        "Simon Cotter",
-        "Kody J. H. Law",
-        "Xinzhu Liang"
-      ],
-      "abstract": "Reliable uncertainty quantification remains an important challenge in AI. Hierarchical Bayesian methods provide a principled framework for this by representing unknown quantities through posterior distributions. Joint inference of neural-network parameters and prior hyperparameters is challenging for conventional Markov chain Monte Carlo (MCMC) methods due to strong dependencies. In this work, we introduce the multilevel particle marginal Metropolis-Hastings (MLPMMH) method, which combines pseudo-marginal inference for the hyperparameters with coupled sequential Monte Carlo (SMC) across hierarchy of network-width truncations for conditional parameter inference. The hierarchy is induced by a trace-class neural network (TNN) prior with width-dependent decay, motivated empirically by the compressible structure observed in trained neural-network parameters. Under standard multilevel coupling assumptions, we establish that MLPMMH achieves mean-square error (MSE) $\\mathcal{O}(\\varepsilon^2)$ at expected computational cost $\\mathcal{O}(\\varepsilon^{-2})$, and verify the predicted rate on a Bayesian regression problem. To address larger-scale applications, we further introduce S-MLPMMH, a practical approximation that replaces the exact sampling components with a PCA-based hierarchy and scalable Bayesian Monte Carlo. Experiments on MNIST demonstrate competitive predictive performance and uncertainty quantification while exploiting the parallel structure of the approximation. Software has been made publicly available at https://github.com/submission-code-anon/mlpmmh-anon.",
-      "published": "October 13, 2026",
-      "published_raw": "2026-10-13T19:08:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.19074v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.19074v1"
-    },
-    {
-      "id": "2610.18280v1",
-      "title": "PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting",
-      "authors": [
-        "Jelena Simeunović",
-        "Baptiste Schubnel",
-        "Pierre-Jean Alet",
-        "Pascal Frossard",
-        "Rafael E. Carrillo"
-      ],
-      "abstract": "Advection-diffusion plays an essential role in transport phenomena such as atmospheric and cloud dynamics. Improved forecasting of cloud motion, in turn, enhances solar power production forecasts and facilitates the integration of additional photovoltaic (PV) sources into the power grid. However, both classical numerical models and emerging deep learning approaches face challenges when applied to spatially irregular sensor networks such as those formed by weather stations. In this work, we adopt a graph signal processing perspective and model advection-diffusion particles as signals on a graph to capture the dynamics of these processes. We introduce a Physics-Informed Graph Neural Network (PING) for forecasting future advection-diffusion particle concentrations on irregular grids. The model incorporates a discretized advection-diffusion equation as a soft constraint in the loss function to guide learning toward physically consistent solutions. This model is on par with state of the art models on synthetic and real transport phenomena datasets, including sea surface temperature and cloud index datasets. Furthermore, the PING model is successfully coupled with models for forecasting PV power production. This hybrid approach leverages data fusion from ground-based sensors at PV stations and satellite images with cloud concentration to improve the accuracy of intra-day PV power production.",
-      "published": "October 13, 2026",
-      "published_raw": "2026-10-13T12:33:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.18280v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.18280v1"
-    },
-    {
-      "id": "2610.18276v1",
-      "title": "Traditional and Recent Approaches for Infrared Small Target Detection : Overview, Challenges and Perspectives (Part 1)",
-      "authors": [
-        "Thierry Bouwmans",
-        "Anastasia Zakharova",
-        "Belmar Garcia",
-        "Marwa Chendeb El Rai",
-        "Meghna Kapoor",
-        "Badri Narayan Subudhi"
-      ],
-      "abstract": "Infrared small target detection is often used in different civilian and military applications to detect static or moving targets in scenes like in ground, air and sea surveillance. First valuable research has emerged since 30 years ago and the two last decades witnessed very significant publications in this field following the rise of low-rank and sparse decomposition (model-based methods) and deep learning models (data-based methods). Furthermore, several surveys can be found in the literature but none of them addresses an overall review in this field. In this context, the aim of this paper is to provide a complete survey of the traditional and recent approaches in infrared small target detection. First, we categorize the different approaches found in the literature in terms of the modeling models, i.e mathematical models, machine learning models and signal processing models. Then, we have discussed them in terms of the critical situations that they claim to handle. Furthermore, we present the available resources, datasets and libraries. Then, we conclude with several promising directions for future research. For the sake of reading, this survey is divided into two parts: 1) \"Traditional and Recent Approaches for Infrared Small Target Detection : Overview, Challenges and Perspectives (Part 1)\" about conventional and low-rank and sparse decomposition (model-based methods), and 2) \"Traditional and Recent Approaches for Infrared Small Target Detection : Overview, Challenges and Perspectives (Part 2)\" about deep learning models (data-based methods).",
-      "published": "October 13, 2026",
-      "published_raw": "2026-10-13T12:31:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.18276v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.18276v1"
+      "published_raw": "2026-10-15T23:17:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.24013v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.24013v1"
     }
   ]
 }
