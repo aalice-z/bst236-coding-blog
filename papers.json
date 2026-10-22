@@ -1,7 +1,49 @@
 {
-  "last_updated": "2026-10-21T02:13:40.432334",
+  "last_updated": "2026-10-22T02:08:12.448849",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.29654v1",
+      "title": "Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting",
+      "authors": [
+        "Mary-Joe Medlej",
+        "Rahul Srinivasan",
+        "Simon Prunet",
+        "Aziz Ziad",
+        "Christophe Giordano"
+      ],
+      "abstract": "Accurate short-term forecasting of atmospheric seeing is of significant interest for astronomical observations and free-space optical communication systems, where rapid variations in optical turbulence can affect system performance and operational planning. In this work, we benchmark machine learning models for predicting atmospheric seeing up to two hours in advance, with a particular focus on probabilistic forecasting and uncertainty quantification. We compare two probabilistic approaches, Gaussian Processes (GPs) and a normalizing-flow- based model (FloTS), against deterministic recurrent neural network (RNN) and long short-term memory (LSTM) baselines. All models are trained and evaluated on seeing measurements from the Maunakea summit. We assess the models using both deterministic metrics, including the root mean square error and the Pearson correlation coefficient, and probabilistic metrics that evaluate the quality and calibration of predictive uncertainty estimates. The results show that deep learning approaches outperform standard recurrent networks for short-term forecasting, with LSTM and FloTS achieving the best overall predictive accuracy. While Gaussian Processes provide a useful probabilistic baseline, their predictive distributions are limited by the Gaussian assumption. FloTS combines competitive forecasting accuracy with flexible uncertainty quantification and produces the most informative probabilistic forecasts.",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T12:35:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.29654v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.29654v1"
+    },
+    {
+      "id": "2610.29589v1",
+      "title": "Fragment-Level Graph Encoding for Interpretable Molecular Property Prediction",
+      "authors": [
+        "Rafael Lopes Almeida",
+        "Ina Pöhner"
+      ],
+      "abstract": "Graph neural networks (GNNs) are among the standard tools for molecular property prediction, but the atom-level explanations of their predictions are hard for medicinal chemists to act on. We propose a change of input representation rather than a new model: molecules are encoded as fragment-level graphs from BRICS decomposition, where each node is a synthetically meaningful fragment whose features are the element-wise sum of its atoms' features. Because only the representation changes, any message-passing GNN and any post-hoc attribution method produces explanations at the resolution of functional groups instead of single atoms. Across four architectures, four prediction tasks, and two explainers under scaffold splits, fragment-level encoding matches atom-level test accuracy on roughly five-fold smaller graphs. Integrated-Gradients attributions recover known pharmacophores above chance on two enzyme targets, namely BACE at 1.5 times the chance rate, and PTR1 at 3.2 times. A like-for-like comparison against an aggregated atom-level baseline shows that post-hoc aggregation is not a stable substitute: its BACE hit rate range both exceeds and falls below the fragment model's hit rate depending on two arbitrary aggregation choices, whereas fragment-level training yields a single convention-free attribution at no predictive cost. The code is available at: https://github.com/4D-Lab/frame",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T11:29:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.29589v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.29589v1"
+    },
+    {
+      "id": "2610.29398v1",
+      "title": "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion",
+      "authors": [
+        "Srivishnu Ethirajulu Krishnaraj",
+        "Rishikesh R. Chopade"
+      ],
+      "abstract": "Automated optical inspection of precision components with tiny surface defects remains challenging when different regions of the same component exhibit different defect characteristics and, therefore, different acceptance criteria. This paper presents a region-aware, dual-model inspection framework that combines instance segmentation of localized seat-region defects with image-level classification of global shaft-region anomalies. Rather than treating these two model detections as sufficient evidence for component rejection, a deterministic decision fusion layer that formalizes industrial Standard Operating Procedures is applied to the model outputs to make the final component level decision. A PLC-synchronized imaging system acquires 18 seat and 18 shaft images over a full 360-degree rotation to provide multi-view circumferential coverage. The framework was evaluated on 380 automotive fuel injector needles, covering representative operational defect types, using identical model predictions in all configurations. Direct model-output aggregation via simple union logic (where any single-view detection flags a rejection) identified all 104 non-conforming components but produced a component level false rejection rate of 57.6%. Inclusion of a complete decision layer maintained the observed non-conforming (NOK) recall of 100% while reducing the false rejection rate to 10.9%, corresponding to an 81.1% reduction in false-positive component decisions. The results demonstrate that formalized manufacturing acceptance criteria can complement sensitive visual models by translating frame-level detections into practical and traceable component-level decisions.",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T08:29:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.29398v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.29398v1"
+    },
     {
       "id": "2610.28561v1",
       "title": "Convergence of stochastic gradient descent for learning linear neural networks",
@@ -113,21 +155,21 @@
       "arxiv_link": "http://arxiv.org/abs/2610.27675v1"
     },
     {
-      "id": "2610.27674v1",
+      "id": "2610.27674v2",
       "title": "Hybrid Momentum Methods for Optimizing Deep Learning Models",
       "authors": [
         "Haifeng Xu",
         "Yijin Ren",
-        "Qi Deng",
         "Chenyu Zhou",
+        "Qi Deng",
         "Dongdong Ge",
         "Yinyu Ye"
       ],
       "abstract": "Momentum is central to stochastic optimization in deep learning, including the training of large language models. Classical momentum methods typically rely on a fast exponential moving average (EMA) scheme, which discounts past gradients on a fixed timescale and may underweight older gradients that remain informative. This creates a trade-off between retaining long-term history and adapting to recent changes. We introduce Hybrid Momentum (HyM), which combines a linearly weighted average of past gradients with a geometrically discounted fast momentum. The former assigns weights proportional to the gradients' iteration indices and retains a growing span of history, while the latter emphasizes recent gradients. This hybrid construction is modular and can be combined with adaptive preconditioning and other update transformations. In particular, we propose HyMUON, which applies Newton--Schulz orthogonalization to the hybrid direction. Illustrative examples and controlled experiments demonstrate the benefits of combining gradient information across these two timescales. Across image classification, machine translation, and language modeling, HyM and HyMUON match or improve upon strong baselines. HyMUON improves over Muon on IWSLT14, and in both the 100k- and 600k-step GPT-2 124M OpenWebText regimes. For LLaMA-1.3B pretraining on C4, HyMUON achieves a final validation loss of 2.777, compared with 2.903 for Muon.",
       "published": "October 20, 2026",
       "published_raw": "2026-10-20T05:39:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27674v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27674v1"
+      "pdf_link": "http://arxiv.org/pdf/2610.27674v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.27674v2"
     },
     {
       "id": "2610.27668v1",
@@ -260,53 +302,6 @@
       "published_raw": "2026-10-19T13:28:19Z",
       "pdf_link": "http://arxiv.org/pdf/2610.27019v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.27019v1"
-    },
-    {
-      "id": "2610.26351v1",
-      "title": "PhyPro-FM: A Physics and Prompt-Guided Graph Foundation Model for Contingency Analysis",
-      "authors": [
-        "Xu Yang",
-        "Zhanyuan Sheng",
-        "Chenhui Lin",
-        "Haotian Liu",
-        "Qi Wang",
-        "Yue Yang",
-        "Wenchuan Wu"
-      ],
-      "abstract": "The continuous evolution of next-generation power systems, characterized by the high penetration of renewable energy resources and dynamic topology variations, poses formidable challenges to traditional N-1/N-2 contingency analysis in terms of computational efficiency and scalability. While deep learning-based methods offer accelerated inference, existing studies predominantly treat contingency analysis as a pure regression problem, often overlooking the physical essence of grid operation and engineering requirements of real-world scenarios. To bridge this gap, this paper proposes a physics and prompt-guided graph foundation model (PhyPro-FM) for generalizable and engineering-viable contingency analysis. The proposed architecture integrates graph neural networks with a learnable global query mechanism and, notably, introduces a prompt-guided learning paradigm. By leveraging historical snapshots as few-shot prompts, the model dynamically captures correlations between target and historical operating conditions, significantly enhancing generalization capabilities under unseen topologies. Furthermore, we design a physics-informed training mechanism that prioritizes branch power flow errors over nodal voltage errors, aligning the optimization objective with critical grid security constraints. To ensure engineering applicability, a physics-informed inference mechanism is also developed, incorporating a residual-based correction module and a specialized post-processing strategy for singular branches to circumvent numerical instability. Comprehensive experiments demonstrate that PhyPro-FM outperforms state-of-the-art methods in accuracy and generalization, validating its superior physical consistency and robustness for practical engineering applications.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T13:16:43Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.26351v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.26351v1"
-    },
-    {
-      "id": "2610.26347v1",
-      "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
-      "authors": [
-        "Miran Özdogan",
-        "Gereon Elvers",
-        "Michael Bronstein",
-        "Oiwi Parker Jones"
-      ],
-      "abstract": "Non-invasive brain-computer interfaces are in practice limited by signal-to-noise ratio, and recent state-of-the-art methods address this limitation by aggregating over repeated trials of the same stimulus. Yet multi-trial aggregation has been treated inconsistently across the literature: some work averages brain signals at the model's input, other work averages predictions at the model's output, and neither treats aggregation as an architectural choice in its own right. We provide the first systematic comparison of aggregation strategies for non-invasive neural decoding, evaluating six paradigms (including logit averaging during training and three attention-based variants we introduce) across three datasets, four tasks, and two group sizes. We find that aggregation choice matters substantially: training-time logit averaging, the simplest method we propose, outperforms all others in 6 of 7 settings. On the phoneme classification setting of the 2025 PNPL competition, it sets a new state of the art, significantly outperforming the competition winner by 17.4 absolute percentage points in balanced accuracy. We further draw a theoretical connection between logit averaging and joint ensemble training, which has been shown to underperform independent ensembling in the deep learning literature; our results call into question recent explanations of why joint ensemble training fails. Together, these findings establish multi-trial aggregation as a key design choice for non-invasive neural decoding and identify training-time logit averaging as a simple, effective default.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T13:13:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.26347v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.26347v1"
-    },
-    {
-      "id": "2610.26999v1",
-      "title": "CorteXforge: Scenario-Based RF Dataset Generation on Real Testbeds",
-      "authors": [
-        "Andréa Joly",
-        "Leonardo S Cardoso",
-        "Jean-Marie Gorce"
-      ],
-      "abstract": "Deep learning for radio frequency (RF) signal analysis relies on large annotated datasets, yet synthetic datasets trade physical realism for controllability, while uncontrolled over-theair measurements offer realism but limited reproducibility. We present CorteXforge, a scenario-based framework for generating realistic and reproducible RF datasets on programmable software defined radio (SDR) testbeds. High-level RF scenarios are automatically translated into synchronized experiments executed on the SLICES-RI/CorteXlab platform, producing fully annotated Signal Metadata Format (SIGMF) datasets that capture hardware impairments and propagation effects. We validate CorteXforge through automatic modulation classification using ModForge, an over-the-air (OTA) dataset generated with the framework. Cross-domain experiments reveal a synthetic-to-real performance gap and show that synthetic pretraining remains beneficial for adaptation to OTA data. CorteXforge provides a practical foundation for reproducible RF dataset generation and future research on domain generalization.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T09:08:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.26999v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.26999v1"
     }
   ]
 }
