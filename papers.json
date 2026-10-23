@@ -1,7 +1,116 @@
 {
-  "last_updated": "2026-10-22T02:08:12.448849",
+  "last_updated": "2026-10-23T02:13:30.289724",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.31328v1",
+      "title": "Deep Learning for Random Objects in Metric Spaces: Beyond Manifold Assumptions",
+      "authors": [
+        "Marcos Matabuena",
+        "Xiaokai Luo",
+        "Oscar Hernan Madrid Padilla"
+      ],
+      "abstract": "Deep learning (DL) methods have substantially improved predictive performance across a wide range of downstream prediction tasks, enabling new discoveries in multiple domains. However, principled DL methods for non-Euclidean random objects remain relatively scarce, despite the growing importance of modern biomedical outcomes taking the form of probability distributions, random graphs, functions, and other random objects in metric spaces. Motivated by a new generation of digital and clinical biomarkers, we propose a deep learning framework for regression with random objects in metric spaces. Our approach operates directly on the metric structure of the response space, avoiding restrictive manifold or Euclidean embedding assumptions imposed by many existing methods. At the same time, it retains modern statistical guarantees under the stated statistical assumptions. We establish statistical consistency and convergence rates for the proposed estimator, and characterize conditions under which it can mitigate the curse of dimensionality for hierarchically compositional regression functions. Extensive simulation studies demonstrate competitive predictive performance, with gains over several competing approaches in multiple Euclidean and non-Euclidean configurations. Finally, we demonstrate the practical utility of the proposed framework in two digital health case studies with distribution-valued outcomes in Wasserstein spaces, using high-resolution accelerometry and continuous glucose monitoring data. Embedding-based deep-learning methods may be less suitable when no informative low-dimensional representation exists or when the learned embedding does not adequately preserve the intrinsic geometry of the response space.",
+      "published": "October 22, 2026",
+      "published_raw": "2026-10-22T14:19:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.31328v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.31328v1"
+    },
+    {
+      "id": "2610.31304v1",
+      "title": "Data-Driven Vision-Language Models for Remote Sensing: A Survey",
+      "authors": [
+        "Yue Zhou",
+        "Shujun Zhao",
+        "Xue Yang",
+        "Ruigang Li",
+        "Tianwen Zhang",
+        "Mengcheng Lan",
+        "Chaofeng Chen",
+        "Lingfei Ma",
+        "Hongjie He",
+        "Jonathan Li"
+      ],
+      "abstract": "During the deep learning era, innovations in remote sensing (RS) vision models primarily focused on optimizing network architectures for specific tasks and conducting end-to-end training. However, with the advent of the Vision-Language Models (VLMs) era, constrained by substantial computational resource demands, the mainstream research paradigm has shifted towards adapting general-purpose VLMs using RS vertical domain data for fine-tuning, rather than modifying their core architectures. This transition marks a change in the innovation pathway from model-centric to data-centric. Despite the increasing importance of data, the academic community still lacks a systematic, data-centric survey to guide researchers in constructing high-quality RS vision-language datasets for various application scenarios and in conducting effective model fine-tuning and performance evaluation based on these datasets. To address this gap, this paper presents a systematic review of the development status of RS datasets tailored for VLMs. It further provides a comprehensive practical guide for RS researchers in the large model era, covering the entire pipeline from data construction to fine-tuning and evaluation. This paper aims to encourage the academic community to build more diverse and higher-quality vision-language datasets for specialized RS sub-fields. Ultimately, the goal is to converge these efforts into a comprehensive RS vision-language corpus that offers extensive task coverage and a wide geographical distribution, thereby laying a solid data foundation for advancing towards general artificial intelligence in RS.",
+      "published": "October 22, 2026",
+      "published_raw": "2026-10-22T14:03:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.31304v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.31304v1"
+    },
+    {
+      "id": "2610.30746v1",
+      "title": "Wavenumber-Aware Deep Learning for Robust Analysis of Raman Spectra",
+      "authors": [
+        "Jihwan Kim",
+        "Jaeseong Heo",
+        "Yujin Kim",
+        "Sang Bin Yoon",
+        "Chanjoong Kim",
+        "Kwang-Im Oh",
+        "Hyon Bin Na",
+        "Kyungwon Kwak",
+        "Myeongkee Park",
+        "Joonyoung F. Joung"
+      ],
+      "abstract": "Machine-learning models for spectroscopy usually treat a spectrum as a fixed-grid intensity vector, leaving the physical coordinate implicit in the array index. Such models are tied to a single sampling grid, spectral range and resolution, which limits their use when measurement conditions change. Here we represent each spectral point as a pair of intensity and wavenumber and compute Transformer positional encodings from the wavenumber itself. On Raman spectra of three bacterial species and their synthetic mixtures, this representation remained robust to noise, sparser sampling and partial spectral coverage across convolutional, residual and Transformer networks. In controlled comparisons, wavenumber-based encoding outperformed index-based and learned encodings under partial observation and retained its performance on sampling grids never seen during training, where index-based encoding degraded. These findings were reproduced on a public 30-isolate bacterial benchmark. Explicit physical coordinates offer a simple route to robust spectral analysis under variable measurement conditions.",
+      "published": "October 22, 2026",
+      "published_raw": "2026-10-22T05:16:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.30746v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.30746v1"
+    },
+    {
+      "id": "2610.30364v1",
+      "title": "Gate-Based Feature Importance in Simulation-Based Inference for EEG: A Cautionary Tale",
+      "authors": [
+        "Shrivatsa Deshmukh",
+        "Sasha Brenner",
+        "Thomas R. Knösche",
+        "Nico Scherf"
+      ],
+      "abstract": "Simulation-based inference (SBI) provides a powerful way to fit mechanistic models to data, but offers little insight into which information in the data shapes the inferred parameter values. It could therefore benefit from robust and inexpensive interpretability methods. Learned weighting mechanisms such as feature gates provide a potential route to low-cost interpretability, although their interpretation assumes that predictive training reveals which inputs drive performance. We examined this assumption in a computational neuroscience setting, where neural posterior estimation (NPE) is used to infer four physiological parameters of a dynamical model of interacting neuronal populations (Jansen-Rit). We tested whether the learned gate weights captured feature importance by comparing them with a retrain-based ablation benchmark, in which each feature was removed in turn and the NPE retrained. We considered two jointly trained gates: independent sigmoid weights and competing softmax weights. If these reliably reflect feature importance, they should align with the ablation-based estimates. Across nine independent training seeds, however, gate-based and ablation-based importance were negatively correlated (Spearman's rho approximately -0.61 for sigmoid gating and -0.56 for softmax gating). The feature that ablation identified as most important, total signal power, was among the features the gate down-weighted most, despite gating costing negligible predictive accuracy. These results extend a pattern previously documented for attention mechanisms in natural language processing and for explainability methods in electroencephalography (EEG) deep learning to the simulation-based inference setting, and suggest caution when interpreting learned gate weights as measures of causal feature importance in scientific machine-learning pipelines.",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T19:28:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.30364v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.30364v1"
+    },
+    {
+      "id": "2610.30228v1",
+      "title": "Benchmarking Model Compression Techniques Across Heterogeneous Edge Platforms: A Predictive Maintenance Use Case for Rotating Machinery",
+      "authors": [
+        "Matheus Calheira Guimarães de Oliveira",
+        "Marco Aurélio da Silva Cruz",
+        "Regis Cardoso",
+        "Lucas Cambuim",
+        "Rafael Macieira",
+        "Arthur Paim",
+        "Helaine Neves",
+        "Alex Santos",
+        "Lilian Guarieiro",
+        "Jean Schmith",
+        "Prashant Kumar",
+        "Erick G. Sperandio Nascimento"
+      ],
+      "abstract": "To enable Industry 5.0, where autonomous systems are widely adopted and integrated with people to promote sustainable development in industries, it is imperative to adapt complex deep learning models to operate efficiently on resource-constrained hardware for edge inference. However, adapting these models remains challenging due to the hardware heterogeneity of edge computing in industrial settings, performance degradation caused by model compression, and the lack of clear guidance on which compression techniques are practical and effective for applications such as predictive maintenance. To address these challenges, this paper presents a comprehensive comparative analysis of four state-of-the-art model compression techniques applied to a high-performance convolutional neural network for predictive maintenance using a real-world dataset of rotating machinery, equipment typically used in industry. The compressed models were evaluated across a heterogeneous set of nine computing platforms, ranging from highly constrained edge computing devices to general purpose and high-performance processors, reflecting the diversity and fragmentation typical of industrial edge environments. By jointly prioritizing classification performance, inference speed, and compression ratio, we found that compression using knowledge distillation emerged as the most effective approach. The model had more than 90% speedup across all devices while maintaining a 91.22% balanced F-score, with a very small drop in predictive performance relative to the uncompressed model, along with a 98.9% size reduction. Through successful deployment across multiple edge platforms and a systematic comparison of compression strategies, we demonstrated a clear path to achieving Industry 5.0 targets, drastically cutting computational costs and, consequently, energy consumption without sacrificing predictive performance.",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T17:45:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.30228v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.30228v1"
+    },
+    {
+      "id": "2610.30225v1",
+      "title": "GANet: A Lightweight Group Attention Network for Plant Disease Identification on Embedded Systems",
+      "authors": [
+        "Anubhab Tripathi",
+        "Bibek Das",
+        "Asfak Ali",
+        "Sheli Shinha Chaudhuri"
+      ],
+      "abstract": "Global warming and climate change are major catalysts for plant diseases, significantly affecting food production worldwide. Addressing this issue requires continuous monitoring and early detection of plant diseases. While recent advancements in deep learning offer potential solutions, most models demand high processing power and struggle to perform efficiently on low-end electronic hardware. Furthermore, many existing works focus on specific crop diseases, limiting their broader applicability. This paper presents a lightweight Group Equivariance Attention Network (GANet) designed for the prediction and monitoring of 38 types of plant diseases. GANet introduces a novel Group Attention block and Group-Wise Feature Fusion block, making it both sparse and efficient. With only 0.001M parameters, the model achieves an impressive 99.99% accuracy on the PlantVillage dataset. Additionally, GANet is optimized for deployment on edge devices such as the Raspberry Pi 4b and Jetson Nano, where it reaches 5 FPS and 11 FPS, respectively, demonstrating its potential for real-time plant disease monitoring on low-power devices.",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T17:35:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.30225v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.30225v1"
+    },
     {
       "id": "2610.29654v1",
       "title": "Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting",
@@ -214,94 +323,6 @@
       "published_raw": "2026-10-20T03:02:35Z",
       "pdf_link": "http://arxiv.org/pdf/2610.27549v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.27549v1"
-    },
-    {
-      "id": "2610.27354v1",
-      "title": "A plug-in estimator of the non-iterative conditional expectation g-formula using long short-term memory models",
-      "authors": [
-        "Jing Li",
-        "Sophia M. Rein",
-        "Zilong Wang",
-        "Zixiao Wang",
-        "Sean McGrath",
-        "James M. Robins",
-        "Thomas Kolokotrones",
-        "Rajarshi Mukherjee",
-        "Miguel A. Hernán"
-      ],
-      "abstract": "The non-iterative conditional expectation (NICE) plug-in estimator of the g-formula can be used to estimate the causal effects of sustained treatment strategies, even in the presence of treatment-confounder feedback, under the assumptions of exchangeability, positivity, and consistency. In practical applications, parametric models are commonly used to estimate the joint distribution of confounders, treatments, and outcomes over time. As an alternative to parametric models, long short-term memory (LSTM) models, designed to capture both short-term patterns and long-range dependencies in sequential data, may better accommodate complex temporal dependencies among time-varying confounders, treatments, and outcomes. However, the validity of statistical inferences of a plug-in estimator based on LSTM models has not yet been investigated. Here, we provide proof of principle that, under a complex data generation mechanism that resembles data from a cohort of persons with HIV and sufficiently large sample sizes, an LSTM-based NICE g-formula plug-in estimator results in less bias than parametric estimators while achieving near-nominal coverage for 95\\% confidence intervals. This work is intended to spur the development of a theoretical framework that encompasses deep learning plug-in estimators for causal inference based on high-dimensional longitudinal data.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T22:30:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27354v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27354v1"
-    },
-    {
-      "id": "2610.27321v1",
-      "title": "Physics-Inspired Optimizers beyond the Edge of Stability: Period-Two Orbits and Delayed Instability",
-      "authors": [
-        "Alexander Itin"
-      ],
-      "abstract": "Gradient descent with momentum can be viewed as a particle moving with friction in the loss landscape. In deep learning the learning rate is usually large, so training is a discrete dynamical system: in many full-batch experiments the sharpness grows to the optimizer's stability limit, the edge of stability (EoS), and training continues there. Physics-inspired optimizers change this motion; Velocity-Regularized Adam (VRAdam), for example, shrinks the step at high speed. We study kinetic maps, in which the step is the gradient of a kinetic energy of the momentum, and ask what they do beyond the EoS. (i) In a reduced model, a kinetic map creates a symmetric period-two orbit beyond the edge, strictly linearly stable if and only if the map's elasticity (the log-log slope of step length versus momentum) lies between 0 and 1; on it, training sits at an effective edge of stability. VRAdam's damper fails above twice the critical learning rate, where its kinetic energy is not convex; the Legendre dual of VRAdam's own Lagrangian is convex and passes at every learning rate. (ii) Because the sharpness rises gradually, the loss of stability is delayed, as in Neishtadt's theory of slowly swept bifurcations. In a network with a controlled sweep, the dynamics match this theory without fitted parameters, including the memory of where the sweep started and its erasure by noise. (iii) With momentum, reaching the oscillation also requires elasticity at large momentum: maps that bound the step have competing period-four and chaotic attractors already at beta1 = 0.9, while the cubic-Legendre map reached the oscillation from every sampled start up to beta1 = 0.99. Experiments on an exact quadratic problem, a full-batch MLP and ResNet-32 support the theory; on ResNet-18, much of the apparent benefit of the maps is reproduced by matching the effective learning rate.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T21:40:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27321v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27321v1"
-    },
-    {
-      "id": "2610.27155v1",
-      "title": "A Hybrid TFT-NBEATS Framework for Robust Multi-Horizon Photovoltaic Power Forecasting",
-      "authors": [
-        "Shafi Bin Sultan",
-        "Sabik Bin Sultan",
-        "Mohammad Tajrian Arafat Alvi",
-        "Rayhanul Islam Sony",
-        "Abdulah Al Numan"
-      ],
-      "abstract": "Accurate multi-horizon photovoltaic (PV) power forecasting is essential for grid stability, energy scheduling, and the efficient operation of PVbatterygrid systems. However, existing models often fail to jointly capture short-term variability and long-term temporal patterns, while lacking unified multi-horizon capability and interpretability. To address these limitations, this study proposes a novel hybrid deep learning framework that integrates a Temporal Fusion Transformer (TFT) and N-BEATS within an attention-based fusion architecture. The proposed model leverages TFT to learn short-term temporal dependencies and dynamic feature importance, while N-BEATS captures long-term trend and seasonal components through interpretable basis decomposition. An adaptive attention mechanism dynamically fuses both branches, enabling balanced multi-scale learning. The framework simultaneously generates forecasts for 30-minute, 2-hour, 6-hour, 12-hour, and 24-hour horizons within a single unified pipeline. The model is evaluated using multi-year real-world datasets from the Desert Knowledge Australia Solar Centre (DKASC). Experimental results demonstrate superior performance over statistical, machine learning, and deep learning baselines. The proposed model achieves RMSE values of 42.35, 46.27, 52.29, and 48.11 across the 20162017, 2023, 2024, and 20252026 datasets, respectively, corresponding to a 3540% reduction compared to the best baseline (TFT). Additionally, MAPE remains below 5% across all datasets, indicating high predictive accuracy and stability. The model also provides interpretability through attention visualization and trendseasonality decomposition, and is deployed on a cloud-based platform for real-time forecasting. These results demonstrate that the proposed framework is robust, interpretable, and suitable for practical renewable energy applications.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T18:49:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27155v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27155v1"
-    },
-    {
-      "id": "2610.27051v1",
-      "title": "Graph Neural Networks for Astrophysics and Cosmology",
-      "authors": [
-        "Christian Kragh Jespersen"
-      ],
-      "abstract": "Physics seldom makes breakthroughs when we consider objects only in isolation. Instead we model and measure how objects sit among their neighbours, spatial, temporal, or otherwise: a galaxy in its environment, a halo in its history, a photon hit in a detector. Graphs are ideally suited for encoding exactly these relations, and Graph Neural Networks (GNNs) learn the geometric functions that respect them. This review presents the use of GNNs for astrophysics and cosmology, and argues that GNNs often suit physics and physical data better than any alternative: they fit the native geometry of the domain and the signal, enable the incorporation of the symmetries and prior knowledge we already trust and have toiled to build, and stay flexible enough to capture what we do not yet understand. GNNs' physically intuitive workings also render them more interpretable than other deep-learning architectures. We show how we can begin from general principles of the geometry of deep learning and build the graph and the graph neural network from the ground up, and how other architectures, like the convolutional network and the transformer, can be seen as special cases of one unified geometric blueprint. We survey applications across cosmology, galaxy formation, dynamics, and instrumentation; and we chart the frontier. From this survey, we find that only one in six articles outside instrumentation applies GNNs to data rather than just simulations. We also distil a set of best practices, including when not to reach for a graph. Throughout, we will prioritise physical intuition and foundational principles over mathematical machinery whenever possible.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T18:00:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27051v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27051v1"
-    },
-    {
-      "id": "2610.26724v1",
-      "title": "Injection of Space Radiation Errors on Low-power NVM using Generative Deep Learning",
-      "authors": [
-        "Eleonora Giudici",
-        "Antonio Miele",
-        "Luca Mottola"
-      ],
-      "abstract": "We develop an error model for a Non-Volatile Memory (NVM) device that represents the effects of physical faults experienced in a CubeSat mission in Low Earth Orbit (LEO). The CubeSat carries an off-the-shelf low-power Ferroelectric RAM (FRAM) chip and runs repeated read/write tests according to a predefined pattern. We compare every memory snapshot received from the satellite with a reference bitmap to identify bit errors. We visually analyze erroneous values distributions in the memory snapshots and we understand that they are frequently distributed according to regular spatial patterns. We define a generative deep learning technique to automatically learn these spatial patterns and to synthetically generate additional error patterns mimicking the observed ones. The model is capable at producing memory errors for general application-level experimentation. Our preliminary validation indicates that when comparing the model output with the data we collect, 0.92 of the generated bit flips correspond to bit flips in the memory snapshots and the model captures 0.91 of the observed bit flips. A comparison of the spatial distribution of bit flips in 10,000 generated error patterns also provides a Wasserstein distance of 0.073, indicating that the two distributions differ by roughly 7% of the maximum possible displacement of their probability masses.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T16:52:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.26724v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.26724v1"
-    },
-    {
-      "id": "2610.27019v1",
-      "title": "MultiCard: Multiple Attribute Cardinality Estimation via Deep Learning",
-      "authors": [
-        "Mobina Koochaknia",
-        "Maryam Ramezani",
-        "Mohammad Hasan Shafaat"
-      ],
-      "abstract": "Cardinality estimation is essential for query optimization, but most existing learned estimators focus on a single predicate type, such as string LIKE clauses or numerical range filters. In practice, analytical workloads often combine both types, while the accuracy of string estimators tends to decrease with longer patterns. We introduce MultiCard, a comprehensive learned cardinality estimator that unifies LIKE predicates and numerical filters within a single end-to-end architecture. By combining a Transformer for long-range sparse patterns with an LSTM for short, frequent patterns, MultiCard achieves robust pattern modeling. In parallel, a numerical encoder integrates catalog histograms and structural predicate features, enabling the model to dynamically assess histogram estimation accuracy across different operators and data skew conditions. A final Transformer layer captures interactions among heterogeneous predicates before a multilayer perceptron predicts query cardinalities. We also introduce UPCI, a workload generator that produces length-balanced LIKE patterns, multi-column numerical predicates, and exact cardinality labels for training and evaluation. Experiments on five real-world datasets show that, for string-only workloads, MultiCard achieves the best or near-best Q-error across all datasets compared with state-of-the-art methods. For mixed multi-attribute queries, MultiCard reduces PostgreSQL's mean Q-error by up to 16 times while maintaining an inference latency below 5 ms.",
-      "published": "October 19, 2026",
-      "published_raw": "2026-10-19T13:28:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27019v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27019v1"
     }
   ]
 }
