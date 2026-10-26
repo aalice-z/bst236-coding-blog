@@ -1,7 +1,88 @@
 {
-  "last_updated": "2026-10-25T01:57:58.134598",
+  "last_updated": "2026-10-26T01:59:33.314831",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.32465v1",
+      "title": "Sharpness-aware Orthogonalized Momentum Algorithms",
+      "authors": [
+        " Geetika",
+        "Shivani Singh Chauhan",
+        "Gauranshi Gupta",
+        "Anant Jain",
+        "Kaushik Kalyanaraman",
+        "Bapi Chatterjee"
+      ],
+      "abstract": "Adversarial sharpness penalty per iteration of a base optimizer, known as sharpness-aware minimization (SAM), is an accepted technique to improve generalization in deep learning. Recently, Muon has emerged as a dominant optimization algorithm for training large language models (LLMs). It achieves lower sample complexity for heavy-tailed gradient updates - a phenomenon common in LLM training. However, sharpness penalties with Muon updates are yet largely unexplored in the literature. Moreover, the behavior of SAM under heavy-tailed noise is unknown both theoretically and empirically. A potential reason for this gap is the additional cost of extra gradient computation per iteration for penalty perturbations in SAM, which becomes prohibitive for LLMs. This paper introduces Sharpness-aware Orthogonalized Momentum Algorithm (SOMA) to combine a computationally efficient and theoretically grounded perturbation scheme with the Muon algorithm. The key idea is to use stale (purely) stochastic gradient noise for adversarial perturbations. Theoretically, we show that SOMA's sample complexity is invariant to the perturbation direction. We provide explorations and insights into SOMA's robustness to heavy-tailed gradient noise. We extensively explore SOMA's efficacy in (a) mitigating quality degradation due to post-training quantization, and (b) catastrophic forgetting during fine-tuning of LLMs.",
+      "published": "October 23, 2026",
+      "published_raw": "2026-10-23T10:32:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.32465v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.32465v1"
+    },
+    {
+      "id": "2610.32184v1",
+      "title": "CFBrainAug: Modularity-Induced Counterfactual Brain Network Augmentation for Interpretable fMRI-based Autism Diagnosis",
+      "authors": [
+        "Yifan Qiao",
+        "Sheng Li"
+      ],
+      "abstract": "Machine learning on resting-state functional magnetic resonance imaging (rs-fMRI) brain networks is promising for diagnosing Autism Spectrum Disorder (ASD), but existing methods are prone to overfitting on limited training data, and their post-hoc statistical attribution offers limited clinical interpretability. We propose CFBrainAug, a counterfactual brain network learning framework that unifies data augmentation and counterfactual explanation by learning label-altered brain networks. Unlike conventional label-preserving augmentation, CFBrainAug first retrieves a label-opposite yet topologically similar candidate and then refines it under a module-number constraint. Jointly training on factual and counterfactual networks enriches the training distribution around the decision boundary, enabling a lightweight feature-selection-based SVM to perform competitively with recent graph deep learning methods. Meanwhile, the counterfactuals provide intrinsic explanations by identifying the connectivity differences between each subject and its counterfactual. Experiments on the ABIDE I dataset show that CFBrainAug reaches an accuracy of 74.1% on the NYU site, suggesting that counterfactual augmentation can complement more complex models in small-sample brain network analysis.",
+      "published": "October 23, 2026",
+      "published_raw": "2026-10-23T05:31:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.32184v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.32184v1"
+    },
+    {
+      "id": "2610.32150v1",
+      "title": "From Promises to Accountability: Comparative AI Modeling and Visualization of Electoral Commitments in Nepali Political Texts",
+      "authors": [
+        "Prakash Poudyal",
+        "Nischal Karki",
+        "Amrit Dahal",
+        "Rajani Chulyadyo",
+        "Sameer Tamrakar",
+        "Bal Krishna Bal"
+      ],
+      "abstract": "Election Commitment Mining refers to the analysis of election commitments made by electoral candidates or political parties during election campaigns. However, many elected candidates and political parties, especially in developing South Asian countries, do not fully deliver on the promises they make before elections. Even after the elections, commitments presented through election manifestos, posters, pamphlets, videos, and other campaign materials are often not systematically or transparently archived. As a result, these promises tend to fade away over time, making it difficult to hold the elected candidates accountable for their commitments. To address this persistent issue, this research aims to develop a system capable of structuring the commitments made by candidates during election periods. In this work, we created the first gold-standard dataset of Nepali political texts (Cohen's kappa = 0.777) and evaluated machine learning, deep learning and large language models to automatically extract and analyze election commitments. LaBSE-LR achieved the best results among machine learning models (0.897 accuracy, 0.896 macro F1-score, 0.947 AUROC), while fastText-LSTM achieved the highest performance among deep learning models (0.914 accuracy, 0.913 macro F1-score, 0.961 AUROC). Among the three evaluated large language models, Qwen3-8B performed best in the few-shot setting (0.848 macro F1-score). The outcome of this work is integrated into a mobile application, where commitments can be visualized with the support of GAI, enhancing transparency, civic engagement, and electoral accountability.",
+      "published": "October 23, 2026",
+      "published_raw": "2026-10-23T04:32:17Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.32150v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.32150v1"
+    },
+    {
+      "id": "2610.31862v1",
+      "title": "Aligning Large Language Models with Human Feedback: Mathematical Foundations and Algorithm Design",
+      "authors": [
+        "Siliang Zeng",
+        "Luca Viano",
+        "Chenliang Li",
+        "Jiaxiang Li",
+        "Volkan Cevher",
+        "Markus Wulfmeier",
+        "Stefano Ermon",
+        "Alfredo Garcia",
+        "Mingyi Hong"
+      ],
+      "abstract": "This article provides an introduction to the mathematical foundations and algorithmic frameworks used to align Large Language Models (LLMs) with human intentions, preferences, and values. We discuss standard alignment techniques, such as fine-tuning (SFT), reinforcement learning with human feedback (RLHF), and direct preference optimization (DPO). We also explore the theoretical underpinnings of learning from human preferences, drawing connections to inverse reinforcement learning (IRL) and discrete choice models. We present state-of-the-art algorithms in a tutorial style, discuss their advantages and limitations, and offer insights into practical implementation. Our exposition is intended to serve as a comprehensive resource for researchers and practitioners, providing both a foundational understanding of alignment methodologies and a framework for developing more robust and scalable alignment techniques.",
+      "published": "October 22, 2026",
+      "published_raw": "2026-10-22T19:50:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.31862v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.31862v1"
+    },
+    {
+      "id": "2610.31818v1",
+      "title": "Nested Sparsity for Scalable Pretraining and Continual Learning",
+      "authors": [
+        "Tianzhe Chu",
+        "Druv Pai",
+        "Yi Ma"
+      ],
+      "abstract": "Mixture-of-experts (MoE) transformers, the standard backbone for modern large-scale deep learning, employ conditional computation: only a sparse subset of model weights is used in each forward pass. In MoE transformers, this sparsity arises in the MoE operator, which generalizes the multi-layer perceptron in the classical transformer. In this work, we explore an alternative mechanism for conditional computation that analogously generalizes the attention operator. The sparsity induced by this mechanism naturally nests (i.e., hierarchically composes) with the sparsity induced by the MoE operator. We show that a transformer employing this nested sparsity mechanism, which we call Nestor, performs better than a conventional MoE transformer at equal compute and equal sparsity in language model pretraining. We also show that Nestor is well-suited for continual pretraining: it can be adapted to longer contexts more effectively than conventional MoEs, as well as adapt more efficiently to new domains while forgetting less on old domains. Furthermore, we demonstrate that these benefits persist as model size, dataset size, and context length grow. Our results demonstrate the potential of alternative conditional computation mechanisms for deep neural network architectures. Code and checkpoints are available on GitHub at https://github.com/Ma-Lab-Berkeley/Nestor .",
+      "published": "October 22, 2026",
+      "published_raw": "2026-10-22T18:56:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.31818v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.31818v1"
+    },
     {
       "id": "2610.31328v1",
       "title": "Deep Learning for Random Objects in Metric Spaces: Beyond Manifold Assumptions",
@@ -57,6 +138,23 @@
       "published_raw": "2026-10-22T05:16:31Z",
       "pdf_link": "http://arxiv.org/pdf/2610.30746v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.30746v1"
+    },
+    {
+      "id": "2610.31704v1",
+      "title": "The Path to NDE 4.0: A Review of Algorithms, Techniques, and Strategies for Autonomous Inspection",
+      "authors": [
+        "Ashiqur Rahmana",
+        "Venkata Devesh Reddy Seethi",
+        "Zachary Kral",
+        "Austin Yunker",
+        "Rajkumar Kettimuthu",
+        "Hamed Alhoori"
+      ],
+      "abstract": "Non-Destructive Inspection (NDI) is a cornerstone of modern quality assurance, critical for ensuring the safety and reliability of infrastructure and manufactured components without causing damage. This paper presents a comprehensive review of the current NDI landscape, analyzing the field through four distinct lenses, namely, computational algorithms, physical techniques, industrial applications, and research objectives. We synthesize a broad range of academic literature to illustrate the rapid evolution from manual, analog interpretation to a digitized, data-centric paradigm known as NDE 4.0. Our analysis highlights the dominance of ultrasound and visual inspection as primary physical techniques, while revealing a significant shift toward deep learning and generative models for automated defect recognition. Despite these technological strides, the industry faces critical bottlenecks, notably the scarcity of standardized open-access datasets and the \"black box\" nature of AI models, which hinders widespread adoption. By charting these developments and identifying key research gaps, such as the need for explainable AI (XAI) and standardized digital twin protocols, this review offers a strategic roadmap for future research. It concludes that the future of NDI research should focus on the successful integration of intelligent, autonomous fusion of inspection data with advanced sensor technologies into asset lifecycle management.",
+      "published": "October 21, 2026",
+      "published_raw": "2026-10-21T20:41:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.31704v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.31704v1"
     },
     {
       "id": "2610.30364v1",
@@ -227,102 +325,6 @@
       "published_raw": "2026-10-20T13:54:47Z",
       "pdf_link": "http://arxiv.org/pdf/2610.28219v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.28219v1"
-    },
-    {
-      "id": "2610.27891v1",
-      "title": "Physical-Variable-Informed Deep Learning for Robust Diagnosis in Industrial Fluid Transport Systems",
-      "authors": [
-        "Yu Sha",
-        "Junqi Tao",
-        "Dixin Zhou",
-        "Horst Stoecker",
-        "Domagoj Vnucec",
-        "Andreas Widl",
-        "Kai Zhou"
-      ],
-      "abstract": "Industrial fluid transport systems are monitored through heterogeneous sensing streams, but robust fault diagnosis remains difficult because response signals vary with operating conditions and differ from physical variables in sampling rate, observation duration and data granularity. To address these challenges, we propose a physical-variable-informed deep learning framework (PhyNet) for robust fault diagnosis under real-world sampling heterogeneity. PhyNet treats physical variables as global operating constraints and response signals as local diagnostic evidence. Its physical-to-response cross-attention mechanism connects sequence-level physical-variable tokens with a learnable global response token, enabling interaction without strict temporal alignment. Across four benchmarks, including three real-world cavitation datasets and one public two-phase-flow dataset, PhyNet achieves the best performance across all evaluated metrics. Class-wise analyses, together with attention and masking analyses, show improved discrimination of ambiguous states and indicate that physical variables meaningfully constrain local response interpretation. These findings demonstrate a deployment-oriented approach to robust diagnosis in heterogeneous industrial environments.",
-      "published": "October 20, 2026",
-      "published_raw": "2026-10-20T09:12:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27891v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27891v1"
-    },
-    {
-      "id": "2610.27675v1",
-      "title": "CyberHull: Deterministic Malicious URL Isolation via Convex Hull",
-      "authors": [
-        "Avijit Gayen",
-        "Aniket Ghosal",
-        "Durba Chakraborty",
-        "Sayan Mondal",
-        "Md Abdul Aziz Al Aman",
-        "Angshuman Jana"
-      ],
-      "abstract": "The emergence of increasingly sophisticated and evasion-resistant phishing attack strategies represents a significant threat to modern cybersecurity, particularly in cyber-physical systems and internet-based networks. Traditional probabilistic methods and certain machine learning approaches often struggle to detect novel attacks and may lack interpretability or portability. To address these challenges, we introduce CyberHull, a resource-efficient and deterministic framework for identifying malicious URLs through mathematically defined convex hull boundaries across multiple orthogonal feature domains, including structural content entropy, hyperlink graph topology, and semantic token distribution. CyberHull constructs compact convex hulls, referred to as vaults, using the QuickHull algorithm, with a training complexity of O(n log n) under suitable assumptions. URL classification is performed through point-in-polyhedron tests that impose relatively low computational overhead on standard CPUs. Experimental results demonstrate that CyberHull achieves 92 percent detection accuracy, substantially outperforming a baseline linear approach based on Principal Component Analysis (PCA), which achieves 32 percent accuracy. Furthermore, CyberHull offers a computationally efficient alternative to resource-intensive deep learning approaches for malicious URL detection.",
-      "published": "October 20, 2026",
-      "published_raw": "2026-10-20T05:43:17Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27675v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27675v1"
-    },
-    {
-      "id": "2610.27674v2",
-      "title": "Hybrid Momentum Methods for Optimizing Deep Learning Models",
-      "authors": [
-        "Haifeng Xu",
-        "Yijin Ren",
-        "Chenyu Zhou",
-        "Qi Deng",
-        "Dongdong Ge",
-        "Yinyu Ye"
-      ],
-      "abstract": "Momentum is central to stochastic optimization in deep learning, including the training of large language models. Classical momentum methods typically rely on a fast exponential moving average (EMA) scheme, which discounts past gradients on a fixed timescale and may underweight older gradients that remain informative. This creates a trade-off between retaining long-term history and adapting to recent changes. We introduce Hybrid Momentum (HyM), which combines a linearly weighted average of past gradients with a geometrically discounted fast momentum. The former assigns weights proportional to the gradients' iteration indices and retains a growing span of history, while the latter emphasizes recent gradients. This hybrid construction is modular and can be combined with adaptive preconditioning and other update transformations. In particular, we propose HyMUON, which applies Newton--Schulz orthogonalization to the hybrid direction. Illustrative examples and controlled experiments demonstrate the benefits of combining gradient information across these two timescales. Across image classification, machine translation, and language modeling, HyM and HyMUON match or improve upon strong baselines. HyMUON improves over Muon on IWSLT14, and in both the 100k- and 600k-step GPT-2 124M OpenWebText regimes. For LLaMA-1.3B pretraining on C4, HyMUON achieves a final validation loss of 2.777, compared with 2.903 for Muon.",
-      "published": "October 20, 2026",
-      "published_raw": "2026-10-20T05:39:58Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27674v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27674v2"
-    },
-    {
-      "id": "2610.27668v1",
-      "title": "Inferring continuous cognitive traits from limited neuroimaging data using pairwise convolutional neural networks",
-      "authors": [
-        "Marjan Rashidi",
-        "Robert Bain",
-        "Craig Stark",
-        "Jeffrey Krichmar",
-        "Mary Hegarty",
-        "Elizabeth Chrastil"
-      ],
-      "abstract": "Individual differences in cognitive abilities vary widely, yet the structural brain features supporting these differences remain poorly understood. Traditional brain-behavior analyses rely on predefined metrics such as volume or cortical thickness and typically assume linear relationships with behavior, limiting sensitivity in small datasets. Here, we introduce a pairwise convolutional ranking framework that learns directly from whole-brain T1-weighted MRI by making comparative rather than absolute predictions, which performs well even with small samples (N=108). We tested this method with four small-scale spatial abilities tasks. Regression analysis predicted performance with high accuracy across all tasks, achieving greater predictive power over standard regression and pointwise deep learning baselines. Iterative cortical-region removal (backward elimination) revealed brain regions supporting individual performance common to all four tasks, as well as task-specific regions. These results demonstrate that pairwise learning extracts meaningful behavioral information from structural MRI, providing prediction and interpretable insight into the neuroanatomy of individual differences.",
-      "published": "October 20, 2026",
-      "published_raw": "2026-10-20T05:32:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27668v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27668v1"
-    },
-    {
-      "id": "2610.27621v1",
-      "title": "A Radiation-Hardened, Fault-Aware Quantized Neural Network That Self-Heals",
-      "authors": [
-        "Peter Xiangyuan Ma",
-        "Joshua S. Bloom"
-      ],
-      "abstract": "Deep learning (DL) models are increasingly being deployed into radiation-challenging environments in spacecraft, particle accelerators, and, soon, space-based data centers. Instantiated as a learned orchestration of numbers stored in persistent memory, models are susceptible to continual degradation as high-energy particles corrupt data. At inference time, new data passed through the network fundamentally break the off-line assumptions and guarantees of a static model determined during training. To preserve the quality and efficacy of the models, fault tolerance against bit flips is a clear objective. In this work we developed a runtime method for repairing the quantized weights of neural networks (NNs) after bit flips on commodity, commercial off-the-shelf (COTS) hardware, without storing extra replicas. Our work extends the well-established Fault-Aware Training (FAT) paradigm by adding an alignment penalty to concentrate undamaged activations and weights into a low-rank subspace, and we then reconstruct flagged corrupted coordinates from the uncorrupted survivors. We call this method {\\it Projection Healing} and apply it to six regression benchmarks on quantized NNs. Holding a FAT checkpoint fixed and toggling only the runtime heal gives a further ${\\sim}23\\%$ reduction in the native-unit excess integral. Across those datasets the method extends the operational scrub interval by a median of $2.04\\times$ at a $+5\\%$ RMSE degradation and $1.96\\times$ at $+50\\%$, compared with $1.62\\times$ and $1.07\\times$ for classical Single Error Correction, Double Error Detection (SECDED). This introduces a new path towards designing resilient data-driven models, complementing established hardware redundancy, ECC, and FAT-based techniques.",
-      "published": "October 20, 2026",
-      "published_raw": "2026-10-20T04:38:23Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27621v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27621v1"
-    },
-    {
-      "id": "2610.27549v1",
-      "title": "Timing-Aware and Interpretable Self-Attention for Event-Based Wearable Task Transition Detection",
-      "authors": [
-        "Anda Ouyang",
-        "Siyuan Chen",
-        "Julien Epps"
-      ],
-      "abstract": "Task transition detection aims to identify when a person shifts from one task to another, providing a foundation for continuous health monitoring and timely context-aware interventions. While statistical and deep feature representations have demonstrated strong classification performance, they often rely on aggregated or latent features that are difficult to interpret in behavioural terms. Event-based features provide a compact and interpretable alternative by encoding behavioural and physiological patterns as discrete tokens with explicit semantic meaning, making them well suited for behavioural analysis in health informatics. Self-attention offers a mechanism for modelling interactions among such tokens; however, conventional self-attention classifiers primarily rely on token order and do not explicitly incorporate timing or duration information. As a result, informative temporal cues in event representations may not be fully exploited for task transition detection. This study proposes an event-based time-aware self-attention framework that represents behavioural signals as sequences of discrete events augmented with onset timestamps and durations. Event timing is encoded using a parameter-efficient kernel-based representation, while a novel type-aware duration embedding modulates information propagation according to event persistence. Experiments on a semi-naturalistic wearable dataset show that the proposed model outperforms existing event-based approaches, achieves performance beyond or comparable with statistical and deep-learning models with a more compact input representation, and provides improved interpretability through integrated-gradient-based analysis. These results indicate that explicit modelling of event timing and duration enhances both classification performance and interpretability, supporting reliable deployment in biomedical and health informatics applications.",
-      "published": "October 20, 2026",
-      "published_raw": "2026-10-20T03:02:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.27549v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.27549v1"
     }
   ]
 }
