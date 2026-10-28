@@ -1,7 +1,137 @@
 {
-  "last_updated": "2026-10-27T02:37:14.726882",
+  "last_updated": "2026-10-28T02:46:03.363434",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.37374v1",
+      "title": "Comparing Temporal Deep Learning Architectures for Discrete Cross-User Myoelectric Control",
+      "authors": [
+        "Ethan Eddy",
+        "Evan Campbell",
+        "Scott Bateman",
+        "Erik Scheme"
+      ],
+      "abstract": "The recognition of dynamic gestures via discrete myoelectric control is becoming an attractive input modality for event-based human-machine interaction. While recent work suggests that discrete cross-user models are possible (i.e., no calibration data is required from the end user), few have evaluated techniques to optimize these systems and their generalizability to new randomly prompted data simulating real-world discrete control is relatively unknown. Using the 612-user EMG-EPN dataset, this work benchmarks five temporal deep-learning approaches, evaluates the tradeoff between performance and model complexity, and compares hand-crafted and machine-learned feature extraction techniques. The CNN-GRU achieved the best accuracy of 93% when tested on 184 previously unseen users. These models were then evaluated on a different, more realistic, unsegmented dataset, wherein users were randomly prompted to elicit discrete gestures during a continuous data collection. This dataset was recorded five years apart and in a separate country from the data used to train the original model. Results show that the cross-user results scale to this new dataset (accuracies of 96%) even though no feedback was given to users during the elicitation of gestures. These findings highlight the exciting potential of discrete zero-shot cross-user myoelectric control and offer valuable insights for the continued advancement of this promising technology.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T15:05:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37374v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37374v1"
+    },
+    {
+      "id": "2610.37370v1",
+      "title": "The Geometry of Manifold Learning: Singular foliations via Deep Learning models",
+      "authors": [
+        "Gabriele Novelli",
+        "Eliot Tron",
+        "Emanuele Latini",
+        "Rita Fioresi"
+      ],
+      "abstract": "Deep learning algorithms have become widely used and successful across a wide range of tasks. A key challenge is determining whether these algorithms truly capture the intrinsic geometry of their training data in order to better understand what they learn from data. In this theoretical work, we explore a new geometric structure defined on the data space by a trained neural network through the Data Information Matrix (DIM), a variation of the Fisher Information Matrix. This new geometric structure is a foliation and the main focus of this work is to explore the non-smooth case of ReLU activation functions, where traditional geometric tools often fail. The foliation is defined through a distribution spanned by the columns of the DIM. We first prove that this distribution is non-smooth in the sense of distributions, rendering the existence of an associated foliation much more complex. To circumvent this issue, we introduce a smoothed version of this distribution that differs from the original only on a set of measure zero. Finally, we prove that this smoothed distribution induces a singular foliation on the data space, which is based on the data the network has been trained with. Our theoretical contributions provide a geometric framework to better understand how neural networks organize their input space in non-smooth settings, bridging differential geometry and deep learning theory.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T15:02:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37370v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37370v1"
+    },
+    {
+      "id": "2610.37213v1",
+      "title": "Retrospective macromolecular pool fraction mapping from conventional clinical MRI: a physics-guided self-supervised deep learning framework",
+      "authors": [
+        "Jelmer van Lune",
+        "Miha Fuderer",
+        "Oscar van der Heide",
+        "Matteo Maspero",
+        "Martin B. Schilder",
+        "Jan Willem Dankbaar",
+        "Stefano Mandija",
+        "Alessandro Sbrizzi"
+      ],
+      "abstract": "Macromolecular pool fraction (MPF) is a quantitative imaging biomarker sensitive to myelin integrity and other changes in tissue macromolecular content, but specialized acquisitions and reconstruction methods limit its use in large-scale studies. We present a physics-guided, self-supervised deep learning framework for retrospectively estimating MPF directly from conventional clinical brain MRI ($T_1$-weighted, $T_2$-weighted, and fluid-attenuated inversion recovery [FLAIR]) without paired quantitative reference scans. The framework embeds an analytical two-pool magnetization transfer signal model that related sequence-averaged radiofrequency transmit power to apparent longitudinal relaxation. To accommodate heterogeneous clinical protocols, the network conditions intermediate features on acquisition parameters via adaptive instance normalization. It was trained and evaluated on a multisite, multivendor, multiprotocol dataset of 7,705 MRI sessions (3 T). Across 1,237 test sessions, mean MPF was $0.182 \\pm 0.007$ in white matter and $0.144 \\pm 0.009$ in gray matter, with limited variation across vendor-by-protocol groups (between-group coefficient of variation: 2.65% and 5.63%, respectively). In 70 sessions with demyelinating-disease labels, MPF was 35.6% lower in segmented lesions than in normal-appearing white matter. MPF maps from two different clinical protocols acquired in a healthy volunteer showed a mean voxel-wise absolute percentage difference of 7.7% and a concordance correlation coefficient of $0.888$, indicating good cross-protocol consistency. These results suggest that magnetization transfer-informed self-supervised learning enables stable MPF mapping from conventional clinical MRI, providing a scalable approach to investigate demyelinating pathology in both existing imaging archives and prospectively acquired conventional clinical scans without dedicated qMT acquisitions.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T13:27:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37213v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37213v1"
+    },
+    {
+      "id": "2610.37159v1",
+      "title": "Physics-Guided Flow Matching: A Generative AI Framework for Global Total Electron Content Forecasting",
+      "authors": [
+        "Si-Tong Yang",
+        "Feng Ye",
+        "Xian Lu",
+        "Dong Lin",
+        "Benjamin C. Martinez"
+      ],
+      "abstract": "Accurate forecasting of global total electron content (TEC) is important for space weather monitoring and the reliable operation of satellite communication and navigation systems. We propose a physics-guided generative artificial intelligence (AI) framework for day-ahead global TEC forecasting. The framework builds on flow matching, which learns to gradually transform samples from an initial distribution into new samples that share the statistical characteristics of the target data. The proposed model incorporates ionospheric dynamics described by a partial differential equation (PDE) into this transformation process, guiding the changes between initial and target samples using physical knowledge. The model further combines the physical dynamics with statistical patterns captured from data to learn this transformation, adaptively adjusting their relative contributions at each location. The model is trained and evaluated using one year of global TEC data generated by the Thermosphere Ionosphere Electrodynamics General Circulation Model (TIEGCM). The results demonstrate that our model improves both spatial and temporal forecasting accuracy over representative benchmarks, including statistical, deep learning, and generative AI methods at all lead times and across latitudes. The average root mean square error (RMSE) is 39.2% lower than that of ConvLSTM and 23.8% lower than that of the same framework without physical guidance. The learned contribution weights vary systematically with latitude and across geographic locations, showing how the physical contribution changes across the forecast domain. These findings demonstrate that explicit physical guidance improves generative forecasts of global TEC and highlight the value of incorporating physical dynamics into generative AI modeling.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T12:53:18Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37159v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37159v1"
+    },
+    {
+      "id": "2610.37074v1",
+      "title": "Systematic Morphometric Brain Autoencoding for Representation Learning in Neurodegenerative Diseases",
+      "authors": [
+        "Nuria Balbás-Esteban",
+        "Albert Belenguer-Llorens",
+        "Elaheh Moradi",
+        "Jussi Tohka",
+        "Vanessa Gómez-Verdejo",
+        "Carlos Sevilla-Salcedo"
+      ],
+      "abstract": "Early identification of neurodegenerative disorders using structural T1-weighted MRI is essential for timely clinical intervention, yet supervised deep learning models often struggle to generalize due to limited annotations and scanner-induced distribution shift. Self-supervised learning offers a promising alternative; however, existing approaches are largely adapted from natural image paradigms, relying on contrastive objectives or generic masked reconstruction with voxel-wise losses, which may not fully capture the distributed morphometric patterns associated with neurodegeneration. We introduce SYMBA (SYstematic Morphometric Brain Autoencoding), a self-supervised pretraining framework specifically designed for structural brain MRI. SYMBA integrates anatomically constrained masking, a multi-scale structural similarity (MS-SSIM) reconstruction objective, and a progressive curriculum that transitions from local anatomical detail to global brain morphology. These components explicitly incorporate neuroanatomical structure into the self-supervised objective rather than relying on generic image priors. Pretrained on 6,953 T1-weighted MRI scans from nine heterogeneous cohorts, SYMBA is evaluated using frozen linear probing on two independent unseen datasets, enabling a strict assessment of out-of-distribution generalization. Across multiple clinical tasks, SYMBA consistently outperforms recent neuroimaging foundation models, achieving 0.930 AUROC for Alzheimer's disease classification, 0.772 for mild cognitive impairment conversion prediction, and strong performance in amyloid status prediction. In low-label regimes, SYMBA demonstrates high sample efficiency, reaching approximately 0.90 AUROC for AD/CN classification using only six labeled subjects.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T11:36:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37074v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37074v1"
+    },
+    {
+      "id": "2610.36881v1",
+      "title": "RAG-CSI: Global Local Retrieval via Joint State and Dynamics Matching for CSI Prediction",
+      "authors": [
+        "Xinyue Jiang",
+        "Tong Li",
+        "Shiceng Zhang",
+        "Ke Chen",
+        "Zhu Xiao"
+      ],
+      "abstract": "Channel state information (CSI) prediction forecasts future channel states from historical observations, supporting transceiver design and resource allocation with reduced measurement overhead. However, existing deep learning predictors mainly encode channel knowledge in model parameters, which can limit their ability to represent diverse patterns of channel dynamics across scenes. In this paper, we propose RAG-CSI, a retrieval-enhanced Transformer framework that augments prediction with relevant historical channel knowledge. Specifically, we construct a global--local CSI knowledge store containing representative observations across scenes and historical observations from the current serving scene. We further develop joint state--dynamics retrieval (JSDR), which jointly characterizes channel states, phase dynamics, and amplitude dynamics to retrieve relevant CSI sequences. A Transformer predictor then uses cross-attention to fuse the retrieved knowledge with the current CSI history and predict future CSI with limited additional model parameters. Experiments on a multi-scene CSI dataset show overall improvements exceeding 10\\% across all five evaluation metrics over the best baseline for each metric, including a 15.42\\% reduction in normalized mean squared error.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T09:19:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.36881v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.36881v1"
+    },
+    {
+      "id": "2610.36135v1",
+      "title": "Physical structure as an organizing principle for universal Hamiltonian learning",
+      "authors": [
+        "Mingkang Liu",
+        "Zhanghao Zhouyin",
+        "Guanghui Wang",
+        "Daye Zheng",
+        "Lei Shen",
+        "Qiangqiang Gu"
+      ],
+      "abstract": "Density functional theory (DFT) gives the electronic structure of materials, but its cost limits large-supercell calculations and materials screening. Machine-learned Hamiltonians bypass the self-consistent cycle but are usually system-specific; universal ones could cover new compositions and disordered solids. Such models must generalize across chemistry and keep downstream properties physical, while staying inexpensive for large cells. Here we introduce UniTB, a universal E(3) equivariant Hamiltonian representation framework that integrates physical priors rooted in density-functional tight-binding theory with deep learning. UniTB's network, which corrects a prior Hamiltonian, generalizes across chemistry through a mixture of experts routed by that prior and a charge-equilibration head as in self-consistent-charge tight binding. A projection bounds band shifts from the prior, suppressing spurious states and keeping downstream properties physical. We provide the fastest SO(2) tensor-product GPU kernels for the network. The variant UniTB-Flash assembles its prior from two-center tables at $O(N)$ cost for $N$ atoms, against $O(N\\log N)$ on a grid. Trained on 29,242 crystals, UniTB reaches a 0.48 meV matrix-element error on nonmagnetic test crystals spanning 68 elements. Without amorphous training data, both models agree with DFT optics and conductivity of amorphous Ge-Sb-Te. UniTB-Flash ranks candidates with no significant difference from UniTB, whose property values are more accurate; together they screen 16,195 crystals for five application domains of industrial relevance.",
+      "published": "October 26, 2026",
+      "published_raw": "2026-10-26T18:45:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.36135v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.36135v1"
+    },
+    {
+      "id": "2610.35484v1",
+      "title": "Evaluating Bayesian deep learning for robust biomedical time-series classification under distribution shift: A sleep scoring case study",
+      "authors": [
+        "Mads Birch Sørensen",
+        "Ulrike Richter",
+        "Francois Gastambide",
+        "Michael Riis Andersen"
+      ],
+      "abstract": "In biomedical time-series classification, machine learning models often suffer from deteriorating accuracy and calibration due to distribution shift. We investigate to what degree Bayesian-inspired deep learning improves robustness through Bayesian model averaging (BMA). Using rodent sleep scoring as a case study, we evaluate BMA under distribution shifts in genotype, laboratory, and species. We systematically compare nine approximate inference methods spanning single- and multi-basin approaches across two neural network backbones on in-distribution (ID) data and five out-of-distribution (OOD) datasets. In our results, multi-basin methods perform best, outperforming baselines and single-basin methods. Compared with point estimates, BMA generally improves OOD accuracy and calibration across both architectures, while yielding only modest ID gains. It also often improves selective prediction and OOD and artifact detection, but, interestingly, not inter-rater disagreement detection.",
+      "published": "October 26, 2026",
+      "published_raw": "2026-10-26T14:14:26Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.35484v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.35484v1"
+    },
     {
       "id": "2610.34833v1",
       "title": "Streaming Recurrent Memory",
@@ -177,139 +307,6 @@
       "published_raw": "2026-10-24T15:22:49Z",
       "pdf_link": "http://arxiv.org/pdf/2610.33731v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.33731v1"
-    },
-    {
-      "id": "2610.33609v1",
-      "title": "Satellite-derived bathymetry of Arabian Gulf ports under leakage-free validation: a multi-site benchmark of empirical, machine-learning and deep-learning models against 285,000 multibeam soundings, with an outlook for UAE waters",
-      "authors": [
-        "Muhammad Saeed",
-        "Fatema Al Hajri",
-        "Mohamed H. Alhosani",
-        "Dmitry Mikhaylov",
-        "Yasser F. Al Wahedi"
-      ],
-      "abstract": "Satellite-derived bathymetry (SDB) is often proposed as a low-cost complement to multibeam surveys of ports, but its accuracy is seldom measured on an area the model has never seen. We test SDB in the turbid, shallow and tidal waters of the Abu Dhabi coast against 285,619 multibeam soundings from twelve surveys at six port areas, reduced to Lowest Astronomical Tide. The Stumpf ratio, the Lyzenga transform, a monotonic gradient-boosted tree model (LightGBM) and a U-Net ensemble were trained on 72 Sentinel-2 images and tested in transfer to an unseen site and with local control (about 20% of a site's soundings, spatial blocks beyond a 225 m buffer). The validation design changed the result more than the model: the same LightGBM model gave 0.57 m RMSE under a random pixel split, 1.30 m under spatial blocks and 1.66 m at an unseen site. In transfer the Stumpf ratio (1.45 m) was not beaten by LightGBM, the U-Net or Lyzenga. With local control a hybrid of the tree output and the band ratio reached 1.11 m over 0-11 m, 67% of pixels within the IHO S-44 Order 2 tolerance and a conformal 95% interval with 95% observed coverage; in clear water it reached 0.29-0.53 m. The seabed could not be read beyond 11 m, and summer images were five to six times more turbid than winter ones. ICESat-2 ATL24 agreed with the surveys to 0.25 m after a depth-dependent offset was removed. A 60 m reconnaissance mosaic of 17,200 km2 of the UAE coast, calibrated cell by cell on ICESat-2 without any vessel survey, reached 1.42 m RMSE on held-out blocks over half of the product. Sentinel-2 SDB with about a hundred control depths per image is a usable reconnaissance and change-monitoring tool in these waters to about 10 m; it does not meet S-44 Order 1 without local control, and accuracies from random splits should not be taken as operational accuracy.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T11:21:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33609v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33609v1"
-    },
-    {
-      "id": "2610.33557v1",
-      "title": "Nowcasting aerosol particle size distributions from PM2.5 with physics-regularized flow matching",
-      "authors": [
-        "Zhi-Song Liu",
-        "Jenni Köykkä",
-        "Wenqing Peng",
-        "Ammar Kheder",
-        "Petri Clusius",
-        "Michael Boy"
-      ],
-      "abstract": "The mass concentration of particles smaller than 2.5um (PM2.5) is cheap to measure and widely monitored, whereas the particle number size distribution (PSD) requires costly instruments and is measured at only a few research stations. Yet many aerosol effects, such as vapor uptake, cloud droplet formation and deposition in the human respiratory tract, depend on the PSD rather than on mass. We explore whether recent generative deep learning models can nowcast the PSD: from the PM2.5 record and eight meteorological parameters over a 24h window, a model generates an ensemble of plausible hourly size distributions for the same window, reflecting that one mass can arise from many size distributions. Rather than proposing a single best model, we use two contrasting Finnish stations, the boreal forest site Hyytiälä and the urban site Kumpula, as a controlled testbed. On it, we benchmark six generative models against deterministic and climatological baselines, locally and after transfer between sites, and test physical constraints for neural network training. Flow matching performs best overall; its guided variant has the lowest continuous ranked probability score (CRPS) at both sites. A constraint based on a reduced aerosol general dynamic equation (GDE) lowers the CRPS by 5.5-11.5% at the training site and reduces errors after transfer between sites. Transfer remains harder than local estimation, identifying training on large multi-station data sets as the next step towards PSD estimates at unmonitored locations. This benchmark establishes physics-informed generative models as a promising route from routine air-quality monitoring to size-resolved aerosol information.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T09:16:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33557v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33557v1"
-    },
-    {
-      "id": "2610.33479v1",
-      "title": "Energy Efficient Lung Tumor Segmentation with a modified CBAM ENet Skip Model",
-      "authors": [
-        "Sharan Thummagunti",
-        "Aayushi Padia",
-        "Abhiram Koppuravuri",
-        "Prabhu Prasad B M",
-        "G N Girish"
-      ],
-      "abstract": "Lung tumor segmentation plays a vital role in early detection and treatment planning of lung cancer. Although state-of-the-art deep learning models achieve high dice score coefficients (DSC), each forward pass requires computing large amounts of floating point operations, making them computationally expensive, requiring GPU acceleration, and having slow inference speed, limiting real-world clinical deployment. We propose a lightweight, energy-efficient model that leverages the ENet architecture for its real-time inference capability and low computational cost, enhanced with UNet-style skip connections between encoder and decoder stages for feature reuse and the lightweight Convolutional Block Attention Module (CBAM) for improved feature representation. The model is trained on publicly available data from The Cancer Imaging Archive (TCIA) via the Medical Segmentation Decathlon Challenge (MSD) and evaluated on the Lung Image Database Consortium and Image Database Resource Initiative (LIDC-IDRI) dataset. Our model achieves a DSC of 0.90812 (threshold of 0.5) with its compact architecture of 430,052 parameters and 0.549 Giga Multiply-Accumulate operations (GMAC), making it up to 10 times faster, requires 79 times less GMAC than UNet, and has 22 times fewer parameters than SegNet. These characteristics make it well-suited for deployment in clinical settings where computational resources are limited and decrease the cost of utilizing such a system. Additionally, the explainable AI technique of Grad-CAM is used to provide visual interpretability of the model's predictions and to identify regions where segmentation performance requires improvement.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T06:06:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33479v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33479v1"
-    },
-    {
-      "id": "2610.33420v1",
-      "title": "An Empirical Study of Reinforcement Learning Scaling Laws",
-      "authors": [
-        "Zeyu Zheng",
-        "Clare Lyle",
-        "Khimya Khetarpal",
-        "Will Dabney"
-      ],
-      "abstract": "The discovery of scaling laws enables prediction of the performance, the optimal resource allocation strategy, and the best hyperparameter configuration of a large-scale training job based on inexpensive experiments at smaller scales. Guided by these empirical scaling laws, the deep learning community has achieved great success in training large (self-)supervised models on Internet-scale datasets. In contrast, despite its potential and wide application, reinforcement learning (RL) has yet to find a guiding principle for predictable scaling. In this work, we conduct an empirical study of RL scaling laws of an actor-critic algorithm in two procedurally generated environments, Starpilot and Craftax. We discover empirical scaling laws with strong predictive performance in both environments. The discovered scaling laws accurately predict the aforementioned three quantities for larger-scale training jobs up to two orders of magnitude in total training compute. In particular, we employ a variant of Elo scores for the single-agent RL paradigm as an alternative performance metric than the commonly used mean episode return. Our results show that the Elo score is a much more predictable metric than the mean episode return, making it a better choice for fitting scaling laws. By applying our discovered scaling laws to increase training compute, we establish a new state of the art in the challenging Craftax environment. Beneath the surface of the global scaling trend, we also observe a non-monotonic scaling pattern of the compute-optimal model size in Craftax. We connect this observation to a pathology known as Ray interference.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T03:29:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33420v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33420v1"
-    },
-    {
-      "id": "2610.33208v1",
-      "title": "Lower expected Fisher rank implies better PAC generalization",
-      "authors": [
-        "Marco Miani",
-        "Albert Kjøller Jacobsen",
-        "Albert Lopez i Serrano",
-        "Søren Hauberg",
-        "Georgios Arvanitidis"
-      ],
-      "abstract": "Deep learning architectures tend to generalize well to unseen data, but explaining this capability is still an open area of research. Under the assumption of i.i.d. data, PAC-Bayes provides a bound on generalization error, and its tightness relies on a parameter distribution that covers a large volume of low-loss solutions. The Fisher information metric endows the parameter space with a geometry for which distances reflect functional changes, and whose zero-component captures functional invariances. We define and study a Fisher-aligned parameter distribution for which we can simultaneously guarantee (1) a low-loss, thanks to the exploration constrained on the functional invariances and (2) a large log-volume of parameters, proportional to the number of zero eigenvalues. This distribution results in a high-probability generalization error bound, which scales with the expected rank of the Fisher information matrix, shedding light on the relevance of this quantity.",
-      "published": "October 23, 2026",
-      "published_raw": "2026-10-23T18:56:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33208v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33208v1"
-    },
-    {
-      "id": "2610.33143v1",
-      "title": "Learning Pathology-Sensitive Representations for Unsupervised Retinal OCT Anomaly Detection",
-      "authors": [
-        "Tania Haghighi",
-        "Sina Gholami",
-        "Behafarin Emam",
-        "Jennifer I Lim",
-        "Theodore Leng",
-        "Atalie C Thompson",
-        "Hamed Tabkhi",
-        "Minhaj Nur Alam"
-      ],
-      "abstract": "Deep learning approaches for retinal optical coherence tomography (OCT) predominantly rely on predefined disease categories, limiting their ability to detect rare or previously unseen abnormalities. While visual foundation models provide transferable representations, their effectiveness in identifying pathological deviations from normal retinal anatomy remains insufficiently understood. In this work, we introduce an unsupervised framework for retinal OCT anomaly detection and localization that adapts pretrained visual representations to normal retinal anatomy through anatomy-aware reconstruction and contrastive triplet learning guided by synthetic structural perturbations, without requiring disease-specific annotations. We systematically investigate the influence of pretraining strategies, anatomy-aware representation adaptation, and anomaly scoring mechanisms on the detection and localization of unseen retinal abnormalities. Our findings demonstrate that adapting pretrained representations to normal retinal structure improves anomaly sensitivity, while pixel-space reconstruction errors and feature-space deviations provide complementary signals for identifying pathological changes. These findings underscore the importance of anatomy-aware representation learning and offer insights into developing generalizable retinal anomaly detection frameworks beyond predefined disease categories.",
-      "published": "October 23, 2026",
-      "published_raw": "2026-10-23T16:50:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33143v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33143v1"
-    },
-    {
-      "id": "2610.32774v1",
-      "title": "Deep Learning-Based Prediction of HER2 Status from Whole-Brain MRI in Breast Cancer Brain Metastases",
-      "authors": [
-        "Sara Early",
-        "Chris Kang",
-        "Vibujithan Vigneshwaran",
-        "Kimberly Amador",
-        "Roger Y. Tsang",
-        "Nils D. Forkert"
-      ],
-      "abstract": "Purpose: Human epidermal growth factor receptor 2 (HER2) status is a key biomarker relevant for prognostication and treatment decision making in metastatic breast cancer. Thus, the aim of this work was to explore whether HER2 status can be predicted directly from whole-brain post-contrast T1-weighted (T1w) MRI scans in breast cancer brain metastases (BCBM) using deep learning, and whether providing explicit tumour segmentation information improves prediction. Methods: Using the publicly available BCBM-Radiogenomics dataset, we analysed 135 patients, including 70 HER2+ and 65 HER2- patients. Three approaches were implemented and evaluated: a conventional radiomics model, a simple fully convolutional network (SFCN) using T1w MRI scans alone, and an SFCN using T1w MRI scans with an expert-derived tumour mask as an additional input channel. Results: The radiomics model achieved an area under the receiver operating characteristic curve (ROC-AUC) of 0.602 (95% confidence interval [CI]: 0.528--0.677) while the SFCN achieved a ROC-AUC of 0.667 (95% CI, 0.63--0.71) using T1w MRI scans alone, which increased to 0.692 (95% CI, 0.58--0.81) when an explicit tumour mask was additionally provided. Conclusion: However, the modest performance across all approaches demonstrates the difficulty of predicting HER2 status from structural MRI scans alone. The difference between the segmentation-free and mask-guided SFCN models suggests that much of the predictive signal captured by the deep-learning model may be learned directly from whole-brain T1w MRI without requiring explicit tumour delineation. These findings support further investigation of segmentation-free deep-learning approaches as a potential non-invasive strategy to support HER2 status determination in BCBM.",
-      "published": "October 23, 2026",
-      "published_raw": "2026-10-23T15:23:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.32774v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.32774v1"
-    },
-    {
-      "id": "2610.32762v1",
-      "title": "Quantum Machine Learning in Medical Imaging: A Primer for Radiologists",
-      "authors": [
-        "Ruben Ortiz Cordero",
-        "Gaven K. Smart",
-        "Harshada Gothankar",
-        "Emilio Supsupin",
-        "Priya Bhosale",
-        "Mayur Virarkar"
-      ],
-      "abstract": "Deep learning has transformed radiology, but the computational cost of training and deploying modern models is outpacing what classical hardware can support. Quantum computing has been proposed as one response to this bottleneck: an n-qubit system can represent $2^n$ states simultaneously, although practical speedups require efficient algorithms, data encoding, and measurement strategies rather than superposition alone. This review introduces radiologists to five core quantum concepts, qubits, superposition, entanglement, quantum gates, and quantum circuits, and to the superconducting, trapped-ion, and photonic hardware platforms that define the current noisy intermediate-scale quantum (NISQ) era. We then summarize the quantum machine learning architectures most often applied to medical imaging (quantum support vector machines, quantum neural networks, variational quantum circuits, and quantum convolutional neural networks) and quantum image representations such as the flexible representation of quantum images (FRQI) and the novel enhanced quantum representation (NEQR). Reported applications include brain tumor classification and segmentation on MRI, pneumonia detection on chest radiographs, skin and breast lesion classification, CT and PET reconstruction, and ultrasound denoising. Nearly all published systems are hybrid quantum-classical pipelines evaluated on small, downsampled benchmark datasets or simulators, and clinical deployment is not yet feasible. We conclude with current limitations and translational priorities for radiology.",
-      "published": "October 23, 2026",
-      "published_raw": "2026-10-23T15:04:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.32762v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.32762v1"
     }
   ]
 }
