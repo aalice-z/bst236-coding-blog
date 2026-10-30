@@ -1,7 +1,145 @@
 {
-  "last_updated": "2026-10-29T03:07:03.403579",
+  "last_updated": "2026-10-30T03:10:51.844133",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.39300v1",
+      "title": "Multi-Solution Inverse Design of Pixelated Patch Antennas Using an Autoregressive Transformer",
+      "authors": [
+        "Young-Mok Yun",
+        "Seung-Won Shin",
+        "Jaeyong Chung",
+        "Kyung-Sik Choi"
+      ],
+      "abstract": "Deep-learning-based inverse design has emerged as a promising framework for pixelated patch antenna synthesis by enabling broader exploration of discrete geometry spaces and reducing design time compared with conventional template-based methods. Existing methods, including surrogate-assisted metaheuristic optimization, tandem inverse networks, and diffusion models, have advanced the field but still face practical limitations. Metaheuristic methods such as binary particle swarm optimization (BPSO) are sensitive to initialization and search hyperparameters and are often time-consuming, tandem networks have difficulty capturing the one-to-many nature of inverse antenna design, and diffusion models may require excessive complexity and data for moderate-scale binary layout synthesis. In this paper, an autoregressive (AR) transformer is presented for the inverse design of 10 x 10 pixelated patch antennas. Its sequential discrete generation process enables the synthesis of multiple feasible structures for a given target response. The pretrained model is further fine-tuned for dual-band design using step-shaped target responses with sharp spectral transitions, allowing intuitive band specification without manually constructing detailed S11 curves. Compared with BPSO, our proposed method generates valid and diverse antenna candidates more efficiently. Fabricated and measured examples confirm that distinct pixelated layouts can realize the desired antenna responses, thereby demonstrating the multi-solution capability of the proposed framework.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T03:49:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.39300v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.39300v1"
+    },
+    {
+      "id": "2610.39195v1",
+      "title": "Analyzing Condensation on Patterned Surfaces via Deep Learning",
+      "authors": [
+        "Tae E. Cooper",
+        "Michael Gee",
+        "Sheila Whitman",
+        "Jemma Dengel",
+        "Anthony Katselas",
+        "Duygu Dengiz",
+        "Frank Keutsch",
+        "Joanna Aizenberg"
+      ],
+      "abstract": "Dropwise condensation is key to power and water systems. State-of-the-art condensation surfaces are often inhomogeneous, either patterned by design or random defects. Inhomogeneous surface features dictate the rates of each stage of dropwise condensation-nucleation, growth, coalescence, and shedding. Characterizing these rates requires the precise detection of thousands of droplets. Yet, existing segmentation methods are unable to detect droplets on inhomogeneous surfaces. We developed TileSAM3, a universal droplet segmentation tool built on the Segment Anything Model 3 (SAM3). Hierarchical tiling with per-tile inference followed by post-processing extended SAM3's detection cap and raised the effective resolution of small droplets. We created two datasets: High Quality Droplet Dataset (N=365,826; HQDD) with homogeneous surfaces and Low Quality Droplet Dataset (N=63,577; LQDD) with patterned, defect-laden surfaces under adverse lighting. TileSAM3 closely reproduced thresholding annotations on HQDD, surpassed it over sixfold on LQDD (Average Precision 0.57 versus 0.088), and outperformed other deep learning models on all metrics evaluated. Combined with KD-tree tracking, TileSAM3 identified localized nucleation and coalescence in narrow active bands on a stiffness-patterned surface. TileSAM3 enables analysis of understudied inhomogeneous substrates with poor lighting and videography which facilitates faster, lower cost research of condensation materials.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T02:16:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.39195v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.39195v1"
+    },
+    {
+      "id": "2610.38976v1",
+      "title": "The Utility of Physics-Informed Machine Learning in Solar Power Production Forecasting",
+      "authors": [
+        "Peter Pavlík",
+        "Franz M. Rohrhofer",
+        "Bernhard C. Geiger"
+      ],
+      "abstract": "Physics-informed machine learning (PIML) and hybrid modeling have attracted significant attention as approaches for combining physical knowledge with the flexibility of deep learning. In this work, we investigate whether these approaches deliver their commonly claimed benefits for large-scale photovoltaic (PV) power forecasting. We develop two hybrid forecasting architectures that integrate the ADR physical PV efficiency model with the TSMixer neural forecasting architecture through feature augmentation and residual learning. The proposed models are evaluated on a dataset comprising over 3 million samples from 3,713 PV installations across 33 European countries. We assess convergence speed, forecasting accuracy, transferability across geographical regions, and data efficiency. Although the physics-informed models seem to exhibit slightly faster convergence during training, they do not achieve consistent improvements in test-set accuracy, generalization, or performance under limited training data compared to the purely data-driven baseline. These findings suggest that, for modern deep forecasting architectures trained on large datasets, explicitly incorporating the ADR physical model provides limited practical benefit for day-ahead PV forecasting.",
+      "published": "October 28, 2026",
+      "published_raw": "2026-10-28T22:01:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.38976v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.38976v1"
+    },
+    {
+      "id": "2610.38773v1",
+      "title": "Rennala NSGD: Asynchronous Stochastic Optimization Beyond Euclidean Geometry",
+      "authors": [
+        "Igor Sokolov",
+        "Alexander Tyurin",
+        "Peter Richtárik"
+      ],
+      "abstract": "The empirical success of matrix-aware optimizers, such as Muon (Jordan et al., 2024) and Shampoo (arXiv:1802.09568), highlights the potential of non-Euclidean geometry for deep learning, including large language model (LLM) training. Despite this progress, the theoretical understanding of stochastic optimization in general normed spaces remains limited, particularly in distributed settings. We analyze minibatch stochastic gradient descent (SGD) for smooth nonconvex optimization with respect to an arbitrary norm on a finite-dimensional space. Using the framework of $κ$-regular normed spaces (arXiv:0809.0813), we derive high-probability oracle complexity bounds under a light-tail condition stated directly in the dual norm induced by the update norm. The bounds make the dependence on geometry explicit through the regularity constant $κ$ of the dual space. In the Euclidean case, our bound recovers the standard minibatch SGD rate up to logarithmic factors. For some non-Euclidean geometries and noise models, it is sharper than bounds obtained by converting a Euclidean noise assumption, reducing a linear dimension dependence to a logarithmic one. Building on this framework, we introduce Rennala NSGD, a semi-asynchronous distributed algorithm, and establish wall-clock time complexity guarantees under fixed, heterogeneous worker computation times. In the Euclidean case ($κ=1$), our bound matches the parameter dependence of classical Rennala SGD up to logarithmic factors.",
+      "published": "October 28, 2026",
+      "published_raw": "2026-10-28T19:47:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.38773v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.38773v1"
+    },
+    {
+      "id": "2610.38558v1",
+      "title": "REVBRAIN: Real-time Probabilistic EEG Forecasting Using Residual Vector Quantization",
+      "authors": [
+        "Hanna Pankka",
+        "Jaakko Lehtinen",
+        "Timo Roine"
+      ],
+      "abstract": "Real-time forecasting of resting-state EEG signals is required by applications like brain-state-dependent stimulation, where computer generated actions are coupled with ongoing neural oscillations. Recently, the deep learning model WaveNet was proposed for the forecasting task. It shows superior accuracy compared to the prevailing method, the linear autoregressive (AR) model, and provides a built-in uncertainty measure due to its probabilistic modeling framework. However, inference using WaveNet is too slow for real-time use due to its sample-by-sample autoregressive operation: a single forecast requires evaluating the model tens or hundreds of times depending on the length of the prediction window. In this paper, we present REVBRAIN, a probabilistic deep learning method that produces forecasts in real time by generating the forecast over the whole prediction horizon at once. This is achieved by tokenizing the output space using residual vector quantization (RVQ) and generating forecasts over the items in the tokenized space. We tested REVBRAIN for forecasting 200 ms of EEG time series in the alpha-frequency band (8-13 Hz) and compared our results against WaveNet model. We found that REVBRAIN achieved real-time inference on a laptop GPU and an over $50\\times$ speedup compared to WaveNet, while reaching superior prediction accuracy. By achieving real-time inference speed, REVBRAIN enables incorporating accurate and probabilistic EEG forecasting into BCI applications, opening up new ways for investigating the functioning of the human brain.",
+      "published": "October 28, 2026",
+      "published_raw": "2026-10-28T09:53:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.38558v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.38558v1"
+    },
+    {
+      "id": "2610.38172v1",
+      "title": "Data Amount Heterogeneity Improves Performance in Federated Learning for Neuroimaging",
+      "authors": [
+        "Paul Kurian",
+        "Tamoghna Chattopadhyay",
+        "Abhijith Shaji",
+        "Greg Ver Steeg",
+        "Paul M. Thompson",
+        "Jose Luis Ambite"
+      ],
+      "abstract": "Federated Learning (FL) allows for secure analysis of distributed data without data sharing. We and others have successfully applied FL to neuroimaging tasks, such as Alzheimer's disease classification from structural magnetic resonance imaging (MRI). FL trains a deep learning model locally at each site, encrypts the local model parameters and sends them to a federation controller that aggregates the local models under homomorphic encryption, the resulting community model is sent back to the sites for further training, and the process repeats for a number of rounds. FL often achieves learning performance (e.g., accuracy) close to centralized training, but no data leaves the sites and model parameters are protected through encryption and other measures. In this paper, we show that federations composed of sites with heterogeneous amounts of data (1 large site plus small sites) perform better than homogeneous (same data per site) federations, particularly in low data regimes, while reaching performance close to centralized training. Having a big site often results in faster convergence and higher final accuracy. Heterogeneous federations better exploit sites with small amounts of data, a common situation in large consortia such as ENIGMA.",
+      "published": "October 28, 2026",
+      "published_raw": "2026-10-28T02:22:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.38172v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.38172v1"
+    },
+    {
+      "id": "2610.38037v1",
+      "title": "Measuring Deep Learning Performance - An Empirical Study of Performance Distributions Across Architectures and Tasks",
+      "authors": [
+        "Kevin L Coakley",
+        "Odd Erik Gundersen"
+      ],
+      "abstract": "Context: Non-determinism in deep learning algorithm design and implementation leads to performance variation, meaning model performance is not a single value, but rather a distribution. These model performance distributions are underexplored despite their impact on robustness. Objective: We investigate the robustness of deep learning performance to sources of non-determinism, specifically focusing on how performance distributions differ across various architectures and tasks. Method: We conducted 186 experiments on image classification and time series forecasting architectures. Each experiment was run 100 times with different random seeds to generate performance distributions, resulting in 18,600 runs. Robustness was quantified using metrics for spread, symmetry, and tail risk. Results: Performance distributions are frequently non-Gaussian, particularly in time series forecasting. Model size does not systematically affect robustness -- larger image classification models show fewer outliers but not lower spread, while smaller time series models show lower spread but more extreme underperformers. Training duration does not scale linearly; early stopping effectively balances performance and robustness. Mean performance does not predict robustness - time series forecasting shows moderate correlation while image classification shows none. Time series models produce nearly three times more underperforming outliers than image classification models, indicating substantially higher tail risk. Conclusions: Tail risk poses serious concerns for Trustworthy AI in high-stakes applications. Models performing well on average may exhibit long tails and extreme outliers revealed only through distributional analysis. Mean performance alone should not guide model selection; assessment of spread, symmetry, and tail risk is essential for reliable model assessment where consistent performance is critical.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T22:47:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.38037v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.38037v1"
+    },
+    {
+      "id": "2610.37993v1",
+      "title": "Deep learning for non-transvenous ICD screening: tailored neural network architectures, extended experiments, and explainability",
+      "authors": [
+        "Bartosz Morawski",
+        "Samuel J. Ward",
+        "Alex Touze",
+        "Lin-Thiri Toon",
+        "Paul R. Roberts",
+        "John Paisey",
+        "Alain B. Zemkoho"
+      ],
+      "abstract": "This paper studies two non-transvenous implantable cardioverter-defibrillators (ICDs), namely the Subcutaneous ICD (S-ICD) and the Extravascular ICD (EV-ICD). Both avoid the complications of transvenous leads but are prone to oversensing, which can trigger inappropriate shocks associated with increased mortality. Oversensing risk is predicted by the ratio of T- or P-wave amplitude to R-wave amplitude (T:R, P:R), and these ratios vary over a 24-hour period. Yet S-ICD screening uses a single 10-second electrocardiogram (ECG) segment, and the EV-ICD has no formal screening protocol whatsoever. We present a 24-hour ambulatory screening framework for both devices which includes the first T:R analysis in an EV-ICD cohort and the first full evaluation of P:R prediction. We introduce AmpRatioNet, a family of 1D convolutional neural network architectures operating directly on the ECG signal, and benchmark it against the best existing approach - based on 2D phase space reconstruction images. Evaluation uses 4,605 clinician-annotated 10-second segments from 89 patients, with patient-level 10-fold cross-validation and bootstrap confidence intervals. AmpRatioNet-SE demonstrates superior performance on every metric in each setting with no device- or ratio-specific redesign. An explainability analysis against interpretable classical peak labelling algorithms shows that AmpRatioNet-SE's increase in error on oversensing-prone segments is up to 14 times smaller than theirs. Segment-level predictions are aggregated into a 24-hour timeline, extending S-ICD screening beyond 10 seconds and offering a plausible EV-ICD screening pathway pending device-level validation.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T21:42:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37993v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37993v1"
+    },
+    {
+      "id": "2610.37784v1",
+      "title": "Sparse tensor networks for individual tree diameter estimation in mixed forests",
+      "authors": [
+        "Clara Lößl",
+        "Fabian Ewald Fassnacht",
+        "Viacheslav Barkov"
+      ],
+      "abstract": "Measurements of tree diameter at breast height (DBH) are fundamental to forest inventories, but manual surveys across entire stands or regions are impractical. UAV-borne laser scanning (ULS) enables scalable automated forest surveys, yet canopy occlusion makes accurate DBH estimation from ULS point clouds non-trivial. Limited stem-level point density of ULS data constrains approaches relying on detailed stem reconstruction, such as Quantitative Structure Models (QSMs) and circle fitting. Empirical machine learning methods based on predefined point cloud metrics are an alternative. New deep learning approaches offer an even more principled solution, allowing models to learn directly from point clouds. Sparse tensor networks have shown particular promise, transforming forestry tasks such as tree species classification. We investigate whether these strengths can be extended to estimate individual tree DBH from ULS data across four mixed-species temperate forest plots in Germany. We further advance existing sparse tensor networks by introducing TreeNext, a lightweight deep learning architecture for direct individual tree parameter estimation from voxelized LiDAR point clouds. We present a fully automated forest inventory pipeline from individual tree instance segmentation to DBH regression, and quantify the impact of segmentation errors by comparing performance on automatically segmented and ground truth instances. TreeNext achieves an $R^2$ of 0.8355 on automatically segmented trees and 0.9380 on ground truth segments, outperforming strong tabular baselines including Random Forest and XGBoost. Segmentation quality emerges as the dominant error source in the automated pipeline. TreeNext proves highly data-efficient, performing well even in small data scenarios. Our findings establish sparse tensor networks as a practical foundation for automated individual tree DBH estimation from ULS.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T18:05:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37784v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37784v1"
+    },
     {
       "id": "2610.37374v1",
       "title": "Comparing Temporal Deep Learning Architectures for Discrete Cross-User Myoelectric Control",
@@ -68,6 +206,20 @@
       "arxiv_link": "http://arxiv.org/abs/2610.37159v1"
     },
     {
+      "id": "2610.37727v1",
+      "title": "Predicate Neuron: Differentiable Quantization of Predicate Relations in Gradient-based Learning",
+      "authors": [
+        "Ioannis Konstantoulas",
+        "Iliana Loi",
+        "Kyriakos Sgarbas"
+      ],
+      "abstract": "In machine learning, symbolic reasoning approaches often rely on static architectures that hinder integration into deep neural networks and gradient-based optimization. To address this, we introduce the Native Predicate Neuron, a differentiable logic-reasoning neural module that enriches standard architectures with symbolic reasoning capabilities via first-order logic quantization. The proposed neuron models relational logic by learning to alternate between operations using a single trainable parameter. It features a tailored gradient mechanism with a dual-nature formulation: executing hard logical operations during training while maintaining differentiability for backpropagation. By quantizing both its input and choice state, the Predicate Neuron approximates continuous and non-continuous functions, effectively resolving discontinuities that standard deep learning architectures struggle with. We evaluate the Predicate Neuron across Fully-Connected, Convolutional, Recurrent, and Transformer architectures on benchmarks like MNIST and Wikitext. Results show that incorporating Predicate Neurons accelerates convergence, boosts accuracy, and lowers loss in general, with particularly strong improvements in tasks requiring monotonic reasoning or handling discontinuities. Overall, the Predicate Neuron natively integrates into standard neural networks to enable fuzzy logic operations and is available in Keras and PyTorch.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T12:07:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37727v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37727v1"
+    },
+    {
       "id": "2610.37074v1",
       "title": "Systematic Morphometric Brain Autoencoding for Representation Learning in Neurodegenerative Diseases",
       "authors": [
@@ -101,6 +253,35 @@
       "arxiv_link": "http://arxiv.org/abs/2610.36881v1"
     },
     {
+      "id": "2610.37712v1",
+      "title": "Moment-Guided Optimizers for Noisy Deep Learning: MGO-SC as a Simple Consistency Gate for Adam-Style Updates",
+      "authors": [
+        "Alicem Koyun"
+      ],
+      "abstract": "Adaptive optimizers are widely used in deep learning, yet their behavior can degrade under heavy stochasticity and label noise where the sign and magnitude of gradients can be unstable. We study MGO-SC (Moment-Guided Optimizer with Sign-Consistency), a lightweight modification of Adam-style methods that derives a coordinate-wise consistency gate from the magnitude of a sign exponential moving average (EMA): coordinates whose gradient sign is stable are trusted, while coordinates whose sign fluctuates are down-weighted. We show that the naive form of this gate, which can only shrink updates, loses effective step size and underperforms when the learning rate is matched to the baseline. We therefore introduce a mean-preserving variant that reallocates trust across coordinates without changing the net per-tensor step magnitude. On CIFAR-10 with ResNet-18, under a matched learning rate and decoupled weight decay, mean-preserving MGO-SC consistently improves over its AdamW baseline across clean, symmetric, and asymmetric label noise (e.g., +1.4 points at 40% symmetric noise; paired bootstrap 95% CI excluding zero; Wilcoxon p<0.01), while adding no second-order information or per-sample filtering. We report matched-seed effect sizes, nonparametric bootstrap confidence intervals, and paired significance tests, and we release code and raw logs.",
+      "published": "October 27, 2026",
+      "published_raw": "2026-10-27T01:47:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37712v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37712v1"
+    },
+    {
+      "id": "2610.37709v1",
+      "title": "Towards Myocardial Infarction Diagnosis: An Investigation into Machine Learning and Deep Learning Algorithms using ECG Data",
+      "authors": [
+        "Rafid Ahnaf",
+        "Husne Mubarak",
+        "Fahim Ahsan",
+        "G. M. Refatul Islam",
+        "Rafeed Rahman",
+        "Nabuat Zaman Nahim"
+      ],
+      "abstract": "Myocardial Infarction (MI) is a severe and potentially fatal cardiac condition caused by myocardial injury due to ischemia, and timely detection can substantially reduce its mortality. Electrocardiography (ECG) is the primary diagnostic modality for MI, but manual interpretation is susceptible to human error. In this work, we propose Visionary V2, a multi-step, adaptive filtration method for ECG signal normalization, and use it to study machine learning (ML) and deep learning (DL) approaches to MI detection on the PTB Diagnostic ECG Database using all 15 available leads. On statistical features extracted from the filtered signals, such as the R-R interval, a Bagging ensemble of decision trees reaches 96.6% accuracy, compared with 87.7% when the signals are processed with BioSPPy. We further generate an image dataset from the filtered signals, on which a custom ResNet-50 misclassifies only 1 of 7,000 validation images and a custom CNN reaches an F1 score of about 98.7%. Finally, we apply LIME, Grad-CAM and Integrated Gradients to verify that the image models attend to the ECG waveform rather than the background. These results indicate that careful signal normalization combined with ML and DL models can support fast and accurate automated MI screening.",
+      "published": "October 26, 2026",
+      "published_raw": "2026-10-26T20:58:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.37709v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.37709v1"
+    },
+    {
       "id": "2610.36135v1",
       "title": "Physical structure as an organizing principle for universal Hamiltonian learning",
       "authors": [
@@ -131,182 +312,6 @@
       "published_raw": "2026-10-26T14:14:26Z",
       "pdf_link": "http://arxiv.org/pdf/2610.35484v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.35484v1"
-    },
-    {
-      "id": "2610.34833v1",
-      "title": "Streaming Recurrent Memory",
-      "authors": [
-        "Mohamed Elsayed",
-        "Minh Pham",
-        "A. Rupam Mahmood"
-      ],
-      "abstract": "Natural intelligence learns from a continuous stream of sensorimotor experience: data can arrive at high bandwidth, and behavior adapts to feedback as soon as it arrives, even when it is delayed. In contrast, most modern deep learning systems rely on stored datasets, replay buffers, and retained contexts through which credit is later assigned. At high data rates, storing and revisiting past experience can be impractical under tight memory and computational constraints. This paper studies recurrent memory under a streaming learning constraint: the learner learns from experience as soon as it arrives without storing raw experience. We ask whether a streaming learner can maintain a state that remains useful for future prediction and control from delayed feedback. We introduce Streaming Recurrent Memory (SRM), a recurrent memory designed for the streaming setting which preserves information that may matter later while remaining trainable with one-step backpropagation through time (BPTT). SRM provides a streaming-compatible recurrence that is designed to recall past information by content or time, track elapsed steps, and compose transformations whose outcome depends on the order in which inputs are observed. Across controlled memory tasks and streaming applications, SRM learns effectively with one-step BPTT, outperforming recurrent baselines in associative recall and online language modeling while achieving near-perfect success in associative T-Maze with delayed rewards. These results suggest that fixing how inputs are stored in the recurrent state, while learning how that state is read out, enables effective streaming learning without long-range backpropagation.",
-      "published": "October 26, 2026",
-      "published_raw": "2026-10-26T04:29:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34833v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34833v1"
-    },
-    {
-      "id": "2610.34825v1",
-      "title": "Interpretable Brain Age Prediction Using White Matter Fiber Orientation Distributions with Rotation-Equivariant Deep Learning",
-      "authors": [
-        "Chenyang Fan",
-        "Robert D. Sanders",
-        "Elie Matar",
-        "Yixuan Yuan",
-        "Xiang Li",
-        "Sharon L. Naismith",
-        "Fernando Calamante",
-        "Jinglei Lv"
-      ],
-      "abstract": "Diffusion MRI (dMRI) provides information about white matter microstructure that can support brain age prediction. However, many existing prediction models use diffusion tensor imaging (DTI) scalar metrics that omit orientation information. Deep learning is increasingly used for brain age prediction, but conventional CNNs do not explicitly respect the geometric structure of orientation-dependent features. We present an interpretable brain age prediction framework that combines white matter fiber orientation distributions (WM-FODs) with an SE(3) (Special Euclidean group in 3 dimensions) equivariant CNN. The network operates directly on spherical harmonic (SH) coefficients of the FOD, preserving their transformation properties under rotation. Evaluation in 692 participants aged 36-90 years from the Human Connectome Project Aging dataset showed that the combined framework outperformed the evaluated DTI-based models and conventional CNNs. Averaging predictions from five cross-validation models yielded a mean absolute error of 3.54 years and Pearson's correlation of 0.958. Our results indicated that the performance advantage depended on combining WM-FODs with equivariant processing. Prediction accuracy was highest at a maximum SH order of Lmax = 2 and declined at higher orders. Tract-level occlusion, where each segmented tract was masked in turn, revealed age-dependent patterns of model sensitivity, with importance peaks in frontal projection pathways at 36-44 years, the fornix at 45-54 years, the callosal isthmus at 55-64 years, the middle cerebellar peduncle at 65-74 years, and the callosal genu at 75-90 years. These findings support rotation-equivariant processing of WM-FODs for accurate brain age prediction with anatomically interpretable model sensitivity.",
-      "published": "October 26, 2026",
-      "published_raw": "2026-10-26T04:14:38Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34825v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34825v1"
-    },
-    {
-      "id": "2610.34719v1",
-      "title": "Data-driven acquisition offset correction for telescope networks using machine learning and sensitivity analysis",
-      "authors": [
-        "Jackson Zariski",
-        "Kaitlin Kratter",
-        "Mark Bowman",
-        "Nandini Dharwadkar"
-      ],
-      "abstract": "Reliable target acquisition is essential for maximizing observing efficiency, particularly for robotic telescope networks that operate across many sites, instruments, and environmental conditions. Although these facilities generate large volumes of operational and observational data, acquisition procedures often continue to rely on static pointing models and manual adjustments by observatory staff. These approaches can be effective, but they may not fully capture changing behavior associated with telescope configuration, observing conditions, instrument state, or other time-dependent effects. We present a data-driven machine-learning pipeline for automatically predicting and correcting telescope acquisition offsets, demonstrated using archival operational logs from the Las Cumbres Observatory network. Our approach applies both traditional machine-learning methods and deep-learning regression models to learn relationships between measured acquisition offsets and a range of observing, telescope, and instrumentation conditions. By using historical performance data, the pipeline is designed to complement existing pointing models and reduce the need for repeated manual correction. We also present an open-source, Dockerized software service that makes the trained models accessible through a browser-based graphical interface. The service is intended to support straightforward, real-time use by observatory staff while remaining portable across computing environments. Together, the prediction pipeline and deployment framework provide a practical path toward more adaptive, automated, and data-informed telescope acquisition.",
-      "published": "October 26, 2026",
-      "published_raw": "2026-10-26T02:15:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34719v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34719v1"
-    },
-    {
-      "id": "2610.34574v1",
-      "title": "Conditional Diffusion Generation of DVL and Inertial Signals for Underwater Navigation",
-      "authors": [
-        "Michal Levin",
-        "Itzik Klein"
-      ],
-      "abstract": "Autonomous underwater vehicles (AUVs) navigate without satellite positioning and rely on Doppler velocity log (DVL) and inertial sensors for motion estimation. Deep learning methods for processing these sensors require training data covering the motion the AUV encounters, commonly obtained through costly sea trials. To overcome this limitation, we present a conditional diffusion framework that generates synthetic DVL and inertial signals to replace real recordings in training. The generator employs an Elucidated diffusion model conditioned on three per-channel motion descriptors. Three configurations are evaluated: DVL beams alone, inertial channels alone, and all channels jointly from one model. Across thirteen trajectories of the real dataset, the generated signals followed the requested conditions with Pearson correlations between 0.72 and 0.997, transferred to trajectories withheld from generator training, and did not replicate any training window. A BeamsNet velocity estimator trained on generated signals alone, with no real recording retained, matched the velocity error obtained with the full real training set. Replacing up to all real windows with generated ones caused no measurable loss. Thus, this approach reduces the dependence of learned AUV navigation on sea-trial data, enables training when recordings are scarce, and facilitates developing and evaluating deep learning methods for underwater navigation.",
-      "published": "October 25, 2026",
-      "published_raw": "2026-10-25T21:14:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34574v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34574v1"
-    },
-    {
-      "id": "2610.34468v1",
-      "title": "GNSS Anomaly Detection in Urban Canyons: A Comprehensive Survey of Multimodal Visibility Inference",
-      "authors": [
-        "Abdelgabar Ahmed",
-        "Tarig Ballal",
-        "Nour Kouzayha",
-        "Tareq Y. Al-Naffouri"
-      ],
-      "abstract": "Reliable GNSS positioning in dense urban environments depends on assessing satellite visibility and identifying measurements degraded by non-line-of-sight (NLOS) reception and multipath. This survey organizes reception-state inference into three complementary evidence families: receiver-side signals, 3D maps and environmental models, and auxiliary sensors. Receiver-side approaches span antenna/electromagnetic, tracking/baseband, and observable-domain evidence, interpreted through rule-based, statistical, machine-learning, and deep-learning methods. Map-based approaches are examined by reviewing environmental representations and methods such as geometric screening, shadow matching, 3D ray tracing, and neural implicit visibility prediction. IMU, camera, and LiDAR measurements provide complementary kinematic, visual, and geometric evidence for online screening. Across these families, we compare accuracy, interpretability, hardware and calibration requirements, map dependence, computational cost, and suitability for real-time deployment. We identify open challenges in dataset quality and labeling, domain generalization, map freshness, and resource-efficient implementation. The resulting synthesis connects signal processing, environmental modeling, and sensor fusion to guide the design of robust urban GNSS measurement-screening systems.",
-      "published": "October 25, 2026",
-      "published_raw": "2026-10-25T17:39:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34468v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34468v1"
-    },
-    {
-      "id": "2610.34247v1",
-      "title": "Does Notation Matter? MusicXML Tokenisation for Symbolic Music Generation and Understanding",
-      "authors": [
-        "Andrea Poltronieri",
-        "Matteo Spanio",
-        "Simone Chieppa",
-        "Xavier Serra",
-        "Martín Rocamora"
-      ],
-      "abstract": "Symbolic music representations encode musical content at varying levels of completeness, from performance-oriented formats such as MIDI to fully notated scores such as MusicXML. Yet the impact of this representational richness on deep learning models remains poorly understood. While tokenisation has been extensively studied for MIDI, score-based formats have received considerably less attention, and MusicXML in particular remains largely unexplored despite being the de-facto standard for score interchange. In this paper, we introduce the first general-purpose tokenisation framework for MusicXML, and conduct a systematic empirical study to determine whether notational richness confers a measurable advantage for deep learning on symbolic music. We train 26 autoregressive and masked language models, comparing MusicXML tokenisation against MIDI and ABC-based representations, probing the effect of different tokenisation strategies within MusicXML, and testing whether music-grammar-aware tokenisation outperforms treating scores as plain text. We evaluate music understanding tasks using linear probing across composer classification, difficulty estimation, and accompaniment suggestion, and generative tasks using objective statistical metrics and a human pairwise preference study. Our results show that MusicXML-tokenised models outperform MIDI and text-based counterparts on understanding and generative tasks.",
-      "published": "October 25, 2026",
-      "published_raw": "2026-10-25T12:21:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34247v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34247v1"
-    },
-    {
-      "id": "2610.34154v1",
-      "title": "Edge-Centric Adaptive Neural Activation via Parametric Tanh Functions",
-      "authors": [
-        "Andreas Falkenberg"
-      ],
-      "abstract": "Within the broader landscape of artificial intelligence architectures, this paper introduces a compact, edge-centric neural framework that resolves the computational bottlenecks of modern edge-activated paradigms like Kolmogorov-Arnold Networks (KANs) while retaining their expressiveness over traditional Multi-Layer Perceptrons (MLPs). While KANs demonstrate remarkable representational capacity by placing learnable univariate functions on connection edges rather than hidden nodes, their reliance on non-local B-splines introduces severe optimization hurdles, high memory overhead, and poor hardware scaling. To bridge this gap, we propose the Parametric Tanh Connection Function, a smooth, bounded architectural primitive defined as $a_{\\tanh}(x;δ,α,β,γ) = δ+ α\\tanh(βx + γ)$. This formulation unifies offset, amplitude, local slope, and horizontal displacement into a lightweight, 4-parameter differentiable mapping optimized edge-by-edge via backpropagation. Evaluated on dense architectures using MNIST and CIFAR-10, our parametric tanh connection model achieves significant absolute accuracy gains over traditional affine baselines-reaching 95.63% $\\pm$ 0.08% on MNIST and 44.74% $\\pm$ 0.18% on CIFAR-10. Crucially, it matches or exceeds the expressiveness of unconstrained 7-parameter exponential connection baselines while requiring up to 85% less training runtime. By replacing complex splines or hyper-flexible exponents with a bounded, analytically smooth hyperbolic tangent kernel, this work delivers a highly scalable, hardware-friendly compromise for heterogeneous connection-level deep learning.",
-      "published": "October 25, 2026",
-      "published_raw": "2026-10-25T08:39:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.34154v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.34154v1"
-    },
-    {
-      "id": "2610.33979v1",
-      "title": "A spinal-inspired spiking neural network for continuous finger-joint kinematics estimation from high-density surface EMG",
-      "authors": [
-        "Cristian David Guerrero-Mendez",
-        "Leonardo Abdala Elias"
-      ],
-      "abstract": "Decoding simultaneous and proportional finger kinematics from high-density surface electromyography (HD sEMG) remains challenging. Although data-driven methods have shown promising performance for finger movement decoding, their limited physiological interpretability remains a relevant limitation. This study proposes and evaluates a spiking neural network (SNN) that incorporates spinal-inspired structures and mechanisms to predict multi-joint finger kinematics from HD sEMG signals. The spinal-inspired SNN includes a spike-encoding computational model with input-noise variability, a phenomenological representation of Henneman's size principle, and excitation/inhibition (E/I) balance. HD sEMG and kinematic data were collected from 23 healthy participants performing grasping tasks under different elbow and wrist postures. Performance was assessed using six prediction metrics and compared against six baseline machine learning and deep learning methods. The proposed method showed a large and significant ($p<0.05$, rank-biserial correlation $r_{rb}>0.7$) improvement over all baseline methods across all accuracy metrics. Performance improved significantly with increasing spike encoder firing rates up to approximately 128 Hz, and with more regular input spike trains compared with a Poisson-like encoder. In contrast, the E/I balance did not significantly affect the decoding performance of the algorithm. The firing rate and inter-spike interval statistics of the SNN differed significantly across motor tasks. These results demonstrate that incorporating neurophysiological principles into SNNs improves prediction performance while providing additional physiological interpretability for simultaneous and proportional finger-kinematics decoding. This approach represents a promising step toward physiology-informed neural networks, with potential applications in motor rehabilitation.",
-      "published": "October 25, 2026",
-      "published_raw": "2026-10-25T01:34:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33979v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33979v1"
-    },
-    {
-      "id": "2610.33977v1",
-      "title": "EmoNet: A Lightweight Attention-Based CNN for Speech Emotion Recognition",
-      "authors": [
-        "Muhammad Moiz Khalid",
-        "Abdur Rehman Tariq",
-        "Muhammad Okasha Yamin"
-      ],
-      "abstract": "Speech Emotion Recognition (SER) is a fundamental task in affective computing that enables applications such as mental health assessment, human-computer interaction, and automated customer support systems. Accurate emotion classification from speech remains challenging due to variations in speaker style, acoustic conditions, and the high computational cost of modern deep learning approaches. Many existing systems depend on large transformer-based architectures that require substantial computational resources, making them less suitable for real-time or resource-constrained environments. This research proposes EmoNet, a lightweight deep learning framework for speech emotion classification across seven emotion categories. The model is built on a four-block depthwise separable CNN encoder with squeeze-and-excitation attention and residual connections, combined with a Bidirectional LSTM for temporal feature learning and a multi-head attention pooling mechanism for improved representation. A comprehensive 134-channel acoustic feature set alongside data augmentation techniques including audio-level perturbations and SpecAugment is employed to improve robustness under diverse acoustic conditions. Evaluated on a combined dataset of TESS, RAVDESS, and SAVEE, EmoNet achieves a test accuracy of 96.75% with only 4.11 million parameters. The proposed model outperforms its reproduced baseline and remains competitive with significantly larger state-of-the-art architectures.",
-      "published": "October 25, 2026",
-      "published_raw": "2026-10-25T01:26:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33977v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33977v1"
-    },
-    {
-      "id": "2610.33840v1",
-      "title": "Sliding Networks: A Family of Residual Structures Preserving Feature Learning and Feature Diversity",
-      "authors": [
-        "Datong Zhou",
-        "Blake Bordelon"
-      ],
-      "abstract": "Deep learning models tend to perform best at large widths and depths. The growing interest in scaling laws, especially in the language modeling domain, has motivated procedures for scaling up network widths and depths in order to preserve stability and computational efficiency of training dynamics. Existing depth-scaling approaches force a choice between retaining locally maximal \\emph{feature learning} and preserving a form of \\emph{feature diversity} in the residual stream arising from random differences between channels. We examine a \\textit{joint scaling recipe} that preserves both. With residual width $N_\\flat$, hidden width $N_\\sharp$, and depth $L$, the key quantity is, by default, the limiting ratio $N_\\flat/(N_\\sharp L)\\toα$, while correlated initialization (Half Copy) can partially relax the resulting shape constraints. Theory and residual-MLP experiments support convergence at fixed positive $α$ to an SDE limit with locally maximal feature learning. Hidden computations can then be redistributed between width and depth while preserving this limit, like turning melody into harmony and back. Language-model experiments nevertheless show performance differences under regrouping at fixed parameter count. These results distinguish approximating a limit (ODE or SDE) from scaling for better performance.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T18:22:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33840v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33840v1"
-    },
-    {
-      "id": "2610.33832v1",
-      "title": "EEGBiFormer: Real-Time EEG Attention Classification via Hybrid CNN-Transformer with EEG-Informed Auditory Protocol Validation",
-      "authors": [
-        "Isabella Guan"
-      ],
-      "abstract": "Sustained attention is critical for academic performance, yet existing auditory support tools are static and not grounded in real-time neural evidence. This paper presents EEGBiFormer, a hybrid CNN-Transformer model for realtime binary classification of attention states, focus versus nonfocus, from 16-channel EEG signals. A custom analog front-end acquisition board was designed and built to collect a task-based EEG dataset. Before model training, spectral and connectivity analysis, using Power Spectral Density and Phase Locking Value, confirmed distinct neural signatures between attention states, providing physiological grounding for the classification approach. EEGBiFormer achieved 91.3 percent window-level validation accuracy with an F1 score of 94.5 percent, and 88.2 percent recording-level accuracy across 17 independent sessions. End-to-end system latency was measured below 100 ms, supporting real-time responsiveness. The trained model was further used to objectively rank auditory stimuli by focus-state confidence, yielding EEG-informed audio protocols. In a paired within-subject behavioral study with 37 participants, these protocols produced a statistically significant 20 percent improvement in composite attention scores over silent controls, with a medium-to-large effect size. This work demonstrates a complete pipeline from custom EEG hardware through neural signal analysis, deep learning classification, and evidence-based auditory protocol design.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T18:10:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33832v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33832v1"
-    },
-    {
-      "id": "2610.33731v1",
-      "title": "How Geometry Shapes Generative Model Evaluation on Riemannian Manifolds",
-      "authors": [
-        "Misha Oberski",
-        "Valentijn Oldenburg",
-        "Xanthos Kekkos",
-        "Soham Chaudhuri",
-        "Emma Oosterhuis",
-        "Floris de Kam",
-        "Sagi Schwartz",
-        "Alison Pouplin",
-        "Federica Valeau"
-      ],
-      "abstract": "On Riemannian manifolds, generative-model evaluation is geometry-dependent since curvature and dimension jointly determine distances and volume growth. Our framework systematically compares geodesic, ambient, and tangent-space versions of Wasserstein and MMD across different geometries. Using controlled-noise perturbations and Riemannian Flow Matching samples, we study metric agreement, noise sensitivity, and their relation to geometry-induced volume scaling. We find that no metric is uniformly reliable: evaluation distance can affect both measured discrepancies and noise sensitivity, varying across curvature and dimension. Our analysis leads to practical recommendations for reporting evaluation distances, comparing metric types, and calibrating metrics to the geometry of the samples.",
-      "published": "October 24, 2026",
-      "published_raw": "2026-10-24T15:22:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.33731v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.33731v1"
     }
   ]
 }
