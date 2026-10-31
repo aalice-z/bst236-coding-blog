@@ -1,7 +1,158 @@
 {
-  "last_updated": "2026-10-30T03:10:51.844133",
+  "last_updated": "2026-10-31T02:56:21.767446",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.40586v1",
+      "title": "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond",
+      "authors": [
+        "Yalin E. Sagduyu",
+        "Tugba Erpek",
+        "Sastry Kompella"
+      ],
+      "abstract": "Integrated sensing and communications (ISAC) systems using 5G and beyond signals of opportunity enable joint wireless sensing and communication using shared infrastructure and spectrum resources. While multistatic ISAC can increase sensing coverage with spatially distributed receivers, dense and dynamic clutter can significantly degrade bistatic range and Doppler estimation, leading to errors in target localization and velocity estimation. This paper presents a multistatic ISAC framework with clutter suppression for high-fidelity estimation of target position and velocity. Distributed clutter is modeled with randomly located scatterers with varying Doppler spreads and radar cross sections to capture dense and dynamic clutter effects. A broad range of conventional signal processing baselines are evaluated for clutter suppression, showing limited robustness under strong clutter conditions. To address this limitation, deep learning-based clutter suppression methods are introduced to improve robustness against dense and dynamic clutter by employing residual and attention-enhanced deep neural network architectures that directly enhance target responses from clutter-contaminated observations. These methods substantially outperform conventional approaches in target position and velocity estimation across diverse clutter conditions in multistatic ISAC.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T17:47:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40586v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40586v1"
+    },
+    {
+      "id": "2610.40421v1",
+      "title": "Uncertainty-aware Feedback Loop Diagnosis: integrating reinforcement learning and conformal prediction for reliable wafer defect classification",
+      "authors": [
+        "Aleksandr Dekhovich",
+        "Carlas Smith",
+        "Oleg Soloviev"
+      ],
+      "abstract": "Semiconductor manufacturing is a complex, multi-step process that requires both high precision and low operating costs. Therefore, detecting defects in a high-volume setting is an important component of wafer map analysis for reliable production. However, most state-of-the-art deep learning approaches require a full scan of the surface, which hinders the development of high-throughput inspection systems. To address this problem, we propose Uncertainty-aware Feedback Loop Diagnosis (UFLD), a novel algorithm that employs reinforcement learning for adaptive measurement acquisition and provides a prediction uncertainty level after each step, stopping the process once sufficient information is obtained. Unlike existing methods that rely on ensemble models or auxiliary confidence estimation deep learning models, UFLD utilizes a more parameter-efficient conformal prediction framework to determine the optimal stopping time. The proposed UFLD reduces acquisition time by about $40\\%$ and achieves $98.4\\%$ inspection accuracy, without requiring an additional learned confidence-estimation network. We validated our approach on the MixedWM38 dataset, demonstrating its advantages over existing adaptive acquisition procedures and standard convolutional neural networks.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T16:45:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40421v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40421v1"
+    },
+    {
+      "id": "2610.40418v1",
+      "title": "IMPACT: Inverter-Informed Multimodal Learning for Photovoltaic Generation Forecasting",
+      "authors": [
+        "Anushka Katiyar",
+        "Cong Feng",
+        "Jing Wang",
+        "Tristan Liu",
+        "Simon Julien",
+        "Zachary Jacobs"
+      ],
+      "abstract": "This work develops a physics-informed multimodal deep learning framework for 10- to 110-minute-ahead probabilistic photovoltaic power forecasting. The forecasting model is built on a four-branch architecture that separately encodes plant-level temporal history and inverter-level spatial cloud dynamics through a graph attention encoder with a learned adjacency, known-future solar geometry, and the current meteorological state, fused through gated cross-attention. The geometry branch adds two forward-looking physical signals, spatial cloud heterogeneity and inverter ramp-down activity, each empirically weighted toward the horizon where it is most predictive. The decoder anchors its prediction to a smart persistence baseline, learning a horizon-conditioned correction, and the resulting quantile forecasts are calibrated online through a kernel-weighted adaptive conformal calibration step. The proposed model outperforms all 14 baselines, achieving a forecast skill score (FSS) of 0.2950, 0.099 above the next-best model. A branch-composition ablation shows that every branch contributes positively and the model retains substantial skill in challenging overcast and variable sky conditions (FSS 0.198 and 0.255).",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T16:44:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40418v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40418v1"
+    },
+    {
+      "id": "2610.40415v1",
+      "title": "OCCAMS: A Multi-Task Learning-Based Investigation of the CMB Power Spectra",
+      "authors": [
+        "Ankit Mandal",
+        "Rahul Shah",
+        "Md. Wali Hossain",
+        "Somasri Sen",
+        "Anjan A Sen",
+        "Supratik Pal"
+      ],
+      "abstract": "How many latent variables are needed to fit the cosmic microwave background (CMB) temperature and polarisation power spectra when a neural network is given no cosmological model, and to what extent do they map onto the standard cosmological parameters? We use multi-task learning with variational autoencoders trained on CLASS-generated spectra (TT, TE, EE) over $2\\le\\ell\\le2500$. No cosmological model is built into the network, and the number of latent variables, $L$, is varied over $L=5$, $6$ and $7$. Their fits are compared to the Planck 2018 data using $\\hatχ^2$, AIC, BIC and Bayesian evidence. Their correspondence with cosmological parameters is measured with normalised mutual information post-training. The loss weights are set within a single training run by uncertainty weighting, with the weight of the disentanglement term either fixed (semi-automated, SA) or learned (completely automated, CA). The reconstruction loss is split over multipole ranges in three configurations that separate the roles of temperature and polarisation and of the low- and high-$\\ell$ ranges. In four of the six combinations of configuration and strategy, the fit improves from $L=5$ to $L=6$ and not beyond, and $L=6$ is the best, or close to the best, in five of the six cases. So, six latent variables are needed, as many as the free parameters of the standard, model-dependent approach. SA gives clearer disentanglement, while CA needs no a priori choice of the disentanglement weight and has the higher evidence at $L=5$ and $6$: the two strategies are points on a trade-off between interpretability and fit to the data. Notably, the latent variables for $τ$ and $A_s$ share almost no information in any model, consistent with large-scale polarisation separating the two, as in standard analyses. A deep-learning approach can thus give a compact, data-driven parametrisation of the CMB spectra.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T16:42:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40415v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40415v1"
+    },
+    {
+      "id": "2610.40398v1",
+      "title": "Deep Learning Based Behavioral Drift Modeling for Continuous Biometric Authentication",
+      "authors": [
+        "Suprava Saha Dibya",
+        " Minar",
+        "Abdulla Al Noman",
+        "Md. Zafir Abid Shresto",
+        "Ahmed Sayef"
+      ],
+      "abstract": "This research proposes a two-level keystroke dynamics authentication system that provides defense-in-depth security through continuous behavioral drift monitoring. Level 1 employs fixed-text password authentication using Temporal Convolutional Networks (TCN) with contrastive learning and population-based training (PBT), achieving 3.77% EER for high-security login verification. Upon successful authentication, Level 2 continuously monitors user typing during natural free-text sessions using a 4-Model Deep Learning Ensemble. If suspicious behavioral drift is detected during monitoring, the system re-authenticates the user by returning to Level 1, providing a feedback loop against session hijacking and behavioral anomalies. The system explicitly models long-term behavioral drift through the fixed-text component's PBT mechanism, which adapts to temporal variations in password typing patterns. This research leverages free-text (Buffalo dataset) and fixed-text (GREYC dataset) keystroke dynamics datasets, extracting temporal and spatial features including hold times, up-down latencies, down-down intervals, and trigram patterns. The final system achieves 96%+ accuracy for fixed-text authentication (3.77% EER) and 83.53% True Acceptance Rate (TAR) at 5% False Acceptance Rate (FAR) for free-text continuous authentication (10.05% EER), demonstrating superior performance and strong resistance to impostor attacks through continuous behavioral monitoring.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T16:33:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40398v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40398v1"
+    },
+    {
+      "id": "2610.40304v1",
+      "title": "Causal-prior-constrained deep learning for rapid-intensification warning of western North Pacific tropical cyclones",
+      "authors": [
+        "Xinrui Li",
+        "Yijun Jin",
+        "Yifan Dong",
+        "Shoujuan Shu"
+      ],
+      "abstract": "Rapid intensification (RI) is one of the most dangerous and unpredictable phases of tropical cyclones, and its environmental and structural drivers are difficult to identify and separate in observations. Here we introduce CausalVisionRI, a causal-prior-constrained deep-learning system for 24-h RI warning in the western North Pacific. It integrates infrared remote sensing imagery, atmospheric and oceanic fields, and an observationally discovered causal graph into a unified model. The graph and eight sign-verified effects on 24-h intensity change provide an auditable causal prior for training. Discovered from 522 cyclones in 2000-2017, it identifies causal pathways linking atmospheric and oceanic conditions, the cyclone's dynamical and structural state, and its 24-h intensity change. On a forward holdout covering 2020-2024 and 3,004 records, the five-member ensemble achieves a Brier skill score (BSS) of 0.259 relative to a fixed development climatology, significantly exceeding four reference systems; the three LDA baselines reach at most 0.105. It also attains higher detection rates than a published knowledge-block scheme and a reconstructed contrastive-learning scheme at matched false-detection rates under our USA 30-kt standard and the published RITCF standard. Ablations show that the graph pathway adds 0.032 BSS across the holdout and 0.063 over 2020-2021, with a significant contribution in one ensemble member. A deep-learning model constrained by observationally discovered causal structure thus offers a new route to physically informed RI warning.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T15:46:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40304v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40304v1"
+    },
+    {
+      "id": "2610.40138v1",
+      "title": "A Deep Learning Framework for Quantile Demand Forecasting in E-commerce with Doubly Censored Data",
+      "authors": [
+        "Ziwen Ye",
+        "Jiawen Wei",
+        "Teng Song",
+        "Chen Chen",
+        "Guangrui Ma"
+      ],
+      "abstract": "In recent years, a growing number of online retail companies have embraced deep learning models for demand forecasting, leveraging their scalability in processing large-scale datasets. Accurate demand forecasts enable improved planning and allow operational flexibility to adjust sales accordingly. Moreover, quantile estimation has gained widespread application as it offers valuable uncertainty quantification, thereby enhancing the robustness of decision-making processes. However, limited research has addressed the effective quantification of uncertainty when target labels are ambiguous. In retail, actual sales can be capped by stock and boosted by temporary promotions, whereas the target is underlying demand. Such scenarios are characterized by double censoring and no deep-learning pipeline yet exists for such data. In this paper, we introduce a straightforward framework for learning quantiles from doubly-censored observations and propose a tailored evaluation metric. Our approach is supported by theoretical guarantees, and we empirically demonstrate that our metric correlates well with the oracle calibration measure. Experimental results show that our estimator surpasses existing baselines. Finally, inventory simulations and real-world applications confirm the practical utility of our method in retail operations.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T14:30:16Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40138v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40138v1"
+    },
+    {
+      "id": "2610.40001v1",
+      "title": "Enhancing Atrial Fibrillation Detection Through Hyperparameter Optimization",
+      "authors": [
+        "Sara Gjorgjieva",
+        "Ilinka Ivanoska",
+        "Marjan Gusev"
+      ],
+      "abstract": "This study explores the role of hyperparameter optimization (HPO) in enhancing the detection of Atrial Fibrillation (AF) using both machine learning and deep learning models. We evaluated a range of standard classifiers - Decision Tree, Random Forest, and XGBoost classifiers, alongside deep learning architectures including Recurrent Neural Networks, Deep Neural Networks, and Siamese Neural Networks. To fine-tune these models, we applied four HPO methods: Genetic Algorithm, Hyperband, Optuna, and SMAC3. The experiments were conducted using inter-patient and intra- patient data splits to assess model generalization and robustness in the presence of class imbalance, which is reflective of real-world AF occurrence. Our results, based on PhysioNet electrocardiogram datasets, showed that the Hyperband-optimized XGBoost model outperformed all others, achieving a peak F1 score of 96.95%. These findings highlight the critical role of suitable HPO strategies in enhancing the accuracy and robustness of AF classification outcomes in clinical settings.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T13:19:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40001v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40001v1"
+    },
+    {
+      "id": "2610.39821v1",
+      "title": "Possibility-based Inference: A Deterministic Framework for Robust and Reliable Uncertainty Quantification in Decision-Making",
+      "authors": [
+        "Seyedfakhredin Musavishavazi",
+        "Maryam Alipour"
+      ],
+      "abstract": "Decision-making under uncertainty remains a key issue in Machine Learning (ML), particularly in the deployment of safety-critical systems, where reliable quantification of system behavior is essential for evaluating behavioral impacts and strengthening confidence in ML models. This contribution, influenced by fuzzy set theory and grounded in Bayesian statistics, addresses challenges related to data precision and the performance-accuracy trade-off in Bayesian inference (BI). To this end, we introduce a possibility-based contrastive grade of prediction as an alternative quantification method to existing latent posterior-based approaches for parameter estimation (approximation) and model selection. Unlike conventional Bayesian inference, which represents uncertainty within the probabilistic framework, the proposed model adopts a possibility-based representation that allows uncertain and potentially conflicting information to be characterized more flexibly. Rather than focusing on isolated aspects of a problem, the resulting mathematical framework provides a systematic approach to data mining while mitigating overly confident, yet implausible predictions generated by highly specialized deep learning architectures.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T11:05:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.39821v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.39821v1"
+    },
+    {
+      "id": "2610.39773v1",
+      "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
+      "authors": [
+        "Abhishek Singh",
+        "Giovanni Cuozzo",
+        "Alexander Jacob",
+        "Claudia Notarnicola"
+      ],
+      "abstract": "Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network for pseudo-label generation using Sentinel-1 SAR and Sentinel-2 multispectral imagery, guided only by coarse MODIS-derived land-cover maps. The proposed framework uses quantum-inspired convolutional blocks to enhance feature extraction and cross-sensor fusion, enabling the model to infer a fine-scale semantic structure from heterogeneous inputs. Experiments were conducted on the DFC2020 dataset, which provides a quadruple of Sentinel-1 SAR, Sentinel-2 multispectral, low-resolution MODIS labels and high-resolution reference land-cover maps. The proposed training framework first learns a robust representation of multimodal inputs through the reconstruction branch before any supervision from low-resolution labels is applied. This self-supervised stage enables the model to capture a fine-scale spectral-spatial structure, which is then used to generate high-resolution pseudo-labels. These pseudo-labels are subsequently evaluated through classification metrics on the test data, demonstrating that the proposed approach produces more spatially coherent and class-consistent compared to classical baselines. The results highlight the potential of quantum-inspired deep learning to improve label generation in low-annotation remote sensing scenarios, offering a scalable path towards high-quality land-cover products for EO applications.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T10:23:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.39773v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.39773v1"
+    },
     {
       "id": "2610.39300v1",
       "title": "Multi-Solution Inverse Design of Pixelated Patch Antennas Using an Autoregressive Transformer",
@@ -154,164 +305,6 @@
       "published_raw": "2026-10-27T15:05:37Z",
       "pdf_link": "http://arxiv.org/pdf/2610.37374v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2610.37374v1"
-    },
-    {
-      "id": "2610.37370v1",
-      "title": "The Geometry of Manifold Learning: Singular foliations via Deep Learning models",
-      "authors": [
-        "Gabriele Novelli",
-        "Eliot Tron",
-        "Emanuele Latini",
-        "Rita Fioresi"
-      ],
-      "abstract": "Deep learning algorithms have become widely used and successful across a wide range of tasks. A key challenge is determining whether these algorithms truly capture the intrinsic geometry of their training data in order to better understand what they learn from data. In this theoretical work, we explore a new geometric structure defined on the data space by a trained neural network through the Data Information Matrix (DIM), a variation of the Fisher Information Matrix. This new geometric structure is a foliation and the main focus of this work is to explore the non-smooth case of ReLU activation functions, where traditional geometric tools often fail. The foliation is defined through a distribution spanned by the columns of the DIM. We first prove that this distribution is non-smooth in the sense of distributions, rendering the existence of an associated foliation much more complex. To circumvent this issue, we introduce a smoothed version of this distribution that differs from the original only on a set of measure zero. Finally, we prove that this smoothed distribution induces a singular foliation on the data space, which is based on the data the network has been trained with. Our theoretical contributions provide a geometric framework to better understand how neural networks organize their input space in non-smooth settings, bridging differential geometry and deep learning theory.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T15:02:29Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37370v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37370v1"
-    },
-    {
-      "id": "2610.37213v1",
-      "title": "Retrospective macromolecular pool fraction mapping from conventional clinical MRI: a physics-guided self-supervised deep learning framework",
-      "authors": [
-        "Jelmer van Lune",
-        "Miha Fuderer",
-        "Oscar van der Heide",
-        "Matteo Maspero",
-        "Martin B. Schilder",
-        "Jan Willem Dankbaar",
-        "Stefano Mandija",
-        "Alessandro Sbrizzi"
-      ],
-      "abstract": "Macromolecular pool fraction (MPF) is a quantitative imaging biomarker sensitive to myelin integrity and other changes in tissue macromolecular content, but specialized acquisitions and reconstruction methods limit its use in large-scale studies. We present a physics-guided, self-supervised deep learning framework for retrospectively estimating MPF directly from conventional clinical brain MRI ($T_1$-weighted, $T_2$-weighted, and fluid-attenuated inversion recovery [FLAIR]) without paired quantitative reference scans. The framework embeds an analytical two-pool magnetization transfer signal model that related sequence-averaged radiofrequency transmit power to apparent longitudinal relaxation. To accommodate heterogeneous clinical protocols, the network conditions intermediate features on acquisition parameters via adaptive instance normalization. It was trained and evaluated on a multisite, multivendor, multiprotocol dataset of 7,705 MRI sessions (3 T). Across 1,237 test sessions, mean MPF was $0.182 \\pm 0.007$ in white matter and $0.144 \\pm 0.009$ in gray matter, with limited variation across vendor-by-protocol groups (between-group coefficient of variation: 2.65% and 5.63%, respectively). In 70 sessions with demyelinating-disease labels, MPF was 35.6% lower in segmented lesions than in normal-appearing white matter. MPF maps from two different clinical protocols acquired in a healthy volunteer showed a mean voxel-wise absolute percentage difference of 7.7% and a concordance correlation coefficient of $0.888$, indicating good cross-protocol consistency. These results suggest that magnetization transfer-informed self-supervised learning enables stable MPF mapping from conventional clinical MRI, providing a scalable approach to investigate demyelinating pathology in both existing imaging archives and prospectively acquired conventional clinical scans without dedicated qMT acquisitions.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T13:27:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37213v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37213v1"
-    },
-    {
-      "id": "2610.37159v1",
-      "title": "Physics-Guided Flow Matching: A Generative AI Framework for Global Total Electron Content Forecasting",
-      "authors": [
-        "Si-Tong Yang",
-        "Feng Ye",
-        "Xian Lu",
-        "Dong Lin",
-        "Benjamin C. Martinez"
-      ],
-      "abstract": "Accurate forecasting of global total electron content (TEC) is important for space weather monitoring and the reliable operation of satellite communication and navigation systems. We propose a physics-guided generative artificial intelligence (AI) framework for day-ahead global TEC forecasting. The framework builds on flow matching, which learns to gradually transform samples from an initial distribution into new samples that share the statistical characteristics of the target data. The proposed model incorporates ionospheric dynamics described by a partial differential equation (PDE) into this transformation process, guiding the changes between initial and target samples using physical knowledge. The model further combines the physical dynamics with statistical patterns captured from data to learn this transformation, adaptively adjusting their relative contributions at each location. The model is trained and evaluated using one year of global TEC data generated by the Thermosphere Ionosphere Electrodynamics General Circulation Model (TIEGCM). The results demonstrate that our model improves both spatial and temporal forecasting accuracy over representative benchmarks, including statistical, deep learning, and generative AI methods at all lead times and across latitudes. The average root mean square error (RMSE) is 39.2% lower than that of ConvLSTM and 23.8% lower than that of the same framework without physical guidance. The learned contribution weights vary systematically with latitude and across geographic locations, showing how the physical contribution changes across the forecast domain. These findings demonstrate that explicit physical guidance improves generative forecasts of global TEC and highlight the value of incorporating physical dynamics into generative AI modeling.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T12:53:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37159v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37159v1"
-    },
-    {
-      "id": "2610.37727v1",
-      "title": "Predicate Neuron: Differentiable Quantization of Predicate Relations in Gradient-based Learning",
-      "authors": [
-        "Ioannis Konstantoulas",
-        "Iliana Loi",
-        "Kyriakos Sgarbas"
-      ],
-      "abstract": "In machine learning, symbolic reasoning approaches often rely on static architectures that hinder integration into deep neural networks and gradient-based optimization. To address this, we introduce the Native Predicate Neuron, a differentiable logic-reasoning neural module that enriches standard architectures with symbolic reasoning capabilities via first-order logic quantization. The proposed neuron models relational logic by learning to alternate between operations using a single trainable parameter. It features a tailored gradient mechanism with a dual-nature formulation: executing hard logical operations during training while maintaining differentiability for backpropagation. By quantizing both its input and choice state, the Predicate Neuron approximates continuous and non-continuous functions, effectively resolving discontinuities that standard deep learning architectures struggle with. We evaluate the Predicate Neuron across Fully-Connected, Convolutional, Recurrent, and Transformer architectures on benchmarks like MNIST and Wikitext. Results show that incorporating Predicate Neurons accelerates convergence, boosts accuracy, and lowers loss in general, with particularly strong improvements in tasks requiring monotonic reasoning or handling discontinuities. Overall, the Predicate Neuron natively integrates into standard neural networks to enable fuzzy logic operations and is available in Keras and PyTorch.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T12:07:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37727v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37727v1"
-    },
-    {
-      "id": "2610.37074v1",
-      "title": "Systematic Morphometric Brain Autoencoding for Representation Learning in Neurodegenerative Diseases",
-      "authors": [
-        "Nuria Balbás-Esteban",
-        "Albert Belenguer-Llorens",
-        "Elaheh Moradi",
-        "Jussi Tohka",
-        "Vanessa Gómez-Verdejo",
-        "Carlos Sevilla-Salcedo"
-      ],
-      "abstract": "Early identification of neurodegenerative disorders using structural T1-weighted MRI is essential for timely clinical intervention, yet supervised deep learning models often struggle to generalize due to limited annotations and scanner-induced distribution shift. Self-supervised learning offers a promising alternative; however, existing approaches are largely adapted from natural image paradigms, relying on contrastive objectives or generic masked reconstruction with voxel-wise losses, which may not fully capture the distributed morphometric patterns associated with neurodegeneration. We introduce SYMBA (SYstematic Morphometric Brain Autoencoding), a self-supervised pretraining framework specifically designed for structural brain MRI. SYMBA integrates anatomically constrained masking, a multi-scale structural similarity (MS-SSIM) reconstruction objective, and a progressive curriculum that transitions from local anatomical detail to global brain morphology. These components explicitly incorporate neuroanatomical structure into the self-supervised objective rather than relying on generic image priors. Pretrained on 6,953 T1-weighted MRI scans from nine heterogeneous cohorts, SYMBA is evaluated using frozen linear probing on two independent unseen datasets, enabling a strict assessment of out-of-distribution generalization. Across multiple clinical tasks, SYMBA consistently outperforms recent neuroimaging foundation models, achieving 0.930 AUROC for Alzheimer's disease classification, 0.772 for mild cognitive impairment conversion prediction, and strong performance in amyloid status prediction. In low-label regimes, SYMBA demonstrates high sample efficiency, reaching approximately 0.90 AUROC for AD/CN classification using only six labeled subjects.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T11:36:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37074v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37074v1"
-    },
-    {
-      "id": "2610.36881v1",
-      "title": "RAG-CSI: Global Local Retrieval via Joint State and Dynamics Matching for CSI Prediction",
-      "authors": [
-        "Xinyue Jiang",
-        "Tong Li",
-        "Shiceng Zhang",
-        "Ke Chen",
-        "Zhu Xiao"
-      ],
-      "abstract": "Channel state information (CSI) prediction forecasts future channel states from historical observations, supporting transceiver design and resource allocation with reduced measurement overhead. However, existing deep learning predictors mainly encode channel knowledge in model parameters, which can limit their ability to represent diverse patterns of channel dynamics across scenes. In this paper, we propose RAG-CSI, a retrieval-enhanced Transformer framework that augments prediction with relevant historical channel knowledge. Specifically, we construct a global--local CSI knowledge store containing representative observations across scenes and historical observations from the current serving scene. We further develop joint state--dynamics retrieval (JSDR), which jointly characterizes channel states, phase dynamics, and amplitude dynamics to retrieve relevant CSI sequences. A Transformer predictor then uses cross-attention to fuse the retrieved knowledge with the current CSI history and predict future CSI with limited additional model parameters. Experiments on a multi-scene CSI dataset show overall improvements exceeding 10\\% across all five evaluation metrics over the best baseline for each metric, including a 15.42\\% reduction in normalized mean squared error.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T09:19:16Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.36881v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.36881v1"
-    },
-    {
-      "id": "2610.37712v1",
-      "title": "Moment-Guided Optimizers for Noisy Deep Learning: MGO-SC as a Simple Consistency Gate for Adam-Style Updates",
-      "authors": [
-        "Alicem Koyun"
-      ],
-      "abstract": "Adaptive optimizers are widely used in deep learning, yet their behavior can degrade under heavy stochasticity and label noise where the sign and magnitude of gradients can be unstable. We study MGO-SC (Moment-Guided Optimizer with Sign-Consistency), a lightweight modification of Adam-style methods that derives a coordinate-wise consistency gate from the magnitude of a sign exponential moving average (EMA): coordinates whose gradient sign is stable are trusted, while coordinates whose sign fluctuates are down-weighted. We show that the naive form of this gate, which can only shrink updates, loses effective step size and underperforms when the learning rate is matched to the baseline. We therefore introduce a mean-preserving variant that reallocates trust across coordinates without changing the net per-tensor step magnitude. On CIFAR-10 with ResNet-18, under a matched learning rate and decoupled weight decay, mean-preserving MGO-SC consistently improves over its AdamW baseline across clean, symmetric, and asymmetric label noise (e.g., +1.4 points at 40% symmetric noise; paired bootstrap 95% CI excluding zero; Wilcoxon p<0.01), while adding no second-order information or per-sample filtering. We report matched-seed effect sizes, nonparametric bootstrap confidence intervals, and paired significance tests, and we release code and raw logs.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T01:47:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37712v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37712v1"
-    },
-    {
-      "id": "2610.37709v1",
-      "title": "Towards Myocardial Infarction Diagnosis: An Investigation into Machine Learning and Deep Learning Algorithms using ECG Data",
-      "authors": [
-        "Rafid Ahnaf",
-        "Husne Mubarak",
-        "Fahim Ahsan",
-        "G. M. Refatul Islam",
-        "Rafeed Rahman",
-        "Nabuat Zaman Nahim"
-      ],
-      "abstract": "Myocardial Infarction (MI) is a severe and potentially fatal cardiac condition caused by myocardial injury due to ischemia, and timely detection can substantially reduce its mortality. Electrocardiography (ECG) is the primary diagnostic modality for MI, but manual interpretation is susceptible to human error. In this work, we propose Visionary V2, a multi-step, adaptive filtration method for ECG signal normalization, and use it to study machine learning (ML) and deep learning (DL) approaches to MI detection on the PTB Diagnostic ECG Database using all 15 available leads. On statistical features extracted from the filtered signals, such as the R-R interval, a Bagging ensemble of decision trees reaches 96.6% accuracy, compared with 87.7% when the signals are processed with BioSPPy. We further generate an image dataset from the filtered signals, on which a custom ResNet-50 misclassifies only 1 of 7,000 validation images and a custom CNN reaches an F1 score of about 98.7%. Finally, we apply LIME, Grad-CAM and Integrated Gradients to verify that the image models attend to the ECG waveform rather than the background. These results indicate that careful signal normalization combined with ML and DL models can support fast and accurate automated MI screening.",
-      "published": "October 26, 2026",
-      "published_raw": "2026-10-26T20:58:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37709v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37709v1"
-    },
-    {
-      "id": "2610.36135v1",
-      "title": "Physical structure as an organizing principle for universal Hamiltonian learning",
-      "authors": [
-        "Mingkang Liu",
-        "Zhanghao Zhouyin",
-        "Guanghui Wang",
-        "Daye Zheng",
-        "Lei Shen",
-        "Qiangqiang Gu"
-      ],
-      "abstract": "Density functional theory (DFT) gives the electronic structure of materials, but its cost limits large-supercell calculations and materials screening. Machine-learned Hamiltonians bypass the self-consistent cycle but are usually system-specific; universal ones could cover new compositions and disordered solids. Such models must generalize across chemistry and keep downstream properties physical, while staying inexpensive for large cells. Here we introduce UniTB, a universal E(3) equivariant Hamiltonian representation framework that integrates physical priors rooted in density-functional tight-binding theory with deep learning. UniTB's network, which corrects a prior Hamiltonian, generalizes across chemistry through a mixture of experts routed by that prior and a charge-equilibration head as in self-consistent-charge tight binding. A projection bounds band shifts from the prior, suppressing spurious states and keeping downstream properties physical. We provide the fastest SO(2) tensor-product GPU kernels for the network. The variant UniTB-Flash assembles its prior from two-center tables at $O(N)$ cost for $N$ atoms, against $O(N\\log N)$ on a grid. Trained on 29,242 crystals, UniTB reaches a 0.48 meV matrix-element error on nonmagnetic test crystals spanning 68 elements. Without amorphous training data, both models agree with DFT optics and conductivity of amorphous Ge-Sb-Te. UniTB-Flash ranks candidates with no significant difference from UniTB, whose property values are more accurate; together they screen 16,195 crystals for five application domains of industrial relevance.",
-      "published": "October 26, 2026",
-      "published_raw": "2026-10-26T18:45:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.36135v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.36135v1"
-    },
-    {
-      "id": "2610.35484v1",
-      "title": "Evaluating Bayesian deep learning for robust biomedical time-series classification under distribution shift: A sleep scoring case study",
-      "authors": [
-        "Mads Birch Sørensen",
-        "Ulrike Richter",
-        "Francois Gastambide",
-        "Michael Riis Andersen"
-      ],
-      "abstract": "In biomedical time-series classification, machine learning models often suffer from deteriorating accuracy and calibration due to distribution shift. We investigate to what degree Bayesian-inspired deep learning improves robustness through Bayesian model averaging (BMA). Using rodent sleep scoring as a case study, we evaluate BMA under distribution shifts in genotype, laboratory, and species. We systematically compare nine approximate inference methods spanning single- and multi-basin approaches across two neural network backbones on in-distribution (ID) data and five out-of-distribution (OOD) datasets. In our results, multi-basin methods perform best, outperforming baselines and single-basin methods. Compared with point estimates, BMA generally improves OOD accuracy and calibration across both architectures, while yielding only modest ID gains. It also often improves selective prediction and OOD and artifact detection, but, interestingly, not inter-rater disagreement detection.",
-      "published": "October 26, 2026",
-      "published_raw": "2026-10-26T14:14:26Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.35484v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.35484v1"
     }
   ]
 }
