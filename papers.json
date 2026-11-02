@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-11-01T02:50:38.376201",
+  "last_updated": "2026-11-02T02:57:43.551832",
   "count": 20,
   "papers": [
+    {
+      "id": "2610.41228v1",
+      "title": "Evolution of Financial AI: From Statistical Models to Agentic AI",
+      "authors": [
+        "Saba Asaad",
+        "Ali Bereyhi"
+      ],
+      "abstract": "Artificial intelligence (AI) in finance has evolved from statistical learning and machine learning for structured prediction, through deep learning and foundation models for representation learning, language understanding, and reasoning, to retrieval-augmented generation for knowledge-grounded reasoning and agentic AI for autonomous planning and execution. In this paper, we examine how researchers and practitioners can select and apply AI methods in finance. We first show that the major paradigms of financial AI address fundamentally different classes of problems, rather than forming a strict hierarchy of capability. We then review the current state of research on AI in finance and trace how these paradigms have reshaped financial data, financial tasks, decision support, and human-AI collaboration. Building on this, we propose practical guidelines for matching AI paradigms to task characteristics, and show that more advanced models, such as foundation models or autonomous agents, are not universally superior. We conclude by outlining open challenges for researchers and practitioners working toward reliable financial AI.",
+      "published": "October 30, 2026",
+      "published_raw": "2026-10-30T04:05:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.41228v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.41228v1"
+    },
+    {
+      "id": "2610.41094v1",
+      "title": "AIFaultBench: A Reproducible Benchmark of Real-World Faults in AI Software Systems",
+      "authors": [
+        "Mehil B Shah",
+        "Mohammad Masudur Rahman",
+        "Foutse Khomh"
+      ],
+      "abstract": "AI-based software systems remain difficult to debug because their failures can involve interactions among code, models, data, dependencies, hardware, and execution environments. Existing benchmarks cover specific classes of AI systems, while concerns about fault realism and reproducibility highlight the need for documented execution conditions and evidence. We present AIFaultBench, a benchmark of 770 real-world bugs from 105 AI-based software repositories across 76 organizations. It covers six classes of AI systems: machine learning, deep learning, reinforcement learning, systems based on large language models, agentic AI, and AI tooling and infrastructure. Each bug record connects the original report and affected codebase to structured metadata, environment setup scripts, a reproduction trigger, and investigation evidence. We reproduced 652 bugs (84.7%) under the recorded execution conditions and documented the outcomes of the remaining 118 attempts. Through its broad coverage, documented reproduction evidence, and common structure, AIFaultBench supports empirical studies of AI faults, debugging tool evaluation, practical failure investigation, and teaching with real-world examples.",
+      "published": "October 30, 2026",
+      "published_raw": "2026-10-30T00:26:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.41094v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.41094v1"
+    },
+    {
+      "id": "2610.41046v1",
+      "title": "Localizing predictive concepts encoded in neural representations via hierarchical testing",
+      "authors": [
+        "Viktoriia Huryn",
+        "Marco Simnacher",
+        "Jim Berend",
+        "Wojciech Samek",
+        "Christoph Lippert",
+        "Sonja Greven",
+        "Uwe Ohler"
+      ],
+      "abstract": "Understanding which regulatory sequence motifs a genomic deep learning model has learned, with statistical error guarantees, is essential for trusting its use in downstream tasks such as variant effect prediction. Existing approaches to identifying which units in a trained network encode human- understandable concepts fall into two groups. Exploratory methods rank and visualize units but offer no statistical guarantee that the selected units are associated with the prediction target across the population of inputs. Testing-based methods test only single units or one pre-defined set of them, and do not control the error across the many sets of units. We introduce CUTTIE (Cluster-tree Unit Top-down Testing of Independence with Error control), which clusters the units of each layer into a tree and tests the clusters top-down with conditional independence tests, localizing information about the target while controlling the family-wise error rate. Thereby, we identify clusters that carry information about the target beyond the rest of the layer. For the units in the identified clusters, conditional attribution maps then reveal what motifs they encode. In a controlled simulation, the procedure identifies the clusters whose concepts affect the target. We apply the procedure to a convolutional model predicting cell-type-specific chromatin accessibility from DNA sequence, where the concepts encoded in the identified clusters map onto known regulatory motifs.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T22:34:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.41046v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.41046v1"
+    },
+    {
+      "id": "2610.40954v1",
+      "title": "CAMEL: Cross-Architecture Masked Embedding Learning for Ultra-Lightweight Retinal Foundation Models",
+      "authors": [
+        "Andre Guarnier De Mitri",
+        "Giovani Decico Lucafo",
+        "Miller Matheus Lima Anacleto Rocha",
+        "Diego Furtado Silva"
+      ],
+      "abstract": "Recent progress in deep learning has substantially advanced automated grading of ophthalmologic pathologies, supported by large annotated datasets and improved representation learning. However, a significant gap remains between state-of-the-art performance and clinical scalability. In particular, foundation models have reshaped image-based medical screening and diagnosis. These large-scale architectures trained on extensive datasets learn rich, generalizable feature representations that can be adapted to a wide range of downstream tasks. In ophthalmology, RETFound, one of the most relevant foundation models for retinal images, performs strongly across classification, segmentation, and risk prediction tasks. Despite their effectiveness, foundation models are often computationally prohibitive, hindering their deployment in real-world clinical environments where hardware constraints and latency are critical. To bridge this gap, we introduce CAMEL (Cross-Architecture Masked Embedding Learning), a novel cross-architecture distillation framework that uses an asymmetric masking strategy during embedding learning to effectively transfer knowledge from massive teacher foundation models to compact, lightweight student models. Our experimental evaluation across four datasets shows that CAMEL preserves accuracy while drastically reducing computational complexity, enabling lightweight yet highly accurate models suitable for resource-limited clinical settings.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T20:33:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40954v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40954v1"
+    },
     {
       "id": "2610.40586v1",
       "title": "Multistatic ISAC with Deep Learning-Based Clutter Suppression for 5G and Beyond",
@@ -139,6 +199,20 @@
       "arxiv_link": "http://arxiv.org/abs/2610.39821v1"
     },
     {
+      "id": "2610.40728v1",
+      "title": "Bayesian Distribution System State Estimation with Flow Matching",
+      "authors": [
+        "Nan Lin",
+        "Peter Palensky",
+        "Pedro Vergara Barrios"
+      ],
+      "abstract": "Medium-voltage feeders have few real-time measurements, so distribution system state estimation (DSSE) rests on pseudo-measurements of the secondary substations, a prior in Bayesian terms. Weighted least squares keeps the power flow exact but reduces this prior to a mean and variance, while supervised deep learning estimators also learn the power flow and are tied to one measurement set. We propose PoSE (posterior sampling for state estimation), which keeps the Bayesian structure of DSSE and learns only what the distribution system operator does not know, namely the distribution of substation injections, modelled by a neural network trained with flow matching on historical data. The power flow equations, grid topology and measurements enter only at sampling, through a noise-aware Kalman-type correction. The neural network therefore never approximates the power flow, but every posterior sample is a physically consistent operating point, and one trained prior serves any measurement set, noise level and topology. On the IEEE 33-bus feeder, PoSE lowers the probabilistic injection error (CRPS) by 6.7-7.5% against a full-covariance Gaussian prior in all 12 tested settings. It provides reliable uncertainty: the 90% intervals contain the true injection almost exactly as often as exact posterior samples would, whereas those of supervised estimators contain it in only 37-78% of cases. On the 240-bus unbalanced three-phase Iowa feeder, it gives the lowest injection, voltage and branch-current errors of all estimators. A fast variant matches this accuracy at 0.2-0.6s per snapshot and, without retraining, beats Gaussian priors and retrained supervised estimators on seven reconfigured topologies.",
+      "published": "October 29, 2026",
+      "published_raw": "2026-10-29T10:37:37Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40728v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40728v1"
+    },
+    {
       "id": "2610.39773v1",
       "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
       "authors": [
@@ -216,95 +290,19 @@
       "arxiv_link": "http://arxiv.org/abs/2610.38773v1"
     },
     {
-      "id": "2610.38558v1",
-      "title": "REVBRAIN: Real-time Probabilistic EEG Forecasting Using Residual Vector Quantization",
+      "id": "2610.40700v1",
+      "title": "Automatic Construction of Strong Simple Baselines",
       "authors": [
-        "Hanna Pankka",
-        "Jaakko Lehtinen",
-        "Timo Roine"
+        "Caleb N. Ellington",
+        "Jiaqi Wang",
+        "Sohan Addagudi",
+        "Elijah Cole"
       ],
-      "abstract": "Real-time forecasting of resting-state EEG signals is required by applications like brain-state-dependent stimulation, where computer generated actions are coupled with ongoing neural oscillations. Recently, the deep learning model WaveNet was proposed for the forecasting task. It shows superior accuracy compared to the prevailing method, the linear autoregressive (AR) model, and provides a built-in uncertainty measure due to its probabilistic modeling framework. However, inference using WaveNet is too slow for real-time use due to its sample-by-sample autoregressive operation: a single forecast requires evaluating the model tens or hundreds of times depending on the length of the prediction window. In this paper, we present REVBRAIN, a probabilistic deep learning method that produces forecasts in real time by generating the forecast over the whole prediction horizon at once. This is achieved by tokenizing the output space using residual vector quantization (RVQ) and generating forecasts over the items in the tokenized space. We tested REVBRAIN for forecasting 200 ms of EEG time series in the alpha-frequency band (8-13 Hz) and compared our results against WaveNet model. We found that REVBRAIN achieved real-time inference on a laptop GPU and an over $50\\times$ speedup compared to WaveNet, while reaching superior prediction accuracy. By achieving real-time inference speed, REVBRAIN enables incorporating accurate and probabilistic EEG forecasting into BCI applications, opening up new ways for investigating the functioning of the human brain.",
+      "abstract": "To rigorously establish the value of a novel deep learning method, it must be compared against appropriate baselines. As deep learning has become increasingly common in the physical and life sciences, there have been numerous cases in which apparent progress has turned out to be an artifact of omitted or missing baselines. In this work, we investigate whether this problem can be mitigated by using large language models to automate the construction of baselines. We assemble 36 supervised classification and regression tasks from peer-reviewed studies in Nature, Science, and Cell-family journals that investigate novel deep learning methods for scientific applications. We then use a language model to construct simple baselines for each task. These automatically constructed baselines are strong, recovering a median of 95.5% (mean 85.7%) of the gap between a trivial predictor and the score of the deep learning model. The median simple baseline matches or exceeds the performance of the deep learning model in 12 studies. We further examine the variation across scientific domains and publication venues and we characterize the effects of test-time compute and access to different levels of study context. As human peer review has struggled to keep up with the rapidly increasing volume of research articles in recent years, our results suggest that automated baseline construction is a practical and scalable check on deep learning contributions in the physical and life sciences.",
       "published": "October 28, 2026",
-      "published_raw": "2026-10-28T09:53:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.38558v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.38558v1"
-    },
-    {
-      "id": "2610.38172v1",
-      "title": "Data Amount Heterogeneity Improves Performance in Federated Learning for Neuroimaging",
-      "authors": [
-        "Paul Kurian",
-        "Tamoghna Chattopadhyay",
-        "Abhijith Shaji",
-        "Greg Ver Steeg",
-        "Paul M. Thompson",
-        "Jose Luis Ambite"
-      ],
-      "abstract": "Federated Learning (FL) allows for secure analysis of distributed data without data sharing. We and others have successfully applied FL to neuroimaging tasks, such as Alzheimer's disease classification from structural magnetic resonance imaging (MRI). FL trains a deep learning model locally at each site, encrypts the local model parameters and sends them to a federation controller that aggregates the local models under homomorphic encryption, the resulting community model is sent back to the sites for further training, and the process repeats for a number of rounds. FL often achieves learning performance (e.g., accuracy) close to centralized training, but no data leaves the sites and model parameters are protected through encryption and other measures. In this paper, we show that federations composed of sites with heterogeneous amounts of data (1 large site plus small sites) perform better than homogeneous (same data per site) federations, particularly in low data regimes, while reaching performance close to centralized training. Having a big site often results in faster convergence and higher final accuracy. Heterogeneous federations better exploit sites with small amounts of data, a common situation in large consortia such as ENIGMA.",
-      "published": "October 28, 2026",
-      "published_raw": "2026-10-28T02:22:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.38172v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.38172v1"
-    },
-    {
-      "id": "2610.38037v1",
-      "title": "Measuring Deep Learning Performance - An Empirical Study of Performance Distributions Across Architectures and Tasks",
-      "authors": [
-        "Kevin L Coakley",
-        "Odd Erik Gundersen"
-      ],
-      "abstract": "Context: Non-determinism in deep learning algorithm design and implementation leads to performance variation, meaning model performance is not a single value, but rather a distribution. These model performance distributions are underexplored despite their impact on robustness. Objective: We investigate the robustness of deep learning performance to sources of non-determinism, specifically focusing on how performance distributions differ across various architectures and tasks. Method: We conducted 186 experiments on image classification and time series forecasting architectures. Each experiment was run 100 times with different random seeds to generate performance distributions, resulting in 18,600 runs. Robustness was quantified using metrics for spread, symmetry, and tail risk. Results: Performance distributions are frequently non-Gaussian, particularly in time series forecasting. Model size does not systematically affect robustness -- larger image classification models show fewer outliers but not lower spread, while smaller time series models show lower spread but more extreme underperformers. Training duration does not scale linearly; early stopping effectively balances performance and robustness. Mean performance does not predict robustness - time series forecasting shows moderate correlation while image classification shows none. Time series models produce nearly three times more underperforming outliers than image classification models, indicating substantially higher tail risk. Conclusions: Tail risk poses serious concerns for Trustworthy AI in high-stakes applications. Models performing well on average may exhibit long tails and extreme outliers revealed only through distributional analysis. Mean performance alone should not guide model selection; assessment of spread, symmetry, and tail risk is essential for reliable model assessment where consistent performance is critical.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T22:47:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.38037v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.38037v1"
-    },
-    {
-      "id": "2610.37993v1",
-      "title": "Deep learning for non-transvenous ICD screening: tailored neural network architectures, extended experiments, and explainability",
-      "authors": [
-        "Bartosz Morawski",
-        "Samuel J. Ward",
-        "Alex Touze",
-        "Lin-Thiri Toon",
-        "Paul R. Roberts",
-        "John Paisey",
-        "Alain B. Zemkoho"
-      ],
-      "abstract": "This paper studies two non-transvenous implantable cardioverter-defibrillators (ICDs), namely the Subcutaneous ICD (S-ICD) and the Extravascular ICD (EV-ICD). Both avoid the complications of transvenous leads but are prone to oversensing, which can trigger inappropriate shocks associated with increased mortality. Oversensing risk is predicted by the ratio of T- or P-wave amplitude to R-wave amplitude (T:R, P:R), and these ratios vary over a 24-hour period. Yet S-ICD screening uses a single 10-second electrocardiogram (ECG) segment, and the EV-ICD has no formal screening protocol whatsoever. We present a 24-hour ambulatory screening framework for both devices which includes the first T:R analysis in an EV-ICD cohort and the first full evaluation of P:R prediction. We introduce AmpRatioNet, a family of 1D convolutional neural network architectures operating directly on the ECG signal, and benchmark it against the best existing approach - based on 2D phase space reconstruction images. Evaluation uses 4,605 clinician-annotated 10-second segments from 89 patients, with patient-level 10-fold cross-validation and bootstrap confidence intervals. AmpRatioNet-SE demonstrates superior performance on every metric in each setting with no device- or ratio-specific redesign. An explainability analysis against interpretable classical peak labelling algorithms shows that AmpRatioNet-SE's increase in error on oversensing-prone segments is up to 14 times smaller than theirs. Segment-level predictions are aggregated into a 24-hour timeline, extending S-ICD screening beyond 10 seconds and offering a plausible EV-ICD screening pathway pending device-level validation.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T21:42:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37993v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37993v1"
-    },
-    {
-      "id": "2610.37784v1",
-      "title": "Sparse tensor networks for individual tree diameter estimation in mixed forests",
-      "authors": [
-        "Clara Lößl",
-        "Fabian Ewald Fassnacht",
-        "Viacheslav Barkov"
-      ],
-      "abstract": "Measurements of tree diameter at breast height (DBH) are fundamental to forest inventories, but manual surveys across entire stands or regions are impractical. UAV-borne laser scanning (ULS) enables scalable automated forest surveys, yet canopy occlusion makes accurate DBH estimation from ULS point clouds non-trivial. Limited stem-level point density of ULS data constrains approaches relying on detailed stem reconstruction, such as Quantitative Structure Models (QSMs) and circle fitting. Empirical machine learning methods based on predefined point cloud metrics are an alternative. New deep learning approaches offer an even more principled solution, allowing models to learn directly from point clouds. Sparse tensor networks have shown particular promise, transforming forestry tasks such as tree species classification. We investigate whether these strengths can be extended to estimate individual tree DBH from ULS data across four mixed-species temperate forest plots in Germany. We further advance existing sparse tensor networks by introducing TreeNext, a lightweight deep learning architecture for direct individual tree parameter estimation from voxelized LiDAR point clouds. We present a fully automated forest inventory pipeline from individual tree instance segmentation to DBH regression, and quantify the impact of segmentation errors by comparing performance on automatically segmented and ground truth instances. TreeNext achieves an $R^2$ of 0.8355 on automatically segmented trees and 0.9380 on ground truth segments, outperforming strong tabular baselines including Random Forest and XGBoost. Segmentation quality emerges as the dominant error source in the automated pipeline. TreeNext proves highly data-efficient, performing well even in small data scenarios. Our findings establish sparse tensor networks as a practical foundation for automated individual tree DBH estimation from ULS.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T18:05:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37784v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37784v1"
-    },
-    {
-      "id": "2610.37374v1",
-      "title": "Comparing Temporal Deep Learning Architectures for Discrete Cross-User Myoelectric Control",
-      "authors": [
-        "Ethan Eddy",
-        "Evan Campbell",
-        "Scott Bateman",
-        "Erik Scheme"
-      ],
-      "abstract": "The recognition of dynamic gestures via discrete myoelectric control is becoming an attractive input modality for event-based human-machine interaction. While recent work suggests that discrete cross-user models are possible (i.e., no calibration data is required from the end user), few have evaluated techniques to optimize these systems and their generalizability to new randomly prompted data simulating real-world discrete control is relatively unknown. Using the 612-user EMG-EPN dataset, this work benchmarks five temporal deep-learning approaches, evaluates the tradeoff between performance and model complexity, and compares hand-crafted and machine-learned feature extraction techniques. The CNN-GRU achieved the best accuracy of 93% when tested on 184 previously unseen users. These models were then evaluated on a different, more realistic, unsegmented dataset, wherein users were randomly prompted to elicit discrete gestures during a continuous data collection. This dataset was recorded five years apart and in a separate country from the data used to train the original model. Results show that the cross-user results scale to this new dataset (accuracies of 96%) even though no feedback was given to users during the elicitation of gestures. These findings highlight the exciting potential of discrete zero-shot cross-user myoelectric control and offer valuable insights for the continued advancement of this promising technology.",
-      "published": "October 27, 2026",
-      "published_raw": "2026-10-27T15:05:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.37374v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.37374v1"
+      "published_raw": "2026-10-28T19:46:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2610.40700v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2610.40700v1"
     }
   ]
 }
