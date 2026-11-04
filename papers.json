@@ -1,7 +1,241 @@
 {
-  "last_updated": "2026-11-03T04:15:48.378500",
+  "last_updated": "2026-11-04T03:34:40.571413",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.04664v1",
+      "title": "Feature-Based and Deep Learning Methods for Astronomical Light Curve Classification",
+      "authors": [
+        "V. Baymakanov",
+        "Kh. Khamitov",
+        "A. Raimova",
+        "A. Isaeva",
+        "R. Taran",
+        "M. Zedan",
+        "M. Kornilov",
+        "M. Demianenko",
+        "K. Malanchev",
+        "M. Hushchyn"
+      ],
+      "abstract": "We compare feature-based machine learning and end-to-end deep learning for variable star classification using the Zwicky Transient Facility (ZTF) StarEmbed dataset, which contains about 40,000 objects across seven imbalanced classes. Classical models trained on physically motivated features consistently outperform deep networks trained directly on raw light curves. We find that limited labeled data contributes to the performance gap, while the multivariate, irregularly sampled, and morphologically diverse nature of light curves poses additional challenges for deep learning models. While deep learning holds promise for learning representations directly from observations, our results indicate that current models fail to generalize with the available training set size. These findings motivate further investigation of the benefits of scaling labeled datasets and self-supervised pretraining on large unlabeled surveys. This work establishes a quantitative baseline for future research and highlights the need for further innovations to unlock the potential of deep learning in astronomical time series analysis.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T10:50:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.04664v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.04664v1"
+    },
+    {
+      "id": "2611.04273v1",
+      "title": "Deep Learning Compilers: Architecture, Optimization, and Empirical Characterization",
+      "authors": [
+        "Jinghao Wen",
+        "Ruixuan Wang",
+        "Xun Jiao"
+      ],
+      "abstract": "As deep learning (DL) models become increasingly complex and hardware architectures grow more heterogeneous, DL compilers play a critical role in optimizing computational efficiency and enabling scalable deployment. This paper presents a systematic analysis of DL compilers, covering their architectural evolution, compilation workflows, optimization techniques, and emerging research directions. We organize DL compiler architectures into frontend, middle-end, and backend stages, emphasizing the role of the middle-end in connecting high-level model representations with hardware-specific optimizations. We further examine representative DL compilers and recent optimization techniques across different compilation stages. Beyond architectural and technical analysis, we conduct an empirical evaluation of compiler behaviors to investigate the effectiveness of graph optimization, compilation overhead, and dynamic-shape handling. Experiments using PyTorch/TorchInductor on an NVIDIA RTX A6000 demonstrate that compiler benefits depend strongly on workload characteristics, with speedups of up to 8.21\\times for fusion-friendly computation graphs, while other workloads exhibit limited improvements. Our results further reveal that compilation overhead can require thousands of executions to amortize, and dynamic-shape compilation reduces cumulative shape-transition costs by approximately 70\\% at the expense of modest steady-state performance degradation. By combining systematic architectural analysis with quantitative experimental evidence, this work provides insights into the design, optimization, and practical deployment of modern DL compilers.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T04:02:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.04273v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.04273v1"
+    },
+    {
+      "id": "2611.04270v1",
+      "title": "From Sea Surface Height to Velocity - A Machine Learning Approach",
+      "authors": [
+        "Yaswanth Reddy Yaradoddi",
+        "Jinbo Wang",
+        "Elyes Serghine"
+      ],
+      "abstract": "Inferring upper-ocean velocity from altimetric sea surface height (SSH) remains challenging below 50~km, scales now resolved by the Surface Water and Ocean Topography (SWOT) mission. Conventional methods rely on geostrophic or cyclogeostrophic balance. Here, we demonstrate that deep learning can predict the full velocity vector from SSH and environmental data and recover derivative-based diagnostics, including spectral energy flux. We trained a U-Net encoder--decoder on hourly fields from the pre-SWOT Cape Basin extraction of the LLC4320 ocean simulation, with 1.5-km grid spacing ($11.8$--$15.8^\\circ$E, $41$--$45^\\circ$S). Inputs were SSH, sea surface temperature (SST), and wind stress; targets were horizontal velocities at the surface and 50~m, where wind influence is weaker. At 50~m, the best model achieves a speed RMSE of $0.049\\,\\mathrm{m\\,s^{-1}}$, 29% lower than the geostrophic approximation. Predicted relative vorticity has a correlation of 0.93, compared with 0.75 for the geostrophic approximation. The model also recovers divergence with a correlation of 0.66, whereas geostrophic velocity is nondivergent by definition. Tests of training strategies yield four findings: SSH gradients outperform raw SSH as inputs; wind stress is the most useful covariate for total velocity prediction; SST benefits vary seasonally; and including vorticity and divergence in the loss improves accuracy. These results offer a path for transferring high-fidelity simulation physics to SWOT applications, where kilometer-scale SSH snapshots contain superposed balanced and unbalanced signals.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T03:58:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.04270v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.04270v1"
+    },
+    {
+      "id": "2611.04200v1",
+      "title": "Impact of Input Resolution in Mammographic Mass Detection: A Controlled Multi-Architecture Study",
+      "authors": [
+        "Kaan Buyukdemirci",
+        "Emine Ulku Saritas"
+      ],
+      "abstract": "Deep-learning-based mass detectors usually downsample mammograms, trading fine image detail for lower computational cost. However, published studies cannot reveal how much accuracy this trade-off sacrifices, since they also differ in architecture, preprocessing, and evaluation protocol. In this work, we isolated the effect of input resolution in a controlled study on the VinDr-Mammo dataset, training 18 detectors at six input resolutions ranging from 512 x 416 to 1600 x 1280 pixels, for 108 model-resolution combinations. Whole mammograms were resized without cropping or tiling. For each model, preprocessing, model initialization, augmentation, and evaluation procedures were kept fixed across resolutions. Detection accuracy was evaluated by mAP50 on the 219 mass-positive images of the official test split, and 57 combinations with test mAP50 of at least 0.60 were analyzed. From the lowest to the highest resolution, median mAP50 rose from 0.626 to 0.660 and the best mAP50 from 0.670 to 0.709. The best result, achieved by DINO with a ConvNeXt-S backbone, is the highest mAP50 reported to date on mass-positive VinDr-Mammo images. Gains were concentrated in small masses: for the smallest third of lesions, median mAP50 rose by 0.074 (from 0.367 to 0.441), compared with 0.007 and 0.032 for medium and large masses. Median training time increased from 0.45 to 1.40 h, and median inference time from 23.6 to 113.7 ms per image. Therefore, higher input resolution mainly benefits the small masses that are hardest to detect, at a computational cost that remains practical.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T02:36:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.04200v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.04200v1"
+    },
+    {
+      "id": "2611.04185v1",
+      "title": "What Does 4-Bit Microscaling Cost a Wearable Activity Recognizer?",
+      "authors": [
+        "Megan Healy",
+        "Hossein Valavi"
+      ],
+      "abstract": "Wearable sports sensors can recognize actions on the device itself, where lower-precision numbers reduce model storage and memory traffic. Two 4-bit block-scaled formats, MXFP4 from the Open Compute Project, introduced in 2023, and NVFP4 from NVIDIA, introduced in 2025, are drawing interest. Published evaluations cover general deep-learning benchmarks and large language models; to our knowledge, nobody has yet measured what they cost a small wearable-sensor model. We train a 159,492-parameter 1D CNN to recognize four basketball actions from wrist-accelerometer data in Hang-Time HAR and test it on players it has never seen, using five-fold cross-validation grouped by player. Every comparison between number formats is made fold by fold. In full precision the model reaches 69.26\\% macro-F1. Measured TFLite FP16 and INT8 models lose at most 0.16 percentage points. In simulation, 4-bit weights cost 1.45 points with MXFP4 and 0.72 points with NVFP4. When activations are quantized to 4 bits as well, MXFP4 loses 5.14 points and NVFP4 only 0.75, and NVFP4 comes out ahead in all five held-out-player folds. The ranking survives two alternative simulator settings, with NVFP4 leading by 3.49 to 4.40 points. A $2 \\times 3$ ablation with 4-bit weights and activations (two block sizes and three scale rules) points to scale selection as the main source of MXFP4's loss. The reference MXFP4 conversion we simulate rounds the scale down, which can pick scales that are too small, so many blocks clip their largest values. Rounding the scale up recovers 3.18 points with 32-value blocks and 3.63 points with 16-value blocks, and switching to an 8-bit floating-point scale, as NVFP4 does, adds another 0.84 and 1.20 points. Block size matters less. Under this round-down rule, 16-value blocks score 0.44 points below 32-value blocks in all five folds; under the other two rules there is no consistent effect.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T02:22:12Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.04185v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.04185v1"
+    },
+    {
+      "id": "2611.04146v1",
+      "title": "RGDM: Robust Graph Diffusion Model",
+      "authors": [
+        "Yancheng Wang",
+        "Ping Li",
+        "Dongfang Sun",
+        "Yingzhen Yang"
+      ],
+      "abstract": "Diffusion models represent a powerful class of generative models known for their solid theoretical foundations and remarkable performance across diverse tasks and domains. Existing node level diffusion methods synthesize nodes and edges within a graph, but are not designed to learn a robust generator from adversarially corrupted graphs. In this study, we introduce the Robust Graph Diffusion Model (RGDM), designed to generate labeled synthetic graph structures consisting of nodes and edges that integrate seamlessly into a given graph. The RGDM consists of a Robust Graph Autoencoder (RGAE) and a Latent Diffusion Model (LDM). Leveraging an edge selection mechanism and an innovative low-rank regularization on the latent feature, the RGDM produces clean and high-quality synthetic graph structures, even when trained on graphs subject to adversarial attacks. Comprehensive experimental evaluations reveal that Graph Neural Networks (GNNs) trained on the augmented graph, which is formed by merging the original attacked graph with the synthetic graph structures, exhibit significantly improved robustness against various graph adversarial attacks in the context of semi-supervised node classification. The code of the RGDM is available at https://github.com/Statistical-Deep-Learning/RGDM.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T01:40:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.04146v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.04146v1"
+    },
+    {
+      "id": "2611.03597v1",
+      "title": "Structured Visual Landscape: Generating Preferred Representations in Biological and Artificial Neural Networks",
+      "authors": [
+        "Yusong Zhao",
+        "Edgar Y. Walker",
+        "Hao Wang",
+        "Mi Lu"
+      ],
+      "abstract": "Understanding how neurons respond to visual stimulus is an important question in both deep learning and neuroscience. It has significant implications for enhancing the interpretability of black-box artificial neural networks and for understanding the visual representation in the human brain. We propose a structured visual representations landscape and design an activation-based prior that allows us to effectively regularize the landscape with activations from brain regions or neural network units. Our model Vis-Lens integrates a variational autoencoder and a diffusion model into an image generation framework. It enables the generation of natural, realistic preferred images by directly modifying the activation-regularized latent codes without per-image iterative optimization. We demonstrate the effectiveness of our framework on both artificial neural networks and human visual cortex using functional magnetic resonance imaging (fMRI) data. Our framework improves activation modulation and image realism compared with a recent state-of-the-art method for generating preferred visual representations of these neural targets.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T18:39:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.03597v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.03597v1"
+    },
+    {
+      "id": "2611.03552v1",
+      "title": "Nonparametric Intensity Estimation for Covariate-Driven Poisson Processes Using Deep Learning",
+      "authors": [
+        "Atsutomo Yara",
+        "Yoshikazu Terada"
+      ],
+      "abstract": "We consider nonparametric maximum likelihood estimation of the intensity function of a Poisson process, allowing the intensity to depend on observed covariates. Such models describe how event rates vary with external conditions, including conditions under which the intensity becomes arbitrarily small or vanishes. However, risk analysis based on the Kullback-Leibler (KL) divergence typically requires the true intensity to be bounded away from zero, a restrictive assumption in applications. We develop a unified approach that avoids this assumption and derive an oracle inequality for the covariate-averaged Hellinger distance between the true intensity and the nonparametric maximum likelihood estimator (NPMLE). As an application of the oracle inequality, we establish convergence rates for NPMLEs based on deep neural networks (DNNs). Our results show that, as in nonparametric regression, the ability of DNNs to capture underlying structure leads to improved convergence rates. Specifically, DNN-based NPMLEs mitigate the curse of dimensionality when the true intensity has a compositional structure and automatically adapt to a low-dimensional Riemannian manifold structure of the event space. For intensity functions with a compositional structure, DNN-based NPMLEs achieve nearly minimax-optimal convergence rates without explicitly incorporating this structure into the network architecture. Simulations demonstrate that DNN-based estimators outperform kernel estimators in most settings, while manifold kernels remain competitive in some designs. Finally, we analyze stimulus-evoked neural spiking using data from the Allen Brain Observatory Visual Coding Neuropixels project. DNN-based NPMLEs provide better out-of-sample performance than a conditional kernel estimator, as evaluated by held-out log-likelihood.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T18:14:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.03552v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.03552v1"
+    },
+    {
+      "id": "2611.03516v1",
+      "title": "EmbryoProfiler: A Visual Clinical Decision Support System for IVF",
+      "authors": [
+        "Johannes Knittel",
+        "Simon Warchol",
+        "Jakob Troidl",
+        "Camelia D. Brumar",
+        "Helen Yu Yang",
+        "Eric Mörth",
+        "Robert Krüger",
+        "Daniel Needleman",
+        "Dalit Ben-Yosef",
+        "Hanspeter Pfister"
+      ],
+      "abstract": "In-vitro fertilization (IVF) has become standard practice to address infertility, which affects more than one in ten couples in the US. However, current protocols yield relatively low success rates of about 20% per treatment cycle. A critical but complex and time-consuming step is the grading and selection of embryos for implantation. Although incubators with time-lapse microscopy have enabled computational analysis of embryo development, existing automated approaches either require extensive manual annotations or use opaque deep learning models that are hard for clinicians to validate and trust. We present EmbryoProfiler, a visual analytics system collaboratively developed with embryologists, biologists, and machine learning researchers to support clinicians in visually assessing embryo viability from time-lapse microscopy imagery. Our system incorporates a deep learning pipeline that automatically annotates microscopy images and extracts clinically interpretable features relevant for embryo grading. Our contributions include: (1) a semi-automatic, visualization-based workflow that guides clinicians through fertilization assessment, developmental timing evaluation, morphological inspection, and comparative analysis of embryos; (2) innovative interactive visualizations, such as cell-shape plots, designed to facilitate efficient analysis of morphological and developmental characteristics; and (3) an integrated, explainable machine learning classifier offering transparent, clinically-informed embryo viability scoring to predict live birth outcomes. Quantitative evaluation of our classifier and qualitative case studies conducted with practitioners demonstrate that EmbryoProfiler enables clinicians to make better-informed embryo selection decisions, potentially leading to improved clinical outcomes in IVF treatments.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T17:51:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.03516v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.03516v1"
+    },
+    {
+      "id": "2611.03420v1",
+      "title": "Temporal Island Sparse Autoencoders for Interpreting Clinical Time-Series Models",
+      "authors": [
+        "Muhan Yeo",
+        "Bong Gyun Kang",
+        "HyunGi Kim",
+        "Sungroh Yoon"
+      ],
+      "abstract": "Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model's representations. Each dictionary entry (latent) is defined by learned temporal Gaussian islands (specifying when the concept is active) and a sparse variable-composition vector (specifying which variables are involved). A decoupled selector then identifies which dictionary entries drive each patient's prediction, separating representation learning from attribution. We evaluate TI-SAE across five backbone architectures spanning different representation strategies on MIMIC-III and MIMIC-IV (three prediction tasks each). TI-SAE produces structured clinical concepts that go beyond transient attribution heatmaps while achieving strong performance on standard faithfulness benchmarks.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T16:43:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.03420v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.03420v1"
+    },
+    {
+      "id": "2611.03234v1",
+      "title": "SHAPE: Solar Heliospherical Analysis and Prediction of Eruptions A machine learning approach to solar flare forecasting",
+      "authors": [
+        "S. Kadakol",
+        "P. Deshmukh",
+        "A. B. Bendre"
+      ],
+      "abstract": "Solar flares are the most energetic impulsive events in the solar system, and reliable operational forecasting of the rarest and most destructive M- and X-class events remains an open problem. We present Solar Heliospherical Analysis and Prediction of Eruptions (SHAPE), a two-phase deep-learning pipeline that bypasses sunspot proxies in favour of direct soft X-ray observations from the GOES X-ray Sensor (XRS). Phase 1 forecasts monthly flare counts, aggregated to annual totals, with a hybrid model: a cycle-shape curve anchored to published solar-cycle minima fixes the timing and mean profile, and a compact gated-recurrent-unit network with Monte Carlo dropout models the residual variability. Trained on the science-quality NOAA GOES Flare Report for 1995--2020 and validated on 2021--2025, it achieves a mean absolute error of 204 flares yr$^{-1}$, although it underestimates the 2024 solar maximum. Phase 2 forecasts the next day's strongest flare class (C, M or X) with a shared-trunk, dual-head LSTM operating on a 12-day rolling window of five intensity features, with an optional blend against an active-region physics score and a decision threshold tuned to favour recall of M-or-above (M+) events. On a 100-day chronological backtest, the classifier attains a true skill statistic of 0.351, a Heidke skill score of 0.335 for M+ events, a Brier skill score of 0.163 relative to climatology, and an expected calibration error of 0.023. A day-to-day persistence baseline is, however, competitive on both skill scores, showing that much short-term predictability in flare class is autocorrelation rather than learned structure. SHAPE shows that competitive flare forecasting is achievable with compact architectures that retain in minutes on standard hardware, without sunspot proxy inputs.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T14:49:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.03234v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.03234v1"
+    },
+    {
+      "id": "2611.03154v1",
+      "title": "PaddleMaterials: An End-to-End Deep Learning Toolkit for Materials Science",
+      "authors": [
+        "Xuwei Liu",
+        "Zhimin Zhang",
+        "Xiaoguang Hu",
+        "Zhongwei Liu",
+        "Yuanhui Sun",
+        "Jun Huo",
+        "Hua Wu",
+        "Haifeng Wang"
+      ],
+      "abstract": "Machine learning supports materials design, atomistic simulation and experimental characterization, yet models and workflows remain fragmented. We present PaddleMaterials, an open-source framework integrating heterogeneous materials-learning tasks while preserving task-specific representations and scientific semantics. It unifies data processing, training, evaluation, pretrained-model management and workflows across six task classes: property prediction, structure generation, machine-learning interatomic potentials, electronic-structure fields, spectrum elucidation and microscopy image processing. Task interfaces record physical quantities, units, aggregation conventions and references, making cross-task composition verifiable. A shared compiler backend enables switching from dynamic-graph to compiled execution through one setting, using graph optimization, operator fusion and hardware-targeted code generation without changing model definitions. Across 65 model instances in 11 groups, compiled execution accelerated every instance in eight groups, with group median speedups of 11%-224% and group maximum speedups of 11%-336%. Case studies on LiMnO2 and toluene link structure generation or spectrum elucidation, interatomic-potential relaxation, property prediction and electron-density prediction, using same-geometry density functional theory (DFT) calculations as references. For LiMnO2, predicted formation energies for generated and relaxed structures differed from same-geometry PBE+U references by at most 7 meV per atom, while the computational cost of model steps was less than one-twentieth of a DFT single-point calculation. PaddleMaterials extends unified materials workflows beyond conventional property, potential and structure-generation tasks while supporting verifiable cross-task operations and compiled execution.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T14:03:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.03154v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.03154v1"
+    },
+    {
+      "id": "2611.02488v1",
+      "title": "End-to-End Stability of Online Active Learning in Large-Scale Neural Systems",
+      "authors": [
+        "Shuiwen Shen",
+        "Jinhua Zhang",
+        "Chenlei Hou",
+        "Peng Shi",
+        "Yong Han",
+        "Bo Gao",
+        "Xiaoxiao Na",
+        "Zhihui Lin",
+        "Pengtao Du"
+      ],
+      "abstract": "Online Active Learning (OAL) aims to extend deep learning from static inference after offline training to continuous adaptation during real-time interaction with a changing physical environment. This transition is essential for safety-critical applications, but it raises a central theoretical question: whether the online parameter update process remains stable when scaled to multilayer neural architectures. This paper develops a stability-focused OAL framework. The framework uses prediction error as a feedback signal to update a structured deep model, thereby linking online learning with Lyapunov-based energy minimization. We show that prediction error convergence alone is insufficient for global parameter convergence because multilayer networks may admit high-dimensional manifolds of equivalent output solutions. The analysis therefore separates output error regulation, internal zero dynamics, interlayer coupling, and parameter convergence. Persistency of excitation and active damping are then used to remove the residual null-space modes that remain after output error convergence. A cascaded Lyapunov analysis establishes asymptotic stability of the overall OAL learning process, while monotonic activation functions and diffeomorphic layer mappings provide the uniqueness condition for the target parameter trajectory. The resulting proof provides a theoretical basis for applying online adaptive learning to large-scale neural systems in nonstationary and safety-critical settings.",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T04:02:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.02488v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.02488v1"
+    },
+    {
+      "id": "2611.02312v1",
+      "title": "Improving Financial Cybersecurity Through Fraud Transaction Detection with Deep Learning",
+      "authors": [
+        "Harish Kant Pathak",
+        "Rahul Kumar"
+      ],
+      "abstract": "Financial fraud detection remains a critical challenge in cybersecurity, with traditional rule-based systems struggling to keep pace with evolving attack patterns. This paper presents a deep learning approach for fraud transaction detection, leveraging neural network architectures to identify anomalous financial behaviors with high accuracy. We evaluate multiple deep learning models including LSTM, CNN, and hybrid architectures on real-world financial transaction datasets, demonstrating significant improvements over conventional machine learning baselines. Our approach achieves robust performance in detecting fraudulent transactions while minimizing false positives, providing a scalable solution for enterprise financial cybersecurity systems",
+      "published": "November 02, 2026",
+      "published_raw": "2026-11-02T00:01:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.02312v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.02312v1"
+    },
+    {
+      "id": "2611.02091v1",
+      "title": "HQNN-CL: Regime-Aware Hybrid Quantum Neural Network with Continual Learning for Financial Forecasting",
+      "authors": [
+        "Muhammad Atif Saeed",
+        "Akhtar Jamil",
+        "Subhan Ullah"
+      ],
+      "abstract": "Financial time-series forecasting is still difficult owing to the non-stationary nature of the market, regime changes, and catastrophic forgetting, which makes conventional deep learning models hard to adapt in the long term. To achieve uncertainty-aware robust financial forecasting in the face of changing market conditions, this study proposes a Hybrid Quantum-Classical Neural Network with Continual Learning (HQNN-CL). The proposed framework combines Gaussian Hidden Markov Model (HMM) based regime detection, BiLSTM temporal encoding, adaptive-depth parameterized quantum circuits, Elastic Weight Consolidation (EWC), experience replay, and probabilistic forecasting in a single architecture. The framework was tested on four real-time stock datasets: Microsoft, Systems Limited, Teradata and Tata Consultancy Services, and compared with seven state-of-the-art forecasting models, including recurrent and Transformer-based models. The experimental results show that HQNN-CL has outperformed other methods on the Systems Limited (RMSE = 3.0149) and Teradata (RMSE = 0.8909) datasets and is within 0.32% and 0.40% of the best baseline method for Microsoft and Tata Consultancy Services, respectively. The proposed framework also generates well-calibrated probabilistic forecasts within the range of 89.5% to 96.5% empirical coverage rate, has zero catastrophic forgetting (BWT = 0.0000) for all sequential learning tasks, and consistently shows positive forward transfer. Ablation and statistical significance analyses also validate the performance of adaptive quantum feature learning and continual adaptation under heterogeneous market conditions, regime-wise.",
+      "published": "November 01, 2026",
+      "published_raw": "2026-11-01T18:05:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.02091v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.02091v1"
+    },
     {
       "id": "2611.01661v1",
       "title": "A Hybrid Anomaly Detection Method for Multivariate Time Series",
@@ -69,249 +303,6 @@
       "published_raw": "2026-10-31T13:22:01Z",
       "pdf_link": "http://arxiv.org/pdf/2611.00920v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.00920v1"
-    },
-    {
-      "id": "2611.00875v1",
-      "title": "HamFormer: A Hamiltonian Flow-based SE(3)-Transformer for Conformation Optimization",
-      "authors": [
-        "Minjie Cheng",
-        "Zhenghao Liu",
-        "Yitian Wang",
-        "Fanmeng Wang",
-        "Anqi Dong",
-        "Hongteng Xu"
-      ],
-      "abstract": "The Transformer architecture plays a central role in modern deep learning, and its SE(3)-equivariant variants have been widely applied to molecular conformation modeling and optimization. Given its importance, many methods attempt to interpret and improve the Transformer through the lens of dynamics. However, they mainly focus on a single attention head rather than the full Transformer architecture and seldom consider SE(3)-equivariance in their proposed models. In this study, we propose an improved SE(3)-Transformer architecture, called HamFormer, which revisits the design of SE(3)-Transformer through the lens of Hamiltonian flow. In particular, we define a parametrized Hamiltonian flow in the phase space of position and velocity, corresponding to optimizing an energy functional that combines an optimal transport-based potential with a damped momentum. The Lie-Trotter splitting framework of the Hamiltonian flow leads to the proposed HamFormer architecture, whose feedforward computation achieves the optimization step of the proposed energy functional. Furthermore, we combine HamFormer with Equivariant Graph Neural Network (EGNN), build a new model for molecular conformation optimization. Extensive experiments on molecular ground-state conformation prediction show that HamFormer provides a strong and physically interpretable surrogate for classic SE(3)-Transformer and generally outperforms state-of-the-art competitors.",
-      "published": "October 31, 2026",
-      "published_raw": "2026-10-31T12:20:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.00875v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.00875v1"
-    },
-    {
-      "id": "2611.00614v1",
-      "title": "ECG2Gene: Deep Learning-Based Germline Tumor Susceptibility Gene Risk Assessment Using Electrocardiograms",
-      "authors": [
-        "Shanwei Zhang",
-        "Qinghao Zhao",
-        "Yize Zhao",
-        "Jun Li",
-        "Yongchao Long",
-        "Jinshuai Gu",
-        "Ling Yang",
-        "Huaidong Du",
-        "Yiping Chen",
-        "Zhengming Chen",
-        "Dianjianyi Sun",
-        "Jun Lv",
-        "Liming Li",
-        "Iona Y. Millwood",
-        "Robin G. Walters",
-        "Canqing Yu",
-        "Yuxi Zhou",
-        "Shenyong Chen",
-        "Shenda Hong"
-      ],
-      "abstract": "Electrocardiograms (ECGs) may contain physiological information related to hereditary cancer susceptibility, but its relationship with future cancer risk remains unclear. Here, we present ECG2Gene, a two-stage deep-learning framework that derives digital phenotypes related to germline tumor susceptibility from routine 12-lead ECGs and predicts future cancer risk. In Stage 1, carrier status for pathogenic or likely pathogenic variants in ATM, BRIP1, CHEK2, PALB2, BRCA1, and BRCA2 supervises a multitask model that generates six continuous ECG-derived gene scores. In Stage 2, XGBoost integrates these scores with clinical variables to predict subsequent breast and ovarian cancer in women and prostate cancer in men. We also introduce ECG-Wide Association Analysis (EWAS) to characterize associations between ECG-derived gene scores and ECG waveforms. Across the clinical feature combinations evaluated in UK Biobank, the best-performing sex-specific models achieve AUROCs of 0.683, 0.633, and 0.660 for breast, ovarian, and prostate cancer, respectively. In external evaluations, models combining ECG-derived gene scores with age achieve prostate cancer AUROCs of 0.709 and 0.579 among men in the overall China Kadoorie Biobank and MIMIC-IV-ECG cohorts, respectively. ECG2Gene links genetically supervised ECG phenotyping and waveform association analysis to future cancer outcomes, demonstrating the potential of routine ECGs combined with clinical information for non-invasive, opportunistic cancer risk assessment.",
-      "published": "October 31, 2026",
-      "published_raw": "2026-10-31T04:17:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.00614v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.00614v1"
-    },
-    {
-      "id": "2611.00301v1",
-      "title": "The Rise of Low Precision Floating Point",
-      "authors": [
-        "Guy Lemieux",
-        "Michael L. Overton"
-      ],
-      "abstract": "Floating point computing has dominated scientific computations since the 1950s because of its versatile ability to approximate real numbers with both sufficiently high precision and sufficiently great range. Since 1985, two specific formats have become standard across the industry, one with 32 bits which is adequate for many purposes and one with 64 bits which allows numbers with both much higher precision and much greater range for applications where these are needed. However, during the past decade, deep learning has come to dominate computation, and narrower floating point formats with lower precision and reduced range have steadily become more common. In this article we discuss this phenomenon, why it is happening, how various 16-bit, 8-bit and even 4-bit floating point formats have been developed, and efforts to standardize these formats.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T19:23:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.00301v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.00301v1"
-    },
-    {
-      "id": "2611.00294v1",
-      "title": "Software Change Request in AI-Orchestrated Software Evolution: Literature Review and Research Agenda",
-      "authors": [
-        "Muhammad Nadeem",
-        "Khurram Shahzad",
-        "Muhammad Nadeem Majeed"
-      ],
-      "abstract": "In the emerging paradigm of holistic AI-orchestrated software maintenance and evolution, large-scale app stores continuously generate exponentially vast Software Change Requests (SCRs) streams through user feedbacks. These streams enable intelligent software evolution. Automating SCR extraction and classification is crucial with rapid growth of Mobile Apps (MA). However, significant challenges exist such as scare large-scale datasets, inconsistent classification schemes, limited data sharing and insufficient research. This study presents a first and thorough systematic survey of SCR identification from MA Reviews (MAR). In particular, we investigated how Machine Learning (ML) and Deep Learning (DL) enhanced identification and classification of SCR. This study has found pertinent datasets varying sizes from 5,000 to more than 18 million reviews. The key findings highlight the dominant use of Random Forest and Support Vector Machines, limited adoption of deep learning techniques, inconsistent F1-score results ranging from 0.08 to 1 and partial automation in existing SCR tools such as SURF and ChangeAdvisor. Finally, we have performed a synthesis of the studies to presents a comparative taxonomy of SCR methodologies, identify research gaps and annotation frameworks. We contend that classification schemes, shared datasets and annotation frameworks are essential for advancing SCRs and thereby improving the maintenance of mobile applications.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T19:19:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.00294v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.00294v1"
-    },
-    {
-      "id": "2611.00228v1",
-      "title": "In the age of big data and AI: do we still need chemical bonds?",
-      "authors": [
-        "Mohammed Al-Fahdi",
-        "Aakash Naik",
-        "Katharina Ueltzen",
-        "Luc Walterbos",
-        "Tom Demeyere",
-        "Philipp Benner",
-        "Janine George"
-      ],
-      "abstract": "Chemical bonding is the language through which chemistry rationalizes materials structure, stability, properties, and reactivity. Meanwhile, modern deep-learning models achieve remarkable predictive performance using representations based largely on compositional and structural information, raising the question of whether explicit bonding concepts remain necessary. In this work, we argue that artificial intelligence does not render chemical bonding obsolete but provides a new framework for evaluating and refining bonding concepts. We show that, through linear probing, Allegro and MACE embeddings recover bonding descriptors with (R^2 > 0.95), indicating that bonding emerges naturally from Allegro's and MACE's latent spaces. We also show that bonding descriptors provide information beyond bond distance in our electronic-structure-featurized MEGNet (ESF-MEGNet) model, reducing prediction error for properties including bulk and shear moduli by 15%. We discuss implications for interpretable machine learning, synthesizability prediction, and generative materials design, and suggest joint-embedding approaches for learning more general bonding representations. More broadly, we propose that chemical bonding can be understood as a learnable representation of electronic structure. From this perspective, different bonding models represent alternative compressions of the underlying electronic information and can be evaluated through their predictive power, dimensionality, and complexity. The age of machine learning shifts the focus from whether a bonding model is physically motivated to whether it captures the information required to explain and predict materials behavior. If a materials genome exists, it should be encodable through a representation of chemical bonding. If no bonding representation can capture this information, our understanding of the chemical bond may require revision.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T18:11:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.00228v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.00228v1"
-    },
-    {
-      "id": "2610.42111v1",
-      "title": "SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning",
-      "authors": [
-        "Ioannis Dravilas",
-        "Miruna Stoicescu",
-        "Roope Tervo",
-        "Carlos Horn",
-        "Oriol Hinojo Comellas",
-        "Sina Montazeri",
-        "Andrea Meraner",
-        "Ana Lucic"
-      ],
-      "abstract": "Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning approaches rely primarily on gridded reanalysis or forecast data, limiting their applicability to satellite observations available for time-critical applications. We introduce SATFRONT, a machine learning framework for detecting cold, warm, and occluded fronts over Europe from geostationary satellite observations, with reanalysis data as an optional additional input. The model is trained on frontal analyses from five European national meteorological services and evaluated against UK Met Office analyses for 2024. Using satellite observations alone, SATFRONT achieves a Critical Success Index (CSI) of 0.428 at a 150 km tolerance, within the range of agreement between analyses from different meteorological services (0.277-0.501) and higher than that of an operational rule-based front detector that uses satellite data (0.133). Adding ERA5 reanalysis increases the CSI to 0.591. ERA5 substantially improves the placement of individual fronts, although its effect on their annual spatial distribution varies by front type. These results demonstrate that cold, warm, and occluded fronts can be detected directly from geostationary satellite observations, providing a basis for automated frontal analyses at the high temporal frequency required for time-critical applications.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T17:48:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.42111v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.42111v1"
-    },
-    {
-      "id": "2610.41933v1",
-      "title": "Binary Sparse Codes: Where are we on Energy Efficient Representations?",
-      "authors": [
-        "Jose Miguel Ramos",
-        "Luis SaCouto",
-        "Andreas Wichert"
-      ],
-      "abstract": "Biological neural systems achieve impressive computational capabilities under tight metabolic constraints, relying on sparse cortical representations that minimise total neural activity. This combination of efficiency and representational power has motivated growing interest in sparse coding as a computational strategy for artificial systems. Artificial models designed to produce binary sparse codes span three broad paradigms, theoretical methods grounded in efficient coding, deep learning methods trained via backpropagation, and biologically plausible methods that learn through local Hebbian rules, each yielding codes whose quality depends not only on achieving low activation density but also on preserving the informational structure of the input. The latter property, however, lacks an agreed-upon quantitative definition, leaving the field without a principled basis for comparing methods. We propose a set of metrics that formalise information preservation as similarity preservation, measuring how faithfully a binary sparse code reproduces the relational geometry of the input space, and apply this framework to compare four representative methods under matched conditions. The results reveal a consistent trade-off in which models that achieve high information preservation do so at the cost of sparsity, while models approaching the uniformity of an optimal random sparse code tend to sacrifice it. Competitive Sparse Codes, a biologically plausible approach, is the only architecture to occupy a region of near-maximal sparsity while retaining meaningful information preservation. These findings frame the simultaneous satisfaction of both factors as an open challenge for the field and provide a reusable evaluation framework for measuring progress toward it.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T15:57:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41933v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41933v1"
-    },
-    {
-      "id": "2610.41807v1",
-      "title": "Exploring Bad Minima in Transfer Learning",
-      "authors": [
-        "Mina Remeli"
-      ],
-      "abstract": "Transfer learning is a highly successful learning paradigm in deep learning which leverages knowledge from one task and applies it to another. Despite its success, the necessary conditions for knowledge transfer are unclear and require further research. In this dissertation, our aim is to understand transferability a little better by answering the following question: Does good generalization on a source task necessarily imply transferability to a related target task? We hypothesize the answer is negative, and attempt to find counterexamples via adversarial attacks on the transfer learning procedure. Over three types of adversarial attacks, our empirical results show a strong relationship between generalization on the source task and transferability. These results do not rule out generalization on the source task as a sufficient condition for successful transfer.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T14:34:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41807v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41807v1"
-    },
-    {
-      "id": "2610.41805v1",
-      "title": "Backpropagation-free Deep Learning for Time-Series Classification",
-      "authors": [
-        "Miha Kapš",
-        "Blaž Bertalanič",
-        "Carolina Fortuna"
-      ],
-      "abstract": "Deep neural networks for time series classification (TSC) are trained almost exclusively by error backpropagation, which imposes update locking and the weight-transport problem. Backpropagation-free learning rules such as Direct Feedback Alignment (DFA), Direct Random Target Projection (DRTP), and the diffusion-inspired NoProp relax these constraints but have been evaluated almost exclusively on 2D image benchmarks. We adapt these three learners to univariate TSC with 1D convolutional architectures and present the first systematic study of them across 112 datasets from the UCR time series archive, with one hyperparameter-optimized configuration per method. The optimized learners reach mean F1 scores of 0.76 to 0.79, below ROCKET (0.83) and InceptionTime (0.84). We propose an analysis framework that relates the per-dataset gap to InceptionTime to dataset properties and tests convolutional feature learning by replacing the flatten readout with global average pooling, measured as a difference-in-differences (DD) against a backpropagation control on the identical architecture. Intra-class temporal variability is the dataset property most consistently associated with the gap for all three learners (partial Spearman $ρ$ from $0.28$ to $0.40$). Pooling harms DFA and DRTP more than backpropagation (DD $-0.025$ and $-0.055$), consistent with near-random convolutional features, whereas NoProp tolerates pooling as backpropagation does (DD $+0.013$). Relative to backpropagation on the same architectures, DRTP reduces training floating-point operations (FLOPs) by 33% and trains faster only on series longer than about 700 time steps, DFA yields no computational reduction, and NoProp reduces peak memory by 38% at the cost of 48% longer training.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T14:33:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41805v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41805v1"
-    },
-    {
-      "id": "2610.41795v1",
-      "title": "Accurate and Auditable ECG Classification via Visibility Graph Neural Networks",
-      "authors": [
-        "Artur Xavier",
-        "Guilherme Henrique Gomes Evangelista",
-        "Aitazaz Khan",
-        "Antonio Luiz Pinho Ribeiro",
-        "Mohammed J. Zaki",
-        "Srinivasan Parthasarathy",
-        "Wagner Meira"
-      ],
-      "abstract": "Physicians read electrocardiograms (ECGs) from waveform shape and timing, yet accurate deep-learning classifiers rarely show which waveform regions drive their predictions. We introduce LYNX-ECG, a graph neural network that represents each heartbeat as a sparse visibility graph of timestamped turning points. On CODE-Test, LYNX-ECG reaches a macro F1 score of 0.889, outperforming five baselines including the ECGFounder foundation model, while its graphs need about 14% of the storage of graphs built from every sample. Because each node maps to a specific ECG time, we can delete clinically defined waveform regions and alter beat timing to audit predictions. For conduction disorders, the clinically expected region was the strongest evidence in more than 90% of correct predictions. Bradycardia and tachycardia calls follow heart rate with conduction intervals held fixed, and atrial fibrillation calls vanish when beat-to-beat variation is removed. Sparse visibility graphs thus pair accurate ECG classification with clinically grounded, testable explanations.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T14:24:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41795v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41795v1"
-    },
-    {
-      "id": "2610.41454v1",
-      "title": "When Everyone Can Build a Model: Mechanistic Inference in the Age of AI",
-      "authors": [
-        "Marvin van Aalst",
-        "Adèle H. Ribeiro",
-        "Anna Matuszyńska"
-      ],
-      "abstract": "Modern deep learning and AI-assisted code generation are lowering the technical barrier to building mathematical models of biological systems that reproduce complex observations. This lets researchers with domain expertise build semi-mechanistic, hybrid models constrained by prior knowledge and augmented with learned structure without extensive training in modelling. However, easier construction does not make interpretation easier: predictive success of such so-called grey-box models does not establish that an inferred mechanism corresponds to the one that generated the data, and the learned component can absorb errors in the mechanistic part. Many biological modelling problems are underdetermined, so several, possibly infinitely many, models may reproduce the same data equally well. This ambiguity enters at two modelling choices: which variables can affect others, and which response function describes the underlying mechanism. For the first choice, causal inference provides a formal framework stating which causal relationships and intervention effects are identifiable from the data and available knowledge. For the second, ensemble analyses quantify the uncertainty and the range of behaviours still allowed by models that fit equally well. Together, they turn a single good fit into an explicit account of what is supported, what remains open, and which experiment would decide.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T08:57:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41454v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41454v1"
-    },
-    {
-      "id": "2610.41228v1",
-      "title": "Evolution of Financial AI: From Statistical Models to Agentic AI",
-      "authors": [
-        "Saba Asaad",
-        "Ali Bereyhi"
-      ],
-      "abstract": "Artificial intelligence (AI) in finance has evolved from statistical learning and machine learning for structured prediction, through deep learning and foundation models for representation learning, language understanding, and reasoning, to retrieval-augmented generation for knowledge-grounded reasoning and agentic AI for autonomous planning and execution. In this paper, we examine how researchers and practitioners can select and apply AI methods in finance. We first show that the major paradigms of financial AI address fundamentally different classes of problems, rather than forming a strict hierarchy of capability. We then review the current state of research on AI in finance and trace how these paradigms have reshaped financial data, financial tasks, decision support, and human-AI collaboration. Building on this, we propose practical guidelines for matching AI paradigms to task characteristics, and show that more advanced models, such as foundation models or autonomous agents, are not universally superior. We conclude by outlining open challenges for researchers and practitioners working toward reliable financial AI.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T04:05:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41228v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41228v1"
-    },
-    {
-      "id": "2610.41094v1",
-      "title": "AIFaultBench: A Reproducible Benchmark of Real-World Faults in AI Software Systems",
-      "authors": [
-        "Mehil B Shah",
-        "Mohammad Masudur Rahman",
-        "Foutse Khomh"
-      ],
-      "abstract": "AI-based software systems remain difficult to debug because their failures can involve interactions among code, models, data, dependencies, hardware, and execution environments. Existing benchmarks cover specific classes of AI systems, while concerns about fault realism and reproducibility highlight the need for documented execution conditions and evidence. We present AIFaultBench, a benchmark of 770 real-world bugs from 105 AI-based software repositories across 76 organizations. It covers six classes of AI systems: machine learning, deep learning, reinforcement learning, systems based on large language models, agentic AI, and AI tooling and infrastructure. Each bug record connects the original report and affected codebase to structured metadata, environment setup scripts, a reproduction trigger, and investigation evidence. We reproduced 652 bugs (84.7%) under the recorded execution conditions and documented the outcomes of the remaining 118 attempts. Through its broad coverage, documented reproduction evidence, and common structure, AIFaultBench supports empirical studies of AI faults, debugging tool evaluation, practical failure investigation, and teaching with real-world examples.",
-      "published": "October 30, 2026",
-      "published_raw": "2026-10-30T00:26:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41094v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41094v1"
-    },
-    {
-      "id": "2610.41046v1",
-      "title": "Localizing predictive concepts encoded in neural representations via hierarchical testing",
-      "authors": [
-        "Viktoriia Huryn",
-        "Marco Simnacher",
-        "Jim Berend",
-        "Wojciech Samek",
-        "Christoph Lippert",
-        "Sonja Greven",
-        "Uwe Ohler"
-      ],
-      "abstract": "Understanding which regulatory sequence motifs a genomic deep learning model has learned, with statistical error guarantees, is essential for trusting its use in downstream tasks such as variant effect prediction. Existing approaches to identifying which units in a trained network encode human- understandable concepts fall into two groups. Exploratory methods rank and visualize units but offer no statistical guarantee that the selected units are associated with the prediction target across the population of inputs. Testing-based methods test only single units or one pre-defined set of them, and do not control the error across the many sets of units. We introduce CUTTIE (Cluster-tree Unit Top-down Testing of Independence with Error control), which clusters the units of each layer into a tree and tests the clusters top-down with conditional independence tests, localizing information about the target while controlling the family-wise error rate. Thereby, we identify clusters that carry information about the target beyond the rest of the layer. For the units in the identified clusters, conditional attribution maps then reveal what motifs they encode. In a controlled simulation, the procedure identifies the clusters whose concepts affect the target. We apply the procedure to a convolutional model predicting cell-type-specific chromatin accessibility from DNA sequence, where the concepts encoded in the identified clusters map onto known regulatory motifs.",
-      "published": "October 29, 2026",
-      "published_raw": "2026-10-29T22:34:52Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.41046v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.41046v1"
-    },
-    {
-      "id": "2610.40954v1",
-      "title": "CAMEL: Cross-Architecture Masked Embedding Learning for Ultra-Lightweight Retinal Foundation Models",
-      "authors": [
-        "Andre Guarnier De Mitri",
-        "Giovani Decico Lucafo",
-        "Miller Matheus Lima Anacleto Rocha",
-        "Diego Furtado Silva"
-      ],
-      "abstract": "Recent progress in deep learning has substantially advanced automated grading of ophthalmologic pathologies, supported by large annotated datasets and improved representation learning. However, a significant gap remains between state-of-the-art performance and clinical scalability. In particular, foundation models have reshaped image-based medical screening and diagnosis. These large-scale architectures trained on extensive datasets learn rich, generalizable feature representations that can be adapted to a wide range of downstream tasks. In ophthalmology, RETFound, one of the most relevant foundation models for retinal images, performs strongly across classification, segmentation, and risk prediction tasks. Despite their effectiveness, foundation models are often computationally prohibitive, hindering their deployment in real-world clinical environments where hardware constraints and latency are critical. To bridge this gap, we introduce CAMEL (Cross-Architecture Masked Embedding Learning), a novel cross-architecture distillation framework that uses an asymmetric masking strategy during embedding learning to effectively transfer knowledge from massive teacher foundation models to compact, lightweight student models. Our experimental evaluation across four datasets shows that CAMEL preserves accuracy while drastically reducing computational complexity, enabling lightweight yet highly accurate models suitable for resource-limited clinical settings.",
-      "published": "October 29, 2026",
-      "published_raw": "2026-10-29T20:33:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2610.40954v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2610.40954v1"
     }
   ]
 }
