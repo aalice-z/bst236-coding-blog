@@ -1,7 +1,193 @@
 {
-  "last_updated": "2026-11-04T03:34:40.571413",
+  "last_updated": "2026-11-05T03:55:01.853038",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.06412v1",
+      "title": "A Bag of Tricks for Defending Deep Learning-based Face Recognition Pipelines against Backdoor Attacks",
+      "authors": [
+        "Quentin Le Roux",
+        "Marti Jimenez",
+        "Yannick Teglia",
+        "Philippe Loubet Moundi"
+      ],
+      "abstract": "The protection of mature, multi-stage Face Recognition Systems is crucial to system providers. This technical report targets the threat model most relevant to industry practitioners: although model training is performed in-house, training data is sourced from possibly-compromised third parties. Given this setting, we present three practical defense \"tricks\" against data poisoning-based backdoor attacks. The first operates at training-time, detecting poisoned identities during training or prior to a pipeline's deployment. The last two operate at inference-time, filtering suspicious inputs before an answer can be sent back to a potential attacker. Each method is presented with their motivation, algorithms and computational impact, and evaluated on realistic face recognition workloads. Our goal is to provide actionable hardening techniques to system providers.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T12:12:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06412v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06412v1"
+    },
+    {
+      "id": "2611.06382v1",
+      "title": "From hydrological laws to catchment models: A process-based model matches deep-learning accuracy on three continents",
+      "authors": [
+        "Xilin Xia"
+      ],
+      "abstract": "Dooge asked whether hydrology has laws at the catchment scale. We ask whether a low-dimensional system built under physical laws can match the accuracy of neural networks that outperform process-based models on the same inputs. Three laws constrain a lumped catchment model. Conservation makes it a flux-connected storage network, dissipation fixes the sign of every flux and aggregation determines how the unresolved composition enters the fluxes, through effective laws over threshold distributions and a memory of the forcing. These laws admit four kinds of refinement. A parsimonious model under them, CaRT (11 parameters per catchment), is refined in a loop assisted by AI agents. Each refinement addresses an observed deficit through a hypothesis from the literature. The result, CaRT+, has fourteen states, 35 parameters per catchment and no daily neural network. Most refinements follow from aggregation over thresholds or from variables that carry no water but modulate fluxes. On 602 British and 593 US gauged catchments, single CaRT+ models reach median Nash-Sutcliffe efficiencies of 0.863 and 0.765 in held-out years. A stateful LSTM reaches 0.869 and 0.751 and an entity-aware LSTM 0.862 and 0.754, while three-seed LSTM ensembles remain ahead of the CaRT+ ensemble by 0.003-0.012 in median paired NSE. On 505 drier Australian gauged catchments unused in development, single CaRT+ models reach 0.778 against 0.762 and 0.753 for the two LSTMs. The results suggest that catchment-scale laws exist as laws of form, with the constitutive families shared and only their parameters learned.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T11:45:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06382v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06382v1"
+    },
+    {
+      "id": "2611.06158v1",
+      "title": "Selective Prediction Intervals: Jointly Learning to Predict, Bound, and Abstain",
+      "authors": [
+        "Lidor Rubi",
+        "Gilad Katz"
+      ],
+      "abstract": "Many high-stakes regression decisions ask three things of a model at once: a point estimate to act on, an interval that bounds the risk of acting, and the option to abstain when neither can be trusted. Deep learning provides these in isolation: prediction-interval methods return an interval, and at best a value estimate inside it, for every input, while selective-prediction methods learn when to abstain, but only for point predictions and with no statement of how far the truth may lie from the estimate. We introduce SelPI, which trains interval, value and abstention heads jointly under a single loss with an explicit acceptance-rate budget. A natural objection is that interval width already tells us when to abstain. We show that it does not: across 18 tabular benchmarks, width predicts large point errors well (AUROC 0.72) but is anti-correlated with interval misses (AUROC 0.38), so abstaining on wide intervals discards precisely the inputs the interval got right. SelPI therefore selects with two gates, one trained on the interval loss and one on the value loss, coupled by a Fr'echet penalty that ties their separate budgets to the joint acceptance rate they deliver. With the base predictor held fixed, the learned gate beats width thresholding on a proper interval score on all 18 tabular datasets, closing a median 87% of the gap to an oracle selector, and it also beats selection by deep-ensemble disagreement on every dataset. The advantage grows with the heteroscedasticity of the task, and we report the settings in which it disappears.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T08:39:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06158v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06158v1"
+    },
+    {
+      "id": "2611.06151v1",
+      "title": "CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution",
+      "authors": [
+        "Guangtao Zhang",
+        "Haonan Wu",
+        "Junxuan Gao",
+        "Zhengyang Liu",
+        "Zhaoxi Zeng",
+        "Zhihao Li",
+        "Jianguo Huang",
+        "Zhiqiang Liu"
+      ],
+      "abstract": "Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conformal Mask Calibration (CMC), built on conformal risk control, converts a spatial uncertainty score into a trust mask and controls the expected worst-case local distortion under exchangeability. However, its fixed threshold can become miscalibrated in Earth-observation streams affected by seasonality and episodic events. We propose $\\textit{CARM}$ (Conformal Adaptive Risk Masking), a statistical framework for adaptive spatial risk control under temporal distribution shift. CARM maintains experts with heterogeneous update rates and aggregates their threshold proposals online using an asymmetric surrogate loss, balancing rapid adaptation to distribution changes against stability during relatively stationary periods. All updates are causal and use only mature feedback available after a fixed delay, allowing CARM to operate with any SR model that provides a spatial uncertainty score. We prove that the time-averaged mask-conditioned risk converges to at most $α$ at an $O(1/T)$ rate, without distributional assumptions and for any choice of aggregation weights across experts. On a daily South China Sea chlorophyll-$\\textit{a}$ SR stream, CARM reduces the empirical violation rate from $43.49\\%$ to $9.38\\%$ and the moving-average exceedance frequency from $47.29\\%$ to $1.22\\%$ at $α=0.10$, while retaining a non-trivial trusted region. Experiments on ERA5 wind and OSTIA sea-surface temperature further show consistent relative improvements across multiple SR backbones.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T08:32:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06151v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06151v1"
+    },
+    {
+      "id": "2611.06130v1",
+      "title": "Short-Term Forecasting of Heterogeneous Wind Power Fleets: Global Temporal Fusion Transformer Leveraging Static Covariates",
+      "authors": [
+        "Viktor Walter",
+        "Andreas Wagner"
+      ],
+      "abstract": "Accurate short-term wind power forecasting is critical for grid stability and electricity trading. While transformer-based deep learning is state of the art, industry practice relies mostly on local models trained for individual assets. This study investigates whether a global temporal fusion transformer (TFT), trained jointly on a heterogeneous portfolio of wind farms across Germany, outperforms site-specific local models in 48-hour-ahead forecasting. Using numerical weather prediction (NWP) data from the regional ICON-D2 and the global ECMWF HRES models, we compare the global TFT against local models and a linear regression baseline. The global model leverages static covariates, such as farm age, altitude above sea level, hub height, rotor diameter and power curve parameters, to learn shared representations across sites. We evaluate on 100 synthetic wind farm profiles and a real portfolio of 11 German wind farms, across two seasonal test periods with intermediate retraining. The global TFT outperforms the local models for 87% of the synthetic and 77% of the real wind farms and clearly surpasses the linear baseline. Wilcoxon signed-rank tests confirm that these gains are significant across both seasons and datasets. Crucially, this superiority depends on static covariates: without asset-specific context, the global model fails to generalize. The TFT's variable selection network (VSN) reveals the learned feature selection. Altitude emerges as a relevant static discriminator on both datasets, while hub height is decisive on the real portfolio. For dynamic inputs, the encoder prioritizes historical power, whereas the decoder combines upper-level wind speeds from both NWP models, consistent with averaging out model-specific errors. These findings support a shift from single-site to scalable multi-site forecasting, reducing operational complexity while improving accuracy in large portfolios.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T08:13:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06130v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06130v1"
+    },
+    {
+      "id": "2611.06066v1",
+      "title": "PRISM-AMC: Replay-Free Continual Learning for Automatic Modulation Classification",
+      "authors": [
+        "Usman Akram",
+        "Matthew Graham",
+        "Haris Vikalo"
+      ],
+      "abstract": "Automatic modulation classification (AMC) is a key component of cognitive wireless systems, enabling spectrum awareness and adaptive communication. Most deep learning approaches to AMC assume a fixed set of modulation classes and access to previously observed training data. In practice, modulation classes and channel conditions may evolve over time, while storage or data-retention constraints may preclude replay of raw baseband I/Q samples. We propose PRISM-AMC, a replay-free continual learning framework that mitigates catastrophic forgetting by preserving task-relevant subspaces of intermediate representations via gradient projection memory. We further analyze projected stochastic-gradient updates under an SNR-dependent gradient-noise model. PRISM-AMC is evaluated in both class-incremental and domain-incremental settings. Experiments on the MIGOU and DeepSig 2018.01A datasets show substantially reduced forgetting relative to sequential fine-tuning and elastic weight consolidation, while remaining competitive with or outperforming replay-based RSD-AMC in class-incremental settings, without storing raw I/Q samples.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T07:11:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06066v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06066v1"
+    },
+    {
+      "id": "2611.06026v1",
+      "title": "Spectroscopy-informed Deep Learning Searches for Photometric Little Red Dots in JWST Surveys",
+      "authors": [
+        "Chenxuan Zhang",
+        "Huanian Zhang",
+        "Qingwen Wu"
+      ],
+      "abstract": "Little Red Dots (LRDs) are a population of compact, red sources discovered at high redshift with JWST that exhibit distinctive V-shaped spectral energy distributions (SEDs). Existing LRD samples are typically identified using a variety of color-based selection criteria, which can lead to differences in the populations recovered by different studies. We develop a cross-modal machine-learning framework that combines matched NIRCam imaging and NIRSpec/PRISM spectroscopy to transfer spectroscopic information into imaging-based representations, enabling LRD identification from JWST/NIRCam imaging alone. Applied to spectroscopically observed high-redshift galaxies previously classified as non-LRDs, our model identifies 35 new LRD candidates. The majority satisfy at least one independent LRD color selection criterion, and among the 13 candidates with medium- or high-resolution NIRSpec grating spectra, 10 exhibit broad H$α$ emission - a hallmark of LRDs. We further apply the classifier to public NIRCam imaging from the Dawn JWST Archive and two independent JWST surveys, yielding 357 and 23 additional LRD candidates, respectively. The candidates recovered by our method span a broader range of observed SED properties than those in existing samples, suggesting that current color-selected samples may not fully capture the diversity of LRD-like systems present in JWST surveys. Our findings highlight the value of spectroscopy-informed photometric classification as a powerful strategy for systematically mining large-area JWST imaging datasets and provide a practical framework for future studies of this emerging population.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T06:29:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06026v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06026v1"
+    },
+    {
+      "id": "2611.05986v1",
+      "title": "A Comparative Study of Importance Attribution to Columns in Deep Learning over Relational Databases",
+      "authors": [
+        "Hila Levi-Yosefi",
+        "Shunit Agmon",
+        "Ester Livshits",
+        "Agapi Rissaki",
+        "Benny Kimelfeld"
+      ],
+      "abstract": "Deep learning over relational databases has led to increasingly effective prediction models, motivating a growing need to explain their behavior. We study explanation methods that assign importance scores to individual database attributes, focusing on a fundamental question: to what extent does the choice of importance-attribution method matter? We develop a methodology to systematically compare importance-attribution methods and analyze their similarities and differences. In particular, we study two aspects of the explanations: which attributes they deem important, captured by differences in attribute rankings, and how importance scores vary across attributes, captured by differences in score distributions. We further investigate whether these differences are reflected in the conventional measure of explanation quality, fidelity. We apply our methodology in an extensive empirical study of four methods: Monte Carlo Shapley, Kernel SHAP, single-attribute impact, and mask learning. We experiment with multiple datasets and tasks using two RDL architectures: heterogeneous GraphSAGE and Relational Graph Transformers. Our experiments show that explanation methods behave differently depending on the prediction type: regression or classification. In regression, most methods exhibit high agreement in attribute rankings, whereas classification yields considerably less consensus. Notably, while mask learning frequently diverges in its importance distributions, Shapley-based methods and single-attribute impact often converge to similar explanations. This suggests that, in many settings, single-attribute impact can replace Shapley at substantially lower computational cost. Overall, our study provides methodological tools for comparing importance-attribution methods, and empirical evidence that their choice has important consequences for interpreting relational deep learning models.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T05:33:09Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.05986v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.05986v1"
+    },
+    {
+      "id": "2611.05781v1",
+      "title": "Timing is Everything: Inferring Temporal Membership in Continually Updated Models",
+      "authors": [
+        "Jie Fu",
+        "Xiangpeng Deng",
+        "Yuan Hong",
+        "Wendy Hui Wang"
+      ],
+      "abstract": "Continual model updating has become a common practice in the deployment of machine learning systems. However, the dynamic training behaviors give rise to new risks not sufficiently addressed by existing studies. In this paper, we present the first systematic study of temporal privacy risk in continually updated deep learning models. We formalize the notion of temporal membership in continually updated models. We then define the temporal membership inference attack, which seeks to infer whether and when individual samples were involved in model training, at both timestamp-level and interval-level granularities. To this end, we propose TMIA, a novel black-box attack that leverages bidirectional LSTMs to infer temporal membership from model outputs observed across successive updates. Through extensive experiments on three language models and three image classification models, we show that TMIA is highly effective and significantly outperforms existing baselines. Finally, we evaluate three potential defenses, revealing the trade-off between privacy protection and model utility.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T00:36:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.05781v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.05781v1"
+    },
+    {
+      "id": "2611.05680v1",
+      "title": "Toward an Optimal Configuration for Tree Species Classification from Bark Images: A Leakage-Safe Ablation Study",
+      "authors": [
+        "Maeve Côté"
+      ],
+      "abstract": "Background: The automatic identification of tree species from bark photographs is of practical interest for forestry inventory and the wood-processing industry, yet the design choices that govern the accuracy of deep-learning approaches have not been studied systematically, and some prior results may be inflated by leakage of images of the same trunk across training and test partitions. Methods: A systematic ablation study is conducted on the public BarkNet 1.0 dataset (20 species) under the established tree-level, leakage-safe partitioning scheme. Using ConvNeXt-V2 backbones, the following factors are varied in turn and evaluated by five-fold cross-validation: patch size, the strategy by which per-patch predictions are aggregated into an image-level decision, the training regime (single- versus two-stage), backbone capacity, the whole-image baseline, and the number of patches available at inference. Results: Per-patch accuracy rises monotonically with patch size (from 75.6% at 160 px to 89.6% at 512 px), and image-level accuracy rises in step, plateauing near 94.9% around 512 px. Learned aggregation exceeds majority voting by at most 0.7 pp, an advantage that shrinks as patches grow and attention becomes near-uniform. Backbone capacity (pico to tiny) alters accuracy by less than a point, and two-stage training offers no advantage over one-stage. Whole-image classification (91.9%) trails patch-based aggregation, since it admits no bag to average over; accuracy increases with the number of patches at inference, saturating around 64. Conclusions: The study yields a simple recommended configuration: patches as large as possible while leaving enough to average over (around 512 px here), with a nano backbone. It also quantifies the second-order role of learned aggregation and model capacity, providing a reproducible reference point for practitioners and future research",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T22:05:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.05680v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.05680v1"
+    },
+    {
+      "id": "2611.05224v1",
+      "title": "Learning curves in natural and artificial systems",
+      "authors": [
+        "Dmitry A. Novikov"
+      ],
+      "abstract": "A general mathematical model of experience formation is considered, in which the learning level is defined as the probability that the next value of the uncertainty factor has already been mastered and not forgotten. Within this model the shape of the learning curve is derived, and it turns out to be determined primarily by the distribution of situation occurrence: a uniform distribution yields an exponential curve, whereas a power-law distribution yields a power-law curve whose exponent equals the ratio of the distribution exponent to that same exponent increased by one. Both mechanisms generating power-law curves, established earlier in the analysis of debugging, assembly and repair activities, are shown to have been independently rediscovered in deep learning theory as the \"frequency\" and \"spectral\" mechanisms of scaling laws for artificial neural networks, while the exponential curves of machine learning (contraction operators, strongly convex optimization, stationary reinforcement) are generated by the same constancy of the contraction coefficient that was revealed half a century earlier in models of radioactive decay, the first-order lag element, and others. A solution is given for the problem of choosing a training distribution that differs from the deployment distribution. A methodological consequence is discussed: three distinct mechanisms generate curves indistinguishable in shape, so an observed learning curve does not allow one to judge the \"internal\" structure of the learning system.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T17:10:57Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.05224v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.05224v1"
+    },
+    {
+      "id": "2611.05220v1",
+      "title": "Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks",
+      "authors": [
+        "Wen Zhou",
+        "Shaowen Wang",
+        "Upmanu Lall",
+        "Venkatesh Merwade",
+        "Dingqi Ye"
+      ],
+      "abstract": "Flood peak depth on normally dry land governs damage and risk to life, but is observed only sparsely, by post-event high-water mark (HWM) surveys, and depth derived from satellite flood extent is produced after the event and inherits the vertical error of the digital elevation model (DEM) it is computed from. Deep-learning flood models have in turn been trained on hydrodynamic simulations rather than on observed depths. We ask whether flood peak depth can be learned from field observations and predicted before the peak from spaceborne terrain, geospatial foundation-model embeddings and antecedent meteorological forcing. We assembled 5689 USGS HWM surveys from 39 events (2011-2025) in 24 U.S. states and Puerto Rico, assigned each a peak time from nearby sensors, paired each with a rain-free window at the same site, and linked them to Copernicus GLO-30 terrain, AlphaEarth embeddings and 144 h of hourly forcing masked to the lead time. A cross-modal fusion network trained on these observations predicts depth at the surveyed marks with a mean absolute error of 0.39 m 6 h ahead of the peak. Supervision by surveyed depth corrects the DEM error implicitly: differencing the measured peak water level with the same DEM gives 0.93 m at the same marks, 2.4 times larger, although it uses the measured water level and the model does not. Forcing accounts for 77% of the attributed reduction in depth error; terrain and the embeddings are statistically equivalent to each other and contribute the remaining 23%. On eleven held-out events the model still separates flooded from rain-free conditions but no longer resolves depth at the marks (R2 = 0.03), so the skill reported here is confined to the events and regions sampled. Field-surveyed depths can thus supervise flood depth prediction and correct terrain error that extent-based estimation cannot, while transfer to unseen storms remains the open problem.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T17:05:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.05220v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.05220v1"
+    },
+    {
+      "id": "2611.05035v1",
+      "title": "Federated Transfer Learning for Medical Image Classification under Mixed Skew",
+      "authors": [
+        "Alexandre G. Leclercq",
+        "Sébastien Bougleux",
+        "Aurélien Corroyer-Dulmont",
+        "Romain Hérault"
+      ],
+      "abstract": "Deep learning in medical imaging is constrained by data scarcity and by privacy regulations that make centralizing patient data across institutions impractical. Federated Learning (FL) addresses these constraints by keeping data local, but its distributed nature exposes training to strong statistical heterogeneity. Multicentric medical data is particularly affected, exhibiting a mixed skew that combines feature, label, concept, and quantity shifts across centers. Personalized FL mitigates heterogeneity by tailoring a model to each client, yet most methods assume training from scratch, which is unrealistic given the high dimensionality of medical features relative to the limited data available. We propose the Personalized Aligner Federated Pretrained (PAFP) framework, a personalized FL approach built on a pre-trained backbone. PAFP inserts client-specific Feature Alignment modules before the fine-tuned blocks to realign hidden feature distributions toward a server-aggregated target. On the FedISIC benchmark, PAFP attains the highest unweighted balanced accuracy while reducing inter-client performance variance roughly six-fold relative to the strongest baseline, yielding accuracy and cross-client equity jointly. Our code is publicly available at https://github.com/Alexandre-Leclercq/PAFP.",
+      "published": "November 03, 2026",
+      "published_raw": "2026-11-03T15:08:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.05035v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.05035v1"
+    },
     {
       "id": "2611.04664v1",
       "title": "Feature-Based and Deep Learning Methods for Astronomical Light Curve Classification",
@@ -106,203 +292,6 @@
       "published_raw": "2026-11-02T18:39:55Z",
       "pdf_link": "http://arxiv.org/pdf/2611.03597v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.03597v1"
-    },
-    {
-      "id": "2611.03552v1",
-      "title": "Nonparametric Intensity Estimation for Covariate-Driven Poisson Processes Using Deep Learning",
-      "authors": [
-        "Atsutomo Yara",
-        "Yoshikazu Terada"
-      ],
-      "abstract": "We consider nonparametric maximum likelihood estimation of the intensity function of a Poisson process, allowing the intensity to depend on observed covariates. Such models describe how event rates vary with external conditions, including conditions under which the intensity becomes arbitrarily small or vanishes. However, risk analysis based on the Kullback-Leibler (KL) divergence typically requires the true intensity to be bounded away from zero, a restrictive assumption in applications. We develop a unified approach that avoids this assumption and derive an oracle inequality for the covariate-averaged Hellinger distance between the true intensity and the nonparametric maximum likelihood estimator (NPMLE). As an application of the oracle inequality, we establish convergence rates for NPMLEs based on deep neural networks (DNNs). Our results show that, as in nonparametric regression, the ability of DNNs to capture underlying structure leads to improved convergence rates. Specifically, DNN-based NPMLEs mitigate the curse of dimensionality when the true intensity has a compositional structure and automatically adapt to a low-dimensional Riemannian manifold structure of the event space. For intensity functions with a compositional structure, DNN-based NPMLEs achieve nearly minimax-optimal convergence rates without explicitly incorporating this structure into the network architecture. Simulations demonstrate that DNN-based estimators outperform kernel estimators in most settings, while manifold kernels remain competitive in some designs. Finally, we analyze stimulus-evoked neural spiking using data from the Allen Brain Observatory Visual Coding Neuropixels project. DNN-based NPMLEs provide better out-of-sample performance than a conditional kernel estimator, as evaluated by held-out log-likelihood.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T18:14:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.03552v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.03552v1"
-    },
-    {
-      "id": "2611.03516v1",
-      "title": "EmbryoProfiler: A Visual Clinical Decision Support System for IVF",
-      "authors": [
-        "Johannes Knittel",
-        "Simon Warchol",
-        "Jakob Troidl",
-        "Camelia D. Brumar",
-        "Helen Yu Yang",
-        "Eric Mörth",
-        "Robert Krüger",
-        "Daniel Needleman",
-        "Dalit Ben-Yosef",
-        "Hanspeter Pfister"
-      ],
-      "abstract": "In-vitro fertilization (IVF) has become standard practice to address infertility, which affects more than one in ten couples in the US. However, current protocols yield relatively low success rates of about 20% per treatment cycle. A critical but complex and time-consuming step is the grading and selection of embryos for implantation. Although incubators with time-lapse microscopy have enabled computational analysis of embryo development, existing automated approaches either require extensive manual annotations or use opaque deep learning models that are hard for clinicians to validate and trust. We present EmbryoProfiler, a visual analytics system collaboratively developed with embryologists, biologists, and machine learning researchers to support clinicians in visually assessing embryo viability from time-lapse microscopy imagery. Our system incorporates a deep learning pipeline that automatically annotates microscopy images and extracts clinically interpretable features relevant for embryo grading. Our contributions include: (1) a semi-automatic, visualization-based workflow that guides clinicians through fertilization assessment, developmental timing evaluation, morphological inspection, and comparative analysis of embryos; (2) innovative interactive visualizations, such as cell-shape plots, designed to facilitate efficient analysis of morphological and developmental characteristics; and (3) an integrated, explainable machine learning classifier offering transparent, clinically-informed embryo viability scoring to predict live birth outcomes. Quantitative evaluation of our classifier and qualitative case studies conducted with practitioners demonstrate that EmbryoProfiler enables clinicians to make better-informed embryo selection decisions, potentially leading to improved clinical outcomes in IVF treatments.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T17:51:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.03516v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.03516v1"
-    },
-    {
-      "id": "2611.03420v1",
-      "title": "Temporal Island Sparse Autoencoders for Interpreting Clinical Time-Series Models",
-      "authors": [
-        "Muhan Yeo",
-        "Bong Gyun Kang",
-        "HyunGi Kim",
-        "Sungroh Yoon"
-      ],
-      "abstract": "Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model's representations. Each dictionary entry (latent) is defined by learned temporal Gaussian islands (specifying when the concept is active) and a sparse variable-composition vector (specifying which variables are involved). A decoupled selector then identifies which dictionary entries drive each patient's prediction, separating representation learning from attribution. We evaluate TI-SAE across five backbone architectures spanning different representation strategies on MIMIC-III and MIMIC-IV (three prediction tasks each). TI-SAE produces structured clinical concepts that go beyond transient attribution heatmaps while achieving strong performance on standard faithfulness benchmarks.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T16:43:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.03420v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.03420v1"
-    },
-    {
-      "id": "2611.03234v1",
-      "title": "SHAPE: Solar Heliospherical Analysis and Prediction of Eruptions A machine learning approach to solar flare forecasting",
-      "authors": [
-        "S. Kadakol",
-        "P. Deshmukh",
-        "A. B. Bendre"
-      ],
-      "abstract": "Solar flares are the most energetic impulsive events in the solar system, and reliable operational forecasting of the rarest and most destructive M- and X-class events remains an open problem. We present Solar Heliospherical Analysis and Prediction of Eruptions (SHAPE), a two-phase deep-learning pipeline that bypasses sunspot proxies in favour of direct soft X-ray observations from the GOES X-ray Sensor (XRS). Phase 1 forecasts monthly flare counts, aggregated to annual totals, with a hybrid model: a cycle-shape curve anchored to published solar-cycle minima fixes the timing and mean profile, and a compact gated-recurrent-unit network with Monte Carlo dropout models the residual variability. Trained on the science-quality NOAA GOES Flare Report for 1995--2020 and validated on 2021--2025, it achieves a mean absolute error of 204 flares yr$^{-1}$, although it underestimates the 2024 solar maximum. Phase 2 forecasts the next day's strongest flare class (C, M or X) with a shared-trunk, dual-head LSTM operating on a 12-day rolling window of five intensity features, with an optional blend against an active-region physics score and a decision threshold tuned to favour recall of M-or-above (M+) events. On a 100-day chronological backtest, the classifier attains a true skill statistic of 0.351, a Heidke skill score of 0.335 for M+ events, a Brier skill score of 0.163 relative to climatology, and an expected calibration error of 0.023. A day-to-day persistence baseline is, however, competitive on both skill scores, showing that much short-term predictability in flare class is autocorrelation rather than learned structure. SHAPE shows that competitive flare forecasting is achievable with compact architectures that retain in minutes on standard hardware, without sunspot proxy inputs.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T14:49:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.03234v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.03234v1"
-    },
-    {
-      "id": "2611.03154v1",
-      "title": "PaddleMaterials: An End-to-End Deep Learning Toolkit for Materials Science",
-      "authors": [
-        "Xuwei Liu",
-        "Zhimin Zhang",
-        "Xiaoguang Hu",
-        "Zhongwei Liu",
-        "Yuanhui Sun",
-        "Jun Huo",
-        "Hua Wu",
-        "Haifeng Wang"
-      ],
-      "abstract": "Machine learning supports materials design, atomistic simulation and experimental characterization, yet models and workflows remain fragmented. We present PaddleMaterials, an open-source framework integrating heterogeneous materials-learning tasks while preserving task-specific representations and scientific semantics. It unifies data processing, training, evaluation, pretrained-model management and workflows across six task classes: property prediction, structure generation, machine-learning interatomic potentials, electronic-structure fields, spectrum elucidation and microscopy image processing. Task interfaces record physical quantities, units, aggregation conventions and references, making cross-task composition verifiable. A shared compiler backend enables switching from dynamic-graph to compiled execution through one setting, using graph optimization, operator fusion and hardware-targeted code generation without changing model definitions. Across 65 model instances in 11 groups, compiled execution accelerated every instance in eight groups, with group median speedups of 11%-224% and group maximum speedups of 11%-336%. Case studies on LiMnO2 and toluene link structure generation or spectrum elucidation, interatomic-potential relaxation, property prediction and electron-density prediction, using same-geometry density functional theory (DFT) calculations as references. For LiMnO2, predicted formation energies for generated and relaxed structures differed from same-geometry PBE+U references by at most 7 meV per atom, while the computational cost of model steps was less than one-twentieth of a DFT single-point calculation. PaddleMaterials extends unified materials workflows beyond conventional property, potential and structure-generation tasks while supporting verifiable cross-task operations and compiled execution.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T14:03:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.03154v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.03154v1"
-    },
-    {
-      "id": "2611.02488v1",
-      "title": "End-to-End Stability of Online Active Learning in Large-Scale Neural Systems",
-      "authors": [
-        "Shuiwen Shen",
-        "Jinhua Zhang",
-        "Chenlei Hou",
-        "Peng Shi",
-        "Yong Han",
-        "Bo Gao",
-        "Xiaoxiao Na",
-        "Zhihui Lin",
-        "Pengtao Du"
-      ],
-      "abstract": "Online Active Learning (OAL) aims to extend deep learning from static inference after offline training to continuous adaptation during real-time interaction with a changing physical environment. This transition is essential for safety-critical applications, but it raises a central theoretical question: whether the online parameter update process remains stable when scaled to multilayer neural architectures. This paper develops a stability-focused OAL framework. The framework uses prediction error as a feedback signal to update a structured deep model, thereby linking online learning with Lyapunov-based energy minimization. We show that prediction error convergence alone is insufficient for global parameter convergence because multilayer networks may admit high-dimensional manifolds of equivalent output solutions. The analysis therefore separates output error regulation, internal zero dynamics, interlayer coupling, and parameter convergence. Persistency of excitation and active damping are then used to remove the residual null-space modes that remain after output error convergence. A cascaded Lyapunov analysis establishes asymptotic stability of the overall OAL learning process, while monotonic activation functions and diffeomorphic layer mappings provide the uniqueness condition for the target parameter trajectory. The resulting proof provides a theoretical basis for applying online adaptive learning to large-scale neural systems in nonstationary and safety-critical settings.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T04:02:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.02488v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.02488v1"
-    },
-    {
-      "id": "2611.02312v1",
-      "title": "Improving Financial Cybersecurity Through Fraud Transaction Detection with Deep Learning",
-      "authors": [
-        "Harish Kant Pathak",
-        "Rahul Kumar"
-      ],
-      "abstract": "Financial fraud detection remains a critical challenge in cybersecurity, with traditional rule-based systems struggling to keep pace with evolving attack patterns. This paper presents a deep learning approach for fraud transaction detection, leveraging neural network architectures to identify anomalous financial behaviors with high accuracy. We evaluate multiple deep learning models including LSTM, CNN, and hybrid architectures on real-world financial transaction datasets, demonstrating significant improvements over conventional machine learning baselines. Our approach achieves robust performance in detecting fraudulent transactions while minimizing false positives, providing a scalable solution for enterprise financial cybersecurity systems",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T00:01:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.02312v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.02312v1"
-    },
-    {
-      "id": "2611.02091v1",
-      "title": "HQNN-CL: Regime-Aware Hybrid Quantum Neural Network with Continual Learning for Financial Forecasting",
-      "authors": [
-        "Muhammad Atif Saeed",
-        "Akhtar Jamil",
-        "Subhan Ullah"
-      ],
-      "abstract": "Financial time-series forecasting is still difficult owing to the non-stationary nature of the market, regime changes, and catastrophic forgetting, which makes conventional deep learning models hard to adapt in the long term. To achieve uncertainty-aware robust financial forecasting in the face of changing market conditions, this study proposes a Hybrid Quantum-Classical Neural Network with Continual Learning (HQNN-CL). The proposed framework combines Gaussian Hidden Markov Model (HMM) based regime detection, BiLSTM temporal encoding, adaptive-depth parameterized quantum circuits, Elastic Weight Consolidation (EWC), experience replay, and probabilistic forecasting in a single architecture. The framework was tested on four real-time stock datasets: Microsoft, Systems Limited, Teradata and Tata Consultancy Services, and compared with seven state-of-the-art forecasting models, including recurrent and Transformer-based models. The experimental results show that HQNN-CL has outperformed other methods on the Systems Limited (RMSE = 3.0149) and Teradata (RMSE = 0.8909) datasets and is within 0.32% and 0.40% of the best baseline method for Microsoft and Tata Consultancy Services, respectively. The proposed framework also generates well-calibrated probabilistic forecasts within the range of 89.5% to 96.5% empirical coverage rate, has zero catastrophic forgetting (BWT = 0.0000) for all sequential learning tasks, and consistently shows positive forward transfer. Ablation and statistical significance analyses also validate the performance of adaptive quantum feature learning and continual adaptation under heterogeneous market conditions, regime-wise.",
-      "published": "November 01, 2026",
-      "published_raw": "2026-11-01T18:05:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.02091v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.02091v1"
-    },
-    {
-      "id": "2611.01661v1",
-      "title": "A Hybrid Anomaly Detection Method for Multivariate Time Series",
-      "authors": [
-        "Ali Babalhavaeji",
-        "Hui Song",
-        "Mahdi Jalili"
-      ],
-      "abstract": "Multivariate time series are ubiquitous in monitoring smart systems such as power plants, smart houses, and servers. These systems use multiple sensors to collect the system's status over time. Those sensors represent the status of the whole system as one entity. Anomaly detection in such smart systems is of critical importance to prevent system failure and maintain functionality. But anomaly detection in such multivariate time series data is very challenging since this type of data includes both temporal and spatial information. Capturing both of these pieces of information is important to detect anomalies. In this paper, we propose a hybrid deep learning-based anomaly detection method, which captures both temporal and spatial information. We propose to take advantage of the feature extraction capabilities of 2d convolutional network in a variational autoencoder, alongside a prediction-based deep neural network of 2d convolutional networks and a gated recurrent unit network to capture both spatial and temporal information. Experiments on public data against state-of-the-art show the potential of our method.",
-      "published": "November 01, 2026",
-      "published_raw": "2026-11-01T07:14:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.01661v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.01661v1"
-    },
-    {
-      "id": "2611.01615v1",
-      "title": "LLM-Enhanced Multimodal House Price Prediction using Structured, Textual, and Visual Features",
-      "authors": [
-        "Khandokar Md. Rahat Hossain",
-        "Souvik Das",
-        "Tahsina Hashem",
-        "Mohammed Eunus Ali",
-        "Tanzima Hashem"
-      ],
-      "abstract": "Accurate house price prediction is essential for real estate buyers, sellers, agents, and financial institutions. Traditional methods rely primarily on structured data, e.g., number of bedrooms, bathrooms, parkings, but they overlook rich contextual information embedded in textual descriptions and property photos. Previous deep learning approaches for house price prediction have fused multimodal data but they fall short to extract structured spatio-temporal and contextual features from texts and semantic visual information from images. In this paper, we introduce a novel multimodal framework that addresses these limitations by systematically integrating structured attributes, textual descriptions, and visual images of properties to achieve higher prediction accuracy while maintaining interpretability. We use a large language model to derive domain-specific spatio-temporal and contextual features from text, and an unsupervised vision-language approach to automatically group photos into meaningful classes like indoor, outdoor, mixed, or floorplan, that are commonly present in real-world house listings. These categories are created without manual labeling by aligning image clusters with carefully designed pseudo text prompts. We fuse all features into a unified representation and use an optimized regressor to predict prices. Experiments on a large real-world property dataset demonstrate that our method outperforms traditional methods and existing multimodal baselines. Ablation studies confirm that the novel textual feature extraction and categorized visual embeddings substantially contribute to more accurate and reliable price predictions.",
-      "published": "November 01, 2026",
-      "published_raw": "2026-11-01T06:07:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.01615v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.01615v1"
-    },
-    {
-      "id": "2611.01254v1",
-      "title": "Device Identification and Motion Classification of Passive Nonlinear RF Transponders Using Wi-Fi Channel State Information",
-      "authors": [
-        "Cory Hilton",
-        "Jeffrey A. Nanzer"
-      ],
-      "abstract": "A method of joint device authentication and gesture classification using low-cost passive transponders and 802.11 signals of opportunity from commodity hardware is presented for tracking objects in cluttered environments. The approach detects nonlinear responses of diode-based radio-frequency (RF) transponders by estimating the mean time-varying phase across all subcarrier channel state information (CSI) obtained from standard preambles. These unique responses are enabled by passive transponders utilizing 2.4 GHz meander-line monopole antennas with capacitive top-hat loading and a low-barrier Schottky diode, allowing for low-power omnidirectional sensing and complex gesture recognition across multiple unique devices. The capture system uses a wireless access point to illuminate the transponder with a standard preamble. This signal is modulated by the diode's nonlinear response and transmitted to a single ESP32 receiver to calculate the channel response. Using the modulated CSI, device identification via RF fingerprinting achieves >95% accuracy in both static and dynamic conditions using simple machine learning models. For dynamically moving transponders, a time-varying velocity profile is calculated using a novel phase sanitation approach that significantly reduces the impacts of the non-cooperative network. This enables high-accuracy estimation of micro-motions on a single receiver, achieving a theoretical limit of 9.75 m/s using an amplitude-invariant binary comparator form of the sanitized waveform. The concept is experimentally validated using lightweight CNN-LSTM deep-learning models applied to a diverse dataset of five transponders and three motion profiles. This experimental validation demonstrated a classification accuracy of 98% in both gesture classification and device identification tasks.",
-      "published": "October 31, 2026",
-      "published_raw": "2026-10-31T20:36:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.01254v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.01254v1"
-    },
-    {
-      "id": "2611.01018v1",
-      "title": "Robust Pixel-wise Digital Image Correlation under Large Motions and Illumination Variations via a Global-to-Local Hybrid Neural Field",
-      "authors": [
-        "Xianglong Guo",
-        "Jianyang Li"
-      ],
-      "abstract": "Digital image correlation (DIC) is a widely used non-contact technique for full-field displacement measurement. Data-driven deep-learning DIC offers rapid inference but may generalize poorly to unseen speckle patterns, deformation modes, noise levels, and illumination conditions. Classical optimization-based DIC and recent image-constrained neural formulations avoid labeled displacement data, yet their convergence and accuracy remain vulnerable to initialization, large rigid-body motion, fine non-uniform deformation, and gray-value disturbances. This paper presents a global-to-local hybrid neural DIC framework for robust pixelwise measurement. Stage 1 estimates a dominant in-plane rigid transformation through coarse rotation search, phase correlation, and masked refinement, providing a reliable initialization under large translation and rotation. Stage 2 represents the residual displacement with a hybrid Kolmogorov-Arnold network (KAN) and multilayer perceptron (MLP), and optimizes it using a valid-overlap, illumination-robust structural loss. The local gray-value model explicitly accommodates multiplicative and additive intensity changes. Simulated and real experiments demonstrate accurate and stable displacement recovery under noise, non-uniform deformation, large rotation, illumination variation, and degraded imaging conditions.",
-      "published": "October 31, 2026",
-      "published_raw": "2026-10-31T15:00:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.01018v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.01018v1"
-    },
-    {
-      "id": "2611.00920v1",
-      "title": "What matters in classical machine learning for non-intrusive load monitoring? A factorial benchmark on REFIT with validation on unseen houses",
-      "authors": [
-        "Zablon Ombiro"
-      ],
-      "abstract": "Published classical machine-learning results for appliance ON/OFF classification in nonintrusive load monitoring (NILM) range from F1-type scores of 0.53 to 0.98, and the sources of this spread have not been separated. This study separates them with a factorial benchmark on REFIT: seven models, two feature sets and four class-imbalance strategies for five appliances (270 fitted configurations), each evaluated by pooled nested cross-validation and on houses unseen during training, with robustness checks. An analysis of variance shows that the appliance explains 38% of the variance in F1, the feature set 13% and the model only 8%. Engineered rolling-window features raised the mean F1 score by 52% under both protocols. Other conclusions changed on unseen houses: the support-weighted F1 score of the best pooled configurations fell from 0.548 to 0.447, the differences between the models selected by pooled validation were no longer significant, and the benefit of class weighting over no correction rose from 32% to 69%. In a nested comparison, house-grouped selection on the training houses improved F1 on unseen houses for three of five appliances, by up to 0.110, and was within 0.007 for the other two. These findings held across four house partitions and without the solar-affected houses. A same-protocol convolutional network reached a weighted F1 score of 0.50, about 0.05 above the classical models (0.45) and far below the published deep-learning scores of 0.78 to 0.91, which were obtained under a different protocol. The results support low-cost appliance monitoring in buildings and yield a NILM reporting checklist.",
-      "published": "October 31, 2026",
-      "published_raw": "2026-10-31T13:22:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.00920v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.00920v1"
     }
   ]
 }
