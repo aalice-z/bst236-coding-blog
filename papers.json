@@ -1,7 +1,84 @@
 {
-  "last_updated": "2026-11-05T03:55:01.853038",
+  "last_updated": "2026-11-06T03:53:13.704706",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.07843v1",
+      "title": "Enhanced MRI brain tumor detection using deep learning in conjunction with explainable AI SHAP based diverse and multi feature analysis",
+      "authors": [
+        "Asif Rahman",
+        "Maqsood Hayat",
+        "Nadeem Iqbal",
+        "Fawaz Khaled Alarfaj",
+        "Salem Alkhalaf",
+        "Fahad Alturise"
+      ],
+      "abstract": "Recent innovations in medical imaging have markedly improved brain tumor identification, surpassing conventional diagnostic approaches that suffer from low resolution, radiation exposure, and limited contrast. Magnetic Resonance Imaging (MRI) is pivotal in precise and accurate tumor characterization owing to its high-resolution, non-invasive nature. This study investigates the synergy among multiple feature representation schemes such as local Binary Patterns (LBP), Gabor filters, Discrete Wavelet Transform, Fast Fourier Transform, Convolutional Neural Networks (CNN), and Gray-Level Run Length Matrix alongside five learning algorithms namely: k-nearest Neighbor, Random Forest, Support Vector Classifier (SVC), and probabilistic neural network (PNN), and CNN. Empirical findings indicate that LBP in conjunction with SVC and CNN obtained high specificity and accuracy, rendering it a promising method for MRI-based tumor diagnosis. Further to investigate the contribution of LBP, Statistical analysis chi-square and p-value tests are used to confirm the significant impact of LBP feature space for identification of brain Tumor. In addition, The SHAP analysis was used to identify the most important features in classification. In a small dataset, CNN obtained 97.8% accuracy while SVC yielded 98.06% accuracy. In subsequent analysis, a large benchmark dataset is also utilized to evaluate the performance of learning algorithms in order to investigate the generalization power of the proposed model. CNN achieves the highest accuracy of 98.9%, followed by SVC at 96.7%. These results highlight CNN's effectiveness in automated, high-precision tumor diagnosis. Code: https://github.com/asifrahman557/BrainTumorDetection",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T11:20:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.07843v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.07843v1"
+    },
+    {
+      "id": "2611.07695v1",
+      "title": "Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction",
+      "authors": [
+        "Shi Yin",
+        "Zujian Dai",
+        "Xinyang Pan",
+        "Lixin He"
+      ],
+      "abstract": "Most existing equivariant architectures for Hamiltonian prediction propagate features in direct-sum spaces of irreducible spherical tensors, whereas the target Hamiltonian is naturally an operator block in a direct-product representation over local orbital and spin bases. This representation mismatch fragments contiguous Hamiltonian blocks, obscures direct manipulation of orbital couplings, and organizes features into irregular angular-momentum components that require numerous transformations and are poorly aligned with efficient hardware execution and memory management. To address both the representation mismatch and computational bottleneck, we propose DP-Learner, an equivariant learning framework that performs message passing directly on Hamiltonian-like operator blocks in the direct-product space. Theoretically, we propose Lie-generator-based directional embedding and invariantly weighted left--right products and contractions that preserve equivariance to SO(3), SU(2), and spatial inversions, without explicit Clebsch--Gordan decomposition or inverse reconstruction. Methodologically, we instantiate this principle as a Transformer architecture, in which Hamiltonian-like feature matrices or tensors evolve through equivariant operators in the direct-product space, while non-linear invariant scalar routing controls structured gating over matrix units, directional propagation, attention, and environment-embedded context interactions. We further construct MP-HAM-110K, a large-scale Hamiltonian dataset comprising more than 110,000 material structures covering 68 elements with both Hamiltonian and wavefunction data. Experiments on MP-HAM-110K and Materials-HAM-SOC demonstrate that DP-Learner dramatically improves Hamiltonian prediction accuracy and inference efficiency over the state-of-the-art method.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T09:19:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.07695v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.07695v1"
+    },
+    {
+      "id": "2611.07410v1",
+      "title": "Spectral symmetry fingerprints in equivariant representations",
+      "authors": [
+        "Jiacheng Cen",
+        "Anyi Li",
+        "Ning Lin",
+        "Zihe Wang",
+        "Ji-Rong Wen",
+        "Wenbing Huang"
+      ],
+      "abstract": "Symmetry governs the organization of physical structures, while symmetry breaking reveals their transformations. In geometric deep learning, symmetry imposes rank constraints on equivariant representations, limiting the expressive capacity of equivariant graph neural networks (GNNs). Here we show that these constraints can instead be exploited: the singular-value spectra of equivariant representations provide a unified fingerprint of structural symmetry. We introduce spectral symmetry fingerprints (SymFP), which enable discrete point-group identification through rank-template matching and continuous symmetry analysis by quantifying spectral energy beyond target rank constraints. SymFP is orientation invariant and architecture agnostic, enabling a parameter-free GNN implementation. Its spectra can be reused across multiple target groups, and the resulting leakage scores satisfy subgroup monotonicity. Across synthetic structures, molecules, coordination complexes and large biological assemblies, SymFP accurately identifies point groups, tracks controlled symmetry breaking and reveals local and degree-resolved symmetry changes that can be obscured by global geometric measures. These results establish the spectral structure of equivariant representations as a general framework for characterizing symmetry across physical systems.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T04:02:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.07410v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.07410v1"
+    },
+    {
+      "id": "2611.07094v1",
+      "title": "A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies",
+      "authors": [
+        "Spencer R. Jones",
+        "Simon Pfreundschuh",
+        "Christian D. Kummerow"
+      ],
+      "abstract": "This paper presents an application of machine learning to the problem of the computational expense of atmospheric radiative transfer calculations from physics-based models. While in recent studies individual emulators have been created that emulate certain radiative transfer schemes for different sensors, we show that a general framework can be applied to emulate the radiative transfer method itself. A fully connected deep neural network has been trained to predict top-of-atmosphere microwave radiances in all-sky conditions over various land, ocean and sea ice surfaces at all frequencies from 1 to 300 GHz, and for all incidence angles from 0 to 65 degrees. The reference models against which the emulator has been trained include an Eddington two-stream radiative transfer model for one-dimensional and pseudo-three-dimensional microwave brightness temperature simulations. This neural network architecture has also been separately trained to reproduce the explicit calculations of the Community Radiative Transfer Model (CRTM) for a single microwave imager. In all cases, the model architecture is successfully able predict microwave brightness temperatures by being trained directly on the optical properties of the atmosphere and surface and therefore directly emulating the radiative transfer method. Compared to the explicit schemes used to produce the training data, the GPU-enabled emulator is able to produce brightness temperature simulations more than three orders of magnitude faster and with a root-mean-squared-error less than 0.0348 K, 0.0531 K, and 0.0246 K against the independent test data for the two Eddington models and CRTM, respectively. Additionally, preliminary training using a full 3D Monte Carlo scheme for high-resolution simulations shows promising results for the application of this method to \"exact\" radiative transfer methods, and these results are discussed in Section IV.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T20:01:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.07094v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.07094v1"
+    },
+    {
+      "id": "2611.06610v1",
+      "title": "Alternatives to Shallow Autoencoders for Collaborative Filtering",
+      "authors": [
+        "Mario Mallea",
+        "Angela Nebot",
+        "Francisco Mugica"
+      ],
+      "abstract": "Collaborative filtering (CF) is a cornerstone of recommender systems and plays a relevant role in many modern applications. CF uses user-item interaction data to discover future preferences. Although deep learning models have shown promise in CF, Embarrassingly Shallow Autoencoders for Sparse Data (EASE) has gained attention for its outstanding ranking accuracy provided by its closed-form solution. EASE relies primarily on relationships among items to fit a full-rank high-dimensional linear mapping. We hypothesize that this design limits its capacity to capture similar but not equivalent fine-grained user relationships, consequently limiting its recommendation accuracy. This paper introduces an alternative formulation based on EASE that takes advantage of user-user information. Furthermore, we propose a hybrid model that combines both user-user and item-item adjacency distributions. Our experiments reveal that the proposed models outperform EASE on well-known recommendation benchmarks, highlighting the significance of including the user alternative in shallow autoencoder studies for CF.",
+      "published": "November 04, 2026",
+      "published_raw": "2026-11-04T14:59:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.06610v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.06610v1"
+    },
     {
       "id": "2611.06412v1",
       "title": "A Bag of Tricks for Defending Deep Learning-based Face Recognition Pipelines against Backdoor Attacks",
@@ -222,76 +299,6 @@
       "published_raw": "2026-11-03T04:02:15Z",
       "pdf_link": "http://arxiv.org/pdf/2611.04273v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.04273v1"
-    },
-    {
-      "id": "2611.04270v1",
-      "title": "From Sea Surface Height to Velocity - A Machine Learning Approach",
-      "authors": [
-        "Yaswanth Reddy Yaradoddi",
-        "Jinbo Wang",
-        "Elyes Serghine"
-      ],
-      "abstract": "Inferring upper-ocean velocity from altimetric sea surface height (SSH) remains challenging below 50~km, scales now resolved by the Surface Water and Ocean Topography (SWOT) mission. Conventional methods rely on geostrophic or cyclogeostrophic balance. Here, we demonstrate that deep learning can predict the full velocity vector from SSH and environmental data and recover derivative-based diagnostics, including spectral energy flux. We trained a U-Net encoder--decoder on hourly fields from the pre-SWOT Cape Basin extraction of the LLC4320 ocean simulation, with 1.5-km grid spacing ($11.8$--$15.8^\\circ$E, $41$--$45^\\circ$S). Inputs were SSH, sea surface temperature (SST), and wind stress; targets were horizontal velocities at the surface and 50~m, where wind influence is weaker. At 50~m, the best model achieves a speed RMSE of $0.049\\,\\mathrm{m\\,s^{-1}}$, 29% lower than the geostrophic approximation. Predicted relative vorticity has a correlation of 0.93, compared with 0.75 for the geostrophic approximation. The model also recovers divergence with a correlation of 0.66, whereas geostrophic velocity is nondivergent by definition. Tests of training strategies yield four findings: SSH gradients outperform raw SSH as inputs; wind stress is the most useful covariate for total velocity prediction; SST benefits vary seasonally; and including vorticity and divergence in the loss improves accuracy. These results offer a path for transferring high-fidelity simulation physics to SWOT applications, where kilometer-scale SSH snapshots contain superposed balanced and unbalanced signals.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T03:58:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.04270v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.04270v1"
-    },
-    {
-      "id": "2611.04200v1",
-      "title": "Impact of Input Resolution in Mammographic Mass Detection: A Controlled Multi-Architecture Study",
-      "authors": [
-        "Kaan Buyukdemirci",
-        "Emine Ulku Saritas"
-      ],
-      "abstract": "Deep-learning-based mass detectors usually downsample mammograms, trading fine image detail for lower computational cost. However, published studies cannot reveal how much accuracy this trade-off sacrifices, since they also differ in architecture, preprocessing, and evaluation protocol. In this work, we isolated the effect of input resolution in a controlled study on the VinDr-Mammo dataset, training 18 detectors at six input resolutions ranging from 512 x 416 to 1600 x 1280 pixels, for 108 model-resolution combinations. Whole mammograms were resized without cropping or tiling. For each model, preprocessing, model initialization, augmentation, and evaluation procedures were kept fixed across resolutions. Detection accuracy was evaluated by mAP50 on the 219 mass-positive images of the official test split, and 57 combinations with test mAP50 of at least 0.60 were analyzed. From the lowest to the highest resolution, median mAP50 rose from 0.626 to 0.660 and the best mAP50 from 0.670 to 0.709. The best result, achieved by DINO with a ConvNeXt-S backbone, is the highest mAP50 reported to date on mass-positive VinDr-Mammo images. Gains were concentrated in small masses: for the smallest third of lesions, median mAP50 rose by 0.074 (from 0.367 to 0.441), compared with 0.007 and 0.032 for medium and large masses. Median training time increased from 0.45 to 1.40 h, and median inference time from 23.6 to 113.7 ms per image. Therefore, higher input resolution mainly benefits the small masses that are hardest to detect, at a computational cost that remains practical.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T02:36:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.04200v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.04200v1"
-    },
-    {
-      "id": "2611.04185v1",
-      "title": "What Does 4-Bit Microscaling Cost a Wearable Activity Recognizer?",
-      "authors": [
-        "Megan Healy",
-        "Hossein Valavi"
-      ],
-      "abstract": "Wearable sports sensors can recognize actions on the device itself, where lower-precision numbers reduce model storage and memory traffic. Two 4-bit block-scaled formats, MXFP4 from the Open Compute Project, introduced in 2023, and NVFP4 from NVIDIA, introduced in 2025, are drawing interest. Published evaluations cover general deep-learning benchmarks and large language models; to our knowledge, nobody has yet measured what they cost a small wearable-sensor model. We train a 159,492-parameter 1D CNN to recognize four basketball actions from wrist-accelerometer data in Hang-Time HAR and test it on players it has never seen, using five-fold cross-validation grouped by player. Every comparison between number formats is made fold by fold. In full precision the model reaches 69.26\\% macro-F1. Measured TFLite FP16 and INT8 models lose at most 0.16 percentage points. In simulation, 4-bit weights cost 1.45 points with MXFP4 and 0.72 points with NVFP4. When activations are quantized to 4 bits as well, MXFP4 loses 5.14 points and NVFP4 only 0.75, and NVFP4 comes out ahead in all five held-out-player folds. The ranking survives two alternative simulator settings, with NVFP4 leading by 3.49 to 4.40 points. A $2 \\times 3$ ablation with 4-bit weights and activations (two block sizes and three scale rules) points to scale selection as the main source of MXFP4's loss. The reference MXFP4 conversion we simulate rounds the scale down, which can pick scales that are too small, so many blocks clip their largest values. Rounding the scale up recovers 3.18 points with 32-value blocks and 3.63 points with 16-value blocks, and switching to an 8-bit floating-point scale, as NVFP4 does, adds another 0.84 and 1.20 points. Block size matters less. Under this round-down rule, 16-value blocks score 0.44 points below 32-value blocks in all five folds; under the other two rules there is no consistent effect.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T02:22:12Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.04185v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.04185v1"
-    },
-    {
-      "id": "2611.04146v1",
-      "title": "RGDM: Robust Graph Diffusion Model",
-      "authors": [
-        "Yancheng Wang",
-        "Ping Li",
-        "Dongfang Sun",
-        "Yingzhen Yang"
-      ],
-      "abstract": "Diffusion models represent a powerful class of generative models known for their solid theoretical foundations and remarkable performance across diverse tasks and domains. Existing node level diffusion methods synthesize nodes and edges within a graph, but are not designed to learn a robust generator from adversarially corrupted graphs. In this study, we introduce the Robust Graph Diffusion Model (RGDM), designed to generate labeled synthetic graph structures consisting of nodes and edges that integrate seamlessly into a given graph. The RGDM consists of a Robust Graph Autoencoder (RGAE) and a Latent Diffusion Model (LDM). Leveraging an edge selection mechanism and an innovative low-rank regularization on the latent feature, the RGDM produces clean and high-quality synthetic graph structures, even when trained on graphs subject to adversarial attacks. Comprehensive experimental evaluations reveal that Graph Neural Networks (GNNs) trained on the augmented graph, which is formed by merging the original attacked graph with the synthetic graph structures, exhibit significantly improved robustness against various graph adversarial attacks in the context of semi-supervised node classification. The code of the RGDM is available at https://github.com/Statistical-Deep-Learning/RGDM.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T01:40:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.04146v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.04146v1"
-    },
-    {
-      "id": "2611.03597v1",
-      "title": "Structured Visual Landscape: Generating Preferred Representations in Biological and Artificial Neural Networks",
-      "authors": [
-        "Yusong Zhao",
-        "Edgar Y. Walker",
-        "Hao Wang",
-        "Mi Lu"
-      ],
-      "abstract": "Understanding how neurons respond to visual stimulus is an important question in both deep learning and neuroscience. It has significant implications for enhancing the interpretability of black-box artificial neural networks and for understanding the visual representation in the human brain. We propose a structured visual representations landscape and design an activation-based prior that allows us to effectively regularize the landscape with activations from brain regions or neural network units. Our model Vis-Lens integrates a variational autoencoder and a diffusion model into an image generation framework. It enables the generation of natural, realistic preferred images by directly modifying the activation-regularized latent codes without per-image iterative optimization. We demonstrate the effectiveness of our framework on both artificial neural networks and human visual cortex using functional magnetic resonance imaging (fMRI) data. Our framework improves activation modulation and image realism compared with a recent state-of-the-art method for generating preferred visual representations of these neural targets.",
-      "published": "November 02, 2026",
-      "published_raw": "2026-11-02T18:39:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.03597v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.03597v1"
     }
   ]
 }
