@@ -1,7 +1,57 @@
 {
-  "last_updated": "2026-11-06T03:53:13.704706",
+  "last_updated": "2026-11-07T03:27:36.059425",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.08487v1",
+      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+      "authors": [
+        "Jonathan Kozaczuk",
+        "Zheng Dong",
+        "Noyan Evirgen",
+        "Keivan Majidi",
+        "Eddie K. H. Ng",
+        "Chris Porter",
+        "Qi Zhao",
+        "Jia Geng",
+        "Changmao Li",
+        "Brandon R. Feng"
+      ],
+      "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines, including on transformer-encoded embeddings. We then apply the method to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T18:59:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.08487v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08487v1"
+    },
+    {
+      "id": "2611.08437v1",
+      "title": "Deep-learning surrogate model for rapid quantum-noise computation in dual-pump fiber-optic phase-sensitive amplifiers",
+      "authors": [
+        "Yousra Bouasria",
+        "Debanuj Chatterjee",
+        "Abdessamad Belfakir",
+        "Debabrota Basu"
+      ],
+      "abstract": "Fiber-optic parametric amplifiers in a phase-sensitive amplifier (PSA) configuration are well known for their low noise properties. Quantum mechanics dictates that these amplifiers can have a 0 dB noise figure (NF) (ratio of signal-to-noise ratio at the input and output of the amplifier) under certain conditions. However, for a dual-pump configuration, when the system is highly nonlinear, fully quantum calculations of NF become non-trivial. In such cases, semi-quantum models of NF evaluation exists, however, they are often complicated and resource intensive. To simplify that, in this work, first we use a semi-quantum NF calculation framework for the generation of numerically simulated input-output dataset of NF over a large parameter spaces. Then we use the data to train an optimized deep neural network (DNN) for rapid NF prediction. Utilizing the DNN, we demonstrate about 400 times reduction in the computation time compared to the standard semi-quantum NF evaluation approach with a mean absolute error (MAE) of 0.0015 dB. Using clustering we demonstrate a rapid exploration of the parameter space with respect to high gain (20 dB) and low NF (0.3 dB) targets and retrieve associated design parameters. These results illustrate the efficacy of machine learning-based approaches for rapid search of high-dimensional parameter spaces especially in compute intensive photonic systems.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T18:30:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.08437v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08437v1"
+    },
+    {
+      "id": "2611.08252v1",
+      "title": "Series-wise Cross-validation for Global Time Series Forecasting",
+      "authors": [
+        "Vitor Cerqueira",
+        "Mariana Oliveira",
+        "Luis Roque"
+      ],
+      "abstract": "We consider the problem of cross-validation (CV) in time series forecasting, with a focus on global forecasting models based on deep learning. The prevailing CV strategy in forecasting is to partition data across time with the last part of each series used for testing. With global models trained on collections of time series, however, a fundamentally different approach becomes possible: partitioning across series and time. We formalize series-wise CV for global forecasting models and benchmark several instantiations, including K-fold CV, bootstrapping, and Monte Carlo CV, on 11 datasets with 10 neural network architectures. We evaluate CV procedures along five dimensions: performance estimation, overoptimism rate, model selection accuracy, regret, and downstream forecasting performance. We withhold a random fraction of series from training so that they appear only in the test set. This protocol simulates the emergence of new series not seen during training, a common scenario in global forecasting. Under this protocol, our results reveal a nuanced trade-off: series-wise CV yields better downstream forecasting accuracy by guiding model selection toward configurations that generalize across both time and series, while time-wise CV retains a slight advantage for estimating out-of-sample error.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T16:28:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.08252v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08252v1"
+    },
     {
       "id": "2611.07843v1",
       "title": "Enhanced MRI brain tumor detection using deep learning in conjunction with explainable AI SHAP based diverse and multi feature analysis",
@@ -249,56 +299,6 @@
       "published_raw": "2026-11-03T17:05:45Z",
       "pdf_link": "http://arxiv.org/pdf/2611.05220v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.05220v1"
-    },
-    {
-      "id": "2611.05035v1",
-      "title": "Federated Transfer Learning for Medical Image Classification under Mixed Skew",
-      "authors": [
-        "Alexandre G. Leclercq",
-        "Sébastien Bougleux",
-        "Aurélien Corroyer-Dulmont",
-        "Romain Hérault"
-      ],
-      "abstract": "Deep learning in medical imaging is constrained by data scarcity and by privacy regulations that make centralizing patient data across institutions impractical. Federated Learning (FL) addresses these constraints by keeping data local, but its distributed nature exposes training to strong statistical heterogeneity. Multicentric medical data is particularly affected, exhibiting a mixed skew that combines feature, label, concept, and quantity shifts across centers. Personalized FL mitigates heterogeneity by tailoring a model to each client, yet most methods assume training from scratch, which is unrealistic given the high dimensionality of medical features relative to the limited data available. We propose the Personalized Aligner Federated Pretrained (PAFP) framework, a personalized FL approach built on a pre-trained backbone. PAFP inserts client-specific Feature Alignment modules before the fine-tuned blocks to realign hidden feature distributions toward a server-aggregated target. On the FedISIC benchmark, PAFP attains the highest unweighted balanced accuracy while reducing inter-client performance variance roughly six-fold relative to the strongest baseline, yielding accuracy and cross-client equity jointly. Our code is publicly available at https://github.com/Alexandre-Leclercq/PAFP.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T15:08:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.05035v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.05035v1"
-    },
-    {
-      "id": "2611.04664v1",
-      "title": "Feature-Based and Deep Learning Methods for Astronomical Light Curve Classification",
-      "authors": [
-        "V. Baymakanov",
-        "Kh. Khamitov",
-        "A. Raimova",
-        "A. Isaeva",
-        "R. Taran",
-        "M. Zedan",
-        "M. Kornilov",
-        "M. Demianenko",
-        "K. Malanchev",
-        "M. Hushchyn"
-      ],
-      "abstract": "We compare feature-based machine learning and end-to-end deep learning for variable star classification using the Zwicky Transient Facility (ZTF) StarEmbed dataset, which contains about 40,000 objects across seven imbalanced classes. Classical models trained on physically motivated features consistently outperform deep networks trained directly on raw light curves. We find that limited labeled data contributes to the performance gap, while the multivariate, irregularly sampled, and morphologically diverse nature of light curves poses additional challenges for deep learning models. While deep learning holds promise for learning representations directly from observations, our results indicate that current models fail to generalize with the available training set size. These findings motivate further investigation of the benefits of scaling labeled datasets and self-supervised pretraining on large unlabeled surveys. This work establishes a quantitative baseline for future research and highlights the need for further innovations to unlock the potential of deep learning in astronomical time series analysis.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T10:50:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.04664v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.04664v1"
-    },
-    {
-      "id": "2611.04273v1",
-      "title": "Deep Learning Compilers: Architecture, Optimization, and Empirical Characterization",
-      "authors": [
-        "Jinghao Wen",
-        "Ruixuan Wang",
-        "Xun Jiao"
-      ],
-      "abstract": "As deep learning (DL) models become increasingly complex and hardware architectures grow more heterogeneous, DL compilers play a critical role in optimizing computational efficiency and enabling scalable deployment. This paper presents a systematic analysis of DL compilers, covering their architectural evolution, compilation workflows, optimization techniques, and emerging research directions. We organize DL compiler architectures into frontend, middle-end, and backend stages, emphasizing the role of the middle-end in connecting high-level model representations with hardware-specific optimizations. We further examine representative DL compilers and recent optimization techniques across different compilation stages. Beyond architectural and technical analysis, we conduct an empirical evaluation of compiler behaviors to investigate the effectiveness of graph optimization, compilation overhead, and dynamic-shape handling. Experiments using PyTorch/TorchInductor on an NVIDIA RTX A6000 demonstrate that compiler benefits depend strongly on workload characteristics, with speedups of up to 8.21\\times for fusion-friendly computation graphs, while other workloads exhibit limited improvements. Our results further reveal that compilation overhead can require thousands of executions to amortize, and dynamic-shape compilation reduces cumulative shape-transition costs by approximately 70\\% at the expense of modest steady-state performance degradation. By combining systematic architectural analysis with quantitative experimental evidence, this work provides insights into the design, optimization, and practical deployment of modern DL compilers.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T04:02:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.04273v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.04273v1"
     }
   ]
 }
