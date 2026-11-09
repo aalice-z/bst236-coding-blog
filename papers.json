@@ -1,7 +1,74 @@
 {
-  "last_updated": "2026-11-08T02:56:03.068090",
+  "last_updated": "2026-11-09T03:17:12.025845",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.09317v1",
+      "title": "Stable probabilistic emulation of partially observed dynamical systems",
+      "authors": [
+        "Mario Massy",
+        "Sara Shamekh",
+        "Fabrizio Falasca",
+        "Matthieu Blanke"
+      ],
+      "abstract": "Predicting the long-term behavior of partially observed dynamical systems such as the coupled atmosphere-ocean system is central to societal decision-making. Motivated by the success of deep learning emulators in weather forecasting, data-driven climate models represent a promising approach. However, climate emulation poses distinct challenges: models must account for unresolved fast variables introduced by unavoidable coarse-graining, reproduce long-term statistics, and remain stable over arbitrarily long rollouts and under external perturbations. These requirements motivate stochastic data-driven emulators, but modern generative models lack stability guarantees. We introduce forced-dissipative stochastic interpolants, a generative framework for learning stochastic reduced dynamics. Its architecture uses structural constraints inspired by turbulent dynamics, which provide stability by design while retaining the flexibility of stochastic interpolants to represent complex probabilistic dynamics. Building on the theory of Markov-chain stability, we establish a Foster--Lyapunov drift condition and prove geometric ergodicity for our emulator, together with stability under steady external forcing. We evaluate the framework on the two-timescale Lorenz-96 system, a prototype of partially observed multiscale turbulence. The resulting emulator remains stable over long integrations and under finite-amplitude forcing, with accurate prediction of forced responses of both the mean and variance.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T11:07:00Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.09317v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.09317v1"
+    },
+    {
+      "id": "2611.09163v1",
+      "title": "Beyond the Grid: Continuous Dictionary Pursuit for Interpretable Signal Decomposition",
+      "authors": [
+        "Nick Janssen",
+        "Melanie Schaller",
+        "Bodo Rosenhahn"
+      ],
+      "abstract": "Deep learning models achieve high accuracy in signal processing but remain difficult to interpret. Classical matching pursuit and sparse coding offer better transparency but suffer from spectral leakage and grid mismatch when signal frequencies do not align with discrete dictionary atoms. We introduce Continuous Dictionary Pursuit (CDP), a framework for interpretable signal decomposition that learns the parameters of closed-form functions directly from data. CDP optimizes over a continuous manifold of differentiable atoms and, unlike prior continuous pursuit methods that operate on a single analytic family, searches a heterogeneous library spanning periodic, trend, transient, and discontinuous structures. The algorithm employs a greedy iterative strategy using data-driven priors and gradient-based optimization to isolate individual signal components, with discontinuous waveforms made differentiable through spectral sharpness annealing. To ensure a sparse atom set for reconstruction, the framework utilizes a stopping criterion based on a predefined atom budget and residual error convergence. Evaluations on synthetic and real-world datasets show that CDP removes the grid discretization error for atom families contained in its library, recovers generative parameters to within $1\\%$ on stationary synthetic signals expressible in that library, and achieves the best sparsity-accuracy trade-off among classical, continuous-pursuit, and neural baselines in the sparse regime. Beyond decomposition, we demonstrate that the extracted atoms can serve as structured curriculum targets for training sequence models, improving forecasting accuracy over standard end-to-end training on most evaluated datasets. The method offers a glass-box alternative for signal decomposition by providing high reconstruction fidelity alongside direct physical interpretability.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T08:45:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.09163v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.09163v1"
+    },
+    {
+      "id": "2611.09138v1",
+      "title": "Deep Learning Theory through the Lens of Statistical Physics: A Topical Review",
+      "authors": [
+        "Wei Huang",
+        "Youjin Deng"
+      ],
+      "abstract": "The recent success of foundation models and deep learning has far outpaced our theoretical understanding of how large-scale neural networks learn and generalize. Statistical physics provides a natural language for describing such high-dimensional, nonlinear, and strongly coupled systems, offering concepts such as mean-field theory, phase transitions, energy landscapes, and stochastic dynamics. In this topical review, we adopt a statistical-physics way of thinking -- from concepts including phases and criticality, and free-energy viewpoints, to methods such as kernel and Gaussian-process limits, mean-field and dynamical mean-field theories, random-matrix tools, and Fokker-Planck formalisms, and to a mindset emphasizing universality, scaling, and tractable limits with explicit validity regimes. We survey recent progress on understanding modern deep learning through this lens, including mean-field analyses of wide networks, spectral and geometric perspectives on loss landscapes, stochastic-gradient-based training viewed as a dynamical process, and phase-transition analogies that organize phenomena such as overparameterization, generalization, and representation change. Our goal is to synthesize these threads into a coherent framework that clarifies what each approximation explains, when it is expected to hold, and how apparently competing narratives relate or diverge. Together, these perspectives form a unified physical framework that views representation learning as a collective phenomenon in high-dimensional systems, bridging deterministic and stochastic regimes of gradient-based optimization.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T08:10:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.09138v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.09138v1"
+    },
+    {
+      "id": "2611.08997v1",
+      "title": "Calibrating your confidence requires thinking of all the ways you could be wrong",
+      "authors": [
+        "Marco Miani"
+      ],
+      "abstract": "A primary limitation of modern deep learning is the miscalibration of model confidence; traditional architectures fundamentally lack a mechanism to quantify their own uncertainty. Larger models and larger datasets mitigate this issue, but they do not resolve the underlying structural deficiency. Bayesian methods offer a principled uncertainty-aware learning framework through stochastic parameters. Yet, despite the established benefits, the inherent computational overhead often compromises either scalability or quality. This trade-off currently prevents the widespread adoption of Bayesian methods. This Thesis bridges the gap between high-quality and low-complexity by introducing a novel distribution on parameter space: a degenerate Gaussian whose covariance is a projection matrix aligned with the null space of the Fisher information matrix. We demonstrate the scalability of this Bayesian posterior through two numerically efficient algorithms: one for posterior sampling and another for the direct computation of predictive confidence. Empirically, we show State-Of-The-Art confidence calibration and out-of-distribution detection for large models. We provide theoretical grounding for this approach. We study the degeneracies inherent in Amari's information geometry and highlight its most relevant component: the split of parameter's perturbations into two orthogonal subspaces. From this perspective, our posterior naturally emerges as the simplest choice that captures this split, assigning unitary variance to one subspace and zero variance to the other. Moreover, through the tools of differential geometry, we utilize this split to identify and rectify a critical misalignment issue of the non-linearized Laplace Approximation. Finally, with a focus on PAC-Bayes generalization bounds, we pave the way for a deeper understanding of the learning capabilities of overparametrized models.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T05:11:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.08997v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08997v1"
+    },
+    {
+      "id": "2611.08789v1",
+      "title": "TopoSHAP: Shapley for Explainable and Efficient Topological Deep Learning",
+      "authors": [
+        "Mathilde Papillon",
+        "Nina Miolane"
+      ],
+      "abstract": "Topological deep learning (TDL) extends learning on graphs, such as molecules or social networks, to higher-order structures, such as rings in a molecule or groups in a social network. Explaining which of these structures drive a model's predictions, and which architectural components matter most for its performance, remains challenging. We introduce TopoSHAP, an efficient and general explanation framework that addresses both questions across topological domains and model architectures. TopoSHAP-cell assigns Shapley values to topological data cells and extracts compact explanations. These explanations match or outperform graph-based counterparts on GraphXAI benchmark data while running up to 112$\\times$ faster. They also reveal advantageous topological feature design, leading to measured improvements in explanation recovery and predictive accuracy. On the architecture side, TopoSHAP-neighbor explains how neighborhoods contribute to model performance, and turns these evaluations into a backward-elimination search that identifies smaller, competitive architectures early in training. This is up to $11.3\\times$ cheaper than traditional TDL training sweeps.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T23:24:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.08789v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08789v1"
+    },
     {
       "id": "2611.08487v1",
       "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
@@ -83,6 +150,23 @@
       "published_raw": "2026-11-05T09:19:07Z",
       "pdf_link": "http://arxiv.org/pdf/2611.07695v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.07695v1"
+    },
+    {
+      "id": "2611.08544v1",
+      "title": "GenStrain: Multi-Conditional Generative Diffusion Model To Synthesize High-quality Motion and Strain Maps From Cardiac Magnetic Resonance Images",
+      "authors": [
+        "Rishov Paul",
+        "Sona Ghadimi",
+        "Cristiane C. Singulane",
+        "Amit R. Patel",
+        "Frederick H. Epstein",
+        "Miaomiao Zhang"
+      ],
+      "abstract": "This paper presents GenStrain, a novel method for synthesizing high-quality cardiac motion-based strain maps from routinely collected cine cardiac magnetic resonance (CMR) images. Existing approaches typically rely on image registration to estimate motion (a sequence of displacements) from cine CMR images, but cine CMR presents very sparse trackable intramyocardial features, presenting challenges to estimate intramyocardial motion. An advanced imaging technique, Displacement Encoding with Stimulated Echoes (DENSE) CMR, is considered as the gold standard for strain assessment, but it requires additional acquisitions, which are not ideal for efficient clinical workflows. To address this gap, we introduce GenStrain, a novel framework designed to learn the data distribution of highly accurate cardiac motion captured by DENSE. In particular, we develop a diffusion process in motion space, where spatiotemporal continuity is carefully considered. To fully leverage both cine CMR images and their associated motion patterns, we introduce a multi-conditional conditioning strategy that integrates anatomical features and motion representations learned by a spatiotemporal registration model to guide the generation process. Experimental results demonstrate that our proposed model, GenStrain, outperforms existing strain analysis methods based on displacement estimates from both traditional registration approaches and state-of-the-art (SOTA) deep learning models. Our model represents a promising step toward more accurate cardiac function assessment and holds great potential for clinical translation. Our code is publicly available at https://github.com/Rishov-MIA/GenStrain.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T04:08:45Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.08544v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08544v1"
     },
     {
       "id": "2611.07410v1",
@@ -214,91 +298,6 @@
       "published_raw": "2026-11-04T07:11:10Z",
       "pdf_link": "http://arxiv.org/pdf/2611.06066v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.06066v1"
-    },
-    {
-      "id": "2611.06026v1",
-      "title": "Spectroscopy-informed Deep Learning Searches for Photometric Little Red Dots in JWST Surveys",
-      "authors": [
-        "Chenxuan Zhang",
-        "Huanian Zhang",
-        "Qingwen Wu"
-      ],
-      "abstract": "Little Red Dots (LRDs) are a population of compact, red sources discovered at high redshift with JWST that exhibit distinctive V-shaped spectral energy distributions (SEDs). Existing LRD samples are typically identified using a variety of color-based selection criteria, which can lead to differences in the populations recovered by different studies. We develop a cross-modal machine-learning framework that combines matched NIRCam imaging and NIRSpec/PRISM spectroscopy to transfer spectroscopic information into imaging-based representations, enabling LRD identification from JWST/NIRCam imaging alone. Applied to spectroscopically observed high-redshift galaxies previously classified as non-LRDs, our model identifies 35 new LRD candidates. The majority satisfy at least one independent LRD color selection criterion, and among the 13 candidates with medium- or high-resolution NIRSpec grating spectra, 10 exhibit broad H$α$ emission - a hallmark of LRDs. We further apply the classifier to public NIRCam imaging from the Dawn JWST Archive and two independent JWST surveys, yielding 357 and 23 additional LRD candidates, respectively. The candidates recovered by our method span a broader range of observed SED properties than those in existing samples, suggesting that current color-selected samples may not fully capture the diversity of LRD-like systems present in JWST surveys. Our findings highlight the value of spectroscopy-informed photometric classification as a powerful strategy for systematically mining large-area JWST imaging datasets and provide a practical framework for future studies of this emerging population.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T06:29:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06026v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06026v1"
-    },
-    {
-      "id": "2611.05986v1",
-      "title": "A Comparative Study of Importance Attribution to Columns in Deep Learning over Relational Databases",
-      "authors": [
-        "Hila Levi-Yosefi",
-        "Shunit Agmon",
-        "Ester Livshits",
-        "Agapi Rissaki",
-        "Benny Kimelfeld"
-      ],
-      "abstract": "Deep learning over relational databases has led to increasingly effective prediction models, motivating a growing need to explain their behavior. We study explanation methods that assign importance scores to individual database attributes, focusing on a fundamental question: to what extent does the choice of importance-attribution method matter? We develop a methodology to systematically compare importance-attribution methods and analyze their similarities and differences. In particular, we study two aspects of the explanations: which attributes they deem important, captured by differences in attribute rankings, and how importance scores vary across attributes, captured by differences in score distributions. We further investigate whether these differences are reflected in the conventional measure of explanation quality, fidelity. We apply our methodology in an extensive empirical study of four methods: Monte Carlo Shapley, Kernel SHAP, single-attribute impact, and mask learning. We experiment with multiple datasets and tasks using two RDL architectures: heterogeneous GraphSAGE and Relational Graph Transformers. Our experiments show that explanation methods behave differently depending on the prediction type: regression or classification. In regression, most methods exhibit high agreement in attribute rankings, whereas classification yields considerably less consensus. Notably, while mask learning frequently diverges in its importance distributions, Shapley-based methods and single-attribute impact often converge to similar explanations. This suggests that, in many settings, single-attribute impact can replace Shapley at substantially lower computational cost. Overall, our study provides methodological tools for comparing importance-attribution methods, and empirical evidence that their choice has important consequences for interpreting relational deep learning models.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T05:33:09Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.05986v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.05986v1"
-    },
-    {
-      "id": "2611.05781v1",
-      "title": "Timing is Everything: Inferring Temporal Membership in Continually Updated Models",
-      "authors": [
-        "Jie Fu",
-        "Xiangpeng Deng",
-        "Yuan Hong",
-        "Wendy Hui Wang"
-      ],
-      "abstract": "Continual model updating has become a common practice in the deployment of machine learning systems. However, the dynamic training behaviors give rise to new risks not sufficiently addressed by existing studies. In this paper, we present the first systematic study of temporal privacy risk in continually updated deep learning models. We formalize the notion of temporal membership in continually updated models. We then define the temporal membership inference attack, which seeks to infer whether and when individual samples were involved in model training, at both timestamp-level and interval-level granularities. To this end, we propose TMIA, a novel black-box attack that leverages bidirectional LSTMs to infer temporal membership from model outputs observed across successive updates. Through extensive experiments on three language models and three image classification models, we show that TMIA is highly effective and significantly outperforms existing baselines. Finally, we evaluate three potential defenses, revealing the trade-off between privacy protection and model utility.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T00:36:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.05781v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.05781v1"
-    },
-    {
-      "id": "2611.05680v1",
-      "title": "Toward an Optimal Configuration for Tree Species Classification from Bark Images: A Leakage-Safe Ablation Study",
-      "authors": [
-        "Maeve Côté"
-      ],
-      "abstract": "Background: The automatic identification of tree species from bark photographs is of practical interest for forestry inventory and the wood-processing industry, yet the design choices that govern the accuracy of deep-learning approaches have not been studied systematically, and some prior results may be inflated by leakage of images of the same trunk across training and test partitions. Methods: A systematic ablation study is conducted on the public BarkNet 1.0 dataset (20 species) under the established tree-level, leakage-safe partitioning scheme. Using ConvNeXt-V2 backbones, the following factors are varied in turn and evaluated by five-fold cross-validation: patch size, the strategy by which per-patch predictions are aggregated into an image-level decision, the training regime (single- versus two-stage), backbone capacity, the whole-image baseline, and the number of patches available at inference. Results: Per-patch accuracy rises monotonically with patch size (from 75.6% at 160 px to 89.6% at 512 px), and image-level accuracy rises in step, plateauing near 94.9% around 512 px. Learned aggregation exceeds majority voting by at most 0.7 pp, an advantage that shrinks as patches grow and attention becomes near-uniform. Backbone capacity (pico to tiny) alters accuracy by less than a point, and two-stage training offers no advantage over one-stage. Whole-image classification (91.9%) trails patch-based aggregation, since it admits no bag to average over; accuracy increases with the number of patches at inference, saturating around 64. Conclusions: The study yields a simple recommended configuration: patches as large as possible while leaving enough to average over (around 512 px here), with a nano backbone. It also quantifies the second-order role of learned aggregation and model capacity, providing a reproducible reference point for practitioners and future research",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T22:05:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.05680v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.05680v1"
-    },
-    {
-      "id": "2611.05224v1",
-      "title": "Learning curves in natural and artificial systems",
-      "authors": [
-        "Dmitry A. Novikov"
-      ],
-      "abstract": "A general mathematical model of experience formation is considered, in which the learning level is defined as the probability that the next value of the uncertainty factor has already been mastered and not forgotten. Within this model the shape of the learning curve is derived, and it turns out to be determined primarily by the distribution of situation occurrence: a uniform distribution yields an exponential curve, whereas a power-law distribution yields a power-law curve whose exponent equals the ratio of the distribution exponent to that same exponent increased by one. Both mechanisms generating power-law curves, established earlier in the analysis of debugging, assembly and repair activities, are shown to have been independently rediscovered in deep learning theory as the \"frequency\" and \"spectral\" mechanisms of scaling laws for artificial neural networks, while the exponential curves of machine learning (contraction operators, strongly convex optimization, stationary reinforcement) are generated by the same constancy of the contraction coefficient that was revealed half a century earlier in models of radioactive decay, the first-order lag element, and others. A solution is given for the problem of choosing a training distribution that differs from the deployment distribution. A methodological consequence is discussed: three distinct mechanisms generate curves indistinguishable in shape, so an observed learning curve does not allow one to judge the \"internal\" structure of the learning system.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T17:10:57Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.05224v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.05224v1"
-    },
-    {
-      "id": "2611.05220v1",
-      "title": "Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks",
-      "authors": [
-        "Wen Zhou",
-        "Shaowen Wang",
-        "Upmanu Lall",
-        "Venkatesh Merwade",
-        "Dingqi Ye"
-      ],
-      "abstract": "Flood peak depth on normally dry land governs damage and risk to life, but is observed only sparsely, by post-event high-water mark (HWM) surveys, and depth derived from satellite flood extent is produced after the event and inherits the vertical error of the digital elevation model (DEM) it is computed from. Deep-learning flood models have in turn been trained on hydrodynamic simulations rather than on observed depths. We ask whether flood peak depth can be learned from field observations and predicted before the peak from spaceborne terrain, geospatial foundation-model embeddings and antecedent meteorological forcing. We assembled 5689 USGS HWM surveys from 39 events (2011-2025) in 24 U.S. states and Puerto Rico, assigned each a peak time from nearby sensors, paired each with a rain-free window at the same site, and linked them to Copernicus GLO-30 terrain, AlphaEarth embeddings and 144 h of hourly forcing masked to the lead time. A cross-modal fusion network trained on these observations predicts depth at the surveyed marks with a mean absolute error of 0.39 m 6 h ahead of the peak. Supervision by surveyed depth corrects the DEM error implicitly: differencing the measured peak water level with the same DEM gives 0.93 m at the same marks, 2.4 times larger, although it uses the measured water level and the model does not. Forcing accounts for 77% of the attributed reduction in depth error; terrain and the embeddings are statistically equivalent to each other and contribute the remaining 23%. On eleven held-out events the model still separates flooded from rain-free conditions but no longer resolves depth at the marks (R2 = 0.03), so the skill reported here is confined to the events and regions sampled. Field-surveyed depths can thus supervise flood depth prediction and correct terrain error that extent-based estimation cannot, while transfer to unseen storms remains the open problem.",
-      "published": "November 03, 2026",
-      "published_raw": "2026-11-03T17:05:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.05220v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.05220v1"
     }
   ]
 }
