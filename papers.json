@@ -1,7 +1,111 @@
 {
-  "last_updated": "2026-11-09T03:17:12.025845",
+  "last_updated": "2026-11-10T04:55:52.289890",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.10521v1",
+      "title": "TimeHF 2.0: Multimodal, Multivariate, and Multi-Region Collaborative Forecasting for Large-Scale Retail Supply Chains",
+      "authors": [
+        "Zhongxuan Han",
+        "Zhengxin Shi",
+        "Kunxiu Chen",
+        "Xiaolin Huang",
+        "Yulin Huang",
+        "Anni Zhang",
+        "Xiaoming Lin",
+        "Zhengyu Chen",
+        "Xue Yu",
+        "Yang Liu",
+        "Yuanyuan Yang",
+        "Yangyang Zhang",
+        "Junheng Huang",
+        "Dongyang Geng",
+        "Ben Zhang",
+        "Xin Wang",
+        "Jiaxin Wang",
+        "Haowei Zhou",
+        "Qiqi Yan",
+        "Jiaheng Yin",
+        "Jintao Xu",
+        "Zijiang Liu",
+        "Changfei Zhan",
+        "Zhe Chen",
+        "Yutong Pan",
+        "Jinqiu Deng",
+        "Shaomin Li",
+        "Ningxuan Kang",
+        "Jianshen Zhang",
+        "Yongzhi Qi",
+        "Wei Qi",
+        "Dazhou Lei",
+        "Zuo-Jun Max Shen"
+      ],
+      "abstract": "Large-scale retail supply chains need sales forecasts for specified products, future dates or planning windows, and regions under the conditions available at the forecast origin. Regional sparsity, changing environments, volatile sales, and unfamiliar business situations make these dimensions difficult to model together. We introduce TimeHF 2.0, a multimodal, multivariate, and multi-region collaborative forecasting framework that makes flexibly expressed business knowledge usable in numerical prediction. A coverage-aware directed encoder integrates regional sales and applicable covariates. A semantic alignment module transfers language-model hidden representations of natural-language plans and domain experience into target-specific forecasting context. Learning against sales observations connects these meanings to numerical evidence, allowing business users to supply experience, future plans, and changing circumstances without defining a new numerical feature for each description. Text-conditioned future queries and shared/routed experts adapt prediction to the supplied context. An ordered-distribution head allocates fine resolution to routine fluctuations and coarse resolution to extreme sales movements, while daily/window learning connects forecasts to cumulative planning quantities. Online parallel forecasting at JD yields relative accuracy improvements of 18.25% and 17.94% for national daily and planning-window sales, and 19.44% and 18.99% for DC daily and planning-window sales, over the original production deep learning baseline. Component comparisons, loss-design results, and product-type analyses examine the roles of regional information, covariates, business knowledge, context-dependent processing, and robust planning-oriented learning.",
+      "published": "November 07, 2026",
+      "published_raw": "2026-11-07T06:40:04Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.10521v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.10521v1"
+    },
+    {
+      "id": "2611.10292v1",
+      "title": "Continual Instruction Tuning for LLM-ased Management of Continuum Resources",
+      "authors": [
+        "Lanpei Li",
+        "Antonino Vaccarella",
+        "Vincenzo Lomonaco",
+        "Massimo Coppola"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly explored for resource management across the Cloud-Edge continuum. However, embedding LLMs directly inside latency-sensitive control loops places inference latency, execution jitter, and hallucination risks on the critical path. This study argues for a different use of LLMs: a continually instruction-tuned intent compiler that runs once per management intent or declared context change, above a fast, deterministic tactical controller that handles all low-latency runtime actions. We formulate intent compilation as a continual instruction tuning problem, because management intents arrive sequentially and accumulate while infrastructure and workload contexts drift. Unlike recent LLM-based management frameworks, our design scores the model's outputs by execution, so that catastrophic forgetting can be measured in the executed objective of the underlying controller. On a continuum simulator with a 2B backbone and parameter-efficient adapters, preliminary results show that naive sequential tuning forgets earlier intents in the executed objective, that replay of stored examples nearly prevents this forgetting, and that the tuned compact compiler performs on par with simpler translators while being more robust than a grammar parser to rephrased intents.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T22:43:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.10292v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.10292v1"
+    },
+    {
+      "id": "2611.09650v1",
+      "title": "TensorMutation: Learning Weight-Space Mutations of Deep Learning Models on Neural Graphs",
+      "authors": [
+        "Zaheed Ahmed",
+        "Philip Makedonski",
+        "Jens Grabowski"
+      ],
+      "abstract": "Mutation testing for deep learning (DL) faces a cost-realism trade-off. The pre-training approach produces realistic but computationally expensive mutants, whereas existing post-training operators modify trained models efficiently but produce mutants that less closely resemble real faults. This study asks whether the trade-off is necessary: can the weight-space effect of a fault-informed pre-training mutation operator be predicted from a trained model, without retraining it? We answer this question with TensorMutation, which represents a trained model as a neural graph and uses a mutation-conditioned graph neural network (GNN) to predict parameter changes. The GNN is trained offline and reused across unseen models so that TensorMutation can generate executable mutants without retraining. We construct a corpus of 25,252 original-mutant pairs from 71 multilayer perceptron (MLP) classifiers using 11 fault-informed pre-training operators, including 25 newly curated subjects. TensorMutation partially reproduces the behavioral effects of pre-training mutations on nine held-out subjects, and direct weight-space supervision significantly improves weight-space fidelity. On 12 real-fault subjects, TensorMutation achieves the highest median behavioral similarity among the evaluated approaches. The improvement over the post-training tool DeepMutation++ is statistically significant (Holm-adjusted p=0.018), whereas the differences from the pre-training tool DeepCrime and the norm-matched random control are not significant. These results show that fault-informed pre-training mutations leave learnable structure in weight space that transfers to unseen models.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T16:00:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.09650v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.09650v1"
+    },
+    {
+      "id": "2611.09501v1",
+      "title": "e-means: outperforming k-means (in one-tenth the epochs)",
+      "authors": [
+        "Swann Bessa",
+        "Pierre-Emmanuel Mazaré",
+        "Gergely Szilvasy",
+        "Hugo Touvron",
+        "David Picard",
+        "Matthijs Douze",
+        "Hervé Jégou"
+      ],
+      "abstract": "Lloyd's k-means algorithm is a long-running standard for clustering, with applications in data analysis, retrieval, quantization and data curation. In this paper, we introduce an exponential moving average optimization procedure for k-means with mini-batch updates, powered by modern deep learning machinery and new insights. We also establish scaling laws on how decay rate and batch size impact final performance. This gives us a formulaic rule to fix them for multiple problem sizes and embedding datasets, without the need for any hyperparameter sweep. The resulting clustering algorithm, coined e-means, is much faster than Lloyd k-means and converges to lower losses, frequently even beating k-means++. On a wide array of embeddings datasets, it beats the loss of Lloyd k-means at 25 epochs in 1.4 to 2.6 epochs, which translates to 10-45x GPU wall-clock speedups compared to state-of-the-art k-means implementations. As an example, e-means partitions DINO10B, a dataset of 10 billion DINO embeddings, into 16 million clusters in only 2.5 epochs, reaching a loss below Lloyd's at 25 epochs.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T14:22:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.09501v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.09501v1"
+    },
+    {
+      "id": "2611.10082v1",
+      "title": "fNIRSAtlas: A Large-Scale Benchmark for Functional Near-Infrared Spectroscopy Classification",
+      "authors": [
+        "Kalle Mäkelä",
+        "Tuukka Ruotsalo"
+      ],
+      "abstract": "Functional near-infrared spectroscopy (fNIRS) is a promising modality for brain-computer interfaces and cognitive state decoding, but progress in machine learning for fNIRS has been limited by small, isolated datasets and inconsistent evaluation protocols. We introduce fNIRSAtlas, the largest open benchmark for fNIRS classification to date, comprising 23 classification tasks from 19 public data collections, spanning diverse experimental paradigms, including motor execution, motor imagery, mental arithmetic, working memory, and emotion recognition. fNIRSAtlas provides a fully automated pipeline from raw data to evaluation and defines standardized benchmark tasks for both cross-subject and within-subject classification, ensuring reproducible comparison of methods. We evaluate a variety of baseline models from fNIRS and related neuroimaging and time-series machine learning literature on the benchmark. Our results demonstrate that performance varies substantially across tasks and that methods validated on limited data -- especially deep learning approaches -- often fail to generalize beyond their original evaluation. fNIRSAtlas serves as an extensible, open, and reproducible benchmark to support more robust and cumulative progress in machine learning for fNIRS data. Our code and data can be found at https://fnirsatlas.github.io.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T14:17:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.10082v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.10082v1"
+    },
     {
       "id": "2611.09317v1",
       "title": "Stable probabilistic emulation of partially observed dynamical systems",
@@ -57,6 +161,21 @@
       "arxiv_link": "http://arxiv.org/abs/2611.08997v1"
     },
     {
+      "id": "2611.10057v1",
+      "title": "Domain Adaptive Graph Neural Networks for Neutrino Experiments",
+      "authors": [
+        "Hemalata Nayak",
+        "Giuseppe Cerati",
+        "Aleksandra Ćiprijanović",
+        "Tammy Walton"
+      ],
+      "abstract": "Weakly interacting particles such as neutrinos require highly efficient and precise detection methods to enable searches for new physics. Deep learning, and particularly Graph Neural Networks (GNNs), has shown promise for reconstruction tasks in liquid argon time projection chamber (LArTPC) neutrino experiments. However, differences between simulations and experimental data introduce domain shifts that can degrade model performance and potentially mimic or obscure new-physics signals. Here, we demonstrate that robust learning across datasets can still be achieved by using domain adaptation during training. We introduce, to our knowledge for the first time, domain-adaptation-enabled GNNs for robust LArTPC reconstruction tasks. We use MicroBooNE open dataset as our labeled source domain, and introduce four perturbed datasets as our unlabeled target domains-- including a fixed scale variation, moderate and severe gaussian noise, and a signal variation as a function of the position in the detector. The inclusion of adversarial-based domain adaptation during training improves performance for all four target domains, without a substantial drop in performance in the source domain. Precision in the target domain was improved up to 0.19 and recall up to 0.37, depending on the variation and the network task. These results demonstrate a potential of domain adaptation to bridge the gap between simulations and experiments, and build more trustworthy models for current and future LArTPC neutrino experiments.",
+      "published": "November 06, 2026",
+      "published_raw": "2026-11-06T02:40:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.10057v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.10057v1"
+    },
+    {
       "id": "2611.08789v1",
       "title": "TopoSHAP: Shapley for Explainable and Efficient Topological Deep Learning",
       "authors": [
@@ -70,7 +189,89 @@
       "arxiv_link": "http://arxiv.org/abs/2611.08789v1"
     },
     {
-      "id": "2611.08487v1",
+      "id": "2611.10046v1",
+      "title": "Topological Deep Learning Challenge 2026: Bridging the Gap",
+      "authors": [
+        "Guillermo Bernárdez",
+        "Lev Telyatnikov",
+        "Mathilde Papillon",
+        "Marco Montagna",
+        "Louisa Cornelis",
+        "Louis Van Langendonck",
+        "Antonio Purificato",
+        "Bruno Neri",
+        "David Leko",
+        "Donatella Genovese",
+        "Eleonora Grassucci",
+        "Jan-Willem Van Looy",
+        "Johan Mathe",
+        "Lucia Testa",
+        "Luka Benić",
+        "Melanie Weber",
+        "Olga Zaghen",
+        "Pavlo Vasylenko",
+        "Raffael Theiler",
+        "Scott Mahan",
+        "Gaurav Khanal",
+        "Valentina Sánchez",
+        "Dario Loi",
+        "Gabriele Onorato",
+        "Prasanna Devadiga",
+        "Taejin Paik",
+        "Anier Velasco Sotomayor",
+        "Jonas Müller",
+        "Aarav Gupta",
+        "Riyan Patel",
+        "Grold Otieno Mboya",
+        "Pushparaj Devadiga",
+        "Adam Gohain",
+        "Dominik Filipiak",
+        "Michael Banf",
+        "Alireza Mohammadian",
+        "Amirreza Akbari",
+        "Gabriel Chaviano Díaz",
+        "Marcos Chávez Mesa",
+        "Ankit Grover",
+        "Rémi Bourgerie",
+        "Alessio Comparini",
+        "Ankit Kumar",
+        "Mohammad Yusuf",
+        "Devesh Kaushal",
+        "Francesco Orsi",
+        "Ghazal Mostofi",
+        "Kolya Lettl",
+        "Salwa Khattami",
+        "Gabriel Franco",
+        "Yelizaveta Falkouskaya",
+        "Jorge Luiz Franco",
+        "Kajal Singla",
+        "Fernando David Espinosa Iñiguez",
+        "Raj Patil",
+        "Eric Dolores-Cuenca",
+        "Luigi Petti",
+        "Chenguang Xu",
+        "Stefano Blando",
+        "Christine Zeh",
+        "Lennart Bastian",
+        "Kaden Zheng",
+        "Vihan Tiwari",
+        "Sud Athreya",
+        "Hisataka Kajita",
+        "Hugo Micheron",
+        "Rémi Devaux",
+        "Antoine Jardin",
+        "Tegan Emerson",
+        "Olga Fink",
+        "Nina Miolane"
+      ],
+      "abstract": "This paper describes the 2026 edition of the Topological Deep Learning Challenge: Bridging the Gap, hosted at the second Topology, Algebra, and Geometry in Data Science (TAG-DS) Conference. Where previous editions grew the modelling and data ecosystem of Topological Deep Learning (TDL), this edition set out to place Graph Neural Networks (GNNs) and Topological Neural Networks (TNNs) side by side under a single evaluation pipeline. Participants implemented recent state-of-the-art architectures in TopoBench, with Track 1 covering GNNs and Track 2 covering TNNs. They evaluated these implementations on shared synthetic benchmarks generated with GraphUniverse, which independently controls homophily, average degree and degree-distribution heaviness. The challenge yielded 68 qualifying submissions from 34 teams, spanning the graph, simplicial, cellular, hypergraph and combinatorial domains. For the first time, submissions were also tracked on a public leaderboard, which we summarize and analyze here. Our analysis finds that the differences between the submitted tracks are strongly task-dependent: the mean accuracy gap is modest on community detection, while on triangle counting the Track 1 mean error is 1.85 times the Track 2 mean. Several structurally informed GNNs also outperform the Track 2 mean on triangle counting.",
+      "published": "November 05, 2026",
+      "published_raw": "2026-11-05T22:07:36Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.10046v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.10046v1"
+    },
+    {
+      "id": "2611.08487v2",
       "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
       "authors": [
         "Jonathan Kozaczuk",
@@ -84,11 +285,11 @@
         "Changmao Li",
         "Brandon R. Feng"
       ],
-      "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines, including on transformer-encoded embeddings. We then apply the method to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.",
+      "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines. We then apply our methods to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.",
       "published": "November 05, 2026",
       "published_raw": "2026-11-05T18:59:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08487v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08487v1"
+      "pdf_link": "http://arxiv.org/pdf/2611.08487v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.08487v2"
     },
     {
       "id": "2611.08437v1",
@@ -198,106 +399,6 @@
       "published_raw": "2026-11-04T20:01:51Z",
       "pdf_link": "http://arxiv.org/pdf/2611.07094v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.07094v1"
-    },
-    {
-      "id": "2611.06610v1",
-      "title": "Alternatives to Shallow Autoencoders for Collaborative Filtering",
-      "authors": [
-        "Mario Mallea",
-        "Angela Nebot",
-        "Francisco Mugica"
-      ],
-      "abstract": "Collaborative filtering (CF) is a cornerstone of recommender systems and plays a relevant role in many modern applications. CF uses user-item interaction data to discover future preferences. Although deep learning models have shown promise in CF, Embarrassingly Shallow Autoencoders for Sparse Data (EASE) has gained attention for its outstanding ranking accuracy provided by its closed-form solution. EASE relies primarily on relationships among items to fit a full-rank high-dimensional linear mapping. We hypothesize that this design limits its capacity to capture similar but not equivalent fine-grained user relationships, consequently limiting its recommendation accuracy. This paper introduces an alternative formulation based on EASE that takes advantage of user-user information. Furthermore, we propose a hybrid model that combines both user-user and item-item adjacency distributions. Our experiments reveal that the proposed models outperform EASE on well-known recommendation benchmarks, highlighting the significance of including the user alternative in shallow autoencoder studies for CF.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T14:59:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06610v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06610v1"
-    },
-    {
-      "id": "2611.06412v1",
-      "title": "A Bag of Tricks for Defending Deep Learning-based Face Recognition Pipelines against Backdoor Attacks",
-      "authors": [
-        "Quentin Le Roux",
-        "Marti Jimenez",
-        "Yannick Teglia",
-        "Philippe Loubet Moundi"
-      ],
-      "abstract": "The protection of mature, multi-stage Face Recognition Systems is crucial to system providers. This technical report targets the threat model most relevant to industry practitioners: although model training is performed in-house, training data is sourced from possibly-compromised third parties. Given this setting, we present three practical defense \"tricks\" against data poisoning-based backdoor attacks. The first operates at training-time, detecting poisoned identities during training or prior to a pipeline's deployment. The last two operate at inference-time, filtering suspicious inputs before an answer can be sent back to a potential attacker. Each method is presented with their motivation, algorithms and computational impact, and evaluated on realistic face recognition workloads. Our goal is to provide actionable hardening techniques to system providers.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T12:12:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06412v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06412v1"
-    },
-    {
-      "id": "2611.06382v1",
-      "title": "From hydrological laws to catchment models: A process-based model matches deep-learning accuracy on three continents",
-      "authors": [
-        "Xilin Xia"
-      ],
-      "abstract": "Dooge asked whether hydrology has laws at the catchment scale. We ask whether a low-dimensional system built under physical laws can match the accuracy of neural networks that outperform process-based models on the same inputs. Three laws constrain a lumped catchment model. Conservation makes it a flux-connected storage network, dissipation fixes the sign of every flux and aggregation determines how the unresolved composition enters the fluxes, through effective laws over threshold distributions and a memory of the forcing. These laws admit four kinds of refinement. A parsimonious model under them, CaRT (11 parameters per catchment), is refined in a loop assisted by AI agents. Each refinement addresses an observed deficit through a hypothesis from the literature. The result, CaRT+, has fourteen states, 35 parameters per catchment and no daily neural network. Most refinements follow from aggregation over thresholds or from variables that carry no water but modulate fluxes. On 602 British and 593 US gauged catchments, single CaRT+ models reach median Nash-Sutcliffe efficiencies of 0.863 and 0.765 in held-out years. A stateful LSTM reaches 0.869 and 0.751 and an entity-aware LSTM 0.862 and 0.754, while three-seed LSTM ensembles remain ahead of the CaRT+ ensemble by 0.003-0.012 in median paired NSE. On 505 drier Australian gauged catchments unused in development, single CaRT+ models reach 0.778 against 0.762 and 0.753 for the two LSTMs. The results suggest that catchment-scale laws exist as laws of form, with the constitutive families shared and only their parameters learned.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T11:45:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06382v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06382v1"
-    },
-    {
-      "id": "2611.06158v1",
-      "title": "Selective Prediction Intervals: Jointly Learning to Predict, Bound, and Abstain",
-      "authors": [
-        "Lidor Rubi",
-        "Gilad Katz"
-      ],
-      "abstract": "Many high-stakes regression decisions ask three things of a model at once: a point estimate to act on, an interval that bounds the risk of acting, and the option to abstain when neither can be trusted. Deep learning provides these in isolation: prediction-interval methods return an interval, and at best a value estimate inside it, for every input, while selective-prediction methods learn when to abstain, but only for point predictions and with no statement of how far the truth may lie from the estimate. We introduce SelPI, which trains interval, value and abstention heads jointly under a single loss with an explicit acceptance-rate budget. A natural objection is that interval width already tells us when to abstain. We show that it does not: across 18 tabular benchmarks, width predicts large point errors well (AUROC 0.72) but is anti-correlated with interval misses (AUROC 0.38), so abstaining on wide intervals discards precisely the inputs the interval got right. SelPI therefore selects with two gates, one trained on the interval loss and one on the value loss, coupled by a Fr'echet penalty that ties their separate budgets to the joint acceptance rate they deliver. With the base predictor held fixed, the learned gate beats width thresholding on a proper interval score on all 18 tabular datasets, closing a median 87% of the gap to an oracle selector, and it also beats selection by deep-ensemble disagreement on every dataset. The advantage grows with the heteroscedasticity of the task, and we report the settings in which it disappears.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T08:39:27Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06158v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06158v1"
-    },
-    {
-      "id": "2611.06151v1",
-      "title": "CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution",
-      "authors": [
-        "Guangtao Zhang",
-        "Haonan Wu",
-        "Junxuan Gao",
-        "Zhengyang Liu",
-        "Zhaoxi Zeng",
-        "Zhihao Li",
-        "Jianguo Huang",
-        "Zhiqiang Liu"
-      ],
-      "abstract": "Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conformal Mask Calibration (CMC), built on conformal risk control, converts a spatial uncertainty score into a trust mask and controls the expected worst-case local distortion under exchangeability. However, its fixed threshold can become miscalibrated in Earth-observation streams affected by seasonality and episodic events. We propose $\\textit{CARM}$ (Conformal Adaptive Risk Masking), a statistical framework for adaptive spatial risk control under temporal distribution shift. CARM maintains experts with heterogeneous update rates and aggregates their threshold proposals online using an asymmetric surrogate loss, balancing rapid adaptation to distribution changes against stability during relatively stationary periods. All updates are causal and use only mature feedback available after a fixed delay, allowing CARM to operate with any SR model that provides a spatial uncertainty score. We prove that the time-averaged mask-conditioned risk converges to at most $α$ at an $O(1/T)$ rate, without distributional assumptions and for any choice of aggregation weights across experts. On a daily South China Sea chlorophyll-$\\textit{a}$ SR stream, CARM reduces the empirical violation rate from $43.49\\%$ to $9.38\\%$ and the moving-average exceedance frequency from $47.29\\%$ to $1.22\\%$ at $α=0.10$, while retaining a non-trivial trusted region. Experiments on ERA5 wind and OSTIA sea-surface temperature further show consistent relative improvements across multiple SR backbones.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T08:32:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06151v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06151v1"
-    },
-    {
-      "id": "2611.06130v1",
-      "title": "Short-Term Forecasting of Heterogeneous Wind Power Fleets: Global Temporal Fusion Transformer Leveraging Static Covariates",
-      "authors": [
-        "Viktor Walter",
-        "Andreas Wagner"
-      ],
-      "abstract": "Accurate short-term wind power forecasting is critical for grid stability and electricity trading. While transformer-based deep learning is state of the art, industry practice relies mostly on local models trained for individual assets. This study investigates whether a global temporal fusion transformer (TFT), trained jointly on a heterogeneous portfolio of wind farms across Germany, outperforms site-specific local models in 48-hour-ahead forecasting. Using numerical weather prediction (NWP) data from the regional ICON-D2 and the global ECMWF HRES models, we compare the global TFT against local models and a linear regression baseline. The global model leverages static covariates, such as farm age, altitude above sea level, hub height, rotor diameter and power curve parameters, to learn shared representations across sites. We evaluate on 100 synthetic wind farm profiles and a real portfolio of 11 German wind farms, across two seasonal test periods with intermediate retraining. The global TFT outperforms the local models for 87% of the synthetic and 77% of the real wind farms and clearly surpasses the linear baseline. Wilcoxon signed-rank tests confirm that these gains are significant across both seasons and datasets. Crucially, this superiority depends on static covariates: without asset-specific context, the global model fails to generalize. The TFT's variable selection network (VSN) reveals the learned feature selection. Altitude emerges as a relevant static discriminator on both datasets, while hub height is decisive on the real portfolio. For dynamic inputs, the encoder prioritizes historical power, whereas the decoder combines upper-level wind speeds from both NWP models, consistent with averaging out model-specific errors. These findings support a shift from single-site to scalable multi-site forecasting, reducing operational complexity while improving accuracy in large portfolios.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T08:13:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06130v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06130v1"
-    },
-    {
-      "id": "2611.06066v1",
-      "title": "PRISM-AMC: Replay-Free Continual Learning for Automatic Modulation Classification",
-      "authors": [
-        "Usman Akram",
-        "Matthew Graham",
-        "Haris Vikalo"
-      ],
-      "abstract": "Automatic modulation classification (AMC) is a key component of cognitive wireless systems, enabling spectrum awareness and adaptive communication. Most deep learning approaches to AMC assume a fixed set of modulation classes and access to previously observed training data. In practice, modulation classes and channel conditions may evolve over time, while storage or data-retention constraints may preclude replay of raw baseband I/Q samples. We propose PRISM-AMC, a replay-free continual learning framework that mitigates catastrophic forgetting by preserving task-relevant subspaces of intermediate representations via gradient projection memory. We further analyze projected stochastic-gradient updates under an SNR-dependent gradient-noise model. PRISM-AMC is evaluated in both class-incremental and domain-incremental settings. Experiments on the MIGOU and DeepSig 2018.01A datasets show substantially reduced forgetting relative to sequential fine-tuning and elastic weight consolidation, while remaining competitive with or outperforming replay-based RSD-AMC in class-incremental settings, without storing raw I/Q samples.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T07:11:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.06066v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.06066v1"
     }
   ]
 }
