@@ -1,7 +1,173 @@
 {
-  "last_updated": "2026-11-10T04:55:52.289890",
+  "last_updated": "2026-11-11T03:25:16.914360",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.13513v1",
+      "title": "Evidential Deep Learning with conditional entropy for glaucoma detection",
+      "authors": [
+        "Hai Siong Tan",
+        "Kuancheng Wang"
+      ],
+      "abstract": "We propose a novel conditional entropy function as a basis for quantifying predictive uncertainty in Evidential Deep Learning (EDL) for glaucoma detection from retinal fundus images. Using the EyePACS-AIROGS-light-V2 and RIM-ONE-DL datasets for validation, we found that our proposed EDL model regularized by conditional entropy function produced uncertainty estimates with substantially lower calibration errors than Deep Ensembles, MC Dropout, post-hoc calibration and the conventional EDL framework based on Dempster uncertainty. To further probe our models' interpretability, we analyzed Grad-CAM heatmaps using a focus index representing spatial concentration. Compared with the other uncertainty quantification methods, EDL models exhibited greater separation between the index distributions of correctly and incorrectly classified fundus images. In particular, false negatives were associated with localized Grad-CAM activations that were displaced from the optic disc, consistent with its established clinical importance in glaucoma assessment. Overall, our findings suggest that our proposed EDL framework for glaucoma detection provides not only enhanced uncertainty calibration but also admits a more physiologically consistent interpretability.",
+      "published": "November 10, 2026",
+      "published_raw": "2026-11-10T03:39:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.13513v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.13513v1"
+    },
+    {
+      "id": "2611.13346v1",
+      "title": "Advancing Mass-Conserving Deep Learning for Distributed Hydrologic Modeling: A Case Study in a Snow-Dominated Watershed",
+      "authors": [
+        "Yihan Wang",
+        "Lujun Zhang",
+        "N. Benjamin Erichson",
+        "Yang Hong",
+        "Tiantian Yang"
+      ],
+      "abstract": "Recent progress in physics-aware deep learning (DL) has embedded mass conservation within Long Short-Term Memory (LSTM) architecture for hydrologic modeling, improving physical consistency and enabling diagnostics of internal states. However, existing mass-conserving neural networks are primarily developed in lumped formulations. Consequently, previous studies provide only fragmented and often indirect evidence of when and why imposed physical constraints may lead to unrealistic hydrologic behavior. To address this limitation, we propose Physics-Enhanced Conservation-Augmented Net (PECAN), a mass-conserving convolutional LSTM-based framework for distributed hydrologic modeling and diagnosing structural limitations of physics-aware DL models. PECAN is implemented in two variants: (1) PECAN-MC with a strict precipitation-based conservation constraint and (2) PECAN-MCR with a relaxed conservation constraint allowing additional water inputs beyond precipitation. Both variants are trained solely on gauge streamflow and evaluated in a snow-dominated watershed in Colorado. We benchmark PECAN against lumped DL baselines and the distributed process-based Variable Infiltration Capacity (VIC) model. Results show that PECAN achieves competitive outlet streamflow simulation accuracy while producing spatially explicit latent states for interpretation. Comparisons with reference soil moisture indicate that PECAN cell states resemble meaningful temporal soil moisture dynamics. However, analyses also reveal that PECAN misrepresents snow processes by prematurely removing winter snow water storage from the system rather than retaining it for spring release. PECAN demonstrates accurate streamflow simulation at gauges and shows diagnostic potential to expose structural limitations in hydrologic process representation, thereby informing future physics-aware neural network development for hydrology.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T23:17:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.13346v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.13346v1"
+    },
+    {
+      "id": "2611.12880v1",
+      "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
+      "authors": [
+        "Majdi Hassan",
+        "Marta Skreta",
+        "Dominique Beaini",
+        "Kirill Neklyudov"
+      ],
+      "abstract": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps into a single neural network forward pass, potentially enabling much faster simulation. However, existing supervised approaches typically require long simulated trajectory data, which restricts their applicability. In this work, we introduce Kolmogorov-Chapman Maps (KC-Maps), a method for learning the transition kernel of an SDE that relies only on the trajectory-free marginal samples together with the known drift and diffusion coefficients. Given an initial time and state of a process, KC-Maps models its distribution integrated to any given time, corresponding to the weak solution of the SDE. To recover the correct dynamics, KC-Maps satisfies two key properties: (i) it satisfies the boundary conditions, which we incorporate directly into the neural network architecture, and (ii) it respects the Kolmogorov--Chapman equation, which provides an efficient training objective. We empirically demonstrate that KC-Maps learns to integrate the dynamics of peptide molecular systems and outperforms classical molecular dynamics in terms of GPU-hours.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T18:59:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.12880v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.12880v1"
+    },
+    {
+      "id": "2611.12769v1",
+      "title": "Learning Rate Decay Can Exponentially Accelerate SGD for Global Optimization of Nonconvex Functions",
+      "authors": [
+        "Guneykan Ozgul",
+        "Dylan Herman",
+        "Junhyung Lyle Kim",
+        "Shree Hari Sureshbabu",
+        "Shouvanik Chakrabarti"
+      ],
+      "abstract": "Stochastic Gradient Descent (SGD) is a workhorse algorithm for continuous optimization. It is a folk belief among deep learning practitioners that learning rate decay in SGD substantially improves performance. However, it has remained unclear whether learning rate decay offers an asymptotic advantage for global nonconvex optimization. We answer this question in the affirmative by demonstrating a natural class of nonconvex functions for which, we prove that SGD with learning rate decay requires exponentially fewer gradient queries for global optimization than SGD with any fixed learning rate in the small-step size regime. To the best of our knowledge, this is the first exponential advantage that has been demonstrated for learning rate decay. The class of functions we consider includes many popular benchmark nonconvex functions. Our results provide a robust explanatory theory for the empirically observed benefits of learning rate decay for global optimization. We show that annealing performs the non-logconcave sampling task associated to the optimization problem in polynomial time, via a novel application of weak Poincaré inequalities.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T17:41:08Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.12769v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.12769v1"
+    },
+    {
+      "id": "2611.12248v1",
+      "title": "A method to automatically discover symbolic local learning rules",
+      "authors": [
+        "Andrea Perin",
+        "Fabio Anselmi",
+        "Stephane Deny"
+      ],
+      "abstract": "We present a general method for discovering symbolic local learning rules that can replace backpropagation, applicable, in principle, to any deep learning architecture and task. The method automatically discovers local loss functions specific to each layer by (1) constructing a dictionary of monomials of local tensor variables, inspired by Penrose diagram notation, (2) regressing over coefficients weighting these monomials to build layerwise polynomial losses whose gradients together minimize a target global loss. We test the method on classification, reconstruction, and self-supervised learning tasks with small multilayer networks and minimal datasets. Across all tasks, the discovered rules induce non-trivial interactions between layers, which lead to significant reductions in the corresponding global losses. Furthermore, the method selects sparse combinations of monomials, finding local rules that are more interpretable than those generated by MLP-based alternatives. The potential implications of our method range from energy-efficient deep learning to the discovery of biologically plausible learning mechanisms.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T11:36:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.12248v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.12248v1"
+    },
+    {
+      "id": "2611.12156v1",
+      "title": "The balance between feature learning and collapse in dynamical systems-based generative models",
+      "authors": [
+        "Julian Brandon",
+        "Bruno Loureiro",
+        "N Alex Cayco-Gajic",
+        "Arthur Pellegrino"
+      ],
+      "abstract": "Over the past decade, a growing body of work has established that implicit biases in learning dynamics fundamentally shape the solutions found by neural networks, governing their learned features and generalisation performance. However, despite these strides in deep learning theory, far less is known about representation learning in generative models based on dynamical systems, from normalising flows to diffusion. Importantly, empirical evidence suggests that continuous-time generative models can be prone to mode collapse, yet a learning theory explaining such biases remains elusive. To address this, we use tools from dynamical systems and operator theory to express the gradient flow of a general class of stochastic differential equations as a composition of linear operators, allowing us to relate collapse to low-rank biases in generative models. In variational inference and flow-matching tasks, we show that this bias can manifest in two different mechanisms: i) where collapsed models are stable fixed points of the gradient flow, or ii) in sequential feature learning, where smaller modes take progressively longer to be learned, producing an effective collapse for a fixed training budget. Together these findings point to a trade-off between feature learning and collapse, suggesting an operator view as a step towards a unified framework for understanding the learning dynamics of dynamical systems-based generative models.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T10:05:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.12156v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.12156v1"
+    },
+    {
+      "id": "2611.11922v1",
+      "title": "Deep-Learning-Assisted Bayesian Inference for Extreme-Mass-Ratio Inspirals",
+      "authors": [
+        "Jian-Jun Song",
+        "Zhong-Wu Xia",
+        "Wen-Hong Ruan",
+        "Zu-Cheng Chen",
+        "Hongwei Yu",
+        "Puxun Wu"
+      ],
+      "abstract": "Extreme-mass-ratio inspirals (EMRIs) pose a major challenge to Bayesian parameter inference because of their complex, highly multimodal likelihood surfaces. Locating narrow high-likelihood regions is particularly difficult without knowledge of the true source parameters, which is unavailable in real observations. We develop a deep-learning-assisted Bayesian inference framework that combines neural-network-guided parameter-space localization, particle swarm optimization, and Markov chain Monte Carlo (MCMC) sampling. Applied to simulated six-month EMRI signals, the framework recovers posterior distributions in close agreement with reference MCMC analyses initialized near the true parameter values, without requiring such knowledge for initialization. Once the neural network has been trained, the complete inference pipeline takes approximately 10 hours per signal.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T05:49:14Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.11922v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.11922v1"
+    },
+    {
+      "id": "2611.11862v1",
+      "title": "Are UFOs Real? Introducing Unified Factored Organizers",
+      "authors": [
+        "Thomas X. Sheppard",
+        "Alon Albalak",
+        "Joel Lehman",
+        "Kenneth O. Stanley"
+      ],
+      "abstract": "Implicit in much research in deep learning is the assumption that if a network achieves low loss, then it must have learned a good representation of its training data. Recent work by Kumar et al. (2025, arXiv:2505.11581) questions this assumption, arguing that networks trained with conventional gradient descent achieve low loss despite learning fractured entangled representations (FER), leaving related concepts disconnected and unrelated concepts entangled inappropriately. Kumar et al. further show that dramatically better representations are possible: a network evolved through an open-ended, human-in-the-loop process learned unified factored representations (UFR) that capture the regularities of the domain far better than a counterpart with nearly identical outputs trained with conventional gradient descent. Inspired by UFR, this paper introduces unified factored organizers (UFOs), networks trained to model regularities in the representations of other networks. A network can then be trained both to achieve low loss on its task objective and to align its representations with the model learned by the UFO. Networks trained with UFOs are shown to learn qualitatively superior representations in an image-regression domain where representations are easily interpretable. To provide quantitative evidence for the impact of UFOs on representation learning, a transformer is trained with and without UFO regularization to grok a modular arithmetic problem set. When combined with weight decay, UFOs can reduce the number of transformer training steps needed to grok by more than 10x relative to weight decay alone. Without weight decay, UFOs can reduce the number of transformer training steps needed to grok by more than 100x relative to an unregularized baseline. If UFOs are real, they suggest a new paradigm where loss functions themselves are trained to learn an effective model of good representation.",
+      "published": "November 09, 2026",
+      "published_raw": "2026-11-09T04:35:34Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.11862v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.11862v1"
+    },
+    {
+      "id": "2611.11563v1",
+      "title": "HydroTuring: A physics probe benchmark testing mass, energy, and momentum conservation in hydrologic models",
+      "authors": [
+        "Zhi Li",
+        "Changming Li",
+        "Siavash Shams",
+        "Han Wang",
+        "Qingyi Yang",
+        "Yuanhang Liu",
+        "Taiqi Lian",
+        "Xin Lan",
+        "Shunan Zhou",
+        "Binlan Zhang",
+        "Siddik Barbhuiya",
+        "Songkun Yan",
+        "Bing Li",
+        "Jinlong Hu",
+        "Yaji Wang",
+        "Zhenjiang Wu",
+        "Mofan Zhang",
+        "Kaihao Long",
+        "Jingzhi Chen",
+        "Yuan-Heng Wang"
+      ],
+      "abstract": "Hydrologic models, including deep learning systems now deployed for operational flood forecasting, are evaluated primarily by how closely their simulated hydrographs match observed streamflow. However, high hydrograph skill does not guarantee physical consistency: in a synthetic calibration experiment, a conceptual model that loses 15% of its water input to an unreported sink still reaches a Nash-Sutcliffe efficiency of 0.93, and no shared benchmark tests whether models obey fundamental conservation laws. Here we introduce HydroTuring (v0.1.0), a black-box benchmark of 37 physics probes that test mass (24 probes), energy (7) and momentum (6) conservation in hydrologic models. Each probe runs a controlled experiment on forcing generated at run time from a recorded seed and applies binary pass or fail criteria validated against 18 physically exact and 59 deliberately broken reference models. Across 32 evaluated models (3 exact references, 7 AI-based models and 22 process-based models), only the 3 exact references pass every probe among the 28 models scored on 5 or more probes. Process-based and AI-based models pass similar shares of their scored probes (76% and 74%), and a pre-trained flood-forecasting LSTM fails 6 of the 11 runoff-only probes it can be scored on. Furthermore, 49% of all 1,184 model-probe pairs remain unscored because models omit the required state or flux variables, while the scored failures occur in perturbation responses and state bounds rather than long-term water-budget closure. HydroTuring provides a reproducible smoke test for model development, peer review and operational deployment under an open community protocol.",
+      "published": "November 08, 2026",
+      "published_raw": "2026-11-08T19:08:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.11563v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.11563v1"
+    },
+    {
+      "id": "2611.11526v1",
+      "title": "A Stability Analysis of AdamW: Unstable Equilibria and Non-Convergence",
+      "authors": [
+        "Baiyu Su",
+        "Lizhang Chen",
+        "Qiang Liu"
+      ],
+      "abstract": "AdamW is ubiquitous in deep learning, yet its behavior remains poorly understood. We analyze its dynamics through the lens of dynamical systems and show that AdamW admits an implicit fixed-point objective: its fixed points coincide with the stationary points of a constrained and regularized optimization problem. However, not all of these fixed points are stable under AdamW's dynamics, and stability depends sensitively on curvature, weight decay, and momentum parameters. Even in one-dimensional settings, equilibria may be unstable, and trajectories can exhibit persistent oscillations rather than convergence to them. We further extend the analysis to higher dimensions, deriving sufficient conditions for local stability of the continuous-time dynamics, and propose a convergent modification that preserves AdamW's fixed points. These results clarify what optimization problem AdamW is associated with, when its convergence can be expected, and how its dynamics could inspire more reliable optimizers.",
+      "published": "November 08, 2026",
+      "published_raw": "2026-11-08T17:58:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.11526v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.11526v1"
+    },
     {
       "id": "2611.10521v1",
       "title": "TimeHF 2.0: Multimodal, Multivariate, and Multi-Region Collaborative Forecasting for Large-Scale Retail Supply Chains",
@@ -47,7 +213,7 @@
       "arxiv_link": "http://arxiv.org/abs/2611.10521v1"
     },
     {
-      "id": "2611.10292v1",
+      "id": "2611.10292v2",
       "title": "Continual Instruction Tuning for LLM-ased Management of Continuum Resources",
       "authors": [
         "Lanpei Li",
@@ -58,8 +224,8 @@
       "abstract": "Large language models (LLMs) are increasingly explored for resource management across the Cloud-Edge continuum. However, embedding LLMs directly inside latency-sensitive control loops places inference latency, execution jitter, and hallucination risks on the critical path. This study argues for a different use of LLMs: a continually instruction-tuned intent compiler that runs once per management intent or declared context change, above a fast, deterministic tactical controller that handles all low-latency runtime actions. We formulate intent compilation as a continual instruction tuning problem, because management intents arrive sequentially and accumulate while infrastructure and workload contexts drift. Unlike recent LLM-based management frameworks, our design scores the model's outputs by execution, so that catastrophic forgetting can be measured in the executed objective of the underlying controller. On a continuum simulator with a 2B backbone and parameter-efficient adapters, preliminary results show that naive sequential tuning forgets earlier intents in the executed objective, that replay of stored examples nearly prevents this forgetting, and that the tuned compact compiler performs on par with simpler translators while being more robust than a grammar parser to rephrased intents.",
       "published": "November 06, 2026",
       "published_raw": "2026-11-06T22:43:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.10292v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.10292v1"
+      "pdf_link": "http://arxiv.org/pdf/2611.10292v2.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.10292v2"
     },
     {
       "id": "2611.09650v1",
@@ -174,231 +340,6 @@
       "published_raw": "2026-11-06T02:40:30Z",
       "pdf_link": "http://arxiv.org/pdf/2611.10057v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.10057v1"
-    },
-    {
-      "id": "2611.08789v1",
-      "title": "TopoSHAP: Shapley for Explainable and Efficient Topological Deep Learning",
-      "authors": [
-        "Mathilde Papillon",
-        "Nina Miolane"
-      ],
-      "abstract": "Topological deep learning (TDL) extends learning on graphs, such as molecules or social networks, to higher-order structures, such as rings in a molecule or groups in a social network. Explaining which of these structures drive a model's predictions, and which architectural components matter most for its performance, remains challenging. We introduce TopoSHAP, an efficient and general explanation framework that addresses both questions across topological domains and model architectures. TopoSHAP-cell assigns Shapley values to topological data cells and extracts compact explanations. These explanations match or outperform graph-based counterparts on GraphXAI benchmark data while running up to 112$\\times$ faster. They also reveal advantageous topological feature design, leading to measured improvements in explanation recovery and predictive accuracy. On the architecture side, TopoSHAP-neighbor explains how neighborhoods contribute to model performance, and turns these evaluations into a backward-elimination search that identifies smaller, competitive architectures early in training. This is up to $11.3\\times$ cheaper than traditional TDL training sweeps.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T23:24:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08789v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08789v1"
-    },
-    {
-      "id": "2611.10046v1",
-      "title": "Topological Deep Learning Challenge 2026: Bridging the Gap",
-      "authors": [
-        "Guillermo Bernárdez",
-        "Lev Telyatnikov",
-        "Mathilde Papillon",
-        "Marco Montagna",
-        "Louisa Cornelis",
-        "Louis Van Langendonck",
-        "Antonio Purificato",
-        "Bruno Neri",
-        "David Leko",
-        "Donatella Genovese",
-        "Eleonora Grassucci",
-        "Jan-Willem Van Looy",
-        "Johan Mathe",
-        "Lucia Testa",
-        "Luka Benić",
-        "Melanie Weber",
-        "Olga Zaghen",
-        "Pavlo Vasylenko",
-        "Raffael Theiler",
-        "Scott Mahan",
-        "Gaurav Khanal",
-        "Valentina Sánchez",
-        "Dario Loi",
-        "Gabriele Onorato",
-        "Prasanna Devadiga",
-        "Taejin Paik",
-        "Anier Velasco Sotomayor",
-        "Jonas Müller",
-        "Aarav Gupta",
-        "Riyan Patel",
-        "Grold Otieno Mboya",
-        "Pushparaj Devadiga",
-        "Adam Gohain",
-        "Dominik Filipiak",
-        "Michael Banf",
-        "Alireza Mohammadian",
-        "Amirreza Akbari",
-        "Gabriel Chaviano Díaz",
-        "Marcos Chávez Mesa",
-        "Ankit Grover",
-        "Rémi Bourgerie",
-        "Alessio Comparini",
-        "Ankit Kumar",
-        "Mohammad Yusuf",
-        "Devesh Kaushal",
-        "Francesco Orsi",
-        "Ghazal Mostofi",
-        "Kolya Lettl",
-        "Salwa Khattami",
-        "Gabriel Franco",
-        "Yelizaveta Falkouskaya",
-        "Jorge Luiz Franco",
-        "Kajal Singla",
-        "Fernando David Espinosa Iñiguez",
-        "Raj Patil",
-        "Eric Dolores-Cuenca",
-        "Luigi Petti",
-        "Chenguang Xu",
-        "Stefano Blando",
-        "Christine Zeh",
-        "Lennart Bastian",
-        "Kaden Zheng",
-        "Vihan Tiwari",
-        "Sud Athreya",
-        "Hisataka Kajita",
-        "Hugo Micheron",
-        "Rémi Devaux",
-        "Antoine Jardin",
-        "Tegan Emerson",
-        "Olga Fink",
-        "Nina Miolane"
-      ],
-      "abstract": "This paper describes the 2026 edition of the Topological Deep Learning Challenge: Bridging the Gap, hosted at the second Topology, Algebra, and Geometry in Data Science (TAG-DS) Conference. Where previous editions grew the modelling and data ecosystem of Topological Deep Learning (TDL), this edition set out to place Graph Neural Networks (GNNs) and Topological Neural Networks (TNNs) side by side under a single evaluation pipeline. Participants implemented recent state-of-the-art architectures in TopoBench, with Track 1 covering GNNs and Track 2 covering TNNs. They evaluated these implementations on shared synthetic benchmarks generated with GraphUniverse, which independently controls homophily, average degree and degree-distribution heaviness. The challenge yielded 68 qualifying submissions from 34 teams, spanning the graph, simplicial, cellular, hypergraph and combinatorial domains. For the first time, submissions were also tracked on a public leaderboard, which we summarize and analyze here. Our analysis finds that the differences between the submitted tracks are strongly task-dependent: the mean accuracy gap is modest on community detection, while on triangle counting the Track 1 mean error is 1.85 times the Track 2 mean. Several structurally informed GNNs also outperform the Track 2 mean on triangle counting.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T22:07:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.10046v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.10046v1"
-    },
-    {
-      "id": "2611.08487v2",
-      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
-      "authors": [
-        "Jonathan Kozaczuk",
-        "Zheng Dong",
-        "Noyan Evirgen",
-        "Keivan Majidi",
-        "Eddie K. H. Ng",
-        "Chris Porter",
-        "Qi Zhao",
-        "Jia Geng",
-        "Changmao Li",
-        "Brandon R. Feng"
-      ],
-      "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approximately to deep-learning representations by the superposition hypothesis. Superimposed modes can naturally be recovered by sparse dictionary learning methods, such as sparse autoencoders (SAEs), and recovered modes can be automatically named and queried in natural language. We validate mode recovery against known ground truth on synthetic data, where SAEs recover modes better than classical sparse baselines. We then apply our methods to classical and transformer-based user embeddings from two real-world datasets. We also show how the corresponding natural-language labels enable zero-shot audience retrieval and characterization over embeddings never trained on text. The framework is post-hoc and model-agnostic, requiring no modification to the upstream embedding system.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T18:59:42Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08487v2.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08487v2"
-    },
-    {
-      "id": "2611.08437v1",
-      "title": "Deep-learning surrogate model for rapid quantum-noise computation in dual-pump fiber-optic phase-sensitive amplifiers",
-      "authors": [
-        "Yousra Bouasria",
-        "Debanuj Chatterjee",
-        "Abdessamad Belfakir",
-        "Debabrota Basu"
-      ],
-      "abstract": "Fiber-optic parametric amplifiers in a phase-sensitive amplifier (PSA) configuration are well known for their low noise properties. Quantum mechanics dictates that these amplifiers can have a 0 dB noise figure (NF) (ratio of signal-to-noise ratio at the input and output of the amplifier) under certain conditions. However, for a dual-pump configuration, when the system is highly nonlinear, fully quantum calculations of NF become non-trivial. In such cases, semi-quantum models of NF evaluation exists, however, they are often complicated and resource intensive. To simplify that, in this work, first we use a semi-quantum NF calculation framework for the generation of numerically simulated input-output dataset of NF over a large parameter spaces. Then we use the data to train an optimized deep neural network (DNN) for rapid NF prediction. Utilizing the DNN, we demonstrate about 400 times reduction in the computation time compared to the standard semi-quantum NF evaluation approach with a mean absolute error (MAE) of 0.0015 dB. Using clustering we demonstrate a rapid exploration of the parameter space with respect to high gain (20 dB) and low NF (0.3 dB) targets and retrieve associated design parameters. These results illustrate the efficacy of machine learning-based approaches for rapid search of high-dimensional parameter spaces especially in compute intensive photonic systems.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T18:30:14Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08437v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08437v1"
-    },
-    {
-      "id": "2611.08252v1",
-      "title": "Series-wise Cross-validation for Global Time Series Forecasting",
-      "authors": [
-        "Vitor Cerqueira",
-        "Mariana Oliveira",
-        "Luis Roque"
-      ],
-      "abstract": "We consider the problem of cross-validation (CV) in time series forecasting, with a focus on global forecasting models based on deep learning. The prevailing CV strategy in forecasting is to partition data across time with the last part of each series used for testing. With global models trained on collections of time series, however, a fundamentally different approach becomes possible: partitioning across series and time. We formalize series-wise CV for global forecasting models and benchmark several instantiations, including K-fold CV, bootstrapping, and Monte Carlo CV, on 11 datasets with 10 neural network architectures. We evaluate CV procedures along five dimensions: performance estimation, overoptimism rate, model selection accuracy, regret, and downstream forecasting performance. We withhold a random fraction of series from training so that they appear only in the test set. This protocol simulates the emergence of new series not seen during training, a common scenario in global forecasting. Under this protocol, our results reveal a nuanced trade-off: series-wise CV yields better downstream forecasting accuracy by guiding model selection toward configurations that generalize across both time and series, while time-wise CV retains a slight advantage for estimating out-of-sample error.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T16:28:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08252v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08252v1"
-    },
-    {
-      "id": "2611.07843v1",
-      "title": "Enhanced MRI brain tumor detection using deep learning in conjunction with explainable AI SHAP based diverse and multi feature analysis",
-      "authors": [
-        "Asif Rahman",
-        "Maqsood Hayat",
-        "Nadeem Iqbal",
-        "Fawaz Khaled Alarfaj",
-        "Salem Alkhalaf",
-        "Fahad Alturise"
-      ],
-      "abstract": "Recent innovations in medical imaging have markedly improved brain tumor identification, surpassing conventional diagnostic approaches that suffer from low resolution, radiation exposure, and limited contrast. Magnetic Resonance Imaging (MRI) is pivotal in precise and accurate tumor characterization owing to its high-resolution, non-invasive nature. This study investigates the synergy among multiple feature representation schemes such as local Binary Patterns (LBP), Gabor filters, Discrete Wavelet Transform, Fast Fourier Transform, Convolutional Neural Networks (CNN), and Gray-Level Run Length Matrix alongside five learning algorithms namely: k-nearest Neighbor, Random Forest, Support Vector Classifier (SVC), and probabilistic neural network (PNN), and CNN. Empirical findings indicate that LBP in conjunction with SVC and CNN obtained high specificity and accuracy, rendering it a promising method for MRI-based tumor diagnosis. Further to investigate the contribution of LBP, Statistical analysis chi-square and p-value tests are used to confirm the significant impact of LBP feature space for identification of brain Tumor. In addition, The SHAP analysis was used to identify the most important features in classification. In a small dataset, CNN obtained 97.8% accuracy while SVC yielded 98.06% accuracy. In subsequent analysis, a large benchmark dataset is also utilized to evaluate the performance of learning algorithms in order to investigate the generalization power of the proposed model. CNN achieves the highest accuracy of 98.9%, followed by SVC at 96.7%. These results highlight CNN's effectiveness in automated, high-precision tumor diagnosis. Code: https://github.com/asifrahman557/BrainTumorDetection",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T11:20:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.07843v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.07843v1"
-    },
-    {
-      "id": "2611.07695v1",
-      "title": "Equivariant Deep Learning in Direct-Product Space for Electronic-Structure Hamiltonian Prediction",
-      "authors": [
-        "Shi Yin",
-        "Zujian Dai",
-        "Xinyang Pan",
-        "Lixin He"
-      ],
-      "abstract": "Most existing equivariant architectures for Hamiltonian prediction propagate features in direct-sum spaces of irreducible spherical tensors, whereas the target Hamiltonian is naturally an operator block in a direct-product representation over local orbital and spin bases. This representation mismatch fragments contiguous Hamiltonian blocks, obscures direct manipulation of orbital couplings, and organizes features into irregular angular-momentum components that require numerous transformations and are poorly aligned with efficient hardware execution and memory management. To address both the representation mismatch and computational bottleneck, we propose DP-Learner, an equivariant learning framework that performs message passing directly on Hamiltonian-like operator blocks in the direct-product space. Theoretically, we propose Lie-generator-based directional embedding and invariantly weighted left--right products and contractions that preserve equivariance to SO(3), SU(2), and spatial inversions, without explicit Clebsch--Gordan decomposition or inverse reconstruction. Methodologically, we instantiate this principle as a Transformer architecture, in which Hamiltonian-like feature matrices or tensors evolve through equivariant operators in the direct-product space, while non-linear invariant scalar routing controls structured gating over matrix units, directional propagation, attention, and environment-embedded context interactions. We further construct MP-HAM-110K, a large-scale Hamiltonian dataset comprising more than 110,000 material structures covering 68 elements with both Hamiltonian and wavefunction data. Experiments on MP-HAM-110K and Materials-HAM-SOC demonstrate that DP-Learner dramatically improves Hamiltonian prediction accuracy and inference efficiency over the state-of-the-art method.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T09:19:07Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.07695v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.07695v1"
-    },
-    {
-      "id": "2611.08544v1",
-      "title": "GenStrain: Multi-Conditional Generative Diffusion Model To Synthesize High-quality Motion and Strain Maps From Cardiac Magnetic Resonance Images",
-      "authors": [
-        "Rishov Paul",
-        "Sona Ghadimi",
-        "Cristiane C. Singulane",
-        "Amit R. Patel",
-        "Frederick H. Epstein",
-        "Miaomiao Zhang"
-      ],
-      "abstract": "This paper presents GenStrain, a novel method for synthesizing high-quality cardiac motion-based strain maps from routinely collected cine cardiac magnetic resonance (CMR) images. Existing approaches typically rely on image registration to estimate motion (a sequence of displacements) from cine CMR images, but cine CMR presents very sparse trackable intramyocardial features, presenting challenges to estimate intramyocardial motion. An advanced imaging technique, Displacement Encoding with Stimulated Echoes (DENSE) CMR, is considered as the gold standard for strain assessment, but it requires additional acquisitions, which are not ideal for efficient clinical workflows. To address this gap, we introduce GenStrain, a novel framework designed to learn the data distribution of highly accurate cardiac motion captured by DENSE. In particular, we develop a diffusion process in motion space, where spatiotemporal continuity is carefully considered. To fully leverage both cine CMR images and their associated motion patterns, we introduce a multi-conditional conditioning strategy that integrates anatomical features and motion representations learned by a spatiotemporal registration model to guide the generation process. Experimental results demonstrate that our proposed model, GenStrain, outperforms existing strain analysis methods based on displacement estimates from both traditional registration approaches and state-of-the-art (SOTA) deep learning models. Our model represents a promising step toward more accurate cardiac function assessment and holds great potential for clinical translation. Our code is publicly available at https://github.com/Rishov-MIA/GenStrain.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T04:08:45Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08544v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08544v1"
-    },
-    {
-      "id": "2611.07410v1",
-      "title": "Spectral symmetry fingerprints in equivariant representations",
-      "authors": [
-        "Jiacheng Cen",
-        "Anyi Li",
-        "Ning Lin",
-        "Zihe Wang",
-        "Ji-Rong Wen",
-        "Wenbing Huang"
-      ],
-      "abstract": "Symmetry governs the organization of physical structures, while symmetry breaking reveals their transformations. In geometric deep learning, symmetry imposes rank constraints on equivariant representations, limiting the expressive capacity of equivariant graph neural networks (GNNs). Here we show that these constraints can instead be exploited: the singular-value spectra of equivariant representations provide a unified fingerprint of structural symmetry. We introduce spectral symmetry fingerprints (SymFP), which enable discrete point-group identification through rank-template matching and continuous symmetry analysis by quantifying spectral energy beyond target rank constraints. SymFP is orientation invariant and architecture agnostic, enabling a parameter-free GNN implementation. Its spectra can be reused across multiple target groups, and the resulting leakage scores satisfy subgroup monotonicity. Across synthetic structures, molecules, coordination complexes and large biological assemblies, SymFP accurately identifies point groups, tracks controlled symmetry breaking and reveals local and degree-resolved symmetry changes that can be obscured by global geometric measures. These results establish the spectral structure of equivariant representations as a general framework for characterizing symmetry across physical systems.",
-      "published": "November 05, 2026",
-      "published_raw": "2026-11-05T04:02:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.07410v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.07410v1"
-    },
-    {
-      "id": "2611.07094v1",
-      "title": "A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies",
-      "authors": [
-        "Spencer R. Jones",
-        "Simon Pfreundschuh",
-        "Christian D. Kummerow"
-      ],
-      "abstract": "This paper presents an application of machine learning to the problem of the computational expense of atmospheric radiative transfer calculations from physics-based models. While in recent studies individual emulators have been created that emulate certain radiative transfer schemes for different sensors, we show that a general framework can be applied to emulate the radiative transfer method itself. A fully connected deep neural network has been trained to predict top-of-atmosphere microwave radiances in all-sky conditions over various land, ocean and sea ice surfaces at all frequencies from 1 to 300 GHz, and for all incidence angles from 0 to 65 degrees. The reference models against which the emulator has been trained include an Eddington two-stream radiative transfer model for one-dimensional and pseudo-three-dimensional microwave brightness temperature simulations. This neural network architecture has also been separately trained to reproduce the explicit calculations of the Community Radiative Transfer Model (CRTM) for a single microwave imager. In all cases, the model architecture is successfully able predict microwave brightness temperatures by being trained directly on the optical properties of the atmosphere and surface and therefore directly emulating the radiative transfer method. Compared to the explicit schemes used to produce the training data, the GPU-enabled emulator is able to produce brightness temperature simulations more than three orders of magnitude faster and with a root-mean-squared-error less than 0.0348 K, 0.0531 K, and 0.0246 K against the independent test data for the two Eddington models and CRTM, respectively. Additionally, preliminary training using a full 3D Monte Carlo scheme for high-resolution simulations shows promising results for the application of this method to \"exact\" radiative transfer methods, and these results are discussed in Section IV.",
-      "published": "November 04, 2026",
-      "published_raw": "2026-11-04T20:01:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.07094v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.07094v1"
     }
   ]
 }
