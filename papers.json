@@ -1,7 +1,47 @@
 {
-  "last_updated": "2026-11-11T03:25:16.914360",
+  "last_updated": "2026-11-12T04:35:09.699375",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.14141v1",
+      "title": "Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms",
+      "authors": [
+        "Siyuan Yan",
+        "Haibo Zheng",
+        "Feng Lu",
+        "Wei Li"
+      ],
+      "abstract": "Electrocardiogram (ECG) signals are critical for cardiovascular disease (CVD) detection. Most current deep learning models rely on supervised, task-specific training, which limits their ability to generalize across diseases, patient populations, and acquisition settings. This paper presents a self-supervised ECG feature extraction framework that learns from nearly one million unlabeled 12-lead ECG recordings. The framework includes two modules: Deviation Localization Embedding (DLE), which detects waveform-level deviations from normal patterns, and Association Reconstruction Embedding (ARE), which models cross-lead associations through deviation-guided reconstruction to capture abnormal patterns expressed across multiple leads. These modules enable the framework to capture subtle deviation-related patterns and their cross-lead context. The framework achieves up to 6.5% AUROC and 12.8% F1 improvements over prior methods on multiple public datasets, even without additional fine-tuning the pretrained feature extractor. Embedding visualizations show that the learned features support meaningful disease grouping and anomaly identification. The approach reduces the need for labeled data and can support clinicians in diverse healthcare settings. The framework has potential to improve early detection and monitoring of cardiovascular diseases, contributing to more accessible and equitable heart care.",
+      "published": "November 10, 2026",
+      "published_raw": "2026-11-10T14:29:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.14141v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.14141v1"
+    },
+    {
+      "id": "2611.14093v1",
+      "title": "BODYinTRANSIT-Lab: A Multimodal Dataset for Investigating Sensory-Driven Transformations in Body Perception and Affective Experiences",
+      "authors": [
+        "Mohammad Mahdi Dehshibi",
+        "Tomás Martínez Cortés",
+        "Amar D'Adamo",
+        "Daniel de la Prida",
+        "Luis-Antonio Azpicueta-Ruíz",
+        "Laia Turmo Vidal",
+        "Marte Roel Lesur",
+        "Joaquín R. Díaz-Durán",
+        "Alexander Väljamäe",
+        "Angel Sánchez",
+        "Temitayo Olugbade",
+        "Nadia Bianchi-Berthouze",
+        "Fernando Díaz-de-María",
+        "Ana Tajadura-Jiménez"
+      ],
+      "abstract": "Multimodal datasets that combine synchronised behavioural and physiological signals with subjective affective and body perception measures are still rare. This limits both the understanding of embodied experience and the development of computational models that infer subjective states from sensor data. We introduce BODYinTRANSIT-Lab, a multimodal dataset that addresses this gap by capturing affective, perceptual, and behavioural responses to the Footsteps Illusion. In this closed-loop paradigm, participants perform walking tasks while receiving real-time manipulated auditory feedback of their own footsteps intended to alter perceived body weight. The dataset comprises synchronised recordings from 101 participants recruited through systematic stratification by eating-disorder symptomatology and physical activity level. BODYinTRANSIT-Lab combines full-body kinematics with electromyography, electrocardiography, respiration, and electrodermal activity. Its annotations capture both immediate and post-trial experience, including within-trial perceived-weight ratings, post-trial assessments of body feelings and affective experience, 3D avatar body visualisations, and quantitative body maps. Psychological, behavioural, demographic, and social measures provide further information about factors that may influence individual responses. We provide a deep learning benchmark that uses walking kinematics to classify relative affective valence and perceived weight within subjects. On within-session, segment-level splits, the baseline model achieved mean balanced accuracies of 45.9% for affective valence and 44.5% for perceived weight. The BODYinTRANSIT-Lab dataset provides an experimentally controlled resource for cognitive neuroscience and affective computing research, with potential applications in affect-aware interactive systems, health and well-being technologies, and creative embodied experiences.",
+      "published": "November 10, 2026",
+      "published_raw": "2026-11-10T13:53:02Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.14093v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.14093v1"
+    },
     {
       "id": "2611.13513v1",
       "title": "Evidential Deep Learning with conditional entropy for glaucoma detection",
@@ -313,33 +353,6 @@
       "published_raw": "2026-11-06T08:10:20Z",
       "pdf_link": "http://arxiv.org/pdf/2611.09138v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.09138v1"
-    },
-    {
-      "id": "2611.08997v1",
-      "title": "Calibrating your confidence requires thinking of all the ways you could be wrong",
-      "authors": [
-        "Marco Miani"
-      ],
-      "abstract": "A primary limitation of modern deep learning is the miscalibration of model confidence; traditional architectures fundamentally lack a mechanism to quantify their own uncertainty. Larger models and larger datasets mitigate this issue, but they do not resolve the underlying structural deficiency. Bayesian methods offer a principled uncertainty-aware learning framework through stochastic parameters. Yet, despite the established benefits, the inherent computational overhead often compromises either scalability or quality. This trade-off currently prevents the widespread adoption of Bayesian methods. This Thesis bridges the gap between high-quality and low-complexity by introducing a novel distribution on parameter space: a degenerate Gaussian whose covariance is a projection matrix aligned with the null space of the Fisher information matrix. We demonstrate the scalability of this Bayesian posterior through two numerically efficient algorithms: one for posterior sampling and another for the direct computation of predictive confidence. Empirically, we show State-Of-The-Art confidence calibration and out-of-distribution detection for large models. We provide theoretical grounding for this approach. We study the degeneracies inherent in Amari's information geometry and highlight its most relevant component: the split of parameter's perturbations into two orthogonal subspaces. From this perspective, our posterior naturally emerges as the simplest choice that captures this split, assigning unitary variance to one subspace and zero variance to the other. Moreover, through the tools of differential geometry, we utilize this split to identify and rectify a critical misalignment issue of the non-linearized Laplace Approximation. Finally, with a focus on PAC-Bayes generalization bounds, we pave the way for a deeper understanding of the learning capabilities of overparametrized models.",
-      "published": "November 06, 2026",
-      "published_raw": "2026-11-06T05:11:50Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.08997v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.08997v1"
-    },
-    {
-      "id": "2611.10057v1",
-      "title": "Domain Adaptive Graph Neural Networks for Neutrino Experiments",
-      "authors": [
-        "Hemalata Nayak",
-        "Giuseppe Cerati",
-        "Aleksandra Ćiprijanović",
-        "Tammy Walton"
-      ],
-      "abstract": "Weakly interacting particles such as neutrinos require highly efficient and precise detection methods to enable searches for new physics. Deep learning, and particularly Graph Neural Networks (GNNs), has shown promise for reconstruction tasks in liquid argon time projection chamber (LArTPC) neutrino experiments. However, differences between simulations and experimental data introduce domain shifts that can degrade model performance and potentially mimic or obscure new-physics signals. Here, we demonstrate that robust learning across datasets can still be achieved by using domain adaptation during training. We introduce, to our knowledge for the first time, domain-adaptation-enabled GNNs for robust LArTPC reconstruction tasks. We use MicroBooNE open dataset as our labeled source domain, and introduce four perturbed datasets as our unlabeled target domains-- including a fixed scale variation, moderate and severe gaussian noise, and a signal variation as a function of the position in the detector. The inclusion of adversarial-based domain adaptation during training improves performance for all four target domains, without a substantial drop in performance in the source domain. Precision in the target domain was improved up to 0.19 and recall up to 0.37, depending on the variation and the network task. These results demonstrate a potential of domain adaptation to bridge the gap between simulations and experiments, and build more trustworthy models for current and future LArTPC neutrino experiments.",
-      "published": "November 06, 2026",
-      "published_raw": "2026-11-06T02:40:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.10057v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.10057v1"
     }
   ]
 }
