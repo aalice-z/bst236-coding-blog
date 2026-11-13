@@ -1,7 +1,63 @@
 {
-  "last_updated": "2026-11-12T04:35:09.699375",
+  "last_updated": "2026-11-13T03:48:54.894309",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.15241v1",
+      "title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
+      "authors": [
+        "Nhat-Long Nguyen",
+        "Viet-Loi Dinh",
+        "Trong-Nghia Pham"
+      ],
+      "abstract": "Liver disease remains a major global health concern, highlighting the need for reliable and accessible early detection methods. Although recent advances in machine learning, deep learning and quantum machine learning (QML) have introduced promising diagnostic tools, many approaches suffer from limited interpretability and inflated performance caused by data leakage or overly simplistic evaluation protocols. These constraints reduce their reliability in real-world clinical practice. This paper proposes KQML-Liver, a hybrid framework that integrates QML with Kolmogorov-Arnold Networks (KANs) to enhance predictive performance and interpretability. The architecture combines parameterized quantum circuits for expressive feature representation with KAN-based functional mappings that capture nonlinear relationships in an interpretable manner. Evaluated on the Indian Liver Patient Dataset (ILPD) under a rigorous preprocessing protocol preventing data leakage, the proposed model achieves 82% classification accuracy and 100% recall, detecting all positive cases, outperforming existing baselines while providing improved transparency in clinical predictions. These results suggest that hybrid KAN-quantum architectures offer a promising direction for interpretable AI-assisted medical diagnosis.",
+      "published": "November 11, 2026",
+      "published_raw": "2026-11-11T09:31:35Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.15241v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.15241v1"
+    },
+    {
+      "id": "2611.14922v1",
+      "title": "A Transferable Pretrained 3D Model for Impedance Inversion with Sparse-Well Prior Conditioning",
+      "authors": [
+        "Gen Li",
+        "Zhaoyun Zong",
+        "Diqiong Jiang",
+        "Man Tang"
+      ],
+      "abstract": "Deep-learning-based seismic impedance inversion commonly requires retraining for each target survey, which may generalize poorly beyond the conditioning locations when well control is extremely sparse. We propose a transferable three-dimensional inversion framework that separates offline learning from target-survey deployment. A masked autoencoder first learns seismic structural representations from unlabeled multi-survey data, after which the frozen encoder is incorporated into an inversion network trained on synthetic geological models with sparse-well-derived low-frequency priors. During deployment, the complete inversion network remains fixed; the available conditioning well is used only to construct the low-frequency prior and align the global impedance range. Experiments on the Overthrust model show that the proposed method achieves the lowest full-volume NRMSE and reduces the P95 trace-wise NRMSE from 0.1310 to 0.1074 relative to the best target-trained baseline, indicating fewer localized large errors under different well locations. In a field survey with one conditioning well and three blind wells, it reduces the mean blind-well NRMSE by 20.95% relative to the target-trained U-Net while maintaining the highest correlation. These results demonstrate that the proposed framework transfers useful impedance information beyond the conditioning location with low deployment cost and without retraining the inversion network.",
+      "published": "November 11, 2026",
+      "published_raw": "2026-11-11T02:25:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.14922v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.14922v1"
+    },
+    {
+      "id": "2611.14706v1",
+      "title": "Beyond Foreign-Key Connectivity: Semantic Relationship Representation for Relational Deep Learning",
+      "authors": [
+        "Noy Cohen-Shapira"
+      ],
+      "abstract": "Relational databases encode information through tables and primary--foreign key constraints. Although recent Relational Deep Learning (RDL) approaches represent these databases as heterogeneous graphs, a foreign-key connection primarily specifies structural connectivity between records. Its semantic interpretation may involve additional information that is not explicitly represented by connectivity alone. This paper introduces a conceptual framework for constructing relationship-aware representations from relational databases. The framework distinguishes three complementary aspects: (i) schema-defined relationship semantics, including endpoint types and foreign-key roles; (ii) association entities and explicitly available relationship-level attributes; and (iii) contextual information describing the temporal and structural circumstances of a connection. We formulate a Relationship Representation Construction (RRC) protocol that maps relational schema elements and database records to node representations, relationship descriptors, and contextual representations. A key principle of the protocol is semantic ownership: attributes are assigned to records, relationships, or context according to their meaning, rather than merely their physical location in a database table. Ambiguous attributes are not automatically promoted to relationship features. The resulting representations can be incorporated into existing relational graph learning architectures through relationship-conditioned message passing. The proposed framework is complementary to recent work on relational message passing, graph transformers, and task-dependent graph construction. We discuss its conceptual foundations, illustrate the construction protocol using a multi-table database, and identify research questions and empirical evaluations required to establish its potential benefits.",
+      "published": "November 10, 2026",
+      "published_raw": "2026-11-10T20:13:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.14706v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.14706v1"
+    },
+    {
+      "id": "2611.14630v1",
+      "title": "Beyond classification: regressing physical merger properties using solid harmonic wavelet bispectrum",
+      "authors": [
+        "Alex Brown",
+        "Georgios Exarchakis",
+        "Mathilda Avirett-Mackenzie",
+        "Carolin Villforth"
+      ],
+      "abstract": "Galaxy mergers play an important role in galaxy evolution; they enhance star formation, transform morphologies, and may drive accretion onto black holes. Due to their complex morphological features, identification of mergers poses a significant challenge. Convolutional neural networks (CNNs) have been successful at identifying mergers with good accuracy. However, similar to other deep learning techniques such as Vision Transformers, they require large training samples. Current methods are also limited to classification, rather than regression. Here, we apply the solid harmonic wavelet scattering bispectrum, a method that encodes invariances and symmetries in the data which need to be learned by CNNs, as an alternative to CNNs. We apply our methodology to a simulated dataset of galaxies with a wide range of merger properties. We show that this method outperforms standard methodologies, while requiring fewer training samples and being robust to noise. Most importantly, we show that for the first time this method is able to regress on both merger mass ratio and time since merger simultaneously, with uncertainties ~ 0.33 dex uncertainty in merger mass ratio and ~ 0.66 Gyr uncertainty in time since merger. We have therefore shown that solid harmonic wavelet bispectrum presents an alternative to currently used machine learning techniques.",
+      "published": "November 10, 2026",
+      "published_raw": "2026-11-10T19:00:05Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.14630v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.14630v1"
+    },
     {
       "id": "2611.14141v1",
       "title": "Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms",
@@ -298,61 +354,6 @@
       "published_raw": "2026-11-06T14:22:43Z",
       "pdf_link": "http://arxiv.org/pdf/2611.09501v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.09501v1"
-    },
-    {
-      "id": "2611.10082v1",
-      "title": "fNIRSAtlas: A Large-Scale Benchmark for Functional Near-Infrared Spectroscopy Classification",
-      "authors": [
-        "Kalle Mäkelä",
-        "Tuukka Ruotsalo"
-      ],
-      "abstract": "Functional near-infrared spectroscopy (fNIRS) is a promising modality for brain-computer interfaces and cognitive state decoding, but progress in machine learning for fNIRS has been limited by small, isolated datasets and inconsistent evaluation protocols. We introduce fNIRSAtlas, the largest open benchmark for fNIRS classification to date, comprising 23 classification tasks from 19 public data collections, spanning diverse experimental paradigms, including motor execution, motor imagery, mental arithmetic, working memory, and emotion recognition. fNIRSAtlas provides a fully automated pipeline from raw data to evaluation and defines standardized benchmark tasks for both cross-subject and within-subject classification, ensuring reproducible comparison of methods. We evaluate a variety of baseline models from fNIRS and related neuroimaging and time-series machine learning literature on the benchmark. Our results demonstrate that performance varies substantially across tasks and that methods validated on limited data -- especially deep learning approaches -- often fail to generalize beyond their original evaluation. fNIRSAtlas serves as an extensible, open, and reproducible benchmark to support more robust and cumulative progress in machine learning for fNIRS data. Our code and data can be found at https://fnirsatlas.github.io.",
-      "published": "November 06, 2026",
-      "published_raw": "2026-11-06T14:17:51Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.10082v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.10082v1"
-    },
-    {
-      "id": "2611.09317v1",
-      "title": "Stable probabilistic emulation of partially observed dynamical systems",
-      "authors": [
-        "Mario Massy",
-        "Sara Shamekh",
-        "Fabrizio Falasca",
-        "Matthieu Blanke"
-      ],
-      "abstract": "Predicting the long-term behavior of partially observed dynamical systems such as the coupled atmosphere-ocean system is central to societal decision-making. Motivated by the success of deep learning emulators in weather forecasting, data-driven climate models represent a promising approach. However, climate emulation poses distinct challenges: models must account for unresolved fast variables introduced by unavoidable coarse-graining, reproduce long-term statistics, and remain stable over arbitrarily long rollouts and under external perturbations. These requirements motivate stochastic data-driven emulators, but modern generative models lack stability guarantees. We introduce forced-dissipative stochastic interpolants, a generative framework for learning stochastic reduced dynamics. Its architecture uses structural constraints inspired by turbulent dynamics, which provide stability by design while retaining the flexibility of stochastic interpolants to represent complex probabilistic dynamics. Building on the theory of Markov-chain stability, we establish a Foster--Lyapunov drift condition and prove geometric ergodicity for our emulator, together with stability under steady external forcing. We evaluate the framework on the two-timescale Lorenz-96 system, a prototype of partially observed multiscale turbulence. The resulting emulator remains stable over long integrations and under finite-amplitude forcing, with accurate prediction of forced responses of both the mean and variance.",
-      "published": "November 06, 2026",
-      "published_raw": "2026-11-06T11:07:00Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.09317v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.09317v1"
-    },
-    {
-      "id": "2611.09163v1",
-      "title": "Beyond the Grid: Continuous Dictionary Pursuit for Interpretable Signal Decomposition",
-      "authors": [
-        "Nick Janssen",
-        "Melanie Schaller",
-        "Bodo Rosenhahn"
-      ],
-      "abstract": "Deep learning models achieve high accuracy in signal processing but remain difficult to interpret. Classical matching pursuit and sparse coding offer better transparency but suffer from spectral leakage and grid mismatch when signal frequencies do not align with discrete dictionary atoms. We introduce Continuous Dictionary Pursuit (CDP), a framework for interpretable signal decomposition that learns the parameters of closed-form functions directly from data. CDP optimizes over a continuous manifold of differentiable atoms and, unlike prior continuous pursuit methods that operate on a single analytic family, searches a heterogeneous library spanning periodic, trend, transient, and discontinuous structures. The algorithm employs a greedy iterative strategy using data-driven priors and gradient-based optimization to isolate individual signal components, with discontinuous waveforms made differentiable through spectral sharpness annealing. To ensure a sparse atom set for reconstruction, the framework utilizes a stopping criterion based on a predefined atom budget and residual error convergence. Evaluations on synthetic and real-world datasets show that CDP removes the grid discretization error for atom families contained in its library, recovers generative parameters to within $1\\%$ on stationary synthetic signals expressible in that library, and achieves the best sparsity-accuracy trade-off among classical, continuous-pursuit, and neural baselines in the sparse regime. Beyond decomposition, we demonstrate that the extracted atoms can serve as structured curriculum targets for training sequence models, improving forecasting accuracy over standard end-to-end training on most evaluated datasets. The method offers a glass-box alternative for signal decomposition by providing high reconstruction fidelity alongside direct physical interpretability.",
-      "published": "November 06, 2026",
-      "published_raw": "2026-11-06T08:45:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.09163v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.09163v1"
-    },
-    {
-      "id": "2611.09138v1",
-      "title": "Deep Learning Theory through the Lens of Statistical Physics: A Topical Review",
-      "authors": [
-        "Wei Huang",
-        "Youjin Deng"
-      ],
-      "abstract": "The recent success of foundation models and deep learning has far outpaced our theoretical understanding of how large-scale neural networks learn and generalize. Statistical physics provides a natural language for describing such high-dimensional, nonlinear, and strongly coupled systems, offering concepts such as mean-field theory, phase transitions, energy landscapes, and stochastic dynamics. In this topical review, we adopt a statistical-physics way of thinking -- from concepts including phases and criticality, and free-energy viewpoints, to methods such as kernel and Gaussian-process limits, mean-field and dynamical mean-field theories, random-matrix tools, and Fokker-Planck formalisms, and to a mindset emphasizing universality, scaling, and tractable limits with explicit validity regimes. We survey recent progress on understanding modern deep learning through this lens, including mean-field analyses of wide networks, spectral and geometric perspectives on loss landscapes, stochastic-gradient-based training viewed as a dynamical process, and phase-transition analogies that organize phenomena such as overparameterization, generalization, and representation change. Our goal is to synthesize these threads into a coherent framework that clarifies what each approximation explains, when it is expected to hold, and how apparently competing narratives relate or diverge. Together, these perspectives form a unified physical framework that views representation learning as a collective phenomenon in high-dimensional systems, bridging deterministic and stochastic regimes of gradient-based optimization.",
-      "published": "November 06, 2026",
-      "published_raw": "2026-11-06T08:10:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.09138v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.09138v1"
     }
   ]
 }
