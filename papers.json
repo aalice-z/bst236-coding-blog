@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-11-15T03:26:31.945396",
+  "last_updated": "2026-11-16T03:27:29.144115",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.18370v1",
+      "title": "f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models",
+      "authors": [
+        "Hoang Tran Vuong",
+        "Linh Ngo Van",
+        "Dang Nguyen",
+        "Thin Nguyen",
+        "Phuoc Nguyen",
+        "Mehrtash Harandi",
+        "Trung Le"
+      ],
+      "abstract": "Anomaly detection in tabular data poses significant challenges due to heterogeneous feature types-mixing numerical, categorical, and textual attributes, which complicate learning meaningful representations of normality. Recent work has applied large language models (LLMs) to this problem by serializing table rows as text sequences, yet these approaches rely on one-shot supervised fine-tuning that offers limited signal to tighten the model's description of normality. We propose DiSPaT, a self-play fine-tuning framework that strengthens the model's understanding of normal data. Building on the theoretical foundation of f-divergence minimization, we derive a tight approximation connecting our training objective to reducing the distributional gap between real normal data and model-generated samples. DiSPaT operates through an alternating optimization: at each iteration, the current policy generates synthetic samples that serve as pseudo-anomalies, while a critic discriminator learns to distinguish these from real normal samples; this signal drives policy updates that progressively align the model distribution with the true normal-data distribution. Extensive experiments on diverse benchmarks demonstrate that DiSPaT consistently outperforms prior LLM-based methods, deep learning approaches, and classical unsupervised detectors for tabular anomaly detection.",
+      "published": "November 13, 2026",
+      "published_raw": "2026-11-13T16:16:03Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.18370v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.18370v1"
+    },
+    {
+      "id": "2611.17959v1",
+      "title": "DeltaVisionX: A Low-Cost Vision-Guided Automation System Using YOLOv11 and PLC-Based Actuation",
+      "authors": [
+        "Lara Sobh",
+        "Marc Nahhas",
+        "Francisco Katach El Halabi",
+        "Michel Owayjan",
+        "Fadi Elias Sleiman"
+      ],
+      "abstract": "This paper presents DeltaVisionX, a low-cost industrial automation system that integrates real-time computer vision with PLC-based actuation for object classification and sorting. The system uses the YOLOv11 (You Only Look Once) deep learning model to detect objects on an operating conveyor belt and communicates detection results to a Delta DVP-SE PLC, which actuates pneumatic pistons for sorting. A custom dataset was created, labeled, and augmented to train the YOLOv11 model, achieving a mean average precision of 0.97 with real-time inference of 100 ms per frame. Encoder-based tracking ensures reliable synchronization between detection and actuation, supporting a throughput of 80 objects per minute. Results show that affordable, locally developed automation can reduce labor dependency and improve manufacturing efficiency. The novelty of the proposed system lies in its encodersynchronized vision-PLC integration rather than in the detection model itself. Future work includes integrating a highspeed Delta robot with EtherCAT-based servo control for advanced pick-and-place operations.",
+      "published": "November 13, 2026",
+      "published_raw": "2026-11-13T09:50:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.17959v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.17959v1"
+    },
+    {
+      "id": "2611.17758v1",
+      "title": "Efficient Genotype Classification from 3D MRI in ADPKD via Density-Aware Point Sampling and E(3)-invariance",
+      "authors": [
+        "Kwanghee Lee",
+        "Hyeongsub Lee",
+        "Youngwoo Kim",
+        "Hyunji Jeong"
+      ],
+      "abstract": "Early detection of genetic kidney diseases, especially autosomal dominant polycystic kidney disease (ADPKD), is crucial because certain genotypes such as truncating PKD1 mutations cause rapid kidney growth and early progression to end-stage kidney disease. MRI-based genotype inference is a potential low-cost complement to genetic testing. However, although many deep learning methods have been developed for classifying various MR images, applying them to ADPKD remains challenging: (1) abdominal MR images are generally too large to be handled by deep learning models designed for smaller images like brain MRI, and (2) the amount of labeled data for ADPKD genetic mutations is insufficient to train deep learning models. In order to address these challenges, we propose E3PN, an efficient 3D MRI-based ADPKD genotype classification network that relies on point sampling and E(3)-invariance. We utilize a point representation of 3D MRI, which consumes less GPU memory than a voxel representation. For further memory efficiency, 3D points are sampled from a mixture distribution over the two kidneys in each image. Since E(3)-invariance has been shown to improve data efficiency, we also incorporate it into our model through coordinate canonicalization. On our ADPKD dataset, E3PN trains 163 times faster and uses 103x less GPU memory than a 3D ResNet, while also improving F1 from 0.165 to 0.226 over both baselines. These results establish a first benchmark for five-way ADPKD genotype classification from 3D MRI and show that point sampling and coordinate canonicalization yield two-orders-of-magnitude efficiency gains with a modest but consistent improvement in F1.",
+      "published": "November 13, 2026",
+      "published_raw": "2026-11-13T05:12:13Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.17758v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.17758v1"
+    },
+    {
+      "id": "2611.17468v1",
+      "title": "A thorough review on Deep Learning approaches to 2D-to-3D Registration in Medical Imaging",
+      "authors": [
+        "Andrea Borghesi",
+        "Julia van Beurden",
+        "Maarten van Alphen",
+        "Michiel van den Brekel",
+        "Luc Karssemakers",
+        "Jan-Jakob Sonke",
+        "Baris Karakullukcu",
+        "Jonas Teuwen",
+        "George Yiasemis"
+      ],
+      "abstract": "2D-to-3D image registration is a key component for several medical imaging purposes such as intraoperative guidance, enabling the alignment between preoperative 3D volumes and real-time 2D images. While conventional optimisation-based methods often struggle with non-convex objectives, sensitivity to initialisation, and high computational demands, deep learning (DL) has emerged as a promising alternative, offering improved alignment robustness and the potential for real-time performance. This review provides a comprehensive analysis of DL frameworks developed to address the challenges inherent in 2D-to-3D registration. We first outline how core concepts of DL are adapted to the registration problem. We then examine recent methodological advancements from multiple perspectives, including pipeline design, architectural innovations, and domain adaptation strategies. Particular attention is given to quantitative metrics, highlighting how performance is defined and measured across studies. Across the 41 included studies, we find that direct regression is the most common pipeline (23 studies, against 18 iterative ones), that hybrid CNN-attention architectures are gaining ground, and that research remains heavily concentrated on X-ray-to-CT registration. We conclude by identifying the absence of per-case uncertainty estimation and the strong neglect of temporal or sequential modelling as the two methodological gaps most consequential for clinical readiness, and discuss state-space models as a way to add temporal memory within intraoperative latency budgets. Further opportunities lie in more principled domain adaptation and in the integration of foundation models for representation learning.",
+      "published": "November 12, 2026",
+      "published_raw": "2026-11-12T19:52:39Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.17468v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.17468v1"
+    },
+    {
+      "id": "2611.17463v1",
+      "title": "Availability-Aware Historical Feedback Learning for Electric Arc Furnace Temperature and Chemical Composition Prediction",
+      "authors": [
+        "Ahmed Shoyeb Raihan",
+        "Farzana Islam",
+        "Ashish Nimbarte",
+        "Imtiaz Ahmed"
+      ],
+      "abstract": "Electric arc furnace (EAF) steelmaking plays an increasingly important role in recycled and lower-carbon steel production. However, variability in charged materials, energy input, and operating conditions makes accurate prediction of molten steel temperature and final chemical composition challenging. Intermittent or delayed measurements limit the information available for timely prediction. This study develops an availability-aware historical-feedback learning framework for predicting EAF endpoint temperature and the final concentrations of twelve chemical elements. Eight industrial data sources are integrated into three progressively enriched predictor representations comprising 19 static, 39 temporal, and 47 history-informed features. Historical outcomes are incorporated only when eligible under an assumed 60-minute measurement-release delay. Using 19,738 temperature heats and 3,341 chemistry heats, twelve tuned regression algorithms are evaluated through chronological forward validation. The proposed historical-feedback representation reduces root mean squared error (RMSE) in 147 of 156 matched algorithm-target comparisons. For temperature prediction, ExtraTrees achieves an RMSE of 12.290 degrees C, representing a 5.54 percent reduction compared with its temporal-only counterpart. Historical-feature ablation and feedback-delay sensitivity analyses demonstrate the importance of recent outcome information and its availability. In a separate retrospective later-period evaluation, lightweight adaptive residual correction reduces temperature RMSE from 12.502 to 12.275 degrees C without retraining the underlying model. Exploratory deep learning comparisons and target-specific feature-attribution analyses provide additional insights into predictive behavior. The results establish historical outcome availability and sequential feedback as important considerations for EAF endpoint prediction.",
+      "published": "November 12, 2026",
+      "published_raw": "2026-11-12T19:45:40Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.17463v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.17463v1"
+    },
     {
       "id": "2611.16871v1",
       "title": "DPA: Decentralized Primal Averaging with Quasi-Global Momentum for Highly Heterogeneous Data",
@@ -217,90 +301,6 @@
       "published_raw": "2026-11-10T19:00:05Z",
       "pdf_link": "http://arxiv.org/pdf/2611.14630v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.14630v1"
-    },
-    {
-      "id": "2611.14141v1",
-      "title": "Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms",
-      "authors": [
-        "Siyuan Yan",
-        "Haibo Zheng",
-        "Feng Lu",
-        "Wei Li"
-      ],
-      "abstract": "Electrocardiogram (ECG) signals are critical for cardiovascular disease (CVD) detection. Most current deep learning models rely on supervised, task-specific training, which limits their ability to generalize across diseases, patient populations, and acquisition settings. This paper presents a self-supervised ECG feature extraction framework that learns from nearly one million unlabeled 12-lead ECG recordings. The framework includes two modules: Deviation Localization Embedding (DLE), which detects waveform-level deviations from normal patterns, and Association Reconstruction Embedding (ARE), which models cross-lead associations through deviation-guided reconstruction to capture abnormal patterns expressed across multiple leads. These modules enable the framework to capture subtle deviation-related patterns and their cross-lead context. The framework achieves up to 6.5% AUROC and 12.8% F1 improvements over prior methods on multiple public datasets, even without additional fine-tuning the pretrained feature extractor. Embedding visualizations show that the learned features support meaningful disease grouping and anomaly identification. The approach reduces the need for labeled data and can support clinicians in diverse healthcare settings. The framework has potential to improve early detection and monitoring of cardiovascular diseases, contributing to more accessible and equitable heart care.",
-      "published": "November 10, 2026",
-      "published_raw": "2026-11-10T14:29:44Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.14141v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.14141v1"
-    },
-    {
-      "id": "2611.14093v1",
-      "title": "BODYinTRANSIT-Lab: A Multimodal Dataset for Investigating Sensory-Driven Transformations in Body Perception and Affective Experiences",
-      "authors": [
-        "Mohammad Mahdi Dehshibi",
-        "Tomás Martínez Cortés",
-        "Amar D'Adamo",
-        "Daniel de la Prida",
-        "Luis-Antonio Azpicueta-Ruíz",
-        "Laia Turmo Vidal",
-        "Marte Roel Lesur",
-        "Joaquín R. Díaz-Durán",
-        "Alexander Väljamäe",
-        "Angel Sánchez",
-        "Temitayo Olugbade",
-        "Nadia Bianchi-Berthouze",
-        "Fernando Díaz-de-María",
-        "Ana Tajadura-Jiménez"
-      ],
-      "abstract": "Multimodal datasets that combine synchronised behavioural and physiological signals with subjective affective and body perception measures are still rare. This limits both the understanding of embodied experience and the development of computational models that infer subjective states from sensor data. We introduce BODYinTRANSIT-Lab, a multimodal dataset that addresses this gap by capturing affective, perceptual, and behavioural responses to the Footsteps Illusion. In this closed-loop paradigm, participants perform walking tasks while receiving real-time manipulated auditory feedback of their own footsteps intended to alter perceived body weight. The dataset comprises synchronised recordings from 101 participants recruited through systematic stratification by eating-disorder symptomatology and physical activity level. BODYinTRANSIT-Lab combines full-body kinematics with electromyography, electrocardiography, respiration, and electrodermal activity. Its annotations capture both immediate and post-trial experience, including within-trial perceived-weight ratings, post-trial assessments of body feelings and affective experience, 3D avatar body visualisations, and quantitative body maps. Psychological, behavioural, demographic, and social measures provide further information about factors that may influence individual responses. We provide a deep learning benchmark that uses walking kinematics to classify relative affective valence and perceived weight within subjects. On within-session, segment-level splits, the baseline model achieved mean balanced accuracies of 45.9% for affective valence and 44.5% for perceived weight. The BODYinTRANSIT-Lab dataset provides an experimentally controlled resource for cognitive neuroscience and affective computing research, with potential applications in affect-aware interactive systems, health and well-being technologies, and creative embodied experiences.",
-      "published": "November 10, 2026",
-      "published_raw": "2026-11-10T13:53:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.14093v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.14093v1"
-    },
-    {
-      "id": "2611.13513v1",
-      "title": "Evidential Deep Learning with conditional entropy for glaucoma detection",
-      "authors": [
-        "Hai Siong Tan",
-        "Kuancheng Wang"
-      ],
-      "abstract": "We propose a novel conditional entropy function as a basis for quantifying predictive uncertainty in Evidential Deep Learning (EDL) for glaucoma detection from retinal fundus images. Using the EyePACS-AIROGS-light-V2 and RIM-ONE-DL datasets for validation, we found that our proposed EDL model regularized by conditional entropy function produced uncertainty estimates with substantially lower calibration errors than Deep Ensembles, MC Dropout, post-hoc calibration and the conventional EDL framework based on Dempster uncertainty. To further probe our models' interpretability, we analyzed Grad-CAM heatmaps using a focus index representing spatial concentration. Compared with the other uncertainty quantification methods, EDL models exhibited greater separation between the index distributions of correctly and incorrectly classified fundus images. In particular, false negatives were associated with localized Grad-CAM activations that were displaced from the optic disc, consistent with its established clinical importance in glaucoma assessment. Overall, our findings suggest that our proposed EDL framework for glaucoma detection provides not only enhanced uncertainty calibration but also admits a more physiologically consistent interpretability.",
-      "published": "November 10, 2026",
-      "published_raw": "2026-11-10T03:39:24Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.13513v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.13513v1"
-    },
-    {
-      "id": "2611.13346v1",
-      "title": "Advancing Mass-Conserving Deep Learning for Distributed Hydrologic Modeling: A Case Study in a Snow-Dominated Watershed",
-      "authors": [
-        "Yihan Wang",
-        "Lujun Zhang",
-        "N. Benjamin Erichson",
-        "Yang Hong",
-        "Tiantian Yang"
-      ],
-      "abstract": "Recent progress in physics-aware deep learning (DL) has embedded mass conservation within Long Short-Term Memory (LSTM) architecture for hydrologic modeling, improving physical consistency and enabling diagnostics of internal states. However, existing mass-conserving neural networks are primarily developed in lumped formulations. Consequently, previous studies provide only fragmented and often indirect evidence of when and why imposed physical constraints may lead to unrealistic hydrologic behavior. To address this limitation, we propose Physics-Enhanced Conservation-Augmented Net (PECAN), a mass-conserving convolutional LSTM-based framework for distributed hydrologic modeling and diagnosing structural limitations of physics-aware DL models. PECAN is implemented in two variants: (1) PECAN-MC with a strict precipitation-based conservation constraint and (2) PECAN-MCR with a relaxed conservation constraint allowing additional water inputs beyond precipitation. Both variants are trained solely on gauge streamflow and evaluated in a snow-dominated watershed in Colorado. We benchmark PECAN against lumped DL baselines and the distributed process-based Variable Infiltration Capacity (VIC) model. Results show that PECAN achieves competitive outlet streamflow simulation accuracy while producing spatially explicit latent states for interpretation. Comparisons with reference soil moisture indicate that PECAN cell states resemble meaningful temporal soil moisture dynamics. However, analyses also reveal that PECAN misrepresents snow processes by prematurely removing winter snow water storage from the system rather than retaining it for spring release. PECAN demonstrates accurate streamflow simulation at gauges and shows diagnostic potential to expose structural limitations in hydrologic process representation, thereby informing future physics-aware neural network development for hydrology.",
-      "published": "November 09, 2026",
-      "published_raw": "2026-11-09T23:17:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.13346v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.13346v1"
-    },
-    {
-      "id": "2611.12880v1",
-      "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
-      "authors": [
-        "Majdi Hassan",
-        "Marta Skreta",
-        "Dominique Beaini",
-        "Kirill Neklyudov"
-      ],
-      "abstract": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learning offers an alternative by amortizing many integration steps into a single neural network forward pass, potentially enabling much faster simulation. However, existing supervised approaches typically require long simulated trajectory data, which restricts their applicability. In this work, we introduce Kolmogorov-Chapman Maps (KC-Maps), a method for learning the transition kernel of an SDE that relies only on the trajectory-free marginal samples together with the known drift and diffusion coefficients. Given an initial time and state of a process, KC-Maps models its distribution integrated to any given time, corresponding to the weak solution of the SDE. To recover the correct dynamics, KC-Maps satisfies two key properties: (i) it satisfies the boundary conditions, which we incorporate directly into the neural network architecture, and (ii) it respects the Kolmogorov--Chapman equation, which provides an efficient training objective. We empirically demonstrate that KC-Maps learns to integrate the dynamics of peptide molecular systems and outperforms classical molecular dynamics in terms of GPU-hours.",
-      "published": "November 09, 2026",
-      "published_raw": "2026-11-09T18:59:13Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.12880v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.12880v1"
     }
   ]
 }
