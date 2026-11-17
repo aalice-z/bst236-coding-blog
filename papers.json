@@ -1,7 +1,184 @@
 {
-  "last_updated": "2026-11-16T03:27:29.144115",
+  "last_updated": "2026-11-17T05:26:42.988128",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.20694v1",
+      "title": "Breaking the Fixed-Substrate Limitation of Deep Learning Ellipsometry with Pseudo-Substrate Spectra",
+      "authors": [
+        "Yuki Ikarashi",
+        "Naoki Kurokawa",
+        "James N. Hilfiker",
+        "Takuji Maekawa",
+        "Hitoshi Tampo",
+        "Hiroyuki Fujiwara"
+      ],
+      "abstract": "A machine learning method, deep learning ellipsometry (DLE), enables direct and rapid estimation of the optical constants and structures of thin films from spectroscopic ellipsometry (SE) spectra. However, conventional neural-network-based DLE models are restricted to the specific substrate used during training, and applying them to a different substrate requires ~100 h of retraining. Here, we propose a framework that overcomes this fixed-substrate limitation by introducing a two-input feature-wise linear modulation DLE (FiLM-DLE). In this model, the SE spectra of a thin-film structure are input together with those of the substrate measured before film deposition, which we term the pseudo-substrate spectra. Any substrate, including a multilayer stack, is thus represented solely by its measured SE response, analogous to the pseudo-dielectric function, so that no prior knowledge of the substrate structure is required. Trained on a virtual dataset of 165 million samples representing metal, glass, and SiO2/Si substrates with different SiO2 thicknesses, a single FiLM-DLE model, trained once, extracts thin-film optical constants and structures with high accuracy and shows strong applicability to substrates not included in the training datasets. Experimental validation on 47 thin-film samples across diverse substrates yielded sample-averaged mean absolute errors, relative to conventional manual analysis, of 0.047 for refractive index, 0.030 for extinction coefficient, and 1.52 nm for thickness, with each analysis completed in under 2 s. FiLM-DLE thus eliminates the need for a separate DLE model for each substrate and enables rapid, high-accuracy optical characterization of thin films on diverse substrates.",
+      "published": "November 16, 2026",
+      "published_raw": "2026-11-16T08:01:47Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.20694v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.20694v1"
+    },
+    {
+      "id": "2611.20660v1",
+      "title": "Enhancing Mixed Oil Length Prediction through Graph Representation Learning",
+      "authors": [
+        "Xinyi Hong",
+        "Hai Shu",
+        "Zhaoyang Zhang",
+        "Lei Chen",
+        "Yanfeng Yang",
+        "Ziqi Chen"
+      ],
+      "abstract": "During the pipeline transportation of refined oil products, the inevitable formation of mixed oil segments poses considerable economic challenges to pipeline networks. Therefore, it is important to accurately predict the length of these mixed oil segments. Although previous methods have achieved relatively accurate predictions by integrating machine and deep learning algorithms, they ignore the statistical dependencies that remain among real-world mixed oil samples, which degrades model accuracy. To address this issue, we propose a novel Sample Dependencies Incorporated Graph Representation Learning (SDI-GRL) model. By representing samples and pipeline features as nodes of a graph, SDI-GRL connects dependent samples through their shared features, allowing message passing to propagate information across related samples. This graph-based framework allows our model to capture the statistical dependencies among samples absent in prior works. A case study on a mixed oil dataset demonstrates that our SDI-GRL model surpasses the strongest existing approach, reducing both the RMSE and the MAE by more than 10%.",
+      "published": "November 16, 2026",
+      "published_raw": "2026-11-16T07:23:01Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.20660v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.20660v1"
+    },
+    {
+      "id": "2611.20607v1",
+      "title": "DNA: A Double-Helix Hierarchical Deep Interaction Network Architecture for Industrial Digital Twin",
+      "authors": [
+        "Haoran Yang",
+        "Yanan Xu",
+        "Yinan Zhang",
+        "Wenjie Zhang",
+        "Peiyu Liu",
+        "Jiahui Xiang",
+        "Wenhai Wang"
+      ],
+      "abstract": "High-fidelity modeling is fundamental to industrial digital twin, yet a trade-off persists between the physical transparency of mechanistic models and the superior predictive power of data-driven approaches. Existing hybrid methods often fail to bridge this gap, suffering from shallow integration and rigid one-shot modeling strategies that struggle with complex industrial systems. To address these issues, we propose a \\textbf{Double-Helix Hierarchical Deep Interaction Network Architecture (DNA)}. Inspired by the double-helix structure of biological \\textit{DNA}, our architecture intertwines mechanistic and data-driven modeling strands through two novel interaction strategies, forming a symbiotic architecture in which the two strands mutually enhance predictive capability. Furthermore, the hierarchical structure of DNA allows it to model complex systems in a multi-stage manner through two tailored deep learning frameworks. We evaluate the proposed approach on two distinct industrial systems, where DNA achieves reductions in MAE of 3.704\\% and 3.175\\%, respectively, compared to the strongest baseline. These results demonstrate the effectiveness of DNA and suggest its potential to provide new insights for the development of industrial digital twins.",
+      "published": "November 16, 2026",
+      "published_raw": "2026-11-16T06:32:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.20607v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.20607v1"
+    },
+    {
+      "id": "2611.20565v1",
+      "title": "Memory-Efficient Speculative Decoding with Quantized Draft KV Cache",
+      "authors": [
+        "Saksham Gupta",
+        "Michael Li"
+      ],
+      "abstract": "Speculative decoding reduces generation cost, but it stores two KV caches: one for the target model and one for the draft model. We reduce this extra memory by quantizing the draft cache. The target cache and verifier remain in BF16, so that compression cannot change the target model's final correction rule. We first study how to divide precision between keys and values. A naive per-token quantizer makes keys appear much more sensitive: splitting a 12-bit budget, K8V4 beats K4V8 in acceptance by 10.87pp. However, with grouped per-channel keys, the gap becomes -0.25pp. A controlled Qwen test confirms that changing only the key quantizer can erase or reverse the preferred bit split. Hence, following KIVI, we propose K4V4 quantization with per-channel keys and per-token values. Across six model pairs, our method reduces draft cache memory by 66.20%, and combined memory across both caches by 23.95%. Mean acceptance drops from 57.93% to 57.14%, only 1.36% relative. Overall, quantized draft caches can make speculative decoding more memory efficient; as a predictive principle for efficient AI design, key and value precision must be co-designed with the quantizer layout.",
+      "published": "November 16, 2026",
+      "published_raw": "2026-11-16T05:44:21Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.20565v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.20565v1"
+    },
+    {
+      "id": "2611.20150v1",
+      "title": "Symmetry Fingerprinting with Geometric Learnable Invariants Transformers",
+      "authors": [
+        "Bart M. N. Smets",
+        "Gijs Bellaard",
+        "Pieter Wils"
+      ],
+      "abstract": "Geometric deep learning has made available a large variety of structurally equivariant neural network architectures, meaning a particular transformation of their input causes a predictable transformation of their output. But structural equivariance is a very strong inductive bias that can limit performance if chosen poorly. In contrast, choosing an architecture with low geometric bias necessitates data augmentation to obtain correct behavior; extending the training process. We propose a novel neural network architecture that is soft equivariant; we select a set of symmetry groups and during training the network will become equivariant only to those symmetry groups that are appropriate given the training data. After training we can inspect the network to obtain a symmetry fingerprint that will tell us exactly which symmetries ended up being relevant and to what degree. We show how our architecture and the fingerprinting process work in the case of an image classification task.",
+      "published": "November 15, 2026",
+      "published_raw": "2026-11-15T17:34:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.20150v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.20150v1"
+    },
+    {
+      "id": "2611.19988v1",
+      "title": "KneeFS-Net: A Lightweight Deep Learning Model for Knee Osteoarthritis Severity Assessment with Cross-Domain External Validation",
+      "authors": [
+        "Shafqat Alam",
+        "Galib Anjum Talukder Mahi",
+        "Yeasir Rabbani Tanvir",
+        "Md. Ibrahim",
+        "Md. Shahed Hossain",
+        "Shashank Ghimire",
+        "Mahmud Hasan Mostofa Kamal",
+        "ASM Shahidul Hossain",
+        "Taufiq Hasan"
+      ],
+      "abstract": "Knee osteoarthritis (OA) grading from radiographs using the Kellgren-Lawrence (KL) scale requires expertise that may be scarce. We present KneeFS-Net, a lightweight ordinal grader (0.8 million parameters; 0.33 GFLOPs) combining spatial, Fourier and state-space features with landmark-guided attention. On the Osteoarthritis Initiative (OAI) test set, KneeFS-Net achieved a quadratic weighted kappa (QWK) of 0.863, mean absolute error (MAE) of 0.325 and 97.2% within-one-grade accuracy, comparable to models with 9-35-fold more parameters. We evaluated cross-population generalization on two Bangladeshi cohorts, a single-center hospital cohort and a multi-center teleradiology cohort. Without further training or adaptation, the OAI-trained model achieved QWK 0.803, MAE 0.339 and 98.2% within-one-grade accuracy on its hospital cohort, declining to QWK 0.656 and MAE 0.522 on multi-center teleradiology images. Self-supervised pretraining on 6,092 unlabeled radiographs followed by joint fine-tuning achieved QWK 0.823, MAE 0.329 and 99.7% within-one-grade accuracy in cross-validation. These findings demonstrate accurate, efficient KL grading and potential adaptation to new populations with limited annotation.",
+      "published": "November 15, 2026",
+      "published_raw": "2026-11-15T12:56:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.19988v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.19988v1"
+    },
+    {
+      "id": "2611.19864v1",
+      "title": "Local Order Matters: A Lightweight CPU-Trainable CNN for Website Fingerprinting on Defended Tor Traffic",
+      "authors": [
+        "Puyang Xu",
+        "Zhizhao Wen",
+        "Yifan Jiang",
+        "Chao Wang",
+        "Yusi Gong"
+      ],
+      "abstract": "Website fingerprinting (WF) attacks let a passive adversary infer which site a Tor user visits from the encrypted cell sequence. On undefended traffic, hand-crafted-feature attacks are already near-ceiling, so deep learning offers only a marginal advantage there. We show that the decisive regime is defended traffic: against the FRONT padding defense, which injects dummy cells that corrupt the volume and count features feature attacks rely on, a compact 95,103-parameter 1-D convolutional network trained on the raw cell-direction sequence, on CPU only, stays robust while three implemented direction-only feature baselines degrade. On the closed-world WFlib FRONT set (95 sites), our model reaches 54.2% top-1 accuracy versus 38.5% for the strongest implemented feature baseline (k-FP-style RF), a gain of 15.7 percentage points (3 seeds; seed-0 paired-bootstrap 95% CI [+14.5, +17.0] pp on per-trace correctness, excluding zero). On undefended traffic the CNN reaches 94.1% versus 92.3% for k-FP-style RF. A controlled order-ablation permutes only nonzero traffic cells within each trace, preserving direction counts, retained length, and trailing zero-padding positions while destroying traffic order. This collapses the CNN below every feature baseline (from 54.2% to 7.6%, a 46.6 pp drop), showing that the model depends strongly on order-derived information under FRONT.",
+      "published": "November 15, 2026",
+      "published_raw": "2026-11-15T08:07:10Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.19864v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.19864v1"
+    },
+    {
+      "id": "2611.19624v1",
+      "title": "Well-Log Reconstruction with Pre-trained Geological Knowledge: A Knowledge-Conditioned Large-Language-Model Generative Agent",
+      "authors": [
+        "Yongan Zhang",
+        "Yitao Yu",
+        "Yizheng Li",
+        "An Gong",
+        "Youzhuang Sun"
+      ],
+      "abstract": "Missing well-log intervals make subsurface reconstruction ill-posed. Existing numerical regression models lack geological prior knowledge to constrain ambiguous inverse mappings. We propose GeoLog-Agent, a knowledge-conditioned generative agent using pre-trained large language models (LLMs) as a source of geological priors. A universal Geo-Harness translates LLM stratigraphic reasoning into formation-anchored petrophysical trajectories, feature-wise linear modulation, and conditional adversarial constraints. On the Norwegian North Sea benchmark, GeoLog-Agent achieves a mean $R^2$ of 0.9307 and a peak $R^2$ of 0.9713. It exceeds the nine-baseline average $R^2$ of 0.8387 by 0.0920, with a 30.97% average RMSE reduction, and exceeds the strongest baseline by 0.0274--0.0498 in $R^2$, with 16.25%--24.05% lower RMSE. Ablations confirm the effectiveness and synergy of geological prior reasoning, multi-scale dilated generation, and conditional adversarial modules. Transferring the coupling mechanism to six conventional deep learning models improves their $R^2$ by 0.0162--0.0789 with cross-well stability. These results demonstrate how foundation-model domain reasoning can constrain deep generative reconstruction of missing petrophysical measurements.",
+      "published": "November 14, 2026",
+      "published_raw": "2026-11-14T21:14:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.19624v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.19624v1"
+    },
+    {
+      "id": "2611.19586v1",
+      "title": "SLiDE: Structured Linear Dynamics for Forecasting with Exogenous Inputs",
+      "authors": [
+        "Sebastian Pütz",
+        "Theodore Glavas",
+        "Benjamin Schäfer",
+        "Boris N. Oreshkin",
+        "Mark Coates"
+      ],
+      "abstract": "Accurate time series forecasting with exogenous inputs is critical across domains, including energy and retail, yet modern deep learning models often overfit to correlations that do not generalize under shifts in these inputs. We propose SLiDE, a Koopman-inspired architecture for forecasting with exogenous inputs that imposes structure on latent temporal dynamics. SLiDE approximates nonlinear system evolution using a learned linear operator in a latent space, combining (i) a history encoder that reconstructs the current latent state from past targets and inputs with (ii) a shared linear rollout driven by future exogenous variables. By enforcing a common linear recurrence across encoding and prediction, SLiDE aligns how past information is encoded with how future states evolve, reducing parameterization and preventing reliance on spurious correlations in the input history. Empirically, SLiDE achieves state-of-the-art accuracy on real-world benchmarks, including electricity price forecasting and retail demand, while maintaining a computational footprint comparable to lightweight MLP architectures. SLiDE is especially effective at generalizing to shifted exogenous inputs, reducing MSE by 20% on electricity price samples with out-of-range exogenous values and MAE by 30% in a synthetic transfer setting where the same dynamical system is driven by an unseen exogenous process. Ablations confirm the importance of both the structured history encoder and the linear latent rollout, suggesting that structured latent linear dynamics provide a useful inductive bias for forecasting with exogenous inputs.",
+      "published": "November 14, 2026",
+      "published_raw": "2026-11-14T19:29:53Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.19586v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.19586v1"
+    },
+    {
+      "id": "2611.19480v1",
+      "title": "Probing SAM Perturbations Through Statistical Replay",
+      "authors": [
+        "Ting Han",
+        "Jens Kleesiek",
+        "Michael Kamp"
+      ],
+      "abstract": "Sharpness Aware Minimization (SAM) updates model parameters using gradients evaluated at adversarially perturbed weights, but it remains unclear which aspects of this procedure are sufficient to reproduce its generalization behavior. In our ResNet 18 experiments on CIFAR 10, simple curvature regularizers based on the Hessian trace and largest eigenvalue remain below SAM in validation accuracy, motivating a direct examination of its perturbations. We introduce statistical replay, a diagnostic that summarizes perturbations from reference SAM trajectories using elementwise means and standard deviations over local windows and constructs new perturbations during independent SGD training. Pure replay uses only these summaries, whereas mixed replay adds isotropic Gaussian noise. Pure replay does not reproduce SAM's validation behavior, while mixed replay and pure isotropic perturbations can approach its validation performance at selected scales without reproducing its training dynamics. An equal radius random direction within SAM performs similarly to SGD, and source, temporal, and layer interventions further suggest that replay behavior depends on perturbation construction. Together, these preliminary results weaken several simple explanations of SAM while leaving an important part of its mechanism unexplained.",
+      "published": "November 14, 2026",
+      "published_raw": "2026-11-14T16:00:55Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.19480v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.19480v1"
+    },
+    {
+      "id": "2611.19109v1",
+      "title": "ST-GAT: A Leakage-Free Spatio-Temporal Graph Attention Framework for Robust Network Intrusion Detection",
+      "authors": [
+        "Nikhil Parkar",
+        "Sanskar Pandey",
+        "Siddhi Prajapati",
+        "Suganeshwari G",
+        "Syed Ibrahim"
+      ],
+      "abstract": "Intrusion detection systems are a central defence in modern networks. Deep learning models report strong anomaly-detection results, but evaluations on standard benchmarks such as CSE-CIC-IDS-2018 are often inflated by two methodological problems: temporal leakage from overlapping sliding windows, and contamination from preprocessing fitted before the train/test split. Per-flow classifiers also ignore the spatio-temporal dependencies across sequences of network flows. We propose a Spatio-Temporal Graph Attention Network (ST-GAT) that represents traffic as a sequence of graph snapshots. It builds k-Nearest Neighbour (k-NN) edges within each window, applies multi-head Graph Attention Network (GAT) layers for spatial aggregation, and uses a Bidirectional Long Short-Term Memory (BiLSTM) network with temporal attention for sequence modelling. To prevent leakage, we use non-overlapping temporal windows (stride equal to window length) and fit all preprocessing on the training split only. We compare three class-imbalance strategies: inverse class-frequency weighting, dynamic balanced sampling, and few-shot metric prototyping. Across three random seeds, ST-GAT with inverse class weighting reached a Macro-F1 of 96.65% (+/- 0.87) and an accuracy of 99.14%. This is 14.3 percentage points higher in Macro-F1 than a per-flow Random Forest baseline (82.34%). Balanced sampling reduced Macro-F1 by 2.3 points (to 94.37%) relative to loss weighting. This suggests that aggressive resampling of small, noisy minority classes can hurt detection in heavily imbalanced traffic.",
+      "published": "November 14, 2026",
+      "published_raw": "2026-11-14T02:43:07Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.19109v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.19109v1"
+    },
     {
       "id": "2611.18370v1",
       "title": "f-Divergence Self-Play for Tabular Anomaly Detection via Large Language Models",
@@ -19,6 +196,18 @@
       "published_raw": "2026-11-13T16:16:03Z",
       "pdf_link": "http://arxiv.org/pdf/2611.18370v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.18370v1"
+    },
+    {
+      "id": "2611.18802v1",
+      "title": "Actuarial-Informed Neural Networks: Constrained Deep Learning for Sex-Specific Multi-Population Longevity Forecasting",
+      "authors": [
+        "Davide Rindori"
+      ],
+      "abstract": "We introduce Actuarial-Informed Neural Networks (AINN), a constrained deep learning framework for sex-specific multi-population longevity forecasting that embeds actuarial knowledge into LSTM training through differentiable penalty terms. Applied to a high-longevity 6-country cluster (Switzerland, Sweden, Norway, West Germany, Netherlands, Japan; 1956-2020), the framework is a challenger to the Li-Lee benchmark and unconstrained neural approaches. Our central finding is that monotonicity constraint intensity lambda functions as a continuous governance dial with a quantifiable accuracy-stability trade-off. At lambda = 0.01, 30-year forecast confidence intervals narrow by 6.5% at zero RMSE cost. At lambda = 0.1, they narrow by 25% at only +0.84% RMSE cost. This trade-off is invisible to standard hyperparameter optimizers, which select lambda by minimizing one-step RMSE, the wrong metric for structural constraints in recursive forecasting. The framework adds three contributions: (i) residual-calibrated process noise that eliminates double-counting in the dual uncertainty framework, reducing confidence intervals by 53-60%; (ii) a 5-seed model ensemble with a coefficient of variation of 1.06%; and (iii) a time-varying credibility weight Z(t) = exp(-alpha t) connecting to Buhlmann credibility theory for blending neural and actuarial predictions. A 10-year out-of-sample backtest (trained on 1956-2010, validated against observed HMD life expectancy for 2011-2020) yields a mean absolute error of 0.38 years, with 11 of 12 country x sex combinations within the 90% confidence interval. The model produces regulatory-grade outputs including Solvency Capital Requirements under the Swiss Solvency Test (ES 99.0%: +1.91 years, CHE Male) and Solvency II, reverse stress testing, and model-based stability verification (amplification ratio 1.02x).",
+      "published": "November 13, 2026",
+      "published_raw": "2026-11-13T10:25:06Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.18802v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.18802v1"
     },
     {
       "id": "2611.17959v1",
@@ -126,181 +315,6 @@
       "published_raw": "2026-11-12T11:24:41Z",
       "pdf_link": "http://arxiv.org/pdf/2611.16648v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.16648v1"
-    },
-    {
-      "id": "2611.16609v1",
-      "title": "A Dual-Branch Graph and Convolutional Network for Interpretable Movement EEG Classification",
-      "authors": [
-        "Maryam Ostadsharif Memar",
-        "Behzad Nazari"
-      ],
-      "abstract": "Decoding upper-limb movements from scalp electroencephalography (EEG) is an important problem for brain-computer interfaces (BCIs), but many deep learning models provide limited insight into the brain regions underlying their predictions. We propose a two-branch architecture that combines an LGGNet-inspired local-global graph branch with an EEGNet-style convolutional branch for movement-versus-rest classification. The graph branch groups 61 EEG electrodes into anatomically informed regions and learns their spatial relationships, providing a direct representation of the regions emphasized by the model. We evaluate the proposed architecture using leave-one-subject-out cross-validation on the Ofner upper-limb movement dataset. The model achieves a mean F1-score of 0.74 +/- 0.06 across subjects. Beyond classification performance, we analyze the learned graph structure to identify the regions with the strongest connectivity. Across all held-out subjects, the highest connectivity is consistently observed in the Parietal Left Low region, corresponding to electrodes P1 and P3. This region is opposite to the performed right-arm movements and lies within the posterior parietal area previously associated with upper-limb movement processing. These results show that incorporating a region-based graph into the decoder can provide an anatomically interpretable representation while maintaining effective movement classification, offering a practical approach toward more transparent EEG-based BCIs.",
-      "published": "November 12, 2026",
-      "published_raw": "2026-11-12T10:47:37Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.16609v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.16609v1"
-    },
-    {
-      "id": "2611.16514v1",
-      "title": "Learning Temporal Dynamics with Derivative Representations for Time Series Forecasting",
-      "authors": [
-        "Shujie Duan",
-        "Jia Hong Puah",
-        "Haocheng Wu",
-        "Yifei Mao",
-        "Hongting Zhou",
-        "Chenxuan Li",
-        "Zitao Fang",
-        "Yang Lu",
-        "Sim Kuan Goh"
-      ],
-      "abstract": "Time series forecasting aims to predict the future evolution of complex systems by learning their underlying dynamics from past observations. Despite recent advances in deep learning, Transformers in particular still struggle to capture the temporal evolution of system dynamics. Existing approaches have been largely driven by architectural innovation, with comparatively little attention paid to training strategies that explicitly exploit the temporal structure governing system dynamics. In this work, we introduce DeltaTSF, a dynamics-aware forecasting framework based on discrete derivative representations of time series. Specifically, DeltaTSF jointly learns the series and their discrete temporal derivatives across both input and forecast horizons within a unified, model-agnostic framework. By coupling these representations over time, the model is encouraged to maintain temporal consistency, a property we show to induce a form of discrete Taylor consistency during training. This formulation enables the model to better reflect the underlying system dynamics, resulting in more stable and physically coherent forecasts. Notably, DeltaTSF does not require explicit derivative computation and introduces no additional computational overhead at inference time. Extensive experiments across diverse benchmarks and backbone architectures demonstrate that DeltaTSF consistently improves forecasting performance and yields more dynamically coherent predictions than strong SOTA methods. These results highlight the effectiveness of enforcing dynamic coherence through derivative representations as a model-agnostic paradigm that operates alongside and complements architectural design. Source code will be made publicly available upon acceptance.",
-      "published": "November 12, 2026",
-      "published_raw": "2026-11-12T09:12:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.16514v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.16514v1"
-    },
-    {
-      "id": "2611.16322v1",
-      "title": "Climate Temporal Temperature Prediction via an Adaptive Stacked Bidirectional Residual Mamba Network",
-      "authors": [
-        "Yongxiang Lei"
-      ],
-      "abstract": "Accurate temperatures forecasting relies on traditional meteorological parameters that are essential for monitoring weather informatics and guiding forecasting efforts. This study presents Deep DualMamba, a novel deep learning framework for temporal temperature prediction, built upon an enhanced variant of the recently proposed Mamba network. Unlike conventional Transformer-based architectures, which dominate foundation models but suffer from computational inefficiencies on long sequences, Deep DualMamba leverages selective structured state space models (SSMs) to achieve both scalability and performance. We identify a core limitation of prior subquadratic-time models-namely, their inability to perform long-term and robust forecasting and introduce two key innovations. First, we propose an adaptive bidirectional Mamba as encoders to learn complex and efficient features. Second, we develop a hardware-aware, parallel recurrent algorithm to compensate for the loss of convolutional efficiency, ensuring practical viability at scale. Last, the Deep DualMamba's approximation ability and convergence is theoretical analyzed. These design choices culminate in a simplified, attention- and MLP-free neural architecture that exhibits linear complexity with sequence length and significantly improved inference throughput. To demonstrate its applicability in climate informatics, we implement a full forecasting pipeline using historical meteorological data from UK monitoring stations.",
-      "published": "November 12, 2026",
-      "published_raw": "2026-11-12T05:44:19Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.16322v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.16322v1"
-    },
-    {
-      "id": "2611.16201v1",
-      "title": "An Extensive Evaluation of Machine Learning and Deep Learning Approaches for Sentiment Analysis: Insights from Amazon Customer Reviews",
-      "authors": [
-        "Muhammed Ihsan Corak",
-        "Cuiyuan Wang",
-        "Xiaowen Zhang"
-      ],
-      "abstract": "The rapid growth of user-generated text on online platforms creates opportunities for understanding customer opinion and supporting data-driven decisions. This study compares five traditional machine learning classifiers (Random Forest, Logistic Regression, Bernoulli Naive Bayes, Linear Support Vector Classifier, and Multinomial Naive Bayes) and six deep learning architectures (LSTM, Bi-LSTM, GRU, RNN, Attention, and FastText) for three-class sentiment classification of 568,454 Amazon Fine Food Reviews. Machine learning models used Bag-of-Words (BoW) and TF-IDF features limited to 5,000 terms; deep learning models used learned embeddings over a 20,000-word vocabulary. Models were evaluated on the original imbalanced data and on a random-oversampled balanced set of 1,070,469 reviews, using accuracy, macro and per-class precision, recall, and F1-score, and training time. On the balanced set, Random Forest with BoW achieved 99\\% accuracy and the Attention model achieved 98.7\\%. Linear SVC reached 89\\% accuracy in 1 min 15 s, and Logistic Regression reached 90\\% in 3 min 37 s. On the imbalanced set, the Attention model achieved 97.8\\% accuracy, and FastText achieved 95.3\\% in 3 min 26 s, while the RNN reached 91.9\\% with a neutral-class F1-score of 0.08. Deep learning models were more stable across class distributions, whereas the best classical model depended on balancing. We also report a user-facing application that applies the trained Random Forest and Attention models to new review text. Because the labels are derived from star ratings, the results measure agreement with rating-derived sentiment classes rather than annotated sentiment; the dataset is a single source, and the findings should be read with that limitation in mind.",
-      "published": "November 12, 2026",
-      "published_raw": "2026-11-12T02:47:28Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.16201v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.16201v1"
-    },
-    {
-      "id": "2611.15990v1",
-      "title": "Characterizing the Edge of Stability in Variational Training Without Priors",
-      "authors": [
-        "Juraj Marusic",
-        "Jonathan Wenger",
-        "Beau Coker",
-        "John P. Cunningham"
-      ],
-      "abstract": "Variational approaches in deep learning promise to deliver improved uncertainty quantification and out-of-distribution generalization by inferring a distribution over weights, regularized by a divergence to a chosen prior. However, prior elicitation presents a significant challenge in deep learning, resulting in the common practice of significantly downweighting the regularization term in the variational objective. Recently, it was proposed to train solely via the expected loss by relying on implicit regularization from the optimizer, rather than explicit regularization from the divergence to the prior. While this approach largely sidesteps the issue of prior elicitation, current theory lacks an understanding of how key optimization hyperparameters impact the implicit regularization. Here, we theoretically and empirically demonstrate that larger learning rates and fewer parameter samples lead to flatter minima of the loss landscape, which are known to generalize better. We show that training on the expected loss operates at a modified edge of stability, characterized by the signal-to-noise ratio of the gradient estimates and the number of Monte Carlo samples. Experiments on out-of-distribution benchmark datasets confirm the practical significance of the theoretical results.",
-      "published": "November 11, 2026",
-      "published_raw": "2026-11-11T20:43:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.15990v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.15990v1"
-    },
-    {
-      "id": "2611.15842v1",
-      "title": "Fewer Expert Transfers Without Changing Routing: Expert Eviction for MoE Offloading",
-      "authors": [
-        "Pierre-Luc Bacon",
-        "Diego Calanzone",
-        "Jean-Maxime Larouche"
-      ],
-      "abstract": "A mixture-of-experts (MoE) language model uses only a few experts per token, so a server can keep most expert weights in CPU memory and copy an expert to the GPU when the router requests it. Recent methods train the router to keep the same experts for several tokens, and treat fewer routing switches as a proxy for fewer copies. We measure the trade-off directly, in a harness that performs and times real CPU-to-GPU copies for OLMoE-1B-7B. On an L40S GPU, every tested policy that holds an expert set fixed and decodes faster than the least-recently-used (LRU) cache increases next-token loss by at least 0.067 nats. A change that leaves every routing decision intact does better: when the cache must evict an expert, evict the one whose next use lies farthest in the future. This rule copies 2.1x fewer experts than LRU at no loss in quality and is within 3.5% of the fewest copies possible. It needs future requests; the next sixteen tokens of demand recover 96% of its reduction, whereas a rule based on counts of past requests recovers 27%.",
-      "published": "November 11, 2026",
-      "published_raw": "2026-11-11T18:54:03Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.15842v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.15842v1"
-    },
-    {
-      "id": "2611.15722v1",
-      "title": "Reliable Near-Field Source Enumeration and Positioning Informed by Two-Stage MUSIC",
-      "authors": [
-        "Jiaying Li",
-        "Haifeng Wen",
-        "Changsheng You",
-        "Yuanwei Liu",
-        "Hong Xing"
-      ],
-      "abstract": "Accurate and reliable near-field multi-source localization is essential for location-aware processing in future wireless systems. However, coherent multipath propagation complicates the direct recovery of line-of-sight (LoS) source positions, while existing estimation methods generally lack explicit control of the risk of source underestimation and positioning uncertainty. In this paper, we investigate reliable source enumeration and positioning in near-field coherent multipath environments. Specifically, we develop a conformal risk control (CRC) based source enumeration scheme that calibrates the penalty coefficient of an eigenvalue-based criterion to control the expected miss-detection ratio at a prescribed level. We further propose MUSIC-Net, a model-based deep learning framework informed by two-stage MUltiple SIgnal Classification (MUSIC), which learns the LoS-related subspace and surrogate distances through subspace-distance-based training, thereby enabling direct source positioning without estimating non-line-of-sight (NLoS) path parameters or performing subsequent path association. To quantify the uncertainty of the estimated positions, we develop a split conformal prediction (SCP) based calibration method that constructs angle-range predicted regions with finite-sample simultaneous coverage guarantees. Numerical results show that the proposed framework effectively controls the risk of source underestimation, while providing improved positioning accuracy with tighter predicted regions than benchmarks given the same target coverage levels.",
-      "published": "November 11, 2026",
-      "published_raw": "2026-11-11T17:00:36Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.15722v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.15722v1"
-    },
-    {
-      "id": "2611.15598v1",
-      "title": "Imputing Missing Near-Surface Air Temperature using Graph Attention Networks with Distance-Aware Edge Features",
-      "authors": [
-        "Emma C. Weber",
-        "Dominique Guillot",
-        "Daniyar Abykhanov",
-        "Julien Emile-Geay"
-      ],
-      "abstract": "We introduce a graph attention network for reconstructing near-surface air temperature fields from incomplete observations. The model represents each grid cell as a node connected to its $k$ nearest neighbors, with attention weights that depend on node features, distance, and land-ocean transitions. This graph representation avoids the polar distortions associated with treating the globe as a flat latitude-longitude image, as most deep learning reconstruction methods do. This is particularly relevant for historical temperature records, which extend back to the mid-nineteenth century but remain incomplete, with the largest gaps early in the record and at high latitudes. We train our model on CMIP6 CESM2 historical simulations masked with the time-varying HadCRUT5 observational coverage from 1850 to 2014. We then compare our approach with ordinary kriging, GraphEM, and the LaMa inpainting network on a held-out realization. The graph model achieves the lowest spatial RMSE (0.997 K), 10.1% lower than LaMa and approximately 31% lower than kriging and GraphEM. The largest gains occur in the Arctic and Antarctic, while LaMa remains slightly more accurate in the densely observed tropics. The graph model's error also falls faster as coverage increases, so its advantage over LaMa grows by more than a third from the 1850s to the 2000s. An ablation study shows that the model's skill comes mainly from the geometric graph construction rather than from auxiliary physical covariates.",
-      "published": "November 11, 2026",
-      "published_raw": "2026-11-11T15:16:59Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.15598v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.15598v1"
-    },
-    {
-      "id": "2611.15241v1",
-      "title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
-      "authors": [
-        "Nhat-Long Nguyen",
-        "Viet-Loi Dinh",
-        "Trong-Nghia Pham"
-      ],
-      "abstract": "Liver disease remains a major global health concern, highlighting the need for reliable and accessible early detection methods. Although recent advances in machine learning, deep learning and quantum machine learning (QML) have introduced promising diagnostic tools, many approaches suffer from limited interpretability and inflated performance caused by data leakage or overly simplistic evaluation protocols. These constraints reduce their reliability in real-world clinical practice. This paper proposes KQML-Liver, a hybrid framework that integrates QML with Kolmogorov-Arnold Networks (KANs) to enhance predictive performance and interpretability. The architecture combines parameterized quantum circuits for expressive feature representation with KAN-based functional mappings that capture nonlinear relationships in an interpretable manner. Evaluated on the Indian Liver Patient Dataset (ILPD) under a rigorous preprocessing protocol preventing data leakage, the proposed model achieves 82% classification accuracy and 100% recall, detecting all positive cases, outperforming existing baselines while providing improved transparency in clinical predictions. These results suggest that hybrid KAN-quantum architectures offer a promising direction for interpretable AI-assisted medical diagnosis.",
-      "published": "November 11, 2026",
-      "published_raw": "2026-11-11T09:31:35Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.15241v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.15241v1"
-    },
-    {
-      "id": "2611.14922v1",
-      "title": "A Transferable Pretrained 3D Model for Impedance Inversion with Sparse-Well Prior Conditioning",
-      "authors": [
-        "Gen Li",
-        "Zhaoyun Zong",
-        "Diqiong Jiang",
-        "Man Tang"
-      ],
-      "abstract": "Deep-learning-based seismic impedance inversion commonly requires retraining for each target survey, which may generalize poorly beyond the conditioning locations when well control is extremely sparse. We propose a transferable three-dimensional inversion framework that separates offline learning from target-survey deployment. A masked autoencoder first learns seismic structural representations from unlabeled multi-survey data, after which the frozen encoder is incorporated into an inversion network trained on synthetic geological models with sparse-well-derived low-frequency priors. During deployment, the complete inversion network remains fixed; the available conditioning well is used only to construct the low-frequency prior and align the global impedance range. Experiments on the Overthrust model show that the proposed method achieves the lowest full-volume NRMSE and reduces the P95 trace-wise NRMSE from 0.1310 to 0.1074 relative to the best target-trained baseline, indicating fewer localized large errors under different well locations. In a field survey with one conditioning well and three blind wells, it reduces the mean blind-well NRMSE by 20.95% relative to the target-trained U-Net while maintaining the highest correlation. These results demonstrate that the proposed framework transfers useful impedance information beyond the conditioning location with low deployment cost and without retraining the inversion network.",
-      "published": "November 11, 2026",
-      "published_raw": "2026-11-11T02:25:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.14922v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.14922v1"
-    },
-    {
-      "id": "2611.14706v1",
-      "title": "Beyond Foreign-Key Connectivity: Semantic Relationship Representation for Relational Deep Learning",
-      "authors": [
-        "Noy Cohen-Shapira"
-      ],
-      "abstract": "Relational databases encode information through tables and primary--foreign key constraints. Although recent Relational Deep Learning (RDL) approaches represent these databases as heterogeneous graphs, a foreign-key connection primarily specifies structural connectivity between records. Its semantic interpretation may involve additional information that is not explicitly represented by connectivity alone. This paper introduces a conceptual framework for constructing relationship-aware representations from relational databases. The framework distinguishes three complementary aspects: (i) schema-defined relationship semantics, including endpoint types and foreign-key roles; (ii) association entities and explicitly available relationship-level attributes; and (iii) contextual information describing the temporal and structural circumstances of a connection. We formulate a Relationship Representation Construction (RRC) protocol that maps relational schema elements and database records to node representations, relationship descriptors, and contextual representations. A key principle of the protocol is semantic ownership: attributes are assigned to records, relationships, or context according to their meaning, rather than merely their physical location in a database table. Ambiguous attributes are not automatically promoted to relationship features. The resulting representations can be incorporated into existing relational graph learning architectures through relationship-conditioned message passing. The proposed framework is complementary to recent work on relational message passing, graph transformers, and task-dependent graph construction. We discuss its conceptual foundations, illustrate the construction protocol using a multi-table database, and identify research questions and empirical evaluations required to establish its potential benefits.",
-      "published": "November 10, 2026",
-      "published_raw": "2026-11-10T20:13:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.14706v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.14706v1"
-    },
-    {
-      "id": "2611.14630v1",
-      "title": "Beyond classification: regressing physical merger properties using solid harmonic wavelet bispectrum",
-      "authors": [
-        "Alex Brown",
-        "Georgios Exarchakis",
-        "Mathilda Avirett-Mackenzie",
-        "Carolin Villforth"
-      ],
-      "abstract": "Galaxy mergers play an important role in galaxy evolution; they enhance star formation, transform morphologies, and may drive accretion onto black holes. Due to their complex morphological features, identification of mergers poses a significant challenge. Convolutional neural networks (CNNs) have been successful at identifying mergers with good accuracy. However, similar to other deep learning techniques such as Vision Transformers, they require large training samples. Current methods are also limited to classification, rather than regression. Here, we apply the solid harmonic wavelet scattering bispectrum, a method that encodes invariances and symmetries in the data which need to be learned by CNNs, as an alternative to CNNs. We apply our methodology to a simulated dataset of galaxies with a wide range of merger properties. We show that this method outperforms standard methodologies, while requiring fewer training samples and being robust to noise. Most importantly, we show that for the first time this method is able to regress on both merger mass ratio and time since merger simultaneously, with uncertainties ~ 0.33 dex uncertainty in merger mass ratio and ~ 0.66 Gyr uncertainty in time since merger. We have therefore shown that solid harmonic wavelet bispectrum presents an alternative to currently used machine learning techniques.",
-      "published": "November 10, 2026",
-      "published_raw": "2026-11-10T19:00:05Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.14630v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.14630v1"
     }
   ]
 }
