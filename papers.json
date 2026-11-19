@@ -1,7 +1,164 @@
 {
-  "last_updated": "2026-11-18T04:53:01.212443",
+  "last_updated": "2026-11-19T04:44:44.666748",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.24837v1",
+      "title": "What Survival Benchmarks Don't Tell You: Impact of Model Selection and Dataset Regimes",
+      "authors": [
+        "Sandra Dening",
+        "Emre Kavak",
+        "Christian Wachinger",
+        "George H. Chen"
+      ],
+      "abstract": "Despite the proliferation of survival analysis methods, current benchmarks often operate under narrow conditions: they heavily rely on the concordance index (C-index) for evaluation and model selection, and frequently either exclude deep learning (DL) methods or underrepresent challenging dataset regimes. To address these limitations, we conduct a large-scale, neutral benchmark comparing 10 classical, tree-based, and DL methods across 49 diverse datasets. Crucially, we treat the model selection criterion (optimizing for C-index, Integrated Brier Score (IBS), or Mean Absolute Error (MAE-PO)) as an independent experimental variable. Using Bayesian mixed-effects modeling, we demonstrate that evaluation design heavily dictates conclusions. For complex DL and tree-based architectures, selecting hyperparameters to optimize for IBS instead of C-index yields substantial improvements in probabilistic accuracy and calibration at a negligible cost to discriminative ranking. Furthermore, method performance (C-index, IBS, MAE-PO, and X-CAL) is fundamentally governed by dataset characteristics. While DL models scale exceptionally well with larger sample sizes, they suffer notable performance drops in high-dimensional feature spaces. Additionally, we expose a structural vulnerability where heavy censoring artificially inflates absolute calibration metrics, creating overly conservative tests. Ultimately, our findings challenge the utility of global single-number performance summaries and advocate for survival analysis results that transparently report the evaluation setup. Our code is available at: https://github.com/sdening/surv-bench-study",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T18:03:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24837v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24837v1"
+    },
+    {
+      "id": "2611.24799v1",
+      "title": "Prognosis Without Prediction: The Intrinsic Geometry of Survival",
+      "authors": [
+        "Atahan Karagoz"
+      ],
+      "abstract": "Modeling systemic failure in high-dimensional environments is fundamentally limited by supervised algorithms that attempt to predict sparse, noisy or censored endpoints. To break this reliance on explicit outcome regression, we engineered the Self-Organizing Survival Manifolds (SOSM) framework, a deep learning architecture that decouples unsupervised representation learning from survival labels and treats time-to-event progression as an emergent geometric property. The system projects heterogeneous multi-omics arrays into a unified latent space governed by a pseudotime-weighted, curvature-minimizing graph Laplacian, organizing patient trajectories along low-dissipation geodesic flows. To validate the framework, we applied this architecture to a 184-patient clear cell renal cell carcinoma multi-omics cohort. Across a deterministic 5-fold cross-validation pipeline, SOSM achieved a mean Concordance Index of $0.768 \\pm 0.068$, while out-of-fold risk stratification yielded significant survival divergence (log-rank $p < 0.001$) accompanied by a 14.7% increase in local manifold dissipation among high-risk patients. Furthermore, interrogating the network's encoder weights confirmed that the model autonomously recovered canonical metabolic and microenvironmental drivers of disease progression without supervised feature selection. By demonstrating that systemic failure can be mapped as a geometric phase transition, SOSM establishes a generalizable computational engine for prognostic modeling across biological, industrial and financial complex systems.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T17:42:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24799v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24799v1"
+    },
+    {
+      "id": "2611.24741v1",
+      "title": "Sex Differences in the Detection of Parkinson's Disease from Speech",
+      "authors": [
+        "Hiba Akhaddar",
+        "Peter Plantinga",
+        "Mirco Ravanelli",
+        "Tristan Glatard"
+      ],
+      "abstract": "Parkinson's disease (PD) is the second most common neurodegenerative disease in the world, and 70\\% to 75\\% of PD patients suffer from speech disorders at some stage. Since PD affects men more frequently than women, previous publications tend to rely on unbalanced datasets that potentially introduce sex biases into trained models. This study investigates sex differences in PD detection from speech using deep learning and traditional machine learning approaches. We evaluated speech-based PD detection using embeddings from three pre-trained speech models, combined with handcrafted acoustic features and different classifiers. Sex-specific experiments were conducted on balanced subsets of four sustained phonation datasets, controlling for sex, disease status, and, where possible, age. All recordings were obtained during a sustained phonation task. Results show that female speakers were more accurately classified than male speakers in the larger dataset. Sex-specific results show that when the models are trained on one sex, they fail to generalize to the other one. Our results highlight the importance of including sex as a variable in the development of PD detection systems.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T16:57:24Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24741v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24741v1"
+    },
+    {
+      "id": "2611.24718v1",
+      "title": "Meta-LSQ: A Closed-Form Sobolev Inner Solver for Few-Shot Meta-Learning",
+      "authors": [
+        "Antonin Sulc"
+      ],
+      "abstract": "Gradient-based meta-learners such as model-agnostic meta-learning (MAML) adapt to a new task with an inner loop of gradient descent that has to be differentiated through, and they meta-learn every network weight. Meta-LSQ instead fits each task with one regularised least-squares solve over a fixed random Fourier basis and meta-learns only three scalars, a bandwidth, a ridge and a derivative weight. Since the derivative of a sinusoid is again a sinusoid, the same solve can also take derivative observations, and the fitted model has exact closed-form derivatives of any order. On 10-shot sinusoid regression Meta-LSQ trains in 14 s and ends with a 5.5 times lower error than a first-order MAML baseline that trains 36 times longer, and a Gaussian-process control suggests that most of this gain comes from sharing one kernel across tasks. In simulated beam tuning at DESY's ARES facility with model derivatives it is slightly more accurate than an ALPaCA-style model and well ahead of gradient descent. Over DESY's full range of target beams, again in simulation and from measurements alone, its best setting has a median error of 7.3 $μ$m, against 14.4 for the published final beams of their reinforcement-learning agent, which has the lower median on their 300 trials of small targets. On real sensor-calibration data a learned prior mean puts it ahead of MAML on two of four targets, but an exact Gaussian process with the same change and an ALPaCA-style model stay more accurate on most targets, and it breaks down on non-smooth targets. On noiseless targets outside the span of the basis, in-sample criteria such as generalised cross-validation choose too small a ridge.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T16:39:44Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24718v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24718v1"
+    },
+    {
+      "id": "2611.24622v1",
+      "title": "Evaluating the Effectiveness of Location Encoding Methods for Species Distribution Modelling",
+      "authors": [
+        "Christian Lange",
+        "Oisin Mac Aodha"
+      ],
+      "abstract": "Understanding the spatial distribution of species is a key question in ecology. A variety of solutions, from statistical, traditional machine learning, through to deep learning-based methods have been proposed. These methods take sparse observations for a species of interest as input and aim to generate dense spatial outputs indicating the spatial range of the species. Orthogonal to the choice of statistical model used is the question of what input features are most informative. Thanks to recent developments, the number of options has greatly expanded, with choices spanning different climate variables, learning-based encodings, earth embedding models, or raw transformed geographic coordinates. In this work, we introduce a standardized evaluation framework and quantify the effectiveness of different location encodings in the context of species range estimation, both at the local and global scale.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T15:38:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24622v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24622v1"
+    },
+    {
+      "id": "2611.24596v1",
+      "title": "From Activity Recognition to Shift Detection: Variational Wi-Fi Sensing with Evidential Uncertainty",
+      "authors": [
+        "Luca Cotti",
+        "Marco Cominelli",
+        "Francesco Gringoli",
+        "Lance M. Kaplan",
+        "Mani B. Srivastava",
+        "Trevor Bihl",
+        "Erik Blasch",
+        "Kara Combs",
+        "Daniel O. Brigham",
+        "Federico Cerutti"
+      ],
+      "abstract": "Human motion perturbs wireless channels, making commodity Wi-Fi devices a practical platform for device-free activity recognition. Yet Channel State Information (CSI) also depends strongly on the person, receiver position, recording session, and surrounding environment, so a classifier can continue producing activity labels after its deployment conditions have moved away from those seen during training. We propose Wi-HAR, a multi-antenna architecture in which four Variational Auto-Encoders learn compact distributions from raw Wi-Fi 6 CSI magnitudes and a delayed-fusion classifier combines their means and log-variances. On twelve activities from a public benchmark, Wi-HAR reaches 96.6% median recognition accuracy, compared with 70.8-81.5% for independently optimized single-antenna models, showing that the antennas provide complementary views of the same activity. We then use the same latent backbone to detect deployment shifts without using shifted samples for model selection or calibration. A class-conditional uncertainty score derived from Evidential Deep Learning achieves a macro-average ROC-AUC of 0.897 across eleven datasets that change receiver position, participant, recording session, or room, and detects 82.5% of shifted samples at a realized 5.2% in-distribution rejection rate. Detection performance nevertheless varies substantially across receiver positions, showing that the same physical change does not induce a uniform uncertainty response. The compact representation also supports shallow decision-tree analysis using variables from several antennas.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T15:23:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24596v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24596v1"
+    },
+    {
+      "id": "2611.24547v1",
+      "title": "Orientation-Tunable Interfacial Thermal Conductance in Lateral MoSe2/MoS2 Heterostructures: A Deep Potential Molecular Dynamics Study",
+      "authors": [
+        "Shirin Sabokdast",
+        "Pedram Mirchi",
+        "Ali Rajabpour"
+      ],
+      "abstract": "Managing heat flow across interfaces in lateral 2D transition-metal dichalcogenide (TMD) heterostructures is a key challenge for next-generation nanoelectronic and optoelectronic devices. To tackle this, we trained a deep learning interatomic potential (DLP) using DeePMD-kit on density functional theory (DFT) data, then paired it with non-equilibrium molecular dynamics (NEMD) simulations to study interfacial thermal conductance (ITC) in lateral MoSe$_2$/MoS$_2$ heterostructures, considering both armchair and zigzag interface orientations. The potential we trained closely matches DFT energies, forces, and phonon dispersion relations, which confirms its reliability for thermal transport simulations. Examining cell lengths from 10 to 40 nm and extrapolating to infinite length, the armchair interface shows a higher ITC (473 MW/m$^2$K) than the zigzag interface (387 MW/m$^2$K), and the armchair interface remains higher at every length considered. Both increase further as temperature rises. At 300 K, the vibrational density of states shows greater phonon spectral overlap at the armchair interface than at the zigzag interface. Together, these results offer a solid machine-learning framework for studying heat transport in lateral TMD heterostructures, and identify interface orientation as an effective means of controlling heat dissipation at these junctions.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T14:51:32Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24547v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24547v1"
+    },
+    {
+      "id": "2611.24474v1",
+      "title": "Drift-Aware Explainable Prioritization for Windows PE Malware Forensic Triage with Semantic Consistency Checks",
+      "authors": [
+        "Mohammed A. Alharbi",
+        "Toqeer Ali Syed"
+      ],
+      "abstract": "Forensic investigators must decide which suspicious files to examine first. Machine-learning (ML) and deep-learning (DL) malware detectors usually return a bare score that neither explains why a file deserves attention nor signals when changing data make the model unreliable. We present a framework for Windows Portable Executable (PE) malware forensic triage that works only on pre-extracted static features and never executes malware. A calibrated maliciousness score sets each file's triage priority, and a per-sample feature attribution explains the prediction. A per-sample consistency score measures whether the top attributed features agree with documented behaviors from the Malware Behavior Catalog (MBC) and MITRE Adversarial Tactics, Techniques & Common Knowledge (ATT&CK), where the available features support such interpretation. Conformal evaluation and statistical distribution tests flag drift. Each file receives one investigator-oriented triage output. The evaluation protocol, specified before testing, uses a time-ordered split of EMBER2024 as the primary dataset and BODMAS for family disjoint checks, and compares every component with simple baselines on predictive performance, prioritization effectiveness, explanation quality and robustness over time.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T14:10:11Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24474v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24474v1"
+    },
+    {
+      "id": "2611.24469v1",
+      "title": "ICICLE: In-Context Inference for Curve-Learning Extrapolation",
+      "authors": [
+        "Laurits Fredsgaard",
+        "Michael Riis Andersen",
+        "Mikkel N. Schmidt"
+      ],
+      "abstract": "Freeze-thaw Bayesian optimization allocates training budget by predicting how partially observed learning curves will continue. LC-PFN first applied prior-data fitted networks (PFNs) to learning-curve extrapolation, and FT-PFN extended this approach to configuration-aware freeze-thaw optimization with a ten-slot hyperparameter encoder. We introduce In-Context Inference for Curve-Learning Extrapolation (ICICLE), an in-context surrogate that accepts a variable number of hyperparameters through a shared set encoder and is trained on a synthetic prior covering typed hyperparameters, heavy-tailed noise, quantization, and divergence. ICICLE has 1.28 million parameters (8.7% of FT-PFN's count) and produces similar mean-regret trajectories to FT-PFN on LCBench, PD1, and TaskSet. On the 86-task Meta-Album benchmark with 33 hyperparameters, ICICLE reaches lower mean normalized regret than Quick-Tune overall and on extended, with no clear difference on mini or micro. It does so without pre-training or meta-training on Meta-Album tasks, whereas Quick-Tune is meta-trained on related Meta-Album tasks. Our release samples synthetic training tasks on the fly and provides a freeze-thaw scheduler for Ray Tune and an ONNX model for inference without JAX or PyTorch.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T14:07:29Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24469v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24469v1"
+    },
+    {
+      "id": "2611.24070v1",
+      "title": "FDM+: A Framework for Constrained Control of the 2D Radiative Transport Equation",
+      "authors": [
+        "Hualing Zhong",
+        "Shuai Wang",
+        "Hui Xie",
+        "Heng Yong"
+      ],
+      "abstract": "Applying the frozen diffusion model (FDM) [29] to the constrained control of the 2D radiative transport equation presents several challenges. These include the dimensional difference between control variables and state functions, the resolution mismatch between traditional numerical solvers and deep learning models, and solution non-uniqueness. To address these obstacles, we propose a novel approach, FDM+, which includes three key improvements. Firstly, a decoupled prediction architecture is introduced to address the dimensional heterogeneity. Secondly, an efficient parameterization strategy resolves the resolution mismatch. Meanwhile, we derive a total error bound to analyze how the parameterization error and the model estimation error jointly affect the performance. Thirdly, the conditional distribution learned by the diffusion model is leveraged to perform design space exploration for multi-solution problems. A series of numerical experiments demonstrate that FDM+ outperforms existing methods in reconstruction accuracy and design flexibility.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T09:02:31Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24070v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24070v1"
+    },
+    {
+      "id": "2611.23543v1",
+      "title": "Stability of Parallel Transport Convolution under Riemannian Metric Perturbations",
+      "authors": [
+        "Hongnian Huang",
+        "Andrew Stump"
+      ],
+      "abstract": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
+      "published": "November 17, 2026",
+      "published_raw": "2026-11-17T21:50:20Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.23543v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.23543v1"
+    },
     {
       "id": "2611.23042v1",
       "title": "Uncovering the Invisible in Routine Radiology: Cross-Modal Detection of MRI-Verified Soft-Tissue Pathologies from CBCT via Physics-Guided 3D Self-Supervised Learning",
@@ -141,180 +298,6 @@
       "published_raw": "2026-11-16T18:58:55Z",
       "pdf_link": "http://arxiv.org/pdf/2611.21602v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.21602v1"
-    },
-    {
-      "id": "2611.21586v1",
-      "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
-      "authors": [
-        "Yisong Cao",
-        "Leah Kim",
-        "Brian Wright",
-        "Ali Rivera"
-      ],
-      "abstract": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026. We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R) and Clustering (C). We employ GPT-6 Luna to classify job description passages into Team context, Role task and Qualifications. We then create combinations of these sections and examine whether embedding and clustering the segmented passages produce meaningful semantic clusters about different job roles. We use Maximum Mean Discrepancy (MMD) to rank observed differences between embedding distributions and employ a pretrained sparse autoencoder (SAE) to extract features from layer-19 representations of Llama-3.1-8B-Instruct. Lastly, we employ GPT-6 Luna to come up with hypotheses about job roles' feature patterns, and GPT-6.1 Terra to investigate whether those patterns exist in held-out job descriptions from unseen companies. Some example findings include Data Scientist advertisements placing more emphasis on machine learning model development, Data Analyst advertisements on reporting business performance, and Machine Learning Engineer advertisements on applying developed models in real-world settings. We also observe differences in the applications described by Data Analyst and Business Analyst advertisements across selected months, although our dataset's scale and uneven coverage limit their interpretation. Overall, we present a realistic application of SAEs and PERC to unstructured textual data and examine how automated insight extraction could support manual analysis of job descriptions.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T18:54:40Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21586v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21586v1"
-    },
-    {
-      "id": "2611.21295v1",
-      "title": "Deep Learning for Physicists: From Linear Regression to Reasoning Models",
-      "authors": [
-        "Masanori Hanada"
-      ],
-      "abstract": "These lecture notes are based on an introductory course on neural networks and deep learning that the author taught in the School of Mathematical Sciences at Queen Mary University of London in 2023/24 and 2024/25. The author, however, is a physicist, and it shows: wherever possible, ideas are explained with physical intuition rather than heavy formalism. Readers with a background in physics or mathematics who want a self-contained, introductory route into modern machine learning may therefore find these notes particularly friendly. The notes start from maximum likelihood, least squares, linear regression and (stochastic) gradient descent. They then cover neural networks, backpropagation, the vanishing gradient problem, batch and layer normalization, overfitting and regularization, adversarial examples, and the kernel method. The second half turns to natural language processing: word embeddings, recurrent networks and LSTMs, the attention mechanism and Transformers, and large language models, including scaling laws, the history of GPT, instruction tuning, reinforcement learning from human feedback, hallucination, alignment faking, chain-of-thought reasoning and test-time scaling. The emphasis on large language models reflects requests from the students. The notes are aimed at third- and fourth-year students in the UK system. Because the course was also taken by students from other departments, very little is assumed: even basic material such as matrix multiplication is explained from scratch, so readers familiar with it can safely skip such parts. No originality is claimed; the aim is a coherent, intuitive path through the material. Developments after spring 2025 are not covered, but the basic ideas emphasized here are unlikely to go out of date soon.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T15:56:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21295v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21295v1"
-    },
-    {
-      "id": "2611.21079v1",
-      "title": "SemiNovo: Learning Beyond Search-Identified Spectra for De Novo Peptide Sequencing",
-      "authors": [
-        "Pan Liu",
-        "Dongxin Lyu",
-        "Yusen Tan",
-        "Yifan Li",
-        "Hai-tao Yu",
-        "Yunhua Zhong",
-        "Zikun Wang",
-        "Tianze Ling",
-        "Jun Xia"
-      ],
-      "abstract": "Sensitive peptide identification is fundamental to protein characterization and novel protein discovery, for which de novo peptide sequencing (DNPS) from tandem mass spectra provides an important database-independent approach. Although deep learning has substantially advanced de novo sequencing, existing models are predominantly trained on high-confidence peptide-spectrum matches obtained through database search. This search-conditioned supervision excludes a large fraction of unidentified spectra, creating a distribution mismatch between the selectively labeled training data and the complete spectrum stream encountered at inference time, thereby limiting peptide identification performance. To address this challenge, we propose SemiNovo, a semi-supervised framework that learns jointly from identified and unlabeled spectra. SemiNovo first constructs DarkSpec, a large-scale quality-controlled corpus of unlabeled spectra collected from diverse public proteomics projects, thereby extending training beyond search-identified spectra and mitigating the resulting shift in DNPS supervision. It then combines stepwise mass-constrained autoregressive decoding with cumulative path confidence to derive reliable supervision from unlabeled spectra. Moreover, SemiNovo introduces head-wise chemical-evidence gating to improve spectral evidence aggregation under noisy and incomplete fragmentation. Experiments show that SemiNovo performs favorably against state-of-the-art methods on multiple benchmarks. Code and dataset are publicly available.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T13:28:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21079v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21079v1"
-    },
-    {
-      "id": "2611.20995v1",
-      "title": "CONGA: Compiling Gaussian Fiber Geometry for Structured Bayesian Inference",
-      "authors": [
-        "Víctor Gallego"
-      ],
-      "abstract": "In structured Bayesian models, a large latent block is often Gaussian conditional on a smaller set of parameters, yet generic inference methods relearn this geometry during warmup. We study how this structure can be used to construct transports for posterior inference. The conditional mean and precision determine exact affine maps, including symmetric Brenier and triangular Knothe-Rosenblatt maps, that separate a standard normal block from the remaining non-Gaussian core. KL and relative Fisher objectives then reduce to objectives on this core. We introduce CONGA, a compiler that identifies candidate Gaussian blocks and selects a temporal, spectral, or sparse implementation according to their structure and computational cost. Marginalization requires an identity established from the model; numerical evidence alone permits only a target-preserving change of variables, and a failed check leaves the model unchanged. On the Stock-Watson inflation model, CONGA improves minimum ESS per second by 12.5x for NUTS. It also restores convergence where the raw target fails: for WALNUTS on the same model, and for NUTS on a 6760-dimensional electricity load model reduced to 34 core coordinates. Experiments on graph-indexed fields show how coloring and fill affect the choice of map, including cases where retaining the original target is preferable. Code at https://github.com/vicgalle/conga",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T12:23:08Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.20995v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.20995v1"
-    },
-    {
-      "id": "2611.20694v1",
-      "title": "Breaking the Fixed-Substrate Limitation of Deep Learning Ellipsometry with Pseudo-Substrate Spectra",
-      "authors": [
-        "Yuki Ikarashi",
-        "Naoki Kurokawa",
-        "James N. Hilfiker",
-        "Takuji Maekawa",
-        "Hitoshi Tampo",
-        "Hiroyuki Fujiwara"
-      ],
-      "abstract": "A machine learning method, deep learning ellipsometry (DLE), enables direct and rapid estimation of the optical constants and structures of thin films from spectroscopic ellipsometry (SE) spectra. However, conventional neural-network-based DLE models are restricted to the specific substrate used during training, and applying them to a different substrate requires ~100 h of retraining. Here, we propose a framework that overcomes this fixed-substrate limitation by introducing a two-input feature-wise linear modulation DLE (FiLM-DLE). In this model, the SE spectra of a thin-film structure are input together with those of the substrate measured before film deposition, which we term the pseudo-substrate spectra. Any substrate, including a multilayer stack, is thus represented solely by its measured SE response, analogous to the pseudo-dielectric function, so that no prior knowledge of the substrate structure is required. Trained on a virtual dataset of 165 million samples representing metal, glass, and SiO2/Si substrates with different SiO2 thicknesses, a single FiLM-DLE model, trained once, extracts thin-film optical constants and structures with high accuracy and shows strong applicability to substrates not included in the training datasets. Experimental validation on 47 thin-film samples across diverse substrates yielded sample-averaged mean absolute errors, relative to conventional manual analysis, of 0.047 for refractive index, 0.030 for extinction coefficient, and 1.52 nm for thickness, with each analysis completed in under 2 s. FiLM-DLE thus eliminates the need for a separate DLE model for each substrate and enables rapid, high-accuracy optical characterization of thin films on diverse substrates.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T08:01:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.20694v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.20694v1"
-    },
-    {
-      "id": "2611.20660v1",
-      "title": "Enhancing Mixed Oil Length Prediction through Graph Representation Learning",
-      "authors": [
-        "Xinyi Hong",
-        "Hai Shu",
-        "Zhaoyang Zhang",
-        "Lei Chen",
-        "Yanfeng Yang",
-        "Ziqi Chen"
-      ],
-      "abstract": "During the pipeline transportation of refined oil products, the inevitable formation of mixed oil segments poses considerable economic challenges to pipeline networks. Therefore, it is important to accurately predict the length of these mixed oil segments. Although previous methods have achieved relatively accurate predictions by integrating machine and deep learning algorithms, they ignore the statistical dependencies that remain among real-world mixed oil samples, which degrades model accuracy. To address this issue, we propose a novel Sample Dependencies Incorporated Graph Representation Learning (SDI-GRL) model. By representing samples and pipeline features as nodes of a graph, SDI-GRL connects dependent samples through their shared features, allowing message passing to propagate information across related samples. This graph-based framework allows our model to capture the statistical dependencies among samples absent in prior works. A case study on a mixed oil dataset demonstrates that our SDI-GRL model surpasses the strongest existing approach, reducing both the RMSE and the MAE by more than 10%.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T07:23:01Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.20660v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.20660v1"
-    },
-    {
-      "id": "2611.20607v1",
-      "title": "DNA: A Double-Helix Hierarchical Deep Interaction Network Architecture for Industrial Digital Twin",
-      "authors": [
-        "Haoran Yang",
-        "Yanan Xu",
-        "Yinan Zhang",
-        "Wenjie Zhang",
-        "Peiyu Liu",
-        "Jiahui Xiang",
-        "Wenhai Wang"
-      ],
-      "abstract": "High-fidelity modeling is fundamental to industrial digital twin, yet a trade-off persists between the physical transparency of mechanistic models and the superior predictive power of data-driven approaches. Existing hybrid methods often fail to bridge this gap, suffering from shallow integration and rigid one-shot modeling strategies that struggle with complex industrial systems. To address these issues, we propose a \\textbf{Double-Helix Hierarchical Deep Interaction Network Architecture (DNA)}. Inspired by the double-helix structure of biological \\textit{DNA}, our architecture intertwines mechanistic and data-driven modeling strands through two novel interaction strategies, forming a symbiotic architecture in which the two strands mutually enhance predictive capability. Furthermore, the hierarchical structure of DNA allows it to model complex systems in a multi-stage manner through two tailored deep learning frameworks. We evaluate the proposed approach on two distinct industrial systems, where DNA achieves reductions in MAE of 3.704\\% and 3.175\\%, respectively, compared to the strongest baseline. These results demonstrate the effectiveness of DNA and suggest its potential to provide new insights for the development of industrial digital twins.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T06:32:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.20607v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.20607v1"
-    },
-    {
-      "id": "2611.20565v1",
-      "title": "Memory-Efficient Speculative Decoding with Quantized Draft KV Cache",
-      "authors": [
-        "Saksham Gupta",
-        "Michael Li"
-      ],
-      "abstract": "Speculative decoding reduces generation cost, but it stores two KV caches: one for the target model and one for the draft model. We reduce this extra memory by quantizing the draft cache. The target cache and verifier remain in BF16, so that compression cannot change the target model's final correction rule. We first study how to divide precision between keys and values. A naive per-token quantizer makes keys appear much more sensitive: splitting a 12-bit budget, K8V4 beats K4V8 in acceptance by 10.87pp. However, with grouped per-channel keys, the gap becomes -0.25pp. A controlled Qwen test confirms that changing only the key quantizer can erase or reverse the preferred bit split. Hence, following KIVI, we propose K4V4 quantization with per-channel keys and per-token values. Across six model pairs, our method reduces draft cache memory by 66.20%, and combined memory across both caches by 23.95%. Mean acceptance drops from 57.93% to 57.14%, only 1.36% relative. Overall, quantized draft caches can make speculative decoding more memory efficient; as a predictive principle for efficient AI design, key and value precision must be co-designed with the quantizer layout.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T05:44:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.20565v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.20565v1"
-    },
-    {
-      "id": "2611.20150v1",
-      "title": "Symmetry Fingerprinting with Geometric Learnable Invariants Transformers",
-      "authors": [
-        "Bart M. N. Smets",
-        "Gijs Bellaard",
-        "Pieter Wils"
-      ],
-      "abstract": "Geometric deep learning has made available a large variety of structurally equivariant neural network architectures, meaning a particular transformation of their input causes a predictable transformation of their output. But structural equivariance is a very strong inductive bias that can limit performance if chosen poorly. In contrast, choosing an architecture with low geometric bias necessitates data augmentation to obtain correct behavior; extending the training process. We propose a novel neural network architecture that is soft equivariant; we select a set of symmetry groups and during training the network will become equivariant only to those symmetry groups that are appropriate given the training data. After training we can inspect the network to obtain a symmetry fingerprint that will tell us exactly which symmetries ended up being relevant and to what degree. We show how our architecture and the fingerprinting process work in the case of an image classification task.",
-      "published": "November 15, 2026",
-      "published_raw": "2026-11-15T17:34:56Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.20150v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.20150v1"
-    },
-    {
-      "id": "2611.19988v1",
-      "title": "KneeFS-Net: A Lightweight Deep Learning Model for Knee Osteoarthritis Severity Assessment with Cross-Domain External Validation",
-      "authors": [
-        "Shafqat Alam",
-        "Galib Anjum Talukder Mahi",
-        "Yeasir Rabbani Tanvir",
-        "Md. Ibrahim",
-        "Md. Shahed Hossain",
-        "Shashank Ghimire",
-        "Mahmud Hasan Mostofa Kamal",
-        "ASM Shahidul Hossain",
-        "Taufiq Hasan"
-      ],
-      "abstract": "Knee osteoarthritis (OA) grading from radiographs using the Kellgren-Lawrence (KL) scale requires expertise that may be scarce. We present KneeFS-Net, a lightweight ordinal grader (0.8 million parameters; 0.33 GFLOPs) combining spatial, Fourier and state-space features with landmark-guided attention. On the Osteoarthritis Initiative (OAI) test set, KneeFS-Net achieved a quadratic weighted kappa (QWK) of 0.863, mean absolute error (MAE) of 0.325 and 97.2% within-one-grade accuracy, comparable to models with 9-35-fold more parameters. We evaluated cross-population generalization on two Bangladeshi cohorts, a single-center hospital cohort and a multi-center teleradiology cohort. Without further training or adaptation, the OAI-trained model achieved QWK 0.803, MAE 0.339 and 98.2% within-one-grade accuracy on its hospital cohort, declining to QWK 0.656 and MAE 0.522 on multi-center teleradiology images. Self-supervised pretraining on 6,092 unlabeled radiographs followed by joint fine-tuning achieved QWK 0.823, MAE 0.329 and 99.7% within-one-grade accuracy in cross-validation. These findings demonstrate accurate, efficient KL grading and potential adaptation to new populations with limited annotation.",
-      "published": "November 15, 2026",
-      "published_raw": "2026-11-15T12:56:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.19988v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.19988v1"
-    },
-    {
-      "id": "2611.19864v1",
-      "title": "Local Order Matters: A Lightweight CPU-Trainable CNN for Website Fingerprinting on Defended Tor Traffic",
-      "authors": [
-        "Puyang Xu",
-        "Zhizhao Wen",
-        "Yifan Jiang",
-        "Chao Wang",
-        "Yusi Gong"
-      ],
-      "abstract": "Website fingerprinting (WF) attacks let a passive adversary infer which site a Tor user visits from the encrypted cell sequence. On undefended traffic, hand-crafted-feature attacks are already near-ceiling, so deep learning offers only a marginal advantage there. We show that the decisive regime is defended traffic: against the FRONT padding defense, which injects dummy cells that corrupt the volume and count features feature attacks rely on, a compact 95,103-parameter 1-D convolutional network trained on the raw cell-direction sequence, on CPU only, stays robust while three implemented direction-only feature baselines degrade. On the closed-world WFlib FRONT set (95 sites), our model reaches 54.2% top-1 accuracy versus 38.5% for the strongest implemented feature baseline (k-FP-style RF), a gain of 15.7 percentage points (3 seeds; seed-0 paired-bootstrap 95% CI [+14.5, +17.0] pp on per-trace correctness, excluding zero). On undefended traffic the CNN reaches 94.1% versus 92.3% for k-FP-style RF. A controlled order-ablation permutes only nonzero traffic cells within each trace, preserving direction counts, retained length, and trailing zero-padding positions while destroying traffic order. This collapses the CNN below every feature baseline (from 54.2% to 7.6%, a 46.6 pp drop), showing that the model depends strongly on order-derived information under FRONT.",
-      "published": "November 15, 2026",
-      "published_raw": "2026-11-15T08:07:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.19864v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.19864v1"
     }
   ]
 }
