@@ -1,7 +1,115 @@
 {
-  "last_updated": "2026-11-19T04:44:44.666748",
+  "last_updated": "2026-11-20T04:36:05.161692",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.26111v1",
+      "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
+      "authors": [
+        "Stefan Martin",
+        "Jakob Schattenfroh",
+        "Patrick Schuenke",
+        "Felix Frederik Zimmermann",
+        "Ingolf Sack",
+        "Christoph Kolbitsch",
+        "Andreas Kofler"
+      ],
+      "abstract": "Objective: Magnetic Resonance Elastography (MRE) is a non-invasive imaging technique for mapping biomechanical properties of in vivo tissue, including shear wave speed (SWS), but involves intrinsically slow data acquisition and an ill-posed wave inversion. Instead of relying on handcrafted image priors, we propose a data-driven approach jointly combining image reconstruction and MRE inversion for robust SWS estimation from undersampled k-space data. Methods: Our physics-informed reconstruction framework comprises two blocks: a model-based neural network (NN)-regularized reconstruction module and a phase-gradient inversion (k-MDEV) calculating SWS from the reconstructed images. Concatenating both blocks yields an end-to-end trainable method to estimate SWS directly from measured k-space data. We evaluated the method on retrospectively highly undersampled brain MRE data and compared it to a total variation (TV) minimization-based approach. We assessed the impact of end-to-end training (qualitative images and SWS maps as targets) versus pre-training (qualitative images as targets) and applied the method also to in vivo data. Results: Our approach significantly reduces NRMSE by 30% compared to TV. End-to-end training improves SWS estimation over separate image reconstruction and SWS calculation. Conclusion: Accurate SWS quantification is possible at acceleration factors up to 19. Our method significantly outperforms TV, highlighting the need for data-driven regularization in this challenging MR problem. Further, our approach successfully generalizes to in vivo data. Significance: We present the first end-to-end trainable MRE reconstruction method for estimating SWS maps directly from k-space. NN-based reconstruction can enable rapid stiffness mapping for dynamic studies, functional imaging, and real-time clinical feedback.",
+      "published": "November 19, 2026",
+      "published_raw": "2026-11-19T13:39:46Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.26111v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.26111v1"
+    },
+    {
+      "id": "2611.25681v1",
+      "title": "Explainability of genotype embedding models through observed cohort paths",
+      "authors": [
+        "Amashi Niwarthana",
+        "Aloysius Tan",
+        "Jagath C. Rajapakse"
+      ],
+      "abstract": "Deep learning models that combine genotypes with neuroimaging predict neurological diseases more accurately than either modality alone. Their clinical use, however, requires identifying which genetic variants a prediction is based on. Path-based attribution methods like Integrated Gradients address this by integrating the model's gradient from a baseline to the input. These methods assume the model accepts any point along that path as a valid input. Genotype models violate this assumption. They map the three discrete allele dosages \\{0,1,2\\} to vectors through a learned embedding defined only at those values, so a straight line passes through fractional genotypes at which no embedding, and therefore no gradient, exists. Attribution must therefore proceed in embedding space where the choice of path can affect the resulting attribution. We show that the commonly used per-variant estimator does not generally satisfy completeness. Additive separability guarantees completeness for this estimator, but interactions between variants generally break that property. Instead, we integrate along piecewise-linear embedding-space paths connecting genotype waypoints observed in the training cohort. Each path satisfies completeness in the continuum although the interiors of its segments are not necessarily observed. Our method improves faithfulness over Integrated Gradients and discretized Integrated Gradients under both perturbation protocols, achieves the strongest results for Parkinson's disease classification under support-preserving perturbations, and is competitive with a support-background Shapley baseline under per-variant perturbations. It also shows higher seed stability and better recovery of planted non-additive effects in a synthetic benchmark.",
+      "published": "November 19, 2026",
+      "published_raw": "2026-11-19T08:00:38Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.25681v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.25681v1"
+    },
+    {
+      "id": "2611.25664v1",
+      "title": "GPU-Accelerated Secure Inference for Drug--Target Interaction Prediction",
+      "authors": [
+        "Sikha Pentyala",
+        "Steven Golob",
+        "Daniil Filienko",
+        "Ming-Chun Kao",
+        "Martine De Cock"
+      ],
+      "abstract": "Deep learning models that predict drug--target interactions (DTI) can speed up drug discovery, but the candidate drugs they score are valuable intellectual property that their owners cannot reveal. Secure multiparty computation (MPC) lets two servers compute a prediction on a secret-shared drug, without either server learning the drug. However, secure inference of deep models is slow. Non-linear operations require communication between the servers, and MPC arithmetic does not map naturally to GPUs. In this paper, we present our solution to Track~III of the iDASH 2026 privacy and security competition, which asked for fast two-party secure DTI inference on GPUs. Our solution is built on the co-design of MPC-friendly models and MPC protocols. On the model side, we design SlimDTA, a DTI model that reduces the operations on the secret drug, and in particular the non-linear operations that require communication. On the protocol side, we build a GPU framework that evaluates the linear layers with additive secret sharing and the non-linear layers with function secret sharing, including a custom CUDA kernel for the comparisons. Our solution won first place in the competition, at under 10,ms per prediction on average, and its secure predictions match the plaintext model to within 0.02%.",
+      "published": "November 19, 2026",
+      "published_raw": "2026-11-19T07:43:19Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.25664v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.25664v1"
+    },
+    {
+      "id": "2611.25629v1",
+      "title": "NIMIS: A Structure-Agnostic, Chemically Informed Slot-Attention Framework for Demixing 1D $^1$H-NMR Mixture Spectra",
+      "authors": [
+        "Anna Marija Sumrova",
+        "Jonathan M. Goodman"
+      ],
+      "abstract": "The products of chemical reactions are usually complex mixtures that must be separated into their components before interpretable $^1$H-NMR spectra can be obtained. Direct analysis of the spectra of crude mixtures would accelerate reaction analysis and facilitate the exploration of new chemical space. We present NIMIS, a structure-agnostic, attention-based deep learning framework that groups the peaks of a 1D $^1$H-NMR mixture spectrum according to the component from which they originate. J-coupling information is introduced directly into the attention mechanism of a multi-head Transformer encoder, and the resulting contextualised peak embeddings are separated into components by slot attention. NIMIS was trained on 158,005 synthetic mixtures constructed from experimental spectra in the NMRexp database, covering molecules of up to 20 heavy atoms composed of C, H, N, O, S, F, Cl, Br and I. On held-out molecules it reaches a peak-to-component assignment accuracy of 82.28% for noise-free input and 77.34% with 10% integral noise, with a mean NIMIS score of 0.83 for correct assignments. NIMIS outperforms a conventional Transformer and simple baselines, and its performance carries over to a scaffold-disjoint evaluation. By grouping peaks into component-level sets, NIMIS provides a foundation for more robust mixture analysis methods, including methods capable of handling overlapping signals.",
+      "published": "November 19, 2026",
+      "published_raw": "2026-11-19T07:15:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.25629v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.25629v1"
+    },
+    {
+      "id": "2611.25219v1",
+      "title": "Statistical, Machine Learning and Deep Learning Methods for Missing Covariates: An Empirical Evaluation with Applications to Alzheimer's Disease Research",
+      "authors": [
+        "Yiqing Pan",
+        "Sharon X. Xie",
+        "Shujie Ma",
+        "Angela L. Jefferson",
+        "Panpan Zhang"
+      ],
+      "abstract": "Missing data are common in biomedical research, particularly when biomarkers are costly or require invasive procedures to obtain, such as cerebrospinal fluid measures in Alzheimer's disease. Although a wide range of missing data methods exists, from traditional statistical approaches to modern machine learning (ML) and deep learning (DL) algorithms, their comparative performance under different missingness mechanisms remains insufficiently understood. In this study, we provide an empirical evaluation of eight methods for handling missing covariates, including complete-case analysis, multiple imputation, ML-based techniques, and DL frameworks such as multilayer perceptrons, variational autoencoders, and generative adversarial networks. We summarize their conceptual foundations, practical implementation considerations, strengths, and limitations. Through extensive simulations, we assess estimation bias, efficiency, standard error accuracy, confidence interval coverage, and computational burden across different missingness mechanisms and proportions. An application to the Vanderbilt Memory and Aging Project further illustrates the implications of different methods for regression analysis in a real-world biomedical setting. Finally, we provide practical recommendations for method selection and highlight remaining challenges that warrant future investigation.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T21:44:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.25219v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.25219v1"
+    },
+    {
+      "id": "2611.25127v1",
+      "title": "Machine Learning-Driven High-Throughput Screening of Equimolar and Non-Equimolar High-Entropy Carbides",
+      "authors": [
+        "Arina A. Svinukhova",
+        "Faisal Baber",
+        "Michel M. Lukanov",
+        "Viktor S. Baidyshev",
+        "Daria Terentieva",
+        "Alexander Ya. Pak",
+        "Alexander G. Kvashnin"
+      ],
+      "abstract": "Search for optimal compositions among high-entropy ceramics are challenging due to large composition space, which are unable to test either experimentally or by \\textit{ab initio} calculations. Here we present a high-throughput screening for equimolar and non-equimolar high-entropy carbides (HEC) among group IVB and VB transition metals (Ti, Zr, Hf, V, Nb and Ta). Large Atomistic Model MACE, and deep learning based interatomic potential DeePMD trained on \\textit{ab initio}-based dataset of structures are used to effectively screen over the thousands of potential non-equimolar compositions among high-entropy carbides of Ti, Zr, Hf, V, Nb and Ta transition metals. A set of both equimolar and non-equimolar HECs are predicted to be stable in order to further synthesize those compositions based on the predictions.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T20:04:54Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.25127v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.25127v1"
+    },
+    {
+      "id": "2611.25075v1",
+      "title": "Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh",
+      "authors": [
+        "Mahir Ahnaf",
+        "Showmitra Kumar Sarkar"
+      ],
+      "abstract": "Bangladesh, home to nearly 178 million people, is highly vulnerable to recurring droughts that threaten food security and rural livelihoods. Machine-learning and deep-learning models are increasingly used to forecast drought indices such as the Standardized Precipitation Evapotranspiration Index (SPEI). Most studies report accuracy without a persistence reference, although accumulated indices are strongly autocorrelated, and seldom test drought detection, longer leads or variation between training runs. This study forecast SPEI at 3-, 6- and 12-month timescales one to three months ahead for the eight divisions of Bangladesh, using ERA5 reanalysis checked against 35 Bangladesh Meteorological Department stations. Five models, XGBoost, CNN, Bi-LSTM, CNN-BiLSTM and CEEMDAN-BiLSTM, were trained with five seeds each, scored on accuracy, skill against persistence and drought detection, and interpreted with Shapley values. At a one-month lead, the CNN-BiLSTM and Bi-LSTM beat persistence clearly at SPEI-3 and SPEI-6 (skill 0.408 and 0.350), while at SPEI-12 a Nash-Sutcliffe efficiency of 0.872 barely exceeded persistence (0.850). Skill and detection could disagree: at SPEI-3 and a three-month lead, XGBoost had the highest skill (0.439) yet detected none of the 119 drought months. Only at SPEI-6 did the forecasts beat persistence significantly and match its detection at all three leads, with fewer false alarms. At SPEI-12, gains were small or absent and varied between seeds. The forecasts kept 76-80% of their correlation against station-derived SPEI and relied mainly on precipitation and lagged SPEI. Forecasts should therefore be judged on skill against persistence and detection across several seeds, not on accuracy alone. In Bangladesh, SPEI-6 forecasts can support early warning up to three months ahead and SPEI-3 forecasts one month ahead, while SPEI-12 is better suited to monitoring.",
+      "published": "November 18, 2026",
+      "published_raw": "2026-11-18T19:16:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.25075v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.25075v1"
+    },
     {
       "id": "2611.24837v1",
       "title": "What Survival Benchmarks Don't Tell You: Impact of Model Selection and Dataset Regimes",
@@ -160,6 +268,18 @@
       "arxiv_link": "http://arxiv.org/abs/2611.23543v1"
     },
     {
+      "id": "2611.24980v1",
+      "title": "DL101 The Representation Capability of Neural Network Models",
+      "authors": [
+        "Fernando Berzal"
+      ],
+      "abstract": "Universal approximation theorems (Cybenko, Funahashi, Hornik & Leshno) provide the mathematical justification for why neural networks are powerful enough to model complex, nonlinear phenomena. Shallow networks can approximate any continuous function on compact sets. Leshno's theorem clarified that non-polynomial activations are necessary for universality, which explains why ReLU, logistic, hyperbolic tangent, and other common activations work (but pure polynomials do not). However, approximation theorems provide no efficiency, training, nor generalization guarantees. They do not indicate how many neurons are needed for a given accuracy, whether gradient descent will find the right parameters, or whether networks trained on finite data will generalize well. Barron provided quantitative error bounds for particular function classes (approximation rates for functions with bounded Fourier norm), whereas Montúfar was the first to show that expressivity grows exponentially with depth (in terms of the number of linear regions). Deep networks are strictly more expressive than shallow ones with the same number of parameters. Depth is fundamentally more powerful than width, providing a rigorous mathematical explanation for the use of deep learning models.",
+      "published": "November 17, 2026",
+      "published_raw": "2026-11-17T20:13:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.24980v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.24980v1"
+    },
+    {
       "id": "2611.23042v1",
       "title": "Uncovering the Invisible in Routine Radiology: Cross-Modal Detection of MRI-Verified Soft-Tissue Pathologies from CBCT via Physics-Guided 3D Self-Supervised Learning",
       "authors": [
@@ -170,134 +290,6 @@
       "published_raw": "2026-11-17T16:40:33Z",
       "pdf_link": "http://arxiv.org/pdf/2611.23042v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.23042v1"
-    },
-    {
-      "id": "2611.22842v1",
-      "title": "SilverSpoon-KD: A General-Purpose Toolkit for Knowledge Distillation",
-      "authors": [
-        "Xaver R. Davey",
-        "David Broman"
-      ],
-      "abstract": "Knowledge distillation transfers deep learning representations from a teacher model to a student model, typically reducing model size or inference cost. However, knowledge distillation tooling has not kept pace with the breadth of research methods: existing toolkits typically support only a limited subset of techniques and use cases. We present SilverSpoon-KD, an open-source PyTorch toolkit that unifies different distillation paradigms and architectural relationships across workloads and applications behind a single API. Moreover, SilverSpoon-KD offers the first general-purpose blockwise knowledge distillation implementation with unique scalability features. We validate its versatility across vision, masked language model, and causal language models on tasks spanning homogeneous, heterogeneous, and quantization distillation across paradigms. We also evaluate SilverSpoon-KD by comparing its performance, including throughput and GPU memory usage, with existing toolkits. Despite extensive support for convenience, metric calculation, and tracking, we have found SilverSpoon-KD's performance to be on par with or better than existing toolkits.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T14:21:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.22842v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.22842v1"
-    },
-    {
-      "id": "2611.22658v1",
-      "title": "AlignedHPO: Efficient Surrogate-Guided Loss Hyperparameter Optimization",
-      "authors": [
-        "Ivan Karpukhin",
-        "Andrey Savchenko"
-      ],
-      "abstract": "Modern deep learning losses involve multiple hyperparameters, such as weights, scales, and margins, typically tuned manually or through expensive black-box optimization despite their differentiability. We propose AlignedHPO, an efficient framework for tuning differentiable loss hyperparameters using gradient alignment and surrogate validation objectives. Our method employs Jacobian-vector products to reduce hypergradient computation time and memory, while differentiable metric surrogates guide optimization toward task-specific evaluation criteria. We address gradient magnitude ambiguity and stochastic instability through normalized alignment and gradient smoothing. Experiments with generalized Focal Loss and ArcFace demonstrate effective adaptation across long-tailed classification and open-set face recognition. AlignedHPO achieves competitive or improved performance compared to implicit differentiation, with nearly 12x faster hypergradient computation. These results highlight the potential of efficient surrogate-guided loss hyperparameter optimization.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T12:17:54Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.22658v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.22658v1"
-    },
-    {
-      "id": "2611.22504v1",
-      "title": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification via Full Fine-Tuning and PEFT",
-      "authors": [
-        "Febryan Putra Kartika",
-        "Cheng-Yu Ma",
-        "Ying-Jia Lin",
-        "Chi-Tung Cheng",
-        "Kuan-Fu Chen"
-      ],
-      "abstract": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to institution-specific clinical tasks remains underexplored. In this study, we fine-tuned a pretrained 3D medical VLM for hepatocellular carcinoma (HCC) classification using paired abdominal CT scans and radiology reports from a different institution with acquisition characteristics that differ from the model's original pretraining corpus. We compared two adaptation strategies: full fine-tuning and parameter-efficient fine-tuning (PEFT), motivated by the common use of PEFT to reduce computational cost and enable adaptation under limited-data constraints. Both approaches achieve strong downstream HCC classification performance despite the cross-institutional domain shift, with PEFT reaching an AUC of 0.79 and F1 of 0.70, and full fine-tuning achieving an AUC of 0.82 and F1 of 0.71. Although these results remain below the performance reported by supervised HCC classification approaches, our method achieves improvements over the pretrained model through CT-report contrastive learning without requiring lesion-level annotations or HCC classification labels as training targets. Full fine-tuning converges rapidly but overfits within a few epochs, whereas PEFT (ConvLoRA for the image encoder and LoRA for the text encoder) attains comparable performance while updating approximately 1% of the model parameters, although requiring more training steps. We also examine the role of contrastive temperature, observing that temperature initialization significantly affects classification performance. This study demonstrates that a 3D medical VLM can be efficiently adapted to institution-specific HCC classification using self-supervised CT-report contrastive learning, while highlighting the practical trade-offs between full fine-tuning and parameter-efficient fine-tuning.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T10:00:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.22504v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.22504v1"
-    },
-    {
-      "id": "2611.22308v1",
-      "title": "VRLLM: Turning LLMs into Powerful Tabular Classifiers",
-      "authors": [
-        "Yingtong Dou",
-        "Shubham Jain",
-        "Junpeng Wang",
-        "Hadi Abdullah",
-        "Vineeth Rakesh Mohan",
-        "Yuzhong Chen",
-        "Liang Wang",
-        "Yiwei Cai"
-      ],
-      "abstract": "Large Language Models (LLMs) have shown strong performance on text, but whether pretrained LLMs are effective for large-scale tabular classification remains unclear, as many previous works demonstrate that LLMs' tabular data classification performance falls behind tree-based models or neural architectures designed for tabular data. At Visa Research, we managed to fine-tune a pretrained Llama 3.2 1B LLM on billions of rows of labeled tabular data and make it outperform a wide array of tabular classifiers and even our competitive production deep learning model. For ease of reference, we refer to the model as the Visa Research LLM (VRLLM). In this paper, we share how we achieved this exciting result, covering data preparation, training recipe, ablation studies of design choices and deployment validation. We also benchmark frontier LLMs on the same task and analyze their prediction behavior across model families and generations. Our interpretability experiments suggest that VRLLM learns feature-specific predictive associations, while component ablations indicate that the earliest two FFN layers contribute to the emergence of linearly decodable task information. Our paper provides an engineering recipe and a focused empirical case study on adapting compact LLMs to industrial tabular prediction tasks.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T07:06:25Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.22308v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.22308v1"
-    },
-    {
-      "id": "2611.21945v1",
-      "title": "Benchmarking Deep Learning Models for Wheelchair Configuration Classification in Accessible Automated Vehicle Applications",
-      "authors": [
-        "Samir Ahmed",
-        "Shaaz Saleem",
-        "Devin Dhami",
-        "Wesley Maia",
-        "Angel Martinez-Sanchez",
-        "Parthib Roy",
-        "Jannatul Ferdous Srabonee",
-        "Ahmed Sabbir Arif",
-        "Ross Greer"
-      ],
-      "abstract": "Making automated vehicles accessible requires consideration of vulnerable road users, including wheelchair users. To offer a more tailored experience that supports independence for this group, vehicle design needs to accommodate the wide range of wheelchair configurations. However, wheelchairs are individualized, varying in frame geometry, propulsion, and visual appearance. Moreover, occupants or accessories may obscure visual cues. Existing mobility-aid datasets only label the presence of a wheelchair, rather than describing its specific configuration. To fill this gap, this paper introduces the Wheelchair Configuration Image Dataset (WCID), comprising 467 face-blurred images across 192 capture groups solely for evaluation. Each image is annotated with (i) a two-class label of manual or powered, (ii) a chair subtype, (iii) occupancy, viewpoint, setting, lighting, occlusion, propulsion, and control, with a 273-image validation split and 194-image test split. Three convolutional neural network backbones and a frozen vision-language probe are trained on an external image dataset and evaluated on WCID to measure cross-dataset generalization, while also testing robustness using Gaussian blur. Convolutional models do well on clean images, but performance drops under strong blur, leaving a gap before deployment. Code, split assignments, labels, trained weights, and the face-blurred images is available at: https://github.com/Mi3-Lab/MAID",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T22:08:39Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21945v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21945v1"
-    },
-    {
-      "id": "2611.21849v1",
-      "title": "When Does Discrete Ricci Curvature Help? An Edge-Level Analysis of Curvature-Enhanced GCNs for PPI Prediction",
-      "authors": [
-        "Clara Joswig",
-        "Elham Gholamzadeh",
-        "Ghazal Mostofi",
-        "Nico Scherf"
-      ],
-      "abstract": "Curvature-enhanced graph convolutional networks (CGCN) incorporate Ollivier-Ricci curvature (ORC), grounded in optimal transport theory, into message passing, motivated by the claim that curvature-weighted edges alleviate \"over-squashing\" at structural bottlenecks. But does CGCN's improvement actually come from mitigating over-squashing? We investigate this on four real-world protein-protein interaction (PPI) datasets, comparing CGCN against a standard GCN at the level of individual edges rather than aggregate metrics alone. While CGCN improves aggregate AUC, AUPR, and F1 across all four datasets, this gain is concentrated almost entirely on low-degree edges, while performance on low-curvature (bottleneck) edges systematically degrades in three of four datasets, the opposite of what the over-squashing motivation predicts. Examining the learned edge-weight function directly, together with clustering-validity metrics, edge-distance ratios, and a layer-depth ablation across four depths, we find evidence for an alternative account: curvature-weighting sharpens the separation between clusters, which improves intra-cluster predictions at the cost of inter-cluster (bottleneck) ones. We test this account against topologically defined communities rather than the classification labels used elsewhere. Additionally, we offer practical guidance on when to prefer CGCN over standard GCN, depending on whether intra- or inter-cluster predictions matter most.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T20:11:34Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21849v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21849v1"
-    },
-    {
-      "id": "2611.21783v1",
-      "title": "Better Calibrated, Better Planned: Uncertainty-Aware Multi-ASV Informative Path Planning for Oil Spill Monitoring",
-      "authors": [
-        "Alejandro Casado-Pérez",
-        "Marija Popović",
-        "Daniel Gutiérrez-Reina",
-        "Sergio L. Toral.",
-        "Samuel Yanes"
-      ],
-      "abstract": "Monitoring oil spills with fleets of Autonomous Surface Vehicles (ASVs) requires mapping a heterogeneous pollutant field from sparse, noisy measurements under tight time and energy budgets. Informative Path Planning (IPP) addresses this problem by coupling a reconstruction model, which infers the field and its uncertainty, with a planner that decides where to sample next. Prior work has focused on planning strategies and has largely relied on Gaussian Processes (GPs), leaving the calibration of the model's uncertainty underexplored. We study how uncertainty calibration conditions multi-vehicle IPP with a fleet of ASVs that coordinates online through a shared uncertainty map. We introduce Evidential Deep Learning (EDL) as an uncertainty-calibrated information model. We benchmark EDL, Monte Carlo Dropout and Deep Ensembles against a GP in closed loop with five planners on physics-based oil spill simulations. Across 60 maps, the choice of model dominates the outcome, explaining 80\\% of the variance of the final reconstruction error, against 1\\% for the planner among the deep models. EDL achieves the lowest error and the highest IoU under every planner, is the best calibrated model and runs at 3.9 ms per step. With 50 cells per vehicle it reconstructs the spill better than MC Dropout and Deep Ensembles with 150. Deep Ensembles become more confident as their error grows, whereas EDL is unaffected. Robustness of the information model to the data its own planner collects is therefore a requirement of uncertainty-aware IPP.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T19:07:11Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21783v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21783v1"
-    },
-    {
-      "id": "2611.21602v1",
-      "title": "Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction",
-      "authors": [
-        "Ilia Azizi",
-        "Frederick Iat-Hin Tam",
-        "Marc-Olivier Boldi",
-        "Valérie Chavez-Demoulin",
-        "Tom Beucler"
-      ],
-      "abstract": "The National Hurricane Center routinely releases Tropical Cyclone Discussions that offer insights into its tropical cyclone forecasts. This study examines the added value of these discussions for intensity forecasting beyond a set of numerical predictors. For 637 Atlantic and eastern North Pacific tropical cyclones from the 2002-2023 hurricane seasons, we analyze the discussion text and its combination with 13 hurricane environmental predictors from SHIPS and ERA5 10-meter wind fields, for forecasting intensity changes at lead times of 24 to 120 hours using three modeling methods. In one approach, an end-to-end deep learning framework for the text shows that the discussions alone offer comparable value for 24-hour intensity forecasts to the SHIPS predictors. Adding discussion information to the SHIPS predictors in an ensemble of five such models reduces the mean absolute error of 24-hour maximum sustained wind forecasts for 2022-2023 cyclones from 9.89 to 8.90 kt, with a confidence interval that excludes zero when whole storms are resampled. The ERA5 wind fields have a minor effect on mean absolute error in wind predictions, and model rankings differ across predicted variables, lead times and model types. We provide prediction intervals for these forecasts, whose coverage falls below the 90% target during rapid intensification. Analysis of the text shows that words related to intensity and intensity change (such as intensify, weaken, eyewall and category) are important for the model predictions. This retrospective study shows the added value of the forecasters' discussions and suggests that multi-modal learning can help understand the predictive contribution of expert human judgment. The reanalysis data differ from real-time analyses, and the discussions are issued at least three hours after the valid time of the other inputs, so these results should not be interpreted operationally.",
-      "published": "November 16, 2026",
-      "published_raw": "2026-11-16T18:58:55Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.21602v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.21602v1"
     }
   ]
 }
