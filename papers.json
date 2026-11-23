@@ -1,7 +1,46 @@
 {
-  "last_updated": "2026-11-22T03:43:57.373092",
+  "last_updated": "2026-11-23T04:21:08.409078",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.27978v1",
+      "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
+      "authors": [
+        "Hari Sitaula",
+        "Joseph Opitz"
+      ],
+      "abstract": "This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fundamental price data, macroeconomic indicators, and engineered technical features. We benchmark three model families, namely linear regression, vanilla recurrent neural networks (RNN), and long short-term memory networks (LSTM), within a unified preprocessing and chronological evaluation pipeline. A central contribution of this work is a methodological audit of common practices in the deep-learning-for-stock-prediction literature. We identify three sources of result inflation that frequently appear in published methodologies: wavelet-denoised evaluation targets, the absence of a naive persistence baseline, and best-of-N replicate reporting. We then re-evaluate all model families under a corrected protocol that controls for each. Performance is reported using root mean squared error, mean absolute percentage error, and the Pearson correlation coefficient, averaged across N = 30 independent replicates per configuration. We compare models on accuracy, stability across replicates, and architectural depth sensitivity, using the naive persistence forecast (predicting today's close as tomorrow's close) as a primary baseline against which all candidate models must demonstrate improvement.",
+      "published": "November 20, 2026",
+      "published_raw": "2026-11-20T18:57:15Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.27978v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.27978v1"
+    },
+    {
+      "id": "2611.27811v1",
+      "title": "Redesigning Neural Networks to Not be Confidently Wrong even to Strong Adversarial Attacks",
+      "authors": [
+        "Michael W. Spratling",
+        "Heiko H. Schütt"
+      ],
+      "abstract": "Early deep learning models attempted to simulate visual perception using a neural hierarchy that alternated between two types of layer: one modelled on cortical simple cells (that was designed to increase selectivity), and one modelled on cortical complex cells (that aimed to increase tolerance). We show that such a neural network (NN) architecture, when implemented with novel components that are better able to learn selective and tolerant representations, is capable of accurate and robust image classification and improved alignment between the behaviour of the model and the perceptual abilities of humans. Firstly, the proposed models are shallow, fewer than ten layer-pairs, which is more consistent with the rapid feedforward object categorisation performed by the biological visual system. Secondly, they are far less prone to producing classification predictions with high confidence for samples from unknown classes or for image consisting of pure noise, and hence, like humans are not easily fooled into perceiving objects that are not present in the image. Thirdly, for the proposed NNs adversarial samples cause predictions with low confidence, enabling them to be accurately identified. In contrast to humans, our networks still do not correctly classify adversarial samples. However, the behaviour of our networks is a significant step towards human-like behaviour compared to standard DNNs that produce highly confident, but incorrect, classification predictions for adversarial samples. The increased robustness to adversarial and unknown samples is achieved while maintaining competitive performance in terms of generalisation to novel samples from the training categories. This enables models of this type to be competitive with state-of-the-art DNNs across multiple different evaluation metrics and benchmark tasks.",
+      "published": "November 20, 2026",
+      "published_raw": "2026-11-20T16:38:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.27811v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.27811v1"
+    },
+    {
+      "id": "2611.26986v1",
+      "title": "Distributional Algebro-Geometric Persistence (dAGP): Wasserstein-Stable Polynomial-Relation Signatures",
+      "authors": [
+        "Edisy Kin Wai Chan",
+        "Andersen Ang"
+      ],
+      "abstract": "A circle and a quartic superellipse have the same homology, but their defining equations have degrees two and four, respectively. We study this algebraic distinction for point-cloud distributions. For a probability measure $μ$ on $Ω=[-1,1]^d$ and an orthonormal polynomial feature map $φ_m$ of degree $m$, the moment matrix $G_m(μ)=\\mathbb{E}_{X\\simμ}[φ_m(X)φ_m(X)^\\top]$ satisfies $c^\\top G_m(μ)c=\\mathbb{E}_μ[f_c(X)^2]$, so coefficient directions associated with its small eigenvalues represent low-degree polynomials that nearly vanish on $μ$. Counting these near-relation directions across degree $m$ and the tolerance $\\varepsilon$ gives a two-parameter integer signature. We call this representation distributional algebro-geometric persistence (dAGP), the population counterpart of the point-cloud algebro-geometric persistence (AGP) construction. For empirical measures, dAGP is the sample-normalised counterpart of point-cloud AGP. We also show that $μ\\mapsto G_m(μ)$ is Lipschitz in the $1$-Wasserstein distance, so its ordered eigenvalues vary Lipschitz-continuously under transport of mass, while its threshold counts remain unchanged under perturbations satisfying a spectral-margin condition. We give an explicit support-localised Lipschitz constant and identify the regime in which the resulting guarantee is informative. Experimentally, the population noise-floor prediction agrees with the finite-sample mean to $0.1\\%$, within sampling error. At a selected tolerance, relation onset orders the conic, quartic, and non-algebraic closed curves, while their count profiles distinguish them from the two-dimensional control. Calibration identifies an empirical tolerance range. A $100$-repetition sensitivity study quantifies onset recovery and shows that the count grid and two continuous spectral baselines nearly saturate the four-family discrimination task.",
+      "published": "November 20, 2026",
+      "published_raw": "2026-11-20T02:09:52Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.26986v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.26986v1"
+    },
     {
       "id": "2611.26111v1",
       "title": "Physics-Informed Deep Learning for Shear Wave Speed Estimation in MR Elastography",
@@ -253,43 +292,6 @@
       "published_raw": "2026-11-18T09:02:31Z",
       "pdf_link": "http://arxiv.org/pdf/2611.24070v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.24070v1"
-    },
-    {
-      "id": "2611.23543v1",
-      "title": "Stability of Parallel Transport Convolution under Riemannian Metric Perturbations",
-      "authors": [
-        "Hongnian Huang",
-        "Andrew Stump"
-      ],
-      "abstract": "Geometric convolutions on Riemannian manifolds depend on the geometry of the underlying domain, making stability under metric perturbations a fundamental question in geometric deep learning. This paper studies this question for parallel transport convolution through methods from differential geometry and analysis. On a fixed compact manifold, we establish that, for a continuous input signal and a continuous reference kernel supported in a sufficiently small normal neighborhood, the convolution output depends continuously in $L^2$ on the Riemannian metric in the $C^2$-topology, under the specified localization and transport-path conventions. The analysis develops perturbation estimates for geodesics, parallel transport, Jacobi fields, and exponential maps, and uses these estimates to compare the transported kernels. A central difficulty is the cut locus, which obstructs uniform comparison of the transport construction over the entire manifold. We address this difficulty by combining uniform estimates away from the cut locus with integral bounds on neighborhoods of arbitrarily small volume, while also controlling the change in the Riemannian volume measure. The resulting qualitative stability theorem connects perturbation theory for Riemannian geometric constructions with the analysis of spatial convolution operators in geometric deep learning.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T21:50:20Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.23543v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.23543v1"
-    },
-    {
-      "id": "2611.24980v1",
-      "title": "DL101 The Representation Capability of Neural Network Models",
-      "authors": [
-        "Fernando Berzal"
-      ],
-      "abstract": "Universal approximation theorems (Cybenko, Funahashi, Hornik & Leshno) provide the mathematical justification for why neural networks are powerful enough to model complex, nonlinear phenomena. Shallow networks can approximate any continuous function on compact sets. Leshno's theorem clarified that non-polynomial activations are necessary for universality, which explains why ReLU, logistic, hyperbolic tangent, and other common activations work (but pure polynomials do not). However, approximation theorems provide no efficiency, training, nor generalization guarantees. They do not indicate how many neurons are needed for a given accuracy, whether gradient descent will find the right parameters, or whether networks trained on finite data will generalize well. Barron provided quantitative error bounds for particular function classes (approximation rates for functions with bounded Fourier norm), whereas Montúfar was the first to show that expressivity grows exponentially with depth (in terms of the number of linear regions). Deep networks are strictly more expressive than shallow ones with the same number of parameters. Depth is fundamentally more powerful than width, providing a rigorous mathematical explanation for the use of deep learning models.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T20:13:49Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.24980v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.24980v1"
-    },
-    {
-      "id": "2611.23042v1",
-      "title": "Uncovering the Invisible in Routine Radiology: Cross-Modal Detection of MRI-Verified Soft-Tissue Pathologies from CBCT via Physics-Guided 3D Self-Supervised Learning",
-      "authors": [
-        "Evgeny Alves Limarenko"
-      ],
-      "abstract": "Routine X-ray modalities like cone-beam computed tomography (CBCT) are optimized for high-contrast mineralized tissues, leaving soft-tissue abnormalities buried beneath photon noise and below human visual perception. Thus, detecting non-calcified pathologies requires secondary magnetic resonance imaging (MRI). We demonstrate that sub-visual radiographic signatures of soft-tissue pathology are physically preserved within routine CBCT scans and can be extracted for opportunistic screening using a targeted, physics-guided deep learning pipeline, even under extreme paired-data scarcity. Using the temporomandibular joint (TMJ) as a model system (N = 212 paired CBCT-MRI joints), we address the severe overfitting of high-capacity 3D networks through a two-stage framework. First, we employ a frozen full-grid 3D masked autoencoder (BertsWin) pre-trained on 6,550 unlabeled CBCT volumes via the GradientConductor (GCond) optimizer and an anatomy-aware objective (PhysLoss) redirecting gradient flow into the [-300, 300] HU soft-tissue window. Second, automated localization of the condylar zenith drives a deterministic 3D cropping that eliminates 81% of background osseous variance. Evaluated via a patient-isolated 3x10-fold stratified cross-validation protocol, a statistically robust sub-visual signal for MRI-verified synovial effusion (ROC AUC = 0.793) emerges exclusively from representations pre-trained with the PhysLoss and GCond regime. Crucially, only this setup captures true 3D anatomical chirality (p < 0.001) and high intra-patient structural consistency (0.791) over inter-patient noise; conversely, identical architectures pre-trained with standard L2 loss or unmasked variance decomposition (MVC) collapse to random guessing. These findings establish a generalizable paradigm for repurposing routine, low-contrast radiographic scans into opportunistic screening tools for occult soft-tissue disease.",
-      "published": "November 17, 2026",
-      "published_raw": "2026-11-17T16:40:33Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.23042v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.23042v1"
     }
   ]
 }
