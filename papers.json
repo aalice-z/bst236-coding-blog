@@ -1,7 +1,216 @@
 {
-  "last_updated": "2026-11-25T05:50:23.945489",
+  "last_updated": "2026-11-26T05:41:04.643376",
   "count": 20,
   "papers": [
+    {
+      "id": "2611.34781v1",
+      "title": "Comparative Study of Deep Learning Architectures for Brain Tumour Classification",
+      "authors": [
+        "Prisha Gupta",
+        "Pradeep Kumar Gupta"
+      ],
+      "abstract": "Accurate and early classification of brain tumours from magnetic resonance imaging (MRI) is essential for treatment planning, yet many published deep learning studies are trained and tested on small, single-source datasets, reporting accuracies that may not hold outside these datasets. This study compares six deep learning architectures for four-class classification (healthy, meningioma, glioma and pituitary tumour): a baseline convolutional neural network (CNN), an attention-based CNN, ShuffleNet, and EfficientNet-B0, ResNet-50 and Xception augmented with the Convolutional Block Attention Module (CBAM). The models were trained on a corpus assembled from four publicly available MRI datasets. Because these datasets carry no patient identifiers, a leakage-aware pipeline was developed that removes exact duplicates using MD5 hashing (550 images) and near-duplicates using perceptual hashing (8,024 images), and assigns visually similar images to the same fold during 5-fold group cross-validation. A leave-one-dataset-out (LODO) test on a fully held-out dataset was used to measure cross-dataset generalisation. Under a conventional random split, ShuffleNet achieved 97.1% accuracy with 1.2M parameters. Under leakage-aware group K-fold cross-validation, ShuffleNetV2 (98.41%) and EfficientNet-B0 (98.23%) were statistically indistinguishable (paired t-test, p = 0.19), and both significantly outperformed the custom CNNs. On the held-out dataset, accuracy dropped for every model: EfficientNet-B0 generalised best (78.4%), while ShuffleNetV2 fell to 66.2%. Glioma-meningioma confusion was the dominant error mode, and Grad-CAM maps showed that predictions were driven by tumour regions. These results indicate that in-distribution accuracy alone overstates real-world performance and that leakage-aware and cross-dataset evaluation should be reported alongside it.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T17:40:22Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.34781v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.34781v1"
+    },
+    {
+      "id": "2611.34573v1",
+      "title": "Investigating the efficacy of vortex beam speckle patterns for the recognition of atmospheric turbulence and fractional topological charge with a deep learning model",
+      "authors": [
+        "Ratikanta Swain",
+        "Allarakha Shikder",
+        "Naseem Babu",
+        "Niladri Sarkar",
+        "Aryan Raj",
+        "Raghavan K. Easwaran"
+      ],
+      "abstract": "Fractional topological charge (TC) enlarges the usable mode set of orbital angular momentum (OAM) links, but reading it reliably after atmospheric turbulence remains difficult. Interferometric and diffractive methods need an undistorted beam and a careful alignment, while most learned approaches treat integer or coarsely spaced charges and do not include turbulence. Here we ask whether the charge of a scalar vortex beam can be regressed directly from a single speckle image, and at which turbulence strength this stops working. We propagate vortex beams over 1500~m through 150 von Kármán phase screens, scatter them with a fixed random diffuser, and record $256\\times256$, 16-bit speckle images for TC from 0 to 10 in steps of 0.01 and turbulence strengths $D/r_0$ from 0 to 50; the results reported here use a subset of 20\\,000 images, and a data set of $10^{6}$ images is in preparation. A convolutional neural network estimates the TC and, through an auxiliary head, the turbulence category. On charges withheld from training, the mean absolute error is 0.031 without turbulence (with a common intensity scale) and rises to 0.78 at $D/r_0=10$ and 1.85 at $D/r_0=50$, against 2.5 for a constant prediction, and the turbulence category is identified correctly in 78\\% of the images. The results show that, at the present training size, the charge is read accurately only without turbulence, and that the charge and the turbulence oth act on the speckle grain size, which may limit the readout. Experimental validation and the extension to vector vortex beams are left for future work.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T15:38:42Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.34573v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.34573v1"
+    },
+    {
+      "id": "2611.34310v1",
+      "title": "Interpretable identification of constitutive parameter field for three-dimensional heterogeneous and graded hyperelastic materials from full-field displacements",
+      "authors": [
+        "Kanhaiya Lal Chaurasiya",
+        "Vaskar Halder",
+        "Prajyot Patil",
+        "Gaurav Navnath Shinde",
+        "Debashish Das",
+        "Akshay Joshi"
+      ],
+      "abstract": "The inverse problem of identifying spatially varying material properties of heterogeneous solids using experimentally available displacement fields and boundary reaction forces alone remains challenging. Being able to characterize heterogeneous and graded solids would be advantageous in the design and manufacturing of functionally graded materials and composites. Additionally, an efficient technique for identifying heterogeneous material properties from in vivo measurements would be useful in biomedical contexts to characterize heterogeneous biological tissues. Although several techniques developed over the past two decades have addressed inverse identification for homogeneous materials, including linear elastic, hyperelastic, viscoelastic, and elastoplastic solids, comparatively fewer studies have considered heterogeneous and graded materials. Furthermore, several recent approaches to characterizing heterogeneous and graded materials employ parameter-heavy, deep learning-based frameworks trained to enforce force equilibrium at specified collocation points within the material. In this work, we propose an interpretable and time-efficient framework that predicts the three-dimensional relative spatial variation of a constitutive parameter field for multiple parameters of a heterogeneous hyperelastic material, using only displacement-field data. In this work, we validate our framework on 3D synthetic and 2D experimental benchmarks involving heterogeneous, graded, and anisotropic hyperelastic materials. By leveraging the linear nature of the inverse problem for hyperelastic materials and directly optimizing for the constitutive parameters at the finite-element level, we achieve acceptable prediction accuracy with significantly lower computational time compared to recently reported deep-learning-based frameworks.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T13:00:27Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.34310v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.34310v1"
+    },
+    {
+      "id": "2611.34277v1",
+      "title": "Beat This! Live - Online Beat and Downbeat Tracking by Predicting the Future",
+      "authors": [
+        "Bánk Juhász",
+        "Gerhard Widmer",
+        "Jan Schlüter"
+      ],
+      "abstract": "Beat and downbeat tracking have seen multiple improvements through recent deep learning approaches, but most target an offline setting, precluding their use in real-time scenarios. We adapt a recent offline beat tracking model, Beat This, for online, low-latency operation and propose Beat This! Live, a causal variant designed for real-time beat and downbeat tracking. We present the architectural modifications required to obtain a causal system suitable for streaming inference and measure their impact on accuracy. By training our model with temporally shifted labels, it produces predictions slightly ahead of the current frame, which not only reduces latency, but enables much more effective peak-picking. Evaluation on the GTZAN dataset shows the F1-score improves from 80.6 to 86.7 for beats and 56.5 to 74.1 for downbeats compared to BeatNet+, the current state of the art in online beat tracking.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T12:35:23Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.34277v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.34277v1"
+    },
+    {
+      "id": "2611.34270v1",
+      "title": "LLM-coupled interpretable tool wear monitoring with multi-evidence reasoning in CNC machining",
+      "authors": [
+        "Yuntong Chen",
+        "Yingqi Li",
+        "Qiwen Shen",
+        "Guobin Zhao",
+        "Xitian Tian",
+        "Lijiang Huang"
+      ],
+      "abstract": "Interpretable tool wear assessment in CNC machining is challenging. Existing diagnostic models have high accuracy but provide limited guidance for tool replacement. This study proposes a two layer framework combining deep learning wear classification and LLM assisted reasoning. The first layer uses PCA Loading feature selection and optimized GRU to recognize three wear states, achieving 98.38 percent macro F1 score on the PHM2010 dataset. The second layer uses LLMs to generate natural language reports and replacement suggestions from classification results and feature trends. Engineer evaluation shows the reports outperform rule templates. Cross dataset tests on NASA milling data support the generalizability of this framework.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T12:32:30Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.34270v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.34270v1"
+    },
+    {
+      "id": "2611.34228v1",
+      "title": "Change Point Detection with Generative Models",
+      "authors": [
+        "Tigran Ramazyan",
+        "Denis Derkach",
+        "Mikhail Hushchyn"
+      ],
+      "abstract": "Change point detection (CPD) methods aim to identify abrupt changes in the properties of time series, which is a key problem in numerous fields. A major class of CPD approaches relies on computing a CPD score, which is either a discrepancy or divergence between two subsequent samples, called windows. A fundamental limitation of window-based CPD is the 'sample size bottleneck.' To ensure temporal precision, windows must be small; however, small samples provide insufficient statistical evidence for the classifiers and deep-learning models currently used to compute CPD scores. This leads to high variance in the scores and frequent mispredictions. Our study tackles this issue by exploring generative models for window augmentation, effectively expanding available data to improve CPD quality. Experiments on synthetic and real data demonstrate that the proposed approach significantly enhances CPD. Specifically, we show that this approach allows simple classifiers to outperform complex deep-learning baselines by stabilizing the CPD score distribution.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T11:51:49Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.34228v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.34228v1"
+    },
+    {
+      "id": "2611.33875v1",
+      "title": "Random Voronoi Networks",
+      "authors": [
+        "Ray Verma",
+        "Pau Mateo-Bernardó",
+        "Daniel Mas Montserrat",
+        "David Bonet",
+        "Marçal Comajoan Cara",
+        "Alexander G. Ioannidis"
+      ],
+      "abstract": "Nearest-neighbor methods are local, simple, and interpretable, but their non-parametric form makes them memory-intensive, expensive at inference, and difficult to integrate into differentiable neural architectures. We introduce Random Voronoi Networks (RVNs), a family of structured three-layer MLPs that express nearest-neighbor geometry through sampled Voronoi comparisons. The first layer computes Random Voronoi Features (RVF) from affine pairwise separators between selected training samples, the second layer aggregates these comparisons into Voronoi cells or top-k neighborhood scores, and the readout layer produces classification or regression predictions. We show that, when all samples and pairwise comparisons are included, step RVNs recover exact Euclidean k-NN, while ReLU RVNs provide a violation-score realization for 1-NN that can be relaxed into a differentiable soft weighting. Subsampling yields approximate RVNs with explicit control over the number of cells and features. We study several unsupervised sampling methods that trade off random coverage, directional diversity, coordinate sparsity, and empirical feature variance. Empirically, RVFs produce a highly effective data encoding strategy, providing performance boosts to downstream methods ranging from linear to modern tabular deep learning models. Finally, we showcase that RVF provides an interpretable feature map due to its k-NN based construction and ties to pairwise local directions. These results position our Random Voronoi formulation as a bridge between nearest-neighbor rules, random features, and modern tabular models.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T06:54:50Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33875v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33875v1"
+    },
+    {
+      "id": "2611.33806v1",
+      "title": "QPAT: A Universal Quantum Machine Learning Framework for Quantum-Assisted Training and Classical Inference",
+      "authors": [
+        "Yixiong Chen"
+      ],
+      "abstract": "Deep learning models often struggle with sharp local optima and overfitting in limited-data regimes, and exhibit limited capacity for capturing high-order, complex probability distributions. Quantum Machine Learning (QML) models, by operating in exponentially large Hilbert spaces, can efficiently represent such distributions and provide favorable inductive biases for learning, offering a promising pathway to overcome these limitations. However, their practical deployment in the Noisy Intermediate-Scale Quantum (NISQ) era is severely hindered by gradient coupling, barren plateaus, data-loading bottlenecks, and high inference latency. To bridge classical AI and QML, we propose QPAT (QCBM-Prior-Assisted Training), a universal framework that employs a Quantum Circuit Born Machine (QCBM) as a learnable generative prior to provide a task-aligned structured inductive bias during classical model training. The framework can be seamlessly integrated into any classical backbone, including LSTMs, CNNs, and Transformers. We introduce a decoupled fitness-based scoring mechanism and a stochastic \"Drop-Prior\" mechanism to implicitly distill quantum structural knowledge into the classical weights during training. Evaluated extensively on six benchmarks spanning time-series forecasting, computer vision, and natural language processing, our framework consistently outperforms purely classical backbones in both predictive performance and stability across random seeds; ablation studies further show that these gains are not reproduced by unstructured random priors or a classically learned generative prior. Remarkably, our approach enables completely classical inference, bypassing quantum latency while preserving quantum-enhanced accuracy, paving a highly practical path for QML deployment.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T05:35:25Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33806v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33806v1"
+    },
+    {
+      "id": "2611.33759v1",
+      "title": "Understanding Double Descent through Universal Compression",
+      "authors": [
+        "Jiaxuan Cheng",
+        "Addison Spiegel"
+      ],
+      "abstract": "Many deep learning models exhibit a double-descent phenomenon, where test loss exhibits a sharp peak near the interpolation threshold and then descends a second time as model size grows further, contrary to the U-shape predicted by the classical bias--variance tradeoff. The double-descent phenomenon has been found and explained in toy classical models, but is not well-understood in modern deep learning despite extensive empirical study. We interpret double descent through the novel lens of universal compression. Specifically, we upper bound the maximum-likelihood excess test loss as a sum of four terms: an approximation-and-shift term, a minimax batch regret, a prior cost, and an MLE-vs-Bayes gap. Under exact posterior sampling, we further show that the expected MLE-vs-ensemble gap lower-bounds the MLE-vs-Bayes gap in the well-specified setting. In our experiments, a Gaussian-prior SGLD approximation to the Bayes predictor, unlike SGD, shows no pronounced interpolation peak. Experiments with uniform random labels support this gap as a major contributor to the double-descent peak; here, the SGD cross-entropy is roughly four times the SGLD ensemble cross-entropy at the peak, while the ensemble cross-entropy remains near $\\log 10$.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T04:17:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33759v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33759v1"
+    },
+    {
+      "id": "2611.33713v1",
+      "title": "Nepali Currency Denomination Classification Using Convolutional Neural Networks (CNNs) and MobileNetV2: An Experimental Comparison",
+      "authors": [
+        "Sakar Lamichhane",
+        "Sandesh Bhatta",
+        "Aayush Adhikari",
+        "Aaron Sapkota"
+      ],
+      "abstract": "Automated currency denomination recognition is a computer vision task with applications in cash handling, financial technology, and assistive systems. This study classifies seven Nepali currency denominations (Rs. 5, 10, 20, 50, 100, 500, and 1,000) using three configurations: a conventional convolutional neural network (CNN), MobileNetV2 with transfer learning, and MobileNetV2 with hyperparameter tuning. A compiled dataset of 16,249 images was used, comprising 10,500 training, 3,500 validation, and 2,249 independent test images. Images were resized to 128 x 128 pixels, normalized, and augmented to vary orientation, scale, illumination, and appearance. Models were evaluated using accuracy, precision, recall, F1-score, and precision-recall and ROC analysis. The hyperparameter-tuned MobileNetV2 achieved the highest validation accuracy (95\\%), with precision, recall, and F1-score of 0.93, 0.91, and 0.92, but reached only 84\\% accuracy on the held-out test set. MobileNetV2 with transfer learning but no additional tuning achieved 89\\% test accuracy, and the conventional CNN achieved 85\\%. Transfer learning therefore provided a competitive approach under the evaluated conditions, while higher validation accuracy from tuning did not yield higher test accuracy. To demonstrate practical deployment, a Flask-based web prototype using TensorFlow Lite was developed, supporting image upload and live webcam recognition with both visual and voice output. The study shows the feasibility of combining lightweight deep learning with a voice-assisted web interface for Nepali currency recognition, and highlights the need for more diverse datasets, greater robustness under uncontrolled imaging conditions, and broader real-world evaluation.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T03:27:43Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33713v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33713v1"
+    },
+    {
+      "id": "2611.33645v1",
+      "title": "Pretraining for Forecasting in Relational Databases",
+      "authors": [
+        "Ziyue Lin",
+        "Sebastian Regalado Lozano",
+        "Michael Guerzhoy",
+        "Ricardo Baptista",
+        "George Stein"
+      ],
+      "abstract": "Real-world forecasting increasingly relies on asynchronous transaction logs in relational databases rather than uniformly sampled arrays. While relational deep learning (RDL) models can forecast from these complex histories, they are typically trained separately for each specific target and root entity type. We introduce Query-Conditioned Relational pretraining (QCRP), a self-supervised framework that enables a standard RDL backbone to act as a universal forecaster across a database. QCRP generates diverse forecasting objectives using a structured temporal query grammar and interleaves them through a shared conditional predictor. This produces a robust, frozen encoder reusable for downstream tasks via lightweight predictors or a zero-shot interface. Evaluated on large-scale RelBench databases, QCRP learns frozen representations that support competitive forecasting across tasks and entity types. Furthermore, a single unified QCRP model checkpoint is competitive with isolated, entity-specific specialists. We demonstrate promising results for reusing the learned representations from standard RDL backbones for forecasting tasks in relational databases.",
+      "published": "November 25, 2026",
+      "published_raw": "2026-11-25T02:11:56Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33645v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33645v1"
+    },
+    {
+      "id": "2611.33527v1",
+      "title": "Casper: A Projection-Based Neurosymbolic Layer for Scalable & Guaranteed Constraint Satisfaction",
+      "authors": [
+        "Lohith Konathala",
+        "Luca Andolfi",
+        "Eleonora Giunchiglia"
+      ],
+      "abstract": "Many real-world problems demand exact constraint satisfaction to be meaningfully solved, yet existing neurosymbolic methods face a stark trade-off: those that guarantee satisfaction fail to scale, while those that scale must resort to approximation. Meanwhile, traditional deep learning approaches offer no satisfaction guarantees at all. In this paper, we propose Casper, a neurosymbolic layer that simultaneously (i) guarantees constraint satisfaction, (ii) scales at inference time, (iii) is fully automated, requiring no problem-specific engineering, and (iv) is fully differentiable, making it composable with any neural predictor both at training and at inference time. Casper casts constraint satisfaction as a closed-form Euclidean projection onto the constraint-feasible region, computable in a single forward pass. Experiments across MNIST arithmetic (up to 1024 digits), Sudoku solving, and Warcraft pathfinding show that Casper is the only method that produces guaranteed-valid outputs at scale: on $30\\times30$ Warcraft grids, exact baselines time out and approximate ones produce valid paths less than 7% of the time, while Casper produces them 100% of the time.",
+      "published": "November 24, 2026",
+      "published_raw": "2026-11-24T23:10:51Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33527v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33527v1"
+    },
+    {
+      "id": "2611.33369v1",
+      "title": "Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery",
+      "authors": [
+        "Damba Koné",
+        "Sara Mobsite",
+        "Joris Guérin",
+        "Élodie Blanchard",
+        "Thibault Catry"
+      ],
+      "abstract": "Mangroves are dynamic coastal ecosystems that contribute to carbon storage, coastal protection and biodiversity conservation, but are vulnerable to climate change. Very-high-resolution imagery such as Pléiades enables detailed mangrove mapping but it is costly and have a low revisit rate. Large-scale monitoring requires free and regularly available data such as Sentinel-1 and Sentinel-2 but their spatial resolution poses challenges for detailed mangrove mapping. In this work, we benchmark deep learning approaches for mangrove mapping from Sentinel-1 radar and Sentinel-2 optical imagery using reference maps derived from very-high-resolution Pléiades imagery. We compare four segmentation configurations based on CROMA and BigEarthNet-pretrained ResNet50 representations with different segmentation decoders. We construct a mangrove mapping dataset covering French Guiana, Suriname, and Amapá. CROMA + UPerNet achieves the best performance, with an F1-score of 0.9218 and an IoU of 0.8549. These results highlight the potential of pretrained multimodal Earth observation representations and open Sentinel data to support mangrove resilience through scalable monitoring.",
+      "published": "November 24, 2026",
+      "published_raw": "2026-11-24T20:01:28Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33369v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33369v1"
+    },
+    {
+      "id": "2611.33353v1",
+      "title": "The Marauder's Map: Bézier Manifolds Reveal Hidden Surfaces for Model Merging and Ensembling",
+      "authors": [
+        "Abhiram Iyer",
+        "Mark T. Harnett",
+        "Sarthak Chandra"
+      ],
+      "abstract": "Neural circuits are famously more robust than deep networks. This is often explained through degeneracy, where structurally distinct configurations support the same function. However, real biological systems exhibit a more flexible form of degeneracy in which specialized circuits continually adapt towards new competencies through localized changes while preserving existing function. Deep learning studies degeneracy through mode connectivity, which connects same-task networks by low-loss curves, sheets, or volumes. However, the field lacks a counterpart to flexible degeneracy, which demands more than ordinary mode connectivity. Defining such an analogue requires asking whether many independently initialized models trained on distinct tasks can be connected by a high-dimensional region of multi-task solutions. We introduce $\\textit{Nimbus}$, which learns a high-dimensional Bézier manifold connecting $N$ specialists, going beyond the one-dimensional paths and two-dimensional sheets of mode connectivity work. A naive parameterization would scale combinatorially with $N$, but $\\textit{Nimbus}$ requires learning corrections of only 3 interaction orders, showing that the connecting manifold has surprisingly low complexity yet supports multi-task competencies. The resulting manifold forms a navigable \"Marauder's Map\" that connects specialist models through a shared geometry of competent solutions. Trained across vision and language domains, $\\textit{Nimbus}$ produces manifolds that are functionally and locally weight-flat: ensembles sampled from them degrade more gracefully than baselines under input and weight perturbations, with the largest gains in NLL loss and calibration error. $\\textit{Nimbus}$ supplies a deep learning interpretation of flexible degeneracy, recasting model connectivity from a low-dimensional path between distant solutions into a high-dimensional volume of nearby ones.",
+      "published": "November 24, 2026",
+      "published_raw": "2026-11-24T19:39:58Z",
+      "pdf_link": "http://arxiv.org/pdf/2611.33353v1.pdf",
+      "arxiv_link": "http://arxiv.org/abs/2611.33353v1"
+    },
     {
       "id": "2611.32801v1",
       "title": "Scaling Laws of Ensemble Uncertainty in Language Models",
@@ -93,204 +302,6 @@
       "published_raw": "2026-11-24T09:09:07Z",
       "pdf_link": "http://arxiv.org/pdf/2611.32225v1.pdf",
       "arxiv_link": "http://arxiv.org/abs/2611.32225v1"
-    },
-    {
-      "id": "2611.31227v1",
-      "title": "How Far Can Linear Go? BiPert, a Unified Framework for Single-Cell Perturbation Modelling",
-      "authors": [
-        "Abhishek Sharma",
-        "Aleksej Zelezniak"
-      ],
-      "abstract": "Understanding how genetic perturbations affect cellular behaviour is essential for studying gene function and regulatory mechanisms. Large-scale CRISPR screens measure these effects across thousands of genes, but cover relatively few cellular contexts. Predicting perturbation responses in unseen cell types and identifying perturbed genes from their transcriptional effects therefore remain challenging. Here, we show that both tasks can be addressed through a common linear decomposition of transcriptional responses into shared and perturbation-specific components. Building on this principle, we introduce BiPert, a simple linear framework for both forward perturbation prediction and inverse identification. For forward prediction, BiPert outperforms existing methods that use no external biological knowledge when predicting gene expression changes in unseen cell lines. Its few-shot extension, BiPert-FS, adapts to new cell lines using as few as ten measured perturbations. For inverse identification, BiPert-ID identifies perturbed genes from single-cell expression profiles, outperforming deep-learning methods in unseen cell lines and donors. We further show that perturbations whose effects transfer more consistently across cellular contexts are also easier to identify, even after controlling for perturbation effect size. Together, these results establish a connection between perturbation transfer and identification, and demonstrate that simple linear models provide strong, interpretable baselines for both tasks.",
-      "published": "November 23, 2026",
-      "published_raw": "2026-11-23T18:58:32Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.31227v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.31227v1"
-    },
-    {
-      "id": "2611.30736v1",
-      "title": "Object-Centric Differentiable Logic Networks for Abstract Visual Reasoning",
-      "authors": [
-        "Hanne Say Eren",
-        "Ana Ezquerro",
-        "Ozan Özdenizci"
-      ],
-      "abstract": "Human visual intelligence enables efficient reasoning capabilities on abstract visual problems with bounded cognitive resources and minimal experience, and yields remarkable generalization to novel problems with its ability to draw relational analogies and modular abstractions. In contrast, deep learning models require exhaustive task-specific training on large datasets, making them prone to exploiting visual shortcuts and resulting in poor generalization. While neuro-symbolic approaches attempt to bridge this gap by decoupling perception from reasoning with dedicated computation units, existing solutions rely either on explicit rule supervision or parameter-heavy transformer architectures that reintroduce the computational inefficiencies they aim to solve. We introduce Slot-Dwn to address these limitations, a novel neuro-symbolic architecture that unifies unsupervised object-centric perception with logic-based symbolic reasoning. Our model utilizes a Multi-Head Differentiable Weightless Network (MH-DWN) that performs efficient reasoning entirely in Boolean space using look-up tables (LUTs). Our framework reduces visual perception complexity and introduces a LUT-based relational bottleneck with sparse input routing to minimize computational overhead. We evaluate Slot-Dwn across various abstract visual reasoning benchmark tasks targeting systematic rule generalization, sample-efficient anomaly detection, and multi-relational reasoning. We demonstrate that Slot-Dwn yields competitive performance with respect to the state-of-the-art, under extreme out-of-distribution regimes, while requiring up to 52% fewer trainable parameters, with significantly faster convergence.",
-      "published": "November 23, 2026",
-      "published_raw": "2026-11-23T14:13:10Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.30736v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.30736v1"
-    },
-    {
-      "id": "2611.30584v1",
-      "title": "Do Candlestick Charts Suffice? The Incremental Economic Value of Technical Indicators in Stock Return Prediction",
-      "authors": [
-        "Peng Liu",
-        "Yanyan Zheng"
-      ],
-      "abstract": "Although technical analysis remains widely used in practice, the need for manually constructed indicators is increasingly questioned as deep learning models can extract features directly from OHLC price data. This paper examines the standalone economic value of trading volume and manually constructed technical-indicator groups and whether adding these groups to OHLC candlestick charts provides incremental economic value. Using daily data for 1,707 Chinese A-share stocks from 2013 to 2025, we construct approximately 3.36 million stock-window samples and encode them as multi-channel images containing candlestick charts, trading volume, and seven widely used manually constructed technical indicators. The primary analysis uses a 2D CNN on these images; complementary tests apply a logistic regression, a 1D CNN, and an LSTM to numerical representations of the same samples. Out-of-sample performance from 2021 to 2025 is evaluated using decile portfolios, Sharpe ratios, Fama--French alphas, and formal pairwise tests. Our empirical results yield two central findings. First, specifications based separately on OHLC, trading volume, and each technical-indicator group produce significantly positive high-minus-low returns and factor-adjusted alphas, together with economically meaningful Sharpe ratios; the OHLC-only specifications generally perform best under the nonlinear models. Second, adding these technical-indicator groups to OHLC does not systematically improve any of these performance measures in our setting. Together, these results provide the first large-scale evidence from the Chinese A-share market on the standalone and incremental economic value of these technical-indicator groups across multiple representations and model architectures.",
-      "published": "November 23, 2026",
-      "published_raw": "2026-11-23T12:26:04Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.30584v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.30584v1"
-    },
-    {
-      "id": "2611.30397v1",
-      "title": "Event-Driven Parameter Dynamics for Spatiotemporal Parameter-Update Application in Deep Learning",
-      "authors": [
-        "Ruixue Li",
-        "Chaofei Hong"
-      ],
-      "abstract": "Standard neural network training typically applies optimizer-generated update signals to model parameters at every iteration. This work introduces a spatiotemporal view of parameter updating and proposes Event-Driven Parameter Dynamics (EPD), which separates candidate-update generation from their application through an intermediate state with accumulation, event-triggered release, and reset. In a canonical coordinate-wise instantiation, accumulation produces temporal integration, release imposes a spatial budget, and reset separates successive inter-release intervals, while conventional dense updating is recovered as a boundary case. Across four model--optimizer configurations on CIFAR-100, EPD maintains final performance close to conventional training even when only a small fraction of coordinates are released at each step, including the 1\\% regime. Matched-control experiments further show that temporal accumulation, state-dependent selection, and post-release reset each contribute to the observed behavior. Together, these results identify parameter-update realization as a controllable dimension of optimization and provide a concrete basis for studying its temporal and spatial organization separately from candidate-update generation.",
-      "published": "November 23, 2026",
-      "published_raw": "2026-11-23T09:58:02Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.30397v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.30397v1"
-    },
-    {
-      "id": "2611.30198v1",
-      "title": "Geospatial foundation models and deep learning for climate resilience: a review of transfer, uncertainty and decision readiness",
-      "authors": [
-        "Parastoo Farajpoor",
-        "Mohammadreza Narimani"
-      ],
-      "abstract": "Geospatial foundation models can reuse information learned from large Earth-observation archives, but their value for climate resilience depends on whether that information transfers to unfamiliar events, regions and observing conditions. This review connects advances in deep learning with the evidence needed for hazard monitoring and early warning. A descriptive audit of 137 full-text hazard-application studies is interpreted alongside a separate corpus of 37 model and benchmark records. Ninety-eight application studies reported an out-of-distribution experiment, whereas headline evaluations included held-out events in 31 studies, regions in 25 and sensors in only two. None of the ten studies coded for geospatial foundation-model fine-tuning used sensor holdout as a headline test. Uncertainty-related methods were recorded in 16 studies, including two with explicitly calibrated probabilistic output. These overlapping counts describe evaluation practice within the coded corpus, not a ranking of model families. We distinguish Earth-observation representation learning from atmospheric forecasting and examine how labels, observability, forecast lead time and decision requirements constrain their contribution across flood, wildfire, drought, heat, cryosphere and cascading-hazard applications. We then develop a decision-backward evaluation framework: define the action and information available when it must be taken, reproduce the relevant shift, retain a matched task-specific baseline, and report misses, false alarms, reliability and end-to-end latency. The framework turns transferability from a broad model claim into a testable requirement for climate adaptation and risk management.",
-      "published": "November 23, 2026",
-      "published_raw": "2026-11-23T07:39:41Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.30198v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.30198v1"
-    },
-    {
-      "id": "2611.30148v1",
-      "title": "STMemoLLM: A Spatial-Temporal Memory-Augmented LLM for Robust Traffic Forecasting",
-      "authors": [
-        "Jian Zhou",
-        "Binqing Wu",
-        "Zongjiang Shang",
-        "Wanghui Qiu",
-        "Dongliang Cui",
-        "Chenxi Jin",
-        "Yue Yu",
-        "Xinyi Fu",
-        "Ling Chen"
-      ],
-      "abstract": "Traffic forecasting is essential for intelligent transportation systems. However, traditional deep-learning models often rely heavily on high-quality observations. Recent LLM-based approaches incorporate pretrained knowledge to improve forecasting, but they remain sensitive to input perturbations and struggle to preserve long-term patterns. To address this, we propose STMemoLLM, a spatial-temporal memory-augmented LLM for robust traffic forecasting. STMemoLLM introduces memory prototypes to compress inputs into compact summary tokens while extracting reliable dynamics from residual signals, achieving a balance between stability and variability. Specifically, a memory-enhanced tokenizer encodes prototypes and sensor characteristics into attention biases to guide adaptive compression of correlated sensors into semantic summary tokens. A memory-calibrated router further evaluates contextual deviation, compression deficiency, and prototype alignment to identify reliable residual signals, which complement the summaries while suppressing noise. Extensive experiments on eight real-world datasets show that STMemoLLM achieves state-of-the-art performance. Additional experiments examine point masking, additive Gaussian noise, structured missingness, and limited training data, demonstrating strong robustness. Code is available at https://anonymous.4open.science/r/STMemoLLM-70BF.",
-      "published": "November 23, 2026",
-      "published_raw": "2026-11-23T06:50:31Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.30148v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.30148v1"
-    },
-    {
-      "id": "2611.29721v1",
-      "title": "LAF-ECG: Multi-Resolution Lead-Aware Fusion of Time-Series and Language Foundation Models for ECG Classification",
-      "authors": [
-        "Kiana Taktehrani",
-        "Maryam Hosseini",
-        "Amir Keynia",
-        "Aram Montazami",
-        "Arash Mohammadi"
-      ],
-      "abstract": "Automated electrocardiogram (ECG) interpretation has advanced substantially with deep learning, yet many methods remain task-specific and label-dependent. Large language models (LLMs) and time-series foundation models (TSFMs) offer complementary pretrained representations, but integrating them is challenging because of mismatched feature spaces and the lead- and scale-dependent structure of ECG signals. We propose LAF-ECG (Lead-Aware Foundation Fusion for ECG), a dual-foundation framework that extends MedTsLLM with a lead-aware interface to a frozen TSFM backbone while retaining its reprogramming pathway. The proposed framework captures multi-resolution temporal context, fuses temporal and language-aligned ECG representations through adaptive residual integration, and employs branch-specific supervision with cross-branch alignment. LAF-ECG achieves 71.10% accuracy and 62.43% macro-F1 on PTB-XL, and 89.73% accuracy and 65.94% macro-F1 on Chapman-Shaoxing, outperforming MedTsLLM on both datasets. These results highlight the value of preserving lead-specific temporal structure when combining temporal and language foundation representations for ECG classification. The code is publicly available at https://github.com/kkianamm/LAF-ECG.",
-      "published": "November 22, 2026",
-      "published_raw": "2026-11-22T19:41:46Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.29721v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.29721v1"
-    },
-    {
-      "id": "2611.29471v1",
-      "title": "On extracting Science information from a large data set of RXTE X-ray binary spectra using KDE technique",
-      "authors": [
-        "Ranjeev Misra",
-        "Akash Garg",
-        "Aman Kumar",
-        "Ajit Kembhavi"
-      ],
-      "abstract": "Machine Learning/Neural Networks have been successively and extensively used in Astronomy (and other subjects) for class identification of objects based on large data sets. However, it remains difficult to extract other science information, such as what the characteristics of the class are that allow for definite identification, and whether there are objects in the sample that are unique and hence of possible science interest. An alternate approach based on rank ordering of variables and Kernel Density Estimation (KDE) may be used for class identification and to infer such science information. We test the method on a previously analyzed data set of RXTE spectra of low-mass X-ray binaries and find that black hole and neutron star systems can be distinguished at an accuracy level of ~93%, which is comparable to deep learning techniques. The soft state spectra of black hole systems are distinct from neutron star ones. For the whole sample, observations of the pulsar 4U 1907+097 (which was inadvertently introduced into the data set) were clearly found to be unique. The previously reported hyper-soft states of GRO J1655-40 and XTE J1550-564 are found to be unique among black hole spectra. For the rest of the neutron stars, the method identifies some unreported spectra of EXO 1745-248 as unique because they seem to be relativistic reflection-dominated spectra. We discuss the potential and scalability of this method.",
-      "published": "November 22, 2026",
-      "published_raw": "2026-11-22T13:19:22Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.29471v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.29471v1"
-    },
-    {
-      "id": "2611.29171v1",
-      "title": "What Makes Recurrence Generalize Across Lengths?",
-      "authors": [
-        "Yoonsung Jung",
-        "Sunghun Jung",
-        "Louise Nayeong Koh",
-        "Yongjun Choi"
-      ],
-      "abstract": "Multi-step reasoning requires models to preserve and update intermediate information as computation unfolds. State tracking captures this fundamental requirement, but models that succeed within a fixed range of state transitions may not generalize when substantially more updates are required. Recurrent Transformers offer a natural mechanism for addressing this challenge by repeatedly applying shared Transformer blocks, allowing computation to scale with problem length. We study when such recurrent computation generalizes beyond the training range in a controlled state-tracking task, varying operation representation, positional encoding, and recurrent capacity. We find that recurrence alone is insufficient: multi-token template representations and absolute positional encoding can severely limit extrapolation, whereas atomic operation representations enable substantially stronger length generalization. The effect of positional structure also varies with recurrent depth, with periodic positional encoding achieving the strongest mean performance at greater recurrent depth. Most importantly, scaling the recurrent operator extends the extrapolation horizon, reaching 35.1% exact-match accuracy on sequences of 20-40 operations after training only on 2-10, while substantially larger fixed-depth Transformers remain at 0%. Additional recurrent computation at test time can extend the range over which the model generalizes, but does not eliminate failure on much longer sequences. These results suggest that recurrent computation can support length-generalizable state tracking, but that its effectiveness depends critically on whether the learned computation remains reusable across sequence lengths.",
-      "published": "November 22, 2026",
-      "published_raw": "2026-11-22T03:08:21Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.29171v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.29171v1"
-    },
-    {
-      "id": "2611.29151v1",
-      "title": "Medical Specialty Prediction from Bangla Patient Narratives: A Comparative Study of ML, DL, Transformers, and LLMs",
-      "authors": [
-        "Tasnin Tabassum Ali",
-        "Faisal Ahmed",
-        "Muhammad Anwarul Azim"
-      ],
-      "abstract": "Timely access to appropriate medical specialists remains a bottleneck in Bangladesh's healthcare system, as patients describe symptoms in informal Bangla rather than clinical terms, leading to ineffective referrals. This paper compares four model families for predicting medical specialties from Bangla patient narratives: six machine learning (ML) models using hybrid TF-IDF features, four deep learning (DL) models using Word2Vec embeddings trained on the corpus, four fine-tuned transformers, and five large language models (LLMs) evaluated zero-shot. From a corpus of 3798 patient records covering 20 specialties, we retained the five with the most records (Medicine, Gynecology, Dermatology, Pediatrics, Gastroenterology) and split the resulting 2730 records 80:20 into training and test sets shared by all families. The best transformer was XLM-RoBERTa (86.26% accuracy, 86.21% macro-F1), the best ML model was SVM (84.98%, 84.92%), the best DL model was Bidirectional GRU (80.77%, 80.83%), and the best LLM was Gemini (90.29%, 90.15%). Holm-corrected paired McNemar tests show SVM significantly outperforming Bi-LSTM (adjusted p = 0.004), whereas the Gemini-versus-Grok gap does not survive correction (adjusted p = 0.104), and neither the strongest transformer versus the weakest LLM (Grok) nor SVM versus the strongest transformer reaches significance. A tuned classical model is thus statistically indistinguishable from the strongest transformer, so accuracy rankings alone should not be read as evidence of one family's superiority. The findings provide a comparative baseline for Bangla medical text classification.",
-      "published": "November 22, 2026",
-      "published_raw": "2026-11-22T02:18:18Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.29151v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.29151v1"
-    },
-    {
-      "id": "2611.29043v1",
-      "title": "Mirror Descent at the Edge of Stability",
-      "authors": [
-        "Vincent X. Wang",
-        "Vikas Garg"
-      ],
-      "abstract": "In many deep learning settings, gradient descent has been shown to operate at the edge of stability -- a regime where the largest eigenvalue of the loss Hessian hovers around $2/η$. We study this phenomenon in mirror descent, a generalization of gradient descent. As mirror descent is non-Euclidean, existing explanations of the edge of stability phase do not extend to this setting. We generalize the existing notion of sharpness to introduce mirror sharpness, which measures the curvature of the loss with respect to the mirror potential. Empirically, we observe that the mirror sharpness hovers slightly above the $2/η$ threshold. Furthermore, we derive a dual central flow ODE for mirror descent that models iterates in continuous time at the onset of edge of stability. Our ODE provides insights into the difficulties of extending existing arguments for why sharpness stabilizes at $2/η$ from gradient descent to mirror descent in full generality.",
-      "published": "November 21, 2026",
-      "published_raw": "2026-11-21T21:13:53Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.29043v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.29043v1"
-    },
-    {
-      "id": "2611.28777v1",
-      "title": "Pretraining Representation Lottery Determines Fine-tuning Generalization",
-      "authors": [
-        "Fuming Yang",
-        "Core Francisco Park"
-      ],
-      "abstract": "Large scale pretraining (PT) followed by fine-tuning (FT) is the central paradigm of modern deep learning, yet how PT shapes FT generalization remains poorly understood. We use a synthetic setup in which the ground-truth concept geometry of entities is known, as a controlled testbed to study how representational geometry affects model behavior and how PT representations determine FT generalization. We first show that models differing only in training seed can closely match in PT loss yet vary substantially in FT generalization. We hypothesize that a representational lottery underlies this phenomenon: the random seed dependent geometry formed during PT determines what FT can reach. We confirm this causally. First, injecting the ground-truth concept geometry into the model yields near-ceiling FT generalization, showing that good representations directly drive generalization. Then, distilling a lucky seed's learned representation into an unlucky seed unlocks FT generalization, while distilling the same model's behavior does not. Furthermore, representation distillation can merge entities that never interacted during PT, which FT alone cannot. Finally, we show that regularizing representational drift during FT enables naturalistic learning: only models with good representations learn the task, and they generalize, while models with poor representations fail to fit it. Under plain FT, by contrast, models with poor representations fit the training objective by reshaping their pretrained representations. We reproduce the distillation result in Pythia-160M and Pythia-410M, each pretrained multiple times with different random seeds, and show that the transferable representation lives in the deep layers at both scales. Overall, PT acts as a lottery over representations, and the representation a model draws determines how it adapts during FT in a way that behavior alone does not explain.",
-      "published": "November 21, 2026",
-      "published_raw": "2026-11-21T12:41:47Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.28777v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.28777v1"
-    },
-    {
-      "id": "2611.27978v1",
-      "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
-      "authors": [
-        "Hari Sitaula",
-        "Joseph Opitz"
-      ],
-      "abstract": "This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fundamental price data, macroeconomic indicators, and engineered technical features. We benchmark three model families, namely linear regression, vanilla recurrent neural networks (RNN), and long short-term memory networks (LSTM), within a unified preprocessing and chronological evaluation pipeline. A central contribution of this work is a methodological audit of common practices in the deep-learning-for-stock-prediction literature. We identify three sources of result inflation that frequently appear in published methodologies: wavelet-denoised evaluation targets, the absence of a naive persistence baseline, and best-of-N replicate reporting. We then re-evaluate all model families under a corrected protocol that controls for each. Performance is reported using root mean squared error, mean absolute percentage error, and the Pearson correlation coefficient, averaged across N = 30 independent replicates per configuration. We compare models on accuracy, stability across replicates, and architectural depth sensitivity, using the naive persistence forecast (predicting today's close as tomorrow's close) as a primary baseline against which all candidate models must demonstrate improvement.",
-      "published": "November 20, 2026",
-      "published_raw": "2026-11-20T18:57:15Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.27978v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.27978v1"
-    },
-    {
-      "id": "2611.27811v1",
-      "title": "Redesigning Neural Networks to Not be Confidently Wrong even to Strong Adversarial Attacks",
-      "authors": [
-        "Michael W. Spratling",
-        "Heiko H. Schütt"
-      ],
-      "abstract": "Early deep learning models attempted to simulate visual perception using a neural hierarchy that alternated between two types of layer: one modelled on cortical simple cells (that was designed to increase selectivity), and one modelled on cortical complex cells (that aimed to increase tolerance). We show that such a neural network (NN) architecture, when implemented with novel components that are better able to learn selective and tolerant representations, is capable of accurate and robust image classification and improved alignment between the behaviour of the model and the perceptual abilities of humans. Firstly, the proposed models are shallow, fewer than ten layer-pairs, which is more consistent with the rapid feedforward object categorisation performed by the biological visual system. Secondly, they are far less prone to producing classification predictions with high confidence for samples from unknown classes or for image consisting of pure noise, and hence, like humans are not easily fooled into perceiving objects that are not present in the image. Thirdly, for the proposed NNs adversarial samples cause predictions with low confidence, enabling them to be accurately identified. In contrast to humans, our networks still do not correctly classify adversarial samples. However, the behaviour of our networks is a significant step towards human-like behaviour compared to standard DNNs that produce highly confident, but incorrect, classification predictions for adversarial samples. The increased robustness to adversarial and unknown samples is achieved while maintaining competitive performance in terms of generalisation to novel samples from the training categories. This enables models of this type to be competitive with state-of-the-art DNNs across multiple different evaluation metrics and benchmark tasks.",
-      "published": "November 20, 2026",
-      "published_raw": "2026-11-20T16:38:30Z",
-      "pdf_link": "http://arxiv.org/pdf/2611.27811v1.pdf",
-      "arxiv_link": "http://arxiv.org/abs/2611.27811v1"
     }
   ]
 }
